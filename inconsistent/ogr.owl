@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Africa -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Central -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Central">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Northern"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Eastern -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Eastern">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Western"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Northern -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Northern">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Eastern"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Western"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Southern -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Southern">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Western -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Western">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Americas -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Americas">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Central_America"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Ancient_Lands -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Ancient_Lands">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Americas"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Caribbean_Region"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Arctic_Regions -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Arctic_Regions">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Asia -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Central -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Central">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Southeastern -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Southeastern">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Western -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Western">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Atlantic_Islands -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Atlantic_Islands">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Australia -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Australia">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Oceans_and_Seas"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Caribbean_Region -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Caribbean_Region">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Americas"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Central_America -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Central_America">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Americas"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Commonwealth_of_Independent_States -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Commonwealth_of_Independent_States">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#New_Guinea"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Czechoslovakia -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Czechoslovakia">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Ancient_Lands"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#East_Germany -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#East_Germany">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Ancient_Lands"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#European_Union"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Europe -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Europe">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Oceans_and_Seas"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#European_Union -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#European_Union">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Far_East -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Far_East">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Central"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Oceans_and_Seas"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#New_Guinea"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Indian_Ocean_Islands -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Indian_Ocean_Islands">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Africa_Southern"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Other_regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Latin_America -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Latin_America">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Americas"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Caribbean_Region"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Central_America"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#North_America"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#South_America"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Middle_East -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Middle_East">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#East_Germany"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#New_Guinea -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#New_Guinea">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Yugoslavia"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#North_America -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#North_America">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Americas"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Caribbean_Region"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Oceania -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Oceania">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Commonwealth_of_Independent_States"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#European_Union"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#New_Guinea"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Oceans_and_Seas -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Oceans_and_Seas">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Asia_Western"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Pacific_Islands"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Other_regions -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Other_regions">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Pacific_Islands -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Pacific_Islands">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Geographical_Regions"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#South_America -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#South_America">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Americas"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#USSR -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#USSR">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#West_Germany -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#West_Germany">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/GeographicalRegion.owl#Yugoslavia -->
+
+
+    <Class rdf:about="http://www.owl-ontologies.com/GeographicalRegion.owl#Yugoslavia">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Historical_Geographic_Locations"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/GeographicalRegion.owl#Antarctic_Regions"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9.2018-12-12T06:37:32Z) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016019789133441 -->
+
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016019789133441"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795 -->
+
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310 -->
+
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012680746500680"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012635419619309 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012635419619309">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012653274523132 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012653274523132">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012635419619309"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012735735439791"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012672209560157 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012672209560157">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012719974275465"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012680746500680 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012680746500680">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012688218520629 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012688218520629">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012653274523132"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012735735439791"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012719974275465 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012719974275465">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012735735439791 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012735735439791">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012653274523132"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012672209560157"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012744023866919 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012744023866919">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012751321181768"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012751321181768 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012751321181768">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012779214634901"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012757270309800 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012757270309800">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012769242641062 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012769242641062">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012779214634901 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012779214634901">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012794343328094"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012794343328094 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012794343328094">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012779214634901"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012805791665904 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012805791665904">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012814578026312 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012814578026312">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012826245584593 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012826245584593">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012834024485975 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012834024485975">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012814578026312"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012848399765320 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012848399765320">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012860101728760 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012860101728760">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012875009033223"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012866630259579 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012866630259579">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012860101728760"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012875009033223 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012875009033223">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012848399765320"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012860101728760"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012653274523132"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815 -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic -->
+
+
+    <Class rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012680746500680"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012751321181768"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+                <allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+                <allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012672209560157"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLNamedIndividual_00000012882936039923 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLNamedIndividual_00000012882936039923">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLNamedIndividual_00000016686111880926 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLNamedIndividual_00000016686111880926">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012680746500680"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016019789133441"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+        <someValuesFrom>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+                <allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+            </Restriction>
+        </someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+                <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+        <someValuesFrom>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+                <allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+            </Restriction>
+        </someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+        <someValuesFrom>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+                <allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012672209560157"/>
+            </Restriction>
+        </someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795"/>
+        <allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310"/>
+                <allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012672209560157"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9.2018-12-12T06:37:32Z) https://github.com/owlcs/owlapi/ -->
+
+
