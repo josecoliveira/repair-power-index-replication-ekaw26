@@ -243,6 +243,56 @@ def build_outcome_summary(runtime_df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def build_per_repair_outcome_summary(runtime_df: pd.DataFrame) -> pd.DataFrame:
+    """Count succeeded, failed, and not-reached trials per repair.
+
+    Repairs run in order: A1, A2, A3, B1, ..., B9.  When a trial fails at
+    failure_stage, all earlier repairs succeeded, failure_stage itself failed,
+    and all later repairs were never reached.
+    """
+    columns = ["ontology", "repair_id", "succeeded", "failed", "not_reached",
+               "success_rate"]
+    if runtime_df.empty:
+        return pd.DataFrame(columns=columns)
+
+    repair_order = {rid: i for i, rid in enumerate(REPAIR_IDS)}
+    ontologies = sorted([o for o in runtime_df["ontology"].unique() if o != "overall"])
+
+    rows: list[dict] = []
+    for ontology in ontologies + ["overall"]:
+        subset = runtime_df if ontology == "overall" else runtime_df[runtime_df["ontology"] == ontology]
+        for repair_id in REPAIR_IDS:
+            ri = repair_order[repair_id]
+            succeeded = 0
+            failed = 0
+            not_reached = 0
+            for _, trial in subset.iterrows():
+                status = trial.get("trial_status", "")
+                fs = trial.get("failure_stage", "")
+                if status == "success":
+                    succeeded += 1
+                elif fs and fs in repair_order:
+                    fs_idx = repair_order[fs]
+                    if fs_idx == ri:
+                        failed += 1
+                    elif fs_idx < ri:
+                        not_reached += 1
+                    else:  # fs_idx > ri — failure happened after this repair
+                        succeeded += 1
+                # If fs is not a valid repair ID (e.g., "make_inconsistent" or empty), skip
+            attempted = succeeded + failed
+            rate = succeeded / attempted if attempted > 0 else float("nan")
+            rows.append({
+                "ontology": ontology,
+                "repair_id": repair_id,
+                "succeeded": succeeded,
+                "failed": failed,
+                "not_reached": not_reached,
+                "success_rate": rate,
+            })
+    return pd.DataFrame(rows, columns=columns)
+
+
 def build_iic_markdown(summary_df: pd.DataFrame) -> list[str]:
     lines = [
         "# IIC Summary (B repairs vs A repairs)",
@@ -277,6 +327,42 @@ def build_iic_markdown(summary_df: pd.DataFrame) -> list[str]:
                     row_cells.append(iic_cell(float(r["mean"]), float(r["ci_low"]), float(r["ci_high"]), int(r["n"])))
             lines.append("| " + " | ".join(row_cells) + " |")
         lines.append("")
+    return lines
+
+
+def build_iic_overview_markdown(summary_df: pd.DataFrame) -> list[str]:
+    """Single collapsed table: B1–B9 rows × A1/A2/A3 columns, overall mean IIC + 95% CI."""
+    lines = [
+        "## IIC Overview (overall)",
+        "",
+        "Mean IIC and 95% confidence interval averaged across all ontologies.",
+        "",
+    ]
+    if summary_df.empty:
+        lines.append("No IIC data found.")
+        return lines
+
+    overall = summary_df[summary_df["ontology"] == "overall"]
+    if overall.empty:
+        lines.append("No overall IIC data found.")
+        return lines
+
+    lines.append("| B Repair | A1 | A2 | A3 |")
+    lines.append("| --- | --- | --- | --- |")
+    for b_repair in B_REPAIRS:
+        row_cells = [b_repair]
+        for a_repair in A_REPAIRS:
+            match = overall[
+                (overall["b_repair"] == b_repair)
+                & (overall["a_repair"] == a_repair)
+            ]
+            if match.empty:
+                row_cells.append("-")
+            else:
+                r = match.iloc[0]
+                row_cells.append(iic_cell(float(r["mean"]), float(r["ci_low"]), float(r["ci_high"]), int(r["n"])))
+        lines.append("| " + " | ".join(row_cells) + " |")
+    lines.append("")
     return lines
 
 
@@ -348,6 +434,45 @@ def build_outcome_markdown(summary_df: pd.DataFrame) -> list[str]:
     return lines
 
 
+def build_per_repair_outcome_markdown(summary_df: pd.DataFrame) -> list[str]:
+    lines = [
+        "## Per-Repair Outcome Rates",
+        "",
+        "Succeeded / Failed / Not-reached counts per repair algorithm. ",
+        "Trials abort at the first failing repair, so repairs after the ",
+        "failure stage are counted as \"not reached\".  The success rate ",
+        "excludes not-reached trials from the denominator.",
+        "",
+    ]
+    if summary_df.empty:
+        lines.append("No per-repair outcome data found.")
+        return lines
+
+    ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
+    if "overall" in summary_df["ontology"].unique():
+        ontologies.append("overall")
+
+    for ontology in ontologies:
+        subset = summary_df[summary_df["ontology"] == ontology]
+        if subset.empty:
+            continue
+        lines.append(f"### {ontology}")
+        lines.append("| Repair | Succeeded | Failed | Not Reached | Success Rate |")
+        lines.append("| --- | --- | --- | --- | --- |")
+        for repair_id in REPAIR_IDS:
+            match = subset[subset["repair_id"] == repair_id]
+            if match.empty:
+                continue
+            r = match.iloc[0]
+            rate_str = percent(float(r["success_rate"])) if not math.isnan(float(r["success_rate"])) else "-"
+            lines.append(
+                f"| {repair_id} | {int(r['succeeded'])} | {int(r['failed'])} "
+                f"| {int(r['not_reached'])} | {rate_str} |"
+            )
+        lines.append("")
+    return lines
+
+
 def build_iic_latex(summary_df: pd.DataFrame) -> list[str]:
     lines: list[str] = []
     if summary_df.empty:
@@ -393,6 +518,55 @@ def build_iic_latex(summary_df: pd.DataFrame) -> list[str]:
                 "",
             ]
         )
+    return lines
+
+
+def build_iic_overview_latex(summary_df: pd.DataFrame) -> list[str]:
+    """Single collapsed LaTeX table: B1–B9 rows × A1/A2/A3 columns, overall mean IIC + 95% CI."""
+    lines: list[str] = []
+    if summary_df.empty:
+        return lines
+
+    overall = summary_df[summary_df["ontology"] == "overall"]
+    if overall.empty:
+        return lines
+
+    lines.extend(
+        [
+            "% Auto-generated IIC overview table",
+            "\\begin{table}[ht]",
+            "  \\centering",
+            "  \\caption{IIC overview --- overall mean and 95\\% CI across all ontologies}",
+            "  \\label{tab:iic-overview}",
+            "  \\begin{tabular}{lccc}",
+            "    \\toprule",
+            "    B Repair & A1 & A2 & A3 \\\\",
+            "    \\midrule",
+        ]
+    )
+    for b_repair in B_REPAIRS:
+        cells: list[str] = []
+        for a_repair in A_REPAIRS:
+            match = overall[
+                (overall["b_repair"] == b_repair)
+                & (overall["a_repair"] == a_repair)
+            ]
+            if match.empty:
+                cells.append("-")
+            else:
+                r = match.iloc[0]
+                cells.append(iic_cell(float(r["mean"]), float(r["ci_low"]), float(r["ci_high"]), int(r["n"])))
+        lines.append(
+            f"    {latex_escape(b_repair)} & {latex_escape(cells[0])} & {latex_escape(cells[1])} & {latex_escape(cells[2])} \\\\"
+        )
+    lines.extend(
+        [
+            "    \\bottomrule",
+            "  \\end{tabular}",
+            "\\end{table}",
+            "",
+        ]
+    )
     return lines
 
 
@@ -488,6 +662,55 @@ def build_outcome_latex(summary_df: pd.DataFrame) -> list[str]:
     return lines
 
 
+def build_per_repair_outcome_latex(summary_df: pd.DataFrame) -> list[str]:
+    lines: list[str] = [
+        "% Auto-generated per-repair outcome table",
+        "\\begin{table}[ht]",
+        "  \\centering",
+        "  \\caption{Per-repair outcome rates (Succeeded / Failed / Not reached)}",
+        "  \\begin{tabular}{lcccc}",
+        "    \\toprule",
+        "    Repair & Succeeded & Failed & Not reached & Success rate \\\\",
+        "    \\midrule",
+    ]
+    if summary_df.empty:
+        lines.extend([
+            "    No data \\\\",
+            "    \\bottomrule",
+            "  \\end{tabular}",
+            "\\end{table}",
+        ])
+        return lines
+
+    ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
+    if "overall" in summary_df["ontology"].unique():
+        ontologies.append("overall")
+
+    for ontology in ontologies:
+        subset = summary_df[summary_df["ontology"] == ontology]
+        if subset.empty:
+            continue
+        lines.append(f"    \\multicolumn{{5}}{{l}}{{{latex_escape(ontology)}}} \\\\")
+        for repair_id in REPAIR_IDS:
+            match = subset[subset["repair_id"] == repair_id]
+            if match.empty:
+                continue
+            r = match.iloc[0]
+            rate_str = percent(float(r["success_rate"])) if not math.isnan(float(r["success_rate"])) else "-"
+            lines.append(
+                f"    {latex_escape(repair_id)} & {int(r['succeeded'])} & "
+                f"{int(r['failed'])} & {int(r['not_reached'])} & {latex_escape(rate_str)} \\\\"
+            )
+        lines.append("    \\midrule")
+
+    lines.extend([
+        "    \\bottomrule",
+        "  \\end{tabular}",
+        "\\end{table}",
+    ])
+    return lines
+
+
 def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -504,23 +727,30 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
     iic_summary_df = build_iic_summary(iic_df)
     runtime_summary_df = build_runtime_summary(runtime_df)
     outcome_summary_df = build_outcome_summary(runtime_df)
+    per_repair_outcome_df = build_per_repair_outcome_summary(runtime_df)
 
     iic_summary_csv = out_dir / "iic_summary.csv"
     runtime_summary_csv = out_dir / "runtime_summary.csv"
     outcome_summary_csv = out_dir / "outcome_summary.csv"
+    per_repair_outcome_csv = out_dir / "per_repair_outcome_summary.csv"
     report_md = out_dir / "combined_report.md"
     report_tex = out_dir / "combined_report.tex"
 
     iic_summary_df.to_csv(iic_summary_csv, index=False)
     runtime_summary_df.to_csv(runtime_summary_csv, index=False)
     outcome_summary_df.to_csv(outcome_summary_csv, index=False)
+    per_repair_outcome_df.to_csv(per_repair_outcome_csv, index=False)
 
     md_lines = ["# Combined Experiment Summary", ""]
+    md_lines.extend(build_iic_overview_markdown(iic_summary_df))
+    md_lines.extend(["", "---", ""])
     md_lines.extend(build_iic_markdown(iic_summary_df))
     md_lines.extend(["", "---", ""])
     md_lines.extend(build_runtime_markdown(runtime_summary_df))
     md_lines.extend(["", "---", ""])
     md_lines.extend(build_outcome_markdown(outcome_summary_df))
+    md_lines.extend(["", "---", ""])
+    md_lines.extend(build_per_repair_outcome_markdown(per_repair_outcome_df))
     report_md.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
     tex_lines = [
@@ -529,9 +759,11 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
         "\\usepackage{booktabs}",
         "\\begin{document}",
     ]
+    tex_lines.extend(build_iic_overview_latex(iic_summary_df))
     tex_lines.extend(build_iic_latex(iic_summary_df))
     tex_lines.extend(build_runtime_latex(runtime_summary_df))
     tex_lines.extend(build_outcome_latex(outcome_summary_df))
+    tex_lines.extend(build_per_repair_outcome_latex(per_repair_outcome_df))
     tex_lines.append("\\end{document}")
     report_tex.write_text("\n".join(tex_lines) + "\n", encoding="utf-8")
 
@@ -539,6 +771,7 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
         "iic_summary_csv": iic_summary_csv,
         "runtime_summary_csv": runtime_summary_csv,
         "outcome_summary_csv": outcome_summary_csv,
+        "per_repair_outcome_csv": per_repair_outcome_csv,
         "report_md": report_md,
         "report_tex": report_tex,
     }
