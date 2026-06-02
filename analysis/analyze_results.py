@@ -1,24 +1,11 @@
 #!/usr/bin/env python3
-"""Unified analysis for IIC quality and runtime/outcome results.
-
-This script reads the per-run CSVs produced by `run_trials.py`:
-
-- iic-<ontology>-<RUN_ID>.csv
-- runtime-<ontology>-<RUN_ID>.csv
-
-It generates:
-
-- the existing IIC quality report/table layout
-- a runtime summary table for successful trials
-- an outcome-rate table for the power-index trials
-
-Outputs are written under `analysis/output/shapley-shapley`.
-"""
+"""Aggregate A/B trial outputs into CSV, Markdown, and LaTeX reports."""
 
 from __future__ import annotations
 
 import math
 import re
+import sys
 from pathlib import Path
 from typing import Iterable
 
@@ -26,80 +13,39 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-
-BASE_DIR = Path(__file__).parent
-DATA_DIR = BASE_DIR / "data" / "shapley-shapley"
-OUT_DIR = BASE_DIR / "output" / "shapley-shapley"
-
-IIC_SUMMARY_CSV = OUT_DIR / "iic_summary.csv"
-RUNTIME_SUMMARY_CSV = OUT_DIR / "runtime_summary.csv"
-OUTCOME_SUMMARY_CSV = OUT_DIR / "outcome_summary.csv"
-REPORT_MD = OUT_DIR / "combined_report.md"
-REPORT_TEX = OUT_DIR / "combined_report.tex"
-
-COMPARISON_ORDER = [
-	("iic_power_vs_random", "vs random"),
-	("iic_power_vs_not_in_largest_mcs", "vs non_in_largest_mcs"),
-	("iic_power_vs_weakening", "vs weakening"),
-]
-
-REPAIR_ORDER = [
-	("random_removal_ms", "Random removal"),
-	("not_in_largest_mcs_removal_ms", "Not-in-largest-MCS removal"),
-	("weakening_ms", "Weakening"),
-	("power_index_ms", "Power index"),
-]
-
+A_REPAIRS = ["A1", "A2", "A3"]
+B_REPAIRS = [f"B{i}" for i in range(1, 10)]
+REPAIR_IDS = A_REPAIRS + B_REPAIRS
+IIC_KEYS = [f"{b}_vs_{a}" for b in B_REPAIRS for a in A_REPAIRS]
 OUTCOME_ORDER = ["success", "time_limit_exceeded", "memory_limit_exceeded"]
-
-CSV_NAME_RE = re.compile(r"^(?P<kind>iic|runtime)-(?P<ontology>.+?)-(?P<runid>\d+)(?:-reconstructed)?\.csv$")
-
-
-def strip_trailing_run_id(name: str) -> str:
-    return re.sub(r"-\d+(?:-reconstructed)?$", "", name)
+CSV_NAME_RE = re.compile(r"^(?P<kind>iic|runtime)-(?P<ontology>.+)\.csv$")
 
 
-def mean_std_n_ci(arr: np.ndarray, conf: float = 0.95):
-    arr = np.asarray(arr, dtype=np.float64)
+def discover_csvs(data_dir: Path, kind: str) -> list[Path]:
+    paths: list[Path] = []
+    for path in sorted(data_dir.glob(f"{kind}-*.csv")):
+        match = CSV_NAME_RE.match(path.name)
+        if match and match.group("kind") == kind:
+            paths.append(path)
+    return paths
+
+
+def mean_n_ci(values: np.ndarray, conf: float = 0.95) -> tuple[float, int, float, float]:
+    arr = np.asarray(values, dtype=np.float64)
     arr = arr[~np.isnan(arr)]
-    n = arr.size
+    n = int(arr.size)
     if n == 0:
-        return float("nan"), float("nan"), 0, float("nan"), float("nan")
-
+        return float("nan"), 0, float("nan"), float("nan")
     mean = float(np.mean(arr))
-    std = float(np.std(arr, ddof=1)) if n > 1 else 0.0
     if n == 1:
-        return mean, std, 1, mean, mean
-
-    se = std / math.sqrt(n)
+        return mean, 1, mean, mean
+    sd = float(np.std(arr, ddof=1))
+    se = sd / math.sqrt(n)
     alpha = 1.0 - conf
     tcrit = stats.t.ppf(1.0 - alpha / 2.0, n - 1)
     ci_low = mean - tcrit * se
     ci_high = mean + tcrit * se
-    return mean, std, n, ci_low, ci_high
-
-
-def compute_runtime_stats(arr: np.ndarray):
-    arr = np.asarray(arr, dtype=np.float64)
-    arr = arr[~np.isnan(arr)]
-    n = arr.size
-    if n == 0:
-        return {
-            "mean": float("nan"),
-            "sd": float("nan"),
-            "median": float("nan"),
-            "min": float("nan"),
-            "max": float("nan"),
-            "n": 0,
-        }
-    return {
-        "mean": float(np.mean(arr)),
-        "sd": float(np.std(arr, ddof=1)) if n > 1 else 0.0,
-        "median": float(np.median(arr)),
-        "min": float(np.min(arr)),
-        "max": float(np.max(arr)),
-        "n": int(n),
-    }
+    return mean, n, ci_low, ci_high
 
 
 def latex_escape(text: str) -> str:
@@ -120,13 +66,20 @@ def percent(value: float) -> str:
     return f"{value:.1%}"
 
 
-def discover_csvs(kind: str) -> list[Path]:
-    paths = []
-    for path in sorted(DATA_DIR.glob(f"{kind}-*.csv")):
-        match = CSV_NAME_RE.match(path.name)
-        if match and match.group("kind") == kind:
-            paths.append(path)
-    return paths
+def iic_cell(mean: float, ci_low: float, ci_high: float, n: int) -> str:
+    if n == 0 or math.isnan(mean):
+        return "-"
+    return f"{mean:.4f} [{ci_low:.4f}; {ci_high:.4f}]"
+
+
+def runtime_cell(mean_ms: float, n: int) -> str:
+    if n == 0 or math.isnan(mean_ms):
+        return "-"
+    return f"{mean_ms:.2f} ms"
+
+
+def outcome_cell(count: int, rate: float) -> str:
+    return f"{count} ({percent(rate)})"
 
 
 def load_iic_rows(paths: Iterable[Path]) -> pd.DataFrame:
@@ -136,29 +89,30 @@ def load_iic_rows(paths: Iterable[Path]) -> pd.DataFrame:
         if not match:
             continue
         ontology = match.group("ontology")
-        run_id = match.group("runid")
-        df = pd.read_csv(path, keep_default_na=False)
-        if df.empty:
+        frame = pd.read_csv(path, keep_default_na=False)
+        if frame.empty:
             continue
-        for _, row in df.iterrows():
-            for comparison_key, _ in COMPARISON_ORDER:
-                value = row.get(comparison_key)
+        for _, row in frame.iterrows():
+            for key in IIC_KEYS:
+                value = row.get(key)
                 if pd.isna(value) or value == "":
                     continue
+                b_repair, a_repair = key.split("_vs_")
                 rows.append(
                     {
                         "ontology": ontology,
-                        "comparison": comparison_key,
+                        "b_repair": b_repair,
+                        "a_repair": a_repair,
                         "value": float(value),
-                        "run_id": str(row.get("run_id", run_id)),
+                        "run_id": str(row.get("run_id", "")),
                     }
                 )
     if not rows:
-        return pd.DataFrame(columns=["ontology", "comparison", "value", "run_id"])
+        return pd.DataFrame(columns=["ontology", "b_repair", "a_repair", "value", "run_id"])
     return pd.DataFrame(rows)
 
 
-def load_runtime_frames(paths: Iterable[Path]) -> pd.DataFrame:
+def load_runtime_rows(paths: Iterable[Path]) -> pd.DataFrame:
     frames: list[pd.DataFrame] = []
     for path in paths:
         match = CSV_NAME_RE.match(path.name)
@@ -171,99 +125,110 @@ def load_runtime_frames(paths: Iterable[Path]) -> pd.DataFrame:
         frame = frame.copy()
         frame["ontology"] = ontology
         frame["trial_status"] = frame["trial_status"].astype(str).str.strip().str.lower()
-        for col, _ in REPAIR_ORDER:
-            frame[col] = pd.to_numeric(frame.get(col), errors="coerce")
         frame["trial_elapsed_seconds"] = pd.to_numeric(frame.get("trial_elapsed_seconds"), errors="coerce")
+        for repair_id in REPAIR_IDS:
+            frame[f"{repair_id}_ms"] = pd.to_numeric(frame.get(f"{repair_id}_ms"), errors="coerce")
         frames.append(frame)
     if not frames:
-        return pd.DataFrame(columns=["ontology", "trial_status"] + [c for c, _ in REPAIR_ORDER])
+        return pd.DataFrame(columns=["ontology", "trial_status"] + [f"{r}_ms" for r in REPAIR_IDS])
     return pd.concat(frames, ignore_index=True)
 
 
 def build_iic_summary(iic_df: pd.DataFrame) -> pd.DataFrame:
-    summary_rows: list[dict] = []
+    rows: list[dict] = []
     if iic_df.empty:
-        return pd.DataFrame(columns=["ontology", "comparison", "mean", "sd", "n", "ci_low", "ci_high", "reject_h0"])
+        return pd.DataFrame(columns=["ontology", "b_repair", "a_repair", "mean", "n", "ci_low", "ci_high"])
 
     ontologies = sorted([o for o in iic_df["ontology"].unique() if o != "overall"])
-    for comparison_key, _ in COMPARISON_ORDER:
-        for ontology in ontologies:
-            values = iic_df.loc[(iic_df["ontology"] == ontology) & (iic_df["comparison"] == comparison_key), "value"].to_numpy(dtype=float)
-            mean, sd, n, ci_low, ci_high = mean_std_n_ci(values)
-            summary_rows.append(
+    for b_repair in B_REPAIRS:
+        for a_repair in A_REPAIRS:
+            for ontology in ontologies:
+                values = iic_df.loc[
+                    (iic_df["ontology"] == ontology)
+                    & (iic_df["b_repair"] == b_repair)
+                    & (iic_df["a_repair"] == a_repair),
+                    "value",
+                ].to_numpy(dtype=float)
+                mean, n, ci_low, ci_high = mean_n_ci(values)
+                rows.append(
+                    {
+                        "ontology": ontology,
+                        "b_repair": b_repair,
+                        "a_repair": a_repair,
+                        "mean": mean,
+                        "n": n,
+                        "ci_low": ci_low,
+                        "ci_high": ci_high,
+                    }
+                )
+
+            overall_values = iic_df.loc[
+                (iic_df["b_repair"] == b_repair) & (iic_df["a_repair"] == a_repair),
+                "value",
+            ].to_numpy(dtype=float)
+            mean, n, ci_low, ci_high = mean_n_ci(overall_values)
+            rows.append(
                 {
-                    "ontology": ontology,
-                    "comparison": comparison_key,
+                    "ontology": "overall",
+                    "b_repair": b_repair,
+                    "a_repair": a_repair,
                     "mean": mean,
-                    "sd": sd,
                     "n": n,
                     "ci_low": ci_low,
                     "ci_high": ci_high,
-                    "reject_h0": bool(ci_low > 0.5),
                 }
             )
 
-        overall_values = iic_df.loc[iic_df["comparison"] == comparison_key, "value"].to_numpy(dtype=float)
-        mean, sd, n, ci_low, ci_high = mean_std_n_ci(overall_values)
-        summary_rows.append(
-            {
-                "ontology": "overall",
-                "comparison": comparison_key,
-                "mean": mean,
-                "sd": sd,
-                "n": n,
-                "ci_low": ci_low,
-                "ci_high": ci_high,
-                "reject_h0": bool(ci_low > 0.5),
-            }
-        )
-
-    return pd.DataFrame(summary_rows)
+    return pd.DataFrame(rows)
 
 
 def build_runtime_summary(runtime_df: pd.DataFrame) -> pd.DataFrame:
-    summary_rows: list[dict] = []
+    rows: list[dict] = []
     if runtime_df.empty:
-        return pd.DataFrame(columns=["ontology", "repair_method", "mean_ms", "sd_ms", "median_ms", "min_ms", "max_ms", "n", "ci_low_ms", "ci_high_ms"])
+        return pd.DataFrame(columns=["ontology", "repair_id", "mean_ms", "n"])
 
     ontologies = sorted([o for o in runtime_df["ontology"].unique() if o != "overall"])
     for ontology in ontologies + ["overall"]:
         subset = runtime_df if ontology == "overall" else runtime_df[runtime_df["ontology"] == ontology]
         success_subset = subset[subset["trial_status"] == "success"]
-        for column, _label in REPAIR_ORDER:
-            values = success_subset[column].to_numpy(dtype=float)
-            # basic runtime stats (median/min/max)
-            stats_map = compute_runtime_stats(values)
-            # mean, sd, n and 95% t-based CI for the mean
-            mean, sd, n, ci_low, ci_high = mean_std_n_ci(values)
-            summary_rows.append(
+        for repair_id in REPAIR_IDS:
+            values = success_subset[f"{repair_id}_ms"].to_numpy(dtype=float)
+            values = values[~np.isnan(values)]
+            n = int(values.size)
+            mean = float(np.mean(values)) if n else float("nan")
+            rows.append(
                 {
                     "ontology": ontology,
-                    "repair_method": column,
+                    "repair_id": repair_id,
                     "mean_ms": mean,
-                    "sd_ms": sd,
-                    "median_ms": stats_map["median"],
-                    "min_ms": stats_map["min"],
-                    "max_ms": stats_map["max"],
-                    "n": int(n),
-                    "ci_low_ms": ci_low,
-                    "ci_high_ms": ci_high,
+                    "n": n,
                 }
             )
-    return pd.DataFrame(summary_rows)
+    return pd.DataFrame(rows)
 
 
 def build_outcome_summary(runtime_df: pd.DataFrame) -> pd.DataFrame:
-    summary_rows: list[dict] = []
+    rows: list[dict] = []
     if runtime_df.empty:
-        return pd.DataFrame(columns=["ontology", "total_trials", "success_count", "success_rate", "time_limit_exceeded_count", "time_limit_exceeded_rate", "memory_limit_exceeded_count", "memory_limit_exceeded_rate"])
+        return pd.DataFrame(
+            columns=[
+                "ontology",
+                "total_trials",
+                "success_count",
+                "success_rate",
+                "time_limit_exceeded_count",
+                "time_limit_exceeded_rate",
+                "memory_limit_exceeded_count",
+                "memory_limit_exceeded_rate",
+            ]
+        )
 
     ontologies = sorted([o for o in runtime_df["ontology"].unique() if o != "overall"])
     for ontology in ontologies + ["overall"]:
         subset = runtime_df if ontology == "overall" else runtime_df[runtime_df["ontology"] == ontology]
         counts = subset["trial_status"].value_counts(dropna=False).to_dict()
         total = int(len(subset))
-        summary_rows.append(
+        rows.append(
             {
                 "ontology": ontology,
                 "total_trials": total,
@@ -275,89 +240,51 @@ def build_outcome_summary(runtime_df: pd.DataFrame) -> pd.DataFrame:
                 "memory_limit_exceeded_rate": (counts.get("memory_limit_exceeded", 0) / total if total else 0.0),
             }
         )
-    return pd.DataFrame(summary_rows)
-
-
-def runtime_cell(mean_ms: float, sd_ms: float, n: int, ci_low_ms: float, ci_high_ms: float) -> str:
-    # Show mean only (milliseconds). Exclude standard deviation and confidence interval.
-    if n == 0 or math.isnan(mean_ms):
-        return "-"
-    return f"{mean_ms:.2f} ms"
-
-
-def outcome_cell(count: int, rate: float) -> str:
-    return f"{count} ({percent(rate)})"
+    return pd.DataFrame(rows)
 
 
 def build_iic_markdown(summary_df: pd.DataFrame) -> list[str]:
     lines = [
-        "# IIC Summary",
+        "# IIC Summary (B repairs vs A repairs)",
         "",
-        "Decision rule: reject H0 when the lower bound of the 95% confidence interval is greater than 0.5.",
+        "Each table reports mean IIC and 95% confidence interval for one B repair across A1/A2/A3 baselines.",
         "",
     ]
-    for comparison_key, label in COMPARISON_ORDER:
-        table_df = summary_df[summary_df["comparison"] == comparison_key].copy()
-        if table_df.empty:
-            continue
-        table_df["comparison"] = label
-        table_df.loc[table_df["ontology"] == "overall", "ontology"] = "overall"
-        lines.append(f"## {label}")
-        lines.append(table_df.to_markdown(index=False))
-        lines.append("")
-    return lines
-
-
-def build_iic_latex(summary_df: pd.DataFrame) -> list[str]:
-    comp_to_col = {
-        "iic_power_vs_random": "Removal",
-        "iic_power_vs_not_in_largest_mcs": "MCS",
-        "iic_power_vs_weakening": "Weakening",
-    }
+    if summary_df.empty:
+        lines.append("No IIC data found.")
+        return lines
 
     ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
     if "overall" in summary_df["ontology"].unique():
         ontologies.append("overall")
 
-    tex_lines = [
-        "% Auto-generated IIC summary table",
-        "\\begin{table}[ht]",
-        "  \\centering",
-        "  \\caption{IIC results: mean and 95\\% confidence intervals}",
-        "  \\begin{tabular}{lccc}",
-        "    \\toprule",
-        "    Ontology name & Removal & MCS & Weakening " + "\\\\",
-        "    \\midrule",
-    ]
-
-    def fmt_cell(row: pd.Series) -> str:
-        try:
-            mean = float(row["mean"])
-            lo = float(row["ci_low"])
-            hi = float(row["ci_high"])
-            return f"{mean:.2f} [{lo:.2f}; {hi:.2f}]"
-        except Exception:
-            return ""
-
-    for ont in ontologies:
-        cells = []
-        for comp_key, _label in COMPARISON_ORDER:
-            match = summary_df[(summary_df["ontology"] == ont) & (summary_df["comparison"] == comp_key)]
-            cells.append(fmt_cell(match.iloc[0]) if not match.empty else "")
-        tex_lines.append(f"    {latex_escape(ont)} & {cells[0]} & {cells[1]} & {cells[2]} " + "\\\\")
-    tex_lines.extend([
-        "    \\bottomrule",
-        "  \\end{tabular}",
-        "\\end{table}",
-    ])
-    return tex_lines
+    for b_repair in B_REPAIRS:
+        lines.append(f"## {b_repair}")
+        lines.append("| ontology | A1 | A2 | A3 |")
+        lines.append("| --- | --- | --- | --- |")
+        for ontology in ontologies:
+            row_cells = [ontology]
+            for a_repair in A_REPAIRS:
+                match = summary_df[
+                    (summary_df["ontology"] == ontology)
+                    & (summary_df["b_repair"] == b_repair)
+                    & (summary_df["a_repair"] == a_repair)
+                ]
+                if match.empty:
+                    row_cells.append("-")
+                else:
+                    r = match.iloc[0]
+                    row_cells.append(iic_cell(float(r["mean"]), float(r["ci_low"]), float(r["ci_high"]), int(r["n"])))
+            lines.append("| " + " | ".join(row_cells) + " |")
+        lines.append("")
+    return lines
 
 
 def build_runtime_markdown(summary_df: pd.DataFrame) -> list[str]:
     lines = [
         "# Runtime Summary",
         "",
-        "Average runtime of successful trials (mean, in milliseconds).",
+        "Average runtime of successful trials (mean only, milliseconds).",
         "",
     ]
     if summary_df.empty:
@@ -368,33 +295,28 @@ def build_runtime_markdown(summary_df: pd.DataFrame) -> list[str]:
     if "overall" in summary_df["ontology"].unique():
         ontologies.append("overall")
 
-    headers = ["ontology"] + [label for _, label in REPAIR_ORDER]
+    headers = ["ontology"] + REPAIR_IDS
     lines.append("| " + " | ".join(headers) + " |")
     lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
-    for ont in ontologies:
-        row = [ont]
-        for column, _label in REPAIR_ORDER:
-            match = summary_df[(summary_df["ontology"] == ont) & (summary_df["repair_method"] == column)]
+    row_terminator = "\\\\"
+    for ontology in ontologies:
+        row = [ontology]
+        for repair_id in REPAIR_IDS:
+            match = summary_df[(summary_df["ontology"] == ontology) & (summary_df["repair_id"] == repair_id)]
             if match.empty:
                 row.append("-")
             else:
                 r = match.iloc[0]
-                row.append(runtime_cell(
-                    float(r["mean_ms"]),
-                    float(r["sd_ms"]),
-                    int(r["n"]),
-                    float(r.get("ci_low_ms", float("nan"))),
-                    float(r.get("ci_high_ms", float("nan"))),
-                ))
+                row.append(runtime_cell(float(r["mean_ms"]), int(r["n"])))
         lines.append("| " + " | ".join(row) + " |")
     return lines
 
 
 def build_outcome_markdown(summary_df: pd.DataFrame) -> list[str]:
     lines = [
-        "# Power-index Outcome Rates",
+        "# Power Index Outcome Rates",
         "",
-        "Outcome rates for the full trial (all four repairs are run in sequence).",
+        "Outcome rates at the trial level (all A and B repairs executed in sequence).",
         "",
     ]
     if summary_df.empty:
@@ -408,122 +330,198 @@ def build_outcome_markdown(summary_df: pd.DataFrame) -> list[str]:
     headers = ["ontology", "success", "time_limit_exceeded", "memory_limit_exceeded"]
     lines.append("| " + " | ".join(headers) + " |")
     lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
-    for ont in ontologies:
-        match = summary_df[summary_df["ontology"] == ont]
+    for ontology in ontologies:
+        match = summary_df[summary_df["ontology"] == ontology]
         if match.empty:
             continue
         r = match.iloc[0]
         lines.append(
-            "| " + " | ".join([
-                r["ontology"],
-                outcome_cell(int(r["success_count"]), float(r["success_rate"])),
-                outcome_cell(int(r["time_limit_exceeded_count"]), float(r["time_limit_exceeded_rate"])),
-                outcome_cell(int(r["memory_limit_exceeded_count"]), float(r["memory_limit_exceeded_rate"])),
-            ]) + " |"
+            "| " + " | ".join(
+                [
+                    str(r["ontology"]),
+                    outcome_cell(int(r["success_count"]), float(r["success_rate"])),
+                    outcome_cell(int(r["time_limit_exceeded_count"]), float(r["time_limit_exceeded_rate"])),
+                    outcome_cell(int(r["memory_limit_exceeded_count"]), float(r["memory_limit_exceeded_rate"])),
+                ]
+            ) + " |"
+        )
+    return lines
+
+
+def build_iic_latex(summary_df: pd.DataFrame) -> list[str]:
+    lines: list[str] = []
+    if summary_df.empty:
+        return lines
+
+    ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
+    if "overall" in summary_df["ontology"].unique():
+        ontologies.append("overall")
+
+    for b_repair in B_REPAIRS:
+        lines.extend(
+            [
+                "% Auto-generated IIC table",
+                "\\begin{table}[ht]",
+                "  \\centering",
+                f"  \\caption{{IIC results for {latex_escape(b_repair)} (mean and 95\\% CI)}}",
+                "  \\begin{tabular}{lccc}",
+                "    \\toprule",
+                "    Ontology & A1 & A2 & A3 \\\\",
+                "    \\midrule",
+            ]
+        )
+        for ontology in ontologies:
+            cells: list[str] = []
+            for a_repair in A_REPAIRS:
+                match = summary_df[
+                    (summary_df["ontology"] == ontology)
+                    & (summary_df["b_repair"] == b_repair)
+                    & (summary_df["a_repair"] == a_repair)
+                ]
+                if match.empty:
+                    cells.append("-")
+                else:
+                    r = match.iloc[0]
+                    cells.append(iic_cell(float(r["mean"]), float(r["ci_low"]), float(r["ci_high"]), int(r["n"])))
+            lines.append(
+                f"    {latex_escape(ontology)} & {latex_escape(cells[0])} & {latex_escape(cells[1])} & {latex_escape(cells[2])} \\\\")
+        lines.extend(
+            [
+                "    \\bottomrule",
+                "  \\end{tabular}",
+                "\\end{table}",
+                "",
+            ]
         )
     return lines
 
 
 def build_runtime_latex(summary_df: pd.DataFrame) -> list[str]:
-    ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
-    if "overall" in summary_df["ontology"].unique():
-        ontologies.append("overall")
-
-    tex_lines = [
-        "% Auto-generated runtime summary table",
+    lines: list[str] = [
+        "% Auto-generated runtime table",
         "\\begin{table}[ht]",
         "  \\centering",
         "  \\caption{Average runtime of successful trials (milliseconds)}",
-        "  \\begin{tabular}{lcccc}",
+        "  \\begin{tabular}{l" + "c" * len(REPAIR_IDS) + "}",
         "    \\toprule",
-        "    Ontology name & Random removal & Not-in-largest-MCS removal & Weakening & Power index " + "\\\\",
+        "    Ontology & " + " & ".join(REPAIR_IDS) + " \\\\",
         "    \\midrule",
     ]
-    for ont in ontologies:
-        cells = []
-        for column, _label in REPAIR_ORDER:
-            match = summary_df[(summary_df["ontology"] == ont) & (summary_df["repair_method"] == column)]
+    if summary_df.empty:
+        lines.extend([
+            "    No data \\\\",
+            "    \\bottomrule",
+            "  \\end{tabular}",
+            "\\end{table}",
+        ])
+        return lines
+
+    ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
+    row_terminator = "\\\\"
+    if "overall" in summary_df["ontology"].unique():
+        ontologies.append("overall")
+
+    for ontology in ontologies:
+        cells: list[str] = []
+        for repair_id in REPAIR_IDS:
+            match = summary_df[(summary_df["ontology"] == ontology) & (summary_df["repair_id"] == repair_id)]
             if match.empty:
                 cells.append("-")
             else:
                 r = match.iloc[0]
-                cells.append(runtime_cell(
-                    float(r["mean_ms"]),
-                    float(r["sd_ms"]),
-                    int(r["n"]),
-                    float(r.get("ci_low_ms", float("nan"))),
-                    float(r.get("ci_high_ms", float("nan"))),
-                ))
-        tex_lines.append(f"    {latex_escape(ont)} & {latex_escape(cells[0])} & {latex_escape(cells[1])} & {latex_escape(cells[2])} & {latex_escape(cells[3])} " + "\\\\")
-    tex_lines.extend([
+                cells.append(runtime_cell(float(r["mean_ms"]), int(r["n"])))
+        lines.append("    " + latex_escape(ontology) + " & " + " & ".join(latex_escape(c) for c in cells) + " " + row_terminator)
+
+    lines.extend([
         "    \\bottomrule",
         "  \\end{tabular}",
         "\\end{table}",
     ])
-    return tex_lines
+    return lines
 
 
 def build_outcome_latex(summary_df: pd.DataFrame) -> list[str]:
-    ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
-    if "overall" in summary_df["ontology"].unique():
-        ontologies.append("overall")
-
-    tex_lines = [
-        "% Auto-generated outcome summary table",
+    lines: list[str] = [
+        "% Auto-generated outcome table",
         "\\begin{table}[ht]",
         "  \\centering",
         "  \\caption{Power-index trial outcome rates}",
         "  \\begin{tabular}{lccc}",
         "    \\toprule",
-        "    Ontology name & Success & Time limit & Memory limit " + "\\\\",
+        "    Ontology & Success & Time limit & Memory limit \\\\",
         "    \\midrule",
     ]
+    if summary_df.empty:
+        lines.extend([
+            "    No data \\\\",
+            "    \\bottomrule",
+            "  \\end{tabular}",
+            "\\end{table}",
+        ])
+        return lines
 
-    for ont in ontologies:
-        match = summary_df[summary_df["ontology"] == ont]
+    ontologies = sorted([o for o in summary_df["ontology"].unique() if o != "overall"])
+    if "overall" in summary_df["ontology"].unique():
+        ontologies.append("overall")
+
+    for ontology in ontologies:
+        match = summary_df[summary_df["ontology"] == ontology]
         if match.empty:
             continue
         r = match.iloc[0]
-        tex_lines.append(
-            f"    {latex_escape(ont)} & {latex_escape(outcome_cell(int(r['success_count']), float(r['success_rate'])))} & "
-            f"{latex_escape(outcome_cell(int(r['time_limit_exceeded_count']), float(r['time_limit_exceeded_rate'])))} & "
-            f"{latex_escape(outcome_cell(int(r['memory_limit_exceeded_count']), float(r['memory_limit_exceeded_rate'])))} " + "\\\\"
-        )
+        lines.append(
+            "    "
+            + latex_escape(ontology)
+            + " & "
+            + latex_escape(outcome_cell(int(r["success_count"]), float(r["success_rate"])))
+            + " & "
+            + latex_escape(outcome_cell(int(r["time_limit_exceeded_count"]), float(r["time_limit_exceeded_rate"])))
+            + " & "
+            + latex_escape(outcome_cell(int(r["memory_limit_exceeded_count"]), float(r["memory_limit_exceeded_rate"])))
+            + " \\\\")
 
-    tex_lines.extend([
+    lines.extend([
         "    \\bottomrule",
         "  \\end{tabular}",
         "\\end{table}",
     ])
-    return tex_lines
+    return lines
 
 
-def main() -> None:
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-    iic_paths = discover_csvs("iic")
-    runtime_paths = discover_csvs("runtime")
+    iic_paths = discover_csvs(data_dir, "iic")
+    runtime_paths = discover_csvs(data_dir, "runtime")
     if not iic_paths:
-        raise SystemExit(f"No IIC CSVs found in {DATA_DIR}")
+        raise SystemExit(f"No IIC CSVs found in {data_dir}")
     if not runtime_paths:
-        raise SystemExit(f"No runtime CSVs found in {DATA_DIR}")
+        raise SystemExit(f"No runtime CSVs found in {data_dir}")
 
     iic_df = load_iic_rows(iic_paths)
-    runtime_df = load_runtime_frames(runtime_paths)
+    runtime_df = load_runtime_rows(runtime_paths)
 
     iic_summary_df = build_iic_summary(iic_df)
     runtime_summary_df = build_runtime_summary(runtime_df)
     outcome_summary_df = build_outcome_summary(runtime_df)
 
-    iic_summary_df.to_csv(IIC_SUMMARY_CSV, index=False)
-    runtime_summary_df.to_csv(RUNTIME_SUMMARY_CSV, index=False)
-    outcome_summary_df.to_csv(OUTCOME_SUMMARY_CSV, index=False)
+    iic_summary_csv = out_dir / "iic_summary.csv"
+    runtime_summary_csv = out_dir / "runtime_summary.csv"
+    outcome_summary_csv = out_dir / "outcome_summary.csv"
+    report_md = out_dir / "combined_report.md"
+    report_tex = out_dir / "combined_report.tex"
+
+    iic_summary_df.to_csv(iic_summary_csv, index=False)
+    runtime_summary_df.to_csv(runtime_summary_csv, index=False)
+    outcome_summary_df.to_csv(outcome_summary_csv, index=False)
 
     md_lines = ["# Combined Experiment Summary", ""]
     md_lines.extend(build_iic_markdown(iic_summary_df))
+    md_lines.extend(["", "---", ""])
     md_lines.extend(build_runtime_markdown(runtime_summary_df))
+    md_lines.extend(["", "---", ""])
     md_lines.extend(build_outcome_markdown(outcome_summary_df))
-    REPORT_MD.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
+    report_md.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
     tex_lines = [
         "% Auto-generated combined summary",
@@ -535,14 +533,36 @@ def main() -> None:
     tex_lines.extend(build_runtime_latex(runtime_summary_df))
     tex_lines.extend(build_outcome_latex(outcome_summary_df))
     tex_lines.append("\\end{document}")
-    REPORT_TEX.write_text("\n".join(tex_lines) + "\n", encoding="utf-8")
+    report_tex.write_text("\n".join(tex_lines) + "\n", encoding="utf-8")
 
+    return {
+        "iic_summary_csv": iic_summary_csv,
+        "runtime_summary_csv": runtime_summary_csv,
+        "outcome_summary_csv": outcome_summary_csv,
+        "report_md": report_md,
+        "report_tex": report_tex,
+    }
+
+
+def main() -> None:
+    if len(sys.argv) >= 2:
+        data_dir = Path(sys.argv[1]).resolve()
+    else:
+        data_candidates = sorted(Path(__file__).parent.glob("data-*"))
+        if not data_candidates:
+            raise SystemExit("No data-* directory found. Pass a data directory explicitly.")
+        data_dir = data_candidates[-1]
+
+    if len(sys.argv) >= 3:
+        out_dir = Path(sys.argv[2]).resolve()
+    else:
+        stamp = data_dir.name.replace("data-", "")
+        out_dir = (Path(__file__).parent / f"results-{stamp}").resolve()
+
+    outputs = run_analysis(data_dir, out_dir)
     print("Wrote:")
-    print(f"  {IIC_SUMMARY_CSV}")
-    print(f"  {RUNTIME_SUMMARY_CSV}")
-    print(f"  {OUTCOME_SUMMARY_CSV}")
-    print(f"  {REPORT_MD}")
-    print(f"  {REPORT_TEX}")
+    for key, value in outputs.items():
+        print(f"  {key}={value}")
 
 
 if __name__ == "__main__":
