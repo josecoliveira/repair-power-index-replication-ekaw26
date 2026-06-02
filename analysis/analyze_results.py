@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Aggregate A/B trial outputs into CSV, Markdown, and LaTeX reports."""
+"""Aggregate trial outputs into CSV, Markdown, and LaTeX reports."""
 
 from __future__ import annotations
 
@@ -14,11 +14,25 @@ import pandas as pd
 from scipy import stats
 
 A_REPAIRS = ["A1", "A2", "A3"]
-B_REPAIRS = [f"B{i}" for i in range(1, 10)]
+B_REPAIRS = [f"B{i}" for i in range(2, 10)]
 REPAIR_IDS = A_REPAIRS + B_REPAIRS
 IIC_KEYS = [f"{b}_vs_{a}" for b in B_REPAIRS for a in A_REPAIRS]
 OUTCOME_ORDER = ["success", "time_limit_exceeded", "memory_limit_exceeded"]
 CSV_NAME_RE = re.compile(r"^(?P<kind>iic|runtime)-(?P<ontology>.+)\.csv$")
+
+REPAIR_LABELS = {
+    "A1": "Random removal",
+    "A2": "Not-in-largest-MCS removal",
+    "A3": "Default weakening (in-MUS + random)",
+    "B2": "in-MUS + Shapley",
+    "B3": "in-MUS + Banzhaf",
+    "B4": "Shapley + random",
+    "B5": "Shapley + Shapley",
+    "B6": "Shapley + Banzhaf",
+    "B7": "Banzhaf + random",
+    "B8": "Banzhaf + Shapley",
+    "B9": "Banzhaf + Banzhaf",
+}
 
 
 def discover_csvs(data_dir: Path, kind: str) -> list[Path]:
@@ -295,9 +309,10 @@ def build_per_repair_outcome_summary(runtime_df: pd.DataFrame) -> pd.DataFrame:
 
 def build_iic_markdown(summary_df: pd.DataFrame) -> list[str]:
     lines = [
-        "# IIC Summary (B repairs vs A repairs)",
+        "# IIC Summary",
         "",
-        "Each table reports mean IIC and 95% confidence interval for one B repair across A1/A2/A3 baselines.",
+        "Each table reports mean IIC and 95% confidence interval for one repair "
+        "across each baseline.",
         "",
     ]
     if summary_df.empty:
@@ -308,10 +323,12 @@ def build_iic_markdown(summary_df: pd.DataFrame) -> list[str]:
     if "overall" in summary_df["ontology"].unique():
         ontologies.append("overall")
 
+    a_labels = [REPAIR_LABELS[a] for a in A_REPAIRS]
     for b_repair in B_REPAIRS:
-        lines.append(f"## {b_repair}")
-        lines.append("| ontology | A1 | A2 | A3 |")
-        lines.append("| --- | --- | --- | --- |")
+        b_label = REPAIR_LABELS.get(b_repair, b_repair)
+        lines.append(f"## {b_label}")
+        lines.append("| ontology | " + " | ".join(a_labels) + " |")
+        lines.append("| --- | " + " | ".join(["---"] * len(a_labels)) + " |")
         for ontology in ontologies:
             row_cells = [ontology]
             for a_repair in A_REPAIRS:
@@ -331,7 +348,7 @@ def build_iic_markdown(summary_df: pd.DataFrame) -> list[str]:
 
 
 def build_iic_overview_markdown(summary_df: pd.DataFrame) -> list[str]:
-    """Single collapsed table: B1–B9 rows × A1/A2/A3 columns, overall mean IIC + 95% CI."""
+    """Single collapsed table: each repair's overall mean IIC + 95% CI."""
     lines = [
         "## IIC Overview (overall)",
         "",
@@ -347,10 +364,12 @@ def build_iic_overview_markdown(summary_df: pd.DataFrame) -> list[str]:
         lines.append("No overall IIC data found.")
         return lines
 
-    lines.append("| B Repair | A1 | A2 | A3 |")
-    lines.append("| --- | --- | --- | --- |")
+    a_labels = [REPAIR_LABELS[a] for a in A_REPAIRS]
+    lines.append("| Repair | " + " | ".join(a_labels) + " |")
+    lines.append("| --- | " + " | ".join(["---"] * len(a_labels)) + " |")
     for b_repair in B_REPAIRS:
-        row_cells = [b_repair]
+        b_label = REPAIR_LABELS.get(b_repair, b_repair)
+        row_cells = [b_label]
         for a_repair in A_REPAIRS:
             match = overall[
                 (overall["b_repair"] == b_repair)
@@ -381,7 +400,7 @@ def build_runtime_markdown(summary_df: pd.DataFrame) -> list[str]:
     if "overall" in summary_df["ontology"].unique():
         ontologies.append("overall")
 
-    headers = ["ontology"] + REPAIR_IDS
+    headers = ["ontology"] + [REPAIR_LABELS.get(r, r) for r in REPAIR_IDS]
     lines.append("| " + " | ".join(headers) + " |")
     lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
     row_terminator = "\\\\"
@@ -402,7 +421,7 @@ def build_outcome_markdown(summary_df: pd.DataFrame) -> list[str]:
     lines = [
         "# Power Index Outcome Rates",
         "",
-        "Outcome rates at the trial level (all A and B repairs executed in sequence).",
+        "Outcome rates at the trial level (all repairs executed in sequence).",
         "",
     ]
     if summary_df.empty:
@@ -465,8 +484,9 @@ def build_per_repair_outcome_markdown(summary_df: pd.DataFrame) -> list[str]:
                 continue
             r = match.iloc[0]
             rate_str = percent(float(r["success_rate"])) if not math.isnan(float(r["success_rate"])) else "-"
+            label = REPAIR_LABELS.get(repair_id, repair_id)
             lines.append(
-                f"| {repair_id} | {int(r['succeeded'])} | {int(r['failed'])} "
+                f"| {label} | {int(r['succeeded'])} | {int(r['failed'])} "
                 f"| {int(r['not_reached'])} | {rate_str} |"
             )
         lines.append("")
@@ -482,16 +502,18 @@ def build_iic_latex(summary_df: pd.DataFrame) -> list[str]:
     if "overall" in summary_df["ontology"].unique():
         ontologies.append("overall")
 
+    a_labels_tex = [latex_escape(REPAIR_LABELS[a]) for a in A_REPAIRS]
     for b_repair in B_REPAIRS:
+        b_label = latex_escape(REPAIR_LABELS.get(b_repair, b_repair))
         lines.extend(
             [
                 "% Auto-generated IIC table",
                 "\\begin{table}[ht]",
                 "  \\centering",
-                f"  \\caption{{IIC results for {latex_escape(b_repair)} (mean and 95\\% CI)}}",
+                f"  \\caption{{IIC results for {b_label} (mean and 95\\% CI)}}",
                 "  \\begin{tabular}{lccc}",
                 "    \\toprule",
-                "    Ontology & A1 & A2 & A3 \\\\",
+                "    Ontology & " + " & ".join(a_labels_tex) + " \\\\",
                 "    \\midrule",
             ]
         )
@@ -522,7 +544,7 @@ def build_iic_latex(summary_df: pd.DataFrame) -> list[str]:
 
 
 def build_iic_overview_latex(summary_df: pd.DataFrame) -> list[str]:
-    """Single collapsed LaTeX table: B1–B9 rows × A1/A2/A3 columns, overall mean IIC + 95% CI."""
+    """Single collapsed LaTeX table: each repair's overall mean IIC + 95% CI."""
     lines: list[str] = []
     if summary_df.empty:
         return lines
@@ -531,6 +553,7 @@ def build_iic_overview_latex(summary_df: pd.DataFrame) -> list[str]:
     if overall.empty:
         return lines
 
+    a_labels_tex = [latex_escape(REPAIR_LABELS[a]) for a in A_REPAIRS]
     lines.extend(
         [
             "% Auto-generated IIC overview table",
@@ -540,11 +563,12 @@ def build_iic_overview_latex(summary_df: pd.DataFrame) -> list[str]:
             "  \\label{tab:iic-overview}",
             "  \\begin{tabular}{lccc}",
             "    \\toprule",
-            "    B Repair & A1 & A2 & A3 \\\\",
+            "    Repair & " + " & ".join(a_labels_tex) + " \\\\",
             "    \\midrule",
         ]
     )
     for b_repair in B_REPAIRS:
+        b_label = latex_escape(REPAIR_LABELS.get(b_repair, b_repair))
         cells: list[str] = []
         for a_repair in A_REPAIRS:
             match = overall[
@@ -557,7 +581,7 @@ def build_iic_overview_latex(summary_df: pd.DataFrame) -> list[str]:
                 r = match.iloc[0]
                 cells.append(iic_cell(float(r["mean"]), float(r["ci_low"]), float(r["ci_high"]), int(r["n"])))
         lines.append(
-            f"    {latex_escape(b_repair)} & {latex_escape(cells[0])} & {latex_escape(cells[1])} & {latex_escape(cells[2])} \\\\"
+            f"    {b_label} & {latex_escape(cells[0])} & {latex_escape(cells[1])} & {latex_escape(cells[2])} \\\\"
         )
     lines.extend(
         [
@@ -571,6 +595,8 @@ def build_iic_overview_latex(summary_df: pd.DataFrame) -> list[str]:
 
 
 def build_runtime_latex(summary_df: pd.DataFrame) -> list[str]:
+    runtime_labels = [REPAIR_LABELS.get(r, r) for r in REPAIR_IDS]
+    latex_runtime_labels = [latex_escape(l) for l in runtime_labels]
     lines: list[str] = [
         "% Auto-generated runtime table",
         "\\begin{table}[ht]",
@@ -578,7 +604,7 @@ def build_runtime_latex(summary_df: pd.DataFrame) -> list[str]:
         "  \\caption{Average runtime of successful trials (milliseconds)}",
         "  \\begin{tabular}{l" + "c" * len(REPAIR_IDS) + "}",
         "    \\toprule",
-        "    Ontology & " + " & ".join(REPAIR_IDS) + " \\\\",
+        "    Ontology & " + " & ".join(latex_runtime_labels) + " \\\\",
         "    \\midrule",
     ]
     if summary_df.empty:
@@ -697,8 +723,9 @@ def build_per_repair_outcome_latex(summary_df: pd.DataFrame) -> list[str]:
                 continue
             r = match.iloc[0]
             rate_str = percent(float(r["success_rate"])) if not math.isnan(float(r["success_rate"])) else "-"
+            label = latex_escape(REPAIR_LABELS.get(repair_id, repair_id))
             lines.append(
-                f"    {latex_escape(repair_id)} & {int(r['succeeded'])} & "
+                f"    {label} & {int(r['succeeded'])} & "
                 f"{int(r['failed'])} & {int(r['not_reached'])} & {latex_escape(rate_str)} \\\\"
             )
         lines.append("    \\midrule")
