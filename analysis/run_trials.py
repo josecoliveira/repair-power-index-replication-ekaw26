@@ -128,7 +128,7 @@ def run_trial(seed: int, ontology_path: Path) -> tuple[int, str, str]:
         "--make-inconsistent-timeout-secs", str(MAKE_INCONSISTENT_TIMEOUT_SECONDS),
     ]
     cmd = JAVA_BASE + args_list
-    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=False)
+    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding="utf-8", shell=False)
     return proc.returncode, proc.stdout, proc.stderr
 
 
