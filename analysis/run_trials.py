@@ -20,6 +20,7 @@ Artifacts are grouped by one run timestamp:
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 import subprocess
@@ -56,6 +57,127 @@ RUN_ID = datetime.now().strftime("%Y%m%d%H%M%S%f")
 RUN_DATA_DIR = ANALYSIS_DIR / f"data-{RUN_ID}"
 RUN_RESULTS_DIR = ANALYSIS_DIR / f"results-{RUN_ID}"
 # -------------------------------------------------
+
+
+def build_parser() -> argparse.ArgumentParser:
+    """Build the argument parser with all configurable options.
+
+    Defaults are read from the CONFIGURE HERE section above.
+    """
+    parser = argparse.ArgumentParser(
+        description=(
+            "Run round-robin single-trial Java experiments for all ontologies "
+            "and collect A/B results."
+        ),
+    )
+
+    # --- Trial control ---
+    parser.add_argument(
+        "-n", "--n-trials",
+        type=int, default=N_TRIALS_PER_ONTOLOGY,
+        help="Target number of successful trials per ontology (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--base-seed",
+        type=int, default=BASE_SEED,
+        help="Base random seed (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--step",
+        type=int, default=STEP,
+        help="Seed step between attempts (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--analysis-interval",
+        type=int, default=ANALYSIS_INTERVAL_ROUNDS,
+        help="Run analysis every K rounds; 0 to disable (default: %(default)s)",
+    )
+
+    # --- Timeouts ---
+    parser.add_argument(
+        "--removal-timeout",
+        type=int, default=REMOVAL_TIMEOUT_SECONDS,
+        help="Removal repair timeout in seconds (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--weakening-timeout",
+        type=int, default=WEAKENING_TIMEOUT_SECONDS,
+        help="Weakening repair timeout in seconds (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--power-index-timeout",
+        type=int, default=POWER_INDEX_TIMEOUT_SECONDS,
+        help="Power index computation timeout in seconds (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--make-inconsistent-timeout",
+        type=int, default=MAKE_INCONSISTENT_TIMEOUT_SECONDS,
+        help="Make-inconsistent timeout in seconds (default: %(default)s)",
+    )
+
+    # --- Path overrides ---
+    parser.add_argument(
+        "--inconsistent-dir",
+        type=Path, default=INCONSISTENT_DIR,
+        help="Directory containing inconsistent ontologies (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--lib-dir",
+        type=Path, default=LIB_DIR,
+        help="Directory containing the shaded jar (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--data-dir",
+        type=Path, default=None,
+        help=(
+            "Output data directory. "
+            "If --run-id is given but --data-dir is not, defaults to analysis/data-<run-id>. "
+            "Otherwise defaults to analysis/data-<auto-run-id>."
+        ),
+    )
+    parser.add_argument(
+        "--results-dir",
+        type=Path, default=None,
+        help=(
+            "Output results directory. "
+            "If --run-id is given but --results-dir is not, defaults to analysis/results-<run-id>. "
+            "Otherwise defaults to analysis/results-<auto-run-id>."
+        ),
+    )
+
+    # --- Resume / Run identity ---
+    parser.add_argument(
+        "--run-id",
+        type=str, default=None,
+        help=(
+            "Run identifier. Auto-generated as timestamp if not provided. "
+            "When resuming an existing experiment, point this to the existing run ID "
+            "and the script will continue from where it left off."
+        ),
+    )
+    parser.add_argument(
+        "--seed",
+        type=int, default=None,
+        help=(
+            "Explicit seed override. When used with --run-id, this sets the base seed "
+            "for the resumed run. When omitted during resume, the base seed from the "
+            "CONFIGURE HERE section is used."
+        ),
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the effective configuration and exit without running any experiments.",
+    )
+
+    # --- Positional (backward compatible) ---
+    parser.add_argument(
+        "n_trials_pos",
+        type=int, nargs="?",
+        help="[DEPRECATED] Positional argument for N_TRIALS_PER_ONTOLOGY",
+    )
+
+    return parser
 
 
 def timestamp() -> str:
@@ -182,19 +304,121 @@ def seed_for_attempt(ontology_index: int, attempted_for_ontology: int, ontology_
     return BASE_SEED + ontology_index + attempted_for_ontology * STEP * ontology_count
 
 
+def resume_state(
+    data_dir: Path,
+    ontology_names: list[str],
+) -> tuple[dict[str, int], dict[str, int], dict[str, list[tuple[int, int, str]]]]:
+    """Read existing runtime CSVs to recover per-ontology state when resuming.
+
+    Returns (successes, attempts, failures) dicts keyed by ontology name.
+    For ontologies with no existing data, counters start at zero.
+    """
+    successes: dict[str, int] = {}
+    attempts: dict[str, int] = {}
+    failures: dict[str, list[tuple[int, int, str]]] = {}
+
+    for name in ontology_names:
+        runtime_path = data_dir / f"runtime-{name}.csv"
+        ont_successes = 0
+        ont_attempts = 0
+        ont_failures: list[tuple[int, int, str]] = []
+
+        if runtime_path.exists():
+            with open(runtime_path, "r", encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    ont_attempts += 1
+                    status = (row.get("trial_status") or "").strip().lower()
+                    if status == "success":
+                        ont_successes += 1
+                    else:
+                        trial_num = int(row.get("trial_number", 0))
+                        seed_val = int(row.get("seed", 0))
+                        err_msg = (
+                            row.get("error_message")
+                            or row.get("error_type")
+                            or status
+                            or "unknown"
+                        )
+                        ont_failures.append((trial_num, seed_val, err_msg))
+
+        successes[name] = ont_successes
+        attempts[name] = ont_attempts
+        failures[name] = ont_failures
+
+    return successes, attempts, failures
+
+
 def main() -> None:
-    max_successes = N_TRIALS_PER_ONTOLOGY
-    if len(sys.argv) >= 2:
-        try:
-            max_successes = int(sys.argv[1])
-        except Exception:
-            raise SystemExit(f"Invalid N_TRIALS_PER_ONTOLOGY value: {sys.argv[1]}")
+    parser = build_parser()
+    args = parser.parse_args()
+
+    # Dry-run: print effective configuration and exit
+    if args.dry_run:
+        print("[DRY RUN] Effective configuration:")
+        print(f"  N_TRIALS_PER_ONTOLOGY    = {args.n_trials_pos if args.n_trials_pos is not None else args.n_trials}")
+        print(f"  BASE_SEED                = {args.seed if args.seed is not None else args.base_seed}")
+        print(f"  STEP                     = {args.step}")
+        print(f"  ANALYSIS_INTERVAL_ROUNDS = {args.analysis_interval}")
+        print(f"  REMOVAL_TIMEOUT_SECONDS  = {args.removal_timeout}")
+        print(f"  WEAKENING_TIMEOUT_SECONDS= {args.weakening_timeout}")
+        print(f"  POWER_INDEX_TIMEOUT_SECS = {args.power_index_timeout}")
+        print(f"  MAKE_INCONSISTENT_TO     = {args.make_inconsistent_timeout}")
+        print(f"  A_REPAIRS (from config)  = {A_REPAIRS}")
+        print(f"  B_REPAIRS (from config)  = {B_REPAIRS}")
+        print(f"  INCONSISTENT_DIR         = {args.inconsistent_dir}")
+        print(f"  LIB_DIR                  = {args.lib_dir}")
+        print(f"  RUN_ID                   = {args.run_id or '<auto>'}")
+        print(f"  SEED (override)          = {args.seed}")
+        print(f"  DATA_DIR                 = {args.data_dir or '<auto>'}")
+        print(f"  RESULTS_DIR              = {args.results_dir or '<auto>'}")
+        print()
+        print("No experiments run. Use --dry-run=false or omit to execute.")
+        return
+
+    # Backward-compatible positional argument
+    max_successes = args.n_trials
+    if args.n_trials_pos is not None:
+        max_successes = args.n_trials_pos
     if max_successes <= 0:
         raise SystemExit("N_TRIALS_PER_ONTOLOGY must be positive")
 
+    # Resolve run identity and output directories
+    run_id = args.run_id or datetime.now().strftime("%Y%m%d%H%M%S%f")
+    data_dir = args.data_dir or (ANALYSIS_DIR / f"data-{run_id}")
+    results_dir = args.results_dir or (ANALYSIS_DIR / f"results-{run_id}")
+
+    effective_base_seed = args.seed if args.seed is not None else args.base_seed
+
+    globals().update({
+        "N_TRIALS_PER_ONTOLOGY": max_successes,
+        "BASE_SEED": effective_base_seed,
+        "STEP": args.step,
+        "ANALYSIS_INTERVAL_ROUNDS": args.analysis_interval,
+        "REMOVAL_TIMEOUT_SECONDS": args.removal_timeout,
+        "WEAKENING_TIMEOUT_SECONDS": args.weakening_timeout,
+        "POWER_INDEX_TIMEOUT_SECONDS": args.power_index_timeout,
+        "MAKE_INCONSISTENT_TIMEOUT_SECONDS": args.make_inconsistent_timeout,
+        "LIB_DIR": args.lib_dir,
+        "INCONSISTENT_DIR": args.inconsistent_dir,
+        "RUN_ID": run_id,
+        "RUN_DATA_DIR": data_dir,
+        "RUN_RESULTS_DIR": results_dir,
+    })
+
+    # Recompute jar- and java-related globals since LIB_DIR may have changed
+    globals()["SHADED_JAR"] = find_shaded_jar()
+    globals()["JAVA_BASE"] = [
+        "java",
+        "-Xms1g",
+        "-Xmx8g",
+        "-Xss8m",
+        "-cp",
+        str(SHADED_JAR),
+        "www.ontologyutils.apps.SingleTrialExperiment",
+    ]
+
     ontologies = list_ontologies()
-    RUN_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    RUN_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
     iic_header = IIC_KEYS + ["run_id"]
     runtime_header = [
@@ -216,11 +440,10 @@ def main() -> None:
     runtime_paths: dict[str, Path] = {}
     log_paths: dict[str, Path] = {}
 
+    is_resume = args.run_id is not None
+
     for ontology in ontologies:
         name = ontology.stem
-        successes[name] = 0
-        attempts[name] = 0
-        failures[name] = []
         outcome_stats[name] = {
             "success": {"count": 0, "total": 0.0},
             "time_limit_exceeded": {"count": 0, "total": 0.0},
@@ -230,13 +453,35 @@ def main() -> None:
         iic_paths[name] = iic_path
         runtime_paths[name] = runtime_path
         log_paths[name] = log_path
-        ensure_csv_with_header(iic_path, iic_header)
-        ensure_csv_with_header(runtime_path, runtime_header)
-        with open(log_path, "w", encoding="utf-8") as log:
-            log.write(f"=== run_trials started at {timestamp()} run_id={RUN_ID} ===\n")
-            log.write(f"ontology_path={ontology}\n")
-            log.write(f"iic_csv={iic_path}\n")
-            log.write(f"runtime_csv={runtime_path}\n")
+
+    if is_resume:
+        successes, attempts, failures = resume_state(data_dir, [o.stem for o in ontologies])
+        data_dir.mkdir(parents=True, exist_ok=True)
+        results_dir.mkdir(parents=True, exist_ok=True)
+    else:
+        data_dir.mkdir(parents=True, exist_ok=True)
+        results_dir.mkdir(parents=True, exist_ok=True)
+
+    # Ensure CSV headers exist (for fresh runs) or are present (resume may have empty files)
+    for ontology in ontologies:
+        name = ontology.stem
+        ensure_csv_with_header(iic_paths[name], iic_header)
+        ensure_csv_with_header(runtime_paths[name], runtime_header)
+
+    # Write or append to log files
+    for ontology in ontologies:
+        name = ontology.stem
+        log_path = log_paths[name]
+        if is_resume and log_path.exists():
+            with open(log_path, "a", encoding="utf-8") as log:
+                log.write(f"\n=== run_trials RESUMED at {timestamp()} run_id={RUN_ID} ===\n")
+                log.write(f"resuming from successes={successes[name]} attempts={attempts[name]}\n")
+        else:
+            with open(log_path, "w" if not is_resume else "a", encoding="utf-8") as log:
+                log.write(f"=== run_trials started at {timestamp()} run_id={RUN_ID} ===\n")
+                log.write(f"ontology_path={ontology}\n")
+                log.write(f"iic_csv={iic_paths[name]}\n")
+                log.write(f"runtime_csv={runtime_paths[name]}\n")
 
     wall_clock_start = time.perf_counter()
     round_number = 0
