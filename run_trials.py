@@ -49,6 +49,8 @@ B_REPAIRS = [f"B{i}" for i in range(1, 10)]
 IIC_KEYS = [f"{b}_vs_{a}" for b in B_REPAIRS for a in A_REPAIRS]
 RUNTIME_KEYS = A_REPAIRS + B_REPAIRS
 
+DEFAULT_JAVA_MEM = "-Xms1g -Xmx8g -Xss8m"
+
 REPO_ROOT = Path(__file__).resolve().parent
 LIB_DIR = REPO_ROOT / "lib"
 INCONSISTENT_DIR = REPO_ROOT / "ontologies" / "inconsistent"
@@ -144,6 +146,14 @@ def build_parser() -> argparse.ArgumentParser:
             "Otherwise defaults to analysis/results-<auto-run-id>."
         ),
     )
+    parser.add_argument(
+        "--java-mem",
+        type=str, default=DEFAULT_JAVA_MEM,
+        help=(
+            "JVM memory and stack options passed directly to java "
+            "(default: '%(default)s')."
+        ),
+    )
 
     # --- Resume / Run identity ---
     parser.add_argument(
@@ -194,9 +204,7 @@ def find_shaded_jar() -> Path:
 SHADED_JAR = find_shaded_jar()
 JAVA_BASE = [
     "java",
-    "-Xms1g",
-    "-Xmx8g",
-    "-Xss8m",
+    *DEFAULT_JAVA_MEM.split(),
     "-cp",
     str(SHADED_JAR),
     "www.ontologyutils.apps.SingleTrialExperiment",
@@ -364,6 +372,7 @@ def main() -> None:
         print(f"  WEAKENING_TIMEOUT_SECONDS= {args.weakening_timeout}")
         print(f"  POWER_INDEX_TIMEOUT_SECS = {args.power_index_timeout}")
         print(f"  MAKE_INCONSISTENT_TO     = {args.make_inconsistent_timeout}")
+        print(f"  JAVA_MEM                 = {args.java_mem}")
         print(f"  A_REPAIRS (from config)  = {A_REPAIRS}")
         print(f"  B_REPAIRS (from config)  = {B_REPAIRS}")
         print(f"  INCONSISTENT_DIR         = {args.inconsistent_dir}")
@@ -404,15 +413,14 @@ def main() -> None:
         "RUN_ID": run_id,
         "RUN_DATA_DIR": data_dir,
         "RUN_RESULTS_DIR": results_dir,
+        "DEFAULT_JAVA_MEM": args.java_mem,
     })
 
-    # Recompute jar- and java-related globals since LIB_DIR may have changed
+    # Recompute jar- and java-related globals since LIB_DIR or JAVA_MEM may have changed
     globals()["SHADED_JAR"] = find_shaded_jar()
     globals()["JAVA_BASE"] = [
         "java",
-        "-Xms1g",
-        "-Xmx8g",
-        "-Xss8m",
+        *args.java_mem.split(),
         "-cp",
         str(SHADED_JAR),
         "www.ontologyutils.apps.SingleTrialExperiment",
