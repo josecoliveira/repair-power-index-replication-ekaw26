@@ -14,24 +14,22 @@ directory are processed.
 from __future__ import annotations
 
 import argparse
+from datetime import datetime
 import subprocess
 import sys
 import time
 from pathlib import Path
 
 # ── Paths ──
-# Script lives at: ontologyutils/repair-power-index-replication-ekaw26/analysis/preprocess_ontologies.py
-# The repo root is ontologyutils/ (three levels up from the script).
+# Script lives at: repair-power-index-replication-ekaw26/preprocess_ontologies.py
+# The repo root is the same directory.
 SCRIPT_DIR = Path(__file__).resolve().parent
-ANALYSIS_DIR = SCRIPT_DIR  # repair-power-index-replication-ekaw26/analysis/
-REPLICATION_DIR = ANALYSIS_DIR.parent  # repair-power-index-replication-ekaw26/
-REPO_ROOT = REPLICATION_DIR.parent  # ontologyutils/
+REPLICATION_DIR = SCRIPT_DIR
 
-LIB_DIR = REPO_ROOT / "lib"
-EKAW26_BASE = REPO_ROOT / "src" / "test" / "resources" / "ekaw26"
-ORIGINAL_DIR = EKAW26_BASE / "original"
-CLEANUP_DIR = EKAW26_BASE / "cleanup"
-INCONSISTENT_DIR = EKAW26_BASE / "inconsistent"
+LIB_DIR = REPLICATION_DIR / "lib"
+ORIGINAL_DIR = REPLICATION_DIR / "ontologies" / "original"
+CLEANUP_DIR = REPLICATION_DIR / "ontologies" / "cleanup"
+INCONSISTENT_DIR = REPLICATION_DIR / "ontologies" / "inconsistent"
 
 DEFAULT_JAVA_MEM = "-Xms1g -Xmx8g -Xss8m"
 
@@ -51,8 +49,9 @@ def find_shaded_jar() -> Path:
 
 
 def log(msg: str, verbose: bool = False) -> None:
-    """Print a message to stderr."""
-    print(msg, file=sys.stderr, flush=True)
+    """Print a timestamped message to stderr."""
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{ts}] {msg}", file=sys.stderr, flush=True)
 
 
 def run_java(
@@ -62,7 +61,10 @@ def run_java(
     verbose: bool,
     description: str,
 ) -> tuple[bool, str]:
-    """Run a Java main class via the shaded JAR and return (success, stderr_output)."""
+    """Run a Java main class via the shaded JAR and return (success, stderr_output).
+
+    Java output (stderr/stdout) is printed in real-time during execution.
+    """
     jar = find_shaded_jar()
     cmd = (
         ["java"]
@@ -74,30 +76,49 @@ def run_java(
         log(f"  [cmd] {' '.join(cmd)}")
 
     start = time.time()
-    result = subprocess.run(
+
+    # Use Popen with line-buffered text streams for real‑time output
+    process = subprocess.Popen(
         cmd,
-        capture_output=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
         text=True,
+        bufsize=1,          # line‑buffered
     )
+
+    stderr_lines: list[str] = []
+    stdout_lines: list[str] = []
+
+    # Read stderr line by line as it arrives
+    with process.stderr:
+        for line in iter(process.stderr.readline, ""):
+            line = line.rstrip("\n")
+            if line:
+                log(f"  [java] {line}")
+                stderr_lines.append(line)
+
+    # Read any remaining stdout (usually empty)
+    with process.stdout:
+        for line in iter(process.stdout.readline, ""):
+            line = line.rstrip("\n")
+            if line:
+                if verbose:
+                    log(f"  [java:stdout] {line}")
+                stdout_lines.append(line)
+
+    process.wait()
     elapsed = time.time() - start
+    full_stderr = "\n".join(stderr_lines)
+    full_stdout = "\n".join(stdout_lines)
 
-    # The Java apps print progress/debug to stderr; stdout is usually empty.
-    stderr_out = result.stderr.strip()
-    if verbose and stderr_out:
-        for line in stderr_out.splitlines():
-            log(f"    {line}")
-
-    if result.returncode != 0:
-        log(f"  [ERROR] {description} failed (exit {result.returncode}, {elapsed:.1f}s)")
-        if result.stderr:
-            log(f"    stderr: {result.stderr.strip()}")
-        if result.stdout:
-            log(f"    stdout: {result.stdout.strip()}")
-        return False, stderr_out
+    if process.returncode != 0:
+        if full_stdout:
+            log(f"  [java:stdout] {full_stdout}")
+        return False, full_stderr
 
     if verbose:
         log(f"  [OK] {description} completed in {elapsed:.1f}s")
-    return True, stderr_out
+    return True, full_stderr
 
 
 def list_original_ontologies() -> list[str]:
@@ -234,8 +255,8 @@ def main() -> None:
             skipped_inconsistent += 1
         else:
             makeinc_flags = [
-                "--normalize", "--basic-cache", "--strict-sroiq",
-                "--strict-simple-roles", "--simple-ria-weakening", "--strict-owl2",
+                "--normalize", "--basic-cache", "--strict-sroiq", "--strict-simple-roles",
+                "--simple-ria-weakening", "--strict-owl2", "--verbose"
             ]
             if args.dry_run:
                 log(f"  [DRY-RUN] Would run: MakeInconsistent {' '.join(makeinc_flags)} -o {inconsistent_file} {cleanup_file}")

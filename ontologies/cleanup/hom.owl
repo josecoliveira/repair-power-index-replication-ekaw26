@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000000 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000001 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000000"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000002"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000002 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000000"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000003 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000000"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000004 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000002"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000005 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000002"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000006 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000001"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000007 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000001"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000008 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000001"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000009 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000002"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000010 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000006"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000011 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000017"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000012 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000013 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000010"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000014 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000006"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000015 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000006"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000016 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000006"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000062"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000017 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000018 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000019 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000020 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000019"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000022 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000023 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000024"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000024 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000025 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000034"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000026 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000034"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000027 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000066"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000028 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000008"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000029 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000028"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000030"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000030 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000028"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000031 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000029"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000032 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000029"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000033 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000034 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000037"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000036 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000037 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000042 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000043"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000043 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000044 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000005"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000045 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000046 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000047"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000047 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000048 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000036"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000049 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000050 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000051 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000029"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000052 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000030"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000053 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000018"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000054 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000062"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000055 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000057 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000058"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000058 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000003"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000060 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000061 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000018"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000062 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000065"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000063 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000065 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000000"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000066 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000008"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000068 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000018"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000069 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000011"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000071 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000006"/>
+        <disjointWith rdf:resource="http://purl.obolibrary.org/obo/HOM_0000072"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000072 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000008"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000073 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000053"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000074 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000066"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOM_0000075 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/HOM_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOM_0000007"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9.2018-12-12T06:37:32Z) https://github.com/owlcs/owlapi/ -->
+
+

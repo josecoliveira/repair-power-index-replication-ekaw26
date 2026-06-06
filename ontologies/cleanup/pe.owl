@@ -1,0 +1,930 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0000956 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0000956">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0003280 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0003280">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0003281 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0003281">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0003440 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0003440">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0004057 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0004057">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0085826"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0012963 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0012963">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0013030 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0013030">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0014563 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0014563">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0042397"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0016018 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0016018">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0019134 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0019134">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003440"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0019139 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0019139">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019134"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0021925 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0021925">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0027415 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0027415">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0028128 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0028128">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0028351 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0028351">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0014563"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0042397"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0031406 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0031406">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0031444 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0031444">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0032143 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0032143">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0032144"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0032144 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0032144">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0038418 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0038418">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0032144"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0040044 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0040044">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0042071 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0042071">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0032144"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0042397 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0042397">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0042402 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0042402">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0043031 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0043031">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0354604"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0080306 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0080306">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0085826 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0085826">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0086140 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0086140">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0117899 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0117899">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0031406"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0141449 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0141449">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0032144"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0150457 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0150457">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0162575 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0162575">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0162578 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0162578">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0184633 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0184633">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0190587 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0190587">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0162575"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0199470 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0199470">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0206232 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0206232">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019139"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0206460 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0206460">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019139"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0206461 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0206461">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019139"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0207856 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0207856">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0216278 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0216278">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019139"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0246904 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0246904">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0042402"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0254215 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0254215">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019139"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0256103 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0256103">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0032143"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0297269 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0297269">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019139"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0354565 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0354565">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0354566 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0354566">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019134"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0354604 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0354604">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0427612 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0427612">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0445115 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0445115">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0520997 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0520997">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0522792 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0522792">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0522794 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0522794">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0525032 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0525032">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0591649 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0591649">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0216278"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0600015 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0600015">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0642228 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0642228">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0728963 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0728963">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0206460"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0750159 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0750159">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0753753 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0753753">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0872913 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0872913">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0032143"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0917726 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0917726">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0019139"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0206461"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C0995127 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C0995127">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1096021 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1096021">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1096489 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1096489">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0150457"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1098510 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1098510">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C1272716"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1099665 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1099665">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C1098510"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1272716 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1272716">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1289919 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1289919">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1522670 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1522670">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0016018"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1739768 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1739768">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1831808 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1831808">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1959997 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1959997">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C1998116 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C1998116">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C2267054 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C2267054">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C2348066 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C2348066">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C0003280"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C2975435 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C2975435">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C3159309 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C3159309">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/C1739768"/>
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C3530466 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C3530466">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/C3847833 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/C3847833">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000268 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000268">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000269 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000269">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000270 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000270">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000271 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000271">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000272 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000272">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000273 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000273">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000275 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000275">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000276 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000276">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000277 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000277">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000278 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000278">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000280 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000280">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000339 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000339">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000340 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000340">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000341 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000341">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000342 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000342">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/T0000343 -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/T0000343">
+        <rdfs:subClassOf rdf:resource="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+    </Class>
+    
+
+
+    <!-- http://bmi.utah.edu/ontologies/peontology/Treatment -->
+
+
+    <Class rdf:about="http://bmi.utah.edu/ontologies/peontology/Treatment"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9.2018-12-12T06:37:32Z) https://github.com/owlcs/owlapi/ -->
+
+

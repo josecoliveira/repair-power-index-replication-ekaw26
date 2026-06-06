@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/GeographicalRegion.owl#" 
+  xml:base="http://www.owl-ontologies.com/GeographicalRegion.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Antarctic_Regions">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Geographical_Regions"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The continent lying around the South Pole and the southern waters of the Atlantic, Pacific, and Indian Oceans. It includes the Falkland Islands Dependencies. (From Webster's New Geographical Dictionary, 1988, p55)</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.158]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Other_regions">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ancient_Lands">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Historical_Geographic_Locations"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.035]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Africa_Southern">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Africa"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.058.290.175]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Caribbean_Region">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.107.084]</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Americas"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Africa">
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.058]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#Historical_Geographic_Locations">
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Middle_East">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.500]</rdfs:comment>
+    <rdfs:comment xml:lang="en">The countries of southwest Asia and northeastern Africa usually considered as extending from Libya on the west to Afghanistan on the east. (From Webster's New Geographical Dictionary, 1988)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+  </owl:Class>
+  <owl:Class rdf:ID="South_America">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.107.757]</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Americas"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Europe">
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.542]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Commonwealth_of_Independent_States">
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.200]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="East_Germany">
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Atlantic_Islands">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.295]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+  </owl:Class>
+  <owl:Class rdf:ID="New_Guinea">
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.650]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Yugoslavia">
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.980]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Asia_Central">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Asia"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.252.100]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Far_East">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Asia"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.252.474]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Pacific_Islands">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.782]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Oceania">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.678]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Africa_Northern">
+    <rdfs:subClassOf rdf:resource="#Africa"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.058.266]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Africa_Central">
+    <rdfs:subClassOf rdf:resource="#Africa"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[[Z01.058.290.100]]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="European_Union">
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.300]</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The collective designation of three organizations with common membership: the European Economic Community (Common Market), the European Coal and Steel Community, and the European Atomic Energy Community (Euratom). It was known as the European Community until 1994. It is primarily an economic union with the principal objectives of free movement of goods, capital, and labor. Professional services, social, medical and paramedical, are subsumed under labor. (The World Almanac and Book of Facts 1997, p842)</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Africa_Eastern">
+    <rdfs:subClassOf rdf:resource="#Africa"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.058.290.120]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="North_America">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Americas"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.107.567]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#Americas">
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.107]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Asia_Western">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.252.245]</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Asia"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Africa_Western">
+    <rdfs:subClassOf rdf:resource="#Africa"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.058.290.190]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#Asia">
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.252]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="USSR">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.950]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Asia_Southeastern">
+    <rdfs:subClassOf rdf:resource="#Asia"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.252.145]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Australia">
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.338]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Latin_America">
+    <rdfs:subClassOf rdf:resource="#Americas"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.107.424]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Indian_Ocean_Islands">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.600]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+  </owl:Class>
+  <owl:Class rdf:ID="West_Germany">
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Arctic_Regions">
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Arctic Ocean and the lands in it and adjacent to it. It includes Point Barrow, Alaska, most of the Franklin District in Canada, two thirds of Greenland, Svalbard, Franz Josef Land, Lapland, Novaya Zemlya, and Northern Siberia. (Webster's New Geographical Dictionary, 1988, p66)</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.208]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Oceans_and_Seas">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.756]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Geographical_Regions"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Central_America">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.107.169]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Americas"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Czechoslovakia">
+    <rdfs:subClassOf rdf:resource="#Historical_Geographic_Locations"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MeSH[Z01.586.250]</rdfs:comment>
+  </owl:Class>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

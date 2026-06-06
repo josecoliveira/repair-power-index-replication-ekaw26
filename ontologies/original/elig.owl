@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1348158066194 "http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontology1348158066194="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016019789133441 -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1348158066194;OWLObjectProperty_00000016019789133441">
+        <rdfs:label xml:lang="en">hasType</rdfs:label>
+        <rdfs:domain rdf:resource="&Ontology1348158066194;OWLClass_00000012646351044205"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016265531237795 -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1348158066194;OWLObjectProperty_00000016265531237795">
+        <rdfs:label xml:lang="en">hasTherapy</rdfs:label>
+        <rdfs:domain rdf:resource="&Ontology1348158066194;OWLClass_00000012615273587629"/>
+        <rdfs:range rdf:resource="&Ontology1348158066194;OWLClass_00000012646351044205"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLObjectProperty_00000016426490066310 -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1348158066194;OWLObjectProperty_00000016426490066310">
+        <rdfs:label xml:lang="en">hasDiagnostics</rdfs:label>
+        <rdfs:domain rdf:resource="&Ontology1348158066194;OWLClass_00000012615273587629"/>
+        <rdfs:range rdf:resource="&Ontology1348158066194;OWLClass_00000012672209560157"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;DiseaseCharacteristic">
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012585538592381"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012585538592381">
+        <rdfs:label xml:lang="en">EligibilityFeature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012615273587629">
+        <rdfs:label xml:lang="en">Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;DiseaseCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012635419619309 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012635419619309">
+        <rdfs:label xml:lang="en">Medication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016677444915815"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012646351044205 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012646351044205">
+        <rdfs:label xml:lang="en">Therapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016677444915815"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012653274523132 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012653274523132">
+        <rdfs:label xml:lang="en">LaboratoryVariable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;DiseaseCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016471779736015"/>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016677444915815"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012672209560157 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012672209560157">
+        <rdfs:label xml:lang="en">DiagnosticTest</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016471779736015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012680746500680 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012680746500680">
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;DiseaseCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012688218520629 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012688218520629">
+        <rdfs:label xml:lang="en">Surgery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012735735439791"/>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016677444915815"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012704859288544 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012704859288544">
+        <rdfs:label xml:lang="en">StagingInformation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016471779736015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012719974275465 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012719974275465">
+        <rdfs:label xml:lang="en">Biopsy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016471779736015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012735735439791 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012735735439791">
+        <rdfs:label xml:lang="en">Procedure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;DiseaseCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016471779736015"/>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000016677444915815"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012744023866919 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012744023866919">
+        <rdfs:label xml:lang="en">Age</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;PatientCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012751321181768 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012751321181768">
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;PatientCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012757270309800 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012757270309800">
+        <rdfs:label xml:lang="en">MenopausalStatus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;PatientCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012769242641062 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012769242641062">
+        <rdfs:label xml:lang="en">LifeExpectancy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;PatientCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012779214634901 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012779214634901">
+        <rdfs:label xml:lang="en">AcceptsHealthyVolunteer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;PatientCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012794343328094 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012794343328094">
+        <rdfs:label xml:lang="en">OtherPatientCharacteristics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;PatientCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012805791665904 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012805791665904">
+        <rdfs:label xml:lang="en">Chemotherapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012646351044205"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012814578026312 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012814578026312">
+        <rdfs:label xml:lang="en">EndocrineTherapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012646351044205"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012826245584593 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012826245584593">
+        <rdfs:label xml:lang="en">Radiotherapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012646351044205"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012834024485975 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012834024485975">
+        <rdfs:label xml:lang="en">OtherTherapy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012646351044205"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012848399765320 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012848399765320">
+        <rdfs:label xml:lang="en">Receptor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012704859288544"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012860101728760 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012860101728760">
+        <rdfs:label xml:lang="en">Severity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012704859288544"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012866630259579 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012866630259579">
+        <rdfs:label xml:lang="en">TNMStage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012704859288544"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012875009033223 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000012875009033223">
+        <rdfs:label xml:lang="en">Other</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012704859288544"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016471779736015 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000016471779736015">
+        <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012615273587629"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000016677444915815 -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;OWLClass_00000016677444915815">
+        <rdfs:label xml:lang="en">Treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012615273587629"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#PatientCharacteristic -->
+
+    <owl:Class rdf:about="&Ontology1348158066194;PatientCharacteristic">
+        <rdfs:subClassOf rdf:resource="&Ontology1348158066194;OWLClass_00000012585538592381"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLNamedIndividual_00000012882936039923 -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1348158066194;OWLNamedIndividual_00000012882936039923">
+        <rdf:type rdf:resource="&Ontology1348158066194;OWLClass_00000012615273587629"/>
+        <rdfs:label xml:lang="en">BreastCancer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLNamedIndividual_00000016686111880926 -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1348158066194;OWLNamedIndividual_00000016686111880926">
+        <rdf:type rdf:resource="&Ontology1348158066194;OWLClass_00000012680746500680"/>
+        <rdfs:label xml:lang="en">CT_scan</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

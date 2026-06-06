@@ -6,11 +6,11 @@ Execution policy (Option B):
 - continue until each ontology reaches N successful trials
 
 Artifacts are grouped by one run timestamp:
-- analysis/data-<timestamp>/
+- data-<timestamp>/
     - iic-<ontology>.csv
     - runtime-<ontology>.csv
     - run_trials-<ontology>.log
-- analysis/results-<timestamp>/
+- results-<timestamp>/
     - iic_summary.csv
     - runtime_summary.csv
     - outcome_summary.csv
@@ -49,9 +49,9 @@ B_REPAIRS = [f"B{i}" for i in range(1, 10)]
 IIC_KEYS = [f"{b}_vs_{a}" for b in B_REPAIRS for a in A_REPAIRS]
 RUNTIME_KEYS = A_REPAIRS + B_REPAIRS
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parent
 LIB_DIR = REPO_ROOT / "lib"
-INCONSISTENT_DIR = REPO_ROOT / "inconsistent"
+INCONSISTENT_DIR = REPO_ROOT / "ontologies" / "inconsistent"
 ANALYSIS_DIR = Path(__file__).parent
 RUN_ID = datetime.now().strftime("%Y%m%d%H%M%S%f")
 RUN_DATA_DIR = ANALYSIS_DIR / f"data-{RUN_ID}"

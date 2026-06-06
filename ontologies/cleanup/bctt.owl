@@ -1,0 +1,1016 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00219 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00219">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00220 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00220">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00221 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00221">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00222 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00222">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00223 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00223">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00224 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00224">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00225 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00225">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00226 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00226">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00227 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00227">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00228 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00228">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00219"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00229 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00229">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00230 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00230">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00229"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00231 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00231">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00229"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00232 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00232">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00229"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00233 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00233">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00229"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00234 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00234">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00229"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00235 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00235">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00229"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00236 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00236">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00229"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00237 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00237">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00238 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00238">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00237"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00239 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00239">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00237"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00240 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00240">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00237"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00241 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00241">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00242 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00242">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00241"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00243 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00243">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00241"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00244 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00244">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00241"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00245 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00245">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00241"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00246 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00246">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00247 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00247">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00246"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00248 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00248">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00246"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00249 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00249">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00246"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00250 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00250">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00246"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00251 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00251">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00246"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00252 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00252">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00246"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00253 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00253">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00254 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00254">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00253"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00255 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00255">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00253"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00256 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00256">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00253"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00257 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00257">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00258 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00258">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00259 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00259">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00260 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00260">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00261 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00261">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00262 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00262">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00263 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00263">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00264 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00264">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00265 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00265">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00257"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00266 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00266">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00267 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00267">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00266"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00268 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00268">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00266"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00269 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00269">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00266"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00270 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00270">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00266"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00271 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00271">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00266"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00272 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00272">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00266"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00273 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00273">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00266"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00274 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00274">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00275 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00275">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00274"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00276 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00276">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00274"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00277 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00277">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00274"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00278 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00278">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00279 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00279">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00280 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00280">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00281 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00281">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00282 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00282">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00283 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00283">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00284 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00284">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00285 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00285">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00286 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00286">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00287 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00287">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00288 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00288">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00289 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00289">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00278"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00290 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00290">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00291 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00291">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00290"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00292 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00292">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00290"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00293 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00293">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00290"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00294 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00294">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00290"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00295 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00295">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00296 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00296">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00295"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00297 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00297">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00295"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00298 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00298">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00295"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00299 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00299">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00295"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00300 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00300">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00295"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00301 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00301">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00295"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00302 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00302">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00303 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00303">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00302"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00304 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00304">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00302"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00305 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00305">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00302"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00306 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00306">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00302"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00307 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00307">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00302"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00308 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00308">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00309 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00309">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00310 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00310">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00311 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00311">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00312 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00312">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00313 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00313">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00314 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00314">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00315 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00315">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00316 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00316">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00317 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00317">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00318 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00318">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00308"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00319 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00319">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00320 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00320">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00319"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00321 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00321">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00319"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00322 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00322">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00319"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00323 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00323">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00319"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00324 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00324">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00325 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00325">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00324"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00326 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00326">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00324"/>
+    </Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/BCTT#00327 -->
+
+
+    <Class rdf:about="http://purl.bioontology.org/ontology/BCTT#00327">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/BCTT#00324"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9.2018-12-12T06:37:32Z) https://github.com/owlcs/owlapi/ -->
+
+

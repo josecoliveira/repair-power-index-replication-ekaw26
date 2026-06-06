@@ -1,0 +1,1943 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TEMP#has_context -->
+
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#has_context">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/XEO_00001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/XEO_00002"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TEMP#has_datatype -->
+
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#has_datatype">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/XEO_00002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/XEO_00236"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TEMP#has_enum -->
+
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#has_enum"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TEMP#has_symbol -->
+
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#has_symbol">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00001 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00001">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00014"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00015"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00002 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00003 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00001"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00004 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00001"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00005 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00002"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00006 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00008"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00007 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00003"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00008"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00008 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00014 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00002"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00238"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00015 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00002"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_enum"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00171"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00016 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00003"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00017 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00003"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00018 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00003"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00019 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00003"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00020 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00016"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00139"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00021 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00016"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00141"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00022 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00017"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00149"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00023 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00018"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00024 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00018"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00025 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00018"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00026 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00018"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00027 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00026"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00028 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00026"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00029 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00026"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00030 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00019"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00031 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00019"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00032 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00019"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00033 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00135"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00034 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00135"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00035 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00031"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00152"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00036 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00031"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00152"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00037 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00032"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00135"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00038 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00032"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00135"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00039 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00032"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00135"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00040 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_enum"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00212"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00041 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_enum"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00232"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00042 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00043 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00044 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00045 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00046 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00047 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00048 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00049 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00042"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00050 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00042"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00051 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00049"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00052 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00049"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00053 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00049"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00054 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00049"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00055 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00049"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00056 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00049"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00057 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00049"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00058 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00051"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00059 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00051"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00060 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00052"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00061 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00052"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00062 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00052"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00063 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00052"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00064 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00053"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00065 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00053"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00066 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00054"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00067 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00054"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00068 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00054"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00069 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00054"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00070 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00054"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00071 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00055"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00072 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00055"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00073 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00056"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00074 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00056"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00075 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00057"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00076 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00057"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00077 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00078 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00079 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00080 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00081 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00082 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00083 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00084 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00085 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00086 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00087 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00050"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00088 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00077"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00089 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00077"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00090 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00078"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00091 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00078"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00092 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00079"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00093 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00079"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00094 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00080"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00095 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00080"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00096 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00081"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00097 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00081"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00098 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00081"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00099 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00082"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00100 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00082"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00101 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00083"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00102 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00083"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00103 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00084"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00104 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00084"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00105 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00085"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00106 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00086"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00107 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00086"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00108 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00087"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00109 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00087"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00110 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00043"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00111 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00044"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00133"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00112 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00045"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00152"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00113 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00045"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00153"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00114 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00046"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00156"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00115 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00046"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00156"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00116 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00046"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00152"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00117 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00046"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00118 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00046"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00159"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00119 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00046"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00159"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00120 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00047"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00121 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00047"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00127"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00122 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00048"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00168"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00123 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00048"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00139"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00124 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00048"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00153"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00125 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00048"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00168"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00126 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00048"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_context"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00141"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00127 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00133 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00135 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00137 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00019"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_enum"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00189"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00139 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00141 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00149 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00151 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00004"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_enum"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00197"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00152 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00153 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00156 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00159 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00168 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#has_datatype"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00171 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00237"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00189 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00238"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00197 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00238"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00212 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00238"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00232 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00240"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00236 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00236"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00237 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00236"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00238 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00236"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00239 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00236"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XEO_00240 -->
+
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XEO_00240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XEO_00236"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9.2018-12-12T06:37:32Z) https://github.com/owlcs/owlapi/ -->
+
+
