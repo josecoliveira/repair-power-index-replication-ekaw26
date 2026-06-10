@@ -23,6 +23,7 @@ from rich.live import Live
 from rich.progress import BarColumn, Progress, TextColumn, TimeElapsedColumn
 
 from analysis.ontologyutils_service import (
+    classify_ontology,
     run_cleanup_ontology,
     run_make_inconsistent,
 )
@@ -256,6 +257,31 @@ def render_display(state: SharedState) -> Group:
 # ── Pipeline ───────────────────────────────────────────────────────────
 
 
+def _classify_and_sort(names: list[str], java_mem: str) -> list[str]:
+    """Classify each ontology to obtain its axiom count, then sort
+    from smallest to largest (fewest axioms first).
+
+    Ontologies that fail to classify are placed at the end so they
+    do not block the pipeline.
+    """
+    log("Classifying ontologies to determine axiom counts for ordering ...")
+    counts: list[tuple[int | float, str]] = []
+    for name in names:
+        owl_path = ORIGINAL_DIR / f"{name}.owl"
+        if not owl_path.exists():
+            counts.append((float("inf"), name))
+            continue
+        result = classify_ontology(owl_path=owl_path, java_mem=java_mem)
+        if result is not None:
+            counts.append((result.axioms, name))
+        else:
+            counts.append((float("inf"), name))
+    counts.sort(key=lambda x: x[0])
+    sorted_names = [name for _, name in counts]
+    log(f"Processing order (by axioms): {', '.join(sorted_names)}")
+    return sorted_names
+
+
 def run_preprocessing(args: argparse.Namespace) -> None:
     """Run the pre-processing pipeline with the given parsed arguments."""
     # Resolve ontology names
@@ -266,6 +292,9 @@ def run_preprocessing(args: argparse.Namespace) -> None:
         if not names:
             log("[ERROR] No ontology names given and no .owl files found in original/.")
             sys.exit(1)
+
+    # Classify and sort by axiom count (smallest first)
+    names = _classify_and_sort(names, args.java_mem)
 
     total = len(names)
     n_workers = min(args.workers, total)
