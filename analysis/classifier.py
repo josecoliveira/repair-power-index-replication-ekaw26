@@ -1,13 +1,9 @@
-#!/usr/bin/env python3
 """Classify all ontologies across original/cleanup/inconsistent folders.
 
 Scans the three ontology folders dynamically, runs
 ``ClassifyOntology`` from the shaded JAR on each
 ontology file, and produces a single markdown table with axioms count,
 class (concept) count, and DL language per folder.
-
-Usage:
-    python classify_ontologies.py [--output TABLE.md]
 """
 
 from __future__ import annotations
@@ -20,9 +16,9 @@ import time
 from pathlib import Path
 
 # ── Paths ──
-SCRIPT_DIR = Path(__file__).resolve().parent
-LIB_DIR = SCRIPT_DIR / "lib"
-ONTOLOGIES_DIR = SCRIPT_DIR / "ontologies"
+PACKAGE_ROOT = Path(__file__).resolve().parent.parent
+LIB_DIR = PACKAGE_ROOT / "lib"
+ONTOLOGIES_DIR = PACKAGE_ROOT / "ontologies"
 
 FOLDER_NAMES = ["original", "cleanup", "inconsistent"]
 FOLDER_DISPLAY = ["Original", "Cleanup", "Inconsistent"]
@@ -194,61 +190,11 @@ def build_table(all_data: dict[str, dict[str, dict | None]]) -> str:
     return "\n".join(lines) + "\n"
 
 
-# ── CLI ──────────────────────────────────────────────────────────────────
+# ── Pipeline ─────────────────────────────────────────────────────────────
 
 
-def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description=(
-            "Classify all ontologies across original/cleanup/inconsistent "
-            "folders and produce a markdown table."
-        ),
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=(
-            "Examples:\n"
-            "  %(prog)s\n"
-            "  %(prog)s -o my_table.md\n"
-            "  %(prog)s --verbose --java-mem '-Xms2g -Xmx8g'\n"
-        ),
-    )
-    parser.add_argument(
-        "-o", "--output",
-        type=Path,
-        default=SCRIPT_DIR / "ontology_classification.md",
-        help="Output markdown file path (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--java-mem",
-        type=str,
-        default=DEFAULT_JAVA_MEM,
-        help=(
-            "JVM memory and stack options "
-            "(default: '%(default)s')"
-        ),
-    )
-    parser.add_argument(
-        "--timeout",
-        type=int,
-        default=DEFAULT_TIMEOUT,
-        help=(
-            "Timeout per ontology in seconds "
-            "(default: %(default)s)"
-        ),
-    )
-    parser.add_argument(
-        "-v", "--verbose",
-        action="store_true",
-        help="Print progress to stderr.",
-    )
-    return parser.parse_args(argv)
-
-
-# ── Main ─────────────────────────────────────────────────────────────────
-
-
-def main() -> None:
-    args = parse_args()
-
+def run_classification(args: argparse.Namespace) -> None:
+    """Run the classification pipeline with the given parsed arguments."""
     # Validate shaded JAR
     try:
         jar = find_shaded_jar()
@@ -305,7 +251,3 @@ def main() -> None:
         print(file=sys.stderr)
 
     print(f"Written: {args.output}", file=sys.stderr)
-
-
-if __name__ == "__main__":
-    main()

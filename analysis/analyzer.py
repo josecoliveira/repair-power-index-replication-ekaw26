@@ -802,28 +802,3 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
         "report_md": report_md,
         "report_tex": report_tex,
     }
-
-
-def main() -> None:
-    if len(sys.argv) >= 2:
-        data_dir = Path(sys.argv[1]).resolve()
-    else:
-        data_candidates = sorted(Path(__file__).parent.glob("data-*"))
-        if not data_candidates:
-            raise SystemExit("No data-* directory found. Pass a data directory explicitly.")
-        data_dir = data_candidates[-1]
-
-    if len(sys.argv) >= 3:
-        out_dir = Path(sys.argv[2]).resolve()
-    else:
-        stamp = data_dir.name.replace("data-", "")
-        out_dir = (Path(__file__).parent / f"results-{stamp}").resolve()
-
-    outputs = run_analysis(data_dir, out_dir)
-    print("Wrote:")
-    for key, value in outputs.items():
-        print(f"  {key}={value}")
-
-
-if __name__ == "__main__":
-    main()

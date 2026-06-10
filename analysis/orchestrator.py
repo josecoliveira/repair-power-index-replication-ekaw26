@@ -29,165 +29,22 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-import analyze_results
+from analysis.analyzer import run_analysis
 
-# ----------------- CONFIGURE HERE -----------------
-N_TRIALS_PER_ONTOLOGY = 100
-BASE_SEED = 13
-STEP = 100
-
-# run analysis every K rounds (set to 1 to run after every round)
-ANALYSIS_INTERVAL_ROUNDS = 1
-
-REMOVAL_TIMEOUT_SECONDS = 300
-WEAKENING_TIMEOUT_SECONDS = 300
-POWER_INDEX_TIMEOUT_SECONDS = 300
-MAKE_INCONSISTENT_TIMEOUT_SECONDS = 300
-
+# ── Experiment design constants (not user-configurable) ────────────────
 A_REPAIRS = ["A1", "A2", "A3"]
 B_REPAIRS = [f"B{i}" for i in range(1, 10)]
 IIC_KEYS = [f"{b}_vs_{a}" for b in B_REPAIRS for a in A_REPAIRS]
 RUNTIME_KEYS = A_REPAIRS + B_REPAIRS
 
-DEFAULT_JAVA_MEM = "-Xms1g -Xmx8g -Xss8m"
-
-REPO_ROOT = Path(__file__).resolve().parent
-LIB_DIR = REPO_ROOT / "lib"
-INCONSISTENT_DIR = REPO_ROOT / "ontologies" / "inconsistent"
-ANALYSIS_DIR = Path(__file__).parent
-RUN_ID = datetime.now().strftime("%Y%m%d%H%M%S%f")
-RUN_DATA_DIR = ANALYSIS_DIR / f"data-{RUN_ID}"
-RUN_RESULTS_DIR = ANALYSIS_DIR / f"results-{RUN_ID}"
-# -------------------------------------------------
+# ── Path constants (based on package layout, not user-configurable) ────
+PACKAGE_ROOT = Path(__file__).resolve().parent.parent
+LIB_DIR = PACKAGE_ROOT / "lib"
+INCONSISTENT_DIR = PACKAGE_ROOT / "ontologies" / "inconsistent"
+ANALYSIS_DIR = PACKAGE_ROOT / "data"
 
 
-def build_parser() -> argparse.ArgumentParser:
-    """Build the argument parser with all configurable options.
-
-    Defaults are read from the CONFIGURE HERE section above.
-    """
-    parser = argparse.ArgumentParser(
-        description=(
-            "Run round-robin single-trial Java experiments for all ontologies "
-            "and collect A/B results."
-        ),
-    )
-
-    # --- Trial control ---
-    parser.add_argument(
-        "-n", "--n-trials",
-        type=int, default=N_TRIALS_PER_ONTOLOGY,
-        help="Target number of successful trials per ontology (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--base-seed",
-        type=int, default=BASE_SEED,
-        help="Base random seed (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--step",
-        type=int, default=STEP,
-        help="Seed step between attempts (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--analysis-interval",
-        type=int, default=ANALYSIS_INTERVAL_ROUNDS,
-        help="Run analysis every K rounds; 0 to disable (default: %(default)s)",
-    )
-
-    # --- Timeouts ---
-    parser.add_argument(
-        "--removal-timeout",
-        type=int, default=REMOVAL_TIMEOUT_SECONDS,
-        help="Removal repair timeout in seconds (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--weakening-timeout",
-        type=int, default=WEAKENING_TIMEOUT_SECONDS,
-        help="Weakening repair timeout in seconds (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--power-index-timeout",
-        type=int, default=POWER_INDEX_TIMEOUT_SECONDS,
-        help="Power index computation timeout in seconds (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--make-inconsistent-timeout",
-        type=int, default=MAKE_INCONSISTENT_TIMEOUT_SECONDS,
-        help="Make-inconsistent timeout in seconds (default: %(default)s)",
-    )
-
-    # --- Path overrides ---
-    parser.add_argument(
-        "--inconsistent-dir",
-        type=Path, default=INCONSISTENT_DIR,
-        help="Directory containing inconsistent ontologies (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--lib-dir",
-        type=Path, default=LIB_DIR,
-        help="Directory containing the shaded jar (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--data-dir",
-        type=Path, default=None,
-        help=(
-            "Output data directory. "
-            "If --run-id is given but --data-dir is not, defaults to analysis/data-<run-id>. "
-            "Otherwise defaults to analysis/data-<auto-run-id>."
-        ),
-    )
-    parser.add_argument(
-        "--results-dir",
-        type=Path, default=None,
-        help=(
-            "Output results directory. "
-            "If --run-id is given but --results-dir is not, defaults to analysis/results-<run-id>. "
-            "Otherwise defaults to analysis/results-<auto-run-id>."
-        ),
-    )
-    parser.add_argument(
-        "--java-mem",
-        type=str, default=DEFAULT_JAVA_MEM,
-        help=(
-            "JVM memory and stack options passed directly to java "
-            "(default: '%(default)s')."
-        ),
-    )
-
-    # --- Resume / Run identity ---
-    parser.add_argument(
-        "--run-id",
-        type=str, default=None,
-        help=(
-            "Run identifier. Auto-generated as timestamp if not provided. "
-            "When resuming an existing experiment, point this to the existing run ID "
-            "and the script will continue from where it left off."
-        ),
-    )
-    parser.add_argument(
-        "--seed",
-        type=int, default=None,
-        help=(
-            "Explicit seed override. When used with --run-id, this sets the base seed "
-            "for the resumed run. When omitted during resume, the base seed from the "
-            "CONFIGURE HERE section is used."
-        ),
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Print the effective configuration and exit without running any experiments.",
-    )
-
-    # --- Positional (backward compatible) ---
-    parser.add_argument(
-        "n_trials_pos",
-        type=int, nargs="?",
-        help="[DEPRECATED] Positional argument for N_TRIALS_PER_ONTOLOGY",
-    )
-
-    return parser
+# ── Helpers ────────────────────────────────────────────────────────────
 
 
 def timestamp() -> str:
@@ -201,27 +58,17 @@ def find_shaded_jar() -> Path:
     return candidates[-1]
 
 
-SHADED_JAR = find_shaded_jar()
-JAVA_BASE = [
-    "java",
-    *DEFAULT_JAVA_MEM.split(),
-    "-cp",
-    str(SHADED_JAR),
-    "www.ontologyutils.apps.SingleTrialExperiment",
-]
-
-
-def list_ontologies() -> list[Path]:
-    ontologies = sorted(INCONSISTENT_DIR.glob("*.owl"))
+def list_ontologies(inconsistent_dir: Path) -> list[Path]:
+    ontologies = sorted(inconsistent_dir.glob("*.owl"))
     if not ontologies:
-        raise FileNotFoundError(f"No .owl files found in {INCONSISTENT_DIR}")
+        raise FileNotFoundError(f"No .owl files found in {inconsistent_dir}")
     return ontologies
 
 
-def make_paths_for_ontology(ontology_name: str) -> tuple[Path, Path, Path]:
-    iic_path = RUN_DATA_DIR / f"iic-{ontology_name}.csv"
-    runtime_path = RUN_DATA_DIR / f"runtime-{ontology_name}.csv"
-    log_path = RUN_DATA_DIR / f"run_trials-{ontology_name}.log"
+def make_paths_for_ontology(ontology_name: str, data_dir: Path) -> tuple[Path, Path, Path]:
+    iic_path = data_dir / f"iic-{ontology_name}.csv"
+    runtime_path = data_dir / f"runtime-{ontology_name}.csv"
+    log_path = data_dir / f"run_trials-{ontology_name}.log"
     return iic_path, runtime_path, log_path
 
 
@@ -247,18 +94,22 @@ def parse_trial_json(stdout: str) -> dict:
     return payload
 
 
-def run_trial(seed: int, ontology_path: Path) -> tuple[int, str, str]:
+def run_trial(seed: int, ontology_path: Path, java_base: list[str],
+              run_id: str,
+              removal_timeout: int, weakening_timeout: int,
+              power_index_timeout: int, make_inconsistent_timeout: int) -> tuple[int, str, str]:
     args_list = [
         "--ontology", str(ontology_path),
         "--seed", str(seed),
-        "--run-id", str(RUN_ID),
-        "--removal-timeout-secs", str(REMOVAL_TIMEOUT_SECONDS),
-        "--weakening-timeout-secs", str(WEAKENING_TIMEOUT_SECONDS),
-        "--power-index-timeout-secs", str(POWER_INDEX_TIMEOUT_SECONDS),
-        "--make-inconsistent-timeout-secs", str(MAKE_INCONSISTENT_TIMEOUT_SECONDS),
+        "--run-id", str(run_id),
+        "--removal-timeout-secs", str(removal_timeout),
+        "--weakening-timeout-secs", str(weakening_timeout),
+        "--power-index-timeout-secs", str(power_index_timeout),
+        "--make-inconsistent-timeout-secs", str(make_inconsistent_timeout),
     ]
-    cmd = JAVA_BASE + args_list
-    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding="utf-8", shell=False)
+    cmd = java_base + args_list
+    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                          text=True, encoding="utf-8", shell=False)
     return proc.returncode, proc.stdout, proc.stderr
 
 
@@ -268,11 +119,11 @@ def write_log_header(handle, round_number: int, attempt_number: int, seed: int) 
     )
 
 
-def append_iic_row(iic_path: Path, payload: dict) -> None:
+def append_iic_row(iic_path: Path, payload: dict, run_id: str) -> None:
     iic_values = payload.get("iic_values") if isinstance(payload, dict) else {}
     iic_values = iic_values if isinstance(iic_values, dict) else {}
     row = {key: iic_values.get(key) for key in IIC_KEYS}
-    row["run_id"] = payload.get("run_id", RUN_ID)
+    row["run_id"] = payload.get("run_id", run_id)
     with open(iic_path, "a", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=IIC_KEYS + ["run_id"])
         writer.writerow(row)
@@ -284,13 +135,14 @@ def runtime_row_from_payload(
     payload: dict | None,
     trial_elapsed_seconds: float,
     outcome: str,
+    run_id: str,
 ) -> dict:
     repair_runtimes = payload.get("repair_runtimes_ms") if isinstance(payload, dict) else {}
     repair_runtimes = repair_runtimes if isinstance(repair_runtimes, dict) else {}
     row = {
         "trial_number": trial_number,
         "seed": seed,
-        "run_id": RUN_ID,
+        "run_id": run_id,
         "trial_status": outcome,
         "error_type": (payload or {}).get("error_type", "") if isinstance(payload, dict) else "",
         "failure_stage": (payload or {}).get("failure_stage", "") if isinstance(payload, dict) else "",
@@ -308,8 +160,9 @@ def append_dict_row(path: Path, fieldnames: list[str], row: dict) -> None:
         writer.writerow(row)
 
 
-def seed_for_attempt(ontology_index: int, attempted_for_ontology: int, ontology_count: int) -> int:
-    return BASE_SEED + ontology_index + attempted_for_ontology * STEP * ontology_count
+def seed_for_attempt(ontology_index: int, attempted_for_ontology: int,
+                     ontology_count: int, base_seed: int, step: int) -> int:
+    return base_seed + ontology_index + attempted_for_ontology * step * ontology_count
 
 
 def resume_state(
@@ -357,10 +210,15 @@ def resume_state(
     return successes, attempts, failures
 
 
-def main() -> None:
-    parser = build_parser()
-    args = parser.parse_args()
+# ── Experiment entry point ─────────────────────────────────────────────
 
+
+def run_experiment(args: argparse.Namespace) -> None:
+    """Execute the experiment with the given parsed arguments.
+
+    All configuration defaults are supplied by the CLI layer
+    (cli/run_trials.py) via the argparse.Namespace.
+    """
     # Dry-run: print effective configuration and exit
     if args.dry_run:
         print("[DRY RUN] Effective configuration:")
@@ -398,35 +256,32 @@ def main() -> None:
     results_dir = args.results_dir or (ANALYSIS_DIR / f"results-{run_id}")
 
     effective_base_seed = args.seed if args.seed is not None else args.base_seed
+    effective_step = args.step
+    effective_analysis_interval = args.analysis_interval
+    removal_timeout = args.removal_timeout
+    weakening_timeout = args.weakening_timeout
+    power_index_timeout = args.power_index_timeout
+    make_inconsistent_timeout = args.make_inconsistent_timeout
+    java_mem = args.java_mem
+    lib_dir = args.lib_dir
+    inconsistent_dir = args.inconsistent_dir
 
-    globals().update({
-        "N_TRIALS_PER_ONTOLOGY": max_successes,
-        "BASE_SEED": effective_base_seed,
-        "STEP": args.step,
-        "ANALYSIS_INTERVAL_ROUNDS": args.analysis_interval,
-        "REMOVAL_TIMEOUT_SECONDS": args.removal_timeout,
-        "WEAKENING_TIMEOUT_SECONDS": args.weakening_timeout,
-        "POWER_INDEX_TIMEOUT_SECONDS": args.power_index_timeout,
-        "MAKE_INCONSISTENT_TIMEOUT_SECONDS": args.make_inconsistent_timeout,
-        "LIB_DIR": args.lib_dir,
-        "INCONSISTENT_DIR": args.inconsistent_dir,
-        "RUN_ID": run_id,
-        "RUN_DATA_DIR": data_dir,
-        "RUN_RESULTS_DIR": results_dir,
-        "DEFAULT_JAVA_MEM": args.java_mem,
-    })
+    # Build the Java command once
+    shaded_jar = find_shaded_jar()  # uses module-level LIB_DIR as fallback
+    # If lib_dir was overridden by the user, use that
+    resolved_jar = sorted(Path(lib_dir).glob("shaded-ontologyutils-*.jar"))
+    if resolved_jar:
+        shaded_jar = resolved_jar[-1]
 
-    # Recompute jar- and java-related globals since LIB_DIR or JAVA_MEM may have changed
-    globals()["SHADED_JAR"] = find_shaded_jar()
-    globals()["JAVA_BASE"] = [
+    java_base = [
         "java",
-        *args.java_mem.split(),
+        *java_mem.split(),
         "-cp",
-        str(SHADED_JAR),
+        str(shaded_jar),
         "www.ontologyutils.apps.SingleTrialExperiment",
     ]
 
-    ontologies = list_ontologies()
+    ontologies = list_ontologies(inconsistent_dir)
 
     iic_header = IIC_KEYS + ["run_id"]
     runtime_header = [
@@ -457,7 +312,7 @@ def main() -> None:
             "time_limit_exceeded": {"count": 0, "total": 0.0},
             "memory_limit_exceeded": {"count": 0, "total": 0.0},
         }
-        iic_path, runtime_path, log_path = make_paths_for_ontology(name)
+        iic_path, runtime_path, log_path = make_paths_for_ontology(name, data_dir)
         iic_paths[name] = iic_path
         runtime_paths[name] = runtime_path
         log_paths[name] = log_path
@@ -482,11 +337,11 @@ def main() -> None:
         log_path = log_paths[name]
         if is_resume and log_path.exists():
             with open(log_path, "a", encoding="utf-8") as log:
-                log.write(f"\n=== run_trials RESUMED at {timestamp()} run_id={RUN_ID} ===\n")
+                log.write(f"\n=== run_trials RESUMED at {timestamp()} run_id={run_id} ===\n")
                 log.write(f"resuming from successes={successes[name]} attempts={attempts[name]}\n")
         else:
             with open(log_path, "w" if not is_resume else "a", encoding="utf-8") as log:
-                log.write(f"=== run_trials started at {timestamp()} run_id={RUN_ID} ===\n")
+                log.write(f"=== run_trials started at {timestamp()} run_id={run_id} ===\n")
                 log.write(f"ontology_path={ontology}\n")
                 log.write(f"iic_csv={iic_paths[name]}\n")
                 log.write(f"runtime_csv={runtime_paths[name]}\n")
@@ -503,13 +358,18 @@ def main() -> None:
 
             attempts[name] += 1
             attempt_number = attempts[name]
-            seed = seed_for_attempt(ontology_index, attempt_number - 1, len(ontologies))
+            seed = seed_for_attempt(ontology_index, attempt_number - 1,
+                                    len(ontologies), effective_base_seed, effective_step)
             log_path = log_paths[name]
 
             with open(log_path, "a", encoding="utf-8") as log:
                 write_log_header(log, round_number, attempt_number, seed)
                 trial_start = time.perf_counter()
-                retcode, stdout, stderr = run_trial(seed, ontology)
+                retcode, stdout, stderr = run_trial(
+                    seed, ontology, java_base, run_id,
+                    removal_timeout, weakening_timeout,
+                    power_index_timeout, make_inconsistent_timeout,
+                )
                 trial_elapsed = time.perf_counter() - trial_start
 
                 payload = None
@@ -536,7 +396,7 @@ def main() -> None:
                         attempt_outcome = normalize_status(payload.get("trial_status"))
                         if attempt_outcome == "success":
                             try:
-                                append_iic_row(iic_paths[name], payload)
+                                append_iic_row(iic_paths[name], payload, run_id)
                                 successes[name] += 1
                                 log.write(
                                     f"SUCCESS: attempt={attempt_number} seed={seed} "
@@ -563,11 +423,8 @@ def main() -> None:
                     failures[name].append((attempt_number, seed, error_message))
 
                 runtime_row = runtime_row_from_payload(
-                    attempt_number,
-                    seed,
-                    payload,
-                    trial_elapsed,
-                    attempt_outcome,
+                    attempt_number, seed, payload, trial_elapsed,
+                    attempt_outcome, run_id,
                 )
                 append_dict_row(runtime_paths[name], runtime_header, runtime_row)
 
@@ -585,14 +442,15 @@ def main() -> None:
 
             time.sleep(0.05)
 
-        # End of this round: refresh aggregated analysis every K rounds so results are updated incrementally
+        # End of this round: refresh aggregated analysis every K rounds
         try:
-            if ANALYSIS_INTERVAL_ROUNDS and ANALYSIS_INTERVAL_ROUNDS > 0 and (round_number % ANALYSIS_INTERVAL_ROUNDS) == 0:
-                analysis_outputs = analyze_results.run_analysis(RUN_DATA_DIR, RUN_RESULTS_DIR)
+            if effective_analysis_interval and effective_analysis_interval > 0 \
+               and (round_number % effective_analysis_interval) == 0:
+                analysis_outputs = run_analysis(data_dir, results_dir)
                 print(f"Round {round_number} analysis updated:")
                 for key, value in analysis_outputs.items():
                     print(f"  {key}={value}")
-        except Exception as exc:  # keep the run going even if analysis fails temporarily
+        except Exception as exc:
             print(f"Warning: analysis failed at round {round_number}: {exc}", file=sys.stderr)
 
     wall_clock_seconds = time.perf_counter() - wall_clock_start
@@ -606,8 +464,8 @@ def main() -> None:
             )
             if failures[name]:
                 log.write("Failed attempts:\n")
-                for attempt_number, seed, msg in failures[name]:
-                    log.write(f"  attempt={attempt_number} seed={seed} msg={msg}\n")
+                for attempt_number, seed_val, msg in failures[name]:
+                    log.write(f"  attempt={attempt_number} seed={seed_val} msg={msg}\n")
             stats_map = outcome_stats[name]
             log.write("Timing summary:\n")
             for outcome in ("success", "time_limit_exceeded", "memory_limit_exceeded"):
@@ -619,20 +477,14 @@ def main() -> None:
             log.write(f"  success_rate={success_rate:.4f}\n")
             log.write(f"  wall_clock_seconds_total_run={wall_clock_seconds:.6f}\n")
 
-    analysis_outputs = analyze_results.run_analysis(RUN_DATA_DIR, RUN_RESULTS_DIR)
+    analysis_outputs = run_analysis(data_dir, results_dir)
 
     print("Done:")
-    print(f"  run_id={RUN_ID}")
+    print(f"  run_id={run_id}")
     print(f"  ontologies={len(ontologies)}")
     print(f"  target_successes_per_ontology={max_successes}")
-    print(f"  data_dir={RUN_DATA_DIR}")
-    print(f"  results_dir={RUN_RESULTS_DIR}")
+    print(f"  data_dir={data_dir}")
+    print(f"  results_dir={results_dir}")
     print("  analysis_outputs:")
     for key, value in analysis_outputs.items():
         print(f"    {key}={value}")
-
-
-if __name__ == "__main__":
-    main()
-
-

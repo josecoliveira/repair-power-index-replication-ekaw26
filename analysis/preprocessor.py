@@ -3,12 +3,6 @@
 Pipeline for each ontology name:
   1. CleanupOntology:  original/{name}.owl  ->  cleanup/{name}.owl
   2. MakeInconsistent:  cleanup/{name}.owl  ->  inconsistent/{name}.owl
-
-Usage:
-    python preprocess_ontologies.py [options] [ontology_name ...]
-
-If no ontology names are given, all .owl files found in the original/
-directory are processed.
 """
 
 from __future__ import annotations
@@ -30,13 +24,12 @@ from rich.live import Live
 from rich.progress import BarColumn, Progress, TextColumn, TimeElapsedColumn
 
 # ── Paths ──────────────────────────────────────────────────────────────
-SCRIPT_DIR = Path(__file__).resolve().parent
-REPLICATION_DIR = SCRIPT_DIR
+PACKAGE_ROOT = Path(__file__).resolve().parent.parent
 
-LIB_DIR = REPLICATION_DIR / "lib"
-ORIGINAL_DIR = REPLICATION_DIR / "ontologies" / "original"
-CLEANUP_DIR = REPLICATION_DIR / "ontologies" / "cleanup"
-INCONSISTENT_DIR = REPLICATION_DIR / "ontologies" / "inconsistent"
+LIB_DIR = PACKAGE_ROOT / "lib"
+ORIGINAL_DIR = PACKAGE_ROOT / "ontologies" / "original"
+CLEANUP_DIR = PACKAGE_ROOT / "ontologies" / "cleanup"
+INCONSISTENT_DIR = PACKAGE_ROOT / "ontologies" / "inconsistent"
 
 DEFAULT_JAVA_MEM = "-Xms1g -Xmx8g -Xss8m"
 DEFAULT_WORKERS = os.cpu_count() or 4
@@ -140,7 +133,7 @@ def list_original_ontologies() -> list[str]:
     """Return ontology names (without .owl) from the original/ directory."""
     names = sorted(p.stem for p in ORIGINAL_DIR.glob("*.owl"))
     if not names:
-        log("[WARN] No .owl files found in original/")
+        print("[WARN] No .owl files found in original/", file=sys.stderr)
     return names
 
 
@@ -334,72 +327,12 @@ def render_display(state: SharedState) -> Group:
     return Group(*lines, state.get_progress())
 
 
-# ── CLI ────────────────────────────────────────────────────────────────
+# ── Pipeline ───────────────────────────────────────────────────────────
 
 
-def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Pre-process ontologies: clean up then make inconsistent.",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=(
-            "Examples:\n"
-            "  %(prog)s bctt elig\n"
-            "  %(prog)s --verbose co-wheat\n"
-            "  %(prog)s --dry-run\n"
-            "  %(prog)s --force\n"
-            "  %(prog)s --workers 8\n"
-        ),
-    )
-    parser.add_argument(
-        "ontologies",
-        nargs="*",
-        metavar="NAME",
-        help="Ontology name(s) without .owl extension (e.g. bctt co-wheat). "
-        "If omitted, all ontologies from original/ are processed.",
-    )
-    parser.add_argument(
-        "-v",
-        "--verbose",
-        action="store_true",
-        help="Print detailed progress and Java subprocess output.",
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Print the operations that would be performed without executing them.",
-    )
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        help="Re-process ontologies even if the output files already exist.",
-    )
-    parser.add_argument(
-        "--java-mem",
-        default=DEFAULT_JAVA_MEM,
-        help=f"JVM memory options (default: '{DEFAULT_JAVA_MEM}').",
-    )
-    parser.add_argument(
-        "-j",
-        "--workers",
-        type=int,
-        default=DEFAULT_WORKERS,
-        help=f"Number of parallel workers (default: {DEFAULT_WORKERS}, i.e. CPUs).",
-    )
-    parser.add_argument(
-        "--no-progress",
-        action="store_true",
-        help="Disable the live-progress display; fall back to simple log output.",
-    )
-    return parser.parse_args(argv)
-
-
-# ── Main ───────────────────────────────────────────────────────────────
-
-
-def main() -> None:
-    args = parse_args()
-
-    # ── Resolve ontology names ──────────────────────────────────────
+def run_preprocessing(args: argparse.Namespace) -> None:
+    """Run the pre-processing pipeline with the given parsed arguments."""
+    # Resolve ontology names
     if args.ontologies:
         names = args.ontologies
     else:
@@ -498,7 +431,6 @@ def main() -> None:
                     ok_inconsistent += 1
 
         # ── Summary (sequential) ──
-        failed: list[str] = []
         log("=" * 50)
         log("SUMMARY")
         log("=" * 50)
@@ -507,12 +439,10 @@ def main() -> None:
         log(f"  Cleanup skipped:      {skipped_cleanup}")
         log(f"  Inconsistent succeeded: {ok_inconsistent}")
         log(f"  Inconsistent skipped:   {skipped_inconsistent}")
-        if failed:
-            log(f"  Failed ontologies:    {len(failed)} -> {', '.join(failed)}")
-        else:
+        if ok_inconsistent == 0 and ok_cleanup == 0:
             log("  All ontologies processed successfully!")
-        if failed:
-            sys.exit(1)
+        if not ok_cleanup and not ok_inconsistent:
+            pass  # no failures to report
         return
 
     # ── Parallel mode with live display ──────────────────────────────
@@ -552,7 +482,3 @@ def main() -> None:
         log("  All ontologies processed successfully!")
     if failed_names:
         sys.exit(1)
-
-
-if __name__ == "__main__":
-    main()
