@@ -18,8 +18,8 @@ from pathlib import Path
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from analysis.orchestrator import run_experiment
-from analysis.orchestrator import INCONSISTENT_DIR, LIB_DIR
+from analysis.orchestrator import run_experiment, INCONSISTENT_DIR
+from analysis.ontologyutils_service import LIB_DIR
 
 # ── Default configuration (CONFIGURE HERE) ─────────────────────────────
 N_TRIALS_PER_ONTOLOGY = 100

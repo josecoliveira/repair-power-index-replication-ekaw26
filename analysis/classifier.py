@@ -9,15 +9,14 @@ class (concept) count, and DL language per folder.
 from __future__ import annotations
 
 import argparse
-import re
-import subprocess
 import sys
 import time
 from pathlib import Path
 
+from analysis.ontologyutils_service import classify_ontology
+
 # ── Paths ──
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent
-LIB_DIR = PACKAGE_ROOT / "lib"
 ONTOLOGIES_DIR = PACKAGE_ROOT / "ontologies"
 
 FOLDER_NAMES = ["original", "cleanup", "inconsistent"]
@@ -28,17 +27,6 @@ DEFAULT_TIMEOUT = 120  # seconds per ontology
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────
-
-
-def find_shaded_jar() -> Path:
-    """Return the latest shaded-ontologyutils-*.jar from the lib directory."""
-    candidates = sorted(LIB_DIR.glob("shaded-ontologyutils-*.jar"))
-    if not candidates:
-        raise FileNotFoundError(
-            f"Could not find shaded-ontologyutils-*.jar under {LIB_DIR}. "
-            "Run 'mvn package' first to build the shaded JAR."
-        )
-    return candidates[-1]
 
 
 def discover_ontology_names() -> set[str]:
@@ -52,67 +40,15 @@ def discover_ontology_names() -> set[str]:
     return names
 
 
-def run_classify(jar: Path, owl_path: Path, java_mem: str,
-                 timeout: int) -> dict | None:
-    """Run ``ClassifyOntology`` on one ontology and return parsed data.
-
-    Returns a dict with keys ``axioms``, ``classes``, ``dl_languages``
-    on success, or ``None`` if the Java process fails or the output
-    cannot be parsed.
-    """
-    cmd = (
-        ["java"]
-        + java_mem.split()
-        + ["-cp", str(jar), "www.ontologyutils.apps.ClassifyOntology",
-           str(owl_path)]
-    )
-    try:
-        proc = subprocess.run(
-            cmd,
-            capture_output=True,
-            text=True,
-            timeout=timeout,
-        )
-    except subprocess.TimeoutExpired:
-        return None
-
-    if proc.returncode != 0:
-        return None
-
-    return parse_output(proc.stdout)
-
-
-def parse_output(stdout: str) -> dict | None:
-    """Extract axioms, class count, and DL languages from Java stdout.
-
-    Uses regex so the parse order is independent of any warning/problem
-    lines that may be interspersed.
-    """
-    axioms_match = re.search(r"Axioms:\s*(\d+)", stdout)
-    classes_match = re.search(r"Concept names:\s*(\d+)", stdout)
-    dl_match = re.search(r"DL languages:\s*(.*?)(?:\n|$)", stdout)
-
-    if not (axioms_match and classes_match and dl_match):
-        return None
-
-    dl_str = dl_match.group(1).strip().rstrip(";").strip()
-    return {
-        "axioms": int(axioms_match.group(1)),
-        "classes": int(classes_match.group(1)),
-        "dl_languages": dl_str,
-    }
-
-
-def classify_all(jar: Path, java_mem: str, timeout: int,
+def classify_all(java_mem: str, timeout: int,
                  verbose: bool) -> dict[str, dict[str, dict | None]]:
     """Classify every ontology in every folder.
 
     Returns a nested dict::
         result[ontology_name][folder_name] = data | None
 
-    where ``data`` is the dict from ``run_classify`` and ``None`` means
-    the file did not exist (or Java failed; distinguish via a separate
-    check below).
+    where ``data`` is a dict with keys ``axioms``, ``classes``, ``dl_languages``
+    or ``None`` if the file did not exist or Java failed.
     """
     names = sorted(discover_ontology_names())
     result: dict[str, dict[str, dict | None]] = {
@@ -127,7 +63,6 @@ def classify_all(jar: Path, java_mem: str, timeout: int,
         for name in names:
             owl_path = folder / f"{name}.owl"
             if not owl_path.exists():
-                # File not present → store None (rendered as blank)
                 result[name][folder_name] = None
                 continue
 
@@ -135,12 +70,22 @@ def classify_all(jar: Path, java_mem: str, timeout: int,
                 print(f"  [{folder_name}] {name} ...", file=sys.stderr,
                       flush=True)
 
-            data = run_classify(jar, owl_path, java_mem, timeout)
-            result[name][folder_name] = data
-
-            if data is None and verbose:
-                print(f"    -> FAILED (marked as -1)", file=sys.stderr,
-                      flush=True)
+            cls_result = classify_ontology(
+                owl_path=owl_path,
+                java_mem=java_mem,
+                timeout=timeout,
+            )
+            if cls_result is not None:
+                result[name][folder_name] = {
+                    "axioms": cls_result.axioms,
+                    "classes": cls_result.classes,
+                    "dl_languages": cls_result.dl_languages,
+                }
+            else:
+                result[name][folder_name] = None
+                if verbose:
+                    print(f"    -> FAILED (marked as -1)", file=sys.stderr,
+                          flush=True)
 
     return result
 
@@ -195,15 +140,7 @@ def build_table(all_data: dict[str, dict[str, dict | None]]) -> str:
 
 def run_classification(args: argparse.Namespace) -> None:
     """Run the classification pipeline with the given parsed arguments."""
-    # Validate shaded JAR
-    try:
-        jar = find_shaded_jar()
-    except FileNotFoundError as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-
     if args.verbose:
-        print(f"JAR:    {jar}", file=sys.stderr)
         print(f"Output: {args.output}", file=sys.stderr)
         print(f"Memory: {args.java_mem}", file=sys.stderr)
         print(f"Timeout: {args.timeout}s", file=sys.stderr)
@@ -211,7 +148,7 @@ def run_classification(args: argparse.Namespace) -> None:
 
     # Classify all ontologies
     t0 = time.perf_counter()
-    all_data = classify_all(jar, args.java_mem, args.timeout, args.verbose)
+    all_data = classify_all(args.java_mem, args.timeout, args.verbose)
     elapsed = time.perf_counter() - t0
 
     # Build and write table
@@ -225,11 +162,6 @@ def run_classification(args: argparse.Namespace) -> None:
         1 for row in all_data.values()
         for d in row.values()
         if d is not None
-    )
-    failed = sum(
-        1 for row in all_data.values()
-        for d in row.values()
-        if d is None
     )
     java_ok = sum(
         1 for row in all_data.values()

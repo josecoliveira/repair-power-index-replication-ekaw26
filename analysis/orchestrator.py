@@ -22,14 +22,13 @@ from __future__ import annotations
 
 import argparse
 import csv
-import json
-import subprocess
 import sys
 import time
 from datetime import datetime
 from pathlib import Path
 
 from analysis.analyzer import run_analysis
+from analysis.ontologyutils_service import run_single_trial_experiment
 
 # ── Experiment design constants (not user-configurable) ────────────────
 A_REPAIRS = ["A1", "A2", "A3"]
@@ -39,7 +38,6 @@ RUNTIME_KEYS = A_REPAIRS + B_REPAIRS
 
 # ── Path constants (based on package layout, not user-configurable) ────
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent
-LIB_DIR = PACKAGE_ROOT / "lib"
 INCONSISTENT_DIR = PACKAGE_ROOT / "ontologies" / "inconsistent"
 ANALYSIS_DIR = PACKAGE_ROOT / "data"
 
@@ -49,13 +47,6 @@ ANALYSIS_DIR = PACKAGE_ROOT / "data"
 
 def timestamp() -> str:
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-
-def find_shaded_jar() -> Path:
-    candidates = sorted(LIB_DIR.glob("shaded-ontologyutils-*.jar"))
-    if not candidates:
-        raise FileNotFoundError(f"Could not find shaded-ontologyutils-*.jar under {LIB_DIR}")
-    return candidates[-1]
 
 
 def list_ontologies(inconsistent_dir: Path) -> list[Path]:
@@ -85,32 +76,6 @@ def normalize_status(status: str | None) -> str:
     if status in {"success", "time_limit_exceeded", "memory_limit_exceeded"}:
         return status
     return "memory_limit_exceeded"
-
-
-def parse_trial_json(stdout: str) -> dict:
-    payload = json.loads(stdout.strip() or "{}")
-    if not isinstance(payload, dict):
-        raise ValueError("JSON root must be an object")
-    return payload
-
-
-def run_trial(seed: int, ontology_path: Path, java_base: list[str],
-              run_id: str,
-              removal_timeout: int, weakening_timeout: int,
-              power_index_timeout: int, make_inconsistent_timeout: int) -> tuple[int, str, str]:
-    args_list = [
-        "--ontology", str(ontology_path),
-        "--seed", str(seed),
-        "--run-id", str(run_id),
-        "--removal-timeout-secs", str(removal_timeout),
-        "--weakening-timeout-secs", str(weakening_timeout),
-        "--power-index-timeout-secs", str(power_index_timeout),
-        "--make-inconsistent-timeout-secs", str(make_inconsistent_timeout),
-    ]
-    cmd = java_base + args_list
-    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                          text=True, encoding="utf-8", shell=False)
-    return proc.returncode, proc.stdout, proc.stderr
 
 
 def write_log_header(handle, round_number: int, attempt_number: int, seed: int) -> None:
@@ -258,28 +223,9 @@ def run_experiment(args: argparse.Namespace) -> None:
     effective_base_seed = args.seed if args.seed is not None else args.base_seed
     effective_step = args.step
     effective_analysis_interval = args.analysis_interval
-    removal_timeout = args.removal_timeout
-    weakening_timeout = args.weakening_timeout
-    power_index_timeout = args.power_index_timeout
-    make_inconsistent_timeout = args.make_inconsistent_timeout
     java_mem = args.java_mem
     lib_dir = args.lib_dir
     inconsistent_dir = args.inconsistent_dir
-
-    # Build the Java command once
-    shaded_jar = find_shaded_jar()  # uses module-level LIB_DIR as fallback
-    # If lib_dir was overridden by the user, use that
-    resolved_jar = sorted(Path(lib_dir).glob("shaded-ontologyutils-*.jar"))
-    if resolved_jar:
-        shaded_jar = resolved_jar[-1]
-
-    java_base = [
-        "java",
-        *java_mem.split(),
-        "-cp",
-        str(shaded_jar),
-        "www.ontologyutils.apps.SingleTrialExperiment",
-    ]
 
     ontologies = list_ontologies(inconsistent_dir)
 
@@ -365,34 +311,35 @@ def run_experiment(args: argparse.Namespace) -> None:
             with open(log_path, "a", encoding="utf-8") as log:
                 write_log_header(log, round_number, attempt_number, seed)
                 trial_start = time.perf_counter()
-                retcode, stdout, stderr = run_trial(
-                    seed, ontology, java_base, run_id,
-                    removal_timeout, weakening_timeout,
-                    power_index_timeout, make_inconsistent_timeout,
+                result = run_single_trial_experiment(
+                    ontology_path=ontology,
+                    seed=seed,
+                    run_id=run_id,
+                    java_mem=java_mem,
+                    lib_dir=lib_dir,
+                    removal_timeout=args.removal_timeout,
+                    weakening_timeout=args.weakening_timeout,
+                    power_index_timeout=args.power_index_timeout,
+                    make_inconsistent_timeout=args.make_inconsistent_timeout,
                 )
                 trial_elapsed = time.perf_counter() - trial_start
 
-                payload = None
+                payload = result.payload
                 attempt_outcome = "memory_limit_exceeded"
                 error_message = ""
 
-                if stdout:
+                if result.stdout:
                     log.write("--- stdout ---\n")
-                    log.write(stdout + "\n")
-                if stderr:
+                    log.write(result.stdout + "\n")
+                if result.stderr:
                     log.write("--- stderr ---\n")
-                    log.write(stderr[:3000] + ("\n...[truncated]\n" if len(stderr) > 3000 else "\n"))
+                    log.write(result.stderr[:3000] + ("\n...[truncated]\n" if len(result.stderr) > 3000 else "\n"))
 
-                if retcode < 0:
-                    error_message = f"negative return code {retcode}"
+                if result.returncode < 0:
+                    error_message = f"negative return code {result.returncode}"
                     log.write(f"FAIL: attempt={attempt_number} seed={seed} - {error_message}\n")
                 else:
-                    try:
-                        payload = parse_trial_json(stdout)
-                    except Exception as exc:
-                        error_message = f"JSON parse error: {exc}"
-                        log.write(f"FAIL: attempt={attempt_number} seed={seed} - {error_message}\n")
-                    else:
+                    if payload:
                         attempt_outcome = normalize_status(payload.get("trial_status"))
                         if attempt_outcome == "success":
                             try:
@@ -413,13 +360,15 @@ def run_experiment(args: argparse.Namespace) -> None:
                                 f"FAIL: attempt={attempt_number} seed={seed} status={attempt_outcome} "
                                 f"stage={payload.get('failure_stage')} message={error_message}\n"
                             )
+                    else:
+                        log.write(f"FAIL: attempt={attempt_number} seed={seed} - empty payload\n")
 
                 if attempt_outcome != "success":
                     if not error_message:
-                        if payload is not None:
+                        if payload:
                             error_message = payload.get("error_message") or payload.get("error_type") or ""
                         if not error_message:
-                            error_message = f"process exited with code {retcode}"
+                            error_message = f"process exited with code {result.returncode}"
                     failures[name].append((attempt_number, seed, error_message))
 
                 runtime_row = runtime_row_from_payload(

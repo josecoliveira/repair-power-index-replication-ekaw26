@@ -10,11 +10,10 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import os
-import subprocess
 import sys
 import threading
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Literal
@@ -23,10 +22,14 @@ from rich.console import Group
 from rich.live import Live
 from rich.progress import BarColumn, Progress, TextColumn, TimeElapsedColumn
 
+from analysis.ontologyutils_service import (
+    run_cleanup_ontology,
+    run_make_inconsistent,
+)
+
 # ── Paths ──────────────────────────────────────────────────────────────
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent
 
-LIB_DIR = PACKAGE_ROOT / "lib"
 ORIGINAL_DIR = PACKAGE_ROOT / "ontologies" / "original"
 CLEANUP_DIR = PACKAGE_ROOT / "ontologies" / "cleanup"
 INCONSISTENT_DIR = PACKAGE_ROOT / "ontologies" / "inconsistent"
@@ -118,17 +121,6 @@ class SharedState:
 # ── Helpers ────────────────────────────────────────────────────────────
 
 
-def find_shaded_jar() -> Path:
-    """Return the latest shaded-ontologyutils-*.jar from the lib directory."""
-    candidates = sorted(LIB_DIR.glob("shaded-ontologyutils-*.jar"))
-    if not candidates:
-        raise FileNotFoundError(
-            f"Could not find shaded-ontologyutils-*.jar under {LIB_DIR}. "
-            "Run 'mvn package' first to build the shaded JAR."
-        )
-    return candidates[-1]
-
-
 def list_original_ontologies() -> list[str]:
     """Return ontology names (without .owl) from the original/ directory."""
     names = sorted(p.stem for p in ORIGINAL_DIR.glob("*.owl"))
@@ -141,72 +133,6 @@ def log(msg: str) -> None:
     """Print a timestamped message to stderr."""
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{ts}] {msg}", file=sys.stderr, flush=True)
-
-
-def run_java(
-    main_class: str,
-    args: list[str],
-    java_mem: str,
-    verbose: bool,
-    ontology_name: str,
-) -> tuple[bool, str]:
-    """Run a Java main class via the shaded JAR.
-
-    Returns (success, stderr_output). In verbose mode Java stderr is
-    printed with a per-ontology prefix.
-    """
-    jar = find_shaded_jar()
-    cmd = ["java"] + java_mem.split() + ["-cp", str(jar), main_class] + args
-
-    if verbose:
-        print(f"  [{ontology_name}] $ {' '.join(cmd)}", file=sys.stderr, flush=True)
-
-    process = subprocess.Popen(
-        cmd,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        bufsize=1,
-    )
-
-    stderr_lines: list[str] = []
-
-    with process.stderr:
-        for line in iter(process.stderr.readline, ""):
-            line = line.rstrip("\n")
-            if line:
-                if verbose:
-                    print(
-                        f"  [{ontology_name}] {line}",
-                        file=sys.stderr,
-                        flush=True,
-                    )
-                stderr_lines.append(line)
-
-    process.wait()
-    full_stderr = "\n".join(stderr_lines)
-
-    if verbose and process.returncode != 0:
-        print(
-            f"  [{ontology_name}] exit code {process.returncode}",
-            file=sys.stderr,
-            flush=True,
-        )
-
-    return process.returncode == 0, full_stderr
-
-
-def makeinc_flags() -> list[str]:
-    """Return the MakeInconsistent flags used in the paper."""
-    return [
-        "--normalize",
-        "--basic-cache",
-        "--strict-sroiq",
-        "--strict-simple-roles",
-        "--simple-ria-weakening",
-        "--strict-owl2",
-        "--verbose",
-    ]
 
 
 # ── Worker ─────────────────────────────────────────────────────────────
@@ -240,9 +166,9 @@ def process_ontology(
     else:
         state.update(name, step="cleaning")
         t0 = time.monotonic()
-        success, _ = run_java(
-            main_class="www.ontologyutils.apps.CleanupOntology",
-            args=["-n", "-o", str(cleanup_file), str(original_file)],
+        success = run_cleanup_ontology(
+            input_path=original_file,
+            output_path=cleanup_file,
             java_mem=args.java_mem,
             verbose=args.verbose,
             ontology_name=name,
@@ -262,9 +188,9 @@ def process_ontology(
 
     state.update(name, step="making_inconsistent")
     t0 = time.monotonic()
-    success, _ = run_java(
-        main_class="www.ontologyutils.apps.MakeInconsistent",
-        args=makeinc_flags() + ["-o", str(inconsistent_file), str(cleanup_file)],
+    success = run_make_inconsistent(
+        input_path=cleanup_file,
+        output_path=inconsistent_file,
         java_mem=args.java_mem,
         verbose=args.verbose,
         ontology_name=name,
@@ -352,13 +278,6 @@ def run_preprocessing(args: argparse.Namespace) -> None:
     CLEANUP_DIR.mkdir(parents=True, exist_ok=True)
     INCONSISTENT_DIR.mkdir(parents=True, exist_ok=True)
 
-    try:
-        jar = find_shaded_jar()
-        log(f"  Shaded JAR:        {jar}")
-    except FileNotFoundError as e:
-        log(f"[ERROR] {e}")
-        sys.exit(1)
-
     if args.dry_run:
         log("\n[Dry run mode -- no commands will be executed]")
         for name in names:
@@ -368,7 +287,10 @@ def run_preprocessing(args: argparse.Namespace) -> None:
             print(f"  {name}:")
             print(f"    CleanupOntology  -o {cleanup_file}  {original_file}")
             print(
-                f"    MakeInconsistent  {' '.join(makeinc_flags())}  -o {inconsistent_file}  {cleanup_file}"
+                f"    MakeInconsistent  --normalize --basic-cache "
+                f"--strict-sroiq --strict-simple-roles "
+                f"--simple-ria-weakening --strict-owl2 --verbose "
+                f"-o {inconsistent_file}  {cleanup_file}"
             )
         return
 
@@ -399,9 +321,9 @@ def run_preprocessing(args: argparse.Namespace) -> None:
                 )
                 skipped_cleanup += 1
             else:
-                success, _ = run_java(
-                    main_class="www.ontologyutils.apps.CleanupOntology",
-                    args=["-n", "-o", str(cleanup_file), str(original_file)],
+                success = run_cleanup_ontology(
+                    input_path=original_file,
+                    output_path=cleanup_file,
                     java_mem=args.java_mem,
                     verbose=args.verbose,
                     ontology_name=name,
@@ -419,10 +341,9 @@ def run_preprocessing(args: argparse.Namespace) -> None:
                 )
                 skipped_inconsistent += 1
             else:
-                success, _ = run_java(
-                    main_class="www.ontologyutils.apps.MakeInconsistent",
-                    args=makeinc_flags()
-                    + ["-o", str(inconsistent_file), str(cleanup_file)],
+                success = run_make_inconsistent(
+                    input_path=cleanup_file,
+                    output_path=inconsistent_file,
                     java_mem=args.java_mem,
                     verbose=args.verbose,
                     ontology_name=name,
@@ -441,8 +362,6 @@ def run_preprocessing(args: argparse.Namespace) -> None:
         log(f"  Inconsistent skipped:   {skipped_inconsistent}")
         if ok_inconsistent == 0 and ok_cleanup == 0:
             log("  All ontologies processed successfully!")
-        if not ok_cleanup and not ok_inconsistent:
-            pass  # no failures to report
         return
 
     # ── Parallel mode with live display ──────────────────────────────
