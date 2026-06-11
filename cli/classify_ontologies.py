@@ -5,13 +5,14 @@ Classify all ontologies across original/cleanup/inconsistent folders
 and produce a markdown table.
 
 Usage:
-    python -m cli.classify_ontologies [--output TABLE.md]
+    python -m cli.classify_ontologies [options]
     python cli/classify_ontologies.py [options]
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -23,6 +24,7 @@ from analysis.classifier import (
     run_classification,
     DEFAULT_JAVA_MEM,
     DEFAULT_TIMEOUT,
+    DEFAULT_WORKERS,
 )
 
 
@@ -38,6 +40,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "  %(prog)s\n"
             "  %(prog)s -o my_table.md\n"
             "  %(prog)s --verbose --java-mem '-Xms2g -Xmx8g'\n"
+            "  %(prog)s --workers 8\n"
+            "  %(prog)s --sort-by-axioms\n"
         ),
     )
     parser.add_argument(
@@ -67,7 +71,32 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "-v", "--verbose",
         action="store_true",
-        help="Print progress to stderr.",
+        help="Print detailed progress and Java subprocess output.",
+    )
+    parser.add_argument(
+        "-j", "--workers",
+        type=int,
+        default=DEFAULT_WORKERS,
+        help=(
+            "Number of parallel workers "
+            "(default: %(default)s, i.e. CPUs)."
+        ),
+    )
+    parser.add_argument(
+        "--no-progress",
+        action="store_true",
+        help=(
+            "Disable the live-progress display; "
+            "fall back to simple log output."
+        ),
+    )
+    parser.add_argument(
+        "--sort-by-axioms",
+        action="store_true",
+        help=(
+            "Sort ontologies by axiom count (smallest first) "
+            "instead of alphabetically."
+        ),
     )
     return parser.parse_args(argv)
 
