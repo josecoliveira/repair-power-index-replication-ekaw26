@@ -3,6 +3,11 @@
 
 Pre-process ontologies from the ekaw26 test resources in parallel.
 
+3-stage pipeline:
+  1. CleanupOntology:      original/{name}.owl  ->  cleanup/{name}.owl
+  2. Classify & Filter:    cleanup/{name}.owl  ->  alc/{name}.owl (ALC only)
+  3. MakeInconsistent:     alc/{name}.owl      ->  inconsistent/{name}.owl
+
 Usage:
     python -m cli.preprocess_ontologies [options] [ontology_name ...]
     python cli/preprocess_ontologies.py [options] [ontology_name ...]
@@ -23,6 +28,7 @@ from analysis.preprocessor import (
     DEFAULT_JAVA_MEM,
     DEFAULT_WORKERS,
     list_original_ontologies,
+    ALC_DIR,
     CLEANUP_DIR,
     INCONSISTENT_DIR,
     ORIGINAL_DIR,
@@ -31,7 +37,7 @@ from analysis.preprocessor import (
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Pre-process ontologies: clean up then make inconsistent.",
+        description="Pre-process ontologies: cleanup, ALC-filter, then make inconsistent.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Examples:\n"
