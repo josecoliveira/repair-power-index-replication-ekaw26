@@ -92,6 +92,7 @@ class StageItem:
     elapsed: float = 0.0
     dl_languages: str = ""
     error: str = ""
+    cached: bool = False
     _start_time: float = 0.0
 
 
@@ -154,18 +155,33 @@ class StageState:
 # ── Display per stage ─────────────────────────────────────────────────
 
 
+MAX_COMPLETED_SHOWN = 15
+
+
 def render_stage_display(state: StageState) -> Group:
-    """Build a Group renderable for one stage's live display."""
+    """Build a Group renderable for one stage's live display.
+
+    Only the last ``MAX_COMPLETED_SHOWN`` completed items are rendered
+    to keep the terminal output compact and prevent ANSI buffer overload.
+    """
     completed = state.get_completed()
     active = state.get_active()
 
     lines: list[str] = [f"── {state.stage_label} ──"]
 
-    for s in completed:
+    # Show only the tail of the completed list to bound renderable size
+    tail = completed[-MAX_COMPLETED_SHOWN:]
+    hidden = len(completed) - len(tail)
+    for s in tail:
         if s.step == "done":
-            lines.append(
-                f"  {s.name:<12} done              {s.elapsed:.1f}s"
-            )
+            if s.cached:
+                lines.append(
+                    f"  {s.name:<12} skipped            {s.elapsed:.1f}s"
+                )
+            else:
+                lines.append(
+                    f"  {s.name:<12} done              {s.elapsed:.1f}s"
+                )
         elif s.step == "unsuitable":
             lines.append(
                 f"  {s.name:<12} unsuitable  [{s.dl_languages}]"
@@ -174,11 +190,14 @@ def render_stage_display(state: StageState) -> Group:
             lines.append(
                 f"  {s.name:<12} FAILED  ({s.error})"
             )
+    if hidden > 0:
+        lines.append(f"  ... ({hidden} more completed)")
 
     for s in active:
         if s.step == "running":
+            running_elapsed = time.monotonic() - s._start_time
             lines.append(
-                f"  {s.name:<12} running ...        {s.elapsed:.1f}s"
+                f"  {s.name:<12} running ...        {running_elapsed:.1f}s"
             )
         elif s.step == "pending":
             lines.append(
@@ -272,7 +291,10 @@ def run_stage_make_inconsistent(name: str, args: argparse.Namespace) -> bool:
 def _cleanup_worker(
     name: str, state: StageState, args: argparse.Namespace,
 ) -> bool:
-    state.update(name, step="running", _start_time=time.monotonic())
+    cleanup_file = CLEANUP_DIR / f"{name}.owl"
+    is_cached = cleanup_file.exists() and not args.force
+    state.update(name, step="running", _start_time=time.monotonic(),
+                 cached=is_cached)
     result = run_stage_cleanup(name, args)
     elapsed = time.monotonic() - state._items[name]._start_time
     if result:
@@ -287,7 +309,10 @@ def _cleanup_worker(
 def _filter_worker(
     name: str, state: StageState, args: argparse.Namespace,
 ) -> FilterResult:
-    state.update(name, step="running", _start_time=time.monotonic())
+    alc_file = ALC_DIR / f"{name}.owl"
+    is_cached = alc_file.exists() and not args.force
+    state.update(name, step="running", _start_time=time.monotonic(),
+                 cached=is_cached)
     result = run_stage_filter(name, args)
     elapsed = time.monotonic() - state._items[name]._start_time
     if not result.success:
@@ -306,7 +331,10 @@ def _filter_worker(
 def _incon_worker(
     name: str, state: StageState, args: argparse.Namespace,
 ) -> bool:
-    state.update(name, step="running", _start_time=time.monotonic())
+    inconsistent_file = INCONSISTENT_DIR / f"{name}.owl"
+    is_cached = inconsistent_file.exists() and not args.force
+    state.update(name, step="running", _start_time=time.monotonic(),
+                 cached=is_cached)
     result = run_stage_make_inconsistent(name, args)
     elapsed = time.monotonic() - state._items[name]._start_time
     if result:
@@ -341,7 +369,32 @@ def run_batch(
     n_workers = min(args.workers, len(items))
     state = StageState(items, n_workers, stage_label)
 
-    if sequential:
+    if args.no_progress:
+        # ── Parallel execution with simple completion logging ──
+        total = len(items)
+        log(f"Starting {stage_label} ({total} ontologies) ...")
+        with concurrent.futures.ThreadPoolExecutor(
+            max_workers=n_workers
+        ) as pool:
+            futures = {
+                pool.submit(worker_fn, name, state, args): name
+                for name in items
+            }
+            for future in concurrent.futures.as_completed(futures):
+                name = futures[future]
+                item = state._items[name]
+                ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                if item.step == "done":
+                    if item.cached:
+                        print(f"[{ts}]   {name:<12} skipped            {item.elapsed:.1f}s")
+                    else:
+                        print(f"[{ts}]   {name:<12} done              {item.elapsed:.1f}s")
+                elif item.step == "failed":
+                    print(f"[{ts}]   {name:<12} FAILED  ({item.error})")
+                elif item.step == "unsuitable":
+                    print(f"[{ts}]   {name:<12} unsuitable  [{item.dl_languages}]")
+                sys.stdout.flush()
+    elif sequential:
         total = len(items)
         log(f"Starting {stage_label} ({total} ontologies) ...")
         for idx, name in enumerate(items, start=1):
@@ -350,8 +403,9 @@ def run_batch(
     else:
         with Live(
             get_renderable=lambda: render_stage_display(state),
-            refresh_per_second=10,
-            transient=True,
+            refresh_per_second=4,
+            transient=False,
+            vertical_overflow="visible",
         ):
             with concurrent.futures.ThreadPoolExecutor(
                 max_workers=n_workers
@@ -424,7 +478,7 @@ def run_preprocessing(args: argparse.Namespace) -> None:
 
     total = len(names)
     n_workers = min(args.workers, total)
-    sequential = args.no_progress or total <= 1
+    sequential = not args.no_progress and total <= 1
 
     log(f"Ontologies: {total}, workers: {n_workers}")
     log(f"  Original dir:       {ORIGINAL_DIR}")
