@@ -46,6 +46,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "  %(prog)s --dry-run\n"
             "  %(prog)s --force\n"
             "  %(prog)s --workers 8\n"
+            "  %(prog)s --start-stage 2\n"
+            "  %(prog)s --start-stage 3\n"
         ),
     )
     parser.add_argument(
@@ -87,6 +89,21 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--no-progress",
         action="store_true",
         help="Disable the live-progress display; fall back to simple log output.",
+    )
+    parser.add_argument(
+        "--start-stage",
+        type=int,
+        default=1,
+        choices=[1, 2, 3],
+        help="Pipeline stage to start from: 1=cleanup (default), "
+             "2=classify/filter, 3=make-inconsistent.",
+    )
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=None,
+        help="Timeout in seconds for the MakeInconsistent stage "
+             "(default: no timeout).",
     )
     return parser.parse_args(argv)
 

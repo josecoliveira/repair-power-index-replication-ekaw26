@@ -16,6 +16,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import threading
 from dataclasses import dataclass
 from pathlib import Path
 import sys
@@ -63,10 +64,12 @@ def _run_captured(cmd: list[str], timeout: int | None = None) -> subprocess.Comp
 
 
 def _run_streaming(cmd: list[str], verbose: bool = False,
-                   ontology_name: str = "") -> tuple[bool, str]:
+                   ontology_name: str = "",
+                   timeout: int | None = None) -> tuple[bool, str]:
     """Run a command with streaming stderr output.
 
-    Returns (success, full_stderr).
+    When *timeout* is set (seconds), the subprocess is killed if it
+    exceeds that limit.  Returns ``(success, full_stderr)``.
     """
     if verbose:
         prefix = f"  [{ontology_name}] " if ontology_name else "  "
@@ -81,16 +84,33 @@ def _run_streaming(cmd: list[str], verbose: bool = False,
     )
 
     stderr_lines: list[str] = []
-    with process.stderr:
-        for line in iter(process.stderr.readline, ""):
-            line = line.rstrip("\n")
-            if line:
-                if verbose:
-                    prefix = f"  [{ontology_name}] " if ontology_name else "  "
-                    print(f"{prefix}{line}", file=sys.stderr, flush=True)
-                stderr_lines.append(line)
 
-    process.wait()
+    def _read_stderr() -> None:
+        with process.stderr:
+            for line in iter(process.stderr.readline, ""):
+                line = line.rstrip("\n")
+                if line:
+                    if verbose:
+                        prefix = f"  [{ontology_name}] " if ontology_name else "  "
+                        print(f"{prefix}{line}", file=sys.stderr, flush=True)
+                    stderr_lines.append(line)
+
+    reader = threading.Thread(target=_read_stderr, daemon=True)
+    reader.start()
+
+    try:
+        process.wait(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        process.kill()
+        process.wait()
+        reader.join(timeout=2)
+        full_stderr = "\n".join(stderr_lines)
+        if full_stderr:
+            full_stderr += "\n"
+        full_stderr += "[TIMEOUT]"
+        return False, full_stderr
+
+    reader.join()
     full_stderr = "\n".join(stderr_lines)
 
     if verbose and process.returncode != 0:
@@ -191,8 +211,13 @@ def run_make_inconsistent(
     lib_dir: Path | None = None,
     verbose: bool = False,
     ontology_name: str = "",
+    timeout: int | None = None,
 ) -> bool:
-    """Run ``MakeInconsistent`` with the paper's flags, return True on success."""
+    """Run ``MakeInconsistent`` with the paper's flags, return True on success.
+
+    When *timeout* is set (seconds), the Java subprocess is killed if it
+    exceeds the limit.
+    """
     jar = find_shaded_jar(lib_dir)
     args = [
         "--normalize",
@@ -209,7 +234,8 @@ def run_make_inconsistent(
         "www.ontologyutils.apps.MakeInconsistent",
         args, java_mem, jar,
     )
-    success, _ = _run_streaming(cmd, verbose=verbose, ontology_name=ontology_name)
+    success, _ = _run_streaming(cmd, verbose=verbose, ontology_name=ontology_name,
+                                timeout=timeout)
     return success
 
 

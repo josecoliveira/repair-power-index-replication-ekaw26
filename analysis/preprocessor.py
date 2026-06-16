@@ -42,6 +42,7 @@ ORIGINAL_DIR = PACKAGE_ROOT / "ontologies" / "original"
 CLEANUP_DIR = PACKAGE_ROOT / "ontologies" / "cleanup"
 ALC_DIR = PACKAGE_ROOT / "ontologies" / "alc"
 INCONSISTENT_DIR = PACKAGE_ROOT / "ontologies" / "inconsistent"
+REMOVED_DIR = PACKAGE_ROOT / "ontologies" / "removed"
 
 DEFAULT_JAVA_MEM = "-Xms1g -Xmx16g -Xss8m"
 DEFAULT_WORKERS = os.cpu_count() or 4
@@ -282,6 +283,7 @@ def run_stage_make_inconsistent(name: str, args: argparse.Namespace) -> bool:
         java_mem=args.java_mem,
         verbose=args.verbose,
         ontology_name=name,
+        timeout=args.timeout,
     )
 
 
@@ -340,6 +342,12 @@ def _incon_worker(
     if result:
         state.update(name, step="done", elapsed=elapsed)
     else:
+        # Move the ALC file to removed/ on failure
+        alc_file = ALC_DIR / f"{name}.owl"
+        removed_file = REMOVED_DIR / f"{name}.owl"
+        if alc_file.exists():
+            REMOVED_DIR.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(alc_file), str(removed_file))
         state.update(name, step="failed", elapsed=elapsed,
                      error="make-inconsistent failed")
     state.complete(name)
@@ -465,22 +473,34 @@ def _classify_and_sort_alc(names: list[str], java_mem: str) -> list[str]:
 
 
 def run_preprocessing(args: argparse.Namespace) -> None:
-    """Run the 3-stage batch preprocessing pipeline."""
-    # Resolve ontology names
+    """Run the 3-stage batch preprocessing pipeline.
+
+    The ``args.start_stage`` attribute controls which stage to start from:
+    - 1: full pipeline (default)
+    - 2: skip cleanup, start from classify & filter
+    - 3: skip cleanup and filter, start from make-inconsistent (still sorts)
+    """
+    # Resolve ontology names based on start stage
     if args.ontologies:
         names = args.ontologies
-    else:
+    elif args.start_stage <= 1:
         names = list_original_ontologies()
         if not names:
             log("[ERROR] No ontology names given and no .owl files found "
                 "in original/.")
             sys.exit(1)
+    else:
+        names = []  # resolved per-stage from existing output dirs
 
-    total = len(names)
-    n_workers = min(args.workers, total)
-    sequential = not args.no_progress and total <= 1
+    if names:
+        total = len(names)
+        n_workers = min(args.workers, total)
+        sequential = not args.no_progress and total <= 1
+    else:
+        total = 0
+        n_workers = args.workers
+        sequential = False
 
-    log(f"Ontologies: {total}, workers: {n_workers}")
     log(f"  Original dir:       {ORIGINAL_DIR}")
     log(f"  Cleanup dir:        {CLEANUP_DIR}")
     log(f"  ALC dir:            {ALC_DIR}")
@@ -490,63 +510,102 @@ def run_preprocessing(args: argparse.Namespace) -> None:
     ALC_DIR.mkdir(parents=True, exist_ok=True)
     INCONSISTENT_DIR.mkdir(parents=True, exist_ok=True)
 
-    if args.dry_run:
-        log("\n[Dry run mode -- no commands will be executed]")
-        for name in names:
-            original_file = ORIGINAL_DIR / f"{name}.owl"
-            cleanup_file = CLEANUP_DIR / f"{name}.owl"
-            alc_file = ALC_DIR / f"{name}.owl"
-            inconsistent_file = INCONSISTENT_DIR / f"{name}.owl"
-            print(f"  {name}:")
-            print(f"    Stage 1: CleanupOntology  -o {cleanup_file}  "
-                  f"{original_file}")
-            print(f"    Stage 2: ClassifyOntology + is_alc_suitable "
-                  f"-> copy to {alc_file}")
-            print(
-                f"    Stage 3: MakeInconsistent  --normalize --basic-cache "
-                f"--strict-sroiq --strict-simple-roles "
-                f"--simple-ria-weakening --strict-owl2 --verbose "
-                f"-o {inconsistent_file}  {alc_file}"
-            )
-        return
+    # ── Stage 1: Cleanup (skip if start_stage > 1) ──────────────────
+    if args.start_stage <= 1:
+        log(f"Ontologies: {len(names)}, workers: {n_workers}")
+        if args.dry_run:
+            log("\n[Dry run mode -- no commands will be executed]")
+            for name in names:
+                original_file = ORIGINAL_DIR / f"{name}.owl"
+                cleanup_file = CLEANUP_DIR / f"{name}.owl"
+                alc_file = ALC_DIR / f"{name}.owl"
+                inconsistent_file = INCONSISTENT_DIR / f"{name}.owl"
+                print(f"  {name}:")
+                print(f"    Stage 1: CleanupOntology  -o {cleanup_file}  "
+                      f"{original_file}")
+                print(f"    Stage 2: ClassifyOntology + is_alc_suitable "
+                      f"-> copy to {alc_file}")
+                print(
+                    f"    Stage 3: MakeInconsistent  --normalize --basic-cache "
+                    f"--strict-sroiq --strict-simple-roles "
+                    f"--simple-ria-weakening --strict-owl2 --verbose "
+                    f"-o {inconsistent_file}  {alc_file}"
+                )
+            return
 
-    # ── Stage 1: Cleanup (all ontologies) ────────────────────────────
-    log("=== Stage 1: Cleanup ===")
-    state1 = run_batch("Cleanup", names, _cleanup_worker, args, sequential)
-    cleaned = [n for n in names if state1._items[n].step == "done"]
-    cleanup_failed = [n for n in names if state1._items[n].step == "failed"]
+        log("=== Stage 1: Cleanup ===")
+        state1 = run_batch("Cleanup", names, _cleanup_worker, args, sequential)
+        cleaned = [n for n in names if state1._items[n].step == "done"]
+        cleanup_failed = [n for n in names if state1._items[n].step == "failed"]
+    else:
+        # Skipping cleanup — resolve names from cleanup/ directory
+        cleaned = sorted(p.stem for p in CLEANUP_DIR.glob("*.owl"))
+        if args.ontologies:
+            cleaned = [n for n in args.ontologies
+                       if (CLEANUP_DIR / f"{n}.owl").exists()]
+        if not cleaned:
+            log("[ERROR] No .owl files found in cleanup/ directory.")
+            sys.exit(1)
+        cleanup_failed = []
+        log(f"Ontologies (from cleanup/): {len(cleaned)}, "
+            f"workers: {min(args.workers, len(cleaned))}")
 
-    # ── Stage 2: Classify & Filter (only successfully cleaned) ──────
-    log("=== Stage 2: Classify & Filter ===")
-    state2 = run_batch("Filter", cleaned, _filter_worker, args, sequential)
-    alc_suitable = [n for n in cleaned if state2._items[n].step == "done"]
-    unsuitable = [n for n in cleaned if state2._items[n].step == "unsuitable"]
-    filter_failed = [n for n in cleaned if state2._items[n].step == "failed"]
+    # ── Stage 2: Classify & Filter (skip if start_stage > 2) ────────
+    if args.start_stage <= 2:
+        log("=== Stage 2: Classify & Filter ===")
+        state2 = run_batch("Filter", cleaned, _filter_worker, args, sequential)
+        alc_suitable = [n for n in cleaned if state2._items[n].step == "done"]
+        unsuitable = [n for n in cleaned if state2._items[n].step == "unsuitable"]
+        filter_failed = [n for n in cleaned if state2._items[n].step == "failed"]
+    else:
+        # Skipping filter — resolve names from alc/ directory
+        alc_suitable = sorted(p.stem for p in ALC_DIR.glob("*.owl"))
+        if args.ontologies:
+            alc_suitable = [n for n in args.ontologies
+                            if (ALC_DIR / f"{n}.owl").exists()]
+        if not alc_suitable:
+            log("[ERROR] No .owl files found in alc/ directory.")
+            sys.exit(1)
+        unsuitable = []
+        filter_failed = []
+        log(f"Ontologies (from alc/): {len(alc_suitable)}, "
+            f"workers: {min(args.workers, len(alc_suitable))}")
 
-    # ── Sort ALC-suitable by axiom count (on alc/ files, before Stage 3) ─
-    log("=== Sorting ALC ontologies by axiom count ===")
-    sorted_alc = _classify_and_sort_alc(alc_suitable, args.java_mem)
+    # ── Sort ALC-suitable by axiom count (always, before Stage 3) ───
+    if alc_suitable:
+        log("=== Sorting ALC ontologies by axiom count ===")
+        sorted_alc = _classify_and_sort_alc(alc_suitable, args.java_mem)
+    else:
+        sorted_alc = []
 
     # ── Stage 3: Make Inconsistent (ALC only, sorted) ───────────────
-    log("=== Stage 3: Make Inconsistent ===")
-    state3 = run_batch(
-        "MakeInconsistent", sorted_alc, _incon_worker, args, sequential,
-    )
-    incon_done = [n for n in sorted_alc
-                  if state3._items[n].step == "done"]
-    incon_failed = [n for n in sorted_alc
-                    if state3._items[n].step == "failed"]
+    if sorted_alc:
+        log("=== Stage 3: Make Inconsistent ===")
+        state3 = run_batch(
+            "MakeInconsistent", sorted_alc, _incon_worker, args, sequential,
+        )
+        incon_done = [n for n in sorted_alc
+                      if state3._items[n].step == "done"]
+        incon_failed = [n for n in sorted_alc
+                        if state3._items[n].step == "failed"]
+    else:
+        incon_done = []
+        incon_failed = []
 
     # ── Summary ──────────────────────────────────────────────────────
     log("=" * 50)
     log("SUMMARY")
     log("=" * 50)
-    log(f"  Total ontologies:             {total}")
-    log(f"  Stage 1 - Cleanup OK:         {len(cleaned)}")
-    log(f"  Stage 1 - Cleanup failed:     {len(cleanup_failed)}")
-    log(f"  Stage 2 - ALC suitable:       {len(alc_suitable)}")
-    log(f"  Stage 2 - Unsuitable:         {len(unsuitable)}")
-    log(f"  Stage 2 - Filter failed:      {len(filter_failed)}")
+    log(f"  Stage 1 - Cleanup OK:         "
+        f"{len(cleaned) if args.start_stage <= 1 else 'N/A'}")
+    log(f"  Stage 1 - Cleanup failed:     "
+        f"{len(cleanup_failed) if args.start_stage <= 1 else 'N/A'}")
+    log(f"  Stage 2 - ALC suitable:       "
+        f"{len(alc_suitable) if args.start_stage <= 2 else 'N/A'}")
+    log(f"  Stage 2 - Unsuitable:         "
+        f"{len(unsuitable) if args.start_stage <= 2 else 'N/A'}")
+    log(f"  Stage 2 - Filter failed:      "
+        f"{len(filter_failed) if args.start_stage <= 2 else 'N/A'}")
     log(f"  Stage 3 - Inconsistent OK:    {len(incon_done)}")
     log(f"  Stage 3 - Inconsistent failed: {len(incon_failed)}")
 
