@@ -28,7 +28,10 @@ from datetime import datetime
 from pathlib import Path
 
 from analysis.analyzer import run_analysis
-from analysis.ontologyutils_service import run_single_trial_experiment
+from analysis.ontologyutils_service import (
+    classify_ontology,
+    run_single_trial_experiment,
+)
 
 # ── Experiment design constants (not user-configurable) ────────────────
 A_REPAIRS = ["A1", "A2", "A3"]
@@ -229,6 +232,22 @@ def run_experiment(args: argparse.Namespace) -> None:
 
     ontologies = list_ontologies(inconsistent_dir)
 
+    # Sort ontologies by axiom count (smallest first) so smaller ontologies
+    # are processed earlier, giving faster initial feedback.
+    print("Classifying ontologies to sort by axiom count...")
+    axiom_counts: dict[str, int] = {}
+    for ontology in ontologies:
+        name = ontology.stem
+        result = classify_ontology(ontology, java_mem=java_mem, lib_dir=lib_dir, timeout=120)
+        if result is not None:
+            axiom_counts[name] = result.axioms
+            print(f"  {name}: {result.axioms} axioms")
+        else:
+            axiom_counts[name] = 10**9  # push unclassifiable to the end
+            print(f"  {name}: classification FAILED (placed at end)")
+    ontologies.sort(key=lambda p: axiom_counts.get(p.stem, 10**9))
+    print(f"Ontology processing order: {[o.stem for o in ontologies]}")
+
     iic_header = IIC_KEYS + ["run_id"]
     runtime_header = [
         "trial_number",
@@ -253,6 +272,9 @@ def run_experiment(args: argparse.Namespace) -> None:
 
     for ontology in ontologies:
         name = ontology.stem
+        successes[name] = 0
+        attempts[name] = 0
+        failures[name] = []
         outcome_stats[name] = {
             "success": {"count": 0, "total": 0.0},
             "time_limit_exceeded": {"count": 0, "total": 0.0},

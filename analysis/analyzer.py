@@ -7,11 +7,18 @@ import math
 import re
 import sys
 from pathlib import Path
-from typing import Iterable
+from typing import Any, Iterable
 
 import numpy as np
 import pandas as pd
 from scipy import stats
+
+from analysis.estimator import (
+    build_estimation_latex,
+    build_estimation_markdown,
+    estimate_complexity,
+    load_axiom_counts,
+)
 
 A_REPAIRS = ["A1", "A2", "A3"]
 B_REPAIRS = [f"B{i}" for i in range(2, 10)]
@@ -738,7 +745,28 @@ def build_per_repair_outcome_latex(summary_df: pd.DataFrame) -> list[str]:
     return lines
 
 
-def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
+def run_analysis(
+    data_dir: Path,
+    out_dir: Path,
+    inconsistent_dir: Path | None = None,
+) -> dict[str, Any]:
+    """Aggregate trial outputs and produce reports.
+
+    Parameters
+    ----------
+    data_dir
+        Directory containing ``iic-*.csv`` and ``runtime-*.csv`` files.
+    out_dir
+        Directory where summary CSVs and reports will be written.
+    inconsistent_dir
+        Optional path to the ``inconsistent/`` ontology directory, used
+        for axiom count resolution in the complexity estimator.
+
+    Returns
+    -------
+    dict
+        Paths to all generated files and, if computed, the estimation result dict.
+    """
     out_dir.mkdir(parents=True, exist_ok=True)
 
     iic_paths = discover_csvs(data_dir, "iic")
@@ -768,6 +796,22 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
     outcome_summary_df.to_csv(outcome_summary_csv, index=False)
     per_repair_outcome_df.to_csv(per_repair_outcome_csv, index=False)
 
+    # ── Complexity estimation ───────────────────────────────────────
+    estimation: dict[str, Any] | None = None
+    if not runtime_df.empty:
+        try:
+            axiom_counts = load_axiom_counts(
+                names=runtime_df["ontology"].unique().tolist(),
+                inconsistent_dir=inconsistent_dir,
+            )
+            estimation = estimate_complexity(
+                runtime_df, axiom_counts=axiom_counts,
+            )
+        except Exception as exc:
+            print(f"Warning: complexity estimation failed: {exc}", file=sys.stderr)
+            estimation = None
+
+    # ── Markdown report ─────────────────────────────────────────────
     md_lines = ["# Combined Experiment Summary", ""]
     md_lines.extend(build_iic_overview_markdown(iic_summary_df))
     md_lines.extend(["", "---", ""])
@@ -778,8 +822,12 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
     md_lines.extend(build_outcome_markdown(outcome_summary_df))
     md_lines.extend(["", "---", ""])
     md_lines.extend(build_per_repair_outcome_markdown(per_repair_outcome_df))
+    if estimation is not None:
+        md_lines.extend(["", "---", ""])
+        md_lines.extend(build_estimation_markdown(estimation))
     report_md.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
+    # ── LaTeX report ────────────────────────────────────────────────
     tex_lines = [
         "% Auto-generated combined summary",
         "\\documentclass{article}",
@@ -791,10 +839,12 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
     tex_lines.extend(build_runtime_latex(runtime_summary_df))
     tex_lines.extend(build_outcome_latex(outcome_summary_df))
     tex_lines.extend(build_per_repair_outcome_latex(per_repair_outcome_df))
+    if estimation is not None:
+        tex_lines.extend(build_estimation_latex(estimation))
     tex_lines.append("\\end{document}")
     report_tex.write_text("\n".join(tex_lines) + "\n", encoding="utf-8")
 
-    return {
+    result: dict[str, Any] = {
         "iic_summary_csv": iic_summary_csv,
         "runtime_summary_csv": runtime_summary_csv,
         "outcome_summary_csv": outcome_summary_csv,
@@ -802,3 +852,6 @@ def run_analysis(data_dir: Path, out_dir: Path) -> dict[str, Path]:
         "report_md": report_md,
         "report_tex": report_tex,
     }
+    if estimation is not None:
+        result["estimation"] = estimation
+    return result

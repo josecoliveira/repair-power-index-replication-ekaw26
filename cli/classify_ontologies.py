@@ -17,8 +17,11 @@ import sys
 from pathlib import Path
 
 # Allow running as ``python cli/classify_ontologies.py`` (without ``-m``)
-if __name__ == "__main__" and __package__ is None:
-    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+# and via VS Code debugger (which may set __package__ to non-None).
+if __name__ == "__main__":
+    _proj_root = str(Path(__file__).resolve().parent.parent)
+    if _proj_root not in sys.path:
+        sys.path.insert(0, _proj_root)
 
 from analysis.classifier import (
     run_classification,

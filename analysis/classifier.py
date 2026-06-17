@@ -53,7 +53,7 @@ def discover_ontology_names() -> set[str]:
     return names
 
 
-def log(msg: str) -> None:
+def log(msg: str = "") -> None:
     """Print a timestamped message to stderr."""
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{ts}] {msg}", file=sys.stderr, flush=True)

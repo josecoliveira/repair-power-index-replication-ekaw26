@@ -153,6 +153,7 @@ def run_single_trial_experiment(
         "--weakening-timeout-secs", str(weakening_timeout),
         "--power-index-timeout-secs", str(power_index_timeout),
         "--make-inconsistent-timeout-secs", str(make_inconsistent_timeout),
+        "--verbose",
     ]
     cmd = _build_java_cmd(
         "www.ontologyutils.apps.SingleTrialExperiment",
