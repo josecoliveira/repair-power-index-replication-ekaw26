@@ -442,6 +442,14 @@ def run_experiment(args: argparse.Namespace) -> None:
                     f"Aborted {name}: {consecutive_failures} consecutive failures, "
                     f"{successes[name]} successes before abort"
                 )
+                # Move CSV files out of the data dir so they are excluded from analysis
+                abort_dir = data_dir / "aborted"
+                abort_dir.mkdir(parents=True, exist_ok=True)
+                for csv_path in [iic_paths[name], runtime_paths[name]]:
+                    if csv_path.exists():
+                        dest = abort_dir / csv_path.name
+                        csv_path.rename(dest)
+                        print(f"  Moved {csv_path.name} to {dest}")
                 break
 
         # Ontology complete (or aborted): run analysis so partial results are saved
