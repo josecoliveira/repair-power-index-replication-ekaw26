@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """CLI entry point for the experiment orchestrator.
 
-Run round-robin single-trial Java experiments for all ontologies and collect A/B results.
+Run sequential per-ontology Java trials for all ontologies and collect A/B results.
+Ontologies are sorted by axiom count (smallest first); each ontology runs trials
+until it reaches N successful trials before moving to the next ontology.
 
 Usage:
     python -m cli.run_trials [--dry-run]
@@ -37,8 +39,9 @@ def build_parser() -> argparse.ArgumentParser:
     """Build the argument parser with local default values."""
     parser = argparse.ArgumentParser(
         description=(
-            "Run round-robin single-trial Java experiments for all ontologies "
-            "and collect A/B results."
+            "Run sequential per-ontology Java trials for all ontologies "
+            "and collect A/B results. Ontologies are processed one at a time "
+            "in order of increasing axiom count."
         ),
     )
 

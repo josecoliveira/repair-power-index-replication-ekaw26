@@ -1,9 +1,10 @@
-"""Run round-robin single-trial Java runs for all ontologies and collect A/B results.
+"""Run sequential per-ontology Java trials for all ontologies and collect A/B results.
 
-Execution policy (Option B):
-- iterate ontologies in rounds
-- run one attempt per ontology per round
-- continue until each ontology reaches N successful trials
+Execution policy:
+- sort ontologies by axiom count (smallest first)
+- for each ontology, run trials until N successful trials are achieved
+- move to the next ontology
+- this way, if interrupted, completed ontologies have full results
 
 Artifacts are grouped by one run timestamp:
 - data-<timestamp>/
@@ -81,9 +82,9 @@ def normalize_status(status: str | None) -> str:
     return "memory_limit_exceeded"
 
 
-def write_log_header(handle, round_number: int, attempt_number: int, seed: int) -> None:
+def write_log_header(handle, ontology_name: str, attempt_number: int, seed: int) -> None:
     handle.write(
-        f"----- Round {round_number} attempt={attempt_number} seed={seed} at {timestamp()} -----\n"
+        f"----- {ontology_name} attempt={attempt_number} seed={seed} at {timestamp()} -----\n"
     )
 
 
@@ -315,23 +316,25 @@ def run_experiment(args: argparse.Namespace) -> None:
                 log.write(f"runtime_csv={runtime_paths[name]}\n")
 
     wall_clock_start = time.perf_counter()
-    round_number = 0
 
-    while any(successes[name] < max_successes for name in successes):
-        round_number += 1
-        for ontology_index, ontology in enumerate(ontologies):
-            name = ontology.stem
-            if successes[name] >= max_successes:
-                continue
+    for ontology_index, ontology in enumerate(ontologies):
+        name = ontology.stem
+        if successes[name] >= max_successes:
+            print(f"Skipping {name} - already has {successes[name]} successes (target {max_successes})")
+            continue
 
+        log_path = log_paths[name]
+        with open(log_path, "a", encoding="utf-8") as log:
+            log.write(f"\n=== Starting sequential trials for {name} at {timestamp()} ===\n")
+
+        while successes[name] < max_successes:
             attempts[name] += 1
             attempt_number = attempts[name]
             seed = seed_for_attempt(ontology_index, attempt_number - 1,
                                     len(ontologies), effective_base_seed, effective_step)
-            log_path = log_paths[name]
 
             with open(log_path, "a", encoding="utf-8") as log:
-                write_log_header(log, round_number, attempt_number, seed)
+                write_log_header(log, name, attempt_number, seed)
                 trial_start = time.perf_counter()
                 result = run_single_trial_experiment(
                     ontology_path=ontology,
@@ -403,26 +406,22 @@ def run_experiment(args: argparse.Namespace) -> None:
                     outcome_stats[name][attempt_outcome]["count"] += 1
                     outcome_stats[name][attempt_outcome]["total"] += trial_elapsed
 
-                total_successes = sum(successes.values())
-                total_attempts = sum(attempts.values())
                 log.write(
-                    f"progress: ontology_success={successes[name]}/{max_successes} "
-                    f"global_success={total_successes}/{max_successes * len(ontologies)} "
-                    f"global_attempts={total_attempts}\n"
+                    f"progress: ontology={name} attempt={attempt_number} "
+                    f"success={successes[name]}/{max_successes}\n"
                 )
 
             time.sleep(0.05)
 
-        # End of this round: refresh aggregated analysis every K rounds
+        # Ontology complete: run analysis so partial results are saved if interrupted
+        print(f"Completed {name}: {successes[name]} successes in {attempts[name]} attempts")
         try:
-            if effective_analysis_interval and effective_analysis_interval > 0 \
-               and (round_number % effective_analysis_interval) == 0:
-                analysis_outputs = run_analysis(data_dir, results_dir)
-                print(f"Round {round_number} analysis updated:")
-                for key, value in analysis_outputs.items():
-                    print(f"  {key}={value}")
+            analysis_outputs = run_analysis(data_dir, results_dir)
+            print(f"Analysis updated after {name}:")
+            for key, value in analysis_outputs.items():
+                print(f"  {key}={value}")
         except Exception as exc:
-            print(f"Warning: analysis failed at round {round_number}: {exc}", file=sys.stderr)
+            print(f"Warning: analysis failed after {name}: {exc}", file=sys.stderr)
 
     wall_clock_seconds = time.perf_counter() - wall_clock_start
 
