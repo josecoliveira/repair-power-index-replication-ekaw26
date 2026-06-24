@@ -199,6 +199,7 @@ def run_experiment(args: argparse.Namespace) -> None:
         print(f"  WEAKENING_TIMEOUT_SECONDS= {args.weakening_timeout}")
         print(f"  POWER_INDEX_TIMEOUT_SECS = {args.power_index_timeout}")
         print(f"  MAKE_INCONSISTENT_TO     = {args.make_inconsistent_timeout}")
+        print(f"  CONSECUTIVE_FAILURE_LIMIT= {args.consecutive_failure_limit}")
         print(f"  JAVA_MEM                 = {args.java_mem}")
         print(f"  A_REPAIRS (from config)  = {A_REPAIRS}")
         print(f"  B_REPAIRS (from config)  = {B_REPAIRS}")
@@ -327,6 +328,8 @@ def run_experiment(args: argparse.Namespace) -> None:
         with open(log_path, "a", encoding="utf-8") as log:
             log.write(f"\n=== Starting sequential trials for {name} at {timestamp()} ===\n")
 
+        consecutive_failures = 0
+
         while successes[name] < max_successes:
             attempts[name] += 1
             attempt_number = attempts[name]
@@ -362,6 +365,7 @@ def run_experiment(args: argparse.Namespace) -> None:
 
                 if result.returncode < 0:
                     error_message = f"negative return code {result.returncode}"
+                    consecutive_failures += 1
                     log.write(f"FAIL: attempt={attempt_number} seed={seed} - {error_message}\n")
                 else:
                     if payload:
@@ -370,6 +374,7 @@ def run_experiment(args: argparse.Namespace) -> None:
                             try:
                                 append_iic_row(iic_paths[name], payload, run_id)
                                 successes[name] += 1
+                                consecutive_failures = 0
                                 log.write(
                                     f"SUCCESS: attempt={attempt_number} seed={seed} "
                                     f"success_count={successes[name]}/{max_successes}\n"
@@ -378,14 +383,17 @@ def run_experiment(args: argparse.Namespace) -> None:
                                 attempt_outcome = "memory_limit_exceeded"
                                 error_message = f"IIC append error: {exc}"
                                 failures[name].append((attempt_number, seed, error_message))
+                                consecutive_failures += 1
                                 log.write(f"FAIL: attempt={attempt_number} seed={seed} - {error_message}\n")
                         else:
                             error_message = payload.get("error_message") or payload.get("error_type") or ""
+                            consecutive_failures += 1
                             log.write(
                                 f"FAIL: attempt={attempt_number} seed={seed} status={attempt_outcome} "
                                 f"stage={payload.get('failure_stage')} message={error_message}\n"
                             )
                     else:
+                        consecutive_failures += 1
                         log.write(f"FAIL: attempt={attempt_number} seed={seed} - empty payload\n")
 
                 if attempt_outcome != "success":
@@ -413,7 +421,19 @@ def run_experiment(args: argparse.Namespace) -> None:
 
             time.sleep(0.05)
 
-        # Ontology complete: run analysis so partial results are saved if interrupted
+            if consecutive_failures >= args.consecutive_failure_limit:
+                with open(log_path, "a", encoding="utf-8") as log:
+                    log.write(
+                        f"=== ABORTED {name} after {consecutive_failures} consecutive "
+                        f"failures at {timestamp()} - switching to next ontology ===\n"
+                    )
+                print(
+                    f"Aborted {name}: {consecutive_failures} consecutive failures, "
+                    f"{successes[name]} successes before abort"
+                )
+                break
+
+        # Ontology complete (or aborted): run analysis so partial results are saved
         print(f"Completed {name}: {successes[name]} successes in {attempts[name]} attempts")
         try:
             analysis_outputs = run_analysis(data_dir, results_dir)

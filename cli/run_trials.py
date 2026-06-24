@@ -32,6 +32,7 @@ REMOVAL_TIMEOUT_SECONDS = 300
 WEAKENING_TIMEOUT_SECONDS = 300
 POWER_INDEX_TIMEOUT_SECONDS = 300
 MAKE_INCONSISTENT_TIMEOUT_SECONDS = 300
+CONSECUTIVE_FAILURE_LIMIT = 5
 DEFAULT_JAVA_MEM = "-Xms1g -Xmx64g -Xss8m"
 
 
@@ -87,6 +88,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--make-inconsistent-timeout",
         type=int, default=MAKE_INCONSISTENT_TIMEOUT_SECONDS,
         help="Make-inconsistent timeout in seconds (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--consecutive-failure-limit",
+        type=int, default=CONSECUTIVE_FAILURE_LIMIT,
+        help="Abort ontology after this many consecutive failures (default: %(default)s)",
     )
 
     # --- Path overrides ---
