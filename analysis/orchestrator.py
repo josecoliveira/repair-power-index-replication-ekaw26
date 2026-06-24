@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import sys
 import time
 from datetime import datetime
@@ -249,6 +250,12 @@ def run_experiment(args: argparse.Namespace) -> None:
             print(f"  {name}: classification FAILED (placed at end)")
     ontologies.sort(key=lambda p: axiom_counts.get(p.stem, 10**9))
     print(f"Ontology processing order: {[o.stem for o in ontologies]}")
+
+    # Persist axiom counts to cache so the estimator doesn't re-run classification
+    cache_path = ANALYSIS_DIR / "axiom_counts.json"
+    cached_counts = {name: count for name, count in axiom_counts.items() if count < 10**9}
+    cache_path.write_text(json.dumps(cached_counts, indent=2, sort_keys=True), encoding="utf-8")
+    print(f"Persisted {len(cached_counts)} axiom counts to {cache_path}")
 
     iic_header = IIC_KEYS + ["run_id"]
     runtime_header = [

@@ -23,6 +23,11 @@ from scipy.stats import linregress
 
 from analysis.ontologyutils_service import classify_ontology
 
+# ── Repair IDs for per-repair estimation (B1 excluded, matching analyzer) ─
+_A_REPAIRS = ["A1", "A2", "A3"]
+_B_REPAIRS = [f"B{i}" for i in range(2, 10)]
+_REPAIR_IDS = _A_REPAIRS + _B_REPAIRS
+
 # ── Package layout ──────────────────────────────────────────────────────
 
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent
@@ -34,105 +39,45 @@ AXIOM_CACHE_FILE = ANALYSIS_DIR / "axiom_counts.json"
 # ── Public estimator API ────────────────────────────────────────────────
 
 
-def estimate_complexity(
-    runtime_df: pd.DataFrame,
-    axiom_counts: dict[str, int] | None = None,
-    inconsistent_dir: Path | None = None,
-) -> dict[str, Any]:
-    """Estimate computational complexity from experimental runtime data.
+def _fit_model(N: np.ndarray, T: np.ndarray, label: str = "") -> dict[str, Any]:
+    """Fit polynomial and exponential models to runtime-vs-axiom-count data.
 
     Parameters
     ----------
-    runtime_df
-        DataFrame from ``load_runtime_rows()``.  Must have columns
-        ``ontology``, ``trial_status``, ``trial_elapsed_seconds``.
-    axiom_counts
-        Mapping ``{ontology_name: axiom_count}``.  If ``None`` or empty,
-        the function tries to resolve axiom counts from
-        ``ontology_classification.md`` and, as a last resort, by calling
-        ``classify_ontology`` on the ontology files in *inconsistent_dir*.
-    inconsistent_dir
-        Path to the ``inconsistent/`` ontology directory.  Used as a
-        fallback when *axiom_counts* is not provided.
+    N
+        1-D array of axiom counts.
+    T
+        1-D array of mean runtimes (in the same unit, e.g. ms).
+    label
+        Optional label for the data (e.g. repair ID), used in error messages.
 
     Returns
     -------
-    dict with keys:
-        - ``best_fit``: ``"polynomial"`` or ``"exponential"``
-        - ``r2_poly``: R² of the polynomial (log-log) fit
-        - ``r2_exp``: R² of the exponential (semi-log) fit
-        - ``k``: estimated exponent of the polynomial model
-        - ``b``: estimated base of the exponential model
-        - ``data_points``: list of ``{ontology, axioms, mean_runtime_s}``
-        - ``n_ontologies``: number of data points used
-        - ``poly_equation``: human-readable string, e.g. ``"O(N^2.34)"``
-        - ``exp_equation``: human-readable string, e.g. ``"O(1.02^N)"``
-        - ``conclusion``: short string stating which model is favored
+    dict with keys: best_fit, r2_poly, r2_exp, k, b, data_points,
+    n_ontologies, poly_equation, exp_equation, conclusion.
     """
-    # ── Prepare data ────────────────────────────────────────────────
-    if runtime_df.empty:
-        return _empty_result("No runtime data available.")
-
-    success_df = runtime_df[runtime_df["trial_status"].str.strip().str.lower() == "success"]
-    if success_df.empty:
-        return _empty_result("No successful trials to estimate runtime from.")
-
-    # Group by ontology → mean trial_elapsed_seconds
-    grouped = (
-        success_df.groupby("ontology")["trial_elapsed_seconds"]
-        .mean()
-        .reset_index()
-        .rename(columns={"trial_elapsed_seconds": "mean_runtime_s"})
-    )
-
-    # ── Resolve axiom counts ────────────────────────────────────────
-    names: list[str] = sorted(grouped["ontology"].unique().tolist())
-    if not axiom_counts:
-        axiom_counts = load_axiom_counts(names, inconsistent_dir=inconsistent_dir)
-
-    # Merge axiom counts into the grouped data
-    grouped["axioms"] = grouped["ontology"].map(axiom_counts)
-    valid = grouped.dropna(subset=["axioms"]).copy()
-    valid["axioms"] = valid["axioms"].astype(int)
-
-    if valid.empty:
-        return _empty_result(
-            "Could not resolve axiom counts for any ontology."
-        )
-
-    # Build data-point list for the report
+    n = len(N)
     data_points: list[dict[str, Any]] = []
-    for _, row in valid.iterrows():
+    for i in range(n):
         data_points.append({
-            "ontology": str(row["ontology"]),
-            "axioms": int(row["axioms"]),
-            "mean_runtime_s": float(row["mean_runtime_s"]),
+            "axioms": int(N[i]),
+            "mean_runtime": float(T[i]),
         })
 
-    N: np.ndarray = valid["axioms"].to_numpy(dtype=float)
-    T: np.ndarray = valid["mean_runtime_s"].to_numpy(dtype=float)
-
-    # ── Polynomial fit (log-log): T = a * N^k ──────────────────────
     log_N = np.log(N)
     log_T = np.log(T)
+
+    # Polynomial fit (log-log): T = a * N^k
     slope_poly, intercept_poly, r_poly, _, _ = linregress(log_N, log_T)
     r2_poly = float(r_poly ** 2)
     k = float(slope_poly)
 
-    # ── Exponential fit (semi-log): T = a * b^N ────────────────────
+    # Exponential fit (semi-log): T = a * b^N
     slope_exp, intercept_exp, r_exp, _, _ = linregress(N, log_T)
     r2_exp = float(r_exp ** 2)
     b = float(np.exp(slope_exp))
 
-    # ── Determine best fit ──────────────────────────────────────────
-    best_fit: str
-    if r2_poly >= r2_exp:
-        best_fit = "polynomial"
-    else:
-        best_fit = "exponential"
-
-    poly_eq = f"O(N^{k:.2f})"
-    exp_eq = f"O({b:.2f}^N)"
+    best_fit = "polynomial" if r2_poly >= r2_exp else "exponential"
 
     return {
         "best_fit": best_fit,
@@ -141,15 +86,98 @@ def estimate_complexity(
         "k": k,
         "b": b,
         "data_points": data_points,
-        "n_ontologies": len(valid),
-        "poly_equation": poly_eq,
-        "exp_equation": exp_eq,
+        "n_ontologies": n,
+        "poly_equation": f"O(N^{k:.2f})",
+        "exp_equation": f"O({b:.2f}^N)",
         "conclusion": (
             f"Evidence favors Polynomial: N^{k:.2f}"
             if best_fit == "polynomial"
             else f"Evidence favors Exponential: {b:.2f}^N"
         ),
     }
+
+
+def estimate_complexity(
+    runtime_df: pd.DataFrame,
+    axiom_counts: dict[str, int] | None = None,
+    inconsistent_dir: Path | None = None,
+    repair_ids: list[str] | None = None,
+) -> dict[str, Any]:
+    """Estimate computational complexity per repair from experimental runtime data.
+
+    Parameters
+    ----------
+    runtime_df
+        DataFrame from ``load_runtime_rows()``.  Must have columns
+        ``ontology``, ``trial_status`` and ``{repair_id}_ms`` for each
+        repair in *repair_ids*.
+    axiom_counts
+        Mapping ``{ontology_name: axiom_count}``.  If ``None`` or empty,
+        the function tries to resolve axiom counts.
+    inconsistent_dir
+        Path to the ``inconsistent/`` ontology directory.  Used as a
+        fallback when *axiom_counts* is not provided.
+    repair_ids
+        List of repair IDs to estimate (e.g. ``["A1", "A2", "B2"]``).
+        Defaults to ``[A1, A2, A3, B2, ..., B9]``.
+
+    Returns
+    -------
+    dict
+        ``{repair_id: model_result, ...}`` where each model_result has
+        keys: best_fit, r2_poly, r2_exp, k, b, data_points, n_ontologies,
+        poly_equation, exp_equation, conclusion.
+        An empty dict is returned if no data is available.
+    """
+    if repair_ids is None:
+        repair_ids = _REPAIR_IDS
+
+    if runtime_df.empty:
+        return {}
+
+    success_df = runtime_df[runtime_df["trial_status"].str.strip().str.lower() == "success"].copy()
+    if success_df.empty:
+        return {}
+
+    # Resolve axiom counts once, shared across all repairs
+    names: list[str] = sorted(success_df["ontology"].unique().tolist())
+    if not axiom_counts:
+        axiom_counts = load_axiom_counts(names, inconsistent_dir=inconsistent_dir)
+
+    results: dict[str, Any] = {}
+    for repair_id in repair_ids:
+        col = f"{repair_id}_ms"
+        if col not in success_df.columns:
+            continue
+
+        repair_df = success_df[success_df[col].notna()].copy()
+        if repair_df.empty:
+            continue
+
+        # Group by ontology → mean runtime for this repair
+        grouped = (
+            repair_df.groupby("ontology")[col]
+            .mean()
+            .reset_index()
+            .rename(columns={col: "mean_runtime"})
+        )
+
+        # Merge axiom counts
+        grouped["axioms"] = grouped["ontology"].map(axiom_counts)
+        valid = grouped.dropna(subset=["axioms"]).copy()
+        if valid.empty:
+            continue
+        valid["axioms"] = valid["axioms"].astype(int)
+
+        if len(valid) < 2:
+            continue
+
+        N: np.ndarray = valid["axioms"].to_numpy(dtype=float)
+        T: np.ndarray = valid["mean_runtime"].to_numpy(dtype=float)
+
+        results[repair_id] = _fit_model(N, T, label=repair_id)
+
+    return results
 
 
 # ── Axiom count resolution ──────────────────────────────────────────────
@@ -295,40 +323,63 @@ def load_axiom_counts(
 # ── Report builders (Markdown / LaTeX) ──────────────────────────────────
 
 
+def _repair_label(rid: str) -> str:
+    """Return a human-readable label for a repair ID."""
+    labels = {
+        "A1": "Random removal",
+        "A2": "Not-in-largest-MCS removal",
+        "A3": "Default weakening",
+        "B2": "in-MUS + Shapley",
+        "B3": "in-MUS + Banzhaf",
+        "B4": "Shapley + random",
+        "B5": "Shapley + Shapley",
+        "B6": "Shapley + Banzhaf",
+        "B7": "Banzhaf + random",
+        "B8": "Banzhaf + Shapley",
+        "B9": "Banzhaf + Banzhaf",
+    }
+    return labels.get(rid, rid)
+
+
 def build_estimation_markdown(estimation: dict[str, Any]) -> list[str]:
-    """Build the Complexity Estimation section for the Markdown report."""
+    """Build the Complexity Estimation section for the Markdown report.
+
+    Parameters
+    ----------
+    estimation
+        Dict keyed by repair_id, each value is a model result from
+        ``_fit_model()``.
+    """
     lines = [
         "# Complexity Estimation",
         "",
-        "Estimating computational cost of the repair algorithm with respect "
-        "to ontology size (axiom count).",
+        "Per-repair polynomial and exponential fits of runtime vs axiom count.",
         "",
     ]
 
-    data_points = estimation.get("data_points", [])
-    if not data_points:
-        lines.append("No estimation data available.")
+    if not estimation:
+        lines.append("No estimation data available (need ≥2 ontologies with successful trials).")
         return lines
 
-    lines.append("| Ontology | Axioms | Mean Runtime (s) |")
-    lines.append("| --- | --- | --- |")
-    for dp in data_points:
+    # Sort repairs: A1, A2, A3, B2, ..., B9
+    repair_order = {rid: i for i, rid in enumerate(_REPAIR_IDS)}
+    sorted_repairs = sorted(estimation.keys(), key=lambda r: repair_order.get(r, 999))
+
+    lines.append("| Repair | Best Fit | R² Poly | R² Exp | Equation |")
+    lines.append("| --- | --- | --- | --- | --- |")
+    for rid in sorted_repairs:
+        m = estimation[rid]
+        eq = m["poly_equation"] if m["best_fit"] == "polynomial" else m["exp_equation"]
         lines.append(
-            f"| {dp['ontology']} | {dp['axioms']} | {dp['mean_runtime_s']:.2f} |"
+            f"| {_repair_label(rid)} | {m['best_fit']} "
+            f"| {m['r2_poly']:.4f} | {m['r2_exp']:.4f} "
+            f"| {eq} |"
         )
     lines.append("")
-
-    lines.append(f"**Polynomial Fit (log-log):** "
-                 f"R² = {estimation['r2_poly']:.4f}, "
-                 f"Estimated exponent k = {estimation['k']:.2f} "
-                 f"→ {estimation['poly_equation']}")
-    lines.append("")
-    lines.append(f"**Exponential Fit (semi-log):** "
-                 f"R² = {estimation['r2_exp']:.4f}, "
-                 f"Estimated base b = {estimation['b']:.2f} "
-                 f"→ {estimation['exp_equation']}")
-    lines.append("")
-    lines.append(f"**Conclusion:** {estimation['conclusion']}")
+    lines.append(
+        "*Polynomial: O(N^k) — Exponential: O(b^N). "
+        "Best fit selected by higher R².*"
+    )
     lines.append("")
 
     return lines
@@ -337,40 +388,35 @@ def build_estimation_markdown(estimation: dict[str, Any]) -> list[str]:
 def build_estimation_latex(estimation: dict[str, Any]) -> list[str]:
     """Build the Complexity Estimation section for the LaTeX report."""
     lines: list[str] = []
-    data_points = estimation.get("data_points", [])
-    if not data_points:
+
+    if not estimation:
         return lines
+
+    repair_order = {rid: i for i, rid in enumerate(_REPAIR_IDS)}
+    sorted_repairs = sorted(estimation.keys(), key=lambda r: repair_order.get(r, 999))
 
     lines.extend([
         "% Auto-generated complexity estimation",
         "\\begin{table}[ht]",
         "  \\centering",
-        "  \\caption{Runtime complexity estimation}",
-        "  \\begin{tabular}{lcr}",
+        "  \\caption{Per-repair complexity estimation}",
+        "  \\begin{tabular}{lcccc}",
         "    \\toprule",
-        "    Ontology & Axioms & Mean Runtime (s) \\\\",
+        "    Repair & Best Fit & R² Poly & R² Exp & Equation \\\\",
         "    \\midrule",
     ])
-    for dp in data_points:
+    for rid in sorted_repairs:
+        m = estimation[rid]
+        eq = m["poly_equation"] if m["best_fit"] == "polynomial" else m["exp_equation"]
         lines.append(
-            f"    {dp['ontology']} & {dp['axioms']} & "
-            f"{dp['mean_runtime_s']:.2f} \\\\"
+            f"    {_repair_label(rid)} & {m['best_fit']} "
+            f"& {m['r2_poly']:.4f} & {m['r2_exp']:.4f} "
+            f"& ${eq}$ \\\\"
         )
     lines.extend([
         "    \\bottomrule",
         "  \\end{tabular}",
         "\\end{table}",
-        "",
-        f"Polynomial fit: R² = {estimation['r2_poly']:.4f}, "
-        f"k = {estimation['k']:.2f} "
-        f"→ ${estimation['poly_equation']}$",
-        "",
-        f"Exponential fit: R² = {estimation['r2_exp']:.4f}, "
-        f"b = {estimation['b']:.2f} "
-        f"→ ${estimation['exp_equation']}$",
-        "",
-        f"Conclusion: {estimation['conclusion']}",
-        "",
     ])
     return lines
 

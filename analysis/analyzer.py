@@ -806,6 +806,7 @@ def run_analysis(
             )
             estimation = estimate_complexity(
                 runtime_df, axiom_counts=axiom_counts,
+                repair_ids=REPAIR_IDS,
             )
         except Exception as exc:
             print(f"Warning: complexity estimation failed: {exc}", file=sys.stderr)
