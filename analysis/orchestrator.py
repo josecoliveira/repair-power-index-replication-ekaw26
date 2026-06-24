@@ -77,7 +77,7 @@ def ensure_csv_with_header(path: Path, fieldnames: list[str]) -> None:
 
 def normalize_status(status: str | None) -> str:
     status = (status or "").strip().lower()
-    if status in {"success", "time_limit_exceeded", "memory_limit_exceeded"}:
+    if status in {"success", "time_limit_exceeded", "memory_limit_exceeded", "java_exception"}:
         return status
     return "memory_limit_exceeded"
 
@@ -395,6 +395,10 @@ def run_experiment(args: argparse.Namespace) -> None:
                     else:
                         consecutive_failures += 1
                         log.write(f"FAIL: attempt={attempt_number} seed={seed} - empty payload\n")
+
+                # Re-classify Java ExecutionExceptions that the Java side mislabels as memory_limit_exceeded
+                if attempt_outcome != "success" and "ExecutionException" in error_message:
+                    attempt_outcome = "java_exception"
 
                 if attempt_outcome != "success":
                     if not error_message:
