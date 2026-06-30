@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,34,20260624134028346645,time_limit_exceeded,timeout,B3,Repair timeout: B3 exceeded 300 seconds,302.102244,55,94,229,140,1242,300005,,,,,,
+2,14234,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3),3.198158,96,74,225,136,1281,510,545,,,,,
+3,28434,20260624134028346645,time_limit_exceeded,timeout,B3,Repair timeout: B3 exceeded 300 seconds,302.159086,56,92,386,110,1159,300004,,,,,,
+4,42634,20260624134028346645,time_limit_exceeded,timeout,B3,Repair timeout: B3 exceeded 300 seconds,302.166412,117,66,226,138,1268,300004,,,,,,
+5,56834,20260624134028346645,time_limit_exceeded,timeout,B2,Repair timeout: B2 exceeded 300 seconds,301.215345,98,71,240,450,300002,,,,,,,
+6,71034,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3),3.193142,38,98,252,254,1166,524,501,,,,,
+7,85234,20260624134028346645,time_limit_exceeded,timeout,B2,Repair timeout: B2 exceeded 300 seconds,301.004141,30,105,245,281,300001,,,,,,,
+8,99434,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA6156-9),3.046537,56,90,235,135,1240,504,436,,,,,
+9,113634,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3),3.186004,119,68,214,142,1264,518,520,,,,,
+10,127834,20260624134028346645,time_limit_exceeded,timeout,B2,Repair timeout: B2 exceeded 300 seconds,300.899327,33,105,257,148,300004,,,,,,,

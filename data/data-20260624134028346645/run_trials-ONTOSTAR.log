@@ -1,0 +1,478 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ONTOSTAR.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ONTOSTAR.csv
+
+=== Starting sequential trials for ONTOSTAR at 2026-06-27 11:10:36 ===
+----- ONTOSTAR attempt=1 seed=113 at 2026-06-27 11:10:36 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=113, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:10:37.182] Checking precondition...
+[2026-06-27 11:10:37.200] Starting the repair...
+[2026-06-27 11:10:37.210] Found 326 possible bad axioms.
+[2026-06-27 11:10:37.212] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(supportsWorkflow owl:Thing) DigitalHealthProduct).
+[2026-06-27 11:10:37.222] Found 325 possible bad axioms.
+[2026-06-27 11:10:37.223] Selected the bad axiom SubClassOf(InPersonVisit HospitalSetting).
+[2026-06-27 11:10:37.229] Found 324 possible bad axioms.
+[2026-06-27 11:10:37.229] Selected the bad axiom SubClassOf(AcceleratorProgram StartupTeam).
+[2026-06-27 11:10:37.236] Found 323 possible bad axioms.
+[2026-06-27 11:10:37.236] Selected the bad axiom SubClassOf(ITAdministrator AlliedHealthProfessional).
+[2026-06-27 11:10:37.241] Found 322 possible bad axioms.
+[2026-06-27 11:10:37.242] Selected the bad axiom SubClassOf(AcceleratorProgram ClinicalTeam).
+[2026-06-27 11:10:37.247] Found 321 possible bad axioms.
+[2026-06-27 11:10:37.247] Selected the bad axiom SubClassOf(ChannelPartner Stakeholder).
+[2026-06-27 11:10:37.251] Found 320 possible bad axioms.
+[2026-06-27 11:10:37.251] Selected the bad axiom SubClassOf(TelemedicinePlatform DigitalHealthProduct).
+[2026-06-27 11:10:37.255] Found 319 possible bad axioms.
+[2026-06-27 11:10:37.255] Selected the bad axiom SubClassOf(Condition Clinical).
+[2026-06-27 11:10:37.265] Found 318 possible bad axioms.
+[2026-06-27 11:10:37.265] Selected the bad axiom SubClassOf(EnergyEfficiency DataAIEvaluationAndOutcomesAdoptionTranslationOriented).
+[2026-06-27 11:10:37.269] Found 317 possible bad axioms.
+[2026-06-27 11:10:37.269] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(servesUser owl:Thing) TriageService).
+[2026-06-27 11:10:37.273] Found 316 possible bad axioms.
+[2026-06-27 11:10:37.273] Selected the bad axiom SubClassOf(GrossMargin FinanceAndPerformance).
+[2026-06-27 11:10:37.282] Found 315 possible bad axioms.
+[2026-06-27 11:10:37.283] Selected the bad axiom SubClassOf(AuditLogging Authentication).
+[2026-06-27 11:10:37.287] Found 314 possible bad axioms.
+[2026-06-27 11:10:37.287] Selected the bad axiom SubClassOf(PayerOrganization Organization).
+[2026-06-27 11:10:37.292] Found 313 possible bad axioms.
+[2026-06-27 11:10:37.293] Selected the bad axiom SubClassOf(ArtificialIntelligence RecommendationEngine).
+[2026-06-27 11:10:37.297] Found 312 possible bad axioms.
+[2026-06-27 11:10:37.297] Selected the bad axiom SubClassOf(PatientPortal DigitalHealthProduct).
+[2026-06-27 11:10:37.301] Found 311 possible bad axioms.
+[2026-06-27 11:10:37.301] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=1 seed=113 - negative return code -9
+progress: ontology=ONTOSTAR attempt=1 success=0/100
+----- ONTOSTAR attempt=2 seed=14313 at 2026-06-27 11:13:02 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=14313, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:13:02.539] Checking precondition...
+[2026-06-27 11:13:02.556] Starting the repair...
+[2026-06-27 11:13:02.566] Found 326 possible bad axioms.
+[2026-06-27 11:13:02.567] Selected the bad axiom SubClassOf(PatientPortal DigitalHealthProduct).
+[2026-06-27 11:13:02.579] Found 325 possible bad axioms.
+[2026-06-27 11:13:02.580] Selected the bad axiom SubClassOf(Encryption DICOMInterface).
+[2026-06-27 11:13:02.586] Found 324 possible bad axioms.
+[2026-06-27 11:13:02.587] Selected the bad axiom SubClassOf(EHRIntegration AuditLogging).
+[2026-06-27 11:13:02.594] Found 323 possible bad axioms.
+[2026-06-27 11:13:02.594] Selected the bad axiom SubClassOf(SalesTeam Organization).
+[2026-06-27 11:13:02.599] Found 322 possible bad axioms.
+[2026-06-27 11:13:02.599] Selected the bad axiom SubClassOf(ProfitabilityMetric FinanceAndPerformance).
+[2026-06-27 11:13:02.603] Found 321 possible bad axioms.
+[2026-06-27 11:13:02.603] Selected the bad axiom SubClassOf(HomeCare InPersonVisit).
+[2026-06-27 11:13:02.608] Found 320 possible bad axioms.
+[2026-06-27 11:13:02.608] Selected the bad axiom SubClassOf(MentalHealthSupportService DigitalHealthService).
+[2026-06-27 11:13:02.613] Found 319 possible bad axioms.
+[2026-06-27 11:13:02.613] Selected the bad axiom SubClassOf(ROA_ReturnOnAssets EfficiencyMetric).
+[2026-06-27 11:13:02.624] Found 318 possible bad axioms.
+[2026-06-27 11:13:02.624] Selected the bad axiom SubClassOf(Medication Clinical).
+[2026-06-27 11:13:02.634] Found 317 possible bad axioms.
+[2026-06-27 11:13:02.634] Selected the bad axiom SubClassOf(ChronicDiseaseManagementProgram DigitalHealthProduct).
+[2026-06-27 11:13:02.645] Found 316 possible bad axioms.
+[2026-06-27 11:13:02.645] Selected the bad axiom SubClassOf(ChangeManagement ClinicalWorkflow).
+[2026-06-27 11:13:02.656] Found 315 possible bad axioms.
+[2026-06-27 11:13:02.656] Selected the bad axiom SubClassOf(NGO owl:Nothing).
+[2026-06-27 11:13:02.661] Found 314 possible bad axioms.
+[2026-06-27 11:13:02.661] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(integratesWith ObjectAllValuesFrom(integratesWith ObjectUnionOf(EHRIntegration InteroperabilityStandard))) ChronicDiseaseManagementProgram).
+[2026-06-27 11:13:02.666] Found 313 possible bad axioms.
+[2026-06-27 11:13:02.666] Selected the bad axiom SubClassOf(CurrentRatio FinanceAndPerformance).
+[2026-06-27 11:13:02.670] Found 312 possible bad axioms.
+[2026-06-27 11:13:02.670] Selected the bad axiom SubClassOf(LowCarbonTechnology owl:Nothing).
+[2026-06-27 11:13:02.674] Found 311 possible bad axioms.
+[2026-06-27 11:13:02.674] Selected the b
+...[truncated]
+FAIL: attempt=2 seed=14313 - negative return code -9
+progress: ontology=ONTOSTAR attempt=2 success=0/100
+----- ONTOSTAR attempt=3 seed=28513 at 2026-06-27 11:15:50 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=28513, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:15:51.293] Checking precondition...
+[2026-06-27 11:15:51.313] Starting the repair...
+[2026-06-27 11:15:51.323] Found 326 possible bad axioms.
+[2026-06-27 11:15:51.325] Selected the bad axiom SubClassOf(RegulatoryTeam Organization).
+[2026-06-27 11:15:51.337] Found 325 possible bad axioms.
+[2026-06-27 11:15:51.338] Selected the bad axiom SubClassOf(ClinicalDecisionSupportSystem ChronicDiseaseManagementProgram).
+[2026-06-27 11:15:51.345] Found 324 possible bad axioms.
+[2026-06-27 11:15:51.346] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectsData owl:Thing) ChronicDiseaseManagementProgram).
+[2026-06-27 11:15:51.352] Found 323 possible bad axioms.
+[2026-06-27 11:15:51.352] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(usesTechnology owl:Thing) DigitalHealthProduct).
+[2026-06-27 11:15:51.357] Found 322 possible bad axioms.
+[2026-06-27 11:15:51.357] Selected the bad axiom SubClassOf(Researcher Stakeholder).
+[2026-06-27 11:15:51.362] Found 321 possible bad axioms.
+[2026-06-27 11:15:51.363] Selected the bad axiom SubClassOf(AlliedHealthProfessional Stakeholder).
+[2026-06-27 11:15:51.368] Found 320 possible bad axioms.
+[2026-06-27 11:15:51.368] Selected the bad axiom SubClassOf(ImplementationPartner Stakeholder).
+[2026-06-27 11:15:51.372] Found 319 possible bad axioms.
+[2026-06-27 11:15:51.372] Selected the bad axiom SubClassOf(AcceleratorProgram EngineeringTeam).
+[2026-06-27 11:15:51.383] Found 318 possible bad axioms.
+[2026-06-27 11:15:51.383] Selected the bad axiom SubClassOf(BurnRate FinancialStatement).
+[2026-06-27 11:15:51.388] Found 317 possible bad axioms.
+[2026-06-27 11:15:51.388] Selected the bad axiom SubClassOf(ROA_ReturnOnAssets owl:Nothing).
+[2026-06-27 11:15:51.393] Found 316 possible bad axioms.
+[2026-06-27 11:15:51.393] Selected the bad axiom SubClassOf(Patient Stakeholder).
+[2026-06-27 11:15:51.404] Found 315 possible bad axioms.
+[2026-06-27 11:15:51.404] Selected the bad axiom SubClassOf(PartnershipAgreement LegalAndGovernance).
+[2026-06-27 11:15:51.409] Found 314 possible bad axioms.
+[2026-06-27 11:15:51.409] Selected the bad axiom SubClassOf(PatientPortal DigitalHealthProduct).
+[2026-06-27 11:15:51.414] Found 313 possible bad axioms.
+[2026-06-27 11:15:51.414] Selected the bad axiom SubClassOf(ConsentWorkflow ClinicalSettingAndWorkflow).
+[2026-06-27 11:15:51.419] Found 312 possible bad axioms.
+[2026-06-27 11:15:51.419] Selected the bad axiom SubClassOf(EthicsBoard Stakeholder).
+[2026-06-27 11:15:51.424] Found 311 possible bad axioms.
+[2026-06-27 11:15:51.424] Selected the bad axiom SubClassOf(Traini
+...[truncated]
+FAIL: attempt=3 seed=28513 - negative return code -9
+progress: ontology=ONTOSTAR attempt=3 success=0/100
+----- ONTOSTAR attempt=4 seed=42713 at 2026-06-27 11:18:01 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=42713, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:18:02.270] Checking precondition...
+[2026-06-27 11:18:02.290] Starting the repair...
+[2026-06-27 11:18:02.299] Found 326 possible bad axioms.
+[2026-06-27 11:18:02.301] Selected the bad axiom SubClassOf(LTV_LifetimeValue FinanceAndPerformance).
+[2026-06-27 11:18:02.312] Found 325 possible bad axioms.
+[2026-06-27 11:18:02.313] Selected the bad axiom SubClassOf(CareSetting ClinicalWorkflow).
+[2026-06-27 11:18:02.318] Found 324 possible bad axioms.
+[2026-06-27 11:18:02.318] Selected the bad axiom SubClassOf(DiagnosticSupportTool TechnicalSupportService).
+[2026-06-27 11:18:02.328] Found 323 possible bad axioms.
+[2026-06-27 11:18:02.328] Selected the bad axiom SubClassOf(PersonalHealthRecord SensorData).
+[2026-06-27 11:18:02.334] Found 322 possible bad axioms.
+[2026-06-27 11:18:02.335] Selected the bad axiom SubClassOf(MedicationAdherenceTool DigitalHealthProduct).
+[2026-06-27 11:18:02.340] Found 321 possible bad axioms.
+[2026-06-27 11:18:02.340] Selected the bad axiom SubClassOf(SensorData WearableData).
+[2026-06-27 11:18:02.345] Found 320 possible bad axioms.
+[2026-06-27 11:18:02.345] Selected the bad axiom SubClassOf(PatientEngagementApp DigitalHealthProduct).
+[2026-06-27 11:18:02.349] Found 319 possible bad axioms.
+[2026-06-27 11:18:02.350] Selected the bad axiom SubClassOf(DigitalHealthProduct API).
+[2026-06-27 11:18:02.359] Found 318 possible bad axioms.
+[2026-06-27 11:18:02.359] Selected the bad axiom SubClassOf(PredictiveAnalytics AIAnalytics).
+[2026-06-27 11:18:02.363] Found 317 possible bad axioms.
+[2026-06-27 11:18:02.364] Selected the bad axiom SubClassOf(PartnershipAgreement LegalAndGovernance).
+[2026-06-27 11:18:02.367] Found 316 possible bad axioms.
+[2026-06-27 11:18:02.367] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectsData owl:Thing) ChronicDiseaseManagementProgram).
+[2026-06-27 11:18:02.376] Found 315 possible bad axioms.
+[2026-06-27 11:18:02.376] Selected the bad axiom SubClassOf(Caregiver Stakeholder).
+[2026-06-27 11:18:02.380] Found 314 possible bad axioms.
+[2026-06-27 11:18:02.380] Selected the bad axiom SubClassOf(GrantFunder Organization).
+[2026-06-27 11:18:02.385] Found 313 possible bad axioms.
+[2026-06-27 11:18:02.386] Selected the bad axiom SubClassOf(DiagnosticSupportTool DigitalHealthProduct).
+[2026-06-27 11:18:02.390] Found 312 possible bad axioms.
+[2026-06-27 11:18:02.390] Selected the bad axiom SubClassOf(DigitalHealthService DigitalHealthProduct).
+[2026-06-27 11:18:02.396] Found 311 possible bad axioms.
+[2026-06-27 11:18:02.396] Selected the bad axiom SubClassOf(DataScienceTeam ClinicalTea
+...[truncated]
+FAIL: attempt=4 seed=42713 - negative return code -9
+progress: ontology=ONTOSTAR attempt=4 success=0/100
+----- ONTOSTAR attempt=5 seed=56913 at 2026-06-27 11:20:33 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=56913, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:20:34.207] Checking precondition...
+[2026-06-27 11:20:34.227] Starting the repair...
+[2026-06-27 11:20:34.236] Found 326 possible bad axioms.
+[2026-06-27 11:20:34.238] Selected the bad axiom SubClassOf(ProcurementOfficer Stakeholder).
+[2026-06-27 11:20:34.249] Found 325 possible bad axioms.
+[2026-06-27 11:20:34.249] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(servesUser ObjectUnionOf(Patient ObjectUnionOf(Admin Clinician)))).
+[2026-06-27 11:20:34.257] Found 324 possible bad axioms.
+[2026-06-27 11:20:34.258] Selected the bad axiom SubClassOf(Admin QualityImprovementLead).
+[2026-06-27 11:20:34.265] Found 323 possible bad axioms.
+[2026-06-27 11:20:34.265] Selected the bad axiom SubClassOf(owl:Thing Organization).
+[2026-06-27 11:20:34.271] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 11:20:34.272] Checking precondition...
+[2026-06-27 11:20:34.281] Starting the repair...
+[2026-06-27 11:21:12.261] Found 2 possible bad axioms.
+[2026-06-27 11:21:12.261] Selected the bad axiom SubClassOf(owl:Thing Organization).
+[2026-06-27 11:21:12.264] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 11:21:12.265] Checking precondition...
+[2026-06-27 11:21:12.268] Starting the repair...
+[2026-06-27 11:21:12.281] Selected a reference ontology with 524 axioms.
+[2026-06-27 11:21:12.688] Selected the bad axiom SubClassOf(owl:Thing Organization).
+[2026-06-27 11:21:12.943] Selected the weaker axiom SubClassOf(owl:Thing ObjectAllValuesFrom(processesData HealthData)).
+[2026-06-27 11:21:12.946] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 11:21:12.947] Checking precondition...
+[2026-06-27 11:21:12.951] Starting the repair...
+[2026-06-27 11:21:12.974] Selected a reference ontology with 524 axioms.
+[2026-06-27 11:21:13.385] Selected the bad axiom SubClassOf(Organization owl:Nothing).
+[2026-06-27 11:21:13.624] Selected the weaker axiom SubClassOf(Organization ProcurementOfficer).
+[2026-06-27 11:21:14.108] Selected the bad axiom SubClassOf(owl:Thing Organization).
+[2026-06-27 11:21:14.111] Selected the weaker axiom SubClassOf(RegulatoryTeam Organization).
+[2026-06-27 11:21:14.113] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-27 11:21:14.115] Checking precondition...
+[2026-06-27 11:21:14.117] Starting the repair...
+[2026-06-27 11:21:14.136] Selected a reference ontology with 524 axioms.
+[2026-06-27 11:21:14.540] Selected the bad axiom SubClassOf(Organization owl:
+...[truncated]
+FAIL: attempt=5 seed=56913 - negative return code -9
+progress: ontology=ONTOSTAR attempt=5 success=0/100
+----- ONTOSTAR attempt=6 seed=71113 at 2026-06-27 11:22:56 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=71113, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:22:56.850] Checking precondition...
+[2026-06-27 11:22:56.869] Starting the repair...
+[2026-06-27 11:22:56.878] Found 326 possible bad axioms.
+[2026-06-27 11:22:56.880] Selected the bad axiom SubClassOf(FinanceAndPerformance LiquidityMetric).
+[2026-06-27 11:22:56.891] Found 325 possible bad axioms.
+[2026-06-27 11:22:56.892] Selected the bad axiom SubClassOf(DataScienceTeam Organization).
+[2026-06-27 11:22:56.898] Found 324 possible bad axioms.
+[2026-06-27 11:22:56.898] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectsData owl:Thing) DigitalHealthProduct).
+[2026-06-27 11:22:56.906] Found 323 possible bad axioms.
+[2026-06-27 11:22:56.906] Selected the bad axiom SubClassOf(RecommendationEngine AIAnalytics).
+[2026-06-27 11:22:56.912] Found 322 possible bad axioms.
+[2026-06-27 11:22:56.912] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(processesData HealthData)).
+[2026-06-27 11:22:56.916] Found 321 possible bad axioms.
+[2026-06-27 11:22:56.917] Selected the bad axiom SubClassOf(HealthTechCompany Organization).
+[2026-06-27 11:22:56.921] Found 320 possible bad axioms.
+[2026-06-27 11:22:56.921] Selected the bad axiom SubClassOf(CareCoordinator Stakeholder).
+[2026-06-27 11:22:56.926] Found 319 possible bad axioms.
+[2026-06-27 11:22:56.926] Selected the bad axiom SubClassOf(ConsultingService DigitalHealthProduct).
+[2026-06-27 11:22:56.934] Found 318 possible bad axioms.
+[2026-06-27 11:22:56.934] Selected the bad axiom SubClassOf(Nurse Stakeholder).
+[2026-06-27 11:22:56.938] Found 317 possible bad axioms.
+[2026-06-27 11:22:56.939] Selected the bad axiom SubClassOf(PopulationHealthPlatform DigitalHealthProduct).
+[2026-06-27 11:22:56.943] Found 316 possible bad axioms.
+[2026-06-27 11:22:56.943] Selected the bad axiom SubClassOf(EmergencyDepartment ClinicalSettingAndWorkflow).
+[2026-06-27 11:22:56.953] Found 315 possible bad axioms.
+[2026-06-27 11:22:56.953] Selected the bad axiom SubClassOf(ChannelPartner ObjectUnionOf(Patient ObjectUnionOf(Admin Clinician))).
+[2026-06-27 11:22:56.957] Found 314 possible bad axioms.
+[2026-06-27 11:22:56.957] Selected the bad axiom SubClassOf(PatientEngagementApp DigitalHealthProduct).
+[2026-06-27 11:22:56.962] Found 313 possible bad axioms.
+[2026-06-27 11:22:56.962] Selected the bad axiom SubClassOf(ClaimsData BehavioralData).
+[2026-06-27 11:22:56.966] Found 312 possible bad axioms.
+[2026-06-27 11:22:56.966] Selected the bad axiom SubClassOf(CustomerSuccessTeam Organization).
+[2026-06-27 11:22:56.972] Found 311 possible bad axioms.
+[2026-06-27 11:22:56.972] Selected the bad axiom S
+...[truncated]
+FAIL: attempt=6 seed=71113 - negative return code -9
+progress: ontology=ONTOSTAR attempt=6 success=0/100
+----- ONTOSTAR attempt=7 seed=85313 at 2026-06-27 11:25:37 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=85313, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:25:38.192] Checking precondition...
+[2026-06-27 11:25:38.210] Starting the repair...
+[2026-06-27 11:25:38.220] Found 326 possible bad axioms.
+[2026-06-27 11:25:38.222] Selected the bad axiom SubClassOf(ROA_ReturnOnAssets EfficiencyMetric).
+[2026-06-27 11:25:38.233] Found 325 possible bad axioms.
+[2026-06-27 11:25:38.234] Selected the bad axiom SubClassOf(CloudInfrastructure DigitalHealthProduct).
+[2026-06-27 11:25:38.240] Found 324 possible bad axioms.
+[2026-06-27 11:25:38.240] Selected the bad axiom SubClassOf(ROE_ReturnOnEquity UnitEconomicsMetric).
+[2026-06-27 11:25:38.247] Found 323 possible bad axioms.
+[2026-06-27 11:25:38.247] Selected the bad axiom SubClassOf(EmployerOrganization Organization).
+[2026-06-27 11:25:38.253] Found 322 possible bad axioms.
+[2026-06-27 11:25:38.253] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(supportsWorkflow owl:Thing) CareCoordinationPlatform).
+[2026-06-27 11:25:38.259] Found 321 possible bad axioms.
+[2026-06-27 11:25:38.259] Selected the bad axiom SubClassOf(HL7FHIRInterface TechnologyArchitectureAndInteroperability).
+[2026-06-27 11:25:38.264] Found 320 possible bad axioms.
+[2026-06-27 11:25:38.264] Selected the bad axiom SubClassOf(OperatingMargin FinanceAndPerformance).
+[2026-06-27 11:25:38.269] Found 319 possible bad axioms.
+[2026-06-27 11:25:38.269] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(integratesWith owl:Thing) DigitalHealthProduct).
+[2026-06-27 11:25:38.278] Found 318 possible bad axioms.
+[2026-06-27 11:25:38.279] Selected the bad axiom SubClassOf(CareCoordinationPlatform DigitalHealthProduct).
+[2026-06-27 11:25:38.284] Found 317 possible bad axioms.
+[2026-06-27 11:25:38.284] Selected the bad axiom SubClassOf(HealthCoachingService DigitalHealthProduct).
+[2026-06-27 11:25:38.288] Found 316 possible bad axioms.
+[2026-06-27 11:25:38.288] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(servesUser owl:Thing) TriageService).
+[2026-06-27 11:25:38.298] Found 315 possible bad axioms.
+[2026-06-27 11:25:38.298] Selected the bad axiom SubClassOf(EfficiencyMetric owl:Nothing).
+[2026-06-27 11:25:38.303] Found 314 possible bad axioms.
+[2026-06-27 11:25:38.303] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(supportsWorkflow owl:Thing) DigitalHealthProduct).
+[2026-06-27 11:25:38.308] Found 313 possible bad axioms.
+[2026-06-27 11:25:38.308] Selected the bad axiom SubClassOf(ArtificialIntelligence AIAnalytics).
+[2026-06-27 11:25:38.313] Found 312 possible bad axioms.
+[2026-06-27 11:25:38.313] Selected the bad axiom SubClassOf(CashFlowStatement IncomeStatement).
+[2026
+...[truncated]
+FAIL: attempt=7 seed=85313 - negative return code -9
+progress: ontology=ONTOSTAR attempt=7 success=0/100
+----- ONTOSTAR attempt=8 seed=99513 at 2026-06-27 11:29:03 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=99513, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:29:04.182] Checking precondition...
+[2026-06-27 11:29:04.200] Starting the repair...
+[2026-06-27 11:29:04.210] Found 326 possible bad axioms.
+[2026-06-27 11:29:04.212] Selected the bad axiom SubClassOf(EngineeringTeam Organization).
+[2026-06-27 11:29:04.224] Found 325 possible bad axioms.
+[2026-06-27 11:29:04.224] Selected the bad axiom SubClassOf(MaintenanceService owl:Nothing).
+[2026-06-27 11:29:04.230] Found 324 possible bad axioms.
+[2026-06-27 11:29:04.230] Selected the bad axiom SubClassOf(ClaimsData BehavioralData).
+[2026-06-27 11:29:04.238] Found 323 possible bad axioms.
+[2026-06-27 11:29:04.238] Selected the bad axiom SubClassOf(ClinicalWorkflow ClinicalSettingAndWorkflow).
+[2026-06-27 11:29:04.246] Found 322 possible bad axioms.
+[2026-06-27 11:29:04.246] Selected the bad axiom SubClassOf(Encryption DICOMInterface).
+[2026-06-27 11:29:04.251] Found 321 possible bad axioms.
+[2026-06-27 11:29:04.251] Selected the bad axiom SubClassOf(ConsultingService MedicationAdherenceTool).
+[2026-06-27 11:29:04.256] Found 320 possible bad axioms.
+[2026-06-27 11:29:04.256] Selected the bad axiom SubClassOf(CareCoordinator Stakeholder).
+[2026-06-27 11:29:04.261] Found 319 possible bad axioms.
+[2026-06-27 11:29:04.261] Selected the bad axiom SubClassOf(LowCarbonTechnology SustainableDevelopment).
+[2026-06-27 11:29:04.270] Found 318 possible bad axioms.
+[2026-06-27 11:29:04.270] Selected the bad axiom SubClassOf(GrossMargin FinanceAndPerformance).
+[2026-06-27 11:29:04.275] Found 317 possible bad axioms.
+[2026-06-27 11:29:04.275] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(develops owl:Thing) DigitalHealthStartup).
+[2026-06-27 11:29:04.279] Found 316 possible bad axioms.
+[2026-06-27 11:29:04.279] Selected the bad axiom SubClassOf(Organization Executive).
+[2026-06-27 11:29:04.289] Found 315 possible bad axioms.
+[2026-06-27 11:29:04.289] Selected the bad axiom SubClassOf(CommunityHealthWorker Stakeholder).
+[2026-06-27 11:29:04.294] Found 314 possible bad axioms.
+[2026-06-27 11:29:04.294] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(offersService owl:Thing) DigitalHealthStartup).
+[2026-06-27 11:29:04.298] Found 313 possible bad axioms.
+[2026-06-27 11:29:04.299] Selected the bad axiom SubClassOf(ITAdministrator AlliedHealthProfessional).
+[2026-06-27 11:29:04.304] Found 312 possible bad axioms.
+[2026-06-27 11:29:04.304] Selected the bad axiom SubClassOf(TriageService DigitalHealthProduct).
+[2026-06-27 11:29:04.308] Found 311 possible bad axioms.
+[2026-06-27 11:29:04.308] Selected the bad axiom SubClassOf(HealthCoachingService Digi
+...[truncated]
+FAIL: attempt=8 seed=99513 - negative return code -9
+progress: ontology=ONTOSTAR attempt=8 success=0/100
+----- ONTOSTAR attempt=9 seed=113713 at 2026-06-27 11:31:51 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=113713, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:31:51.481] Checking precondition...
+[2026-06-27 11:31:51.499] Starting the repair...
+[2026-06-27 11:31:51.509] Found 326 possible bad axioms.
+[2026-06-27 11:31:51.511] Selected the bad axiom SubClassOf(RiskScoring AIAnalytics).
+[2026-06-27 11:31:51.523] Found 325 possible bad axioms.
+[2026-06-27 11:31:51.523] Selected the bad axiom SubClassOf(ArtificialIntelligence RecommendationEngine).
+[2026-06-27 11:31:51.529] Found 324 possible bad axioms.
+[2026-06-27 11:31:51.530] Selected the bad axiom SubClassOf(AnomalyDetection AIAnalytics).
+[2026-06-27 11:31:51.540] Found 323 possible bad axioms.
+[2026-06-27 11:31:51.540] Selected the bad axiom SubClassOf(TelemedicinePlatform DigitalHealthProduct).
+[2026-06-27 11:31:51.545] Found 322 possible bad axioms.
+[2026-06-27 11:31:51.546] Selected the bad axiom SubClassOf(HL7FHIRInterface MonitoringAndObservability).
+[2026-06-27 11:31:51.550] Found 321 possible bad axioms.
+[2026-06-27 11:31:51.550] Selected the bad axiom SubClassOf(GovernmentAgency Organization).
+[2026-06-27 11:31:51.555] Found 320 possible bad axioms.
+[2026-06-27 11:31:51.556] Selected the bad axiom SubClassOf(Allergy Clinical).
+[2026-06-27 11:31:51.560] Found 319 possible bad axioms.
+[2026-06-27 11:31:51.561] Selected the bad axiom SubClassOf(DataSteward Stakeholder).
+[2026-06-27 11:31:51.570] Found 318 possible bad axioms.
+[2026-06-27 11:31:51.570] Selected the bad axiom SubClassOf(PopulationHealthPlatform DigitalHealthProduct).
+[2026-06-27 11:31:51.575] Found 317 possible bad axioms.
+[2026-06-27 11:31:51.575] Selected the bad axiom SubClassOf(TechnologyArchitectureAndInteroperability Device).
+[2026-06-27 11:31:51.579] Found 316 possible bad axioms.
+[2026-06-27 11:31:51.579] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectsData owl:Thing) DigitalHealthProduct).
+[2026-06-27 11:31:51.589] Found 315 possible bad axioms.
+[2026-06-27 11:31:51.589] Selected the bad axiom SubClassOf(MLOpsPipeline TechnologyArchitectureAndInteroperability).
+[2026-06-27 11:31:51.594] Found 314 possible bad axioms.
+[2026-06-27 11:31:51.594] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(processesData owl:Thing) DataPipeline).
+[2026-06-27 11:31:51.598] Found 313 possible bad axioms.
+[2026-06-27 11:31:51.599] Selected the bad axiom SubClassOf(PatientEngagementApp DigitalHealthProduct).
+[2026-06-27 11:31:51.603] Found 312 possible bad axioms.
+[2026-06-27 11:31:51.603] Selected the bad axiom SubClassOf(PartnershipAgreement LegalAndGovernance).
+[2026-06-27 11:31:51.608] Found 311 possible bad axioms.
+[2026-06-27 11:31:51.608] Selected the
+...[truncated]
+FAIL: attempt=9 seed=113713 - negative return code -9
+progress: ontology=ONTOSTAR attempt=9 success=0/100
+----- ONTOSTAR attempt=10 seed=127913 at 2026-06-27 11:34:22 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOSTAR.owl, seed=127913, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:34:23.098] Checking precondition...
+[2026-06-27 11:34:23.118] Starting the repair...
+[2026-06-27 11:34:23.127] Found 326 possible bad axioms.
+[2026-06-27 11:34:23.129] Selected the bad axiom SubClassOf(TherapyPlan Clinical).
+[2026-06-27 11:34:23.140] Found 325 possible bad axioms.
+[2026-06-27 11:34:23.140] Selected the bad axiom SubClassOf(HL7FHIRInterface TechnologyArchitectureAndInteroperability).
+[2026-06-27 11:34:23.146] Found 324 possible bad axioms.
+[2026-06-27 11:34:23.146] Selected the bad axiom SubClassOf(TrainingAndEnablement ClinicalSettingAndWorkflow).
+[2026-06-27 11:34:23.153] Found 323 possible bad axioms.
+[2026-06-27 11:34:23.153] Selected the bad axiom SubClassOf(EthicsBoard Stakeholder).
+[2026-06-27 11:34:23.157] Found 322 possible bad axioms.
+[2026-06-27 11:34:23.158] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectsData owl:Thing) ChronicDiseaseManagementProgram).
+[2026-06-27 11:34:23.162] Found 321 possible bad axioms.
+[2026-06-27 11:34:23.162] Selected the bad axiom SubClassOf(DigitalHealthProduct API).
+[2026-06-27 11:34:23.168] Found 320 possible bad axioms.
+[2026-06-27 11:34:23.168] Selected the bad axiom SubClassOf(AcceleratorProgram Organization).
+[2026-06-27 11:34:23.173] Found 319 possible bad axioms.
+[2026-06-27 11:34:23.173] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(servesUser Patient)).
+[2026-06-27 11:34:23.183] Found 318 possible bad axioms.
+[2026-06-27 11:34:23.183] Selected the bad axiom SubClassOf(LabTest Allergy).
+[2026-06-27 11:34:23.188] Found 317 possible bad axioms.
+[2026-06-27 11:34:23.188] Selected the bad axiom SubClassOf(HealthCoachingService DigitalHealthProduct).
+[2026-06-27 11:34:23.192] Found 316 possible bad axioms.
+[2026-06-27 11:34:23.192] Selected the bad axiom SubClassOf(CircularEconomy CarbonFootprint).
+[2026-06-27 11:34:23.203] Found 315 possible bad axioms.
+[2026-06-27 11:34:23.203] Selected the bad axiom SubClassOf(ClinicalDecisionSupportSystem DigitalHealthProduct).
+[2026-06-27 11:34:23.208] Found 314 possible bad axioms.
+[2026-06-27 11:34:23.208] Selected the bad axiom SubClassOf(SoftwareAsAMedicalDevice OnlinePeerSupportIntervention).
+[2026-06-27 11:34:23.212] Found 313 possible bad axioms.
+[2026-06-27 11:34:23.212] Selected the bad axiom SubClassOf(LowCarbonTechnology owl:Nothing).
+[2026-06-27 11:34:23.217] Found 312 possible bad axioms.
+[2026-06-27 11:34:23.218] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(offersService DigitalHealthService)).
+[2026-06-27 11:34:23.222] Found 311 possible bad axioms.
+[2026-06-27 11:34:
+...[truncated]
+FAIL: attempt=10 seed=127913 - negative return code -9
+progress: ontology=ONTOSTAR attempt=10 success=0/100
+=== ABORTED ONTOSTAR after 10 consecutive failures at 2026-06-27 11:37:05 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ONTOSTAR - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=113 msg=negative return code -9
+  attempt=2 seed=14313 msg=negative return code -9
+  attempt=3 seed=28513 msg=negative return code -9
+  attempt=4 seed=42713 msg=negative return code -9
+  attempt=5 seed=56913 msg=negative return code -9
+  attempt=6 seed=71113 msg=negative return code -9
+  attempt=7 seed=85313 msg=negative return code -9
+  attempt=8 seed=99513 msg=negative return code -9
+  attempt=9 seed=113713 msg=negative return code -9
+  attempt=10 seed=127913 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=1587.813730 avg_seconds=158.781373
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,72,20260624134028346645,memory_limit_exceeded,,,,135.403739,,,,,,,,,,,,
+2,14272,20260624134028346645,memory_limit_exceeded,,,,116.941863,,,,,,,,,,,,
+3,28472,20260624134028346645,memory_limit_exceeded,,,,119.371528,,,,,,,,,,,,
+4,42672,20260624134028346645,memory_limit_exceeded,,,,117.994567,,,,,,,,,,,,
+5,56872,20260624134028346645,memory_limit_exceeded,,,,118.957446,,,,,,,,,,,,
+6,71072,20260624134028346645,memory_limit_exceeded,,,,139.569289,,,,,,,,,,,,
+7,85272,20260624134028346645,memory_limit_exceeded,,,,117.740420,,,,,,,,,,,,
+8,99472,20260624134028346645,memory_limit_exceeded,,,,144.348034,,,,,,,,,,,,
+9,113672,20260624134028346645,memory_limit_exceeded,,,,139.366493,,,,,,,,,,,,
+10,127872,20260624134028346645,memory_limit_exceeded,,,,120.183031,,,,,,,,,,,,

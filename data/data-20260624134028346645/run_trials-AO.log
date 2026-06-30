@@ -1,0 +1,508 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-AO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-AO.csv
+
+=== Starting sequential trials for AO at 2026-06-28 11:22:32 ===
+----- AO attempt=1 seed=146 at 2026-06-28 11:22:32 -----
+--- stdout ---
+{"seed":146,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":820,"A2":238334,"A3":1681,"B1":7774,"B2":10522}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=146, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:22:33.259] Checking precondition...
+[2026-06-28 11:22:33.286] Starting the repair...
+[2026-06-28 11:22:33.297] Found 676 possible bad axioms.
+[2026-06-28 11:22:33.298] Selected the bad axiom SubClassOf(MOCHA-Asthma_000028 MOCHA-Asthma_000014).
+[2026-06-28 11:22:33.307] Found 675 possible bad axioms.
+[2026-06-28 11:22:33.308] Selected the bad axiom SubClassOf(MOCHA-ADHD_000062 MOCHA-Asthma_000152).
+[2026-06-28 11:22:33.316] Found 674 possible bad axioms.
+[2026-06-28 11:22:33.316] Selected the bad axiom SubClassOf(MOCHA-ADHD_000039 MOCHA-ADHD_000000).
+[2026-06-28 11:22:33.328] Found 673 possible bad axioms.
+[2026-06-28 11:22:33.328] Selected the bad axiom SubClassOf(MOCHA-Asthma_000001 MOCHA-Asthma_000075).
+[2026-06-28 11:22:33.334] Found 672 possible bad axioms.
+[2026-06-28 11:22:33.334] Selected the bad axiom SubClassOf(MOCHA-ADHD_000050 MOCHA-ADHD_000059).
+[2026-06-28 11:22:33.340] Found 671 possible bad axioms.
+[2026-06-28 11:22:33.341] Selected the bad axiom SubClassOf(MOCHA-Asthma_000165 MOCHA-Asthma_000065).
+[2026-06-28 11:22:33.347] Found 670 possible bad axioms.
+[2026-06-28 11:22:33.347] Selected the bad axiom SubClassOf(MOCHA-Asthma_000298 MOCHA-Asthma_000082).
+[2026-06-28 11:22:33.353] Found 669 possible bad axioms.
+[2026-06-28 11:22:33.354] Selected the bad axiom SubClassOf(MOCHA_0300 MOCHA-Asthma_000082).
+[2026-06-28 11:22:33.359] Found 668 possible bad axioms.
+[2026-06-28 11:22:33.359] Selected the bad axiom SubClassOf(MOCHA-Asthma_000152 MOCHA-Asthma_000158).
+[2026-06-28 11:22:33.365] Found 667 possible bad axioms.
+[2026-06-28 11:22:33.365] Selected the bad axiom SubClassOf(MOCHA-Asthma_000041 owl:Nothing).
+[2026-06-28 11:22:33.370] Found 666 possible bad axioms.
+[2026-06-28 11:22:33.370] Selected the bad axiom SubClassOf(MOCHA-ADHD_000029 MOCHA-ADHD_000026).
+[2026-06-28 11:22:33.386] Found 665 possible bad axioms.
+[2026-06-28 11:22:33.386] Selected the bad axiom SubClassOf(MOCHA-Asthma_000134 MOCHA-Asthma_000128).
+[2026-06-28 11:22:33.391] Found 664 possible bad axioms.
+[2026-06-28 11:22:33.392] Selected the bad axiom SubClassOf(MOCHA-Asthma_000293 MOCHA-Asthma_000082).
+[2026-06-28 11:22:33.396] Found 663 possible bad axioms.
+[2026-06-28 11:22:33.397] Selected the bad axiom SubClassOf(MOCHA-ADHD_000038 MOCHA-ADHD_000049).
+[2026-06-28 11:22:33.401] Found 662 possible bad axioms.
+[2026-06-28 11:22:33.401] Selected the bad axiom SubClassOf(MOCHA-Asthma_000014 owl:Nothing).
+[2026-06-28 11:22:33.406] Found 661 possible bad axioms.
+[2026-06-28 11:22:33.406] Selected the bad axiom SubClassOf(MOCHA-Asthma_000306 MOCHA-Asthma_000303).
+
+...[truncated]
+FAIL: attempt=1 seed=146 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=1 success=0/100
+----- AO attempt=2 seed=14346 at 2026-06-28 11:26:52 -----
+--- stdout ---
+{"seed":14346,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":684,"A2":235987,"A3":1719,"B1":1597,"B2":3083,"B3":2362,"B4":757,"B5":9595}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=14346, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:26:52.902] Checking precondition...
+[2026-06-28 11:26:52.929] Starting the repair...
+[2026-06-28 11:26:52.940] Found 676 possible bad axioms.
+[2026-06-28 11:26:52.941] Selected the bad axiom SubClassOf(MOCHA-Asthma_000135 MOCHA-Asthma_000136).
+[2026-06-28 11:26:52.950] Found 675 possible bad axioms.
+[2026-06-28 11:26:52.951] Selected the bad axiom SubClassOf(MOCHA-Asthma_000114 MOCHA-Asthma_000091).
+[2026-06-28 11:26:52.959] Found 674 possible bad axioms.
+[2026-06-28 11:26:52.959] Selected the bad axiom SubClassOf(MOCHA-ADHD_000023 MOCHA-ADHD_000019).
+[2026-06-28 11:26:52.973] Found 673 possible bad axioms.
+[2026-06-28 11:26:52.973] Selected the bad axiom SubClassOf(MOCHA-Asthma_000305 MOCHA-Asthma_000081).
+[2026-06-28 11:26:52.979] Found 672 possible bad axioms.
+[2026-06-28 11:26:52.980] Selected the bad axiom SubClassOf(MOCHA-ADHD_000007 MOCHA-ADHD_000004).
+[2026-06-28 11:26:52.986] Found 671 possible bad axioms.
+[2026-06-28 11:26:52.986] Selected the bad axiom SubClassOf(MOCHA-ADHD_000027 MOCHA-ADHD_000001).
+[2026-06-28 11:26:52.993] Found 670 possible bad axioms.
+[2026-06-28 11:26:52.993] Selected the bad axiom SubClassOf(MOCHA-Asthma_000073 MOCHA-Asthma_000048).
+[2026-06-28 11:26:52.999] Found 669 possible bad axioms.
+[2026-06-28 11:26:52.999] Selected the bad axiom SubClassOf(MOCHA-Asthma_000090 MOCHA-Asthma_000104).
+[2026-06-28 11:26:53.006] Found 668 possible bad axioms.
+[2026-06-28 11:26:53.006] Selected the bad axiom SubClassOf(MOCHA-Asthma_000031 MOCHA-Asthma_000027).
+[2026-06-28 11:26:53.013] Found 667 possible bad axioms.
+[2026-06-28 11:26:53.013] Selected the bad axiom SubClassOf(MOCHA-ADHD_000031 MOCHA-ADHD_000000).
+[2026-06-28 11:26:53.019] Found 666 possible bad axioms.
+[2026-06-28 11:26:53.019] Selected the bad axiom SubClassOf(MOCHA-Asthma_000188 MOCHA-ADHD_000063).
+[2026-06-28 11:26:53.035] Found 665 possible bad axioms.
+[2026-06-28 11:26:53.036] Selected the bad axiom SubClassOf(MOCHA-Asthma_000124 owl:Nothing).
+[2026-06-28 11:26:53.042] Found 664 possible bad axioms.
+[2026-06-28 11:26:53.042] Selected the bad axiom SubClassOf(MOCHA-Asthma_000161 MOCHA-ADHD_000063).
+[2026-06-28 11:26:53.047] Found 663 possible bad axioms.
+[2026-06-28 11:26:53.048] Selected the bad axiom SubClassOf(MOCHA-Asthma_000114 MOCHA-Asthma_000111).
+[2026-06-28 11:26:53.052] Found 662 possible bad axioms.
+[2026-06-28 11:26:53.052] Selected the bad axiom SubClassOf(MOCHA-Asthma_000136 MOCHA-Asthma_000135).
+[2026-06-28 11:26:53.058] Found 661 possible bad axioms.
+[2026-06-28 11:26:53.058] Selected the bad axiom SubClassOf(MOCHA-Asthma_000139 MOCHA
+...[truncated]
+FAIL: attempt=2 seed=14346 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=2 success=0/100
+----- AO attempt=3 seed=28546 at 2026-06-28 11:31:10 -----
+--- stdout ---
+{"seed":28546,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":763,"A2":236940,"A3":1659,"B1":5590,"B2":8762}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=28546, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:31:10.678] Checking precondition...
+[2026-06-28 11:31:10.704] Starting the repair...
+[2026-06-28 11:31:10.714] Found 676 possible bad axioms.
+[2026-06-28 11:31:10.716] Selected the bad axiom SubClassOf(MOCHA-ADHD_000059 MOCHA-ADHD_000000).
+[2026-06-28 11:31:10.726] Found 675 possible bad axioms.
+[2026-06-28 11:31:10.726] Selected the bad axiom SubClassOf(MOCHA-Asthma_000041 MOCHA-Asthma_000048).
+[2026-06-28 11:31:10.734] Found 674 possible bad axioms.
+[2026-06-28 11:31:10.735] Selected the bad axiom SubClassOf(MOCHA-Asthma_000078 MOCHA-Asthma_000079).
+[2026-06-28 11:31:10.747] Found 673 possible bad axioms.
+[2026-06-28 11:31:10.747] Selected the bad axiom SubClassOf(MOCHA-Asthma_000089 MOCHA-EPI_0000036).
+[2026-06-28 11:31:10.753] Found 672 possible bad axioms.
+[2026-06-28 11:31:10.753] Selected the bad axiom SubClassOf(MOCHA-ADHD_000016 MOCHA-ADHD_000002).
+[2026-06-28 11:31:10.759] Found 671 possible bad axioms.
+[2026-06-28 11:31:10.759] Selected the bad axiom SubClassOf(MOCHA-Asthma_000083 MOCHA-EPI_0000034).
+[2026-06-28 11:31:10.766] Found 670 possible bad axioms.
+[2026-06-28 11:31:10.766] Selected the bad axiom SubClassOf(MOCHA-ADHD_000018 owl:Nothing).
+[2026-06-28 11:31:10.772] Found 669 possible bad axioms.
+[2026-06-28 11:31:10.773] Selected the bad axiom SubClassOf(MOCHA-Asthma_000144 owl:Nothing).
+[2026-06-28 11:31:10.778] Found 668 possible bad axioms.
+[2026-06-28 11:31:10.779] Selected the bad axiom SubClassOf(MOCHA-ADHD_000040 MOCHA-ADHD_000000).
+[2026-06-28 11:31:10.784] Found 667 possible bad axioms.
+[2026-06-28 11:31:10.784] Selected the bad axiom SubClassOf(MOCHA-ADHD_000000 MOCHA-EPI_0000033).
+[2026-06-28 11:31:10.790] Found 666 possible bad axioms.
+[2026-06-28 11:31:10.790] Selected the bad axiom SubClassOf(MOCHA-Asthma_000190 MOCHA-ADHD_000063).
+[2026-06-28 11:31:10.804] Found 665 possible bad axioms.
+[2026-06-28 11:31:10.805] Selected the bad axiom SubClassOf(MOCHA-Asthma_000088 MOCHA-Asthma_000084).
+[2026-06-28 11:31:10.810] Found 664 possible bad axioms.
+[2026-06-28 11:31:10.810] Selected the bad axiom SubClassOf(MOCHA-Asthma_000013 MOCHA-Asthma_000012).
+[2026-06-28 11:31:10.815] Found 663 possible bad axioms.
+[2026-06-28 11:31:10.815] Selected the bad axiom SubClassOf(MOCHA-Asthma_000059 MOCHA-Asthma_000061).
+[2026-06-28 11:31:10.819] Found 662 possible bad axioms.
+[2026-06-28 11:31:10.819] Selected the bad axiom SubClassOf(MOCHA-ADHD_000000 owl:Nothing).
+[2026-06-28 11:31:10.824] Found 661 possible bad axioms.
+[2026-06-28 11:31:10.824] Selected the bad axiom SubClassOf(MOCHA-ADHD_000051 MOCHA-ADHD_000048).
+[2026-06-
+...[truncated]
+FAIL: attempt=3 seed=28546 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=3 success=0/100
+----- AO attempt=4 seed=42746 at 2026-06-28 11:35:24 -----
+--- stdout ---
+{"seed":42746,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":538,"A2":237451,"A3":6790,"B1":7295,"B2":3013}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=42746, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:35:24.890] Checking precondition...
+[2026-06-28 11:35:24.916] Starting the repair...
+[2026-06-28 11:35:24.927] Found 676 possible bad axioms.
+[2026-06-28 11:35:24.929] Selected the bad axiom SubClassOf(MOCHA-Asthma_000085 MOCHA-Asthma_000084).
+[2026-06-28 11:35:24.938] Found 675 possible bad axioms.
+[2026-06-28 11:35:24.939] Selected the bad axiom SubClassOf(MOCHA-ADHD_000040 MOCHA-ADHD_000000).
+[2026-06-28 11:35:24.948] Found 674 possible bad axioms.
+[2026-06-28 11:35:24.949] Selected the bad axiom SubClassOf(MOCHA-Asthma_000136 MOCHA-Asthma_000087).
+[2026-06-28 11:35:24.961] Found 673 possible bad axioms.
+[2026-06-28 11:35:24.961] Selected the bad axiom SubClassOf(MOCHA-Asthma_000046 MOCHA-Asthma_000073).
+[2026-06-28 11:35:24.967] Found 672 possible bad axioms.
+[2026-06-28 11:35:24.968] Selected the bad axiom SubClassOf(MOCHA-Asthma_000052 MOCHA-Asthma_000042).
+[2026-06-28 11:35:24.975] Found 671 possible bad axioms.
+[2026-06-28 11:35:24.975] Selected the bad axiom SubClassOf(MOCHA-Asthma_000020 owl:Nothing).
+[2026-06-28 11:35:24.981] Found 670 possible bad axioms.
+[2026-06-28 11:35:24.981] Selected the bad axiom SubClassOf(MOCHA-ADHD_000064 MOCHA-Asthma_000065).
+[2026-06-28 11:35:24.987] Found 669 possible bad axioms.
+[2026-06-28 11:35:24.987] Selected the bad axiom SubClassOf(MOCHA-Asthma_000176 MOCHA-ADHD_000064).
+[2026-06-28 11:35:24.993] Found 668 possible bad axioms.
+[2026-06-28 11:35:24.994] Selected the bad axiom SubClassOf(MOCHA-ADHD_000003 MOCHA-EPI_0000033).
+[2026-06-28 11:35:24.999] Found 667 possible bad axioms.
+[2026-06-28 11:35:24.999] Selected the bad axiom SubClassOf(MOCHA-Asthma_000054 MOCHA-Asthma_000073).
+[2026-06-28 11:35:25.004] Found 666 possible bad axioms.
+[2026-06-28 11:35:25.004] Selected the bad axiom SubClassOf(MOCHA-EPI_0000036 owl:Nothing).
+[2026-06-28 11:35:25.019] Found 665 possible bad axioms.
+[2026-06-28 11:35:25.019] Selected the bad axiom SubClassOf(MOCHA-Asthma_000072 MOCHA-EPI_0000035).
+[2026-06-28 11:35:25.024] Found 664 possible bad axioms.
+[2026-06-28 11:35:25.024] Selected the bad axiom SubClassOf(MOCHA-Asthma_000045 MOCHA-Asthma_000051).
+[2026-06-28 11:35:25.030] Found 663 possible bad axioms.
+[2026-06-28 11:35:25.030] Selected the bad axiom SubClassOf(MOCHA-asthma_000000 MOCHA-Asthma_000082).
+[2026-06-28 11:35:25.034] Found 662 possible bad axioms.
+[2026-06-28 11:35:25.034] Selected the bad axiom SubClassOf(MOCHA-ADHD_000060 MOCHA-ADHD_000047).
+[2026-06-28 11:35:25.038] Found 661 possible bad axioms.
+[2026-06-28 11:35:25.039] Selected the bad axiom SubClassOf(MOCHA-Asthma_000125 MOCHA-Asthma_
+...[truncated]
+FAIL: attempt=4 seed=42746 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=4 success=0/100
+----- AO attempt=5 seed=56946 at 2026-06-28 11:39:40 -----
+--- stdout ---
+{"seed":56946,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":309,"A2":237101,"A3":1648,"B1":3152,"B2":9556}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=56946, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:39:40.473] Checking precondition...
+[2026-06-28 11:39:40.500] Starting the repair...
+[2026-06-28 11:39:40.511] Found 676 possible bad axioms.
+[2026-06-28 11:39:40.512] Selected the bad axiom SubClassOf(MOCHA-Asthma_000099 MOCHA-Asthma_000090).
+[2026-06-28 11:39:40.521] Found 675 possible bad axioms.
+[2026-06-28 11:39:40.522] Selected the bad axiom SubClassOf(MOCHA-Asthma_000011 MOCHA-Asthma_000076).
+[2026-06-28 11:39:40.531] Found 674 possible bad axioms.
+[2026-06-28 11:39:40.531] Selected the bad axiom SubClassOf(MOCHA-ADHD_000001 MOCHA-EPI_0000033).
+[2026-06-28 11:39:40.542] Found 673 possible bad axioms.
+[2026-06-28 11:39:40.543] Selected the bad axiom SubClassOf(MOCHA-Asthma_000084 MOCHA-EPI_0000034).
+[2026-06-28 11:39:40.549] Found 672 possible bad axioms.
+[2026-06-28 11:39:40.549] Selected the bad axiom SubClassOf(MOCHA-Asthma_000058 MOCHA-Asthma_000056).
+[2026-06-28 11:39:40.555] Found 671 possible bad axioms.
+[2026-06-28 11:39:40.555] Selected the bad axiom SubClassOf(MOCHA-Asthma_000049 MOCHA-Asthma_000073).
+[2026-06-28 11:39:40.560] Found 670 possible bad axioms.
+[2026-06-28 11:39:40.561] Selected the bad axiom SubClassOf(MOCHA-ADHD_000000 MOCHA-ADHD_000051).
+[2026-06-28 11:39:40.567] Found 669 possible bad axioms.
+[2026-06-28 11:39:40.567] Selected the bad axiom SubClassOf(MOCHA-Asthma_000090 MOCHA-Asthma_000104).
+[2026-06-28 11:39:40.573] Found 668 possible bad axioms.
+[2026-06-28 11:39:40.573] Selected the bad axiom SubClassOf(MOCHA-Asthma_000149 MOCHA-Asthma_000085).
+[2026-06-28 11:39:40.578] Found 667 possible bad axioms.
+[2026-06-28 11:39:40.579] Selected the bad axiom SubClassOf(MOCHA-Asthma_000142 MOCHA-Asthma_000085).
+[2026-06-28 11:39:40.583] Found 666 possible bad axioms.
+[2026-06-28 11:39:40.584] Selected the bad axiom SubClassOf(MOCHA-ADHD_000045 MOCHA-ADHD_000000).
+[2026-06-28 11:39:40.599] Found 665 possible bad axioms.
+[2026-06-28 11:39:40.599] Selected the bad axiom SubClassOf(MOCHA-Asthma_000132 MOCHA-Asthma_000088).
+[2026-06-28 11:39:40.604] Found 664 possible bad axioms.
+[2026-06-28 11:39:40.605] Selected the bad axiom SubClassOf(MOCHA-ADHD_000025 MOCHA-ADHD_000002).
+[2026-06-28 11:39:40.610] Found 663 possible bad axioms.
+[2026-06-28 11:39:40.610] Selected the bad axiom SubClassOf(MOCHA-Asthma_000034 MOCHA-Asthma_000014).
+[2026-06-28 11:39:40.615] Found 662 possible bad axioms.
+[2026-06-28 11:39:40.615] Selected the bad axiom SubClassOf(MOCHA-Asthma_000096 MOCHA-Asthma_000104).
+[2026-06-28 11:39:40.620] Found 661 possible bad axioms.
+[2026-06-28 11:39:40.620] Selected the bad axiom SubClassOf(MOCHA-ADHD_0000
+...[truncated]
+FAIL: attempt=5 seed=56946 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=5 success=0/100
+----- AO attempt=6 seed=71146 at 2026-06-28 11:43:52 -----
+--- stdout ---
+{"seed":71146,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":766,"A2":238226,"A3":3997,"B1":1539,"B2":4581}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=71146, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:43:52.764] Checking precondition...
+[2026-06-28 11:43:52.791] Starting the repair...
+[2026-06-28 11:43:52.803] Found 676 possible bad axioms.
+[2026-06-28 11:43:52.805] Selected the bad axiom SubClassOf(MOCHA-Asthma_000011 MOCHA-Asthma_000076).
+[2026-06-28 11:43:52.814] Found 675 possible bad axioms.
+[2026-06-28 11:43:52.814] Selected the bad axiom SubClassOf(MOCHA-ADHD_000022 MOCHA-ADHD_000017).
+[2026-06-28 11:43:52.822] Found 674 possible bad axioms.
+[2026-06-28 11:43:52.823] Selected the bad axiom SubClassOf(MOCHA-ADHD_000020 MOCHA-ADHD_000002).
+[2026-06-28 11:43:52.835] Found 673 possible bad axioms.
+[2026-06-28 11:43:52.835] Selected the bad axiom SubClassOf(MOCHA-Asthma_000089 MOCHA-Asthma_000121).
+[2026-06-28 11:43:52.841] Found 672 possible bad axioms.
+[2026-06-28 11:43:52.842] Selected the bad axiom SubClassOf(MOCHA-Asthma_000152 MOCHA-Asthma_000158).
+[2026-06-28 11:43:52.848] Found 671 possible bad axioms.
+[2026-06-28 11:43:52.849] Selected the bad axiom SubClassOf(MOCHA-ADHD_000040 MOCHA-ADHD_000043).
+[2026-06-28 11:43:52.856] Found 670 possible bad axioms.
+[2026-06-28 11:43:52.856] Selected the bad axiom SubClassOf(MOCHA-Asthma_000122 MOCHA-Asthma_000110).
+[2026-06-28 11:43:52.861] Found 669 possible bad axioms.
+[2026-06-28 11:43:52.862] Selected the bad axiom SubClassOf(MOCHA-Asthma_000093 MOCHA-Asthma_000100).
+[2026-06-28 11:43:52.868] Found 668 possible bad axioms.
+[2026-06-28 11:43:52.868] Selected the bad axiom SubClassOf(MOCHA-Asthma_000121 MOCHA-Asthma_000118).
+[2026-06-28 11:43:52.874] Found 667 possible bad axioms.
+[2026-06-28 11:43:52.874] Selected the bad axiom SubClassOf(MOCHA-Asthma_000292 MOCHA-Asthma_000082).
+[2026-06-28 11:43:52.879] Found 666 possible bad axioms.
+[2026-06-28 11:43:52.879] Selected the bad axiom SubClassOf(MOCHA-ADHD_000012 MOCHA-ADHD_000003).
+[2026-06-28 11:43:52.894] Found 665 possible bad axioms.
+[2026-06-28 11:43:52.895] Selected the bad axiom SubClassOf(MOCHA-Asthma_000092 MOCHA-Asthma_000089).
+[2026-06-28 11:43:52.900] Found 664 possible bad axioms.
+[2026-06-28 11:43:52.900] Selected the bad axiom SubClassOf(MOCHA-Asthma_000020 MOCHA-Asthma_000035).
+[2026-06-28 11:43:52.905] Found 663 possible bad axioms.
+[2026-06-28 11:43:52.906] Selected the bad axiom SubClassOf(MOCHA-ADHD_000063 MOCHA-ADHD_000061).
+[2026-06-28 11:43:52.910] Found 662 possible bad axioms.
+[2026-06-28 11:43:52.910] Selected the bad axiom SubClassOf(MOCHA-ADHD_000015 MOCHA-ADHD_000002).
+[2026-06-28 11:43:52.915] Found 661 possible bad axioms.
+[2026-06-28 11:43:52.915] Selected the bad axiom SubClassOf(MOCHA-Asthma_000073 M
+...[truncated]
+FAIL: attempt=6 seed=71146 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=6 success=0/100
+----- AO attempt=7 seed=85346 at 2026-06-28 11:48:01 -----
+--- stdout ---
+{"seed":85346,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":497,"A2":237258,"A3":7658,"B1":1495,"B2":4697,"B3":16560}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=85346, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:48:02.358] Checking precondition...
+[2026-06-28 11:48:02.386] Starting the repair...
+[2026-06-28 11:48:02.396] Found 676 possible bad axioms.
+[2026-06-28 11:48:02.399] Selected the bad axiom SubClassOf(MOCHA-ADHD_000030 owl:Nothing).
+[2026-06-28 11:48:02.408] Found 675 possible bad axioms.
+[2026-06-28 11:48:02.408] Selected the bad axiom SubClassOf(MOCHA-Asthma_000082 MOCHA-asthma_000001).
+[2026-06-28 11:48:02.416] Found 674 possible bad axioms.
+[2026-06-28 11:48:02.416] Selected the bad axiom SubClassOf(MOCHA-Asthma_000186 MOCHA-ADHD_000063).
+[2026-06-28 11:48:02.428] Found 673 possible bad axioms.
+[2026-06-28 11:48:02.428] Selected the bad axiom SubClassOf(MOCHA-Asthma_000014 MOCHA-Asthma_000015).
+[2026-06-28 11:48:02.434] Found 672 possible bad axioms.
+[2026-06-28 11:48:02.434] Selected the bad axiom SubClassOf(MOCHA-Asthma_000059 MOCHA-Asthma_000051).
+[2026-06-28 11:48:02.441] Found 671 possible bad axioms.
+[2026-06-28 11:48:02.441] Selected the bad axiom SubClassOf(MOCHA-Asthma_000300 MOCHA-Asthma_000082).
+[2026-06-28 11:48:02.448] Found 670 possible bad axioms.
+[2026-06-28 11:48:02.448] Selected the bad axiom SubClassOf(MOCHA-EPI_0000036 MOCHA-Asthma_000089).
+[2026-06-28 11:48:02.454] Found 669 possible bad axioms.
+[2026-06-28 11:48:02.454] Selected the bad axiom SubClassOf(MOCHA-ADHD_000053 owl:Nothing).
+[2026-06-28 11:48:02.460] Found 668 possible bad axioms.
+[2026-06-28 11:48:02.460] Selected the bad axiom SubClassOf(MOCHA-Asthma_000073 MOCHA-Asthma_000061).
+[2026-06-28 11:48:02.466] Found 667 possible bad axioms.
+[2026-06-28 11:48:02.466] Selected the bad axiom SubClassOf(MOCHA-Asthma_000119 MOCHA-Asthma_000091).
+[2026-06-28 11:48:02.471] Found 666 possible bad axioms.
+[2026-06-28 11:48:02.472] Selected the bad axiom SubClassOf(MOCHA-Asthma_000165 MOCHA-Asthma_000164).
+[2026-06-28 11:48:02.487] Found 665 possible bad axioms.
+[2026-06-28 11:48:02.488] Selected the bad axiom SubClassOf(MOCHA-Asthma_000032 MOCHA-Asthma_000023).
+[2026-06-28 11:48:02.493] Found 664 possible bad axioms.
+[2026-06-28 11:48:02.493] Selected the bad axiom SubClassOf(MOCHA-Asthma_000038 MOCHA-Asthma_000014).
+[2026-06-28 11:48:02.498] Found 663 possible bad axioms.
+[2026-06-28 11:48:02.498] Selected the bad axiom SubClassOf(MOCHA-Asthma_000057 MOCHA-Asthma_000040).
+[2026-06-28 11:48:02.502] Found 662 possible bad axioms.
+[2026-06-28 11:48:02.502] Selected the bad axiom SubClassOf(MOCHA-ADHD_000047 MOCHA-ADHD_000000).
+[2026-06-28 11:48:02.506] Found 661 possible bad axioms.
+[2026-06-28 11:48:02.506] Selected the bad axiom SubClassOf(MOCHA-Asthma_000086 MOCHA
+...[truncated]
+FAIL: attempt=7 seed=85346 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=7 success=0/100
+----- AO attempt=8 seed=99546 at 2026-06-28 11:52:33 -----
+--- stdout ---
+{"seed":99546,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":785,"A2":234730,"A3":11842,"B1":1559,"B2":10873}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=99546, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:52:33.949] Checking precondition...
+[2026-06-28 11:52:33.976] Starting the repair...
+[2026-06-28 11:52:33.986] Found 676 possible bad axioms.
+[2026-06-28 11:52:33.988] Selected the bad axiom SubClassOf(MOCHA-ADHD_000062 MOCHA-Asthma_000065).
+[2026-06-28 11:52:33.997] Found 675 possible bad axioms.
+[2026-06-28 11:52:33.997] Selected the bad axiom SubClassOf(MOCHA-Asthma_000029 MOCHA-Asthma_000014).
+[2026-06-28 11:52:34.004] Found 674 possible bad axioms.
+[2026-06-28 11:52:34.005] Selected the bad axiom SubClassOf(MOCHA-Asthma_000062 MOCHA-Asthma_000063).
+[2026-06-28 11:52:34.017] Found 673 possible bad axioms.
+[2026-06-28 11:52:34.017] Selected the bad axiom SubClassOf(MOCHA-Asthma_000009 MOCHA-Asthma_000075).
+[2026-06-28 11:52:34.024] Found 672 possible bad axioms.
+[2026-06-28 11:52:34.024] Selected the bad axiom SubClassOf(MOCHA-Asthma_000002 MOCHA-Asthma_000075).
+[2026-06-28 11:52:34.031] Found 671 possible bad axioms.
+[2026-06-28 11:52:34.031] Selected the bad axiom SubClassOf(MOCHA-Asthma_000056 MOCHA-Asthma_000073).
+[2026-06-28 11:52:34.038] Found 670 possible bad axioms.
+[2026-06-28 11:52:34.038] Selected the bad axiom SubClassOf(MOCHA-ADHD_000017 MOCHA-ADHD_000002).
+[2026-06-28 11:52:34.044] Found 669 possible bad axioms.
+[2026-06-28 11:52:34.044] Selected the bad axiom SubClassOf(MOCHA-EPI_0000036 MOCHA-Asthma_000104).
+[2026-06-28 11:52:34.050] Found 668 possible bad axioms.
+[2026-06-28 11:52:34.050] Selected the bad axiom SubClassOf(MOCHA-Asthma_000176 MOCHA-ADHD_000064).
+[2026-06-28 11:52:34.055] Found 667 possible bad axioms.
+[2026-06-28 11:52:34.056] Selected the bad axiom SubClassOf(MOCHA-Asthma_000018 MOCHA-Asthma_000033).
+[2026-06-28 11:52:34.060] Found 666 possible bad axioms.
+[2026-06-28 11:52:34.061] Selected the bad axiom SubClassOf(MOCHA-Asthma_000083 MOCHA-Asthma_000088).
+[2026-06-28 11:52:34.076] Found 665 possible bad axioms.
+[2026-06-28 11:52:34.076] Selected the bad axiom SubClassOf(MOCHA-Asthma_000039 MOCHA-Asthma_000014).
+[2026-06-28 11:52:34.081] Found 664 possible bad axioms.
+[2026-06-28 11:52:34.081] Selected the bad axiom SubClassOf(MOCHA-ADHD_000018 MOCHA-ADHD_000017).
+[2026-06-28 11:52:34.087] Found 663 possible bad axioms.
+[2026-06-28 11:52:34.087] Selected the bad axiom SubClassOf(MOCHA-Asthma_000114 MOCHA-Asthma_000091).
+[2026-06-28 11:52:34.091] Found 662 possible bad axioms.
+[2026-06-28 11:52:34.091] Selected the bad axiom SubClassOf(MOCHA-ADHD_000040 MOCHA-ADHD_000000).
+[2026-06-28 11:52:34.095] Found 661 possible bad axioms.
+[2026-06-28 11:52:34.096] Selected the bad axiom SubClassOf(MOCHA-Asthma_00
+...[truncated]
+FAIL: attempt=8 seed=99546 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=8 success=0/100
+----- AO attempt=9 seed=113746 at 2026-06-28 11:56:54 -----
+--- stdout ---
+{"seed":113746,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":1006,"A2":237077,"A3":2663,"B1":4635,"B2":9370}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=113746, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:56:54.537] Checking precondition...
+[2026-06-28 11:56:54.565] Starting the repair...
+[2026-06-28 11:56:54.575] Found 676 possible bad axioms.
+[2026-06-28 11:56:54.577] Selected the bad axiom SubClassOf(MOCHA-Asthma_000135 MOCHA-Asthma_000136).
+[2026-06-28 11:56:54.585] Found 675 possible bad axioms.
+[2026-06-28 11:56:54.585] Selected the bad axiom SubClassOf(MOCHA-Asthma_000017 MOCHA-Asthma_000014).
+[2026-06-28 11:56:54.593] Found 674 possible bad axioms.
+[2026-06-28 11:56:54.593] Selected the bad axiom SubClassOf(MOCHA-ADHD_000030 MOCHA-ADHD_000001).
+[2026-06-28 11:56:54.605] Found 673 possible bad axioms.
+[2026-06-28 11:56:54.605] Selected the bad axiom SubClassOf(MOCHA-ADHD_000030 owl:Nothing).
+[2026-06-28 11:56:54.611] Found 672 possible bad axioms.
+[2026-06-28 11:56:54.611] Selected the bad axiom SubClassOf(MOCHA-Asthma_000177 MOCHA-ADHD_000063).
+[2026-06-28 11:56:54.617] Found 671 possible bad axioms.
+[2026-06-28 11:56:54.617] Selected the bad axiom SubClassOf(MOCHA-Asthma_000001 MOCHA-Asthma_000075).
+[2026-06-28 11:56:54.625] Found 670 possible bad axioms.
+[2026-06-28 11:56:54.625] Selected the bad axiom SubClassOf(MOCHA-Asthma_000156 MOCHA-ADHD_000062).
+[2026-06-28 11:56:54.631] Found 669 possible bad axioms.
+[2026-06-28 11:56:54.632] Selected the bad axiom SubClassOf(MOCHA-Asthma_000187 MOCHA-ADHD_000063).
+[2026-06-28 11:56:54.638] Found 668 possible bad axioms.
+[2026-06-28 11:56:54.639] Selected the bad axiom SubClassOf(MOCHA-Asthma_000121 MOCHA-Asthma_000118).
+[2026-06-28 11:56:54.644] Found 667 possible bad axioms.
+[2026-06-28 11:56:54.644] Selected the bad axiom SubClassOf(MOCHA-ADHD_000006 MOCHA-ADHD_000004).
+[2026-06-28 11:56:54.649] Found 666 possible bad axioms.
+[2026-06-28 11:56:54.649] Selected the bad axiom SubClassOf(MOCHA-Asthma_000165 MOCHA-Asthma_000065).
+[2026-06-28 11:56:54.664] Found 665 possible bad axioms.
+[2026-06-28 11:56:54.665] Selected the bad axiom SubClassOf(MOCHA-Asthma_000125 MOCHA-Asthma_000117).
+[2026-06-28 11:56:54.670] Found 664 possible bad axioms.
+[2026-06-28 11:56:54.670] Selected the bad axiom SubClassOf(MOCHA-Asthma_000124 MOCHA-Asthma_000126).
+[2026-06-28 11:56:54.675] Found 663 possible bad axioms.
+[2026-06-28 11:56:54.675] Selected the bad axiom SubClassOf(MOCHA-Asthma_000051 MOCHA-Asthma_000073).
+[2026-06-28 11:56:54.679] Found 662 possible bad axioms.
+[2026-06-28 11:56:54.680] Selected the bad axiom SubClassOf(MOCHA-Asthma_000052 MOCHA-Asthma_000042).
+[2026-06-28 11:56:54.684] Found 661 possible bad axioms.
+[2026-06-28 11:56:54.684] Selected the bad axiom SubClassOf(MOCHA-ADHD_000029 MO
+...[truncated]
+FAIL: attempt=9 seed=113746 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=9 success=0/100
+----- AO attempt=10 seed=127946 at 2026-06-28 12:01:09 -----
+--- stdout ---
+{"seed":127946,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065","iic_values":{},"repair_runtimes_ms":{"A1":738,"A2":235761,"A3":2606,"B1":8682,"B2":3171,"B3":2988,"B4":728,"B5":3242}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AO.owl, seed=127946, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 12:01:09.797] Checking precondition...
+[2026-06-28 12:01:09.833] Starting the repair...
+[2026-06-28 12:01:09.847] Found 676 possible bad axioms.
+[2026-06-28 12:01:09.849] Selected the bad axiom SubClassOf(MOCHA-Asthma_000123 MOCHA-Asthma_000091).
+[2026-06-28 12:01:09.856] Found 675 possible bad axioms.
+[2026-06-28 12:01:09.857] Selected the bad axiom SubClassOf(MOCHA-Asthma_000032 owl:Nothing).
+[2026-06-28 12:01:09.864] Found 674 possible bad axioms.
+[2026-06-28 12:01:09.864] Selected the bad axiom SubClassOf(MOCHA-ADHD_000058 MOCHA-ADHD_000050).
+[2026-06-28 12:01:09.876] Found 673 possible bad axioms.
+[2026-06-28 12:01:09.877] Selected the bad axiom SubClassOf(MOCHA-ADHD_000000 MOCHA-ADHD_000043).
+[2026-06-28 12:01:09.883] Found 672 possible bad axioms.
+[2026-06-28 12:01:09.884] Selected the bad axiom SubClassOf(MOCHA-ADHD_000021 MOCHA-ADHD_000002).
+[2026-06-28 12:01:09.891] Found 671 possible bad axioms.
+[2026-06-28 12:01:09.891] Selected the bad axiom SubClassOf(MOCHA-Asthma_000026 MOCHA-Asthma_000028).
+[2026-06-28 12:01:09.898] Found 670 possible bad axioms.
+[2026-06-28 12:01:09.898] Selected the bad axiom SubClassOf(MOCHA-ADHD_000053 owl:Nothing).
+[2026-06-28 12:01:09.904] Found 669 possible bad axioms.
+[2026-06-28 12:01:09.905] Selected the bad axiom SubClassOf(MOCHA-Asthma_000077 MOCHA-Asthma_000082).
+[2026-06-28 12:01:09.910] Found 668 possible bad axioms.
+[2026-06-28 12:01:09.910] Selected the bad axiom SubClassOf(MOCHA-ADHD_000028 MOCHA-ADHD_000001).
+[2026-06-28 12:01:09.916] Found 667 possible bad axioms.
+[2026-06-28 12:01:09.916] Selected the bad axiom SubClassOf(MOCHA-Asthma_000002 MOCHA-Asthma_000001).
+[2026-06-28 12:01:09.921] Found 666 possible bad axioms.
+[2026-06-28 12:01:09.922] Selected the bad axiom SubClassOf(MOCHA-ADHD_000010 MOCHA-ADHD_000004).
+[2026-06-28 12:01:09.936] Found 665 possible bad axioms.
+[2026-06-28 12:01:09.937] Selected the bad axiom SubClassOf(MOCHA-Asthma_000104 MOCHA-Asthma_000090).
+[2026-06-28 12:01:09.942] Found 664 possible bad axioms.
+[2026-06-28 12:01:09.942] Selected the bad axiom SubClassOf(MOCHA-ADHD_000040 MOCHA-ADHD_000000).
+[2026-06-28 12:01:09.947] Found 663 possible bad axioms.
+[2026-06-28 12:01:09.947] Selected the bad axiom SubClassOf(MOCHA-Asthma_000122 MOCHA-Asthma_000110).
+[2026-06-28 12:01:09.951] Found 662 possible bad axioms.
+[2026-06-28 12:01:09.951] Selected the bad axiom SubClassOf(MOCHA-ADHD_000035 MOCHA-ADHD_000000).
+[2026-06-28 12:01:09.956] Found 661 possible bad axioms.
+[2026-06-28 12:01:09.956] Selected the bad axiom SubClassOf(MOCHA-Asthma_000078 MOCHA-EPI_0000037).
+[2
+...[truncated]
+FAIL: attempt=10 seed=127946 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+progress: ontology=AO attempt=10 success=0/100
+=== ABORTED AO after 10 consecutive failures at 2026-06-28 12:05:27 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for AO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=146 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=2 seed=14346 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=3 seed=28546 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=4 seed=42746 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=5 seed=56946 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=6 seed=71146 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=7 seed=85346 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=8 seed=99546 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=9 seed=113746 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+  attempt=10 seed=127946 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MOCHA-Asthma_000065
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

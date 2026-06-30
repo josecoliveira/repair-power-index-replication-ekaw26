@@ -1,0 +1,535 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-VVMM.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-VVMM.csv
+
+=== Starting sequential trials for VVMM at 2026-06-26 12:06:16 ===
+----- VVMM attempt=1 seed=74 at 2026-06-26 12:06:16 -----
+--- stdout ---
+{"seed":74,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":204,"A2":2464,"A3":235,"B1":240,"B2":1750}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=74, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:17.329] Checking precondition...
+[2026-06-26 12:06:17.345] Starting the repair...
+[2026-06-26 12:06:17.353] Found 158 possible bad axioms.
+[2026-06-26 12:06:17.355] Selected the bad axiom SubClassOf(251000200120 251000200029).
+[2026-06-26 12:06:17.359] Found 157 possible bad axioms.
+[2026-06-26 12:06:17.360] Selected the bad axiom SubClassOf(251000200118 251000200119).
+[2026-06-26 12:06:17.364] Found 156 possible bad axioms.
+[2026-06-26 12:06:17.365] Selected the bad axiom SubClassOf(251000200148 251000200151).
+[2026-06-26 12:06:17.368] Found 155 possible bad axioms.
+[2026-06-26 12:06:17.368] Selected the bad axiom SubClassOf(251000200143 251000200010).
+[2026-06-26 12:06:17.371] Found 154 possible bad axioms.
+[2026-06-26 12:06:17.371] Selected the bad axiom SubClassOf(251000200090 251000200120).
+[2026-06-26 12:06:17.374] Found 153 possible bad axioms.
+[2026-06-26 12:06:17.375] Selected the bad axiom SubClassOf(251000200046 251000200091).
+[2026-06-26 12:06:17.381] Found 152 possible bad axioms.
+[2026-06-26 12:06:17.382] Selected the bad axiom SubClassOf(251000200029 owl:Nothing).
+[2026-06-26 12:06:17.385] Found 151 possible bad axioms.
+[2026-06-26 12:06:17.385] Selected the bad axiom SubClassOf(251000200011 251000200140).
+[2026-06-26 12:06:17.388] Found 150 possible bad axioms.
+[2026-06-26 12:06:17.388] Selected the bad axiom SubClassOf(251000200024 251000200023).
+[2026-06-26 12:06:17.391] Found 149 possible bad axioms.
+[2026-06-26 12:06:17.391] Selected the bad axiom SubClassOf(251000200150 251000200151).
+[2026-06-26 12:06:17.394] Found 148 possible bad axioms.
+[2026-06-26 12:06:17.394] Selected the bad axiom SubClassOf(251000200146 251000200026).
+[2026-06-26 12:06:17.402] Found 147 possible bad axioms.
+[2026-06-26 12:06:17.403] Selected the bad axiom SubClassOf(251000200112 251000200097).
+[2026-06-26 12:06:17.406] Found 146 possible bad axioms.
+[2026-06-26 12:06:17.406] Selected the bad axiom SubClassOf(251000200074 owl:Nothing).
+[2026-06-26 12:06:17.408] Found 145 possible bad axioms.
+[2026-06-26 12:06:17.408] Selected the bad axiom SubClassOf(251000200033 owl:Nothing).
+[2026-06-26 12:06:17.411] Found 144 possible bad axioms.
+[2026-06-26 12:06:17.411] Selected the bad axiom SubClassOf(251000200007 251000200005).
+[2026-06-26 12:06:17.413] Found 143 possible bad axioms.
+[2026-06-26 12:06:17.413] Selected the bad axiom SubClassOf(251000200049 251000200050).
+[2026-06-26 12:06:17.415] Found 142 possible bad axioms.
+[2026-06-26 12:06:17.415] Selected the bad axiom SubClassOf(251000200119 251000200029).
+[2026-06-26 12:06:17.418] Found 141 po
+...[truncated]
+FAIL: attempt=1 seed=74 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=1 success=0/100
+----- VVMM attempt=2 seed=14274 at 2026-06-26 12:06:22 -----
+--- stdout ---
+{"seed":14274,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":240,"A2":2415,"A3":245,"B1":223,"B2":1626}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=14274, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:22.643] Checking precondition...
+[2026-06-26 12:06:22.659] Starting the repair...
+[2026-06-26 12:06:22.666] Found 158 possible bad axioms.
+[2026-06-26 12:06:22.668] Selected the bad axiom SubClassOf(251000200008 owl:Nothing).
+[2026-06-26 12:06:22.673] Found 157 possible bad axioms.
+[2026-06-26 12:06:22.673] Selected the bad axiom SubClassOf(251000200090 251000200120).
+[2026-06-26 12:06:22.677] Found 156 possible bad axioms.
+[2026-06-26 12:06:22.677] Selected the bad axiom SubClassOf(251000200004 251000200003).
+[2026-06-26 12:06:22.681] Found 155 possible bad axioms.
+[2026-06-26 12:06:22.681] Selected the bad axiom SubClassOf(251000200123 251000200008).
+[2026-06-26 12:06:22.684] Found 154 possible bad axioms.
+[2026-06-26 12:06:22.685] Selected the bad axiom SubClassOf(251000200155 251000200074).
+[2026-06-26 12:06:22.688] Found 153 possible bad axioms.
+[2026-06-26 12:06:22.688] Selected the bad axiom SubClassOf(251000200140 251000200009).
+[2026-06-26 12:06:22.696] Found 152 possible bad axioms.
+[2026-06-26 12:06:22.696] Selected the bad axiom SubClassOf(251000200032 owl:Nothing).
+[2026-06-26 12:06:22.700] Found 151 possible bad axioms.
+[2026-06-26 12:06:22.700] Selected the bad axiom SubClassOf(251000200030 251000200117).
+[2026-06-26 12:06:22.703] Found 150 possible bad axioms.
+[2026-06-26 12:06:22.703] Selected the bad axiom SubClassOf(251000200011 251000200143).
+[2026-06-26 12:06:22.706] Found 149 possible bad axioms.
+[2026-06-26 12:06:22.706] Selected the bad axiom SubClassOf(251000200155 251000200073).
+[2026-06-26 12:06:22.709] Found 148 possible bad axioms.
+[2026-06-26 12:06:22.709] Selected the bad axiom SubClassOf(251000200008 251000200052).
+[2026-06-26 12:06:22.719] Found 147 possible bad axioms.
+[2026-06-26 12:06:22.719] Selected the bad axiom SubClassOf(251000200039 251000200040).
+[2026-06-26 12:06:22.724] Found 146 possible bad axioms.
+[2026-06-26 12:06:22.724] Selected the bad axiom SubClassOf(251000200031 251000200121).
+[2026-06-26 12:06:22.727] Found 145 possible bad axioms.
+[2026-06-26 12:06:22.727] Selected the bad axiom SubClassOf(251000200006 251000200007).
+[2026-06-26 12:06:22.729] Found 144 possible bad axioms.
+[2026-06-26 12:06:22.730] Selected the bad axiom SubClassOf(251000200034 251000200033).
+[2026-06-26 12:06:22.732] Found 143 possible bad axioms.
+[2026-06-26 12:06:22.732] Selected the bad axiom SubClassOf(251000200118 owl:Nothing).
+[2026-06-26 12:06:22.735] Found 142 possible bad axioms.
+[2026-06-26 12:06:22.735] Selected the bad axiom SubClassOf(251000200011 251000200010).
+[2026-06-26 12:06:22.737] Found 141
+...[truncated]
+FAIL: attempt=2 seed=14274 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=2 success=0/100
+----- VVMM attempt=3 seed=28474 at 2026-06-26 12:06:27 -----
+--- stdout ---
+{"seed":28474,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":249,"A2":2403,"A3":250,"B1":417,"B2":1697}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=28474, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:27.839] Checking precondition...
+[2026-06-26 12:06:27.857] Starting the repair...
+[2026-06-26 12:06:27.865] Found 158 possible bad axioms.
+[2026-06-26 12:06:27.866] Selected the bad axiom SubClassOf(251000200003 251000200002).
+[2026-06-26 12:06:27.872] Found 157 possible bad axioms.
+[2026-06-26 12:06:27.872] Selected the bad axiom SubClassOf(251000200143 251000200140).
+[2026-06-26 12:06:27.877] Found 156 possible bad axioms.
+[2026-06-26 12:06:27.877] Selected the bad axiom SubClassOf(251000200091 251000200047).
+[2026-06-26 12:06:27.881] Found 155 possible bad axioms.
+[2026-06-26 12:06:27.881] Selected the bad axiom SubClassOf(251000200025 251000200023).
+[2026-06-26 12:06:27.884] Found 154 possible bad axioms.
+[2026-06-26 12:06:27.884] Selected the bad axiom SubClassOf(251000200046 251000200047).
+[2026-06-26 12:06:27.887] Found 153 possible bad axioms.
+[2026-06-26 12:06:27.887] Selected the bad axiom SubClassOf(251000200112 251000200097).
+[2026-06-26 12:06:27.894] Found 152 possible bad axioms.
+[2026-06-26 12:06:27.894] Selected the bad axiom SubClassOf(251000200047 251000200045).
+[2026-06-26 12:06:27.898] Found 151 possible bad axioms.
+[2026-06-26 12:06:27.898] Selected the bad axiom SubClassOf(251000200150 251000200151).
+[2026-06-26 12:06:27.901] Found 150 possible bad axioms.
+[2026-06-26 12:06:27.901] Selected the bad axiom SubClassOf(251000200097 251000200139).
+[2026-06-26 12:06:27.903] Found 149 possible bad axioms.
+[2026-06-26 12:06:27.904] Selected the bad axiom SubClassOf(251000200092 owl:Nothing).
+[2026-06-26 12:06:27.906] Found 148 possible bad axioms.
+[2026-06-26 12:06:27.906] Selected the bad axiom SubClassOf(251000200149 251000200152).
+[2026-06-26 12:06:27.915] Found 147 possible bad axioms.
+[2026-06-26 12:06:27.915] Selected the bad axiom SubClassOf(251000200032 251000200033).
+[2026-06-26 12:06:27.918] Found 146 possible bad axioms.
+[2026-06-26 12:06:27.919] Selected the bad axiom SubClassOf(251000200123 owl:Nothing).
+[2026-06-26 12:06:27.921] Found 145 possible bad axioms.
+[2026-06-26 12:06:27.921] Selected the bad axiom SubClassOf(251000200011 owl:Nothing).
+[2026-06-26 12:06:27.924] Found 144 possible bad axioms.
+[2026-06-26 12:06:27.924] Selected the bad axiom SubClassOf(251000200031 251000200121).
+[2026-06-26 12:06:27.926] Found 143 possible bad axioms.
+[2026-06-26 12:06:27.926] Selected the bad axiom SubClassOf(251000200007 251000200005).
+[2026-06-26 12:06:27.928] Found 142 possible bad axioms.
+[2026-06-26 12:06:27.928] Selected the bad axiom SubClassOf(251000200092 251000200047).
+[2026-06-26 12:06:27.930] Found 141
+...[truncated]
+FAIL: attempt=3 seed=28474 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=3 success=0/100
+----- VVMM attempt=4 seed=42674 at 2026-06-26 12:06:32 -----
+--- stdout ---
+{"seed":42674,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":140,"A2":2444,"A3":273,"B1":230,"B2":816}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=42674, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:33.292] Checking precondition...
+[2026-06-26 12:06:33.307] Starting the repair...
+[2026-06-26 12:06:33.314] Found 158 possible bad axioms.
+[2026-06-26 12:06:33.316] Selected the bad axiom SubClassOf(251000200153 251000200094).
+[2026-06-26 12:06:33.321] Found 157 possible bad axioms.
+[2026-06-26 12:06:33.321] Selected the bad axiom SubClassOf(251000200030 251000200117).
+[2026-06-26 12:06:33.326] Found 156 possible bad axioms.
+[2026-06-26 12:06:33.326] Selected the bad axiom SubClassOf(251000200039 251000200040).
+[2026-06-26 12:06:33.329] Found 155 possible bad axioms.
+[2026-06-26 12:06:33.330] Selected the bad axiom SubClassOf(251000200152 251000200094).
+[2026-06-26 12:06:33.332] Found 154 possible bad axioms.
+[2026-06-26 12:06:33.333] Selected the bad axiom SubClassOf(251000200009 251000200011).
+[2026-06-26 12:06:33.335] Found 153 possible bad axioms.
+[2026-06-26 12:06:33.335] Selected the bad axiom SubClassOf(251000200092 251000200047).
+[2026-06-26 12:06:33.342] Found 152 possible bad axioms.
+[2026-06-26 12:06:33.342] Selected the bad axiom SubClassOf(251000200006 251000200007).
+[2026-06-26 12:06:33.345] Found 151 possible bad axioms.
+[2026-06-26 12:06:33.345] Selected the bad axiom SubClassOf(251000200155 owl:Nothing).
+[2026-06-26 12:06:33.348] Found 150 possible bad axioms.
+[2026-06-26 12:06:33.348] Selected the bad axiom SubClassOf(251000200091 251000200045).
+[2026-06-26 12:06:33.351] Found 149 possible bad axioms.
+[2026-06-26 12:06:33.351] Selected the bad axiom SubClassOf(251000200073 251000200074).
+[2026-06-26 12:06:33.353] Found 148 possible bad axioms.
+[2026-06-26 12:06:33.353] Selected the bad axiom SubClassOf(251000200112 251000200111).
+[2026-06-26 12:06:33.362] Found 147 possible bad axioms.
+[2026-06-26 12:06:33.362] Selected the bad axiom SubClassOf(251000200150 251000200094).
+[2026-06-26 12:06:33.366] Found 146 possible bad axioms.
+[2026-06-26 12:06:33.366] Selected the bad axiom SubClassOf(251000200027 251000200028).
+[2026-06-26 12:06:33.369] Found 145 possible bad axioms.
+[2026-06-26 12:06:33.369] Selected the bad axiom SubClassOf(251000200148 251000200151).
+[2026-06-26 12:06:33.371] Found 144 possible bad axioms.
+[2026-06-26 12:06:33.371] Selected the bad axiom SubClassOf(251000200155 251000200074).
+[2026-06-26 12:06:33.374] Found 143 possible bad axioms.
+[2026-06-26 12:06:33.374] Selected the bad axiom SubClassOf(251000200033 251000200032).
+[2026-06-26 12:06:33.377] Found 142 possible bad axioms.
+[2026-06-26 12:06:33.377] Selected the bad axiom SubClassOf(251000200155 251000200073).
+[2026-06-26 12:06:33.380] Found 1
+...[truncated]
+FAIL: attempt=4 seed=42674 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=4 success=0/100
+----- VVMM attempt=5 seed=56874 at 2026-06-26 12:06:37 -----
+--- stdout ---
+{"seed":56874,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":233,"A2":2426,"A3":444,"B1":202,"B2":1434}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=56874, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:37.615] Checking precondition...
+[2026-06-26 12:06:37.629] Starting the repair...
+[2026-06-26 12:06:37.636] Found 158 possible bad axioms.
+[2026-06-26 12:06:37.637] Selected the bad axiom SubClassOf(251000200143 251000200009).
+[2026-06-26 12:06:37.642] Found 157 possible bad axioms.
+[2026-06-26 12:06:37.642] Selected the bad axiom SubClassOf(251000200078 251000200061).
+[2026-06-26 12:06:37.646] Found 156 possible bad axioms.
+[2026-06-26 12:06:37.646] Selected the bad axiom SubClassOf(251000200021 251000200020).
+[2026-06-26 12:06:37.650] Found 155 possible bad axioms.
+[2026-06-26 12:06:37.650] Selected the bad axiom SubClassOf(251000200027 251000200026).
+[2026-06-26 12:06:37.653] Found 154 possible bad axioms.
+[2026-06-26 12:06:37.653] Selected the bad axiom SubClassOf(251000200011 251000200143).
+[2026-06-26 12:06:37.656] Found 153 possible bad axioms.
+[2026-06-26 12:06:37.656] Selected the bad axiom SubClassOf(251000200021 251000200022).
+[2026-06-26 12:06:37.664] Found 152 possible bad axioms.
+[2026-06-26 12:06:37.664] Selected the bad axiom SubClassOf(251000200149 owl:Nothing).
+[2026-06-26 12:06:37.667] Found 151 possible bad axioms.
+[2026-06-26 12:06:37.667] Selected the bad axiom SubClassOf(251000200121 251000200090).
+[2026-06-26 12:06:37.670] Found 150 possible bad axioms.
+[2026-06-26 12:06:37.670] Selected the bad axiom SubClassOf(251000200038 251000200036).
+[2026-06-26 12:06:37.673] Found 149 possible bad axioms.
+[2026-06-26 12:06:37.673] Selected the bad axiom SubClassOf(251000200076 251000200080).
+[2026-06-26 12:06:37.676] Found 148 possible bad axioms.
+[2026-06-26 12:06:37.676] Selected the bad axiom SubClassOf(251000200037 251000200036).
+[2026-06-26 12:06:37.684] Found 147 possible bad axioms.
+[2026-06-26 12:06:37.684] Selected the bad axiom SubClassOf(251000200046 251000200091).
+[2026-06-26 12:06:37.688] Found 146 possible bad axioms.
+[2026-06-26 12:06:37.688] Selected the bad axiom SubClassOf(251000200033 251000200032).
+[2026-06-26 12:06:37.691] Found 145 possible bad axioms.
+[2026-06-26 12:06:37.691] Selected the bad axiom SubClassOf(251000200143 251000200140).
+[2026-06-26 12:06:37.693] Found 144 possible bad axioms.
+[2026-06-26 12:06:37.693] Selected the bad axiom SubClassOf(251000200152 251000200149).
+[2026-06-26 12:06:37.696] Found 143 possible bad axioms.
+[2026-06-26 12:06:37.696] Selected the bad axiom SubClassOf(251000200000 251000200016).
+[2026-06-26 12:06:37.699] Found 142 possible bad axioms.
+[2026-06-26 12:06:37.699] Selected the bad axiom SubClassOf(251000200092 251000200091).
+[2026-06-26 12:06:37.702] Found 1
+...[truncated]
+FAIL: attempt=5 seed=56874 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=5 success=0/100
+----- VVMM attempt=6 seed=71074 at 2026-06-26 12:06:42 -----
+--- stdout ---
+{"seed":71074,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":211,"A2":2443,"A3":247,"B1":230,"B2":952}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=71074, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:42.790] Checking precondition...
+[2026-06-26 12:06:42.804] Starting the repair...
+[2026-06-26 12:06:42.811] Found 158 possible bad axioms.
+[2026-06-26 12:06:42.812] Selected the bad axiom SubClassOf(251000200097 251000200111).
+[2026-06-26 12:06:42.817] Found 157 possible bad axioms.
+[2026-06-26 12:06:42.817] Selected the bad axiom SubClassOf(251000200046 251000200045).
+[2026-06-26 12:06:42.822] Found 156 possible bad axioms.
+[2026-06-26 12:06:42.822] Selected the bad axiom SubClassOf(251000200027 251000200026).
+[2026-06-26 12:06:42.825] Found 155 possible bad axioms.
+[2026-06-26 12:06:42.825] Selected the bad axiom SubClassOf(251000200121 251000200090).
+[2026-06-26 12:06:42.828] Found 154 possible bad axioms.
+[2026-06-26 12:06:42.829] Selected the bad axiom SubClassOf(251000200030 251000200090).
+[2026-06-26 12:06:42.835] Found 153 possible bad axioms.
+[2026-06-26 12:06:42.836] Selected the bad axiom SubClassOf(251000200090 251000200029).
+[2026-06-26 12:06:42.839] Found 152 possible bad axioms.
+[2026-06-26 12:06:42.839] Selected the bad axiom SubClassOf(251000200046 251000200091).
+[2026-06-26 12:06:42.842] Found 151 possible bad axioms.
+[2026-06-26 12:06:42.842] Selected the bad axiom SubClassOf(251000200037 251000200036).
+[2026-06-26 12:06:42.845] Found 150 possible bad axioms.
+[2026-06-26 12:06:42.845] Selected the bad axiom SubClassOf(251000200150 251000200094).
+[2026-06-26 12:06:42.847] Found 149 possible bad axioms.
+[2026-06-26 12:06:42.848] Selected the bad axiom SubClassOf(251000200143 251000200010).
+[2026-06-26 12:06:42.850] Found 148 possible bad axioms.
+[2026-06-26 12:06:42.850] Selected the bad axiom SubClassOf(251000200112 251000200139).
+[2026-06-26 12:06:42.858] Found 147 possible bad axioms.
+[2026-06-26 12:06:42.858] Selected the bad axiom SubClassOf(251000200101 251000200064).
+[2026-06-26 12:06:42.861] Found 146 possible bad axioms.
+[2026-06-26 12:06:42.862] Selected the bad axiom SubClassOf(251000200033 251000200034).
+[2026-06-26 12:06:42.864] Found 145 possible bad axioms.
+[2026-06-26 12:06:42.865] Selected the bad axiom SubClassOf(251000200094 owl:Nothing).
+[2026-06-26 12:06:42.867] Found 144 possible bad axioms.
+[2026-06-26 12:06:42.867] Selected the bad axiom SubClassOf(251000200020 251000200022).
+[2026-06-26 12:06:42.869] Found 143 possible bad axioms.
+[2026-06-26 12:06:42.869] Selected the bad axiom SubClassOf(251000200121 251000200119).
+[2026-06-26 12:06:42.871] Found 142 possible bad axioms.
+[2026-06-26 12:06:42.871] Selected the bad axiom SubClassOf(251000200024 251000200023).
+[2026-06-26 12:06:42.874] Found 1
+...[truncated]
+FAIL: attempt=6 seed=71074 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=6 success=0/100
+----- VVMM attempt=7 seed=85274 at 2026-06-26 12:06:46 -----
+--- stdout ---
+{"seed":85274,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":272,"A2":2402,"A3":438,"B1":210,"B2":1311}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=85274, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:47.298] Checking precondition...
+[2026-06-26 12:06:47.313] Starting the repair...
+[2026-06-26 12:06:47.320] Found 158 possible bad axioms.
+[2026-06-26 12:06:47.321] Selected the bad axiom SubClassOf(251000200091 251000200092).
+[2026-06-26 12:06:47.326] Found 157 possible bad axioms.
+[2026-06-26 12:06:47.326] Selected the bad axiom SubClassOf(251000200121 251000200119).
+[2026-06-26 12:06:47.331] Found 156 possible bad axioms.
+[2026-06-26 12:06:47.331] Selected the bad axiom SubClassOf(251000200090 251000200029).
+[2026-06-26 12:06:47.334] Found 155 possible bad axioms.
+[2026-06-26 12:06:47.335] Selected the bad axiom SubClassOf(251000200047 251000200045).
+[2026-06-26 12:06:47.337] Found 154 possible bad axioms.
+[2026-06-26 12:06:47.338] Selected the bad axiom SubClassOf(251000200118 owl:Nothing).
+[2026-06-26 12:06:47.341] Found 153 possible bad axioms.
+[2026-06-26 12:06:47.341] Selected the bad axiom SubClassOf(251000200006 251000200007).
+[2026-06-26 12:06:47.349] Found 152 possible bad axioms.
+[2026-06-26 12:06:47.349] Selected the bad axiom SubClassOf(251000200140 251000200009).
+[2026-06-26 12:06:47.352] Found 151 possible bad axioms.
+[2026-06-26 12:06:47.352] Selected the bad axiom SubClassOf(251000200143 251000200140).
+[2026-06-26 12:06:47.355] Found 150 possible bad axioms.
+[2026-06-26 12:06:47.355] Selected the bad axiom SubClassOf(251000200127 251000200095).
+[2026-06-26 12:06:47.358] Found 149 possible bad axioms.
+[2026-06-26 12:06:47.358] Selected the bad axiom SubClassOf(251000200008 251000200052).
+[2026-06-26 12:06:47.360] Found 148 possible bad axioms.
+[2026-06-26 12:06:47.361] Selected the bad axiom SubClassOf(251000200091 251000200045).
+[2026-06-26 12:06:47.369] Found 147 possible bad axioms.
+[2026-06-26 12:06:47.369] Selected the bad axiom SubClassOf(251000200074 251000200073).
+[2026-06-26 12:06:47.373] Found 146 possible bad axioms.
+[2026-06-26 12:06:47.373] Selected the bad axiom SubClassOf(251000200016 251000200000).
+[2026-06-26 12:06:47.375] Found 145 possible bad axioms.
+[2026-06-26 12:06:47.376] Selected the bad axiom SubClassOf(251000200040 251000200039).
+[2026-06-26 12:06:47.378] Found 144 possible bad axioms.
+[2026-06-26 12:06:47.378] Selected the bad axiom SubClassOf(251000200050 251000200049).
+[2026-06-26 12:06:47.380] Found 143 possible bad axioms.
+[2026-06-26 12:06:47.380] Selected the bad axiom SubClassOf(251000200011 251000200140).
+[2026-06-26 12:06:47.382] Found 142 possible bad axioms.
+[2026-06-26 12:06:47.382] Selected the bad axiom SubClassOf(251000200030 owl:Nothing).
+[2026-06-26 12:06:47.384] Found 14
+...[truncated]
+FAIL: attempt=7 seed=85274 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=7 success=0/100
+----- VVMM attempt=8 seed=99474 at 2026-06-26 12:06:52 -----
+--- stdout ---
+{"seed":99474,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":33,"A2":2536,"A3":268,"B1":198,"B2":1701}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=99474, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:52.365] Checking precondition...
+[2026-06-26 12:06:52.379] Starting the repair...
+[2026-06-26 12:06:52.387] Found 158 possible bad axioms.
+[2026-06-26 12:06:52.389] Selected the bad axiom SubClassOf(owl:Thing 251000200011).
+[2026-06-26 12:06:52.394] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 12:06:52.395] Checking precondition...
+[2026-06-26 12:06:52.402] Starting the repair...
+[2026-06-26 12:06:54.930] Found 1 possible bad axioms.
+[2026-06-26 12:06:54.930] Selected the bad axiom SubClassOf(owl:Thing 251000200011).
+[2026-06-26 12:06:54.931] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 12:06:54.932] Checking precondition...
+[2026-06-26 12:06:54.935] Starting the repair...
+[2026-06-26 12:06:54.947] Selected a reference ontology with 243 axioms.
+[2026-06-26 12:06:55.152] Selected the bad axiom SubClassOf(owl:Thing 251000200011).
+[2026-06-26 12:06:55.198] Selected the weaker axiom SubClassOf(251000200020 251000200011).
+[2026-06-26 12:06:55.199] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 12:06:55.200] Checking precondition...
+[2026-06-26 12:06:55.201] Starting the repair...
+[2026-06-26 12:06:55.207] Selected a reference ontology with 243 axioms.
+[2026-06-26 12:06:55.375] Selected the bad axiom SubClassOf(owl:Thing 251000200011).
+[2026-06-26 12:06:55.396] Selected the weaker axiom SubClassOf(251000200048 251000200011).
+[2026-06-26 12:06:55.397] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 12:06:55.399] Checking precondition...
+[2026-06-26 12:06:55.401] Starting the repair...
+[2026-06-26 12:06:55.407] Selected a reference ontology with 243 axioms.
+[2026-06-26 12:06:55.579] Selected the bad axiom SubClassOf(owl:Thing 251000200011).
+[PowerIndexWeakerAxiomSelector] Scoring 89 candidate weakenings for ⊤ ⊑ TEMP#251000200011
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsistencyValueApproximate.java:282)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.sampleTargetsInParallel(ShapleyInconsistencyValueApproximate.java:236)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.computeScoresAdaptive(ShapleyInconsistencyValueApproximate.java:139)
+	at www.ontologyutils.repair.strategy.weaker.PowerIndexWeakerAxiomSelector.selectBest(PowerIndexWeakerAxiomSelector.java:46)
+	at www.o
+...[truncated]
+FAIL: attempt=8 seed=99474 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=8 success=0/100
+----- VVMM attempt=9 seed=113674 at 2026-06-26 12:06:57 -----
+--- stdout ---
+{"seed":113674,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":235,"A2":2428,"A3":250,"B1":420,"B2":1452}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=113674, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:06:57.536] Checking precondition...
+[2026-06-26 12:06:57.551] Starting the repair...
+[2026-06-26 12:06:57.558] Found 158 possible bad axioms.
+[2026-06-26 12:06:57.559] Selected the bad axiom SubClassOf(251000200048 251000200049).
+[2026-06-26 12:06:57.563] Found 157 possible bad axioms.
+[2026-06-26 12:06:57.564] Selected the bad axiom SubClassOf(251000200040 251000200041).
+[2026-06-26 12:06:57.568] Found 156 possible bad axioms.
+[2026-06-26 12:06:57.568] Selected the bad axiom SubClassOf(251000200149 251000200151).
+[2026-06-26 12:06:57.572] Found 155 possible bad axioms.
+[2026-06-26 12:06:57.572] Selected the bad axiom SubClassOf(251000200149 251000200094).
+[2026-06-26 12:06:57.575] Found 154 possible bad axioms.
+[2026-06-26 12:06:57.575] Selected the bad axiom SubClassOf(251000200078 251000200061).
+[2026-06-26 12:06:57.582] Found 153 possible bad axioms.
+[2026-06-26 12:06:57.583] Selected the bad axiom SubClassOf(251000200047 251000200045).
+[2026-06-26 12:06:57.586] Found 152 possible bad axioms.
+[2026-06-26 12:06:57.586] Selected the bad axiom SubClassOf(251000200074 251000200073).
+[2026-06-26 12:06:57.588] Found 151 possible bad axioms.
+[2026-06-26 12:06:57.589] Selected the bad axiom SubClassOf(251000200046 251000200091).
+[2026-06-26 12:06:57.591] Found 150 possible bad axioms.
+[2026-06-26 12:06:57.592] Selected the bad axiom SubClassOf(251000200008 251000200123).
+[2026-06-26 12:06:57.594] Found 149 possible bad axioms.
+[2026-06-26 12:06:57.595] Selected the bad axiom SubClassOf(251000200030 251000200090).
+[2026-06-26 12:06:57.597] Found 148 possible bad axioms.
+[2026-06-26 12:06:57.597] Selected the bad axiom SubClassOf(251000200033 251000200032).
+[2026-06-26 12:06:57.605] Found 147 possible bad axioms.
+[2026-06-26 12:06:57.605] Selected the bad axiom SubClassOf(251000200041 251000200040).
+[2026-06-26 12:06:57.610] Found 146 possible bad axioms.
+[2026-06-26 12:06:57.610] Selected the bad axiom SubClassOf(251000200006 251000200005).
+[2026-06-26 12:06:57.613] Found 145 possible bad axioms.
+[2026-06-26 12:06:57.613] Selected the bad axiom SubClassOf(251000200087 251000200044).
+[2026-06-26 12:06:57.615] Found 144 possible bad axioms.
+[2026-06-26 12:06:57.616] Selected the bad axiom SubClassOf(251000200097 251000200139).
+[2026-06-26 12:06:57.618] Found 143 possible bad axioms.
+[2026-06-26 12:06:57.618] Selected the bad axiom SubClassOf(251000200092 owl:Nothing).
+[2026-06-26 12:06:57.619] Found 142 possible bad axioms.
+[2026-06-26 12:06:57.620] Selected the bad axiom SubClassOf(251000200112 251000200111).
+[2026-06-26 12:06:57.622] Found 
+...[truncated]
+FAIL: attempt=9 seed=113674 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=9 success=0/100
+----- VVMM attempt=10 seed=127874 at 2026-06-26 12:07:02 -----
+--- stdout ---
+{"seed":127874,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011","iic_values":{},"repair_runtimes_ms":{"A1":143,"A2":2448,"A3":292,"B1":418,"B2":1507}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VVMM.owl, seed=127874, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:07:02.769] Checking precondition...
+[2026-06-26 12:07:02.784] Starting the repair...
+[2026-06-26 12:07:02.791] Found 158 possible bad axioms.
+[2026-06-26 12:07:02.792] Selected the bad axiom SubClassOf(251000200149 251000200152).
+[2026-06-26 12:07:02.796] Found 157 possible bad axioms.
+[2026-06-26 12:07:02.796] Selected the bad axiom SubClassOf(251000200004 251000200003).
+[2026-06-26 12:07:02.801] Found 156 possible bad axioms.
+[2026-06-26 12:07:02.801] Selected the bad axiom SubClassOf(251000200046 251000200047).
+[2026-06-26 12:07:02.805] Found 155 possible bad axioms.
+[2026-06-26 12:07:02.805] Selected the bad axiom SubClassOf(251000200091 251000200092).
+[2026-06-26 12:07:02.808] Found 154 possible bad axioms.
+[2026-06-26 12:07:02.809] Selected the bad axiom SubClassOf(251000200021 251000200020).
+[2026-06-26 12:07:02.811] Found 153 possible bad axioms.
+[2026-06-26 12:07:02.812] Selected the bad axiom SubClassOf(251000200003 251000200002).
+[2026-06-26 12:07:02.818] Found 152 possible bad axioms.
+[2026-06-26 12:07:02.819] Selected the bad axiom SubClassOf(251000200112 251000200139).
+[2026-06-26 12:07:02.821] Found 151 possible bad axioms.
+[2026-06-26 12:07:02.821] Selected the bad axiom SubClassOf(251000200118 owl:Nothing).
+[2026-06-26 12:07:02.824] Found 150 possible bad axioms.
+[2026-06-26 12:07:02.824] Selected the bad axiom SubClassOf(251000200011 251000200140).
+[2026-06-26 12:07:02.827] Found 149 possible bad axioms.
+[2026-06-26 12:07:02.827] Selected the bad axiom SubClassOf(251000200041 251000200040).
+[2026-06-26 12:07:02.830] Found 148 possible bad axioms.
+[2026-06-26 12:07:02.830] Selected the bad axiom SubClassOf(251000200011 owl:Nothing).
+[2026-06-26 12:07:02.838] Found 147 possible bad axioms.
+[2026-06-26 12:07:02.838] Selected the bad axiom SubClassOf(251000200037 251000200036).
+[2026-06-26 12:07:02.842] Found 146 possible bad axioms.
+[2026-06-26 12:07:02.842] Selected the bad axiom SubClassOf(251000200097 251000200111).
+[2026-06-26 12:07:02.844] Found 145 possible bad axioms.
+[2026-06-26 12:07:02.844] Selected the bad axiom SubClassOf(251000200087 251000200044).
+[2026-06-26 12:07:02.846] Found 144 possible bad axioms.
+[2026-06-26 12:07:02.847] Selected the bad axiom SubClassOf(251000200121 251000200120).
+[2026-06-26 12:07:02.849] Found 143 possible bad axioms.
+[2026-06-26 12:07:02.849] Selected the bad axiom SubClassOf(251000200008 251000200052).
+[2026-06-26 12:07:02.851] Found 142 possible bad axioms.
+[2026-06-26 12:07:02.851] Selected the bad axiom SubClassOf(251000200038 251000200037).
+[2026-06-26 12:07:02.854] Found 1
+...[truncated]
+FAIL: attempt=10 seed=127874 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+progress: ontology=VVMM attempt=10 success=0/100
+=== ABORTED VVMM after 10 consecutive failures at 2026-06-26 12:07:07 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for VVMM - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=74 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=2 seed=14274 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=3 seed=28474 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=4 seed=42674 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=5 seed=56874 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=6 seed=71074 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=7 seed=85274 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=8 seed=99474 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=9 seed=113674 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+  attempt=10 seed=127874 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TEMP#251000200011
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

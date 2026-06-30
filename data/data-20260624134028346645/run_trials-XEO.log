@@ -1,0 +1,446 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-XEO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-XEO.csv
+
+=== Starting sequential trials for XEO at 2026-06-28 04:36:27 ===
+----- XEO attempt=1 seed=132 at 2026-06-28 04:36:27 -----
+--- stdout ---
+{"seed":132,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B1","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":638,"A2":22048,"A3":1113,"B1":1080}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=132, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:36:28.304] Checking precondition...
+[2026-06-28 04:36:28.322] Starting the repair...
+[2026-06-28 04:36:28.338] Found 467 possible bad axioms.
+[2026-06-28 04:36:28.340] Selected the bad axiom SubClassOf(has_datatype http://purl.obolibrary.org/obo/XEO_00189)).
+[2026-06-28 04:36:28.346] Found 466 possible bad axioms.
+[2026-06-28 04:36:28.347] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:36:28.355] Found 465 possible bad axioms.
+[2026-06-28 04:36:28.355] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00238 http://purl.obolibrary.org/obo/XEO_00237).
+[2026-06-28 04:36:28.362] Found 464 possible bad axioms.
+[2026-06-28 04:36:28.362] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00127) http://purl.obolibrary.org/obo/XEO_00089).
+[2026-06-28 04:36:28.368] Found 463 possible bad axioms.
+[2026-06-28 04:36:28.368] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00085 http://purl.obolibrary.org/obo/XEO_00089).
+[2026-06-28 04:36:28.373] Found 462 possible bad axioms.
+[2026-06-28 04:36:28.373] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00152)).
+[2026-06-28 04:36:28.383] Found 461 possible bad axioms.
+[2026-06-28 04:36:28.384] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context owl:Thing) http://purl.obolibrary.org/obo/XEO_00001).
+[2026-06-28 04:36:28.389] Found 460 possible bad axioms.
+[2026-06-28 04:36:28.390] Selected the bad axiom SubClassOf(has_enum http://purl.obolibrary.org/obo/XEO_00232)).
+[2026-06-28 04:36:28.394] Found 459 possible bad axioms.
+[2026-06-28 04:36:28.395] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00126 http://purl.obolibrary.org/obo/XEO_00021).
+[2026-06-28 04:36:28.399] Found 458 possible bad axioms.
+[2026-06-28 04:36:28.400] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00004 http://purl.obolibrary.org/obo/XEO_00112).
+[2026-06-28 04:36:28.405] Found 457 possible bad axioms.
+[2026-06-28 04:36:28.405] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00058 http://purl.obolibrary.org/obo/XEO_00103).
+[2026-06-28 04:36:28.415] Found 456 possible bad axioms.
+[2026-06-28 04:36:28.415] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00149)).
+[2026-06-28 04:36:28.420] Found 455 possible bad axioms.
+[2026-06-28 04:36:28.420] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00051 http://purl.obolibrary.org/obo/XEO_
+...[truncated]
+FAIL: attempt=1 seed=132 status=memory_limit_exceeded stage=B1 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=XEO attempt=1 success=0/100
+----- XEO attempt=2 seed=14332 at 2026-06-28 04:36:53 -----
+--- stdout ---
+{"seed":14332,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":487,"A2":22288,"A3":15469,"B1":988,"B2":2532}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=14332, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:36:53.662] Checking precondition...
+[2026-06-28 04:36:53.681] Starting the repair...
+[2026-06-28 04:36:53.696] Found 467 possible bad axioms.
+[2026-06-28 04:36:53.698] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00111 http://purl.obolibrary.org/obo/XEO_00044).
+[2026-06-28 04:36:53.706] Found 466 possible bad axioms.
+[2026-06-28 04:36:53.706] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00020 http://purl.obolibrary.org/obo/XEO_00016).
+[2026-06-28 04:36:53.713] Found 465 possible bad axioms.
+[2026-06-28 04:36:53.713] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00079 http://purl.obolibrary.org/obo/XEO_00093).
+[2026-06-28 04:36:53.720] Found 464 possible bad axioms.
+[2026-06-28 04:36:53.720] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:36:53.726] Found 463 possible bad axioms.
+[2026-06-28 04:36:53.726] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00046 http://purl.obolibrary.org/obo/XEO_00047).
+[2026-06-28 04:36:53.731] Found 462 possible bad axioms.
+[2026-06-28 04:36:53.731] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00127 http://purl.obolibrary.org/obo/XEO_00005).
+[2026-06-28 04:36:53.742] Found 461 possible bad axioms.
+[2026-06-28 04:36:53.743] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00017 http://purl.obolibrary.org/obo/XEO_00019).
+[2026-06-28 04:36:53.748] Found 460 possible bad axioms.
+[2026-06-28 04:36:53.749] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00085 http://purl.obolibrary.org/obo/XEO_00088).
+[2026-06-28 04:36:53.753] Found 459 possible bad axioms.
+[2026-06-28 04:36:53.753] Selected the bad axiom SubClassOf(has_enum http://purl.obolibrary.org/obo/XEO_00212)).
+[2026-06-28 04:36:53.758] Found 458 possible bad axioms.
+[2026-06-28 04:36:53.758] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00152)).
+[2026-06-28 04:36:53.763] Found 457 possible bad axioms.
+[2026-06-28 04:36:53.763] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:36:53.773] Found 456 possible bad axioms.
+[2026-06-28 04:36:53.773] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00108 http://purl.obolibrary.org/obo/XEO_00109).
+[2026-06-28 04:36:53.780] Found 455 possible bad axioms.
+[2026-06-28 04:36:53.780] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00152 http://purl.obolibrary.org/obo/XEO_00168).
+
+...[truncated]
+FAIL: attempt=2 seed=14332 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=2 success=0/100
+----- XEO attempt=3 seed=28532 at 2026-06-28 04:37:35 -----
+--- stdout ---
+{"seed":28532,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":428,"A2":22454,"A3":3203,"B1":914,"B2":3401}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=28532, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:37:35.903] Checking precondition...
+[2026-06-28 04:37:35.924] Starting the repair...
+[2026-06-28 04:37:35.939] Found 467 possible bad axioms.
+[2026-06-28 04:37:35.941] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00048 http://purl.obolibrary.org/obo/XEO_00046).
+[2026-06-28 04:37:35.949] Found 466 possible bad axioms.
+[2026-06-28 04:37:35.949] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00035 http://purl.obolibrary.org/obo/XEO_00036).
+[2026-06-28 04:37:35.955] Found 465 possible bad axioms.
+[2026-06-28 04:37:35.956] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:37:35.963] Found 464 possible bad axioms.
+[2026-06-28 04:37:35.963] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00047 http://purl.obolibrary.org/obo/XEO_00122).
+[2026-06-28 04:37:35.969] Found 463 possible bad axioms.
+[2026-06-28 04:37:35.969] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00117 http://purl.obolibrary.org/obo/XEO_00046).
+[2026-06-28 04:37:35.974] Found 462 possible bad axioms.
+[2026-06-28 04:37:35.974] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00135) http://purl.obolibrary.org/obo/XEO_00032).
+[2026-06-28 04:37:35.984] Found 461 possible bad axioms.
+[2026-06-28 04:37:35.984] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00091 http://purl.obolibrary.org/obo/XEO_00105).
+[2026-06-28 04:37:35.989] Found 460 possible bad axioms.
+[2026-06-28 04:37:35.989] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00232 http://purl.obolibrary.org/obo/XEO_00240).
+[2026-06-28 04:37:35.994] Found 459 possible bad axioms.
+[2026-06-28 04:37:35.994] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:37:35.999] Found 458 possible bad axioms.
+[2026-06-28 04:37:35.999] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00081 http://purl.obolibrary.org/obo/XEO_00077).
+[2026-06-28 04:37:36.003] Found 457 possible bad axioms.
+[2026-06-28 04:37:36.003] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00007 http://purl.obolibrary.org/obo/XEO_00017).
+[2026-06-28 04:37:36.013] Found 456 possible bad axioms.
+[2026-06-28 04:37:36.013] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00068 http://purl.obolibrary.org/obo/XEO_00054).
+[2026-06-28 04:37:36.018] Found 455 possible bad axioms.
+[2026-06-28 04:37:36.019] Selected the bad axiom Su
+...[truncated]
+FAIL: attempt=3 seed=28532 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=3 success=0/100
+----- XEO attempt=4 seed=42732 at 2026-06-28 04:38:06 -----
+--- stdout ---
+{"seed":42732,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":168,"A2":21995,"A3":2081,"B1":4811,"B2":2425}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=42732, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:38:06.781] Checking precondition...
+[2026-06-28 04:38:06.799] Starting the repair...
+[2026-06-28 04:38:06.814] Found 467 possible bad axioms.
+[2026-06-28 04:38:06.816] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00127) http://purl.obolibrary.org/obo/XEO_00056).
+[2026-06-28 04:38:06.823] Found 466 possible bad axioms.
+[2026-06-28 04:38:06.824] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00014)).
+[2026-06-28 04:38:06.832] Found 465 possible bad axioms.
+[2026-06-28 04:38:06.832] Selected the bad axiom SubClassOf(has_datatype http://purl.obolibrary.org/obo/XEO_00237)).
+[2026-06-28 04:38:06.839] Found 464 possible bad axioms.
+[2026-06-28 04:38:06.840] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:38:06.845] Found 463 possible bad axioms.
+[2026-06-28 04:38:06.845] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00099 http://purl.obolibrary.org/obo/XEO_00100).
+[2026-06-28 04:38:06.851] Found 462 possible bad axioms.
+[2026-06-28 04:38:06.851] Selected the bad axiom SubClassOf(has_context owl:Thing)).
+[2026-06-28 04:38:06.861] Found 461 possible bad axioms.
+[2026-06-28 04:38:06.862] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00028 http://purl.obolibrary.org/obo/XEO_00026).
+[2026-06-28 04:38:06.867] Found 460 possible bad axioms.
+[2026-06-28 04:38:06.867] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00156)).
+[2026-06-28 04:38:06.872] Found 459 possible bad axioms.
+[2026-06-28 04:38:06.872] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00062 http://purl.obolibrary.org/obo/XEO_00060).
+[2026-06-28 04:38:06.877] Found 458 possible bad axioms.
+[2026-06-28 04:38:06.877] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00099 http://purl.obolibrary.org/obo/XEO_00082).
+[2026-06-28 04:38:06.882] Found 457 possible bad axioms.
+[2026-06-28 04:38:06.882] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00023 http://purl.obolibrary.org/obo/XEO_00024).
+[2026-06-28 04:38:06.892] Found 456 possible bad axioms.
+[2026-06-28 04:38:06.893] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00149 http://purl.obolibrary.org/obo/XEO_00153).
+[2026-06-28 04:38:06.898] Found 455 possible bad axioms.
+[2026-06-28 04:38:06.898] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00149)).
+[2026-06-28 04:38:06.902] Found 454 possible bad 
+...[truncated]
+FAIL: attempt=4 seed=42732 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=4 success=0/100
+----- XEO attempt=5 seed=56932 at 2026-06-28 04:38:38 -----
+--- stdout ---
+{"seed":56932,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":596,"A2":21985,"A3":2457,"B1":3420,"B2":3224}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=56932, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:38:38.732] Checking precondition...
+[2026-06-28 04:38:38.750] Starting the repair...
+[2026-06-28 04:38:38.767] Found 467 possible bad axioms.
+[2026-06-28 04:38:38.769] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context owl:Thing) http://purl.obolibrary.org/obo/XEO_00004).
+[2026-06-28 04:38:38.777] Found 466 possible bad axioms.
+[2026-06-28 04:38:38.778] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00046 http://purl.obolibrary.org/obo/XEO_00047).
+[2026-06-28 04:38:38.784] Found 465 possible bad axioms.
+[2026-06-28 04:38:38.785] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00095 http://purl.obolibrary.org/obo/XEO_00094).
+[2026-06-28 04:38:38.792] Found 464 possible bad axioms.
+[2026-06-28 04:38:38.793] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00094 http://purl.obolibrary.org/obo/XEO_00080).
+[2026-06-28 04:38:38.798] Found 463 possible bad axioms.
+[2026-06-28 04:38:38.798] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00085 http://purl.obolibrary.org/obo/XEO_00050).
+[2026-06-28 04:38:38.803] Found 462 possible bad axioms.
+[2026-06-28 04:38:38.804] Selected the bad axiom SubClassOf(has_datatype http://purl.obolibrary.org/obo/XEO_00237)).
+[2026-06-28 04:38:38.814] Found 461 possible bad axioms.
+[2026-06-28 04:38:38.814] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00008)).
+[2026-06-28 04:38:38.819] Found 460 possible bad axioms.
+[2026-06-28 04:38:38.820] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00074 http://purl.obolibrary.org/obo/XEO_00063).
+[2026-06-28 04:38:38.824] Found 459 possible bad axioms.
+[2026-06-28 04:38:38.825] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00049 owl:Nothing).
+[2026-06-28 04:38:38.829] Found 458 possible bad axioms.
+[2026-06-28 04:38:38.830] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:38:38.834] Found 457 possible bad axioms.
+[2026-06-28 04:38:38.834] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:38:38.844] Found 456 possible bad axioms.
+[2026-06-28 04:38:38.844] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00153 http://purl.obolibrary.org/obo/XEO_00127).
+[2026-06-28 04:38:38.851] Found 455 possible bad axioms.
+[2026-06-28 04:38:38.852] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00087 http://purl.obolibrary.org/obo/XEO_00085).
+[2026-06-28 04:38:38.8
+...[truncated]
+FAIL: attempt=5 seed=56932 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=5 success=0/100
+----- XEO attempt=6 seed=71132 at 2026-06-28 04:39:10 -----
+--- stdout ---
+{"seed":71132,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":407,"A2":22118,"A3":10803,"B1":5698,"B2":3950}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=71132, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:39:10.903] Checking precondition...
+[2026-06-28 04:39:10.921] Starting the repair...
+[2026-06-28 04:39:10.938] Found 467 possible bad axioms.
+[2026-06-28 04:39:10.940] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00135 http://purl.obolibrary.org/obo/XEO_00152).
+[2026-06-28 04:39:10.947] Found 466 possible bad axioms.
+[2026-06-28 04:39:10.948] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00043 http://purl.obolibrary.org/obo/XEO_00044).
+[2026-06-28 04:39:10.954] Found 465 possible bad axioms.
+[2026-06-28 04:39:10.954] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00005) http://purl.obolibrary.org/obo/XEO_00053).
+[2026-06-28 04:39:10.961] Found 464 possible bad axioms.
+[2026-06-28 04:39:10.962] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00034 http://purl.obolibrary.org/obo/XEO_00030).
+[2026-06-28 04:39:10.967] Found 463 possible bad axioms.
+[2026-06-28 04:39:10.968] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00081 http://purl.obolibrary.org/obo/XEO_00050).
+[2026-06-28 04:39:10.973] Found 462 possible bad axioms.
+[2026-06-28 04:39:10.973] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00035 http://purl.obolibrary.org/obo/XEO_00036).
+[2026-06-28 04:39:10.983] Found 461 possible bad axioms.
+[2026-06-28 04:39:10.984] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00052 http://purl.obolibrary.org/obo/XEO_00049).
+[2026-06-28 04:39:10.990] Found 460 possible bad axioms.
+[2026-06-28 04:39:10.990] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00102 http://purl.obolibrary.org/obo/XEO_00083).
+[2026-06-28 04:39:10.995] Found 459 possible bad axioms.
+[2026-06-28 04:39:10.995] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:39:11.000] Found 458 possible bad axioms.
+[2026-06-28 04:39:11.000] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00115 http://purl.obolibrary.org/obo/XEO_00046).
+[2026-06-28 04:39:11.005] Found 457 possible bad axioms.
+[2026-06-28 04:39:11.005] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00127) http://purl.obolibrary.org/obo/XEO_00120).
+[2026-06-28 04:39:11.015] Found 456 possible bad axioms.
+[2026-06-28 04:39:11.015] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00109 http://purl.obolibrary.org/obo/XEO_00063).
+[2026-06-28 04:39:11.020] Found 455 possible b
+...[truncated]
+FAIL: attempt=6 seed=71132 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=6 success=0/100
+----- XEO attempt=7 seed=85332 at 2026-06-28 04:39:53 -----
+--- stdout ---
+{"seed":85332,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":602,"A2":22191,"A3":2038,"B1":2445,"B2":2641}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=85332, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:39:54.361] Checking precondition...
+[2026-06-28 04:39:54.381] Starting the repair...
+[2026-06-28 04:39:54.396] Found 467 possible bad axioms.
+[2026-06-28 04:39:54.398] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00027 http://purl.obolibrary.org/obo/XEO_00105).
+[2026-06-28 04:39:54.406] Found 466 possible bad axioms.
+[2026-06-28 04:39:54.406] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00152 http://purl.obolibrary.org/obo/XEO_00005).
+[2026-06-28 04:39:54.414] Found 465 possible bad axioms.
+[2026-06-28 04:39:54.414] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00118 owl:Nothing).
+[2026-06-28 04:39:54.420] Found 464 possible bad axioms.
+[2026-06-28 04:39:54.421] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00005 http://purl.obolibrary.org/obo/XEO_00002).
+[2026-06-28 04:39:54.426] Found 463 possible bad axioms.
+[2026-06-28 04:39:54.426] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00071 http://purl.obolibrary.org/obo/XEO_00062).
+[2026-06-28 04:39:54.431] Found 462 possible bad axioms.
+[2026-06-28 04:39:54.431] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00062 http://purl.obolibrary.org/obo/XEO_00052).
+[2026-06-28 04:39:54.442] Found 461 possible bad axioms.
+[2026-06-28 04:39:54.442] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_enum http://purl.obolibrary.org/obo/XEO_00171) http://purl.obolibrary.org/obo/XEO_00002).
+[2026-06-28 04:39:54.448] Found 460 possible bad axioms.
+[2026-06-28 04:39:54.448] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00114 http://purl.obolibrary.org/obo/XEO_00115).
+[2026-06-28 04:39:54.453] Found 459 possible bad axioms.
+[2026-06-28 04:39:54.453] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00024 http://purl.obolibrary.org/obo/XEO_00018).
+[2026-06-28 04:39:54.458] Found 458 possible bad axioms.
+[2026-06-28 04:39:54.459] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00238 http://purl.obolibrary.org/obo/XEO_00236).
+[2026-06-28 04:39:54.464] Found 457 possible bad axioms.
+[2026-06-28 04:39:54.464] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00070 http://purl.obolibrary.org/obo/XEO_00054).
+[2026-06-28 04:39:54.475] Found 456 possible bad axioms.
+[2026-06-28 04:39:54.475] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00156 http://purl.obolibrary.org/obo/XEO_00005).
+[2026-06-28 04:39:54.481] Found 455 possible bad axioms.
+[2026-06-28 04:39:54.481] S
+...[truncated]
+FAIL: attempt=7 seed=85332 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=7 success=0/100
+----- XEO attempt=8 seed=99532 at 2026-06-28 04:40:24 -----
+--- stdout ---
+{"seed":99532,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":408,"A2":22322,"A3":2223,"B1":2277,"B2":17480}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=99532, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:40:24.753] Checking precondition...
+[2026-06-28 04:40:24.771] Starting the repair...
+[2026-06-28 04:40:24.786] Found 467 possible bad axioms.
+[2026-06-28 04:40:24.788] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00153)).
+[2026-06-28 04:40:24.796] Found 466 possible bad axioms.
+[2026-06-28 04:40:24.796] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00127) http://purl.obolibrary.org/obo/XEO_00065).
+[2026-06-28 04:40:24.802] Found 465 possible bad axioms.
+[2026-06-28 04:40:24.803] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00025 http://purl.obolibrary.org/obo/XEO_00018).
+[2026-06-28 04:40:24.809] Found 464 possible bad axioms.
+[2026-06-28 04:40:24.809] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00096 http://purl.obolibrary.org/obo/XEO_00081).
+[2026-06-28 04:40:24.815] Found 463 possible bad axioms.
+[2026-06-28 04:40:24.815] Selected the bad axiom SubClassOf(has_symbol owl:Thing)).
+[2026-06-28 04:40:24.820] Found 462 possible bad axioms.
+[2026-06-28 04:40:24.820] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00017 http://purl.obolibrary.org/obo/XEO_00003).
+[2026-06-28 04:40:24.830] Found 461 possible bad axioms.
+[2026-06-28 04:40:24.830] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:40:24.836] Found 460 possible bad axioms.
+[2026-06-28 04:40:24.836] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context ObjectSomeValuesFrom(has_datatype http://purl.obolibrary.org/obo/XEO_00237)) http://purl.obolibrary.org/obo/XEO_00120).
+[2026-06-28 04:40:24.841] Found 459 possible bad axioms.
+[2026-06-28 04:40:24.841] Selected the bad axiom SubClassOf(has_enum http://purl.obolibrary.org/obo/XEO_00189)).
+[2026-06-28 04:40:24.847] Found 458 possible bad axioms.
+[2026-06-28 04:40:24.847] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00036 http://purl.obolibrary.org/obo/XEO_00031).
+[2026-06-28 04:40:24.852] Found 457 possible bad axioms.
+[2026-06-28 04:40:24.852] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00044 http://purl.obolibrary.org/obo/XEO_00006).
+[2026-06-28 04:40:24.862] Found 456 possible bad axioms.
+[2026-06-28 04:40:24.863] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:40:24.868] Found 455 possible bad axioms.
+[2026-06-28 04:40:24.868] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/ob
+...[truncated]
+FAIL: attempt=8 seed=99532 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=8 success=0/100
+----- XEO attempt=9 seed=113732 at 2026-06-28 04:41:09 -----
+--- stdout ---
+{"seed":113732,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":705,"A2":21959,"A3":2939,"B1":35369,"B2":3670}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=113732, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:41:09.933] Checking precondition...
+[2026-06-28 04:41:09.952] Starting the repair...
+[2026-06-28 04:41:09.968] Found 467 possible bad axioms.
+[2026-06-28 04:41:09.970] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00127) http://purl.obolibrary.org/obo/XEO_00080).
+[2026-06-28 04:41:09.978] Found 466 possible bad axioms.
+[2026-06-28 04:41:09.978] Selected the bad axiom SubClassOf(has_enum http://purl.obolibrary.org/obo/XEO_00171)).
+[2026-06-28 04:41:09.985] Found 465 possible bad axioms.
+[2026-06-28 04:41:09.985] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00027 http://purl.obolibrary.org/obo/XEO_00105).
+[2026-06-28 04:41:09.993] Found 464 possible bad axioms.
+[2026-06-28 04:41:09.993] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00016 http://purl.obolibrary.org/obo/XEO_00019).
+[2026-06-28 04:41:09.998] Found 463 possible bad axioms.
+[2026-06-28 04:41:09.998] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00086 http://purl.obolibrary.org/obo/XEO_00087).
+[2026-06-28 04:41:10.003] Found 462 possible bad axioms.
+[2026-06-28 04:41:10.003] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00067 http://purl.obolibrary.org/obo/XEO_00068).
+[2026-06-28 04:41:10.013] Found 461 possible bad axioms.
+[2026-06-28 04:41:10.014] Selected the bad axiom SubClassOf(has_datatype http://purl.obolibrary.org/obo/XEO_00238)).
+[2026-06-28 04:41:10.019] Found 460 possible bad axioms.
+[2026-06-28 04:41:10.020] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00079 http://purl.obolibrary.org/obo/XEO_00093).
+[2026-06-28 04:41:10.024] Found 459 possible bad axioms.
+[2026-06-28 04:41:10.024] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00127) http://purl.obolibrary.org/obo/XEO_00018).
+[2026-06-28 04:41:10.030] Found 458 possible bad axioms.
+[2026-06-28 04:41:10.030] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00058 http://purl.obolibrary.org/obo/XEO_00051).
+[2026-06-28 04:41:10.035] Found 457 possible bad axioms.
+[2026-06-28 04:41:10.035] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00045 http://purl.obolibrary.org/obo/XEO_00112).
+[2026-06-28 04:41:10.045] Found 456 possible bad axioms.
+[2026-06-28 04:41:10.045] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00159 http://purl.obolibrary.org/obo/XEO_00008).
+[2026-06-28 04:41:10.050] Found 455 possible bad axioms.
+[2026-06-28 04:41:
+...[truncated]
+FAIL: attempt=9 seed=113732 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=9 success=0/100
+----- XEO attempt=10 seed=127932 at 2026-06-28 04:42:14 -----
+--- stdout ---
+{"seed":127932,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045","iic_values":{},"repair_runtimes_ms":{"A1":571,"A2":22256,"A3":4598,"B1":12518,"B2":2853}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/XEO.owl, seed=127932, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:42:15.051] Checking precondition...
+[2026-06-28 04:42:15.072] Starting the repair...
+[2026-06-28 04:42:15.088] Found 467 possible bad axioms.
+[2026-06-28 04:42:15.090] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00127) http://purl.obolibrary.org/obo/XEO_00078).
+[2026-06-28 04:42:15.098] Found 466 possible bad axioms.
+[2026-06-28 04:42:15.098] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00051 http://purl.obolibrary.org/obo/XEO_00053).
+[2026-06-28 04:42:15.106] Found 465 possible bad axioms.
+[2026-06-28 04:42:15.106] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00091 http://purl.obolibrary.org/obo/XEO_00090).
+[2026-06-28 04:42:15.113] Found 464 possible bad axioms.
+[2026-06-28 04:42:15.113] Selected the bad axiom SubClassOf(has_context http://purl.obolibrary.org/obo/XEO_00127)).
+[2026-06-28 04:42:15.118] Found 463 possible bad axioms.
+[2026-06-28 04:42:15.118] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00212 http://purl.obolibrary.org/obo/XEO_00197).
+[2026-06-28 04:42:15.123] Found 462 possible bad axioms.
+[2026-06-28 04:42:15.123] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00048 http://purl.obolibrary.org/obo/XEO_00043).
+[2026-06-28 04:42:15.134] Found 461 possible bad axioms.
+[2026-06-28 04:42:15.134] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00030 http://purl.obolibrary.org/obo/XEO_00019).
+[2026-06-28 04:42:15.139] Found 460 possible bad axioms.
+[2026-06-28 04:42:15.140] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_context http://purl.obolibrary.org/obo/XEO_00005) http://purl.obolibrary.org/obo/XEO_00016).
+[2026-06-28 04:42:15.144] Found 459 possible bad axioms.
+[2026-06-28 04:42:15.145] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00014 http://purl.obolibrary.org/obo/XEO_00002).
+[2026-06-28 04:42:15.150] Found 458 possible bad axioms.
+[2026-06-28 04:42:15.150] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00001 http://purl.obolibrary.org/obo/XEO_00122).
+[2026-06-28 04:42:15.154] Found 457 possible bad axioms.
+[2026-06-28 04:42:15.154] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00099 http://purl.obolibrary.org/obo/XEO_00100).
+[2026-06-28 04:42:15.165] Found 456 possible bad axioms.
+[2026-06-28 04:42:15.165] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/XEO_00089 http://purl.obolibrary.org/obo/XEO_00077).
+[2026-06-28 04:42:15.170] Found 455 possible 
+...[truncated]
+FAIL: attempt=10 seed=127932 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+progress: ontology=XEO attempt=10 success=0/100
+=== ABORTED XEO after 10 consecutive failures at 2026-06-28 04:42:57 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for XEO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=132 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=2 seed=14332 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=3 seed=28532 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=4 seed=42732 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=5 seed=56932 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=6 seed=71132 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=7 seed=85332 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=8 seed=99532 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=9 seed=113732 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+  attempt=10 seed=127932 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

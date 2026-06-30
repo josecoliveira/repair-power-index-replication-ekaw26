@@ -1,0 +1,448 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-APRO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-APRO.csv
+
+=== Starting sequential trials for APRO at 2026-06-27 13:38:56 ===
+----- APRO attempt=1 seed=117 at 2026-06-27 13:38:56 -----
+--- stdout ---
+{"seed":117,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":411,"A2":42206,"A3":7994,"B1":2638,"B2":254811,"B3":121115,"B4":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=117, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:38:56.918] Checking precondition...
+[2026-06-27 13:38:56.945] Starting the repair...
+[2026-06-27 13:38:56.961] Found 340 possible bad axioms.
+[2026-06-27 13:38:56.963] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(references_work ObjectAllValuesFrom(occurrence_location Work).
+[2026-06-27 13:38:56.971] Found 339 possible bad axioms.
+[2026-06-27 13:38:56.971] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(included_in ObjectAllValuesFrom(commemorated_at Work).
+[2026-06-27 13:38:56.978] Found 338 possible bad axioms.
+[2026-06-27 13:38:56.979] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(work_sentiment Emotion) ObjectAllValuesFrom(is_friend_of http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 13:38:56.986] Found 337 possible bad axioms.
+[2026-06-27 13:38:56.986] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_children worked_at http://schema.org/Place)).
+[2026-06-27 13:38:56.993] Found 336 possible bad axioms.
+[2026-06-27 13:38:56.993] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(traveled_to ObjectAllValuesFrom(participated_in ObjectAllValuesFrom(end_time Time))) ObjectSomeValuesFrom(documented_in owl:Thing)).
+[2026-06-27 13:38:56.999] Found 335 possible bad axioms.
+[2026-06-27 13:38:57.000] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(witnessed_event http://schema.org/Event)).
+[2026-06-27 13:38:57.011] Found 334 possible bad axioms.
+[2026-06-27 13:38:57.011] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(retired_in owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 13:38:57.017] Found 333 possible bad axioms.
+[2026-06-27 13:38:57.018] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(published_at Time)).
+[2026-06-27 13:38:57.024] Found 332 possible bad axioms.
+[2026-06-27 13:38:57.024] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(worked_at http://schema.org/Place)).
+[2026-06-27 13:38:57.030] Found 331 possible bad axioms.
+[2026-06-27 13:38:57.030] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(references_work Work) ObjectAllValuesFrom(created_time Time)).
+[2026-06-27 13:38:57.037] Found 330 possible bad axioms.
+[2026-06-27 13:38:57.037] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(inspired_other_works Work) ObjectAllValuesFrom(reflects_event http://schema.org/Event)).
+[2026-06-27 13:38:57.048] Found 329 possible bad axioms.
+[2026-06-27 13:38:57.049] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(affected_area http://schema.org/Place)).
+[2026-06-27 13:38:57.055] Found 328 possible bad axioms.
+[2026-06-
+...[truncated]
+FAIL: attempt=1 seed=117 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=APRO attempt=1 success=0/100
+----- APRO attempt=2 seed=14317 at 2026-06-27 13:51:06 -----
+--- stdout ---
+{"seed":14317,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":462,"A2":42388,"A3":8013,"B1":6957,"B2":128736,"B3":163774,"B4":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=14317, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:51:06.981] Checking precondition...
+[2026-06-27 13:51:07.007] Starting the repair...
+[2026-06-27 13:51:07.027] Found 340 possible bad axioms.
+[2026-06-27 13:51:07.029] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(documented_in owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 13:51:07.036] Found 339 possible bad axioms.
+[2026-06-27 13:51:07.037] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(affected_by_event http://schema.org/Event)).
+[2026-06-27 13:51:07.044] Found 338 possible bad axioms.
+[2026-06-27 13:51:07.045] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(work_sentiment Emotion) ObjectAllValuesFrom(depicts_location http://schema.org/Place)).
+[2026-06-27 13:51:07.051] Found 337 possible bad axioms.
+[2026-06-27 13:51:07.051] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(retired_in http://schema.org/Place)).
+[2026-06-27 13:51:07.057] Found 336 possible bad axioms.
+[2026-06-27 13:51:07.057] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_duration Time)).
+[2026-06-27 13:51:07.063] Found 335 possible bad axioms.
+[2026-06-27 13:51:07.064] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_superior owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 13:51:07.075] Found 334 possible bad axioms.
+[2026-06-27 13:51:07.075] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(commented_by concluded_at http://schema.org/Place)).
+[2026-06-27 13:51:07.082] Found 333 possible bad axioms.
+[2026-06-27 13:51:07.082] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(start_time ObjectAllValuesFrom(has_student http://xmlns.com/foaf/0.1/Person)) http://schema.org/Event).
+[2026-06-27 13:51:07.089] Found 332 possible bad axioms.
+[2026-06-27 13:51:07.089] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_parents http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 13:51:07.094] Found 331 possible bad axioms.
+[2026-06-27 13:51:07.094] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(traveled_to owl:Thing) ObjectSomeValuesFrom(documented_in owl:Thing)).
+[2026-06-27 13:51:07.099] Found 330 possible bad axioms.
+[2026-06-27 13:51:07.099] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(occurred_at ObjectAllValuesFrom(has_student http://xmlns.com/foaf/0.1/Person)) http://schema.org/Event).
+[2026-06-27 13:51:07.109] Found 329 possible bad axioms.
+[2026-06-27 13:51:07.110] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(witnessed_event owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 13:51:07.114] Found 328 possible bad axio
+...[truncated]
+FAIL: attempt=2 seed=14317 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=APRO attempt=2 success=0/100
+----- APRO attempt=3 seed=28517 at 2026-06-27 14:01:57 -----
+--- stdout ---
+{"seed":28517,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":532,"A2":41792,"A3":7964,"B1":6995,"B2":175605,"B3":169115,"B4":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=28517, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 14:01:58.079] Checking precondition...
+[2026-06-27 14:01:58.105] Starting the repair...
+[2026-06-27 14:01:58.123] Found 340 possible bad axioms.
+[2026-06-27 14:01:58.125] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(influenced_event affected_area http://schema.org/Place)).
+[2026-06-27 14:01:58.133] Found 339 possible bad axioms.
+[2026-06-27 14:01:58.133] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(is_fellow_townsman_of owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:01:58.141] Found 338 possible bad axioms.
+[2026-06-27 14:01:58.141] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(occurred_at Time)).
+[2026-06-27 14:01:58.149] Found 337 possible bad axioms.
+[2026-06-27 14:01:58.149] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(included_in owl:Thing)).
+[2026-06-27 14:01:58.155] Found 336 possible bad axioms.
+[2026-06-27 14:01:58.155] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(reflects_event ObjectAllValuesFrom(has_mentor references_work owl:Thing)).
+[2026-06-27 14:01:58.163] Found 335 possible bad axioms.
+[2026-06-27 14:01:58.163] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_parents http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 14:01:58.175] Found 334 possible bad axioms.
+[2026-06-27 14:01:58.175] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(affected_by_event related_resource Resource)).
+[2026-06-27 14:01:58.182] Found 333 possible bad axioms.
+[2026-06-27 14:01:58.182] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(is_fellow_townsman_of http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 14:01:58.189] Found 332 possible bad axioms.
+[2026-06-27 14:01:58.189] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_children owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:01:58.194] Found 331 possible bad axioms.
+[2026-06-27 14:01:58.194] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(included_in ObjectAllValuesFrom(commemorated_at Work).
+[2026-06-27 14:01:58.199] Found 330 possible bad axioms.
+[2026-06-27 14:01:58.199] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_parents ObjectAllValuesFrom(inspired_work Work)) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:01:58.211] Found 329 possible bad axioms.
+[2026-06-27 14:01:58.211] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(originated_at http://schema.org/Place)).
+[2026-06-27 14:01:58.216] Found 328 possible bad axioms.
+[2026-06-27 14:01:58.216] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(commemorates_even
+...[truncated]
+FAIL: attempt=3 seed=28517 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=APRO attempt=3 success=0/100
+----- APRO attempt=4 seed=42717 at 2026-06-27 14:13:40 -----
+--- stdout ---
+{"seed":42717,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":560,"A2":42217,"A3":6885,"B1":6824,"B2":265782,"B3":123408,"B4":11950,"B5":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=42717, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 14:13:40.916] Checking precondition...
+[2026-06-27 14:13:40.944] Starting the repair...
+[2026-06-27 14:13:40.963] Found 340 possible bad axioms.
+[2026-06-27 14:13:40.965] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_parents owl:Thing) ObjectSomeValuesFrom(is_married_to owl:Thing)).
+[2026-06-27 14:13:40.974] Found 339 possible bad axioms.
+[2026-06-27 14:13:40.974] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(affected_area owl:Thing) http://schema.org/Event).
+[2026-06-27 14:13:40.982] Found 338 possible bad axioms.
+[2026-06-27 14:13:40.982] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(retired_in ObjectAllValuesFrom(references_work ObjectAllValuesFrom(created_time Time))) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:13:40.989] Found 337 possible bad axioms.
+[2026-06-27 14:13:40.989] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(published_at ObjectAllValuesFrom(is_friend_of Work).
+[2026-06-27 14:13:40.996] Found 336 possible bad axioms.
+[2026-06-27 14:13:40.996] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(depicts_location ObjectAllValuesFrom(has_student Work).
+[2026-06-27 14:13:41.003] Found 335 possible bad axioms.
+[2026-06-27 14:13:41.003] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(depicts_location http://schema.org/Place)).
+[2026-06-27 14:13:41.015] Found 334 possible bad axioms.
+[2026-06-27 14:13:41.016] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(is_fellow_townsman_of concluded_at http://schema.org/Place)).
+[2026-06-27 14:13:41.022] Found 333 possible bad axioms.
+[2026-06-27 14:13:41.022] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(traveled_to ObjectAllValuesFrom(included_in ObjectAllValuesFrom(is_ally_of http://xmlns.com/foaf/0.1/Person))) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:13:41.029] Found 332 possible bad axioms.
+[2026-06-27 14:13:41.029] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_siblings ObjectAllValuesFrom(created_work Work)) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:13:41.034] Found 331 possible bad axioms.
+[2026-06-27 14:13:41.034] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(start_time Time)).
+[2026-06-27 14:13:41.039] Found 330 possible bad axioms.
+[2026-06-27 14:13:41.039] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(inspired_other_works owl:Thing) Work).
+[2026-06-27 14:13:41.050] Found 329 possible bad axioms.
+[2026-06-27 14:13:41.051] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_student owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14
+...[truncated]
+FAIL: attempt=4 seed=42717 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=APRO attempt=4 success=0/100
+----- APRO attempt=5 seed=56917 at 2026-06-27 14:26:18 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=56917, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 14:26:19.355] Checking precondition...
+[2026-06-27 14:26:19.379] Starting the repair...
+[2026-06-27 14:26:19.394] Found 340 possible bad axioms.
+[2026-06-27 14:26:19.396] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(documents_event owl:Thing) Resource).
+[2026-06-27 14:26:19.404] Found 339 possible bad axioms.
+[2026-06-27 14:26:19.404] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(references_work Work) ObjectAllValuesFrom(created_time Time)).
+[2026-06-27 14:26:19.413] Found 338 possible bad axioms.
+[2026-06-27 14:26:19.414] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_superior is_ally_of http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 14:26:19.422] Found 337 possible bad axioms.
+[2026-06-27 14:26:19.423] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(related_person http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 14:26:19.429] Found 336 possible bad axioms.
+[2026-06-27 14:26:19.429] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(depicts_era owl:Thing) Work).
+[2026-06-27 14:26:19.436] Found 335 possible bad axioms.
+[2026-06-27 14:26:19.436] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(about_person ObjectAllValuesFrom(has_student Resource).
+[2026-06-27 14:26:19.447] Found 334 possible bad axioms.
+[2026-06-27 14:26:19.447] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(commemorated_at occurred_at Time)).
+[2026-06-27 14:26:19.455] Found 333 possible bad axioms.
+[2026-06-27 14:26:19.455] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(originated_at witnessed_event http://schema.org/Event)).
+[2026-06-27 14:26:19.461] Found 332 possible bad axioms.
+[2026-06-27 14:26:19.462] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(start_time owl:Thing) http://schema.org/Event).
+[2026-06-27 14:26:19.467] Found 331 possible bad axioms.
+[2026-06-27 14:26:19.467] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(occurrence_location ObjectAllValuesFrom(birth_time Time)) http://schema.org/Event).
+[2026-06-27 14:26:19.473] Found 330 possible bad axioms.
+[2026-06-27 14:26:19.473] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(occurred_at ObjectAllValuesFrom(has_children http://xmlns.com/foaf/0.1/Person)) http://schema.org/Event).
+[2026-06-27 14:26:19.485] Found 329 possible bad axioms.
+[2026-06-27 14:26:19.485] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(commemorates_event http://schema.org/Event)).
+[2026-06-27 14:26:19.491] Found 328 possible bad axioms.
+[2026-06-27 14:26:19.491] Selected the bad axiom SubClassOf(Work ObjectSomeValuesFrom(included_
+...[truncated]
+FAIL: attempt=5 seed=56917 - negative return code -9
+progress: ontology=APRO attempt=5 success=0/100
+----- APRO attempt=6 seed=71117 at 2026-06-27 14:37:06 -----
+--- stdout ---
+{"seed":71117,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":72,"A2":42518,"A3":6926,"B1":6398,"B2":170360,"B3":167333,"B4":11228,"B5":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=71117, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 14:37:06.457] Checking precondition...
+[2026-06-27 14:37:06.481] Starting the repair...
+[2026-06-27 14:37:06.497] Found 340 possible bad axioms.
+[2026-06-27 14:37:06.498] Selected the bad axiom SubClassOf(Interval owl:Nothing).
+[2026-06-27 14:37:06.523] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 14:37:06.524] Checking precondition...
+[2026-06-27 14:37:06.537] Starting the repair...
+[2026-06-27 14:37:49.036] Found 2 possible bad axioms.
+[2026-06-27 14:37:49.037] Selected the bad axiom SubClassOf(Interval owl:Nothing).
+[2026-06-27 14:37:49.041] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 14:37:49.044] Checking precondition...
+[2026-06-27 14:37:49.050] Starting the repair...
+[2026-06-27 14:37:49.085] Selected a reference ontology with 402 axioms.
+[2026-06-27 14:37:49.924] Selected the bad axiom SubClassOf(Time Interval).
+[2026-06-27 14:37:55.963] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(published_at ObjectAllValuesFrom(is_friend_of Interval).
+[2026-06-27 14:37:55.968] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 14:37:55.969] Checking precondition...
+[2026-06-27 14:37:55.977] Starting the repair...
+[2026-06-27 14:37:56.008] Selected a reference ontology with 402 axioms.
+[2026-06-27 14:37:56.834] Selected the bad axiom SubClassOf(Interval owl:Nothing).
+[2026-06-27 14:38:02.358] Selected the weaker axiom SubClassOf(Interval ObjectSomeValuesFrom(has_student ObjectAllValuesFrom(about_person http://xmlns.com/foaf/0.1/Person))).
+[2026-06-27 14:38:02.367] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-27 14:38:02.369] Checking precondition...
+[2026-06-27 14:38:02.372] Starting the repair...
+[2026-06-27 14:38:02.408] Selected a reference ontology with 402 axioms.
+[2026-06-27 14:38:03.251] Selected the bad axiom SubClassOf(Time Interval).
+[PowerIndexWeakerAxiomSelector] Scoring 297 candidate weakenings for Time ⊑ Interval
+[PowerIndexWeakerAxiomSelector] Selected weaker axiom: Emotion ⊑ Interval
+[2026-06-27 14:40:52.603] Selected the weaker axiom SubClassOf(Emotion Interval).
+[2026-06-27 14:40:52.747] Finished repairing the ontology.
+Repairing with B3 (bad-in_some_mus-weaker-banzhaf)...
+[2026-06-27 14:40:52.748] Checking precondition...
+[2026-06-27 14:40:52.752] Starting the repair...
+[2026-06-27 14:40:52.784] Selected a reference ontology with 402 axioms.
+[2026-06-27 14:40:53.793] Selected the bad axiom SubClassOf(Interval owl:Nothing).
+[Powe
+...[truncated]
+FAIL: attempt=6 seed=71117 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=APRO attempt=6 success=0/100
+----- APRO attempt=7 seed=85317 at 2026-06-27 14:48:51 -----
+--- stdout ---
+{"seed":85317,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":173,"A2":42568,"A3":6669,"B1":6978,"B2":168988,"B3":101630,"B4":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=85317, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 14:48:52.118] Checking precondition...
+[2026-06-27 14:48:52.144] Starting the repair...
+[2026-06-27 14:48:52.161] Found 340 possible bad axioms.
+[2026-06-27 14:48:52.163] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(describes_event http://schema.org/Event)).
+[2026-06-27 14:48:52.171] Found 339 possible bad axioms.
+[2026-06-27 14:48:52.171] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_siblings commemorated_event http://schema.org/Event)).
+[2026-06-27 14:48:52.178] Found 338 possible bad axioms.
+[2026-06-27 14:48:52.178] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_superior created_work Work)).
+[2026-06-27 14:48:52.184] Found 337 possible bad axioms.
+[2026-06-27 14:48:52.184] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(is_married_to inspired_other_works Work)).
+[2026-06-27 14:48:52.191] Found 336 possible bad axioms.
+[2026-06-27 14:48:52.192] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(documented_in owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:48:52.198] Found 335 possible bad axioms.
+[2026-06-27 14:48:52.198] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(occurred_at owl:Thing) http://schema.org/Event).
+[2026-06-27 14:48:52.212] Found 334 possible bad axioms.
+[2026-06-27 14:48:52.213] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(created_time Time)).
+[2026-06-27 14:48:52.220] Found 333 possible bad axioms.
+[2026-06-27 14:48:52.220] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(references_work ObjectAllValuesFrom(is_colleague_of Work).
+[2026-06-27 14:48:52.227] Found 332 possible bad axioms.
+[2026-06-27 14:48:52.227] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(retired_in owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:48:52.233] Found 331 possible bad axioms.
+[2026-06-27 14:48:52.233] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(affected_by_event ObjectAllValuesFrom(has_superior ObjectAllValuesFrom(participated_in http://schema.org/Event))) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:48:52.238] Found 330 possible bad axioms.
+[2026-06-27 14:48:52.238] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(created_location references_work Work)).
+[2026-06-27 14:48:52.249] Found 329 possible bad axioms.
+[2026-06-27 14:48:52.249] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(birth_time ObjectAllValuesFrom(occurred_at Time)) ObjectAllValuesFrom(was_active_during Time)).
+[2026-06-27 14:48:52.255] Found 328 possible bad axioms.
+[2026-06-27 14:48:52.255] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=7 seed=85317 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=APRO attempt=7 success=0/100
+----- APRO attempt=8 seed=99517 at 2026-06-27 14:59:19 -----
+--- stdout ---
+{"seed":99517,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":457,"A2":42194,"A3":8285,"B1":1501,"B2":184177,"B3":162478,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=99517, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 14:59:19.713] Checking precondition...
+[2026-06-27 14:59:19.741] Starting the repair...
+[2026-06-27 14:59:19.760] Found 340 possible bad axioms.
+[2026-06-27 14:59:19.762] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_siblings ObjectAllValuesFrom(has_duration Time)) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:59:19.771] Found 339 possible bad axioms.
+[2026-06-27 14:59:19.772] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(edited_work Work)).
+[2026-06-27 14:59:19.779] Found 338 possible bad axioms.
+[2026-06-27 14:59:19.779] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(occurred_at ObjectAllValuesFrom(has_parents http://xmlns.com/foaf/0.1/Person)) http://schema.org/Event).
+[2026-06-27 14:59:19.787] Found 337 possible bad axioms.
+[2026-06-27 14:59:19.787] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(worked_at commemorated_event http://schema.org/Event)).
+[2026-06-27 14:59:19.795] Found 336 possible bad axioms.
+[2026-06-27 14:59:19.795] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(retired_in ObjectAllValuesFrom(references_work Work)) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:59:19.803] Found 335 possible bad axioms.
+[2026-06-27 14:59:19.803] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(worked_at has_duration Time)).
+[2026-06-27 14:59:19.811] Found 334 possible bad axioms.
+[2026-06-27 14:59:19.811] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(is_ally_of owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:59:19.824] Found 333 possible bad axioms.
+[2026-06-27 14:59:19.824] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(affected_area created_time Time)).
+[2026-06-27 14:59:19.830] Found 332 possible bad axioms.
+[2026-06-27 14:59:19.830] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_children worked_at http://schema.org/Place)).
+[2026-06-27 14:59:19.836] Found 331 possible bad axioms.
+[2026-06-27 14:59:19.836] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(participated_in http://schema.org/Event)).
+[2026-06-27 14:59:19.841] Found 330 possible bad axioms.
+[2026-06-27 14:59:19.841] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(is_fellow_townsman_of ObjectSomeValuesFrom(has_parents owl:Thing))).
+[2026-06-27 14:59:19.852] Found 329 possible bad axioms.
+[2026-06-27 14:59:19.853] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(is_friend_of owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 14:59:19.859] Found 328 possible bad axioms.
+[2026-06-27 14:59:19.859] Selected the bad axiom SubClassOf
+...[truncated]
+FAIL: attempt=8 seed=99517 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=APRO attempt=8 success=0/100
+----- APRO attempt=9 seed=113717 at 2026-06-27 15:10:59 -----
+--- stdout ---
+{"seed":113717,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":468,"A2":42376,"A3":2903,"B1":7228,"B2":176355,"B3":124997,"B4":300046}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=113717, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:10:59.578] Checking precondition...
+[2026-06-27 15:10:59.603] Starting the repair...
+[2026-06-27 15:10:59.621] Found 340 possible bad axioms.
+[2026-06-27 15:10:59.622] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(is_married_to owl:Thing) ObjectSomeValuesFrom(is_fellow_townsman_of owl:Thing)).
+[2026-06-27 15:10:59.631] Found 339 possible bad axioms.
+[2026-06-27 15:10:59.631] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(participated_in owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 15:10:59.638] Found 338 possible bad axioms.
+[2026-06-27 15:10:59.638] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(is_fellow_townsman_of ObjectAllValuesFrom(has_mentor http://xmlns.com/foaf/0.1/Person)) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 15:10:59.646] Found 337 possible bad axioms.
+[2026-06-27 15:10:59.646] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(commemorated_event owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 15:10:59.652] Found 336 possible bad axioms.
+[2026-06-27 15:10:59.653] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(edited_work Work) ObjectAllValuesFrom(worked_at http://schema.org/Place)).
+[2026-06-27 15:10:59.659] Found 335 possible bad axioms.
+[2026-06-27 15:10:59.660] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(occurred_at ObjectAllValuesFrom(is_colleague_of ObjectAllValuesFrom(start_time Time))) ObjectSomeValuesFrom(originated_at owl:Thing)).
+[2026-06-27 15:10:59.670] Found 334 possible bad axioms.
+[2026-06-27 15:10:59.671] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(end_time Time)).
+[2026-06-27 15:10:59.678] Found 333 possible bad axioms.
+[2026-06-27 15:10:59.678] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(occurred_at Interval)).
+[2026-06-27 15:10:59.684] Found 332 possible bad axioms.
+[2026-06-27 15:10:59.685] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_children ObjectSomeValuesFrom(is_ally_of owl:Thing))).
+[2026-06-27 15:10:59.691] Found 331 possible bad axioms.
+[2026-06-27 15:10:59.691] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(affected_by_event ObjectAllValuesFrom(start_time ObjectAllValuesFrom(commemorated_event is_friend_of owl:Thing)).
+[2026-06-27 15:10:59.697] Found 330 possible bad axioms.
+[2026-06-27 15:10:59.697] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(influenced_event affected_area http://schema.org/Place)).
+[2026-06-27 15:10:59.709] Found 329 possible bad axioms.
+[2026-06-27 15:10:59.709] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(af
+...[truncated]
+FAIL: attempt=9 seed=113717 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=APRO attempt=9 success=0/100
+----- APRO attempt=10 seed=127917 at 2026-06-27 15:21:54 -----
+--- stdout ---
+{"seed":127917,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":575,"A2":42421,"A3":3922,"B1":13018,"B2":180533,"B3":121246,"B4":300017}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/APRO.owl, seed=127917, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:21:54.580] Checking precondition...
+[2026-06-27 15:21:54.606] Starting the repair...
+[2026-06-27 15:21:54.624] Found 340 possible bad axioms.
+[2026-06-27 15:21:54.626] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(references_work Work) ObjectAllValuesFrom(created_time Time)).
+[2026-06-27 15:21:54.635] Found 339 possible bad axioms.
+[2026-06-27 15:21:54.635] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(references_work ObjectAllValuesFrom(occurrence_location included_in owl:Thing)).
+[2026-06-27 15:21:54.644] Found 338 possible bad axioms.
+[2026-06-27 15:21:54.644] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(affected_by_event ObjectAllValuesFrom(start_time Time)) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 15:21:54.651] Found 337 possible bad axioms.
+[2026-06-27 15:21:54.652] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(affected_area http://schema.org/Place)).
+[2026-06-27 15:21:54.658] Found 336 possible bad axioms.
+[2026-06-27 15:21:54.658] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(affected_by_event participated_in http://schema.org/Event)).
+[2026-06-27 15:21:54.666] Found 335 possible bad axioms.
+[2026-06-27 15:21:54.666] Selected the bad axiom SubClassOf(owl:Thing Time).
+[2026-06-27 15:21:54.680] Found 334 possible bad axioms.
+[2026-06-27 15:21:54.680] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(is_colleague_of has_parents http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 15:21:54.688] Found 333 possible bad axioms.
+[2026-06-27 15:21:54.688] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_siblings owl:Thing) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 15:21:54.695] Found 332 possible bad axioms.
+[2026-06-27 15:21:54.695] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_superior is_ally_of http://xmlns.com/foaf/0.1/Person)).
+[2026-06-27 15:21:54.701] Found 331 possible bad axioms.
+[2026-06-27 15:21:54.701] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_mentor ObjectSomeValuesFrom(has_siblings owl:Thing))).
+[2026-06-27 15:21:54.707] Found 330 possible bad axioms.
+[2026-06-27 15:21:54.707] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_siblings ObjectAllValuesFrom(affected_by_event http://schema.org/Event)) http://xmlns.com/foaf/0.1/Person).
+[2026-06-27 15:21:54.718] Found 329 possible bad axioms.
+[2026-06-27 15:21:54.719] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(retired_in ObjectAllValuesFrom(affected_by_event ObjectAllValuesFrom(has_siblings http://xmlns.com/foaf/0.1/Person))) http://xmlns.com/foaf
+...[truncated]
+FAIL: attempt=10 seed=127917 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=APRO attempt=10 success=0/100
+=== ABORTED APRO after 10 consecutive failures at 2026-06-27 15:32:56 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for APRO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=117 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=2 seed=14317 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=3 seed=28517 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=4 seed=42717 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=5 seed=56917 msg=negative return code -9
+  attempt=6 seed=71117 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=7 seed=85317 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=8 seed=99517 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=9 seed=113717 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=10 seed=127917 msg=Repair timeout: B4 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=9 total_seconds=6192.402490 avg_seconds=688.044721
+  memory_limit_exceeded: count=1 total_seconds=647.027800 avg_seconds=647.027800
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

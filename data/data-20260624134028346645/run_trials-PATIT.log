@@ -1,0 +1,1286 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-PATIT.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-PATIT.csv
+
+=== Starting sequential trials for PATIT at 2026-06-27 02:47:47 ===
+----- PATIT attempt=1 seed=100 at 2026-06-27 02:47:47 -----
+--- stdout ---
+{"seed":100,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":48,"A2":15349,"A3":1028,"B1":371,"B2":1849,"B3":5067,"B4":251,"B5":2406,"B6":1501,"B7":175,"B8":2355}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=100, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:47:48.306] Checking precondition...
+[2026-06-27 02:47:48.321] Starting the repair...
+[2026-06-27 02:47:48.328] Found 248 possible bad axioms.
+[2026-06-27 02:47:48.330] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04).
+[2026-06-27 02:47:48.334] Found 247 possible bad axioms.
+[2026-06-27 02:47:48.335] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12).
+[2026-06-27 02:47:48.339] Found 246 possible bad axioms.
+[2026-06-27 02:47:48.339] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:47:48.349] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 02:47:48.349] Checking precondition...
+[2026-06-27 02:47:48.357] Starting the repair...
+[2026-06-27 02:48:03.697] Found 3 possible bad axioms.
+[2026-06-27 02:48:03.698] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 owl:Nothing).
+[2026-06-27 02:48:03.698] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 02:48:03.700] Checking precondition...
+[2026-06-27 02:48:03.703] Starting the repair...
+[2026-06-27 02:48:03.721] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:48:04.038] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:48:04.117] Selected the weaker axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.07).
+[2026-06-27 02:48:04.723] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:48:04.725] Selected the weaker axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:48:04.727] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 02:48:04.728] Checking precondition...
+[2026-06-27 02:48:04.730] Starting the repair...
+[2026-06-27 02:48:04.743] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:48:05.055] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques
+...[truncated]
+FAIL: attempt=1 seed=100 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=1 success=0/100
+----- PATIT attempt=2 seed=14300 at 2026-06-27 02:48:18 -----
+--- stdout ---
+{"seed":14300,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02","iic_values":{},"repair_runtimes_ms":{"A1":253,"A2":15318,"A3":428,"B1":398,"B2":4614,"B3":779,"B4":155,"B5":1351,"B6":777,"B7":176,"B8":778}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=14300, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:48:19.204] Checking precondition...
+[2026-06-27 02:48:19.219] Starting the repair...
+[2026-06-27 02:48:19.226] Found 248 possible bad axioms.
+[2026-06-27 02:48:19.228] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.02).
+[2026-06-27 02:48:19.232] Found 247 possible bad axioms.
+[2026-06-27 02:48:19.232] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:48:19.237] Found 246 possible bad axioms.
+[2026-06-27 02:48:19.237] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15).
+[2026-06-27 02:48:19.245] Found 245 possible bad axioms.
+[2026-06-27 02:48:19.245] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13).
+[2026-06-27 02:48:19.249] Found 244 possible bad axioms.
+[2026-06-27 02:48:19.249] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:48:19.253] Found 243 possible bad axioms.
+[2026-06-27 02:48:19.253] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.06).
+[2026-06-27 02:48:19.257] Found 242 possible bad axioms.
+[2026-06-27 02:48:19.257] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.07 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.03).
+[2026-06-27 02:48:19.261] Found 241 possible bad axioms.
+[2026-06-27 02:48:19.261] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11).
+[2026-06-27 02:48:19.265] Found 240 possible bad axioms.
+[2026-06-27 02:48:19.265] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.13.02).
+[2026-06-27 02:48:19.268] Found 239 possible bad axioms.
+[2026-06-27 02:48:19.268] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 02:48:19.270] Found 238 possible bad axioms.
+[2026-06-
+...[truncated]
+FAIL: attempt=2 seed=14300 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+progress: ontology=PATIT attempt=2 success=0/100
+----- PATIT attempt=3 seed=28500 at 2026-06-27 02:48:45 -----
+--- stdout ---
+{"seed":28500,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":238,"A2":15319,"A3":962,"B1":387,"B2":6459,"B3":995,"B4":135,"B5":1338,"B6":1315,"B7":170,"B8":2531}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=28500, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:48:45.940] Checking precondition...
+[2026-06-27 02:48:45.956] Starting the repair...
+[2026-06-27 02:48:45.964] Found 248 possible bad axioms.
+[2026-06-27 02:48:45.965] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12).
+[2026-06-27 02:48:45.970] Found 247 possible bad axioms.
+[2026-06-27 02:48:45.970] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 02:48:45.974] Found 246 possible bad axioms.
+[2026-06-27 02:48:45.975] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02).
+[2026-06-27 02:48:45.983] Found 245 possible bad axioms.
+[2026-06-27 02:48:45.983] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:48:45.987] Found 244 possible bad axioms.
+[2026-06-27 02:48:45.988] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03).
+[2026-06-27 02:48:45.991] Found 243 possible bad axioms.
+[2026-06-27 02:48:45.992] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.08.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.08).
+[2026-06-27 02:48:45.995] Found 242 possible bad axioms.
+[2026-06-27 02:48:45.995] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:48:45.999] Found 241 possible bad axioms.
+[2026-06-27 02:48:45.999] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.03).
+[2026-06-27 02:48:46.003] Found 240 possible bad axioms.
+[2026-06-27 02:48:46.003] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14).
+[2026-06-27 02:48:46.006] Found 239 possible bad axioms.
+[2026-06-27 02:48:46.006] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11).
+[2026-06-27 02:48:46.009] Found 238 possible bad axioms.
+[2026-06-
+...[truncated]
+FAIL: attempt=3 seed=28500 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=3 success=0/100
+----- PATIT attempt=4 seed=42700 at 2026-06-27 02:49:15 -----
+--- stdout ---
+{"seed":42700,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05","iic_values":{},"repair_runtimes_ms":{"A1":262,"A2":15286,"A3":448,"B1":364,"B2":4385}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=42700, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:49:16.269] Checking precondition...
+[2026-06-27 02:49:16.284] Starting the repair...
+[2026-06-27 02:49:16.291] Found 248 possible bad axioms.
+[2026-06-27 02:49:16.292] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 02:49:16.297] Found 247 possible bad axioms.
+[2026-06-27 02:49:16.297] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.07 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:49:16.302] Found 246 possible bad axioms.
+[2026-06-27 02:49:16.302] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02).
+[2026-06-27 02:49:16.311] Found 245 possible bad axioms.
+[2026-06-27 02:49:16.311] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15.02).
+[2026-06-27 02:49:16.315] Found 244 possible bad axioms.
+[2026-06-27 02:49:16.315] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09).
+[2026-06-27 02:49:16.318] Found 243 possible bad axioms.
+[2026-06-27 02:49:16.318] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:49:16.322] Found 242 possible bad axioms.
+[2026-06-27 02:49:16.322] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15).
+[2026-06-27 02:49:16.325] Found 241 possible bad axioms.
+[2026-06-27 02:49:16.326] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13).
+[2026-06-27 02:49:16.329] Found 240 possible bad axioms.
+[2026-06-27 02:49:16.330] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02).
+[2026-06-27 02:49:16.333] Found 239 possible bad axioms.
+[2026-06-27 02:49:16.333] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.01 owl:Nothing).
+[2026-06-27 02:49:16.336] Found 238 possible bad axioms.
+[2026-06-27 02:49:16.336] Selected the bad axiom SubClas
+...[truncated]
+FAIL: attempt=4 seed=42700 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+progress: ontology=PATIT attempt=4 success=0/100
+----- PATIT attempt=5 seed=56900 at 2026-06-27 02:49:37 -----
+--- stdout ---
+{"seed":56900,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02","iic_values":{},"repair_runtimes_ms":{"A1":55,"A2":15377,"A3":441,"B1":1678,"B2":1349,"B3":793,"B4":123,"B5":2439,"B6":2740,"B7":191,"B8":466}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=56900, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:49:37.462] Checking precondition...
+[2026-06-27 02:49:37.479] Starting the repair...
+[2026-06-27 02:49:37.486] Found 248 possible bad axioms.
+[2026-06-27 02:49:37.488] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.01).
+[2026-06-27 02:49:37.492] Found 247 possible bad axioms.
+[2026-06-27 02:49:37.493] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.04).
+[2026-06-27 02:49:37.497] Found 246 possible bad axioms.
+[2026-06-27 02:49:37.497] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02).
+[2026-06-27 02:49:37.506] Found 245 possible bad axioms.
+[2026-06-27 02:49:37.507] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:49:37.511] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 02:49:37.514] Checking precondition...
+[2026-06-27 02:49:37.521] Starting the repair...
+[2026-06-27 02:49:52.888] Found 3 possible bad axioms.
+[2026-06-27 02:49:52.888] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:49:52.890] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 02:49:52.892] Checking precondition...
+[2026-06-27 02:49:52.895] Starting the repair...
+[2026-06-27 02:49:52.912] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:49:53.240] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:49:53.330] Selected the weaker axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.02.02).
+[2026-06-27 02:49:53.332] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 02:49:53.333] Checking precondition...
+[2026-06-27 02:49:53.335] Starting the repair...
+[2026-06-27 02:49:53.346] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:49:53.667] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:49:53.713] Selected the weaker axiom SubClas
+...[truncated]
+FAIL: attempt=5 seed=56900 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+progress: ontology=PATIT attempt=5 success=0/100
+----- PATIT attempt=6 seed=71100 at 2026-06-27 02:50:03 -----
+--- stdout ---
+{"seed":71100,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.24744525547445256,"B1_vs_A3":0.5,"B2_vs_A1":0.944692239072257,"B2_vs_A2":1.0,"B2_vs_A3":0.9064203513022411,"B3_vs_A1":0.944692239072257,"B3_vs_A2":1.0,"B3_vs_A3":0.9064203513022411,"B4_vs_A1":0.8898652606912713,"B4_vs_A2":0.8611713665943601,"B4_vs_A3":0.8017777777777778,"B5_vs_A1":0.9292320064334539,"B5_vs_A2":0.9537110933758979,"B5_vs_A3":0.8917062863180137,"B6_vs_A1":0.9292320064334539,"B6_vs_A2":0.9537110933758979,"B6_vs_A3":0.8917062863180137,"B7_vs_A1":0.9124967924044136,"B7_vs_A2":0.9189003436426116,"B7_vs_A3":0.8506422018348624,"B8_vs_A1":0.9292320064334539,"B8_vs_A2":0.9537110933758979,"B8_vs_A3":0.8917062863180137,"B9_vs_A1":0.9292320064334539,"B9_vs_A2":0.9537110933758979,"B9_vs_A3":0.8917062863180137},"repair_runtimes_ms":{"A1":165,"A2":15325,"A3":1081,"B1":370,"B2":1800,"B3":1091,"B4":131,"B5":2318,"B6":2755,"B7":178,"B8":1537,"B9":1034}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=71100, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:50:03.589] Checking precondition...
+[2026-06-27 02:50:03.604] Starting the repair...
+[2026-06-27 02:50:03.611] Found 248 possible bad axioms.
+[2026-06-27 02:50:03.612] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.03).
+[2026-06-27 02:50:03.616] Found 247 possible bad axioms.
+[2026-06-27 02:50:03.617] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02).
+[2026-06-27 02:50:03.621] Found 246 possible bad axioms.
+[2026-06-27 02:50:03.622] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02).
+[2026-06-27 02:50:03.631] Found 245 possible bad axioms.
+[2026-06-27 02:50:03.631] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.07 owl:Thing).
+[2026-06-27 02:50:03.635] Found 244 possible bad axioms.
+[2026-06-27 02:50:03.635] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:50:03.639] Found 243 possible bad axioms.
+[2026-06-27 02:50:03.640] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.02).
+[2026-06-27 02:50:03.643] Found 242 possible bad axioms.
+[2026-06-27 02:50:03.644] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02).
+[2026-06-27 02:50:03.647] Found 241 possible bad axioms.
+[2026-06-27 02:50:03.647] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.03).
+[2026-06-27 02:50:03.651] Found 240 possible bad axioms.
+[2026-06-27 02:50:03.651] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04).
+[2026-06-27 02:50:03.653] Found 239 possible bad axioms.
+[2026-06-27 02:50:03.654] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01.02).
+[2026-06-27 02:50:03.656] Found 238 possible bad axioms.
+[2026-06-27 02:50:03.656] Selected the b
+...[truncated]
+SUCCESS: attempt=6 seed=71100 success_count=1/100
+progress: ontology=PATIT attempt=6 success=1/100
+----- PATIT attempt=7 seed=85300 at 2026-06-27 02:50:32 -----
+--- stdout ---
+{"seed":85300,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05","iic_values":{},"repair_runtimes_ms":{"A1":276,"A2":15328,"A3":480,"B1":382,"B2":1280,"B3":1934}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=85300, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:50:32.696] Checking precondition...
+[2026-06-27 02:50:32.712] Starting the repair...
+[2026-06-27 02:50:32.719] Found 248 possible bad axioms.
+[2026-06-27 02:50:32.721] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09).
+[2026-06-27 02:50:32.725] Found 247 possible bad axioms.
+[2026-06-27 02:50:32.725] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05.03).
+[2026-06-27 02:50:32.729] Found 246 possible bad axioms.
+[2026-06-27 02:50:32.730] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.02 owl:Thing).
+[2026-06-27 02:50:32.740] Found 245 possible bad axioms.
+[2026-06-27 02:50:32.740] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01 owl:Thing).
+[2026-06-27 02:50:32.745] Found 244 possible bad axioms.
+[2026-06-27 02:50:32.745] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:50:32.749] Found 243 possible bad axioms.
+[2026-06-27 02:50:32.750] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.04).
+[2026-06-27 02:50:32.754] Found 242 possible bad axioms.
+[2026-06-27 02:50:32.755] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02).
+[2026-06-27 02:50:32.758] Found 241 possible bad axioms.
+[2026-06-27 02:50:32.758] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 02:50:32.761] Found 240 possible bad axioms.
+[2026-06-27 02:50:32.762] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03).
+[2026-06-27 02:50:32.764] Found 239 possible bad axioms.
+[2026-06-27 02:50:32.765] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 02:50:32.767] Found 238 possible bad axioms.
+[2026-06-27 02:50:32.767] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniqu
+...[truncated]
+FAIL: attempt=7 seed=85300 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+progress: ontology=PATIT attempt=7 success=1/100
+----- PATIT attempt=8 seed=99500 at 2026-06-27 02:50:52 -----
+--- stdout ---
+{"seed":99500,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":67,"A2":15462,"A3":870,"B1":744,"B2":3272}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=99500, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:50:52.821] Checking precondition...
+[2026-06-27 02:50:52.838] Starting the repair...
+[2026-06-27 02:50:52.845] Found 248 possible bad axioms.
+[2026-06-27 02:50:52.847] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.02).
+[2026-06-27 02:50:52.851] Found 247 possible bad axioms.
+[2026-06-27 02:50:52.851] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 02:50:52.857] Found 246 possible bad axioms.
+[2026-06-27 02:50:52.857] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03 owl:Thing).
+[2026-06-27 02:50:52.866] Found 245 possible bad axioms.
+[2026-06-27 02:50:52.867] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.06).
+[2026-06-27 02:50:52.871] Found 244 possible bad axioms.
+[2026-06-27 02:50:52.871] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.02).
+[2026-06-27 02:50:52.876] Found 243 possible bad axioms.
+[2026-06-27 02:50:52.876] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.13.02 owl:Thing).
+[2026-06-27 02:50:52.880] Found 242 possible bad axioms.
+[2026-06-27 02:50:52.880] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:50:52.883] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 02:50:52.884] Checking precondition...
+[2026-06-27 02:50:52.890] Starting the repair...
+[2026-06-27 02:51:08.344] Found 3 possible bad axioms.
+[2026-06-27 02:51:08.344] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:51:08.346] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 02:51:08.347] Checking precondition...
+[2026-06-27 02:51:08.349] Starting the repair...
+[2026-06-27 02:51:08.363] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:51:08.709] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 owl:Nothing).
+[2026-06-27 02:51:08.808] Selected the weaker axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.0
+...[truncated]
+FAIL: attempt=8 seed=99500 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+progress: ontology=PATIT attempt=8 success=1/100
+----- PATIT attempt=9 seed=113700 at 2026-06-27 02:51:13 -----
+--- stdout ---
+{"seed":113700,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":106,"A2":15374,"A3":427,"B1":397,"B2":2929}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=113700, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:51:13.869] Checking precondition...
+[2026-06-27 02:51:13.884] Starting the repair...
+[2026-06-27 02:51:13.891] Found 248 possible bad axioms.
+[2026-06-27 02:51:13.893] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.01 owl:Nothing).
+[2026-06-27 02:51:13.897] Found 247 possible bad axioms.
+[2026-06-27 02:51:13.898] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.08).
+[2026-06-27 02:51:13.902] Found 246 possible bad axioms.
+[2026-06-27 02:51:13.902] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01).
+[2026-06-27 02:51:13.912] Found 245 possible bad axioms.
+[2026-06-27 02:51:13.912] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02 owl:Nothing).
+[2026-06-27 02:51:13.916] Found 244 possible bad axioms.
+[2026-06-27 02:51:13.917] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14).
+[2026-06-27 02:51:13.920] Found 243 possible bad axioms.
+[2026-06-27 02:51:13.921] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02).
+[2026-06-27 02:51:13.926] Found 242 possible bad axioms.
+[2026-06-27 02:51:13.926] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 owl:Thing).
+[2026-06-27 02:51:13.929] Found 241 possible bad axioms.
+[2026-06-27 02:51:13.929] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08).
+[2026-06-27 02:51:13.932] Found 240 possible bad axioms.
+[2026-06-27 02:51:13.932] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01.01).
+[2026-06-27 02:51:13.935] Found 239 possible bad axioms.
+[2026-06-27 02:51:13.935] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:51:13.938] Found 238 possible bad axioms.
+[2026-06-27 02:51:13.938] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17 https://pat.nichd.nih.gov/patinv
+...[truncated]
+FAIL: attempt=9 seed=113700 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+progress: ontology=PATIT attempt=9 success=1/100
+----- PATIT attempt=10 seed=127900 at 2026-06-27 02:51:33 -----
+--- stdout ---
+{"seed":127900,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":214,"A2":15424,"A3":424,"B1":379,"B2":3096}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=127900, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:51:33.557] Checking precondition...
+[2026-06-27 02:51:33.574] Starting the repair...
+[2026-06-27 02:51:33.580] Found 248 possible bad axioms.
+[2026-06-27 02:51:33.582] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.02).
+[2026-06-27 02:51:33.586] Found 247 possible bad axioms.
+[2026-06-27 02:51:33.586] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:51:33.591] Found 246 possible bad axioms.
+[2026-06-27 02:51:33.591] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.13.02).
+[2026-06-27 02:51:33.601] Found 245 possible bad axioms.
+[2026-06-27 02:51:33.602] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:51:33.605] Found 244 possible bad axioms.
+[2026-06-27 02:51:33.606] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.07 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.03).
+[2026-06-27 02:51:33.610] Found 243 possible bad axioms.
+[2026-06-27 02:51:33.611] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03).
+[2026-06-27 02:51:33.614] Found 242 possible bad axioms.
+[2026-06-27 02:51:33.615] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.03 owl:Nothing).
+[2026-06-27 02:51:33.618] Found 241 possible bad axioms.
+[2026-06-27 02:51:33.618] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:51:33.621] Found 240 possible bad axioms.
+[2026-06-27 02:51:33.621] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01).
+[2026-06-27 02:51:33.624] Found 239 possible bad axioms.
+[2026-06-27 02:51:33.625] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:51:33.627] Found 238 possible bad axioms.
+[2026-06-27 02:51:33.628] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativ
+...[truncated]
+FAIL: attempt=10 seed=127900 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+progress: ontology=PATIT attempt=10 success=1/100
+----- PATIT attempt=11 seed=142100 at 2026-06-27 02:51:53 -----
+--- stdout ---
+{"seed":142100,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":264,"A2":15343,"A3":432,"B1":883,"B2":5582}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=142100, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:51:53.540] Checking precondition...
+[2026-06-27 02:51:53.555] Starting the repair...
+[2026-06-27 02:51:53.562] Found 248 possible bad axioms.
+[2026-06-27 02:51:53.563] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.02).
+[2026-06-27 02:51:53.568] Found 247 possible bad axioms.
+[2026-06-27 02:51:53.568] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.01).
+[2026-06-27 02:51:53.572] Found 246 possible bad axioms.
+[2026-06-27 02:51:53.573] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17 owl:Thing).
+[2026-06-27 02:51:53.582] Found 245 possible bad axioms.
+[2026-06-27 02:51:53.582] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:51:53.586] Found 244 possible bad axioms.
+[2026-06-27 02:51:53.586] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01).
+[2026-06-27 02:51:53.589] Found 243 possible bad axioms.
+[2026-06-27 02:51:53.590] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14).
+[2026-06-27 02:51:53.594] Found 242 possible bad axioms.
+[2026-06-27 02:51:53.594] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:51:53.597] Found 241 possible bad axioms.
+[2026-06-27 02:51:53.597] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10).
+[2026-06-27 02:51:53.601] Found 240 possible bad axioms.
+[2026-06-27 02:51:53.601] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04).
+[2026-06-27 02:51:53.604] Found 239 possible bad axioms.
+[2026-06-27 02:51:53.604] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:51:53.607] Found 238 possible bad axioms.
+[2026-06-27 02:51:53.607] Selected the bad axiom
+...[truncated]
+FAIL: attempt=11 seed=142100 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+progress: ontology=PATIT attempt=11 success=1/100
+----- PATIT attempt=12 seed=156300 at 2026-06-27 02:52:16 -----
+--- stdout ---
+{"seed":156300,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.9834770114942529,"B1_vs_A2":1.0,"B1_vs_A3":0.7402985074626866,"B2_vs_A1":1.0,"B2_vs_A2":0.838474025974026,"B2_vs_A3":0.8270114942528736,"B3_vs_A1":0.838846058194479,"B3_vs_A2":0.27851644506648005,"B3_vs_A3":0.4835742444152431,"B4_vs_A1":0.9727634611355541,"B4_vs_A2":0.9494163424124513,"B4_vs_A3":0.7728257505416279,"B5_vs_A1":0.9790613718411553,"B5_vs_A2":0.9723837209302325,"B5_vs_A3":0.8251143873919674,"B6_vs_A1":0.9790613718411553,"B6_vs_A2":0.9723837209302325,"B6_vs_A3":0.8251143873919674,"B7_vs_A1":0.9646137223122636,"B7_vs_A2":0.7091836734693877,"B7_vs_A3":0.6496097137901128,"B8_vs_A1":0.9790613718411553,"B8_vs_A2":0.9723837209302325,"B8_vs_A3":0.8251143873919674,"B9_vs_A1":0.9790613718411553,"B9_vs_A2":0.9723837209302325,"B9_vs_A3":0.8251143873919674},"repair_runtimes_ms":{"A1":108,"A2":15352,"A3":443,"B1":708,"B2":1826,"B3":3814,"B4":150,"B5":1376,"B6":2823,"B7":293,"B8":1630,"B9":1397}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=156300, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:52:16.785] Checking precondition...
+[2026-06-27 02:52:16.800] Starting the repair...
+[2026-06-27 02:52:16.807] Found 248 possible bad axioms.
+[2026-06-27 02:52:16.808] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15).
+[2026-06-27 02:52:16.813] Found 247 possible bad axioms.
+[2026-06-27 02:52:16.813] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.09 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:52:16.818] Found 246 possible bad axioms.
+[2026-06-27 02:52:16.818] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.02).
+[2026-06-27 02:52:16.826] Found 245 possible bad axioms.
+[2026-06-27 02:52:16.826] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.04).
+[2026-06-27 02:52:16.830] Found 244 possible bad axioms.
+[2026-06-27 02:52:16.830] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:52:16.833] Found 243 possible bad axioms.
+[2026-06-27 02:52:16.833] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02).
+[2026-06-27 02:52:16.837] Found 242 possible bad axioms.
+[2026-06-27 02:52:16.838] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:52:16.841] Found 241 possible bad axioms.
+[2026-06-27 02:52:16.841] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03).
+[2026-06-27 02:52:16.844] Found 240 possible bad axioms.
+[2026-06-27 02:52:16.844] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03.01).
+[2026-06-27 02:52:16.847] Found 239 possible bad axioms.
+[2026-06-27 02:52:16.848] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.06).
+[2026-06-27 02:52:16.851] Found 238 possi
+...[truncated]
+SUCCESS: attempt=12 seed=156300 success_count=2/100
+progress: ontology=PATIT attempt=12 success=2/100
+----- PATIT attempt=13 seed=170500 at 2026-06-27 02:52:47 -----
+--- stdout ---
+{"seed":170500,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02","iic_values":{},"repair_runtimes_ms":{"A1":373,"A2":15313,"A3":439,"B1":800,"B2":4580,"B3":3820,"B4":246,"B5":602}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=170500, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:52:47.971] Checking precondition...
+[2026-06-27 02:52:47.987] Starting the repair...
+[2026-06-27 02:52:47.993] Found 248 possible bad axioms.
+[2026-06-27 02:52:47.995] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04).
+[2026-06-27 02:52:47.999] Found 247 possible bad axioms.
+[2026-06-27 02:52:47.999] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03).
+[2026-06-27 02:52:48.003] Found 246 possible bad axioms.
+[2026-06-27 02:52:48.003] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03).
+[2026-06-27 02:52:48.012] Found 245 possible bad axioms.
+[2026-06-27 02:52:48.012] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.05).
+[2026-06-27 02:52:48.016] Found 244 possible bad axioms.
+[2026-06-27 02:52:48.016] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04).
+[2026-06-27 02:52:48.019] Found 243 possible bad axioms.
+[2026-06-27 02:52:48.020] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.01).
+[2026-06-27 02:52:48.024] Found 242 possible bad axioms.
+[2026-06-27 02:52:48.024] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13).
+[2026-06-27 02:52:48.028] Found 241 possible bad axioms.
+[2026-06-27 02:52:48.028] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09 owl:Thing).
+[2026-06-27 02:52:48.032] Found 240 possible bad axioms.
+[2026-06-27 02:52:48.032] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.06).
+[2026-06-27 02:52:48.034] Found 239 possible bad axioms.
+[2026-06-27 02:52:48.035] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.02).
+[2026-06-27 02:52:48.037] Found 238 possible bad axioms.
+[2026-06-27 02:52:48.037] Selected t
+...[truncated]
+FAIL: attempt=13 seed=170500 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+progress: ontology=PATIT attempt=13 success=2/100
+----- PATIT attempt=14 seed=184700 at 2026-06-27 02:53:14 -----
+--- stdout ---
+{"seed":184700,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05","iic_values":{},"repair_runtimes_ms":{"A1":139,"A2":15413,"A3":437,"B1":375,"B2":1323,"B3":3796}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=184700, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:53:14.616] Checking precondition...
+[2026-06-27 02:53:14.632] Starting the repair...
+[2026-06-27 02:53:14.638] Found 248 possible bad axioms.
+[2026-06-27 02:53:14.640] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10 owl:Thing).
+[2026-06-27 02:53:14.644] Found 247 possible bad axioms.
+[2026-06-27 02:53:14.645] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:53:14.650] Found 246 possible bad axioms.
+[2026-06-27 02:53:14.650] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12).
+[2026-06-27 02:53:14.659] Found 245 possible bad axioms.
+[2026-06-27 02:53:14.659] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.02).
+[2026-06-27 02:53:14.663] Found 244 possible bad axioms.
+[2026-06-27 02:53:14.663] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:53:14.667] Found 243 possible bad axioms.
+[2026-06-27 02:53:14.667] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09).
+[2026-06-27 02:53:14.671] Found 242 possible bad axioms.
+[2026-06-27 02:53:14.671] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06 owl:Thing).
+[2026-06-27 02:53:14.675] Found 241 possible bad axioms.
+[2026-06-27 02:53:14.675] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.02).
+[2026-06-27 02:53:14.678] Found 240 possible bad axioms.
+[2026-06-27 02:53:14.678] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.01).
+[2026-06-27 02:53:14.681] Found 239 possible bad axioms.
+[2026-06-27 02:53:14.681] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01.01).
+[2026-06-27 02:53:14.684] Found 238 possible bad axioms.
+[2026-06-27 02:53:14.684] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16
+...[truncated]
+FAIL: attempt=14 seed=184700 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+progress: ontology=PATIT attempt=14 success=2/100
+----- PATIT attempt=15 seed=198900 at 2026-06-27 02:53:36 -----
+--- stdout ---
+{"seed":198900,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":155,"A2":15365,"A3":420,"B1":390,"B2":1831}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=198900, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:53:36.716] Checking precondition...
+[2026-06-27 02:53:36.732] Starting the repair...
+[2026-06-27 02:53:36.739] Found 248 possible bad axioms.
+[2026-06-27 02:53:36.741] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12).
+[2026-06-27 02:53:36.745] Found 247 possible bad axioms.
+[2026-06-27 02:53:36.746] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:53:36.750] Found 246 possible bad axioms.
+[2026-06-27 02:53:36.750] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01.02).
+[2026-06-27 02:53:36.759] Found 245 possible bad axioms.
+[2026-06-27 02:53:36.759] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02 owl:Nothing).
+[2026-06-27 02:53:36.763] Found 244 possible bad axioms.
+[2026-06-27 02:53:36.764] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15.02).
+[2026-06-27 02:53:36.768] Found 243 possible bad axioms.
+[2026-06-27 02:53:36.769] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:53:36.772] Found 242 possible bad axioms.
+[2026-06-27 02:53:36.772] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03).
+[2026-06-27 02:53:36.775] Found 241 possible bad axioms.
+[2026-06-27 02:53:36.775] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08).
+[2026-06-27 02:53:36.779] Found 240 possible bad axioms.
+[2026-06-27 02:53:36.779] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09 owl:Thing).
+[2026-06-27 02:53:36.781] Found 239 possible bad axioms.
+[2026-06-27 02:53:36.782] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02).
+[2026-06-27 02:53:36.784] Found 238 possible bad axioms.
+[2026-06-27 02:53:36.784] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechn
+...[truncated]
+FAIL: attempt=15 seed=198900 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=15 success=2/100
+----- PATIT attempt=16 seed=213100 at 2026-06-27 02:53:54 -----
+--- stdout ---
+{"seed":213100,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05","iic_values":{},"repair_runtimes_ms":{"A1":221,"A2":15373,"A3":444,"B1":1303,"B2":3120}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=213100, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:53:55.320] Checking precondition...
+[2026-06-27 02:53:55.339] Starting the repair...
+[2026-06-27 02:53:55.346] Found 248 possible bad axioms.
+[2026-06-27 02:53:55.348] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01).
+[2026-06-27 02:53:55.352] Found 247 possible bad axioms.
+[2026-06-27 02:53:55.352] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03).
+[2026-06-27 02:53:55.357] Found 246 possible bad axioms.
+[2026-06-27 02:53:55.357] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.13.02).
+[2026-06-27 02:53:55.365] Found 245 possible bad axioms.
+[2026-06-27 02:53:55.365] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:53:55.369] Found 244 possible bad axioms.
+[2026-06-27 02:53:55.369] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01).
+[2026-06-27 02:53:55.373] Found 243 possible bad axioms.
+[2026-06-27 02:53:55.374] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02).
+[2026-06-27 02:53:55.377] Found 242 possible bad axioms.
+[2026-06-27 02:53:55.377] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.02).
+[2026-06-27 02:53:55.380] Found 241 possible bad axioms.
+[2026-06-27 02:53:55.381] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.01 owl:Nothing).
+[2026-06-27 02:53:55.384] Found 240 possible bad axioms.
+[2026-06-27 02:53:55.384] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.04).
+[2026-06-27 02:53:55.387] Found 239 possible bad axioms.
+[2026-06-27 02:53:55.388] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06 owl:Thing).
+[2026-06-27 02:53:55.390] Found 238 possible bad axioms.
+[2026-06-27 02:53:55.391] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvest
+...[truncated]
+FAIL: attempt=16 seed=213100 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+progress: ontology=PATIT attempt=16 success=2/100
+----- PATIT attempt=17 seed=227300 at 2026-06-27 02:54:15 -----
+--- stdout ---
+{"seed":227300,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.15677966101694915,"B1_vs_A3":0.12086092715231789,"B2_vs_A1":1.0,"B2_vs_A2":0.838474025974026,"B2_vs_A3":0.8291845493562232,"B3_vs_A1":0.9940452159870812,"B3_vs_A2":1.0,"B3_vs_A3":1.0,"B4_vs_A1":0.9909876994275971,"B4_vs_A2":0.8317535545023697,"B4_vs_A3":0.6336996336996337,"B5_vs_A1":0.9940107603289006,"B5_vs_A2":0.9723837209302325,"B5_vs_A3":0.9704663212435233,"B6_vs_A1":0.9940107603289006,"B6_vs_A2":0.9723837209302325,"B6_vs_A3":0.9704663212435233,"B7_vs_A1":0.9908692933083177,"B7_vs_A2":0.6586538461538461,"B7_vs_A3":0.40058479532163743,"B8_vs_A1":0.9940107603289006,"B8_vs_A2":0.9723837209302325,"B8_vs_A3":0.9704663212435233,"B9_vs_A1":0.9940107603289006,"B9_vs_A2":0.9723837209302325,"B9_vs_A3":0.9704663212435233},"repair_runtimes_ms":{"A1":389,"A2":15247,"A3":1038,"B1":375,"B2":1790,"B3":2745,"B4":172,"B5":1388,"B6":1401,"B7":177,"B8":2482,"B9":2979}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=227300, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:54:16.231] Checking precondition...
+[2026-06-27 02:54:16.247] Starting the repair...
+[2026-06-27 02:54:16.254] Found 248 possible bad axioms.
+[2026-06-27 02:54:16.256] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01).
+[2026-06-27 02:54:16.260] Found 247 possible bad axioms.
+[2026-06-27 02:54:16.260] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:54:16.265] Found 246 possible bad axioms.
+[2026-06-27 02:54:16.265] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:54:16.274] Found 245 possible bad axioms.
+[2026-06-27 02:54:16.274] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01).
+[2026-06-27 02:54:16.278] Found 244 possible bad axioms.
+[2026-06-27 02:54:16.278] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10).
+[2026-06-27 02:54:16.283] Found 243 possible bad axioms.
+[2026-06-27 02:54:16.283] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:54:16.287] Found 242 possible bad axioms.
+[2026-06-27 02:54:16.288] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04).
+[2026-06-27 02:54:16.292] Found 241 possible bad axioms.
+[2026-06-27 02:54:16.292] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:54:16.296] Found 240 possible bad axioms.
+[2026-06-27 02:54:16.297] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:54:16.300] Found 239 possible bad axioms.
+[2026-06-27 02:54:16.300] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.09 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:54:16.302] Found 238 possi
+...[truncated]
+SUCCESS: attempt=17 seed=227300 success_count=3/100
+progress: ontology=PATIT attempt=17 success=3/100
+----- PATIT attempt=18 seed=241500 at 2026-06-27 02:54:48 -----
+--- stdout ---
+{"seed":241500,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05","iic_values":{},"repair_runtimes_ms":{"A1":157,"A2":15263,"A3":420,"B1":368,"B2":1832,"B3":3882}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=241500, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:54:48.366] Checking precondition...
+[2026-06-27 02:54:48.382] Starting the repair...
+[2026-06-27 02:54:48.389] Found 248 possible bad axioms.
+[2026-06-27 02:54:48.390] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:54:48.394] Found 247 possible bad axioms.
+[2026-06-27 02:54:48.395] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 02:54:48.399] Found 246 possible bad axioms.
+[2026-06-27 02:54:48.400] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.04 owl:Nothing).
+[2026-06-27 02:54:48.409] Found 245 possible bad axioms.
+[2026-06-27 02:54:48.409] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.13.02).
+[2026-06-27 02:54:48.413] Found 244 possible bad axioms.
+[2026-06-27 02:54:48.413] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03).
+[2026-06-27 02:54:48.418] Found 243 possible bad axioms.
+[2026-06-27 02:54:48.419] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.13.02).
+[2026-06-27 02:54:48.422] Found 242 possible bad axioms.
+[2026-06-27 02:54:48.423] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:54:48.426] Found 241 possible bad axioms.
+[2026-06-27 02:54:48.426] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:54:48.430] Found 240 possible bad axioms.
+[2026-06-27 02:54:48.431] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 02:54:48.434] Found 239 possible bad axioms.
+[2026-06-27 02:54:48.434] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.07 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:54:48.436] Found 238 possible bad axioms.
+[2026-06-27 02:54:48.437] Selected the bad axiom SubClassOf(https://pat.nichd.nih.
+...[truncated]
+FAIL: attempt=18 seed=241500 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+progress: ontology=PATIT attempt=18 success=3/100
+----- PATIT attempt=19 seed=255700 at 2026-06-27 02:55:10 -----
+--- stdout ---
+{"seed":255700,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B9","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":79,"A2":15420,"A3":403,"B1":381,"B2":1306,"B3":1046,"B4":218,"B5":1410,"B6":1408,"B7":198,"B8":2463,"B9":1489}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=255700, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:55:11.077] Checking precondition...
+[2026-06-27 02:55:11.093] Starting the repair...
+[2026-06-27 02:55:11.100] Found 248 possible bad axioms.
+[2026-06-27 02:55:11.101] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 02:55:11.106] Found 247 possible bad axioms.
+[2026-06-27 02:55:11.106] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04).
+[2026-06-27 02:55:11.111] Found 246 possible bad axioms.
+[2026-06-27 02:55:11.111] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:55:11.119] Found 245 possible bad axioms.
+[2026-06-27 02:55:11.120] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11).
+[2026-06-27 02:55:11.123] Found 244 possible bad axioms.
+[2026-06-27 02:55:11.123] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01).
+[2026-06-27 02:55:11.127] Found 243 possible bad axioms.
+[2026-06-27 02:55:11.127] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12 owl:Thing).
+[2026-06-27 02:55:11.131] Found 242 possible bad axioms.
+[2026-06-27 02:55:11.131] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14).
+[2026-06-27 02:55:11.134] Found 241 possible bad axioms.
+[2026-06-27 02:55:11.135] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 02:55:11.139] Found 240 possible bad axioms.
+[2026-06-27 02:55:11.139] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.02).
+[2026-06-27 02:55:11.141] Found 239 possible bad axioms.
+[2026-06-27 02:55:11.141] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:55:11.144] Found 238 possible bad axioms.
+[2026-06-27 02:55:11.144] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=19 seed=255700 status=memory_limit_exceeded stage=B9 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=19 success=3/100
+----- PATIT attempt=20 seed=269900 at 2026-06-27 02:55:37 -----
+--- stdout ---
+{"seed":269900,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":134,"A2":15418,"A3":433,"B1":400,"B2":5873,"B3":1480}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=269900, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:55:37.382] Checking precondition...
+[2026-06-27 02:55:37.398] Starting the repair...
+[2026-06-27 02:55:37.405] Found 248 possible bad axioms.
+[2026-06-27 02:55:37.407] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13).
+[2026-06-27 02:55:37.411] Found 247 possible bad axioms.
+[2026-06-27 02:55:37.411] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04 owl:Thing).
+[2026-06-27 02:55:37.415] Found 246 possible bad axioms.
+[2026-06-27 02:55:37.416] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.01.01.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.01.01.01).
+[2026-06-27 02:55:37.424] Found 245 possible bad axioms.
+[2026-06-27 02:55:37.425] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:55:37.429] Found 244 possible bad axioms.
+[2026-06-27 02:55:37.429] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 02:55:37.434] Found 243 possible bad axioms.
+[2026-06-27 02:55:37.434] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:55:37.439] Found 242 possible bad axioms.
+[2026-06-27 02:55:37.439] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.02).
+[2026-06-27 02:55:37.442] Found 241 possible bad axioms.
+[2026-06-27 02:55:37.442] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03).
+[2026-06-27 02:55:37.446] Found 240 possible bad axioms.
+[2026-06-27 02:55:37.446] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02).
+[2026-06-27 02:55:37.449] Found 239 possible bad axioms.
+[2026-06-27 02:55:37.449] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.01).
+[2026-06-27 02:55:37.451] Found 238 possible bad axioms.
+[2026-06-27 02:55:37.451] Selected t
+...[truncated]
+FAIL: attempt=20 seed=269900 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+progress: ontology=PATIT attempt=20 success=3/100
+----- PATIT attempt=21 seed=284100 at 2026-06-27 02:56:01 -----
+--- stdout ---
+{"seed":284100,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05","iic_values":{},"repair_runtimes_ms":{"A1":61,"A2":15411,"A3":2011,"B1":379,"B2":4582,"B3":2783}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=284100, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:56:01.583] Checking precondition...
+[2026-06-27 02:56:01.600] Starting the repair...
+[2026-06-27 02:56:01.607] Found 248 possible bad axioms.
+[2026-06-27 02:56:01.608] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03).
+[2026-06-27 02:56:01.612] Found 247 possible bad axioms.
+[2026-06-27 02:56:01.613] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:56:01.617] Found 246 possible bad axioms.
+[2026-06-27 02:56:01.617] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03).
+[2026-06-27 02:56:01.626] Found 245 possible bad axioms.
+[2026-06-27 02:56:01.626] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:56:01.630] Found 244 possible bad axioms.
+[2026-06-27 02:56:01.630] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:56:01.635] Found 243 possible bad axioms.
+[2026-06-27 02:56:01.635] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:56:01.638] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 02:56:01.639] Checking precondition...
+[2026-06-27 02:56:01.645] Starting the repair...
+[2026-06-27 02:56:17.048] Found 3 possible bad axioms.
+[2026-06-27 02:56:17.049] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:56:17.050] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 02:56:17.052] Checking precondition...
+[2026-06-27 02:56:17.054] Starting the repair...
+[2026-06-27 02:56:17.066] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:56:17.403] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:56:17.489] Selected the weaker axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.03).
+
+...[truncated]
+FAIL: attempt=21 seed=284100 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+progress: ontology=PATIT attempt=21 success=3/100
+----- PATIT attempt=22 seed=298300 at 2026-06-27 02:56:26 -----
+--- stdout ---
+{"seed":298300,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.2885952712100139,"B1_vs_A2":1.0,"B1_vs_A3":0.17324690630524456,"B2_vs_A1":0.3678724708767627,"B2_vs_A2":1.0,"B2_vs_A3":0.2542194092827004,"B3_vs_A1":1.0,"B3_vs_A2":0.9064203513022411,"B3_vs_A3":0.7822794396062097,"B4_vs_A1":0.9263687853996224,"B4_vs_A2":0.8592488592488593,"B4_vs_A3":0.838351822503962,"B5_vs_A1":0.9537110933758979,"B5_vs_A2":0.8917062863180137,"B5_vs_A3":0.8955823293172691,"B6_vs_A1":0.9537110933758979,"B6_vs_A2":0.8917062863180137,"B6_vs_A3":0.8955823293172691,"B7_vs_A1":0.906801007556675,"B7_vs_A2":0.8758426966292134,"B7_vs_A3":1.0,"B8_vs_A1":0.9537110933758979,"B8_vs_A2":0.8917062863180137,"B8_vs_A3":0.8955823293172691,"B9_vs_A1":0.9537110933758979,"B9_vs_A2":0.8917062863180137,"B9_vs_A3":0.8955823293172691},"repair_runtimes_ms":{"A1":35,"A2":15425,"A3":423,"B1":401,"B2":4592,"B3":1148,"B4":201,"B5":1265,"B6":791,"B7":315,"B8":2433,"B9":1608}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=298300, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:56:27.276] Checking precondition...
+[2026-06-27 02:56:27.292] Starting the repair...
+[2026-06-27 02:56:27.300] Found 248 possible bad axioms.
+[2026-06-27 02:56:27.302] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:56:27.306] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 02:56:27.307] Checking precondition...
+[2026-06-27 02:56:27.320] Starting the repair...
+[2026-06-27 02:56:42.731] Found 3 possible bad axioms.
+[2026-06-27 02:56:42.731] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 owl:Nothing).
+[2026-06-27 02:56:42.732] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 02:56:42.733] Checking precondition...
+[2026-06-27 02:56:42.736] Starting the repair...
+[2026-06-27 02:56:42.750] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:56:43.075] Selected the bad axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:56:43.153] Selected the weaker axiom SubClassOf(owl:Thing https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13).
+[2026-06-27 02:56:43.155] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 02:56:43.156] Checking precondition...
+[2026-06-27 02:56:43.159] Starting the repair...
+[2026-06-27 02:56:43.171] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:56:43.483] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 owl:Nothing).
+[2026-06-27 02:56:43.555] Selected the weaker axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.07).
+[2026-06-27 02:56:43.557] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-27 02:56:43.559] Checking precondition...
+[2026-06-27 02:56:43.561] Starting the repair...
+[2026-06-27 02:56:43.570] Selected a reference ontology with 386 axioms.
+[2026-06-27 02:56:43.864] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 owl:Nothing).
+[PowerIndexWeakerAxiomSelector] Scoring 113 candidate weakenings for IT.05 ⊑ ⊥
+[PowerIndexWeakerAxiomSelector] Selected weaker axiom: IT.04.01 ⊑ ⊥
+[2026-06-27 02:56:48.103] Selected the weaker axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.01 owl:Nothing).
+[2026
+...[truncated]
+SUCCESS: attempt=22 seed=298300 success_count=4/100
+progress: ontology=PATIT attempt=22 success=4/100
+----- PATIT attempt=23 seed=312500 at 2026-06-27 02:56:56 -----
+--- stdout ---
+{"seed":312500,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":271,"A2":15347,"A3":429,"B1":2552,"B2":1812,"B3":2755,"B4":184,"B5":4513,"B6":1342,"B7":172,"B8":2804}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=312500, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:56:57.137] Checking precondition...
+[2026-06-27 02:56:57.154] Starting the repair...
+[2026-06-27 02:56:57.161] Found 248 possible bad axioms.
+[2026-06-27 02:56:57.162] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10).
+[2026-06-27 02:56:57.167] Found 247 possible bad axioms.
+[2026-06-27 02:56:57.167] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:56:57.171] Found 246 possible bad axioms.
+[2026-06-27 02:56:57.171] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15).
+[2026-06-27 02:56:57.181] Found 245 possible bad axioms.
+[2026-06-27 02:56:57.182] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:56:57.186] Found 244 possible bad axioms.
+[2026-06-27 02:56:57.186] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.11 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:56:57.190] Found 243 possible bad axioms.
+[2026-06-27 02:56:57.190] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:56:57.194] Found 242 possible bad axioms.
+[2026-06-27 02:56:57.194] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05.03).
+[2026-06-27 02:56:57.197] Found 241 possible bad axioms.
+[2026-06-27 02:56:57.198] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:56:57.201] Found 240 possible bad axioms.
+[2026-06-27 02:56:57.201] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03).
+[2026-06-27 02:56:57.204] Found 239 possible bad axioms.
+[2026-06-27 02:56:57.204] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03).
+[2026-06-27 02:56:57.208] Found 238 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=23 seed=312500 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=23 success=4/100
+----- PATIT attempt=24 seed=326700 at 2026-06-27 02:57:29 -----
+--- stdout ---
+{"seed":326700,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":223,"A2":15315,"A3":433,"B1":773,"B2":4621,"B3":783,"B4":159,"B5":4388,"B6":1381,"B7":178,"B8":2585}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=326700, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:57:29.817] Checking precondition...
+[2026-06-27 02:57:29.834] Starting the repair...
+[2026-06-27 02:57:29.840] Found 248 possible bad axioms.
+[2026-06-27 02:57:29.842] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15 owl:Thing).
+[2026-06-27 02:57:29.847] Found 247 possible bad axioms.
+[2026-06-27 02:57:29.847] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 02:57:29.851] Found 246 possible bad axioms.
+[2026-06-27 02:57:29.852] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09).
+[2026-06-27 02:57:29.860] Found 245 possible bad axioms.
+[2026-06-27 02:57:29.861] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01).
+[2026-06-27 02:57:29.864] Found 244 possible bad axioms.
+[2026-06-27 02:57:29.865] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03).
+[2026-06-27 02:57:29.868] Found 243 possible bad axioms.
+[2026-06-27 02:57:29.868] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:57:29.872] Found 242 possible bad axioms.
+[2026-06-27 02:57:29.872] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.02).
+[2026-06-27 02:57:29.876] Found 241 possible bad axioms.
+[2026-06-27 02:57:29.876] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:57:29.879] Found 240 possible bad axioms.
+[2026-06-27 02:57:29.879] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03).
+[2026-06-27 02:57:29.882] Found 239 possible bad axioms.
+[2026-06-27 02:57:29.883] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14).
+[2026-06-27 02:57:29.885] Found 238 possible bad axioms.
+[2026-06-27 02:57:29.885] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=24 seed=326700 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=24 success=4/100
+----- PATIT attempt=25 seed=340900 at 2026-06-27 02:58:00 -----
+--- stdout ---
+{"seed":340900,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02","iic_values":{},"repair_runtimes_ms":{"A1":182,"A2":15362,"A3":1545,"B1":397,"B2":1309,"B3":2833,"B4":170,"B5":767}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=340900, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:58:01.206] Checking precondition...
+[2026-06-27 02:58:01.223] Starting the repair...
+[2026-06-27 02:58:01.230] Found 248 possible bad axioms.
+[2026-06-27 02:58:01.232] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.02.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.02.01).
+[2026-06-27 02:58:01.236] Found 247 possible bad axioms.
+[2026-06-27 02:58:01.237] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.04).
+[2026-06-27 02:58:01.241] Found 246 possible bad axioms.
+[2026-06-27 02:58:01.242] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03.01).
+[2026-06-27 02:58:01.252] Found 245 possible bad axioms.
+[2026-06-27 02:58:01.252] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03).
+[2026-06-27 02:58:01.256] Found 244 possible bad axioms.
+[2026-06-27 02:58:01.256] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01).
+[2026-06-27 02:58:01.260] Found 243 possible bad axioms.
+[2026-06-27 02:58:01.260] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.02.03).
+[2026-06-27 02:58:01.264] Found 242 possible bad axioms.
+[2026-06-27 02:58:01.264] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13).
+[2026-06-27 02:58:01.267] Found 241 possible bad axioms.
+[2026-06-27 02:58:01.267] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03).
+[2026-06-27 02:58:01.271] Found 240 possible bad axioms.
+[2026-06-27 02:58:01.271] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01).
+[2026-06-27 02:58:01.274] Found 239 possible bad axioms.
+[2026-06-27 02:58:01.274] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:58:01.277] Found 238 possible
+...[truncated]
+FAIL: attempt=25 seed=340900 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+progress: ontology=PATIT attempt=25 success=4/100
+----- PATIT attempt=26 seed=355100 at 2026-06-27 02:58:24 -----
+--- stdout ---
+{"seed":355100,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":225,"A2":15361,"A3":879,"B1":887,"B2":5992,"B3":3764,"B4":248,"B5":2707}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=355100, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:58:24.661] Checking precondition...
+[2026-06-27 02:58:24.676] Starting the repair...
+[2026-06-27 02:58:24.684] Found 248 possible bad axioms.
+[2026-06-27 02:58:24.685] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09).
+[2026-06-27 02:58:24.690] Found 247 possible bad axioms.
+[2026-06-27 02:58:24.691] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:58:24.695] Found 246 possible bad axioms.
+[2026-06-27 02:58:24.695] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05.03).
+[2026-06-27 02:58:24.704] Found 245 possible bad axioms.
+[2026-06-27 02:58:24.704] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14 owl:Thing).
+[2026-06-27 02:58:24.708] Found 244 possible bad axioms.
+[2026-06-27 02:58:24.708] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:58:24.712] Found 243 possible bad axioms.
+[2026-06-27 02:58:24.713] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.02 owl:Thing).
+[2026-06-27 02:58:24.716] Found 242 possible bad axioms.
+[2026-06-27 02:58:24.717] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17 owl:Thing).
+[2026-06-27 02:58:24.720] Found 241 possible bad axioms.
+[2026-06-27 02:58:24.720] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:58:24.724] Found 240 possible bad axioms.
+[2026-06-27 02:58:24.724] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04.02).
+[2026-06-27 02:58:24.727] Found 239 possible bad axioms.
+[2026-06-27 02:58:24.727] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.03).
+[2026-06-27 02:58:24.730] Found 238 possible bad axioms.
+[2026-06-27 02:58:24.730] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.04 https://pat.nichd.nih.gov/patinvestigative
+...[truncated]
+FAIL: attempt=26 seed=355100 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=26 success=4/100
+----- PATIT attempt=27 seed=369300 at 2026-06-27 02:58:54 -----
+--- stdout ---
+{"seed":369300,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":108,"A2":15372,"A3":433,"B1":401,"B2":3182}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=369300, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:58:55.216] Checking precondition...
+[2026-06-27 02:58:55.230] Starting the repair...
+[2026-06-27 02:58:55.237] Found 248 possible bad axioms.
+[2026-06-27 02:58:55.239] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.08.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.08.01).
+[2026-06-27 02:58:55.243] Found 247 possible bad axioms.
+[2026-06-27 02:58:55.243] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03).
+[2026-06-27 02:58:55.248] Found 246 possible bad axioms.
+[2026-06-27 02:58:55.248] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02).
+[2026-06-27 02:58:55.257] Found 245 possible bad axioms.
+[2026-06-27 02:58:55.257] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03).
+[2026-06-27 02:58:55.261] Found 244 possible bad axioms.
+[2026-06-27 02:58:55.262] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10 owl:Thing).
+[2026-06-27 02:58:55.266] Found 243 possible bad axioms.
+[2026-06-27 02:58:55.266] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:58:55.270] Found 242 possible bad axioms.
+[2026-06-27 02:58:55.270] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 02:58:55.273] Found 241 possible bad axioms.
+[2026-06-27 02:58:55.274] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.04).
+[2026-06-27 02:58:55.277] Found 240 possible bad axioms.
+[2026-06-27 02:58:55.277] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05).
+[2026-06-27 02:58:55.280] Found 239 possible bad axioms.
+[2026-06-27 02:58:55.280] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01).
+[2026-06-27 02:58:55.282] Found 238 possible bad axioms.
+[2026-06-
+...[truncated]
+FAIL: attempt=27 seed=369300 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+progress: ontology=PATIT attempt=27 success=4/100
+----- PATIT attempt=28 seed=383500 at 2026-06-27 02:59:14 -----
+--- stdout ---
+{"seed":383500,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":201,"A2":15405,"A3":440,"B1":778,"B2":5913,"B3":2663,"B4":116,"B5":2217}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=383500, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:59:15.151] Checking precondition...
+[2026-06-27 02:59:15.167] Starting the repair...
+[2026-06-27 02:59:15.174] Found 248 possible bad axioms.
+[2026-06-27 02:59:15.176] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08).
+[2026-06-27 02:59:15.181] Found 247 possible bad axioms.
+[2026-06-27 02:59:15.181] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.04).
+[2026-06-27 02:59:15.186] Found 246 possible bad axioms.
+[2026-06-27 02:59:15.186] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10).
+[2026-06-27 02:59:15.194] Found 245 possible bad axioms.
+[2026-06-27 02:59:15.194] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12).
+[2026-06-27 02:59:15.198] Found 244 possible bad axioms.
+[2026-06-27 02:59:15.198] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 02:59:15.202] Found 243 possible bad axioms.
+[2026-06-27 02:59:15.202] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.01).
+[2026-06-27 02:59:15.206] Found 242 possible bad axioms.
+[2026-06-27 02:59:15.206] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.07 owl:Thing).
+[2026-06-27 02:59:15.209] Found 241 possible bad axioms.
+[2026-06-27 02:59:15.210] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 02:59:15.213] Found 240 possible bad axioms.
+[2026-06-27 02:59:15.214] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:59:15.217] Found 239 possible bad axioms.
+[2026-06-27 02:59:15.217] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.11 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:59:15.219] Found 238 possible bad axioms.
+[2026-06-27 02:59:15.220] Selected the bad axiom SubClassOf(https://pat.nic
+...[truncated]
+FAIL: attempt=28 seed=383500 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=28 success=4/100
+----- PATIT attempt=29 seed=397700 at 2026-06-27 02:59:43 -----
+--- stdout ---
+{"seed":397700,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":349,"A2":15147,"A3":852,"B1":385,"B2":5428}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=397700, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 02:59:43.364] Checking precondition...
+[2026-06-27 02:59:43.380] Starting the repair...
+[2026-06-27 02:59:43.387] Found 248 possible bad axioms.
+[2026-06-27 02:59:43.388] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 02:59:43.393] Found 247 possible bad axioms.
+[2026-06-27 02:59:43.393] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.07 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 02:59:43.398] Found 246 possible bad axioms.
+[2026-06-27 02:59:43.398] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.04).
+[2026-06-27 02:59:43.407] Found 245 possible bad axioms.
+[2026-06-27 02:59:43.407] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.11).
+[2026-06-27 02:59:43.411] Found 244 possible bad axioms.
+[2026-06-27 02:59:43.412] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.13).
+[2026-06-27 02:59:43.416] Found 243 possible bad axioms.
+[2026-06-27 02:59:43.416] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03).
+[2026-06-27 02:59:43.420] Found 242 possible bad axioms.
+[2026-06-27 02:59:43.420] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.04.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 02:59:43.423] Found 241 possible bad axioms.
+[2026-06-27 02:59:43.423] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 02:59:43.427] Found 240 possible bad axioms.
+[2026-06-27 02:59:43.427] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.02).
+[2026-06-27 02:59:43.430] Found 239 possible bad axioms.
+[2026-06-27 02:59:43.430] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.03.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.03).
+[2026-06-27 02:59:43.433] Found 238 possi
+...[truncated]
+FAIL: attempt=29 seed=397700 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+progress: ontology=PATIT attempt=29 success=4/100
+----- PATIT attempt=30 seed=411900 at 2026-06-27 03:00:05 -----
+--- stdout ---
+{"seed":411900,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01","iic_values":{},"repair_runtimes_ms":{"A1":79,"A2":15238,"A3":448,"B1":387,"B2":2497}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=411900, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:00:05.981] Checking precondition...
+[2026-06-27 03:00:05.996] Starting the repair...
+[2026-06-27 03:00:06.003] Found 248 possible bad axioms.
+[2026-06-27 03:00:06.005] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01).
+[2026-06-27 03:00:06.009] Found 247 possible bad axioms.
+[2026-06-27 03:00:06.009] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.12).
+[2026-06-27 03:00:06.014] Found 246 possible bad axioms.
+[2026-06-27 03:00:06.014] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.09.02.03).
+[2026-06-27 03:00:06.028] Found 245 possible bad axioms.
+[2026-06-27 03:00:06.030] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.13.03 owl:Thing).
+[2026-06-27 03:00:06.035] Found 244 possible bad axioms.
+[2026-06-27 03:00:06.035] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.03.01).
+[2026-06-27 03:00:06.039] Found 243 possible bad axioms.
+[2026-06-27 03:00:06.039] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 03:00:06.043] Found 242 possible bad axioms.
+[2026-06-27 03:00:06.043] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 03:00:06.047] Found 241 possible bad axioms.
+[2026-06-27 03:00:06.047] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02).
+[2026-06-27 03:00:06.050] Found 240 possible bad axioms.
+[2026-06-27 03:00:06.050] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.15 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 03:00:06.053] Found 239 possible bad axioms.
+[2026-06-27 03:00:06.053] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05).
+[2026-06-27 03:00:06.056] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 03:00
+...[truncated]
+FAIL: attempt=30 seed=411900 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+progress: ontology=PATIT attempt=30 success=4/100
+----- PATIT attempt=31 seed=426100 at 2026-06-27 03:00:24 -----
+--- stdout ---
+{"seed":426100,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02","iic_values":{},"repair_runtimes_ms":{"A1":101,"A2":15291,"A3":436,"B1":383,"B2":5920,"B3":1007,"B4":189,"B5":738}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=426100, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:00:25.091] Checking precondition...
+[2026-06-27 03:00:25.108] Starting the repair...
+[2026-06-27 03:00:25.115] Found 248 possible bad axioms.
+[2026-06-27 03:00:25.116] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.01.02).
+[2026-06-27 03:00:25.121] Found 247 possible bad axioms.
+[2026-06-27 03:00:25.121] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.03.05.03).
+[2026-06-27 03:00:25.125] Found 246 possible bad axioms.
+[2026-06-27 03:00:25.125] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14).
+[2026-06-27 03:00:25.134] Found 245 possible bad axioms.
+[2026-06-27 03:00:25.134] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 03:00:25.138] Found 244 possible bad axioms.
+[2026-06-27 03:00:25.138] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04).
+[2026-06-27 03:00:25.142] Found 243 possible bad axioms.
+[2026-06-27 03:00:25.142] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02 owl:Nothing).
+[2026-06-27 03:00:25.146] Found 242 possible bad axioms.
+[2026-06-27 03:00:25.146] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.03 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 03:00:25.149] Found 241 possible bad axioms.
+[2026-06-27 03:00:25.149] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06).
+[2026-06-27 03:00:25.153] Found 240 possible bad axioms.
+[2026-06-27 03:00:25.153] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.10.03).
+[2026-06-27 03:00:25.156] Found 239 possible bad axioms.
+[2026-06-27 03:00:25.156] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.04.03).
+[2026-06-27 03:00:25.159] Found 238 possible bad axioms.
+[2026-06-27 03:00:25.159] Selected the b
+...[truncated]
+FAIL: attempt=31 seed=426100 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+progress: ontology=PATIT attempt=31 success=4/100
+----- PATIT attempt=32 seed=440300 at 2026-06-27 03:00:49 -----
+--- stdout ---
+{"seed":440300,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":124,"A2":15328,"A3":433,"B1":371,"B2":4640,"B3":1101,"B4":168}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATIT.owl, seed=440300, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:00:49.644] Checking precondition...
+[2026-06-27 03:00:49.660] Starting the repair...
+[2026-06-27 03:00:49.667] Found 248 possible bad axioms.
+[2026-06-27 03:00:49.668] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.08 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.06.01).
+[2026-06-27 03:00:49.673] Found 247 possible bad axioms.
+[2026-06-27 03:00:49.673] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.05.02).
+[2026-06-27 03:00:49.677] Found 246 possible bad axioms.
+[2026-06-27 03:00:49.678] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16.04.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.16).
+[2026-06-27 03:00:49.686] Found 245 possible bad axioms.
+[2026-06-27 03:00:49.686] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.05 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 03:00:49.690] Found 244 possible bad axioms.
+[2026-06-27 03:00:49.690] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.01 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.04).
+[2026-06-27 03:00:49.694] Found 243 possible bad axioms.
+[2026-06-27 03:00:49.694] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.01).
+[2026-06-27 03:00:49.698] Found 242 possible bad axioms.
+[2026-06-27 03:00:49.698] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.17).
+[2026-06-27 03:00:49.703] Found 241 possible bad axioms.
+[2026-06-27 03:00:49.704] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01.06 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.08.02.01).
+[2026-06-27 03:00:49.707] Found 240 possible bad axioms.
+[2026-06-27 03:00:49.707] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.14).
+[2026-06-27 03:00:49.710] Found 239 possible bad axioms.
+[2026-06-27 03:00:49.710] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.02 https://pat.nichd.nih.gov/patinvestigativetechniques/IT.03.01).
+[2026-06-27 03:00:49.713] Found 238 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=32 seed=440300 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=PATIT attempt=32 success=4/100
+=== ABORTED PATIT after 10 consecutive failures at 2026-06-27 03:01:11 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for PATIT - 4 successes, 28 failures, 32 attempts ===
+Failed attempts:
+  attempt=1 seed=100 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=2 seed=14300 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+  attempt=3 seed=28500 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=4 seed=42700 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+  attempt=5 seed=56900 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+  attempt=7 seed=85300 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+  attempt=8 seed=99500 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+  attempt=9 seed=113700 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+  attempt=10 seed=127900 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+  attempt=11 seed=142100 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+  attempt=13 seed=170500 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+  attempt=14 seed=184700 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+  attempt=15 seed=198900 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=16 seed=213100 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+  attempt=18 seed=241500 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+  attempt=19 seed=255700 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=20 seed=269900 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+  attempt=21 seed=284100 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05.01 ⊑ IT.05
+  attempt=23 seed=312500 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=24 seed=326700 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=25 seed=340900 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+  attempt=26 seed=355100 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=27 seed=369300 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+  attempt=28 seed=383500 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=29 seed=397700 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IT.05 ⊑ ⊥
+  attempt=30 seed=411900 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.05.01
+  attempt=31 seed=426100 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ IT.13.02
+  attempt=32 seed=440300 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+Timing summary:
+  success: count=4 total_seconds=122.085014 avg_seconds=30.521254
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.1250
+  wall_clock_seconds_total_run=360698.251834

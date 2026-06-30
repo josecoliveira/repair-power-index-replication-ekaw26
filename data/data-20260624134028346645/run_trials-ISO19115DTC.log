@@ -1,0 +1,405 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ISO19115DTC.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ISO19115DTC.csv
+
+=== Starting sequential trials for ISO19115DTC at 2026-06-25 03:42:31 ===
+----- ISO19115DTC attempt=1 seed=37 at 2026-06-25 03:42:31 -----
+--- stdout ---
+{"seed":37,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":68,"A2":387,"A3":142,"B1":102,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=37, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:42:31.401] Checking precondition...
+[2026-06-25 03:42:31.414] Starting the repair...
+[2026-06-25 03:42:31.422] Found 66 possible bad axioms.
+[2026-06-25 03:42:31.423] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:42:31.429] Found 65 possible bad axioms.
+[2026-06-25 03:42:31.430] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/released).
+[2026-06-25 03:42:31.431] Found 64 possible bad axioms.
+[2026-06-25 03:42:31.431] Selected the bad axiom SubClassOf(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 03:42:31.435] Found 63 possible bad axioms.
+[2026-06-25 03:42:31.435] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/expiry).
+[2026-06-25 03:42:31.436] Found 62 possible bad axioms.
+[2026-06-25 03:42:31.436] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:42:31.441] Found 61 possible bad axioms.
+[2026-06-25 03:42:31.441] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/deprecated).
+[2026-06-25 03:42:31.442] Found 60 possible bad axioms.
+[2026-06-25 03:42:31.442] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:42:31.445] Found 59 possible bad axioms.
+[2026-06-25 03:42:31.446] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:42:31.449] Found 58 possible bad axioms.
+[2026-06-25 03:42:31.449] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:42:31.451] Found 57 possible bad axioms.
+[2026-06-25 03:42:31.452] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable).
+[2026-06-25 03:42:31.452] Found 56 possible bad axioms.
+[2026-06-25 03:42:31.452] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable).
+[2026-06-25 03:42:31.453] Found 55 possible bad axioms.
+[2026-06-25 03:42:31.453] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/expiry http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded).
+[2026-06-25 03:42:3
+...[truncated]
+FAIL: attempt=1 seed=37 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=1 success=0/100
+----- ISO19115DTC attempt=2 seed=14237 at 2026-06-25 03:47:32 -----
+--- stdout ---
+{"seed":14237,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":82,"A2":379,"A3":140,"B1":108,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=14237, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:47:32.533] Checking precondition...
+[2026-06-25 03:47:32.546] Starting the repair...
+[2026-06-25 03:47:32.552] Found 66 possible bad axioms.
+[2026-06-25 03:47:32.553] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:47:32.558] Found 65 possible bad axioms.
+[2026-06-25 03:47:32.559] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/nextUpdate).
+[2026-06-25 03:47:32.564] Found 64 possible bad axioms.
+[2026-06-25 03:47:32.564] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:47:32.568] Found 63 possible bad axioms.
+[2026-06-25 03:47:32.568] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:47:32.571] Found 62 possible bad axioms.
+[2026-06-25 03:47:32.572] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/released).
+[2026-06-25 03:47:32.574] Found 61 possible bad axioms.
+[2026-06-25 03:47:32.574] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/lastRevision).
+[2026-06-25 03:47:32.576] Found 60 possible bad axioms.
+[2026-06-25 03:47:32.576] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 03:47:32.578] Found 59 possible bad axioms.
+[2026-06-25 03:47:32.578] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 03:47:32.579] Found 58 possible bad axioms.
+[2026-06-25 03:47:32.579] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/deprecated http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable).
+[2026-06-25 03:47:32.580] Found 57 possible bad axioms.
+[2026-06-25 03:47:32.580] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/dist
+...[truncated]
+FAIL: attempt=2 seed=14237 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=2 success=0/100
+----- ISO19115DTC attempt=3 seed=28437 at 2026-06-25 03:52:33 -----
+--- stdout ---
+{"seed":28437,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":64,"A2":393,"A3":145,"B1":111,"B2":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=28437, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:52:33.643] Checking precondition...
+[2026-06-25 03:52:33.657] Starting the repair...
+[2026-06-25 03:52:33.663] Found 66 possible bad axioms.
+[2026-06-25 03:52:33.665] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/deprecated http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable).
+[2026-06-25 03:52:33.667] Found 65 possible bad axioms.
+[2026-06-25 03:52:33.667] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 03:52:33.668] Found 64 possible bad axioms.
+[2026-06-25 03:52:33.668] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded).
+[2026-06-25 03:52:33.674] Found 63 possible bad axioms.
+[2026-06-25 03:52:33.674] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/released).
+[2026-06-25 03:52:33.678] Found 62 possible bad axioms.
+[2026-06-25 03:52:33.679] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 03:52:33.680] Found 61 possible bad axioms.
+[2026-06-25 03:52:33.680] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/distribution http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityExpires).
+[2026-06-25 03:52:33.684] Found 60 possible bad axioms.
+[2026-06-25 03:52:33.684] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/nextUpdate).
+[2026-06-25 03:52:33.685] Found 59 possible bad axioms.
+[2026-06-25 03:52:33.685] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[202
+...[truncated]
+FAIL: attempt=3 seed=28437 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=3 success=0/100
+----- ISO19115DTC attempt=4 seed=42637 at 2026-06-25 03:57:34 -----
+--- stdout ---
+{"seed":42637,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":56,"A2":404,"A3":137,"B1":113,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=42637, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:57:34.764] Checking precondition...
+[2026-06-25 03:57:34.776] Starting the repair...
+[2026-06-25 03:57:34.784] Found 66 possible bad axioms.
+[2026-06-25 03:57:34.786] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/adopted).
+[2026-06-25 03:57:34.787] Found 65 possible bad axioms.
+[2026-06-25 03:57:34.787] Selected the bad axiom SubClassOf(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 03:57:34.794] Found 64 possible bad axioms.
+[2026-06-25 03:57:34.794] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:57:34.797] Found 63 possible bad axioms.
+[2026-06-25 03:57:34.798] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 03:57:34.799] Found 62 possible bad axioms.
+[2026-06-25 03:57:34.799] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/expiry).
+[2026-06-25 03:57:34.800] Found 61 possible bad axioms.
+[2026-06-25 03:57:34.801] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/distribution).
+[2026-06-25 03:57:34.802] Found 60 possible bad axioms.
+[2026-06-25 03:57:34.802] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:57:34.805] Found 59 possible bad axioms.
+[2026-06-25 03:57:34.805] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:57:34.809] Found 58 possible bad axioms.
+[2026-06-25 03:57:34.809] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/lastRevision).
+[2026-06-25 03:57:34.810] Found 57 possible bad axioms.
+[2026-06-25 03:57:34.810] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/adopted).
+[2026-06-25 03:57:34.810] Found 56 possible bad axioms.
+[2026-06-25 03:57:34.811] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 03:57:34.813] Found 55 possible bad axioms.
+[2026-06-25 03:57:34.813] Selected the bad axiom SubClassOf(http://def.isotc
+...[truncated]
+FAIL: attempt=4 seed=42637 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=4 success=0/100
+----- ISO19115DTC attempt=5 seed=56837 at 2026-06-25 04:02:35 -----
+--- stdout ---
+{"seed":56837,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":93,"A2":375,"A3":132,"B1":110,"B2":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=56837, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:02:35.875] Checking precondition...
+[2026-06-25 04:02:35.888] Starting the repair...
+[2026-06-25 04:02:35.896] Found 66 possible bad axioms.
+[2026-06-25 04:02:35.898] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:02:35.899] Found 65 possible bad axioms.
+[2026-06-25 04:02:35.899] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable).
+[2026-06-25 04:02:35.901] Found 64 possible bad axioms.
+[2026-06-25 04:02:35.901] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/released).
+[2026-06-25 04:02:35.902] Found 63 possible bad axioms.
+[2026-06-25 04:02:35.902] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityExpires).
+[2026-06-25 04:02:35.903] Found 62 possible bad axioms.
+[2026-06-25 04:02:35.903] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/distribution http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityExpires).
+[2026-06-25 04:02:35.908] Found 61 possible bad axioms.
+[2026-06-25 04:02:35.909] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/adopted).
+[2026-06-25 04:02:35.909] Found 60 possible bad axioms.
+[2026-06-25 04:02:35.910] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:02:35.914] Found 59 possible bad axioms.
+[2026-06-25 04:02:35.914] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded).
+[2026-06-25 04:02:35.915] Found 58 possible bad axioms.
+[2026-06-25 04:02:35.915] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:02:35.919] Found 57 possible bad axioms.
+[2026-06-25 04:02:35.919] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:02:35.921] Found 56 possible bad axioms.
+[2026-06-25 04:02:35.921] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins http://def.isotc211.org/is
+...[truncated]
+FAIL: attempt=5 seed=56837 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=5 success=0/100
+----- ISO19115DTC attempt=6 seed=71037 at 2026-06-25 04:07:36 -----
+--- stdout ---
+{"seed":71037,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":94,"A2":385,"A3":140,"B1":110,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=71037, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:07:36.989] Checking precondition...
+[2026-06-25 04:07:37.002] Starting the repair...
+[2026-06-25 04:07:37.008] Found 66 possible bad axioms.
+[2026-06-25 04:07:37.010] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:07:37.016] Found 65 possible bad axioms.
+[2026-06-25 04:07:37.017] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:07:37.021] Found 64 possible bad axioms.
+[2026-06-25 04:07:37.021] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:07:37.025] Found 63 possible bad axioms.
+[2026-06-25 04:07:37.025] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:07:37.026] Found 62 possible bad axioms.
+[2026-06-25 04:07:37.027] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:07:37.029] Found 61 possible bad axioms.
+[2026-06-25 04:07:37.030] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:07:37.032] Found 60 possible bad axioms.
+[2026-06-25 04:07:37.033] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/lastUpdate).
+[2026-06-25 04:07:37.034] Found 59 possible bad axioms.
+[2026-06-25 04:07:37.034] Selected the bad axiom SubClassOf(Concept owl:Thing).
+[2026-06-25 04:07:37.036] Found 58 possible bad axioms.
+[2026-06-25 04:07:37.036] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/lastRevision http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/inForce).
+[2026-06-25 04:07:37.037] Found 57 possible bad axioms.
+[2026-06-25 04:07:37.037] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 04:07:37.039] Found 56 possible bad axioms.
+[2026-06-25 04:07:37.039] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/inForce).
+[2026-06-25 04:07:37.040] Found 55 possible bad axioms.
+[2026-06-25 04:07:37.040] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/expiry).
+[2026-06-
+...[truncated]
+FAIL: attempt=6 seed=71037 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=6 success=0/100
+----- ISO19115DTC attempt=7 seed=85237 at 2026-06-25 04:12:37 -----
+--- stdout ---
+{"seed":85237,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":90,"A2":383,"A3":134,"B1":105,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=85237, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:12:38.115] Checking precondition...
+[2026-06-25 04:12:38.128] Starting the repair...
+[2026-06-25 04:12:38.136] Found 66 possible bad axioms.
+[2026-06-25 04:12:38.137] Selected the bad axiom SubClassOf(Concept owl:Thing).
+[2026-06-25 04:12:38.143] Found 65 possible bad axioms.
+[2026-06-25 04:12:38.144] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/expiry).
+[2026-06-25 04:12:38.146] Found 64 possible bad axioms.
+[2026-06-25 04:12:38.146] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded).
+[2026-06-25 04:12:38.151] Found 63 possible bad axioms.
+[2026-06-25 04:12:38.151] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:12:38.155] Found 62 possible bad axioms.
+[2026-06-25 04:12:38.155] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/distribution http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityExpires).
+[2026-06-25 04:12:38.160] Found 61 possible bad axioms.
+[2026-06-25 04:12:38.160] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/adopted).
+[2026-06-25 04:12:38.161] Found 60 possible bad axioms.
+[2026-06-25 04:12:38.161] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/deprecated).
+[2026-06-25 04:12:38.162] Found 59 possible bad axioms.
+[2026-06-25 04:12:38.162] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:12:38.163] Found 58 possible bad axioms.
+[2026-06-25 04:12:38.163] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:12:38.166] Found 57 possible bad axioms.
+[2026-06-25 04:12:38.166] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:12:38.168] Found 56 possible bad axioms.
+[2026-06-25 04:12:38.168] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/Citati
+...[truncated]
+FAIL: attempt=7 seed=85237 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=7 success=0/100
+----- ISO19115DTC attempt=8 seed=99437 at 2026-06-25 04:17:38 -----
+--- stdout ---
+{"seed":99437,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":55,"A2":412,"A3":142,"B1":111,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=99437, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:17:39.222] Checking precondition...
+[2026-06-25 04:17:39.234] Starting the repair...
+[2026-06-25 04:17:39.241] Found 66 possible bad axioms.
+[2026-06-25 04:17:39.242] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:17:39.248] Found 65 possible bad axioms.
+[2026-06-25 04:17:39.249] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:17:39.251] Found 64 possible bad axioms.
+[2026-06-25 04:17:39.251] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityExpires).
+[2026-06-25 04:17:39.252] Found 63 possible bad axioms.
+[2026-06-25 04:17:39.252] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/released).
+[2026-06-25 04:17:39.253] Found 62 possible bad axioms.
+[2026-06-25 04:17:39.253] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/nextUpdate).
+[2026-06-25 04:17:39.258] Found 61 possible bad axioms.
+[2026-06-25 04:17:39.258] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:17:39.262] Found 60 possible bad axioms.
+[2026-06-25 04:17:39.262] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:17:39.265] Found 59 possible bad axioms.
+[2026-06-25 04:17:39.265] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:17:39.268] Found 58 possible bad axioms.
+[2026-06-25 04:17:39.268] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/nextUpdate http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/deprecated).
+[2026-06-25 04:17:39.269] Found 57 possible bad axioms.
+[2026-06-25 04:17:39.269] Selected the bad axiom SubClassOf(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 04:17:39.271] Found 56 possible bad axioms.
+[2026-06-25 04:17:39.271] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication owl:Nothing).
+[2026-06-25 04:17:39.273] Finished rep
+...[truncated]
+FAIL: attempt=8 seed=99437 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=8 success=0/100
+----- ISO19115DTC attempt=9 seed=113637 at 2026-06-25 04:22:40 -----
+--- stdout ---
+{"seed":113637,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":42,"A2":417,"A3":213,"B1":108,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=113637, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:22:40.344] Checking precondition...
+[2026-06-25 04:22:40.357] Starting the repair...
+[2026-06-25 04:22:40.364] Found 66 possible bad axioms.
+[2026-06-25 04:22:40.366] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 04:22:40.367] Found 65 possible bad axioms.
+[2026-06-25 04:22:40.368] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:22:40.369] Found 64 possible bad axioms.
+[2026-06-25 04:22:40.369] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/nextUpdate http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/deprecated).
+[2026-06-25 04:22:40.370] Found 63 possible bad axioms.
+[2026-06-25 04:22:40.370] Selected the bad axiom SubClassOf(CI_DateTypeCode owl:Thing).
+[2026-06-25 04:22:40.375] Found 62 possible bad axioms.
+[2026-06-25 04:22:40.375] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:22:40.380] Found 61 possible bad axioms.
+[2026-06-25 04:22:40.381] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:22:40.382] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 04:22:40.382] Checking precondition...
+[2026-06-25 04:22:40.389] Starting the repair...
+[2026-06-25 04:22:40.798] Found 2 possible bad axioms.
+[2026-06-25 04:22:40.798] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/publication http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:22:40.800] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 04:22:40.801] Checking precondition...
+
+...[truncated]
+FAIL: attempt=9 seed=113637 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=9 success=0/100
+----- ISO19115DTC attempt=10 seed=127837 at 2026-06-25 04:27:41 -----
+--- stdout ---
+{"seed":127837,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":77,"A2":377,"A3":145,"B1":102,"B2":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ISO19115DTC.owl, seed=127837, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:27:41.514] Checking precondition...
+[2026-06-25 04:27:41.527] Starting the repair...
+[2026-06-25 04:27:41.535] Found 66 possible bad axioms.
+[2026-06-25 04:27:41.536] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:27:41.543] Found 65 possible bad axioms.
+[2026-06-25 04:27:41.544] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/lastUpdate).
+[2026-06-25 04:27:41.546] Found 64 possible bad axioms.
+[2026-06-25 04:27:41.546] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/distribution).
+[2026-06-25 04:27:41.547] Found 63 possible bad axioms.
+[2026-06-25 04:27:41.547] Selected the bad axiom ClassAssertion(CI_DateTypeCode http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityExpires).
+[2026-06-25 04:27:41.548] Found 62 possible bad axioms.
+[2026-06-25 04:27:41.548] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/nextUpdate).
+[2026-06-25 04:27:41.550] Found 61 possible bad axioms.
+[2026-06-25 04:27:41.550] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/unavailable http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/validityBegins).
+[2026-06-25 04:27:41.551] Found 60 possible bad axioms.
+[2026-06-25 04:27:41.551] Selected the bad axiom SubClassOf(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/expiry http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/superseded).
+[2026-06-25 04:27:41.555] Found 59 possible bad axioms.
+[2026-06-25 04:27:41.555] Selected the bad axiom ClassAssertion(Concept http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/creation).
+[2026-06-25 04:27:41.556] Found 58 possible bad axioms.
+[2026-06-25 04:27:41.556] Selected the bad axiom SubClassOf(CI_DateTypeCode).
+[2026-06-25 04:27:41.560] Found 57 possible bad axioms.
+[2026-06-25 04:27:41.561] Selected the bad axiom ClassAssertion(http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation/code/CI_DateTypeCode/nextUpdate http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformati
+...[truncated]
+FAIL: attempt=10 seed=127837 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=ISO19115DTC attempt=10 success=0/100
+=== ABORTED ISO19115DTC after 10 consecutive failures at 2026-06-25 04:32:42 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ISO19115DTC - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=37 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=2 seed=14237 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=3 seed=28437 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=4 seed=42637 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=5 seed=56837 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=6 seed=71037 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=7 seed=85237 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=8 seed=99437 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=9 seed=113637 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=10 seed=127837 msg=Repair timeout: B2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3010.703296 avg_seconds=301.070330
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

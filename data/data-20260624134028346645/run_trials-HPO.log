@@ -1,0 +1,471 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-HPO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-HPO.csv
+
+=== Starting sequential trials for HPO at 2026-06-28 06:09:02 ===
+----- HPO attempt=1 seed=136 at 2026-06-28 06:09:02 -----
+--- stdout ---
+{"seed":136,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":377,"A2":160017,"A3":839,"B1":1188,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=136, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:09:03.221] Checking precondition...
+[2026-06-28 06:09:03.247] Starting the repair...
+[2026-06-28 06:09:03.259] Found 584 possible bad axioms.
+[2026-06-28 06:09:03.261] Selected the bad axiom ClassAssertion(Endocrine_Factors Adrenal_Gland_Tumors).
+[2026-06-28 06:09:03.265] Found 583 possible bad axioms.
+[2026-06-28 06:09:03.265] Selected the bad axiom SubClassOf(Mortality_and_Serious_Complications ObjectSomeValuesFrom(createsTheRiskOf Pulmonary_Venoocclusive_Disease)).
+[2026-06-28 06:09:03.273] Found 582 possible bad axioms.
+[2026-06-28 06:09:03.273] Selected the bad axiom SubClassOf(Lifestyle_Factors Hypertension_Causes).
+[2026-06-28 06:09:03.280] Found 581 possible bad axioms.
+[2026-06-28 06:09:03.280] Selected the bad axiom ClassAssertion(Circulation-related_Symptoms Blood_Vessels_Damage).
+[2026-06-28 06:09:03.282] Found 580 possible bad axioms.
+[2026-06-28 06:09:03.282] Selected the bad axiom ClassAssertion(Retinal_Complications Retinopathy).
+[2026-06-28 06:09:03.284] Found 579 possible bad axioms.
+[2026-06-28 06:09:03.284] Selected the bad axiom SubClassOf(Cognitive-and_Mental_Symptoms ObjectSomeValuesFrom(isSymptomOf Renovascular_Hypertension)).
+[2026-06-28 06:09:03.291] Found 578 possible bad axioms.
+[2026-06-28 06:09:03.291] Selected the bad axiom SubClassOf(Inflammatory_and_Autoimmune_Factors ObjectSomeValuesFrom(canCause Benign_Secondary_Hypertension)).
+[2026-06-28 06:09:03.302] Found 577 possible bad axioms.
+[2026-06-28 06:09:03.302] Selected the bad axiom SubClassOf(Inflammatory_and_Autoimmune_Factors ObjectSomeValuesFrom(canCause Mild_Pre-Eclampsia)).
+[2026-06-28 06:09:03.308] Found 576 possible bad axioms.
+[2026-06-28 06:09:03.308] Selected the bad axiom SubClassOf(Diabetes_Screening_and_Monitoring ObjectSomeValuesFrom(detects Diabetes)).
+[2026-06-28 06:09:03.313] Found 575 possible bad axioms.
+[2026-06-28 06:09:03.313] Selected the bad axiom SubClassOf(Other_Complications Cardiovascular_Complications).
+[2026-06-28 06:09:03.318] Found 574 possible bad axioms.
+[2026-06-28 06:09:03.318] Selected the bad axiom ClassAssertion(Pregnancy_and_Birth-related-complications Placental_Abruption).
+[2026-06-28 06:09:03.319] Found 573 possible bad axioms.
+[2026-06-28 06:09:03.320] Selected the bad axiom ClassAssertion(General_Medical_Care Hydration).
+[2026-06-28 06:09:03.321] Found 572 possible bad axioms.
+[2026-06-28 06:09:03.321] Selected the bad axiom SubClassOf(Mortality_and_Serious_Complications ObjectSomeValuesFrom(createsTheRiskOf Persistent_Fetal_Circulation_Syndrome)).
+[2026-06-28 06:09:03.325] Found 571 possible bad axioms.
+[2026-0
+...[truncated]
+FAIL: attempt=1 seed=136 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=1 success=0/100
+----- HPO attempt=2 seed=14336 at 2026-06-28 06:16:45 -----
+--- stdout ---
+{"seed":14336,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":518,"A2":158596,"A3":811,"B1":1159,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=14336, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:16:46.143] Checking precondition...
+[2026-06-28 06:16:46.164] Starting the repair...
+[2026-06-28 06:16:46.182] Found 584 possible bad axioms.
+[2026-06-28 06:16:46.184] Selected the bad axiom ClassAssertion(Retinal_Complications Retinopathy).
+[2026-06-28 06:16:46.188] Found 583 possible bad axioms.
+[2026-06-28 06:16:46.189] Selected the bad axiom SubClassOf(Urinary_Changes ObjectSomeValuesFrom(isSymptomOf Benign_Hypertensive_Renal_Disease)).
+[2026-06-28 06:16:46.198] Found 582 possible bad axioms.
+[2026-06-28 06:16:46.198] Selected the bad axiom ClassAssertion(Pregnancy_and_Birth-related-complications Fetal_Growth_Restrction).
+[2026-06-28 06:16:46.200] Found 581 possible bad axioms.
+[2026-06-28 06:16:46.201] Selected the bad axiom SubClassOf(Cardiovascular_Symptoms Hypertension_Symptoms).
+[2026-06-28 06:16:46.209] Found 580 possible bad axioms.
+[2026-06-28 06:16:46.209] Selected the bad axiom ClassAssertion(Infectious_Disease Hepatitis_B_and_C).
+[2026-06-28 06:16:46.211] Found 579 possible bad axioms.
+[2026-06-28 06:16:46.211] Selected the bad axiom SubClassOf(Cardiovascular_Assesment ObjectSomeValuesFrom(detects Benign_Essential_Hypertension)).
+[2026-06-28 06:16:46.218] Found 578 possible bad axioms.
+[2026-06-28 06:16:46.218] Selected the bad axiom SubClassOf(Pancreatic_Factors Other_Factors).
+[2026-06-28 06:16:46.228] Found 577 possible bad axioms.
+[2026-06-28 06:16:46.229] Selected the bad axiom SubClassOf(Pregnancy_and_Birth-related-complications Other_Complication).
+[2026-06-28 06:16:46.234] Found 576 possible bad axioms.
+[2026-06-28 06:16:46.235] Selected the bad axiom SubClassOf(Gastrointestinal_Symptoms ObjectSomeValuesFrom(isSymptomOf Nephrosclerosis)).
+[2026-06-28 06:16:46.239] Found 575 possible bad axioms.
+[2026-06-28 06:16:46.240] Selected the bad axiom SubClassOf(General_Medical_Care ObjectSomeValuesFrom(treats Pulmonary_Venoocclusive_Disease)).
+[2026-06-28 06:16:46.245] Found 574 possible bad axioms.
+[2026-06-28 06:16:46.245] Selected the bad axiom SubClassOf(Arterial_Complications Cardiovascular_Complications).
+[2026-06-28 06:16:46.250] Found 573 possible bad axioms.
+[2026-06-28 06:16:46.250] Selected the bad axiom SubClassOf(Lifestyle_Modifications Hypertension_Treatment).
+[2026-06-28 06:16:46.255] Found 572 possible bad axioms.
+[2026-06-28 06:16:46.255] Selected the bad axiom ClassAssertion(Urinary_Changes Protine_in_the_Urine).
+[2026-06-28 06:16:46.256] Found 571 possible bad axioms.
+[2026-06-28 06:16:46.256] Selected the bad axiom ClassAssertion(Cognitive-and_Mental_Symptoms Difficulty_Concentrating).
+[2026-06-28 06:16
+...[truncated]
+FAIL: attempt=2 seed=14336 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=2 success=0/100
+----- HPO attempt=3 seed=28536 at 2026-06-28 06:24:27 -----
+--- stdout ---
+{"seed":28536,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":666,"A2":170248,"A3":1289,"B1":1117,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=28536, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:24:27.754] Checking precondition...
+[2026-06-28 06:24:27.781] Starting the repair...
+[2026-06-28 06:24:27.795] Found 584 possible bad axioms.
+[2026-06-28 06:24:27.797] Selected the bad axiom ClassAssertion(Blood_Vessel_Complications Blood_Vessels_Damage).
+[2026-06-28 06:24:27.801] Found 583 possible bad axioms.
+[2026-06-28 06:24:27.801] Selected the bad axiom ClassAssertion(Cerebrovascular_Complications Stroke).
+[2026-06-28 06:24:27.803] Found 582 possible bad axioms.
+[2026-06-28 06:24:27.804] Selected the bad axiom SubClassOf(Other_Symptoms Hypertension_Symptoms).
+[2026-06-28 06:24:27.813] Found 581 possible bad axioms.
+[2026-06-28 06:24:27.813] Selected the bad axiom SubClassOf(Laboratory_Test ObjectSomeValuesFrom(detects Benign_Renovascular_Hypertension)).
+[2026-06-28 06:24:27.821] Found 580 possible bad axioms.
+[2026-06-28 06:24:27.821] Selected the bad axiom SubClassOf(Diabetes Secondary_Hypertension).
+[2026-06-28 06:24:27.827] Found 579 possible bad axioms.
+[2026-06-28 06:24:27.828] Selected the bad axiom SubClassOf(Circulatory_Symptoms ObjectSomeValuesFrom(isSymptomOf Diabetes)).
+[2026-06-28 06:24:27.839] Found 578 possible bad axioms.
+[2026-06-28 06:24:27.839] Selected the bad axiom SubClassOf(Cardiovascular_Assesment ObjectSomeValuesFrom(detects Malignant_Secondary_Hypertension)).
+[2026-06-28 06:24:27.846] Found 577 possible bad axioms.
+[2026-06-28 06:24:27.846] Selected the bad axiom SubClassOf(Genetic_and_Family_History ObjectComplementOf(Benign_Essential_Hypertension)).
+[2026-06-28 06:24:27.852] Found 576 possible bad axioms.
+[2026-06-28 06:24:27.852] Selected the bad axiom ClassAssertion(Circulation-related_Symptoms Poor_Perfusion).
+[2026-06-28 06:24:27.853] Found 575 possible bad axioms.
+[2026-06-28 06:24:27.854] Selected the bad axiom SubClassOf(Lifestyle_Modifications ObjectSomeValuesFrom(treats Benign_Renovascular_Hypertension)).
+[2026-06-28 06:24:27.859] Found 574 possible bad axioms.
+[2026-06-28 06:24:27.859] Selected the bad axiom SubClassOf(Urinary_Changes ObjectSomeValuesFrom(isSymptomOf Malignant_Hypertensive_Renal_Disease)).
+[2026-06-28 06:24:27.864] Found 573 possible bad axioms.
+[2026-06-28 06:24:27.864] Selected the bad axiom ClassAssertion(Inflammatory_and_Autoimmune_Factors Thyroid_Disease).
+[2026-06-28 06:24:27.865] Found 572 possible bad axioms.
+[2026-06-28 06:24:27.865] Selected the bad axiom SubClassOf(Metabolic_Factors ObjectSomeValuesFrom(canCause Mild_Pre-Eclampsia)).
+[2026-06-28 06:24:27.870] Found 571 possible bad axioms.
+[2026-06-28 06:24:27.870] Selected the bad axiom SubClassOf(Mortality_and_Serio
+...[truncated]
+FAIL: attempt=3 seed=28536 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=3 success=0/100
+----- HPO attempt=4 seed=42736 at 2026-06-28 06:32:21 -----
+--- stdout ---
+{"seed":42736,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":467,"A2":158651,"A3":817,"B1":1216,"B2":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=42736, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:32:21.597] Checking precondition...
+[2026-06-28 06:32:21.624] Starting the repair...
+[2026-06-28 06:32:21.635] Found 584 possible bad axioms.
+[2026-06-28 06:32:21.638] Selected the bad axiom SubClassOf(Organ-specific_Complications ObjectSomeValuesFrom(createsTheRiskOf Severe_Pre-Eclampsia)).
+[2026-06-28 06:32:21.647] Found 583 possible bad axioms.
+[2026-06-28 06:32:21.648] Selected the bad axiom SubClassOf(Benign_Secondary_Hypertension Secondary_Hypertension).
+[2026-06-28 06:32:21.655] Found 582 possible bad axioms.
+[2026-06-28 06:32:21.655] Selected the bad axiom SubClassOf(Cerebrovascular_Complications ObjectSomeValuesFrom(createsTheRiskOf Malignant_Renovascular_Hypertension)).
+[2026-06-28 06:32:21.662] Found 581 possible bad axioms.
+[2026-06-28 06:32:21.662] Selected the bad axiom SubClassOf(Perinatal_Factors ObjectSomeValuesFrom(canCause Persistent_Fetal_Circulation_Syndrome)).
+[2026-06-28 06:32:21.669] Found 580 possible bad axioms.
+[2026-06-28 06:32:21.669] Selected the bad axiom SubClassOf(General_Symptoms ObjectSomeValuesFrom(isSymptomOf Persistent_Fetal_Circulation_Syndrome)).
+[2026-06-28 06:32:21.680] Found 579 possible bad axioms.
+[2026-06-28 06:32:21.680] Selected the bad axiom SubClassOf(Cognitive-and_Mental_Symptoms ObjectSomeValuesFrom(isSymptomOf Benign_Hypertensive_Renal_Disease)).
+[2026-06-28 06:32:21.686] Found 578 possible bad axioms.
+[2026-06-28 06:32:21.686] Selected the bad axiom ClassAssertion(Cognitive-and_Mental_Symptoms Headaches).
+[2026-06-28 06:32:21.688] Found 577 possible bad axioms.
+[2026-06-28 06:32:21.688] Selected the bad axiom SubClassOf(Genetic_and_Family_History Hypertension_Causes).
+[2026-06-28 06:32:21.693] Found 576 possible bad axioms.
+[2026-06-28 06:32:21.693] Selected the bad axiom ClassAssertion(Perinatal_Factors Sepsis).
+[2026-06-28 06:32:21.695] Found 575 possible bad axioms.
+[2026-06-28 06:32:21.695] Selected the bad axiom SubClassOf(Corticosteriods_Medications ObjectSomeValuesFrom(treats Severe_Pre-Eclampsia)).
+[2026-06-28 06:32:21.699] Found 574 possible bad axioms.
+[2026-06-28 06:32:21.699] Selected the bad axiom ClassAssertion(Inflammatory_and_Autoimmune_Factors Vasculitis).
+[2026-06-28 06:32:21.701] Found 573 possible bad axioms.
+[2026-06-28 06:32:21.701] Selected the bad axiom ClassAssertion(General_Symptoms Lethargy).
+[2026-06-28 06:32:21.702] Found 572 possible bad axioms.
+[2026-06-28 06:32:21.702] Selected the bad axiom SubClassOf(Corticosteriods_Medications ObjectSomeValuesFrom(treats Mild_Pre-Eclampsia)).
+[2026-06-28 06:32:21.706] Found 571 possible bad axioms.
+[2026-06-28 06:32:
+...[truncated]
+FAIL: attempt=4 seed=42736 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=4 success=0/100
+----- HPO attempt=5 seed=56936 at 2026-06-28 06:40:02 -----
+--- stdout ---
+{"seed":56936,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":372,"A2":159411,"A3":1250,"B1":773,"B2":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=56936, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:40:03.282] Checking precondition...
+[2026-06-28 06:40:03.309] Starting the repair...
+[2026-06-28 06:40:03.322] Found 584 possible bad axioms.
+[2026-06-28 06:40:03.324] Selected the bad axiom ClassAssertion(Heart-related_Symptoms Rapid_Heart_Rate).
+[2026-06-28 06:40:03.327] Found 583 possible bad axioms.
+[2026-06-28 06:40:03.328] Selected the bad axiom SubClassOf(Surgical_Interventions Hospital-based_Treatments).
+[2026-06-28 06:40:03.336] Found 582 possible bad axioms.
+[2026-06-28 06:40:03.337] Selected the bad axiom SubClassOf(Retinal_Complications ObjectSomeValuesFrom(createsTheRiskOf Benign_Essential_Hypertension)).
+[2026-06-28 06:40:03.343] Found 581 possible bad axioms.
+[2026-06-28 06:40:03.344] Selected the bad axiom SubClassOf(Respiratory_Symptoms ObjectSomeValuesFrom(isSymptomOf Benign_Renovascular_Hypertension)).
+[2026-06-28 06:40:03.350] Found 580 possible bad axioms.
+[2026-06-28 06:40:03.351] Selected the bad axiom SubClassOf(Respiratory_Symptoms Cardiovascular_Symptoms).
+[2026-06-28 06:40:03.356] Found 579 possible bad axioms.
+[2026-06-28 06:40:03.357] Selected the bad axiom SubClassOf(Metabolic_Changes ObjectSomeValuesFrom(isSymptomOf Diabetes)).
+[2026-06-28 06:40:03.367] Found 578 possible bad axioms.
+[2026-06-28 06:40:03.367] Selected the bad axiom SubClassOf(Lifestyle_Factors ObjectSomeValuesFrom(canCause Nephrosclerosis)).
+[2026-06-28 06:40:03.372] Found 577 possible bad axioms.
+[2026-06-28 06:40:03.372] Selected the bad axiom SubClassOf(Respiratory_Symptoms ObjectSomeValuesFrom(isSymptomOf Malignant_Hypertensive_Renal_Disease)).
+[2026-06-28 06:40:03.377] Found 576 possible bad axioms.
+[2026-06-28 06:40:03.378] Selected the bad axiom ClassAssertion(Cardiovascular_support Inotropic_Support).
+[2026-06-28 06:40:03.379] Found 575 possible bad axioms.
+[2026-06-28 06:40:03.379] Selected the bad axiom SubClassOf(Laboratory_Test ObjectSomeValuesFrom(detects Renovascular_Hypertension)).
+[2026-06-28 06:40:03.384] Found 574 possible bad axioms.
+[2026-06-28 06:40:03.384] Selected the bad axiom SubClassOf(Edema_and_Swelling ObjectSomeValuesFrom(isSymptomOf Eclampsia)).
+[2026-06-28 06:40:03.388] Found 573 possible bad axioms.
+[2026-06-28 06:40:03.389] Selected the bad axiom ClassAssertion(Diabetes_Screening_and_Monitoring Hemoglobin_A1C).
+[2026-06-28 06:40:03.390] Found 572 possible bad axioms.
+[2026-06-28 06:40:03.390] Selected the bad axiom SubClassOf(Environmental_and_Occupational_Factors ObjectSomeValuesFrom(canCause Severe_Pre-Eclampsia)).
+[2026-06-28 06:40:03.394] Found 571 possible bad axioms.
+[2026-06-28 06:40:03.395] Selected 
+...[truncated]
+FAIL: attempt=5 seed=56936 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=5 success=0/100
+----- HPO attempt=6 seed=71136 at 2026-06-28 06:47:45 -----
+--- stdout ---
+{"seed":71136,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":338,"A2":160591,"A3":773,"B1":1208,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=71136, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:47:45.577] Checking precondition...
+[2026-06-28 06:47:45.603] Starting the repair...
+[2026-06-28 06:47:45.616] Found 584 possible bad axioms.
+[2026-06-28 06:47:45.618] Selected the bad axiom SubClassOf(Urinary_Changes ObjectSomeValuesFrom(isSymptomOf Nephrosclerosis)).
+[2026-06-28 06:47:45.629] Found 583 possible bad axioms.
+[2026-06-28 06:47:45.629] Selected the bad axiom SubClassOf(Vascular_Factors Medical_Conditions).
+[2026-06-28 06:47:45.637] Found 582 possible bad axioms.
+[2026-06-28 06:47:45.637] Selected the bad axiom SubClassOf(Diabetes_Screening_and_Monitoring ObjectSomeValuesFrom(detects Diabetes)).
+[2026-06-28 06:47:45.644] Found 581 possible bad axioms.
+[2026-06-28 06:47:45.645] Selected the bad axiom SubClassOf(Hypertension_Medications ObjectSomeValuesFrom(treats Mild_Pre-Eclampsia)).
+[2026-06-28 06:47:45.650] Found 580 possible bad axioms.
+[2026-06-28 06:47:45.651] Selected the bad axiom SubClassOf(Circulation-related_Symptoms Cardiovascular_Symptoms).
+[2026-06-28 06:47:45.662] Found 579 possible bad axioms.
+[2026-06-28 06:47:45.662] Selected the bad axiom SubClassOf(Edema_and_Swelling ObjectSomeValuesFrom(isSymptomOf Nephrosclerosis)).
+[2026-06-28 06:47:45.668] Found 578 possible bad axioms.
+[2026-06-28 06:47:45.669] Selected the bad axiom SubClassOf(Cognitive-and_Mental_Symptoms ObjectSomeValuesFrom(isSymptomOf Pulmonary_Venoocclusive_Disease)).
+[2026-06-28 06:47:45.673] Found 577 possible bad axioms.
+[2026-06-28 06:47:45.674] Selected the bad axiom ClassAssertion(Occupational_Factors Organic_Solvents).
+[2026-06-28 06:47:45.676] Found 576 possible bad axioms.
+[2026-06-28 06:47:45.676] Selected the bad axiom ClassAssertion(Renal_Failure Renal_Failure).
+[2026-06-28 06:47:45.677] Found 575 possible bad axioms.
+[2026-06-28 06:47:45.677] Selected the bad axiom ClassAssertion(Retinal_Complications Retinopathy).
+[2026-06-28 06:47:45.679] Found 574 possible bad axioms.
+[2026-06-28 06:47:45.679] Selected the bad axiom ClassAssertion(Cardiovascular_support Angioplasty).
+[2026-06-28 06:47:45.681] Found 573 possible bad axioms.
+[2026-06-28 06:47:45.681] Selected the bad axiom SubClassOf(Hypertension_Medications ObjectSomeValuesFrom(treats Malignant_Secondary_Hypertension)).
+[2026-06-28 06:47:45.685] Found 572 possible bad axioms.
+[2026-06-28 06:47:45.685] Selected the bad axiom SubClassOf(Pregnancy_and_Birth-related-complications ObjectSomeValuesFrom(createsTheRiskOf Mild_Pre-Eclampsia)).
+[2026-06-28 06:47:45.690] Found 571 possible bad axioms.
+[2026-06-28 06:47:45.690] Selected the bad axiom ClassAssertion(Metabolic_Changes Excessiv
+...[truncated]
+FAIL: attempt=6 seed=71136 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=6 success=0/100
+----- HPO attempt=7 seed=85336 at 2026-06-28 06:55:28 -----
+--- stdout ---
+{"seed":85336,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":813,"A2":161540,"A3":1301,"B1":1125,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=85336, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:55:28.995] Checking precondition...
+[2026-06-28 06:55:29.017] Starting the repair...
+[2026-06-28 06:55:29.033] Found 584 possible bad axioms.
+[2026-06-28 06:55:29.035] Selected the bad axiom ClassAssertion(Hypertension_Medications Renin_Inhibitors).
+[2026-06-28 06:55:29.039] Found 583 possible bad axioms.
+[2026-06-28 06:55:29.039] Selected the bad axiom SubClassOf(Retinal_Complications ObjectSomeValuesFrom(createsTheRiskOf Benign_Secondary_Hypertension)).
+[2026-06-28 06:55:29.048] Found 582 possible bad axioms.
+[2026-06-28 06:55:29.048] Selected the bad axiom ClassAssertion(Pregnancy_and_Birth-related-complications Fetal_Growth_Restrction).
+[2026-06-28 06:55:29.050] Found 581 possible bad axioms.
+[2026-06-28 06:55:29.051] Selected the bad axiom SubClassOf(Renal_Care ObjectSomeValuesFrom(treats Malignant_Secondary_Hypertension)).
+[2026-06-28 06:55:29.058] Found 580 possible bad axioms.
+[2026-06-28 06:55:29.058] Selected the bad axiom ClassAssertion(Lifestyle_Factors Stress).
+[2026-06-28 06:55:29.060] Found 579 possible bad axioms.
+[2026-06-28 06:55:29.060] Selected the bad axiom ClassAssertion(Kidney_Function Decreased_Kidney_Functions).
+[2026-06-28 06:55:29.062] Found 578 possible bad axioms.
+[2026-06-28 06:55:29.062] Selected the bad axiom SubClassOf(Respiratory_Symptoms ObjectSomeValuesFrom(isSymptomOf Benign_Essential_Hypertension)).
+[2026-06-28 06:55:29.067] Found 577 possible bad axioms.
+[2026-06-28 06:55:29.068] Selected the bad axiom ClassAssertion(Endocrine_Factors Cushings_Syndrome).
+[2026-06-28 06:55:29.069] Found 576 possible bad axioms.
+[2026-06-28 06:55:29.069] Selected the bad axiom SubClassOf(Hypertension_Medications ObjectSomeValuesFrom(treats Mild_Pre-Eclampsia)).
+[2026-06-28 06:55:29.079] Found 575 possible bad axioms.
+[2026-06-28 06:55:29.079] Selected the bad axiom SubClassOf(Vascular_Factors Medical_Conditions).
+[2026-06-28 06:55:29.084] Found 574 possible bad axioms.
+[2026-06-28 06:55:29.085] Selected the bad axiom ClassAssertion(Cardiovascular_support Angioplasty).
+[2026-06-28 06:55:29.086] Found 573 possible bad axioms.
+[2026-06-28 06:55:29.086] Selected the bad axiom SubClassOf(Retinal_Complications ObjectSomeValuesFrom(createsTheRiskOf Benign_Essential_Hypertension)).
+[2026-06-28 06:55:29.090] Found 572 possible bad axioms.
+[2026-06-28 06:55:29.091] Selected the bad axiom SubClassOf(Respiratory_Factors Medical_Conditions).
+[2026-06-28 06:55:29.096] Found 571 possible bad axioms.
+[2026-06-28 06:55:29.096] Selected the bad axiom ClassAssertion(Diagnostic_Imaging Computed_Tomography_Angiography).
+[2026-06-28 06:55:
+...[truncated]
+FAIL: attempt=7 seed=85336 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=7 success=0/100
+----- HPO attempt=8 seed=99536 at 2026-06-28 07:03:13 -----
+--- stdout ---
+{"seed":99536,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":427,"A2":157964,"A3":1250,"B1":1110,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=99536, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:03:14.288] Checking precondition...
+[2026-06-28 07:03:14.315] Starting the repair...
+[2026-06-28 07:03:14.327] Found 584 possible bad axioms.
+[2026-06-28 07:03:14.330] Selected the bad axiom SubClassOf(Retinal_Complications ObjectSomeValuesFrom(createsTheRiskOf Malignant_Secondary_Hypertension)).
+[2026-06-28 07:03:14.341] Found 583 possible bad axioms.
+[2026-06-28 07:03:14.342] Selected the bad axiom SubClassOf(Renal_Assesment Hypertension_Detection).
+[2026-06-28 07:03:14.350] Found 582 possible bad axioms.
+[2026-06-28 07:03:14.350] Selected the bad axiom ClassAssertion(Pancreatic_Factors Dysfunction_of_pancreatic_Beta_Cells).
+[2026-06-28 07:03:14.352] Found 581 possible bad axioms.
+[2026-06-28 07:03:14.353] Selected the bad axiom SubClassOf(Lifestyle_Factors ObjectSomeValuesFrom(canCause Nephrosclerosis)).
+[2026-06-28 07:03:14.360] Found 580 possible bad axioms.
+[2026-06-28 07:03:14.360] Selected the bad axiom ClassAssertion(Monitoring_and_Follow-up Regular_Check-ups).
+[2026-06-28 07:03:14.362] Found 579 possible bad axioms.
+[2026-06-28 07:03:14.362] Selected the bad axiom SubClassOf(Insulin_Therapy Medication).
+[2026-06-28 07:03:14.374] Found 578 possible bad axioms.
+[2026-06-28 07:03:14.374] Selected the bad axiom SubClassOf(Cerebrovascular_Complications ObjectSomeValuesFrom(createsTheRiskOf Malignant_Secondary_Hypertension)).
+[2026-06-28 07:03:14.380] Found 577 possible bad axioms.
+[2026-06-28 07:03:14.381] Selected the bad axiom SubClassOf(Hypertension_Medications ObjectSomeValuesFrom(treats Pulmonary_Venoocclusive_Disease)).
+[2026-06-28 07:03:14.386] Found 576 possible bad axioms.
+[2026-06-28 07:03:14.386] Selected the bad axiom SubClassOf(Obstetric_Care ObjectSomeValuesFrom(treats Severe_Pre-Eclampsia)).
+[2026-06-28 07:03:14.391] Found 575 possible bad axioms.
+[2026-06-28 07:03:14.391] Selected the bad axiom ClassAssertion(Endocrine_Factors Cushings_Syndrome).
+[2026-06-28 07:03:14.392] Found 574 possible bad axioms.
+[2026-06-28 07:03:14.392] Selected the bad axiom SubClassOf(Environmental_and_Occupational_Factors Hypertension_Causes).
+[2026-06-28 07:03:14.397] Found 573 possible bad axioms.
+[2026-06-28 07:03:14.397] Selected the bad axiom SubClassOf(Imaging ObjectSomeValuesFrom(detects Renovascular_Hypertension)).
+[2026-06-28 07:03:14.402] Found 572 possible bad axioms.
+[2026-06-28 07:03:14.402] Selected the bad axiom SubClassOf(Metabolic_Factors Medical_Conditions).
+[2026-06-28 07:03:14.407] Found 571 possible bad axioms.
+[2026-06-28 07:03:14.407] Selected the bad axiom SubClassOf(Lifestyle_Factors Hypertension_Causes).
+[2026-06-
+...[truncated]
+FAIL: attempt=8 seed=99536 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=8 success=0/100
+----- HPO attempt=9 seed=113736 at 2026-06-28 07:10:55 -----
+--- stdout ---
+{"seed":113736,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":777,"A2":159138,"A3":1270,"B1":1130,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=113736, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:10:55.546] Checking precondition...
+[2026-06-28 07:10:55.573] Starting the repair...
+[2026-06-28 07:10:55.585] Found 584 possible bad axioms.
+[2026-06-28 07:10:55.587] Selected the bad axiom ClassAssertion(Respiratory_Symptoms Cough).
+[2026-06-28 07:10:55.591] Found 583 possible bad axioms.
+[2026-06-28 07:10:55.591] Selected the bad axiom SubClassOf(Renal_Failure ObjectSomeValuesFrom(createsTheRiskOf Renovascular_Hypertension)).
+[2026-06-28 07:10:55.602] Found 582 possible bad axioms.
+[2026-06-28 07:10:55.602] Selected the bad axiom SubClassOf(Gastrointestinal_Symptoms Other_Symptoms).
+[2026-06-28 07:10:55.610] Found 581 possible bad axioms.
+[2026-06-28 07:10:55.610] Selected the bad axiom SubClassOf(Blood_Vessel_Complications ObjectSomeValuesFrom(createsTheRiskOf Malignant_Essential_Hypertension)).
+[2026-06-28 07:10:55.617] Found 580 possible bad axioms.
+[2026-06-28 07:10:55.618] Selected the bad axiom SubClassOf(Perinatal_Factors ObjectSomeValuesFrom(canCause Persistent_Fetal_Circulation_Syndrome)).
+[2026-06-28 07:10:55.623] Found 579 possible bad axioms.
+[2026-06-28 07:10:55.629] Selected the bad axiom SubClassOf(Benign_Renovascular_Hypertension Renal_Hypertension).
+[2026-06-28 07:10:55.635] Found 578 possible bad axioms.
+[2026-06-28 07:10:55.636] Selected the bad axiom ClassAssertion(Metabolic_Factors Triglycerides).
+[2026-06-28 07:10:55.637] Found 577 possible bad axioms.
+[2026-06-28 07:10:55.637] Selected the bad axiom ClassAssertion(Lifestyle_Factors Physical_Inactivity).
+[2026-06-28 07:10:55.638] Found 576 possible bad axioms.
+[2026-06-28 07:10:55.639] Selected the bad axiom SubClassOf(Circulatory_Symptoms ObjectSomeValuesFrom(isSymptomOf Eclampsia)).
+[2026-06-28 07:10:55.643] Found 575 possible bad axioms.
+[2026-06-28 07:10:55.643] Selected the bad axiom ClassAssertion(Respiratory_Symptoms Tachypnea).
+[2026-06-28 07:10:55.644] Found 574 possible bad axioms.
+[2026-06-28 07:10:55.645] Selected the bad axiom SubClassOf(Gastrointestinal_Symptoms ObjectSomeValuesFrom(isSymptomOf Malignant_Hypertensive_Renal_Disease)).
+[2026-06-28 07:10:55.650] Found 573 possible bad axioms.
+[2026-06-28 07:10:55.650] Selected the bad axiom SubClassOf(Cerebrovascular_Complications ObjectSomeValuesFrom(createsTheRiskOf Benign_Secondary_Hypertension)).
+[2026-06-28 07:10:55.655] Found 572 possible bad axioms.
+[2026-06-28 07:10:55.655] Selected the bad axiom SubClassOf(Respiratory_Symptoms ObjectSomeValuesFrom(isSymptomOf Malignant_Essential_Hypertension)).
+[2026-06-28 07:10:55.659] Found 571 possible bad axioms.
+[2026-06-28 07:10:55.660] Selected the bad
+...[truncated]
+FAIL: attempt=9 seed=113736 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=9 success=0/100
+----- HPO attempt=10 seed=127936 at 2026-06-28 07:18:37 -----
+--- stdout ---
+{"seed":127936,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":123,"A2":166882,"A3":803,"B1":762,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HPO.owl, seed=127936, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:18:38.388] Checking precondition...
+[2026-06-28 07:18:38.408] Starting the repair...
+[2026-06-28 07:18:38.427] Found 584 possible bad axioms.
+[2026-06-28 07:18:38.429] Selected the bad axiom SubClassOf(Lifestyle_Factors ObjectSomeValuesFrom(canCause Persistent_Fetal_Circulation_Syndrome)).
+[2026-06-28 07:18:38.441] Found 583 possible bad axioms.
+[2026-06-28 07:18:38.441] Selected the bad axiom ClassAssertion(Circulation-related_Symptoms Blood_Vessels_Damage).
+[2026-06-28 07:18:38.444] Found 582 possible bad axioms.
+[2026-06-28 07:18:38.444] Selected the bad axiom SubClassOf(Kidney_Damage ObjectSomeValuesFrom(createsTheRiskOf Eclampsia)).
+[2026-06-28 07:18:38.453] Found 581 possible bad axioms.
+[2026-06-28 07:18:38.453] Selected the bad axiom SubClassOf(Medications ObjectSomeValuesFrom(canCause Benign_Secondary_Hypertension)).
+[2026-06-28 07:18:38.459] Found 580 possible bad axioms.
+[2026-06-28 07:18:38.459] Selected the bad axiom SubClassOf(Blood_Pressure-related_Symptoms ObjectSomeValuesFrom(isSymptomOf Nephrosclerosis)).
+[2026-06-28 07:18:38.465] Found 579 possible bad axioms.
+[2026-06-28 07:18:38.465] Selected the bad axiom SubClassOf(Arterial_Complications ObjectSomeValuesFrom(createsTheRiskOf Malignant_Essential_Hypertension)).
+[2026-06-28 07:18:38.476] Found 578 possible bad axioms.
+[2026-06-28 07:18:38.476] Selected the bad axiom SubClassOf(Environmental_and_Occupational_Factors Hypertension_Causes).
+[2026-06-28 07:18:38.481] Found 577 possible bad axioms.
+[2026-06-28 07:18:38.482] Selected the bad axiom SubClassOf(Respiratory_Symptoms ObjectSomeValuesFrom(isSymptomOf Benign_Hypertensive_Renal_Disease)).
+[2026-06-28 07:18:38.487] Found 576 possible bad axioms.
+[2026-06-28 07:18:38.487] Selected the bad axiom SubClassOf(Insulin_Therapy ObjectSomeValuesFrom(treats owl:Nothing)).
+[2026-06-28 07:18:38.506] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-28 07:18:38.507] Checking precondition...
+[2026-06-28 07:18:38.517] Starting the repair...
+[2026-06-28 07:21:25.386] Found 2 possible bad axioms.
+[2026-06-28 07:21:25.386] Selected the bad axiom ClassAssertion(Insulin_Therapy Insulin_Therapy).
+[2026-06-28 07:21:25.390] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-28 07:21:25.392] Checking precondition...
+[2026-06-28 07:21:25.396] Starting the repair...
+[2026-06-28 07:21:25.418] Selected a reference ontology with 870 axioms.
+[2026-06-28 07:21:26.131] Selected the bad axiom ClassAssertion(Insulin_Therapy Insulin_Therapy).
+[2026-06-28 07:21:26.188] Selected
+...[truncated]
+FAIL: attempt=10 seed=127936 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=HPO attempt=10 success=0/100
+=== ABORTED HPO after 10 consecutive failures at 2026-06-28 07:26:27 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for HPO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=136 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=2 seed=14336 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=3 seed=28536 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=4 seed=42736 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=5 seed=56936 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=6 seed=71136 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=7 seed=85336 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=8 seed=99536 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=9 seed=113736 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=10 seed=127936 msg=Repair timeout: B2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=4643.716150 avg_seconds=464.371615
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

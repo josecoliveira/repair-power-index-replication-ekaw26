@@ -1,0 +1,372 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-COB.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-COB.csv
+
+=== Starting sequential trials for COB at 2026-06-26 10:48:51 ===
+----- COB attempt=1 seed=72 at 2026-06-26 10:48:51 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=72, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 10:48:51.898] Checking precondition...
+[2026-06-26 10:48:51.914] Starting the repair...
+[2026-06-26 10:48:51.921] Found 137 possible bad axioms.
+[2026-06-26 10:48:51.923] Selected the bad axiom SubClassOf(ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000011) http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 10:48:51.928] Found 136 possible bad axioms.
+[2026-06-26 10:48:51.929] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000029 ObjectUnionOf(http://purl.obolibrary.org/obo/UBERON_0000465 http://purl.obolibrary.org/obo/UBERON_0000466)).
+[2026-06-26 10:48:51.934] Found 135 possible bad axioms.
+[2026-06-26 10:48:51.934] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000083 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000082)).
+[2026-06-26 10:48:51.939] Found 134 possible bad axioms.
+[2026-06-26 10:48:51.939] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000016 http://purl.obolibrary.org/obo/BFO_0000023).
+[2026-06-26 10:48:51.943] Found 133 possible bad axioms.
+[2026-06-26 10:48:51.943] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://purl.obolibrary.org/obo/OBI_0000312 http://purl.obolibrary.org/obo/COB_0000035)).
+[2026-06-26 10:48:51.951] Found 132 possible bad axioms.
+[2026-06-26 10:48:51.951] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000026 http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 10:48:51.954] Found 131 possible bad axioms.
+[2026-06-26 10:48:51.955] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000035 http://purl.obolibrary.org/obo/COB_0000082).
+[2026-06-26 10:48:51.958] Found 130 possible bad axioms.
+[2026-06-26 10:48:51.959] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:48:51.964] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 10:48:51.965] Checking precondition...
+[2026-06-26 10:48:51.971] Starting the repair...
+[2026-06-26 10:48:56.341] Found 1 possible bad axioms.
+[2026-06-26 10:48:56.341] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:48:56.343] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 10:48:56.344] Checking precondition...
+[2026-06-26 10:48:56.346] Startin
+...[truncated]
+FAIL: attempt=1 seed=72 - negative return code -9
+progress: ontology=COB attempt=1 success=0/100
+----- COB attempt=2 seed=14272 at 2026-06-26 10:51:07 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=14272, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 10:51:07.407] Checking precondition...
+[2026-06-26 10:51:07.424] Starting the repair...
+[2026-06-26 10:51:07.432] Found 137 possible bad axioms.
+[2026-06-26 10:51:07.434] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0032991 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/PR_000000001)).
+[2026-06-26 10:51:07.440] Found 136 possible bad axioms.
+[2026-06-26 10:51:07.440] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000022 http://purl.obolibrary.org/obo/UBERON_0000465).
+[2026-06-26 10:51:07.445] Found 135 possible bad axioms.
+[2026-06-26 10:51:07.445] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000049 http://purl.obolibrary.org/obo/COB_0000013).
+[2026-06-26 10:51:07.450] Found 134 possible bad axioms.
+[2026-06-26 10:51:07.450] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000110 ObjectIntersectionOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/OBI_0000293 http://purl.obolibrary.org/obo/ENVO_01000813) ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/OBI_0000299 http://purl.obolibrary.org/obo/BFO_0000040))).
+[2026-06-26 10:51:07.455] Found 133 possible bad axioms.
+[2026-06-26 10:51:07.455] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0001300 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/ENVO_02500000)).
+[2026-06-26 10:51:07.463] Found 132 possible bad axioms.
+[2026-06-26 10:51:07.463] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PCO_0000000 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000022)).
+[2026-06-26 10:51:07.467] Found 131 possible bad axioms.
+[2026-06-26 10:51:07.467] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000013 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:51:07.471] Found 130 possible bad axioms.
+[2026-06-26 10:51:07.471] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000035 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000055 http://purl.obolibrary.org/obo/OBI_0000260)).
+[2026-06-26 10:51:07.475] Found 129 possible bad axioms.
+[2026-06-26 10:51:07.475] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:51:07.478] Finished repairing the ontology.
+Rep
+...[truncated]
+FAIL: attempt=2 seed=14272 - negative return code -9
+progress: ontology=COB attempt=2 success=0/100
+----- COB attempt=3 seed=28472 at 2026-06-26 10:53:03 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=28472, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 10:53:04.404] Checking precondition...
+[2026-06-26 10:53:04.422] Starting the repair...
+[2026-06-26 10:53:04.430] Found 137 possible bad axioms.
+[2026-06-26 10:53:04.432] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000011 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/CHEBI_33252)).
+[2026-06-26 10:53:04.438] Found 136 possible bad axioms.
+[2026-06-26 10:53:04.438] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:53:04.444] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 10:53:04.445] Checking precondition...
+[2026-06-26 10:53:04.454] Starting the repair...
+[2026-06-26 10:53:08.875] Found 1 possible bad axioms.
+[2026-06-26 10:53:08.875] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:53:08.877] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 10:53:08.878] Checking precondition...
+[2026-06-26 10:53:08.880] Starting the repair...
+[2026-06-26 10:53:08.896] Selected a reference ontology with 205 axioms.
+[2026-06-26 10:53:09.202] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:53:09.285] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/BFO_0000015)).
+[2026-06-26 10:53:09.772] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/BFO_0000015)).
+[2026-06-26 10:53:09.778] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:53:10.033] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:53:10.033] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectSomeValuesFrom(http://purl.
+...[truncated]
+FAIL: attempt=3 seed=28472 - negative return code -9
+progress: ontology=COB attempt=3 success=0/100
+----- COB attempt=4 seed=42672 at 2026-06-26 10:55:03 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=42672, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 10:55:03.837] Checking precondition...
+[2026-06-26 10:55:03.853] Starting the repair...
+[2026-06-26 10:55:03.861] Found 137 possible bad axioms.
+[2026-06-26 10:55:03.863] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PR_000000001 http://purl.obolibrary.org/obo/PR_000018263).
+[2026-06-26 10:55:03.869] Found 136 possible bad axioms.
+[2026-06-26 10:55:03.869] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/COB_0000022) http://purl.obolibrary.org/obo/COB_0000011).
+[2026-06-26 10:55:03.874] Found 135 possible bad axioms.
+[2026-06-26 10:55:03.874] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/UBERON_0000465 http://purl.obolibrary.org/obo/UBERON_0001062) http://purl.obolibrary.org/obo/ENVO_01000813).
+[2026-06-26 10:55:03.879] Found 134 possible bad axioms.
+[2026-06-26 10:55:03.880] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0001300 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/BFO_0000015)).
+[2026-06-26 10:55:03.883] Found 133 possible bad axioms.
+[2026-06-26 10:55:03.884] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000016 http://purl.obolibrary.org/obo/BFO_0000017).
+[2026-06-26 10:55:03.891] Found 132 possible bad axioms.
+[2026-06-26 10:55:03.892] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000465 ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0110165 ObjectUnionOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.obolibrary.org/obo/COB_0000022))).
+[2026-06-26 10:55:03.895] Found 131 possible bad axioms.
+[2026-06-26 10:55:03.895] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://purl.obolibrary.org/obo/OBI_0000295 http://purl.obolibrary.org/obo/COB_0000035)).
+[2026-06-26 10:55:03.899] Found 130 possible bad axioms.
+[2026-06-26 10:55:03.899] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/OBI_0000293 owl:Thing) http://purl.obolibrary.org/obo/COB_0000035).
+[2026-06-26 10:55:03.902] Found 129 possible bad axioms.
+[2026-06-26 10:55:03.902] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/BFO_0000015) http://purl.obolibrary.org/obo/COB_0000026).
+[2026-06-26 10:55:03.905] Found 128 possible bad axioms.
+[2026-06-26 10:55:03.906] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002233 owl:Thing) http://purl.obolibrar
+...[truncated]
+FAIL: attempt=4 seed=42672 - negative return code -9
+progress: ontology=COB attempt=4 success=0/100
+----- COB attempt=5 seed=56872 at 2026-06-26 10:57:01 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=56872, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 10:57:01.873] Checking precondition...
+[2026-06-26 10:57:01.889] Starting the repair...
+[2026-06-26 10:57:01.897] Found 137 possible bad axioms.
+[2026-06-26 10:57:01.898] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000017 http://purl.obolibrary.org/obo/COB_0000502).
+[2026-06-26 10:57:01.905] Found 136 possible bad axioms.
+[2026-06-26 10:57:01.905] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000021 http://purl.obolibrary.org/obo/UBERON_0000465).
+[2026-06-26 10:57:01.910] Found 135 possible bad axioms.
+[2026-06-26 10:57:01.910] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CHEBI_30222 http://purl.obolibrary.org/obo/CHEBI_36342).
+[2026-06-26 10:57:01.916] Found 134 possible bad axioms.
+[2026-06-26 10:57:01.916] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0003674 http://purl.obolibrary.org/obo/MOP_0000543).
+[2026-06-26 10:57:01.924] Found 133 possible bad axioms.
+[2026-06-26 10:57:01.925] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000035 http://purl.obolibrary.org/obo/COB_0000083).
+[2026-06-26 10:57:01.929] Found 132 possible bad axioms.
+[2026-06-26 10:57:01.929] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000013 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 10:57:01.932] Found 131 possible bad axioms.
+[2026-06-26 10:57:01.933] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/BFO_0000040 http://purl.obolibrary.org/obo/UBERON_0000466) http://purl.obolibrary.org/obo/ENVO_01000813).
+[2026-06-26 10:57:01.936] Found 130 possible bad axioms.
+[2026-06-26 10:57:01.936] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/OBI_0000293 owl:Thing) http://purl.obolibrary.org/obo/COB_0000035).
+[2026-06-26 10:57:01.939] Found 129 possible bad axioms.
+[2026-06-26 10:57:01.940] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0032991 http://purl.obolibrary.org/obo/COB_0000080).
+[2026-06-26 10:57:01.943] Found 128 possible bad axioms.
+[2026-06-26 10:57:01.943] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0032991 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/PR_000000001)).
+[2026-06-26 10:57:01.945] Found 127 possible bad axioms.
+[2026-06-26 10:57:01.946] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000026 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/OBI_0000312 http://purl.obolibrary.org/obo/COB_0000110)
+...[truncated]
+FAIL: attempt=5 seed=56872 - negative return code -9
+progress: ontology=COB attempt=5 success=0/100
+----- COB attempt=6 seed=71072 at 2026-06-26 10:59:00 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=71072, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 10:59:00.887] Checking precondition...
+[2026-06-26 10:59:00.903] Starting the repair...
+[2026-06-26 10:59:00.912] Found 137 possible bad axioms.
+[2026-06-26 10:59:00.913] Selected the bad axiom SubClassOf(ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000011) http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 10:59:00.919] Found 136 possible bad axioms.
+[2026-06-26 10:59:00.919] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0110165 http://purl.obolibrary.org/obo/GO_0044423).
+[2026-06-26 10:59:00.924] Found 135 possible bad axioms.
+[2026-06-26 10:59:00.924] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0110165 ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0032991 http://purl.obolibrary.org/obo/GO_0044423)) http://purl.obolibrary.org/obo/GO_0005575).
+[2026-06-26 10:59:00.929] Found 134 possible bad axioms.
+[2026-06-26 10:59:00.929] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0005575 ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0110165 ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0032991 http://purl.obolibrary.org/obo/GO_0044423))).
+[2026-06-26 10:59:00.933] Found 133 possible bad axioms.
+[2026-06-26 10:59:00.933] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/BFO_0000040 http://purl.obolibrary.org/obo/UBERON_0000466) http://purl.obolibrary.org/obo/ENVO_01000813).
+[2026-06-26 10:59:00.941] Found 132 possible bad axioms.
+[2026-06-26 10:59:00.941] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000013 http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 10:59:00.945] Found 131 possible bad axioms.
+[2026-06-26 10:59:00.945] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PO_0025131 http://purl.obolibrary.org/obo/UBERON_0000465).
+[2026-06-26 10:59:00.949] Found 130 possible bad axioms.
+[2026-06-26 10:59:00.949] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000083 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000082)).
+[2026-06-26 10:59:00.952] Found 129 possible bad axioms.
+[2026-06-26 10:59:00.952] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000465 ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0110165 ObjectUnionOf(http://purl.obolibrary.org/obo/COB_0000022 ObjectUnionOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.obolibrary.org/obo/COB_0000021)))).
+[2026-06-26 10:59:00.955] Found 128 possible bad axioms.
+[2026-06-26 10:59:00.955] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_
+...[truncated]
+FAIL: attempt=6 seed=71072 - negative return code -9
+progress: ontology=COB attempt=6 success=0/100
+----- COB attempt=7 seed=85272 at 2026-06-26 11:01:20 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=85272, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 11:01:20.510] Checking precondition...
+[2026-06-26 11:01:20.526] Starting the repair...
+[2026-06-26 11:01:20.535] Found 137 possible bad axioms.
+[2026-06-26 11:01:20.537] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0110165 ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0032991 http://purl.obolibrary.org/obo/GO_0044423)) http://purl.obolibrary.org/obo/GO_0005575).
+[2026-06-26 11:01:20.544] Found 136 possible bad axioms.
+[2026-06-26 11:01:20.544] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/NCBITaxon_10239 http://purl.obolibrary.org/obo/COB_0000022).
+[2026-06-26 11:01:20.549] Found 135 possible bad axioms.
+[2026-06-26 11:01:20.549] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CHEBI_36342 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 11:01:20.555] Found 134 possible bad axioms.
+[2026-06-26 11:01:20.556] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000082 http://purl.obolibrary.org/obo/MOP_0000543).
+[2026-06-26 11:01:20.560] Found 133 possible bad axioms.
+[2026-06-26 11:01:20.560] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000466 http://purl.obolibrary.org/obo/UBERON_0001062).
+[2026-06-26 11:01:20.568] Found 132 possible bad axioms.
+[2026-06-26 11:01:20.568] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0001300 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/BFO_0000015)).
+[2026-06-26 11:01:20.572] Found 131 possible bad axioms.
+[2026-06-26 11:01:20.572] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/BFO_0000040 http://purl.obolibrary.org/obo/UBERON_0000466) http://purl.obolibrary.org/obo/ENVO_01000813).
+[2026-06-26 11:01:20.576] Found 130 possible bad axioms.
+[2026-06-26 11:01:20.576] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/UBERON_0000465 http://purl.obolibrary.org/obo/UBERON_0000466) http://purl.obolibrary.org/obo/UBERON_0001062).
+[2026-06-26 11:01:20.579] Found 129 possible bad axioms.
+[2026-06-26 11:01:20.579] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000029 ObjectUnionOf(http://purl.obolibrary.org/obo/UBERON_0000465 http://purl.obolibrary.org/obo/UBERON_0000466)).
+[2026-06-26 11:01:20.582] Found 128 possible bad axioms.
+[2026-06-26 11:01:20.583] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0200000 ObjectIntersectionOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/OBI_0000293 http://p
+...[truncated]
+FAIL: attempt=7 seed=85272 - negative return code -9
+progress: ontology=COB attempt=7 success=0/100
+----- COB attempt=8 seed=99472 at 2026-06-26 11:03:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=99472, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 11:03:18.310] Checking precondition...
+[2026-06-26 11:03:18.329] Starting the repair...
+[2026-06-26 11:03:18.337] Found 137 possible bad axioms.
+[2026-06-26 11:03:18.339] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000049 http://purl.obolibrary.org/obo/COB_0000013).
+[2026-06-26 11:03:18.345] Found 136 possible bad axioms.
+[2026-06-26 11:03:18.345] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/OBI_0000299 owl:Thing) http://purl.obolibrary.org/obo/COB_0000035).
+[2026-06-26 11:03:18.351] Found 135 possible bad axioms.
+[2026-06-26 11:03:18.351] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PR_000018263 http://purl.obolibrary.org/obo/COB_0000013).
+[2026-06-26 11:03:18.356] Found 134 possible bad axioms.
+[2026-06-26 11:03:18.356] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PCO_0000000 http://purl.obolibrary.org/obo/COB_0000011).
+[2026-06-26 11:03:18.360] Found 133 possible bad axioms.
+[2026-06-26 11:03:18.360] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/UBERON_0000465 http://purl.obolibrary.org/obo/UBERON_0001062) http://purl.obolibrary.org/obo/ENVO_01000813).
+[2026-06-26 11:03:18.368] Found 132 possible bad axioms.
+[2026-06-26 11:03:18.369] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000080 http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 11:03:18.372] Found 131 possible bad axioms.
+[2026-06-26 11:03:18.372] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0110165 ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0032991 http://purl.obolibrary.org/obo/GO_0044423)) http://purl.obolibrary.org/obo/GO_0005575).
+[2026-06-26 11:03:18.375] Found 130 possible bad axioms.
+[2026-06-26 11:03:18.375] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0032991 http://purl.obolibrary.org/obo/GO_0005575).
+[2026-06-26 11:03:18.379] Found 129 possible bad axioms.
+[2026-06-26 11:03:18.379] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/GO_0110165 ObjectUnionOf(http://purl.obolibrary.org/obo/COB_0000022 ObjectUnionOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.obolibrary.org/obo/COB_0000021))) http://purl.obolibrary.org/obo/GO_0110165).
+[2026-06-26 11:03:18.383] Found 128 possible bad axioms.
+[2026-06-26 11:03:18.384] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/NCBITaxon_10239 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0000057 http://purl.obolibrary.org/obo/COB_0000022)).
+
+...[truncated]
+FAIL: attempt=8 seed=99472 - negative return code -9
+progress: ontology=COB attempt=8 success=0/100
+----- COB attempt=9 seed=113672 at 2026-06-26 11:05:42 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=113672, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 11:05:42.702] Checking precondition...
+[2026-06-26 11:05:42.717] Starting the repair...
+[2026-06-26 11:05:42.726] Found 137 possible bad axioms.
+[2026-06-26 11:05:42.728] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CHEBI_36342 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 11:05:42.734] Found 136 possible bad axioms.
+[2026-06-26 11:05:42.734] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0003674 http://purl.obolibrary.org/obo/MOP_0000543).
+[2026-06-26 11:05:42.740] Found 135 possible bad axioms.
+[2026-06-26 11:05:42.740] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000035 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000083)).
+[2026-06-26 11:05:42.745] Found 134 possible bad axioms.
+[2026-06-26 11:05:42.745] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/BFO_0000015)).
+[2026-06-26 11:05:42.749] Found 133 possible bad axioms.
+[2026-06-26 11:05:42.749] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0001300 http://purl.obolibrary.org/obo/COB_0000026).
+[2026-06-26 11:05:42.757] Found 132 possible bad axioms.
+[2026-06-26 11:05:42.758] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000040 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000011)).
+[2026-06-26 11:05:42.764] Found 131 possible bad axioms.
+[2026-06-26 11:05:42.764] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000011 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000051 http://purl.obolibrary.org/obo/CHEBI_33252)).
+[2026-06-26 11:05:42.769] Found 130 possible bad axioms.
+[2026-06-26 11:05:42.770] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0001000 http://purl.obolibrary.org/obo/BFO_0000015).
+[2026-06-26 11:05:42.773] Found 129 possible bad axioms.
+[2026-06-26 11:05:42.774] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000035 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000055 http://purl.obolibrary.org/obo/OBI_0000260)).
+[2026-06-26 11:05:42.777] Found 128 possible bad axioms.
+[2026-06-26 11:05:42.777] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0008150 http://purl.obolibrary.org/obo/BFO_0000015).
+[2026-06-26 11:05:42.780] Found 127 possible bad axioms.
+[2026-06-26 11:05:42.780] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000465 http://purl.obolibrary.org/obo/UBERON_0001062).
+[2026-06-26 11:05:
+...[truncated]
+FAIL: attempt=9 seed=113672 - negative return code -9
+progress: ontology=COB attempt=9 success=0/100
+----- COB attempt=10 seed=127872 at 2026-06-26 11:08:01 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/COB.owl, seed=127872, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 11:08:02.139] Checking precondition...
+[2026-06-26 11:08:02.154] Starting the repair...
+[2026-06-26 11:08:02.163] Found 137 possible bad axioms.
+[2026-06-26 11:08:02.165] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000083 ObjectComplementOf(http://purl.obolibrary.org/obo/COB_0000082)).
+[2026-06-26 11:08:02.171] Found 136 possible bad axioms.
+[2026-06-26 11:08:02.172] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/NCBITaxon_131567 http://purl.obolibrary.org/obo/COB_0000022).
+[2026-06-26 11:08:02.177] Found 135 possible bad axioms.
+[2026-06-26 11:08:02.177] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ENVO_01001110 http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 11:08:02.182] Found 134 possible bad axioms.
+[2026-06-26 11:08:02.183] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000466 http://purl.obolibrary.org/obo/UBERON_0001062).
+[2026-06-26 11:08:02.186] Found 133 possible bad axioms.
+[2026-06-26 11:08:02.187] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0000021 http://purl.obolibrary.org/obo/UBERON_0000465).
+[2026-06-26 11:08:02.194] Found 132 possible bad axioms.
+[2026-06-26 11:08:02.195] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000066 http://purl.obolibrary.org/obo/COB_0000035).
+[2026-06-26 11:08:02.198] Found 131 possible bad axioms.
+[2026-06-26 11:08:02.199] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000260 http://purl.obolibrary.org/obo/BFO_0000017).
+[2026-06-26 11:08:02.203] Found 130 possible bad axioms.
+[2026-06-26 11:08:02.203] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PO_0025131 http://purl.obolibrary.org/obo/UBERON_0000465).
+[2026-06-26 11:08:02.207] Found 129 possible bad axioms.
+[2026-06-26 11:08:02.207] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CHEBI_33252 http://purl.obolibrary.org/obo/CHEBI_36342).
+[2026-06-26 11:08:02.210] Found 128 possible bad axioms.
+[2026-06-26 11:08:02.211] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0003674 http://purl.obolibrary.org/obo/MOP_0000543).
+[2026-06-26 11:08:02.213] Found 127 possible bad axioms.
+[2026-06-26 11:08:02.213] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/COB_0001300 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002215 http://purl.obolibrary.org/obo/BFO_0000015)).
+[2026-06-26 11:08:02.221] Found 126 possible bad axioms.
+[2026-06-26 11:08:02.221] Selected the bad axiom SubClassOf(http://purl.obolibrary.o
+...[truncated]
+FAIL: attempt=10 seed=127872 - negative return code -9
+progress: ontology=COB attempt=10 success=0/100
+=== ABORTED COB after 10 consecutive failures at 2026-06-26 11:10:01 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for COB - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=72 msg=negative return code -9
+  attempt=2 seed=14272 msg=negative return code -9
+  attempt=3 seed=28472 msg=negative return code -9
+  attempt=4 seed=42672 msg=negative return code -9
+  attempt=5 seed=56872 msg=negative return code -9
+  attempt=6 seed=71072 msg=negative return code -9
+  attempt=7 seed=85272 msg=negative return code -9
+  attempt=8 seed=99472 msg=negative return code -9
+  attempt=9 seed=113672 msg=negative return code -9
+  attempt=10 seed=127872 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=1269.876409 avg_seconds=126.987641
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,375 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-YOGA.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-YOGA.csv
+
+=== Starting sequential trials for YOGA at 2026-06-25 17:18:57 ===
+----- YOGA attempt=1 seed=48 at 2026-06-25 17:18:57 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=48, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:18:57.447] Checking precondition...
+[2026-06-25 17:18:57.463] Starting the repair...
+[2026-06-25 17:18:57.471] Found 82 possible bad axioms.
+[2026-06-25 17:18:57.473] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Condition https://yogaontology.org/ontology/Acidity).
+[2026-06-25 17:18:57.479] Found 81 possible bad axioms.
+[2026-06-25 17:18:57.479] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/preparesFor ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)) ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing)).
+[2026-06-25 17:18:57.485] Found 80 possible bad axioms.
+[2026-06-25 17:18:57.485] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(https://yogaontology.org/ontology/uses https://yogaontology.org/ontology/Block)).
+[2026-06-25 17:18:57.489] Found 79 possible bad axioms.
+[2026-06-25 17:18:57.489] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Condition)).
+[2026-06-25 17:18:57.493] Found 78 possible bad axioms.
+[2026-06-25 17:18:57.493] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn owl:Nothing)).
+[2026-06-25 17:18:57.497] Found 77 possible bad axioms.
+[2026-06-25 17:18:57.497] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position) https://yogaontology.org/ontology/Position).
+[2026-06-25 17:18:57.501] Found 76 possible bad axioms.
+[2026-06-25 17:18:57.501] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/LeftArm https://yogaontology.org/ontology/Arm).
+[2026-06-25 17:18:57.504] Found 75 possible bad axioms.
+[2026-06-25 17:18:57.504] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:18:57.507] Found 74 possible bad axioms.
+[2026-06-25 17:18:57.507] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasEffectOn owl:Thing) https://yogaontology.org/ontology/Pranayama).
+[2026-06-25 17:18:57.514] Found 73 possible bad axioms.
+[2026-06-25 17:18:57.514] Sele
+...[truncated]
+FAIL: attempt=1 seed=48 - negative return code -9
+progress: ontology=YOGA attempt=1 success=0/100
+----- YOGA attempt=2 seed=14248 at 2026-06-25 17:20:36 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=14248, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:20:36.920] Checking precondition...
+[2026-06-25 17:20:36.936] Starting the repair...
+[2026-06-25 17:20:36.944] Found 82 possible bad axioms.
+[2026-06-25 17:20:36.947] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/consistsOf ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/BodyPart)) https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:20:36.952] Found 81 possible bad axioms.
+[2026-06-25 17:20:36.953] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/uses https://yogaontology.org/ontology/Props)) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:20:36.957] Found 80 possible bad axioms.
+[2026-06-25 17:20:36.957] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(https://yogaontology.org/ontology/uses https://yogaontology.org/ontology/Block)).
+[2026-06-25 17:20:36.961] Found 79 possible bad axioms.
+[2026-06-25 17:20:36.961] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Arm https://yogaontology.org/ontology/Pubis).
+[2026-06-25 17:20:36.965] Found 78 possible bad axioms.
+[2026-06-25 17:20:36.965] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/BodyPart https://yogaontology.org/ontology/Body).
+[2026-06-25 17:20:36.969] Found 77 possible bad axioms.
+[2026-06-25 17:20:36.970] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Asana ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:20:36.973] Found 76 possible bad axioms.
+[2026-06-25 17:20:36.973] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana) https://yogaontology.org/ontology/Body).
+[2026-06-25 17:20:36.975] Found 75 possible bad axioms.
+[2026-06-25 17:20:36.976] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/LeftArm https://yogaontology.org/ontology/Arm).
+[2026-06-25 17:20:36.978] Found 74 possible bad axioms.
+[2026-06-25 17:20:36.978] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Sitting https://yogaontology.org/ontology/Position).
+[2026-06-25 17:20:36.986] Found 73 possible bad axioms.
+[2026-06-25 17:20:36.986] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position)) https://yogaon
+...[truncated]
+FAIL: attempt=2 seed=14248 - negative return code -9
+progress: ontology=YOGA attempt=2 success=0/100
+----- YOGA attempt=3 seed=28448 at 2026-06-25 17:22:39 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=28448, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:22:39.877] Checking precondition...
+[2026-06-25 17:22:39.891] Starting the repair...
+[2026-06-25 17:22:39.900] Found 82 possible bad axioms.
+[2026-06-25 17:22:39.902] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Sitting https://yogaontology.org/ontology/Position).
+[2026-06-25 17:22:39.907] Found 81 possible bad axioms.
+[2026-06-25 17:22:39.908] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position)) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:22:39.912] Found 80 possible bad axioms.
+[2026-06-25 17:22:39.912] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Condition)).
+[2026-06-25 17:22:39.917] Found 79 possible bad axioms.
+[2026-06-25 17:22:39.917] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Condition)).
+[2026-06-25 17:22:39.921] Found 78 possible bad axioms.
+[2026-06-25 17:22:39.921] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing) ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasEffectOn owl:Thing)).
+[2026-06-25 17:22:39.925] Found 77 possible bad axioms.
+[2026-06-25 17:22:39.925] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasPosition https://yogaontology.org/ontology/Standing)).
+[2026-06-25 17:22:39.928] Found 76 possible bad axioms.
+[2026-06-25 17:22:39.928] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Arm https://yogaontology.org/ontology/Pubis).
+[2026-06-25 17:22:39.931] Found 75 possible bad axioms.
+[2026-06-25 17:22:39.931] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/BodyPart https://yogaontology.org/ontology/Pubis).
+[2026-06-25 17:22:39.934] Found 74 possible bad axioms.
+[2026-06-25 17:22:39.934] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/uses https://yogaontology.org/ontology/Props) ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)).
+[2026-06-
+...[truncated]
+FAIL: attempt=3 seed=28448 - negative return code -9
+progress: ontology=YOGA attempt=3 success=0/100
+----- YOGA attempt=4 seed=42648 at 2026-06-25 17:24:28 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=42648, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:24:28.714] Checking precondition...
+[2026-06-25 17:24:28.729] Starting the repair...
+[2026-06-25 17:24:28.740] Found 82 possible bad axioms.
+[2026-06-25 17:24:28.742] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Arm https://yogaontology.org/ontology/Pubis).
+[2026-06-25 17:24:28.747] Found 81 possible bad axioms.
+[2026-06-25 17:24:28.747] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Standing https://yogaontology.org/ontology/Position).
+[2026-06-25 17:24:28.752] Found 80 possible bad axioms.
+[2026-06-25 17:24:28.752] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Viloma ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasEffectOn owl:Thing)).
+[2026-06-25 17:24:28.757] Found 79 possible bad axioms.
+[2026-06-25 17:24:28.757] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/consistsOf ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)) https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:24:28.761] Found 78 possible bad axioms.
+[2026-06-25 17:24:28.761] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasPosition owl:Thing) https://yogaontology.org/ontology/Body).
+[2026-06-25 17:24:28.766] Found 77 possible bad axioms.
+[2026-06-25 17:24:28.766] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Viloma https://yogaontology.org/ontology/Pranayama).
+[2026-06-25 17:24:28.769] Found 76 possible bad axioms.
+[2026-06-25 17:24:28.770] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/hasPosition https://yogaontology.org/ontology/Position) https://yogaontology.org/ontology/Body).
+[2026-06-25 17:24:28.772] Found 75 possible bad axioms.
+[2026-06-25 17:24:28.773] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/preparesFor ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:24:28.775] Found 74 possible bad axioms.
+[2026-06-25 17:24:28.776] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Asana ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:24:28.778] Found 73 possible bad axioms.
+[2026-06-25 17:24:28.779] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Sitting https://yogaontology.org/ontology/Position).
+[2026-06-25 17:24:28.787] Found 72 possible bad axioms.
+...[truncated]
+FAIL: attempt=4 seed=42648 - negative return code -9
+progress: ontology=YOGA attempt=4 success=0/100
+----- YOGA attempt=5 seed=56848 at 2026-06-25 17:26:10 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=56848, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:26:10.859] Checking precondition...
+[2026-06-25 17:26:10.876] Starting the repair...
+[2026-06-25 17:26:10.884] Found 82 possible bad axioms.
+[2026-06-25 17:26:10.886] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Condition)).
+[2026-06-25 17:26:10.890] Found 81 possible bad axioms.
+[2026-06-25 17:26:10.891] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Mind) ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana)).
+[2026-06-25 17:26:10.896] Found 80 possible bad axioms.
+[2026-06-25 17:26:10.896] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Mind)).
+[2026-06-25 17:26:10.900] Found 79 possible bad axioms.
+[2026-06-25 17:26:10.900] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Standing https://yogaontology.org/ontology/Position).
+[2026-06-25 17:26:10.904] Found 78 possible bad axioms.
+[2026-06-25 17:26:10.904] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Pubis https://yogaontology.org/ontology/BodyPart).
+[2026-06-25 17:26:10.909] Found 77 possible bad axioms.
+[2026-06-25 17:26:10.909] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:26:10.912] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 17:26:10.912] Checking precondition...
+[2026-06-25 17:26:10.918] Starting the repair...
+[2026-06-25 17:26:12.085] Found 2 possible bad axioms.
+[2026-06-25 17:26:12.086] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:26:12.088] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 17:26:12.089] Checking precondition...
+[2026-06-25 17:26:12.092] Starting the repair...
+[2026-06-25 17:26:12.103] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:26:12.331] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:26:12.386] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(ht
+...[truncated]
+FAIL: attempt=5 seed=56848 - negative return code -9
+progress: ontology=YOGA attempt=5 success=0/100
+----- YOGA attempt=6 seed=71048 at 2026-06-25 17:27:47 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=71048, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:27:47.592] Checking precondition...
+[2026-06-25 17:27:47.608] Starting the repair...
+[2026-06-25 17:27:47.616] Found 82 possible bad axioms.
+[2026-06-25 17:27:47.618] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:27:47.622] Found 81 possible bad axioms.
+[2026-06-25 17:27:47.623] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(https://yogaontology.org/ontology/hasPosition https://yogaontology.org/ontology/Position)).
+[2026-06-25 17:27:47.628] Found 80 possible bad axioms.
+[2026-06-25 17:27:47.628] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:27:47.632] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 17:27:47.633] Checking precondition...
+[2026-06-25 17:27:47.642] Starting the repair...
+[2026-06-25 17:27:48.778] Found 2 possible bad axioms.
+[2026-06-25 17:27:48.778] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:27:48.780] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 17:27:48.782] Checking precondition...
+[2026-06-25 17:27:48.785] Starting the repair...
+[2026-06-25 17:27:48.797] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:27:49.019] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:27:49.080] Selected the weaker axiom SubClassOf(https://yogaontology.org/ontology/Body ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing)).
+[2026-06-25 17:27:49.397] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing)).
+[2026-06-25 17:27:49.402] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position) ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing)).
+[2026-06-25 17:27:50.816] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position) ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedI
+...[truncated]
+FAIL: attempt=6 seed=71048 - negative return code -9
+progress: ontology=YOGA attempt=6 success=0/100
+----- YOGA attempt=7 seed=85248 at 2026-06-25 17:29:31 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=85248, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:29:32.213] Checking precondition...
+[2026-06-25 17:29:32.228] Starting the repair...
+[2026-06-25 17:29:32.236] Found 82 possible bad axioms.
+[2026-06-25 17:29:32.238] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Standing https://yogaontology.org/ontology/Position).
+[2026-06-25 17:29:32.243] Found 81 possible bad axioms.
+[2026-06-25 17:29:32.243] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Sitting https://yogaontology.org/ontology/Position).
+[2026-06-25 17:29:32.248] Found 80 possible bad axioms.
+[2026-06-25 17:29:32.248] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Condition)) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:29:32.252] Found 79 possible bad axioms.
+[2026-06-25 17:29:32.252] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana)).
+[2026-06-25 17:29:32.256] Found 78 possible bad axioms.
+[2026-06-25 17:29:32.256] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/BodyPart ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasPosition owl:Thing)).
+[2026-06-25 17:29:32.260] Found 77 possible bad axioms.
+[2026-06-25 17:29:32.261] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/preparesFor ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:29:32.264] Found 76 possible bad axioms.
+[2026-06-25 17:29:32.264] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/LeftArm https://yogaontology.org/ontology/Arm).
+[2026-06-25 17:29:32.267] Found 75 possible bad axioms.
+[2026-06-25 17:29:32.267] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:29:32.269] Found 74 possible bad axioms.
+[2026-06-25 17:29:32.270] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing) ObjectSomeValuesFrom(https://yogaontology.org/ontology/uses owl:Thing)).
+[2026-06-25 17:29:32.272] Found 73 possible bad axioms.
+[2026-06-25 17:29:32.273] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Pubis https://yogaontology.org/ontology/BodyPart).
+[2026-06-25 17:29
+...[truncated]
+FAIL: attempt=7 seed=85248 - negative return code -9
+progress: ontology=YOGA attempt=7 success=0/100
+----- YOGA attempt=8 seed=99448 at 2026-06-25 17:31:20 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=99448, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:31:20.987] Checking precondition...
+[2026-06-25 17:31:21.002] Starting the repair...
+[2026-06-25 17:31:21.010] Found 82 possible bad axioms.
+[2026-06-25 17:31:21.012] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing) ObjectSomeValuesFrom(https://yogaontology.org/ontology/uses owl:Thing)).
+[2026-06-25 17:31:21.017] Found 81 possible bad axioms.
+[2026-06-25 17:31:21.018] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Mind)).
+[2026-06-25 17:31:21.022] Found 80 possible bad axioms.
+[2026-06-25 17:31:21.022] Selected the bad axiom SubClassOf(owl:Thing https://yogaontology.org/ontology/Body).
+[2026-06-25 17:31:21.027] Found 79 possible bad axioms.
+[2026-06-25 17:31:21.027] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/preparesFor ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)) ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition owl:Thing)).
+[2026-06-25 17:31:21.031] Found 78 possible bad axioms.
+[2026-06-25 17:31:21.031] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/preparesFor owl:Thing) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:31:21.035] Found 77 possible bad axioms.
+[2026-06-25 17:31:21.036] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn https://yogaontology.org/ontology/Condition)).
+[2026-06-25 17:31:21.039] Found 76 possible bad axioms.
+[2026-06-25 17:31:21.039] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/performedInPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/hasPosition https://yogaontology.org/ontology/Position)) https://yogaontology.org/ontology/Asana).
+[2026-06-25 17:31:21.042] Found 75 possible bad axioms.
+[2026-06-25 17:31:21.042] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position)) https://yogaontology.org/ontology/Body).
+[2026-06-25 17:31:21.045] Found 74 possible bad axioms.
+[2026-06-25
+...[truncated]
+FAIL: attempt=8 seed=99448 - negative return code -9
+progress: ontology=YOGA attempt=8 success=0/100
+----- YOGA attempt=9 seed=113648 at 2026-06-25 17:33:03 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=113648, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:33:04.187] Checking precondition...
+[2026-06-25 17:33:04.204] Starting the repair...
+[2026-06-25 17:33:04.212] Found 82 possible bad axioms.
+[2026-06-25 17:33:04.214] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/consistsOf owl:Thing) https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:33:04.219] Found 81 possible bad axioms.
+[2026-06-25 17:33:04.220] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana) ObjectAllValuesFrom(https://yogaontology.org/ontology/hasEffectOn owl:Nothing)).
+[2026-06-25 17:33:04.224] Found 80 possible bad axioms.
+[2026-06-25 17:33:04.224] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:33:04.228] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 17:33:04.229] Checking precondition...
+[2026-06-25 17:33:04.236] Starting the repair...
+[2026-06-25 17:33:05.371] Found 2 possible bad axioms.
+[2026-06-25 17:33:05.372] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:33:05.372] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 17:33:05.374] Checking precondition...
+[2026-06-25 17:33:05.376] Starting the repair...
+[2026-06-25 17:33:05.388] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:33:05.631] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:33:05.692] Selected the weaker axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/LeftArm).
+[2026-06-25 17:33:05.910] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/LeftArm).
+[2026-06-25 17:33:05.913] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position) https://yogaontology.org/ontology/LeftArm).
+[2026-06-25 17:33:06.140] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/LeftArm https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:33:06.141] Selected the weaker axiom SubClassOf(https://yogaontology.org/ontology/LeftArm ObjectSomeValuesFrom(https://yogaontology.org/ontology/consistsOf ObjectAllValuesFrom(https://yogaontology.org/ontology/consistsOf https://yogaontology.org/ontology/Asana))).
+[2026-0
+...[truncated]
+FAIL: attempt=9 seed=113648 - negative return code -9
+progress: ontology=YOGA attempt=9 success=0/100
+----- YOGA attempt=10 seed=127848 at 2026-06-25 17:35:01 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/YOGA.owl, seed=127848, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:35:01.873] Checking precondition...
+[2026-06-25 17:35:01.889] Starting the repair...
+[2026-06-25 17:35:01.897] Found 82 possible bad axioms.
+[2026-06-25 17:35:01.899] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(https://yogaontology.org/ontology/hasPosition ObjectAllValuesFrom(https://yogaontology.org/ontology/preparesFor https://yogaontology.org/ontology/Pranayama)) https://yogaontology.org/ontology/Body).
+[2026-06-25 17:35:01.904] Found 81 possible bad axioms.
+[2026-06-25 17:35:01.904] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:35:01.909] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 17:35:01.910] Checking precondition...
+[2026-06-25 17:35:01.918] Starting the repair...
+[2026-06-25 17:35:03.093] Found 2 possible bad axioms.
+[2026-06-25 17:35:03.094] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:35:03.096] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 17:35:03.097] Checking precondition...
+[2026-06-25 17:35:03.099] Starting the repair...
+[2026-06-25 17:35:03.125] Selected a reference ontology with 102 axioms.
+[2026-06-25 17:35:03.325] Selected the bad axiom SubClassOf(https://yogaontology.org/ontology/Body https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:35:03.380] Selected the weaker axiom SubClassOf(https://yogaontology.org/ontology/Sequence https://yogaontology.org/ontology/Sequence).
+[2026-06-25 17:35:03.381] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 17:35:03.382] Checking precondition...
+[2026-06-25 17:35:03.384] Starting the repair...
+[2026-06-25 17:35:03.391] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:35:03.567] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(https://yogaontology.org/ontology/Sequence)).
+[2026-06-25 17:35:03.602] Selected the weaker axiom SubClassOf(owl:Thing ObjectAllValuesFrom(https://yogaontology.org/ontology/performedInPosition https://yogaontology.org/ontology/Position)).
+[2026-06-25 17:35:03.603] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-25 17:35:03.605] Checking precondition...
+[2026-06-25 17:35:03.606] Starting the repair...
+[2026-06-25 17:35:03.614] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:35:03.793] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(https
+...[truncated]
+FAIL: attempt=10 seed=127848 - negative return code -9
+progress: ontology=YOGA attempt=10 success=0/100
+=== ABORTED YOGA after 10 consecutive failures at 2026-06-25 17:36:37 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for YOGA - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=48 msg=negative return code -9
+  attempt=2 seed=14248 msg=negative return code -9
+  attempt=3 seed=28448 msg=negative return code -9
+  attempt=4 seed=42648 msg=negative return code -9
+  attempt=5 seed=56848 msg=negative return code -9
+  attempt=6 seed=71048 msg=negative return code -9
+  attempt=7 seed=85248 msg=negative return code -9
+  attempt=8 seed=99448 msg=negative return code -9
+  attempt=9 seed=113648 msg=negative return code -9
+  attempt=10 seed=127848 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=1060.046715 avg_seconds=106.004671
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

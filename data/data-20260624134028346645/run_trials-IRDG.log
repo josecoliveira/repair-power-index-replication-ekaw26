@@ -1,0 +1,429 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-IRDG.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-IRDG.csv
+
+=== Starting sequential trials for IRDG at 2026-06-27 17:59:06 ===
+----- IRDG attempt=1 seed=120 at 2026-06-27 17:59:06 -----
+--- stdout ---
+{"seed":120,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":466,"A2":12926,"A3":12745,"B1":6303,"B2":39317}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=120, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 17:59:07.425] Checking precondition...
+[2026-06-27 17:59:07.457] Starting the repair...
+[2026-06-27 17:59:07.474] Found 368 possible bad axioms.
+[2026-06-27 17:59:07.476] Selected the bad axiom SubClassOf(type_change space_trimming).
+[2026-06-27 17:59:07.493] Found 367 possible bad axioms.
+[2026-06-27 17:59:07.494] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_noti Municipio) Locality).
+[2026-06-27 17:59:07.507] Found 366 possible bad axioms.
+[2026-06-27 17:59:07.507] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_noti Municipio) ObjectAllValuesFrom(cod_unin Unidade)).
+[2026-06-27 17:59:07.517] Found 365 possible bad axioms.
+[2026-06-27 17:59:07.517] Selected the bad axiom SubClassOf(Medical_consultation ObjectUnionOf(Diagnostic ObjectIntersectionOf(palufalci_from_diagnostics ObjectIntersectionOf(Mise_observation paluautre_from_diagnostics)))).
+[2026-06-27 17:59:07.527] Found 364 possible bad axioms.
+[2026-06-27 17:59:07.527] Selected the bad axiom SubClassOf(cd_unida_&_mun_ibge cd_local_&_mun_ibge).
+[2026-06-27 17:59:07.536] Found 363 possible bad axioms.
+[2026-06-27 17:59:07.536] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(numeropatient ObjectAllValuesFrom(zonehabitation Zone_habitation)) Mise_observation).
+[2026-06-27 17:59:07.543] Found 362 possible bad axioms.
+[2026-06-27 17:59:07.543] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(numeropatient owl:Thing) Patients).
+[2026-06-27 17:59:07.551] Found 361 possible bad axioms.
+[2026-06-27 17:59:07.551] Selected the bad axiom SubClassOf(create_source:G ObjectIntersectionOf(ObjectIntersectionOf(create_source:G ObjectIntersectionOf(newattack_from_palu ObjectIntersectionOf(false_activediagnosis ObjectIntersectionOf(diagnosisresult_from_palu ObjectIntersectionOf(Patients create_sequential_id))))) ObjectUnionOf(Diagnostic ObjectIntersectionOf(palufalci_from_diagnostics ObjectIntersectionOf(Mise_observation paluautre_from_diagnostics))))).
+[2026-06-27 17:59:07.563] Found 360 possible bad axioms.
+[2026-06-27 17:59:07.563] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_local ObjectAllValuesFrom(id_center Medical_consultation)) Unidade).
+[2026-06-27 17:59:07.570] Found 359 possible bad axioms.
+[2026-06-27 17:59:07.570] Selected the bad axiom SubClassOf(source Unidade).
+[2026-06-27 17:59:07.576] Found 358 possible bad axioms.
+[2026-06-27 17:59:07.576] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(id_residence_place ObjectAllValuesFrom(loc_resi Localidade)) Medical_consultation).
+[2026-06-27 17:59:07.588] Found 357 possible bad axioms.
+[2026
+...[truncated]
+FAIL: attempt=1 seed=120 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=1 success=0/100
+----- IRDG attempt=2 seed=14320 at 2026-06-27 18:00:19 -----
+--- stdout ---
+{"seed":14320,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":309,"A2":12980,"A3":4618,"B1":7779,"B2":37725}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=14320, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:00:19.730] Checking precondition...
+[2026-06-27 18:00:19.759] Starting the repair...
+[2026-06-27 18:00:19.774] Found 368 possible bad axioms.
+[2026-06-27 18:00:19.777] Selected the bad axiom SubClassOf(Medical_center CDPS).
+[2026-06-27 18:00:19.793] Found 367 possible bad axioms.
+[2026-06-27 18:00:19.793] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_labor ObjectAllValuesFrom(loc_resi Localidade)) Unidade).
+[2026-06-27 18:00:19.805] Found 366 possible bad axioms.
+[2026-06-27 18:00:19.805] Selected the bad axiom SubClassOf(Area ObjectIntersectionOf(create_source:B ObjectIntersectionOf(Localidade cd_local_&_mun_ibge))).
+[2026-06-27 18:00:19.815] Found 365 possible bad axioms.
+[2026-06-27 18:00:19.815] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(numeropatient Patients) ObjectAllValuesFrom(cd_local Localidade)).
+[2026-06-27 18:00:19.824] Found 364 possible bad axioms.
+[2026-06-27 18:00:19.825] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(numeropatient Patients) ObjectAllValuesFrom(mun_noti Municipio)).
+[2026-06-27 18:00:19.832] Found 363 possible bad axioms.
+[2026-06-27 18:00:19.833] Selected the bad axiom SubClassOf(ObjectUnionOf(ObjectIntersectionOf(create_source:B ObjectIntersectionOf(Localidade cd_local_&_mun_ibge)) ObjectIntersectionOf(create_source:G ObjectIntersectionOf(Zone_habitation from_UTM22N_to_WGS84))) Locality).
+[2026-06-27 18:00:19.839] Found 362 possible bad axioms.
+[2026-06-27 18:00:19.840] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_local ObjectAllValuesFrom(numeropatient Patients)) Laboratorio).
+[2026-06-27 18:00:19.847] Found 361 possible bad axioms.
+[2026-06-27 18:00:19.847] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mun_ibge ObjectAllValuesFrom(codecs CDPS)) Municipio).
+[2026-06-27 18:00:19.859] Found 360 possible bad axioms.
+[2026-06-27 18:00:19.860] Selected the bad axiom SubClassOf(cd_local_&_mun_ibge adding_/_between).
+[2026-06-27 18:00:19.866] Found 359 possible bad axioms.
+[2026-06-27 18:00:19.866] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_ibge Municipio) ObjectAllValuesFrom(mun_infe Municipio)).
+[2026-06-27 18:00:19.872] Found 358 possible bad axioms.
+[2026-06-27 18:00:19.872] Selected the bad axiom SubClassOf(false_activediagnosis create_attribute).
+[2026-06-27 18:00:19.884] Found 357 possible bad axioms.
+[2026-06-27 18:00:19.885] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_local ObjectAllValuesFrom(id_center Medical_consultation)) Unidade).
+[2026-06-27 18:00:19.891] Found 356 possible bad axioms.
+[2026-06-27 18:00:19.892] S
+...[truncated]
+FAIL: attempt=2 seed=14320 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=2 success=0/100
+----- IRDG attempt=3 seed=28520 at 2026-06-27 18:01:23 -----
+--- stdout ---
+{"seed":28520,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":825,"A2":12784,"A3":35138,"B1":5489,"B2":25896}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=28520, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:01:23.699] Checking precondition...
+[2026-06-27 18:01:23.729] Starting the repair...
+[2026-06-27 18:01:23.744] Found 368 possible bad axioms.
+[2026-06-27 18:01:23.746] Selected the bad axiom SubClassOf(sex_from_char_to_int new_attack_from_int_to_bool).
+[2026-06-27 18:01:23.761] Found 367 possible bad axioms.
+[2026-06-27 18:01:23.761] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(code_CS CDPS) ObjectAllValuesFrom(numeropatient Patients)).
+[2026-06-27 18:01:23.774] Found 366 possible bad axioms.
+[2026-06-27 18:01:23.775] Selected the bad axiom SubClassOf(create_source:G ObjectIntersectionOf(ObjectIntersectionOf(create_source:G ObjectIntersectionOf(newattack_from_palu ObjectIntersectionOf(false_activediagnosis ObjectIntersectionOf(diagnosisresult_from_palu ObjectIntersectionOf(Patients create_sequential_id))))) ObjectUnionOf(Diagnostic ObjectIntersectionOf(palufalci_from_diagnostics ObjectIntersectionOf(Mise_observation paluautre_from_diagnostics))))).
+[2026-06-27 18:01:23.785] Found 365 possible bad axioms.
+[2026-06-27 18:01:23.785] Selected the bad axiom SubClassOf(Unidade ObjectUnionOf(ObjectIntersectionOf(create_source:B ObjectIntersectionOf(cd_unida_&_mun_ibge ObjectIntersectionOf(Localidade Unidade))) ObjectIntersectionOf(create_source:G ObjectIntersectionOf(create_source:G ObjectIntersectionOf(space_trimming ObjectIntersectionOf(CDPS from_UTM22N_to_WGS84)))))).
+[2026-06-27 18:01:23.794] Found 364 possible bad axioms.
+[2026-06-27 18:01:23.794] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(code_CS CDPS) ObjectAllValuesFrom(mun_infe Municipio)).
+[2026-06-27 18:01:23.802] Found 363 possible bad axioms.
+[2026-06-27 18:01:23.802] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(id_infection_place Area)).
+[2026-06-27 18:01:23.810] Found 362 possible bad axioms.
+[2026-06-27 18:01:23.810] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(codecs CDPS)).
+[2026-06-27 18:01:23.817] Found 361 possible bad axioms.
+[2026-06-27 18:01:23.817] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_ibge Municipio) ObjectAllValuesFrom(cd_labor Laboratorio)).
+[2026-06-27 18:01:23.829] Found 360 possible bad axioms.
+[2026-06-27 18:01:23.829] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(zonerecrutement owl:Thing) Patients).
+[2026-06-27 18:01:23.836] Found 359 possible bad axioms.
+[2026-06-27 18:01:23.836] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_labor owl:Thing) Unidade).
+[2026-06-27 18:01:23.842] Found 358 possible bad axioms.
+[2026-06-27 18:01:23.842] Selected the bad axiom SubCla
+...[truncated]
+FAIL: attempt=3 seed=28520 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=3 success=0/100
+----- IRDG attempt=4 seed=42720 at 2026-06-27 18:02:43 -----
+--- stdout ---
+{"seed":42720,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":975,"A2":12802,"A3":8240,"B1":7456,"B2":38790}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=42720, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:02:44.367] Checking precondition...
+[2026-06-27 18:02:44.396] Starting the repair...
+[2026-06-27 18:02:44.412] Found 368 possible bad axioms.
+[2026-06-27 18:02:44.414] Selected the bad axiom SubClassOf(create_attribute palufalci_from_diagnostics).
+[2026-06-27 18:02:44.434] Found 367 possible bad axioms.
+[2026-06-27 18:02:44.434] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mun_noti ObjectAllValuesFrom(id_residence_place Area)) ObjectSomeValuesFrom(loc_infe owl:Thing)).
+[2026-06-27 18:02:44.443] Found 366 possible bad axioms.
+[2026-06-27 18:02:44.444] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(mun_resi Municipio)).
+[2026-06-27 18:02:44.453] Found 365 possible bad axioms.
+[2026-06-27 18:02:44.453] Selected the bad axiom SubClassOf(Diagnostic Consultation).
+[2026-06-27 18:02:44.462] Found 364 possible bad axioms.
+[2026-06-27 18:02:44.462] Selected the bad axiom SubClassOf(paluautre_from_diagnostics patientage_from_idpacia_&_iddimea).
+[2026-06-27 18:02:44.470] Found 363 possible bad axioms.
+[2026-06-27 18:02:44.470] Selected the bad axiom SubClassOf(diagnosisresult_from_palu ObjectIntersectionOf(Patients create_sequential_id)).
+[2026-06-27 18:02:44.478] Found 362 possible bad axioms.
+[2026-06-27 18:02:44.478] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cod_unin ObjectAllValuesFrom(cd_local Localidade)) ObjectSomeValuesFrom(loc_infe owl:Thing)).
+[2026-06-27 18:02:44.485] Found 361 possible bad axioms.
+[2026-06-27 18:02:44.485] Selected the bad axiom SubClassOf(patientage_from_idpacia_&_iddimea ObjectIntersectionOf(diagnosisresult_from_palu ObjectIntersectionOf(Patients create_sequential_id))).
+[2026-06-27 18:02:44.497] Found 360 possible bad axioms.
+[2026-06-27 18:02:44.497] Selected the bad axiom SubClassOf(Zone_habitation Localidade).
+[2026-06-27 18:02:44.504] Found 359 possible bad axioms.
+[2026-06-27 18:02:44.504] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(codecs ObjectAllValuesFrom(codecs CDPS)) Diagnostic).
+[2026-06-27 18:02:44.510] Found 358 possible bad axioms.
+[2026-06-27 18:02:44.510] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(cd_labor Laboratorio) ObjectAllValuesFrom(esquema Esquema)).
+[2026-06-27 18:02:44.523] Found 357 possible bad axioms.
+[2026-06-27 18:02:44.523] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(zonerecrutement CDPS)).
+[2026-06-27 18:02:44.529] Found 356 possible bad axioms.
+[2026-06-27 18:02:44.530] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mun_ibge ObjectAllValuesFrom(loc_infe Localidade)) Laboratorio).
+[2026-06-27 18
+...[truncated]
+FAIL: attempt=4 seed=42720 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=4 success=0/100
+----- IRDG attempt=5 seed=56920 at 2026-06-27 18:03:52 -----
+--- stdout ---
+{"seed":56920,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":781,"A2":12895,"A3":12854,"B1":4873,"B2":26132}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=56920, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:03:53.171] Checking precondition...
+[2026-06-27 18:03:53.204] Starting the repair...
+[2026-06-27 18:03:53.219] Found 368 possible bad axioms.
+[2026-06-27 18:03:53.221] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_ibge Municipio) Locality).
+[2026-06-27 18:03:53.239] Found 367 possible bad axioms.
+[2026-06-27 18:03:53.239] Selected the bad axiom SubClassOf(new_attack_from_int_to_bool type_change).
+[2026-06-27 18:03:53.250] Found 366 possible bad axioms.
+[2026-06-27 18:03:53.251] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(mun_noti Municipio)).
+[2026-06-27 18:03:53.260] Found 365 possible bad axioms.
+[2026-06-27 18:03:53.261] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(cd_labor Laboratorio) ObjectAllValuesFrom(loc_resi Localidade)).
+[2026-06-27 18:03:53.269] Found 364 possible bad axioms.
+[2026-06-27 18:03:53.269] Selected the bad axiom SubClassOf(Unidade ObjectUnionOf(ObjectIntersectionOf(create_source:B ObjectIntersectionOf(cd_unida_&_mun_ibge ObjectIntersectionOf(Localidade Unidade))) ObjectUnionOf(ObjectIntersectionOf(create_source:B ObjectIntersectionOf(Localidade cd_local_&_mun_ibge)) ObjectIntersectionOf(create_source:G ObjectIntersectionOf(Zone_habitation from_UTM22N_to_WGS84))))).
+[2026-06-27 18:03:53.277] Found 363 possible bad axioms.
+[2026-06-27 18:03:53.278] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(id_infection_place ObjectAllValuesFrom(code_CS CDPS)) Medical_consultation).
+[2026-06-27 18:03:53.285] Found 362 possible bad axioms.
+[2026-06-27 18:03:53.285] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cod_unin owl:Thing) ObjectSomeValuesFrom(loc_infe owl:Thing)).
+[2026-06-27 18:03:53.292] Found 361 possible bad axioms.
+[2026-06-27 18:03:53.292] Selected the bad axiom SubClassOf(fonction space_trimming).
+[2026-06-27 18:03:53.304] Found 360 possible bad axioms.
+[2026-06-27 18:03:53.305] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mun_ibge owl:Thing) Municipio).
+[2026-06-27 18:03:53.311] Found 359 possible bad axioms.
+[2026-06-27 18:03:53.311] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(numeropatient ObjectAllValuesFrom(zonehabitation Zone_habitation)) Mise_observation).
+[2026-06-27 18:03:53.317] Found 358 possible bad axioms.
+[2026-06-27 18:03:53.317] Selected the bad axiom SubClassOf(Health_center Medical_center).
+[2026-06-27 18:03:53.329] Found 357 possible bad axioms.
+[2026-06-27 18:03:53.329] Selected the bad axiom SubClassOf(Medical_center CDPS).
+[2026-06-27 18:03:53.337] Found 356 possible bad axioms.
+[2026-06-27 18:03:53.337] Selected t
+...[truncated]
+FAIL: attempt=5 seed=56920 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=5 success=0/100
+----- IRDG attempt=6 seed=71120 at 2026-06-27 18:04:50 -----
+--- stdout ---
+{"seed":71120,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":687,"A2":12641,"A3":8086,"B1":21549,"B2":72003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=71120, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:04:51.235] Checking precondition...
+[2026-06-27 18:04:51.265] Starting the repair...
+[2026-06-27 18:04:51.280] Found 368 possible bad axioms.
+[2026-06-27 18:04:51.281] Selected the bad axiom SubClassOf(patientage_from_idpacia_&_iddimea paluautre_from_diagnostics).
+[2026-06-27 18:04:51.298] Found 367 possible bad axioms.
+[2026-06-27 18:04:51.298] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(numeropatient Patients) Zone_habitation).
+[2026-06-27 18:04:51.308] Found 366 possible bad axioms.
+[2026-06-27 18:04:51.308] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(projection_type ObjectAllValuesFrom(cd_local Localidade)) Area).
+[2026-06-27 18:04:51.318] Found 365 possible bad axioms.
+[2026-06-27 18:04:51.319] Selected the bad axiom SubClassOf(palufalci_from_diagnostics diagnosisresult_from_palu).
+[2026-06-27 18:04:51.327] Found 364 possible bad axioms.
+[2026-06-27 18:04:51.327] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(projection_type owl:Thing) Area).
+[2026-06-27 18:04:51.334] Found 363 possible bad axioms.
+[2026-06-27 18:04:51.335] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(loc_resi owl:Thing) Notificao).
+[2026-06-27 18:04:51.342] Found 362 possible bad axioms.
+[2026-06-27 18:04:51.342] Selected the bad axiom SubClassOf(fonction string_handling).
+[2026-06-27 18:04:51.348] Found 361 possible bad axioms.
+[2026-06-27 18:04:51.349] Selected the bad axiom SubClassOf(type_change sex_from_char_to_int).
+[2026-06-27 18:04:51.361] Found 360 possible bad axioms.
+[2026-06-27 18:04:51.361] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(esquema ObjectAllValuesFrom(esquema Esquema)) Esquema).
+[2026-06-27 18:04:51.367] Found 359 possible bad axioms.
+[2026-06-27 18:04:51.368] Selected the bad axiom SubClassOf(fonction Medical_consultation).
+[2026-06-27 18:04:51.373] Found 358 possible bad axioms.
+[2026-06-27 18:04:51.373] Selected the bad axiom SubClassOf(create_source:G Area).
+[2026-06-27 18:04:51.385] Found 357 possible bad axioms.
+[2026-06-27 18:04:51.385] Selected the bad axiom SubClassOf(source ObjectSomeValuesFrom(projection_type owl:Thing)).
+[2026-06-27 18:04:51.391] Found 356 possible bad axioms.
+[2026-06-27 18:04:51.392] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mun_ibge owl:Thing) Municipio).
+[2026-06-27 18:04:51.397] Found 355 possible bad axioms.
+[2026-06-27 18:04:51.398] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_noti Municipio) ObjectAllValuesFrom(id_residence_place Area)).
+[2026-06-27 18:04:51.404] Found 354 possible bad axioms.
+[2026-06-27 18:04:51.404] Selected th
+...[truncated]
+FAIL: attempt=6 seed=71120 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=6 success=0/100
+----- IRDG attempt=7 seed=85320 at 2026-06-27 18:06:46 -----
+--- stdout ---
+{"seed":85320,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":835,"A2":12776,"A3":13608,"B1":4876,"B2":39990}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=85320, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:06:46.755] Checking precondition...
+[2026-06-27 18:06:46.785] Starting the repair...
+[2026-06-27 18:06:46.800] Found 368 possible bad axioms.
+[2026-06-27 18:06:46.802] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_local ObjectAllValuesFrom(zonehabitation Zone_habitation)) Unidade).
+[2026-06-27 18:06:46.818] Found 367 possible bad axioms.
+[2026-06-27 18:06:46.818] Selected the bad axiom SubClassOf(false_activediagnosis create_attribute).
+[2026-06-27 18:06:46.830] Found 366 possible bad axioms.
+[2026-06-27 18:06:46.830] Selected the bad axiom SubClassOf(Medical_consultation Consultation).
+[2026-06-27 18:06:46.840] Found 365 possible bad axioms.
+[2026-06-27 18:06:46.840] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(zonerecrutement ObjectAllValuesFrom(mun_resi Municipio)) Mise_observation).
+[2026-06-27 18:06:46.848] Found 364 possible bad axioms.
+[2026-06-27 18:06:46.849] Selected the bad axiom SubClassOf(ObjectUnionOf(ObjectIntersectionOf(create_source:B ObjectIntersectionOf(cod_noti_&_dt_notif_&_cod_unin ObjectIntersectionOf(cd_unida_&_mun_ibge ObjectIntersectionOf(cd_local_&_mun_ibge ObjectIntersectionOf(sex_from_char_to_int ObjectIntersectionOf(new_attack_from_int_to_bool ObjectIntersectionOf(Notificao active_diagnosis_from_int_to_bool))))))) ObjectIntersectionOf(ObjectIntersectionOf(create_source:G ObjectIntersectionOf(newattack_from_palu ObjectIntersectionOf(false_activediagnosis ObjectIntersectionOf(diagnosisresult_from_palu ObjectIntersectionOf(Patients create_sequential_id))))) ObjectUnionOf(Diagnostic ObjectIntersectionOf(palufalci_from_diagnostics ObjectIntersectionOf(Mise_observation paluautre_from_diagnostics))))) Medical_consultation).
+[2026-06-27 18:06:46.856] Found 363 possible bad axioms.
+[2026-06-27 18:06:46.856] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(numeropatient Patients) Locality).
+[2026-06-27 18:06:46.864] Found 362 possible bad axioms.
+[2026-06-27 18:06:46.864] Selected the bad axiom SubClassOf(Notificao Consultation).
+[2026-06-27 18:06:46.872] Found 361 possible bad axioms.
+[2026-06-27 18:06:46.873] Selected the bad axiom SubClassOf(create_sequential_id diagnosisresult_from_palu).
+[2026-06-27 18:06:46.886] Found 360 possible bad axioms.
+[2026-06-27 18:06:46.886] Selected the bad axiom SubClassOf(type_change sex_from_char_to_int).
+[2026-06-27 18:06:46.893] Found 359 possible bad axioms.
+[2026-06-27 18:06:46.893] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(id_infection_place Area)).
+[2026-06-27 18:06:46.900] Found 358 possible bad axioms.
+[2026-06-27 18:06:46.90
+...[truncated]
+FAIL: attempt=7 seed=85320 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=7 success=0/100
+----- IRDG attempt=8 seed=99520 at 2026-06-27 18:07:58 -----
+--- stdout ---
+{"seed":99520,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":807,"A2":12892,"A3":8036,"B1":9097,"B2":43595}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=99520, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:07:59.385] Checking precondition...
+[2026-06-27 18:07:59.415] Starting the repair...
+[2026-06-27 18:07:59.430] Found 368 possible bad axioms.
+[2026-06-27 18:07:59.432] Selected the bad axiom SubClassOf(create_source:B source).
+[2026-06-27 18:07:59.447] Found 367 possible bad axioms.
+[2026-06-27 18:07:59.447] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(numeropatient ObjectAllValuesFrom(code_CS CDPS)) Diagnostic).
+[2026-06-27 18:07:59.456] Found 366 possible bad axioms.
+[2026-06-27 18:07:59.457] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(esquema owl:Thing) Esquema).
+[2026-06-27 18:07:59.466] Found 365 possible bad axioms.
+[2026-06-27 18:07:59.467] Selected the bad axiom SubClassOf(Patients Patient).
+[2026-06-27 18:07:59.475] Found 364 possible bad axioms.
+[2026-06-27 18:07:59.475] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_noti Municipio) ObjectAllValuesFrom(id_center Medical_consultation)).
+[2026-06-27 18:07:59.483] Found 363 possible bad axioms.
+[2026-06-27 18:07:59.483] Selected the bad axiom SubClassOf(spatial_conversion fonction).
+[2026-06-27 18:07:59.490] Found 362 possible bad axioms.
+[2026-06-27 18:07:59.491] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(numeropatient owl:Thing) Mise_observation).
+[2026-06-27 18:07:59.498] Found 361 possible bad axioms.
+[2026-06-27 18:07:59.498] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(code_CS CDPS) ObjectAllValuesFrom(numeropatient Patients)).
+[2026-06-27 18:07:59.510] Found 360 possible bad axioms.
+[2026-06-27 18:07:59.511] Selected the bad axiom SubClassOf(create_source:G ObjectUnionOf(ObjectIntersectionOf(create_source:B ObjectIntersectionOf(cod_noti_&_dt_notif_&_cod_unin ObjectIntersectionOf(cd_unida_&_mun_ibge ObjectIntersectionOf(cd_local_&_mun_ibge ObjectIntersectionOf(sex_from_char_to_int ObjectIntersectionOf(new_attack_from_int_to_bool ObjectIntersectionOf(Notificao active_diagnosis_from_int_to_bool))))))) ObjectIntersectionOf(ObjectIntersectionOf(create_source:G ObjectIntersectionOf(newattack_from_palu ObjectIntersectionOf(false_activediagnosis ObjectIntersectionOf(diagnosisresult_from_palu ObjectIntersectionOf(Patients create_sequential_id))))) ObjectUnionOf(ObjectIntersectionOf(palufalci_from_diagnostics ObjectIntersectionOf(Mise_observation paluautre_from_diagnostics)) ObjectSomeValuesFrom(codecs owl:Thing))))).
+[2026-06-27 18:07:59.517] Found 359 possible bad axioms.
+[2026-06-27 18:07:59.517] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_local owl:Thing) Unidade).
+[2026-06-27 18:07:59.523] Found 358 possible bad
+...[truncated]
+FAIL: attempt=8 seed=99520 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=8 success=0/100
+----- IRDG attempt=9 seed=113720 at 2026-06-27 18:09:13 -----
+--- stdout ---
+{"seed":113720,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":671,"A2":12854,"A3":5303,"B1":7503,"B2":25764}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=113720, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:09:14.368] Checking precondition...
+[2026-06-27 18:09:14.398] Starting the repair...
+[2026-06-27 18:09:14.412] Found 368 possible bad axioms.
+[2026-06-27 18:09:14.413] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(id_center Medical_consultation) Laboratory).
+[2026-06-27 18:09:14.428] Found 367 possible bad axioms.
+[2026-06-27 18:09:14.429] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(zonerecrutement CDPS) City).
+[2026-06-27 18:09:14.440] Found 366 possible bad axioms.
+[2026-06-27 18:09:14.441] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cod_unin ObjectAllValuesFrom(cd_local Localidade)) ObjectSomeValuesFrom(loc_infe owl:Thing)).
+[2026-06-27 18:09:14.450] Found 365 possible bad axioms.
+[2026-06-27 18:09:14.451] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(cd_local owl:Thing) Laboratorio).
+[2026-06-27 18:09:14.459] Found 364 possible bad axioms.
+[2026-06-27 18:09:14.460] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(loc_infe Localidade) ObjectAllValuesFrom(id_residence_place Area)).
+[2026-06-27 18:09:14.470] Found 363 possible bad axioms.
+[2026-06-27 18:09:14.471] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(zonerecrutement ObjectAllValuesFrom(mun_resi Municipio)) Mise_observation).
+[2026-06-27 18:09:14.478] Found 362 possible bad axioms.
+[2026-06-27 18:09:14.479] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(numeropatient ObjectAllValuesFrom(mun_noti Municipio)) Patients).
+[2026-06-27 18:09:14.486] Found 361 possible bad axioms.
+[2026-06-27 18:09:14.487] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_noti Municipio) ObjectAllValuesFrom(id_residence_place Area)).
+[2026-06-27 18:09:14.499] Found 360 possible bad axioms.
+[2026-06-27 18:09:14.500] Selected the bad axiom SubClassOf(Mise_observation Patients).
+[2026-06-27 18:09:14.506] Found 359 possible bad axioms.
+[2026-06-27 18:09:14.506] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(mun_resi Municipio) fonction).
+[2026-06-27 18:09:14.513] Found 358 possible bad axioms.
+[2026-06-27 18:09:14.513] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mun_ibge ObjectAllValuesFrom(id_center Medical_consultation)) Localidade).
+[2026-06-27 18:09:14.526] Found 357 possible bad axioms.
+[2026-06-27 18:09:14.526] Selected the bad axiom SubClassOf(ObjectUnionOf(ObjectIntersectionOf(create_source:B ObjectIntersectionOf(cod_noti_&_dt_notif_&_cod_unin ObjectIntersectionOf(cd_unida_&_mun_ibge ObjectIntersectionOf(cd_local_&_mun_ibge ObjectIntersectionOf(sex_from_char_to_int ObjectIntersectionOf(new_attack_from_int_to_boo
+...[truncated]
+FAIL: attempt=9 seed=113720 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=9 success=0/100
+----- IRDG attempt=10 seed=127920 at 2026-06-27 18:10:06 -----
+--- stdout ---
+{"seed":127920,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":318,"A2":12894,"A3":7995,"B1":9336,"B2":70517}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IRDG.owl, seed=127920, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:10:07.001] Checking precondition...
+[2026-06-27 18:10:07.035] Starting the repair...
+[2026-06-27 18:10:07.051] Found 368 possible bad axioms.
+[2026-06-27 18:10:07.053] Selected the bad axiom SubClassOf(ObjectUnionOf(ObjectIntersectionOf(from_UTM22N_to_WGS84 create_source:G) ObjectIntersectionOf(create_source:B ObjectIntersectionOf(cd_unida_&_mun_ibge ObjectIntersectionOf(Localidade Unidade)))) Health_center).
+[2026-06-27 18:10:07.071] Found 367 possible bad axioms.
+[2026-06-27 18:10:07.071] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mun_resi ObjectAllValuesFrom(id_center Medical_consultation)) Notificao).
+[2026-06-27 18:10:07.081] Found 366 possible bad axioms.
+[2026-06-27 18:10:07.081] Selected the bad axiom SubClassOf(create_source:G ObjectIntersectionOf(ObjectIntersectionOf(create_source:G ObjectIntersectionOf(newattack_from_palu ObjectIntersectionOf(false_activediagnosis ObjectIntersectionOf(diagnosisresult_from_palu ObjectIntersectionOf(Patients create_sequential_id))))) ObjectUnionOf(Diagnostic ObjectIntersectionOf(palufalci_from_diagnostics ObjectIntersectionOf(Mise_observation paluautre_from_diagnostics))))).
+[2026-06-27 18:10:07.092] Found 365 possible bad axioms.
+[2026-06-27 18:10:07.092] Selected the bad axiom SubClassOf(ObjectUnionOf(ObjectIntersectionOf(cd_unida_&_mun_ibge ObjectIntersectionOf(Localidade Unidade)) ObjectIntersectionOf(create_source:G ObjectIntersectionOf(space_trimming ObjectIntersectionOf(CDPS from_UTM22N_to_WGS84)))) Health_center).
+[2026-06-27 18:10:07.100] Found 364 possible bad axioms.
+[2026-06-27 18:10:07.101] Selected the bad axiom SubClassOf(create_sequential_id create_attribute).
+[2026-06-27 18:10:07.108] Found 363 possible bad axioms.
+[2026-06-27 18:10:07.109] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(cod_unin Unidade) ObjectAllValuesFrom(zonehabitation Zone_habitation)).
+[2026-06-27 18:10:07.116] Found 362 possible bad axioms.
+[2026-06-27 18:10:07.116] Selected the bad axiom SubClassOf(create_source:G Area).
+[2026-06-27 18:10:07.122] Found 361 possible bad axioms.
+[2026-06-27 18:10:07.123] Selected the bad axiom SubClassOf(space_trimming string_handling).
+[2026-06-27 18:10:07.134] Found 360 possible bad axioms.
+[2026-06-27 18:10:07.135] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(numeropatient Patients) ObjectAllValuesFrom(codecs CDPS)).
+[2026-06-27 18:10:07.141] Found 359 possible bad axioms.
+[2026-06-27 18:10:07.141] Selected the bad axiom SubClassOf(Patients Patient).
+[2026-06-27 18:10:07.147] Found 358 possible bad axioms.
+[2026-06-27 18:10:07.147] Selected 
+...[truncated]
+FAIL: attempt=10 seed=127920 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+progress: ontology=IRDG attempt=10 success=0/100
+=== ABORTED IRDG after 10 consecutive failures at 2026-06-27 18:11:48 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for IRDG - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=120 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=2 seed=14320 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=3 seed=28520 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=4 seed=42720 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=5 seed=56920 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=6 seed=71120 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=7 seed=85320 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=8 seed=99520 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=9 seed=113720 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+  attempt=10 seed=127920 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: paluautre_from_diagnostics ⊑ ⊥
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

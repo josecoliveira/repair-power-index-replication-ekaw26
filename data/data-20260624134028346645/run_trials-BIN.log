@@ -1,0 +1,440 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-BIN.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-BIN.csv
+
+=== Starting sequential trials for BIN at 2026-06-27 01:21:54 ===
+----- BIN attempt=1 seed=98 at 2026-06-27 01:21:54 -----
+--- stdout ---
+{"seed":98,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":208,"A2":7232,"A3":943,"B1":1011,"B2":6918}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=98, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:21:54.837] Checking precondition...
+[2026-06-27 01:21:54.854] Starting the repair...
+[2026-06-27 01:21:54.861] Found 244 possible bad axioms.
+[2026-06-27 01:21:54.863] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000036 http://purl.bioontology.org/ontology/BIN/BIN_00000034).
+[2026-06-27 01:21:54.868] Found 243 possible bad axioms.
+[2026-06-27 01:21:54.868] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000038 http://purl.obolibrary.org/obo/CHMO_0002345).
+[2026-06-27 01:21:54.873] Found 242 possible bad axioms.
+[2026-06-27 01:21:54.873] Selected the bad axiom SubClassOf(C29867).
+[2026-06-27 01:21:54.884] Found 241 possible bad axioms.
+[2026-06-27 01:21:54.884] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000031 http://purl.bioontology.org/ontology/BIN/BIN_00000030).
+[2026-06-27 01:21:54.889] Found 240 possible bad axioms.
+[2026-06-27 01:21:54.889] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBIB_0000489 owl:Nothing).
+[2026-06-27 01:21:54.893] Found 239 possible bad axioms.
+[2026-06-27 01:21:54.893] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000082 http://purl.bioontology.org/ontology/BIN/BIN_00000079).
+[2026-06-27 01:21:54.898] Found 238 possible bad axioms.
+[2026-06-27 01:21:54.898] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000042 http://purl.bioontology.org/ontology/MESH/D000076251).
+[2026-06-27 01:21:54.906] Found 237 possible bad axioms.
+[2026-06-27 01:21:54.908] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000002 http://purl.bioontology.org/ontology/BIN/BIN_00000001).
+[2026-06-27 01:21:54.913] Found 236 possible bad axioms.
+[2026-06-27 01:21:54.913] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000008 http://purl.bioontology.org/ontology/BIN/BIN_00000003).
+[2026-06-27 01:21:54.915] Found 235 possible bad axioms.
+[2026-06-27 01:21:54.916] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000032 http://purl.bioontology.org/ontology/BIN/BIN_00000033).
+[2026-06-27 01:21:54.918] Found 234 possible bad axioms.
+[2026-06-27 01:21:54.918] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000027 http://purl.bioontology.org/ontology/BIN/BIN_00000023).
+[2026-06-27 01:21:54.926] Found 233 possible bad axioms.
+[2026-06-27 01:21:54.926] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ERO_0000945 http://p
+...[truncated]
+FAIL: attempt=1 seed=98 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=1 success=0/100
+----- BIN attempt=2 seed=14298 at 2026-06-27 01:22:11 -----
+--- stdout ---
+{"seed":14298,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":214,"A2":7242,"A3":1091,"B1":944,"B2":8472,"B3":2861}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=14298, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:22:11.621] Checking precondition...
+[2026-06-27 01:22:11.639] Starting the repair...
+[2026-06-27 01:22:11.646] Found 244 possible bad axioms.
+[2026-06-27 01:22:11.647] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MMO_0000217 http://purl.obolibrary.org/obo/ERO_0000004).
+[2026-06-27 01:22:11.652] Found 243 possible bad axioms.
+[2026-06-27 01:22:11.653] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000056 http://purl.obolibrary.org/obo/ERO_0000452).
+[2026-06-27 01:22:11.657] Found 242 possible bad axioms.
+[2026-06-27 01:22:11.658] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000014 http://purl.bioontology.org/ontology/BIN/BIN_00000013).
+[2026-06-27 01:22:11.667] Found 241 possible bad axioms.
+[2026-06-27 01:22:11.667] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000047 http://purl.bioontology.org/ontology/BIN/BIN_00000045).
+[2026-06-27 01:22:11.671] Found 240 possible bad axioms.
+[2026-06-27 01:22:11.671] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000053 http://purl.bioontology.org/ontology/BIN/BIN_00000051).
+[2026-06-27 01:22:11.675] Found 239 possible bad axioms.
+[2026-06-27 01:22:11.675] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000074 http://purl.bioontology.org/ontology/BIN/BIN_00000069).
+[2026-06-27 01:22:11.680] Found 238 possible bad axioms.
+[2026-06-27 01:22:11.680] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/MESH/D010865 http://purl.dataone.org/odo/ECSO_00000507).
+[2026-06-27 01:22:11.684] Found 237 possible bad axioms.
+[2026-06-27 01:22:11.685] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000013 http://purl.bioontology.org/ontology/BIN/BIN_00000011).
+[2026-06-27 01:22:11.689] Found 236 possible bad axioms.
+[2026-06-27 01:22:11.689] Selected the bad axiom SubClassOf(C42790 http://purl.bioontology.org/ontology/BIN/BIN_00000015).
+[2026-06-27 01:22:11.692] Found 235 possible bad axioms.
+[2026-06-27 01:22:11.692] Selected the bad axiom SubClassOf(Weather).
+[2026-06-27 01:22:11.695] Found 234 possible bad axioms.
+[2026-06-27 01:22:11.695] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000061 owl:Nothing).
+[2026-06-27 01:22:11.703] Found 233 possible bad axioms.
+[2026-06-27 01:22:11.703] Selected the bad axiom SubClassOf(C42790).
+[2026-06-27 01:22:11.711] Found 232 possible bad axioms.
+[2026-06-27 01:22:11.711] Selected the bad axiom SubClas
+...[truncated]
+FAIL: attempt=2 seed=14298 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=2 success=0/100
+----- BIN attempt=3 seed=28498 at 2026-06-27 01:22:32 -----
+--- stdout ---
+{"seed":28498,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":338,"A2":7080,"A3":3333,"B1":2261,"B2":2911}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=28498, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:22:32.935] Checking precondition...
+[2026-06-27 01:22:32.952] Starting the repair...
+[2026-06-27 01:22:32.959] Found 244 possible bad axioms.
+[2026-06-27 01:22:32.960] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000077 http://purl.bioontology.org/ontology/BIN/BIN_00000069).
+[2026-06-27 01:22:32.965] Found 243 possible bad axioms.
+[2026-06-27 01:22:32.965] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000060 http://purl.obolibrary.org/obo/NCIT_C16358).
+[2026-06-27 01:22:32.970] Found 242 possible bad axioms.
+[2026-06-27 01:22:32.970] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000055 http://purl.obolibrary.org/obo/ERO_0000452).
+[2026-06-27 01:22:32.980] Found 241 possible bad axioms.
+[2026-06-27 01:22:32.981] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000044 http://purl.bioontology.org/ontology/MESH/D000068997).
+[2026-06-27 01:22:32.985] Found 240 possible bad axioms.
+[2026-06-27 01:22:32.985] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/NCIT_C16358 http://purl.bioontology.org/ontology/BIN/BIN_00000060).
+[2026-06-27 01:22:32.990] Found 239 possible bad axioms.
+[2026-06-27 01:22:32.991] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000067 http://purl.bioontology.org/ontology/BIN/BIN_00000029).
+[2026-06-27 01:22:32.995] Found 238 possible bad axioms.
+[2026-06-27 01:22:32.995] Selected the bad axiom SubClassOf(C25208 http://purl.bioontology.org/ontology/BIN/BIN_00000063).
+[2026-06-27 01:22:32.998] Found 237 possible bad axioms.
+[2026-06-27 01:22:32.998] Selected the bad axiom SubClassOf(http://purl.dataone.org/odo/ECSO_00000507 http://purl.bioontology.org/ontology/MESH/D010865).
+[2026-06-27 01:22:33.002] Found 236 possible bad axioms.
+[2026-06-27 01:22:33.002] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000087 http://purl.bioontology.org/ontology/BIN/BIN_00000015).
+[2026-06-27 01:22:33.005] Found 235 possible bad axioms.
+[2026-06-27 01:22:33.005] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000008 http://purl.bioontology.org/ontology/BIN/BIN_00000003).
+[2026-06-27 01:22:33.007] Found 234 possible bad axioms.
+[2026-06-27 01:22:33.007] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000045 http://purl.bioontology.org/ontology/MESH/D000068997).
+[2026-06-27 01:22:33.016] Found 233 possible bad axioms.
+[2026-06-27 01:22:33.016] Selected the bad
+...[truncated]
+FAIL: attempt=3 seed=28498 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=3 success=0/100
+----- BIN attempt=4 seed=42698 at 2026-06-27 01:22:48 -----
+--- stdout ---
+{"seed":42698,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":268,"A2":7155,"A3":846,"B1":1752,"B2":5711}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=42698, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:22:49.307] Checking precondition...
+[2026-06-27 01:22:49.324] Starting the repair...
+[2026-06-27 01:22:49.332] Found 244 possible bad axioms.
+[2026-06-27 01:22:49.334] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000057 http://purl.obolibrary.org/obo/MMO_0000217).
+[2026-06-27 01:22:49.338] Found 243 possible bad axioms.
+[2026-06-27 01:22:49.339] Selected the bad axiom SubClassOf(C25208 http://purl.bioontology.org/ontology/BIN/BIN_00000063).
+[2026-06-27 01:22:49.348] Found 242 possible bad axioms.
+[2026-06-27 01:22:49.348] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000031 http://purl.bioontology.org/ontology/BIN/BIN_00000030).
+[2026-06-27 01:22:49.353] Found 241 possible bad axioms.
+[2026-06-27 01:22:49.353] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000079 http://purl.obolibrary.org/obo/ERO_0000863).
+[2026-06-27 01:22:49.357] Found 240 possible bad axioms.
+[2026-06-27 01:22:49.357] Selected the bad axiom SubClassOf(C42790).
+[2026-06-27 01:22:49.360] Found 239 possible bad axioms.
+[2026-06-27 01:22:49.361] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000052 http://purl.bioontology.org/ontology/BIN/BIN_00000066).
+[2026-06-27 01:22:49.367] Found 238 possible bad axioms.
+[2026-06-27 01:22:49.367] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000066 http://purl.obolibrary.org/obo/OBI_0000795).
+[2026-06-27 01:22:49.371] Found 237 possible bad axioms.
+[2026-06-27 01:22:49.371] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/MESH/D012984 http://purl.obolibrary.org/obo/OBI_0400107).
+[2026-06-27 01:22:49.374] Found 236 possible bad axioms.
+[2026-06-27 01:22:49.375] Selected the bad axiom SubClassOf(Weather).
+[2026-06-27 01:22:49.378] Found 235 possible bad axioms.
+[2026-06-27 01:22:49.378] Selected the bad axiom SubClassOf(http://www.ebi.ac.uk/efo/EFO_0009718 http://purl.bioontology.org/ontology/MESH/D014797).
+[2026-06-27 01:22:49.380] Found 234 possible bad axioms.
+[2026-06-27 01:22:49.381] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000012 http://purl.bioontology.org/ontology/BIN/BIN_00000011).
+[2026-06-27 01:22:49.393] Found 233 possible bad axioms.
+[2026-06-27 01:22:49.393] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/NCIT_C16358 http://purl.bioontology.org/ontology/BIN/BIN_00000060).
+[2026-06-27 01:22:49.397] Found 232 possible bad axioms.
+[2026-06-27 01:22:49.397] Selected the bad ax
+...[truncated]
+FAIL: attempt=4 seed=42698 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=4 success=0/100
+----- BIN attempt=5 seed=56898 at 2026-06-27 01:23:05 -----
+--- stdout ---
+{"seed":56898,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":208,"A2":7234,"A3":504,"B1":476,"B2":5263}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=56898, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:23:05.515] Checking precondition...
+[2026-06-27 01:23:05.533] Starting the repair...
+[2026-06-27 01:23:05.540] Found 244 possible bad axioms.
+[2026-06-27 01:23:05.541] Selected the bad axiom SubClassOf(C29867).
+[2026-06-27 01:23:05.546] Found 243 possible bad axioms.
+[2026-06-27 01:23:05.546] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CHMO_0002345 http://purl.bioontology.org/ontology/CRISP/1000-5566).
+[2026-06-27 01:23:05.552] Found 242 possible bad axioms.
+[2026-06-27 01:23:05.552] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000050 http://purl.obolibrary.org/obo/OBI_0000795).
+[2026-06-27 01:23:05.561] Found 241 possible bad axioms.
+[2026-06-27 01:23:05.561] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000026 http://purl.bioontology.org/ontology/BIN/BIN_00000025).
+[2026-06-27 01:23:05.565] Found 240 possible bad axioms.
+[2026-06-27 01:23:05.566] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000087 http://purl.bioontology.org/ontology/BIN/BIN_00000002).
+[2026-06-27 01:23:05.569] Found 239 possible bad axioms.
+[2026-06-27 01:23:05.570] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000083 http://purl.bioontology.org/ontology/BIN/BIN_00000079).
+[2026-06-27 01:23:05.574] Found 238 possible bad axioms.
+[2026-06-27 01:23:05.574] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBIB_0000489 http://purl.bioontology.org/ontology/BIN/BIN_00000087).
+[2026-06-27 01:23:05.577] Found 237 possible bad axioms.
+[2026-06-27 01:23:05.578] Selected the bad axiom SubClassOf(C25298 C69317).
+[2026-06-27 01:23:05.581] Found 236 possible bad axioms.
+[2026-06-27 01:23:05.582] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000073 http://purl.bioontology.org/ontology/BIN/BIN_00000068).
+[2026-06-27 01:23:05.584] Found 235 possible bad axioms.
+[2026-06-27 01:23:05.585] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000087 http://purl.bioontology.org/ontology/BIN/BIN_00000015).
+[2026-06-27 01:23:05.587] Found 234 possible bad axioms.
+[2026-06-27 01:23:05.587] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000052 http://purl.bioontology.org/ontology/BIN/BIN_00000050).
+[2026-06-27 01:23:05.595] Found 233 possible bad axioms.
+[2026-06-27 01:23:05.595] Selected the bad axiom SubClassOf(C69317 http://purl.obolibrary.org/obo/ERO_0000004).
+[2026-06-27 01:23:05.604] Found 232 possible bad axioms.
+[2
+...[truncated]
+FAIL: attempt=5 seed=56898 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=5 success=0/100
+----- BIN attempt=6 seed=71098 at 2026-06-27 01:23:19 -----
+--- stdout ---
+{"seed":71098,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":188,"A2":7213,"A3":1991,"B1":937,"B2":4073}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=71098, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:23:19.655] Checking precondition...
+[2026-06-27 01:23:19.671] Starting the repair...
+[2026-06-27 01:23:19.679] Found 244 possible bad axioms.
+[2026-06-27 01:23:19.680] Selected the bad axiom SubClassOf(Celsius C25206).
+[2026-06-27 01:23:19.685] Found 243 possible bad axioms.
+[2026-06-27 01:23:19.685] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000014 http://purl.bioontology.org/ontology/BIN/BIN_00000011).
+[2026-06-27 01:23:19.692] Found 242 possible bad axioms.
+[2026-06-27 01:23:19.692] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000968 http://purl.bioontology.org/ontology/BIN/BIN_00000023).
+[2026-06-27 01:23:19.701] Found 241 possible bad axioms.
+[2026-06-27 01:23:19.702] Selected the bad axiom SubClassOf(C29867).
+[2026-06-27 01:23:19.705] Found 240 possible bad axioms.
+[2026-06-27 01:23:19.706] Selected the bad axiom SubClassOf(Quasi_Experimental_Methods).
+[2026-06-27 01:23:19.709] Found 239 possible bad axioms.
+[2026-06-27 01:23:19.710] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000003 http://purl.bioontology.org/ontology/SNOMEDCT/397678008).
+[2026-06-27 01:23:19.714] Found 238 possible bad axioms.
+[2026-06-27 01:23:19.714] Selected the bad axiom SubClassOf(C88206 http://purl.bioontology.org/ontology/MESH/D004777).
+[2026-06-27 01:23:19.718] Found 237 possible bad axioms.
+[2026-06-27 01:23:19.718] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ERO_0000004 http://purl.bioontology.org/ontology/BIN/BIN_00000029).
+[2026-06-27 01:23:19.722] Found 236 possible bad axioms.
+[2026-06-27 01:23:19.722] Selected the bad axiom SubClassOf(Mobile_Devices).
+[2026-06-27 01:23:19.725] Found 235 possible bad axioms.
+[2026-06-27 01:23:19.725] Selected the bad axiom SubClassOf(Weather C16696).
+[2026-06-27 01:23:19.727] Found 234 possible bad axioms.
+[2026-06-27 01:23:19.727] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000026 http://purl.bioontology.org/ontology/BIN/BIN_00000024).
+[2026-06-27 01:23:19.736] Found 233 possible bad axioms.
+[2026-06-27 01:23:19.736] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000087 http://purl.bioontology.org/ontology/BIN/BIN_00000002).
+[2026-06-27 01:23:19.744] Found 232 possible bad axioms.
+[2026-06-27 01:23:19.745] Selected the bad axiom SubClassOf(C25206 Weather).
+[2026-06-27 01:23:19.748] Found 231 possible bad axioms.
+[2026-06-27 01:23:19.748] Selected the bad axiom SubClassOf(C29867).
+[2026-06-27 01:23:19.751] Found 230 possible b
+...[truncated]
+FAIL: attempt=6 seed=71098 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=6 success=0/100
+----- BIN attempt=7 seed=85298 at 2026-06-27 01:23:34 -----
+--- stdout ---
+{"seed":85298,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":236,"A2":7132,"A3":1054,"B1":1828,"B2":3632}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=85298, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:23:34.506] Checking precondition...
+[2026-06-27 01:23:34.524] Starting the repair...
+[2026-06-27 01:23:34.530] Found 244 possible bad axioms.
+[2026-06-27 01:23:34.532] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000062 owl:Nothing).
+[2026-06-27 01:23:34.537] Found 243 possible bad axioms.
+[2026-06-27 01:23:34.537] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000065 http://purl.obolibrary.org/obo/PATO_0001543).
+[2026-06-27 01:23:34.541] Found 242 possible bad axioms.
+[2026-06-27 01:23:34.541] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000031 http://purl.bioontology.org/ontology/BIN/BIN_00000030).
+[2026-06-27 01:23:34.552] Found 241 possible bad axioms.
+[2026-06-27 01:23:34.553] Selected the bad axiom SubClassOf(C88206).
+[2026-06-27 01:23:34.557] Found 240 possible bad axioms.
+[2026-06-27 01:23:34.557] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBIB_0000489 http://purl.bioontology.org/ontology/BIN/BIN_00000087).
+[2026-06-27 01:23:34.562] Found 239 possible bad axioms.
+[2026-06-27 01:23:34.562] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/MESH/D004777 http://edamontology.org/topic_3678).
+[2026-06-27 01:23:34.567] Found 238 possible bad axioms.
+[2026-06-27 01:23:34.567] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000070 http://purl.bioontology.org/ontology/BIN/BIN_00000068).
+[2026-06-27 01:23:34.570] Found 237 possible bad axioms.
+[2026-06-27 01:23:34.570] Selected the bad axiom SubClassOf(Celsius http://purl.obolibrary.org/obo/UO_0000195).
+[2026-06-27 01:23:34.574] Found 236 possible bad axioms.
+[2026-06-27 01:23:34.574] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000023 owl:Nothing).
+[2026-06-27 01:23:34.577] Found 235 possible bad axioms.
+[2026-06-27 01:23:34.577] Selected the bad axiom SubClassOf(C25206 Weather).
+[2026-06-27 01:23:34.580] Found 234 possible bad axioms.
+[2026-06-27 01:23:34.580] Selected the bad axiom SubClassOf(Weather).
+[2026-06-27 01:23:34.588] Found 233 possible bad axioms.
+[2026-06-27 01:23:34.588] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000067 http://purl.bioontology.org/ontology/BIN/BIN_00000080).
+[2026-06-27 01:23:34.596] Found 232 possible bad axioms.
+[2026-06-27 01:23:34.596] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000071 http://purl.bioontology.org/ontology/BIN/BIN_00000068).
+[2026-06-27 01:23:34.600] 
+...[truncated]
+FAIL: attempt=7 seed=85298 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=7 success=0/100
+----- BIN attempt=8 seed=99498 at 2026-06-27 01:23:48 -----
+--- stdout ---
+{"seed":99498,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":125,"A2":7194,"A3":3528,"B1":8045,"B2":4123}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=99498, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:23:49.072] Checking precondition...
+[2026-06-27 01:23:49.088] Starting the repair...
+[2026-06-27 01:23:49.095] Found 244 possible bad axioms.
+[2026-06-27 01:23:49.097] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000029 http://purl.obolibrary.org/obo/OBI_0000968).
+[2026-06-27 01:23:49.101] Found 243 possible bad axioms.
+[2026-06-27 01:23:49.102] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000795 http://purl.bioontology.org/ontology/BIN/BIN_00000050).
+[2026-06-27 01:23:49.107] Found 242 possible bad axioms.
+[2026-06-27 01:23:49.108] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000077 http://purl.bioontology.org/ontology/BIN/BIN_00000069).
+[2026-06-27 01:23:49.118] Found 241 possible bad axioms.
+[2026-06-27 01:23:49.118] Selected the bad axiom SubClassOf(C25347 http://purl.bioontology.org/ontology/BIN/BIN_00000064).
+[2026-06-27 01:23:49.122] Found 240 possible bad axioms.
+[2026-06-27 01:23:49.123] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000058 http://purl.bioontology.org/ontology/BIN/BIN_00000057).
+[2026-06-27 01:23:49.126] Found 239 possible bad axioms.
+[2026-06-27 01:23:49.127] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000050 http://purl.obolibrary.org/obo/OBI_0000795).
+[2026-06-27 01:23:49.131] Found 238 possible bad axioms.
+[2026-06-27 01:23:49.131] Selected the bad axiom SubClassOf(Weather http://purl.bioontology.org/ontology/BIN/BIN_00000017).
+[2026-06-27 01:23:49.134] Found 237 possible bad axioms.
+[2026-06-27 01:23:49.134] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000065 http://purl.obolibrary.org/obo/PATO_0001543).
+[2026-06-27 01:23:49.137] Found 236 possible bad axioms.
+[2026-06-27 01:23:49.138] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000060 http://purl.bioontology.org/ontology/BIN/BIN_00000058).
+[2026-06-27 01:23:49.140] Found 235 possible bad axioms.
+[2026-06-27 01:23:49.141] Selected the bad axiom SubClassOf(Mobile_Devices).
+[2026-06-27 01:23:49.143] Found 234 possible bad axioms.
+[2026-06-27 01:23:49.143] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/CRISP/1000-5566 http://purl.bioontology.org/ontology/BIN/BIN_00000029).
+[2026-06-27 01:23:49.151] Found 233 possible bad axioms.
+[2026-06-27 01:23:49.151] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000048 http://purl.obolibrary.org/obo/ERO_0000004).
+[2026-06-27 01:
+...[truncated]
+FAIL: attempt=8 seed=99498 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=8 success=0/100
+----- BIN attempt=9 seed=113698 at 2026-06-27 01:24:12 -----
+--- stdout ---
+{"seed":113698,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":302,"A2":7095,"A3":537,"B1":547,"B2":2779}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=113698, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:24:12.533] Checking precondition...
+[2026-06-27 01:24:12.551] Starting the repair...
+[2026-06-27 01:24:12.558] Found 244 possible bad axioms.
+[2026-06-27 01:24:12.559] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000030 http://purl.bioontology.org/ontology/BIN/BIN_00000034).
+[2026-06-27 01:24:12.564] Found 243 possible bad axioms.
+[2026-06-27 01:24:12.564] Selected the bad axiom SubClassOf(Weather http://purl.bioontology.org/ontology/BIN/BIN_00000017).
+[2026-06-27 01:24:12.573] Found 242 possible bad axioms.
+[2026-06-27 01:24:12.573] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000044 http://purl.bioontology.org/ontology/MESH/D000068997).
+[2026-06-27 01:24:12.578] Found 241 possible bad axioms.
+[2026-06-27 01:24:12.578] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000033 http://purl.bioontology.org/ontology/BIN/BIN_00000030).
+[2026-06-27 01:24:12.582] Found 240 possible bad axioms.
+[2026-06-27 01:24:12.582] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000010 http://purl.bioontology.org/ontology/BIN/BIN_00000002).
+[2026-06-27 01:24:12.588] Found 239 possible bad axioms.
+[2026-06-27 01:24:12.588] Selected the bad axiom SubClassOf(C69317).
+[2026-06-27 01:24:12.593] Found 238 possible bad axioms.
+[2026-06-27 01:24:12.593] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000049 http://purl.bioontology.org/ontology/BIN/BIN_00000048).
+[2026-06-27 01:24:12.597] Found 237 possible bad axioms.
+[2026-06-27 01:24:12.597] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000025 http://purl.bioontology.org/ontology/BIN/BIN_00000026).
+[2026-06-27 01:24:12.601] Found 236 possible bad axioms.
+[2026-06-27 01:24:12.601] Selected the bad axiom SubClassOf(C38084 http://purl.bioontology.org/ontology/BIN/BIN_00000055).
+[2026-06-27 01:24:12.604] Found 235 possible bad axioms.
+[2026-06-27 01:24:12.604] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000076 http://purl.bioontology.org/ontology/BIN/BIN_00000069).
+[2026-06-27 01:24:12.606] Found 234 possible bad axioms.
+[2026-06-27 01:24:12.607] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000014 http://purl.bioontology.org/ontology/BIN/BIN_00000012).
+[2026-06-27 01:24:12.619] Found 233 possible bad axioms.
+[2026-06-27 01:24:12.619] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000088 http://purl.bioontology.
+...[truncated]
+FAIL: attempt=9 seed=113698 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=9 success=0/100
+----- BIN attempt=10 seed=127898 at 2026-06-27 01:24:23 -----
+--- stdout ---
+{"seed":127898,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather","iic_values":{},"repair_runtimes_ms":{"A1":249,"A2":7185,"A3":1882,"B1":2383,"B2":2978}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BIN.owl, seed=127898, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:24:24.248] Checking precondition...
+[2026-06-27 01:24:24.265] Starting the repair...
+[2026-06-27 01:24:24.272] Found 244 possible bad axioms.
+[2026-06-27 01:24:24.274] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000007 http://purl.bioontology.org/ontology/BIN/BIN_00000003).
+[2026-06-27 01:24:24.279] Found 243 possible bad axioms.
+[2026-06-27 01:24:24.279] Selected the bad axiom SubClassOf(C25185).
+[2026-06-27 01:24:24.284] Found 242 possible bad axioms.
+[2026-06-27 01:24:24.284] Selected the bad axiom SubClassOf(C25185 http://purl.bioontology.org/ontology/SNOMEDCT/703503000).
+[2026-06-27 01:24:24.295] Found 241 possible bad axioms.
+[2026-06-27 01:24:24.296] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000026 http://purl.bioontology.org/ontology/BIN/BIN_00000024).
+[2026-06-27 01:24:24.300] Found 240 possible bad axioms.
+[2026-06-27 01:24:24.300] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000065 http://purl.obolibrary.org/obo/PATO_0001543).
+[2026-06-27 01:24:24.304] Found 239 possible bad axioms.
+[2026-06-27 01:24:24.305] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000052 http://purl.bioontology.org/ontology/BIN/BIN_00000066).
+[2026-06-27 01:24:24.308] Found 238 possible bad axioms.
+[2026-06-27 01:24:24.308] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PATO_0001543 http://purl.bioontology.org/ontology/BIN/BIN_00000064).
+[2026-06-27 01:24:24.312] Found 237 possible bad axioms.
+[2026-06-27 01:24:24.312] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000017 http://purl.bioontology.org/ontology/MESH/D004777).
+[2026-06-27 01:24:24.315] Found 236 possible bad axioms.
+[2026-06-27 01:24:24.316] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000046 http://purl.bioontology.org/ontology/BIN/BIN_00000045).
+[2026-06-27 01:24:24.318] Found 235 possible bad axioms.
+[2026-06-27 01:24:24.319] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000067 http://purl.bioontology.org/ontology/BIN/BIN_00000080).
+[2026-06-27 01:24:24.321] Found 234 possible bad axioms.
+[2026-06-27 01:24:24.321] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000047 http://purl.bioontology.org/ontology/BIN/BIN_00000045).
+[2026-06-27 01:24:24.329] Found 233 possible bad axioms.
+[2026-06-27 01:24:24.329] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/BIN/BIN_00000085
+...[truncated]
+FAIL: attempt=10 seed=127898 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+progress: ontology=BIN attempt=10 success=0/100
+=== ABORTED BIN after 10 consecutive failures at 2026-06-27 01:24:39 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for BIN - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=98 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=2 seed=14298 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=3 seed=28498 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=4 seed=42698 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=5 seed=56898 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=6 seed=71098 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=7 seed=85298 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=8 seed=99498 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=9 seed=113698 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+  attempt=10 seed=127898 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ¬BIN_00000019 ⊑ Weather
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

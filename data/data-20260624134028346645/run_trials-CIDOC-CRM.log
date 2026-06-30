@@ -1,0 +1,418 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CIDOC-CRM.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CIDOC-CRM.csv
+
+=== Starting sequential trials for CIDOC-CRM at 2026-06-27 11:07:24 ===
+----- CIDOC-CRM attempt=1 seed=112 at 2026-06-27 11:07:24 -----
+--- stdout ---
+{"seed":112,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":258,"A2":12513,"A3":546,"B1":527,"B2":7367}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=112, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:07:25.227] Checking precondition...
+[2026-06-27 11:07:25.244] Starting the repair...
+[2026-06-27 11:07:25.252] Found 326 possible bad axioms.
+[2026-06-27 11:07:25.254] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object).
+[2026-06-27 11:07:25.259] Found 325 possible bad axioms.
+[2026-06-27 11:07:25.260] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment).
+[2026-06-27 11:07:25.271] Found 324 possible bad axioms.
+[2026-06-27 11:07:25.271] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition http://www.cidoc-crm.org/cidoc-crm/E7_Activity).
+[2026-06-27 11:07:25.276] Found 323 possible bad axioms.
+[2026-06-27 11:07:25.277] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E16_Measurement http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment).
+[2026-06-27 11:07:25.281] Found 322 possible bad axioms.
+[2026-06-27 11:07:25.281] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E7_Activity http://www.cidoc-crm.org/cidoc-crm/E6_Destruction).
+[2026-06-27 11:07:25.286] Found 321 possible bad axioms.
+[2026-06-27 11:07:25.286] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object).
+[2026-06-27 11:07:25.291] Found 320 possible bad axioms.
+[2026-06-27 11:07:25.291] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body http://www.cidoc-crm.org/cidoc-crm/E74_Group).
+[2026-06-27 11:07:25.295] Found 319 possible bad axioms.
+[2026-06-27 11:07:25.295] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E70_Thing http://www.cidoc-crm.org/cidoc-crm/E39_Actor).
+[2026-06-27 11:07:25.299] Found 318 possible bad axioms.
+[2026-06-27 11:07:25.299] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature).
+[2026-06-27 11:07:25.302] Found 317 possible bad axioms.
+[2026-06-27 11:07:25.303] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object).
+[2026-06-27 11:07:25.306] Found 316 possible bad axioms.
+[2026-06-27 11:07:25.306] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E75_Conceptual_Object_Appellation http://www.cidoc-crm.org/cidoc-crm/E35_Title).
+[2026-06-27 11:07:25
+...[truncated]
+FAIL: attempt=1 seed=112 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=1 success=0/100
+----- CIDOC-CRM attempt=2 seed=14312 at 2026-06-27 11:07:46 -----
+--- stdout ---
+{"seed":14312,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":315,"A2":12444,"A3":514,"B1":523,"B2":1882}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=14312, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:07:46.919] Checking precondition...
+[2026-06-27 11:07:46.937] Starting the repair...
+[2026-06-27 11:07:46.944] Found 326 possible bad axioms.
+[2026-06-27 11:07:46.946] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E9_Move http://www.cidoc-crm.org/cidoc-crm/E7_Activity).
+[2026-06-27 11:07:46.951] Found 325 possible bad axioms.
+[2026-06-27 11:07:46.952] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E44_Place_Appellation http://www.cidoc-crm.org/cidoc-crm/E75_Conceptual_Object_Appellation).
+[2026-06-27 11:07:46.962] Found 324 possible bad axioms.
+[2026-06-27 11:07:46.962] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span http://www.cidoc-crm.org/cidoc-crm/E53_Place).
+[2026-06-27 11:07:46.967] Found 323 possible bad axioms.
+[2026-06-27 11:07:46.967] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E5_Event http://www.cidoc-crm.org/cidoc-crm/E4_Period).
+[2026-06-27 11:07:46.971] Found 322 possible bad axioms.
+[2026-06-27 11:07:46.972] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E12_Production http://www.cidoc-crm.org/cidoc-crm/E66_Formation).
+[2026-06-27 11:07:46.976] Found 321 possible bad axioms.
+[2026-06-27 11:07:46.977] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E4_Period http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing).
+[2026-06-27 11:07:46.981] Found 320 possible bad axioms.
+[2026-06-27 11:07:46.981] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E38_Image http://www.cidoc-crm.org/cidoc-crm/E37_Mark).
+[2026-06-27 11:07:46.986] Found 319 possible bad axioms.
+[2026-06-27 11:07:46.986] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition http://www.cidoc-crm.org/cidoc-crm/E85_Joining).
+[2026-06-27 11:07:46.989] Found 318 possible bad axioms.
+[2026-06-27 11:07:46.989] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E80_Part_Removal http://www.cidoc-crm.org/cidoc-crm/E11_Modification).
+[2026-06-27 11:07:46.993] Found 317 possible bad axioms.
+[2026-06-27 11:07:46.993] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object).
+[2026-06-27 11:07:46.996] Found 316 possible bad axioms.
+[2026-06-27 11:07:46.996] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object).
+[2026-06-27 11:07:47.008] Found 315 possible bad axioms.
+[2026
+...[truncated]
+FAIL: attempt=2 seed=14312 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=2 success=0/100
+----- CIDOC-CRM attempt=3 seed=28512 at 2026-06-27 11:08:02 -----
+--- stdout ---
+{"seed":28512,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":377,"A2":12298,"A3":521,"B1":505,"B2":1377}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=28512, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:08:03.026] Checking precondition...
+[2026-06-27 11:08:03.041] Starting the repair...
+[2026-06-27 11:08:03.048] Found 326 possible bad axioms.
+[2026-06-27 11:08:03.050] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence http://www.cidoc-crm.org/cidoc-crm/E65_Creation).
+[2026-06-27 11:08:03.055] Found 325 possible bad axioms.
+[2026-06-27 11:08:03.056] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity).
+[2026-06-27 11:08:03.066] Found 324 possible bad axioms.
+[2026-06-27 11:08:03.066] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body).
+[2026-06-27 11:08:03.072] Found 323 possible bad axioms.
+[2026-06-27 11:08:03.072] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item http://www.cidoc-crm.org/cidoc-crm/E37_Mark).
+[2026-06-27 11:08:03.077] Found 322 possible bad axioms.
+[2026-06-27 11:08:03.077] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity).
+[2026-06-27 11:08:03.082] Found 321 possible bad axioms.
+[2026-06-27 11:08:03.082] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E44_Place_Appellation http://www.cidoc-crm.org/cidoc-crm/E50_Date).
+[2026-06-27 11:08:03.089] Found 320 possible bad axioms.
+[2026-06-27 11:08:03.089] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E41_Appellation http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object).
+[2026-06-27 11:08:03.093] Found 319 possible bad axioms.
+[2026-06-27 11:08:03.094] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E45_Address http://www.cidoc-crm.org/cidoc-crm/E46_Section_Definition).
+[2026-06-27 11:08:03.097] Found 318 possible bad axioms.
+[2026-06-27 11:08:03.097] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span http://www.cidoc-crm.org/cidoc-crm/E53_Place).
+[2026-06-27 11:08:03.100] Found 317 possible bad axioms.
+[2026-06-27 11:08:03.100] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit).
+[2026-06-27 11:08:03.108] Found 316 possible bad axioms.
+[2026-06-27 11:08:03.108] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E7_Activity http://www.cidoc-crm.org/cidoc-crm/E5_Event).
+[2026-06-27 11:08:03.117] Found 315 possible 
+...[truncated]
+FAIL: attempt=3 seed=28512 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=3 success=0/100
+----- CIDOC-CRM attempt=4 seed=42712 at 2026-06-27 11:08:18 -----
+--- stdout ---
+{"seed":42712,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":296,"A2":12586,"A3":932,"B1":559,"B2":3804}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=42712, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:08:18.539] Checking precondition...
+[2026-06-27 11:08:18.555] Starting the repair...
+[2026-06-27 11:08:18.563] Found 326 possible bad axioms.
+[2026-06-27 11:08:18.564] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E37_Mark http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item).
+[2026-06-27 11:08:18.572] Found 325 possible bad axioms.
+[2026-06-27 11:08:18.572] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E4_Period http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment).
+[2026-06-27 11:08:18.581] Found 324 possible bad axioms.
+[2026-06-27 11:08:18.581] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E93_Presence http://www.cidoc-crm.org/cidoc-crm/E5_Event).
+[2026-06-27 11:08:18.587] Found 323 possible bad axioms.
+[2026-06-27 11:08:18.587] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment).
+[2026-06-27 11:08:18.592] Found 322 possible bad axioms.
+[2026-06-27 11:08:18.592] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing).
+[2026-06-27 11:08:18.597] Found 321 possible bad axioms.
+[2026-06-27 11:08:18.597] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E47_Spatial_Coordinates owl:Nothing).
+[2026-06-27 11:08:18.602] Found 320 possible bad axioms.
+[2026-06-27 11:08:18.602] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object http://www.cidoc-crm.org/cidoc-crm/E11_Modification).
+[2026-06-27 11:08:18.606] Found 319 possible bad axioms.
+[2026-06-27 11:08:18.606] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence http://www.cidoc-crm.org/cidoc-crm/E7_Activity).
+[2026-06-27 11:08:18.609] Found 318 possible bad axioms.
+[2026-06-27 11:08:18.609] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition http://www.cidoc-crm.org/cidoc-crm/E7_Activity).
+[2026-06-27 11:08:18.613] Found 317 possible bad axioms.
+[2026-06-27 11:08:18.613] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing).
+[2026-06-27 11:08:18.616] Found 316 possible bad axioms.
+[2026-06-27 11:08:18.616] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object).
+[2026-06-27 11:08:18.628] Found 315 possible bad
+...[truncated]
+FAIL: attempt=4 seed=42712 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=4 success=0/100
+----- CIDOC-CRM attempt=5 seed=56912 at 2026-06-27 11:08:36 -----
+--- stdout ---
+{"seed":56912,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":215,"A2":12651,"A3":974,"B1":476,"B2":2238}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=56912, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:08:37.187] Checking precondition...
+[2026-06-27 11:08:37.204] Starting the repair...
+[2026-06-27 11:08:37.212] Found 326 possible bad axioms.
+[2026-06-27 11:08:37.213] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object owl:Nothing).
+[2026-06-27 11:08:37.219] Found 325 possible bad axioms.
+[2026-06-27 11:08:37.219] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E56_Language http://www.cidoc-crm.org/cidoc-crm/E55_Type).
+[2026-06-27 11:08:37.229] Found 324 possible bad axioms.
+[2026-06-27 11:08:37.229] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E7_Activity owl:Nothing).
+[2026-06-27 11:08:37.234] Found 323 possible bad axioms.
+[2026-06-27 11:08:37.234] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E46_Section_Definition http://www.cidoc-crm.org/cidoc-crm/E47_Spatial_Coordinates).
+[2026-06-27 11:08:37.239] Found 322 possible bad axioms.
+[2026-06-27 11:08:37.239] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E65_Creation http://www.cidoc-crm.org/cidoc-crm/E12_Production).
+[2026-06-27 11:08:37.243] Found 321 possible bad axioms.
+[2026-06-27 11:08:37.243] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment).
+[2026-06-27 11:08:37.249] Found 320 possible bad axioms.
+[2026-06-27 11:08:37.249] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E9_Move http://www.cidoc-crm.org/cidoc-crm/E86_Leaving).
+[2026-06-27 11:08:37.253] Found 319 possible bad axioms.
+[2026-06-27 11:08:37.253] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment).
+[2026-06-27 11:08:37.257] Found 318 possible bad axioms.
+[2026-06-27 11:08:37.257] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E87_Curation_Activity http://www.cidoc-crm.org/cidoc-crm/E7_Activity).
+[2026-06-27 11:08:37.260] Found 317 possible bad axioms.
+[2026-06-27 11:08:37.261] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E48_Place_Name http://www.cidoc-crm.org/cidoc-crm/E45_Address).
+[2026-06-27 11:08:37.263] Found 316 possible bad axioms.
+[2026-06-27 11:08:37.264] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E41_Appellation http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object).
+[2026-06-27 11:08:37.277] Found 315 possible bad axioms.
+[2026-06-27 11:08:37.277] Selected the bad axiom S
+...[truncated]
+FAIL: attempt=5 seed=56912 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=5 success=0/100
+----- CIDOC-CRM attempt=6 seed=71112 at 2026-06-27 11:08:53 -----
+--- stdout ---
+{"seed":71112,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":331,"A2":12377,"A3":567,"B1":882,"B2":4217}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=71112, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:08:54.177] Checking precondition...
+[2026-06-27 11:08:54.192] Starting the repair...
+[2026-06-27 11:08:54.200] Found 326 possible bad axioms.
+[2026-06-27 11:08:54.201] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E45_Address http://www.cidoc-crm.org/cidoc-crm/E51_Contact_Point).
+[2026-06-27 11:08:54.207] Found 325 possible bad axioms.
+[2026-06-27 11:08:54.207] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E44_Place_Appellation http://www.cidoc-crm.org/cidoc-crm/E42_Identifier).
+[2026-06-27 11:08:54.219] Found 324 possible bad axioms.
+[2026-06-27 11:08:54.219] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E7_Activity http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody).
+[2026-06-27 11:08:54.224] Found 323 possible bad axioms.
+[2026-06-27 11:08:54.224] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume).
+[2026-06-27 11:08:54.229] Found 322 possible bad axioms.
+[2026-06-27 11:08:54.229] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E50_Date http://www.cidoc-crm.org/cidoc-crm/E11_Modification).
+[2026-06-27 11:08:54.234] Found 321 possible bad axioms.
+[2026-06-27 11:08:54.235] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object http://www.cidoc-crm.org/cidoc-crm/E11_Modification).
+[2026-06-27 11:08:54.240] Found 320 possible bad axioms.
+[2026-06-27 11:08:54.240] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence).
+[2026-06-27 11:08:54.244] Found 319 possible bad axioms.
+[2026-06-27 11:08:54.244] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E86_Leaving http://www.cidoc-crm.org/cidoc-crm/E74_Group).
+[2026-06-27 11:08:54.248] Found 318 possible bad axioms.
+[2026-06-27 11:08:54.248] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E5_Event http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution).
+[2026-06-27 11:08:54.252] Found 317 possible bad axioms.
+[2026-06-27 11:08:54.252] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E66_Formation http://www.cidoc-crm.org/cidoc-crm/E67_Birth).
+[2026-06-27 11:08:54.255] Found 316 possible bad axioms.
+[2026-06-27 11:08:54.255] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment http://www.cidoc-crm.org/cidoc-crm/E66_Formation).
+[2026-06-27 11:08:54.269] Found 315 possible ba
+...[truncated]
+FAIL: attempt=6 seed=71112 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=6 success=0/100
+----- CIDOC-CRM attempt=7 seed=85312 at 2026-06-27 11:09:12 -----
+--- stdout ---
+{"seed":85312,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":214,"A2":12416,"A3":543,"B1":511,"B2":4085}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=85312, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:09:12.985] Checking precondition...
+[2026-06-27 11:09:13.002] Starting the repair...
+[2026-06-27 11:09:13.009] Found 326 possible bad axioms.
+[2026-06-27 11:09:13.011] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E4_Period http://www.cidoc-crm.org/cidoc-crm/E93_Presence).
+[2026-06-27 11:09:13.016] Found 325 possible bad axioms.
+[2026-06-27 11:09:13.017] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E5_Event owl:Nothing).
+[2026-06-27 11:09:13.026] Found 324 possible bad axioms.
+[2026-06-27 11:09:13.027] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence http://www.cidoc-crm.org/cidoc-crm/E67_Birth).
+[2026-06-27 11:09:13.032] Found 323 possible bad axioms.
+[2026-06-27 11:09:13.033] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation).
+[2026-06-27 11:09:13.037] Found 322 possible bad axioms.
+[2026-06-27 11:09:13.037] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation).
+[2026-06-27 11:09:13.043] Found 321 possible bad axioms.
+[2026-06-27 11:09:13.043] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume).
+[2026-06-27 11:09:13.047] Found 320 possible bad axioms.
+[2026-06-27 11:09:13.047] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E69_Death http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence).
+[2026-06-27 11:09:13.052] Found 319 possible bad axioms.
+[2026-06-27 11:09:13.052] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume).
+[2026-06-27 11:09:13.056] Found 318 possible bad axioms.
+[2026-06-27 11:09:13.056] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E65_Creation http://www.cidoc-crm.org/cidoc-crm/E66_Formation).
+[2026-06-27 11:09:13.059] Found 317 possible bad axioms.
+[2026-06-27 11:09:13.060] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object http://www.cidoc-crm.org/cidoc-crm/E42_Identifier).
+[2026-06-27 11:09:13.062] Found 316 possible bad axioms.
+[2026-06-27 11:09:13.063] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object).
+[2026-06-27 11:09:13.077] Found 315 possible bad axioms.
+[2026-
+...[truncated]
+FAIL: attempt=7 seed=85312 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=7 success=0/100
+----- CIDOC-CRM attempt=8 seed=99512 at 2026-06-27 11:09:30 -----
+--- stdout ---
+{"seed":99512,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":320,"A2":12471,"A3":581,"B1":975,"B2":3369}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=99512, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:09:31.193] Checking precondition...
+[2026-06-27 11:09:31.210] Starting the repair...
+[2026-06-27 11:09:31.218] Found 326 possible bad axioms.
+[2026-06-27 11:09:31.219] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E5_Event http://www.cidoc-crm.org/cidoc-crm/E4_Period).
+[2026-06-27 11:09:31.224] Found 325 possible bad axioms.
+[2026-06-27 11:09:31.225] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E66_Formation http://www.cidoc-crm.org/cidoc-crm/E85_Joining).
+[2026-06-27 11:09:31.234] Found 324 possible bad axioms.
+[2026-06-27 11:09:31.234] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation).
+[2026-06-27 11:09:31.239] Found 323 possible bad axioms.
+[2026-06-27 11:09:31.239] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E86_Leaving http://www.cidoc-crm.org/cidoc-crm/E74_Group).
+[2026-06-27 11:09:31.244] Found 322 possible bad axioms.
+[2026-06-27 11:09:31.244] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object http://www.cidoc-crm.org/cidoc-crm/E41_Appellation).
+[2026-06-27 11:09:31.248] Found 321 possible bad axioms.
+[2026-06-27 11:09:31.249] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E45_Address http://www.cidoc-crm.org/cidoc-crm/E51_Contact_Point).
+[2026-06-27 11:09:31.254] Found 320 possible bad axioms.
+[2026-06-27 11:09:31.255] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object).
+[2026-06-27 11:09:31.258] Found 319 possible bad axioms.
+[2026-06-27 11:09:31.258] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E12_Production http://www.cidoc-crm.org/cidoc-crm/E80_Part_Removal).
+[2026-06-27 11:09:31.261] Found 318 possible bad axioms.
+[2026-06-27 11:09:31.262] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object).
+[2026-06-27 11:09:31.265] Found 317 possible bad axioms.
+[2026-06-27 11:09:31.265] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity).
+[2026-06-27 11:09:31.268] Found 316 possible bad axioms.
+[2026-06-27 11:09:31.268] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E5_Event http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence).
+[2026-06-27 11:09:31.281] Found 315 possible bad a
+...[truncated]
+FAIL: attempt=8 seed=99512 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=8 success=0/100
+----- CIDOC-CRM attempt=9 seed=113712 at 2026-06-27 11:09:48 -----
+--- stdout ---
+{"seed":113712,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":257,"A2":12342,"A3":1081,"B1":508,"B2":2074}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=113712, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:09:49.366] Checking precondition...
+[2026-06-27 11:09:49.382] Starting the repair...
+[2026-06-27 11:09:49.390] Found 326 possible bad axioms.
+[2026-06-27 11:09:49.392] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation).
+[2026-06-27 11:09:49.397] Found 325 possible bad axioms.
+[2026-06-27 11:09:49.398] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E44_Place_Appellation http://www.cidoc-crm.org/cidoc-crm/E51_Contact_Point).
+[2026-06-27 11:09:49.407] Found 324 possible bad axioms.
+[2026-06-27 11:09:49.407] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object).
+[2026-06-27 11:09:49.412] Found 323 possible bad axioms.
+[2026-06-27 11:09:49.412] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E81_Transformation http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence).
+[2026-06-27 11:09:49.417] Found 322 possible bad axioms.
+[2026-06-27 11:09:49.417] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E70_Thing http://www.cidoc-crm.org/cidoc-crm/E39_Actor).
+[2026-06-27 11:09:49.422] Found 321 possible bad axioms.
+[2026-06-27 11:09:49.422] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E11_Modification http://www.cidoc-crm.org/cidoc-crm/E7_Activity).
+[2026-06-27 11:09:49.426] Found 320 possible bad axioms.
+[2026-06-27 11:09:49.427] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment http://www.cidoc-crm.org/cidoc-crm/E50_Date).
+[2026-06-27 11:09:49.430] Found 319 possible bad axioms.
+[2026-06-27 11:09:49.430] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E79_Part_Addition http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation).
+[2026-06-27 11:09:49.433] Found 318 possible bad axioms.
+[2026-06-27 11:09:49.434] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing http://www.cidoc-crm.org/cidoc-crm/E4_Period).
+[2026-06-27 11:09:49.437] Found 317 possible bad axioms.
+[2026-06-27 11:09:49.437] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity).
+[2026-06-27 11:09:49.440] Found 316 possible bad axioms.
+[2026-06-27 11:09:49.441] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E85_Joining http://www.cidoc-crm.org/cidoc-crm/E11_Modification).
+[2026-06-27 11:09:49.4
+...[truncated]
+FAIL: attempt=9 seed=113712 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=9 success=0/100
+----- CIDOC-CRM attempt=10 seed=127912 at 2026-06-27 11:10:05 -----
+--- stdout ---
+{"seed":127912,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item","iic_values":{},"repair_runtimes_ms":{"A1":358,"A2":12577,"A3":966,"B1":816,"B2":2657}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CIDOC-CRM.owl, seed=127912, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:10:06.058] Checking precondition...
+[2026-06-27 11:10:06.075] Starting the repair...
+[2026-06-27 11:10:06.082] Found 326 possible bad axioms.
+[2026-06-27 11:10:06.084] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing).
+[2026-06-27 11:10:06.089] Found 325 possible bad axioms.
+[2026-06-27 11:10:06.090] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit http://www.cidoc-crm.org/cidoc-crm/E55_Type).
+[2026-06-27 11:10:06.099] Found 324 possible bad axioms.
+[2026-06-27 11:10:06.099] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item).
+[2026-06-27 11:10:06.104] Found 323 possible bad axioms.
+[2026-06-27 11:10:06.104] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E56_Language http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation).
+[2026-06-27 11:10:06.109] Found 322 possible bad axioms.
+[2026-06-27 11:10:06.109] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E4_Period http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing).
+[2026-06-27 11:10:06.114] Found 321 possible bad axioms.
+[2026-06-27 11:10:06.114] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E12_Production http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence).
+[2026-06-27 11:10:06.118] Found 320 possible bad axioms.
+[2026-06-27 11:10:06.119] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E44_Place_Appellation http://www.cidoc-crm.org/cidoc-crm/E41_Appellation).
+[2026-06-27 11:10:06.122] Found 319 possible bad axioms.
+[2026-06-27 11:10:06.122] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object).
+[2026-06-27 11:10:06.126] Found 318 possible bad axioms.
+[2026-06-27 11:10:06.126] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body).
+[2026-06-27 11:10:06.129] Found 317 possible bad axioms.
+[2026-06-27 11:10:06.129] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object http://www.cidoc-crm.org/cidoc-crm/E42_Identifier).
+[2026-06-27 11:10:06.132] Found 316 possible bad axioms.
+[2026-06-27 11:10:06.132] Selected the bad axiom SubClassOf(http://www.cidoc-crm.org/cidoc-crm/E34_Inscription http://www.cidoc-crm.org/cidoc-crm/E37_Mark).
+[2026-06-27 11
+...[truncated]
+FAIL: attempt=10 seed=127912 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+progress: ontology=CIDOC-CRM attempt=10 success=0/100
+=== ABORTED CIDOC-CRM after 10 consecutive failures at 2026-06-27 11:10:23 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CIDOC-CRM - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=112 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=2 seed=14312 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=3 seed=28512 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=4 seed=42712 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=5 seed=56912 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=6 seed=71112 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=7 seed=85312 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=8 seed=99512 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=9 seed=113712 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+  attempt=10 seed=127912 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ E77_Persistent_Item
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

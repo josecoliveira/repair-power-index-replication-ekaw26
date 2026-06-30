@@ -1,0 +1,541 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-TEST_A.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-TEST_A.csv
+
+=== Starting sequential trials for TEST_A at 2026-06-27 05:45:46 ===
+----- TEST_A attempt=1 seed=106 at 2026-06-27 05:45:46 -----
+--- stdout ---
+{"seed":106,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":210,"A2":24209,"A3":841,"B1":440,"B2":4067}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=106, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:45:47.349] Checking precondition...
+[2026-06-27 05:45:47.364] Starting the repair...
+[2026-06-27 05:45:47.371] Found 300 possible bad axioms.
+[2026-06-27 05:45:47.373] Selected the bad axiom SubClassOf(Syn_type Locus_id).
+[2026-06-27 05:45:47.378] Found 299 possible bad axioms.
+[2026-06-27 05:45:47.378] Selected the bad axiom SubClassOf(Icd10_code owl:Nothing).
+[2026-06-27 05:45:47.388] Found 298 possible bad axioms.
+[2026-06-27 05:45:47.388] Selected the bad axiom SubClassOf(Synonyms Comments).
+[2026-06-27 05:45:47.394] Found 297 possible bad axioms.
+[2026-06-27 05:45:47.394] Selected the bad axiom SubClassOf(Structure Locus_id).
+[2026-06-27 05:45:47.398] Found 296 possible bad axioms.
+[2026-06-27 05:45:47.399] Selected the bad axiom SubClassOf(Official_name Alias).
+[2026-06-27 05:45:47.403] Found 295 possible bad axioms.
+[2026-06-27 05:45:47.404] Selected the bad axiom SubClassOf(Source Gvk_id).
+[2026-06-27 05:45:47.408] Found 294 possible bad axioms.
+[2026-06-27 05:45:47.409] Selected the bad axiom SubClassOf(Trade_name Intervention_type).
+[2026-06-27 05:45:47.412] Found 293 possible bad axioms.
+[2026-06-27 05:45:47.412] Selected the bad axiom SubClassOf(Year Patent_no).
+[2026-06-27 05:45:47.416] Found 292 possible bad axioms.
+[2026-06-27 05:45:47.416] Selected the bad axiom SubClassOf(Locus_ref Drug_target).
+[2026-06-27 05:45:47.419] Found 291 possible bad axioms.
+[2026-06-27 05:45:47.419] Selected the bad axiom SubClassOf(Structure_reference Gvk_id).
+[2026-06-27 05:45:47.422] Found 290 possible bad axioms.
+[2026-06-27 05:45:47.422] Selected the bad axiom SubClassOf(Drug_master Disease_synonyms_type).
+[2026-06-27 05:45:47.435] Found 289 possible bad axioms.
+[2026-06-27 05:45:47.436] Selected the bad axiom SubClassOf(Year Clinical_study).
+[2026-06-27 05:45:47.439] Found 288 possible bad axioms.
+[2026-06-27 05:45:47.439] Selected the bad axiom SubClassOf(Conclusions Clinical_study).
+[2026-06-27 05:45:47.442] Found 287 possible bad axioms.
+[2026-06-27 05:45:47.443] Selected the bad axiom SubClassOf(Clinical_study Url_text_book).
+[2026-06-27 05:45:47.446] Found 286 possible bad axioms.
+[2026-06-27 05:45:47.446] Selected the bad axiom SubClassOf(Disease_id Disease_synonyms_type).
+[2026-06-27 05:45:47.450] Found 285 possible bad axioms.
+[2026-06-27 05:45:47.450] Selected the bad axiom SubClassOf(Pubmed_id Volume).
+[2026-06-27 05:45:47.454] Found 284 possible bad axioms.
+[2026-06-27 05:45:47.454] Selected the bad axiom SubClassOf(Disease_master Smiles).
+[2026-06-27 05:45:47.458] Found 283 possible bad axioms.
+[2026-06-27 05:45:47.458] Sele
+...[truncated]
+FAIL: attempt=1 seed=106 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=1 success=0/100
+----- TEST_A attempt=2 seed=14306 at 2026-06-27 05:46:17 -----
+--- stdout ---
+{"seed":14306,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":301,"A2":24111,"A3":487,"B1":821,"B2":4586}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=14306, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:46:17.571] Checking precondition...
+[2026-06-27 05:46:17.588] Starting the repair...
+[2026-06-27 05:46:17.595] Found 300 possible bad axioms.
+[2026-06-27 05:46:17.596] Selected the bad axiom SubClassOf(Inchikey owl:Nothing).
+[2026-06-27 05:46:17.601] Found 299 possible bad axioms.
+[2026-06-27 05:46:17.602] Selected the bad axiom SubClassOf(Gvk_id Standard_name_old).
+[2026-06-27 05:46:17.610] Found 298 possible bad axioms.
+[2026-06-27 05:46:17.611] Selected the bad axiom SubClassOf(Ref_type Structure_reference).
+[2026-06-27 05:46:17.616] Found 297 possible bad axioms.
+[2026-06-27 05:46:17.616] Selected the bad axiom SubClassOf(Compound_name Structure).
+[2026-06-27 05:46:17.620] Found 296 possible bad axioms.
+[2026-06-27 05:46:17.620] Selected the bad axiom SubClassOf(Disease_st_type Disease_master).
+[2026-06-27 05:46:17.625] Found 295 possible bad axioms.
+[2026-06-27 05:46:17.625] Selected the bad axiom SubClassOf(Cas_id Drug_master).
+[2026-06-27 05:46:17.628] Found 294 possible bad axioms.
+[2026-06-27 05:46:17.629] Selected the bad axiom SubClassOf(Journal_patent_name Clinical_study).
+[2026-06-27 05:46:17.632] Found 293 possible bad axioms.
+[2026-06-27 05:46:17.633] Selected the bad axiom SubClassOf(Iupac_name Structure).
+[2026-06-27 05:46:17.636] Found 292 possible bad axioms.
+[2026-06-27 05:46:17.636] Selected the bad axiom SubClassOf(Application_type Gvk_id).
+[2026-06-27 05:46:17.639] Found 291 possible bad axioms.
+[2026-06-27 05:46:17.639] Selected the bad axiom SubClassOf(Common_name Synonyms).
+[2026-06-27 05:46:17.642] Found 290 possible bad axioms.
+[2026-06-27 05:46:17.642] Selected the bad axiom SubClassOf(Disease_id Descriptionmaster).
+[2026-06-27 05:46:17.655] Found 289 possible bad axioms.
+[2026-06-27 05:46:17.655] Selected the bad axiom SubClassOf(Abstract Summary).
+[2026-06-27 05:46:17.659] Found 288 possible bad axioms.
+[2026-06-27 05:46:17.659] Selected the bad axiom SubClassOf(Inchikey Structure).
+[2026-06-27 05:46:17.663] Found 287 possible bad axioms.
+[2026-06-27 05:46:17.663] Selected the bad axiom SubClassOf(Url_text_book Treatment).
+[2026-06-27 05:46:17.666] Found 286 possible bad axioms.
+[2026-06-27 05:46:17.666] Selected the bad axiom SubClassOf(Disease_name Disease_master).
+[2026-06-27 05:46:17.670] Found 285 possible bad axioms.
+[2026-06-27 05:46:17.671] Selected the bad axiom SubClassOf(Therapeutic_use T_id).
+[2026-06-27 05:46:17.674] Found 284 possible bad axioms.
+[2026-06-27 05:46:17.674] Selected the bad axiom SubClassOf(Comments owl:Nothing).
+[2026-06-27 05:46:17.677] Found 283 possible bad axioms.
+[2026-
+...[truncated]
+FAIL: attempt=2 seed=14306 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=2 success=0/100
+----- TEST_A attempt=3 seed=28506 at 2026-06-27 05:46:47 -----
+--- stdout ---
+{"seed":28506,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":248,"A2":24029,"A3":1238,"B1":432,"B2":2644}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=28506, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:46:48.339] Checking precondition...
+[2026-06-27 05:46:48.354] Starting the repair...
+[2026-06-27 05:46:48.363] Found 300 possible bad axioms.
+[2026-06-27 05:46:48.364] Selected the bad axiom SubClassOf(Syn_type Sub_subfamily).
+[2026-06-27 05:46:48.369] Found 299 possible bad axioms.
+[2026-06-27 05:46:48.369] Selected the bad axiom SubClassOf(Synonyms Standard_name).
+[2026-06-27 05:46:48.374] Found 298 possible bad axioms.
+[2026-06-27 05:46:48.374] Selected the bad axiom SubClassOf(Drug_target Iupac_name).
+[2026-06-27 05:46:48.384] Found 297 possible bad axioms.
+[2026-06-27 05:46:48.385] Selected the bad axiom SubClassOf(Start_page End_page).
+[2026-06-27 05:46:48.389] Found 296 possible bad axioms.
+[2026-06-27 05:46:48.389] Selected the bad axiom SubClassOf(Start_page Structure_reference).
+[2026-06-27 05:46:48.393] Found 295 possible bad axioms.
+[2026-06-27 05:46:48.393] Selected the bad axiom SubClassOf(Pubmed_id owl:Nothing).
+[2026-06-27 05:46:48.397] Found 294 possible bad axioms.
+[2026-06-27 05:46:48.398] Selected the bad axiom SubClassOf(Structure Stdname_id_old).
+[2026-06-27 05:46:48.402] Found 293 possible bad axioms.
+[2026-06-27 05:46:48.402] Selected the bad axiom SubClassOf(Structure_reference Summary).
+[2026-06-27 05:46:48.405] Found 292 possible bad axioms.
+[2026-06-27 05:46:48.406] Selected the bad axiom SubClassOf(Drug_target Locus_id).
+[2026-06-27 05:46:48.409] Found 291 possible bad axioms.
+[2026-06-27 05:46:48.409] Selected the bad axiom SubClassOf(Disease_name owl:Nothing).
+[2026-06-27 05:46:48.412] Found 290 possible bad axioms.
+[2026-06-27 05:46:48.412] Selected the bad axiom SubClassOf(Volume Structure_reference).
+[2026-06-27 05:46:48.426] Found 289 possible bad axioms.
+[2026-06-27 05:46:48.426] Selected the bad axiom SubClassOf(Journal_patent_name Structure_reference).
+[2026-06-27 05:46:48.430] Found 288 possible bad axioms.
+[2026-06-27 05:46:48.430] Selected the bad axiom SubClassOf(Disease_master Drug_master).
+[2026-06-27 05:46:48.433] Found 287 possible bad axioms.
+[2026-06-27 05:46:48.434] Selected the bad axiom SubClassOf(Compound_name owl:Nothing).
+[2026-06-27 05:46:48.437] Found 286 possible bad axioms.
+[2026-06-27 05:46:48.437] Selected the bad axiom SubClassOf(Structure_reference Gvk_id).
+[2026-06-27 05:46:48.441] Found 285 possible bad axioms.
+[2026-06-27 05:46:48.441] Selected the bad axiom SubClassOf(Year Structure_reference).
+[2026-06-27 05:46:48.444] Found 284 possible bad axioms.
+[2026-06-27 05:46:48.445] Selected the bad axiom SubClassOf(Receptor Alias).
+[2026-06-27 05:46:48.448] Found 283 possible
+...[truncated]
+FAIL: attempt=3 seed=28506 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=3 success=0/100
+----- TEST_A attempt=4 seed=42706 at 2026-06-27 05:47:17 -----
+--- stdout ---
+{"seed":42706,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":405,"A2":24187,"A3":435,"B1":416,"B2":4114}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=42706, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:47:17.373] Checking precondition...
+[2026-06-27 05:47:17.389] Starting the repair...
+[2026-06-27 05:47:17.397] Found 300 possible bad axioms.
+[2026-06-27 05:47:17.399] Selected the bad axiom SubClassOf(Multipleloci Uniprot_id).
+[2026-06-27 05:47:17.404] Found 299 possible bad axioms.
+[2026-06-27 05:47:17.404] Selected the bad axiom SubClassOf(Reference End_page).
+[2026-06-27 05:47:17.412] Found 298 possible bad axioms.
+[2026-06-27 05:47:17.413] Selected the bad axiom SubClassOf(Intervention_type Drug_master).
+[2026-06-27 05:47:17.418] Found 297 possible bad axioms.
+[2026-06-27 05:47:17.418] Selected the bad axiom SubClassOf(Trade_name A_synonyms).
+[2026-06-27 05:47:17.422] Found 296 possible bad axioms.
+[2026-06-27 05:47:17.422] Selected the bad axiom SubClassOf(Therapeutic_class Disease_master).
+[2026-06-27 05:47:17.426] Found 295 possible bad axioms.
+[2026-06-27 05:47:17.426] Selected the bad axiom SubClassOf(Generic_name Disease_master).
+[2026-06-27 05:47:17.430] Found 294 possible bad axioms.
+[2026-06-27 05:47:17.430] Selected the bad axiom SubClassOf(Compound_no owl:Nothing).
+[2026-06-27 05:47:17.434] Found 293 possible bad axioms.
+[2026-06-27 05:47:17.435] Selected the bad axiom SubClassOf(Url_text_book Clinical_study).
+[2026-06-27 05:47:17.438] Found 292 possible bad axioms.
+[2026-06-27 05:47:17.438] Selected the bad axiom SubClassOf(Abstract Clinical_study).
+[2026-06-27 05:47:17.442] Found 291 possible bad axioms.
+[2026-06-27 05:47:17.442] Selected the bad axiom SubClassOf(Structure owl:Thing).
+[2026-06-27 05:47:17.445] Found 290 possible bad axioms.
+[2026-06-27 05:47:17.445] Selected the bad axiom SubClassOf(Comments Locus_id).
+[2026-06-27 05:47:17.459] Found 289 possible bad axioms.
+[2026-06-27 05:47:17.459] Selected the bad axiom SubClassOf(Originator Therapeutic_area).
+[2026-06-27 05:47:17.463] Found 288 possible bad axioms.
+[2026-06-27 05:47:17.463] Selected the bad axiom SubClassOf(Drug_target Structure).
+[2026-06-27 05:47:17.467] Found 287 possible bad axioms.
+[2026-06-27 05:47:17.467] Selected the bad axiom SubClassOf(Clinical_study Structure).
+[2026-06-27 05:47:17.471] Found 286 possible bad axioms.
+[2026-06-27 05:47:17.471] Selected the bad axiom SubClassOf(Cas_id Drug_master).
+[2026-06-27 05:47:17.474] Found 285 possible bad axioms.
+[2026-06-27 05:47:17.475] Selected the bad axiom SubClassOf(Reference Structure_reference).
+[2026-06-27 05:47:17.478] Found 284 possible bad axioms.
+[2026-06-27 05:47:17.478] Selected the bad axiom SubClassOf(Locus_id owl:Nothing).
+[2026-06-27 05:47:17.481] Found 283 possible bad axioms.
+...[truncated]
+FAIL: attempt=4 seed=42706 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=4 success=0/100
+----- TEST_A attempt=5 seed=56906 at 2026-06-27 05:47:47 -----
+--- stdout ---
+{"seed":56906,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":205,"A2":23903,"A3":1489,"B1":423,"B2":7844}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=56906, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:47:47.381] Checking precondition...
+[2026-06-27 05:47:47.396] Starting the repair...
+[2026-06-27 05:47:47.403] Found 300 possible bad axioms.
+[2026-06-27 05:47:47.405] Selected the bad axiom SubClassOf(Summary Structure_reference).
+[2026-06-27 05:47:47.410] Found 299 possible bad axioms.
+[2026-06-27 05:47:47.410] Selected the bad axiom SubClassOf(Disease_synonyms_type Descriptionmaster).
+[2026-06-27 05:47:47.415] Found 298 possible bad axioms.
+[2026-06-27 05:47:47.415] Selected the bad axiom SubClassOf(Therapeutic_use T_id).
+[2026-06-27 05:47:47.424] Found 297 possible bad axioms.
+[2026-06-27 05:47:47.424] Selected the bad axiom SubClassOf(Iupac_name Structure).
+[2026-06-27 05:47:47.428] Found 296 possible bad axioms.
+[2026-06-27 05:47:47.428] Selected the bad axiom SubClassOf(Synonyms Standard_name).
+[2026-06-27 05:47:47.432] Found 295 possible bad axioms.
+[2026-06-27 05:47:47.432] Selected the bad axiom SubClassOf(Comments Pdb_id).
+[2026-06-27 05:47:47.436] Found 294 possible bad axioms.
+[2026-06-27 05:47:47.436] Selected the bad axiom SubClassOf(Disease_name Disease_synonyms_type).
+[2026-06-27 05:47:47.440] Found 293 possible bad axioms.
+[2026-06-27 05:47:47.441] Selected the bad axiom SubClassOf(Compound_name Structure).
+[2026-06-27 05:47:47.444] Found 292 possible bad axioms.
+[2026-06-27 05:47:47.444] Selected the bad axiom SubClassOf(Subfamily Locus_id).
+[2026-06-27 05:47:47.447] Found 291 possible bad axioms.
+[2026-06-27 05:47:47.447] Selected the bad axiom SubClassOf(Synonyms Structure).
+[2026-06-27 05:47:47.450] Found 290 possible bad axioms.
+[2026-06-27 05:47:47.450] Selected the bad axiom SubClassOf(Therapeutic_use Icd10_code).
+[2026-06-27 05:47:47.463] Found 289 possible bad axioms.
+[2026-06-27 05:47:47.464] Selected the bad axiom SubClassOf(Population Reference).
+[2026-06-27 05:47:47.467] Found 288 possible bad axioms.
+[2026-06-27 05:47:47.467] Selected the bad axiom SubClassOf(Population Clinical_study).
+[2026-06-27 05:47:47.470] Found 287 possible bad axioms.
+[2026-06-27 05:47:47.470] Selected the bad axiom SubClassOf(Therapeutic_area T_id).
+[2026-06-27 05:47:47.474] Found 286 possible bad axioms.
+[2026-06-27 05:47:47.474] Selected the bad axiom SubClassOf(Structure Locus_id).
+[2026-06-27 05:47:47.479] Found 285 possible bad axioms.
+[2026-06-27 05:47:47.479] Selected the bad axiom SubClassOf(Syn_type Locus_id).
+[2026-06-27 05:47:47.483] Found 284 possible bad axioms.
+[2026-06-27 05:47:47.483] Selected the bad axiom SubClassOf(Gvk_id owl:Nothing).
+[2026-06-27 05:47:47.486] Found 283 possible bad axioms.
+[2026-06-27 05:47
+...[truncated]
+FAIL: attempt=5 seed=56906 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=5 success=0/100
+----- TEST_A attempt=6 seed=71106 at 2026-06-27 05:48:21 -----
+--- stdout ---
+{"seed":71106,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":281,"A2":23991,"A3":465,"B1":458,"B2":2780}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=71106, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:48:21.715] Checking precondition...
+[2026-06-27 05:48:21.732] Starting the repair...
+[2026-06-27 05:48:21.741] Found 300 possible bad axioms.
+[2026-06-27 05:48:21.742] Selected the bad axiom SubClassOf(Structure Stdname_id_old).
+[2026-06-27 05:48:21.747] Found 299 possible bad axioms.
+[2026-06-27 05:48:21.748] Selected the bad axiom SubClassOf(Family Drug_target).
+[2026-06-27 05:48:21.753] Found 298 possible bad axioms.
+[2026-06-27 05:48:21.753] Selected the bad axiom SubClassOf(Therapeutic_use Therapeutic_area).
+[2026-06-27 05:48:21.762] Found 297 possible bad axioms.
+[2026-06-27 05:48:21.762] Selected the bad axiom SubClassOf(Patent_no Abstract).
+[2026-06-27 05:48:21.767] Found 296 possible bad axioms.
+[2026-06-27 05:48:21.767] Selected the bad axiom SubClassOf(Url_text_book Structure_reference).
+[2026-06-27 05:48:21.772] Found 295 possible bad axioms.
+[2026-06-27 05:48:21.772] Selected the bad axiom SubClassOf(Standard_name_old Drug_target).
+[2026-06-27 05:48:21.776] Found 294 possible bad axioms.
+[2026-06-27 05:48:21.776] Selected the bad axiom SubClassOf(Issue Structure_reference).
+[2026-06-27 05:48:21.780] Found 293 possible bad axioms.
+[2026-06-27 05:48:21.781] Selected the bad axiom SubClassOf(Common_name Synonyms).
+[2026-06-27 05:48:21.784] Found 292 possible bad axioms.
+[2026-06-27 05:48:21.784] Selected the bad axiom SubClassOf(Target_id Alias).
+[2026-06-27 05:48:21.787] Found 291 possible bad axioms.
+[2026-06-27 05:48:21.788] Selected the bad axiom SubClassOf(Table_no Structure_reference).
+[2026-06-27 05:48:21.791] Found 290 possible bad axioms.
+[2026-06-27 05:48:21.791] Selected the bad axiom SubClassOf(Start_page Structure_reference).
+[2026-06-27 05:48:21.804] Found 289 possible bad axioms.
+[2026-06-27 05:48:21.804] Selected the bad axiom SubClassOf(Originator Therapeutic_area).
+[2026-06-27 05:48:21.808] Found 288 possible bad axioms.
+[2026-06-27 05:48:21.808] Selected the bad axiom SubClassOf(Year Clinical_study).
+[2026-06-27 05:48:21.811] Found 287 possible bad axioms.
+[2026-06-27 05:48:21.811] Selected the bad axiom SubClassOf(Synonyms Clinical_study).
+[2026-06-27 05:48:21.815] Found 286 possible bad axioms.
+[2026-06-27 05:48:21.815] Selected the bad axiom SubClassOf(Iupac_name Structure).
+[2026-06-27 05:48:21.819] Found 285 possible bad axioms.
+[2026-06-27 05:48:21.819] Selected the bad axiom SubClassOf(T_id Classification_code).
+[2026-06-27 05:48:21.823] Found 284 possible bad axioms.
+[2026-06-27 05:48:21.823] Selected the bad axiom SubClassOf(Population Patent_no).
+[2026-06-27 05:48:21.826] Found 283 possible bad a
+...[truncated]
+FAIL: attempt=6 seed=71106 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=6 success=0/100
+----- TEST_A attempt=7 seed=85306 at 2026-06-27 05:48:49 -----
+--- stdout ---
+{"seed":85306,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":424,"A2":24039,"A3":450,"B1":453,"B2":4004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=85306, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:48:50.132] Checking precondition...
+[2026-06-27 05:48:50.148] Starting the repair...
+[2026-06-27 05:48:50.156] Found 300 possible bad axioms.
+[2026-06-27 05:48:50.157] Selected the bad axiom SubClassOf(Disease_name Disease_synonyms_type).
+[2026-06-27 05:48:50.162] Found 299 possible bad axioms.
+[2026-06-27 05:48:50.163] Selected the bad axiom SubClassOf(Compound_type Structure_reference).
+[2026-06-27 05:48:50.173] Found 298 possible bad axioms.
+[2026-06-27 05:48:50.173] Selected the bad axiom SubClassOf(Table_no Structure_reference).
+[2026-06-27 05:48:50.179] Found 297 possible bad axioms.
+[2026-06-27 05:48:50.179] Selected the bad axiom SubClassOf(Disease_name Descriptionmaster).
+[2026-06-27 05:48:50.183] Found 296 possible bad axioms.
+[2026-06-27 05:48:50.184] Selected the bad axiom SubClassOf(Title Structure_reference).
+[2026-06-27 05:48:50.188] Found 295 possible bad axioms.
+[2026-06-27 05:48:50.188] Selected the bad axiom SubClassOf(Drug_description Drug_master).
+[2026-06-27 05:48:50.193] Found 294 possible bad axioms.
+[2026-06-27 05:48:50.194] Selected the bad axiom SubClassOf(Source Drug_target).
+[2026-06-27 05:48:50.197] Found 293 possible bad axioms.
+[2026-06-27 05:48:50.198] Selected the bad axiom SubClassOf(Approved_disease_name Drug_master).
+[2026-06-27 05:48:50.200] Found 292 possible bad axioms.
+[2026-06-27 05:48:50.201] Selected the bad axiom SubClassOf(Derivative Structure_reference).
+[2026-06-27 05:48:50.203] Found 291 possible bad axioms.
+[2026-06-27 05:48:50.204] Selected the bad axiom SubClassOf(Common_name Synonyms).
+[2026-06-27 05:48:50.206] Found 290 possible bad axioms.
+[2026-06-27 05:48:50.206] Selected the bad axiom SubClassOf(Title Clinical_study).
+[2026-06-27 05:48:50.220] Found 289 possible bad axioms.
+[2026-06-27 05:48:50.221] Selected the bad axiom SubClassOf(Start_page Clinical_study).
+[2026-06-27 05:48:50.224] Found 288 possible bad axioms.
+[2026-06-27 05:48:50.224] Selected the bad axiom SubClassOf(Drug_target owl:Nothing).
+[2026-06-27 05:48:50.227] Found 287 possible bad axioms.
+[2026-06-27 05:48:50.228] Selected the bad axiom SubClassOf(Remarks Ref_type).
+[2026-06-27 05:48:50.231] Found 286 possible bad axioms.
+[2026-06-27 05:48:50.231] Selected the bad axiom SubClassOf(Disease_master owl:Nothing).
+[2026-06-27 05:48:50.235] Found 285 possible bad axioms.
+[2026-06-27 05:48:50.235] Selected the bad axiom SubClassOf(Locus_id Stdname_id_old).
+[2026-06-27 05:48:50.238] Found 284 possible bad axioms.
+[2026-06-27 05:48:50.238] Selected the bad axiom SubClassOf(Start_page Population).
+[2026-06-27 05:48:50.2
+...[truncated]
+FAIL: attempt=7 seed=85306 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=7 success=0/100
+----- TEST_A attempt=8 seed=99506 at 2026-06-27 05:49:19 -----
+--- stdout ---
+{"seed":99506,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":96,"A2":24148,"A3":480,"B1":839,"B2":4218}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=99506, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:49:20.334] Checking precondition...
+[2026-06-27 05:49:20.352] Starting the repair...
+[2026-06-27 05:49:20.360] Found 300 possible bad axioms.
+[2026-06-27 05:49:20.361] Selected the bad axiom SubClassOf(Descriptionmaster Disease_master).
+[2026-06-27 05:49:20.366] Found 299 possible bad axioms.
+[2026-06-27 05:49:20.366] Selected the bad axiom SubClassOf(Therapeutic_class_code Disease_master).
+[2026-06-27 05:49:20.375] Found 298 possible bad axioms.
+[2026-06-27 05:49:20.376] Selected the bad axiom SubClassOf(Clinical_study Page_no).
+[2026-06-27 05:49:20.381] Found 297 possible bad axioms.
+[2026-06-27 05:49:20.381] Selected the bad axiom SubClassOf(Source owl:Nothing).
+[2026-06-27 05:49:20.385] Found 296 possible bad axioms.
+[2026-06-27 05:49:20.385] Selected the bad axiom SubClassOf(Structure Compound_form).
+[2026-06-27 05:49:20.389] Found 295 possible bad axioms.
+[2026-06-27 05:49:20.390] Selected the bad axiom SubClassOf(Drug_description Drug_master).
+[2026-06-27 05:49:20.394] Found 294 possible bad axioms.
+[2026-06-27 05:49:20.394] Selected the bad axiom SubClassOf(Reference Compound_no).
+[2026-06-27 05:49:20.398] Found 293 possible bad axioms.
+[2026-06-27 05:49:20.399] Selected the bad axiom SubClassOf(Classification_code Gvk_id).
+[2026-06-27 05:49:20.402] Found 292 possible bad axioms.
+[2026-06-27 05:49:20.402] Selected the bad axiom SubClassOf(Reference Structure_reference).
+[2026-06-27 05:49:20.405] Found 291 possible bad axioms.
+[2026-06-27 05:49:20.406] Selected the bad axiom SubClassOf(Comments Locus_id).
+[2026-06-27 05:49:20.409] Found 290 possible bad axioms.
+[2026-06-27 05:49:20.409] Selected the bad axiom SubClassOf(Synonyms Structure).
+[2026-06-27 05:49:20.423] Found 289 possible bad axioms.
+[2026-06-27 05:49:20.423] Selected the bad axiom SubClassOf(owl:Thing Sub_subfamily).
+[2026-06-27 05:49:20.427] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 05:49:20.428] Checking precondition...
+[2026-06-27 05:49:20.435] Starting the repair...
+[2026-06-27 05:49:44.575] Found 1 possible bad axioms.
+[2026-06-27 05:49:44.575] Selected the bad axiom SubClassOf(owl:Thing Sub_subfamily).
+[2026-06-27 05:49:44.576] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 05:49:44.577] Checking precondition...
+[2026-06-27 05:49:44.581] Starting the repair...
+[2026-06-27 05:49:44.605] Selected a reference ontology with 400 axioms.
+[2026-06-27 05:49:45.016] Selected the bad axiom SubClassOf(owl:Thing Sub_subfamily).
+[2026-06-27 05:49:45.054] Selected the weaker axiom 
+...[truncated]
+FAIL: attempt=8 seed=99506 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=8 success=0/100
+----- TEST_A attempt=9 seed=113706 at 2026-06-27 05:49:50 -----
+--- stdout ---
+{"seed":113706,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":420,"A2":23915,"A3":458,"B1":411,"B2":4872,"B3":2896}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=113706, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:49:50.579] Checking precondition...
+[2026-06-27 05:49:50.595] Starting the repair...
+[2026-06-27 05:49:50.602] Found 300 possible bad axioms.
+[2026-06-27 05:49:50.604] Selected the bad axiom SubClassOf(Molecular_class Approved_disease_name).
+[2026-06-27 05:49:50.609] Found 299 possible bad axioms.
+[2026-06-27 05:49:50.609] Selected the bad axiom SubClassOf(Remarks Structure_reference).
+[2026-06-27 05:49:50.617] Found 298 possible bad axioms.
+[2026-06-27 05:49:50.618] Selected the bad axiom SubClassOf(Gvk_id Ref_type).
+[2026-06-27 05:49:50.622] Found 297 possible bad axioms.
+[2026-06-27 05:49:50.623] Selected the bad axiom SubClassOf(Journal_patent_name Clinical_study).
+[2026-06-27 05:49:50.626] Found 296 possible bad axioms.
+[2026-06-27 05:49:50.627] Selected the bad axiom SubClassOf(Multipleloci owl:Nothing).
+[2026-06-27 05:49:50.631] Found 295 possible bad axioms.
+[2026-06-27 05:49:50.631] Selected the bad axiom SubClassOf(Derivative Structure_reference).
+[2026-06-27 05:49:50.635] Found 294 possible bad axioms.
+[2026-06-27 05:49:50.635] Selected the bad axiom SubClassOf(Abstract Clinical_study).
+[2026-06-27 05:49:50.640] Found 293 possible bad axioms.
+[2026-06-27 05:49:50.640] Selected the bad axiom SubClassOf(Source Gvk_id).
+[2026-06-27 05:49:50.643] Found 292 possible bad axioms.
+[2026-06-27 05:49:50.644] Selected the bad axiom SubClassOf(Comments owl:Nothing).
+[2026-06-27 05:49:50.647] Found 291 possible bad axioms.
+[2026-06-27 05:49:50.647] Selected the bad axiom SubClassOf(Structure Locus_id).
+[2026-06-27 05:49:50.650] Found 290 possible bad axioms.
+[2026-06-27 05:49:50.650] Selected the bad axiom SubClassOf(Classification_code Gvk_id).
+[2026-06-27 05:49:50.664] Found 289 possible bad axioms.
+[2026-06-27 05:49:50.664] Selected the bad axiom SubClassOf(Iupac_name Structure).
+[2026-06-27 05:49:50.668] Found 288 possible bad axioms.
+[2026-06-27 05:49:50.668] Selected the bad axiom SubClassOf(Synonyms Standard_name).
+[2026-06-27 05:49:50.671] Found 287 possible bad axioms.
+[2026-06-27 05:49:50.672] Selected the bad axiom SubClassOf(Disease_synonyms_type Prevalence_cdc).
+[2026-06-27 05:49:50.675] Found 286 possible bad axioms.
+[2026-06-27 05:49:50.675] Selected the bad axiom SubClassOf(A_synonyms Drug_master).
+[2026-06-27 05:49:50.679] Found 285 possible bad axioms.
+[2026-06-27 05:49:50.679] Selected the bad axiom SubClassOf(Abstract Summary).
+[2026-06-27 05:49:50.683] Found 284 possible bad axioms.
+[2026-06-27 05:49:50.683] Selected the bad axiom SubClassOf(Locus_ref Drug_target).
+[2026-06-27 05:49:50.686] Found 283 possible bad a
+...[truncated]
+FAIL: attempt=9 seed=113706 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=9 success=0/100
+----- TEST_A attempt=10 seed=127906 at 2026-06-27 05:50:23 -----
+--- stdout ---
+{"seed":127906,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily","iic_values":{},"repair_runtimes_ms":{"A1":403,"A2":24170,"A3":507,"B1":437,"B2":2630}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TEST_A.owl, seed=127906, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:50:24.041] Checking precondition...
+[2026-06-27 05:50:24.056] Starting the repair...
+[2026-06-27 05:50:24.063] Found 300 possible bad axioms.
+[2026-06-27 05:50:24.065] Selected the bad axiom SubClassOf(Claim Title).
+[2026-06-27 05:50:24.070] Found 299 possible bad axioms.
+[2026-06-27 05:50:24.071] Selected the bad axiom SubClassOf(Drug_target Stdname_id_old).
+[2026-06-27 05:50:24.080] Found 298 possible bad axioms.
+[2026-06-27 05:50:24.080] Selected the bad axiom SubClassOf(Disease_name owl:Nothing).
+[2026-06-27 05:50:24.084] Found 297 possible bad axioms.
+[2026-06-27 05:50:24.085] Selected the bad axiom SubClassOf(Multipleloci Uniprot_id).
+[2026-06-27 05:50:24.089] Found 296 possible bad axioms.
+[2026-06-27 05:50:24.089] Selected the bad axiom SubClassOf(Treatment Population).
+[2026-06-27 05:50:24.094] Found 295 possible bad axioms.
+[2026-06-27 05:50:24.094] Selected the bad axiom SubClassOf(Structure_reference owl:Nothing).
+[2026-06-27 05:50:24.099] Found 294 possible bad axioms.
+[2026-06-27 05:50:24.099] Selected the bad axiom SubClassOf(Disease_master Descriptionmaster).
+[2026-06-27 05:50:24.103] Found 293 possible bad axioms.
+[2026-06-27 05:50:24.103] Selected the bad axiom SubClassOf(Structure Sub_subfamily).
+[2026-06-27 05:50:24.106] Found 292 possible bad axioms.
+[2026-06-27 05:50:24.106] Selected the bad axiom SubClassOf(Patent_no Abstract).
+[2026-06-27 05:50:24.110] Found 291 possible bad axioms.
+[2026-06-27 05:50:24.110] Selected the bad axiom SubClassOf(Descriptionmaster Prevalence_cdc).
+[2026-06-27 05:50:24.112] Found 290 possible bad axioms.
+[2026-06-27 05:50:24.113] Selected the bad axiom SubClassOf(Cas_id Drug_master).
+[2026-06-27 05:50:24.131] Found 289 possible bad axioms.
+[2026-06-27 05:50:24.131] Selected the bad axiom SubClassOf(Abstract Summary).
+[2026-06-27 05:50:24.134] Found 288 possible bad axioms.
+[2026-06-27 05:50:24.134] Selected the bad axiom SubClassOf(Therapeutic_class_code Disease_master).
+[2026-06-27 05:50:24.137] Found 287 possible bad axioms.
+[2026-06-27 05:50:24.138] Selected the bad axiom SubClassOf(Ref_type Summary).
+[2026-06-27 05:50:24.141] Found 286 possible bad axioms.
+[2026-06-27 05:50:24.142] Selected the bad axiom SubClassOf(Mol_weight Iupac_name).
+[2026-06-27 05:50:24.147] Found 285 possible bad axioms.
+[2026-06-27 05:50:24.147] Selected the bad axiom SubClassOf(Therapeutic_area Structure).
+[2026-06-27 05:50:24.151] Found 284 possible bad axioms.
+[2026-06-27 05:50:24.152] Selected the bad axiom SubClassOf(Inchikey owl:Nothing).
+[2026-06-27 05:50:24.155] Found 283 possible bad axioms.
+[20
+...[truncated]
+FAIL: attempt=10 seed=127906 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+progress: ontology=TEST_A attempt=10 success=0/100
+=== ABORTED TEST_A after 10 consecutive failures at 2026-06-27 05:50:52 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for TEST_A - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=106 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=2 seed=14306 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=3 seed=28506 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=4 seed=42706 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=5 seed=56906 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=6 seed=71106 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=7 seed=85306 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=8 seed=99506 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=9 seed=113706 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+  attempt=10 seed=127906 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,86,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,8.743702,99,5456,1124,271,809,423,156,,,,,
+2,14286,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,8.071145,84,5506,318,462,592,374,334,,,,,
+3,28486,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,9.194252,70,5468,307,744,1281,717,200,,,,,
+4,42686,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,9.537492,72,5482,332,731,1291,672,568,,,,,
+5,56886,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,8.839372,79,5518,329,294,1269,686,268,,,,,
+6,71086,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,9.225813,185,5471,679,276,1241,699,283,,,,,
+7,85286,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,8.100221,80,5448,476,257,729,373,349,,,,,
+8,99486,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,7.979351,86,5519,321,295,702,375,276,,,,,
+9,113686,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,7.816858,131,5459,318,282,593,401,235,,,,,
+10,127886,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,8.142051,95,5492,334,472,710,367,282,,,,,

@@ -1,0 +1,440 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-OGMD.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-OGMD.csv
+
+=== Starting sequential trials for OGMD at 2026-06-27 13:35:18 ===
+----- OGMD attempt=1 seed=116 at 2026-06-27 13:35:18 -----
+--- stdout ---
+{"seed":116,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006","iic_values":{},"repair_runtimes_ms":{"A1":286,"A2":15799,"A3":1564,"B1":550,"B2":2368}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=116, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:35:18.504] Checking precondition...
+[2026-06-27 13:35:18.520] Starting the repair...
+[2026-06-27 13:35:18.527] Found 334 possible bad axioms.
+[2026-06-27 13:35:18.529] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000003 http://purl.obolibrary.org/obo/OGMD_0000001).
+[2026-06-27 13:35:18.534] Found 333 possible bad axioms.
+[2026-06-27 13:35:18.535] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000033 http://purl.obolibrary.org/obo/OGMD_0000076).
+[2026-06-27 13:35:18.544] Found 332 possible bad axioms.
+[2026-06-27 13:35:18.545] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000125 http://purl.obolibrary.org/obo/OGMD_0000008).
+[2026-06-27 13:35:18.550] Found 331 possible bad axioms.
+[2026-06-27 13:35:18.550] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000100 http://purl.obolibrary.org/obo/OGMD_0000101).
+[2026-06-27 13:35:18.555] Found 330 possible bad axioms.
+[2026-06-27 13:35:18.556] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000101 http://purl.obolibrary.org/obo/OGMD_0000099).
+[2026-06-27 13:35:18.561] Found 329 possible bad axioms.
+[2026-06-27 13:35:18.561] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000100 http://purl.obolibrary.org/obo/OGMD_0000104).
+[2026-06-27 13:35:18.565] Found 328 possible bad axioms.
+[2026-06-27 13:35:18.566] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000032 owl:Nothing).
+[2026-06-27 13:35:18.570] Found 327 possible bad axioms.
+[2026-06-27 13:35:18.570] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000043 http://purl.obolibrary.org/obo/OGMD_0000028).
+[2026-06-27 13:35:18.573] Found 326 possible bad axioms.
+[2026-06-27 13:35:18.573] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000099 http://purl.obolibrary.org/obo/OGMD_0000004).
+[2026-06-27 13:35:18.581] Found 325 possible bad axioms.
+[2026-06-27 13:35:18.581] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000028 http://purl.obolibrary.org/obo/OGMD_0000039).
+[2026-06-27 13:35:18.585] Found 324 possible bad axioms.
+[2026-06-27 13:35:18.585] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000057 http://purl.obolibrary.org/obo/OGMD_0000030).
+[2026-06-27 13:35:18.594] Found 323 possible bad axioms.
+[2026-06-27 13:35:18.594] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000076 http://purl.obolibrary.org/obo/OGMD_0000077).
+[2026-06-27 13:35:18.598] Found 322 possible ba
+...[truncated]
+FAIL: attempt=1 seed=116 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+progress: ontology=OGMD attempt=1 success=0/100
+----- OGMD attempt=2 seed=14316 at 2026-06-27 13:35:39 -----
+--- stdout ---
+{"seed":14316,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006","iic_values":{},"repair_runtimes_ms":{"A1":328,"A2":15878,"A3":660,"B1":593,"B2":2183}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=14316, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:35:39.514] Checking precondition...
+[2026-06-27 13:35:39.531] Starting the repair...
+[2026-06-27 13:35:39.538] Found 334 possible bad axioms.
+[2026-06-27 13:35:39.540] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000060 http://purl.obolibrary.org/obo/OGMD_0000061).
+[2026-06-27 13:35:39.547] Found 333 possible bad axioms.
+[2026-06-27 13:35:39.547] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000024 http://purl.obolibrary.org/obo/OGMD_0000011).
+[2026-06-27 13:35:39.556] Found 332 possible bad axioms.
+[2026-06-27 13:35:39.557] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000080 owl:Nothing).
+[2026-06-27 13:35:39.563] Found 331 possible bad axioms.
+[2026-06-27 13:35:39.563] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000052 http://purl.obolibrary.org/obo/OGMD_0000054).
+[2026-06-27 13:35:39.568] Found 330 possible bad axioms.
+[2026-06-27 13:35:39.569] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000128 http://purl.obolibrary.org/obo/OGMD_0000008).
+[2026-06-27 13:35:39.573] Found 329 possible bad axioms.
+[2026-06-27 13:35:39.574] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000101 http://purl.obolibrary.org/obo/OGMD_0000106).
+[2026-06-27 13:35:39.578] Found 328 possible bad axioms.
+[2026-06-27 13:35:39.578] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000120 http://purl.obolibrary.org/obo/OGMD_0000008).
+[2026-06-27 13:35:39.581] Found 327 possible bad axioms.
+[2026-06-27 13:35:39.582] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000008 http://purl.obolibrary.org/obo/OGMD_0000131).
+[2026-06-27 13:35:39.585] Found 326 possible bad axioms.
+[2026-06-27 13:35:39.585] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000113 owl:Nothing).
+[2026-06-27 13:35:39.588] Found 325 possible bad axioms.
+[2026-06-27 13:35:39.588] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000028 http://purl.obolibrary.org/obo/OGMD_0000042).
+[2026-06-27 13:35:39.597] Found 324 possible bad axioms.
+[2026-06-27 13:35:39.597] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000091 http://purl.obolibrary.org/obo/OGMD_0000095).
+[2026-06-27 13:35:39.605] Found 323 possible bad axioms.
+[2026-06-27 13:35:39.606] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000074 http://purl.obolibrary.org/obo/OGMD_0000032).
+[2026-06-27 13:35:39.609] Found 322 possible bad axioms.
+[2026-06-27 13:35:39
+...[truncated]
+FAIL: attempt=2 seed=14316 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+progress: ontology=OGMD attempt=2 success=0/100
+----- OGMD attempt=3 seed=28516 at 2026-06-27 13:35:59 -----
+--- stdout ---
+{"seed":28516,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116","iic_values":{},"repair_runtimes_ms":{"A1":375,"A2":15700,"A3":1913,"B1":949,"B2":3118}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=28516, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:35:59.606] Checking precondition...
+[2026-06-27 13:35:59.623] Starting the repair...
+[2026-06-27 13:35:59.631] Found 334 possible bad axioms.
+[2026-06-27 13:35:59.632] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000128 owl:Nothing).
+[2026-06-27 13:35:59.638] Found 333 possible bad axioms.
+[2026-06-27 13:35:59.639] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000075 http://purl.obolibrary.org/obo/OGMD_0000076).
+[2026-06-27 13:35:59.648] Found 332 possible bad axioms.
+[2026-06-27 13:35:59.648] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000018 http://purl.obolibrary.org/obo/OGMD_0000019).
+[2026-06-27 13:35:59.655] Found 331 possible bad axioms.
+[2026-06-27 13:35:59.655] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000057 http://purl.obolibrary.org/obo/OGMD_0000030).
+[2026-06-27 13:35:59.660] Found 330 possible bad axioms.
+[2026-06-27 13:35:59.660] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000001 http://purl.obolibrary.org/obo/OGMD_0000007).
+[2026-06-27 13:35:59.665] Found 329 possible bad axioms.
+[2026-06-27 13:35:59.665] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000047 http://purl.obolibrary.org/obo/OGMD_0000045).
+[2026-06-27 13:35:59.669] Found 328 possible bad axioms.
+[2026-06-27 13:35:59.670] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000112 http://purl.obolibrary.org/obo/OGMD_0000086).
+[2026-06-27 13:35:59.673] Found 327 possible bad axioms.
+[2026-06-27 13:35:59.673] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000060 http://purl.obolibrary.org/obo/OGMD_0000061).
+[2026-06-27 13:35:59.677] Found 326 possible bad axioms.
+[2026-06-27 13:35:59.677] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000074 owl:Nothing).
+[2026-06-27 13:35:59.685] Found 325 possible bad axioms.
+[2026-06-27 13:35:59.685] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000110 http://purl.obolibrary.org/obo/OGMD_0000106).
+[2026-06-27 13:35:59.689] Found 324 possible bad axioms.
+[2026-06-27 13:35:59.689] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000124 owl:Nothing).
+[2026-06-27 13:35:59.697] Found 323 possible bad axioms.
+[2026-06-27 13:35:59.697] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000121 http://purl.obolibrary.org/obo/OGMD_0000125).
+[2026-06-27 13:35:59.701] Found 322 possible bad axioms.
+[2026-06-27 13:35:59.701] Selected the bad axiom Sub
+...[truncated]
+FAIL: attempt=3 seed=28516 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+progress: ontology=OGMD attempt=3 success=0/100
+----- OGMD attempt=4 seed=42716 at 2026-06-27 13:36:21 -----
+--- stdout ---
+{"seed":42716,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006","iic_values":{},"repair_runtimes_ms":{"A1":188,"A2":15825,"A3":659,"B1":1206,"B2":2696}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=42716, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:36:22.109] Checking precondition...
+[2026-06-27 13:36:22.126] Starting the repair...
+[2026-06-27 13:36:22.133] Found 334 possible bad axioms.
+[2026-06-27 13:36:22.135] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000110 http://purl.obolibrary.org/obo/OGMD_0000101).
+[2026-06-27 13:36:22.142] Found 333 possible bad axioms.
+[2026-06-27 13:36:22.142] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000064 http://purl.obolibrary.org/obo/OGMD_0000031).
+[2026-06-27 13:36:22.153] Found 332 possible bad axioms.
+[2026-06-27 13:36:22.153] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000007 http://purl.obolibrary.org/obo/OGMD_0000001).
+[2026-06-27 13:36:22.159] Found 331 possible bad axioms.
+[2026-06-27 13:36:22.159] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000002 http://purl.obolibrary.org/obo/OGMD_0000024).
+[2026-06-27 13:36:22.165] Found 330 possible bad axioms.
+[2026-06-27 13:36:22.165] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000002 http://purl.obolibrary.org/obo/OGMD_0000026).
+[2026-06-27 13:36:22.170] Found 329 possible bad axioms.
+[2026-06-27 13:36:22.170] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000131 http://purl.obolibrary.org/obo/OGMD_0000008).
+[2026-06-27 13:36:22.175] Found 328 possible bad axioms.
+[2026-06-27 13:36:22.175] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000113 http://purl.obolibrary.org/obo/OGMD_0000133).
+[2026-06-27 13:36:22.179] Found 327 possible bad axioms.
+[2026-06-27 13:36:22.180] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000121 http://purl.obolibrary.org/obo/OGMD_0000126).
+[2026-06-27 13:36:22.183] Found 326 possible bad axioms.
+[2026-06-27 13:36:22.183] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000009 http://purl.obolibrary.org/obo/OGMD_0000116).
+[2026-06-27 13:36:22.186] Found 325 possible bad axioms.
+[2026-06-27 13:36:22.186] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000118 owl:Nothing).
+[2026-06-27 13:36:22.194] Found 324 possible bad axioms.
+[2026-06-27 13:36:22.195] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000061 http://purl.obolibrary.org/obo/OGMD_0000058).
+[2026-06-27 13:36:22.204] Found 323 possible bad axioms.
+[2026-06-27 13:36:22.204] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000008 owl:Nothing).
+[2026-06-27 13:36:22.208] Found 322 possible bad axioms.
+[2026-06-27 13:36:22
+...[truncated]
+FAIL: attempt=4 seed=42716 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+progress: ontology=OGMD attempt=4 success=0/100
+----- OGMD attempt=5 seed=56916 at 2026-06-27 13:36:42 -----
+--- stdout ---
+{"seed":56916,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116","iic_values":{},"repair_runtimes_ms":{"A1":219,"A2":15702,"A3":632,"B1":1015,"B2":1197}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=56916, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:36:43.148] Checking precondition...
+[2026-06-27 13:36:43.164] Starting the repair...
+[2026-06-27 13:36:43.172] Found 334 possible bad axioms.
+[2026-06-27 13:36:43.174] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000095 http://purl.obolibrary.org/obo/OGMD_0000094).
+[2026-06-27 13:36:43.179] Found 333 possible bad axioms.
+[2026-06-27 13:36:43.179] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000122 http://purl.obolibrary.org/obo/OGMD_0000008).
+[2026-06-27 13:36:43.188] Found 332 possible bad axioms.
+[2026-06-27 13:36:43.188] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000100 http://purl.obolibrary.org/obo/OGMD_0000104).
+[2026-06-27 13:36:43.194] Found 331 possible bad axioms.
+[2026-06-27 13:36:43.194] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000056 http://purl.obolibrary.org/obo/OGMD_0000058).
+[2026-06-27 13:36:43.198] Found 330 possible bad axioms.
+[2026-06-27 13:36:43.198] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000096 http://purl.obolibrary.org/obo/OGMD_0000091).
+[2026-06-27 13:36:43.204] Found 329 possible bad axioms.
+[2026-06-27 13:36:43.204] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000048 http://purl.obolibrary.org/obo/OGMD_0000029).
+[2026-06-27 13:36:43.208] Found 328 possible bad axioms.
+[2026-06-27 13:36:43.209] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000118 owl:Nothing).
+[2026-06-27 13:36:43.213] Found 327 possible bad axioms.
+[2026-06-27 13:36:43.213] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000070 http://purl.obolibrary.org/obo/OGMD_0000032).
+[2026-06-27 13:36:43.217] Found 326 possible bad axioms.
+[2026-06-27 13:36:43.217] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000099 http://purl.obolibrary.org/obo/OGMD_0000004).
+[2026-06-27 13:36:43.225] Found 325 possible bad axioms.
+[2026-06-27 13:36:43.225] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000024 http://purl.obolibrary.org/obo/OGMD_0000011).
+[2026-06-27 13:36:43.228] Found 324 possible bad axioms.
+[2026-06-27 13:36:43.228] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000061 http://purl.obolibrary.org/obo/OGMD_0000056).
+[2026-06-27 13:36:43.237] Found 323 possible bad axioms.
+[2026-06-27 13:36:43.237] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000064 http://purl.obolibrary.org/obo/OGMD_0000031).
+[2026-06-27 13:36:43.240] Found 322 possible 
+...[truncated]
+FAIL: attempt=5 seed=56916 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+progress: ontology=OGMD attempt=5 success=0/100
+----- OGMD attempt=6 seed=71116 at 2026-06-27 13:37:02 -----
+--- stdout ---
+{"seed":71116,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006","iic_values":{},"repair_runtimes_ms":{"A1":376,"A2":15756,"A3":1274,"B1":618,"B2":2419}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=71116, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:37:02.365] Checking precondition...
+[2026-06-27 13:37:02.381] Starting the repair...
+[2026-06-27 13:37:02.389] Found 334 possible bad axioms.
+[2026-06-27 13:37:02.390] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000001 http://purl.obolibrary.org/obo/OGMD_0000000).
+[2026-06-27 13:37:02.396] Found 333 possible bad axioms.
+[2026-06-27 13:37:02.396] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000024 http://purl.obolibrary.org/obo/OGMD_0000025).
+[2026-06-27 13:37:02.405] Found 332 possible bad axioms.
+[2026-06-27 13:37:02.405] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000091 http://purl.obolibrary.org/obo/OGMD_0000095).
+[2026-06-27 13:37:02.411] Found 331 possible bad axioms.
+[2026-06-27 13:37:02.411] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000088 http://purl.obolibrary.org/obo/OGMD_0000085).
+[2026-06-27 13:37:02.417] Found 330 possible bad axioms.
+[2026-06-27 13:37:02.417] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000100 http://purl.obolibrary.org/obo/OGMD_0000099).
+[2026-06-27 13:37:02.421] Found 329 possible bad axioms.
+[2026-06-27 13:37:02.422] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000012 http://purl.obolibrary.org/obo/OGMD_0000076).
+[2026-06-27 13:37:02.427] Found 328 possible bad axioms.
+[2026-06-27 13:37:02.427] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000036 http://purl.obolibrary.org/obo/OGMD_0000028).
+[2026-06-27 13:37:02.431] Found 327 possible bad axioms.
+[2026-06-27 13:37:02.431] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000074 owl:Nothing).
+[2026-06-27 13:37:02.434] Found 326 possible bad axioms.
+[2026-06-27 13:37:02.434] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000058 http://purl.obolibrary.org/obo/OGMD_0000060).
+[2026-06-27 13:37:02.442] Found 325 possible bad axioms.
+[2026-06-27 13:37:02.442] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000014 http://purl.obolibrary.org/obo/OGMD_0000002).
+[2026-06-27 13:37:02.445] Found 324 possible bad axioms.
+[2026-06-27 13:37:02.445] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000113 http://purl.obolibrary.org/obo/OGMD_0000084).
+[2026-06-27 13:37:02.454] Found 323 possible bad axioms.
+[2026-06-27 13:37:02.454] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000128 http://purl.obolibrary.org/obo/OGMD_0000129).
+[2026-06-27 13:37:02.458] Found 322 possible 
+...[truncated]
+FAIL: attempt=6 seed=71116 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+progress: ontology=OGMD attempt=6 success=0/100
+----- OGMD attempt=7 seed=85316 at 2026-06-27 13:37:22 -----
+--- stdout ---
+{"seed":85316,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116","iic_values":{},"repair_runtimes_ms":{"A1":178,"A2":15684,"A3":584,"B1":551,"B2":1193}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=85316, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:37:23.255] Checking precondition...
+[2026-06-27 13:37:23.271] Starting the repair...
+[2026-06-27 13:37:23.278] Found 334 possible bad axioms.
+[2026-06-27 13:37:23.280] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000107 http://purl.obolibrary.org/obo/OGMD_0000101).
+[2026-06-27 13:37:23.285] Found 333 possible bad axioms.
+[2026-06-27 13:37:23.286] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000056 http://purl.obolibrary.org/obo/OGMD_0000030).
+[2026-06-27 13:37:23.295] Found 332 possible bad axioms.
+[2026-06-27 13:37:23.295] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000067 http://purl.obolibrary.org/obo/OGMD_0000071).
+[2026-06-27 13:37:23.301] Found 331 possible bad axioms.
+[2026-06-27 13:37:23.301] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000034 owl:Nothing).
+[2026-06-27 13:37:23.307] Found 330 possible bad axioms.
+[2026-06-27 13:37:23.307] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000010 http://purl.obolibrary.org/obo/OGMD_0000003).
+[2026-06-27 13:37:23.312] Found 329 possible bad axioms.
+[2026-06-27 13:37:23.313] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000004 http://purl.obolibrary.org/obo/OGMD_0000084).
+[2026-06-27 13:37:23.317] Found 328 possible bad axioms.
+[2026-06-27 13:37:23.317] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000001 http://purl.obolibrary.org/obo/OGMD_0000006).
+[2026-06-27 13:37:23.321] Found 327 possible bad axioms.
+[2026-06-27 13:37:23.321] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000024 http://purl.obolibrary.org/obo/OGMD_0000011).
+[2026-06-27 13:37:23.325] Found 326 possible bad axioms.
+[2026-06-27 13:37:23.325] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000128 owl:Nothing).
+[2026-06-27 13:37:23.328] Found 325 possible bad axioms.
+[2026-06-27 13:37:23.328] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000061 http://purl.obolibrary.org/obo/OGMD_0000056).
+[2026-06-27 13:37:23.337] Found 324 possible bad axioms.
+[2026-06-27 13:37:23.337] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000087 http://purl.obolibrary.org/obo/OGMD_0000085).
+[2026-06-27 13:37:23.346] Found 323 possible bad axioms.
+[2026-06-27 13:37:23.346] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000010 http://purl.obolibrary.org/obo/OGMD_0000001).
+[2026-06-27 13:37:23.350] Found 322 possible bad axioms.
+[2026-06-27 13:37:23
+...[truncated]
+FAIL: attempt=7 seed=85316 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+progress: ontology=OGMD attempt=7 success=0/100
+----- OGMD attempt=8 seed=99516 at 2026-06-27 13:37:41 -----
+--- stdout ---
+{"seed":99516,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006","iic_values":{},"repair_runtimes_ms":{"A1":258,"A2":15937,"A3":620,"B1":1042,"B2":3005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=99516, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:37:41.895] Checking precondition...
+[2026-06-27 13:37:41.911] Starting the repair...
+[2026-06-27 13:37:41.918] Found 334 possible bad axioms.
+[2026-06-27 13:37:41.920] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000001 http://purl.obolibrary.org/obo/OGMD_0000003).
+[2026-06-27 13:37:41.926] Found 333 possible bad axioms.
+[2026-06-27 13:37:41.926] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000037 http://purl.obolibrary.org/obo/OGMD_0000028).
+[2026-06-27 13:37:41.935] Found 332 possible bad axioms.
+[2026-06-27 13:37:41.936] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000128 http://purl.obolibrary.org/obo/OGMD_0000008).
+[2026-06-27 13:37:41.941] Found 331 possible bad axioms.
+[2026-06-27 13:37:41.941] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000000 http://purl.obolibrary.org/obo/OGMD_0000007).
+[2026-06-27 13:37:41.946] Found 330 possible bad axioms.
+[2026-06-27 13:37:41.947] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000028 http://purl.obolibrary.org/obo/OGMD_0000042).
+[2026-06-27 13:37:41.952] Found 329 possible bad axioms.
+[2026-06-27 13:37:41.952] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000089 http://purl.obolibrary.org/obo/OGMD_0000088).
+[2026-06-27 13:37:41.957] Found 328 possible bad axioms.
+[2026-06-27 13:37:41.957] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000050 http://purl.obolibrary.org/obo/OGMD_0000027).
+[2026-06-27 13:37:41.961] Found 327 possible bad axioms.
+[2026-06-27 13:37:41.961] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000100 owl:Nothing).
+[2026-06-27 13:37:41.964] Found 326 possible bad axioms.
+[2026-06-27 13:37:41.964] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000124 owl:Nothing).
+[2026-06-27 13:37:41.972] Found 325 possible bad axioms.
+[2026-06-27 13:37:41.972] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000099 http://purl.obolibrary.org/obo/OGMD_0000004).
+[2026-06-27 13:37:41.976] Found 324 possible bad axioms.
+[2026-06-27 13:37:41.976] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000100 http://purl.obolibrary.org/obo/OGMD_0000105).
+[2026-06-27 13:37:41.984] Found 323 possible bad axioms.
+[2026-06-27 13:37:41.985] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000091 http://purl.obolibrary.org/obo/OGMD_0000086).
+[2026-06-27 13:37:41.989] Found 322 possible bad axioms.
+[2026-06-27 13:37:41
+...[truncated]
+FAIL: attempt=8 seed=99516 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+progress: ontology=OGMD attempt=8 success=0/100
+----- OGMD attempt=9 seed=113716 at 2026-06-27 13:38:02 -----
+--- stdout ---
+{"seed":113716,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116","iic_values":{},"repair_runtimes_ms":{"A1":274,"A2":15926,"A3":1031,"B1":595,"B2":1559}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=113716, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:38:03.209] Checking precondition...
+[2026-06-27 13:38:03.225] Starting the repair...
+[2026-06-27 13:38:03.233] Found 334 possible bad axioms.
+[2026-06-27 13:38:03.234] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000027 http://purl.obolibrary.org/obo/OGMD_0000012).
+[2026-06-27 13:38:03.240] Found 333 possible bad axioms.
+[2026-06-27 13:38:03.240] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000085 http://purl.obolibrary.org/obo/OGMD_0000004).
+[2026-06-27 13:38:03.249] Found 332 possible bad axioms.
+[2026-06-27 13:38:03.249] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000030 http://purl.obolibrary.org/obo/OGMD_0000012).
+[2026-06-27 13:38:03.255] Found 331 possible bad axioms.
+[2026-06-27 13:38:03.255] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000004 owl:Nothing).
+[2026-06-27 13:38:03.260] Found 330 possible bad axioms.
+[2026-06-27 13:38:03.260] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000103 http://purl.obolibrary.org/obo/OGMD_0000102).
+[2026-06-27 13:38:03.267] Found 329 possible bad axioms.
+[2026-06-27 13:38:03.267] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000080 http://purl.obolibrary.org/obo/OGMD_0000004).
+[2026-06-27 13:38:03.272] Found 328 possible bad axioms.
+[2026-06-27 13:38:03.273] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000004 http://purl.obolibrary.org/obo/OGMD_0000113).
+[2026-06-27 13:38:03.277] Found 327 possible bad axioms.
+[2026-06-27 13:38:03.277] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000101 http://purl.obolibrary.org/obo/OGMD_0000106).
+[2026-06-27 13:38:03.281] Found 326 possible bad axioms.
+[2026-06-27 13:38:03.281] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000095 http://purl.obolibrary.org/obo/OGMD_0000091).
+[2026-06-27 13:38:03.284] Found 325 possible bad axioms.
+[2026-06-27 13:38:03.285] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000131 http://purl.obolibrary.org/obo/OGMD_0000118).
+[2026-06-27 13:38:03.293] Found 324 possible bad axioms.
+[2026-06-27 13:38:03.293] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000029 http://purl.obolibrary.org/obo/OGMD_0000012).
+[2026-06-27 13:38:03.300] Found 323 possible bad axioms.
+[2026-06-27 13:38:03.301] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000032 http://purl.obolibrary.org/obo/OGMD_0000012).
+[2026-06-27 13:38:03.304] Found 322 possible
+...[truncated]
+FAIL: attempt=9 seed=113716 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+progress: ontology=OGMD attempt=9 success=0/100
+----- OGMD attempt=10 seed=127916 at 2026-06-27 13:38:22 -----
+--- stdout ---
+{"seed":127916,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116","iic_values":{},"repair_runtimes_ms":{"A1":193,"A2":15717,"A3":1079,"B1":542,"B2":1964}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OGMD.owl, seed=127916, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:38:23.035] Checking precondition...
+[2026-06-27 13:38:23.050] Starting the repair...
+[2026-06-27 13:38:23.058] Found 334 possible bad axioms.
+[2026-06-27 13:38:23.060] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000096 http://purl.obolibrary.org/obo/OGMD_0000095).
+[2026-06-27 13:38:23.066] Found 333 possible bad axioms.
+[2026-06-27 13:38:23.066] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000001 http://purl.obolibrary.org/obo/OGMD_0000003).
+[2026-06-27 13:38:23.076] Found 332 possible bad axioms.
+[2026-06-27 13:38:23.076] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000001 http://purl.obolibrary.org/obo/OGMD_0000000).
+[2026-06-27 13:38:23.082] Found 331 possible bad axioms.
+[2026-06-27 13:38:23.082] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000070 http://purl.obolibrary.org/obo/OGMD_0000032).
+[2026-06-27 13:38:23.087] Found 330 possible bad axioms.
+[2026-06-27 13:38:23.088] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000087 http://purl.obolibrary.org/obo/OGMD_0000089).
+[2026-06-27 13:38:23.094] Found 329 possible bad axioms.
+[2026-06-27 13:38:23.094] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000008 http://purl.obolibrary.org/obo/OGMD_0000005).
+[2026-06-27 13:38:23.098] Found 328 possible bad axioms.
+[2026-06-27 13:38:23.099] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000008 owl:Nothing).
+[2026-06-27 13:38:23.103] Found 327 possible bad axioms.
+[2026-06-27 13:38:23.103] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000042 http://purl.obolibrary.org/obo/OGMD_0000035).
+[2026-06-27 13:38:23.107] Found 326 possible bad axioms.
+[2026-06-27 13:38:23.107] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000033 http://purl.obolibrary.org/obo/OGMD_0000075).
+[2026-06-27 13:38:23.115] Found 325 possible bad axioms.
+[2026-06-27 13:38:23.115] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000096 http://purl.obolibrary.org/obo/OGMD_0000091).
+[2026-06-27 13:38:23.119] Found 324 possible bad axioms.
+[2026-06-27 13:38:23.119] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000081 http://purl.obolibrary.org/obo/OGMD_0000082).
+[2026-06-27 13:38:23.128] Found 323 possible bad axioms.
+[2026-06-27 13:38:23.128] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMD_0000100 http://purl.obolibrary.org/obo/OGMD_0000099).
+[2026-06-27 13:38:23.132] Found 322 possible
+...[truncated]
+FAIL: attempt=10 seed=127916 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+progress: ontology=OGMD attempt=10 success=0/100
+=== ABORTED OGMD after 10 consecutive failures at 2026-06-27 13:38:42 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for OGMD - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=116 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+  attempt=2 seed=14316 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+  attempt=3 seed=28516 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+  attempt=4 seed=42716 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+  attempt=5 seed=56916 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+  attempt=6 seed=71116 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+  attempt=7 seed=85316 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+  attempt=8 seed=99516 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OGMD_0000116 ⊑ OGMD_0000006
+  attempt=9 seed=113716 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+  attempt=10 seed=127916 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ OGMD_0000116
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,59,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012,3.661515,71,1482,304,275,1155,,,,,,,
+2,14259,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012,3.808588,121,1451,300,265,1307,,,,,,,
+3,28459,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥,3.708067,139,1473,282,276,1177,,,,,,,
+4,42659,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029,3.324830,100,1475,591,276,516,,,,,,,
+5,56859,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012,4.941971,94,1464,1819,238,969,,,,,,,
+6,71059,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019,3.813907,64,1502,301,639,934,,,,,,,
+7,85259,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029,3.746663,33,1517,288,276,1261,,,,,,,
+8,99459,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012,4.035932,135,1479,514,239,1290,,,,,,,
+9,113659,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019,4.622419,61,1507,302,1467,912,,,,,,,
+10,127859,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥,3.905366,93,1476,598,246,1116,,,,,,,

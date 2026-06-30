@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,60,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR,3.363098,49,1315,258,204,1168,,,,,,,
+2,14260,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV,3.428931,42,1331,401,206,1066,,,,,,,
+3,28460,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CNV ⊑ ⊥,3.314712,125,1273,279,213,1074,,,,,,,
+4,42660,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV,3.424130,50,1322,261,202,1228,,,,,,,
+5,56860,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV,3.222740,128,1246,256,208,1025,,,,,,,
+6,71060,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV,3.213904,86,1311,484,209,757,,,,,,,
+7,85260,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV,3.244349,50,1310,249,202,1072,,,,,,,
+8,99460,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR,3.407124,133,1247,439,207,1014,,,,,,,
+9,113660,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV,3.304977,31,1362,270,207,1063,,,,,,,
+10,127860,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV,3.675469,64,1285,246,444,1292,,,,,,,

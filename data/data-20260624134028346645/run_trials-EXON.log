@@ -1,0 +1,472 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-EXON.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-EXON.csv
+
+=== Starting sequential trials for EXON at 2026-06-24 15:34:46 ===
+----- EXON attempt=1 seed=17 at 2026-06-24 15:34:46 -----
+--- stdout ---
+{"seed":17,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B6","error_message":"Repair timeout: B6 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":27,"A2":107,"A3":190,"B1":400,"B2":397,"B3":174,"B4":137,"B5":1118,"B6":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=17, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:34:46.609] Checking precondition...
+[2026-06-24 15:34:46.619] Starting the repair...
+[2026-06-24 15:34:46.625] Found 19 possible bad axioms.
+[2026-06-24 15:34:46.627] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Trypticase_soy_agar_plus_yeast_extract).
+[2026-06-24 15:34:46.628] Found 18 possible bad axioms.
+[2026-06-24 15:34:46.628] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:34:46.633] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:34:46.633] Checking precondition...
+[2026-06-24 15:34:46.642] Starting the repair...
+[2026-06-24 15:34:46.740] Found 1 possible bad axioms.
+[2026-06-24 15:34:46.740] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:34:46.740] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:34:46.742] Checking precondition...
+[2026-06-24 15:34:46.744] Starting the repair...
+[2026-06-24 15:34:46.758] Selected a reference ontology with 27 axioms.
+[2026-06-24 15:34:46.918] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:34:46.928] Selected the weaker axiom SubClassOf(owl:Nothing owl:Nothing).
+[2026-06-24 15:34:46.931] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-24 15:34:46.931] Checking precondition...
+[2026-06-24 15:34:46.933] Starting the repair...
+[2026-06-24 15:34:46.940] Selected a reference ontology with 28 axioms.
+[2026-06-24 15:34:47.031] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:34:47.033] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Other_medium owl:Nothing).
+[2026-06-24 15:34:47.107] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium owl:Nothing).
+[2026-06-24 15:34:47.108] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Broth_medium owl:Nothing).
+[2026-06-24 15:34:47.174] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Broth_medium).
+[2026-06-24 15:34:47.175] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Culture_medium urn:absolute:Experiment01#Broth_medium).
+[2026-06-24 15:34:47.226] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium owl:Nothing).
+[2026-06-24 15:34:47.227] Selected the weaker axiom SubClassOf(urn:absolute:Experim
+...[truncated]
+FAIL: attempt=1 seed=17 status=time_limit_exceeded stage=B6 message=Repair timeout: B6 exceeded 300 seconds
+progress: ontology=EXON attempt=1 success=0/100
+----- EXON attempt=2 seed=14217 at 2026-06-24 15:39:49 -----
+--- stdout ---
+{"seed":14217,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract)","iic_values":{},"repair_runtimes_ms":{"A1":43,"A2":90,"A3":170,"B1":178,"B2":401,"B3":228,"B4":77}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=14217, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:39:49.671] Checking precondition...
+[2026-06-24 15:39:49.681] Starting the repair...
+[2026-06-24 15:39:49.687] Found 19 possible bad axioms.
+[2026-06-24 15:39:49.688] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:39:49.690] Found 18 possible bad axioms.
+[2026-06-24 15:39:49.690] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:39:49.691] Found 17 possible bad axioms.
+[2026-06-24 15:39:49.691] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:39:49.695] Found 16 possible bad axioms.
+[2026-06-24 15:39:49.695] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:39:49.699] Found 15 possible bad axioms.
+[2026-06-24 15:39:49.699] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Brain-heart_infusion_agar).
+[2026-06-24 15:39:49.700] Found 14 possible bad axioms.
+[2026-06-24 15:39:49.700] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Broth_medium).
+[2026-06-24 15:39:49.703] Found 13 possible bad axioms.
+[2026-06-24 15:39:49.704] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:39:49.707] Found 12 possible bad axioms.
+[2026-06-24 15:39:49.707] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:39:49.708] Found 11 possible bad axioms.
+[2026-06-24 15:39:49.708] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:49.710] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:39:49.711] Checking precondition...
+[2026-06-24 15:39:49.716] Starting the repair...
+[2026-06-24 15:39:49.801] Found 1 possible bad axioms.
+[2026-06-24 15:39:49.801] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:49.801] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:39:49.802] Checking precondition...
+[2026-06-24 15:39:49.806] Starting the repair...
+[2026-06-24 15:39:49.821] Selected a refere
+...[truncated]
+FAIL: attempt=2 seed=14217 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract)
+progress: ontology=EXON attempt=2 success=0/100
+----- EXON attempt=3 seed=28417 at 2026-06-24 15:39:50 -----
+--- stdout ---
+{"seed":28417,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":41,"A2":99,"A3":277,"B1":234,"B2":376,"B3":150,"B4":138}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=28417, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:39:51.299] Checking precondition...
+[2026-06-24 15:39:51.308] Starting the repair...
+[2026-06-24 15:39:51.314] Found 19 possible bad axioms.
+[2026-06-24 15:39:51.315] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Brain-heart_infusion_agar).
+[2026-06-24 15:39:51.317] Found 18 possible bad axioms.
+[2026-06-24 15:39:51.317] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:39:51.321] Found 17 possible bad axioms.
+[2026-06-24 15:39:51.321] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:39:51.325] Found 16 possible bad axioms.
+[2026-06-24 15:39:51.325] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Brain-heart_infusion_agar).
+[2026-06-24 15:39:51.326] Found 15 possible bad axioms.
+[2026-06-24 15:39:51.326] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:39:51.329] Found 14 possible bad axioms.
+[2026-06-24 15:39:51.329] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:39:51.330] Found 13 possible bad axioms.
+[2026-06-24 15:39:51.330] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:39:51.333] Found 12 possible bad axioms.
+[2026-06-24 15:39:51.334] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:39:51.336] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:39:51.336] Checking precondition...
+[2026-06-24 15:39:51.343] Starting the repair...
+[2026-06-24 15:39:51.435] Found 1 possible bad axioms.
+[2026-06-24 15:39:51.435] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:51.435] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:39:51.437] Checking precondition...
+[2026-06-24 15:39:51.440] Starting the repair...
+[2026-06-24 15:39:51.454] Selected a reference ontology with 27 axioms.
+[2026-06-24 15:39:51.603] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:51.611] Selected the weaker axi
+...[truncated]
+FAIL: attempt=3 seed=28417 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=EXON attempt=3 success=0/100
+----- EXON attempt=4 seed=42617 at 2026-06-24 15:39:52 -----
+--- stdout ---
+{"seed":42617,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":25,"A2":102,"A3":184,"B1":103,"B2":511,"B3":222,"B4":91}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=42617, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:39:53.013] Checking precondition...
+[2026-06-24 15:39:53.022] Starting the repair...
+[2026-06-24 15:39:53.028] Found 19 possible bad axioms.
+[2026-06-24 15:39:53.029] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:53.034] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:39:53.035] Checking precondition...
+[2026-06-24 15:39:53.043] Starting the repair...
+[2026-06-24 15:39:53.136] Found 1 possible bad axioms.
+[2026-06-24 15:39:53.137] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:53.137] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:39:53.138] Checking precondition...
+[2026-06-24 15:39:53.141] Starting the repair...
+[2026-06-24 15:39:53.157] Selected a reference ontology with 25 axioms.
+[2026-06-24 15:39:53.309] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:53.319] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Culture_medium urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives).
+[2026-06-24 15:39:53.321] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-24 15:39:53.322] Checking precondition...
+[2026-06-24 15:39:53.325] Starting the repair...
+[2026-06-24 15:39:53.331] Selected a reference ontology with 28 axioms.
+[2026-06-24 15:39:53.423] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:39:53.424] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Culture_medium urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives).
+[2026-06-24 15:39:53.425] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-24 15:39:53.427] Checking precondition...
+[2026-06-24 15:39:53.429] Starting the repair...
+[2026-06-24 15:39:53.436] Selected a reference ontology with 25 axioms.
+[2026-06-24 15:39:53.516] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[PowerIndexWeakerAxiomSelector] Scoring 9 candidate weakenings for Culture_medium ⊑ ⊥
+[PowerIndexWeakerAxiomSelector] Selected weaker axiom: Culture_medium ⊑ Agar_medium
+[2026-06-24 15:39:53.935] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Culture_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:39:53.937] Finished repairing the ontology.
+Repairing with B3 (bad-in_some_mus-weaker-banzhaf)..
+...[truncated]
+FAIL: attempt=4 seed=42617 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=EXON attempt=4 success=0/100
+----- EXON attempt=5 seed=56817 at 2026-06-24 15:39:54 -----
+--- stdout ---
+{"seed":56817,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B6","error_message":"Repair timeout: B6 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":44,"A2":87,"A3":271,"B1":366,"B2":476,"B3":197,"B4":102,"B5":1056,"B6":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=56817, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:39:54.628] Checking precondition...
+[2026-06-24 15:39:54.637] Starting the repair...
+[2026-06-24 15:39:54.645] Found 19 possible bad axioms.
+[2026-06-24 15:39:54.646] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Broth_medium).
+[2026-06-24 15:39:54.650] Found 18 possible bad axioms.
+[2026-06-24 15:39:54.650] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:39:54.652] Found 17 possible bad axioms.
+[2026-06-24 15:39:54.652] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:39:54.652] Found 16 possible bad axioms.
+[2026-06-24 15:39:54.653] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Trypticase_soy_agar).
+[2026-06-24 15:39:54.653] Found 15 possible bad axioms.
+[2026-06-24 15:39:54.653] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Trypticase_soy_agar_plus_yeast_extract).
+[2026-06-24 15:39:54.654] Found 14 possible bad axioms.
+[2026-06-24 15:39:54.654] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:39:54.655] Found 13 possible bad axioms.
+[2026-06-24 15:39:54.655] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:39:54.659] Found 12 possible bad axioms.
+[2026-06-24 15:39:54.659] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:39:54.663] Found 11 possible bad axioms.
+[2026-06-24 15:39:54.664] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:39:54.666] Found 10 possible bad axioms.
+[2026-06-24 15:39:54.666] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:39:54.668] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:39:54.669] Checking precondition...
+[2026-06-24 15:39:54.675] Starting the repair...
+[2026-06-24 15:39:54.756] Found 1 possible bad axioms.
+[2026-06-24 15:39:54.756] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#
+...[truncated]
+FAIL: attempt=5 seed=56817 status=time_limit_exceeded stage=B6 message=Repair timeout: B6 exceeded 300 seconds
+progress: ontology=EXON attempt=5 success=0/100
+----- EXON attempt=6 seed=71017 at 2026-06-24 15:44:57 -----
+--- stdout ---
+{"seed":71017,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract)","iic_values":{},"repair_runtimes_ms":{"A1":30,"A2":98,"A3":362,"B1":59,"B2":450,"B3":169,"B4":66,"B5":142}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=71017, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:44:57.731] Checking precondition...
+[2026-06-24 15:44:57.739] Starting the repair...
+[2026-06-24 15:44:57.744] Found 19 possible bad axioms.
+[2026-06-24 15:44:57.746] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:44:57.750] Found 18 possible bad axioms.
+[2026-06-24 15:44:57.751] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Brain-heart_infusion_agar).
+[2026-06-24 15:44:57.752] Found 17 possible bad axioms.
+[2026-06-24 15:44:57.752] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:44:57.753] Found 16 possible bad axioms.
+[2026-06-24 15:44:57.753] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:44:57.756] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:44:57.757] Checking precondition...
+[2026-06-24 15:44:57.764] Starting the repair...
+[2026-06-24 15:44:57.855] Found 1 possible bad axioms.
+[2026-06-24 15:44:57.855] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:44:57.855] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:44:57.857] Checking precondition...
+[2026-06-24 15:44:57.859] Starting the repair...
+[2026-06-24 15:44:57.872] Selected a reference ontology with 28 axioms.
+[2026-06-24 15:44:58.011] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:44:58.019] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Other_medium owl:Nothing).
+[2026-06-24 15:44:58.107] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium owl:Nothing).
+[2026-06-24 15:44:58.107] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Agar_medium owl:Nothing).
+[2026-06-24 15:44:58.170] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium owl:Nothing).
+[2026-06-24 15:44:58.170] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives owl:Nothing).
+[2026-06-24 15:44:58.215] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives owl:Nothing).
+[2026-06-24 15:44:58.217] Selected the weaker axiom SubClassOf(owl:Nothing owl:Nothing).
+[2026-06-24 15:44:58.218] Finished repairing the ontology.
+Repairing with B1
+...[truncated]
+FAIL: attempt=6 seed=71017 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract)
+progress: ontology=EXON attempt=6 success=0/100
+----- EXON attempt=7 seed=85217 at 2026-06-24 15:44:59 -----
+--- stdout ---
+{"seed":85217,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":41,"A2":93,"A3":178,"B1":320,"B2":372,"B3":164,"B4":63}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=85217, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:44:59.501] Checking precondition...
+[2026-06-24 15:44:59.511] Starting the repair...
+[2026-06-24 15:44:59.517] Found 19 possible bad axioms.
+[2026-06-24 15:44:59.518] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Trypticase_soy_agar).
+[2026-06-24 15:44:59.519] Found 18 possible bad axioms.
+[2026-06-24 15:44:59.520] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:44:59.524] Found 17 possible bad axioms.
+[2026-06-24 15:44:59.524] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:44:59.527] Found 16 possible bad axioms.
+[2026-06-24 15:44:59.527] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Brain-heart_infusion_agar).
+[2026-06-24 15:44:59.528] Found 15 possible bad axioms.
+[2026-06-24 15:44:59.528] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:44:59.529] Found 14 possible bad axioms.
+[2026-06-24 15:44:59.529] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:44:59.529] Found 13 possible bad axioms.
+[2026-06-24 15:44:59.530] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:44:59.534] Found 12 possible bad axioms.
+[2026-06-24 15:44:59.534] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:44:59.535] Found 11 possible bad axioms.
+[2026-06-24 15:44:59.535] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:44:59.538] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:44:59.539] Checking precondition...
+[2026-06-24 15:44:59.545] Starting the repair...
+[2026-06-24 15:44:59.631] Found 1 possible bad axioms.
+[2026-06-24 15:44:59.631] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:44:59.631] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:44:59.633] Checking precondition...
+[2026-06-24 15:44:59.636] Starting the repair...
+[2026-06-24 15:44:59.646] Selected a reference ont
+...[truncated]
+FAIL: attempt=7 seed=85217 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=EXON attempt=7 success=0/100
+----- EXON attempt=8 seed=99417 at 2026-06-24 15:45:00 -----
+--- stdout ---
+{"seed":99417,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Culture_medium ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":42,"A2":87,"A3":276,"B1":179,"B2":380}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=99417, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:45:01.128] Checking precondition...
+[2026-06-24 15:45:01.138] Starting the repair...
+[2026-06-24 15:45:01.144] Found 19 possible bad axioms.
+[2026-06-24 15:45:01.145] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Broth_medium).
+[2026-06-24 15:45:01.149] Found 18 possible bad axioms.
+[2026-06-24 15:45:01.150] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:45:01.153] Found 17 possible bad axioms.
+[2026-06-24 15:45:01.154] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:45:01.155] Found 16 possible bad axioms.
+[2026-06-24 15:45:01.155] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:45:01.158] Found 15 possible bad axioms.
+[2026-06-24 15:45:01.159] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:45:01.162] Found 14 possible bad axioms.
+[2026-06-24 15:45:01.163] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Trypticase_soy_agar_plus_yeast_extract).
+[2026-06-24 15:45:01.163] Found 13 possible bad axioms.
+[2026-06-24 15:45:01.164] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:45:01.166] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:45:01.167] Checking precondition...
+[2026-06-24 15:45:01.172] Starting the repair...
+[2026-06-24 15:45:01.253] Found 1 possible bad axioms.
+[2026-06-24 15:45:01.254] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:45:01.254] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:45:01.255] Checking precondition...
+[2026-06-24 15:45:01.258] Starting the repair...
+[2026-06-24 15:45:01.269] Selected a reference ontology with 28 axioms.
+[2026-06-24 15:45:01.414] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:45:01.422] Selected the weaker axiom SubClassOf(urn:absolute:Experiment01#Broth_medium owl:Nothing).
+[2026-06-24 15:45:01.528] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Broth_medium).
+[2026-06-24 15:45:01.529] Selected the w
+...[truncated]
+FAIL: attempt=8 seed=99417 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Culture_medium ⊑ ⊥
+progress: ontology=EXON attempt=8 success=0/100
+----- EXON attempt=9 seed=113617 at 2026-06-24 15:45:02 -----
+--- stdout ---
+{"seed":113617,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":42,"A2":92,"A3":319,"B1":63,"B2":323,"B3":160,"B4":57}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=113617, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:45:02.485] Checking precondition...
+[2026-06-24 15:45:02.493] Starting the repair...
+[2026-06-24 15:45:02.499] Found 19 possible bad axioms.
+[2026-06-24 15:45:02.501] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Brain-heart_infusion_agar).
+[2026-06-24 15:45:02.502] Found 18 possible bad axioms.
+[2026-06-24 15:45:02.502] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:45:02.503] Found 17 possible bad axioms.
+[2026-06-24 15:45:02.503] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:45:02.507] Found 16 possible bad axioms.
+[2026-06-24 15:45:02.507] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:45:02.508] Found 15 possible bad axioms.
+[2026-06-24 15:45:02.508] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:45:02.512] Found 14 possible bad axioms.
+[2026-06-24 15:45:02.512] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:45:02.516] Found 13 possible bad axioms.
+[2026-06-24 15:45:02.517] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Broth_medium).
+[2026-06-24 15:45:02.520] Found 12 possible bad axioms.
+[2026-06-24 15:45:02.520] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Trypticase_soy_agar).
+[2026-06-24 15:45:02.520] Found 11 possible bad axioms.
+[2026-06-24 15:45:02.521] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:45:02.522] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-24 15:45:02.523] Checking precondition...
+[2026-06-24 15:45:02.530] Starting the repair...
+[2026-06-24 15:45:02.614] Found 1 possible bad axioms.
+[2026-06-24 15:45:02.615] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium owl:Nothing).
+[2026-06-24 15:45:02.615] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-24 15:45:02.616] Checking precondition...
+[2026-06-24 15:45:02.619] Starting the repair...
+[2026-06-24 15:45:02.630] Selected a re
+...[truncated]
+FAIL: attempt=9 seed=113617 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=EXON attempt=9 success=0/100
+----- EXON attempt=10 seed=127817 at 2026-06-24 15:45:03 -----
+--- stdout ---
+{"seed":127817,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":51,"A2":86,"A3":175,"B1":359,"B2":481,"B3":208,"B4":66}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/EXON.owl, seed=127817, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-24 15:45:03.955] Checking precondition...
+[2026-06-24 15:45:03.965] Starting the repair...
+[2026-06-24 15:45:03.970] Found 19 possible bad axioms.
+[2026-06-24 15:45:03.972] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Culture_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:45:03.977] Found 18 possible bad axioms.
+[2026-06-24 15:45:03.977] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:45:03.981] Found 17 possible bad axioms.
+[2026-06-24 15:45:03.981] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:45:03.984] Found 16 possible bad axioms.
+[2026-06-24 15:45:03.984] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:45:03.988] Found 15 possible bad axioms.
+[2026-06-24 15:45:03.988] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Potato_dextrose_agar).
+[2026-06-24 15:45:03.989] Found 14 possible bad axioms.
+[2026-06-24 15:45:03.989] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Trypticase_soy_agar_plus_yeast_extract).
+[2026-06-24 15:45:03.990] Found 13 possible bad axioms.
+[2026-06-24 15:45:03.990] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment01#Malt_extrat_agar).
+[2026-06-24 15:45:03.991] Found 12 possible bad axioms.
+[2026-06-24 15:45:03.991] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Agar_medium).
+[2026-06-24 15:45:03.993] Found 11 possible bad axioms.
+[2026-06-24 15:45:03.993] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Broth_medium urn:absolute:Experiment01#Other_medium).
+[2026-06-24 15:45:03.995] Found 10 possible bad axioms.
+[2026-06-24 15:45:03.996] Selected the bad axiom SubClassOf(urn:absolute:Experiment01#Other_medium urn:absolute:Experiment01#Culture_medium).
+[2026-06-24 15:45:03.997] Found 9 possible bad axioms.
+[2026-06-24 15:45:03.998] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Trypticase_soy_agar_and_derivatives urn:absolute:Experiment01#Brain-heart_infusion_agar).
+[2026-06-24 15:45:03.998] Found 8 possible bad axioms.
+[2026-06-24 15:45:03.998] Selected the bad axiom ClassAssertion(urn:absolute:Experiment01#Agar_medium urn:absolute:Experiment
+...[truncated]
+FAIL: attempt=10 seed=127817 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=EXON attempt=10 success=0/100
+=== ABORTED EXON after 10 consecutive failures at 2026-06-24 15:45:05 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for EXON - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=17 msg=Repair timeout: B6 exceeded 300 seconds
+  attempt=2 seed=14217 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract)
+  attempt=3 seed=28417 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=4 seed=42617 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=5 seed=56817 msg=Repair timeout: B6 exceeded 300 seconds
+  attempt=6 seed=71017 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract)
+  attempt=7 seed=85217 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=8 seed=99417 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Culture_medium ⊑ ⊥
+  attempt=9 seed=113617 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=10 seed=127817 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=2 total_seconds=606.076302 avg_seconds=303.038151
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

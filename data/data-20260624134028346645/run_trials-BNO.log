@@ -1,0 +1,480 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-BNO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-BNO.csv
+
+=== Starting sequential trials for BNO at 2026-06-28 10:20:27 ===
+----- BNO attempt=1 seed=144 at 2026-06-28 10:20:27 -----
+--- stdout ---
+{"seed":144,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod","iic_values":{},"repair_runtimes_ms":{"A1":875,"A2":96718,"A3":4525,"B1":1082,"B2":10749}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=144, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:20:27.799] Checking precondition...
+[2026-06-28 10:20:27.828] Starting the repair...
+[2026-06-28 10:20:27.842] Found 663 possible bad axioms.
+[2026-06-28 10:20:27.844] Selected the bad axiom SubClassOf(ProtocolDevelopment MacronutrientsControlled).
+[2026-06-28 10:20:27.853] Found 662 possible bad axioms.
+[2026-06-28 10:20:27.853] Selected the bad axiom SubClassOf(Education Food_Recall).
+[2026-06-28 10:20:27.867] Found 661 possible bad axioms.
+[2026-06-28 10:20:27.867] Selected the bad axiom SubClassOf(NutritionCapabilities PctLeanMass).
+[2026-06-28 10:20:27.875] Found 660 possible bad axioms.
+[2026-06-28 10:20:27.875] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure ObjectIntersectionOf(Anthropometrics_Weight ObjectIntersectionOf(Anthropometrics_BMI Anthropometrics_Height))).
+[2026-06-28 10:20:27.883] Found 659 possible bad axioms.
+[2026-06-28 10:20:27.883] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Waist_Circumference Hip_Waist_Measurement_Hip_Circumference).
+[2026-06-28 10:20:27.891] Found 658 possible bad axioms.
+[2026-06-28 10:20:27.891] Selected the bad axiom SubClassOf(Metabolic_Monitor_Cart Predicted_Equation).
+[2026-06-28 10:20:27.899] Found 657 possible bad axioms.
+[2026-06-28 10:20:27.899] Selected the bad axiom SubClassOf(Hip_Waist_Measurement Hip_Waist_Measurement_Waist_Circumference).
+[2026-06-28 10:20:27.908] Found 656 possible bad axioms.
+[2026-06-28 10:20:27.909] Selected the bad axiom SubClassOf(Nutrition_Assessment_Care_Plan Micronutrient).
+[2026-06-28 10:20:27.916] Found 655 possible bad axioms.
+[2026-06-28 10:20:27.917] Selected the bad axiom SubClassOf(MicronutrientsControlled Metabolic).
+[2026-06-28 10:20:27.928] Found 654 possible bad axioms.
+[2026-06-28 10:20:27.928] Selected the bad axiom SubClassOf(FAT Parenteral).
+[2026-06-28 10:20:27.932] Found 653 possible bad axioms.
+[2026-06-28 10:20:27.933] Selected the bad axiom SubClassOf(Anthropometrics ObjectIntersectionOf(Anthropometrics_Weight ObjectIntersectionOf(Anthropometrics_BMI Anthropometrics_Height))).
+[2026-06-28 10:20:27.943] Found 652 possible bad axioms.
+[2026-06-28 10:20:27.943] Selected the bad axiom SubClassOf(Nutraceuticals_Prot_dev Macronutrient_Prot_Dev_Protein).
+[2026-06-28 10:20:27.948] Found 651 possible bad axioms.
+[2026-06-28 10:20:27.949] Selected the bad axiom SubClassOf(Food_Recall PctLeanMass).
+[2026-06-28 10:20:27.954] Found 650 possible bad axioms.
+[2026-06-28 10:20:27.954] Selected the bad axiom SubClassOf(Grip_Strength Bike).
+[2026-06-28 10:20:27.959] Found 649 possible bad axioms.
+[2026-06-28 10:20:27.9
+...[truncated]
+FAIL: attempt=1 seed=144 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+progress: ontology=BNO attempt=1 success=0/100
+----- BNO attempt=2 seed=14344 at 2026-06-28 10:22:21 -----
+--- stdout ---
+{"seed":14344,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod","iic_values":{},"repair_runtimes_ms":{"A1":128,"A2":97143,"A3":1214,"B1":1166,"B2":2438,"B3":12608}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=14344, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:22:22.276] Checking precondition...
+[2026-06-28 10:22:22.306] Starting the repair...
+[2026-06-28 10:22:22.319] Found 663 possible bad axioms.
+[2026-06-28 10:22:22.321] Selected the bad axiom SubClassOf(ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Waist_Circumference ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_Circumference))) owl:Nothing).
+[2026-06-28 10:22:22.330] Found 662 possible bad axioms.
+[2026-06-28 10:22:22.331] Selected the bad axiom SubClassOf(DEXA ObjectIntersectionOf(Anthropometrics_Weight ObjectIntersectionOf(Anthropometrics_BMI Anthropometrics_Height))).
+[2026-06-28 10:22:22.344] Found 661 possible bad axioms.
+[2026-06-28 10:22:22.344] Selected the bad axiom SubClassOf(NutritionRoles Micronutrient_Prot_dev).
+[2026-06-28 10:22:22.351] Found 660 possible bad axioms.
+[2026-06-28 10:22:22.351] Selected the bad axiom SubClassOf(Education Single_Nutrient_Intake).
+[2026-06-28 10:22:22.359] Found 659 possible bad axioms.
+[2026-06-28 10:22:22.359] Selected the bad axiom SubClassOf(Nutrient_Composition Menu_Rotation).
+[2026-06-28 10:22:22.367] Found 658 possible bad axioms.
+[2026-06-28 10:22:22.367] Selected the bad axiom SubClassOf(Macronutrient owl:Nothing).
+[2026-06-28 10:22:22.374] Found 657 possible bad axioms.
+[2026-06-28 10:22:22.374] Selected the bad axiom SubClassOf(MicronutrientsControlled Metabolic).
+[2026-06-28 10:22:22.381] Found 656 possible bad axioms.
+[2026-06-28 10:22:22.381] Selected the bad axiom SubClassOf(Nutrient_Analysis owl:Nothing).
+[2026-06-28 10:22:22.387] Found 655 possible bad axioms.
+[2026-06-28 10:22:22.388] Selected the bad axiom SubClassOf(owl:Thing PctBodyFat).
+[2026-06-28 10:22:22.400] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-28 10:22:22.401] Checking precondition...
+[2026-06-28 10:22:22.417] Starting the repair...
+[2026-06-28 10:23:59.546] Found 2 possible bad axioms.
+[2026-06-28 10:23:59.546] Selected the bad axiom SubClassOf(owl:Thing PctBodyFat).
+[2026-06-28 10:23:59.550] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-28 10:23:59.552] Checking precondition...
+[2026-06-28 10:23:59.556] Starting the repair...
+[2026-06-28 10:23:59.585] Selected a reference ontology with 762 axioms.
+[2026-06-28 10:24:00.640] Selected the bad axiom SubClassOf(PctBodyFat BodPod).
+[2026-06-28 10:24:00.760] Selected the weaker axiom SubClassOf(ObjectIntersectionOf(Saturated ObjectIntersectionOf(Mono Poly)) BodPod).
+[2026-06-28 10:
+...[truncated]
+FAIL: attempt=2 seed=14344 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+progress: ontology=BNO attempt=2 success=0/100
+----- BNO attempt=3 seed=28544 at 2026-06-28 10:24:18 -----
+--- stdout ---
+{"seed":28544,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat","iic_values":{},"repair_runtimes_ms":{"A1":497,"A2":96278,"A3":1122,"B1":1170,"B2":11497}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=28544, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:24:18.635] Checking precondition...
+[2026-06-28 10:24:18.664] Starting the repair...
+[2026-06-28 10:24:18.678] Found 663 possible bad axioms.
+[2026-06-28 10:24:18.681] Selected the bad axiom SubClassOf(Bike Activity_Questionnaire).
+[2026-06-28 10:24:18.690] Found 662 possible bad axioms.
+[2026-06-28 10:24:18.690] Selected the bad axiom SubClassOf(ProtocolDevelopment PctBodyFat).
+[2026-06-28 10:24:18.704] Found 661 possible bad axioms.
+[2026-06-28 10:24:18.704] Selected the bad axiom SubClassOf(Theraputic Outpatient).
+[2026-06-28 10:24:18.712] Found 660 possible bad axioms.
+[2026-06-28 10:24:18.712] Selected the bad axiom SubClassOf(Spirometry Whole_Calorimetry).
+[2026-06-28 10:24:18.720] Found 659 possible bad axioms.
+[2026-06-28 10:24:18.720] Selected the bad axiom SubClassOf(Skinfold owl:Nothing).
+[2026-06-28 10:24:18.728] Found 658 possible bad axioms.
+[2026-06-28 10:24:18.728] Selected the bad axiom SubClassOf(Bioelectric_Impedence Treadmill).
+[2026-06-28 10:24:18.735] Found 657 possible bad axioms.
+[2026-06-28 10:24:18.735] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure Menu_Rotation).
+[2026-06-28 10:24:18.741] Found 656 possible bad axioms.
+[2026-06-28 10:24:18.741] Selected the bad axiom SubClassOf(Nutraceuticals_Prot_dev PctBodyFat).
+[2026-06-28 10:24:18.747] Found 655 possible bad axioms.
+[2026-06-28 10:24:18.748] Selected the bad axiom SubClassOf(Activity_Factor_or_Equation Bike).
+[2026-06-28 10:24:18.759] Found 654 possible bad axioms.
+[2026-06-28 10:24:18.759] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_Circumference))).
+[2026-06-28 10:24:18.765] Found 653 possible bad axioms.
+[2026-06-28 10:24:18.765] Selected the bad axiom SubClassOf(Activity_Physical_Assessment Minute_6_Walk).
+[2026-06-28 10:24:18.776] Found 652 possible bad axioms.
+[2026-06-28 10:24:18.776] Selected the bad axiom SubClassOf(Underwater_Weighing_PctBodyFat PctLeanMass).
+[2026-06-28 10:24:18.781] Found 651 possible bad axioms.
+[2026-06-28 10:24:18.781] Selected the bad axiom SubClassOf(Hip_Waist_Measurement ObjectIntersectionOf(Anthropometrics_BMI ObjectIntersectionOf(Anthropometrics_BMI Anthropometrics_Height))).
+[2026-06-28 10:24:18.787] Found 650 possible bad axioms.
+[2026-06-28 10:24:18.787] Selected the bad axiom SubClassOf(DesignDiet PctLeanMass).
+[2026-06-28 10:24:18.792] Found 649 possible bad axioms.
+[2026-06-28 10:24:18.793] Selected the bad axio
+...[truncated]
+FAIL: attempt=3 seed=28544 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+progress: ontology=BNO attempt=3 success=0/100
+----- BNO attempt=4 seed=42744 at 2026-06-28 10:26:09 -----
+--- stdout ---
+{"seed":42744,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod","iic_values":{},"repair_runtimes_ms":{"A1":392,"A2":96014,"A3":1249,"B1":1087,"B2":4427,"B3":13765}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=42744, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:26:09.745] Checking precondition...
+[2026-06-28 10:26:09.775] Starting the repair...
+[2026-06-28 10:26:09.789] Found 663 possible bad axioms.
+[2026-06-28 10:26:09.792] Selected the bad axiom SubClassOf(Macronutrient_Prot_Dev_Protein Macronutrient_Prot_Dev_Fiber).
+[2026-06-28 10:26:09.800] Found 662 possible bad axioms.
+[2026-06-28 10:26:09.800] Selected the bad axiom SubClassOf(Activity_Physical_Assessment PctBodyFat).
+[2026-06-28 10:26:09.816] Found 661 possible bad axioms.
+[2026-06-28 10:26:09.816] Selected the bad axiom SubClassOf(Bioelectric_Impedence Hip_Waist_Measurement_Waist_To_Hip_Ratio).
+[2026-06-28 10:26:09.823] Found 660 possible bad axioms.
+[2026-06-28 10:26:09.824] Selected the bad axiom SubClassOf(CHO TransFattyAcids).
+[2026-06-28 10:26:09.831] Found 659 possible bad axioms.
+[2026-06-28 10:26:09.831] Selected the bad axiom SubClassOf(Day_5_Inpatient Day_2_Inpatient).
+[2026-06-28 10:26:09.839] Found 658 possible bad axioms.
+[2026-06-28 10:26:09.839] Selected the bad axiom SubClassOf(Navigation ProtocolDevelopment).
+[2026-06-28 10:26:09.846] Found 657 possible bad axioms.
+[2026-06-28 10:26:09.846] Selected the bad axiom SubClassOf(Navigation Saturated).
+[2026-06-28 10:26:09.853] Found 656 possible bad axioms.
+[2026-06-28 10:26:09.853] Selected the bad axiom SubClassOf(Treadmill Bike).
+[2026-06-28 10:26:09.860] Found 655 possible bad axioms.
+[2026-06-28 10:26:09.860] Selected the bad axiom SubClassOf(ProtocolDevelopment Day_5_Inpatient).
+[2026-06-28 10:26:09.871] Found 654 possible bad axioms.
+[2026-06-28 10:26:09.871] Selected the bad axiom SubClassOf(BodyComposition ResearchNutritionAssessmentProcedure).
+[2026-06-28 10:26:09.876] Found 653 possible bad axioms.
+[2026-06-28 10:26:09.876] Selected the bad axiom SubClassOf(Nutrient_Composition Menu_Rotation).
+[2026-06-28 10:26:09.887] Found 652 possible bad axioms.
+[2026-06-28 10:26:09.888] Selected the bad axiom SubClassOf(Day_1_Inpatient RotatingMenuCycle).
+[2026-06-28 10:26:09.893] Found 651 possible bad axioms.
+[2026-06-28 10:26:09.893] Selected the bad axiom SubClassOf(Water ObjectIntersectionOf(Saturated TransFattyAcids)).
+[2026-06-28 10:26:09.898] Found 650 possible bad axioms.
+[2026-06-28 10:26:09.899] Selected the bad axiom SubClassOf(Menu_Rotation Nutrient_Composition).
+[2026-06-28 10:26:09.904] Found 649 possible bad axioms.
+[2026-06-28 10:26:09.904] Selected the bad axiom SubClassOf(Macronutrient_Prot_dev PctBodyFat).
+[2026-06-28 10:26:09.908] Found 648 possible bad axioms.
+[2026-06-28 10:26:09.909] Selected the bad axiom SubClassOf(Anthropometrics_Height owl:Nothin
+...[truncated]
+FAIL: attempt=4 seed=42744 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+progress: ontology=BNO attempt=4 success=0/100
+----- BNO attempt=5 seed=56944 at 2026-06-28 10:28:07 -----
+--- stdout ---
+{"seed":56944,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod","iic_values":{},"repair_runtimes_ms":{"A1":893,"A2":96996,"A3":12204,"B1":1075,"B2":11079}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=56944, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:28:08.335] Checking precondition...
+[2026-06-28 10:28:08.362] Starting the repair...
+[2026-06-28 10:28:08.377] Found 663 possible bad axioms.
+[2026-06-28 10:28:08.379] Selected the bad axiom SubClassOf(Nutrient_Analysis Hour_24_Diet_Recall).
+[2026-06-28 10:28:08.387] Found 662 possible bad axioms.
+[2026-06-28 10:28:08.387] Selected the bad axiom SubClassOf(Macronutrient_Prot_dev PctLeanMass).
+[2026-06-28 10:28:08.401] Found 661 possible bad axioms.
+[2026-06-28 10:28:08.401] Selected the bad axiom SubClassOf(Activity_Physical_Assessment MicronutrientsControlled).
+[2026-06-28 10:28:08.409] Found 660 possible bad axioms.
+[2026-06-28 10:28:08.409] Selected the bad axiom SubClassOf(Water Unsaturated).
+[2026-06-28 10:28:08.417] Found 659 possible bad axioms.
+[2026-06-28 10:28:08.418] Selected the bad axiom SubClassOf(BodyComposition Hip_Waist_Measurement).
+[2026-06-28 10:28:08.425] Found 658 possible bad axioms.
+[2026-06-28 10:28:08.425] Selected the bad axiom SubClassOf(Metabolic_Monitor_Cart Predicted_Equation).
+[2026-06-28 10:28:08.432] Found 657 possible bad axioms.
+[2026-06-28 10:28:08.432] Selected the bad axiom SubClassOf(ScientificLiterature Day_2_Inpatient).
+[2026-06-28 10:28:08.438] Found 656 possible bad axioms.
+[2026-06-28 10:28:08.438] Selected the bad axiom SubClassOf(Bioelectric_Impedence ObjectIntersectionOf(Hip_Waist_Measurement_Waist_Circumference Skinfold)).
+[2026-06-28 10:28:08.445] Found 655 possible bad axioms.
+[2026-06-28 10:28:08.446] Selected the bad axiom SubClassOf(Treadmill Bike).
+[2026-06-28 10:28:08.456] Found 654 possible bad axioms.
+[2026-06-28 10:28:08.457] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure Day_5_Inpatient).
+[2026-06-28 10:28:08.461] Found 653 possible bad axioms.
+[2026-06-28 10:28:08.462] Selected the bad axiom SubClassOf(Nutrient_Composition DesignDiet).
+[2026-06-28 10:28:08.473] Found 652 possible bad axioms.
+[2026-06-28 10:28:08.473] Selected the bad axiom SubClassOf(Nutrient_Analysis Assessory_Nutrient).
+[2026-06-28 10:28:08.479] Found 651 possible bad axioms.
+[2026-06-28 10:28:08.479] Selected the bad axiom SubClassOf(DEXA ObjectIntersectionOf(Anthropometrics_Weight owl:Nothing)).
+[2026-06-28 10:28:08.485] Found 650 possible bad axioms.
+[2026-06-28 10:28:08.486] Selected the bad axiom SubClassOf(Nutrition_Assessment_Care_Plan Metabolic_Diet_Protocol).
+[2026-06-28 10:28:08.491] Found 649 possible bad axioms.
+[2026-06-28 10:28:08.491] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_To_Hip_Ratio).
+[2026-06-28 10:28:08.
+...[truncated]
+FAIL: attempt=5 seed=56944 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+progress: ontology=BNO attempt=5 success=0/100
+----- BNO attempt=6 seed=71144 at 2026-06-28 10:30:10 -----
+--- stdout ---
+{"seed":71144,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat","iic_values":{},"repair_runtimes_ms":{"A1":780,"A2":96986,"A3":1141,"B1":1187,"B2":11898}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=71144, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:30:11.133] Checking precondition...
+[2026-06-28 10:30:11.162] Starting the repair...
+[2026-06-28 10:30:11.176] Found 663 possible bad axioms.
+[2026-06-28 10:30:11.178] Selected the bad axiom SubClassOf(FAT Food_Record_3_4_Day).
+[2026-06-28 10:30:11.187] Found 662 possible bad axioms.
+[2026-06-28 10:30:11.187] Selected the bad axiom SubClassOf(Bioelectric_Impedence ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio Skinfold_Suprailiac)).
+[2026-06-28 10:30:11.200] Found 661 possible bad axioms.
+[2026-06-28 10:30:11.201] Selected the bad axiom SubClassOf(DietMealsServed Theraputic).
+[2026-06-28 10:30:11.209] Found 660 possible bad axioms.
+[2026-06-28 10:30:11.209] Selected the bad axiom SubClassOf(Predicted_Equation Underwater_Weighing).
+[2026-06-28 10:30:11.216] Found 659 possible bad axioms.
+[2026-06-28 10:30:11.217] Selected the bad axiom SubClassOf(Screening Metabolic_Diet_Protocol).
+[2026-06-28 10:30:11.224] Found 658 possible bad axioms.
+[2026-06-28 10:30:11.225] Selected the bad axiom SubClassOf(NutritionCapabilities PctLeanMass).
+[2026-06-28 10:30:11.231] Found 657 possible bad axioms.
+[2026-06-28 10:30:11.232] Selected the bad axiom SubClassOf(NutritionRoles NutritionCapabilities).
+[2026-06-28 10:30:11.240] Found 656 possible bad axioms.
+[2026-06-28 10:30:11.240] Selected the bad axiom SubClassOf(DietPlan Metabolic).
+[2026-06-28 10:30:11.246] Found 655 possible bad axioms.
+[2026-06-28 10:30:11.246] Selected the bad axiom SubClassOf(Metabolic_Diet_Protocol PctBodyFat).
+[2026-06-28 10:30:11.257] Found 654 possible bad axioms.
+[2026-06-28 10:30:11.258] Selected the bad axiom SubClassOf(Nutrition_Assessment_Care_Plan owl:Nothing).
+[2026-06-28 10:30:11.263] Found 653 possible bad axioms.
+[2026-06-28 10:30:11.263] Selected the bad axiom SubClassOf(BodPod Anthropometrics_BMI).
+[2026-06-28 10:30:11.274] Found 652 possible bad axioms.
+[2026-06-28 10:30:11.274] Selected the bad axiom SubClassOf(BodyComposition Anthropometrics_Height).
+[2026-06-28 10:30:11.279] Found 651 possible bad axioms.
+[2026-06-28 10:30:11.279] Selected the bad axiom SubClassOf(Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids PctBodyFat).
+[2026-06-28 10:30:11.285] Found 650 possible bad axioms.
+[2026-06-28 10:30:11.285] Selected the bad axiom SubClassOf(Macronutrient_Prot_Dev_Fat Macronutrient_Prot_Dev_Carbohydrate).
+[2026-06-28 10:30:11.290] Found 649 possible bad axioms.
+[2026-06-28 10:30:11.290] Selected the bad axiom SubClassOf(Unsaturated ObjectIntersectionOf(Saturated Unsaturated)).
+[2026-06-28 10:30:11.295] Found 648 possible bad axioms.
+[2026-06-28 10:30:1
+...[truncated]
+FAIL: attempt=6 seed=71144 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+progress: ontology=BNO attempt=6 success=0/100
+----- BNO attempt=7 seed=85344 at 2026-06-28 10:32:03 -----
+--- stdout ---
+{"seed":85344,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat","iic_values":{},"repair_runtimes_ms":{"A1":977,"A2":96862,"A3":4002,"B1":1155,"B2":6525}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=85344, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:32:03.673] Checking precondition...
+[2026-06-28 10:32:03.700] Starting the repair...
+[2026-06-28 10:32:03.714] Found 663 possible bad axioms.
+[2026-06-28 10:32:03.716] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure Menu_Rotation).
+[2026-06-28 10:32:03.724] Found 662 possible bad axioms.
+[2026-06-28 10:32:03.725] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Hip_Circumference ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_Circumference))).
+[2026-06-28 10:32:03.738] Found 661 possible bad axioms.
+[2026-06-28 10:32:03.738] Selected the bad axiom SubClassOf(Macronutrient_Prot_dev PctLeanMass).
+[2026-06-28 10:32:03.746] Found 660 possible bad axioms.
+[2026-06-28 10:32:03.746] Selected the bad axiom SubClassOf(Single_Nutrient_Intake owl:Nothing).
+[2026-06-28 10:32:03.753] Found 659 possible bad axioms.
+[2026-06-28 10:32:03.753] Selected the bad axiom SubClassOf(Anthropometrics_BMI ObjectIntersectionOf(Anthropometrics_Weight ObjectIntersectionOf(Anthropometrics_BMI Anthropometrics_Height))).
+[2026-06-28 10:32:03.760] Found 658 possible bad axioms.
+[2026-06-28 10:32:03.761] Selected the bad axiom SubClassOf(Formula WholeFood).
+[2026-06-28 10:32:03.768] Found 657 possible bad axioms.
+[2026-06-28 10:32:03.768] Selected the bad axiom SubClassOf(DietPlan ObjectIntersectionOf(Mono Poly)).
+[2026-06-28 10:32:03.775] Found 656 possible bad axioms.
+[2026-06-28 10:32:03.775] Selected the bad axiom SubClassOf(BodyComposition Anthropometrics_Weight).
+[2026-06-28 10:32:03.781] Found 655 possible bad axioms.
+[2026-06-28 10:32:03.782] Selected the bad axiom SubClassOf(FAT Unsaturated).
+[2026-06-28 10:32:03.792] Found 654 possible bad axioms.
+[2026-06-28 10:32:03.792] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure Poly).
+[2026-06-28 10:32:03.798] Found 653 possible bad axioms.
+[2026-06-28 10:32:03.798] Selected the bad axiom SubClassOf(Harris_Benedict_Equation Predicted_Equation).
+[2026-06-28 10:32:03.810] Found 652 possible bad axioms.
+[2026-06-28 10:32:03.810] Selected the bad axiom SubClassOf(Screening Nutrient_Analysis).
+[2026-06-28 10:32:03.816] Found 651 possible bad axioms.
+[2026-06-28 10:32:03.816] Selected the bad axiom SubClassOf(Anthropometrics_Weight Anthropometrics).
+[2026-06-28 10:32:03.821] Found 650 possible bad axioms.
+[2026-06-28 10:32:03.822] Selected the bad axiom SubClassOf(BodyComposition Energy_Expediture).
+[2026-06-28 10:32:03.826] Found 649 possible bad axioms.
+[2026-06-28 10:3
+...[truncated]
+FAIL: attempt=7 seed=85344 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+progress: ontology=BNO attempt=7 success=0/100
+----- BNO attempt=8 seed=99544 at 2026-06-28 10:33:53 -----
+--- stdout ---
+{"seed":99544,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat","iic_values":{},"repair_runtimes_ms":{"A1":836,"A2":97046,"A3":1237,"B1":1936,"B2":23325,"B3":2392,"B4":301,"B5":10698}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=99544, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:33:53.712] Checking precondition...
+[2026-06-28 10:33:53.740] Starting the repair...
+[2026-06-28 10:33:53.753] Found 663 possible bad axioms.
+[2026-06-28 10:33:53.755] Selected the bad axiom SubClassOf(Education Single_Nutrient_Intake).
+[2026-06-28 10:33:53.763] Found 662 possible bad axioms.
+[2026-06-28 10:33:53.764] Selected the bad axiom SubClassOf(Hip_Waist_Measurement ObjectIntersectionOf(Anthropometrics_BMI ObjectIntersectionOf(Anthropometrics_BMI Anthropometrics_Height))).
+[2026-06-28 10:33:53.777] Found 661 possible bad axioms.
+[2026-06-28 10:33:53.777] Selected the bad axiom SubClassOf(Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids PctLeanMass).
+[2026-06-28 10:33:53.784] Found 660 possible bad axioms.
+[2026-06-28 10:33:53.784] Selected the bad axiom SubClassOf(Activity_Questionnaire Grip_Strength).
+[2026-06-28 10:33:53.791] Found 659 possible bad axioms.
+[2026-06-28 10:33:53.791] Selected the bad axiom SubClassOf(Poly Parenteral).
+[2026-06-28 10:33:53.798] Found 658 possible bad axioms.
+[2026-06-28 10:33:53.798] Selected the bad axiom SubClassOf(Nutrition_Assessment_Care_Plan Screening).
+[2026-06-28 10:33:53.805] Found 657 possible bad axioms.
+[2026-06-28 10:33:53.805] Selected the bad axiom SubClassOf(BodyComposition PctBodyFat).
+[2026-06-28 10:33:53.811] Found 656 possible bad axioms.
+[2026-06-28 10:33:53.812] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure PctLeanMass).
+[2026-06-28 10:33:53.818] Found 655 possible bad axioms.
+[2026-06-28 10:33:53.818] Selected the bad axiom SubClassOf(Bioelectric_Impedence ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_To_Hip_Ratio))).
+[2026-06-28 10:33:53.830] Found 654 possible bad axioms.
+[2026-06-28 10:33:53.830] Selected the bad axiom SubClassOf(Bioelectric_Impedence Activity_Physical_Assessment).
+[2026-06-28 10:33:53.834] Found 653 possible bad axioms.
+[2026-06-28 10:33:53.835] Selected the bad axiom SubClassOf(PctLeanMass BodPod).
+[2026-06-28 10:33:53.846] Found 652 possible bad axioms.
+[2026-06-28 10:33:53.846] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_Circumference))).
+[2026-06-28 10:33:53.851] Found 651 possible bad axioms.
+[2026-06-28 10:33:53.851] Selected the bad axiom SubClassOf(Bioelectric_Impedence ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio Skinfold_Suprai
+...[truncated]
+FAIL: attempt=8 seed=99544 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+progress: ontology=BNO attempt=8 success=0/100
+----- BNO attempt=9 seed=113744 at 2026-06-28 10:36:11 -----
+--- stdout ---
+{"seed":113744,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat","iic_values":{},"repair_runtimes_ms":{"A1":435,"A2":96144,"A3":1184,"B1":1167,"B2":11602}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=113744, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:36:12.410] Checking precondition...
+[2026-06-28 10:36:12.437] Starting the repair...
+[2026-06-28 10:36:12.453] Found 663 possible bad axioms.
+[2026-06-28 10:36:12.455] Selected the bad axiom SubClassOf(FAT ObjectIntersectionOf(Nutraceuticals_Prot_Dev_Omega_3_Fatty_Acids Unsaturated)).
+[2026-06-28 10:36:12.464] Found 662 possible bad axioms.
+[2026-06-28 10:36:12.464] Selected the bad axiom SubClassOf(BodyComposition ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_Circumference))).
+[2026-06-28 10:36:12.478] Found 661 possible bad axioms.
+[2026-06-28 10:36:12.479] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure Day_5_Inpatient).
+[2026-06-28 10:36:12.486] Found 660 possible bad axioms.
+[2026-06-28 10:36:12.486] Selected the bad axiom SubClassOf(Unsaturated FAT).
+[2026-06-28 10:36:12.494] Found 659 possible bad axioms.
+[2026-06-28 10:36:12.494] Selected the bad axiom SubClassOf(Menu_Rotation DesignDiet).
+[2026-06-28 10:36:12.501] Found 658 possible bad axioms.
+[2026-06-28 10:36:12.501] Selected the bad axiom SubClassOf(Macronutrient_Prot_Dev_Fat PctBodyFat).
+[2026-06-28 10:36:12.508] Found 657 possible bad axioms.
+[2026-06-28 10:36:12.508] Selected the bad axiom SubClassOf(PRO MacronutrientsControlled).
+[2026-06-28 10:36:12.513] Found 656 possible bad axioms.
+[2026-06-28 10:36:12.514] Selected the bad axiom SubClassOf(Bioelectric_Impedence Nutrition_Assessment_Care_Plan).
+[2026-06-28 10:36:12.520] Found 655 possible bad axioms.
+[2026-06-28 10:36:12.520] Selected the bad axiom SubClassOf(FAT ObjectIntersectionOf(Unsaturated ObjectIntersectionOf(Saturated ObjectIntersectionOf(Mono Poly)))).
+[2026-06-28 10:36:12.531] Found 654 possible bad axioms.
+[2026-06-28 10:36:12.531] Selected the bad axiom SubClassOf(BodyComposition Anthropometrics_Height).
+[2026-06-28 10:36:12.536] Found 653 possible bad axioms.
+[2026-06-28 10:36:12.536] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Waist_Circumference Hip_Waist_Measurement_Hip_Circumference).
+[2026-06-28 10:36:12.547] Found 652 possible bad axioms.
+[2026-06-28 10:36:12.547] Selected the bad axiom SubClassOf(Bioelectric_Impedence ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement Hip_Waist_Measurement_Waist_Circumference))).
+[2026-06-28 10:36:12.553] Found 651 possible bad axioms.
+[2026-06-28 10:36:12.553] Selected the bad axiom SubClassOf(Single_Nutrient_Intake Nutrient_Analysis).
+[2026-06-28 10:36:12.558] Found 650 p
+...[truncated]
+FAIL: attempt=9 seed=113744 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+progress: ontology=BNO attempt=9 success=0/100
+----- BNO attempt=10 seed=127944 at 2026-06-28 10:38:03 -----
+--- stdout ---
+{"seed":127944,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat","iic_values":{},"repair_runtimes_ms":{"A1":1025,"A2":97709,"A3":1245,"B1":1239,"B2":24571,"B3":15189,"B4":235,"B5":4816}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BNO.owl, seed=127944, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:38:03.483] Checking precondition...
+[2026-06-28 10:38:03.511] Starting the repair...
+[2026-06-28 10:38:03.525] Found 663 possible bad axioms.
+[2026-06-28 10:38:03.527] Selected the bad axiom SubClassOf(Micronutrient Macronutrient).
+[2026-06-28 10:38:03.537] Found 662 possible bad axioms.
+[2026-06-28 10:38:03.537] Selected the bad axiom SubClassOf(ObjectIntersectionOf(Anthropometrics_Weight ObjectIntersectionOf(Anthropometrics_Height ObjectIntersectionOf(Anthropometrics_Weight ObjectIntersectionOf(Anthropometrics_BMI Anthropometrics_Height)))) Anthropometrics).
+[2026-06-28 10:38:03.550] Found 661 possible bad axioms.
+[2026-06-28 10:38:03.550] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio owl:Nothing).
+[2026-06-28 10:38:03.558] Found 660 possible bad axioms.
+[2026-06-28 10:38:03.558] Selected the bad axiom SubClassOf(ScientificLiterature Day_5_Inpatient).
+[2026-06-28 10:38:03.566] Found 659 possible bad axioms.
+[2026-06-28 10:38:03.566] Selected the bad axiom SubClassOf(Outpatient owl:Nothing).
+[2026-06-28 10:38:03.574] Found 658 possible bad axioms.
+[2026-06-28 10:38:03.574] Selected the bad axiom SubClassOf(Food_Recall Nutrient_Analysis).
+[2026-06-28 10:38:03.581] Found 657 possible bad axioms.
+[2026-06-28 10:38:03.581] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Hip_Circumference owl:Nothing).
+[2026-06-28 10:38:03.588] Found 656 possible bad axioms.
+[2026-06-28 10:38:03.588] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Hip_Circumference ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_To_Hip_Ratio)).
+[2026-06-28 10:38:03.595] Found 655 possible bad axioms.
+[2026-06-28 10:38:03.595] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Hip_Circumference ObjectIntersectionOf(Hip_Waist_Measurement_Waist_To_Hip_Ratio ObjectIntersectionOf(Hip_Waist_Measurement_Waist_Circumference ObjectIntersectionOf(Hip_Waist_Measurement_Hip_Circumference Hip_Waist_Measurement_Waist_Circumference)))).
+[2026-06-28 10:38:03.606] Found 654 possible bad axioms.
+[2026-06-28 10:38:03.606] Selected the bad axiom SubClassOf(Hip_Waist_Measurement_Waist_Circumference Hip_Waist_Measurement_Hip_Circumference).
+[2026-06-28 10:38:03.612] Found 653 possible bad axioms.
+[2026-06-28 10:38:03.612] Selected the bad axiom SubClassOf(Individual PctLeanMass).
+[2026-06-28 10:38:03.623] Found 652 possible bad axioms.
+[2026-06-28 10:38:03.623] Selected the bad axiom SubClassOf(ResearchNutritionAssessmentProcedure Food_Record_3_4_Day).
+[2026-06-28 10:38:03.629] Found 651 possible bad axiom
+...[truncated]
+FAIL: attempt=10 seed=127944 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+progress: ontology=BNO attempt=10 success=0/100
+=== ABORTED BNO after 10 consecutive failures at 2026-06-28 10:40:30 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for BNO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=144 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+  attempt=2 seed=14344 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+  attempt=3 seed=28544 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+  attempt=4 seed=42744 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+  attempt=5 seed=56944 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: PctBodyFat ⊑ BodPod
+  attempt=6 seed=71144 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+  attempt=7 seed=85344 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+  attempt=8 seed=99544 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+  attempt=9 seed=113744 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+  attempt=10 seed=127944 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PctBodyFat
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

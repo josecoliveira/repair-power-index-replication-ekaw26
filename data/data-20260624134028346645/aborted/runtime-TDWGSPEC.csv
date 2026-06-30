@@ -1,0 +1,33 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,49,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,332.069040,156,1507,330003,,,,,,,,,
+2,14249,20260624134028346645,success,,,,350.172528,35,1621,1227,210733,31982,11873,125,17067,11093,173,33798,29640
+3,28449,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,331.996873,51,1579,330001,,,,,,,,,
+4,42649,20260624134028346645,time_limit_exceeded,timeout,B2,Repair timeout: B2 exceeded 300 seconds,332.913505,156,1488,534,365,330001,,,,,,,
+5,56849,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm),28.231636,175,1489,12721,8001,5471,,,,,,,
+6,71049,20260624134028346645,time_limit_exceeded,timeout,B2,Repair timeout: B2 exceeded 300 seconds,333.014735,58,1610,539,435,330002,,,,,,,
+7,85249,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,332.040114,153,1520,330002,,,,,,,,,
+8,99449,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,334.307748,104,1543,2275,330002,,,,,,,,
+9,113649,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,333.851927,201,1478,1803,330002,,,,,,,,
+10,127849,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,332.032963,155,1508,330002,,,,,,,,,
+11,142049,20260624134028346645,success,,,,109.500309,181,1517,364,14431,3675,5307,117,16977,24772,149,16769,24549
+12,156249,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,333.782943,49,1610,1758,330002,,,,,,,,
+13,170449,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,376.791916,117,1524,362,4727,7304,2050,84,33508,26355,300110,,
+14,184649,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm),16.139328,169,1501,9435,568,4094,,,,,,,
+15,198849,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm),21.572639,169,1493,8803,492,7099,3128,,,,,,
+16,213049,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,332.501412,169,1483,485,330001,,,,,,,,
+17,227249,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,332.038087,152,1510,330002,,,,,,,,,
+18,241449,20260624134028346645,success,,,,168.357178,167,1489,8884,1078,48181,6003,102,17028,10657,170,45907,27774
+19,255649,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,332.361719,103,1544,345,330001,,,,,,,,
+20,269849,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,358.036915,37,1636,25987,330008,,,,,,,,
+21,284049,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,308.571498,168,1490,306545,,,,,,,,,
+22,298249,20260624134028346645,success,,,,192.331980,99,1549,475,102353,3068,1668,179,16965,36458,130,16880,11888
+23,312449,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,326.223080,135,1508,324215,,,,,,,,,
+24,326649,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,332.816342,214,1513,712,330001,,,,,,,,
+25,340849,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm),8.048526,145,1518,1947,355,3707,,,,,,,
+26,355049,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,345.168123,156,1467,13184,330002,,,,,,,,
+27,369249,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm),204.263355,52,1590,95822,98193,8232,,,,,,,
+28,383449,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm),247.059609,63,1601,228359,296,7325,9033,,,,,,
+29,397649,20260624134028346645,time_limit_exceeded,timeout,A3,Repair timeout: A3 exceeded 300 seconds,332.032454,117,1551,330002,,,,,,,,,
+30,411849,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm),200.794858,150,1510,1764,565,196425,,,,,,,
+31,426049,20260624134028346645,time_limit_exceeded,timeout,B1,Repair timeout: B1 exceeded 300 seconds,332.343724,118,1542,317,330002,,,,,,,,
+32,440249,20260624134028346645,memory_limit_exceeded,,,,132.106471,,,,,,,,,,,,

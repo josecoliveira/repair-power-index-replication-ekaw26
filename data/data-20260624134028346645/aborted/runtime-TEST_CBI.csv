@@ -1,0 +1,52 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,13,20260624134028346645,success,,,,2.150567,31,75,202,211,474,259,15,141,112,21,116,84
+2,14213,20260624134028346645,success,,,,1.826520,35,73,248,138,371,156,28,149,69,15,83,86
+3,28413,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.434104,36,72,164,93,496,135,17,84,,,,
+4,42613,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.388022,28,68,169,96,475,180,34,,,,,
+5,56813,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.895018,28,81,164,107,508,214,16,76,81,17,80,141
+6,71013,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.696007,23,72,273,236,438,130,16,162,,,,
+7,85213,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.735655,27,73,180,96,,,,,,,,
+8,99413,20260624134028346645,success,,,,2.151977,128,81,193,153,436,119,14,254,135,23,107,139
+9,113613,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.982615,40,59,161,263,627,256,30,74,135,,,
+10,127813,20260624134028346645,success,,,,2.044975,27,72,162,183,571,135,17,173,71,16,167,108
+11,142013,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.305382,39,65,318,70,318,149,,,,,,
+12,156213,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.626594,24,77,310,100,330,344,17,,,,,
+13,170413,20260624134028346645,success,,,,1.854907,29,76,162,105,344,287,16,164,79,19,85,134
+14,184613,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.594167,35,66,158,,,,,,,,,
+15,198813,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.571261,30,67,172,154,307,286,19,188,,,,
+16,213013,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.722783,37,67,168,107,,,,,,,,
+17,227213,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.587259,30,70,162,,,,,,,,,
+18,241413,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.420856,38,72,160,230,388,141,,,,,,
+19,255613,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.256054,30,77,158,96,394,132,22,,,,,
+20,269813,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.406551,41,67,175,148,336,282,15,,,,,
+21,284013,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.828187,23,80,257,183,400,216,17,153,146,17,,
+22,298213,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.446821,35,72,383,51,275,236,16,,,,,
+23,312413,20260624134028346645,success,,,,1.842746,34,59,166,88,311,286,20,181,144,20,80,117
+24,326613,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.118481,37,64,235,120,344,,,,,,,
+25,340813,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,2.074970,31,73,187,222,469,205,16,81,83,23,76,148
+26,355013,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.770422,35,60,177,101,324,242,15,85,74,16,210,81
+27,369213,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.420847,24,72,165,90,327,333,68,,,,,
+28,383413,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,2.124338,31,84,173,261,420,304,18,75,137,18,136,90
+29,397613,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.586518,33,69,242,70,331,172,18,88,100,28,90,
+30,411813,20260624134028346645,success,,,,2.252366,34,71,163,220,532,483,24,139,74,17,77,66
+31,426013,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.319831,31,67,260,78,419,130,,,,,,
+32,440213,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.738684,37,62,315,,,,,,,,,
+33,454413,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.651237,36,73,166,89,405,315,32,114,80,16,,
+34,468613,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.823438,39,76,269,,,,,,,,,
+35,482813,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.476986,29,65,328,67,404,254,,,,,,
+36,497013,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.899139,34,70,255,67,381,216,14,196,149,17,158,
+37,511213,20260624134028346645,success,,,,2.229395,64,85,177,352,400,279,27,163,144,17,89,73
+38,525413,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.375678,27,76,168,158,413,167,19,,,,,
+39,539613,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.757447,39,57,245,78,,,,,,,,
+40,553813,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,2.069067,31,76,165,287,464,183,17,94,129,20,155,104
+41,568013,20260624134028346645,success,,,,2.014822,40,69,244,77,404,186,22,180,139,17,194,85
+42,582213,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.590961,33,68,163,,,,,,,,,
+43,596413,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.698397,23,66,255,127,316,245,76,120,128,,,
+44,610613,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.654833,38,70,164,,,,,,,,,
+45,624813,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.562514,39,63,159,95,324,234,16,190,109,,,
+46,639013,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.553047,36,76,325,65,447,237,20,,,,,
+47,653213,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.390963,29,64,209,99,508,131,,,,,,
+48,667413,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.786847,42,60,326,,,,,,,,,
+49,681613,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ R90zfvrgLzCBClTizkLa9pG,1.492174,37,62,262,136,279,207,15,145,,,,
+50,695813,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.722920,27,70,164,100,419,266,17,215,79,25,,
+51,710013,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.766817,29,75,188,,,,,,,,,

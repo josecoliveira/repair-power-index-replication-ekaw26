@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,150,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,67.588889,262,48484,1096,3865,13378,,,,,,,
+2,14350,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,66.275594,452,47883,1108,2128,14219,,,,,,,
+3,28550,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,67.390135,307,48018,2013,1031,15543,,,,,,,
+4,42750,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,67.664155,1226,47716,2022,1367,14851,,,,,,,
+5,56950,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,67.094447,674,47626,1099,2144,15072,,,,,,,
+6,71150,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,67.863828,1047,48429,1104,1059,15208,,,,,,,
+7,85350,20260624134028346645,memory_limit_exceeded,,,,108.110620,,,,,,,,,,,,
+8,99550,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,67.894051,847,47998,1101,1960,14660,,,,,,,
+9,113750,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,60.355385,340,48038,1119,1416,8995,,,,,,,
+10,127950,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Nursing_Diagnoses,67.325349,1213,47834,1420,1909,14470,,,,,,,

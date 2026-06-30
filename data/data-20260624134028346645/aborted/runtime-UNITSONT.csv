@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,93,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram),20.287250,322,11559,679,1037,2999,3199,61,,,,,
+2,14293,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram),17.167342,210,11678,689,337,2985,455,67,,,,,
+3,28493,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram),17.614774,193,11728,383,570,542,3323,78,,,,,
+4,42693,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit,15.243017,314,11734,387,649,1781,,,,,,,
+5,56893,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit,17.771198,322,11685,373,368,4634,,,,,,,
+6,71093,20260624134028346645,time_limit_exceeded,timeout,B2,Repair timeout: B2 exceeded 300 seconds,313.349459,252,11610,729,364,300001,,,,,,,
+7,85293,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit,16.770105,194,11722,1404,388,2695,,,,,,,
+8,99493,20260624134028346645,time_limit_exceeded,timeout,B3,Repair timeout: B3 exceeded 300 seconds,316.936188,187,11796,391,3558,599,300004,,,,,,
+9,113693,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram),16.155886,113,11710,405,734,894,1842,70,,,,,
+10,127893,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram),14.417837,285,11691,388,603,530,445,95,,,,,

@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,55,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ID_0000004,6.022083,120,912,593,194,1214,1497,37,1081,,,,
+2,14255,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ID_0000000 ⊑ ⊥,3.131355,160,873,244,206,1301,,,,,,,
+3,28455,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ID_0000004,3.825546,150,891,276,473,1684,,,,,,,
+4,42655,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ID_0000000 ⊑ ⊥,4.607763,40,963,259,224,2764,,,,,,,
+5,56855,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ID_0000000 ⊑ ⊥,3.552011,151,889,262,187,1703,,,,,,,
+6,71055,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ID_0000000 ⊑ ⊥,4.616942,99,924,266,188,2785,,,,,,,
+7,85255,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ID_0000004,6.123377,142,866,596,396,1063,545,47,2113,,,,
+8,99455,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ID_0000000 ⊑ ⊥,4.733627,89,911,434,180,2759,,,,,,,
+9,113655,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ID_0000004,7.625496,113,905,249,224,1211,1745,68,2217,,,,
+10,127855,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ID_0000000 ⊑ ⊥,2.609114,30,945,258,204,804,,,,,,,

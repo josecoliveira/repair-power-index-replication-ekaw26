@@ -1,0 +1,545 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-INSECTH.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-INSECTH.csv
+
+=== Starting sequential trials for INSECTH at 2026-06-27 22:34:06 ===
+----- INSECTH attempt=1 seed=126 at 2026-06-27 22:34:06 -----
+--- stdout ---
+{"seed":126,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":268,"A2":22980,"A3":632,"B1":596,"B2":5832,"B3":3130,"B4":301}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=126, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:34:07.215] Checking precondition...
+[2026-06-27 22:34:07.235] Starting the repair...
+[2026-06-27 22:34:07.243] Found 420 possible bad axioms.
+[2026-06-27 22:34:07.250] Selected the bad axiom SubClassOf(NMOBr_324 NMOBr_304).
+[2026-06-27 22:34:07.255] Found 419 possible bad axioms.
+[2026-06-27 22:34:07.256] Selected the bad axiom ClassAssertion(NMOBr_345 NMODB_132_2).
+[2026-06-27 22:34:07.258] Found 418 possible bad axioms.
+[2026-06-27 22:34:07.258] Selected the bad axiom ClassAssertion(NMOBr_299 NMODB_213_2).
+[2026-06-27 22:34:07.259] Found 417 possible bad axioms.
+[2026-06-27 22:34:07.259] Selected the bad axiom SubClassOf(NMOBr_294 NMOBr_292).
+[2026-06-27 22:34:07.265] Found 416 possible bad axioms.
+[2026-06-27 22:34:07.265] Selected the bad axiom ClassAssertion(NMOBr_369 NMODB_95_2).
+[2026-06-27 22:34:07.267] Found 415 possible bad axioms.
+[2026-06-27 22:34:07.267] Selected the bad axiom SubClassOf(NMOBr_303 NMOBr_274).
+[2026-06-27 22:34:07.272] Found 414 possible bad axioms.
+[2026-06-27 22:34:07.273] Selected the bad axiom ClassAssertion(NMOBr_310 NMODB_17_2).
+[2026-06-27 22:34:07.274] Found 413 possible bad axioms.
+[2026-06-27 22:34:07.274] Selected the bad axiom SubClassOf(NMOBr_792 NMOBr_844).
+[2026-06-27 22:34:07.279] Found 412 possible bad axioms.
+[2026-06-27 22:34:07.279] Selected the bad axiom ClassAssertion(NMOBr_803 NMODB_361_2).
+[2026-06-27 22:34:07.282] Found 411 possible bad axioms.
+[2026-06-27 22:34:07.282] Selected the bad axiom SubClassOf(NMOBr_823 NMOBr_357).
+[2026-06-27 22:34:07.286] Found 410 possible bad axioms.
+[2026-06-27 22:34:07.286] Selected the bad axiom ClassAssertion(NMOBr_372 NMODB_93_2).
+[2026-06-27 22:34:07.287] Found 409 possible bad axioms.
+[2026-06-27 22:34:07.287] Selected the bad axiom SubClassOf(NMOBr_804 NMOBr_304).
+[2026-06-27 22:34:07.296] Found 408 possible bad axioms.
+[2026-06-27 22:34:07.296] Selected the bad axiom SubClassOf(NMOBr_802 NMOBr_304).
+[2026-06-27 22:34:07.300] Found 407 possible bad axioms.
+[2026-06-27 22:34:07.300] Selected the bad axiom SubClassOf(NMOBr_347 NMOBr_689).
+[2026-06-27 22:34:07.304] Found 406 possible bad axioms.
+[2026-06-27 22:34:07.304] Selected the bad axiom SubClassOf(NMOBr_358 NMOBr_357).
+[2026-06-27 22:34:07.308] Found 405 possible bad axioms.
+[2026-06-27 22:34:07.308] Selected the bad axiom SubClassOf(NMOBr_332 NMOBr_304).
+[2026-06-27 22:34:07.312] Found 404 possible bad axioms.
+[2026-06-27 22:34:07.312] Selected the bad axiom ClassAssertion(NMOBr_847 NMODB_602_3).
+[2026-06-27 22:34:07.313] Found 403 possible bad axioms.
+[2026-06-27 22:34:07.314] Selected th
+...[truncated]
+FAIL: attempt=1 seed=126 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=1 success=0/100
+----- INSECTH attempt=2 seed=14326 at 2026-06-27 22:34:41 -----
+--- stdout ---
+{"seed":14326,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":192,"A2":22932,"A3":645,"B1":565,"B2":5725,"B3":3195,"B4":2239,"B5":853}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=14326, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:34:41.459] Checking precondition...
+[2026-06-27 22:34:41.482] Starting the repair...
+[2026-06-27 22:34:41.490] Found 420 possible bad axioms.
+[2026-06-27 22:34:41.497] Selected the bad axiom ClassAssertion(NMOBr_792 NMODB_76_1).
+[2026-06-27 22:34:41.499] Found 419 possible bad axioms.
+[2026-06-27 22:34:41.499] Selected the bad axiom SubClassOf(NMOBr_291 NMOBr_279).
+[2026-06-27 22:34:41.505] Found 418 possible bad axioms.
+[2026-06-27 22:34:41.505] Selected the bad axiom SubClassOf(NMOBr_691 NMOBr_696).
+[2026-06-27 22:34:41.510] Found 417 possible bad axioms.
+[2026-06-27 22:34:41.510] Selected the bad axiom SubClassOf(NMOBr_293 NMOBr_292).
+[2026-06-27 22:34:41.516] Found 416 possible bad axioms.
+[2026-06-27 22:34:41.517] Selected the bad axiom SubClassOf(NMOBr_353 NMOBr_352).
+[2026-06-27 22:34:41.522] Found 415 possible bad axioms.
+[2026-06-27 22:34:41.522] Selected the bad axiom SubClassOf(NMOBr_346 NMOBr_345).
+[2026-06-27 22:34:41.527] Found 414 possible bad axioms.
+[2026-06-27 22:34:41.527] Selected the bad axiom SubClassOf(NMOBr_693 NMOBr_690).
+[2026-06-27 22:34:41.531] Found 413 possible bad axioms.
+[2026-06-27 22:34:41.532] Selected the bad axiom ClassAssertion(NMOBr_804 NMODB_362_2).
+[2026-06-27 22:34:41.534] Found 412 possible bad axioms.
+[2026-06-27 22:34:41.534] Selected the bad axiom SubClassOf(NMOBr_287 NMOBr_285).
+[2026-06-27 22:34:41.538] Found 411 possible bad axioms.
+[2026-06-27 22:34:41.538] Selected the bad axiom SubClassOf(NMOBr_314 NMOBr_304).
+[2026-06-27 22:34:41.546] Found 410 possible bad axioms.
+[2026-06-27 22:34:41.547] Selected the bad axiom ClassAssertion(NMOBr_294 NMODB_155_3).
+[2026-06-27 22:34:41.548] Found 409 possible bad axioms.
+[2026-06-27 22:34:41.548] Selected the bad axiom SubClassOf(NMOBr_295 NMOBr_291).
+[2026-06-27 22:34:41.551] Found 408 possible bad axioms.
+[2026-06-27 22:34:41.552] Selected the bad axiom ClassAssertion(NMOBr_315 NMODB_190_2).
+[2026-06-27 22:34:41.553] Found 407 possible bad axioms.
+[2026-06-27 22:34:41.553] Selected the bad axiom SubClassOf(NMOBr_809 NMOBr_304).
+[2026-06-27 22:34:41.557] Found 406 possible bad axioms.
+[2026-06-27 22:34:41.557] Selected the bad axiom ClassAssertion(NMOBr_276 NMODB_129_2).
+[2026-06-27 22:34:41.558] Found 405 possible bad axioms.
+[2026-06-27 22:34:41.558] Selected the bad axiom ClassAssertion(NMOBr_793 NMODB_579_3).
+[2026-06-27 22:34:41.559] Found 404 possible bad axioms.
+[2026-06-27 22:34:41.559] Selected the bad axiom SubClassOf(NMOBr_840 NMOBr_297).
+[2026-06-27 22:34:41.568] Found 403 possible bad axioms.
+[2026-06-27 22:34:41.568] Selected the 
+...[truncated]
+FAIL: attempt=2 seed=14326 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=2 success=0/100
+----- INSECTH attempt=3 seed=28526 at 2026-06-27 22:35:18 -----
+--- stdout ---
+{"seed":28526,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":345,"A2":23102,"A3":669,"B1":607,"B2":5651,"B3":3240,"B4":287}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=28526, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:35:19.166] Checking precondition...
+[2026-06-27 22:35:19.190] Starting the repair...
+[2026-06-27 22:35:19.198] Found 420 possible bad axioms.
+[2026-06-27 22:35:19.200] Selected the bad axiom ClassAssertion(NMOBr_798 NMODB_356_2).
+[2026-06-27 22:35:19.207] Found 419 possible bad axioms.
+[2026-06-27 22:35:19.207] Selected the bad axiom ClassAssertion(NMOBr_367 NMODB_97_2).
+[2026-06-27 22:35:19.208] Found 418 possible bad axioms.
+[2026-06-27 22:35:19.209] Selected the bad axiom ClassAssertion(NMOBr_290 NMODB_106_2).
+[2026-06-27 22:35:19.210] Found 417 possible bad axioms.
+[2026-06-27 22:35:19.210] Selected the bad axiom ClassAssertion(NMOBr_325 NMODB_198_2).
+[2026-06-27 22:35:19.212] Found 416 possible bad axioms.
+[2026-06-27 22:35:19.212] Selected the bad axiom SubClassOf(NMOBr_817 NMOBr_304).
+[2026-06-27 22:35:19.217] Found 415 possible bad axioms.
+[2026-06-27 22:35:19.217] Selected the bad axiom ClassAssertion(NMOBr_371 NMODB_94_2).
+[2026-06-27 22:35:19.219] Found 414 possible bad axioms.
+[2026-06-27 22:35:19.219] Selected the bad axiom SubClassOf(NMOBr_344 NMOBr_304).
+[2026-06-27 22:35:19.225] Found 413 possible bad axioms.
+[2026-06-27 22:35:19.225] Selected the bad axiom SubClassOf(NMOBr_332 NMOBr_304).
+[2026-06-27 22:35:19.230] Found 412 possible bad axioms.
+[2026-06-27 22:35:19.230] Selected the bad axiom ClassAssertion(NMOBr_317 NMODB_192_2).
+[2026-06-27 22:35:19.231] Found 411 possible bad axioms.
+[2026-06-27 22:35:19.231] Selected the bad axiom SubClassOf(NMOBr_363 NMOBr_361).
+[2026-06-27 22:35:19.236] Found 410 possible bad axioms.
+[2026-06-27 22:35:19.236] Selected the bad axiom ClassAssertion(NMOBr_291 NMODB_43_1).
+[2026-06-27 22:35:19.238] Found 409 possible bad axioms.
+[2026-06-27 22:35:19.238] Selected the bad axiom SubClassOf(NMOBr_795 NMOBr_304).
+[2026-06-27 22:35:19.242] Found 408 possible bad axioms.
+[2026-06-27 22:35:19.242] Selected the bad axiom ClassAssertion(NMOBr_296 NMODB_124_2).
+[2026-06-27 22:35:19.243] Found 407 possible bad axioms.
+[2026-06-27 22:35:19.243] Selected the bad axiom SubClassOf(NMOBr_281 NMOBr_275).
+[2026-06-27 22:35:19.252] Found 406 possible bad axioms.
+[2026-06-27 22:35:19.252] Selected the bad axiom ClassAssertion(NMOBr_351 NMODB_32_1).
+[2026-06-27 22:35:19.253] Found 405 possible bad axioms.
+[2026-06-27 22:35:19.253] Selected the bad axiom SubClassOf(NMOBr_794 NMOBr_792).
+[2026-06-27 22:35:19.258] Found 404 possible bad axioms.
+[2026-06-27 22:35:19.258] Selected the bad axiom SubClassOf(NMOBr_328 NMOBr_304).
+[2026-06-27 22:35:19.262] Found 403 possible bad axioms.
+[2026-06-27 22:35:19.262
+...[truncated]
+FAIL: attempt=3 seed=28526 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=3 success=0/100
+----- INSECTH attempt=4 seed=42726 at 2026-06-27 22:35:53 -----
+--- stdout ---
+{"seed":42726,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":207,"A2":23005,"A3":651,"B1":589,"B2":5769,"B3":3145,"B4":263}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=42726, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:35:53.554] Checking precondition...
+[2026-06-27 22:35:53.580] Starting the repair...
+[2026-06-27 22:35:53.588] Found 420 possible bad axioms.
+[2026-06-27 22:35:53.596] Selected the bad axiom SubClassOf(NMOBr_696 NMOBr_690).
+[2026-06-27 22:35:53.602] Found 419 possible bad axioms.
+[2026-06-27 22:35:53.603] Selected the bad axiom SubClassOf(NMOBr_819 NMOBr_818).
+[2026-06-27 22:35:53.608] Found 418 possible bad axioms.
+[2026-06-27 22:35:53.608] Selected the bad axiom ClassAssertion(NMOBr_353 NMODB_128_2).
+[2026-06-27 22:35:53.610] Found 417 possible bad axioms.
+[2026-06-27 22:35:53.611] Selected the bad axiom ClassAssertion(NMOBr_368 NMODB_96_2).
+[2026-06-27 22:35:53.612] Found 416 possible bad axioms.
+[2026-06-27 22:35:53.612] Selected the bad axiom ClassAssertion(NMOBr_279 NMODB_109_2).
+[2026-06-27 22:35:53.613] Found 415 possible bad axioms.
+[2026-06-27 22:35:53.614] Selected the bad axiom SubClassOf(NMOBr_839 NMOBr_300).
+[2026-06-27 22:35:53.619] Found 414 possible bad axioms.
+[2026-06-27 22:35:53.619] Selected the bad axiom SubClassOf(NMOBr_322 NMOBr_304).
+[2026-06-27 22:35:53.625] Found 413 possible bad axioms.
+[2026-06-27 22:35:53.625] Selected the bad axiom SubClassOf(NMOBr_349 NMOBr_274).
+[2026-06-27 22:35:53.630] Found 412 possible bad axioms.
+[2026-06-27 22:35:53.630] Selected the bad axiom ClassAssertion(NMOBr_813 NMODB_372_2).
+[2026-06-27 22:35:53.631] Found 411 possible bad axioms.
+[2026-06-27 22:35:53.631] Selected the bad axiom SubClassOf(NMOBr_328 NMOBr_304).
+[2026-06-27 22:35:53.635] Found 410 possible bad axioms.
+[2026-06-27 22:35:53.635] Selected the bad axiom SubClassOf(NMOBr_817 NMOBr_304).
+[2026-06-27 22:35:53.644] Found 409 possible bad axioms.
+[2026-06-27 22:35:53.645] Selected the bad axiom SubClassOf(NMOBr_296 NMOBr_292).
+[2026-06-27 22:35:53.648] Found 408 possible bad axioms.
+[2026-06-27 22:35:53.649] Selected the bad axiom SubClassOf(NMOBr_815 NMOBr_304).
+[2026-06-27 22:35:53.652] Found 407 possible bad axioms.
+[2026-06-27 22:35:53.652] Selected the bad axiom SubClassOf(NMOBr_691 NMOBr_690).
+[2026-06-27 22:35:53.656] Found 406 possible bad axioms.
+[2026-06-27 22:35:53.657] Selected the bad axiom ClassAssertion(NMOBr_807 NMODB_365_2).
+[2026-06-27 22:35:53.658] Found 405 possible bad axioms.
+[2026-06-27 22:35:53.658] Selected the bad axiom SubClassOf(NMOBr_290 NMOBr_289).
+[2026-06-27 22:35:53.667] Found 404 possible bad axioms.
+[2026-06-27 22:35:53.667] Selected the bad axiom SubClassOf(NMOBr_289 NMOBr_275).
+[2026-06-27 22:35:53.671] Found 403 possible bad axioms.
+[2026-06-27 22:35:53.671] Selected the bad ax
+...[truncated]
+FAIL: attempt=4 seed=42726 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=4 success=0/100
+----- INSECTH attempt=5 seed=56926 at 2026-06-27 22:36:27 -----
+--- stdout ---
+{"seed":56926,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":510,"A2":22901,"A3":694,"B1":623,"B2":5739,"B3":3136,"B4":280}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=56926, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:36:27.672] Checking precondition...
+[2026-06-27 22:36:27.697] Starting the repair...
+[2026-06-27 22:36:27.706] Found 420 possible bad axioms.
+[2026-06-27 22:36:27.713] Selected the bad axiom SubClassOf(NMOBr_327 NMOBr_816).
+[2026-06-27 22:36:27.719] Found 419 possible bad axioms.
+[2026-06-27 22:36:27.720] Selected the bad axiom ClassAssertion(NMOBr_791 NMODB_30_1).
+[2026-06-27 22:36:27.722] Found 418 possible bad axioms.
+[2026-06-27 22:36:27.722] Selected the bad axiom ClassAssertion(NMOBr_365 NMODB_180_3).
+[2026-06-27 22:36:27.724] Found 417 possible bad axioms.
+[2026-06-27 22:36:27.724] Selected the bad axiom SubClassOf(NMOBr_795 NMOBr_335).
+[2026-06-27 22:36:27.729] Found 416 possible bad axioms.
+[2026-06-27 22:36:27.730] Selected the bad axiom SubClassOf(NMOBr_329 NMOBr_338).
+[2026-06-27 22:36:27.736] Found 415 possible bad axioms.
+[2026-06-27 22:36:27.736] Selected the bad axiom SubClassOf(NMOBr_314 NMOBr_304).
+[2026-06-27 22:36:27.741] Found 414 possible bad axioms.
+[2026-06-27 22:36:27.741] Selected the bad axiom ClassAssertion(NMOBr_313 NMODB_188_2).
+[2026-06-27 22:36:27.743] Found 413 possible bad axioms.
+[2026-06-27 22:36:27.743] Selected the bad axiom ClassAssertion(NMOBr_697 NMODB_306_2).
+[2026-06-27 22:36:27.744] Found 412 possible bad axioms.
+[2026-06-27 22:36:27.745] Selected the bad axiom ClassAssertion(NMOBr_331 NMODB_217_2).
+[2026-06-27 22:36:27.746] Found 411 possible bad axioms.
+[2026-06-27 22:36:27.746] Selected the bad axiom ClassAssertion(NMOBr_791 NMODB_41_1).
+[2026-06-27 22:36:27.747] Found 410 possible bad axioms.
+[2026-06-27 22:36:27.747] Selected the bad axiom ClassAssertion(NMOBr_847 NMODB_602_3).
+[2026-06-27 22:36:27.748] Found 409 possible bad axioms.
+[2026-06-27 22:36:27.748] Selected the bad axiom ClassAssertion(NMOBr_284 NMODB_145_2).
+[2026-06-27 22:36:27.750] Found 408 possible bad axioms.
+[2026-06-27 22:36:27.750] Selected the bad axiom ClassAssertion(NMOBr_275 NMODB_11_1).
+[2026-06-27 22:36:27.751] Found 407 possible bad axioms.
+[2026-06-27 22:36:27.751] Selected the bad axiom ClassAssertion(NMOBr_282 NMODB_115_2).
+[2026-06-27 22:36:27.752] Found 406 possible bad axioms.
+[2026-06-27 22:36:27.752] Selected the bad axiom SubClassOf(NMOBr_303 NMOBr_689).
+[2026-06-27 22:36:27.762] Found 405 possible bad axioms.
+[2026-06-27 22:36:27.762] Selected the bad axiom SubClassOf(NMOBr_348 NMOBr_347).
+[2026-06-27 22:36:27.765] Found 404 possible bad axioms.
+[2026-06-27 22:36:27.766] Selected the bad axiom ClassAssertion(NMOBr_347 NMODB_48_1).
+[2026-06-27 22:36:27.767] Found 403 possible bad axioms.
+[2026-06-27 
+...[truncated]
+FAIL: attempt=5 seed=56926 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=5 success=0/100
+----- INSECTH attempt=6 seed=71126 at 2026-06-27 22:37:01 -----
+--- stdout ---
+{"seed":71126,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":383,"A2":23069,"A3":619,"B1":566,"B2":5750,"B3":3152,"B4":2478,"B5":824}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=71126, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:37:02.056] Checking precondition...
+[2026-06-27 22:37:02.078] Starting the repair...
+[2026-06-27 22:37:02.086] Found 420 possible bad axioms.
+[2026-06-27 22:37:02.088] Selected the bad axiom SubClassOf(NMOBr_347 NMOBr_689).
+[2026-06-27 22:37:02.099] Found 419 possible bad axioms.
+[2026-06-27 22:37:02.099] Selected the bad axiom SubClassOf(NMOBr_814 NMOBr_304).
+[2026-06-27 22:37:02.104] Found 418 possible bad axioms.
+[2026-06-27 22:37:02.104] Selected the bad axiom ClassAssertion(NMOBr_349 NMODB_32_1).
+[2026-06-27 22:37:02.106] Found 417 possible bad axioms.
+[2026-06-27 22:37:02.106] Selected the bad axiom ClassAssertion(NMOBr_331 NMODB_217_2).
+[2026-06-27 22:37:02.108] Found 416 possible bad axioms.
+[2026-06-27 22:37:02.108] Selected the bad axiom ClassAssertion(NMOBr_840 NMODB_113_2).
+[2026-06-27 22:37:02.109] Found 415 possible bad axioms.
+[2026-06-27 22:37:02.110] Selected the bad axiom SubClassOf(NMOBr_807 NMOBr_304).
+[2026-06-27 22:37:02.116] Found 414 possible bad axioms.
+[2026-06-27 22:37:02.116] Selected the bad axiom ClassAssertion(NMOBr_801 NMODB_359_2).
+[2026-06-27 22:37:02.118] Found 413 possible bad axioms.
+[2026-06-27 22:37:02.118] Selected the bad axiom ClassAssertion(NMOBr_348 NMODB_48_1).
+[2026-06-27 22:37:02.120] Found 412 possible bad axioms.
+[2026-06-27 22:37:02.120] Selected the bad axiom ClassAssertion(NMOBr_702 NMODB_73_1).
+[2026-06-27 22:37:02.121] Found 411 possible bad axioms.
+[2026-06-27 22:37:02.121] Selected the bad axiom ClassAssertion(NMOBr_297 NMODB_35_1).
+[2026-06-27 22:37:02.122] Found 410 possible bad axioms.
+[2026-06-27 22:37:02.123] Selected the bad axiom SubClassOf(NMOBr_838 NMOBr_298).
+[2026-06-27 22:37:02.127] Found 409 possible bad axioms.
+[2026-06-27 22:37:02.127] Selected the bad axiom ClassAssertion(NMOBr_797 NMODB_354_2).
+[2026-06-27 22:37:02.128] Found 408 possible bad axioms.
+[2026-06-27 22:37:02.129] Selected the bad axiom SubClassOf(NMOBr_700 NMOBr_690).
+[2026-06-27 22:37:02.132] Found 407 possible bad axioms.
+[2026-06-27 22:37:02.132] Selected the bad axiom SubClassOf(NMOBr_288 NMOBr_285).
+[2026-06-27 22:37:02.140] Found 406 possible bad axioms.
+[2026-06-27 22:37:02.141] Selected the bad axiom ClassAssertion(NMOBr_800 NMODB_358_2).
+[2026-06-27 22:37:02.142] Found 405 possible bad axioms.
+[2026-06-27 22:37:02.142] Selected the bad axiom SubClassOf(NMOBr_277 NMOBr_281).
+[2026-06-27 22:37:02.146] Found 404 possible bad axioms.
+[2026-06-27 22:37:02.146] Selected the bad axiom ClassAssertion(NMOBr_792 NMODB_76_1).
+[2026-06-27 22:37:02.148] Found 403 possible bad axioms.
+[2026-06-27 22:37:0
+...[truncated]
+FAIL: attempt=6 seed=71126 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=6 success=0/100
+----- INSECTH attempt=7 seed=85326 at 2026-06-27 22:37:39 -----
+--- stdout ---
+{"seed":85326,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":375,"A2":23015,"A3":648,"B1":606,"B2":5714,"B3":3219,"B4":2139,"B5":27400,"B6":640}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=85326, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:37:39.393] Checking precondition...
+[2026-06-27 22:37:39.418] Starting the repair...
+[2026-06-27 22:37:39.427] Found 420 possible bad axioms.
+[2026-06-27 22:37:39.429] Selected the bad axiom ClassAssertion(NMOBr_348 NMODB_49_1).
+[2026-06-27 22:37:39.436] Found 419 possible bad axioms.
+[2026-06-27 22:37:39.436] Selected the bad axiom SubClassOf(NMOBr_366 NMOBr_275).
+[2026-06-27 22:37:39.442] Found 418 possible bad axioms.
+[2026-06-27 22:37:39.442] Selected the bad axiom ClassAssertion(NMOBr_363 NMODB_133_3).
+[2026-06-27 22:37:39.444] Found 417 possible bad axioms.
+[2026-06-27 22:37:39.444] Selected the bad axiom SubClassOf(NMOBr_812 NMOBr_316).
+[2026-06-27 22:37:39.450] Found 416 possible bad axioms.
+[2026-06-27 22:37:39.450] Selected the bad axiom ClassAssertion(NMOBr_845 NMODB_378_2).
+[2026-06-27 22:37:39.452] Found 415 possible bad axioms.
+[2026-06-27 22:37:39.452] Selected the bad axiom SubClassOf(NMOBr_329 NMOBr_338).
+[2026-06-27 22:37:39.458] Found 414 possible bad axioms.
+[2026-06-27 22:37:39.458] Selected the bad axiom SubClassOf(NMOBr_300 NMOBr_298).
+[2026-06-27 22:37:39.462] Found 413 possible bad axioms.
+[2026-06-27 22:37:39.463] Selected the bad axiom ClassAssertion(NMOBr_802 NMODB_360_2).
+[2026-06-27 22:37:39.464] Found 412 possible bad axioms.
+[2026-06-27 22:37:39.464] Selected the bad axiom SubClassOf(NMOBr_324 NMOBr_329).
+[2026-06-27 22:37:39.468] Found 411 possible bad axioms.
+[2026-06-27 22:37:39.468] Selected the bad axiom ClassAssertion(NMOBr_290 NMODB_106_2).
+[2026-06-27 22:37:39.469] Found 410 possible bad axioms.
+[2026-06-27 22:37:39.470] Selected the bad axiom SubClassOf(NMOBr_690 NMOBr_689).
+[2026-06-27 22:37:39.474] Found 409 possible bad axioms.
+[2026-06-27 22:37:39.474] Selected the bad axiom SubClassOf(NMOBr_338 NMOBr_304).
+[2026-06-27 22:37:39.483] Found 408 possible bad axioms.
+[2026-06-27 22:37:39.483] Selected the bad axiom ClassAssertion(NMOBr_814 NMODB_373_2).
+[2026-06-27 22:37:39.484] Found 407 possible bad axioms.
+[2026-06-27 22:37:39.485] Selected the bad axiom ClassAssertion(NMOBr_276 NMODB_129_2).
+[2026-06-27 22:37:39.486] Found 406 possible bad axioms.
+[2026-06-27 22:37:39.486] Selected the bad axiom SubClassOf(NMOBr_273 NMOBr_272).
+[2026-06-27 22:37:39.490] Found 405 possible bad axioms.
+[2026-06-27 22:37:39.490] Selected the bad axiom SubClassOf(NMOBr_296 NMOBr_291).
+[2026-06-27 22:37:39.494] Found 404 possible bad axioms.
+[2026-06-27 22:37:39.494] Selected the bad axiom ClassAssertion(NMOBr_336 NMODB_208_2).
+[2026-06-27 22:37:39.495] Found 403 possible bad axioms.
+[2026-06-27 22:37:39.496] S
+...[truncated]
+FAIL: attempt=7 seed=85326 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=7 success=0/100
+----- INSECTH attempt=8 seed=99526 at 2026-06-27 22:38:43 -----
+--- stdout ---
+{"seed":99526,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":376,"A2":22945,"A3":619,"B1":569,"B2":5623,"B3":3207,"B4":287}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=99526, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:38:44.001] Checking precondition...
+[2026-06-27 22:38:44.024] Starting the repair...
+[2026-06-27 22:38:44.032] Found 420 possible bad axioms.
+[2026-06-27 22:38:44.034] Selected the bad axiom SubClassOf(NMOBr_795 NMOBr_304).
+[2026-06-27 22:38:44.045] Found 419 possible bad axioms.
+[2026-06-27 22:38:44.045] Selected the bad axiom SubClassOf(NMOBr_297 NMOBr_275).
+[2026-06-27 22:38:44.051] Found 418 possible bad axioms.
+[2026-06-27 22:38:44.051] Selected the bad axiom SubClassOf(NMOBr_300 NMOBr_298).
+[2026-06-27 22:38:44.056] Found 417 possible bad axioms.
+[2026-06-27 22:38:44.057] Selected the bad axiom ClassAssertion(NMOBr_701 NMODB_334_2).
+[2026-06-27 22:38:44.059] Found 416 possible bad axioms.
+[2026-06-27 22:38:44.059] Selected the bad axiom SubClassOf(NMOBr_340 NMOBr_304).
+[2026-06-27 22:38:44.064] Found 415 possible bad axioms.
+[2026-06-27 22:38:44.064] Selected the bad axiom ClassAssertion(NMOBr_321 NMODB_195_2).
+[2026-06-27 22:38:44.066] Found 414 possible bad axioms.
+[2026-06-27 22:38:44.066] Selected the bad axiom ClassAssertion(NMOBr_284 NMODB_145_2).
+[2026-06-27 22:38:44.067] Found 413 possible bad axioms.
+[2026-06-27 22:38:44.068] Selected the bad axiom SubClassOf(NMOBr_801 NMOBr_304).
+[2026-06-27 22:38:44.073] Found 412 possible bad axioms.
+[2026-06-27 22:38:44.073] Selected the bad axiom ClassAssertion(NMOBr_283 NMODB_118_2).
+[2026-06-27 22:38:44.074] Found 411 possible bad axioms.
+[2026-06-27 22:38:44.074] Selected the bad axiom SubClassOf(NMOBr_335 NMOBr_304).
+[2026-06-27 22:38:44.078] Found 410 possible bad axioms.
+[2026-06-27 22:38:44.079] Selected the bad axiom SubClassOf(NMOBr_297 NMOBr_298).
+[2026-06-27 22:38:44.087] Found 409 possible bad axioms.
+[2026-06-27 22:38:44.088] Selected the bad axiom SubClassOf(NMOBr_814 NMOBr_304).
+[2026-06-27 22:38:44.091] Found 408 possible bad axioms.
+[2026-06-27 22:38:44.092] Selected the bad axiom SubClassOf(NMOBr_282 NMOBr_280).
+[2026-06-27 22:38:44.095] Found 407 possible bad axioms.
+[2026-06-27 22:38:44.096] Selected the bad axiom SubClassOf(NMOBr_811 NMOBr_795).
+[2026-06-27 22:38:44.099] Found 406 possible bad axioms.
+[2026-06-27 22:38:44.100] Selected the bad axiom ClassAssertion(NMOBr_289 NMODB_41_1).
+[2026-06-27 22:38:44.101] Found 405 possible bad axioms.
+[2026-06-27 22:38:44.101] Selected the bad axiom ClassAssertion(NMOBr_804 NMODB_362_2).
+[2026-06-27 22:38:44.102] Found 404 possible bad axioms.
+[2026-06-27 22:38:44.102] Selected the bad axiom SubClassOf(NMOBr_339 NMOBr_304).
+[2026-06-27 22:38:44.111] Found 403 possible bad axioms.
+[2026-06-27 22:38:44.111] Selected the 
+...[truncated]
+FAIL: attempt=8 seed=99526 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=8 success=0/100
+----- INSECTH attempt=9 seed=113726 at 2026-06-27 22:39:17 -----
+--- stdout ---
+{"seed":113726,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":227,"A2":23020,"A3":654,"B1":582,"B2":5702,"B3":3147,"B4":314}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=113726, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:39:18.131] Checking precondition...
+[2026-06-27 22:39:18.151] Starting the repair...
+[2026-06-27 22:39:18.159] Found 420 possible bad axioms.
+[2026-06-27 22:39:18.166] Selected the bad axiom ClassAssertion(NMOBr_287 NMODB_58_3).
+[2026-06-27 22:39:18.168] Found 419 possible bad axioms.
+[2026-06-27 22:39:18.169] Selected the bad axiom ClassAssertion(NMOBr_699 NMODB_304_2).
+[2026-06-27 22:39:18.170] Found 418 possible bad axioms.
+[2026-06-27 22:39:18.170] Selected the bad axiom SubClassOf(NMOBr_804 NMOBr_304).
+[2026-06-27 22:39:18.176] Found 417 possible bad axioms.
+[2026-06-27 22:39:18.176] Selected the bad axiom ClassAssertion(NMOBr_351 NMODB_108_2).
+[2026-06-27 22:39:18.177] Found 416 possible bad axioms.
+[2026-06-27 22:39:18.177] Selected the bad axiom SubClassOf(NMOBr_297 NMOBr_275).
+[2026-06-27 22:39:18.183] Found 415 possible bad axioms.
+[2026-06-27 22:39:18.183] Selected the bad axiom SubClassOf(NMOBr_795 NMOBr_304).
+[2026-06-27 22:39:18.189] Found 414 possible bad axioms.
+[2026-06-27 22:39:18.189] Selected the bad axiom SubClassOf(NMOBr_367 NMOBr_366).
+[2026-06-27 22:39:18.194] Found 413 possible bad axioms.
+[2026-06-27 22:39:18.194] Selected the bad axiom SubClassOf(NMOBr_300 NMOBr_297).
+[2026-06-27 22:39:18.198] Found 412 possible bad axioms.
+[2026-06-27 22:39:18.198] Selected the bad axiom SubClassOf(NMOBr_279 NMOBr_275).
+[2026-06-27 22:39:18.204] Found 411 possible bad axioms.
+[2026-06-27 22:39:18.205] Selected the bad axiom SubClassOf(NMOBr_316 NMOBr_304).
+[2026-06-27 22:39:18.213] Found 410 possible bad axioms.
+[2026-06-27 22:39:18.214] Selected the bad axiom SubClassOf(NMOBr_349 NMOBr_274).
+[2026-06-27 22:39:18.217] Found 409 possible bad axioms.
+[2026-06-27 22:39:18.217] Selected the bad axiom SubClassOf(NMOBr_321 NMOBr_304).
+[2026-06-27 22:39:18.221] Found 408 possible bad axioms.
+[2026-06-27 22:39:18.221] Selected the bad axiom ClassAssertion(NMOBr_353 NMODB_128_2).
+[2026-06-27 22:39:18.222] Found 407 possible bad axioms.
+[2026-06-27 22:39:18.222] Selected the bad axiom ClassAssertion(NMOBr_279 NMODB_112_2).
+[2026-06-27 22:39:18.223] Found 406 possible bad axioms.
+[2026-06-27 22:39:18.223] Selected the bad axiom SubClassOf(NMOBr_354 NMOBr_353).
+[2026-06-27 22:39:18.227] Found 405 possible bad axioms.
+[2026-06-27 22:39:18.228] Selected the bad axiom SubClassOf(NMOBr_368 NMOBr_366).
+[2026-06-27 22:39:18.237] Found 404 possible bad axioms.
+[2026-06-27 22:39:18.237] Selected the bad axiom ClassAssertion(NMOBr_345 NMODB_132_2).
+[2026-06-27 22:39:18.238] Found 403 possible bad axioms.
+[2026-06-27 22:39:18.238] Selected the
+...[truncated]
+FAIL: attempt=9 seed=113726 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=9 success=0/100
+----- INSECTH attempt=10 seed=127926 at 2026-06-27 22:39:51 -----
+--- stdout ---
+{"seed":127926,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":400,"A2":22976,"A3":639,"B1":586,"B2":5840,"B3":3181,"B4":2608,"B5":825}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/INSECTH.owl, seed=127926, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:39:52.269] Checking precondition...
+[2026-06-27 22:39:52.292] Starting the repair...
+[2026-06-27 22:39:52.302] Found 420 possible bad axioms.
+[2026-06-27 22:39:52.310] Selected the bad axiom SubClassOf(NMOBr_314 NMOBr_304).
+[2026-06-27 22:39:52.316] Found 419 possible bad axioms.
+[2026-06-27 22:39:52.316] Selected the bad axiom ClassAssertion(NMOBr_801 NMODB_359_2).
+[2026-06-27 22:39:52.318] Found 418 possible bad axioms.
+[2026-06-27 22:39:52.318] Selected the bad axiom ClassAssertion(NMOBr_278 NMODB_120_2).
+[2026-06-27 22:39:52.320] Found 417 possible bad axioms.
+[2026-06-27 22:39:52.320] Selected the bad axiom ClassAssertion(NMOBr_375 NMODB_90_2).
+[2026-06-27 22:39:52.321] Found 416 possible bad axioms.
+[2026-06-27 22:39:52.321] Selected the bad axiom ClassAssertion(NMOBr_842 NMODB_606_3).
+[2026-06-27 22:39:52.323] Found 415 possible bad axioms.
+[2026-06-27 22:39:52.323] Selected the bad axiom SubClassOf(NMOBr_334 NMOBr_809).
+[2026-06-27 22:39:52.329] Found 414 possible bad axioms.
+[2026-06-27 22:39:52.329] Selected the bad axiom SubClassOf(NMOBr_791 NMOBr_289).
+[2026-06-27 22:39:52.335] Found 413 possible bad axioms.
+[2026-06-27 22:39:52.335] Selected the bad axiom SubClassOf(NMOBr_792 NMOBr_844).
+[2026-06-27 22:39:52.341] Found 412 possible bad axioms.
+[2026-06-27 22:39:52.341] Selected the bad axiom ClassAssertion(NMOBr_335 NMODB_207_2).
+[2026-06-27 22:39:52.342] Found 411 possible bad axioms.
+[2026-06-27 22:39:52.343] Selected the bad axiom SubClassOf(NMOBr_294 NMOBr_292).
+[2026-06-27 22:39:52.346] Found 410 possible bad axioms.
+[2026-06-27 22:39:52.347] Selected the bad axiom SubClassOf(NMOBr_364 NMOBr_357).
+[2026-06-27 22:39:52.350] Found 409 possible bad axioms.
+[2026-06-27 22:39:52.351] Selected the bad axiom ClassAssertion(NMOBr_324 NMODB_197_2).
+[2026-06-27 22:39:52.358] Found 408 possible bad axioms.
+[2026-06-27 22:39:52.358] Selected the bad axiom ClassAssertion(NMOBr_289 NMODB_30_1).
+[2026-06-27 22:39:52.359] Found 407 possible bad axioms.
+[2026-06-27 22:39:52.359] Selected the bad axiom ClassAssertion(NMOBr_373 NMODB_92_2).
+[2026-06-27 22:39:52.360] Found 406 possible bad axioms.
+[2026-06-27 22:39:52.360] Selected the bad axiom SubClassOf(NMOBr_372 NMOBr_370).
+[2026-06-27 22:39:52.364] Found 405 possible bad axioms.
+[2026-06-27 22:39:52.365] Selected the bad axiom SubClassOf(NMOBr_803 NMOBr_304).
+[2026-06-27 22:39:52.369] Found 404 possible bad axioms.
+[2026-06-27 22:39:52.369] Selected the bad axiom ClassAssertion(NMOBr_809 NMODB_368_2).
+[2026-06-27 22:39:52.370] Found 403 possible bad axioms.
+[2026-06-27 22:39:52.3
+...[truncated]
+FAIL: attempt=10 seed=127926 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=INSECTH attempt=10 success=0/100
+=== ABORTED INSECTH after 10 consecutive failures at 2026-06-27 22:40:29 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for INSECTH - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=126 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=2 seed=14326 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=3 seed=28526 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=4 seed=42726 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=5 seed=56926 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=6 seed=71126 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=7 seed=85326 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=8 seed=99526 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=9 seed=113726 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=10 seed=127926 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

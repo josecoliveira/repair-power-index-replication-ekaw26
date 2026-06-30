@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,145,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ General_Health_and_Physical_Assessment,253.172100,832,204272,3226,3909,22239,5801,1019,3491,7401,,,
+2,14345,20260624134028346645,memory_limit_exceeded,,,,265.699550,,,,,,,,,,,,
+3,28545,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,223.496147,252,205161,2996,7448,3385,2570,1200,,,,,
+4,42745,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥,249.777049,394,205383,3377,6462,33243,,,,,,,
+5,56945,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥,240.890323,54,205160,1791,1716,31263,,,,,,,
+6,71145,20260624134028346645,memory_limit_exceeded,,,,261.628626,,,,,,,,,,,,
+7,85345,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ smoking,231.513221,667,204169,8071,1798,7000,4326,2262,2699,,,,
+8,99545,20260624134028346645,memory_limit_exceeded,,,,275.751984,,,,,,,,,,,,
+9,113745,20260624134028346645,memory_limit_exceeded,,,,256.705338,,,,,,,,,,,,
+10,127945,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥,231.970745,517,206117,1732,4284,16926,,,,,,,

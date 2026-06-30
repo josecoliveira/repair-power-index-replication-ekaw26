@@ -1,0 +1,14 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,133,20260624134028346645,memory_limit_exceeded,,,,154.489786,,,,,,,,,,,,
+2,14333,20260624134028346645,memory_limit_exceeded,,,,154.076272,,,,,,,,,,,,
+3,28533,20260624134028346645,success,,,,129.259686,617,96346,1089,983,10821,6912,572,398,1509,465,3254,1585
+4,42733,20260624134028346645,memory_limit_exceeded,,,,133.722695,,,,,,,,,,,,
+5,56933,20260624134028346645,memory_limit_exceeded,,,,194.263204,,,,,,,,,,,,
+6,71133,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,99.267018,480,96566,1782,,,,,,,,,
+7,85333,20260624134028346645,memory_limit_exceeded,,,,519.091121,,,,,,,,,,,,
+8,99533,20260624134028346645,memory_limit_exceeded,,,,151.350325,,,,,,,,,,,,
+9,113733,20260624134028346645,memory_limit_exceeded,,,,223.341907,,,,,,,,,,,,
+10,127933,20260624134028346645,memory_limit_exceeded,,,,160.857394,,,,,,,,,,,,
+11,142133,20260624134028346645,memory_limit_exceeded,,,,138.188518,,,,,,,,,,,,
+12,156333,20260624134028346645,memory_limit_exceeded,,,,145.330424,,,,,,,,,,,,
+13,170533,20260624134028346645,memory_limit_exceeded,,,,141.109602,,,,,,,,,,,,

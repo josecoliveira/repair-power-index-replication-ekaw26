@@ -1,0 +1,439 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-NCCNEHR.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-NCCNEHR.csv
+
+=== Starting sequential trials for NCCNEHR at 2026-06-26 23:15:56 ===
+----- NCCNEHR attempt=1 seed=92 at 2026-06-26 23:15:56 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=92, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:15:56.895] Checking precondition...
+[2026-06-26 23:15:56.910] Starting the repair...
+[2026-06-26 23:15:56.918] Found 233 possible bad axioms.
+[2026-06-26 23:15:56.919] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(CancerStaged)).
+[2026-06-26 23:15:56.925] Found 232 possible bad axioms.
+[2026-06-26 23:15:56.925] Selected the bad axiom SubClassOf(HospiceEnrollment ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:15:56.930] Found 231 possible bad axioms.
+[2026-06-26 23:15:56.930] Selected the bad axiom SubClassOf(HospiceEnrollment ObjectComplementOf(SurvivorshipCarePlanning)).
+[2026-06-26 23:15:56.939] Found 230 possible bad axioms.
+[2026-06-26 23:15:56.939] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:15:56.943] Found 229 possible bad axioms.
+[2026-06-26 23:15:56.944] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:15:56.948] Found 228 possible bad axioms.
+[2026-06-26 23:15:56.949] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(PathologyTumorProfile)).
+[2026-06-26 23:15:56.953] Found 227 possible bad axioms.
+[2026-06-26 23:15:56.953] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:15:56.956] Found 226 possible bad axioms.
+[2026-06-26 23:15:56.956] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:15:56.960] Found 225 possible bad axioms.
+[2026-06-26 23:15:56.960] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:15:56.963] Found 224 possible bad axioms.
+[2026-06-26 23:15:56.963] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectComplementOf(SurvivorshipCarePlanning)).
+[2026-06-26 23:15:56.966] Found 223 possible bad axioms.
+[2026-06-26 23:15:56.966] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:15:56.973] Found 222 possible bad axioms.
+[2026-06-26 23:15:56.974] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:15:56.977] Found 221 possible bad axioms.
+[2026-06-26 23:15:56.977] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:15:56.986] Found 220 possible bad axioms.
+[2026-06-26 23:15:56.986] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(DiagnosticImaging)).
+[2026-
+...[truncated]
+FAIL: attempt=1 seed=92 - negative return code -9
+progress: ontology=NCCNEHR attempt=1 success=0/100
+----- NCCNEHR attempt=2 seed=14292 at 2026-06-26 23:16:54 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=14292, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:16:54.838] Checking precondition...
+[2026-06-26 23:16:54.854] Starting the repair...
+[2026-06-26 23:16:54.862] Found 233 possible bad axioms.
+[2026-06-26 23:16:54.864] Selected the bad axiom SubClassOf(ObjectComplementOf(DiseaseMilestoneEvent) ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:16:54.871] Found 232 possible bad axioms.
+[2026-06-26 23:16:54.871] Selected the bad axiom SubClassOf(ObjectComplementOf(DiagnosticProcedure) ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:16:54.876] Found 231 possible bad axioms.
+[2026-06-26 23:16:54.876] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:16:54.885] Found 230 possible bad axioms.
+[2026-06-26 23:16:54.885] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:16:54.890] Found 229 possible bad axioms.
+[2026-06-26 23:16:54.890] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:16:54.894] Found 228 possible bad axioms.
+[2026-06-26 23:16:54.894] Selected the bad axiom SubClassOf(TransplantCellularTherapy HospiceEnrollment).
+[2026-06-26 23:16:54.898] Found 227 possible bad axioms.
+[2026-06-26 23:16:54.899] Selected the bad axiom SubClassOf(TransplantCellularTherapy ObjectComplementOf(CancerStaged)).
+[2026-06-26 23:16:54.901] Found 226 possible bad axioms.
+[2026-06-26 23:16:54.902] Selected the bad axiom SubClassOf(TransplantCellularTherapy ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:16:54.905] Found 225 possible bad axioms.
+[2026-06-26 23:16:54.905] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(ObjectComplementOf(DiagnosticImaging))).
+[2026-06-26 23:16:54.908] Found 224 possible bad axioms.
+[2026-06-26 23:16:54.908] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:16:54.911] Found 223 possible bad axioms.
+[2026-06-26 23:16:54.911] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(Surgery)).
+[2026-06-26 23:16:54.919] Found 222 possible bad axioms.
+[2026-06-26 23:16:54.919] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:16:54.927] Found 221 possible bad axioms.
+[2026-06-26 23:16:54.927] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:16:54.931] Found 220 possible bad axioms.
+[2026-06-26 23:16:54.931] Selected the bad axiom SubClassOf(Disea
+...[truncated]
+FAIL: attempt=2 seed=14292 - negative return code -9
+progress: ontology=NCCNEHR attempt=2 success=0/100
+----- NCCNEHR attempt=3 seed=28492 at 2026-06-26 23:17:47 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=28492, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:17:47.621] Checking precondition...
+[2026-06-26 23:17:47.636] Starting the repair...
+[2026-06-26 23:17:47.643] Found 233 possible bad axioms.
+[2026-06-26 23:17:47.645] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:17:47.650] Found 232 possible bad axioms.
+[2026-06-26 23:17:47.650] Selected the bad axiom SubClassOf(ObjectComplementOf(HospiceEnrollment) ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:17:47.654] Found 231 possible bad axioms.
+[2026-06-26 23:17:47.655] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:17:47.664] Found 230 possible bad axioms.
+[2026-06-26 23:17:47.665] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(InitialPresentation)).
+[2026-06-26 23:17:47.669] Found 229 possible bad axioms.
+[2026-06-26 23:17:47.669] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(Surgery)).
+[2026-06-26 23:17:47.674] Found 228 possible bad axioms.
+[2026-06-26 23:17:47.674] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:17:47.678] Found 227 possible bad axioms.
+[2026-06-26 23:17:47.678] Selected the bad axiom SubClassOf(ObjectComplementOf(TransplantCellularTherapy) ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:17:47.682] Found 226 possible bad axioms.
+[2026-06-26 23:17:47.682] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(DiseaseMilestoneEvent)).
+[2026-06-26 23:17:47.685] Found 225 possible bad axioms.
+[2026-06-26 23:17:47.685] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:17:47.687] Found 224 possible bad axioms.
+[2026-06-26 23:17:47.687] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:17:47.691] Found 223 possible bad axioms.
+[2026-06-26 23:17:47.691] Selected the bad axiom SubClassOf(ObjectComplementOf(HereditaryCounselingTesting) ObjectComplementOf(Surgery)).
+[2026-06-26 23:17:47.699] Found 222 possible bad axioms.
+[2026-06-26 23:17:47.700] Selected the bad axiom SubClassOf(TransplantCellularTherapy ObjectComplementOf(DiagnosticProcedure)).
+[2026-06-26 23:17:47.708] Found 221 possible bad axioms.
+[2026-06-26 23:17:47.708] Selected the bad axiom SubClassOf(ObjectComplementOf(Surgery) ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:17:47.712] Found 220 possible bad axioms.
+[2026-06-26 23:17:47.712] Selected the bad axio
+...[truncated]
+FAIL: attempt=3 seed=28492 - negative return code -9
+progress: ontology=NCCNEHR attempt=3 success=0/100
+----- NCCNEHR attempt=4 seed=42692 at 2026-06-26 23:18:41 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=42692, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:18:41.760] Checking precondition...
+[2026-06-26 23:18:41.779] Starting the repair...
+[2026-06-26 23:18:41.789] Found 233 possible bad axioms.
+[2026-06-26 23:18:41.791] Selected the bad axiom SubClassOf(Surgery PathologyTumorProfile).
+[2026-06-26 23:18:41.798] Found 232 possible bad axioms.
+[2026-06-26 23:18:41.799] Selected the bad axiom SubClassOf(ObjectComplementOf(PathologyTumorProfile) ObjectComplementOf(DiseaseMilestoneEvent)).
+[2026-06-26 23:18:41.804] Found 231 possible bad axioms.
+[2026-06-26 23:18:41.805] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(DiagnosticProcedure)).
+[2026-06-26 23:18:41.815] Found 230 possible bad axioms.
+[2026-06-26 23:18:41.815] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:18:41.821] Found 229 possible bad axioms.
+[2026-06-26 23:18:41.821] Selected the bad axiom SubClassOf(DiagnosticImaging ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:18:41.826] Found 228 possible bad axioms.
+[2026-06-26 23:18:41.827] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(DiagnosticProcedure)).
+[2026-06-26 23:18:41.831] Found 227 possible bad axioms.
+[2026-06-26 23:18:41.831] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:18:41.834] Found 226 possible bad axioms.
+[2026-06-26 23:18:41.835] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:18:41.839] Found 225 possible bad axioms.
+[2026-06-26 23:18:41.839] Selected the bad axiom SubClassOf(DiagnosticImaging ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:18:41.842] Found 224 possible bad axioms.
+[2026-06-26 23:18:41.842] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(DiagnosticProcedure)).
+[2026-06-26 23:18:41.845] Found 223 possible bad axioms.
+[2026-06-26 23:18:41.846] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:18:41.855] Found 222 possible bad axioms.
+[2026-06-26 23:18:41.855] Selected the bad axiom SubClassOf(ObjectComplementOf(DiagnosticProcedure) PalliativeCareEnrollment).
+[2026-06-26 23:18:41.863] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 23:18:41.864] Checking precondition...
+[2026-06-26 23:18:41.871] Starting the repair...
+[2026-06-26 23:18:45.307] Found 1 possible bad axioms.
+[2026-06-26 23:18:45.307] Selected the bad axiom SubClassOf(ObjectComplementOf(D
+...[truncated]
+FAIL: attempt=4 seed=42692 - negative return code -9
+progress: ontology=NCCNEHR attempt=4 success=0/100
+----- NCCNEHR attempt=5 seed=56892 at 2026-06-26 23:19:45 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=56892, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:19:46.076] Checking precondition...
+[2026-06-26 23:19:46.092] Starting the repair...
+[2026-06-26 23:19:46.099] Found 233 possible bad axioms.
+[2026-06-26 23:19:46.101] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(InitialPresentation)).
+[2026-06-26 23:19:46.107] Found 232 possible bad axioms.
+[2026-06-26 23:19:46.107] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(ObjectComplementOf(InitialPresentation))).
+[2026-06-26 23:19:46.112] Found 231 possible bad axioms.
+[2026-06-26 23:19:46.112] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:19:46.120] Found 230 possible bad axioms.
+[2026-06-26 23:19:46.120] Selected the bad axiom SubClassOf(ObjectComplementOf(CancerStaged) ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:19:46.125] Found 229 possible bad axioms.
+[2026-06-26 23:19:46.126] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:19:46.134] Found 228 possible bad axioms.
+[2026-06-26 23:19:46.134] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(CancerStaged)).
+[2026-06-26 23:19:46.138] Found 227 possible bad axioms.
+[2026-06-26 23:19:46.139] Selected the bad axiom SubClassOf(TransplantCellularTherapy ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:19:46.142] Found 226 possible bad axioms.
+[2026-06-26 23:19:46.142] Selected the bad axiom SubClassOf(HereditaryCounselingTesting TransplantCellularTherapy).
+[2026-06-26 23:19:46.146] Found 225 possible bad axioms.
+[2026-06-26 23:19:46.146] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(PathologyTumorProfile)).
+[2026-06-26 23:19:46.148] Found 224 possible bad axioms.
+[2026-06-26 23:19:46.148] Selected the bad axiom SubClassOf(ObjectComplementOf(DiagnosticImaging) ObjectComplementOf(SurvivorshipCarePlanning)).
+[2026-06-26 23:19:46.151] Found 223 possible bad axioms.
+[2026-06-26 23:19:46.151] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:19:46.159] Found 222 possible bad axioms.
+[2026-06-26 23:19:46.159] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectComplementOf(SurvivorshipCarePlanning)).
+[2026-06-26 23:19:46.167] Found 221 possible bad axioms.
+[2026-06-26 23:19:46.168] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:19:46.171] Found 220 possible bad axioms.
+[2026-06-26 23:19:46.171] Selected the bad 
+...[truncated]
+FAIL: attempt=5 seed=56892 - negative return code -9
+progress: ontology=NCCNEHR attempt=5 success=0/100
+----- NCCNEHR attempt=6 seed=71092 at 2026-06-26 23:20:37 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=71092, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:20:38.289] Checking precondition...
+[2026-06-26 23:20:38.303] Starting the repair...
+[2026-06-26 23:20:38.310] Found 233 possible bad axioms.
+[2026-06-26 23:20:38.311] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:20:38.316] Found 232 possible bad axioms.
+[2026-06-26 23:20:38.317] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(DiseaseMilestoneEvent)).
+[2026-06-26 23:20:38.321] Found 231 possible bad axioms.
+[2026-06-26 23:20:38.321] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(InitialPresentation)).
+[2026-06-26 23:20:38.330] Found 230 possible bad axioms.
+[2026-06-26 23:20:38.330] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:20:38.335] Found 229 possible bad axioms.
+[2026-06-26 23:20:38.335] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:20:38.340] Found 228 possible bad axioms.
+[2026-06-26 23:20:38.341] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:20:38.345] Found 227 possible bad axioms.
+[2026-06-26 23:20:38.345] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(SurvivorshipCarePlanning)).
+[2026-06-26 23:20:38.348] Found 226 possible bad axioms.
+[2026-06-26 23:20:38.348] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:20:38.352] Found 225 possible bad axioms.
+[2026-06-26 23:20:38.352] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:20:38.354] Found 224 possible bad axioms.
+[2026-06-26 23:20:38.355] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(InitialPresentation)).
+[2026-06-26 23:20:38.358] Found 223 possible bad axioms.
+[2026-06-26 23:20:38.358] Selected the bad axiom SubClassOf(HospiceEnrollment ObjectComplementOf(SurvivorshipCarePlanning)).
+[2026-06-26 23:20:38.366] Found 222 possible bad axioms.
+[2026-06-26 23:20:38.367] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:20:38.374] Found 221 possible bad axioms.
+[2026-06-26 23:20:38.375] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:20:38.377] Found 220 possible bad axioms.
+[2026-06-26 23:20:38.377] Selected the bad axiom SubClassOf(SurvivorshipCarePlan
+...[truncated]
+FAIL: attempt=6 seed=71092 - negative return code -9
+progress: ontology=NCCNEHR attempt=6 success=0/100
+----- NCCNEHR attempt=7 seed=85292 at 2026-06-26 23:21:42 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=85292, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:21:43.155] Checking precondition...
+[2026-06-26 23:21:43.170] Starting the repair...
+[2026-06-26 23:21:43.177] Found 233 possible bad axioms.
+[2026-06-26 23:21:43.179] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:21:43.184] Found 232 possible bad axioms.
+[2026-06-26 23:21:43.184] Selected the bad axiom SubClassOf(TransplantCellularTherapy ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:21:43.190] Found 231 possible bad axioms.
+[2026-06-26 23:21:43.190] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(ObjectComplementOf(SystemicTherapy))).
+[2026-06-26 23:21:43.198] Found 230 possible bad axioms.
+[2026-06-26 23:21:43.199] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:21:43.203] Found 229 possible bad axioms.
+[2026-06-26 23:21:43.203] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:21:43.209] Found 228 possible bad axioms.
+[2026-06-26 23:21:43.209] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:21:43.213] Found 227 possible bad axioms.
+[2026-06-26 23:21:43.213] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:21:43.217] Found 226 possible bad axioms.
+[2026-06-26 23:21:43.217] Selected the bad axiom SubClassOf(DiagnosticProcedure InitialPresentation).
+[2026-06-26 23:21:43.220] Found 225 possible bad axioms.
+[2026-06-26 23:21:43.220] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(CancerStaged)).
+[2026-06-26 23:21:43.223] Found 224 possible bad axioms.
+[2026-06-26 23:21:43.223] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(InitialPresentation)).
+[2026-06-26 23:21:43.226] Found 223 possible bad axioms.
+[2026-06-26 23:21:43.226] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(PathologyTumorProfile)).
+[2026-06-26 23:21:43.234] Found 222 possible bad axioms.
+[2026-06-26 23:21:43.234] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(ObjectComplementOf(DiseaseMilestoneEvent))).
+[2026-06-26 23:21:43.242] Found 221 possible bad axioms.
+[2026-06-26 23:21:43.243] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(CancerStaged)).
+[2026-06-26 23:21:43.246] Found 220 possible bad axioms.
+[2026-06-26 23:21:43.246] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(HospiceEnrollment)).
+[2026-06-2
+...[truncated]
+FAIL: attempt=7 seed=85292 - negative return code -9
+progress: ontology=NCCNEHR attempt=7 success=0/100
+----- NCCNEHR attempt=8 seed=99492 at 2026-06-26 23:22:44 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=99492, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:22:44.491] Checking precondition...
+[2026-06-26 23:22:44.505] Starting the repair...
+[2026-06-26 23:22:44.512] Found 233 possible bad axioms.
+[2026-06-26 23:22:44.514] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(SurvivorshipCarePlanning)).
+[2026-06-26 23:22:44.519] Found 232 possible bad axioms.
+[2026-06-26 23:22:44.519] Selected the bad axiom SubClassOf(CancerStaged ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:22:44.524] Found 231 possible bad axioms.
+[2026-06-26 23:22:44.524] Selected the bad axiom SubClassOf(HereditaryCounselingTesting PalliativeCareEnrollment).
+[2026-06-26 23:22:44.533] Found 230 possible bad axioms.
+[2026-06-26 23:22:44.533] Selected the bad axiom SubClassOf(DiagnosticImaging ObjectComplementOf(InitialPresentation)).
+[2026-06-26 23:22:44.538] Found 229 possible bad axioms.
+[2026-06-26 23:22:44.538] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:22:44.543] Found 228 possible bad axioms.
+[2026-06-26 23:22:44.544] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(InitialPresentation)).
+[2026-06-26 23:22:44.548] Found 227 possible bad axioms.
+[2026-06-26 23:22:44.549] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectComplementOf(ObjectComplementOf(PalliativeCareEnrollment))).
+[2026-06-26 23:22:44.552] Found 226 possible bad axioms.
+[2026-06-26 23:22:44.553] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:22:44.556] Found 225 possible bad axioms.
+[2026-06-26 23:22:44.556] Selected the bad axiom SubClassOf(ObjectComplementOf(CancerStaged) ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:22:44.559] Found 224 possible bad axioms.
+[2026-06-26 23:22:44.559] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(Surgery)).
+[2026-06-26 23:22:44.562] Found 223 possible bad axioms.
+[2026-06-26 23:22:44.562] Selected the bad axiom SubClassOf(HereditaryCounselingTesting ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:22:44.570] Found 222 possible bad axioms.
+[2026-06-26 23:22:44.570] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:22:44.573] Found 221 possible bad axioms.
+[2026-06-26 23:22:44.578] Selected the bad axiom SubClassOf(SystemicTherapy ObjectComplementOf(PathologyTumorProfile)).
+[2026-06-26 23:22:44.582] Found 220 possible bad axioms.
+[2026-06-26 23:22:44.583] Selected the bad axiom SubClassOf(TransplantCellularTher
+...[truncated]
+FAIL: attempt=8 seed=99492 - negative return code -9
+progress: ontology=NCCNEHR attempt=8 success=0/100
+----- NCCNEHR attempt=9 seed=113692 at 2026-06-26 23:23:37 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=113692, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:23:38.365] Checking precondition...
+[2026-06-26 23:23:38.381] Starting the repair...
+[2026-06-26 23:23:38.391] Found 233 possible bad axioms.
+[2026-06-26 23:23:38.392] Selected the bad axiom SubClassOf(DiagnosticImaging ObjectComplementOf(ObjectComplementOf(HospiceEnrollment))).
+[2026-06-26 23:23:38.397] Found 232 possible bad axioms.
+[2026-06-26 23:23:38.397] Selected the bad axiom SubClassOf(HospiceEnrollment ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:23:38.402] Found 231 possible bad axioms.
+[2026-06-26 23:23:38.403] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:23:38.413] Found 230 possible bad axioms.
+[2026-06-26 23:23:38.413] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(CancerStaged)).
+[2026-06-26 23:23:38.417] Found 229 possible bad axioms.
+[2026-06-26 23:23:38.418] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(PathologyTumorProfile)).
+[2026-06-26 23:23:38.422] Found 228 possible bad axioms.
+[2026-06-26 23:23:38.423] Selected the bad axiom SubClassOf(DiagnosticImaging ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:23:38.426] Found 227 possible bad axioms.
+[2026-06-26 23:23:38.427] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:23:38.430] Found 226 possible bad axioms.
+[2026-06-26 23:23:38.430] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:23:38.433] Found 225 possible bad axioms.
+[2026-06-26 23:23:38.434] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(DiagnosticProcedure)).
+[2026-06-26 23:23:38.436] Found 224 possible bad axioms.
+[2026-06-26 23:23:38.436] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:23:38.440] Found 223 possible bad axioms.
+[2026-06-26 23:23:38.440] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:23:38.448] Found 222 possible bad axioms.
+[2026-06-26 23:23:38.449] Selected the bad axiom SubClassOf(Surgery ObjectComplementOf(DiagnosticImaging)).
+[2026-06-26 23:23:38.457] Found 221 possible bad axioms.
+[2026-06-26 23:23:38.458] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(TransplantCellularTherapy)).
+[2026-06-26 23:23:38.462] Found 220 possible bad axioms.
+[2026-06-26 23:23:38.462] Selected the bad axiom SubClassOf(PathologyTumorProfile ObjectCompleme
+...[truncated]
+FAIL: attempt=9 seed=113692 - negative return code -9
+progress: ontology=NCCNEHR attempt=9 success=0/100
+----- NCCNEHR attempt=10 seed=127892 at 2026-06-26 23:24:30 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCNEHR.owl, seed=127892, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:24:30.865] Checking precondition...
+[2026-06-26 23:24:30.880] Starting the repair...
+[2026-06-26 23:24:30.888] Found 233 possible bad axioms.
+[2026-06-26 23:24:30.890] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent DiagnosticImaging).
+[2026-06-26 23:24:30.895] Found 232 possible bad axioms.
+[2026-06-26 23:24:30.896] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(HospiceEnrollment)).
+[2026-06-26 23:24:30.901] Found 231 possible bad axioms.
+[2026-06-26 23:24:30.901] Selected the bad axiom SubClassOf(HospiceEnrollment ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:24:30.911] Found 230 possible bad axioms.
+[2026-06-26 23:24:30.911] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(SystemicTherapy)).
+[2026-06-26 23:24:30.916] Found 229 possible bad axioms.
+[2026-06-26 23:24:30.916] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectComplementOf(ObjectComplementOf(DiseaseMilestoneEvent))).
+[2026-06-26 23:24:30.920] Found 228 possible bad axioms.
+[2026-06-26 23:24:30.920] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:24:30.924] Found 227 possible bad axioms.
+[2026-06-26 23:24:30.924] Selected the bad axiom SubClassOf(SurvivorshipCarePlanning ObjectComplementOf(DiagnosticProcedure)).
+[2026-06-26 23:24:30.927] Found 226 possible bad axioms.
+[2026-06-26 23:24:30.927] Selected the bad axiom SubClassOf(ObjectComplementOf(InitialPresentation) ObjectComplementOf(RadiationTherapy)).
+[2026-06-26 23:24:30.930] Found 225 possible bad axioms.
+[2026-06-26 23:24:30.930] Selected the bad axiom SubClassOf(InitialPresentation ObjectComplementOf(PathologyTumorProfile)).
+[2026-06-26 23:24:30.933] Found 224 possible bad axioms.
+[2026-06-26 23:24:30.933] Selected the bad axiom SubClassOf(RadiationTherapy ObjectComplementOf(PalliativeCareEnrollment)).
+[2026-06-26 23:24:30.936] Found 223 possible bad axioms.
+[2026-06-26 23:24:30.936] Selected the bad axiom SubClassOf(DiagnosticProcedure ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:24:30.945] Found 222 possible bad axioms.
+[2026-06-26 23:24:30.945] Selected the bad axiom SubClassOf(Surgery PathologyTumorProfile).
+[2026-06-26 23:24:30.953] Found 221 possible bad axioms.
+[2026-06-26 23:24:30.953] Selected the bad axiom SubClassOf(DiseaseMilestoneEvent ObjectComplementOf(HereditaryCounselingTesting)).
+[2026-06-26 23:24:30.956] Found 220 possible bad axioms.
+[2026-06-26 23:24:30.956] Selected the bad axiom SubClassOf(PalliativeCareEnrollment ObjectCompl
+...[truncated]
+FAIL: attempt=10 seed=127892 - negative return code -9
+progress: ontology=NCCNEHR attempt=10 success=0/100
+=== ABORTED NCCNEHR after 10 consecutive failures at 2026-06-26 23:25:31 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for NCCNEHR - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=92 msg=negative return code -9
+  attempt=2 seed=14292 msg=negative return code -9
+  attempt=3 seed=28492 msg=negative return code -9
+  attempt=4 seed=42692 msg=negative return code -9
+  attempt=5 seed=56892 msg=negative return code -9
+  attempt=6 seed=71092 msg=negative return code -9
+  attempt=7 seed=85292 msg=negative return code -9
+  attempt=8 seed=99492 msg=negative return code -9
+  attempt=9 seed=113692 msg=negative return code -9
+  attempt=10 seed=127892 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=574.679179 avg_seconds=57.467918
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

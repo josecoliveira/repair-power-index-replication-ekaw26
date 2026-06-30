@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,110,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017,23.136993,55,10535,791,1416,8971,,,,,,,
+2,14310,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T055,26.477361,278,10431,747,1428,2938,4057,172,3629,1206,,,
+3,28510,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071,33.978224,311,10433,804,7565,10368,4059,,,,,,
+4,42710,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017,18.426470,214,10531,4317,752,2223,,,,,,,
+5,56910,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053,33.447142,178,10468,2749,3990,3586,2108,169,3861,2976,214,2691,
+6,71110,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071,21.985623,298,10399,1368,2100,3626,3790,,,,,,
+7,85310,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053,33.829892,294,10490,1545,2061,3913,5833,203,7821,,,,
+8,99510,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071,17.118697,349,10397,770,1339,3873,,,,,,,
+9,113710,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071,21.088889,124,10429,780,1527,3619,3777,,,,,,
+10,127910,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071,23.887928,204,10483,1381,2717,6366,2325,,,,,,

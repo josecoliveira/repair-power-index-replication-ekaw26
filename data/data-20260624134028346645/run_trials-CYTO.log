@@ -1,0 +1,466 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CYTO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CYTO.csv
+
+=== Starting sequential trials for CYTO at 2026-06-28 04:09:40 ===
+----- CYTO attempt=1 seed=131 at 2026-06-28 04:09:40 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=131, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:09:40.810] Checking precondition...
+[2026-06-28 04:09:40.828] Starting the repair...
+[2026-06-28 04:09:40.843] Found 465 possible bad axioms.
+[2026-06-28 04:09:40.845] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.852] Found 464 possible bad axioms.
+[2026-06-28 04:09:40.852] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.859] Found 463 possible bad axioms.
+[2026-06-28 04:09:40.859] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.866] Found 462 possible bad axioms.
+[2026-06-28 04:09:40.866] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.873] Found 461 possible bad axioms.
+[2026-06-28 04:09:40.873] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/115 http://www.semanticweb.org/demetrios/ontologies/2014/5/25).
+[2026-06-28 04:09:40.883] Found 460 possible bad axioms.
+[2026-06-28 04:09:40.883] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.888] Found 459 possible bad axioms.
+[2026-06-28 04:09:40.888] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.893] Found 458 possible bad axioms.
+[2026-06-28 04:09:40.893] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/62 http://www.semanticweb.org/demetrios/ontologies/2014/5/203).
+[2026-06-28 04:09:40.898] Found 457 possible bad axioms.
+[2026-06-28 04:09:40.898] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/231 http://www.semanticweb.org/demetrios/ontologies/2014/5/274).
+[2026-06-28 04:09:40.903] Found 456 possible bad axioms.
+[2026-06-28 04:09:40.903] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.908] Found 455 possible bad axioms.
+[2026-06-28 04:09:40.909] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.919] Found 454 possible bad axioms.
+[2026-06-28 04:09:40.920] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/131 http://www.semanticweb.org/demetrios/ontologies/2014/5/305).
+[2026-06-28 04:09:40.925] Found 453 possible bad axioms.
+[2026-06-28 04:09:40.925] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:09:40.930] Found 452 possible bad axioms.
+[2026-06-28 04:09:40.930] Selected the bad axiom SubClassOf(CYTOKINE http://www.semanticweb.org/demetrios/ontologies/2014/5/286).
+[2026-06-28 04:09:40.934] Found 451 possible bad axioms.
+[2026-06-28 04:09:40.935] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/169 http://www.semanticweb.org/demetrios/o
+...[truncated]
+FAIL: attempt=1 seed=131 - negative return code -9
+progress: ontology=CYTO attempt=1 success=0/100
+----- CYTO attempt=2 seed=14331 at 2026-06-28 04:11:05 -----
+--- stdout ---
+{"seed":14331,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(HIPC)","iic_values":{},"repair_runtimes_ms":{"A1":533,"A2":22697,"A3":1112,"B1":1043,"B2":14333,"B3":15759,"B4":118}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=14331, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:11:05.441] Checking precondition...
+[2026-06-28 04:11:05.461] Starting the repair...
+[2026-06-28 04:11:05.475] Found 465 possible bad axioms.
+[2026-06-28 04:11:05.477] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/141 http://www.semanticweb.org/demetrios/ontologies/2014/5/292).
+[2026-06-28 04:11:05.484] Found 464 possible bad axioms.
+[2026-06-28 04:11:05.485] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.491] Found 463 possible bad axioms.
+[2026-06-28 04:11:05.492] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/55 http://www.semanticweb.org/demetrios/ontologies/2014/5/140).
+[2026-06-28 04:11:05.499] Found 462 possible bad axioms.
+[2026-06-28 04:11:05.499] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.505] Found 461 possible bad axioms.
+[2026-06-28 04:11:05.505] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.515] Found 460 possible bad axioms.
+[2026-06-28 04:11:05.515] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/44 http://www.semanticweb.org/demetrios/ontologies/2014/5/41).
+[2026-06-28 04:11:05.520] Found 459 possible bad axioms.
+[2026-06-28 04:11:05.520] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.525] Found 458 possible bad axioms.
+[2026-06-28 04:11:05.525] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.530] Found 457 possible bad axioms.
+[2026-06-28 04:11:05.530] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.535] Found 456 possible bad axioms.
+[2026-06-28 04:11:05.535] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/293 http://www.semanticweb.org/demetrios/ontologies/2014/5/240).
+[2026-06-28 04:11:05.541] Found 455 possible bad axioms.
+[2026-06-28 04:11:05.541] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.552] Found 454 possible bad axioms.
+[2026-06-28 04:11:05.552] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.557] Found 453 possible bad axioms.
+[2026-06-28 04:11:05.557] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.562] Found 452 possible bad axioms.
+[2026-06-28 04:11:05.562] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.567] Found 451 possible bad axioms.
+[2026-06-28 04:11:05.567] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:11:05.576] Found 450 possible bad axioms.
+[2026-06-28 04:11:05.576] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:1
+...[truncated]
+FAIL: attempt=2 seed=14331 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(HIPC)
+progress: ontology=CYTO attempt=2 success=0/100
+----- CYTO attempt=3 seed=28531 at 2026-06-28 04:12:01 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=28531, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:12:01.759] Checking precondition...
+[2026-06-28 04:12:01.779] Starting the repair...
+[2026-06-28 04:12:01.793] Found 465 possible bad axioms.
+[2026-06-28 04:12:01.795] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:12:01.802] Found 464 possible bad axioms.
+[2026-06-28 04:12:01.802] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:12:01.809] Found 463 possible bad axioms.
+[2026-06-28 04:12:01.809] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:12:01.816] Found 462 possible bad axioms.
+[2026-06-28 04:12:01.816] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/229 http://www.semanticweb.org/demetrios/ontologies/2014/5/105).
+[2026-06-28 04:12:01.821] Found 461 possible bad axioms.
+[2026-06-28 04:12:01.822] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:12:01.832] Found 460 possible bad axioms.
+[2026-06-28 04:12:01.832] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/72 http://www.semanticweb.org/demetrios/ontologies/2014/5/62).
+[2026-06-28 04:12:01.843] Found 459 possible bad axioms.
+[2026-06-28 04:12:01.844] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:12:01.849] Found 458 possible bad axioms.
+[2026-06-28 04:12:01.849] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/208 http://www.semanticweb.org/demetrios/ontologies/2014/5/21).
+[2026-06-28 04:12:01.855] Found 457 possible bad axioms.
+[2026-06-28 04:12:01.855] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/110 http://www.semanticweb.org/demetrios/ontologies/2014/5/153).
+[2026-06-28 04:12:01.861] Found 456 possible bad axioms.
+[2026-06-28 04:12:01.861] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/43 http://www.semanticweb.org/demetrios/ontologies/2014/5/265).
+[2026-06-28 04:12:01.865] Found 455 possible bad axioms.
+[2026-06-28 04:12:01.866] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:12:01.876] Found 454 possible bad axioms.
+[2026-06-28 04:12:01.877] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/284 http://www.semanticweb.org/demetrios/ontologies/2014/5/177).
+[2026-06-28 04:12:01.882] Found 453 possible bad axioms.
+[2026-06-28 04:12:01.882] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:12:01.886] Found 452 possible bad axioms.
+[2026-06-28 04:12:01.887] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/304 http://
+...[truncated]
+FAIL: attempt=3 seed=28531 - negative return code -9
+progress: ontology=CYTO attempt=3 success=0/100
+----- CYTO attempt=4 seed=42731 at 2026-06-28 04:13:24 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=42731, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:13:25.233] Checking precondition...
+[2026-06-28 04:13:25.253] Starting the repair...
+[2026-06-28 04:13:25.268] Found 465 possible bad axioms.
+[2026-06-28 04:13:25.270] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.277] Found 464 possible bad axioms.
+[2026-06-28 04:13:25.277] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.284] Found 463 possible bad axioms.
+[2026-06-28 04:13:25.285] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.292] Found 462 possible bad axioms.
+[2026-06-28 04:13:25.293] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.298] Found 461 possible bad axioms.
+[2026-06-28 04:13:25.298] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/265 http://www.semanticweb.org/demetrios/ontologies/2014/5/186).
+[2026-06-28 04:13:25.310] Found 460 possible bad axioms.
+[2026-06-28 04:13:25.311] Selected the bad axiom SubClassOf(CYTOKINE http://www.semanticweb.org/demetrios/ontologies/2014/5/110).
+[2026-06-28 04:13:25.315] Found 459 possible bad axioms.
+[2026-06-28 04:13:25.315] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.320] Found 458 possible bad axioms.
+[2026-06-28 04:13:25.320] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.325] Found 457 possible bad axioms.
+[2026-06-28 04:13:25.325] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/259 http://www.semanticweb.org/demetrios/ontologies/2014/5/233).
+[2026-06-28 04:13:25.331] Found 456 possible bad axioms.
+[2026-06-28 04:13:25.331] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/5 http://www.semanticweb.org/demetrios/ontologies/2014/5/198).
+[2026-06-28 04:13:25.335] Found 455 possible bad axioms.
+[2026-06-28 04:13:25.336] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.345] Found 454 possible bad axioms.
+[2026-06-28 04:13:25.346] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.350] Found 453 possible bad axioms.
+[2026-06-28 04:13:25.350] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.355] Found 452 possible bad axioms.
+[2026-06-28 04:13:25.356] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.360] Found 451 possible bad axioms.
+[2026-06-28 04:13:25.361] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.371] Found 450 possible bad axioms.
+[2026-06-28 04:13:25.371] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:13:25.376] Found 449 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=4 seed=42731 - negative return code -9
+progress: ontology=CYTO attempt=4 success=0/100
+----- CYTO attempt=5 seed=56931 at 2026-06-28 04:14:33 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=56931, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:14:34.168] Checking precondition...
+[2026-06-28 04:14:34.188] Starting the repair...
+[2026-06-28 04:14:34.203] Found 465 possible bad axioms.
+[2026-06-28 04:14:34.205] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/122 http://www.semanticweb.org/demetrios/ontologies/2014/5/41).
+[2026-06-28 04:14:34.213] Found 464 possible bad axioms.
+[2026-06-28 04:14:34.213] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/208 http://www.semanticweb.org/demetrios/ontologies/2014/5/21).
+[2026-06-28 04:14:34.220] Found 463 possible bad axioms.
+[2026-06-28 04:14:34.221] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.228] Found 462 possible bad axioms.
+[2026-06-28 04:14:34.228] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.233] Found 461 possible bad axioms.
+[2026-06-28 04:14:34.234] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/140 http://www.semanticweb.org/demetrios/ontologies/2014/5/119).
+[2026-06-28 04:14:34.244] Found 460 possible bad axioms.
+[2026-06-28 04:14:34.244] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.249] Found 459 possible bad axioms.
+[2026-06-28 04:14:34.249] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.253] Found 458 possible bad axioms.
+[2026-06-28 04:14:34.254] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.258] Found 457 possible bad axioms.
+[2026-06-28 04:14:34.258] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/265 http://www.semanticweb.org/demetrios/ontologies/2014/5/186).
+[2026-06-28 04:14:34.262] Found 456 possible bad axioms.
+[2026-06-28 04:14:34.262] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.268] Found 455 possible bad axioms.
+[2026-06-28 04:14:34.268] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.281] Found 454 possible bad axioms.
+[2026-06-28 04:14:34.281] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.286] Found 453 possible bad axioms.
+[2026-06-28 04:14:34.287] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/39 http://www.semanticweb.org/demetrios/ontologies/2014/5/226).
+[2026-06-28 04:14:34.294] Found 452 possible bad axioms.
+[2026-06-28 04:14:34.295] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:14:34.301] Found 451 possible bad axioms.
+[2026-06-28 04:14:34.301] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologie
+...[truncated]
+FAIL: attempt=5 seed=56931 - negative return code -9
+progress: ontology=CYTO attempt=5 success=0/100
+----- CYTO attempt=6 seed=71131 at 2026-06-28 04:17:25 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=71131, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:17:25.834] Checking precondition...
+[2026-06-28 04:17:25.853] Starting the repair...
+[2026-06-28 04:17:25.869] Found 465 possible bad axioms.
+[2026-06-28 04:17:25.871] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/55 http://www.semanticweb.org/demetrios/ontologies/2014/5/28).
+[2026-06-28 04:17:25.878] Found 464 possible bad axioms.
+[2026-06-28 04:17:25.878] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/110 http://www.semanticweb.org/demetrios/ontologies/2014/5/153).
+[2026-06-28 04:17:25.885] Found 463 possible bad axioms.
+[2026-06-28 04:17:25.885] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.893] Found 462 possible bad axioms.
+[2026-06-28 04:17:25.894] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.900] Found 461 possible bad axioms.
+[2026-06-28 04:17:25.900] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/177 http://www.semanticweb.org/demetrios/ontologies/2014/5/187).
+[2026-06-28 04:17:25.909] Found 460 possible bad axioms.
+[2026-06-28 04:17:25.910] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/298 http://www.semanticweb.org/demetrios/ontologies/2014/5/31).
+[2026-06-28 04:17:25.914] Found 459 possible bad axioms.
+[2026-06-28 04:17:25.914] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/164 http://www.semanticweb.org/demetrios/ontologies/2014/5/101).
+[2026-06-28 04:17:25.919] Found 458 possible bad axioms.
+[2026-06-28 04:17:25.919] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.923] Found 457 possible bad axioms.
+[2026-06-28 04:17:25.923] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/297 http://www.semanticweb.org/demetrios/ontologies/2014/5/54).
+[2026-06-28 04:17:25.927] Found 456 possible bad axioms.
+[2026-06-28 04:17:25.927] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.932] Found 455 possible bad axioms.
+[2026-06-28 04:17:25.932] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.943] Found 454 possible bad axioms.
+[2026-06-28 04:17:25.943] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.948] Found 453 possible bad axioms.
+[2026-06-28 04:17:25.948] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.953] Found 452 possible bad axioms.
+[2026-06-28 04:17:25.953] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:17:25.958] Found 451 possible bad axioms
+...[truncated]
+FAIL: attempt=6 seed=71131 - negative return code -9
+progress: ontology=CYTO attempt=6 success=0/100
+----- CYTO attempt=7 seed=85331 at 2026-06-28 04:18:51 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=85331, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:18:52.205] Checking precondition...
+[2026-06-28 04:18:52.225] Starting the repair...
+[2026-06-28 04:18:52.240] Found 465 possible bad axioms.
+[2026-06-28 04:18:52.241] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:18:52.249] Found 464 possible bad axioms.
+[2026-06-28 04:18:52.249] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:18:52.256] Found 463 possible bad axioms.
+[2026-06-28 04:18:52.256] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/169 http://www.semanticweb.org/demetrios/ontologies/2014/5/226).
+[2026-06-28 04:18:52.263] Found 462 possible bad axioms.
+[2026-06-28 04:18:52.263] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:18:52.269] Found 461 possible bad axioms.
+[2026-06-28 04:18:52.269] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:18:52.279] Found 460 possible bad axioms.
+[2026-06-28 04:18:52.279] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/91 http://www.semanticweb.org/demetrios/ontologies/2014/5/135).
+[2026-06-28 04:18:52.284] Found 459 possible bad axioms.
+[2026-06-28 04:18:52.284] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/284 http://www.semanticweb.org/demetrios/ontologies/2014/5/177).
+[2026-06-28 04:18:52.288] Found 458 possible bad axioms.
+[2026-06-28 04:18:52.289] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:18:52.293] Found 457 possible bad axioms.
+[2026-06-28 04:18:52.293] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/195 http://www.semanticweb.org/demetrios/ontologies/2014/5/48).
+[2026-06-28 04:18:52.297] Found 456 possible bad axioms.
+[2026-06-28 04:18:52.297] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/100 http://www.semanticweb.org/demetrios/ontologies/2014/5/280).
+[2026-06-28 04:18:52.303] Found 455 possible bad axioms.
+[2026-06-28 04:18:52.303] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/82 http://www.semanticweb.org/demetrios/ontologies/2014/5/161).
+[2026-06-28 04:18:52.314] Found 454 possible bad axioms.
+[2026-06-28 04:18:52.314] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:18:52.319] Found 453 possible bad axioms.
+[2026-06-28 04:18:52.319] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:18:52.324] Found 452 possible bad axioms.
+[2026-06-28 04:18:52.324] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/35 http://
+...[truncated]
+FAIL: attempt=7 seed=85331 - negative return code -9
+progress: ontology=CYTO attempt=7 success=0/100
+----- CYTO attempt=8 seed=99531 at 2026-06-28 04:20:47 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=99531, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:20:48.013] Checking precondition...
+[2026-06-28 04:20:48.031] Starting the repair...
+[2026-06-28 04:20:48.047] Found 465 possible bad axioms.
+[2026-06-28 04:20:48.049] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/301 http://www.semanticweb.org/demetrios/ontologies/2014/5/44).
+[2026-06-28 04:20:48.057] Found 464 possible bad axioms.
+[2026-06-28 04:20:48.057] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/121 http://www.semanticweb.org/demetrios/ontologies/2014/5/85).
+[2026-06-28 04:20:48.064] Found 463 possible bad axioms.
+[2026-06-28 04:20:48.064] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.071] Found 462 possible bad axioms.
+[2026-06-28 04:20:48.071] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.076] Found 461 possible bad axioms.
+[2026-06-28 04:20:48.076] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.085] Found 460 possible bad axioms.
+[2026-06-28 04:20:48.086] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.090] Found 459 possible bad axioms.
+[2026-06-28 04:20:48.091] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/140 http://www.semanticweb.org/demetrios/ontologies/2014/5/119).
+[2026-06-28 04:20:48.096] Found 458 possible bad axioms.
+[2026-06-28 04:20:48.097] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.101] Found 457 possible bad axioms.
+[2026-06-28 04:20:48.101] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.106] Found 456 possible bad axioms.
+[2026-06-28 04:20:48.106] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.111] Found 455 possible bad axioms.
+[2026-06-28 04:20:48.111] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/141 http://www.semanticweb.org/demetrios/ontologies/2014/5/292).
+[2026-06-28 04:20:48.122] Found 454 possible bad axioms.
+[2026-06-28 04:20:48.122] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.127] Found 453 possible bad axioms.
+[2026-06-28 04:20:48.127] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.133] Found 452 possible bad axioms.
+[2026-06-28 04:20:48.133] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:20:48.138] Found 451 possible bad axioms.
+[2026-06-28 04:20:48.138] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/164 http://www.semanticweb.org/demetrios/ontologies/2014/5/101).
+[2026-06-28 04:20:48.147] Found 45
+...[truncated]
+FAIL: attempt=8 seed=99531 - negative return code -9
+progress: ontology=CYTO attempt=8 success=0/100
+----- CYTO attempt=9 seed=113731 at 2026-06-28 04:22:16 -----
+--- stdout ---
+{"seed":113731,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":379,"A2":22620,"A3":1623,"B1":1839,"B2":14001,"B3":20609,"B4":547,"B5":362383}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=113731, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:22:16.940] Checking precondition...
+[2026-06-28 04:22:16.960] Starting the repair...
+[2026-06-28 04:22:16.975] Found 465 possible bad axioms.
+[2026-06-28 04:22:16.977] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:16.984] Found 464 possible bad axioms.
+[2026-06-28 04:22:16.984] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:16.991] Found 463 possible bad axioms.
+[2026-06-28 04:22:16.991] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/216 http://www.semanticweb.org/demetrios/ontologies/2014/5/217).
+[2026-06-28 04:22:16.999] Found 462 possible bad axioms.
+[2026-06-28 04:22:16.999] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.005] Found 461 possible bad axioms.
+[2026-06-28 04:22:17.005] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/70 http://www.semanticweb.org/demetrios/ontologies/2014/5/272).
+[2026-06-28 04:22:17.024] Found 460 possible bad axioms.
+[2026-06-28 04:22:17.024] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/44 http://www.semanticweb.org/demetrios/ontologies/2014/5/41).
+[2026-06-28 04:22:17.029] Found 459 possible bad axioms.
+[2026-06-28 04:22:17.029] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.034] Found 458 possible bad axioms.
+[2026-06-28 04:22:17.034] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.040] Found 457 possible bad axioms.
+[2026-06-28 04:22:17.040] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.046] Found 456 possible bad axioms.
+[2026-06-28 04:22:17.046] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.051] Found 455 possible bad axioms.
+[2026-06-28 04:22:17.051] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.061] Found 454 possible bad axioms.
+[2026-06-28 04:22:17.061] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.066] Found 453 possible bad axioms.
+[2026-06-28 04:22:17.066] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/122 http://www.semanticweb.org/demetrios/ontologies/2014/5/41).
+[2026-06-28 04:22:17.070] Found 452 possible bad axioms.
+[2026-06-28 04:22:17.070] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/110 http://www.semanticweb.org/demetrios/ontologies/2014/5/153).
+[2026-06-28 04:22:17.075] Found 451 possible bad axioms.
+[2026-06-28 04:22:17.075] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:22:17.084] Found 450
+...[truncated]
+FAIL: attempt=9 seed=113731 - negative return code -9
+progress: ontology=CYTO attempt=9 success=0/100
+----- CYTO attempt=10 seed=127931 at 2026-06-28 04:34:42 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CYTO.owl, seed=127931, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:34:42.754] Checking precondition...
+[2026-06-28 04:34:42.776] Starting the repair...
+[2026-06-28 04:34:42.793] Found 465 possible bad axioms.
+[2026-06-28 04:34:42.794] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/40 http://www.semanticweb.org/demetrios/ontologies/2014/5/163).
+[2026-06-28 04:34:42.801] Found 464 possible bad axioms.
+[2026-06-28 04:34:42.802] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.810] Found 463 possible bad axioms.
+[2026-06-28 04:34:42.811] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.817] Found 462 possible bad axioms.
+[2026-06-28 04:34:42.817] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.822] Found 461 possible bad axioms.
+[2026-06-28 04:34:42.822] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.832] Found 460 possible bad axioms.
+[2026-06-28 04:34:42.832] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.837] Found 459 possible bad axioms.
+[2026-06-28 04:34:42.838] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.842] Found 458 possible bad axioms.
+[2026-06-28 04:34:42.843] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/74 http://www.semanticweb.org/demetrios/ontologies/2014/5/259).
+[2026-06-28 04:34:42.847] Found 457 possible bad axioms.
+[2026-06-28 04:34:42.848] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/44 http://www.semanticweb.org/demetrios/ontologies/2014/5/200).
+[2026-06-28 04:34:42.852] Found 456 possible bad axioms.
+[2026-06-28 04:34:42.852] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.857] Found 455 possible bad axioms.
+[2026-06-28 04:34:42.857] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/265 http://www.semanticweb.org/demetrios/ontologies/2014/5/186).
+[2026-06-28 04:34:42.869] Found 454 possible bad axioms.
+[2026-06-28 04:34:42.870] Selected the bad axiom SubClassOf(http://www.semanticweb.org/demetrios/ontologies/2014/5/60 http://www.semanticweb.org/demetrios/ontologies/2014/5/2).
+[2026-06-28 04:34:42.874] Found 453 possible bad axioms.
+[2026-06-28 04:34:42.875] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.880] Found 452 possible bad axioms.
+[2026-06-28 04:34:42.880] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.885] Found 451 possible bad axioms.
+[2026-06-28 04:34:42.885] Selected the bad axiom SubClassOf(CYTOKINE).
+[2026-06-28 04:34:42.895] Found 450 p
+...[truncated]
+FAIL: attempt=10 seed=127931 - negative return code -9
+progress: ontology=CYTO attempt=10 success=0/100
+=== ABORTED CYTO after 10 consecutive failures at 2026-06-28 04:36:12 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CYTO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=131 msg=negative return code -9
+  attempt=2 seed=14331 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(HIPC)
+  attempt=3 seed=28531 msg=negative return code -9
+  attempt=4 seed=42731 msg=negative return code -9
+  attempt=5 seed=56931 msg=negative return code -9
+  attempt=6 seed=71131 msg=negative return code -9
+  attempt=7 seed=85331 msg=negative return code -9
+  attempt=8 seed=99531 msg=negative return code -9
+  attempt=9 seed=113731 msg=negative return code -9
+  attempt=10 seed=127931 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=9 total_seconds=1534.797072 avg_seconds=170.533008
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

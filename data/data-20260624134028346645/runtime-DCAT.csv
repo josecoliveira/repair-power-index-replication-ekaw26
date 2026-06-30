@@ -1,0 +1,268 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,27,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.459232,39,178,401,226,1497,754,,,,,,
+2,14227,20260624134028346645,success,,,,28.173057,66,164,387,216,2379,806,391,6058,5352,52,6404,5492
+3,28427,20260624134028346645,success,,,,28.640037,37,165,680,294,3820,753,80,6139,5528,50,5867,4829
+4,42627,20260624134028346645,success,,,,26.617694,75,145,625,298,1542,1479,58,6121,4714,150,5508,5511
+5,56827,20260624134028346645,success,,,,28.773572,89,148,613,311,2402,2761,641,5994,4974,132,5565,4742
+6,71027,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,5.717526,65,151,362,375,1492,2830,81,,,,,
+7,85227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.868225,67,148,737,126,1466,972,,,,,,
+8,99427,20260624134028346645,success,,,,29.592016,54,168,367,225,2339,2571,77,6166,5417,51,6327,5433
+9,113627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.883015,38,167,545,176,1612,,,,,,,
+10,127827,20260624134028346645,success,,,,30.173090,85,151,991,129,3660,2756,180,6100,4556,117,6153,4862
+11,142027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.655611,121,138,714,757,1580,,,,,,,
+12,156227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.646324,65,152,341,518,1229,,,,,,,
+13,170427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.623386,85,146,343,186,1518,,,,,,,
+14,184627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.416217,75,157,370,202,1250,,,,,,,
+15,198827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.431508,99,134,532,1065,2356,883,,,,,,
+16,213027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.489803,103,144,549,190,1159,,,,,,,
+17,227227,20260624134028346645,success,,,,29.361591,89,150,505,175,3408,2723,46,6030,5032,56,5795,4950
+18,241427,20260624134028346645,success,,,,27.227297,111,138,536,165,1553,829,1141,6225,5366,57,5624,5076
+19,255627,20260624134028346645,success,,,,27.756513,82,145,338,372,3729,787,66,5821,4578,202,5962,5285
+20,269827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.657890,92,135,519,672,882,,,,,,,
+21,284027,20260624134028346645,success,,,,31.281964,47,176,683,238,3656,2708,47,6997,5281,51,6268,4739
+22,298227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.803135,65,156,332,201,1700,,,,,,,
+23,312427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.826869,100,147,504,427,1521,758,,,,,,
+24,326627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.300176,79,174,374,355,1971,,,,,,,
+25,340827,20260624134028346645,success,,,,25.099535,95,149,346,208,1592,882,104,6235,4555,63,5735,4759
+26,355027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.933027,39,166,592,412,1371,,,,,,,
+27,369227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.455878,96,130,323,230,1544,770,,,,,,
+28,383427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.114529,93,147,524,183,1821,,,,,,,
+29,397627,20260624134028346645,success,,,,29.125047,63,154,928,278,2371,1415,149,6119,4703,69,6129,5178
+30,411827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.796288,76,156,355,407,1453,,,,,,,
+31,426027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.856174,80,142,700,488,2280,817,,,,,,
+32,440227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,6.027177,70,166,332,483,3582,1041,,,,,,
+33,454427,20260624134028346645,success,,,,30.425181,62,168,796,262,3538,2722,170,5868,5398,60,6222,4764
+34,468627,20260624134028346645,success,,,,29.420860,43,165,341,216,3809,803,47,6130,5435,702,6015,5334
+35,482827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.715069,49,165,564,194,1568,825,,,,,,
+36,497027,20260624134028346645,success,,,,32.147752,38,185,352,663,1482,796,4505,5740,5158,581,7578,4681
+37,511227,20260624134028346645,success,,,,28.259842,60,158,587,202,3767,770,39,6086,5144,49,6114,4875
+38,525427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.856413,34,190,767,127,1455,914,,,,,,
+39,539627,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,328.821515,65,158,377,197,1527,891,43,6041,5960,313175,,
+40,553827,20260624134028346645,success,,,,27.563014,35,184,334,217,1590,2817,61,5557,5422,49,6312,4609
+41,568027,20260624134028346645,success,,,,26.785845,110,125,676,138,1493,1406,52,6024,5047,64,6023,5240
+42,582227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.705064,61,154,567,209,1362,,,,,,,
+43,596427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.787297,100,145,572,525,2264,835,,,,,,
+44,610627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.825267,63,163,377,210,1653,,,,,,,
+45,624827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.386388,106,136,758,129,2424,488,,,,,,
+46,639027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.665631,97,150,314,207,1541,,,,,,,
+47,653227,20260624134028346645,success,,,,27.757390,66,167,388,498,3731,792,61,5791,4658,141,6227,4840
+48,667427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.257844,117,131,353,201,2093,,,,,,,
+49,681627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.764803,76,156,349,374,1469,,,,,,,
+50,695827,20260624134028346645,success,,,,36.709255,100,134,694,140,1502,2884,40,5782,4512,8955,6199,5365
+51,710027,20260624134028346645,success,,,,30.266838,89,138,345,272,5232,1438,47,5601,5465,106,6253,4884
+52,724227,20260624134028346645,success,,,,26.650355,58,158,588,172,3654,825,46,5963,4460,86,5891,4366
+53,738427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.611000,33,169,360,381,1327,,,,,,,
+54,752627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.732145,65,155,324,553,1279,,,,,,,
+55,766827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.611384,51,161,349,392,1505,793,,,,,,
+56,781027,20260624134028346645,success,,,,27.350732,112,127,368,224,1472,2656,191,5877,5304,43,5944,4652
+57,795227,20260624134028346645,success,,,,30.426967,78,152,339,217,3700,2978,212,6181,4628,104,6040,5419
+58,809427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.570795,49,180,584,257,1167,,,,,,,
+59,823627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.297168,36,173,339,595,2060,739,,,,,,
+60,837827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.417614,100,143,322,198,1318,,,,,,,
+61,852027,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,5.923574,48,164,340,298,3751,810,149,,,,,
+62,866227,20260624134028346645,success,,,,35.723176,108,148,766,489,3601,770,6233,6086,4944,1244,6163,4761
+63,880427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.919255,88,135,531,165,1656,,,,,,,
+64,894627,20260624134028346645,success,,,,29.016152,37,179,352,250,3742,1369,64,6109,5203,102,6409,4807
+65,908827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.957449,78,158,899,137,3723,611,,,,,,
+66,923027,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,319.222137,109,149,344,206,3799,2582,155,6301,5183,300023,,
+67,937227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.717274,38,184,369,209,1565,,,,,,,
+68,951427,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,320.340707,99,134,337,215,3714,2610,46,5417,4550,302843,,
+69,965627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,6.190887,98,136,343,529,3795,936,,,,,,
+70,979827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.669723,69,164,328,386,1370,,,,,,,
+71,994027,20260624134028346645,success,,,,28.926358,40,184,363,197,3741,1384,187,5812,4714,49,6410,5469
+72,1008227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.697242,96,152,400,190,1548,962,,,,,,
+73,1022427,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,315.622472,78,160,583,201,2318,1417,93,6030,4219,300135,,
+74,1036627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.770049,37,185,376,519,1303,,,,,,,
+75,1050827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.383865,60,157,395,228,1515,663,,,,,,
+76,1065027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.442414,56,170,383,215,1264,,,,,,,
+77,1079227,20260624134028346645,success,,,,34.137331,37,172,347,214,3607,2767,181,7272,4516,2474,6114,6041
+78,1093427,20260624134028346645,success,,,,26.937016,42,164,354,223,2286,1227,53,5918,5358,49,6072,4806
+79,1107627,20260624134028346645,success,,,,27.760757,60,158,340,185,3696,811,41,6224,4982,46,5956,4875
+80,1121827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.465029,34,193,330,407,1507,638,,,,,,
+81,1136027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.215207,50,172,374,228,2044,,,,,,,
+82,1150227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.670948,65,168,356,254,3800,661,,,,,,
+83,1164427,20260624134028346645,success,,,,29.040180,67,162,335,215,3502,2783,46,6078,4561,41,6076,4787
+84,1178627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.257517,97,140,955,991,1728,,,,,,,
+85,1192827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.939272,53,161,383,356,1639,,,,,,,
+86,1207027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.917580,89,136,358,226,1746,,,,,,,
+87,1221227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.419913,98,150,386,198,1477,766,,,,,,
+88,1235427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.219834,69,163,878,372,1383,,,,,,,
+89,1249627,20260624134028346645,success,,,,27.072113,101,135,822,122,2336,1414,67,6173,4730,52,5889,4832
+90,1263827,20260624134028346645,success,,,,27.835645,73,144,375,604,1484,2708,40,6176,5037,128,5929,4743
+91,1278027,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.912837,49,163,332,,,,,,,,,
+92,1292227,20260624134028346645,success,,,,30.781269,90,136,497,209,3655,2862,38,6300,4531,989,6068,5003
+93,1306427,20260624134028346645,success,,,,31.790165,54,165,343,644,3626,2847,45,5898,6070,52,6240,5415
+94,1320627,20260624134028346645,success,,,,30.964608,105,142,456,758,3615,2665,96,5790,4505,41,6320,6068
+95,1334827,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,317.649367,55,165,454,336,1604,1441,313234,,,,,
+96,1349027,20260624134028346645,success,,,,28.810850,52,165,399,219,3736,777,41,6123,5199,47,6103,5555
+97,1363227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.952253,64,153,556,285,1538,,,,,,,
+98,1377427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.933928,51,169,496,1782,1070,,,,,,,
+99,1391627,20260624134028346645,success,,,,26.291752,76,154,340,401,2216,861,37,5999,4433,55,6023,5301
+100,1405827,20260624134028346645,success,,,,27.753294,40,168,371,355,3805,772,73,6124,4952,52,5992,4658
+101,1420027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.401968,87,138,788,653,1392,,,,,,,
+102,1434227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.470915,34,182,383,445,1066,,,,,,,
+103,1448427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,6.033182,90,136,486,354,3769,847,,,,,,
+104,1462627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.777706,104,139,1675,137,2349,1029,,,,,,
+105,1476827,20260624134028346645,success,,,,28.769598,41,179,365,217,3616,771,154,5436,5879,73,5992,4690
+106,1491027,20260624134028346645,success,,,,28.465953,67,157,1052,277,1431,2739,165,5885,4830,139,5888,5457
+107,1505227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.354078,55,168,787,138,1871,,,,,,,
+108,1519427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.705448,90,136,320,241,1560,,,,,,,
+109,1533627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.603684,77,154,393,200,1439,,,,,,,
+110,1547827,20260624134028346645,success,,,,28.216853,54,159,376,197,1500,2881,79,5872,5043,43,5972,5642
+111,1562027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.842334,81,152,380,354,1527,,,,,,,
+112,1576227,20260624134028346645,success,,,,35.322413,53,159,945,263,5377,2778,65,6294,5363,42,7711,5568
+113,1590427,20260624134028346645,success,,,,28.564146,87,131,356,620,1510,2836,103,5692,4831,850,5724,5417
+114,1604627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.755702,74,145,321,254,1624,989,,,,,,
+115,1618827,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,318.973959,76,155,887,131,3567,2645,37,6217,4887,300004,,
+116,1633027,20260624134028346645,success,,,,29.304337,49,179,366,357,3721,785,33,6127,5240,75,6385,5550
+117,1647227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.279153,51,164,394,217,1094,,,,,,,
+118,1661427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.583151,115,139,662,433,1890,,,,,,,
+119,1675627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,7.404989,65,170,359,385,5319,741,,,,,,
+120,1689827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.313666,95,139,874,515,1330,,,,,,,
+121,1704027,20260624134028346645,success,,,,33.308084,90,137,345,238,3658,797,943,6053,6055,49,7660,5486
+122,1718227,20260624134028346645,success,,,,29.717198,112,137,1070,250,3634,2630,69,5787,4802,60,6004,4769
+123,1732427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.905805,55,162,399,202,1750,,,,,,,
+124,1746627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.933630,55,161,808,294,1267,,,,,,,
+125,1760827,20260624134028346645,success,,,,28.500754,48,173,349,189,3830,801,46,6185,5097,60,6002,5317
+126,1775027,20260624134028346645,success,,,,31.266656,36,167,362,212,3608,2706,48,7125,5385,50,6311,4883
+127,1789227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.348579,91,137,564,531,1660,,,,,,,
+128,1803427,20260624134028346645,success,,,,31.967794,89,138,727,183,3699,2601,1187,6060,5192,100,6236,5377
+129,1817627,20260624134028346645,success,,,,28.811502,81,151,334,199,3788,833,122,6141,5038,125,6331,5285
+130,1831827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,6.216569,76,150,710,305,3652,970,,,,,,
+131,1846027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.445093,42,170,540,421,1910,,,,,,,
+132,1860227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.810541,87,138,526,180,1537,,,,,,,
+133,1874427,20260624134028346645,success,,,,27.637883,94,146,344,613,1546,1428,191,5997,5037,59,6339,5452
+134,1888627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.807575,69,167,936,1071,1428,775,,,,,,
+135,1902827,20260624134028346645,success,,,,30.830655,41,179,338,222,3634,801,89,7261,4956,55,7509,5357
+136,1917027,20260624134028346645,success,,,,28.216878,96,140,323,612,1515,826,1559,5797,5054,53,6318,5541
+137,1931227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.043691,48,175,1081,134,1251,,,,,,,
+138,1945427,20260624134028346645,success,,,,32.727594,37,178,589,291,3765,2889,50,5947,5380,110,7615,5129
+139,1959627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.945784,76,157,655,291,1425,,,,,,,
+140,1973827,20260624134028346645,success,,,,26.951597,55,171,506,218,2402,1423,59,6099,4557,49,5906,5113
+141,1988027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.716981,57,169,542,187,1426,,,,,,,
+142,2002227,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.228501,51,161,344,325,,,,,,,,
+143,2016427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.769859,120,130,667,144,1373,,,,,,,
+144,2030627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.071906,55,157,356,206,2346,595,,,,,,
+145,2044827,20260624134028346645,success,,,,28.211005,87,143,706,287,1482,2666,61,5813,5138,49,5995,5382
+146,2059027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.875333,103,153,365,193,1715,,,,,,,
+147,2073227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.913898,90,144,330,192,1810,,,,,,,
+148,2087427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.634940,72,148,721,163,1532,653,,,,,,
+149,2101627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.892165,60,171,567,306,1495,927,,,,,,
+150,2115827,20260624134028346645,success,,,,29.760017,65,156,527,259,3670,1385,31,5685,5104,832,6044,4624
+151,2130027,20260624134028346645,success,,,,33.628138,50,165,836,229,5183,2813,85,5724,5146,109,7444,5436
+152,2144227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.841456,90,137,342,381,1536,,,,,,,
+153,2158427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.423372,89,156,357,195,1576,688,,,,,,
+154,2172627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.700573,74,142,342,396,1513,862,,,,,,
+155,2186827,20260624134028346645,success,,,,30.453800,51,165,319,379,3752,2867,132,6247,4787,52,5957,5339
+156,2201027,20260624134028346645,success,,,,27.969715,41,182,514,192,1533,2795,159,6035,4946,53,5855,5258
+157,2215227,20260624134028346645,success,,,,27.287596,96,136,813,372,1504,825,55,6081,4061,135,7497,5328
+158,2229427,20260624134028346645,success,,,,28.508041,101,134,418,200,1509,2950,66,6050,5474,125,5489,5579
+159,2243627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.075194,60,176,726,407,1364,,,,,,,
+160,2257827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.460445,96,143,335,385,1154,,,,,,,
+161,2272027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.834552,85,149,1092,350,2310,505,,,,,,
+162,2286227,20260624134028346645,success,,,,31.693818,60,163,334,215,5249,2280,42,6253,5324,118,5977,5281
+163,2300427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.099841,43,170,359,321,1856,,,,,,,
+164,2314627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.128366,34,168,355,243,1980,,,,,,,
+165,2328827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.663173,91,140,368,761,1516,427,,,,,,
+166,2343027,20260624134028346645,success,,,,27.426361,65,151,520,178,3721,778,36,5802,4587,52,6326,4830
+167,2357227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.192432,46,162,561,180,1589,1309,,,,,,
+168,2371427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.529735,85,141,837,145,2248,733,,,,,,
+169,2385627,20260624134028346645,success,,,,28.782205,101,132,342,211,3873,1374,72,6037,4926,54,5849,5418
+170,2399827,20260624134028346645,success,,,,30.529150,35,167,407,210,3753,3728,41,6059,4927,65,5878,4860
+171,2414027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.412045,87,151,670,282,2321,553,,,,,,
+172,2428227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.160916,31,172,348,391,2263,597,,,,,,
+173,2442427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,7.442580,35,176,338,391,5359,776,,,,,,
+174,2456627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.594757,74,143,343,448,1243,,,,,,,
+175,2470827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.725910,35,181,375,221,1502,1061,,,,,,
+176,2485027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.740089,88,155,321,260,1564,,,,,,,
+177,2499227,20260624134028346645,success,,,,25.779302,51,174,345,226,1520,873,78,6118,4892,69,6137,4921
+178,2513427,20260624134028346645,success,,,,27.018541,70,165,798,280,3805,758,58,6111,4237,75,5717,4567
+179,2527627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.303146,72,176,343,190,2337,838,,,,,,
+180,2541827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.291382,49,171,343,1020,1358,,,,,,,
+181,2556027,20260624134028346645,success,,,,26.354962,85,149,323,193,1532,1480,160,5642,4766,67,6091,5466
+182,2570227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.461626,32,174,342,204,1358,,,,,,,
+183,2584427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.829656,100,132,338,387,3804,724,,,,,,
+184,2598627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.949586,53,162,380,385,2275,1329,,,,,,
+185,2612827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.636488,35,169,333,377,1363,,,,,,,
+186,2627027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.366049,74,146,353,386,2292,733,,,,,,
+187,2641227,20260624134028346645,success,,,,51.920917,41,172,365,212,1556,855,158,6094,5092,24128,6329,5318
+188,2655427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.500781,39,168,543,226,2071,1100,,,,,,
+189,2669627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.164894,84,142,556,551,1487,,,,,,,
+190,2683827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.187509,59,172,721,245,1644,,,,,,,
+191,2698027,20260624134028346645,success,,,,25.837634,61,161,386,203,1478,874,81,5853,4663,92,6202,5401
+192,2712227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.785571,55,168,340,517,1482,875,,,,,,
+193,2726427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.584720,72,158,653,162,1173,,,,,,,
+194,2740627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.790896,48,190,345,378,1482,,,,,,,
+195,2754827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.526420,96,138,372,365,3713,490,,,,,,
+196,2769027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.357505,64,157,351,197,2370,852,,,,,,
+197,2783227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.221814,64,163,350,205,1086,,,,,,,
+198,2797427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.205445,34,188,328,218,2313,750,,,,,,
+199,2811627,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.428376,82,152,551,180,3350,767,,,,,,
+200,2825827,20260624134028346645,success,,,,27.555664,52,181,337,193,1561,3014,46,5781,4934,46,5636,5380
+201,2840027,20260624134028346645,success,,,,28.621812,80,149,363,202,3695,1378,80,5894,5244,63,6323,4765
+202,2854227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.684849,99,134,838,354,1456,459,,,,,,
+203,2868427,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,305.241432,35,180,1359,130,1507,1473,300188,,,,,
+204,2882627,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,319.719513,121,132,383,185,3768,2629,74,5976,4680,301388,,
+205,2896827,20260624134028346645,success,,,,29.362556,55,161,722,137,3314,2694,169,5846,5330,117,5775,4640
+206,2911027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.977973,99,145,1227,251,1436,474,,,,,,
+207,2925227,20260624134028346645,success,,,,28.764573,77,141,406,201,3375,1391,42,6228,5182,183,6285,4853
+208,2939427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.556845,98,146,874,135,959,,,,,,,
+209,2953627,20260624134028346645,success,,,,28.917173,65,165,341,489,3637,789,51,5689,5180,55,6014,6045
+210,2967827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.066032,43,191,450,582,1412,,,,,,,
+211,2982027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.914741,50,172,382,242,3892,811,,,,,,
+212,2996227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.519015,65,184,418,207,1254,,,,,,,
+213,3010427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.964475,101,156,563,429,1309,,,,,,,
+214,3024627,20260624134028346645,success,,,,29.466223,61,170,583,616,1694,1598,69,6203,5729,668,6395,5254
+215,3038827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.317173,56,167,969,136,1634,,,,,,,
+216,3053027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.173967,98,146,563,176,2289,553,,,,,,
+217,3067227,20260624134028346645,success,,,,28.489303,83,154,347,207,3780,1396,74,5906,5094,78,6019,4949
+218,3081427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,7.487560,113,145,351,386,5321,820,,,,,,
+219,3095627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.750738,38,167,346,408,1459,,,,,,,
+220,3109827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.532252,89,153,321,385,1537,681,,,,,,
+221,3124027,20260624134028346645,success,,,,29.499122,99,130,352,1004,3619,780,167,6328,4298,55,6191,6098
+222,3138227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.982797,35,167,668,299,1457,,,,,,,
+223,3152427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.873059,55,165,1035,168,1078,,,,,,,
+224,3166627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.205930,86,158,330,550,1740,,,,,,,
+225,3180827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.949098,62,167,742,271,2025,335,,,,,,
+226,3195027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.723180,45,173,338,196,1625,,,,,,,
+227,3209227,20260624134028346645,success,,,,29.072727,68,155,823,144,3753,1165,58,6043,5318,125,6238,4793
+228,3223427,20260624134028346645,success,,,,30.745030,38,168,1135,202,3380,2742,63,5587,5118,61,6422,5432
+229,3237627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.937899,48,179,848,152,1369,,,,,,,
+230,3251827,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,332.682908,91,145,696,160,3669,3691,50,5863,4733,313208,,
+231,3266027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.833277,49,182,329,387,1518,992,,,,,,
+232,3280227,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.745004,83,154,743,122,3618,673,,,,,,
+233,3294427,20260624134028346645,success,,,,28.647976,54,180,933,156,3667,1308,63,6189,5200,65,5723,4718
+234,3308627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.322034,100,134,356,874,1507,,,,,,,
+235,3322827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.804073,58,162,394,195,1566,1070,,,,,,
+236,3337027,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.822563,36,189,927,363,939,,,,,,,
+237,3351227,20260624134028346645,success,,,,30.095442,43,179,783,247,3660,1371,64,6003,4974,92,6171,6119
+238,3365427,20260624134028346645,success,,,,29.950371,50,180,341,221,3664,2763,39,5913,4468,40,6319,5569
+239,3379627,20260624134028346645,success,,,,27.785014,100,144,510,412,1531,1447,64,5788,4491,57,7535,5322
+240,3393827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.443136,128,133,362,349,1112,,,,,,,
+241,3408027,20260624134028346645,success,,,,28.858693,55,161,566,176,3733,789,42,6195,5050,115,6355,5219
+242,3422227,20260624134028346645,success,,,,32.138693,50,185,364,381,3574,2839,46,5557,4944,356,7310,6128
+243,3436427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.146353,87,137,378,530,1672,,,,,,,
+244,3450627,20260624134028346645,success,,,,32.630258,82,144,366,206,3777,3856,63,6145,5470,1115,5749,5255
+245,3464827,20260624134028346645,success,,,,28.438067,79,162,799,544,2296,838,55,6001,5380,128,6302,5485
+246,3479027,20260624134028346645,success,,,,27.476063,40,163,365,221,2294,851,168,6047,5244,56,6144,5496
+247,3493227,20260624134028346645,success,,,,26.358091,92,143,380,201,1450,1240,164,6078,4711,53,5917,5543
+248,3507427,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,4.214880,74,144,339,212,2330,749,,,,,,
+249,3521627,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,318.590618,54,178,811,131,1555,2796,52,7485,5148,300002,,
+250,3535827,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.738010,91,139,350,520,1279,,,,,,,
+251,3550027,20260624134028346645,success,,,,29.128180,101,137,744,211,3694,1393,59,6114,4647,108,6177,5359
+252,3564227,20260624134028346645,success,,,,27.837322,54,169,741,151,1500,1431,59,6026,5233,55,6346,5684
+253,3578427,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.029001,40,172,325,416,1734,,,,,,,
+254,3592627,20260624134028346645,success,,,,28.349136,45,167,553,293,1530,2680,45,6190,5019,72,6011,5338
+255,3606827,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.501696,48,160,350,223,3727,638,,,,,,
+256,3621027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,5.847437,52,169,1922,141,2279,931,,,,,,
+257,3635227,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.480093,64,157,972,260,1656,,,,,,,
+258,3649427,20260624134028346645,success,,,,28.811236,85,151,479,212,3757,763,46,6080,5133,170,6221,5324
+259,3663627,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,2.873795,67,155,660,294,1350,,,,,,,
+260,3677827,20260624134028346645,success,,,,31.873834,81,138,932,511,5183,1295,190,6342,5006,106,6166,5525
+261,3692027,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,347.527181,55,174,576,208,3625,774,50,6166,5524,330004,,
+262,3706227,20260624134028346645,success,,,,33.576374,54,160,562,662,1441,808,43,5855,4577,5814,7802,5402
+263,3720427,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,340.195281,97,131,329,534,1494,823,51,6122,5065,325161,,
+264,3734627,20260624134028346645,success,,,,30.085801,51,169,365,216,3412,2800,44,6340,4229,70,6490,5509
+265,3748827,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,38.127566,48,168,19711,191,3652,2588,48,6310,5002,44,,
+266,3763027,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∃ accessURL.⊤ ⊑ WebService,3.897933,62,165,353,577,1607,777,,,,,,
+267,3777227,20260624134028346645,success,,,,37.664015,44,196,357,226,3651,811,9738,6197,5341,41,5854,4824

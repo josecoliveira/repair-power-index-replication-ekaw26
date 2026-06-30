@@ -1,0 +1,506 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-HORD.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-HORD.csv
+
+=== Starting sequential trials for HORD at 2026-06-26 05:13:17 ===
+----- HORD attempt=1 seed=58 at 2026-06-26 05:13:17 -----
+--- stdout ---
+{"seed":58,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":116,"A2":580,"A3":199,"B1":172,"B2":3314,"B3":1824,"B4":2043,"B5":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=58, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:13:18.154] Checking precondition...
+[2026-06-26 05:13:18.169] Starting the repair...
+[2026-06-26 05:13:18.177] Found 108 possible bad axioms.
+[2026-06-26 05:13:18.178] Selected the bad axiom SubClassOf(d9202 Activities_and_participation).
+[2026-06-26 05:13:18.183] Found 107 possible bad axioms.
+[2026-06-26 05:13:18.183] Selected the bad axiom ClassAssertion(b110 SevereDeficiencyConsciousnessFunctions).
+[2026-06-26 05:13:18.185] Found 106 possible bad axioms.
+[2026-06-26 05:13:18.185] Selected the bad axiom ClassAssertion(d9201 NoDifficultySports).
+[2026-06-26 05:13:18.186] Found 105 possible bad axioms.
+[2026-06-26 05:13:18.187] Selected the bad axiom ClassAssertion(ICHI PlasticalSurgery).
+[2026-06-26 05:13:18.188] Found 104 possible bad axioms.
+[2026-06-26 05:13:18.188] Selected the bad axiom SubClassOf(d9201 Activities_and_participation).
+[2026-06-26 05:13:18.192] Found 103 possible bad axioms.
+[2026-06-26 05:13:18.193] Selected the bad axiom ClassAssertion(b152 NoDeficiencyEmotionalFunctions).
+[2026-06-26 05:13:18.194] Found 102 possible bad axioms.
+[2026-06-26 05:13:18.194] Selected the bad axiom ClassAssertion(b164 ModerateDeficiencyCognitiveFunctions).
+[2026-06-26 05:13:18.195] Found 101 possible bad axioms.
+[2026-06-26 05:13:18.195] Selected the bad axiom ClassAssertion(b240 SevereDeficiencyHearingandVestibularFunction).
+[2026-06-26 05:13:18.196] Found 100 possible bad axioms.
+[2026-06-26 05:13:18.196] Selected the bad axiom SubClassOf(Environmental_factors Functioning).
+[2026-06-26 05:13:18.199] Found 99 possible bad axioms.
+[2026-06-26 05:13:18.200] Selected the bad axiom SubClassOf(e125 Environmental_factors).
+[2026-06-26 05:13:18.202] Found 98 possible bad axioms.
+[2026-06-26 05:13:18.202] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency CompleteDeficiencyEmotionalFunctions CompleteImpairment).
+[2026-06-26 05:13:18.203] Found 97 possible bad axioms.
+[2026-06-26 05:13:18.203] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasBarrier owl:Thing) Person).
+[2026-06-26 05:13:18.207] Found 96 possible bad axioms.
+[2026-06-26 05:13:18.207] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency SevereDeficiencyHearingandVestibularFunction SevereImpairment).
+[2026-06-26 05:13:18.208] Found 95 possible bad axioms.
+[2026-06-26 05:13:18.208] Selected the bad axiom ObjectPropertyAssertion(hasDifficulty NoDifficultyRemunerativeEmployment NoDifficulty).
+[2026-06-26 05:13:18.208] Found 94 possible bad axioms.
+[2026-06-26 05:13:18.209] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(isFrom Country)).
+[202
+...[truncated]
+FAIL: attempt=1 seed=58 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=HORD attempt=1 success=0/100
+----- HORD attempt=2 seed=14258 at 2026-06-26 05:18:26 -----
+--- stdout ---
+{"seed":14258,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":66,"A2":603,"A3":197,"B1":179,"B2":413,"B3":2022,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=14258, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:18:26.891] Checking precondition...
+[2026-06-26 05:18:26.906] Starting the repair...
+[2026-06-26 05:18:26.914] Found 108 possible bad axioms.
+[2026-06-26 05:18:26.916] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.4 Qualifiers).
+[2026-06-26 05:18:26.921] Found 107 possible bad axioms.
+[2026-06-26 05:18:26.921] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasA ICHI)).
+[2026-06-26 05:18:26.926] Found 106 possible bad axioms.
+[2026-06-26 05:18:26.927] Selected the bad axiom ClassAssertion(b5106 CompleteDeficiencyVomiting).
+[2026-06-26 05:18:26.928] Found 105 possible bad axioms.
+[2026-06-26 05:18:26.928] Selected the bad axiom SubClassOf(Environmental_factors Functioning).
+[2026-06-26 05:18:26.932] Found 104 possible bad axioms.
+[2026-06-26 05:18:26.932] Selected the bad axiom ClassAssertion(Q_Capacity.4 CompleteDifficulty).
+[2026-06-26 05:18:26.933] Found 103 possible bad axioms.
+[2026-06-26 05:18:26.934] Selected the bad axiom SubClassOf(e355 Environmental_factors).
+[2026-06-26 05:18:26.937] Found 102 possible bad axioms.
+[2026-06-26 05:18:26.937] Selected the bad axiom ClassAssertion(Q_Barrier_or_Facilitator.4 CompleteBarrier).
+[2026-06-26 05:18:26.938] Found 101 possible bad axioms.
+[2026-06-26 05:18:26.938] Selected the bad axiom ClassAssertion(ICHI PlasticalSurgery).
+[2026-06-26 05:18:26.939] Found 100 possible bad axioms.
+[2026-06-26 05:18:26.939] Selected the bad axiom ClassAssertion(Q_Extent_of_Impairment.4 CompleteImpairment).
+[2026-06-26 05:18:26.940] Found 99 possible bad axioms.
+[2026-06-26 05:18:26.940] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasDeficiency Body_functions)).
+[2026-06-26 05:18:26.943] Found 98 possible bad axioms.
+[2026-06-26 05:18:26.943] Selected the bad axiom ClassAssertion(b28010 CompleteDeficiencyPainHead).
+[2026-06-26 05:18:26.944] Found 97 possible bad axioms.
+[2026-06-26 05:18:26.944] Selected the bad axiom SubClassOf(d9201 Activities_and_participation).
+[2026-06-26 05:18:26.946] Found 96 possible bad axioms.
+[2026-06-26 05:18:26.946] Selected the bad axiom SubClassOf(b152 Body_functions).
+[2026-06-26 05:18:26.952] Found 95 possible bad axioms.
+[2026-06-26 05:18:26.952] Selected the bad axiom ClassAssertion(b440 SevereDeficiencyRespiratoryFunction).
+[2026-06-26 05:18:26.953] Found 94 possible bad axioms.
+[2026-06-26 05:18:26.953] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency CompleteDeficiencyVomiting CompleteImpairment).
+[2026-06-26 05:18:26.953] Found 93 possible bad axioms.
+[2026-06-26 05:18:26.954] Selected the bad axiom ClassAsser
+...[truncated]
+FAIL: attempt=2 seed=14258 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=HORD attempt=2 success=0/100
+----- HORD attempt=3 seed=28458 at 2026-06-26 05:23:30 -----
+--- stdout ---
+{"seed":28458,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":128,"A2":573,"A3":272,"B1":191,"B2":3274,"B3":1940,"B4":3122,"B5":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=28458, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:23:30.822] Checking precondition...
+[2026-06-26 05:23:30.836] Starting the repair...
+[2026-06-26 05:23:30.844] Found 108 possible bad axioms.
+[2026-06-26 05:23:30.846] Selected the bad axiom ClassAssertion(b810-b849 SevereDeficiencySkin).
+[2026-06-26 05:23:30.848] Found 107 possible bad axioms.
+[2026-06-26 05:23:30.848] Selected the bad axiom SubClassOf(b164 Body_functions).
+[2026-06-26 05:23:30.852] Found 106 possible bad axioms.
+[2026-06-26 05:23:30.852] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency NoDeficiencyEmotionalFunctions NoImpairment).
+[2026-06-26 05:23:30.853] Found 105 possible bad axioms.
+[2026-06-26 05:23:30.854] Selected the bad axiom ClassAssertion(d9201 NoDifficultySports).
+[2026-06-26 05:23:30.854] Found 104 possible bad axioms.
+[2026-06-26 05:23:30.855] Selected the bad axiom ClassAssertion(Q_Barrier_or_Facilitator.4 CompleteBarrier).
+[2026-06-26 05:23:30.856] Found 103 possible bad axioms.
+[2026-06-26 05:23:30.856] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasA owl:Thing) Person).
+[2026-06-26 05:23:30.861] Found 102 possible bad axioms.
+[2026-06-26 05:23:30.861] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency CompleteDeficiencyEmotionalFunctions CompleteImpairment).
+[2026-06-26 05:23:30.862] Found 101 possible bad axioms.
+[2026-06-26 05:23:30.862] Selected the bad axiom SubClassOf(d830 Activities_and_participation).
+[2026-06-26 05:23:30.865] Found 100 possible bad axioms.
+[2026-06-26 05:23:30.865] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency CompleteDifficultyWalking CompleteDifficulty).
+[2026-06-26 05:23:30.866] Found 99 possible bad axioms.
+[2026-06-26 05:23:30.866] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.2 Qualifiers).
+[2026-06-26 05:23:30.869] Found 98 possible bad axioms.
+[2026-06-26 05:23:30.869] Selected the bad axiom SubClassOf(d9202 Activities_and_participation).
+[2026-06-26 05:23:30.871] Found 97 possible bad axioms.
+[2026-06-26 05:23:30.871] Selected the bad axiom ClassAssertion(e1650 ModerateBarrierFinancialAssets).
+[2026-06-26 05:23:30.872] Found 96 possible bad axioms.
+[2026-06-26 05:23:30.872] Selected the bad axiom ClassAssertion(e355 CompleteBarrierHealthProfessionals).
+[2026-06-26 05:23:30.872] Found 95 possible bad axioms.
+[2026-06-26 05:23:30.872] Selected the bad axiom SubClassOf(d9201 Activities_and_participation).
+[2026-06-26 05:23:30.879] Found 94 possible bad axioms.
+[2026-06-26 05:23:30.879] Selected the bad axiom ClassAssertion(e125 CompleteFacilitatorTechnologyForCommunication).
+[2026-06-26 05:23:30.880] Found 93 po
+...[truncated]
+FAIL: attempt=3 seed=28458 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=HORD attempt=3 success=0/100
+----- HORD attempt=4 seed=42658 at 2026-06-26 05:28:40 -----
+--- stdout ---
+{"seed":42658,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":65,"A2":609,"A3":284,"B1":149,"B2":3308,"B3":1886,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=42658, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:28:40.799] Checking precondition...
+[2026-06-26 05:28:40.814] Starting the repair...
+[2026-06-26 05:28:40.823] Found 108 possible bad axioms.
+[2026-06-26 05:28:40.825] Selected the bad axiom SubClassOf(Activities_and_participation Functioning).
+[2026-06-26 05:28:40.830] Found 107 possible bad axioms.
+[2026-06-26 05:28:40.830] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.4 Qualifiers).
+[2026-06-26 05:28:40.835] Found 106 possible bad axioms.
+[2026-06-26 05:28:40.836] Selected the bad axiom ClassAssertion(e5801 ModerateBarrierHealthSystem).
+[2026-06-26 05:28:40.837] Found 105 possible bad axioms.
+[2026-06-26 05:28:40.837] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency SevereDeficiencyConsciousnessFunctions SevereImpairment).
+[2026-06-26 05:28:40.838] Found 104 possible bad axioms.
+[2026-06-26 05:28:40.839] Selected the bad axiom ClassAssertion(d450 CompleteDifficultyWalking).
+[2026-06-26 05:28:40.840] Found 103 possible bad axioms.
+[2026-06-26 05:28:40.840] Selected the bad axiom SubClassOf(b152 Body_functions).
+[2026-06-26 05:28:40.843] Found 102 possible bad axioms.
+[2026-06-26 05:28:40.843] Selected the bad axiom ClassAssertion(b152 CompleteDeficiencyEmotionalFunctions).
+[2026-06-26 05:28:40.844] Found 101 possible bad axioms.
+[2026-06-26 05:28:40.844] Selected the bad axiom ClassAssertion(Q_Barrier_or_Facilitator.2 ModerateBarrier).
+[2026-06-26 05:28:40.845] Found 100 possible bad axioms.
+[2026-06-26 05:28:40.845] Selected the bad axiom ClassAssertion(b240 SevereDeficiencyHearingandVestibularFunction).
+[2026-06-26 05:28:40.846] Found 99 possible bad axioms.
+[2026-06-26 05:28:40.846] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency CompleteDifficultyWalking CompleteDifficulty).
+[2026-06-26 05:28:40.846] Found 98 possible bad axioms.
+[2026-06-26 05:28:40.847] Selected the bad axiom SubClassOf(Environmental_factors Functioning).
+[2026-06-26 05:28:40.849] Found 97 possible bad axioms.
+[2026-06-26 05:28:40.850] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency NoDeficiencyEmotionalFunctions NoImpairment).
+[2026-06-26 05:28:40.850] Found 96 possible bad axioms.
+[2026-06-26 05:28:40.850] Selected the bad axiom SubClassOf(e355 Environmental_factors).
+[2026-06-26 05:28:40.852] Found 95 possible bad axioms.
+[2026-06-26 05:28:40.853] Selected the bad axiom SubClassOf(Q_Capacity.0 Qualifiers).
+[2026-06-26 05:28:40.859] Found 94 possible bad axioms.
+[2026-06-26 05:28:40.859] Selected the bad axiom ClassAssertion(Q_Extent_of_Impairment.3 SevereImpairment).
+[2026-06-26 05:28:40.860] Finished repairing
+...[truncated]
+FAIL: attempt=4 seed=42658 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=HORD attempt=4 success=0/100
+----- HORD attempt=5 seed=56858 at 2026-06-26 05:33:47 -----
+--- stdout ---
+{"seed":56858,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":105,"A2":583,"A3":269,"B1":186,"B2":403,"B3":274,"B4":3499,"B5":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=56858, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:33:47.550] Checking precondition...
+[2026-06-26 05:33:47.564] Starting the repair...
+[2026-06-26 05:33:47.573] Found 108 possible bad axioms.
+[2026-06-26 05:33:47.575] Selected the bad axiom ObjectPropertyAssertion(hasDifficulty NoDifficultySports NoDifficulty).
+[2026-06-26 05:33:47.576] Found 107 possible bad axioms.
+[2026-06-26 05:33:47.577] Selected the bad axiom ClassAssertion(d830 NoDifficultyHigherEducation).
+[2026-06-26 05:33:47.578] Found 106 possible bad axioms.
+[2026-06-26 05:33:47.578] Selected the bad axiom SubClassOf(e355 Environmental_factors).
+[2026-06-26 05:33:47.582] Found 105 possible bad axioms.
+[2026-06-26 05:33:47.583] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency SevereDeficiencyHearingandVestibularFunction SevereImpairment).
+[2026-06-26 05:33:47.584] Found 104 possible bad axioms.
+[2026-06-26 05:33:47.584] Selected the bad axiom ClassAssertion(Q_Capacity.0 NoDifficulty).
+[2026-06-26 05:33:47.586] Found 103 possible bad axioms.
+[2026-06-26 05:33:47.586] Selected the bad axiom ClassAssertion(ICHI TracheotomyFor2Years).
+[2026-06-26 05:33:47.588] Found 102 possible bad axioms.
+[2026-06-26 05:33:47.588] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.3 Qualifiers).
+[2026-06-26 05:33:47.594] Found 101 possible bad axioms.
+[2026-06-26 05:33:47.595] Selected the bad axiom ClassAssertion(d855 NoDifficultyinNon-remunerativeEmployment).
+[2026-06-26 05:33:47.595] Found 100 possible bad axioms.
+[2026-06-26 05:33:47.596] Selected the bad axiom ClassAssertion(e1650 ModerateBarrierFinancialAssets).
+[2026-06-26 05:33:47.596] Found 99 possible bad axioms.
+[2026-06-26 05:33:47.597] Selected the bad axiom SubClassOf(d850 Activities_and_participation).
+[2026-06-26 05:33:47.600] Found 98 possible bad axioms.
+[2026-06-26 05:33:47.600] Selected the bad axiom ClassAssertion(France France).
+[2026-06-26 05:33:47.601] Found 97 possible bad axioms.
+[2026-06-26 05:33:47.601] Selected the bad axiom SubClassOf(b152 Body_functions).
+[2026-06-26 05:33:47.604] Found 96 possible bad axioms.
+[2026-06-26 05:33:47.604] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasDifficulty owl:Thing) Person).
+[2026-06-26 05:33:47.606] Found 95 possible bad axioms.
+[2026-06-26 05:33:47.606] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency SevereDeficiencySkin SevereImpairment).
+[2026-06-26 05:33:47.607] Found 94 possible bad axioms.
+[2026-06-26 05:33:47.611] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.3 Q_Barrier_or_Facilitator.4).
+[2026-06-26 05:33:47.613] Found 93 possible bad axioms.
+[2026-06-26 05:33:47.
+...[truncated]
+FAIL: attempt=5 seed=56858 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=HORD attempt=5 success=0/100
+----- HORD attempt=6 seed=71058 at 2026-06-26 05:38:53 -----
+--- stdout ---
+{"seed":71058,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":39,"A2":643,"A3":272,"B1":145,"B2":418,"B3":2044,"B4":2806,"B5":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=71058, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:38:53.439] Checking precondition...
+[2026-06-26 05:38:53.454] Starting the repair...
+[2026-06-26 05:38:53.462] Found 108 possible bad axioms.
+[2026-06-26 05:38:53.464] Selected the bad axiom ObjectPropertyAssertion(hasDifficulty NoDifficultyRemunerativeEmployment NoDifficulty).
+[2026-06-26 05:38:53.466] Found 107 possible bad axioms.
+[2026-06-26 05:38:53.466] Selected the bad axiom ClassAssertion(Q_Capacity.0 NoDifficulty).
+[2026-06-26 05:38:53.467] Found 106 possible bad axioms.
+[2026-06-26 05:38:53.467] Selected the bad axiom ClassAssertion(b810-b849 SevereDeficiencySkin).
+[2026-06-26 05:38:53.468] Found 105 possible bad axioms.
+[2026-06-26 05:38:53.469] Selected the bad axiom ClassAssertion(ICHI Chemotherapy).
+[2026-06-26 05:38:53.470] Found 104 possible bad axioms.
+[2026-06-26 05:38:53.470] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.3 owl:Nothing).
+[2026-06-26 05:38:53.475] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 05:38:53.475] Checking precondition...
+[2026-06-26 05:38:53.484] Starting the repair...
+[2026-06-26 05:38:54.116] Found 2 possible bad axioms.
+[2026-06-26 05:38:54.116] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.3 owl:Nothing).
+[2026-06-26 05:38:54.118] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 05:38:54.120] Checking precondition...
+[2026-06-26 05:38:54.122] Starting the repair...
+[2026-06-26 05:38:54.134] Selected a reference ontology with 190 axioms.
+[2026-06-26 05:38:54.300] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.3 owl:Nothing).
+[2026-06-26 05:38:54.388] Selected the weaker axiom SubClassOf(Q_Extent_of_Impairment.3 ObjectSomeValuesFrom(hasBarrier owl:Thing)).
+[2026-06-26 05:38:54.391] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 05:38:54.391] Checking precondition...
+[2026-06-26 05:38:54.393] Starting the repair...
+[2026-06-26 05:38:54.403] Selected a reference ontology with 190 axioms.
+[2026-06-26 05:38:54.528] Selected the bad axiom ClassAssertion(Q_Extent_of_Impairment.3 SevereImpairment).
+[2026-06-26 05:38:54.535] Selected the weaker axiom ClassAssertion(Q_Barrier_or_Facilitator.4 SevereImpairment).
+[2026-06-26 05:38:54.536] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 05:38:54.538] Checking precondition...
+[2026-06-26 05:38:54.539] Starting the repair...
+[2026-06-26 05:38:54.547] Selected a reference ontology with 190 axioms.
+[2026-06-26 05:38:54.674] Selected the bad 
+...[truncated]
+FAIL: attempt=6 seed=71058 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=HORD attempt=6 success=0/100
+----- HORD attempt=7 seed=85258 at 2026-06-26 05:43:59 -----
+--- stdout ---
+{"seed":85258,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":110,"A2":566,"A3":219,"B1":207,"B2":391,"B3":2120,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=85258, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:44:00.275] Checking precondition...
+[2026-06-26 05:44:00.289] Starting the repair...
+[2026-06-26 05:44:00.296] Found 108 possible bad axioms.
+[2026-06-26 05:44:00.298] Selected the bad axiom SubClassOf(b110 Body_functions).
+[2026-06-26 05:44:00.302] Found 107 possible bad axioms.
+[2026-06-26 05:44:00.303] Selected the bad axiom SubClassOf(b810-b849 Body_functions).
+[2026-06-26 05:44:00.307] Found 106 possible bad axioms.
+[2026-06-26 05:44:00.308] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency SevereDeficiencyConsciousnessFunctions SevereImpairment).
+[2026-06-26 05:44:00.309] Found 105 possible bad axioms.
+[2026-06-26 05:44:00.310] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isFrom owl:Thing) Person).
+[2026-06-26 05:44:00.314] Found 104 possible bad axioms.
+[2026-06-26 05:44:00.314] Selected the bad axiom ClassAssertion(Q_Extent_of_Impairment.0 NoImpairment).
+[2026-06-26 05:44:00.315] Found 103 possible bad axioms.
+[2026-06-26 05:44:00.315] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency ModerateBarrierHealthSystem ModerateBarrier).
+[2026-06-26 05:44:00.316] Found 102 possible bad axioms.
+[2026-06-26 05:44:00.316] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.0 Qualifiers).
+[2026-06-26 05:44:00.319] Found 101 possible bad axioms.
+[2026-06-26 05:44:00.319] Selected the bad axiom SubClassOf(b5106 Body_functions).
+[2026-06-26 05:44:00.321] Found 100 possible bad axioms.
+[2026-06-26 05:44:00.322] Selected the bad axiom SubClassOf(b440 Body_functions).
+[2026-06-26 05:44:00.324] Found 99 possible bad axioms.
+[2026-06-26 05:44:00.324] Selected the bad axiom ClassAssertion(e5801 ModerateBarrierHealthSystem).
+[2026-06-26 05:44:00.324] Found 98 possible bad axioms.
+[2026-06-26 05:44:00.325] Selected the bad axiom SubClassOf(Q_Capacity.0 Qualifiers).
+[2026-06-26 05:44:00.327] Found 97 possible bad axioms.
+[2026-06-26 05:44:00.327] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasDiagnosis owl:Thing) Person).
+[2026-06-26 05:44:00.333] Found 96 possible bad axioms.
+[2026-06-26 05:44:00.333] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.3 Q_Barrier_or_Facilitator.4).
+[2026-06-26 05:44:00.335] Found 95 possible bad axioms.
+[2026-06-26 05:44:00.335] Selected the bad axiom SubClassOf(b240 Body_functions).
+[2026-06-26 05:44:00.337] Found 94 possible bad axioms.
+[2026-06-26 05:44:00.337] Selected the bad axiom SubClassOf(d830 Activities_and_participation).
+[2026-06-26 05:44:00.343] Found 93 possible bad axioms.
+[2026-06-26 05:44:00.344] Selected the bad axiom ObjectPropertyAssertion(hasDe
+...[truncated]
+FAIL: attempt=7 seed=85258 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=HORD attempt=7 success=0/100
+----- HORD attempt=8 seed=99458 at 2026-06-26 05:49:03 -----
+--- stdout ---
+{"seed":99458,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":129,"A2":581,"A3":270,"B1":196,"B2":3249,"B3":1859,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=99458, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:49:04.334] Checking precondition...
+[2026-06-26 05:49:04.350] Starting the repair...
+[2026-06-26 05:49:04.357] Found 108 possible bad axioms.
+[2026-06-26 05:49:04.359] Selected the bad axiom SubClassOf(Environmental_factors Functioning).
+[2026-06-26 05:49:04.363] Found 107 possible bad axioms.
+[2026-06-26 05:49:04.364] Selected the bad axiom SubClassOf(b440 Body_functions).
+[2026-06-26 05:49:04.369] Found 106 possible bad axioms.
+[2026-06-26 05:49:04.369] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasDifficulty owl:Thing) Person).
+[2026-06-26 05:49:04.373] Found 105 possible bad axioms.
+[2026-06-26 05:49:04.373] Selected the bad axiom SubClassOf(b240 Body_functions).
+[2026-06-26 05:49:04.376] Found 104 possible bad axioms.
+[2026-06-26 05:49:04.376] Selected the bad axiom SubClassOf(e5801 Environmental_factors).
+[2026-06-26 05:49:04.379] Found 103 possible bad axioms.
+[2026-06-26 05:49:04.380] Selected the bad axiom SubClassOf(Q_Extent_of_Impairment.4 Qualifiers).
+[2026-06-26 05:49:04.382] Found 102 possible bad axioms.
+[2026-06-26 05:49:04.382] Selected the bad axiom ClassAssertion(d9202 NoDifficultyArtsCulture).
+[2026-06-26 05:49:04.383] Found 101 possible bad axioms.
+[2026-06-26 05:49:04.384] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isFrom owl:Thing) Person).
+[2026-06-26 05:49:04.386] Found 100 possible bad axioms.
+[2026-06-26 05:49:04.386] Selected the bad axiom ClassAssertion(e5801 ModerateBarrierHealthSystem).
+[2026-06-26 05:49:04.387] Found 99 possible bad axioms.
+[2026-06-26 05:49:04.387] Selected the bad axiom ClassAssertion(ICHI Chemotherapy).
+[2026-06-26 05:49:04.388] Found 98 possible bad axioms.
+[2026-06-26 05:49:04.388] Selected the bad axiom SubClassOf(e125 Environmental_factors).
+[2026-06-26 05:49:04.390] Found 97 possible bad axioms.
+[2026-06-26 05:49:04.390] Selected the bad axiom ClassAssertion(Q_Barrier_or_Facilitator.4 CompleteBarrier).
+[2026-06-26 05:49:04.395] Found 96 possible bad axioms.
+[2026-06-26 05:49:04.395] Selected the bad axiom ClassAssertion(Spain Spain).
+[2026-06-26 05:49:04.396] Found 95 possible bad axioms.
+[2026-06-26 05:49:04.396] Selected the bad axiom ClassAssertion(Iran Iran).
+[2026-06-26 05:49:04.396] Found 94 possible bad axioms.
+[2026-06-26 05:49:04.396] Selected the bad axiom ObjectPropertyAssertion(hasDifficulty NoDifficultyHigherEducation NoDifficulty).
+[2026-06-26 05:49:04.397] Found 93 possible bad axioms.
+[2026-06-26 05:49:04.397] Selected the bad axiom SubClassOf(e1650 Environmental_factors).
+[2026-06-26 05:49:04.399] Found 92 possible bad axioms.
+[2026-06-26 0
+...[truncated]
+FAIL: attempt=8 seed=99458 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=HORD attempt=8 success=0/100
+----- HORD attempt=9 seed=113658 at 2026-06-26 05:54:10 -----
+--- stdout ---
+{"seed":113658,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":97,"A2":587,"A3":213,"B1":173,"B2":3233,"B3":227,"B4":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=113658, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:54:11.070] Checking precondition...
+[2026-06-26 05:54:11.086] Starting the repair...
+[2026-06-26 05:54:11.093] Found 108 possible bad axioms.
+[2026-06-26 05:54:11.095] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency ModerateBarrierHealthSystem ModerateBarrier).
+[2026-06-26 05:54:11.097] Found 107 possible bad axioms.
+[2026-06-26 05:54:11.097] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasDifficulty Activities_and_participation)).
+[2026-06-26 05:54:11.101] Found 106 possible bad axioms.
+[2026-06-26 05:54:11.102] Selected the bad axiom ObjectPropertyAssertion(hasDifficulty NoDifficultyArtsCulture NoDifficulty).
+[2026-06-26 05:54:11.103] Found 105 possible bad axioms.
+[2026-06-26 05:54:11.103] Selected the bad axiom SubClassOf(Q_Barrier_or_Facilitator.plus-4 Qualifiers).
+[2026-06-26 05:54:11.108] Found 104 possible bad axioms.
+[2026-06-26 05:54:11.108] Selected the bad axiom SubClassOf(b5106 Body_functions).
+[2026-06-26 05:54:11.111] Found 103 possible bad axioms.
+[2026-06-26 05:54:11.111] Selected the bad axiom SubClassOf(e5801 Environmental_factors).
+[2026-06-26 05:54:11.115] Found 102 possible bad axioms.
+[2026-06-26 05:54:11.115] Selected the bad axiom ClassAssertion(e5801 ModerateBarrierHealthSystem).
+[2026-06-26 05:54:11.116] Found 101 possible bad axioms.
+[2026-06-26 05:54:11.116] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(isFrom Country)).
+[2026-06-26 05:54:11.119] Found 100 possible bad axioms.
+[2026-06-26 05:54:11.119] Selected the bad axiom SubClassOf(Spain France).
+[2026-06-26 05:54:11.121] Found 99 possible bad axioms.
+[2026-06-26 05:54:11.121] Selected the bad axiom ClassAssertion(b5106 CompleteDeficiencyVomiting).
+[2026-06-26 05:54:11.121] Found 98 possible bad axioms.
+[2026-06-26 05:54:11.122] Selected the bad axiom SubClassOf(Q_Barrier_or_Facilitator.2 Qualifiers).
+[2026-06-26 05:54:11.124] Found 97 possible bad axioms.
+[2026-06-26 05:54:11.124] Selected the bad axiom ClassAssertion(b440 SevereDeficiencyRespiratoryFunction).
+[2026-06-26 05:54:11.125] Found 96 possible bad axioms.
+[2026-06-26 05:54:11.125] Selected the bad axiom ClassAssertion(Iran Iran).
+[2026-06-26 05:54:11.129] Found 95 possible bad axioms.
+[2026-06-26 05:54:11.129] Selected the bad axiom SubClassOf(Qualifiers Functioning).
+[2026-06-26 05:54:11.131] Found 94 possible bad axioms.
+[2026-06-26 05:54:11.131] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency SevereDeficiencyConsciousnessFunctions SevereImpairment).
+[2026-06-26 05:54:11.132] Found 93 possible bad axioms.
+[2026-06-26 05:54:11.13
+...[truncated]
+FAIL: attempt=9 seed=113658 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=HORD attempt=9 success=0/100
+----- HORD attempt=10 seed=127858 at 2026-06-26 05:59:15 -----
+--- stdout ---
+{"seed":127858,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":90,"A2":576,"A3":272,"B1":193,"B2":395,"B3":2126,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HORD.owl, seed=127858, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 05:59:16.064] Checking precondition...
+[2026-06-26 05:59:16.079] Starting the repair...
+[2026-06-26 05:59:16.087] Found 108 possible bad axioms.
+[2026-06-26 05:59:16.089] Selected the bad axiom ClassAssertion(Q_Extent_of_Impairment.2 ModerateImpairment).
+[2026-06-26 05:59:16.091] Found 107 possible bad axioms.
+[2026-06-26 05:59:16.091] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isFrom owl:Thing) Person).
+[2026-06-26 05:59:16.096] Found 106 possible bad axioms.
+[2026-06-26 05:59:16.096] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasDeficiency owl:Thing) Person).
+[2026-06-26 05:59:16.101] Found 105 possible bad axioms.
+[2026-06-26 05:59:16.101] Selected the bad axiom SubClassOf(d830 Activities_and_participation).
+[2026-06-26 05:59:16.105] Found 104 possible bad axioms.
+[2026-06-26 05:59:16.105] Selected the bad axiom ClassAssertion(d9201 NoDifficultySports).
+[2026-06-26 05:59:16.106] Found 103 possible bad axioms.
+[2026-06-26 05:59:16.107] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasDifficulty Activities_and_participation)).
+[2026-06-26 05:59:16.110] Found 102 possible bad axioms.
+[2026-06-26 05:59:16.110] Selected the bad axiom SubClassOf(b110 Body_functions).
+[2026-06-26 05:59:16.112] Found 101 possible bad axioms.
+[2026-06-26 05:59:16.113] Selected the bad axiom ClassAssertion(e5801 ModerateBarrierHealthSystem).
+[2026-06-26 05:59:16.114] Found 100 possible bad axioms.
+[2026-06-26 05:59:16.114] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasDiagnosis owl:Thing) Person).
+[2026-06-26 05:59:16.116] Found 99 possible bad axioms.
+[2026-06-26 05:59:16.116] Selected the bad axiom ObjectPropertyAssertion(hasDifficulty NoDifficultyArtsCulture NoDifficulty).
+[2026-06-26 05:59:16.117] Found 98 possible bad axioms.
+[2026-06-26 05:59:16.117] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency CompleteDeficiencyPainHead CompleteImpairment).
+[2026-06-26 05:59:16.118] Found 97 possible bad axioms.
+[2026-06-26 05:59:16.118] Selected the bad axiom ObjectPropertyAssertion(hasDeficiency CompleteDeficiencyEmotionalFunctions CompleteImpairment).
+[2026-06-26 05:59:16.118] Found 96 possible bad axioms.
+[2026-06-26 05:59:16.118] Selected the bad axiom ObjectPropertyAssertion(hasDifficulty NoDifficultyHigherEducation NoDifficulty).
+[2026-06-26 05:59:16.122] Found 95 possible bad axioms.
+[2026-06-26 05:59:16.123] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasDeficiency Body_functions)).
+[2026-06-26 05:59:16.125] Found 94 possible bad axioms.
+[2026-06-26 05:59:16.125] Selected th
+...[truncated]
+FAIL: attempt=10 seed=127858 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=HORD attempt=10 success=0/100
+=== ABORTED HORD after 10 consecutive failures at 2026-06-26 06:04:19 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for HORD - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=58 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=2 seed=14258 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=3 seed=28458 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=4 seed=42658 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=5 seed=56858 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=6 seed=71058 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=7 seed=85258 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=8 seed=99458 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=9 seed=113658 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=10 seed=127858 msg=Repair timeout: B4 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3061.474505 avg_seconds=306.147451
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

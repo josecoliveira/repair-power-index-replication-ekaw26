@@ -1,0 +1,506 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-PINO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-PINO.csv
+
+=== Starting sequential trials for PINO at 2026-06-27 18:19:17 ===
+----- PINO attempt=1 seed=122 at 2026-06-27 18:19:17 -----
+--- stdout ---
+{"seed":122,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":672,"A2":42575,"A3":874,"B1":768,"B2":11682,"B3":7231,"B4":771,"B5":300008}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=122, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:19:17.492] Checking precondition...
+[2026-06-27 18:19:17.511] Starting the repair...
+[2026-06-27 18:19:17.524] Found 393 possible bad axioms.
+[2026-06-27 18:19:17.526] Selected the bad axiom SubClassOf(Development_of_the_fetus Prenatal_care).
+[2026-06-27 18:19:17.533] Found 392 possible bad axioms.
+[2026-06-27 18:19:17.533] Selected the bad axiom SubClassOf(Quality_of_life_for_the_family Postnatal_quality_of_life).
+[2026-06-27 18:19:17.540] Found 391 possible bad axioms.
+[2026-06-27 18:19:17.540] Selected the bad axiom SubClassOf(Physiology_of_pregnancy Prenatal_care).
+[2026-06-27 18:19:17.546] Found 390 possible bad axioms.
+[2026-06-27 18:19:17.547] Selected the bad axiom SubClassOf(Pertussis_disease Who_else_should_get_Tdap).
+[2026-06-27 18:19:17.553] Found 389 possible bad axioms.
+[2026-06-27 18:19:17.553] Selected the bad axiom SubClassOf(Circumcision_discuss Planning_for_a_newborn).
+[2026-06-27 18:19:17.558] Found 388 possible bad axioms.
+[2026-06-27 18:19:17.558] Selected the bad axiom SubClassOf(Long-term_outlook_of_CHD Risks_of_treatment_of_CHD).
+[2026-06-27 18:19:17.567] Found 387 possible bad axioms.
+[2026-06-27 18:19:17.568] Selected the bad axiom SubClassOf(Obtaining_a_labor_doula Preparation_for_delivery).
+[2026-06-27 18:19:17.572] Found 386 possible bad axioms.
+[2026-06-27 18:19:17.572] Selected the bad axiom SubClassOf(Outpatient_methods_such_as_stripping_membranes Failed_induction).
+[2026-06-27 18:19:17.577] Found 385 possible bad axioms.
+[2026-06-27 18:19:17.577] Selected the bad axiom SubClassOf(Prenatal_diagnostic_and_screening_methods Prenatal_care).
+[2026-06-27 18:19:17.581] Found 384 possible bad axioms.
+[2026-06-27 18:19:17.581] Selected the bad axiom SubClassOf(Alternative_analgesic_modalities Labor_analgesia).
+[2026-06-27 18:19:17.585] Found 383 possible bad axioms.
+[2026-06-27 18:19:17.585] Selected the bad axiom SubClassOf(Newborn_coughs_and_colds Newborn_Care).
+[2026-06-27 18:19:17.594] Found 382 possible bad axioms.
+[2026-06-27 18:19:17.595] Selected the bad axiom SubClassOf(Exercise_test Postnatal_diagnostic_methods).
+[2026-06-27 18:19:17.599] Found 381 possible bad axioms.
+[2026-06-27 18:19:17.599] Selected the bad axiom SubClassOf(Hospital_and_doctor_choices Other_pregnancy_concerns).
+[2026-06-27 18:19:17.604] Found 380 possible bad axioms.
+[2026-06-27 18:19:17.604] Selected the bad axiom SubClassOf(Postnatal_quality_of_life Prognosis_of_CHD).
+[2026-06-27 18:19:17.609] Found 379 possible bad axioms.
+[2026-06-27 18:19:17.609] Selected the bad axiom SubClassOf(Acupuncture_and_acupressure Spinal_anesthesia).
+[
+...[truncated]
+FAIL: attempt=1 seed=122 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=PINO attempt=1 success=0/100
+----- PINO attempt=2 seed=14322 at 2026-06-27 18:25:22 -----
+--- stdout ---
+{"seed":14322,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B3","error_message":"Repair timeout: B3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":530,"A2":41801,"A3":840,"B1":767,"B2":11831,"B3":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=14322, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:25:22.983] Checking precondition...
+[2026-06-27 18:25:23.003] Starting the repair...
+[2026-06-27 18:25:23.016] Found 393 possible bad axioms.
+[2026-06-27 18:25:23.018] Selected the bad axiom SubClassOf(Symptoms_of_miscarriage Causes_of_miscarriage).
+[2026-06-27 18:25:23.025] Found 392 possible bad axioms.
+[2026-06-27 18:25:23.025] Selected the bad axiom SubClassOf(Symptoms_of_pregnancy_and_diagnosis Pregnancy).
+[2026-06-27 18:25:23.032] Found 391 possible bad axioms.
+[2026-06-27 18:25:23.032] Selected the bad axiom SubClassOf(Suggestion_to_await_for_labor_at_or_over_39_weeks Prenatal_care).
+[2026-06-27 18:25:23.038] Found 390 possible bad axioms.
+[2026-06-27 18:25:23.039] Selected the bad axiom SubClassOf(Fetal_complication Symptoms_of_pregnancy_and_diagnosis).
+[2026-06-27 18:25:23.044] Found 389 possible bad axioms.
+[2026-06-27 18:25:23.044] Selected the bad axiom SubClassOf(Failed_induction Induction).
+[2026-06-27 18:25:23.048] Found 388 possible bad axioms.
+[2026-06-27 18:25:23.049] Selected the bad axiom SubClassOf(Radiography Postnatal_diagnostic_methods).
+[2026-06-27 18:25:23.058] Found 387 possible bad axioms.
+[2026-06-27 18:25:23.058] Selected the bad axiom SubClassOf(Touch_and_massage Labor_pain_relief_methods).
+[2026-06-27 18:25:23.063] Found 386 possible bad axioms.
+[2026-06-27 18:25:23.063] Selected the bad axiom SubClassOf(Symptoms_of_pregnancy_and_diagnosis Expected_body_changes_and_how_to_handle_them).
+[2026-06-27 18:25:23.068] Found 385 possible bad axioms.
+[2026-06-27 18:25:23.068] Selected the bad axiom SubClassOf(Postnatal_diagnostic_methods Pulse_oximeter).
+[2026-06-27 18:25:23.073] Found 384 possible bad axioms.
+[2026-06-27 18:25:23.073] Selected the bad axiom SubClassOf(Risks_of_treatment_of_CHD Congenital_heart_defect).
+[2026-06-27 18:25:23.077] Found 383 possible bad axioms.
+[2026-06-27 18:25:23.078] Selected the bad axiom SubClassOf(Newborn_developmental_milestones Teething).
+[2026-06-27 18:25:23.088] Found 382 possible bad axioms.
+[2026-06-27 18:25:23.088] Selected the bad axiom SubClassOf(Continued_breastfeeding Milk_Feeding).
+[2026-06-27 18:25:23.093] Found 381 possible bad axioms.
+[2026-06-27 18:25:23.093] Selected the bad axiom SubClassOf(Diagnosis_of_infertility Infertility).
+[2026-06-27 18:25:23.097] Found 380 possible bad axioms.
+[2026-06-27 18:25:23.097] Selected the bad axiom SubClassOf(Presentation_of_the_multidisciplinary_team_in_care_of_the_child Congenital_abnormality).
+[2026-06-27 18:25:23.101] Found 379 possible bad axioms.
+[2026-06-27 18:25:23.101] Selected the bad axiom SubClassOf(Stooling Newb
+...[truncated]
+FAIL: attempt=2 seed=14322 status=time_limit_exceeded stage=B3 message=Repair timeout: B3 exceeded 300 seconds
+progress: ontology=PINO attempt=2 success=0/100
+----- PINO attempt=3 seed=28522 at 2026-06-27 18:31:18 -----
+--- stdout ---
+{"seed":28522,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":155,"A2":41830,"A3":896,"B1":502,"B2":11586,"B3":7530,"B4":792,"B5":300007}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=28522, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:31:19.281] Checking precondition...
+[2026-06-27 18:31:19.302] Starting the repair...
+[2026-06-27 18:31:19.315] Found 393 possible bad axioms.
+[2026-06-27 18:31:19.317] Selected the bad axiom SubClassOf(Induction Amniotomy).
+[2026-06-27 18:31:19.323] Found 392 possible bad axioms.
+[2026-06-27 18:31:19.323] Selected the bad axiom SubClassOf(Circumcision_discuss Budgeting_for_newborn).
+[2026-06-27 18:31:19.329] Found 391 possible bad axioms.
+[2026-06-27 18:31:19.330] Selected the bad axiom SubClassOf(Maternal_recovery Postpartum).
+[2026-06-27 18:31:19.336] Found 390 possible bad axioms.
+[2026-06-27 18:31:19.336] Selected the bad axiom SubClassOf(Hospital_and_doctor_choices Other_pregnancy_concerns).
+[2026-06-27 18:31:19.342] Found 389 possible bad axioms.
+[2026-06-27 18:31:19.342] Selected the bad axiom SubClassOf(Self-care_after_birth Postpartum_Care).
+[2026-06-27 18:31:19.347] Found 388 possible bad axioms.
+[2026-06-27 18:31:19.347] Selected the bad axiom SubClassOf(Exercise_test Postnatal_diagnostic_methods).
+[2026-06-27 18:31:19.357] Found 387 possible bad axioms.
+[2026-06-27 18:31:19.358] Selected the bad axiom SubClassOf(Umbilical_cord_sampling Prenatal_diagnostic_and_screening_methods).
+[2026-06-27 18:31:19.363] Found 386 possible bad axioms.
+[2026-06-27 18:31:19.363] Selected the bad axiom SubClassOf(Miscarriage Labor/Delivery).
+[2026-06-27 18:31:19.367] Found 385 possible bad axioms.
+[2026-06-27 18:31:19.367] Selected the bad axiom SubClassOf(Oral_health Pregnancy).
+[2026-06-27 18:31:19.371] Found 384 possible bad axioms.
+[2026-06-27 18:31:19.371] Selected the bad axiom SubClassOf(Symptoms_of_miscarriage Miscarriage).
+[2026-06-27 18:31:19.375] Found 383 possible bad axioms.
+[2026-06-27 18:31:19.376] Selected the bad axiom SubClassOf(Circumcision_discuss Creating_baby_registry).
+[2026-06-27 18:31:19.385] Found 382 possible bad axioms.
+[2026-06-27 18:31:19.385] Selected the bad axiom SubClassOf(Medications_used_in_treatment Diagnosis_of_infertility).
+[2026-06-27 18:31:19.390] Found 381 possible bad axioms.
+[2026-06-27 18:31:19.390] Selected the bad axiom SubClassOf(Transmittable_disease Pregnancy).
+[2026-06-27 18:31:19.395] Found 380 possible bad axioms.
+[2026-06-27 18:31:19.395] Selected the bad axiom SubClassOf(Genetic_screening_amnio_or_Amniocentesis_or_Chorionic_Villus_Sampling_(CVS) Test).
+[2026-06-27 18:31:19.399] Found 379 possible bad axioms.
+[2026-06-27 18:31:19.399] Selected the bad axiom SubClassOf(Pregnancy Miscarriage).
+[2026-06-27 18:31:19.403] Found 378 possible bad axioms.
+[2026-06-27 18:31:19.403] Selected the bad a
+...[truncated]
+FAIL: attempt=3 seed=28522 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=PINO attempt=3 success=0/100
+----- PINO attempt=4 seed=42722 at 2026-06-27 18:37:23 -----
+--- stdout ---
+{"seed":42722,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":646,"A2":41974,"A3":572,"B1":830,"B2":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=42722, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:37:23.564] Checking precondition...
+[2026-06-27 18:37:23.582] Starting the repair...
+[2026-06-27 18:37:23.595] Found 393 possible bad axioms.
+[2026-06-27 18:37:23.597] Selected the bad axiom SubClassOf(Examples_of_previous_cases_that_continued_the_pregnancy Care_and_treatment_of_children_with_CHD).
+[2026-06-27 18:37:23.605] Found 392 possible bad axioms.
+[2026-06-27 18:37:23.605] Selected the bad axiom SubClassOf(Test Multi-stage).
+[2026-06-27 18:37:23.611] Found 391 possible bad axioms.
+[2026-06-27 18:37:23.611] Selected the bad axiom SubClassOf(Termination_of_pregnancy_due_to_CHD Fetal_intervention_due_to_CHD).
+[2026-06-27 18:37:23.617] Found 390 possible bad axioms.
+[2026-06-27 18:37:23.618] Selected the bad axiom SubClassOf(Coping_with_minor_discomforts_during_prenatal_care Prenatal_care).
+[2026-06-27 18:37:23.623] Found 389 possible bad axioms.
+[2026-06-27 18:37:23.623] Selected the bad axiom SubClassOf(Causes_of_miscarriage Miscarriage).
+[2026-06-27 18:37:23.628] Found 388 possible bad axioms.
+[2026-06-27 18:37:23.628] Selected the bad axiom SubClassOf(Pack_hospital_bag owl:Nothing).
+[2026-06-27 18:37:23.638] Found 387 possible bad axioms.
+[2026-06-27 18:37:23.638] Selected the bad axiom SubClassOf(Quality_of_life_for_the_child Postnatal_quality_of_life).
+[2026-06-27 18:37:23.643] Found 386 possible bad axioms.
+[2026-06-27 18:37:23.643] Selected the bad axiom SubClassOf(Infertility Pre-pregnancy).
+[2026-06-27 18:37:23.647] Found 385 possible bad axioms.
+[2026-06-27 18:37:23.647] Selected the bad axiom SubClassOf(Maternal_fatigue Maternal_complication).
+[2026-06-27 18:37:23.651] Found 384 possible bad axioms.
+[2026-06-27 18:37:23.651] Selected the bad axiom SubClassOf(Scheduled_C-section Methods_of_delivery).
+[2026-06-27 18:37:23.656] Found 383 possible bad axioms.
+[2026-06-27 18:37:23.656] Selected the bad axiom SubClassOf(Cord_clamping Postpartum_screening_tests).
+[2026-06-27 18:37:23.667] Found 382 possible bad axioms.
+[2026-06-27 18:37:23.667] Selected the bad axiom SubClassOf(Bleeding_Contraindications_Shivering_Paralysis Definition_of_the_epidural_procedure).
+[2026-06-27 18:37:23.672] Found 381 possible bad axioms.
+[2026-06-27 18:37:23.672] Selected the bad axiom SubClassOf(Medications_used_in_treatment Surrogacy).
+[2026-06-27 18:37:23.676] Found 380 possible bad axioms.
+[2026-06-27 18:37:23.676] Selected the bad axiom SubClassOf(Fever Newborn_Care).
+[2026-06-27 18:37:23.680] Found 379 possible bad axioms.
+[2026-06-27 18:37:23.680] Selected the bad axiom SubClassOf(Teething Newborn_Care).
+[2026-06-27 18:37:23.684] Found 378 p
+...[truncated]
+FAIL: attempt=4 seed=42722 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=PINO attempt=4 success=0/100
+----- PINO attempt=5 seed=56922 at 2026-06-27 18:43:07 -----
+--- stdout ---
+{"seed":56922,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":564,"A2":42771,"A3":827,"B1":513,"B2":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=56922, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:43:08.096] Checking precondition...
+[2026-06-27 18:43:08.118] Starting the repair...
+[2026-06-27 18:43:08.132] Found 393 possible bad axioms.
+[2026-06-27 18:43:08.133] Selected the bad axiom SubClassOf(Family_planning Multi-stage).
+[2026-06-27 18:43:08.140] Found 392 possible bad axioms.
+[2026-06-27 18:43:08.141] Selected the bad axiom SubClassOf(Planning_for_a_newborn Mental_health).
+[2026-06-27 18:43:08.146] Found 391 possible bad axioms.
+[2026-06-27 18:43:08.146] Selected the bad axiom SubClassOf(Using_donor_sperm_or_eggs Infertility).
+[2026-06-27 18:43:08.153] Found 390 possible bad axioms.
+[2026-06-27 18:43:08.153] Selected the bad axiom SubClassOf(Pack_hospital_bag Preparation_for_delivery).
+[2026-06-27 18:43:08.158] Found 389 possible bad axioms.
+[2026-06-27 18:43:08.159] Selected the bad axiom SubClassOf(Ultrasounds Test).
+[2026-06-27 18:43:08.164] Found 388 possible bad axioms.
+[2026-06-27 18:43:08.164] Selected the bad axiom SubClassOf(Side_effects_of_infertility_treatment Infertility).
+[2026-06-27 18:43:08.174] Found 387 possible bad axioms.
+[2026-06-27 18:43:08.174] Selected the bad axiom SubClassOf(Presentation_of_the_multidisciplinary_team_in_care_of_the_child Congenital_abnormality).
+[2026-06-27 18:43:08.179] Found 386 possible bad axioms.
+[2026-06-27 18:43:08.179] Selected the bad axiom SubClassOf(Adoption_or_abortion Other_pregnancy_concerns).
+[2026-06-27 18:43:08.183] Found 385 possible bad axioms.
+[2026-06-27 18:43:08.183] Selected the bad axiom SubClassOf(DNA_testing Test).
+[2026-06-27 18:43:08.187] Found 384 possible bad axioms.
+[2026-06-27 18:43:08.187] Selected the bad axiom SubClassOf(Sleep Newborn_Care).
+[2026-06-27 18:43:08.191] Found 383 possible bad axioms.
+[2026-06-27 18:43:08.192] Selected the bad axiom SubClassOf(Swaddling Nursing_pillow).
+[2026-06-27 18:43:08.201] Found 382 possible bad axioms.
+[2026-06-27 18:43:08.202] Selected the bad axiom SubClassOf(Opioids owl:Nothing).
+[2026-06-27 18:43:08.207] Found 381 possible bad axioms.
+[2026-06-27 18:43:08.207] Selected the bad axiom SubClassOf(Infertility Pre-pregnancy).
+[2026-06-27 18:43:08.211] Found 380 possible bad axioms.
+[2026-06-27 18:43:08.211] Selected the bad axiom SubClassOf(Nutrition_in_pregnancy Nutrition_physical_exercise_or_lifestyle_in_pregnancy).
+[2026-06-27 18:43:08.215] Found 379 possible bad axioms.
+[2026-06-27 18:43:08.215] Selected the bad axiom SubClassOf(Infertility Preconception).
+[2026-06-27 18:43:08.219] Found 378 possible bad axioms.
+[2026-06-27 18:43:08.219] Selected the bad axiom SubClassOf(Solid_foods_–_Timing Solid_Food).
+[2026
+...[truncated]
+FAIL: attempt=5 seed=56922 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=PINO attempt=5 success=0/100
+----- PINO attempt=6 seed=71122 at 2026-06-27 18:48:52 -----
+--- stdout ---
+{"seed":71122,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":80,"A2":42707,"A3":571,"B1":811,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=71122, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:48:53.251] Checking precondition...
+[2026-06-27 18:48:53.271] Starting the repair...
+[2026-06-27 18:48:53.284] Found 393 possible bad axioms.
+[2026-06-27 18:48:53.286] Selected the bad axiom SubClassOf(Nitrous_oxide Labor_pain_relief_methods).
+[2026-06-27 18:48:53.293] Found 392 possible bad axioms.
+[2026-06-27 18:48:53.293] Selected the bad axiom SubClassOf(Pre-pregnancy Common_Themes).
+[2026-06-27 18:48:53.299] Found 391 possible bad axioms.
+[2026-06-27 18:48:53.299] Selected the bad axiom SubClassOf(Maternal_diet Pregnancy).
+[2026-06-27 18:48:53.306] Found 390 possible bad axioms.
+[2026-06-27 18:48:53.306] Selected the bad axiom SubClassOf(Surrogacy Infertility).
+[2026-06-27 18:48:53.312] Found 389 possible bad axioms.
+[2026-06-27 18:48:53.313] Selected the bad axiom SubClassOf(Biofeedback Labor_pain_relief_methods).
+[2026-06-27 18:48:53.317] Found 388 possible bad axioms.
+[2026-06-27 18:48:53.318] Selected the bad axiom SubClassOf(Vaccine_safety owl:Nothing).
+[2026-06-27 18:48:53.327] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 18:48:53.328] Checking precondition...
+[2026-06-27 18:48:53.337] Starting the repair...
+[2026-06-27 18:49:36.032] Found 2 possible bad axioms.
+[2026-06-27 18:49:36.033] Selected the bad axiom SubClassOf(Vaccine_safety owl:Nothing).
+[2026-06-27 18:49:36.035] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 18:49:36.037] Checking precondition...
+[2026-06-27 18:49:36.040] Starting the repair...
+[2026-06-27 18:49:36.065] Selected a reference ontology with 664 axioms.
+[2026-06-27 18:49:36.566] Selected the bad axiom ClassAssertion(Vaccine_safety Vaccine_safety).
+[2026-06-27 18:49:36.604] Selected the weaker axiom ClassAssertion(Insurance_coverage_for_Tdap Vaccine_safety).
+[2026-06-27 18:49:36.607] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 18:49:36.607] Checking precondition...
+[2026-06-27 18:49:36.610] Starting the repair...
+[2026-06-27 18:49:36.634] Selected a reference ontology with 664 axioms.
+[2026-06-27 18:49:37.083] Selected the bad axiom SubClassOf(Vaccine_safety owl:Nothing).
+[2026-06-27 18:49:37.415] Selected the weaker axiom SubClassOf(Vaccine_safety Postnatal_coping_with_the_diagnosis).
+[2026-06-27 18:49:37.419] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-27 18:49:37.420] Checking precondition...
+[2026-06-27 18:49:37.423] Starting the repair...
+[2026-06-27 18:49:37.443] Selected a reference ontology with 664 ax
+...[truncated]
+FAIL: attempt=6 seed=71122 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=PINO attempt=6 success=0/100
+----- PINO attempt=7 seed=85322 at 2026-06-27 18:54:37 -----
+--- stdout ---
+{"seed":85322,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":420,"A2":42155,"A3":588,"B1":514,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=85322, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 18:54:37.902] Checking precondition...
+[2026-06-27 18:54:37.921] Starting the repair...
+[2026-06-27 18:54:37.933] Found 393 possible bad axioms.
+[2026-06-27 18:54:37.935] Selected the bad axiom SubClassOf(Who_else_should_get_Tdap Vaccination_during_pregnancy).
+[2026-06-27 18:54:37.942] Found 392 possible bad axioms.
+[2026-06-27 18:54:37.942] Selected the bad axiom SubClassOf(Information_about_the_delivery Labor_pain_relief_methods).
+[2026-06-27 18:54:37.949] Found 391 possible bad axioms.
+[2026-06-27 18:54:37.949] Selected the bad axiom SubClassOf(Chorionic_villus_sampling Prenatal_diagnostic_and_screening_methods).
+[2026-06-27 18:54:37.955] Found 390 possible bad axioms.
+[2026-06-27 18:54:37.956] Selected the bad axiom SubClassOf(Side_effects_of_induction Cervical_ripening).
+[2026-06-27 18:54:37.960] Found 389 possible bad axioms.
+[2026-06-27 18:54:37.961] Selected the bad axiom SubClassOf(Newborn_coughs_and_colds Newborn_growth).
+[2026-06-27 18:54:37.965] Found 388 possible bad axioms.
+[2026-06-27 18:54:37.966] Selected the bad axiom SubClassOf(Opioids Labor_pain_relief_methods).
+[2026-06-27 18:54:37.975] Found 387 possible bad axioms.
+[2026-06-27 18:54:37.975] Selected the bad axiom SubClassOf(Blood_tests Prenatal_diagnostic_and_screening_methods).
+[2026-06-27 18:54:37.979] Found 386 possible bad axioms.
+[2026-06-27 18:54:37.979] Selected the bad axiom SubClassOf(Prenatal_diagnostic_and_screening_methods Prenatal_care).
+[2026-06-27 18:54:37.983] Found 385 possible bad axioms.
+[2026-06-27 18:54:37.984] Selected the bad axiom SubClassOf(Labor_analgesia Labor_pain_relief_methods).
+[2026-06-27 18:54:37.988] Found 384 possible bad axioms.
+[2026-06-27 18:54:37.989] Selected the bad axiom SubClassOf(Circumcision_discuss Creating_baby_registry).
+[2026-06-27 18:54:37.993] Found 383 possible bad axioms.
+[2026-06-27 18:54:37.993] Selected the bad axiom SubClassOf(Hospital_choices Diatery_supplement_during_prenatal_care).
+[2026-06-27 18:54:38.004] Found 382 possible bad axioms.
+[2026-06-27 18:54:38.004] Selected the bad axiom SubClassOf(Heat_and_cold Aromatherapy).
+[2026-06-27 18:54:38.010] Found 381 possible bad axioms.
+[2026-06-27 18:54:38.010] Selected the bad axiom SubClassOf(Radiography Postnatal_diagnostic_methods).
+[2026-06-27 18:54:38.014] Found 380 possible bad axioms.
+[2026-06-27 18:54:38.015] Selected the bad axiom SubClassOf(Using_donor_sperm_or_eggs Infertility).
+[2026-06-27 18:54:38.019] Found 379 possible bad axioms.
+[2026-06-27 18:54:38.019] Selected the bad axiom SubClassOf(Maternal_diet Nutrition_physical_exercise_or_lifestyle_in_
+...[truncated]
+FAIL: attempt=7 seed=85322 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=PINO attempt=7 success=0/100
+----- PINO attempt=8 seed=99522 at 2026-06-27 19:00:21 -----
+--- stdout ---
+{"seed":99522,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":76,"A2":43025,"A3":586,"B1":828,"B2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=99522, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:00:22.017] Checking precondition...
+[2026-06-27 19:00:22.036] Starting the repair...
+[2026-06-27 19:00:22.048] Found 393 possible bad axioms.
+[2026-06-27 19:00:22.050] Selected the bad axiom SubClassOf(Medications_used_in_treatment Surrogacy).
+[2026-06-27 19:00:22.058] Found 392 possible bad axioms.
+[2026-06-27 19:00:22.058] Selected the bad axiom SubClassOf(Drug_use Pregnancy_taboo).
+[2026-06-27 19:00:22.065] Found 391 possible bad axioms.
+[2026-06-27 19:00:22.066] Selected the bad axiom SubClassOf(Labor_pain_relief_methods Aromatherapy).
+[2026-06-27 19:00:22.071] Found 390 possible bad axioms.
+[2026-06-27 19:00:22.072] Selected the bad axiom SubClassOf(Pregnancy Common_Themes).
+[2026-06-27 19:00:22.077] Found 389 possible bad axioms.
+[2026-06-27 19:00:22.077] Selected the bad axiom SubClassOf(Foster_parenting Pre-pregnancy).
+[2026-06-27 19:00:22.081] Found 388 possible bad axioms.
+[2026-06-27 19:00:22.082] Selected the bad axiom ClassAssertion(Vaccine_safety Vaccine_safety).
+[2026-06-27 19:00:22.083] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 19:00:22.091] Checking precondition...
+[2026-06-27 19:00:22.100] Starting the repair...
+[2026-06-27 19:01:05.112] Found 2 possible bad axioms.
+[2026-06-27 19:01:05.112] Selected the bad axiom SubClassOf(Vaccine_safety owl:Nothing).
+[2026-06-27 19:01:05.114] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 19:01:05.116] Checking precondition...
+[2026-06-27 19:01:05.119] Starting the repair...
+[2026-06-27 19:01:05.146] Selected a reference ontology with 664 axioms.
+[2026-06-27 19:01:05.659] Selected the bad axiom ClassAssertion(Vaccine_safety Vaccine_safety).
+[2026-06-27 19:01:05.699] Selected the weaker axiom ClassAssertion(Insurance_coverage_for_Tdap Vaccine_safety).
+[2026-06-27 19:01:05.701] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 19:01:05.702] Checking precondition...
+[2026-06-27 19:01:05.705] Starting the repair...
+[2026-06-27 19:01:05.727] Selected a reference ontology with 664 axioms.
+[2026-06-27 19:01:06.194] Selected the bad axiom SubClassOf(Vaccine_safety owl:Nothing).
+[2026-06-27 19:01:06.526] Selected the weaker axiom SubClassOf(Vaccine_safety Frequency_of_miscarriage).
+[2026-06-27 19:01:06.530] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-27 19:01:06.532] Checking precondition...
+[2026-06-27 19:01:06.535] Starting the repair...
+[2026-06-27 19:01:06.561] Selected a reference ontology with 664
+...[truncated]
+FAIL: attempt=8 seed=99522 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=PINO attempt=8 success=0/100
+----- PINO attempt=9 seed=113722 at 2026-06-27 19:06:06 -----
+--- stdout ---
+{"seed":113722,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":266,"A2":42814,"A3":835,"B1":506,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=113722, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:06:07.000] Checking precondition...
+[2026-06-27 19:06:07.021] Starting the repair...
+[2026-06-27 19:06:07.035] Found 393 possible bad axioms.
+[2026-06-27 19:06:07.037] Selected the bad axiom SubClassOf(Baby_milestones What_to_anticipate_after_baby_is_born).
+[2026-06-27 19:06:07.043] Found 392 possible bad axioms.
+[2026-06-27 19:06:07.043] Selected the bad axiom SubClassOf(Fish_and_mercury_consumption Nutrition_physical_exercise_or_lifestyle_in_pregnancy).
+[2026-06-27 19:06:07.050] Found 391 possible bad axioms.
+[2026-06-27 19:06:07.050] Selected the bad axiom SubClassOf(Physical_and_psychological_complications_after_delivery Self-care_after_birth).
+[2026-06-27 19:06:07.056] Found 390 possible bad axioms.
+[2026-06-27 19:06:07.056] Selected the bad axiom SubClassOf(Maternal_recovery Miscarriage).
+[2026-06-27 19:06:07.061] Found 389 possible bad axioms.
+[2026-06-27 19:06:07.061] Selected the bad axiom SubClassOf(Examples_of_previous_cases_that_continued_the_pregnancy Care_and_treatment_of_children_with_CHD).
+[2026-06-27 19:06:07.066] Found 388 possible bad axioms.
+[2026-06-27 19:06:07.067] Selected the bad axiom SubClassOf(What_to_anticipate_after_baby_is_born Planning_for_a_newborn).
+[2026-06-27 19:06:07.076] Found 387 possible bad axioms.
+[2026-06-27 19:06:07.076] Selected the bad axiom SubClassOf(Congenital_heart_defect Congenital_abnormality).
+[2026-06-27 19:06:07.080] Found 386 possible bad axioms.
+[2026-06-27 19:06:07.080] Selected the bad axiom SubClassOf(Gestational_diabetes Maternal_complication).
+[2026-06-27 19:06:07.084] Found 385 possible bad axioms.
+[2026-06-27 19:06:07.084] Selected the bad axiom SubClassOf(What_to_expect_at_prenatal_visits Prenatal_care).
+[2026-06-27 19:06:07.088] Found 384 possible bad axioms.
+[2026-06-27 19:06:07.088] Selected the bad axiom SubClassOf(Provider_for_infertility_treatment Infertility).
+[2026-06-27 19:06:07.091] Found 383 possible bad axioms.
+[2026-06-27 19:06:07.092] Selected the bad axiom SubClassOf(Scheduled_C-section Methods_of_delivery).
+[2026-06-27 19:06:07.101] Found 382 possible bad axioms.
+[2026-06-27 19:06:07.101] Selected the bad axiom SubClassOf(Presentation_of_the_multidisciplinary_team_in_care_of_the_child Congenital_abnormality).
+[2026-06-27 19:06:07.106] Found 381 possible bad axioms.
+[2026-06-27 19:06:07.106] Selected the bad axiom SubClassOf(Maternal_recovery Postpartum).
+[2026-06-27 19:06:07.110] Found 380 possible bad axioms.
+[2026-06-27 19:06:07.111] Selected the bad axiom SubClassOf(Nausea_or_vomiting Maternal_complication).
+[2026-06-27 19:06:07.116] Found 379 possible b
+...[truncated]
+FAIL: attempt=9 seed=113722 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=PINO attempt=9 success=0/100
+----- PINO attempt=10 seed=127922 at 2026-06-27 19:11:51 -----
+--- stdout ---
+{"seed":127922,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":176,"A2":42449,"A3":859,"B1":507,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PINO.owl, seed=127922, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:11:51.894] Checking precondition...
+[2026-06-27 19:11:51.915] Starting the repair...
+[2026-06-27 19:11:51.927] Found 393 possible bad axioms.
+[2026-06-27 19:11:51.929] Selected the bad axiom SubClassOf(Relaxation_techniques Labor_pain_relief_methods).
+[2026-06-27 19:11:51.936] Found 392 possible bad axioms.
+[2026-06-27 19:11:51.936] Selected the bad axiom SubClassOf(Methods_of_delivery Labor/Delivery).
+[2026-06-27 19:11:51.942] Found 391 possible bad axioms.
+[2026-06-27 19:11:51.942] Selected the bad axiom SubClassOf(Vaccination_during_pregnancy Gender_prediction).
+[2026-06-27 19:11:51.949] Found 390 possible bad axioms.
+[2026-06-27 19:11:51.949] Selected the bad axiom SubClassOf(Peer_experience_of_delivery Labor/Delivery).
+[2026-06-27 19:11:51.954] Found 389 possible bad axioms.
+[2026-06-27 19:11:51.954] Selected the bad axiom SubClassOf(Find_pediatrician Newborn_Care).
+[2026-06-27 19:11:51.960] Found 388 possible bad axioms.
+[2026-06-27 19:11:51.960] Selected the bad axiom SubClassOf(Newborn_growth Newborn_Care).
+[2026-06-27 19:11:51.970] Found 387 possible bad axioms.
+[2026-06-27 19:11:51.970] Selected the bad axiom SubClassOf(Pulse_oximeter Postnatal_diagnostic_methods).
+[2026-06-27 19:11:51.975] Found 386 possible bad axioms.
+[2026-06-27 19:11:51.975] Selected the bad axiom SubClassOf(Hospital_choices Prenatal_care).
+[2026-06-27 19:11:51.979] Found 385 possible bad axioms.
+[2026-06-27 19:11:51.980] Selected the bad axiom SubClassOf(Planning_for_home_improvement Planning_for_a_newborn).
+[2026-06-27 19:11:51.984] Found 384 possible bad axioms.
+[2026-06-27 19:11:51.984] Selected the bad axiom SubClassOf(Maternal_diet Mother_Weight).
+[2026-06-27 19:11:51.989] Found 383 possible bad axioms.
+[2026-06-27 19:11:51.989] Selected the bad axiom SubClassOf(Management_of_mental_health Mental_health).
+[2026-06-27 19:11:51.998] Found 382 possible bad axioms.
+[2026-06-27 19:11:51.998] Selected the bad axiom SubClassOf(Physical_and_psychological_complications_after_delivery owl:Nothing).
+[2026-06-27 19:11:52.002] Found 381 possible bad axioms.
+[2026-06-27 19:11:52.003] Selected the bad axiom SubClassOf(Outpatient_methods_such_as_stripping_membranes Failed_induction).
+[2026-06-27 19:11:52.007] Found 380 possible bad axioms.
+[2026-06-27 19:11:52.007] Selected the bad axiom SubClassOf(Budgeting_for_newborn Baby_naming).
+[2026-06-27 19:11:52.011] Found 379 possible bad axioms.
+[2026-06-27 19:11:52.011] Selected the bad axiom SubClassOf(Sexual_activity_in_pregnancy Daily_activities_in_pregnancy).
+[2026-06-27 19:11:52.015] Found 378 possible bad axioms.
+...[truncated]
+FAIL: attempt=10 seed=127922 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=PINO attempt=10 success=0/100
+=== ABORTED PINO after 10 consecutive failures at 2026-06-27 19:17:35 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for PINO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=122 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=2 seed=14322 msg=Repair timeout: B3 exceeded 300 seconds
+  attempt=3 seed=28522 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=4 seed=42722 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=5 seed=56922 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=6 seed=71122 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=7 seed=85322 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=8 seed=99522 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=9 seed=113722 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=10 seed=127922 msg=Repair timeout: B2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3498.410519 avg_seconds=349.841052
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

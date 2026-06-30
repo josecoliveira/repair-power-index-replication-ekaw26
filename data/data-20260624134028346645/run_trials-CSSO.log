@@ -1,0 +1,445 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CSSO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CSSO.csv
+
+=== Starting sequential trials for CSSO at 2026-06-28 08:16:22 ===
+----- CSSO attempt=1 seed=140 at 2026-06-28 08:16:22 -----
+--- stdout ---
+{"seed":140,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036","iic_values":{},"repair_runtimes_ms":{"A1":667,"A2":155105,"A3":1626,"B1":1489,"B2":15984}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=140, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:16:22.726] Checking precondition...
+[2026-06-28 08:16:22.753] Starting the repair...
+[2026-06-28 08:16:22.763] Found 632 possible bad axioms.
+[2026-06-28 08:16:22.765] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000268 http://purl.jp/bio/11/csso/CSSO_000095).
+[2026-06-28 08:16:22.773] Found 631 possible bad axioms.
+[2026-06-28 08:16:22.773] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000076 http://purl.jp/bio/11/csso/CSSO_000019).
+[2026-06-28 08:16:22.781] Found 630 possible bad axioms.
+[2026-06-28 08:16:22.782] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000292 http://purl.jp/bio/11/csso/CSSO_000009).
+[2026-06-28 08:16:22.794] Found 629 possible bad axioms.
+[2026-06-28 08:16:22.794] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000069 http://purl.jp/bio/11/csso/CSSO_000190).
+[2026-06-28 08:16:22.799] Found 628 possible bad axioms.
+[2026-06-28 08:16:22.799] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000013 http://purl.jp/bio/11/csso/CSSO_000001).
+[2026-06-28 08:16:22.805] Found 627 possible bad axioms.
+[2026-06-28 08:16:22.805] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000099 http://purl.jp/bio/11/csso/CSSO_000059).
+[2026-06-28 08:16:22.811] Found 626 possible bad axioms.
+[2026-06-28 08:16:22.811] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000253 http://purl.jp/bio/11/csso/CSSO_000173).
+[2026-06-28 08:16:22.818] Found 625 possible bad axioms.
+[2026-06-28 08:16:22.818] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000278 http://purl.jp/bio/11/csso/CSSO_000063).
+[2026-06-28 08:16:22.823] Found 624 possible bad axioms.
+[2026-06-28 08:16:22.824] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000117 http://purl.jp/bio/11/csso/CSSO_000127).
+[2026-06-28 08:16:22.830] Found 623 possible bad axioms.
+[2026-06-28 08:16:22.830] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000222 http://purl.jp/bio/11/csso/CSSO_000245).
+[2026-06-28 08:16:22.835] Found 622 possible bad axioms.
+[2026-06-28 08:16:22.835] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000237 http://purl.jp/bio/11/csso/CSSO_000051).
+[2026-06-28 08:16:22.846] Found 621 possible bad axioms.
+[2026-06-28 08:16:22.846] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000274 http://purl.jp/bio/11/csso/CSSO_000252).
+[2026-06-28 08:16:22.856] Found 620 possible bad axioms.
+[2026-06-28 08:16:22.857] Selected the bad axiom SubClassOf(http://purl.jp/bio
+...[truncated]
+FAIL: attempt=1 seed=140 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+progress: ontology=CSSO attempt=1 success=0/100
+----- CSSO attempt=2 seed=14340 at 2026-06-28 08:19:17 -----
+--- stdout ---
+{"seed":14340,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147","iic_values":{},"repair_runtimes_ms":{"A1":723,"A2":154068,"A3":1846,"B1":1519,"B2":6997,"B3":4625,"B4":459,"B5":4837,"B6":6356}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=14340, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:19:18.143] Checking precondition...
+[2026-06-28 08:19:18.168] Starting the repair...
+[2026-06-28 08:19:18.179] Found 632 possible bad axioms.
+[2026-06-28 08:19:18.180] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000022 http://purl.jp/bio/11/csso/CSSO_000010).
+[2026-06-28 08:19:18.188] Found 631 possible bad axioms.
+[2026-06-28 08:19:18.189] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000301 http://purl.jp/bio/11/csso/CSSO_000019).
+[2026-06-28 08:19:18.197] Found 630 possible bad axioms.
+[2026-06-28 08:19:18.197] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000047 http://purl.jp/bio/11/csso/CSSO_000022).
+[2026-06-28 08:19:18.209] Found 629 possible bad axioms.
+[2026-06-28 08:19:18.209] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000014 http://purl.jp/bio/11/csso/CSSO_000059).
+[2026-06-28 08:19:18.215] Found 628 possible bad axioms.
+[2026-06-28 08:19:18.215] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000049 http://purl.jp/bio/11/csso/CSSO_000227).
+[2026-06-28 08:19:18.220] Found 627 possible bad axioms.
+[2026-06-28 08:19:18.221] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000024 http://purl.jp/bio/11/csso/CSSO_000126).
+[2026-06-28 08:19:18.225] Found 626 possible bad axioms.
+[2026-06-28 08:19:18.226] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000180 http://purl.jp/bio/11/csso/CSSO_000042).
+[2026-06-28 08:19:18.231] Found 625 possible bad axioms.
+[2026-06-28 08:19:18.231] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000196 http://purl.jp/bio/11/csso/CSSO_000154).
+[2026-06-28 08:19:18.238] Found 624 possible bad axioms.
+[2026-06-28 08:19:18.238] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000245 http://purl.jp/bio/11/csso/CSSO_000109).
+[2026-06-28 08:19:18.243] Found 623 possible bad axioms.
+[2026-06-28 08:19:18.243] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000151 http://purl.jp/bio/11/csso/CSSO_000130).
+[2026-06-28 08:19:18.249] Found 622 possible bad axioms.
+[2026-06-28 08:19:18.249] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000260 http://purl.jp/bio/11/csso/CSSO_000273).
+[2026-06-28 08:19:18.259] Found 621 possible bad axioms.
+[2026-06-28 08:19:18.260] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000236 http://purl.jp/bio/11/csso/CSSO_000235).
+[2026-06-28 08:19:18.270] Found 620 possible bad axioms.
+[2026-06-28 08:19:18.270] Selected the bad axiom SubClassOf(http://purl.jp/b
+...[truncated]
+FAIL: attempt=2 seed=14340 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+progress: ontology=CSSO attempt=2 success=0/100
+----- CSSO attempt=3 seed=28540 at 2026-06-28 08:22:19 -----
+--- stdout ---
+{"seed":28540,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036","iic_values":{},"repair_runtimes_ms":{"A1":533,"A2":154269,"A3":4197,"B1":1724,"B2":18836}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=28540, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:22:20.321] Checking precondition...
+[2026-06-28 08:22:20.348] Starting the repair...
+[2026-06-28 08:22:20.360] Found 632 possible bad axioms.
+[2026-06-28 08:22:20.362] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000021 http://purl.jp/bio/11/csso/CSSO_000002).
+[2026-06-28 08:22:20.371] Found 631 possible bad axioms.
+[2026-06-28 08:22:20.371] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000178 http://purl.jp/bio/11/csso/CSSO_000018).
+[2026-06-28 08:22:20.379] Found 630 possible bad axioms.
+[2026-06-28 08:22:20.379] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000114 http://purl.jp/bio/11/csso/CSSO_000242).
+[2026-06-28 08:22:20.391] Found 629 possible bad axioms.
+[2026-06-28 08:22:20.391] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000168 http://purl.jp/bio/11/csso/CSSO_000001).
+[2026-06-28 08:22:20.398] Found 628 possible bad axioms.
+[2026-06-28 08:22:20.399] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000103 http://purl.jp/bio/11/csso/CSSO_000300).
+[2026-06-28 08:22:20.405] Found 627 possible bad axioms.
+[2026-06-28 08:22:20.406] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000097 http://purl.jp/bio/11/csso/CSSO_000058).
+[2026-06-28 08:22:20.411] Found 626 possible bad axioms.
+[2026-06-28 08:22:20.411] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000054 owl:Nothing).
+[2026-06-28 08:22:20.418] Found 625 possible bad axioms.
+[2026-06-28 08:22:20.418] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000183 http://purl.jp/bio/11/csso/CSSO_000113).
+[2026-06-28 08:22:20.423] Found 624 possible bad axioms.
+[2026-06-28 08:22:20.424] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000162 http://purl.jp/bio/11/csso/CSSO_000179).
+[2026-06-28 08:22:20.429] Found 623 possible bad axioms.
+[2026-06-28 08:22:20.429] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000012 http://purl.jp/bio/11/csso/CSSO_000041).
+[2026-06-28 08:22:20.435] Found 622 possible bad axioms.
+[2026-06-28 08:22:20.435] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000123 http://purl.jp/bio/11/csso/CSSO_000032).
+[2026-06-28 08:22:20.446] Found 621 possible bad axioms.
+[2026-06-28 08:22:20.446] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000043 http://purl.jp/bio/11/csso/CSSO_000010).
+[2026-06-28 08:22:20.456] Found 620 possible bad axioms.
+[2026-06-28 08:22:20.456] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000073 http
+...[truncated]
+FAIL: attempt=3 seed=28540 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+progress: ontology=CSSO attempt=3 success=0/100
+----- CSSO attempt=4 seed=42740 at 2026-06-28 08:25:21 -----
+--- stdout ---
+{"seed":42740,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036","iic_values":{},"repair_runtimes_ms":{"A1":370,"A2":152951,"A3":2618,"B1":5472,"B2":17030}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=42740, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:25:22.096] Checking precondition...
+[2026-06-28 08:25:22.124] Starting the repair...
+[2026-06-28 08:25:22.136] Found 632 possible bad axioms.
+[2026-06-28 08:25:22.137] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000054 owl:Nothing).
+[2026-06-28 08:25:22.146] Found 631 possible bad axioms.
+[2026-06-28 08:25:22.147] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000046 http://purl.jp/bio/11/csso/CSSO_000031).
+[2026-06-28 08:25:22.154] Found 630 possible bad axioms.
+[2026-06-28 08:25:22.154] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000254 http://purl.jp/bio/11/csso/CSSO_000052).
+[2026-06-28 08:25:22.166] Found 629 possible bad axioms.
+[2026-06-28 08:25:22.166] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000208 http://purl.jp/bio/11/csso/CSSO_000207).
+[2026-06-28 08:25:22.172] Found 628 possible bad axioms.
+[2026-06-28 08:25:22.172] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000145 http://purl.jp/bio/11/csso/CSSO_000027).
+[2026-06-28 08:25:22.179] Found 627 possible bad axioms.
+[2026-06-28 08:25:22.179] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000164 http://purl.jp/bio/11/csso/CSSO_000284).
+[2026-06-28 08:25:22.185] Found 626 possible bad axioms.
+[2026-06-28 08:25:22.185] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000010 owl:Nothing).
+[2026-06-28 08:25:22.191] Found 625 possible bad axioms.
+[2026-06-28 08:25:22.191] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000301 http://purl.jp/bio/11/csso/CSSO_000019).
+[2026-06-28 08:25:22.197] Found 624 possible bad axioms.
+[2026-06-28 08:25:22.197] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000016 http://purl.jp/bio/11/csso/CSSO_000024).
+[2026-06-28 08:25:22.202] Found 623 possible bad axioms.
+[2026-06-28 08:25:22.202] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000034 http://purl.jp/bio/11/csso/CSSO_000039).
+[2026-06-28 08:25:22.208] Found 622 possible bad axioms.
+[2026-06-28 08:25:22.208] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000222 http://purl.jp/bio/11/csso/CSSO_000005).
+[2026-06-28 08:25:22.218] Found 621 possible bad axioms.
+[2026-06-28 08:25:22.218] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000192 http://purl.jp/bio/11/csso/CSSO_000181).
+[2026-06-28 08:25:22.228] Found 620 possible bad axioms.
+[2026-06-28 08:25:22.229] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000129 http://purl.jp/bio/11/csso/CSSO
+...[truncated]
+FAIL: attempt=4 seed=42740 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+progress: ontology=CSSO attempt=4 success=0/100
+----- CSSO attempt=5 seed=56940 at 2026-06-28 08:28:20 -----
+--- stdout ---
+{"seed":56940,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147","iic_values":{},"repair_runtimes_ms":{"A1":511,"A2":154966,"A3":3932,"B1":1908,"B2":3296,"B3":3101,"B4":772,"B5":2383}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=56940, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:28:21.078] Checking precondition...
+[2026-06-28 08:28:21.103] Starting the repair...
+[2026-06-28 08:28:21.115] Found 632 possible bad axioms.
+[2026-06-28 08:28:21.116] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000178 http://purl.jp/bio/11/csso/CSSO_000177).
+[2026-06-28 08:28:21.124] Found 631 possible bad axioms.
+[2026-06-28 08:28:21.124] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000099 http://purl.jp/bio/11/csso/CSSO_000091).
+[2026-06-28 08:28:21.132] Found 630 possible bad axioms.
+[2026-06-28 08:28:21.132] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000244 http://purl.jp/bio/11/csso/CSSO_000088).
+[2026-06-28 08:28:21.145] Found 629 possible bad axioms.
+[2026-06-28 08:28:21.145] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000156 http://purl.jp/bio/11/csso/CSSO_000032).
+[2026-06-28 08:28:21.151] Found 628 possible bad axioms.
+[2026-06-28 08:28:21.152] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000065 http://purl.jp/bio/11/csso/CSSO_000054).
+[2026-06-28 08:28:21.158] Found 627 possible bad axioms.
+[2026-06-28 08:28:21.158] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000084 http://purl.jp/bio/11/csso/CSSO_000255).
+[2026-06-28 08:28:21.164] Found 626 possible bad axioms.
+[2026-06-28 08:28:21.165] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000032 http://purl.jp/bio/11/csso/CSSO_000027).
+[2026-06-28 08:28:21.171] Found 625 possible bad axioms.
+[2026-06-28 08:28:21.171] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000240 http://purl.jp/bio/11/csso/CSSO_000254).
+[2026-06-28 08:28:21.177] Found 624 possible bad axioms.
+[2026-06-28 08:28:21.177] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000237 http://purl.jp/bio/11/csso/CSSO_000051).
+[2026-06-28 08:28:21.183] Found 623 possible bad axioms.
+[2026-06-28 08:28:21.183] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000278 http://purl.jp/bio/11/csso/CSSO_000005).
+[2026-06-28 08:28:21.189] Found 622 possible bad axioms.
+[2026-06-28 08:28:21.190] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000263 http://purl.jp/bio/11/csso/CSSO_000018).
+[2026-06-28 08:28:21.201] Found 621 possible bad axioms.
+[2026-06-28 08:28:21.202] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000206 http://purl.jp/bio/11/csso/CSSO_000294).
+[2026-06-28 08:28:21.212] Found 620 possible bad axioms.
+[2026-06-28 08:28:21.212] Selected the bad axiom SubClassOf(http://purl.jp/b
+...[truncated]
+FAIL: attempt=5 seed=56940 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+progress: ontology=CSSO attempt=5 success=0/100
+----- CSSO attempt=6 seed=71140 at 2026-06-28 08:31:12 -----
+--- stdout ---
+{"seed":71140,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147","iic_values":{},"repair_runtimes_ms":{"A1":434,"A2":154746,"A3":1647,"B1":1531,"B2":19258}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=71140, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:31:12.453] Checking precondition...
+[2026-06-28 08:31:12.479] Starting the repair...
+[2026-06-28 08:31:12.490] Found 632 possible bad axioms.
+[2026-06-28 08:31:12.492] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000302 http://purl.jp/bio/11/csso/CSSO_000009).
+[2026-06-28 08:31:12.500] Found 631 possible bad axioms.
+[2026-06-28 08:31:12.500] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000104 http://purl.jp/bio/11/csso/CSSO_000014).
+[2026-06-28 08:31:12.508] Found 630 possible bad axioms.
+[2026-06-28 08:31:12.508] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000091 http://purl.jp/bio/11/csso/CSSO_000099).
+[2026-06-28 08:31:12.521] Found 629 possible bad axioms.
+[2026-06-28 08:31:12.521] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000092 http://purl.jp/bio/11/csso/CSSO_000012).
+[2026-06-28 08:31:12.528] Found 628 possible bad axioms.
+[2026-06-28 08:31:12.528] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000241 http://purl.jp/bio/11/csso/CSSO_000001).
+[2026-06-28 08:31:12.534] Found 627 possible bad axioms.
+[2026-06-28 08:31:12.534] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000218 http://purl.jp/bio/11/csso/CSSO_000073).
+[2026-06-28 08:31:12.540] Found 626 possible bad axioms.
+[2026-06-28 08:31:12.540] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000213 http://purl.jp/bio/11/csso/CSSO_000170).
+[2026-06-28 08:31:12.547] Found 625 possible bad axioms.
+[2026-06-28 08:31:12.547] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000246 http://purl.jp/bio/11/csso/CSSO_000020).
+[2026-06-28 08:31:12.552] Found 624 possible bad axioms.
+[2026-06-28 08:31:12.553] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000300 http://purl.jp/bio/11/csso/CSSO_000291).
+[2026-06-28 08:31:12.559] Found 623 possible bad axioms.
+[2026-06-28 08:31:12.559] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000274 http://purl.jp/bio/11/csso/CSSO_000020).
+[2026-06-28 08:31:12.564] Found 622 possible bad axioms.
+[2026-06-28 08:31:12.564] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000039 http://purl.jp/bio/11/csso/CSSO_000024).
+[2026-06-28 08:31:12.576] Found 621 possible bad axioms.
+[2026-06-28 08:31:12.577] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000029 http://purl.jp/bio/11/csso/CSSO_000036).
+[2026-06-28 08:31:12.587] Found 620 possible bad axioms.
+[2026-06-28 08:31:12.587] Selected the bad axiom SubClassOf(http://purl.jp/b
+...[truncated]
+FAIL: attempt=6 seed=71140 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+progress: ontology=CSSO attempt=6 success=0/100
+----- CSSO attempt=7 seed=85340 at 2026-06-28 08:34:10 -----
+--- stdout ---
+{"seed":85340,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147","iic_values":{},"repair_runtimes_ms":{"A1":661,"A2":154127,"A3":1603,"B1":1518,"B2":16841}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=85340, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:34:10.743] Checking precondition...
+[2026-06-28 08:34:10.769] Starting the repair...
+[2026-06-28 08:34:10.780] Found 632 possible bad axioms.
+[2026-06-28 08:34:10.782] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000171 http://purl.jp/bio/11/csso/CSSO_000022).
+[2026-06-28 08:34:10.792] Found 631 possible bad axioms.
+[2026-06-28 08:34:10.792] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000129 http://purl.jp/bio/11/csso/CSSO_000146).
+[2026-06-28 08:34:10.800] Found 630 possible bad axioms.
+[2026-06-28 08:34:10.800] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000195 http://purl.jp/bio/11/csso/CSSO_000146).
+[2026-06-28 08:34:10.814] Found 629 possible bad axioms.
+[2026-06-28 08:34:10.814] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000016 http://purl.jp/bio/11/csso/CSSO_000024).
+[2026-06-28 08:34:10.821] Found 628 possible bad axioms.
+[2026-06-28 08:34:10.821] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000032 http://purl.jp/bio/11/csso/CSSO_000046).
+[2026-06-28 08:34:10.828] Found 627 possible bad axioms.
+[2026-06-28 08:34:10.828] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000085 http://purl.jp/bio/11/csso/CSSO_000171).
+[2026-06-28 08:34:10.835] Found 626 possible bad axioms.
+[2026-06-28 08:34:10.835] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000261 http://purl.jp/bio/11/csso/CSSO_000132).
+[2026-06-28 08:34:10.840] Found 625 possible bad axioms.
+[2026-06-28 08:34:10.841] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000143 http://purl.jp/bio/11/csso/CSSO_000029).
+[2026-06-28 08:34:10.847] Found 624 possible bad axioms.
+[2026-06-28 08:34:10.847] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000120 http://purl.jp/bio/11/csso/CSSO_000019).
+[2026-06-28 08:34:10.852] Found 623 possible bad axioms.
+[2026-06-28 08:34:10.852] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000123 http://purl.jp/bio/11/csso/CSSO_000032).
+[2026-06-28 08:34:10.857] Found 622 possible bad axioms.
+[2026-06-28 08:34:10.858] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000006 http://purl.jp/bio/11/csso/CSSO_000221).
+[2026-06-28 08:34:10.868] Found 621 possible bad axioms.
+[2026-06-28 08:34:10.868] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000038 http://purl.jp/bio/11/csso/CSSO_000010).
+[2026-06-28 08:34:10.878] Found 620 possible bad axioms.
+[2026-06-28 08:34:10.879] Selected the bad axiom SubClassOf(http://purl.jp/b
+...[truncated]
+FAIL: attempt=7 seed=85340 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+progress: ontology=CSSO attempt=7 success=0/100
+----- CSSO attempt=8 seed=99540 at 2026-06-28 08:37:05 -----
+--- stdout ---
+{"seed":99540,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147","iic_values":{},"repair_runtimes_ms":{"A1":579,"A2":154698,"A3":3007,"B1":1824,"B2":17930}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=99540, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:37:06.046] Checking precondition...
+[2026-06-28 08:37:06.073] Starting the repair...
+[2026-06-28 08:37:06.086] Found 632 possible bad axioms.
+[2026-06-28 08:37:06.088] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000079 owl:Nothing).
+[2026-06-28 08:37:06.095] Found 631 possible bad axioms.
+[2026-06-28 08:37:06.096] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000162 http://purl.jp/bio/11/csso/CSSO_000179).
+[2026-06-28 08:37:06.103] Found 630 possible bad axioms.
+[2026-06-28 08:37:06.104] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000032 http://purl.jp/bio/11/csso/CSSO_000224).
+[2026-06-28 08:37:06.117] Found 629 possible bad axioms.
+[2026-06-28 08:37:06.117] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000045 http://purl.jp/bio/11/csso/CSSO_000272).
+[2026-06-28 08:37:06.124] Found 628 possible bad axioms.
+[2026-06-28 08:37:06.124] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000011 http://purl.jp/bio/11/csso/CSSO_000192).
+[2026-06-28 08:37:06.131] Found 627 possible bad axioms.
+[2026-06-28 08:37:06.131] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000137 http://purl.jp/bio/11/csso/CSSO_000008).
+[2026-06-28 08:37:06.137] Found 626 possible bad axioms.
+[2026-06-28 08:37:06.138] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000207 http://purl.jp/bio/11/csso/CSSO_000280).
+[2026-06-28 08:37:06.143] Found 625 possible bad axioms.
+[2026-06-28 08:37:06.143] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000022 http://purl.jp/bio/11/csso/CSSO_000010).
+[2026-06-28 08:37:06.149] Found 624 possible bad axioms.
+[2026-06-28 08:37:06.149] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000159 http://purl.jp/bio/11/csso/CSSO_000192).
+[2026-06-28 08:37:06.155] Found 623 possible bad axioms.
+[2026-06-28 08:37:06.155] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000088 http://purl.jp/bio/11/csso/CSSO_000163).
+[2026-06-28 08:37:06.160] Found 622 possible bad axioms.
+[2026-06-28 08:37:06.161] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000046 http://purl.jp/bio/11/csso/CSSO_000151).
+[2026-06-28 08:37:06.172] Found 621 possible bad axioms.
+[2026-06-28 08:37:06.172] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000151 http://purl.jp/bio/11/csso/CSSO_000130).
+[2026-06-28 08:37:06.183] Found 620 possible bad axioms.
+[2026-06-28 08:37:06.183] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000107 http
+...[truncated]
+FAIL: attempt=8 seed=99540 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+progress: ontology=CSSO attempt=8 success=0/100
+----- CSSO attempt=9 seed=113740 at 2026-06-28 08:40:04 -----
+--- stdout ---
+{"seed":113740,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036","iic_values":{},"repair_runtimes_ms":{"A1":205,"A2":157099,"A3":1788,"B1":2033,"B2":17668}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=113740, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:40:04.634] Checking precondition...
+[2026-06-28 08:40:04.660] Starting the repair...
+[2026-06-28 08:40:04.672] Found 632 possible bad axioms.
+[2026-06-28 08:40:04.675] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000067 http://purl.jp/bio/11/csso/CSSO_000036).
+[2026-06-28 08:40:04.683] Found 631 possible bad axioms.
+[2026-06-28 08:40:04.684] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000213 http://purl.jp/bio/11/csso/CSSO_000132).
+[2026-06-28 08:40:04.692] Found 630 possible bad axioms.
+[2026-06-28 08:40:04.692] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000235 http://purl.jp/bio/11/csso/CSSO_000300).
+[2026-06-28 08:40:04.705] Found 629 possible bad axioms.
+[2026-06-28 08:40:04.706] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000188 http://purl.jp/bio/11/csso/CSSO_000022).
+[2026-06-28 08:40:04.712] Found 628 possible bad axioms.
+[2026-06-28 08:40:04.712] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000157 http://purl.jp/bio/11/csso/CSSO_000032).
+[2026-06-28 08:40:04.720] Found 627 possible bad axioms.
+[2026-06-28 08:40:04.720] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000191 http://purl.jp/bio/11/csso/CSSO_000024).
+[2026-06-28 08:40:04.727] Found 626 possible bad axioms.
+[2026-06-28 08:40:04.727] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000130 http://purl.jp/bio/11/csso/CSSO_000046).
+[2026-06-28 08:40:04.733] Found 625 possible bad axioms.
+[2026-06-28 08:40:04.733] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000198 http://purl.jp/bio/11/csso/CSSO_000192).
+[2026-06-28 08:40:04.740] Found 624 possible bad axioms.
+[2026-06-28 08:40:04.740] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000302 http://purl.jp/bio/11/csso/CSSO_000009).
+[2026-06-28 08:40:04.746] Found 623 possible bad axioms.
+[2026-06-28 08:40:04.746] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000160 http://purl.jp/bio/11/csso/CSSO_000174).
+[2026-06-28 08:40:04.751] Found 622 possible bad axioms.
+[2026-06-28 08:40:04.751] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000097 http://purl.jp/bio/11/csso/CSSO_000058).
+[2026-06-28 08:40:04.762] Found 621 possible bad axioms.
+[2026-06-28 08:40:04.762] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000197 http://purl.jp/bio/11/csso/CSSO_000266).
+[2026-06-28 08:40:04.773] Found 620 possible bad axioms.
+[2026-06-28 08:40:04.773] Selected the bad axiom SubClassOf(http://purl.jp/
+...[truncated]
+FAIL: attempt=9 seed=113740 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+progress: ontology=CSSO attempt=9 success=0/100
+----- CSSO attempt=10 seed=127940 at 2026-06-28 08:43:03 -----
+--- stdout ---
+{"seed":127940,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147","iic_values":{},"repair_runtimes_ms":{"A1":412,"A2":155621,"A3":1777,"B1":1515,"B2":17859}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CSSO.owl, seed=127940, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:43:03.977] Checking precondition...
+[2026-06-28 08:43:04.006] Starting the repair...
+[2026-06-28 08:43:04.017] Found 632 possible bad axioms.
+[2026-06-28 08:43:04.019] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000234 http://purl.jp/bio/11/csso/CSSO_000050).
+[2026-06-28 08:43:04.026] Found 631 possible bad axioms.
+[2026-06-28 08:43:04.026] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000110 http://purl.jp/bio/11/csso/CSSO_000050).
+[2026-06-28 08:43:04.034] Found 630 possible bad axioms.
+[2026-06-28 08:43:04.035] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000130 http://purl.jp/bio/11/csso/CSSO_000129).
+[2026-06-28 08:43:04.048] Found 629 possible bad axioms.
+[2026-06-28 08:43:04.048] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000050 http://purl.jp/bio/11/csso/CSSO_000069).
+[2026-06-28 08:43:04.054] Found 628 possible bad axioms.
+[2026-06-28 08:43:04.055] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000192 http://purl.jp/bio/11/csso/CSSO_000178).
+[2026-06-28 08:43:04.061] Found 627 possible bad axioms.
+[2026-06-28 08:43:04.061] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000009 http://purl.jp/bio/11/csso/CSSO_000026).
+[2026-06-28 08:43:04.067] Found 626 possible bad axioms.
+[2026-06-28 08:43:04.067] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000026 http://purl.jp/bio/11/csso/CSSO_000202).
+[2026-06-28 08:43:04.074] Found 625 possible bad axioms.
+[2026-06-28 08:43:04.074] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000069 http://purl.jp/bio/11/csso/CSSO_000050).
+[2026-06-28 08:43:04.080] Found 624 possible bad axioms.
+[2026-06-28 08:43:04.080] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000275 http://purl.jp/bio/11/csso/CSSO_000020).
+[2026-06-28 08:43:04.086] Found 623 possible bad axioms.
+[2026-06-28 08:43:04.086] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000159 http://purl.jp/bio/11/csso/CSSO_000192).
+[2026-06-28 08:43:04.092] Found 622 possible bad axioms.
+[2026-06-28 08:43:04.092] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000246 http://purl.jp/bio/11/csso/CSSO_000020).
+[2026-06-28 08:43:04.103] Found 621 possible bad axioms.
+[2026-06-28 08:43:04.103] Selected the bad axiom SubClassOf(http://purl.jp/bio/11/csso/CSSO_000130 http://purl.jp/bio/11/csso/CSSO_000151).
+[2026-06-28 08:43:04.114] Found 620 possible bad axioms.
+[2026-06-28 08:43:04.114] Selected the bad axiom SubClassOf(http://purl.jp/
+...[truncated]
+FAIL: attempt=10 seed=127940 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+progress: ontology=CSSO attempt=10 success=0/100
+=== ABORTED CSSO after 10 consecutive failures at 2026-06-28 08:46:01 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CSSO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=140 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+  attempt=2 seed=14340 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+  attempt=3 seed=28540 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+  attempt=4 seed=42740 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+  attempt=5 seed=56940 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+  attempt=6 seed=71140 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+  attempt=7 seed=85340 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+  attempt=8 seed=99540 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+  attempt=9 seed=113740 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CSSO_000147 ⊑ CSSO_000036
+  attempt=10 seed=127940 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CSSO_000147
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

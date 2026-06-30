@@ -1,0 +1,517 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ONTOMA.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ONTOMA.csv
+
+=== Starting sequential trials for ONTOMA at 2026-06-27 22:40:44 ===
+----- ONTOMA attempt=1 seed=127 at 2026-06-27 22:40:44 -----
+--- stdout ---
+{"seed":127,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale","iic_values":{},"repair_runtimes_ms":{"A1":279,"A2":35377,"A3":1707,"B1":1511,"B2":6463}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=127, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:40:44.882] Checking precondition...
+[2026-06-27 22:40:44.908] Starting the repair...
+[2026-06-27 22:40:44.918] Found 423 possible bad axioms.
+[2026-06-27 22:40:44.920] Selected the bad axiom SubClassOf(Réseau_commercial Transmission_des_connaissances).
+[2026-06-27 22:40:44.928] Found 422 possible bad axioms.
+[2026-06-27 22:40:44.928] Selected the bad axiom SubClassOf(Banderole_de_l'association_des_guérisseurs Banderole).
+[2026-06-27 22:40:44.936] Found 421 possible bad axioms.
+[2026-06-27 22:40:44.936] Selected the bad axiom SubClassOf(Effet_sur_le_système_de_santé_ Effet_organisationnel).
+[2026-06-27 22:40:44.942] Found 420 possible bad axioms.
+[2026-06-27 22:40:44.942] Selected the bad axiom ClassAssertion(La_mutulation_dentaire_additive Couronne_artisanale).
+[2026-06-27 22:40:44.945] Found 419 possible bad axioms.
+[2026-06-27 22:40:44.945] Selected the bad axiom SubClassOf(Variable_qualitative Variable_biomédicale).
+[2026-06-27 22:40:44.954] Found 418 possible bad axioms.
+[2026-06-27 22:40:44.955] Selected the bad axiom SubClassOf(Maux_d'oreille Les_maux).
+[2026-06-27 22:40:44.959] Found 417 possible bad axioms.
+[2026-06-27 22:40:44.959] Selected the bad axiom SubClassOf(Statuette Objet_en_bois).
+[2026-06-27 22:40:44.965] Found 416 possible bad axioms.
+[2026-06-27 22:40:44.965] Selected the bad axiom SubClassOf(La_mutilation_tégumentaire_ou_le_tatouage La_mutilation_bucco-dentaire).
+[2026-06-27 22:40:44.970] Found 415 possible bad axioms.
+[2026-06-27 22:40:44.970] Selected the bad axiom SubClassOf(Substance_organique Substance).
+[2026-06-27 22:40:44.975] Found 414 possible bad axioms.
+[2026-06-27 22:40:44.975] Selected the bad axiom SubClassOf(Point_de_vue_paramédical Variable_biomédicale).
+[2026-06-27 22:40:44.980] Found 413 possible bad axioms.
+[2026-06-27 22:40:44.980] Selected the bad axiom SubClassOf(Réseau_social Transmission_des_connaissances).
+[2026-06-27 22:40:44.984] Found 412 possible bad axioms.
+[2026-06-27 22:40:44.985] Selected the bad axiom SubClassOf(Maux_de_dents Les_maux).
+[2026-06-27 22:40:44.997] Found 411 possible bad axioms.
+[2026-06-27 22:40:44.998] Selected the bad axiom SubClassOf(Biomédicale Type_de_variable).
+[2026-06-27 22:40:45.003] Found 410 possible bad axioms.
+[2026-06-27 22:40:45.003] Selected the bad axiom SubClassOf(Spécialiste_en_médecine_dentaire Chirurgien_dentiste).
+[2026-06-27 22:40:45.008] Found 409 possible bad axioms.
+[2026-06-27 22:40:45.008] Selected the bad axiom SubClassOf(Coeur Organe).
+[2026-06-27 22:40:45.018] Found 408 possible bad axioms.
+[2026-06-27 22:40:45.018] Selected the bad a
+...[truncated]
+FAIL: attempt=1 seed=127 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+progress: ontology=ONTOMA attempt=1 success=0/100
+----- ONTOMA attempt=2 seed=14327 at 2026-06-27 22:41:30 -----
+--- stdout ---
+{"seed":14327,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale","iic_values":{},"repair_runtimes_ms":{"A1":404,"A2":35402,"A3":1716,"B1":1563,"B2":6231}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=14327, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:41:30.730] Checking precondition...
+[2026-06-27 22:41:30.755] Starting the repair...
+[2026-06-27 22:41:30.765] Found 423 possible bad axioms.
+[2026-06-27 22:41:30.767] Selected the bad axiom SubClassOf(Résolution_de_problème Prestation).
+[2026-06-27 22:41:30.775] Found 422 possible bad axioms.
+[2026-06-27 22:41:30.775] Selected the bad axiom SubClassOf(Idea_gravitas Gravité_traditionnelle).
+[2026-06-27 22:41:30.782] Found 421 possible bad axioms.
+[2026-06-27 22:41:30.782] Selected the bad axiom SubClassOf(Cabinet Système_de_soins).
+[2026-06-27 22:41:30.789] Found 420 possible bad axioms.
+[2026-06-27 22:41:30.789] Selected the bad axiom SubClassOf(Domaine_des_forces_visibles Champ_traditionnel).
+[2026-06-27 22:41:30.799] Found 419 possible bad axioms.
+[2026-06-27 22:41:30.800] Selected the bad axiom SubClassOf(Point_de_vue_paramédical Variable_biomédicale).
+[2026-06-27 22:41:30.805] Found 418 possible bad axioms.
+[2026-06-27 22:41:30.805] Selected the bad axiom SubClassOf(Travail Prestation).
+[2026-06-27 22:41:30.810] Found 417 possible bad axioms.
+[2026-06-27 22:41:30.811] Selected the bad axiom SubClassOf(Maux_de_nez Les_maux).
+[2026-06-27 22:41:30.816] Found 416 possible bad axioms.
+[2026-06-27 22:41:30.816] Selected the bad axiom SubClassOf(Champ_conventionnel Champ_opératoire).
+[2026-06-27 22:41:30.822] Found 415 possible bad axioms.
+[2026-06-27 22:41:30.822] Selected the bad axiom SubClassOf(Nature_de_donnée Variable_biomédicale).
+[2026-06-27 22:41:30.827] Found 414 possible bad axioms.
+[2026-06-27 22:41:30.827] Selected the bad axiom SubClassOf(Réseau_commercial Transmission_des_connaissances).
+[2026-06-27 22:41:30.831] Found 413 possible bad axioms.
+[2026-06-27 22:41:30.831] Selected the bad axiom ClassAssertion(Pays Gabon).
+[2026-06-27 22:41:30.833] Found 412 possible bad axioms.
+[2026-06-27 22:41:30.834] Selected the bad axiom SubClassOf(Les_douleurs Les_formes_de_douleur).
+[2026-06-27 22:41:30.846] Found 411 possible bad axioms.
+[2026-06-27 22:41:30.846] Selected the bad axiom SubClassOf(Douleurs_régulières Les_douleurs).
+[2026-06-27 22:41:30.851] Found 410 possible bad axioms.
+[2026-06-27 22:41:30.851] Selected the bad axiom SubClassOf(Le_conseil Prestation_médicale).
+[2026-06-27 22:41:30.855] Found 409 possible bad axioms.
+[2026-06-27 22:41:30.855] Selected the bad axiom SubClassOf(Symbole_de_plante Type_de_symbole).
+[2026-06-27 22:41:30.865] Found 408 possible bad axioms.
+[2026-06-27 22:41:30.865] Selected the bad axiom SubClassOf(Contexte_thérapeutique Contexte_sanitaire).
+[2026-06-27 22:41:30.869] Found 407 possible bad
+...[truncated]
+FAIL: attempt=2 seed=14327 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+progress: ontology=ONTOMA attempt=2 success=0/100
+----- ONTOMA attempt=3 seed=28527 at 2026-06-27 22:42:16 -----
+--- stdout ---
+{"seed":28527,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale","iic_values":{},"repair_runtimes_ms":{"A1":197,"A2":34552,"A3":1702,"B1":1494,"B2":7489}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=28527, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:42:16.546] Checking precondition...
+[2026-06-27 22:42:16.573] Starting the repair...
+[2026-06-27 22:42:16.584] Found 423 possible bad axioms.
+[2026-06-27 22:42:16.586] Selected the bad axiom SubClassOf(Réseau_commercial Transmission_des_connaissances).
+[2026-06-27 22:42:16.594] Found 422 possible bad axioms.
+[2026-06-27 22:42:16.594] Selected the bad axiom SubClassOf(Le_mal_à Le_mal).
+[2026-06-27 22:42:16.602] Found 421 possible bad axioms.
+[2026-06-27 22:42:16.602] Selected the bad axiom SubClassOf(Maux_de_reins Les_maux).
+[2026-06-27 22:42:16.609] Found 420 possible bad axioms.
+[2026-06-27 22:42:16.609] Selected the bad axiom SubClassOf(Bactérie Agent_pathogène).
+[2026-06-27 22:42:16.621] Found 419 possible bad axioms.
+[2026-06-27 22:42:16.621] Selected the bad axiom SubClassOf(Médecin_moderne Autre_acteur_de_santé).
+[2026-06-27 22:42:16.626] Found 418 possible bad axioms.
+[2026-06-27 22:42:16.627] Selected the bad axiom SubClassOf(Génie Entité_surnaturelle_ou_mystique).
+[2026-06-27 22:42:16.632] Found 417 possible bad axioms.
+[2026-06-27 22:42:16.632] Selected the bad axiom SubClassOf(Les_dieux Entité_surnaturelle_ou_mystique).
+[2026-06-27 22:42:16.638] Found 416 possible bad axioms.
+[2026-06-27 22:42:16.639] Selected the bad axiom SubClassOf(Maux_de_céphalée Les_maux).
+[2026-06-27 22:42:16.644] Found 415 possible bad axioms.
+[2026-06-27 22:42:16.644] Selected the bad axiom SubClassOf(Symbole_de_plante Symbole_de_produit).
+[2026-06-27 22:42:16.649] Found 414 possible bad axioms.
+[2026-06-27 22:42:16.650] Selected the bad axiom SubClassOf(Symbole_de_pathologie Type_de_symbole).
+[2026-06-27 22:42:16.654] Found 413 possible bad axioms.
+[2026-06-27 22:42:16.654] Selected the bad axiom SubClassOf(La_douleur_et_la_brûlure La_douleur).
+[2026-06-27 22:42:16.665] Found 412 possible bad axioms.
+[2026-06-27 22:42:16.665] Selected the bad axiom SubClassOf(Point_de_vue_historique Point_de_vue).
+[2026-06-27 22:42:16.671] Found 411 possible bad axioms.
+[2026-06-27 22:42:16.671] Selected the bad axiom SubClassOf(La_mutilation_tégumentaire_ou_le_tatouage La_mutilation_bucco-dentaire).
+[2026-06-27 22:42:16.676] Found 410 possible bad axioms.
+[2026-06-27 22:42:16.676] Selected the bad axiom SubClassOf(Maux_de_coeur Les_maux).
+[2026-06-27 22:42:16.686] Found 409 possible bad axioms.
+[2026-06-27 22:42:16.687] Selected the bad axiom SubClassOf(Médicament_traditionnel_amélioré Produit_utilisé).
+[2026-06-27 22:42:16.691] Found 408 possible bad axioms.
+[2026-06-27 22:42:16.691] Selected the bad axiom SubClassOf(Mal_de_tête Le_mal).
+[2026-06-27 22:42:16.696
+...[truncated]
+FAIL: attempt=3 seed=28527 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+progress: ontology=ONTOMA attempt=3 success=0/100
+----- ONTOMA attempt=4 seed=42727 at 2026-06-27 22:43:02 -----
+--- stdout ---
+{"seed":42727,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale","iic_values":{},"repair_runtimes_ms":{"A1":403,"A2":35154,"A3":1673,"B1":1534,"B2":7821}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=42727, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:43:02.495] Checking precondition...
+[2026-06-27 22:43:02.519] Starting the repair...
+[2026-06-27 22:43:02.529] Found 423 possible bad axioms.
+[2026-06-27 22:43:02.531] Selected the bad axiom SubClassOf(Maux_de_tête Les_maux).
+[2026-06-27 22:43:02.540] Found 422 possible bad axioms.
+[2026-06-27 22:43:02.541] Selected the bad axiom SubClassOf(Tatouge_cutané La_mutilation_tégumentaire_ou_le_tatouage).
+[2026-06-27 22:43:02.549] Found 421 possible bad axioms.
+[2026-06-27 22:43:02.550] Selected the bad axiom SubClassOf(Maux_de_tête_d'origine_tensionnelle Maux_de_tête).
+[2026-06-27 22:43:02.556] Found 420 possible bad axioms.
+[2026-06-27 22:43:02.557] Selected the bad axiom SubClassOf(Douleurs_partout Les_douleurs).
+[2026-06-27 22:43:02.567] Found 419 possible bad axioms.
+[2026-06-27 22:43:02.567] Selected the bad axiom SubClassOf(Don_naturel Transmission_des_connaissances).
+[2026-06-27 22:43:02.573] Found 418 possible bad axioms.
+[2026-06-27 22:43:02.573] Selected the bad axiom SubClassOf(Les_dieux Entité_surnaturelle_ou_mystique).
+[2026-06-27 22:43:02.578] Found 417 possible bad axioms.
+[2026-06-27 22:43:02.578] Selected the bad axiom SubClassOf(Idea_gravitas Gravité_traditionnelle).
+[2026-06-27 22:43:02.583] Found 416 possible bad axioms.
+[2026-06-27 22:43:02.584] Selected the bad axiom SubClassOf(Article_de_journal Article).
+[2026-06-27 22:43:02.588] Found 415 possible bad axioms.
+[2026-06-27 22:43:02.589] Selected the bad axiom SubClassOf(La_mastication_de_produit Pratique_médicinale_traditionnelle).
+[2026-06-27 22:43:02.594] Found 414 possible bad axioms.
+[2026-06-27 22:43:02.594] Selected the bad axiom SubClassOf(Point_de_vue_anthropologique Point_de_vue).
+[2026-06-27 22:43:02.599] Found 413 possible bad axioms.
+[2026-06-27 22:43:02.599] Selected the bad axiom SubClassOf(Maux_de_membres Les_maux).
+[2026-06-27 22:43:02.610] Found 412 possible bad axioms.
+[2026-06-27 22:43:02.611] Selected the bad axiom SubClassOf(Substance_minérale Substance).
+[2026-06-27 22:43:02.616] Found 411 possible bad axioms.
+[2026-06-27 22:43:02.616] Selected the bad axiom SubClassOf(Contexte_sanitaire Contexte).
+[2026-06-27 22:43:02.621] Found 410 possible bad axioms.
+[2026-06-27 22:43:02.621] Selected the bad axiom SubClassOf(La_pratique_du_bâtonnet_frotte-dent_ Pratique_médicinale_traditionnelle).
+[2026-06-27 22:43:02.632] Found 409 possible bad axioms.
+[2026-06-27 22:43:02.632] Selected the bad axiom SubClassOf(Douleurs_chroniques Les_douleurs).
+[2026-06-27 22:43:02.636] Found 408 possible bad axioms.
+[2026-06-27 22:43:02.637] Selected the bad axiom SubClas
+...[truncated]
+FAIL: attempt=4 seed=42727 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+progress: ontology=ONTOMA attempt=4 success=0/100
+----- ONTOMA attempt=5 seed=56927 at 2026-06-27 22:43:49 -----
+--- stdout ---
+{"seed":56927,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale","iic_values":{},"repair_runtimes_ms":{"A1":729,"A2":34558,"A3":1762,"B1":1534,"B2":8288}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=56927, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:43:49.582] Checking precondition...
+[2026-06-27 22:43:49.606] Starting the repair...
+[2026-06-27 22:43:49.617] Found 423 possible bad axioms.
+[2026-06-27 22:43:49.618] Selected the bad axiom SubClassOf(Point_de_vue_sociologique Point_de_vue).
+[2026-06-27 22:43:49.626] Found 422 possible bad axioms.
+[2026-06-27 22:43:49.627] Selected the bad axiom SubClassOf(Dessin Symbole).
+[2026-06-27 22:43:49.635] Found 421 possible bad axioms.
+[2026-06-27 22:43:49.635] Selected the bad axiom SubClassOf(Evènement_culturel Evènement_familial).
+[2026-06-27 22:43:49.642] Found 420 possible bad axioms.
+[2026-06-27 22:43:49.642] Selected the bad axiom ClassAssertion(Pays Mali).
+[2026-06-27 22:43:49.644] Found 419 possible bad axioms.
+[2026-06-27 22:43:49.645] Selected the bad axiom SubClassOf(La_chique_du_tabac La_chique).
+[2026-06-27 22:43:49.655] Found 418 possible bad axioms.
+[2026-06-27 22:43:49.655] Selected the bad axiom SubClassOf(Enjeu_règlementaire_national Enjeu_règlementaire).
+[2026-06-27 22:43:49.661] Found 417 possible bad axioms.
+[2026-06-27 22:43:49.661] Selected the bad axiom SubClassOf(Réference_non-réligieuse Réference).
+[2026-06-27 22:43:49.667] Found 416 possible bad axioms.
+[2026-06-27 22:43:49.667] Selected the bad axiom SubClassOf(Maux_de_hanche Les_maux).
+[2026-06-27 22:43:49.672] Found 415 possible bad axioms.
+[2026-06-27 22:43:49.672] Selected the bad axiom SubClassOf(Effet_thérapeutique Effet_médical).
+[2026-06-27 22:43:49.677] Found 414 possible bad axioms.
+[2026-06-27 22:43:49.677] Selected the bad axiom SubClassOf(Monnaie Tarification).
+[2026-06-27 22:43:49.682] Found 413 possible bad axioms.
+[2026-06-27 22:43:49.682] Selected the bad axiom SubClassOf(Système_de_santé_Burkina_Faso Système_de_santé).
+[2026-06-27 22:43:49.688] Found 412 possible bad axioms.
+[2026-06-27 22:43:49.688] Selected the bad axiom SubClassOf(Province Localisation_sociale_ou_géostratégique).
+[2026-06-27 22:43:49.698] Found 411 possible bad axioms.
+[2026-06-27 22:43:49.699] Selected the bad axiom SubClassOf(Médecin_moderne Acteur_de_santé).
+[2026-06-27 22:43:49.704] Found 410 possible bad axioms.
+[2026-06-27 22:43:49.704] Selected the bad axiom SubClassOf(Douleurs_corporelles Les_douleurs).
+[2026-06-27 22:43:49.709] Found 409 possible bad axioms.
+[2026-06-27 22:43:49.709] Selected the bad axiom ClassAssertion(Langue Bobo).
+[2026-06-27 22:43:49.711] Found 408 possible bad axioms.
+[2026-06-27 22:43:49.711] Selected the bad axiom SubClassOf(Cabinet Système_de_soins).
+[2026-06-27 22:43:49.721] Found 407 possible bad axioms.
+[2026-06-27 22:43:49.721] Selected
+...[truncated]
+FAIL: attempt=5 seed=56927 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+progress: ontology=ONTOMA attempt=5 success=0/100
+----- ONTOMA attempt=6 seed=71127 at 2026-06-27 22:44:36 -----
+--- stdout ---
+{"seed":71127,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)","iic_values":{},"repair_runtimes_ms":{"A1":462,"A2":34483,"A3":1714,"B1":830,"B2":1226,"B3":5855}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=71127, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:44:36.977] Checking precondition...
+[2026-06-27 22:44:37.002] Starting the repair...
+[2026-06-27 22:44:37.012] Found 423 possible bad axioms.
+[2026-06-27 22:44:37.013] Selected the bad axiom SubClassOf(Douleurs_partout Les_douleurs).
+[2026-06-27 22:44:37.021] Found 422 possible bad axioms.
+[2026-06-27 22:44:37.023] Selected the bad axiom SubClassOf(Bactérie Agent_pathogène).
+[2026-06-27 22:44:37.030] Found 421 possible bad axioms.
+[2026-06-27 22:44:37.030] Selected the bad axiom SubClassOf(Système_de_santé_anglais Système_de_santé).
+[2026-06-27 22:44:37.036] Found 420 possible bad axioms.
+[2026-06-27 22:44:37.036] Selected the bad axiom SubClassOf(Caste Donnée_ethnique).
+[2026-06-27 22:44:37.046] Found 419 possible bad axioms.
+[2026-06-27 22:44:37.047] Selected the bad axiom SubClassOf(Mauvais_oeil Entité_surnaturelle_ou_mystique).
+[2026-06-27 22:44:37.052] Found 418 possible bad axioms.
+[2026-06-27 22:44:37.052] Selected the bad axiom SubClassOf(Autre_type Type_de_variable).
+[2026-06-27 22:44:37.058] Found 417 possible bad axioms.
+[2026-06-27 22:44:37.058] Selected the bad axiom SubClassOf(Traitement_médicamenteux Contexte_thérapeutique).
+[2026-06-27 22:44:37.064] Found 416 possible bad axioms.
+[2026-06-27 22:44:37.064] Selected the bad axiom SubClassOf(Autre_acteur_de_santé Acteur_de_santé).
+[2026-06-27 22:44:37.070] Found 415 possible bad axioms.
+[2026-06-27 22:44:37.070] Selected the bad axiom ClassAssertion(Pays France).
+[2026-06-27 22:44:37.072] Found 414 possible bad axioms.
+[2026-06-27 22:44:37.072] Selected the bad axiom SubClassOf(Système_de_santé_américain Système_de_santé).
+[2026-06-27 22:44:37.077] Found 413 possible bad axioms.
+[2026-06-27 22:44:37.077] Selected the bad axiom SubClassOf(Effet_inconnu Effet_médical).
+[2026-06-27 22:44:37.082] Found 412 possible bad axioms.
+[2026-06-27 22:44:37.082] Selected the bad axiom SubClassOf(Enjeu_économique Enjeu_de_la_valorisation_de_la_médecine_traditionnelle).
+[2026-06-27 22:44:37.093] Found 411 possible bad axioms.
+[2026-06-27 22:44:37.093] Selected the bad axiom SubClassOf(Thérapeute Tradipraticien).
+[2026-06-27 22:44:37.098] Found 410 possible bad axioms.
+[2026-06-27 22:44:37.098] Selected the bad axiom SubClassOf(Effet_organisationnel Effet).
+[2026-06-27 22:44:37.103] Found 409 possible bad axioms.
+[2026-06-27 22:44:37.104] Selected the bad axiom SubClassOf(Point_de_vue_paramédical Variable_biomédicale).
+[2026-06-27 22:44:37.114] Found 408 possible bad axioms.
+[2026-06-27 22:44:37.114] Selected the bad axiom SubClassOf(Maux_d'oreilles Les_maux).
+[2026-06-27 22:44:37.119] Fo
+...[truncated]
+FAIL: attempt=6 seed=71127 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+progress: ontology=ONTOMA attempt=6 success=0/100
+----- ONTOMA attempt=7 seed=85327 at 2026-06-27 22:45:21 -----
+--- stdout ---
+{"seed":85327,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)","iic_values":{},"repair_runtimes_ms":{"A1":543,"A2":35253,"A3":1552,"B1":1356,"B2":7064}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=85327, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:45:22.081] Checking precondition...
+[2026-06-27 22:45:22.107] Starting the repair...
+[2026-06-27 22:45:22.117] Found 423 possible bad axioms.
+[2026-06-27 22:45:22.119] Selected the bad axiom SubClassOf(Chirurgien_dentiste Médecin_moderne).
+[2026-06-27 22:45:22.127] Found 422 possible bad axioms.
+[2026-06-27 22:45:22.129] Selected the bad axiom SubClassOf(Union_européenne Zone_géostratégique).
+[2026-06-27 22:45:22.137] Found 421 possible bad axioms.
+[2026-06-27 22:45:22.137] Selected the bad axiom SubClassOf(Inocuité Effet_thérapeutique).
+[2026-06-27 22:45:22.144] Found 420 possible bad axioms.
+[2026-06-27 22:45:22.144] Selected the bad axiom SubClassOf(Bannière_publicitaire Bannière).
+[2026-06-27 22:45:22.155] Found 419 possible bad axioms.
+[2026-06-27 22:45:22.155] Selected the bad axiom SubClassOf(Journal Support_de_communication).
+[2026-06-27 22:45:22.161] Found 418 possible bad axioms.
+[2026-06-27 22:45:22.161] Selected the bad axiom SubClassOf(Point_de_vue_sémantique Point_de_vue).
+[2026-06-27 22:45:22.166] Found 417 possible bad axioms.
+[2026-06-27 22:45:22.166] Selected the bad axiom SubClassOf(Effet_organisationnel Effet).
+[2026-06-27 22:45:22.172] Found 416 possible bad axioms.
+[2026-06-27 22:45:22.172] Selected the bad axiom SubClassOf(Rein Organe).
+[2026-06-27 22:45:22.178] Found 415 possible bad axioms.
+[2026-06-27 22:45:22.179] Selected the bad axiom SubClassOf(Coeur Organe).
+[2026-06-27 22:45:22.183] Found 414 possible bad axioms.
+[2026-06-27 22:45:22.184] Selected the bad axiom SubClassOf(Discipline_de_médecine_conventionnelle Discipline).
+[2026-06-27 22:45:22.188] Found 413 possible bad axioms.
+[2026-06-27 22:45:22.188] Selected the bad axiom SubClassOf(Effet_comportemental Effet_individuel).
+[2026-06-27 22:45:22.197] Found 412 possible bad axioms.
+[2026-06-27 22:45:22.198] Selected the bad axiom SubClassOf(Biomédicale Biologique).
+[2026-06-27 22:45:22.202] Found 411 possible bad axioms.
+[2026-06-27 22:45:22.203] Selected the bad axiom SubClassOf(Objet_en_terre Objet).
+[2026-06-27 22:45:22.208] Found 410 possible bad axioms.
+[2026-06-27 22:45:22.208] Selected the bad axiom SubClassOf(Adulte Etat_physiopathologique).
+[2026-06-27 22:45:22.218] Found 409 possible bad axioms.
+[2026-06-27 22:45:22.219] Selected the bad axiom SubClassOf(Prix Tarification).
+[2026-06-27 22:45:22.223] Found 408 possible bad axioms.
+[2026-06-27 22:45:22.223] Selected the bad axiom SubClassOf(Médecine_traditionnelle Modèle_de_biomédecine).
+[2026-06-27 22:45:22.227] Found 407 possible bad axioms.
+[2026-06-27 22:45:22.227] Selected the bad axiom Su
+...[truncated]
+FAIL: attempt=7 seed=85327 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+progress: ontology=ONTOMA attempt=7 success=0/100
+----- ONTOMA attempt=8 seed=99527 at 2026-06-27 22:46:07 -----
+--- stdout ---
+{"seed":99527,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)","iic_values":{},"repair_runtimes_ms":{"A1":202,"A2":35482,"A3":1760,"B1":1560,"B2":8240}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=99527, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:46:08.353] Checking precondition...
+[2026-06-27 22:46:08.378] Starting the repair...
+[2026-06-27 22:46:08.388] Found 423 possible bad axioms.
+[2026-06-27 22:46:08.390] Selected the bad axiom SubClassOf(Don_naturel Transmission_des_connaissances).
+[2026-06-27 22:46:08.398] Found 422 possible bad axioms.
+[2026-06-27 22:46:08.398] Selected the bad axiom SubClassOf(Bouche Topographie).
+[2026-06-27 22:46:08.405] Found 421 possible bad axioms.
+[2026-06-27 22:46:08.405] Selected the bad axiom SubClassOf(owl:Thing ObjectComplementOf(Variable_biomédicale)).
+[2026-06-27 22:46:08.411] Found 420 possible bad axioms.
+[2026-06-27 22:46:08.412] Selected the bad axiom SubClassOf(Téléphone Nouvelles_Technologies_de_l'Information_et_de_la_Communication).
+[2026-06-27 22:46:08.422] Found 419 possible bad axioms.
+[2026-06-27 22:46:08.422] Selected the bad axiom SubClassOf(Structure_sanitaire_conventionnelle Système_de_soins).
+[2026-06-27 22:46:08.428] Found 418 possible bad axioms.
+[2026-06-27 22:46:08.428] Selected the bad axiom SubClassOf(La_mastication_de_produit Pratique_médicinale_traditionnelle).
+[2026-06-27 22:46:08.433] Found 417 possible bad axioms.
+[2026-06-27 22:46:08.433] Selected the bad axiom SubClassOf(Mal_traiter Le_mal).
+[2026-06-27 22:46:08.438] Found 416 possible bad axioms.
+[2026-06-27 22:46:08.439] Selected the bad axiom SubClassOf(Contrôle_qualité Enjeu_thérapeutique).
+[2026-06-27 22:46:08.443] Found 415 possible bad axioms.
+[2026-06-27 22:46:08.444] Selected the bad axiom ClassAssertion(Ville Bobo-Dioulasso).
+[2026-06-27 22:46:08.446] Found 414 possible bad axioms.
+[2026-06-27 22:46:08.446] Selected the bad axiom SubClassOf(Site_web Support_de_communication).
+[2026-06-27 22:46:08.451] Found 413 possible bad axioms.
+[2026-06-27 22:46:08.451] Selected the bad axiom SubClassOf(Signal Element_de_pharmacovigilance).
+[2026-06-27 22:46:08.456] Found 412 possible bad axioms.
+[2026-06-27 22:46:08.457] Selected the bad axiom SubClassOf(Marabout Tradipraticien).
+[2026-06-27 22:46:08.468] Found 411 possible bad axioms.
+[2026-06-27 22:46:08.469] Selected the bad axiom SubClassOf(Les_douleurs Les_formes_de_douleur).
+[2026-06-27 22:46:08.474] Found 410 possible bad axioms.
+[2026-06-27 22:46:08.474] Selected the bad axiom SubClassOf(Découragement_du_mal Le_mal).
+[2026-06-27 22:46:08.478] Found 409 possible bad axioms.
+[2026-06-27 22:46:08.479] Selected the bad axiom SubClassOf(Douleurs_par_stimulation Les_douleurs).
+[2026-06-27 22:46:08.488] Found 408 possible bad axioms.
+[2026-06-27 22:46:08.489] Selected the bad axiom SubClassOf(Besoin_en_soins_m
+...[truncated]
+FAIL: attempt=8 seed=99527 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+progress: ontology=ONTOMA attempt=8 success=0/100
+----- ONTOMA attempt=9 seed=113727 at 2026-06-27 22:46:55 -----
+--- stdout ---
+{"seed":113727,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)","iic_values":{},"repair_runtimes_ms":{"A1":101,"A2":34633,"A3":1678,"B1":816,"B2":8082}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=113727, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:46:56.093] Checking precondition...
+[2026-06-27 22:46:56.118] Starting the repair...
+[2026-06-27 22:46:56.128] Found 423 possible bad axioms.
+[2026-06-27 22:46:56.130] Selected the bad axiom SubClassOf(La_pratique_du_bâtonnet_frotte-dent_ Pratique_médicinale_traditionnelle).
+[2026-06-27 22:46:56.138] Found 422 possible bad axioms.
+[2026-06-27 22:46:56.139] Selected the bad axiom SubClassOf(Journal Support_de_communication).
+[2026-06-27 22:46:56.148] Found 421 possible bad axioms.
+[2026-06-27 22:46:56.148] Selected the bad axiom SubClassOf(Donnée_paramédicale Nature_de_donnée).
+[2026-06-27 22:46:56.155] Found 420 possible bad axioms.
+[2026-06-27 22:46:56.155] Selected the bad axiom SubClassOf(Douleurs_régulières Les_douleurs).
+[2026-06-27 22:46:56.165] Found 419 possible bad axioms.
+[2026-06-27 22:46:56.166] Selected the bad axiom ClassAssertion(Langue Dioula).
+[2026-06-27 22:46:56.167] Found 418 possible bad axioms.
+[2026-06-27 22:46:56.168] Selected the bad axiom SubClassOf(Contexte_familial Contexte).
+[2026-06-27 22:46:56.173] Found 417 possible bad axioms.
+[2026-06-27 22:46:56.174] Selected the bad axiom SubClassOf(Réference_non-réligieuse Réference).
+[2026-06-27 22:46:56.179] Found 416 possible bad axioms.
+[2026-06-27 22:46:56.179] Selected the bad axiom SubClassOf(Tradipraticien Acteur_de_santé).
+[2026-06-27 22:46:56.184] Found 415 possible bad axioms.
+[2026-06-27 22:46:56.185] Selected the bad axiom SubClassOf(Variable_holistique Variable_biomédicale).
+[2026-06-27 22:46:56.190] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 22:46:56.191] Checking precondition...
+[2026-06-27 22:46:56.202] Starting the repair...
+[2026-06-27 22:47:30.821] Found 2 possible bad axioms.
+[2026-06-27 22:47:30.821] Selected the bad axiom SubClassOf(Variable_holistique Variable_biomédicale).
+[2026-06-27 22:47:30.824] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 22:47:30.825] Checking precondition...
+[2026-06-27 22:47:30.829] Starting the repair...
+[2026-06-27 22:47:30.857] Selected a reference ontology with 873 axioms.
+[2026-06-27 22:47:31.618] Selected the bad axiom ClassAssertion(Variable_holistique Gabon).
+[2026-06-27 22:47:32.499] Selected the weaker axiom ClassAssertion(Douleurs_régulières Gabon).
+[2026-06-27 22:47:32.503] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 22:47:32.503] Checking precondition...
+[2026-06-27 22:47:32.507] Starting the repair...
+[2026-06-27 22:47:32.537] Selected a reference ontology w
+...[truncated]
+FAIL: attempt=9 seed=113727 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+progress: ontology=ONTOMA attempt=9 success=0/100
+----- ONTOMA attempt=10 seed=127927 at 2026-06-27 22:47:41 -----
+--- stdout ---
+{"seed":127927,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)","iic_values":{},"repair_runtimes_ms":{"A1":154,"A2":34407,"A3":1684,"B1":1545,"B2":7445}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONTOMA.owl, seed=127927, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:47:41.932] Checking precondition...
+[2026-06-27 22:47:41.964] Starting the repair...
+[2026-06-27 22:47:41.973] Found 423 possible bad axioms.
+[2026-06-27 22:47:41.975] Selected the bad axiom SubClassOf(Réseau_commercial Transmission_des_connaissances).
+[2026-06-27 22:47:41.982] Found 422 possible bad axioms.
+[2026-06-27 22:47:41.983] Selected the bad axiom SubClassOf(Autre_type Biologique).
+[2026-06-27 22:47:41.990] Found 421 possible bad axioms.
+[2026-06-27 22:47:41.990] Selected the bad axiom SubClassOf(Etat_général Contexte_médical).
+[2026-06-27 22:47:41.998] Found 420 possible bad axioms.
+[2026-06-27 22:47:41.999] Selected the bad axiom SubClassOf(Les_djinns Entité_surnaturelle_ou_mystique).
+[2026-06-27 22:47:42.009] Found 419 possible bad axioms.
+[2026-06-27 22:47:42.010] Selected the bad axiom SubClassOf(Maux_de_nombril Les_maux).
+[2026-06-27 22:47:42.015] Found 418 possible bad axioms.
+[2026-06-27 22:47:42.016] Selected the bad axiom ClassAssertion(Pays Angleterre).
+[2026-06-27 22:47:42.017] Found 417 possible bad axioms.
+[2026-06-27 22:47:42.018] Selected the bad axiom SubClassOf(Tradipraticien_généraliste Tradipraticien).
+[2026-06-27 22:47:42.023] Found 416 possible bad axioms.
+[2026-06-27 22:47:42.024] Selected the bad axiom SubClassOf(Nom_du_village Donnée_ethnique).
+[2026-06-27 22:47:42.029] Found 415 possible bad axioms.
+[2026-06-27 22:47:42.029] Selected the bad axiom SubClassOf(Clan Donnée_ethnique).
+[2026-06-27 22:47:42.033] Found 414 possible bad axioms.
+[2026-06-27 22:47:42.034] Selected the bad axiom SubClassOf(Rein Organe).
+[2026-06-27 22:47:42.038] Found 413 possible bad axioms.
+[2026-06-27 22:47:42.038] Selected the bad axiom SubClassOf(La_pratique_du_bâtonnet_frotte-dent_ Pratique_médicinale_traditionnelle).
+[2026-06-27 22:47:42.042] Found 412 possible bad axioms.
+[2026-06-27 22:47:42.042] Selected the bad axiom SubClassOf(Environnement_social Contexte).
+[2026-06-27 22:47:42.053] Found 411 possible bad axioms.
+[2026-06-27 22:47:42.053] Selected the bad axiom SubClassOf(Département Localisation_sociale_ou_géostratégique).
+[2026-06-27 22:47:42.058] Found 410 possible bad axioms.
+[2026-06-27 22:47:42.058] Selected the bad axiom SubClassOf(Indication Effet_thérapeutique).
+[2026-06-27 22:47:42.063] Found 409 possible bad axioms.
+[2026-06-27 22:47:42.063] Selected the bad axiom SubClassOf(Domaine_des_forces_visibles Domaine_des_forces_invisibles).
+[2026-06-27 22:47:42.073] Found 408 possible bad axioms.
+[2026-06-27 22:47:42.073] Selected the bad axiom SubClassOf(Domaine_des_forces_visibles Champ_traditionnel).
+[2026-
+...[truncated]
+FAIL: attempt=10 seed=127927 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+progress: ontology=ONTOMA attempt=10 success=0/100
+=== ABORTED ONTOMA after 10 consecutive failures at 2026-06-27 22:48:27 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ONTOMA - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=127 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+  attempt=2 seed=14327 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+  attempt=3 seed=28527 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+  attempt=4 seed=42727 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+  attempt=5 seed=56927 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique ⊑ Variable_biomédicale
+  attempt=6 seed=71127 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+  attempt=7 seed=85327 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+  attempt=8 seed=99527 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+  attempt=9 seed=113727 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+  attempt=10 seed=127927 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Variable_holistique(Gabon)
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

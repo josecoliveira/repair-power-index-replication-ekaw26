@@ -1,0 +1,545 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-MHIO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-MHIO.csv
+
+=== Starting sequential trials for MHIO at 2026-06-28 07:26:42 ===
+----- MHIO attempt=1 seed=137 at 2026-06-28 07:26:42 -----
+--- stdout ---
+{"seed":137,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018","iic_values":{},"repair_runtimes_ms":{"A1":172,"A2":102093,"A3":1568,"B1":1928,"B2":9507}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=137, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:26:43.126] Checking precondition...
+[2026-06-28 07:26:43.151] Starting the repair...
+[2026-06-28 07:26:43.162] Found 594 possible bad axioms.
+[2026-06-28 07:26:43.164] Selected the bad axiom SubClassOf(MH_0000260 MH_0000026).
+[2026-06-28 07:26:43.172] Found 593 possible bad axioms.
+[2026-06-28 07:26:43.173] Selected the bad axiom SubClassOf(MH_0000204 MH_0000015).
+[2026-06-28 07:26:43.180] Found 592 possible bad axioms.
+[2026-06-28 07:26:43.181] Selected the bad axiom SubClassOf(MH_0000293 MH_0000036).
+[2026-06-28 07:26:43.193] Found 591 possible bad axioms.
+[2026-06-28 07:26:43.193] Selected the bad axiom SubClassOf(MH_0000195 owl:Nothing).
+[2026-06-28 07:26:43.200] Found 590 possible bad axioms.
+[2026-06-28 07:26:43.200] Selected the bad axiom SubClassOf(MH_0000255 MH_0000248).
+[2026-06-28 07:26:43.208] Found 589 possible bad axioms.
+[2026-06-28 07:26:43.208] Selected the bad axiom SubClassOf(MH_0000067 MH_0000006).
+[2026-06-28 07:26:43.215] Found 588 possible bad axioms.
+[2026-06-28 07:26:43.216] Selected the bad axiom SubClassOf(MH_0000041 MH_0000003).
+[2026-06-28 07:26:43.222] Found 587 possible bad axioms.
+[2026-06-28 07:26:43.223] Selected the bad axiom SubClassOf(MH_0000339 MH_0000036).
+[2026-06-28 07:26:43.228] Found 586 possible bad axioms.
+[2026-06-28 07:26:43.228] Selected the bad axiom SubClassOf(MH_0000191 MH_0000033).
+[2026-06-28 07:26:43.233] Found 585 possible bad axioms.
+[2026-06-28 07:26:43.234] Selected the bad axiom SubClassOf(MH_0000077 MH_0000009).
+[2026-06-28 07:26:43.238] Found 584 possible bad axioms.
+[2026-06-28 07:26:43.239] Selected the bad axiom SubClassOf(MH_0000185 MH_0000181).
+[2026-06-28 07:26:43.249] Found 583 possible bad axioms.
+[2026-06-28 07:26:43.250] Selected the bad axiom SubClassOf(MH_0000105 owl:Nothing).
+[2026-06-28 07:26:43.260] Found 582 possible bad axioms.
+[2026-06-28 07:26:43.260] Selected the bad axiom SubClassOf(MH_0000215 MH_0000015).
+[2026-06-28 07:26:43.266] Found 581 possible bad axioms.
+[2026-06-28 07:26:43.266] Selected the bad axiom SubClassOf(MH_0000345 MH_0000349).
+[2026-06-28 07:26:43.271] Found 580 possible bad axioms.
+[2026-06-28 07:26:43.271] Selected the bad axiom SubClassOf(MH_0000271 MH_0000016).
+[2026-06-28 07:26:43.275] Found 579 possible bad axioms.
+[2026-06-28 07:26:43.276] Selected the bad axiom SubClassOf(MH_0000294 MH_0000036).
+[2026-06-28 07:26:43.280] Found 578 possible bad axioms.
+[2026-06-28 07:26:43.280] Selected the bad axiom SubClassOf(MH_0000021 owl:Nothing).
+[2026-06-28 07:26:43.284] Found 577 possible bad axioms.
+[2026-06-28 07:26:43.284] Selected the bad
+...[truncated]
+FAIL: attempt=1 seed=137 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+progress: ontology=MHIO attempt=1 success=0/100
+----- MHIO attempt=2 seed=14337 at 2026-06-28 07:28:38 -----
+--- stdout ---
+{"seed":14337,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000018 ⊑ MH_0000017","iic_values":{},"repair_runtimes_ms":{"A1":281,"A2":103309,"A3":2867,"B1":1409,"B2":10679}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=14337, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:28:38.895] Checking precondition...
+[2026-06-28 07:28:38.921] Starting the repair...
+[2026-06-28 07:28:38.932] Found 594 possible bad axioms.
+[2026-06-28 07:28:38.934] Selected the bad axiom SubClassOf(MH_0000028 MH_0000027).
+[2026-06-28 07:28:38.942] Found 593 possible bad axioms.
+[2026-06-28 07:28:38.943] Selected the bad axiom SubClassOf(MH_0000348 MH_0000036).
+[2026-06-28 07:28:38.951] Found 592 possible bad axioms.
+[2026-06-28 07:28:38.952] Selected the bad axiom SubClassOf(MH_0000091 MH_0000011).
+[2026-06-28 07:28:38.965] Found 591 possible bad axioms.
+[2026-06-28 07:28:38.966] Selected the bad axiom SubClassOf(MH_0000118 MH_0000021).
+[2026-06-28 07:28:38.972] Found 590 possible bad axioms.
+[2026-06-28 07:28:38.973] Selected the bad axiom SubClassOf(MH_0000056 MH_0000003).
+[2026-06-28 07:28:38.979] Found 589 possible bad axioms.
+[2026-06-28 07:28:38.979] Selected the bad axiom SubClassOf(MH_0000304 MH_0000036).
+[2026-06-28 07:28:38.985] Found 588 possible bad axioms.
+[2026-06-28 07:28:38.985] Selected the bad axiom SubClassOf(MH_0000097 MH_0000104).
+[2026-06-28 07:28:38.991] Found 587 possible bad axioms.
+[2026-06-28 07:28:38.992] Selected the bad axiom SubClassOf(MH_0000089 MH_0000087).
+[2026-06-28 07:28:38.997] Found 586 possible bad axioms.
+[2026-06-28 07:28:38.997] Selected the bad axiom SubClassOf(MH_0000290 MH_0000036).
+[2026-06-28 07:28:39.003] Found 585 possible bad axioms.
+[2026-06-28 07:28:39.003] Selected the bad axiom SubClassOf(MH_0000102 owl:Nothing).
+[2026-06-28 07:28:39.008] Found 584 possible bad axioms.
+[2026-06-28 07:28:39.009] Selected the bad axiom SubClassOf(MH_0000147 MH_0000025).
+[2026-06-28 07:28:39.019] Found 583 possible bad axioms.
+[2026-06-28 07:28:39.019] Selected the bad axiom SubClassOf(MH_0000210 MH_0000015).
+[2026-06-28 07:28:39.029] Found 582 possible bad axioms.
+[2026-06-28 07:28:39.030] Selected the bad axiom SubClassOf(MH_0000220 MH_0000217).
+[2026-06-28 07:28:39.035] Found 581 possible bad axioms.
+[2026-06-28 07:28:39.035] Selected the bad axiom SubClassOf(MH_0000043 MH_0000038).
+[2026-06-28 07:28:39.039] Found 580 possible bad axioms.
+[2026-06-28 07:28:39.040] Selected the bad axiom SubClassOf(MH_0000093 MH_0000091).
+[2026-06-28 07:28:39.044] Found 579 possible bad axioms.
+[2026-06-28 07:28:39.044] Selected the bad axiom SubClassOf(MH_0000329 MH_0000036).
+[2026-06-28 07:28:39.049] Found 578 possible bad axioms.
+[2026-06-28 07:28:39.049] Selected the bad axiom SubClassOf(MH_0000138 MH_0000022).
+[2026-06-28 07:28:39.053] Found 577 possible bad axioms.
+[2026-06-28 07:28:39.053] Selected the bad
+...[truncated]
+FAIL: attempt=2 seed=14337 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000018 ⊑ MH_0000017
+progress: ontology=MHIO attempt=2 success=0/100
+----- MHIO attempt=3 seed=28537 at 2026-06-28 07:30:37 -----
+--- stdout ---
+{"seed":28537,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":220,"A2":101954,"A3":1579,"B1":1370,"B2":2206,"B3":8867}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=28537, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:30:37.947] Checking precondition...
+[2026-06-28 07:30:37.972] Starting the repair...
+[2026-06-28 07:30:37.983] Found 594 possible bad axioms.
+[2026-06-28 07:30:37.984] Selected the bad axiom SubClassOf(MH_0000182 MH_0000032).
+[2026-06-28 07:30:37.992] Found 593 possible bad axioms.
+[2026-06-28 07:30:37.993] Selected the bad axiom SubClassOf(MH_0000084 MH_0000009).
+[2026-06-28 07:30:38.000] Found 592 possible bad axioms.
+[2026-06-28 07:30:38.001] Selected the bad axiom SubClassOf(MH_0000347 MH_0000363).
+[2026-06-28 07:30:38.014] Found 591 possible bad axioms.
+[2026-06-28 07:30:38.014] Selected the bad axiom SubClassOf(MH_0000316 MH_0000036).
+[2026-06-28 07:30:38.021] Found 590 possible bad axioms.
+[2026-06-28 07:30:38.021] Selected the bad axiom SubClassOf(MH_0000093 MH_0000091).
+[2026-06-28 07:30:38.027] Found 589 possible bad axioms.
+[2026-06-28 07:30:38.028] Selected the bad axiom SubClassOf(MH_0000322 MH_0000036).
+[2026-06-28 07:30:38.033] Found 588 possible bad axioms.
+[2026-06-28 07:30:38.033] Selected the bad axiom SubClassOf(MH_0000053 MH_0000003).
+[2026-06-28 07:30:38.039] Found 587 possible bad axioms.
+[2026-06-28 07:30:38.039] Selected the bad axiom SubClassOf(MH_0000286 MH_0000353).
+[2026-06-28 07:30:38.044] Found 586 possible bad axioms.
+[2026-06-28 07:30:38.045] Selected the bad axiom SubClassOf(MH_0000032 MH_0000031).
+[2026-06-28 07:30:38.050] Found 585 possible bad axioms.
+[2026-06-28 07:30:38.050] Selected the bad axiom SubClassOf(MH_0000068 MH_0000006).
+[2026-06-28 07:30:38.057] Found 584 possible bad axioms.
+[2026-06-28 07:30:38.057] Selected the bad axiom SubClassOf(MH_0000294 MH_0000036).
+[2026-06-28 07:30:38.068] Found 583 possible bad axioms.
+[2026-06-28 07:30:38.068] Selected the bad axiom SubClassOf(MH_0000101 MH_0000097).
+[2026-06-28 07:30:38.079] Found 582 possible bad axioms.
+[2026-06-28 07:30:38.080] Selected the bad axiom SubClassOf(MH_0000013 MH_0000005).
+[2026-06-28 07:30:38.085] Found 581 possible bad axioms.
+[2026-06-28 07:30:38.085] Selected the bad axiom SubClassOf(MH_0000070 MH_0000068).
+[2026-06-28 07:30:38.089] Found 580 possible bad axioms.
+[2026-06-28 07:30:38.090] Selected the bad axiom SubClassOf(MH_0000301 MH_0000036).
+[2026-06-28 07:30:38.094] Found 579 possible bad axioms.
+[2026-06-28 07:30:38.094] Selected the bad axiom SubClassOf(MH_0000070 MH_0000006).
+[2026-06-28 07:30:38.098] Found 578 possible bad axioms.
+[2026-06-28 07:30:38.098] Selected the bad axiom SubClassOf(MH_0000238 MH_0000014).
+[2026-06-28 07:30:38.103] Found 577 possible bad axioms.
+[2026-06-28 07:30:38.103] Selected the bad 
+...[truncated]
+FAIL: attempt=3 seed=28537 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+progress: ontology=MHIO attempt=3 success=0/100
+----- MHIO attempt=4 seed=42737 at 2026-06-28 07:32:34 -----
+--- stdout ---
+{"seed":42737,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":598,"A2":101933,"A3":2873,"B1":2835,"B2":2193,"B3":6647}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=42737, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:32:34.652] Checking precondition...
+[2026-06-28 07:32:34.679] Starting the repair...
+[2026-06-28 07:32:34.693] Found 594 possible bad axioms.
+[2026-06-28 07:32:34.695] Selected the bad axiom SubClassOf(MH_0000236 MH_0000014).
+[2026-06-28 07:32:34.703] Found 593 possible bad axioms.
+[2026-06-28 07:32:34.704] Selected the bad axiom SubClassOf(MH_0000345 MH_0000326).
+[2026-06-28 07:32:34.712] Found 592 possible bad axioms.
+[2026-06-28 07:32:34.712] Selected the bad axiom SubClassOf(MH_0000287 MH_0000036).
+[2026-06-28 07:32:34.724] Found 591 possible bad axioms.
+[2026-06-28 07:32:34.724] Selected the bad axiom SubClassOf(MH_0000219 MH_0000220).
+[2026-06-28 07:32:34.729] Found 590 possible bad axioms.
+[2026-06-28 07:32:34.729] Selected the bad axiom SubClassOf(MH_0000088 MH_0000010).
+[2026-06-28 07:32:34.736] Found 589 possible bad axioms.
+[2026-06-28 07:32:34.736] Selected the bad axiom SubClassOf(MH_0000351 MH_0000342).
+[2026-06-28 07:32:34.742] Found 588 possible bad axioms.
+[2026-06-28 07:32:34.742] Selected the bad axiom SubClassOf(MH_0000278 MH_0000016).
+[2026-06-28 07:32:34.747] Found 587 possible bad axioms.
+[2026-06-28 07:32:34.747] Selected the bad axiom SubClassOf(MH_0000073 MH_0000007).
+[2026-06-28 07:32:34.753] Found 586 possible bad axioms.
+[2026-06-28 07:32:34.753] Selected the bad axiom SubClassOf(MH_0000002 MH_0000001).
+[2026-06-28 07:32:34.759] Found 585 possible bad axioms.
+[2026-06-28 07:32:34.759] Selected the bad axiom SubClassOf(MH_0000182 MH_0000032).
+[2026-06-28 07:32:34.765] Found 584 possible bad axioms.
+[2026-06-28 07:32:34.765] Selected the bad axiom SubClassOf(MH_0000195 MH_0000203).
+[2026-06-28 07:32:34.775] Found 583 possible bad axioms.
+[2026-06-28 07:32:34.775] Selected the bad axiom SubClassOf(MH_0000184 MH_0000032).
+[2026-06-28 07:32:34.786] Found 582 possible bad axioms.
+[2026-06-28 07:32:34.787] Selected the bad axiom SubClassOf(MH_0000069 MH_0000006).
+[2026-06-28 07:32:34.791] Found 581 possible bad axioms.
+[2026-06-28 07:32:34.792] Selected the bad axiom SubClassOf(MH_0000014 MH_0000002).
+[2026-06-28 07:32:34.796] Found 580 possible bad axioms.
+[2026-06-28 07:32:34.796] Selected the bad axiom SubClassOf(MH_0000005 MH_0000004).
+[2026-06-28 07:32:34.801] Found 579 possible bad axioms.
+[2026-06-28 07:32:34.801] Selected the bad axiom SubClassOf(MH_0000051 MH_0000003).
+[2026-06-28 07:32:34.805] Found 578 possible bad axioms.
+[2026-06-28 07:32:34.806] Selected the bad axiom SubClassOf(MH_0000340 MH_0000036).
+[2026-06-28 07:32:34.810] Found 577 possible bad axioms.
+[2026-06-28 07:32:34.810] Selected the bad 
+...[truncated]
+FAIL: attempt=4 seed=42737 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+progress: ontology=MHIO attempt=4 success=0/100
+----- MHIO attempt=5 seed=56937 at 2026-06-28 07:34:31 -----
+--- stdout ---
+{"seed":56937,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018","iic_values":{},"repair_runtimes_ms":{"A1":600,"A2":104275,"A3":1496,"B1":1854,"B2":10166}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=56937, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:34:32.234] Checking precondition...
+[2026-06-28 07:34:32.261] Starting the repair...
+[2026-06-28 07:34:32.271] Found 594 possible bad axioms.
+[2026-06-28 07:34:32.273] Selected the bad axiom SubClassOf(MH_0000180 MH_0000184).
+[2026-06-28 07:34:32.282] Found 593 possible bad axioms.
+[2026-06-28 07:34:32.282] Selected the bad axiom SubClassOf(MH_0000125 MH_0000021).
+[2026-06-28 07:34:32.291] Found 592 possible bad axioms.
+[2026-06-28 07:34:32.291] Selected the bad axiom SubClassOf(MH_0000173 MH_0000029).
+[2026-06-28 07:34:32.303] Found 591 possible bad axioms.
+[2026-06-28 07:34:32.303] Selected the bad axiom SubClassOf(MH_0000358 MH_0000036).
+[2026-06-28 07:34:32.309] Found 590 possible bad axioms.
+[2026-06-28 07:34:32.309] Selected the bad axiom SubClassOf(MH_0000151 MH_0000025).
+[2026-06-28 07:34:32.315] Found 589 possible bad axioms.
+[2026-06-28 07:34:32.315] Selected the bad axiom SubClassOf(MH_0000360 MH_0000036).
+[2026-06-28 07:34:32.321] Found 588 possible bad axioms.
+[2026-06-28 07:34:32.322] Selected the bad axiom SubClassOf(MH_0000230 MH_0000014).
+[2026-06-28 07:34:32.326] Found 587 possible bad axioms.
+[2026-06-28 07:34:32.327] Selected the bad axiom SubClassOf(MH_0000263 MH_0000268).
+[2026-06-28 07:34:32.331] Found 586 possible bad axioms.
+[2026-06-28 07:34:32.332] Selected the bad axiom SubClassOf(MH_0000203 MH_0000202).
+[2026-06-28 07:34:32.337] Found 585 possible bad axioms.
+[2026-06-28 07:34:32.337] Selected the bad axiom SubClassOf(MH_0000072 MH_0000006).
+[2026-06-28 07:34:32.342] Found 584 possible bad axioms.
+[2026-06-28 07:34:32.342] Selected the bad axiom SubClassOf(MH_0000154 MH_0000028).
+[2026-06-28 07:34:32.353] Found 583 possible bad axioms.
+[2026-06-28 07:34:32.353] Selected the bad axiom SubClassOf(MH_0000087 MH_0000010).
+[2026-06-28 07:34:32.364] Found 582 possible bad axioms.
+[2026-06-28 07:34:32.364] Selected the bad axiom SubClassOf(MH_0000352 owl:Nothing).
+[2026-06-28 07:34:32.370] Found 581 possible bad axioms.
+[2026-06-28 07:34:32.370] Selected the bad axiom SubClassOf(MH_0000156 MH_0000028).
+[2026-06-28 07:34:32.374] Found 580 possible bad axioms.
+[2026-06-28 07:34:32.374] Selected the bad axiom SubClassOf(MH_0000210 MH_0000015).
+[2026-06-28 07:34:32.379] Found 579 possible bad axioms.
+[2026-06-28 07:34:32.379] Selected the bad axiom SubClassOf(MH_0000320 MH_0000288).
+[2026-06-28 07:34:32.383] Found 578 possible bad axioms.
+[2026-06-28 07:34:32.384] Selected the bad axiom SubClassOf(MH_0000014 MH_0000229).
+[2026-06-28 07:34:32.387] Found 577 possible bad axioms.
+[2026-06-28 07:34:32.388] Selected the bad
+...[truncated]
+FAIL: attempt=5 seed=56937 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+progress: ontology=MHIO attempt=5 success=0/100
+----- MHIO attempt=6 seed=71137 at 2026-06-28 07:36:30 -----
+--- stdout ---
+{"seed":71137,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000018 ⊑ MH_0000017","iic_values":{},"repair_runtimes_ms":{"A1":557,"A2":102210,"A3":4338,"B1":1865,"B2":9542}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=71137, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:36:31.151] Checking precondition...
+[2026-06-28 07:36:31.177] Starting the repair...
+[2026-06-28 07:36:31.187] Found 594 possible bad axioms.
+[2026-06-28 07:36:31.189] Selected the bad axiom SubClassOf(MH_0000218 MH_0000208).
+[2026-06-28 07:36:31.197] Found 593 possible bad axioms.
+[2026-06-28 07:36:31.197] Selected the bad axiom SubClassOf(MH_0000342 MH_0000036).
+[2026-06-28 07:36:31.205] Found 592 possible bad axioms.
+[2026-06-28 07:36:31.206] Selected the bad axiom SubClassOf(MH_0000180 MH_0000183).
+[2026-06-28 07:36:31.217] Found 591 possible bad axioms.
+[2026-06-28 07:36:31.217] Selected the bad axiom SubClassOf(MH_0000329 MH_0000036).
+[2026-06-28 07:36:31.222] Found 590 possible bad axioms.
+[2026-06-28 07:36:31.222] Selected the bad axiom SubClassOf(MH_0000132 MH_0000021).
+[2026-06-28 07:36:31.228] Found 589 possible bad axioms.
+[2026-06-28 07:36:31.228] Selected the bad axiom SubClassOf(MH_0000288 MH_0000342).
+[2026-06-28 07:36:31.234] Found 588 possible bad axioms.
+[2026-06-28 07:36:31.234] Selected the bad axiom SubClassOf(MH_0000256 MH_0000255).
+[2026-06-28 07:36:31.240] Found 587 possible bad axioms.
+[2026-06-28 07:36:31.241] Selected the bad axiom SubClassOf(MH_0000105 MH_0000100).
+[2026-06-28 07:36:31.246] Found 586 possible bad axioms.
+[2026-06-28 07:36:31.247] Selected the bad axiom SubClassOf(MH_0000262 MH_0000016).
+[2026-06-28 07:36:31.252] Found 585 possible bad axioms.
+[2026-06-28 07:36:31.252] Selected the bad axiom SubClassOf(MH_0000332 MH_0000036).
+[2026-06-28 07:36:31.257] Found 584 possible bad axioms.
+[2026-06-28 07:36:31.258] Selected the bad axiom SubClassOf(MH_0000271 MH_0000016).
+[2026-06-28 07:36:31.268] Found 583 possible bad axioms.
+[2026-06-28 07:36:31.268] Selected the bad axiom SubClassOf(MH_0000320 MH_0000336).
+[2026-06-28 07:36:31.279] Found 582 possible bad axioms.
+[2026-06-28 07:36:31.279] Selected the bad axiom SubClassOf(MH_0000307 MH_0000315).
+[2026-06-28 07:36:31.283] Found 581 possible bad axioms.
+[2026-06-28 07:36:31.283] Selected the bad axiom SubClassOf(MH_0000135 MH_0000021).
+[2026-06-28 07:36:31.287] Found 580 possible bad axioms.
+[2026-06-28 07:36:31.288] Selected the bad axiom SubClassOf(MH_0000201 MH_0000034).
+[2026-06-28 07:36:31.292] Found 579 possible bad axioms.
+[2026-06-28 07:36:31.292] Selected the bad axiom SubClassOf(MH_0000248 MH_0000246).
+[2026-06-28 07:36:31.296] Found 578 possible bad axioms.
+[2026-06-28 07:36:31.296] Selected the bad axiom SubClassOf(MH_0000097 MH_0000102).
+[2026-06-28 07:36:31.301] Found 577 possible bad axioms.
+[2026-06-28 07:36:31.301] Selected the bad 
+...[truncated]
+FAIL: attempt=6 seed=71137 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000018 ⊑ MH_0000017
+progress: ontology=MHIO attempt=6 success=0/100
+----- MHIO attempt=7 seed=85337 at 2026-06-28 07:38:29 -----
+--- stdout ---
+{"seed":85337,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018","iic_values":{},"repair_runtimes_ms":{"A1":479,"A2":103329,"A3":2080,"B1":1419,"B2":1763}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=85337, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:38:30.191] Checking precondition...
+[2026-06-28 07:38:30.216] Starting the repair...
+[2026-06-28 07:38:30.227] Found 594 possible bad axioms.
+[2026-06-28 07:38:30.229] Selected the bad axiom SubClassOf(MH_0000161 MH_0000028).
+[2026-06-28 07:38:30.237] Found 593 possible bad axioms.
+[2026-06-28 07:38:30.237] Selected the bad axiom SubClassOf(MH_0000357 MH_0000036).
+[2026-06-28 07:38:30.244] Found 592 possible bad axioms.
+[2026-06-28 07:38:30.245] Selected the bad axiom SubClassOf(MH_0000330 MH_0000353).
+[2026-06-28 07:38:30.256] Found 591 possible bad axioms.
+[2026-06-28 07:38:30.256] Selected the bad axiom SubClassOf(MH_0000014 MH_0000229).
+[2026-06-28 07:38:30.261] Found 590 possible bad axioms.
+[2026-06-28 07:38:30.262] Selected the bad axiom SubClassOf(MH_0000063 MH_0000006).
+[2026-06-28 07:38:30.268] Found 589 possible bad axioms.
+[2026-06-28 07:38:30.269] Selected the bad axiom SubClassOf(MH_0000168 MH_0000028).
+[2026-06-28 07:38:30.275] Found 588 possible bad axioms.
+[2026-06-28 07:38:30.275] Selected the bad axiom SubClassOf(MH_0000315 MH_0000036).
+[2026-06-28 07:38:30.281] Found 587 possible bad axioms.
+[2026-06-28 07:38:30.281] Selected the bad axiom SubClassOf(MH_0000201 owl:Nothing).
+[2026-06-28 07:38:30.286] Found 586 possible bad axioms.
+[2026-06-28 07:38:30.286] Selected the bad axiom SubClassOf(MH_0000220 MH_0000015).
+[2026-06-28 07:38:30.291] Found 585 possible bad axioms.
+[2026-06-28 07:38:30.291] Selected the bad axiom SubClassOf(MH_0000263 MH_0000016).
+[2026-06-28 07:38:30.296] Found 584 possible bad axioms.
+[2026-06-28 07:38:30.297] Selected the bad axiom SubClassOf(MH_0000036 MH_0000311).
+[2026-06-28 07:38:30.307] Found 583 possible bad axioms.
+[2026-06-28 07:38:30.307] Selected the bad axiom SubClassOf(MH_0000193 MH_0000198).
+[2026-06-28 07:38:30.317] Found 582 possible bad axioms.
+[2026-06-28 07:38:30.318] Selected the bad axiom SubClassOf(MH_0000153 MH_0000167).
+[2026-06-28 07:38:30.323] Found 581 possible bad axioms.
+[2026-06-28 07:38:30.323] Selected the bad axiom SubClassOf(MH_0000035 MH_0000030).
+[2026-06-28 07:38:30.327] Found 580 possible bad axioms.
+[2026-06-28 07:38:30.327] Selected the bad axiom SubClassOf(MH_0000077 MH_0000009).
+[2026-06-28 07:38:30.331] Found 579 possible bad axioms.
+[2026-06-28 07:38:30.332] Selected the bad axiom SubClassOf(MH_0000232 MH_0000014).
+[2026-06-28 07:38:30.335] Found 578 possible bad axioms.
+[2026-06-28 07:38:30.336] Selected the bad axiom SubClassOf(MH_0000236 MH_0000014).
+[2026-06-28 07:38:30.341] Found 577 possible bad axioms.
+[2026-06-28 07:38:30.341] Selected the bad
+...[truncated]
+FAIL: attempt=7 seed=85337 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+progress: ontology=MHIO attempt=7 success=0/100
+----- MHIO attempt=8 seed=99537 at 2026-06-28 07:40:19 -----
+--- stdout ---
+{"seed":99537,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":299,"A2":103510,"A3":1508,"B1":1428,"B2":4609}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=99537, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:40:19.736] Checking precondition...
+[2026-06-28 07:40:19.762] Starting the repair...
+[2026-06-28 07:40:19.774] Found 594 possible bad axioms.
+[2026-06-28 07:40:19.776] Selected the bad axiom SubClassOf(MH_0000200 MH_0000034).
+[2026-06-28 07:40:19.785] Found 593 possible bad axioms.
+[2026-06-28 07:40:19.785] Selected the bad axiom SubClassOf(MH_0000195 owl:Nothing).
+[2026-06-28 07:40:19.794] Found 592 possible bad axioms.
+[2026-06-28 07:40:19.794] Selected the bad axiom SubClassOf(MH_0000303 MH_0000036).
+[2026-06-28 07:40:19.807] Found 591 possible bad axioms.
+[2026-06-28 07:40:19.807] Selected the bad axiom SubClassOf(MH_0000318 MH_0000036).
+[2026-06-28 07:40:19.813] Found 590 possible bad axioms.
+[2026-06-28 07:40:19.814] Selected the bad axiom SubClassOf(MH_0000187 MH_0000033).
+[2026-06-28 07:40:19.821] Found 589 possible bad axioms.
+[2026-06-28 07:40:19.821] Selected the bad axiom SubClassOf(MH_0000290 MH_0000294).
+[2026-06-28 07:40:19.828] Found 588 possible bad axioms.
+[2026-06-28 07:40:19.828] Selected the bad axiom SubClassOf(MH_0000263 MH_0000003).
+[2026-06-28 07:40:19.834] Found 587 possible bad axioms.
+[2026-06-28 07:40:19.835] Selected the bad axiom SubClassOf(MH_0000035 MH_0000031).
+[2026-06-28 07:40:19.840] Found 586 possible bad axioms.
+[2026-06-28 07:40:19.841] Selected the bad axiom SubClassOf(MH_0000185 MH_0000179).
+[2026-06-28 07:40:19.846] Found 585 possible bad axioms.
+[2026-06-28 07:40:19.846] Selected the bad axiom SubClassOf(MH_0000297 MH_0000036).
+[2026-06-28 07:40:19.851] Found 584 possible bad axioms.
+[2026-06-28 07:40:19.852] Selected the bad axiom SubClassOf(MH_0000212 MH_0000205).
+[2026-06-28 07:40:19.862] Found 583 possible bad axioms.
+[2026-06-28 07:40:19.862] Selected the bad axiom SubClassOf(MH_0000189 owl:Nothing).
+[2026-06-28 07:40:19.872] Found 582 possible bad axioms.
+[2026-06-28 07:40:19.873] Selected the bad axiom SubClassOf(MH_0000083 MH_0000009).
+[2026-06-28 07:40:19.877] Found 581 possible bad axioms.
+[2026-06-28 07:40:19.877] Selected the bad axiom SubClassOf(MH_0000123 MH_0000126).
+[2026-06-28 07:40:19.882] Found 580 possible bad axioms.
+[2026-06-28 07:40:19.882] Selected the bad axiom SubClassOf(MH_0000239 MH_0000014).
+[2026-06-28 07:40:19.886] Found 579 possible bad axioms.
+[2026-06-28 07:40:19.886] Selected the bad axiom SubClassOf(MH_0000350 MH_0000036).
+[2026-06-28 07:40:19.890] Found 578 possible bad axioms.
+[2026-06-28 07:40:19.890] Selected the bad axiom SubClassOf(MH_0000160 MH_0000156).
+[2026-06-28 07:40:19.895] Found 577 possible bad axioms.
+[2026-06-28 07:40:19.896] Selected the ba
+...[truncated]
+FAIL: attempt=8 seed=99537 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+progress: ontology=MHIO attempt=8 success=0/100
+----- MHIO attempt=9 seed=113737 at 2026-06-28 07:42:11 -----
+--- stdout ---
+{"seed":113737,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018","iic_values":{},"repair_runtimes_ms":{"A1":454,"A2":103604,"A3":2799,"B1":1316,"B2":9352}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=113737, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:42:11.571] Checking precondition...
+[2026-06-28 07:42:11.597] Starting the repair...
+[2026-06-28 07:42:11.610] Found 594 possible bad axioms.
+[2026-06-28 07:42:11.611] Selected the bad axiom SubClassOf(MH_0000331 MH_0000363).
+[2026-06-28 07:42:11.620] Found 593 possible bad axioms.
+[2026-06-28 07:42:11.620] Selected the bad axiom SubClassOf(MH_0000146 MH_0000150).
+[2026-06-28 07:42:11.628] Found 592 possible bad axioms.
+[2026-06-28 07:42:11.628] Selected the bad axiom SubClassOf(MH_0000219 MH_0000015).
+[2026-06-28 07:42:11.640] Found 591 possible bad axioms.
+[2026-06-28 07:42:11.640] Selected the bad axiom SubClassOf(MH_0000006 MH_0000005).
+[2026-06-28 07:42:11.648] Found 590 possible bad axioms.
+[2026-06-28 07:42:11.648] Selected the bad axiom SubClassOf(MH_0000034 owl:Nothing).
+[2026-06-28 07:42:11.655] Found 589 possible bad axioms.
+[2026-06-28 07:42:11.656] Selected the bad axiom SubClassOf(MH_0000204 MH_0000015).
+[2026-06-28 07:42:11.662] Found 588 possible bad axioms.
+[2026-06-28 07:42:11.662] Selected the bad axiom SubClassOf(MH_0000140 MH_0000022).
+[2026-06-28 07:42:11.669] Found 587 possible bad axioms.
+[2026-06-28 07:42:11.670] Selected the bad axiom SubClassOf(MH_0000097 MH_0000013).
+[2026-06-28 07:42:11.676] Found 586 possible bad axioms.
+[2026-06-28 07:42:11.676] Selected the bad axiom SubClassOf(MH_0000064 MH_0000006).
+[2026-06-28 07:42:11.682] Found 585 possible bad axioms.
+[2026-06-28 07:42:11.682] Selected the bad axiom SubClassOf(MH_0000055 MH_0000003).
+[2026-06-28 07:42:11.688] Found 584 possible bad axioms.
+[2026-06-28 07:42:11.688] Selected the bad axiom SubClassOf(MH_0000036 MH_0000337).
+[2026-06-28 07:42:11.698] Found 583 possible bad axioms.
+[2026-06-28 07:42:11.698] Selected the bad axiom SubClassOf(MH_0000231 MH_0000014).
+[2026-06-28 07:42:11.709] Found 582 possible bad axioms.
+[2026-06-28 07:42:11.709] Selected the bad axiom SubClassOf(MH_0000161 MH_0000028).
+[2026-06-28 07:42:11.714] Found 581 possible bad axioms.
+[2026-06-28 07:42:11.714] Selected the bad axiom SubClassOf(MH_0000338 MH_0000036).
+[2026-06-28 07:42:11.718] Found 580 possible bad axioms.
+[2026-06-28 07:42:11.719] Selected the bad axiom SubClassOf(MH_0000157 MH_0000028).
+[2026-06-28 07:42:11.723] Found 579 possible bad axioms.
+[2026-06-28 07:42:11.723] Selected the bad axiom SubClassOf(MH_0000324 MH_0000346).
+[2026-06-28 07:42:11.728] Found 578 possible bad axioms.
+[2026-06-28 07:42:11.728] Selected the bad axiom SubClassOf(MH_0000331 MH_0000290).
+[2026-06-28 07:42:11.732] Found 577 possible bad axioms.
+[2026-06-28 07:42:11.732] Selected the ba
+...[truncated]
+FAIL: attempt=9 seed=113737 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+progress: ontology=MHIO attempt=9 success=0/100
+----- MHIO attempt=10 seed=127937 at 2026-06-28 07:44:09 -----
+--- stdout ---
+{"seed":127937,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":371,"A2":102399,"A3":2934,"B1":2445,"B2":2251,"B3":8959}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MHIO.owl, seed=127937, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:44:09.607] Checking precondition...
+[2026-06-28 07:44:09.634] Starting the repair...
+[2026-06-28 07:44:09.645] Found 594 possible bad axioms.
+[2026-06-28 07:44:09.646] Selected the bad axiom SubClassOf(MH_0000009 MH_0000005).
+[2026-06-28 07:44:09.654] Found 593 possible bad axioms.
+[2026-06-28 07:44:09.654] Selected the bad axiom SubClassOf(MH_0000251 MH_0000247).
+[2026-06-28 07:44:09.662] Found 592 possible bad axioms.
+[2026-06-28 07:44:09.662] Selected the bad axiom SubClassOf(MH_0000105 MH_0000108).
+[2026-06-28 07:44:09.675] Found 591 possible bad axioms.
+[2026-06-28 07:44:09.675] Selected the bad axiom SubClassOf(MH_0000324 MH_0000346).
+[2026-06-28 07:44:09.681] Found 590 possible bad axioms.
+[2026-06-28 07:44:09.681] Selected the bad axiom SubClassOf(MH_0000157 MH_0000028).
+[2026-06-28 07:44:09.687] Found 589 possible bad axioms.
+[2026-06-28 07:44:09.688] Selected the bad axiom SubClassOf(MH_0000105 owl:Nothing).
+[2026-06-28 07:44:09.693] Found 588 possible bad axioms.
+[2026-06-28 07:44:09.694] Selected the bad axiom SubClassOf(MH_0000110 MH_0000019).
+[2026-06-28 07:44:09.699] Found 587 possible bad axioms.
+[2026-06-28 07:44:09.699] Selected the bad axiom SubClassOf(MH_0000306 MH_0000036).
+[2026-06-28 07:44:09.704] Found 586 possible bad axioms.
+[2026-06-28 07:44:09.705] Selected the bad axiom SubClassOf(MH_0000139 MH_0000022).
+[2026-06-28 07:44:09.710] Found 585 possible bad axioms.
+[2026-06-28 07:44:09.711] Selected the bad axiom SubClassOf(MH_0000313 MH_0000036).
+[2026-06-28 07:44:09.717] Found 584 possible bad axioms.
+[2026-06-28 07:44:09.717] Selected the bad axiom SubClassOf(MH_0000013 MH_0000102).
+[2026-06-28 07:44:09.728] Found 583 possible bad axioms.
+[2026-06-28 07:44:09.728] Selected the bad axiom SubClassOf(MH_0000285 MH_0000360).
+[2026-06-28 07:44:09.738] Found 582 possible bad axioms.
+[2026-06-28 07:44:09.738] Selected the bad axiom SubClassOf(MH_0000090 MH_0000087).
+[2026-06-28 07:44:09.743] Found 581 possible bad axioms.
+[2026-06-28 07:44:09.744] Selected the bad axiom SubClassOf(MH_0000140 owl:Nothing).
+[2026-06-28 07:44:09.748] Found 580 possible bad axioms.
+[2026-06-28 07:44:09.748] Selected the bad axiom SubClassOf(MH_0000198 MH_0000034).
+[2026-06-28 07:44:09.752] Found 579 possible bad axioms.
+[2026-06-28 07:44:09.752] Selected the bad axiom SubClassOf(MH_0000140 MH_0000139).
+[2026-06-28 07:44:09.757] Found 578 possible bad axioms.
+[2026-06-28 07:44:09.757] Selected the bad axiom SubClassOf(MH_0000331 MH_0000036).
+[2026-06-28 07:44:09.761] Found 577 possible bad axioms.
+[2026-06-28 07:44:09.761] Selected the b
+...[truncated]
+FAIL: attempt=10 seed=127937 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+progress: ontology=MHIO attempt=10 success=0/100
+=== ABORTED MHIO after 10 consecutive failures at 2026-06-28 07:46:09 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for MHIO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=137 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+  attempt=2 seed=14337 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000018 ⊑ MH_0000017
+  attempt=3 seed=28537 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+  attempt=4 seed=42737 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+  attempt=5 seed=56937 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+  attempt=6 seed=71137 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000018 ⊑ MH_0000017
+  attempt=7 seed=85337 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+  attempt=8 seed=99537 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+  attempt=9 seed=113737 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ MH_0000018
+  attempt=10 seed=127937 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: MH_0000017 ⊑ ⊥
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

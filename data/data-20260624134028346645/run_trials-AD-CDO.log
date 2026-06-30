@@ -1,0 +1,488 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-AD-CDO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-AD-CDO.csv
+
+=== Starting sequential trials for AD-CDO at 2026-06-28 10:40:45 ===
+----- AD-CDO attempt=1 seed=145 at 2026-06-28 10:40:45 -----
+--- stdout ---
+{"seed":145,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ General_Health_and_Physical_Assessment","iic_values":{},"repair_runtimes_ms":{"A1":832,"A2":204272,"A3":3226,"B1":3909,"B2":22239,"B3":5801,"B4":1019,"B5":3491,"B6":7401}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=145, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:40:46.272] Checking precondition...
+[2026-06-28 10:40:46.299] Starting the repair...
+[2026-06-28 10:40:46.313] Found 671 possible bad axioms.
+[2026-06-28 10:40:46.315] Selected the bad axiom SubClassOf(Infertility Malignant_Tumor_Of_Prostate).
+[2026-06-28 10:40:46.324] Found 670 possible bad axioms.
+[2026-06-28 10:40:46.325] Selected the bad axiom SubClassOf(Anticonvulsants New_Added_Medication).
+[2026-06-28 10:40:46.331] Found 669 possible bad axioms.
+[2026-06-28 10:40:46.331] Selected the bad axiom SubClassOf(Blood_Coagulation_Disorder Hematopoietic_System_Disease).
+[2026-06-28 10:40:46.343] Found 668 possible bad axioms.
+[2026-06-28 10:40:46.344] Selected the bad axiom SubClassOf(Clinical_Dementia_Rating_Scale Mental_Health_and_Cognitive_Function_Assessment).
+[2026-06-28 10:40:46.351] Found 667 possible bad axioms.
+[2026-06-28 10:40:46.352] Selected the bad axiom SubClassOf(Cardiac_Surgery_Procedures Neurostimulator,_Device_(physical_object)).
+[2026-06-28 10:40:46.358] Found 666 possible bad axioms.
+[2026-06-28 10:40:46.358] Selected the bad axiom SubClassOf(Evaluation_Procedure Procedures).
+[2026-06-28 10:40:46.365] Found 665 possible bad axioms.
+[2026-06-28 10:40:46.365] Selected the bad axiom SubClassOf(Urine_Screening Urine_Tricyclic_Drug_Screen).
+[2026-06-28 10:40:46.371] Found 664 possible bad axioms.
+[2026-06-28 10:40:46.371] Selected the bad axiom SubClassOf(Traumatic_Brain_Injury Alzheimer's_Disease).
+[2026-06-28 10:40:46.377] Found 663 possible bad axioms.
+[2026-06-28 10:40:46.377] Selected the bad axiom SubClassOf(Montreal_Cognitive_Assessment_Score Mini-Mental_State_Examination_Score).
+[2026-06-28 10:40:46.383] Found 662 possible bad axioms.
+[2026-06-28 10:40:46.383] Selected the bad axiom SubClassOf(Blood_Test Vitamin_B12_Test).
+[2026-06-28 10:40:46.387] Found 661 possible bad axioms.
+[2026-06-28 10:40:46.387] Selected the bad axiom SubClassOf(Apolipoprotein_E_Genotype_Determination Genetic_Test).
+[2026-06-28 10:40:46.402] Found 660 possible bad axioms.
+[2026-06-28 10:40:46.403] Selected the bad axiom SubClassOf(Surgical_Procedure Procedures).
+[2026-06-28 10:40:46.408] Found 659 possible bad axioms.
+[2026-06-28 10:40:46.408] Selected the bad axiom SubClassOf(Nootropic_Agents Monoclonal_Antibodies).
+[2026-06-28 10:40:46.414] Found 658 possible bad axioms.
+[2026-06-28 10:40:46.415] Selected the bad axiom SubClassOf(Implantation_Of_Cardiac_Pacemaker Radiation_Therapy).
+[2026-06-28 10:40:46.419] Found 657 possible bad axioms.
+[2026-06-28 10:40:46.419] Selected the bad axiom SubClassOf(Alanine_Transaminase_Blood_Test ObjectIn
+...[truncated]
+FAIL: attempt=1 seed=145 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ General_Health_and_Physical_Assessment
+progress: ontology=AD-CDO attempt=1 success=0/100
+----- AD-CDO attempt=2 seed=14345 at 2026-06-28 10:44:59 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=14345, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:44:59.461] Checking precondition...
+[2026-06-28 10:44:59.488] Starting the repair...
+[2026-06-28 10:44:59.501] Found 671 possible bad axioms.
+[2026-06-28 10:44:59.502] Selected the bad axiom SubClassOf(Infertility Reproductive_System_Disease).
+[2026-06-28 10:44:59.511] Found 670 possible bad axioms.
+[2026-06-28 10:44:59.511] Selected the bad axiom SubClassOf(Phlebotomy,_Therapeutic_(Separate_Procedure) Gastric_Bypass).
+[2026-06-28 10:44:59.518] Found 669 possible bad axioms.
+[2026-06-28 10:44:59.519] Selected the bad axiom SubClassOf(Hepatic_Function_Test Diagnostic_Test).
+[2026-06-28 10:44:59.531] Found 668 possible bad axioms.
+[2026-06-28 10:44:59.532] Selected the bad axiom SubClassOf(Spinal_Puncture Puncture_Procedure).
+[2026-06-28 10:44:59.538] Found 667 possible bad axioms.
+[2026-06-28 10:44:59.539] Selected the bad axiom SubClassOf(Sterilization_For_Infection_Control Hysterectomy).
+[2026-06-28 10:44:59.546] Found 666 possible bad axioms.
+[2026-06-28 10:44:59.546] Selected the bad axiom SubClassOf(Demographic alcohol_abuse).
+[2026-06-28 10:44:59.551] Found 665 possible bad axioms.
+[2026-06-28 10:44:59.551] Selected the bad axiom SubClassOf(alcohol_abuse smoking).
+[2026-06-28 10:44:59.557] Found 664 possible bad axioms.
+[2026-06-28 10:44:59.558] Selected the bad axiom SubClassOf(Hydroxymethylglutaryl-CoA_Reductase_Inhibitors Sedatives).
+[2026-06-28 10:44:59.564] Found 663 possible bad axioms.
+[2026-06-28 10:44:59.564] Selected the bad axiom SubClassOf(Cardiovascular_Test Diagnostic_Test).
+[2026-06-28 10:44:59.569] Found 662 possible bad axioms.
+[2026-06-28 10:44:59.569] Selected the bad axiom SubClassOf(Endocrine_Test Hemoglobin_Test).
+[2026-06-28 10:44:59.574] Found 661 possible bad axioms.
+[2026-06-28 10:44:59.574] Selected the bad axiom SubClassOf(Traumatic_Brain_Injury Cerebrovascular_Disease).
+[2026-06-28 10:44:59.590] Found 660 possible bad axioms.
+[2026-06-28 10:44:59.590] Selected the bad axiom SubClassOf(Psychotic_Disorder Cognitive_Disorder).
+[2026-06-28 10:44:59.595] Found 659 possible bad axioms.
+[2026-06-28 10:44:59.596] Selected the bad axiom SubClassOf(Reproductive_System_Disease Disease_Of_Anatomical_Entity).
+[2026-06-28 10:44:59.601] Found 658 possible bad axioms.
+[2026-06-28 10:44:59.602] Selected the bad axiom SubClassOf(History_Of_Conception Childbearing_Potential).
+[2026-06-28 10:44:59.606] Found 657 possible bad axioms.
+[2026-06-28 10:44:59.607] Selected the bad axiom SubClassOf(Liver_Diseases Duodenal_Ulcer).
+[2026-06-28 10:44:59.611] Found 656 possible bad axioms.
+[2026-06-28 10:44:59.611] Selected the bad
+...[truncated]
+FAIL: attempt=2 seed=14345 - negative return code -9
+progress: ontology=AD-CDO attempt=2 success=0/100
+----- AD-CDO attempt=3 seed=28545 at 2026-06-28 10:49:24 -----
+--- stdout ---
+{"seed":28545,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":252,"A2":205161,"A3":2996,"B1":7448,"B2":3385,"B3":2570,"B4":1200}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=28545, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:49:25.261] Checking precondition...
+[2026-06-28 10:49:25.289] Starting the repair...
+[2026-06-28 10:49:25.302] Found 671 possible bad axioms.
+[2026-06-28 10:49:25.305] Selected the bad axiom SubClassOf(Lacunar_Infarction Nervous_System_Disorder).
+[2026-06-28 10:49:25.313] Found 670 possible bad axioms.
+[2026-06-28 10:49:25.314] Selected the bad axiom SubClassOf(Puncture_Procedure Procedures).
+[2026-06-28 10:49:25.321] Found 669 possible bad axioms.
+[2026-06-28 10:49:25.321] Selected the bad axiom SubClassOf(Psychiatric_Or_Psychological_Procedure Procedures).
+[2026-06-28 10:49:25.334] Found 668 possible bad axioms.
+[2026-06-28 10:49:25.334] Selected the bad axiom SubClassOf(owl:Thing smoking).
+[2026-06-28 10:49:25.341] Found 667 possible bad axioms.
+[2026-06-28 10:49:25.341] Selected the bad axiom SubClassOf(Liver_Diseases Duodenal_Ulcer).
+[2026-06-28 10:49:25.347] Found 666 possible bad axioms.
+[2026-06-28 10:49:25.347] Selected the bad axiom SubClassOf(Bilateral_Oophorectomy Surgical_Procedure).
+[2026-06-28 10:49:25.355] Found 665 possible bad axioms.
+[2026-06-28 10:49:25.356] Selected the bad axiom SubClassOf(Benzodiazepines ObjectIntersectionOf(Anti-Anxiety_Agents Hypnotics_And_Sedatives)).
+[2026-06-28 10:49:25.362] Found 664 possible bad axioms.
+[2026-06-28 10:49:25.363] Selected the bad axiom SubClassOf(Urine_Tricyclic_Drug_Screen Urine_Pregnancy_Test).
+[2026-06-28 10:49:25.368] Found 663 possible bad axioms.
+[2026-06-28 10:49:25.369] Selected the bad axiom SubClassOf(Magnetic_Resonance_Imaging_Test owl:Nothing).
+[2026-06-28 10:49:25.374] Found 662 possible bad axioms.
+[2026-06-28 10:49:25.374] Selected the bad axiom SubClassOf(Galantamine Donepezil).
+[2026-06-28 10:49:25.380] Found 661 possible bad axioms.
+[2026-06-28 10:49:25.380] Selected the bad axiom SubClassOf(National_Institute_On_Alcohol_Abuse_And_Alcoholism Rating_Criteria).
+[2026-06-28 10:49:25.396] Found 660 possible bad axioms.
+[2026-06-28 10:49:25.397] Selected the bad axiom SubClassOf(Disease_Of_Cellular_Proliferation Renal_insufficiency).
+[2026-06-28 10:49:25.402] Found 659 possible bad axioms.
+[2026-06-28 10:49:25.402] Selected the bad axiom SubClassOf(Creatinine_Blood_Test Human_Immunodeficiency_Virus_Infection).
+[2026-06-28 10:49:25.408] Found 658 possible bad axioms.
+[2026-06-28 10:49:25.408] Selected the bad axiom SubClassOf(Implantation_Of_Cardiac_Pacemaker Radiation_Therapy).
+[2026-06-28 10:49:25.412] Found 657 possible bad axioms.
+[2026-06-28 10:49:25.412] Selected the bad axiom SubClassOf(Actigraph Deep_Brain_Stimulation).
+[2026-06-28 10:49:25.417] Found 6
+...[truncated]
+FAIL: attempt=3 seed=28545 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=AD-CDO attempt=3 success=0/100
+----- AD-CDO attempt=4 seed=42745 at 2026-06-28 10:53:08 -----
+--- stdout ---
+{"seed":42745,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":394,"A2":205383,"A3":3377,"B1":6462,"B2":33243}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=42745, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:53:08.769] Checking precondition...
+[2026-06-28 10:53:08.796] Starting the repair...
+[2026-06-28 10:53:08.808] Found 671 possible bad axioms.
+[2026-06-28 10:53:08.811] Selected the bad axiom SubClassOf(Magnetic_Resonance_Imaging_Test Positron-Emission_Tomography).
+[2026-06-28 10:53:08.819] Found 670 possible bad axioms.
+[2026-06-28 10:53:08.819] Selected the bad axiom SubClassOf(Hepatitis_C_Virus_Antibody Vitamin_B12_Test).
+[2026-06-28 10:53:08.827] Found 669 possible bad axioms.
+[2026-06-28 10:53:08.827] Selected the bad axiom SubClassOf(Geriatric_Depression_Scale Mental_Health_and_Cognitive_Function_Assessment).
+[2026-06-28 10:53:08.838] Found 668 possible bad axioms.
+[2026-06-28 10:53:08.839] Selected the bad axiom SubClassOf(Drug_Infusion_Pumps New_Added_Procedure).
+[2026-06-28 10:53:08.846] Found 667 possible bad axioms.
+[2026-06-28 10:53:08.846] Selected the bad axiom SubClassOf(Mild_Cognitive_Disorder Major_Depressive_Disorder).
+[2026-06-28 10:53:08.854] Found 666 possible bad axioms.
+[2026-06-28 10:53:08.854] Selected the bad axiom SubClassOf(Folic_Acid_Measurement Thyroid_Function_Test).
+[2026-06-28 10:53:08.860] Found 665 possible bad axioms.
+[2026-06-28 10:53:08.860] Selected the bad axiom SubClassOf(Convulsants Narcotic_Analgesics).
+[2026-06-28 10:53:08.867] Found 664 possible bad axioms.
+[2026-06-28 10:53:08.867] Selected the bad axiom SubClassOf(Bipolar_Disorder Dementia).
+[2026-06-28 10:53:08.873] Found 663 possible bad axioms.
+[2026-06-28 10:53:08.873] Selected the bad axiom SubClassOf(Vitamin_B12_Test Blood_Test).
+[2026-06-28 10:53:08.879] Found 662 possible bad axioms.
+[2026-06-28 10:53:08.879] Selected the bad axiom SubClassOf(Anticoagulants owl:Nothing).
+[2026-06-28 10:53:08.884] Found 661 possible bad axioms.
+[2026-06-28 10:53:08.884] Selected the bad axiom SubClassOf(Namenda owl:Nothing).
+[2026-06-28 10:53:08.900] Found 660 possible bad axioms.
+[2026-06-28 10:53:08.900] Selected the bad axiom SubClassOf(History_Of_Conception owl:Nothing).
+[2026-06-28 10:53:08.905] Found 659 possible bad axioms.
+[2026-06-28 10:53:08.906] Selected the bad axiom SubClassOf(Disease_By_Infectious_Agent Immune_System_Disease).
+[2026-06-28 10:53:08.911] Found 658 possible bad axioms.
+[2026-06-28 10:53:08.912] Selected the bad axiom SubClassOf(Cerebrovascular_Disease Cerebrovascular_Accident).
+[2026-06-28 10:53:08.917] Found 657 possible bad axioms.
+[2026-06-28 10:53:08.917] Selected the bad axiom SubClassOf(Selective_Serotonin_Reuptake_Inhibitors Anticholinergic_Agents).
+[2026-06-28 10:53:08.921] Found 656 possible bad axioms.
+[2026-06-
+...[truncated]
+FAIL: attempt=4 seed=42745 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥
+progress: ontology=AD-CDO attempt=4 success=0/100
+----- AD-CDO attempt=5 seed=56945 at 2026-06-28 10:57:18 -----
+--- stdout ---
+{"seed":56945,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":54,"A2":205160,"A3":1791,"B1":1716,"B2":31263}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=56945, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:57:18.596] Checking precondition...
+[2026-06-28 10:57:18.622] Starting the repair...
+[2026-06-28 10:57:18.635] Found 671 possible bad axioms.
+[2026-06-28 10:57:18.637] Selected the bad axiom SubClassOf(owl:Thing General_Health_and_Physical_Assessment).
+[2026-06-28 10:57:18.645] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-28 10:57:18.646] Checking precondition...
+[2026-06-28 10:57:18.666] Starting the repair...
+[2026-06-28 11:00:43.800] Found 2 possible bad axioms.
+[2026-06-28 11:00:43.801] Selected the bad axiom SubClassOf(owl:Thing General_Health_and_Physical_Assessment).
+[2026-06-28 11:00:43.804] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-28 11:00:43.806] Checking precondition...
+[2026-06-28 11:00:43.810] Starting the repair...
+[2026-06-28 11:00:43.848] Selected a reference ontology with 961 axioms.
+[2026-06-28 11:00:45.022] Selected the bad axiom SubClassOf(owl:Thing General_Health_and_Physical_Assessment).
+[2026-06-28 11:00:45.591] Selected the weaker axiom SubClassOf(Renal_Function_Test General_Health_and_Physical_Assessment).
+[2026-06-28 11:00:45.596] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-28 11:00:45.596] Checking precondition...
+[2026-06-28 11:00:45.601] Starting the repair...
+[2026-06-28 11:00:45.641] Selected a reference ontology with 961 axioms.
+[2026-06-28 11:00:46.856] Selected the bad axiom SubClassOf(owl:Thing General_Health_and_Physical_Assessment).
+[2026-06-28 11:00:47.309] Selected the weaker axiom SubClassOf(Thyroid_Function_Test General_Health_and_Physical_Assessment).
+[2026-06-28 11:00:47.312] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-28 11:00:47.314] Checking precondition...
+[2026-06-28 11:00:47.318] Starting the repair...
+[2026-06-28 11:00:47.371] Selected a reference ontology with 960 axioms.
+[2026-06-28 11:00:48.546] Selected the bad axiom SubClassOf(Folic_Acid_Measurement owl:Nothing).
+[PowerIndexWeakerAxiomSelector] Scoring 505 candidate weakenings for Folic_Acid_Measurement ⊑ ⊥
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsistencyValueApproximate.java:282)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.sampleTargetsInParallel(ShapleyInconsistencyValueApproximate.java:236)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.computeScor
+...[truncated]
+FAIL: attempt=5 seed=56945 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥
+progress: ontology=AD-CDO attempt=5 success=0/100
+----- AD-CDO attempt=6 seed=71145 at 2026-06-28 11:01:19 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=71145, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:01:19.558] Checking precondition...
+[2026-06-28 11:01:19.584] Starting the repair...
+[2026-06-28 11:01:19.596] Found 671 possible bad axioms.
+[2026-06-28 11:01:19.598] Selected the bad axiom SubClassOf(Cognitive_Disorder Schizophrenia).
+[2026-06-28 11:01:19.608] Found 670 possible bad axioms.
+[2026-06-28 11:01:19.608] Selected the bad axiom SubClassOf(Demographic alcohol_abuse).
+[2026-06-28 11:01:19.616] Found 669 possible bad axioms.
+[2026-06-28 11:01:19.616] Selected the bad axiom SubClassOf(X-Ray_Computed_Tomography Positron-Emission_Tomography).
+[2026-06-28 11:01:19.628] Found 668 possible bad axioms.
+[2026-06-28 11:01:19.628] Selected the bad axiom SubClassOf(General_Anesthesia Introduction_Procedure).
+[2026-06-28 11:01:19.634] Found 667 possible bad axioms.
+[2026-06-28 11:01:19.634] Selected the bad axiom SubClassOf(Namenda Anti-Inflammatory_Agents_Non-Steroidal).
+[2026-06-28 11:01:19.641] Found 666 possible bad axioms.
+[2026-06-28 11:01:19.642] Selected the bad axiom SubClassOf(Undefined_Procedures Procedures).
+[2026-06-28 11:01:19.648] Found 665 possible bad axioms.
+[2026-06-28 11:01:19.649] Selected the bad axiom SubClassOf(smoking Social_Determinant_Of_Health).
+[2026-06-28 11:01:19.655] Found 664 possible bad axioms.
+[2026-06-28 11:01:19.655] Selected the bad axiom SubClassOf(Mental_Depression Cognitive_Disorder).
+[2026-06-28 11:01:19.660] Found 663 possible bad axioms.
+[2026-06-28 11:01:19.661] Selected the bad axiom SubClassOf(Cardiac_Surgery_Procedures Intrauterine_Contraceptive_Device_Procedure).
+[2026-06-28 11:01:19.666] Found 662 possible bad axioms.
+[2026-06-28 11:01:19.667] Selected the bad axiom SubClassOf(Cholinesterase_Inhibitors Central_Nervous_System_Agent).
+[2026-06-28 11:01:19.671] Found 661 possible bad axioms.
+[2026-06-28 11:01:19.671] Selected the bad axiom SubClassOf(Blood_Test Hemoglobin_Test).
+[2026-06-28 11:01:19.686] Found 660 possible bad axioms.
+[2026-06-28 11:01:19.687] Selected the bad axiom SubClassOf(Apolipoprotein_E_Genotype_Determination Genetic_Test).
+[2026-06-28 11:01:19.692] Found 659 possible bad axioms.
+[2026-06-28 11:01:19.693] Selected the bad axiom SubClassOf(Insulin Endocrine_and_Metabolic_Agent).
+[2026-06-28 11:01:19.698] Found 658 possible bad axioms.
+[2026-06-28 11:01:19.698] Selected the bad axiom SubClassOf(Disease_Of_Cellular_Proliferation Urinary_Incontinence).
+[2026-06-28 11:01:19.703] Found 657 possible bad axioms.
+[2026-06-28 11:01:19.703] Selected the bad axiom SubClassOf(Surgical_Procedure Aneurysm_Clipping).
+[2026-06-28 11:01:19.707] Found 656 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=6 seed=71145 - negative return code -9
+progress: ontology=AD-CDO attempt=6 success=0/100
+----- AD-CDO attempt=7 seed=85345 at 2026-06-28 11:05:40 -----
+--- stdout ---
+{"seed":85345,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ smoking","iic_values":{},"repair_runtimes_ms":{"A1":667,"A2":204169,"A3":8071,"B1":1798,"B2":7000,"B3":4326,"B4":2262,"B5":2699}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=85345, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:05:41.280] Checking precondition...
+[2026-06-28 11:05:41.308] Starting the repair...
+[2026-06-28 11:05:41.321] Found 671 possible bad axioms.
+[2026-06-28 11:05:41.324] Selected the bad axiom SubClassOf(Thyroid_Function_Test Vitamin_B12_Test).
+[2026-06-28 11:05:41.335] Found 670 possible bad axioms.
+[2026-06-28 11:05:41.335] Selected the bad axiom SubClassOf(Complete_Blood_Count Blood_Test).
+[2026-06-28 11:05:41.343] Found 669 possible bad axioms.
+[2026-06-28 11:05:41.343] Selected the bad axiom SubClassOf(Endocrine_Test Alanine_Transaminase_Blood_Test).
+[2026-06-28 11:05:41.357] Found 668 possible bad axioms.
+[2026-06-28 11:05:41.357] Selected the bad axiom SubClassOf(Aspirin Pain_Management).
+[2026-06-28 11:05:41.364] Found 667 possible bad axioms.
+[2026-06-28 11:05:41.364] Selected the bad axiom SubClassOf(Thyroxine_Measurement Diagnostic_Test).
+[2026-06-28 11:05:41.372] Found 666 possible bad axioms.
+[2026-06-28 11:05:41.372] Selected the bad axiom SubClassOf(Appendectomy Cardiac_Surgery_Procedures).
+[2026-06-28 11:05:41.378] Found 665 possible bad axioms.
+[2026-06-28 11:05:41.379] Selected the bad axiom SubClassOf(Inflammatory_Bowel_Diseases Gastrointestinal_System_Disease).
+[2026-06-28 11:05:41.385] Found 664 possible bad axioms.
+[2026-06-28 11:05:41.385] Selected the bad axiom SubClassOf(Bipolar_Disorder Phobic_Anxiety_Disorder).
+[2026-06-28 11:05:41.392] Found 663 possible bad axioms.
+[2026-06-28 11:05:41.392] Selected the bad axiom SubClassOf(Premenopause owl:Nothing).
+[2026-06-28 11:05:41.398] Found 662 possible bad axioms.
+[2026-06-28 11:05:41.398] Selected the bad axiom SubClassOf(Vitamin_E New_Added_Medication).
+[2026-06-28 11:05:41.403] Found 661 possible bad axioms.
+[2026-06-28 11:05:41.403] Selected the bad axiom SubClassOf(Bilirubin_Lab_Test Hepatic_Function_Test).
+[2026-06-28 11:05:41.418] Found 660 possible bad axioms.
+[2026-06-28 11:05:41.419] Selected the bad axiom SubClassOf(Intellectual_Disability Disease_Of_Mental_Health).
+[2026-06-28 11:05:41.424] Found 659 possible bad axioms.
+[2026-06-28 11:05:41.424] Selected the bad axiom SubClassOf(Diabetes_Mellitus Inherited_Metabolic_Disorder).
+[2026-06-28 11:05:41.430] Found 658 possible bad axioms.
+[2026-06-28 11:05:41.430] Selected the bad axiom SubClassOf(New_Added_Medication Antihypertensive_Agents).
+[2026-06-28 11:05:41.435] Found 657 possible bad axioms.
+[2026-06-28 11:05:41.435] Selected the bad axiom SubClassOf(Hypnotics_And_Sedatives Memantine).
+[2026-06-28 11:05:41.440] Found 656 possible bad axioms.
+[2026-06-28 11:05:41.440] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=7 seed=85345 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ smoking
+progress: ontology=AD-CDO attempt=7 success=0/100
+----- AD-CDO attempt=8 seed=99545 at 2026-06-28 11:09:32 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=99545, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:09:32.809] Checking precondition...
+[2026-06-28 11:09:32.836] Starting the repair...
+[2026-06-28 11:09:32.849] Found 671 possible bad axioms.
+[2026-06-28 11:09:32.851] Selected the bad axiom SubClassOf(Acheta New_Added_Medication).
+[2026-06-28 11:09:32.861] Found 670 possible bad axioms.
+[2026-06-28 11:09:32.861] Selected the bad axiom SubClassOf(Premenopause Physiologic_Amenorrhea).
+[2026-06-28 11:09:32.869] Found 669 possible bad axioms.
+[2026-06-28 11:09:32.869] Selected the bad axiom SubClassOf(Hepatic_Function_Test Diagnostic_Test).
+[2026-06-28 11:09:32.881] Found 668 possible bad axioms.
+[2026-06-28 11:09:32.881] Selected the bad axiom SubClassOf(Nootropic_Agents Monoclonal_Antibodies).
+[2026-06-28 11:09:32.887] Found 667 possible bad axioms.
+[2026-06-28 11:09:32.887] Selected the bad axiom SubClassOf(Premenopause Childbearing_Potential).
+[2026-06-28 11:09:32.895] Found 666 possible bad axioms.
+[2026-06-28 11:09:32.895] Selected the bad axiom SubClassOf(Psychometric_Testing Psychological_Test).
+[2026-06-28 11:09:32.901] Found 665 possible bad axioms.
+[2026-06-28 11:09:32.901] Selected the bad axiom SubClassOf(Urinary_System_Disease Immune_System_Disease).
+[2026-06-28 11:09:32.907] Found 664 possible bad axioms.
+[2026-06-28 11:09:32.908] Selected the bad axiom SubClassOf(Rivastigmine Acetylcholinesterase_Inhibitors).
+[2026-06-28 11:09:32.914] Found 663 possible bad axioms.
+[2026-06-28 11:09:32.914] Selected the bad axiom SubClassOf(Nervous_System_Disorder owl:Nothing).
+[2026-06-28 11:09:32.920] Found 662 possible bad axioms.
+[2026-06-28 11:09:32.920] Selected the bad axiom SubClassOf(Physiologic_Amenorrhea Fertility).
+[2026-06-28 11:09:32.925] Found 661 possible bad axioms.
+[2026-06-28 11:09:32.925] Selected the bad axiom SubClassOf(Appendectomy New_Added_Procedure).
+[2026-06-28 11:09:32.941] Found 660 possible bad axioms.
+[2026-06-28 11:09:32.941] Selected the bad axiom SubClassOf(Operation_On_Nervous_System Aneurysm_Clipping).
+[2026-06-28 11:09:32.946] Found 659 possible bad axioms.
+[2026-06-28 11:09:32.947] Selected the bad axiom SubClassOf(Neuropsychiatric_Inventory_Questionnaire Nincds-Adrda_Criteria_For_Alzheimer's_Disease).
+[2026-06-28 11:09:32.952] Found 658 possible bad axioms.
+[2026-06-28 11:09:32.952] Selected the bad axiom SubClassOf(Undefined_Procedures Radiotherapeutic).
+[2026-06-28 11:09:32.957] Found 657 possible bad axioms.
+[2026-06-28 11:09:32.957] Selected the bad axiom SubClassOf(Angina_Pectoris Cardiovascular_System_Disease).
+[2026-06-28 11:09:32.962] Found 656 possible bad axioms.
+[2026-06-28 11:09:32.962] S
+...[truncated]
+FAIL: attempt=8 seed=99545 - negative return code -9
+progress: ontology=AD-CDO attempt=8 success=0/100
+----- AD-CDO attempt=9 seed=113745 at 2026-06-28 11:14:08 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=113745, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:14:08.660] Checking precondition...
+[2026-06-28 11:14:08.691] Starting the repair...
+[2026-06-28 11:14:08.704] Found 671 possible bad axioms.
+[2026-06-28 11:14:08.706] Selected the bad axiom SubClassOf(Cerebrovascular_Accident Huntington's_Chorea).
+[2026-06-28 11:14:08.716] Found 670 possible bad axioms.
+[2026-06-28 11:14:08.717] Selected the bad axiom SubClassOf(Implantable_Neurostimulators New_Added_Procedure).
+[2026-06-28 11:14:08.729] Found 669 possible bad axioms.
+[2026-06-28 11:14:08.730] Selected the bad axiom SubClassOf(Psychometric_Testing Psychological_Test).
+[2026-06-28 11:14:08.743] Found 668 possible bad axioms.
+[2026-06-28 11:14:08.744] Selected the bad axiom SubClassOf(Ginkgo_Biloba Hydroxymethylglutaryl-CoA_Reductase_Inhibitors).
+[2026-06-28 11:14:08.752] Found 667 possible bad axioms.
+[2026-06-28 11:14:08.752] Selected the bad axiom SubClassOf(Electroencephalography Cardiovascular_Test).
+[2026-06-28 11:14:08.759] Found 666 possible bad axioms.
+[2026-06-28 11:14:08.759] Selected the bad axiom SubClassOf(New_Added_Medication Anti-Inflammatory_Agents_Non-Steroidal).
+[2026-06-28 11:14:08.765] Found 665 possible bad axioms.
+[2026-06-28 11:14:08.766] Selected the bad axiom SubClassOf(Glomerular_Filtration_Rate Creatinine_Clearance_Test).
+[2026-06-28 11:14:08.772] Found 664 possible bad axioms.
+[2026-06-28 11:14:08.772] Selected the bad axiom SubClassOf(Creatinine_Blood_Test ObjectIntersectionOf(Blood_Test Glomerular_Filtration_Rate)).
+[2026-06-28 11:14:08.779] Found 663 possible bad axioms.
+[2026-06-28 11:14:08.779] Selected the bad axiom SubClassOf(Craniocerebral_Trauma Cerebrovascular_Accident).
+[2026-06-28 11:14:08.784] Found 662 possible bad axioms.
+[2026-06-28 11:14:08.785] Selected the bad axiom SubClassOf(Vitamin_E Lithium).
+[2026-06-28 11:14:08.789] Found 661 possible bad axioms.
+[2026-06-28 11:14:08.790] Selected the bad axiom SubClassOf(Clinical_Dementia_Rating_Scale Mental_Health_and_Cognitive_Function_Assessment).
+[2026-06-28 11:14:08.805] Found 660 possible bad axioms.
+[2026-06-28 11:14:08.805] Selected the bad axiom SubClassOf(Hydroxymethylglutaryl-CoA_Reductase_Inhibitors owl:Nothing).
+[2026-06-28 11:14:08.811] Found 659 possible bad axioms.
+[2026-06-28 11:14:08.811] Selected the bad axiom SubClassOf(Percutaneous_Coronary_Intervention New_Added_Procedure).
+[2026-06-28 11:14:08.816] Found 658 possible bad axioms.
+[2026-06-28 11:14:08.816] Selected the bad axiom SubClassOf(Cardiac_Surgery_Procedures owl:Nothing).
+[2026-06-28 11:14:08.821] Found 657 possible bad axioms.
+[2026-06-28 11:14:08.822] Selected the ba
+...[truncated]
+FAIL: attempt=9 seed=113745 - negative return code -9
+progress: ontology=AD-CDO attempt=9 success=0/100
+----- AD-CDO attempt=10 seed=127945 at 2026-06-28 11:18:24 -----
+--- stdout ---
+{"seed":127945,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":517,"A2":206117,"A3":1732,"B1":4284,"B2":16926}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/AD-CDO.owl, seed=127945, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 11:18:25.417] Checking precondition...
+[2026-06-28 11:18:25.447] Starting the repair...
+[2026-06-28 11:18:25.460] Found 671 possible bad axioms.
+[2026-06-28 11:18:25.462] Selected the bad axiom SubClassOf(Neuropsychiatric_Inventory_Questionnaire Nincds-Adrda_Criteria_For_Alzheimer's_Disease).
+[2026-06-28 11:18:25.471] Found 670 possible bad axioms.
+[2026-06-28 11:18:25.471] Selected the bad axiom SubClassOf(Operation_On_Nervous_System Aneurysm_Clipping).
+[2026-06-28 11:18:25.478] Found 669 possible bad axioms.
+[2026-06-28 11:18:25.478] Selected the bad axiom SubClassOf(Stimulator Deep_Brain_Stimulation).
+[2026-06-28 11:18:25.492] Found 668 possible bad axioms.
+[2026-06-28 11:18:25.492] Selected the bad axiom SubClassOf(New_Added_Medication Narcotic_Analgesics).
+[2026-06-28 11:18:25.499] Found 667 possible bad axioms.
+[2026-06-28 11:18:25.499] Selected the bad axiom SubClassOf(Neoplasm_Of_Brain Malignant_Neoplasm).
+[2026-06-28 11:18:25.505] Found 666 possible bad axioms.
+[2026-06-28 11:18:25.506] Selected the bad axiom SubClassOf(Endocrine_and_Metabolic_Agent Cardiovascular_Agent).
+[2026-06-28 11:18:25.512] Found 665 possible bad axioms.
+[2026-06-28 11:18:25.512] Selected the bad axiom SubClassOf(General_Health_and_Physical_Assessment Blood_Test).
+[2026-06-28 11:18:25.517] Found 664 possible bad axioms.
+[2026-06-28 11:18:25.517] Selected the bad axiom SubClassOf(Premenopause Physiologic_Amenorrhea).
+[2026-06-28 11:18:25.524] Found 663 possible bad axioms.
+[2026-06-28 11:18:25.524] Selected the bad axiom SubClassOf(Vitamin_E Lithium).
+[2026-06-28 11:18:25.529] Found 662 possible bad axioms.
+[2026-06-28 11:18:25.529] Selected the bad axiom SubClassOf(Antipsychotic_Agents Central_Nervous_System_Agent).
+[2026-06-28 11:18:25.533] Found 661 possible bad axioms.
+[2026-06-28 11:18:25.533] Selected the bad axiom SubClassOf(Nervous_System_Disorder Neoplasm_Of_Brain).
+[2026-06-28 11:18:25.548] Found 660 possible bad axioms.
+[2026-06-28 11:18:25.549] Selected the bad axiom SubClassOf(Mental_Health_and_Cognitive_Function_Assessment Nincds-Adrda_Criteria_For_Alzheimer's_Disease).
+[2026-06-28 11:18:25.554] Found 659 possible bad axioms.
+[2026-06-28 11:18:25.555] Selected the bad axiom SubClassOf(Reproductive_Health_Test Thyroxine_Measurement).
+[2026-06-28 11:18:25.560] Found 658 possible bad axioms.
+[2026-06-28 11:18:25.560] Selected the bad axiom SubClassOf(Imaging Evaluation_Procedure).
+[2026-06-28 11:18:25.565] Found 657 possible bad axioms.
+[2026-06-28 11:18:25.565] Selected the bad axiom SubClassOf(Cardiovascular_Agent Medication).
+[2026-06-28 11:
+...[truncated]
+FAIL: attempt=10 seed=127945 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥
+progress: ontology=AD-CDO attempt=10 success=0/100
+=== ABORTED AD-CDO after 10 consecutive failures at 2026-06-28 11:22:16 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for AD-CDO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=145 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ General_Health_and_Physical_Assessment
+  attempt=2 seed=14345 msg=negative return code -9
+  attempt=3 seed=28545 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=4 seed=42745 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥
+  attempt=5 seed=56945 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥
+  attempt=6 seed=71145 msg=negative return code -9
+  attempt=7 seed=85345 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ smoking
+  attempt=8 seed=99545 msg=negative return code -9
+  attempt=9 seed=113745 msg=negative return code -9
+  attempt=10 seed=127945 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Folic_Acid_Measurement ⊑ ⊥
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=4 total_seconds=1059.785498 avg_seconds=264.946375
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

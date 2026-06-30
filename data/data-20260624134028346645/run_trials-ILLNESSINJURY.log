@@ -1,0 +1,489 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ILLNESSINJURY.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ILLNESSINJURY.csv
+
+=== Starting sequential trials for ILLNESSINJURY at 2026-06-26 18:13:59 ===
+----- ILLNESSINJURY attempt=1 seed=86 at 2026-06-26 18:13:59 -----
+--- stdout ---
+{"seed":86,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":99,"A2":5456,"A3":1124,"B1":271,"B2":809,"B3":423,"B4":156}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=86, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:13:59.748] Checking precondition...
+[2026-06-26 18:13:59.764] Starting the repair...
+[2026-06-26 18:13:59.772] Found 208 possible bad axioms.
+[2026-06-26 18:13:59.774] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Influenza).
+[2026-06-26 18:13:59.776] Found 207 possible bad axioms.
+[2026-06-26 18:13:59.776] Selected the bad axiom ClassAssertion(Infectious_diseases HIV).
+[2026-06-26 18:13:59.778] Found 206 possible bad axioms.
+[2026-06-26 18:13:59.778] Selected the bad axiom ClassAssertion(Cancers Cancer).
+[2026-06-26 18:13:59.780] Found 205 possible bad axioms.
+[2026-06-26 18:13:59.780] Selected the bad axiom ClassAssertion(Cancers Cancer_of_uterus).
+[2026-06-26 18:13:59.782] Found 204 possible bad axioms.
+[2026-06-26 18:13:59.782] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Diseases_of_the_respiratory_system).
+[2026-06-26 18:13:59.783] Found 203 possible bad axioms.
+[2026-06-26 18:13:59.784] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Symptoms_unspecified_unknown).
+[2026-06-26 18:13:59.785] Found 202 possible bad axioms.
+[2026-06-26 18:13:59.785] Selected the bad axiom ClassAssertion(Diseases_of_the_nervous_system Epilepsy).
+[2026-06-26 18:13:59.786] Found 201 possible bad axioms.
+[2026-06-26 18:13:59.786] Selected the bad axiom ClassAssertion(Diseases_of_the_blood Diseases_of_the_Blood).
+[2026-06-26 18:13:59.787] Found 200 possible bad axioms.
+[2026-06-26 18:13:59.787] Selected the bad axiom ClassAssertion(Infectious_diseases Dengue).
+[2026-06-26 18:13:59.788] Found 199 possible bad axioms.
+[2026-06-26 18:13:59.788] Selected the bad axiom ClassAssertion(Mental_and_behavioural_disorders Eating_disorders).
+[2026-06-26 18:13:59.789] Found 198 possible bad axioms.
+[2026-06-26 18:13:59.789] Selected the bad axiom SubClassOf(Infectious_diseases IllnessInjury).
+[2026-06-26 18:13:59.797] Found 197 possible bad axioms.
+[2026-06-26 18:13:59.797] Selected the bad axiom ClassAssertion(Injuries Complications_of_surgery).
+[2026-06-26 18:13:59.798] Found 196 possible bad axioms.
+[2026-06-26 18:13:59.798] Selected the bad axiom ClassAssertion(Pregnancy_childbirth Indirect_obstetric_deaths).
+[2026-06-26 18:13:59.799] Found 195 possible bad axioms.
+[2026-06-26 18:13:59.799] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(External_causes)).
+[2026-06-26 18:13:59.802] Found 194 possible bad axioms.
+[2026-06-26 18:13:59.803] Selected the bad axiom SubClassOf(Mental_and_behavioural_disorders ObjectComplementOf(Cancers)).
+[2026-06-26 18:13:59.805] Found 193 poss
+...[truncated]
+FAIL: attempt=1 seed=86 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=1 success=0/100
+----- ILLNESSINJURY attempt=2 seed=14286 at 2026-06-26 18:14:08 -----
+--- stdout ---
+{"seed":14286,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":84,"A2":5506,"A3":318,"B1":462,"B2":592,"B3":374,"B4":334}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=14286, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:14:08.536] Checking precondition...
+[2026-06-26 18:14:08.554] Starting the repair...
+[2026-06-26 18:14:08.561] Found 208 possible bad axioms.
+[2026-06-26 18:14:08.563] Selected the bad axiom ClassAssertion(Diseases_of_the_circulatory_system Hypertensive_heart_diseases).
+[2026-06-26 18:14:08.565] Found 207 possible bad axioms.
+[2026-06-26 18:14:08.565] Selected the bad axiom ClassAssertion(Cancers Benign_tumours).
+[2026-06-26 18:14:08.567] Found 206 possible bad axioms.
+[2026-06-26 18:14:08.567] Selected the bad axiom ClassAssertion(Cancers Cancer_of_bladder).
+[2026-06-26 18:14:08.568] Found 205 possible bad axioms.
+[2026-06-26 18:14:08.569] Selected the bad axiom ClassAssertion(External_causes Alcohol_poisoning).
+[2026-06-26 18:14:08.570] Found 204 possible bad axioms.
+[2026-06-26 18:14:08.571] Selected the bad axiom ClassAssertion(Cancers Cancer_of_colon_rectum_anus).
+[2026-06-26 18:14:08.572] Found 203 possible bad axioms.
+[2026-06-26 18:14:08.572] Selected the bad axiom ClassAssertion(Infectious_diseases Tuberculosis).
+[2026-06-26 18:14:08.573] Found 202 possible bad axioms.
+[2026-06-26 18:14:08.573] Selected the bad axiom ClassAssertion(Endocrine_nutritional_and_metabolic_diseases Addison's_disease).
+[2026-06-26 18:14:08.574] Found 201 possible bad axioms.
+[2026-06-26 18:14:08.575] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Gastric_and_duodenal_ulcer).
+[2026-06-26 18:14:08.576] Found 200 possible bad axioms.
+[2026-06-26 18:14:08.576] Selected the bad axiom SubClassOf(Diseases_of_the_nervous_system IllnessInjury).
+[2026-06-26 18:14:08.580] Found 199 possible bad axioms.
+[2026-06-26 18:14:08.580] Selected the bad axiom SubClassOf(Diseases_of_the_respiratory_system ObjectComplementOf(Cancers)).
+[2026-06-26 18:14:08.583] Found 198 possible bad axioms.
+[2026-06-26 18:14:08.583] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Coma).
+[2026-06-26 18:14:08.588] Found 197 possible bad axioms.
+[2026-06-26 18:14:08.588] Selected the bad axiom SubClassOf(Diseases_of_the_blood IllnessInjury).
+[2026-06-26 18:14:08.592] Found 196 possible bad axioms.
+[2026-06-26 18:14:08.592] Selected the bad axiom ClassAssertion(External_causes Forces_of_nature).
+[2026-06-26 18:14:08.593] Found 195 possible bad axioms.
+[2026-06-26 18:14:08.593] Selected the bad axiom SubClassOf(Diseases_of_the_nervous_system ObjectComplementOf(Cancers)).
+[2026-06-26 18:14:08.596] Found 194 possible bad axioms.
+[2026-06-26 18:14:08.596] Selected the bad axiom ClassAssertion(Diseases_of_the_circulatory_system Diseases_of_the_ci
+...[truncated]
+FAIL: attempt=2 seed=14286 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=2 success=0/100
+----- ILLNESSINJURY attempt=3 seed=28486 at 2026-06-26 18:14:16 -----
+--- stdout ---
+{"seed":28486,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":70,"A2":5468,"A3":307,"B1":744,"B2":1281,"B3":717,"B4":200}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=28486, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:14:16.659] Checking precondition...
+[2026-06-26 18:14:16.678] Starting the repair...
+[2026-06-26 18:14:16.686] Found 208 possible bad axioms.
+[2026-06-26 18:14:16.687] Selected the bad axiom SubClassOf(Diseases_of_the_digestive_system ObjectComplementOf(Cancers)).
+[2026-06-26 18:14:16.692] Found 207 possible bad axioms.
+[2026-06-26 18:14:16.692] Selected the bad axiom ClassAssertion(Cancers Cancer_of_lip_oral_cavity_and_pharynx).
+[2026-06-26 18:14:16.694] Found 206 possible bad axioms.
+[2026-06-26 18:14:16.695] Selected the bad axiom ClassAssertion(Mental_and_behavioural_disorders Alcohol_use_disorders).
+[2026-06-26 18:14:16.696] Found 205 possible bad axioms.
+[2026-06-26 18:14:16.696] Selected the bad axiom SubClassOf(Congenital_malformations_deformations_and_chromosomal_abnormalities ObjectComplementOf(Cancers)).
+[2026-06-26 18:14:16.700] Found 204 possible bad axioms.
+[2026-06-26 18:14:16.701] Selected the bad axiom SubClassOf(Diseases_of_the_musculoskeletal_system IllnessInjury).
+[2026-06-26 18:14:16.704] Found 203 possible bad axioms.
+[2026-06-26 18:14:16.704] Selected the bad axiom SubClassOf(Diseases_of_the_blood ObjectComplementOf(Cancers)).
+[2026-06-26 18:14:16.708] Found 202 possible bad axioms.
+[2026-06-26 18:14:16.708] Selected the bad axiom ClassAssertion(Endocrine_nutritional_and_metabolic_diseases Addison's_disease).
+[2026-06-26 18:14:16.709] Found 201 possible bad axioms.
+[2026-06-26 18:14:16.709] Selected the bad axiom SubClassOf(Diseases_of_the_nervous_system IllnessInjury).
+[2026-06-26 18:14:16.716] Found 200 possible bad axioms.
+[2026-06-26 18:14:16.716] Selected the bad axiom ClassAssertion(Infectious_diseases Rabies).
+[2026-06-26 18:14:16.717] Found 199 possible bad axioms.
+[2026-06-26 18:14:16.717] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Congenital_malformations_deformations_and_chromosomal_abnormalities)).
+[2026-06-26 18:14:16.720] Found 198 possible bad axioms.
+[2026-06-26 18:14:16.720] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(External_causes)).
+[2026-06-26 18:14:16.723] Found 197 possible bad axioms.
+[2026-06-26 18:14:16.723] Selected the bad axiom SubClassOf(Cancers IllnessInjury).
+[2026-06-26 18:14:16.725] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 18:14:16.726] Checking precondition...
+[2026-06-26 18:14:16.734] Starting the repair...
+[2026-06-26 18:14:22.193] Found 2 possible bad axioms.
+[2026-06-26 18:14:22.193] Selected the bad axiom SubClassOf(IllnessInjury Infectious_diseases).
+[2026-06-26 18:14:22.194] 
+...[truncated]
+FAIL: attempt=3 seed=28486 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=3 success=0/100
+----- ILLNESSINJURY attempt=4 seed=42686 at 2026-06-26 18:14:25 -----
+--- stdout ---
+{"seed":42686,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":72,"A2":5482,"A3":332,"B1":731,"B2":1291,"B3":672,"B4":568}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=42686, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:14:25.908] Checking precondition...
+[2026-06-26 18:14:25.923] Starting the repair...
+[2026-06-26 18:14:25.931] Found 208 possible bad axioms.
+[2026-06-26 18:14:25.932] Selected the bad axiom ClassAssertion(Infectious_diseases Meningococcal_Infection).
+[2026-06-26 18:14:25.934] Found 207 possible bad axioms.
+[2026-06-26 18:14:25.935] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Pleurisy).
+[2026-06-26 18:14:25.936] Found 206 possible bad axioms.
+[2026-06-26 18:14:25.937] Selected the bad axiom ClassAssertion(Diseases_of_the_genitourinary_system Female_infertility).
+[2026-06-26 18:14:25.938] Found 205 possible bad axioms.
+[2026-06-26 18:14:25.938] Selected the bad axiom SubClassOf(External_causes IllnessInjury).
+[2026-06-26 18:14:25.943] Found 204 possible bad axioms.
+[2026-06-26 18:14:25.943] Selected the bad axiom ClassAssertion(External_causes Alcohol_poisoning).
+[2026-06-26 18:14:25.944] Found 203 possible bad axioms.
+[2026-06-26 18:14:25.945] Selected the bad axiom ClassAssertion(Diseases_of_the_nervous_system Epilepsy).
+[2026-06-26 18:14:25.946] Found 202 possible bad axioms.
+[2026-06-26 18:14:25.946] Selected the bad axiom ClassAssertion(Diseases_of_the_circulatory_system Myocardial_infarction_heart_attack).
+[2026-06-26 18:14:25.947] Found 201 possible bad axioms.
+[2026-06-26 18:14:25.947] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Appendicitis).
+[2026-06-26 18:14:25.948] Found 200 possible bad axioms.
+[2026-06-26 18:14:25.948] Selected the bad axiom ClassAssertion(Infectious_diseases Syphilis).
+[2026-06-26 18:14:25.949] Found 199 possible bad axioms.
+[2026-06-26 18:14:25.949] Selected the bad axiom SubClassOf(Diseases_of_the_respiratory_system IllnessInjury).
+[2026-06-26 18:14:25.957] Found 198 possible bad axioms.
+[2026-06-26 18:14:25.957] Selected the bad axiom ClassAssertion(Cancers Hodgkin's_lymphoma).
+[2026-06-26 18:14:25.958] Found 197 possible bad axioms.
+[2026-06-26 18:14:25.958] Selected the bad axiom ClassAssertion(Diseases_of_the_ear Diseases_of_the_ear).
+[2026-06-26 18:14:25.959] Found 196 possible bad axioms.
+[2026-06-26 18:14:25.959] Selected the bad axiom ClassAssertion(Diseases_of_the_blood Diseases_of_the_Blood).
+[2026-06-26 18:14:25.960] Found 195 possible bad axioms.
+[2026-06-26 18:14:25.960] Selected the bad axiom SubClassOf(ObjectComplementOf(Diseases_of_the_blood) ObjectComplementOf(Diseases_of_the_genitourinary_system)).
+[2026-06-26 18:14:25.964] Found 194 possible bad axioms.
+[2026-06-26 18:14:25.964] Selected the bad axiom ClassAssertion(Conge
+...[truncated]
+FAIL: attempt=4 seed=42686 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=4 success=0/100
+----- ILLNESSINJURY attempt=5 seed=56886 at 2026-06-26 18:14:35 -----
+--- stdout ---
+{"seed":56886,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":79,"A2":5518,"A3":329,"B1":294,"B2":1269,"B3":686,"B4":268}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=56886, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:14:35.499] Checking precondition...
+[2026-06-26 18:14:35.515] Starting the repair...
+[2026-06-26 18:14:35.522] Found 208 possible bad axioms.
+[2026-06-26 18:14:35.523] Selected the bad axiom ClassAssertion(Infectious_diseases Whooping_cough).
+[2026-06-26 18:14:35.526] Found 207 possible bad axioms.
+[2026-06-26 18:14:35.526] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Fever).
+[2026-06-26 18:14:35.528] Found 206 possible bad axioms.
+[2026-06-26 18:14:35.528] Selected the bad axiom ClassAssertion(Injuries Injuries).
+[2026-06-26 18:14:35.529] Found 205 possible bad axioms.
+[2026-06-26 18:14:35.530] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Diseases_of_the_respiratory_system).
+[2026-06-26 18:14:35.531] Found 204 possible bad axioms.
+[2026-06-26 18:14:35.531] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Appendicitis).
+[2026-06-26 18:14:35.533] Found 203 possible bad axioms.
+[2026-06-26 18:14:35.533] Selected the bad axiom ClassAssertion(Diseases_of_the_ear Diseases_of_the_ear).
+[2026-06-26 18:14:35.534] Found 202 possible bad axioms.
+[2026-06-26 18:14:35.534] Selected the bad axiom ClassAssertion(Diseases_of_the_musculoskeletal_system Rheumatoid_Arthritis).
+[2026-06-26 18:14:35.535] Found 201 possible bad axioms.
+[2026-06-26 18:14:35.535] Selected the bad axiom ClassAssertion(Pregnancy_childbirth Abortion).
+[2026-06-26 18:14:35.536] Found 200 possible bad axioms.
+[2026-06-26 18:14:35.536] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Diseases_of_the_genitourinary_system)).
+[2026-06-26 18:14:35.540] Found 199 possible bad axioms.
+[2026-06-26 18:14:35.540] Selected the bad axiom ClassAssertion(Endocrine_nutritional_and_metabolic_diseases Malnutrition).
+[2026-06-26 18:14:35.541] Found 198 possible bad axioms.
+[2026-06-26 18:14:35.541] Selected the bad axiom ClassAssertion(Cancers Cancer_of_skin).
+[2026-06-26 18:14:35.542] Found 197 possible bad axioms.
+[2026-06-26 18:14:35.542] Selected the bad axiom ClassAssertion(External_causes Drowning).
+[2026-06-26 18:14:35.547] Found 196 possible bad axioms.
+[2026-06-26 18:14:35.548] Selected the bad axiom ClassAssertion(Infectious_diseases Tetanus).
+[2026-06-26 18:14:35.548] Found 195 possible bad axioms.
+[2026-06-26 18:14:35.549] Selected the bad axiom ClassAssertion(Cancers Cancer_of_larynx).
+[2026-06-26 18:14:35.550] Found 194 possible bad axioms.
+[2026-06-26 18:14:35.550] Selected the bad axiom ClassAssertion(Diseases_of_the_nervous_system Parkinson_disease).
+[2026-06-26 18:14:35.551] Found 193 poss
+...[truncated]
+FAIL: attempt=5 seed=56886 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=5 success=0/100
+----- ILLNESSINJURY attempt=6 seed=71086 at 2026-06-26 18:14:44 -----
+--- stdout ---
+{"seed":71086,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":185,"A2":5471,"A3":679,"B1":276,"B2":1241,"B3":699,"B4":283}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=71086, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:14:44.404] Checking precondition...
+[2026-06-26 18:14:44.424] Starting the repair...
+[2026-06-26 18:14:44.434] Found 208 possible bad axioms.
+[2026-06-26 18:14:44.436] Selected the bad axiom ClassAssertion(Diseases_of_the_nervous_system Alzheimer's_disease_dementias).
+[2026-06-26 18:14:44.439] Found 207 possible bad axioms.
+[2026-06-26 18:14:44.439] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Diseases_of_the_ear)).
+[2026-06-26 18:14:44.444] Found 206 possible bad axioms.
+[2026-06-26 18:14:44.445] Selected the bad axiom ClassAssertion(Infectious_diseases HIV).
+[2026-06-26 18:14:44.447] Found 205 possible bad axioms.
+[2026-06-26 18:14:44.447] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Unspecified_Unknown_Cause_of_Death).
+[2026-06-26 18:14:44.449] Found 204 possible bad axioms.
+[2026-06-26 18:14:44.449] Selected the bad axiom SubClassOf(Injuries IllnessInjury).
+[2026-06-26 18:14:44.453] Found 203 possible bad axioms.
+[2026-06-26 18:14:44.453] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Diseases_of_the_digestive_system).
+[2026-06-26 18:14:44.455] Found 202 possible bad axioms.
+[2026-06-26 18:14:44.455] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Influenza).
+[2026-06-26 18:14:44.456] Found 201 possible bad axioms.
+[2026-06-26 18:14:44.457] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Diseases_of_the_nervous_system)).
+[2026-06-26 18:14:44.461] Found 200 possible bad axioms.
+[2026-06-26 18:14:44.461] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Liver_cirrhosis).
+[2026-06-26 18:14:44.462] Found 199 possible bad axioms.
+[2026-06-26 18:14:44.462] Selected the bad axiom ClassAssertion(Injuries Injuries).
+[2026-06-26 18:14:44.467] Found 198 possible bad axioms.
+[2026-06-26 18:14:44.467] Selected the bad axiom ClassAssertion(Infectious_diseases Hepatitis_A).
+[2026-06-26 18:14:44.469] Found 197 possible bad axioms.
+[2026-06-26 18:14:44.469] Selected the bad axiom SubClassOf(Pregnancy_childbirth IllnessInjury).
+[2026-06-26 18:14:44.471] Found 196 possible bad axioms.
+[2026-06-26 18:14:44.472] Selected the bad axiom ClassAssertion(Diseases_of_the_circulatory_system Diseases_of_the_circulatory_system).
+[2026-06-26 18:14:44.473] Found 195 possible bad axioms.
+[2026-06-26 18:14:44.473] Selected the bad axiom ClassAssertion(External_causes External_causes).
+[2026-06-26 18:14:44.474] Found 194 possible bad axioms.
+[2026-06-26 18:14:44.474] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Pregnancy_ch
+...[truncated]
+FAIL: attempt=6 seed=71086 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=6 success=0/100
+----- ILLNESSINJURY attempt=7 seed=85286 at 2026-06-26 18:14:53 -----
+--- stdout ---
+{"seed":85286,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":80,"A2":5448,"A3":476,"B1":257,"B2":729,"B3":373,"B4":349}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=85286, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:14:53.683] Checking precondition...
+[2026-06-26 18:14:53.701] Starting the repair...
+[2026-06-26 18:14:53.709] Found 208 possible bad axioms.
+[2026-06-26 18:14:53.711] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Convulsions).
+[2026-06-26 18:14:53.712] Found 207 possible bad axioms.
+[2026-06-26 18:14:53.713] Selected the bad axiom SubClassOf(Diseases_of_the_blood ObjectComplementOf(Cancers)).
+[2026-06-26 18:14:53.717] Found 206 possible bad axioms.
+[2026-06-26 18:14:53.718] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Infant_death)).
+[2026-06-26 18:14:53.722] Found 205 possible bad axioms.
+[2026-06-26 18:14:53.722] Selected the bad axiom ClassAssertion(Cancers Cancer_of_liver).
+[2026-06-26 18:14:53.724] Found 204 possible bad axioms.
+[2026-06-26 18:14:53.724] Selected the bad axiom ClassAssertion(External_causes Alcohol_poisoning).
+[2026-06-26 18:14:53.725] Found 203 possible bad axioms.
+[2026-06-26 18:14:53.725] Selected the bad axiom ClassAssertion(Endocrine_nutritional_and_metabolic_diseases Graves's_disease).
+[2026-06-26 18:14:53.727] Found 202 possible bad axioms.
+[2026-06-26 18:14:53.727] Selected the bad axiom SubClassOf(Diseases_of_the_digestive_system IllnessInjury).
+[2026-06-26 18:14:53.730] Found 201 possible bad axioms.
+[2026-06-26 18:14:53.730] Selected the bad axiom SubClassOf(Endocrine_nutritional_and_metabolic_diseases IllnessInjury).
+[2026-06-26 18:14:53.738] Found 200 possible bad axioms.
+[2026-06-26 18:14:53.738] Selected the bad axiom ClassAssertion(External_causes Poisoning).
+[2026-06-26 18:14:53.739] Found 199 possible bad axioms.
+[2026-06-26 18:14:53.739] Selected the bad axiom ClassAssertion(Infectious_diseases Cholera).
+[2026-06-26 18:14:53.740] Found 198 possible bad axioms.
+[2026-06-26 18:14:53.740] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Infectious_diseases)).
+[2026-06-26 18:14:53.742] Found 197 possible bad axioms.
+[2026-06-26 18:14:53.743] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Intestinal_malabsorption).
+[2026-06-26 18:14:53.744] Found 196 possible bad axioms.
+[2026-06-26 18:14:53.744] Selected the bad axiom ClassAssertion(Diseases_of_the_circulatory_system Hypertensive_heart_diseases).
+[2026-06-26 18:14:53.745] Found 195 possible bad axioms.
+[2026-06-26 18:14:53.745] Selected the bad axiom SubClassOf(Diseases_of_the_digestive_system Endocrine_nutritional_and_metabolic_diseases).
+[2026-06-26 18:14:53.747] Found 194 possible bad axioms.
+[2026-06-26 18:14:53.747] Selected the bad axiom ClassAssertion(Diseases_o
+...[truncated]
+FAIL: attempt=7 seed=85286 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=7 success=0/100
+----- ILLNESSINJURY attempt=8 seed=99486 at 2026-06-26 18:15:01 -----
+--- stdout ---
+{"seed":99486,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":86,"A2":5519,"A3":321,"B1":295,"B2":702,"B3":375,"B4":276}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=99486, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:15:01.838] Checking precondition...
+[2026-06-26 18:15:01.854] Starting the repair...
+[2026-06-26 18:15:01.864] Found 208 possible bad axioms.
+[2026-06-26 18:15:01.865] Selected the bad axiom SubClassOf(Diseases_of_the_circulatory_system ObjectComplementOf(Cancers)).
+[2026-06-26 18:15:01.870] Found 207 possible bad axioms.
+[2026-06-26 18:15:01.870] Selected the bad axiom SubClassOf(Pregnancy_childbirth IllnessInjury).
+[2026-06-26 18:15:01.874] Found 206 possible bad axioms.
+[2026-06-26 18:15:01.874] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Celiac_disease).
+[2026-06-26 18:15:01.876] Found 205 possible bad axioms.
+[2026-06-26 18:15:01.876] Selected the bad axiom SubClassOf(Diseases_of_the_genitourinary_system ObjectComplementOf(Cancers)).
+[2026-06-26 18:15:01.880] Found 204 possible bad axioms.
+[2026-06-26 18:15:01.881] Selected the bad axiom ClassAssertion(Cancers Hodgkin's_lymphoma).
+[2026-06-26 18:15:01.882] Found 203 possible bad axioms.
+[2026-06-26 18:15:01.883] Selected the bad axiom ClassAssertion(Diseases_of_the_musculoskeletal_system Rheumatoid_Arthritis).
+[2026-06-26 18:15:01.884] Found 202 possible bad axioms.
+[2026-06-26 18:15:01.884] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Pneumonia).
+[2026-06-26 18:15:01.885] Found 201 possible bad axioms.
+[2026-06-26 18:15:01.885] Selected the bad axiom ClassAssertion(Cancers Cancer_of_trachea_bronchus_and_lung).
+[2026-06-26 18:15:01.886] Found 200 possible bad axioms.
+[2026-06-26 18:15:01.886] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Diseases_of_the_respiratory_system).
+[2026-06-26 18:15:01.887] Found 199 possible bad axioms.
+[2026-06-26 18:15:01.887] Selected the bad axiom ClassAssertion(Endocrine_nutritional_and_metabolic_diseases Diabetes).
+[2026-06-26 18:15:01.893] Found 198 possible bad axioms.
+[2026-06-26 18:15:01.893] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Pregnancy_childbirth)).
+[2026-06-26 18:15:01.896] Found 197 possible bad axioms.
+[2026-06-26 18:15:01.896] Selected the bad axiom SubClassOf(Infant_death ObjectComplementOf(Cancers)).
+[2026-06-26 18:15:01.898] Found 196 possible bad axioms.
+[2026-06-26 18:15:01.899] Selected the bad axiom ClassAssertion(Diseases_of_the_genitourinary_system Kidney_stones).
+[2026-06-26 18:15:01.899] Found 195 possible bad axioms.
+[2026-06-26 18:15:01.900] Selected the bad axiom ClassAssertion(Diseases_of_the_nervous_system Diseases_of_the_nervous_system).
+[2026-06-26 18:15:01.901] Found 194 possible bad axioms.
+[2026-06-26 18:
+...[truncated]
+FAIL: attempt=8 seed=99486 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=8 success=0/100
+----- ILLNESSINJURY attempt=9 seed=113686 at 2026-06-26 18:15:09 -----
+--- stdout ---
+{"seed":113686,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":131,"A2":5459,"A3":318,"B1":282,"B2":593,"B3":401,"B4":235}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=113686, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:15:09.867] Checking precondition...
+[2026-06-26 18:15:09.884] Starting the repair...
+[2026-06-26 18:15:09.892] Found 208 possible bad axioms.
+[2026-06-26 18:15:09.894] Selected the bad axiom ClassAssertion(Cancers Cancer).
+[2026-06-26 18:15:09.896] Found 207 possible bad axioms.
+[2026-06-26 18:15:09.896] Selected the bad axiom ClassAssertion(Congenital_malformations_deformations_and_chromosomal_abnormalities Congenital_malformations_deformations_and_chromosomal_abnormalities).
+[2026-06-26 18:15:09.898] Found 206 possible bad axioms.
+[2026-06-26 18:15:09.898] Selected the bad axiom ClassAssertion(Diseases_of_the_genitourinary_system Kidney_stones).
+[2026-06-26 18:15:09.900] Found 205 possible bad axioms.
+[2026-06-26 18:15:09.900] Selected the bad axiom SubClassOf(Diseases_of_the_ear ObjectComplementOf(Cancers)).
+[2026-06-26 18:15:09.904] Found 204 possible bad axioms.
+[2026-06-26 18:15:09.905] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Endocrine_nutritional_and_metabolic_diseases)).
+[2026-06-26 18:15:09.909] Found 203 possible bad axioms.
+[2026-06-26 18:15:09.909] Selected the bad axiom ClassAssertion(Diseases_of_the_respiratory_system Pneumonia).
+[2026-06-26 18:15:09.910] Found 202 possible bad axioms.
+[2026-06-26 18:15:09.910] Selected the bad axiom ClassAssertion(Diseases_of_the_digestive_system Diseases_of_the_digestive_system).
+[2026-06-26 18:15:09.911] Found 201 possible bad axioms.
+[2026-06-26 18:15:09.911] Selected the bad axiom ClassAssertion(Cancers Cancer_of_larynx).
+[2026-06-26 18:15:09.912] Found 200 possible bad axioms.
+[2026-06-26 18:15:09.912] Selected the bad axiom ClassAssertion(Endocrine_nutritional_and_metabolic_diseases Diabetes).
+[2026-06-26 18:15:09.913] Found 199 possible bad axioms.
+[2026-06-26 18:15:09.913] Selected the bad axiom SubClassOf(Mental_and_behavioural_disorders ObjectComplementOf(Cancers)).
+[2026-06-26 18:15:09.920] Found 198 possible bad axioms.
+[2026-06-26 18:15:09.921] Selected the bad axiom SubClassOf(Infant_death IllnessInjury).
+[2026-06-26 18:15:09.923] Found 197 possible bad axioms.
+[2026-06-26 18:15:09.924] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Asphyxia).
+[2026-06-26 18:15:09.924] Found 196 possible bad axioms.
+[2026-06-26 18:15:09.925] Selected the bad axiom ClassAssertion(Infant_death Complications_of_pregnancy_labour_delivery).
+[2026-06-26 18:15:09.925] Found 195 possible bad axioms.
+[2026-06-26 18:15:09.926] Selected the bad axiom ClassAssertion(Cancers Cancer_of_skin).
+[2026-06-26 18:15:09.927] Found 194 possible bad axioms.
+[2026-
+...[truncated]
+FAIL: attempt=9 seed=113686 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=9 success=0/100
+----- ILLNESSINJURY attempt=10 seed=127886 at 2026-06-26 18:15:17 -----
+--- stdout ---
+{"seed":127886,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤","iic_values":{},"repair_runtimes_ms":{"A1":95,"A2":5492,"A3":334,"B1":472,"B2":710,"B3":367,"B4":282}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ILLNESSINJURY.owl, seed=127886, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:15:17.733] Checking precondition...
+[2026-06-26 18:15:17.750] Starting the repair...
+[2026-06-26 18:15:17.758] Found 208 possible bad axioms.
+[2026-06-26 18:15:17.760] Selected the bad axiom ClassAssertion(Mental_and_behavioural_disorders Drug_use_disorders).
+[2026-06-26 18:15:17.762] Found 207 possible bad axioms.
+[2026-06-26 18:15:17.763] Selected the bad axiom ClassAssertion(Infectious_diseases Meningococcal_Infection).
+[2026-06-26 18:15:17.764] Found 206 possible bad axioms.
+[2026-06-26 18:15:17.764] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Malaise_and_fatigue).
+[2026-06-26 18:15:17.766] Found 205 possible bad axioms.
+[2026-06-26 18:15:17.767] Selected the bad axiom SubClassOf(External_causes ObjectComplementOf(Cancers)).
+[2026-06-26 18:15:17.771] Found 204 possible bad axioms.
+[2026-06-26 18:15:17.771] Selected the bad axiom ClassAssertion(Infectious_diseases Syphilis).
+[2026-06-26 18:15:17.773] Found 203 possible bad axioms.
+[2026-06-26 18:15:17.773] Selected the bad axiom SubClassOf(Infant_death ObjectComplementOf(Cancers)).
+[2026-06-26 18:15:17.776] Found 202 possible bad axioms.
+[2026-06-26 18:15:17.776] Selected the bad axiom ClassAssertion(Symptoms_unspecified_unknown Jaundice).
+[2026-06-26 18:15:17.777] Found 201 possible bad axioms.
+[2026-06-26 18:15:17.777] Selected the bad axiom SubClassOf(Cancers ObjectComplementOf(Pregnancy_childbirth)).
+[2026-06-26 18:15:17.782] Found 200 possible bad axioms.
+[2026-06-26 18:15:17.782] Selected the bad axiom ClassAssertion(Cancers Multiple_myeloma).
+[2026-06-26 18:15:17.783] Found 199 possible bad axioms.
+[2026-06-26 18:15:17.783] Selected the bad axiom ClassAssertion(Cancers Cancer_of_lip_oral_cavity_and_pharynx).
+[2026-06-26 18:15:17.788] Found 198 possible bad axioms.
+[2026-06-26 18:15:17.789] Selected the bad axiom ClassAssertion(External_causes Forces_of_nature).
+[2026-06-26 18:15:17.789] Found 197 possible bad axioms.
+[2026-06-26 18:15:17.790] Selected the bad axiom ClassAssertion(Cancers Cancer_of_bladder).
+[2026-06-26 18:15:17.790] Found 196 possible bad axioms.
+[2026-06-26 18:15:17.791] Selected the bad axiom ClassAssertion(Cancers Cancer_of_ovary).
+[2026-06-26 18:15:17.791] Found 195 possible bad axioms.
+[2026-06-26 18:15:17.792] Selected the bad axiom ClassAssertion(Diseases_of_the_nervous_system Paralysis).
+[2026-06-26 18:15:17.793] Found 194 possible bad axioms.
+[2026-06-26 18:15:17.793] Selected the bad axiom SubClassOf(Endocrine_nutritional_and_metabolic_diseases Diseases_of_the_skin).
+[2026-06-26 18:15:17.795] Found 193 possible bad ax
+...[truncated]
+FAIL: attempt=10 seed=127886 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+progress: ontology=ILLNESSINJURY attempt=10 success=0/100
+=== ABORTED ILLNESSINJURY after 10 consecutive failures at 2026-06-26 18:15:25 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ILLNESSINJURY - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=86 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=2 seed=14286 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=3 seed=28486 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=4 seed=42686 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=5 seed=56886 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=6 seed=71086 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=7 seed=85286 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=8 seed=99486 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=9 seed=113686 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+  attempt=10 seed=127886 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,649 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-NND_ND.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-NND_ND.csv
+
+=== Starting sequential trials for NND_ND at 2026-06-26 18:15:35 ===
+----- NND_ND attempt=1 seed=87 at 2026-06-26 18:15:35 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=87, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:15:35.455] Checking precondition...
+[2026-06-26 18:15:35.472] Starting the repair...
+[2026-06-26 18:15:35.479] Found 208 possible bad axioms.
+[2026-06-26 18:15:35.481] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Encephalitis http://purl.obolibrary.org/obo/Dystonia).
+[2026-06-26 18:15:35.486] Found 207 possible bad axioms.
+[2026-06-26 18:15:35.486] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Encephalitis http://purl.obolibrary.org/obo/Neurological_Disorders).
+[2026-06-26 18:15:35.490] Found 206 possible bad axioms.
+[2026-06-26 18:15:35.491] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Autism_Spectrum_Disorder http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder).
+[2026-06-26 18:15:35.499] Found 205 possible bad axioms.
+[2026-06-26 18:15:35.500] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Developmental_Diseases http://purl.obolibrary.org/obo/Rare_Disorders).
+[2026-06-26 18:15:35.504] Found 204 possible bad axioms.
+[2026-06-26 18:15:35.504] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Huntingtons_Disease http://purl.obolibrary.org/obo/Progressive_Supranuclear_Palsy).
+[2026-06-26 18:15:35.508] Found 203 possible bad axioms.
+[2026-06-26 18:15:35.509] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Undefined http://purl.obolibrary.org/obo/Multiple_Sclerosis).
+[2026-06-26 18:15:35.512] Found 202 possible bad axioms.
+[2026-06-26 18:15:35.512] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Major_Depressive_Disorder http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder).
+[2026-06-26 18:15:35.516] Found 201 possible bad axioms.
+[2026-06-26 18:15:35.516] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Remitting_Relapsing ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive)).
+[2026-06-26 18:15:35.519] Found 200 possible bad axioms.
+[2026-06-26 18:15:35.519] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Hereditary_Motoric_Sensoric_Neuropathy http://purl.obolibrary.org/obo/Polyneuropathy).
+[2026-06-26 18:15:35.522] Found 199 possible bad axioms.
+[2026-06-26 18:15:35.522] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis ObjectComplementOf(http://purl.obolibrary.org/obo/Neuromyelitis_Optica)).
+[2026-06-26 18:15:35.524] Found 198 possible bad axioms.
+[2026-06-26 18:15:35.525] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/
+...[truncated]
+FAIL: attempt=1 seed=87 - negative return code -9
+progress: ontology=NND_ND attempt=1 success=0/100
+----- NND_ND attempt=2 seed=14287 at 2026-06-26 18:16:33 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=14287, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:16:33.677] Checking precondition...
+[2026-06-26 18:16:33.693] Starting the repair...
+[2026-06-26 18:16:33.700] Found 208 possible bad axioms.
+[2026-06-26 18:16:33.702] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive ObjectComplementOf(http://purl.obolibrary.org/obo/Cerebrovascular_Accident)).
+[2026-06-26 18:16:33.707] Found 207 possible bad axioms.
+[2026-06-26 18:16:33.708] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Tauopathy http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:16:33.712] Found 206 possible bad axioms.
+[2026-06-26 18:16:33.712] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Neuroinflammatory_Disease ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis)).
+[2026-06-26 18:16:33.722] Found 205 possible bad axioms.
+[2026-06-26 18:16:33.722] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/C9ORF72 http://purl.obolibrary.org/obo/PROG).
+[2026-06-26 18:16:33.726] Found 204 possible bad axioms.
+[2026-06-26 18:16:33.726] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Human_Immunodeficiency_Virus http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive).
+[2026-06-26 18:16:33.730] Found 203 possible bad axioms.
+[2026-06-26 18:16:33.730] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_System_Atrophy http://purl.obolibrary.org/obo/Alpha-Synucleinopathy_Disorders).
+[2026-06-26 18:16:33.734] Found 202 possible bad axioms.
+[2026-06-26 18:16:33.734] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP http://purl.obolibrary.org/obo/Frontotemporal_Dementia).
+[2026-06-26 18:16:33.738] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 18:16:33.739] Checking precondition...
+[2026-06-26 18:16:33.747] Starting the repair...
+[2026-06-26 18:16:42.650] Found 5 possible bad axioms.
+[2026-06-26 18:16:42.651] Selected the bad axiom SubClassOf(ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_FUS) http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP).
+[2026-06-26 18:16:42.651] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 18:16:42.652] Checking precondition...
+[2026-06-26 18:16:42.655] Starting the repair...
+[2026-06-26 18:16:42.667] Selected a reference ontology with 317 axioms.
+[2026-06-26 18:16:43.078] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Deme
+...[truncated]
+FAIL: attempt=2 seed=14287 - negative return code -9
+progress: ontology=NND_ND attempt=2 success=0/100
+----- NND_ND attempt=3 seed=28487 at 2026-06-26 18:17:37 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=28487, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:17:37.633] Checking precondition...
+[2026-06-26 18:17:37.650] Starting the repair...
+[2026-06-26 18:17:37.657] Found 208 possible bad axioms.
+[2026-06-26 18:17:37.659] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_System_Atrophy http://purl.obolibrary.org/obo/Atypical_Parkinsons_Disease).
+[2026-06-26 18:17:37.664] Found 207 possible bad axioms.
+[2026-06-26 18:17:37.664] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_System_Atrophy http://purl.obolibrary.org/obo/Alpha-Synucleinopathy_Disorders).
+[2026-06-26 18:17:37.668] Found 206 possible bad axioms.
+[2026-06-26 18:17:37.669] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Alpha-Synucleinopathy_Disorders ObjectComplementOf(http://purl.obolibrary.org/obo/Parkinsons_Disease_with_Dementia)).
+[2026-06-26 18:17:37.677] Found 205 possible bad axioms.
+[2026-06-26 18:17:37.677] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_FUS ObjectComplementOf(http://purl.obolibrary.org/obo/Picks_Disease)).
+[2026-06-26 18:17:37.681] Found 204 possible bad axioms.
+[2026-06-26 18:17:37.681] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Ischemic_Changes http://purl.obolibrary.org/obo/Vascular_Pathology).
+[2026-06-26 18:17:37.686] Found 203 possible bad axioms.
+[2026-06-26 18:17:37.686] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebellar_Ataxia http://purl.obolibrary.org/obo/Neurological_Disorders).
+[2026-06-26 18:17:37.691] Found 202 possible bad axioms.
+[2026-06-26 18:17:37.691] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Post_Traumatic_Stress_Disorder http://purl.obolibrary.org/obo/Psychiatric_Disorders).
+[2026-06-26 18:17:37.694] Found 201 possible bad axioms.
+[2026-06-26 18:17:37.694] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Argyrophilic_Grain_Disease http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:17:37.697] Found 200 possible bad axioms.
+[2026-06-26 18:17:37.697] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Atypical_Parkinsons_Disease http://purl.obolibrary.org/obo/Alpha-Synucleinopathy_Disorders).
+[2026-06-26 18:17:37.700] Found 199 possible bad axioms.
+[2026-06-26 18:17:37.700] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive http://purl.obolibrary.org/obo/Multiple_Sclerosis).
+[2026-06-26 18:17:37.703] Found 198 possible bad axioms.
+[2026-06-26 18:17:37.703] Selected the bad axiom SubClassOf(ObjectC
+...[truncated]
+FAIL: attempt=3 seed=28487 - negative return code -9
+progress: ontology=NND_ND attempt=3 success=0/100
+----- NND_ND attempt=4 seed=42687 at 2026-06-26 18:18:39 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=42687, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:18:40.353] Checking precondition...
+[2026-06-26 18:18:40.370] Starting the repair...
+[2026-06-26 18:18:40.377] Found 208 possible bad axioms.
+[2026-06-26 18:18:40.379] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Atypical_Parkinsons_Disease http://purl.obolibrary.org/obo/Parkinsons_Disease_with_Dementia).
+[2026-06-26 18:18:40.384] Found 207 possible bad axioms.
+[2026-06-26 18:18:40.384] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Neuromyelitis_Optica ObjectComplementOf(http://purl.obolibrary.org/obo/Neuroinflammatory_Disease)).
+[2026-06-26 18:18:40.389] Found 206 possible bad axioms.
+[2026-06-26 18:18:40.389] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fragile_X_Syndrome owl:Nothing).
+[2026-06-26 18:18:40.398] Found 205 possible bad axioms.
+[2026-06-26 18:18:40.398] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Remitting_Relapsing)).
+[2026-06-26 18:18:40.402] Found 204 possible bad axioms.
+[2026-06-26 18:18:40.403] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder ObjectComplementOf(http://purl.obolibrary.org/obo/Autism_Spectrum_Disorder)).
+[2026-06-26 18:18:40.408] Found 203 possible bad axioms.
+[2026-06-26 18:18:40.408] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Non-Hodgkin_Lymphoma ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive)).
+[2026-06-26 18:18:40.412] Found 202 possible bad axioms.
+[2026-06-26 18:18:40.412] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Post_Traumatic_Stress_Disorder http://purl.obolibrary.org/obo/Psychiatric_Disorders).
+[2026-06-26 18:18:40.416] Found 201 possible bad axioms.
+[2026-06-26 18:18:40.416] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Major_Depressive_Disorder http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive).
+[2026-06-26 18:18:40.419] Found 200 possible bad axioms.
+[2026-06-26 18:18:40.419] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fahrs_Syndrome http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:18:40.422] Found 199 possible bad axioms.
+[2026-06-26 18:18:40.422] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor_Neuro_Disease_Other http://purl.obolibrary.org/obo/Motor_Neuron_Diseases).
+[2026-06-26 18:18:40.425] Found 198 possible bad axioms.
+[2026-06-26 18
+...[truncated]
+FAIL: attempt=4 seed=42687 - negative return code -9
+progress: ontology=NND_ND attempt=4 success=0/100
+----- NND_ND attempt=5 seed=56887 at 2026-06-26 18:19:30 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=56887, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:19:31.178] Checking precondition...
+[2026-06-26 18:19:31.194] Starting the repair...
+[2026-06-26 18:19:31.201] Found 208 possible bad axioms.
+[2026-06-26 18:19:31.203] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Tauopathy http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:19:31.208] Found 207 possible bad axioms.
+[2026-06-26 18:19:31.208] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:19:31.212] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 18:19:31.213] Checking precondition...
+[2026-06-26 18:19:31.226] Starting the repair...
+[2026-06-26 18:19:40.027] Found 5 possible bad axioms.
+[2026-06-26 18:19:40.027] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP http://purl.obolibrary.org/obo/Frontotemporal_Dementia).
+[2026-06-26 18:19:40.029] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 18:19:40.030] Checking precondition...
+[2026-06-26 18:19:40.033] Starting the repair...
+[2026-06-26 18:19:40.046] Selected a reference ontology with 317 axioms.
+[2026-06-26 18:19:40.457] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases owl:Nothing).
+[2026-06-26 18:19:40.628] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases http://purl.obolibrary.org/obo/Leukodystrophy_Other).
+[2026-06-26 18:19:40.632] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 18:19:40.633] Checking precondition...
+[2026-06-26 18:19:40.637] Starting the repair...
+[2026-06-26 18:19:40.651] Selected a reference ontology with 317 axioms.
+[2026-06-26 18:19:41.020] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP http://purl.obolibrary.org/obo/Frontotemporal_Dementia).
+[2026-06-26 18:19:41.087] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:19:41.472] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_FUS http://purl.obolibrary.org/obo/Frontotemporal_Dementia).
+[2026-06-26 18:19:41.494] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_FUS http://purl.obolibrary.org/obo/P
+...[truncated]
+FAIL: attempt=5 seed=56887 - negative return code -9
+progress: ontology=NND_ND attempt=5 success=0/100
+----- NND_ND attempt=6 seed=71087 at 2026-06-26 18:20:32 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=71087, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:20:32.960] Checking precondition...
+[2026-06-26 18:20:32.978] Starting the repair...
+[2026-06-26 18:20:32.985] Found 208 possible bad axioms.
+[2026-06-26 18:20:32.987] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Diffuse_Axonal_Injury http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:20:32.992] Found 207 possible bad axioms.
+[2026-06-26 18:20:32.992] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder ObjectComplementOf(http://purl.obolibrary.org/obo/Autism_Spectrum_Disorder)).
+[2026-06-26 18:20:32.996] Found 206 possible bad axioms.
+[2026-06-26 18:20:32.996] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bipolar_Disorder http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder).
+[2026-06-26 18:20:33.005] Found 205 possible bad axioms.
+[2026-06-26 18:20:33.006] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Senile_Involutive_Cortical_Changes http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:20:33.012] Found 204 possible bad axioms.
+[2026-06-26 18:20:33.013] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dementia http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:20:33.017] Found 203 possible bad axioms.
+[2026-06-26 18:20:33.018] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Obsessive_Compulsive_Disorder http://purl.obolibrary.org/obo/Psychiatric_Disorders).
+[2026-06-26 18:20:33.022] Found 202 possible bad axioms.
+[2026-06-26 18:20:33.022] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Meningitis http://purl.obolibrary.org/obo/Neurological_Disorders).
+[2026-06-26 18:20:33.025] Found 201 possible bad axioms.
+[2026-06-26 18:20:33.026] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Friedreichs_Ataxia http://purl.obolibrary.org/obo/Cerebellar_Ataxia).
+[2026-06-26 18:20:33.029] Found 200 possible bad axioms.
+[2026-06-26 18:20:33.029] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Meningitis http://purl.obolibrary.org/obo/Dystonia).
+[2026-06-26 18:20:33.032] Found 199 possible bad axioms.
+[2026-06-26 18:20:33.032] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Congophilic_Angiopathy ObjectComplementOf(http://purl.obolibrary.org/obo/Argyrophilic_Grain_Disease)).
+[2026-06-26 18:20:33.035] Found 198 possible bad axioms.
+[2026-06-26 18:20:33.035] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebral_Auto
+...[truncated]
+FAIL: attempt=6 seed=71087 - negative return code -9
+progress: ontology=NND_ND attempt=6 success=0/100
+----- NND_ND attempt=7 seed=85287 at 2026-06-26 18:21:29 -----
+--- stdout ---
+{"seed":85287,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.4606598984771574,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.8928571428571429,"B2_vs_A3":0.8928571428571429,"B3_vs_A1":0.5246085011185683,"B3_vs_A2":1.0,"B3_vs_A3":1.0,"B4_vs_A1":1.0,"B4_vs_A2":0.8928571428571429,"B4_vs_A3":0.8928571428571429,"B5_vs_A1":0.861878453038674,"B5_vs_A2":0.8079847908745247,"B5_vs_A3":0.8079847908745247,"B6_vs_A1":0.8642659279778393,"B6_vs_A2":0.8095238095238095,"B6_vs_A3":0.8095238095238095,"B7_vs_A1":0.861878453038674,"B7_vs_A2":0.8079847908745247,"B7_vs_A3":0.8079847908745247,"B8_vs_A1":0.8952991452991453,"B8_vs_A2":0.8428571428571429,"B8_vs_A3":0.8428571428571429,"B9_vs_A1":0.861878453038674,"B9_vs_A2":0.8079847908745247,"B9_vs_A3":0.8079847908745247},"repair_runtimes_ms":{"A1":136,"A2":8949,"A3":543,"B1":856,"B2":5868,"B3":2953,"B4":169,"B5":10142,"B6":6642,"B7":287,"B8":12697,"B9":6126}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=85287, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:21:29.793] Checking precondition...
+[2026-06-26 18:21:29.812] Starting the repair...
+[2026-06-26 18:21:29.819] Found 208 possible bad axioms.
+[2026-06-26 18:21:29.821] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Progressive_Supranuclear_Palsy http://purl.obolibrary.org/obo/Motor_Neuron_Diseases).
+[2026-06-26 18:21:29.826] Found 207 possible bad axioms.
+[2026-06-26 18:21:29.826] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder http://purl.obolibrary.org/obo/Psychiatric_Disorders).
+[2026-06-26 18:21:29.831] Found 206 possible bad axioms.
+[2026-06-26 18:21:29.831] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Brain_Cancer ObjectComplementOf(http://purl.obolibrary.org/obo/Non-Hodgkin_Lymphoma)).
+[2026-06-26 18:21:29.840] Found 205 possible bad axioms.
+[2026-06-26 18:21:29.841] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Nigral_Degeneration http://purl.obolibrary.org/obo/Argyrophilic_Grain_Disease).
+[2026-06-26 18:21:29.845] Found 204 possible bad axioms.
+[2026-06-26 18:21:29.845] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fragile_X_Syndrome http://purl.obolibrary.org/obo/Downs_Syndrome).
+[2026-06-26 18:21:29.849] Found 203 possible bad axioms.
+[2026-06-26 18:21:29.849] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Hippocampal_Sclerosis http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:21:29.853] Found 202 possible bad axioms.
+[2026-06-26 18:21:29.853] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Psychiatric_Disorders owl:Nothing).
+[2026-06-26 18:21:29.857] Found 201 possible bad axioms.
+[2026-06-26 18:21:29.857] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Downs_Syndrome ObjectComplementOf(http://purl.obolibrary.org/obo/Alexanders_Disease)).
+[2026-06-26 18:21:29.860] Found 200 possible bad axioms.
+[2026-06-26 18:21:29.860] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dementia_with_Lewy_Bodies http://purl.obolibrary.org/obo/Alpha-Synucleinopathy_Disorders).
+[2026-06-26 18:21:29.863] Found 199 possible bad axioms.
+[2026-06-26 18:21:29.863] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Corticobasal_Degeneration http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:21:29.866] Found 198 possible bad axioms.
+[2026-06-26 18:21:29.866] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dystonia http://purl.obolibrary.org/obo/Cerebral_Auto
+...[truncated]
+SUCCESS: attempt=7 seed=85287 success_count=1/100
+progress: ontology=NND_ND attempt=7 success=1/100
+----- NND_ND attempt=8 seed=99487 at 2026-06-26 18:22:31 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=99487, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:22:32.073] Checking precondition...
+[2026-06-26 18:22:32.094] Starting the repair...
+[2026-06-26 18:22:32.101] Found 208 possible bad axioms.
+[2026-06-26 18:22:32.103] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bipolar_Disorder http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder).
+[2026-06-26 18:22:32.108] Found 207 possible bad axioms.
+[2026-06-26 18:22:32.108] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Human_Immunodeficiency_Virus http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive).
+[2026-06-26 18:22:32.113] Found 206 possible bad axioms.
+[2026-06-26 18:22:32.113] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Diffuse_Axonal_Injury http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:22:32.122] Found 205 possible bad axioms.
+[2026-06-26 18:22:32.122] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_C ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_A)).
+[2026-06-26 18:22:32.126] Found 204 possible bad axioms.
+[2026-06-26 18:22:32.126] Selected the bad axiom SubClassOf(Unknown_Diagnosis EXCLUDE).
+[2026-06-26 18:22:32.129] Found 203 possible bad axioms.
+[2026-06-26 18:22:32.130] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Pallidal_Degeneration http://purl.obolibrary.org/obo/Congophilic_Angiopathy).
+[2026-06-26 18:22:32.134] Found 202 possible bad axioms.
+[2026-06-26 18:22:32.134] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor_Neuron_Diseases http://purl.obolibrary.org/obo/Progressive_Supranuclear_Palsy).
+[2026-06-26 18:22:32.137] Found 201 possible bad axioms.
+[2026-06-26 18:22:32.137] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Hereditary_Motoric_Sensoric_Neuropathy http://purl.obolibrary.org/obo/Polyneuropathy).
+[2026-06-26 18:22:32.140] Found 200 possible bad axioms.
+[2026-06-26 18:22:32.140] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Congophilic_Angiopathy http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:22:32.143] Found 199 possible bad axioms.
+[2026-06-26 18:22:32.144] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dystonia http://purl.obolibrary.org/obo/Cerebral_Autosomal_Dominant_Arteriopathy_with_Sub-cortical_Infarcts_and_Leukoencephalopathy).
+[2026-06-26 18:22:32.146] Found 198 possible bad axioms.
+[2026-06-26 18:22:32.146] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/o
+...[truncated]
+FAIL: attempt=8 seed=99487 - negative return code -9
+progress: ontology=NND_ND attempt=8 success=1/100
+----- NND_ND attempt=9 seed=113687 at 2026-06-26 18:23:20 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=113687, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:23:20.519] Checking precondition...
+[2026-06-26 18:23:20.536] Starting the repair...
+[2026-06-26 18:23:20.543] Found 208 possible bad axioms.
+[2026-06-26 18:23:20.545] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Pallidal_Degeneration http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:23:20.550] Found 207 possible bad axioms.
+[2026-06-26 18:23:20.550] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dementia http://purl.obolibrary.org/obo/Alpha-Synucleinopathy_Disorders).
+[2026-06-26 18:23:20.554] Found 206 possible bad axioms.
+[2026-06-26 18:23:20.554] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Pallidal_Degeneration http://purl.obolibrary.org/obo/Congophilic_Angiopathy).
+[2026-06-26 18:23:20.563] Found 205 possible bad axioms.
+[2026-06-26 18:23:20.563] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Progressive_Multifocal_Leucoencephalopathy http://purl.obolibrary.org/obo/Encephalopathy).
+[2026-06-26 18:23:20.567] Found 204 possible bad axioms.
+[2026-06-26 18:23:20.567] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder http://purl.obolibrary.org/obo/Schizophrenia).
+[2026-06-26 18:23:20.571] Found 203 possible bad axioms.
+[2026-06-26 18:23:20.571] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Major_Depressive_Disorder http://purl.obolibrary.org/obo/Psychiatric_Disorders).
+[2026-06-26 18:23:20.575] Found 202 possible bad axioms.
+[2026-06-26 18:23:20.576] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Septic_Cerebral_Foci http://purl.obolibrary.org/obo/Vascular_Pathology).
+[2026-06-26 18:23:20.579] Found 201 possible bad axioms.
+[2026-06-26 18:23:20.580] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Prader-Willi_Syndrome http://purl.obolibrary.org/obo/Syndromes).
+[2026-06-26 18:23:20.583] Found 200 possible bad axioms.
+[2026-06-26 18:23:20.583] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis http://purl.obolibrary.org/obo/Neuroinflammatory_Disease).
+[2026-06-26 18:23:20.586] Found 199 possible bad axioms.
+[2026-06-26 18:23:20.586] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Korsakoff_Syndrome http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:23:20.589] Found 198 possible bad axioms.
+[2026-06-26 18:23:20.589] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Guillain-Barre_Disease http://purl.obolibrary.org/obo/Polyneu
+...[truncated]
+FAIL: attempt=9 seed=113687 - negative return code -9
+progress: ontology=NND_ND attempt=9 success=1/100
+----- NND_ND attempt=10 seed=127887 at 2026-06-26 18:24:26 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=127887, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:24:26.813] Checking precondition...
+[2026-06-26 18:24:26.830] Starting the repair...
+[2026-06-26 18:24:26.837] Found 208 possible bad axioms.
+[2026-06-26 18:24:26.838] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis ObjectComplementOf(http://purl.obolibrary.org/obo/Neuroinflammatory_Disease)).
+[2026-06-26 18:24:26.844] Found 207 possible bad axioms.
+[2026-06-26 18:24:26.844] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Remitting_Relapsing)).
+[2026-06-26 18:24:26.849] Found 206 possible bad axioms.
+[2026-06-26 18:24:26.849] Selected the bad axiom SubClassOf(Unknown_Diagnosis EXCLUDE).
+[2026-06-26 18:24:26.859] Found 205 possible bad axioms.
+[2026-06-26 18:24:26.859] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Korsakoff_Syndrome http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:24:26.863] Found 204 possible bad axioms.
+[2026-06-26 18:24:26.864] Selected the bad axiom SubClassOf(Non-Alzheimer_dementia Tissue_is_not_usable,_or_diagnosis_is_other_than_described_in_list,_or_diagnosis_is_unknown).
+[2026-06-26 18:24:26.869] Found 203 possible bad axioms.
+[2026-06-26 18:24:26.869] Selected the bad axiom SubClassOf(Non-Alzheimer_dementia EXCLUDE).
+[2026-06-26 18:24:26.873] Found 202 possible bad axioms.
+[2026-06-26 18:24:26.873] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Downs_Syndrome http://purl.obolibrary.org/obo/Syndromes).
+[2026-06-26 18:24:26.876] Found 201 possible bad axioms.
+[2026-06-26 18:24:26.877] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dementia http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:24:26.879] Found 200 possible bad axioms.
+[2026-06-26 18:24:26.880] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive http://purl.obolibrary.org/obo/Multiple_Sclerosis).
+[2026-06-26 18:24:26.883] Found 199 possible bad axioms.
+[2026-06-26 18:24:26.884] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bipolar_Disorder http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder).
+[2026-06-26 18:24:26.887] Found 198 possible bad axioms.
+[2026-06-26 18:24:26.888] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebrovascular_Accident ObjectComplementOf(http://purl.obolibrary.org/obo/Vascular_Pathology)).
+[2026-06-26 18:24:26.897] Found 197 possi
+...[truncated]
+FAIL: attempt=10 seed=127887 - negative return code -9
+progress: ontology=NND_ND attempt=10 success=1/100
+----- NND_ND attempt=11 seed=142087 at 2026-06-26 18:25:24 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=142087, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:25:24.933] Checking precondition...
+[2026-06-26 18:25:24.948] Starting the repair...
+[2026-06-26 18:25:24.956] Found 208 possible bad axioms.
+[2026-06-26 18:25:24.958] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Leukodystrophy http://purl.obolibrary.org/obo/Rare_Disorders).
+[2026-06-26 18:25:24.963] Found 207 possible bad axioms.
+[2026-06-26 18:25:24.964] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Atypical_Parkinsons_Disease http://purl.obolibrary.org/obo/Parkinsons_Disease_with_Dementia).
+[2026-06-26 18:25:24.968] Found 206 possible bad axioms.
+[2026-06-26 18:25:24.969] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Undefined http://purl.obolibrary.org/obo/Multiple_Sclerosis).
+[2026-06-26 18:25:24.978] Found 205 possible bad axioms.
+[2026-06-26 18:25:24.978] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fragile_X_Syndrome http://purl.obolibrary.org/obo/Downs_Syndrome).
+[2026-06-26 18:25:24.982] Found 204 possible bad axioms.
+[2026-06-26 18:25:24.982] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Nigral_Degeneration http://purl.obolibrary.org/obo/Argyrophilic_Grain_Disease).
+[2026-06-26 18:25:24.985] Found 203 possible bad axioms.
+[2026-06-26 18:25:24.986] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Adrenoleukodystrophy http://purl.obolibrary.org/obo/Leukodystrophy).
+[2026-06-26 18:25:24.989] Found 202 possible bad axioms.
+[2026-06-26 18:25:24.990] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor_Neuron_Diseases http://purl.obolibrary.org/obo/Progressive_Supranuclear_Palsy).
+[2026-06-26 18:25:24.994] Found 201 possible bad axioms.
+[2026-06-26 18:25:24.994] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_A http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_C).
+[2026-06-26 18:25:24.997] Found 200 possible bad axioms.
+[2026-06-26 18:25:24.997] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Huntingtons_Disease http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:25:25.000] Found 199 possible bad axioms.
+[2026-06-26 18:25:25.001] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Neuroinflammatory_Disease ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis)).
+[2026-06-26 18:25:25.003] Found 198 possible bad axioms.
+[2026-06-26 18:25:25.003] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Posterior_Cortical_Atrophy_Dement
+...[truncated]
+FAIL: attempt=11 seed=142087 - negative return code -9
+progress: ontology=NND_ND attempt=11 success=1/100
+----- NND_ND attempt=12 seed=156287 at 2026-06-26 18:26:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=156287, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:26:17.674] Checking precondition...
+[2026-06-26 18:26:17.692] Starting the repair...
+[2026-06-26 18:26:17.700] Found 208 possible bad axioms.
+[2026-06-26 18:26:17.701] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Syndromes http://purl.obolibrary.org/obo/Rare_Disorders).
+[2026-06-26 18:26:17.706] Found 207 possible bad axioms.
+[2026-06-26 18:26:17.707] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Alzheimers_Disease http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:26:17.711] Found 206 possible bad axioms.
+[2026-06-26 18:26:17.711] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Syndromes ObjectComplementOf(http://purl.obolibrary.org/obo/Alexanders_Disease)).
+[2026-06-26 18:26:17.720] Found 205 possible bad axioms.
+[2026-06-26 18:26:17.720] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Leukodystrophy_Other http://purl.obolibrary.org/obo/Leukodystrophy).
+[2026-06-26 18:26:17.724] Found 204 possible bad axioms.
+[2026-06-26 18:26:17.724] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Vascular_Pathology http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:26:17.729] Found 203 possible bad axioms.
+[2026-06-26 18:26:17.729] Selected the bad axiom SubClassOf(No_PA-report_available EXCLUDE).
+[2026-06-26 18:26:17.733] Found 202 possible bad axioms.
+[2026-06-26 18:26:17.733] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebrovascular_Accident http://purl.obolibrary.org/obo/Space-Occupying_Proces/Tumor).
+[2026-06-26 18:26:17.736] Found 201 possible bad axioms.
+[2026-06-26 18:26:17.737] Selected the bad axiom SubClassOf(Non-Alzheimer_dementia Tissue_is_not_usable,_or_diagnosis_is_other_than_described_in_list,_or_diagnosis_is_unknown).
+[2026-06-26 18:26:17.740] Found 200 possible bad axioms.
+[2026-06-26 18:26:17.740] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive)).
+[2026-06-26 18:26:17.743] Found 199 possible bad axioms.
+[2026-06-26 18:26:17.743] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Major_Depressive_Disorder http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive).
+[2026-06-26 18:26:17.746] Found 198 possible bad axioms.
+[2026-06-26 18:26:17.746] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Hereditary_Spastic_Paraplegia http://purl.obolibrary.org/obo/Neurological_D
+...[truncated]
+FAIL: attempt=12 seed=156287 - negative return code -9
+progress: ontology=NND_ND attempt=12 success=1/100
+----- NND_ND attempt=13 seed=170487 at 2026-06-26 18:27:19 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=170487, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:27:19.853] Checking precondition...
+[2026-06-26 18:27:19.870] Starting the repair...
+[2026-06-26 18:27:19.877] Found 208 possible bad axioms.
+[2026-06-26 18:27:19.879] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_A ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_B)).
+[2026-06-26 18:27:19.884] Found 207 possible bad axioms.
+[2026-06-26 18:27:19.884] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Undefined http://purl.obolibrary.org/obo/Multiple_Sclerosis).
+[2026-06-26 18:27:19.889] Found 206 possible bad axioms.
+[2026-06-26 18:27:19.889] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_B ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_A)).
+[2026-06-26 18:27:19.899] Found 205 possible bad axioms.
+[2026-06-26 18:27:19.899] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Obsessive_Compulsive_Disorder http://purl.obolibrary.org/obo/Psychiatric_Disorders).
+[2026-06-26 18:27:19.903] Found 204 possible bad axioms.
+[2026-06-26 18:27:19.904] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor_Neuro_Disease_Other http://purl.obolibrary.org/obo/Motor_Neuron_Diseases).
+[2026-06-26 18:27:19.908] Found 203 possible bad axioms.
+[2026-06-26 18:27:19.908] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Autism_Spectrum_Disorder http://purl.obolibrary.org/obo/Psychiatric_Other).
+[2026-06-26 18:27:19.911] Found 202 possible bad axioms.
+[2026-06-26 18:27:19.912] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Developmental_Diseases http://purl.obolibrary.org/obo/Rare_Disorders).
+[2026-06-26 18:27:19.915] Found 201 possible bad axioms.
+[2026-06-26 18:27:19.916] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Major_Depressive_Disorder http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive).
+[2026-06-26 18:27:19.919] Found 200 possible bad axioms.
+[2026-06-26 18:27:19.919] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP http://purl.obolibrary.org/obo/Frontotemporal_Dementia).
+[2026-06-26 18:27:19.922] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 18:27:19.923] Checking precondition...
+[2026-06-26 18:27:19.934] Starting the repair...
+[2026-06-26 18:27:28.751] Found 5 possible bad axioms.
+[2026-06-26 18:27:28.751] Selected the bad axiom SubClassOf(http://purl.o
+...[truncated]
+FAIL: attempt=13 seed=170487 - negative return code -9
+progress: ontology=NND_ND attempt=13 success=1/100
+----- NND_ND attempt=14 seed=184687 at 2026-06-26 18:28:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=184687, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:28:17.493] Checking precondition...
+[2026-06-26 18:28:17.510] Starting the repair...
+[2026-06-26 18:28:17.518] Found 208 possible bad axioms.
+[2026-06-26 18:28:17.520] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Remitting_Relapsing ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive)).
+[2026-06-26 18:28:17.525] Found 207 possible bad axioms.
+[2026-06-26 18:28:17.525] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dementia http://purl.obolibrary.org/obo/Incidental_Lewy_Body_Disease).
+[2026-06-26 18:28:17.530] Found 206 possible bad axioms.
+[2026-06-26 18:28:17.530] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Prader-Willi_Syndrome http://purl.obolibrary.org/obo/Syndromes).
+[2026-06-26 18:28:17.538] Found 205 possible bad axioms.
+[2026-06-26 18:28:17.538] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Human_Immunodeficiency_Virus http://purl.obolibrary.org/obo/Metabolic_Disease).
+[2026-06-26 18:28:17.542] Found 204 possible bad axioms.
+[2026-06-26 18:28:17.542] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_B ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_C)).
+[2026-06-26 18:28:17.546] Found 203 possible bad axioms.
+[2026-06-26 18:28:17.547] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Korsakoff_Syndrome http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:28:17.550] Found 202 possible bad axioms.
+[2026-06-26 18:28:17.551] Selected the bad axiom SubClassOf(Non-Alzheimer_dementia EXCLUDE).
+[2026-06-26 18:28:17.556] Found 201 possible bad axioms.
+[2026-06-26 18:28:17.556] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Autosomal_Dominant_Cerebellar_Ataxia ObjectComplementOf(http://purl.obolibrary.org/obo/Friedreichs_Ataxia)).
+[2026-06-26 18:28:17.560] Found 200 possible bad axioms.
+[2026-06-26 18:28:17.560] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebrovascular_Accident ObjectComplementOf(http://purl.obolibrary.org/obo/Vascular_Pathology)).
+[2026-06-26 18:28:17.562] Found 199 possible bad axioms.
+[2026-06-26 18:28:17.562] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bipolar_Disorder http://purl.obolibrary.org/obo/Attention_Deficit_Hyperactivity_Disorder).
+[2026-06-26 18:28:17.565] Found 198 possible bad axioms.
+[2026-06-26 18:28:17.565] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fron
+...[truncated]
+FAIL: attempt=14 seed=184687 - negative return code -9
+progress: ontology=NND_ND attempt=14 success=1/100
+----- NND_ND attempt=15 seed=198887 at 2026-06-26 18:29:12 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=198887, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:29:13.237] Checking precondition...
+[2026-06-26 18:29:13.255] Starting the repair...
+[2026-06-26 18:29:13.262] Found 208 possible bad axioms.
+[2026-06-26 18:29:13.264] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Secondary_Progressive ObjectComplementOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Primary_Progressive)).
+[2026-06-26 18:29:13.268] Found 207 possible bad axioms.
+[2026-06-26 18:29:13.269] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_C ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_A)).
+[2026-06-26 18:29:13.273] Found 206 possible bad axioms.
+[2026-06-26 18:29:13.273] Selected the bad axiom SubClassOf(Non-Alzheimer_dementia EXCLUDE).
+[2026-06-26 18:29:13.284] Found 205 possible bad axioms.
+[2026-06-26 18:29:13.284] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Argyrophilic_Grain_Disease http://purl.obolibrary.org/obo/Neuropathophysiological_Traits).
+[2026-06-26 18:29:13.288] Found 204 possible bad axioms.
+[2026-06-26 18:29:13.288] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Epilepsy http://purl.obolibrary.org/obo/Neurological_Disorders).
+[2026-06-26 18:29:13.293] Found 203 possible bad axioms.
+[2026-06-26 18:29:13.293] Selected the bad axiom SubClassOf(Unknown_Diagnosis EXCLUDE).
+[2026-06-26 18:29:13.297] Found 202 possible bad axioms.
+[2026-06-26 18:29:13.297] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Encephalitis http://purl.obolibrary.org/obo/Neurological_Disorders).
+[2026-06-26 18:29:13.300] Found 201 possible bad axioms.
+[2026-06-26 18:29:13.301] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Neuromyelitis_Optica ObjectComplementOf(http://purl.obolibrary.org/obo/Neuroinflammatory_Disease)).
+[2026-06-26 18:29:13.304] Found 200 possible bad axioms.
+[2026-06-26 18:29:13.304] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_FUS http://purl.obolibrary.org/obo/Frontotemporal_Dementia).
+[2026-06-26 18:29:13.307] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 18:29:13.308] Checking precondition...
+[2026-06-26 18:29:13.319] Starting the repair...
+[2026-06-26 18:29:22.125] Found 5 possible bad axioms.
+[2026-06-26 18:29:22.125] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP http://purl.obolibrary.org/obo/Frontotemporal_Dementia).
+[2026-06-26 18:29:22.126] Finished repairing the ontology
+...[truncated]
+FAIL: attempt=15 seed=198887 - negative return code -9
+progress: ontology=NND_ND attempt=15 success=1/100
+----- NND_ND attempt=16 seed=213087 at 2026-06-26 18:30:08 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=213087, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:30:09.032] Checking precondition...
+[2026-06-26 18:30:09.048] Starting the repair...
+[2026-06-26 18:30:09.055] Found 208 possible bad axioms.
+[2026-06-26 18:30:09.057] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Multiple_Sclerosis_Remitting_Relapsing http://purl.obolibrary.org/obo/Multiple_Sclerosis).
+[2026-06-26 18:30:09.063] Found 207 possible bad axioms.
+[2026-06-26 18:30:09.063] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Narcolepsy http://purl.obolibrary.org/obo/Dystonia).
+[2026-06-26 18:30:09.067] Found 206 possible bad axioms.
+[2026-06-26 18:30:09.068] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Non-Classifiable_Senile_Dementia http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:30:09.076] Found 205 possible bad axioms.
+[2026-06-26 18:30:09.076] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Encephalitis http://purl.obolibrary.org/obo/Cerebral_Autosomal_Dominant_Arteriopathy_with_Sub-cortical_Infarcts_and_Leukoencephalopathy).
+[2026-06-26 18:30:09.081] Found 204 possible bad axioms.
+[2026-06-26 18:30:09.081] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fragile-X-Associated_Tremor/Ataxia_Syndrome http://purl.obolibrary.org/obo/Cerebellar_Ataxia).
+[2026-06-26 18:30:09.085] Found 203 possible bad axioms.
+[2026-06-26 18:30:09.085] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Autism_Spectrum_Disorder http://purl.obolibrary.org/obo/Psychiatric_Other).
+[2026-06-26 18:30:09.090] Found 202 possible bad axioms.
+[2026-06-26 18:30:09.090] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Encephalitis http://purl.obolibrary.org/obo/Neurological_Disorders).
+[2026-06-26 18:30:09.094] Found 201 possible bad axioms.
+[2026-06-26 18:30:09.094] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Autosomal_Dominant_Cerebellar_Ataxia http://purl.obolibrary.org/obo/Cerebellar_Ataxia).
+[2026-06-26 18:30:09.098] Found 200 possible bad axioms.
+[2026-06-26 18:30:09.098] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebrovascular_Accident http://purl.obolibrary.org/obo/Space-Occupying_Proces/Tumor).
+[2026-06-26 18:30:09.101] Found 199 possible bad axioms.
+[2026-06-26 18:30:09.101] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Argyrophilic_Grain_Disease http://purl.obolibrary.org/obo/Senile_Involutive_Cortical_Changes).
+[2026-06-26 18:30:09.104] Found 198 possible bad axioms.
+[2026-06-26 18:30:09.104] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=16 seed=213087 - negative return code -9
+progress: ontology=NND_ND attempt=16 success=1/100
+----- NND_ND attempt=17 seed=227287 at 2026-06-26 18:31:02 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_ND.owl, seed=227287, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 18:31:02.621] Checking precondition...
+[2026-06-26 18:31:02.639] Starting the repair...
+[2026-06-26 18:31:02.646] Found 208 possible bad axioms.
+[2026-06-26 18:31:02.647] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fragile_X_Syndrome http://purl.obolibrary.org/obo/Syndromes).
+[2026-06-26 18:31:02.653] Found 207 possible bad axioms.
+[2026-06-26 18:31:02.653] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Prader-Willi_Syndrome http://purl.obolibrary.org/obo/Syndromes).
+[2026-06-26 18:31:02.657] Found 206 possible bad axioms.
+[2026-06-26 18:31:02.657] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Space-Occupying_Proces/Tumor http://purl.obolibrary.org/obo/Non-Hodgkin_Lymphoma).
+[2026-06-26 18:31:02.665] Found 205 possible bad axioms.
+[2026-06-26 18:31:02.666] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_B ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP_type_C)).
+[2026-06-26 18:31:02.670] Found 204 possible bad axioms.
+[2026-06-26 18:31:02.670] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases).
+[2026-06-26 18:31:02.674] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 18:31:02.675] Checking precondition...
+[2026-06-26 18:31:02.683] Starting the repair...
+[2026-06-26 18:31:11.510] Found 5 possible bad axioms.
+[2026-06-26 18:31:11.510] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Progressive_Neurodegenerative_Diseases owl:Nothing).
+[2026-06-26 18:31:11.512] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 18:31:11.513] Checking precondition...
+[2026-06-26 18:31:11.515] Starting the repair...
+[2026-06-26 18:31:11.529] Selected a reference ontology with 317 axioms.
+[2026-06-26 18:31:11.931] Selected the bad axiom SubClassOf(ObjectComplementOf(http://purl.obolibrary.org/obo/Frontotemporal_Dementia_FUS) http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP).
+[2026-06-26 18:31:12.076] Selected the weaker axiom SubClassOf(ObjectComplementOf(http://purl.obolibrary.org/obo/Autosomal_Dominant_Cerebellar_Ataxia) http://purl.obolibrary.org/obo/Frontotemporal_Dementia_TDP).
+[2026-06-26 18:31:12.079] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 18:31:12.080] Checking precondition...
+[2026-06-26 18:31:12.082] Starting the repair...
+[2026-06-26 18:31:12
+...[truncated]
+FAIL: attempt=17 seed=227287 - negative return code -9
+progress: ontology=NND_ND attempt=17 success=1/100
+=== ABORTED NND_ND after 10 consecutive failures at 2026-06-26 18:32:05 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for NND_ND - 1 successes, 16 failures, 17 attempts ===
+Failed attempts:
+  attempt=1 seed=87 msg=negative return code -9
+  attempt=2 seed=14287 msg=negative return code -9
+  attempt=3 seed=28487 msg=negative return code -9
+  attempt=4 seed=42687 msg=negative return code -9
+  attempt=5 seed=56887 msg=negative return code -9
+  attempt=6 seed=71087 msg=negative return code -9
+  attempt=8 seed=99487 msg=negative return code -9
+  attempt=9 seed=113687 msg=negative return code -9
+  attempt=10 seed=127887 msg=negative return code -9
+  attempt=11 seed=142087 msg=negative return code -9
+  attempt=12 seed=156287 msg=negative return code -9
+  attempt=13 seed=170487 msg=negative return code -9
+  attempt=14 seed=184687 msg=negative return code -9
+  attempt=15 seed=198887 msg=negative return code -9
+  attempt=16 seed=213087 msg=negative return code -9
+  attempt=17 seed=227287 msg=negative return code -9
+Timing summary:
+  success: count=1 total_seconds=62.278909 avg_seconds=62.278909
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=16 total_seconds=927.615859 avg_seconds=57.975991
+  success_rate=0.0588
+  wall_clock_seconds_total_run=360698.251834

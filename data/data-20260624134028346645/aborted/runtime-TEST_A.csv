@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,106,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,30.170931,210,24209,841,440,4067,,,,,,,
+2,14306,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,30.707965,301,24111,487,821,4586,,,,,,,
+3,28506,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,28.982062,248,24029,1238,432,2644,,,,,,,
+4,42706,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,29.958072,405,24187,435,416,4114,,,,,,,
+5,56906,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,34.282803,205,23903,1489,423,7844,,,,,,,
+6,71106,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,28.361097,281,23991,465,458,2780,,,,,,,
+7,85306,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,30.143227,424,24039,450,453,4004,,,,,,,
+8,99506,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,30.179692,96,24148,480,839,4218,,,,,,,
+9,113706,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,33.392641,420,23915,458,411,4872,2896,,,,,,
+10,127906,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Sub_subfamily,28.561257,403,24170,507,437,2630,,,,,,,

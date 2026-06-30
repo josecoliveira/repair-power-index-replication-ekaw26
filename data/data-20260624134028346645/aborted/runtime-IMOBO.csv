@@ -1,0 +1,42 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,111,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,15.349765,399,3617,447,422,8497,1554,,,,,,
+2,14311,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,13.479634,222,3646,464,501,8234,,,,,,,
+3,28511,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,13.272128,181,3652,475,431,8112,,,,,,,
+4,42711,20260624134028346645,success,,,,39.201702,429,3586,503,441,8650,5142,115,8453,1258,388,4350,4832
+5,56911,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,37.336705,377,3559,466,430,5153,5300,141,7936,3284,267,8454,1203
+6,71111,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,10.370299,408,3617,782,428,4239,,,,,,,
+7,85311,20260624134028346645,success,,,,30.457893,329,3675,457,437,2342,5459,171,8170,3286,245,2282,2640
+8,99511,20260624134028346645,success,,,,37.073387,351,3602,485,763,8693,2904,117,8233,5608,185,4175,968
+9,113711,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,10.132440,352,3632,498,411,4827,,,,,,,
+10,127911,20260624134028346645,success,,,,36.446362,315,3653,511,439,8726,2870,101,4577,972,229,8675,3040
+11,142111,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,9.449526,298,3610,483,405,4242,,,,,,,
+12,156311,20260624134028346645,success,,,,43.167073,284,3692,769,442,8413,5653,123,4777,5419,183,7938,4141
+13,170511,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,9.926266,407,3599,480,417,4282,,,,,,,
+14,184711,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,13.860830,244,3665,1164,419,7960,,,,,,,
+15,198911,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,24.826556,313,3687,465,451,8546,2798,121,7916,,,,
+16,213111,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,18.640449,218,3708,451,433,8525,4863,,,,,,
+17,227311,20260624134028346645,success,,,,39.365844,326,3648,480,459,8710,5186,265,8717,2840,364,2348,4965
+18,241511,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,20.411969,198,3703,483,438,8427,5270,124,1327,,,,
+19,255711,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,9.457612,251,3697,450,396,4264,,,,,,,
+20,269911,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,18.942189,370,3637,497,462,8507,5031,,,,,,
+21,284111,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,17.512513,270,3637,469,1522,8470,2714,,,,,,
+22,298311,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,10.098020,311,3618,474,416,4880,,,,,,,
+23,312511,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,25.220579,284,3676,1100,1188,8475,5332,134,4424,,,,
+24,326711,20260624134028346645,success,,,,45.359181,189,3657,2165,430,2070,5404,175,8288,5581,270,8349,2557
+25,340911,20260624134028346645,success,,,,37.349412,406,3614,774,701,1745,3044,127,8065,2659,200,9473,5242
+26,355111,20260624134028346645,memory_limit_exceeded,,,,83.855516,,,,,,,,,,,,
+27,369311,20260624134028346645,success,,,,47.727172,102,3766,570,2934,8360,1276,133,7942,5158,216,8875,5393
+28,383511,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,17.615497,423,3625,1551,439,8496,2653,,,,,,
+29,397711,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,13.426030,383,3622,556,438,8010,,,,,,,
+30,411911,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,10.249606,364,3634,490,431,4932,,,,,,,
+31,426111,20260624134028346645,success,,,,49.760581,184,3702,473,444,8599,5258,101,8376,5830,164,5020,4994
+32,440311,20260624134028346645,memory_limit_exceeded,,,,44.646759,,,,,,,,,,,,
+33,454511,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,24.994435,399,3587,474,407,8609,5083,147,3846,,,,
+34,468711,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,29.392707,201,3747,539,459,8516,5168,108,2132,2869,190,4747,
+35,482911,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,18.497437,423,3653,570,411,8615,1099,145,3137,,,,
+36,497111,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,31.069882,397,3571,469,1165,8455,5179,98,8406,2697,,,
+37,511311,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,10.260242,236,3705,446,435,5045,,,,,,,
+38,525511,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,11.136885,413,3647,488,1578,4612,,,,,,,
+39,539711,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,9.966990,484,3584,486,449,4555,,,,,,,
+40,553911,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,34.553594,475,3528,517,414,8491,1150,96,4469,5399,224,8941,
+41,568111,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030,25.333359,369,3557,506,412,8446,2995,121,928,2683,234,4463,

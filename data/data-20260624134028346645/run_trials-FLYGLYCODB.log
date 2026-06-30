@@ -1,0 +1,394 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-FLYGLYCODB.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-FLYGLYCODB.csv
+
+=== Starting sequential trials for FLYGLYCODB at 2026-06-27 01:13:50 ===
+----- FLYGLYCODB attempt=1 seed=96 at 2026-06-27 01:13:50 -----
+--- stdout ---
+{"seed":96,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: glycosyltranseferase ⊑ protein_O-glucosyltransferase","iic_values":{},"repair_runtimes_ms":{"A1":248,"A2":29855,"A3":1105,"B1":936,"B2":2298}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=96, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:13:51.293] Checking precondition...
+[2026-06-27 01:13:51.313] Starting the repair...
+[2026-06-27 01:13:51.322] Found 242 possible bad axioms.
+[2026-06-27 01:13:51.324] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/thrombospondin http://www.flyglycodb.org/ontologies/2015/core_protein).
+[2026-06-27 01:13:51.330] Found 241 possible bad axioms.
+[2026-06-27 01:13:51.330] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/heparan_sulfate_6-O-sulfotransferase http://www.flyglycodb.org/ontologies/2015/uronyl-2-O-sulfotransferase).
+[2026-06-27 01:13:51.335] Found 240 possible bad axioms.
+[2026-06-27 01:13:51.335] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/enzyme http://www.flyglycodb.org/ontologies/2015/Protein).
+[2026-06-27 01:13:51.344] Found 239 possible bad axioms.
+[2026-06-27 01:13:51.344] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/dolichyl_pyrophosphate_glucosyltransferase http://www.flyglycodb.org/ontologies/2015/glucosyltransferase).
+[2026-06-27 01:13:51.348] Found 238 possible bad axioms.
+[2026-06-27 01:13:51.348] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/beta1_4-N-acetylgalactosaminyltransferase http://www.flyglycodb.org/ontologies/2015/beta1_3-galactosyltransferase).
+[2026-06-27 01:13:51.353] Found 237 possible bad axioms.
+[2026-06-27 01:13:51.354] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/mannosyltransferase http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:13:51.358] Found 236 possible bad axioms.
+[2026-06-27 01:13:51.359] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glucosyltransferase http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:13:51.363] Found 235 possible bad axioms.
+[2026-06-27 01:13:51.364] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/O-Man http://www.flyglycodb.org/ontologies/2015/O-glycan).
+[2026-06-27 01:13:51.368] Found 234 possible bad axioms.
+[2026-06-27 01:13:51.368] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/Notch http://www.flyglycodb.org/ontologies/2015/core_protein).
+[2026-06-27 01:13:51.371] Found 233 possible bad axioms.
+[2026-06-27 01:13:51.372] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/O-GlcNAc http://www.flyglycodb.org/ontologies/2015/O-glycan).
+[2026-06-27 01:13:51.374] Found 232 possible bad axioms.
+[2026-06-27 01:13:51.375] Sele
+...[truncated]
+FAIL: attempt=1 seed=96 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: glycosyltranseferase ⊑ protein_O-glucosyltransferase
+progress: ontology=FLYGLYCODB attempt=1 success=0/100
+----- FLYGLYCODB attempt=2 seed=14296 at 2026-06-27 01:14:25 -----
+--- stdout ---
+{"seed":14296,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase","iic_values":{},"repair_runtimes_ms":{"A1":231,"A2":28896,"A3":3218,"B1":1932,"B2":2193}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=14296, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:14:26.168] Checking precondition...
+[2026-06-27 01:14:26.187] Starting the repair...
+[2026-06-27 01:14:26.195] Found 242 possible bad axioms.
+[2026-06-27 01:14:26.197] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/dolichyl_pyrophosphate_glucosyltransferase http://www.flyglycodb.org/ontologies/2015/glucosyltransferase).
+[2026-06-27 01:14:26.203] Found 241 possible bad axioms.
+[2026-06-27 01:14:26.203] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/xylosyltransferase http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:14:26.213] Found 240 possible bad axioms.
+[2026-06-27 01:14:26.213] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/Protein http://www.flyglycodb.org/ontologies/2015/enzyme).
+[2026-06-27 01:14:26.219] Found 239 possible bad axioms.
+[2026-06-27 01:14:26.219] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/heparan_N-deacetylase_and_N-sulfotransferase http://www.flyglycodb.org/ontologies/2015/sulfotransferase).
+[2026-06-27 01:14:26.223] Found 238 possible bad axioms.
+[2026-06-27 01:14:26.223] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/beta1_3-glucuronyltransferase owl:Nothing).
+[2026-06-27 01:14:26.229] Found 237 possible bad axioms.
+[2026-06-27 01:14:26.229] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/GDP-Fuc_and_UDP-GlcNAc_and_UDP-Xyl_transporter_ER owl:Nothing).
+[2026-06-27 01:14:26.234] Found 236 possible bad axioms.
+[2026-06-27 01:14:26.235] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glycolipid http://www.flyglycodb.org/ontologies/2015/lipid).
+[2026-06-27 01:14:26.239] Found 235 possible bad axioms.
+[2026-06-27 01:14:26.240] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/encodes http://www.flyglycodb.org/ontologies/2015/Protein) ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_mutant http://www.flyglycodb.org/ontologies/2015/Mutant)).
+[2026-06-27 01:14:26.244] Found 234 possible bad axioms.
+[2026-06-27 01:14:26.244] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/syndecan http://www.flyglycodb.org/ontologies/2015/core_protein).
+[2026-06-27 01:14:26.247] Found 233 possible bad axioms.
+[2026-06-27 01:14:26.248] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/beta-N-acetylglucosaminidase owl:Nothing).
+[2026-06-27 01:14:26.251] Found 232 possible bad axioms.
+[202
+...[truncated]
+FAIL: attempt=2 seed=14296 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+progress: ontology=FLYGLYCODB attempt=2 success=0/100
+----- FLYGLYCODB attempt=3 seed=28496 at 2026-06-27 01:15:02 -----
+--- stdout ---
+{"seed":28496,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ lectin","iic_values":{},"repair_runtimes_ms":{"A1":73,"A2":22673,"A3":1806,"B1":1215,"B2":1344}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=28496, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:15:03.101] Checking precondition...
+[2026-06-27 01:15:03.120] Starting the repair...
+[2026-06-27 01:15:03.129] Found 242 possible bad axioms.
+[2026-06-27 01:15:03.131] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/GDP-Fuc_transporter_Golgi http://www.flyglycodb.org/ontologies/2015/sugar-nucleotide_transporter).
+[2026-06-27 01:15:03.137] Found 241 possible bad axioms.
+[2026-06-27 01:15:03.137] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/beta-N-acetylglucosaminidase http://www.flyglycodb.org/ontologies/2015/alpha-mannosidase_I).
+[2026-06-27 01:15:03.146] Found 240 possible bad axioms.
+[2026-06-27 01:15:03.146] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/syndecan http://www.flyglycodb.org/ontologies/2015/O-GlcNac_core_protein).
+[2026-06-27 01:15:03.152] Found 239 possible bad axioms.
+[2026-06-27 01:15:03.152] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase http://www.flyglycodb.org/ontologies/2015/protein_O-glucosyltransferase).
+[2026-06-27 01:15:03.169] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 01:15:03.170] Checking precondition...
+[2026-06-27 01:15:03.178] Starting the repair...
+[2026-06-27 01:15:25.838] Found 4 possible bad axioms.
+[2026-06-27 01:15:25.839] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/core_protein http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:15:25.843] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 01:15:25.844] Checking precondition...
+[2026-06-27 01:15:25.847] Starting the repair...
+[2026-06-27 01:15:25.891] Selected a reference ontology with 357 axioms.
+[2026-06-27 01:15:26.727] Selected the bad axiom SubClassOf(owl:Thing http://www.flyglycodb.org/ontologies/2015/lectin).
+[2026-06-27 01:15:27.647] Selected the weaker axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/dolichyl_pyrophosphate_glucosyltransferase http://www.flyglycodb.org/ontologies/2015/lectin).
+[2026-06-27 01:15:27.650] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 01:15:27.650] Checking precondition...
+[2026-06-27 01:15:27.653] Starting the repair...
+[2026-06-27 01:15:27.673] Selected a reference ontology with 359 axioms.
+[2026-06-27 01:15:28.357] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/core_protein http://www.flyglycodb.org/ontologies/2015/glycosyltranse
+...[truncated]
+FAIL: attempt=3 seed=28496 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ lectin
+progress: ontology=FLYGLYCODB attempt=3 success=0/100
+----- FLYGLYCODB attempt=4 seed=42696 at 2026-06-27 01:15:30 -----
+--- stdout ---
+{"seed":42696,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase","iic_values":{},"repair_runtimes_ms":{"A1":115,"A2":28289,"A3":2877,"B1":814,"B2":2214}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=42696, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:15:30.671] Checking precondition...
+[2026-06-27 01:15:30.689] Starting the repair...
+[2026-06-27 01:15:30.697] Found 242 possible bad axioms.
+[2026-06-27 01:15:30.699] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/N-acetylglucosaminyltransferase http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:15:30.704] Found 241 possible bad axioms.
+[2026-06-27 01:15:30.705] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/fukutin_related_protein http://www.flyglycodb.org/ontologies/2015/dolichyl_pyrophosphate_mannosyltransferase).
+[2026-06-27 01:15:30.714] Found 240 possible bad axioms.
+[2026-06-27 01:15:30.714] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/UDP-Gal_and_UDP-GalNAc_transporter http://www.flyglycodb.org/ontologies/2015/sugar-nucleotide_transporter).
+[2026-06-27 01:15:30.719] Found 239 possible bad axioms.
+[2026-06-27 01:15:30.719] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/Protein ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_activity http://www.flyglycodb.org/ontologies/2015/Activity)).
+[2026-06-27 01:15:30.723] Found 238 possible bad axioms.
+[2026-06-27 01:15:30.723] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/FGDBOWL_0004 http://www.flyglycodb.org/ontologies/2015/Reference) http://www.flyglycodb.org/ontologies/2015/Activity).
+[2026-06-27 01:15:30.728] Found 237 possible bad axioms.
+[2026-06-27 01:15:30.728] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/mannosyltransferase http://www.flyglycodb.org/ontologies/2015/galactosyltransferase).
+[2026-06-27 01:15:30.734] Found 236 possible bad axioms.
+[2026-06-27 01:15:30.734] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/PAPS_transporter http://www.flyglycodb.org/ontologies/2015/GDP-Fuc_transporter_Golgi).
+[2026-06-27 01:15:30.739] Found 235 possible bad axioms.
+[2026-06-27 01:15:30.739] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/alpha3-D-mannoside-beta1_2-N-acetylglucosaminyltransferase http://www.flyglycodb.org/ontologies/2015/N-acetylglucosaminyltransferase).
+[2026-06-27 01:15:30.743] Found 234 possible bad axioms.
+[2026-06-27 01:15:30.743] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/N-acetylgalactosamine_and_N-acetylglucosamine_and_galactose_6-O-sulfotransferase http://www.flyglycodb.org/ontologies/2015/heparan_sulfate_6-O-sulfotransferas
+...[truncated]
+FAIL: attempt=4 seed=42696 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+progress: ontology=FLYGLYCODB attempt=4 success=0/100
+----- FLYGLYCODB attempt=5 seed=56896 at 2026-06-27 01:16:05 -----
+--- stdout ---
+{"seed":56896,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase","iic_values":{},"repair_runtimes_ms":{"A1":291,"A2":22587,"A3":1445,"B1":4189,"B2":1999}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=56896, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:16:05.438] Checking precondition...
+[2026-06-27 01:16:05.456] Starting the repair...
+[2026-06-27 01:16:05.466] Found 242 possible bad axioms.
+[2026-06-27 01:16:05.468] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_pubmedid http://www.flyglycodb.org/ontologies/2015/PubmedID) http://www.flyglycodb.org/ontologies/2015/Reference).
+[2026-06-27 01:16:05.474] Found 241 possible bad axioms.
+[2026-06-27 01:16:05.474] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/alpha1_3-fucosyltransferase http://www.flyglycodb.org/ontologies/2015/protein_O-fucosyltransferase).
+[2026-06-27 01:16:05.479] Found 240 possible bad axioms.
+[2026-06-27 01:16:05.479] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/UDP-GlcNAc_polypeptide_O-b-N-acetylglucosaminyltransferase http://www.flyglycodb.org/ontologies/2015/i-beta1_3-N-acetylglucosaminyltransferase).
+[2026-06-27 01:16:05.489] Found 239 possible bad axioms.
+[2026-06-27 01:16:05.489] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/perlecan http://www.flyglycodb.org/ontologies/2015/core_protein).
+[2026-06-27 01:16:05.493] Found 238 possible bad axioms.
+[2026-06-27 01:16:05.493] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase http://www.flyglycodb.org/ontologies/2015/glycosidase).
+[2026-06-27 01:16:05.498] Found 237 possible bad axioms.
+[2026-06-27 01:16:05.499] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/alpha-mannosidase_II owl:Nothing).
+[2026-06-27 01:16:05.503] Found 236 possible bad axioms.
+[2026-06-27 01:16:05.503] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/FGDBOWL_0007 http://www.flyglycodb.org/ontologies/2015/rani_phenotype) ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_mutant http://www.flyglycodb.org/ontologies/2015/Mutant)).
+[2026-06-27 01:16:05.508] Found 235 possible bad axioms.
+[2026-06-27 01:16:05.508] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/galactosyltransferase http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:16:05.512] Found 234 possible bad axioms.
+[2026-06-27 01:16:05.513] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glycosidase http://www.flyglycodb.org/ontologies/2015/enzyme).
+[2026-06-27 01:16:05.516] Found 233 possible bad axioms.
+[2026-06-27 01:16:05.516] Selected the bad axiom SubClassOf(ObjectSomeV
+...[truncated]
+FAIL: attempt=5 seed=56896 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+progress: ontology=FLYGLYCODB attempt=5 success=0/100
+----- FLYGLYCODB attempt=6 seed=71096 at 2026-06-27 01:16:36 -----
+--- stdout ---
+{"seed":71096,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase","iic_values":{},"repair_runtimes_ms":{"A1":211,"A2":25119,"A3":1255,"B1":1192,"B2":2399}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=71096, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:16:36.413] Checking precondition...
+[2026-06-27 01:16:36.432] Starting the repair...
+[2026-06-27 01:16:36.441] Found 242 possible bad axioms.
+[2026-06-27 01:16:36.442] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/chondroitin_synthase http://www.flyglycodb.org/ontologies/2015/glucosyltransferase).
+[2026-06-27 01:16:36.448] Found 241 possible bad axioms.
+[2026-06-27 01:16:36.449] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/O-Man http://www.flyglycodb.org/ontologies/2015/O-glycan).
+[2026-06-27 01:16:36.453] Found 240 possible bad axioms.
+[2026-06-27 01:16:36.453] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/heparan_sulfate_6-O-sulfotransferase http://www.flyglycodb.org/ontologies/2015/chondroitin_4-O-sulfotransferase).
+[2026-06-27 01:16:36.463] Found 239 possible bad axioms.
+[2026-06-27 01:16:36.463] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/sugar-nucleotide_transporter http://www.flyglycodb.org/ontologies/2015/enzyme).
+[2026-06-27 01:16:36.467] Found 238 possible bad axioms.
+[2026-06-27 01:16:36.467] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/N-acetylgalactosaminyltransferase http://www.flyglycodb.org/ontologies/2015/glucosyltransferase).
+[2026-06-27 01:16:36.471] Found 237 possible bad axioms.
+[2026-06-27 01:16:36.472] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/lipid http://www.flyglycodb.org/ontologies/2015/Substrate).
+[2026-06-27 01:16:36.477] Found 236 possible bad axioms.
+[2026-06-27 01:16:36.478] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/beta1_3-galactosyltransferase http://www.flyglycodb.org/ontologies/2015/alpha1_4-N-acetylgalactosaminyltransferase).
+[2026-06-27 01:16:36.482] Found 235 possible bad axioms.
+[2026-06-27 01:16:36.483] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/FGDBOWL_0008 http://www.flyglycodb.org/ontologies/2015/Substrate) ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_activity http://www.flyglycodb.org/ontologies/2015/Activity)).
+[2026-06-27 01:16:36.487] Found 234 possible bad axioms.
+[2026-06-27 01:16:36.487] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_activity http://www.flyglycodb.org/ontologies/2015/Activity) http://www.flyglycodb.org/ontologies/2015/enzyme).
+[2026-06-27 01:16:36.490] Found 233 possible bad axioms.
+[2026-06-27 01:16:36.491] Selected t
+...[truncated]
+FAIL: attempt=6 seed=71096 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+progress: ontology=FLYGLYCODB attempt=6 success=0/100
+----- FLYGLYCODB attempt=7 seed=85296 at 2026-06-27 01:17:06 -----
+--- stdout ---
+{"seed":85296,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase","iic_values":{},"repair_runtimes_ms":{"A1":255,"A2":27013,"A3":9866,"B1":1423,"B2":2193}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=85296, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:17:07.033] Checking precondition...
+[2026-06-27 01:17:07.051] Starting the repair...
+[2026-06-27 01:17:07.059] Found 242 possible bad axioms.
+[2026-06-27 01:17:07.061] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/GAG_HS http://www.flyglycodb.org/ontologies/2015/GAG).
+[2026-06-27 01:17:07.066] Found 241 possible bad axioms.
+[2026-06-27 01:17:07.067] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/Gene ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_ncbiid http://www.flyglycodb.org/ontologies/2015/NCBIID)).
+[2026-06-27 01:17:07.071] Found 240 possible bad axioms.
+[2026-06-27 01:17:07.072] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/CGnumber ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/FGDBOWL_0005 http://www.flyglycodb.org/ontologies/2015/Gene)).
+[2026-06-27 01:17:07.081] Found 239 possible bad axioms.
+[2026-06-27 01:17:07.081] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/beta1_4-_mannosyltransferase http://www.flyglycodb.org/ontologies/2015/mannosyltransferase).
+[2026-06-27 01:17:07.085] Found 238 possible bad axioms.
+[2026-06-27 01:17:07.085] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glucosyltransferase http://www.flyglycodb.org/ontologies/2015/hereditary_multiple_exostoses_EXT_protein).
+[2026-06-27 01:17:07.089] Found 237 possible bad axioms.
+[2026-06-27 01:17:07.090] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/GAGbeta1_4-galactosyltransferase_I http://www.flyglycodb.org/ontologies/2015/core1beta1_3-galactosyltransferase).
+[2026-06-27 01:17:07.095] Found 236 possible bad axioms.
+[2026-06-27 01:17:07.095] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/beta-N-acetylglucosaminidase http://www.flyglycodb.org/ontologies/2015/glycosidase).
+[2026-06-27 01:17:07.099] Found 235 possible bad axioms.
+[2026-06-27 01:17:07.099] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/sugar-nucleotide_transporter http://www.flyglycodb.org/ontologies/2015/enzyme).
+[2026-06-27 01:17:07.102] Found 234 possible bad axioms.
+[2026-06-27 01:17:07.103] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/O-GlcNAc http://www.flyglycodb.org/ontologies/2015/O-glycan).
+[2026-06-27 01:17:07.107] Found 233 possible bad axioms.
+[2026-06-27 01:17:07.107] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_ncbiid http://w
+...[truncated]
+FAIL: attempt=7 seed=85296 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+progress: ontology=FLYGLYCODB attempt=7 success=0/100
+----- FLYGLYCODB attempt=8 seed=99496 at 2026-06-27 01:17:47 -----
+--- stdout ---
+{"seed":99496,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase","iic_values":{},"repair_runtimes_ms":{"A1":313,"A2":23715,"A3":1274,"B1":1370,"B2":2189}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=99496, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:17:48.240] Checking precondition...
+[2026-06-27 01:17:48.260] Starting the repair...
+[2026-06-27 01:17:48.268] Found 242 possible bad axioms.
+[2026-06-27 01:17:48.270] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/alpha1_3-fucosyltransferase owl:Nothing).
+[2026-06-27 01:17:48.276] Found 241 possible bad axioms.
+[2026-06-27 01:17:48.277] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/protein_O-glucosyltransferase http://www.flyglycodb.org/ontologies/2015/dolichyl_pyrophosphate_glucosyltransferase).
+[2026-06-27 01:17:48.282] Found 240 possible bad axioms.
+[2026-06-27 01:17:48.282] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/alpha1_3-fucosyltransferase http://www.flyglycodb.org/ontologies/2015/fucosyltransferase).
+[2026-06-27 01:17:48.292] Found 239 possible bad axioms.
+[2026-06-27 01:17:48.292] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/GAG_CS http://www.flyglycodb.org/ontologies/2015/GAG_HS).
+[2026-06-27 01:17:48.296] Found 238 possible bad axioms.
+[2026-06-27 01:17:48.296] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/unclassified_enzyme http://www.flyglycodb.org/ontologies/2015/lectin-like).
+[2026-06-27 01:17:48.301] Found 237 possible bad axioms.
+[2026-06-27 01:17:48.301] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_ncbiid http://www.flyglycodb.org/ontologies/2015/NCBIID) ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/FGDBOWL_0007 owl:Nothing)).
+[2026-06-27 01:17:48.306] Found 236 possible bad axioms.
+[2026-06-27 01:17:48.306] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/O-Man http://www.flyglycodb.org/ontologies/2015/O-glycan).
+[2026-06-27 01:17:48.310] Found 235 possible bad axioms.
+[2026-06-27 01:17:48.311] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glycosidase http://www.flyglycodb.org/ontologies/2015/enzyme).
+[2026-06-27 01:17:48.315] Found 234 possible bad axioms.
+[2026-06-27 01:17:48.315] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/core_protein http://www.flyglycodb.org/ontologies/2015/enzyme).
+[2026-06-27 01:17:48.318] Found 233 possible bad axioms.
+[2026-06-27 01:17:48.319] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/UDP-glucose_glycoprotein_glucosyltransferase http://www.flyglycodb.org/ontologies/2015/glucosyltransferase).
+[2026-06-27 01:17:48.322] Found 232 possible bad 
+...[truncated]
+FAIL: attempt=8 seed=99496 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+progress: ontology=FLYGLYCODB attempt=8 success=0/100
+----- FLYGLYCODB attempt=9 seed=113696 at 2026-06-27 01:18:17 -----
+--- stdout ---
+{"seed":113696,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase","iic_values":{},"repair_runtimes_ms":{"A1":104,"A2":29153,"A3":786,"B1":970,"B2":2185}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=113696, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:18:17.543] Checking precondition...
+[2026-06-27 01:18:17.561] Starting the repair...
+[2026-06-27 01:18:17.570] Found 242 possible bad axioms.
+[2026-06-27 01:18:17.572] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/dystroglycan http://www.flyglycodb.org/ontologies/2015/core_protein).
+[2026-06-27 01:18:17.577] Found 241 possible bad axioms.
+[2026-06-27 01:18:17.578] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_activity http://www.flyglycodb.org/ontologies/2015/Activity) http://www.flyglycodb.org/ontologies/2015/Protein).
+[2026-06-27 01:18:17.583] Found 240 possible bad axioms.
+[2026-06-27 01:18:17.583] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/GDP-Fuc_transporter_Golgi http://www.flyglycodb.org/ontologies/2015/sugar-nucleotide_transporter).
+[2026-06-27 01:18:17.593] Found 239 possible bad axioms.
+[2026-06-27 01:18:17.593] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_mammalian_orthologue http://www.flyglycodb.org/ontologies/2015/mammalian_orthologue) ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_mutant http://www.flyglycodb.org/ontologies/2015/Mutant)).
+[2026-06-27 01:18:17.597] Found 238 possible bad axioms.
+[2026-06-27 01:18:17.597] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/core_protein http://www.flyglycodb.org/ontologies/2015/Protein).
+[2026-06-27 01:18:17.602] Found 237 possible bad axioms.
+[2026-06-27 01:18:17.603] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/N-acetylglucosaminyltransferase http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:18:17.608] Found 236 possible bad axioms.
+[2026-06-27 01:18:17.608] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/N-glycan http://www.flyglycodb.org/ontologies/2015/Substrate).
+[2026-06-27 01:18:17.612] Found 235 possible bad axioms.
+[2026-06-27 01:18:17.612] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/GAGbeta1_4-galactosyltransferase_I http://www.flyglycodb.org/ontologies/2015/core1beta1_3-galactosyltransferase).
+[2026-06-27 01:18:17.616] Found 234 possible bad axioms.
+[2026-06-27 01:18:17.616] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/O-glycan owl:Nothing).
+[2026-06-27 01:18:17.620] Found 233 possible bad axioms.
+[2026-06-27 01:18:17.620] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/
+...[truncated]
+FAIL: attempt=9 seed=113696 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+progress: ontology=FLYGLYCODB attempt=9 success=0/100
+----- FLYGLYCODB attempt=10 seed=127896 at 2026-06-27 01:18:50 -----
+--- stdout ---
+{"seed":127896,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: glycosyltranseferase ⊑ protein_O-glucosyltransferase","iic_values":{},"repair_runtimes_ms":{"A1":178,"A2":24421,"A3":2539,"B1":3672,"B2":2275}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FLYGLYCODB.owl, seed=127896, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:18:51.194] Checking precondition...
+[2026-06-27 01:18:51.211] Starting the repair...
+[2026-06-27 01:18:51.219] Found 242 possible bad axioms.
+[2026-06-27 01:18:51.221] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/N-acetylgalactosaminyltransferase http://www.flyglycodb.org/ontologies/2015/protein_O-glucosyltransferase).
+[2026-06-27 01:18:51.227] Found 241 possible bad axioms.
+[2026-06-27 01:18:51.228] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/lectin-like http://www.flyglycodb.org/ontologies/2015/glycosidase).
+[2026-06-27 01:18:51.237] Found 240 possible bad axioms.
+[2026-06-27 01:18:51.237] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/core_protein http://www.flyglycodb.org/ontologies/2015/Protein).
+[2026-06-27 01:18:51.242] Found 239 possible bad axioms.
+[2026-06-27 01:18:51.242] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/FGDBOWL_0007 http://www.flyglycodb.org/ontologies/2015/rani_phenotype) ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_mutant http://www.flyglycodb.org/ontologies/2015/Mutant)).
+[2026-06-27 01:18:51.247] Found 238 possible bad axioms.
+[2026-06-27 01:18:51.247] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/glucosyltransferase http://www.flyglycodb.org/ontologies/2015/glycosyltranseferase).
+[2026-06-27 01:18:51.252] Found 237 possible bad axioms.
+[2026-06-27 01:18:51.252] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_ncbiid http://www.flyglycodb.org/ontologies/2015/NCBIID) ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/FGDBOWL_0007 owl:Nothing)).
+[2026-06-27 01:18:51.257] Found 236 possible bad axioms.
+[2026-06-27 01:18:51.257] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/Protein ObjectSomeValuesFrom(http://www.flyglycodb.org/ontologies/2015/has_activity http://www.flyglycodb.org/ontologies/2015/Activity)).
+[2026-06-27 01:18:51.261] Found 235 possible bad axioms.
+[2026-06-27 01:18:51.261] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/protein_O-fucosyltransferase http://www.flyglycodb.org/ontologies/2015/fucosyltransferase).
+[2026-06-27 01:18:51.265] Found 234 possible bad axioms.
+[2026-06-27 01:18:51.265] Selected the bad axiom SubClassOf(http://www.flyglycodb.org/ontologies/2015/fukutin_related_protein http://www.flyglycodb.org/ontologies/2015/mannosyltransferase).
+[2026-06-27 01:18:51.269
+...[truncated]
+FAIL: attempt=10 seed=127896 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: glycosyltranseferase ⊑ protein_O-glucosyltransferase
+progress: ontology=FLYGLYCODB attempt=10 success=0/100
+=== ABORTED FLYGLYCODB after 10 consecutive failures at 2026-06-27 01:19:24 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for FLYGLYCODB - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=96 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: glycosyltranseferase ⊑ protein_O-glucosyltransferase
+  attempt=2 seed=14296 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+  attempt=3 seed=28496 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ lectin
+  attempt=4 seed=42696 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+  attempt=5 seed=56896 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+  attempt=6 seed=71096 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+  attempt=7 seed=85296 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+  attempt=8 seed=99496 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+  attempt=9 seed=113696 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: core_protein ⊑ glycosyltranseferase
+  attempt=10 seed=127896 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: glycosyltranseferase ⊑ protein_O-glucosyltransferase
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

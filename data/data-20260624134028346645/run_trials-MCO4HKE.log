@@ -1,0 +1,468 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-MCO4HKE.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-MCO4HKE.csv
+
+=== Starting sequential trials for MCO4HKE at 2026-06-26 04:37:43 ===
+----- MCO4HKE attempt=1 seed=56 at 2026-06-26 04:37:43 -----
+--- stdout ---
+{"seed":56,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.9444444444444444,"B1_vs_A3":0.9375,"B2_vs_A1":1.0,"B2_vs_A2":0.2261904761904762,"B2_vs_A3":0.37209302325581395,"B3_vs_A1":1.0,"B3_vs_A2":0.9444444444444444,"B3_vs_A3":0.9375,"B4_vs_A1":1.0,"B4_vs_A2":0.2261904761904762,"B4_vs_A3":0.37209302325581395,"B5_vs_A1":1.0,"B5_vs_A2":0.9444444444444444,"B5_vs_A3":0.9375,"B6_vs_A1":1.0,"B6_vs_A2":0.2261904761904762,"B6_vs_A3":0.37209302325581395,"B7_vs_A1":1.0,"B7_vs_A2":0.9444444444444444,"B7_vs_A3":0.9375,"B8_vs_A1":1.0,"B8_vs_A2":0.9444444444444444,"B8_vs_A3":0.9375,"B9_vs_A1":1.0,"B9_vs_A2":0.9444444444444444,"B9_vs_A3":0.9375},"repair_runtimes_ms":{"A1":141,"A2":712,"A3":2338,"B1":1001,"B2":2432,"B3":2061,"B4":292,"B5":7865,"B6":9504,"B7":154,"B8":9325,"B9":5492}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=56, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:37:44.237] Checking precondition...
+[2026-06-26 04:37:44.254] Starting the repair...
+[2026-06-26 04:37:44.261] Found 103 possible bad axioms.
+[2026-06-26 04:37:44.263] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_1)).
+[2026-06-26 04:37:44.269] Found 102 possible bad axioms.
+[2026-06-26 04:37:44.269] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_1_2)).
+[2026-06-26 04:37:44.273] Found 101 possible bad axioms.
+[2026-06-26 04:37:44.274] Selected the bad axiom SubClassOf(barretts_long_segment ObjectComplementOf(barretts_short_segment)).
+[2026-06-26 04:37:44.278] Found 100 possible bad axioms.
+[2026-06-26 04:37:44.278] Selected the bad axiom SubClassOf(ObjectUnionOf(esophagitis esophagitis_a) esophagitis).
+[2026-06-26 04:37:44.282] Found 99 possible bad axioms.
+[2026-06-26 04:37:44.282] Selected the bad axiom SubClassOf(ObjectUnionOf(ulcerative_colitis ObjectUnionOf(hemorrhoids polyps)) lower_gi).
+[2026-06-26 04:37:44.290] Found 98 possible bad axioms.
+[2026-06-26 04:37:44.290] Selected the bad axiom SubClassOf(esophagitis upper_gi).
+[2026-06-26 04:37:44.294] Found 97 possible bad axioms.
+[2026-06-26 04:37:44.294] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ulcerative_colitis).
+[2026-06-26 04:37:44.297] Found 96 possible bad axioms.
+[2026-06-26 04:37:44.297] Selected the bad axiom SubClassOf(esophagitis ObjectComplementOf(barrets_unspecific)).
+[2026-06-26 04:37:44.300] Found 95 possible bad axioms.
+[2026-06-26 04:37:44.301] Selected the bad axiom SubClassOf(ulcerative_colitis ObjectComplementOf(lower_gi)).
+[2026-06-26 04:37:44.304] Found 94 possible bad axioms.
+[2026-06-26 04:37:44.304] Selected the bad axiom SubClassOf(ObjectUnionOf(hemorrhoids polyps) ObjectUnionOf(ulcerative_colitis_grade_3 ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1)))))).
+[2026-06-26 04:37:44.307] Found 93 possible bad axioms.
+[2026-06-26 04:37:44.307] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) upper_gi).
+[2026-06-26 04:37:44.315] Found 92 possible bad axioms.
+[2026-06-26 04:37:44.315] Selected the bad axiom SubClassOf(ObjectUnionOf(hemorrhoids polyps) lower_gi).
+[2026-06-26 04:37:44.318] Found 91 possible bad axioms.
+[2026-06-26 04:37:44.318] Selected the bad axiom SubClassOf(ObjectUnionOf(barrets_unspecific esophagitis) upper_gi)
+...[truncated]
+SUCCESS: attempt=1 seed=56 success_count=1/100
+progress: ontology=MCO4HKE attempt=1 success=1/100
+----- MCO4HKE attempt=2 seed=14256 at 2026-06-26 04:38:30 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=14256, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:38:30.362] Checking precondition...
+[2026-06-26 04:38:30.379] Starting the repair...
+[2026-06-26 04:38:30.386] Found 103 possible bad axioms.
+[2026-06-26 04:38:30.388] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ObjectComplementOf(ulcerative_colitis_grade_1)).
+[2026-06-26 04:38:30.394] Found 102 possible bad axioms.
+[2026-06-26 04:38:30.394] Selected the bad axiom SubClassOf(barrets_unspecific ObjectUnionOf(barretts_long_segment barretts_short_segment)).
+[2026-06-26 04:38:30.399] Found 101 possible bad axioms.
+[2026-06-26 04:38:30.400] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_0_1 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:38:30.404] Found 100 possible bad axioms.
+[2026-06-26 04:38:30.404] Selected the bad axiom SubClassOf(barrets_unspecific ObjectComplementOf(esophagitis)).
+[2026-06-26 04:38:30.407] Found 99 possible bad axioms.
+[2026-06-26 04:38:30.407] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ObjectComplementOf(ulcerative_colitis_grade_0_1)).
+[2026-06-26 04:38:30.415] Found 98 possible bad axioms.
+[2026-06-26 04:38:30.415] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:38:30.419] Found 97 possible bad axioms.
+[2026-06-26 04:38:30.419] Selected the bad axiom SubClassOf(barretts_long_segment ObjectComplementOf(barretts_short_segment)).
+[2026-06-26 04:38:30.422] Found 96 possible bad axioms.
+[2026-06-26 04:38:30.423] Selected the bad axiom SubClassOf(ObjectUnionOf(barrets_unspecific esophagitis) ObjectComplementOf(lower_gi)).
+[2026-06-26 04:38:30.426] Found 95 possible bad axioms.
+[2026-06-26 04:38:30.426] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_1_2)).
+[2026-06-26 04:38:30.430] Found 94 possible bad axioms.
+[2026-06-26 04:38:30.430] Selected the bad axiom SubClassOf(polyps ObjectComplementOf(hemorrhoids)).
+[2026-06-26 04:38:30.432] Found 93 possible bad axioms.
+[2026-06-26 04:38:30.432] Selected the bad axiom SubClassOf(barretts_long_segment barrets_unspecific).
+[2026-06-26 04:38:30.440] Found 92 possible bad axioms.
+[2026-06-26 04:38:30.440] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1 ObjectComplementOf(ulcerative_colitis_grade_2)).
+[2026-06-26 04:38:30.443] Found 91 possible bad axioms.
+[2026-06-26 04:38:30.443] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:38:30.446] Found 90 possible bad axioms.
+[2026-06-26 04:38:
+...[truncated]
+FAIL: attempt=2 seed=14256 - negative return code -9
+progress: ontology=MCO4HKE attempt=2 success=1/100
+----- MCO4HKE attempt=3 seed=28456 at 2026-06-26 04:39:24 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=28456, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:39:24.867] Checking precondition...
+[2026-06-26 04:39:24.884] Starting the repair...
+[2026-06-26 04:39:24.891] Found 103 possible bad axioms.
+[2026-06-26 04:39:24.893] Selected the bad axiom SubClassOf(_any_instance owl:Thing).
+[2026-06-26 04:39:24.899] Found 102 possible bad axioms.
+[2026-06-26 04:39:24.900] Selected the bad axiom SubClassOf(ObjectUnionOf(hemorrhoids polyps) ObjectUnionOf(ulcerative_colitis_grade_3 ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1)))))).
+[2026-06-26 04:39:24.906] Found 101 possible bad axioms.
+[2026-06-26 04:39:24.906] Selected the bad axiom SubClassOf(upper_gi ObjectComplementOf(lower_gi)).
+[2026-06-26 04:39:24.910] Found 100 possible bad axioms.
+[2026-06-26 04:39:24.910] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_0_1 ulcerative_colitis).
+[2026-06-26 04:39:24.914] Found 99 possible bad axioms.
+[2026-06-26 04:39:24.914] Selected the bad axiom SubClassOf(esophagitis_b_d ObjectComplementOf(esophagitis_a)).
+[2026-06-26 04:39:24.918] Found 98 possible bad axioms.
+[2026-06-26 04:39:24.918] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ObjectComplementOf(ulcerative_colitis_grade_0_1)).
+[2026-06-26 04:39:24.926] Found 97 possible bad axioms.
+[2026-06-26 04:39:24.926] Selected the bad axiom SubClassOf(hemorrhoids ObjectComplementOf(ObjectComplementOf(polyps))).
+[2026-06-26 04:39:24.929] Found 96 possible bad axioms.
+[2026-06-26 04:39:24.929] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_1)).
+[2026-06-26 04:39:24.932] Found 95 possible bad axioms.
+[2026-06-26 04:39:24.933] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barretts_long_segment).
+[2026-06-26 04:39:24.935] Found 94 possible bad axioms.
+[2026-06-26 04:39:24.935] Selected the bad axiom SubClassOf(ulcerative_colitis ObjectComplementOf(hemorrhoids)).
+[2026-06-26 04:39:24.938] Found 93 possible bad axioms.
+[2026-06-26 04:39:24.938] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1_2 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:39:24.949] Found 92 possible bad axioms.
+[2026-06-26 04:39:24.949] Selected the bad axiom SubClassOf(ulcerative_colitis ObjectComplementOf(lower_gi)).
+[2026-06-26 04:39:24.952] Found 91 possible bad axioms.
+[2026-06-26 04:39:24.952] Selected the bad axiom SubClassOf(upper_gi _any_instance).
+[2026-06-26 04:39:24.955] 
+...[truncated]
+FAIL: attempt=3 seed=28456 - negative return code -9
+progress: ontology=MCO4HKE attempt=3 success=1/100
+----- MCO4HKE attempt=4 seed=42656 at 2026-06-26 04:40:10 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=42656, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:40:11.277] Checking precondition...
+[2026-06-26 04:40:11.292] Starting the repair...
+[2026-06-26 04:40:11.300] Found 103 possible bad axioms.
+[2026-06-26 04:40:11.301] Selected the bad axiom SubClassOf(barrets_unspecific ObjectComplementOf(esophagitis)).
+[2026-06-26 04:40:11.307] Found 102 possible bad axioms.
+[2026-06-26 04:40:11.307] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barretts_long_segment).
+[2026-06-26 04:40:11.313] Found 101 possible bad axioms.
+[2026-06-26 04:40:11.313] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barrets_unspecific).
+[2026-06-26 04:40:11.317] Found 100 possible bad axioms.
+[2026-06-26 04:40:11.317] Selected the bad axiom SubClassOf(barrets_unspecific ObjectComplementOf(barretts_short_segment)).
+[2026-06-26 04:40:11.320] Found 99 possible bad axioms.
+[2026-06-26 04:40:11.320] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ObjectComplementOf(ulcerative_colitis_grade_3)).
+[2026-06-26 04:40:11.327] Found 98 possible bad axioms.
+[2026-06-26 04:40:11.328] Selected the bad axiom SubClassOf(ulcerative_colitis ObjectComplementOf(lower_gi)).
+[2026-06-26 04:40:11.331] Found 97 possible bad axioms.
+[2026-06-26 04:40:11.331] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:40:11.335] Found 96 possible bad axioms.
+[2026-06-26 04:40:11.335] Selected the bad axiom SubClassOf(barretts_long_segment barrets_unspecific).
+[2026-06-26 04:40:11.339] Found 95 possible bad axioms.
+[2026-06-26 04:40:11.340] Selected the bad axiom SubClassOf(upper_gi ObjectComplementOf(lower_gi)).
+[2026-06-26 04:40:11.343] Found 94 possible bad axioms.
+[2026-06-26 04:40:11.344] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:40:11.347] Found 93 possible bad axioms.
+[2026-06-26 04:40:11.347] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ulcerative_colitis).
+[2026-06-26 04:40:11.354] Found 92 possible bad axioms.
+[2026-06-26 04:40:11.354] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ulcerative_colitis_grade_1_2).
+[2026-06-26 04:40:11.357] Found 91 possible bad axioms.
+[2026-06-26 04:40:11.357] Selected the bad axiom SubClassOf(_any_instance ObjectUnionOf(lower_gi upper_gi)).
+[2026-06-26 04:40:11.359] Found 90 possible bad axioms.
+[2026-06-26 04:40:11.360] Selected the bad axiom SubClassOf(barretts_short_segment barrets_unspecific).
+[2026-06-26 04:40:
+...[truncated]
+FAIL: attempt=4 seed=42656 - negative return code -9
+progress: ontology=MCO4HKE attempt=4 success=1/100
+----- MCO4HKE attempt=5 seed=56856 at 2026-06-26 04:41:01 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=56856, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:41:01.635] Checking precondition...
+[2026-06-26 04:41:01.650] Starting the repair...
+[2026-06-26 04:41:01.658] Found 103 possible bad axioms.
+[2026-06-26 04:41:01.660] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barrets_unspecific).
+[2026-06-26 04:41:01.666] Found 102 possible bad axioms.
+[2026-06-26 04:41:01.667] Selected the bad axiom SubClassOf(esophagitis_a esophagitis).
+[2026-06-26 04:41:01.673] Found 101 possible bad axioms.
+[2026-06-26 04:41:01.673] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ulcerative_colitis_grade_1_2).
+[2026-06-26 04:41:01.677] Found 100 possible bad axioms.
+[2026-06-26 04:41:01.678] Selected the bad axiom SubClassOf(ObjectUnionOf(ulcerative_colitis ObjectUnionOf(hemorrhoids polyps)) lower_gi).
+[2026-06-26 04:41:01.681] Found 99 possible bad axioms.
+[2026-06-26 04:41:01.681] Selected the bad axiom SubClassOf(_any_instance owl:Thing).
+[2026-06-26 04:41:01.691] Found 98 possible bad axioms.
+[2026-06-26 04:41:01.691] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ObjectComplementOf(ulcerative_colitis_grade_1)).
+[2026-06-26 04:41:01.694] Found 97 possible bad axioms.
+[2026-06-26 04:41:01.694] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ulcerative_colitis).
+[2026-06-26 04:41:01.697] Found 96 possible bad axioms.
+[2026-06-26 04:41:01.697] Selected the bad axiom SubClassOf(ulcerative_colitis ObjectComplementOf(lower_gi)).
+[2026-06-26 04:41:01.701] Found 95 possible bad axioms.
+[2026-06-26 04:41:01.701] Selected the bad axiom SubClassOf(esophagitis ObjectUnionOf(esophagitis_a esophagitis_b_d)).
+[2026-06-26 04:41:01.705] Found 94 possible bad axioms.
+[2026-06-26 04:41:01.705] Selected the bad axiom SubClassOf(ObjectUnionOf(hemorrhoids polyps) ObjectUnionOf(ulcerative_colitis_grade_3 ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1)))))).
+[2026-06-26 04:41:01.708] Found 93 possible bad axioms.
+[2026-06-26 04:41:01.709] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_0_1)).
+[2026-06-26 04:41:01.716] Found 92 possible bad axioms.
+[2026-06-26 04:41:01.716] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_1_2)).
+[2026-06-26 04:41:01.719] Found 91 possible bad axioms.
+[2026-06-26 04:41:01.719] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ObjectCompl
+...[truncated]
+FAIL: attempt=5 seed=56856 - negative return code -9
+progress: ontology=MCO4HKE attempt=5 success=1/100
+----- MCO4HKE attempt=6 seed=71056 at 2026-06-26 04:41:53 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=71056, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:41:53.977] Checking precondition...
+[2026-06-26 04:41:53.992] Starting the repair...
+[2026-06-26 04:41:54.001] Found 103 possible bad axioms.
+[2026-06-26 04:41:54.003] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barrets_unspecific).
+[2026-06-26 04:41:54.009] Found 102 possible bad axioms.
+[2026-06-26 04:41:54.009] Selected the bad axiom SubClassOf(barrets_unspecific ObjectUnionOf(barretts_long_segment barretts_short_segment)).
+[2026-06-26 04:41:54.014] Found 101 possible bad axioms.
+[2026-06-26 04:41:54.014] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis_grade_1) ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:41:54.018] Found 100 possible bad axioms.
+[2026-06-26 04:41:54.018] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis_grade_0_1) ObjectComplementOf(ulcerative_colitis)).
+[2026-06-26 04:41:54.021] Found 99 possible bad axioms.
+[2026-06-26 04:41:54.022] Selected the bad axiom SubClassOf(hemorrhoids ulcerative_colitis_grade_3).
+[2026-06-26 04:41:54.029] Found 98 possible bad axioms.
+[2026-06-26 04:41:54.030] Selected the bad axiom SubClassOf(hemorrhoids ObjectUnionOf(ulcerative_colitis_grade_3 ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1)))))).
+[2026-06-26 04:41:54.033] Found 97 possible bad axioms.
+[2026-06-26 04:41:54.033] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_0_1 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:41:54.036] Found 96 possible bad axioms.
+[2026-06-26 04:41:54.037] Selected the bad axiom SubClassOf(ObjectUnionOf(hemorrhoids polyps) lower_gi).
+[2026-06-26 04:41:54.040] Found 95 possible bad axioms.
+[2026-06-26 04:41:54.040] Selected the bad axiom SubClassOf(ObjectUnionOf(ulcerative_colitis_grade_3 ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1))))) ulcerative_colitis).
+[2026-06-26 04:41:54.044] Found 94 possible bad axioms.
+[2026-06-26 04:41:54.044] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_3)).
+[2026-06-26 04:41:54.046] Found 93 possible bad axioms.
+[2026-06-26 04:41:54.046] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ulcerative_colitis_grade_1_2).
+[2026-06-26 04:41:54.053] Found 92 poss
+...[truncated]
+FAIL: attempt=6 seed=71056 - negative return code -9
+progress: ontology=MCO4HKE attempt=6 success=1/100
+----- MCO4HKE attempt=7 seed=85256 at 2026-06-26 04:42:31 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=85256, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:42:31.874] Checking precondition...
+[2026-06-26 04:42:31.889] Starting the repair...
+[2026-06-26 04:42:31.896] Found 103 possible bad axioms.
+[2026-06-26 04:42:31.898] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1_2 ObjectComplementOf(ObjectComplementOf(ulcerative_colitis_grade_0_1))).
+[2026-06-26 04:42:31.902] Found 102 possible bad axioms.
+[2026-06-26 04:42:31.903] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1 ObjectComplementOf(ulcerative_colitis_grade_1_2)).
+[2026-06-26 04:42:31.907] Found 101 possible bad axioms.
+[2026-06-26 04:42:31.907] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis_grade_0_1) ObjectComplementOf(ulcerative_colitis)).
+[2026-06-26 04:42:31.911] Found 100 possible bad axioms.
+[2026-06-26 04:42:31.912] Selected the bad axiom SubClassOf(polyps ObjectComplementOf(ulcerative_colitis)).
+[2026-06-26 04:42:31.915] Found 99 possible bad axioms.
+[2026-06-26 04:42:31.915] Selected the bad axiom SubClassOf(barretts_long_segment barrets_unspecific).
+[2026-06-26 04:42:31.923] Found 98 possible bad axioms.
+[2026-06-26 04:42:31.923] Selected the bad axiom SubClassOf(esophagitis_b_d ObjectComplementOf(esophagitis_a)).
+[2026-06-26 04:42:31.927] Found 97 possible bad axioms.
+[2026-06-26 04:42:31.928] Selected the bad axiom SubClassOf(esophagitis upper_gi).
+[2026-06-26 04:42:31.931] Found 96 possible bad axioms.
+[2026-06-26 04:42:31.931] Selected the bad axiom SubClassOf(ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1)))) ulcerative_colitis).
+[2026-06-26 04:42:31.934] Found 95 possible bad axioms.
+[2026-06-26 04:42:31.934] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis_grade_1_2) ObjectComplementOf(polyps)).
+[2026-06-26 04:42:31.938] Found 94 possible bad axioms.
+[2026-06-26 04:42:31.939] Selected the bad axiom SubClassOf(barretts_short_segment barrets_unspecific).
+[2026-06-26 04:42:31.941] Found 93 possible bad axioms.
+[2026-06-26 04:42:31.941] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1 ObjectComplementOf(ulcerative_colitis_grade_0_1)).
+[2026-06-26 04:42:31.949] Found 92 possible bad axioms.
+[2026-06-26 04:42:31.949] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1_2 ObjectComplementOf(ulcerative_colitis_grade_0_1)).
+[2026-06-26 04:42:31.952] Found 91 possible bad axioms.
+[2026-06-26 04:42:31.952] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ulcerative_colitis_
+...[truncated]
+FAIL: attempt=7 seed=85256 - negative return code -9
+progress: ontology=MCO4HKE attempt=7 success=1/100
+----- MCO4HKE attempt=8 seed=99456 at 2026-06-26 04:43:18 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=99456, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:43:18.761] Checking precondition...
+[2026-06-26 04:43:18.776] Starting the repair...
+[2026-06-26 04:43:18.784] Found 103 possible bad axioms.
+[2026-06-26 04:43:18.786] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ulcerative_colitis_grade_1_2).
+[2026-06-26 04:43:18.792] Found 102 possible bad axioms.
+[2026-06-26 04:43:18.793] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barretts_long_segment).
+[2026-06-26 04:43:18.797] Found 101 possible bad axioms.
+[2026-06-26 04:43:18.798] Selected the bad axiom SubClassOf(ObjectUnionOf(barrets_unspecific esophagitis) ObjectComplementOf(lower_gi)).
+[2026-06-26 04:43:18.802] Found 100 possible bad axioms.
+[2026-06-26 04:43:18.802] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ObjectComplementOf(ulcerative_colitis_grade_1_2)).
+[2026-06-26 04:43:18.805] Found 99 possible bad axioms.
+[2026-06-26 04:43:18.806] Selected the bad axiom SubClassOf(barrets_unspecific ObjectUnionOf(barretts_long_segment barretts_short_segment)).
+[2026-06-26 04:43:18.809] Found 98 possible bad axioms.
+[2026-06-26 04:43:18.809] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ObjectComplementOf(ulcerative_colitis_grade_1)).
+[2026-06-26 04:43:18.818] Found 97 possible bad axioms.
+[2026-06-26 04:43:18.818] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(polyps)).
+[2026-06-26 04:43:18.821] Found 96 possible bad axioms.
+[2026-06-26 04:43:18.821] Selected the bad axiom SubClassOf(lower_gi ObjectUnionOf(ulcerative_colitis ObjectUnionOf(hemorrhoids polyps))).
+[2026-06-26 04:43:18.825] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 04:43:18.826] Checking precondition...
+[2026-06-26 04:43:18.835] Starting the repair...
+[2026-06-26 04:43:19.569] Found 2 possible bad axioms.
+[2026-06-26 04:43:19.570] Selected the bad axiom SubClassOf(lower_gi ObjectUnionOf(ulcerative_colitis ObjectUnionOf(hemorrhoids polyps))).
+[2026-06-26 04:43:19.572] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 04:43:19.574] Checking precondition...
+[2026-06-26 04:43:19.577] Starting the repair...
+[2026-06-26 04:43:19.589] Selected a reference ontology with 121 axioms.
+[2026-06-26 04:43:19.890] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis) lower_gi).
+[2026-06-26 04:43:19.929] Selected the weaker axiom SubClassOf(ObjectComplementOf(ObjectUnionOf(esophagitis esophagitis_a)) lower_gi).
+[2026-06-26 04:43:19.931] Finished repairing the o
+...[truncated]
+FAIL: attempt=8 seed=99456 - negative return code -9
+progress: ontology=MCO4HKE attempt=8 success=1/100
+----- MCO4HKE attempt=9 seed=113656 at 2026-06-26 04:44:13 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=113656, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:44:13.407] Checking precondition...
+[2026-06-26 04:44:13.423] Starting the repair...
+[2026-06-26 04:44:13.431] Found 103 possible bad axioms.
+[2026-06-26 04:44:13.433] Selected the bad axiom SubClassOf(barrets_unspecific upper_gi).
+[2026-06-26 04:44:13.440] Found 102 possible bad axioms.
+[2026-06-26 04:44:13.440] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis_grade_0_1) ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:44:13.445] Found 101 possible bad axioms.
+[2026-06-26 04:44:13.445] Selected the bad axiom SubClassOf(barrets_unspecific ObjectComplementOf(barretts_short_segment)).
+[2026-06-26 04:44:13.449] Found 100 possible bad axioms.
+[2026-06-26 04:44:13.449] Selected the bad axiom SubClassOf(barrets_unspecific ObjectUnionOf(barretts_long_segment barretts_short_segment)).
+[2026-06-26 04:44:13.452] Found 99 possible bad axioms.
+[2026-06-26 04:44:13.453] Selected the bad axiom SubClassOf(ObjectUnionOf(lower_gi upper_gi) _any_instance).
+[2026-06-26 04:44:13.461] Found 98 possible bad axioms.
+[2026-06-26 04:44:13.461] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) upper_gi).
+[2026-06-26 04:44:13.464] Found 97 possible bad axioms.
+[2026-06-26 04:44:13.465] Selected the bad axiom SubClassOf(lower_gi ObjectComplementOf(upper_gi)).
+[2026-06-26 04:44:13.468] Found 96 possible bad axioms.
+[2026-06-26 04:44:13.468] Selected the bad axiom SubClassOf(esophagitis ObjectUnionOf(esophagitis_a esophagitis_b_d)).
+[2026-06-26 04:44:13.472] Found 95 possible bad axioms.
+[2026-06-26 04:44:13.472] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barrets_unspecific).
+[2026-06-26 04:44:13.476] Found 94 possible bad axioms.
+[2026-06-26 04:44:13.477] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ObjectComplementOf(ulcerative_colitis_grade_1)).
+[2026-06-26 04:44:13.479] Found 93 possible bad axioms.
+[2026-06-26 04:44:13.479] Selected the bad axiom SubClassOf(ObjectUnionOf(ulcerative_colitis_grade_3 ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1))))) ObjectComplementOf(lower_gi)).
+[2026-06-26 04:44:13.487] Found 92 possible bad axioms.
+[2026-06-26 04:44:13.487] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_0_1 ObjectComplementOf(ulcerative_colitis_grade_2_3)).
+[2026-06-26 04:44:13.490] Found 91 possible bad axioms.
+[2026-06-26 04:44:13.490] Selected t
+...[truncated]
+FAIL: attempt=9 seed=113656 - negative return code -9
+progress: ontology=MCO4HKE attempt=9 success=1/100
+----- MCO4HKE attempt=10 seed=127856 at 2026-06-26 04:45:02 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=127856, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:45:02.724] Checking precondition...
+[2026-06-26 04:45:02.739] Starting the repair...
+[2026-06-26 04:45:02.746] Found 103 possible bad axioms.
+[2026-06-26 04:45:02.748] Selected the bad axiom SubClassOf(ObjectUnionOf(ulcerative_colitis_grade_3 ObjectUnionOf(ulcerative_colitis_grade_2_3 ObjectUnionOf(ulcerative_colitis_grade_2 ObjectUnionOf(ulcerative_colitis_grade_1_2 ObjectUnionOf(ulcerative_colitis_grade_0_1 ulcerative_colitis_grade_1))))) ObjectComplementOf(lower_gi)).
+[2026-06-26 04:45:02.753] Found 102 possible bad axioms.
+[2026-06-26 04:45:02.754] Selected the bad axiom SubClassOf(ObjectUnionOf(barrets_unspecific esophagitis) upper_gi).
+[2026-06-26 04:45:02.759] Found 101 possible bad axioms.
+[2026-06-26 04:45:02.759] Selected the bad axiom SubClassOf(esophagitis upper_gi).
+[2026-06-26 04:45:02.763] Found 100 possible bad axioms.
+[2026-06-26 04:45:02.763] Selected the bad axiom SubClassOf(upper_gi ObjectComplementOf(lower_gi)).
+[2026-06-26 04:45:02.767] Found 99 possible bad axioms.
+[2026-06-26 04:45:02.767] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_1)).
+[2026-06-26 04:45:02.770] Found 98 possible bad axioms.
+[2026-06-26 04:45:02.771] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1 ObjectComplementOf(ulcerative_colitis_grade_3)).
+[2026-06-26 04:45:02.780] Found 97 possible bad axioms.
+[2026-06-26 04:45:02.781] Selected the bad axiom SubClassOf(polyps ObjectComplementOf(hemorrhoids)).
+[2026-06-26 04:45:02.786] Found 96 possible bad axioms.
+[2026-06-26 04:45:02.786] Selected the bad axiom SubClassOf(lower_gi _any_instance).
+[2026-06-26 04:45:02.789] Found 95 possible bad axioms.
+[2026-06-26 04:45:02.789] Selected the bad axiom SubClassOf(ObjectUnionOf(barretts_long_segment barretts_short_segment) barretts_long_segment).
+[2026-06-26 04:45:02.793] Found 94 possible bad axioms.
+[2026-06-26 04:45:02.793] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2 ulcerative_colitis).
+[2026-06-26 04:45:02.796] Found 93 possible bad axioms.
+[2026-06-26 04:45:02.796] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis_grade_1_2) ObjectComplementOf(polyps)).
+[2026-06-26 04:45:02.803] Found 92 possible bad axioms.
+[2026-06-26 04:45:02.803] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_3 ObjectComplementOf(ulcerative_colitis_grade_1_2)).
+[2026-06-26 04:45:02.806] Found 91 possible bad axioms.
+[2026-06-26 04:45:02.806] Selected the bad axiom SubClassOf(barrets_unspecific ObjectUnionOf(esophagitis_a esophagitis_b_d)).
+[2026-06-26 0
+...[truncated]
+FAIL: attempt=10 seed=127856 - negative return code -9
+progress: ontology=MCO4HKE attempt=10 success=1/100
+----- MCO4HKE attempt=11 seed=142056 at 2026-06-26 04:45:44 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4HKE.owl, seed=142056, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:45:44.653] Checking precondition...
+[2026-06-26 04:45:44.669] Starting the repair...
+[2026-06-26 04:45:44.677] Found 103 possible bad axioms.
+[2026-06-26 04:45:44.679] Selected the bad axiom SubClassOf(barrets_unspecific upper_gi).
+[2026-06-26 04:45:44.684] Found 102 possible bad axioms.
+[2026-06-26 04:45:44.685] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1_2 ulcerative_colitis).
+[2026-06-26 04:45:44.690] Found 101 possible bad axioms.
+[2026-06-26 04:45:44.690] Selected the bad axiom SubClassOf(ObjectComplementOf(ulcerative_colitis_grade_0_1) ObjectComplementOf(ulcerative_colitis)).
+[2026-06-26 04:45:44.694] Found 100 possible bad axioms.
+[2026-06-26 04:45:44.694] Selected the bad axiom SubClassOf(ulcerative_colitis ObjectComplementOf(polyps)).
+[2026-06-26 04:45:44.697] Found 99 possible bad axioms.
+[2026-06-26 04:45:44.698] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1_2 ObjectComplementOf(ulcerative_colitis_grade_0_1)).
+[2026-06-26 04:45:44.705] Found 98 possible bad axioms.
+[2026-06-26 04:45:44.706] Selected the bad axiom SubClassOf(ObjectUnionOf(barrets_unspecific esophagitis) ObjectComplementOf(lower_gi)).
+[2026-06-26 04:45:44.709] Found 97 possible bad axioms.
+[2026-06-26 04:45:44.710] Selected the bad axiom SubClassOf(hemorrhoids ObjectComplementOf(ulcerative_colitis)).
+[2026-06-26 04:45:44.713] Found 96 possible bad axioms.
+[2026-06-26 04:45:44.714] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_1 ObjectComplementOf(ulcerative_colitis_grade_0_1)).
+[2026-06-26 04:45:44.717] Found 95 possible bad axioms.
+[2026-06-26 04:45:44.717] Selected the bad axiom SubClassOf(ulcerative_colitis ObjectComplementOf(lower_gi)).
+[2026-06-26 04:45:44.721] Found 94 possible bad axioms.
+[2026-06-26 04:45:44.721] Selected the bad axiom SubClassOf(ObjectUnionOf(barrets_unspecific esophagitis) upper_gi).
+[2026-06-26 04:45:44.723] Found 93 possible bad axioms.
+[2026-06-26 04:45:44.723] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ulcerative_colitis_grade_1_2).
+[2026-06-26 04:45:44.731] Found 92 possible bad axioms.
+[2026-06-26 04:45:44.732] Selected the bad axiom SubClassOf(ObjectUnionOf(esophagitis esophagitis_a) esophagitis).
+[2026-06-26 04:45:44.735] Found 91 possible bad axioms.
+[2026-06-26 04:45:44.735] Selected the bad axiom SubClassOf(ulcerative_colitis_grade_2_3 ObjectComplementOf(ulcerative_colitis_grade_2)).
+[2026-06-26 04:45:44.737] Found 90 possible bad axioms.
+[2026-06-26 04:45:44.738] Selected the bad axiom SubClassOf(upper_gi ObjectUnionOf(barrets_unspecific esophagitis)).
+[2
+...[truncated]
+FAIL: attempt=11 seed=142056 - negative return code -9
+progress: ontology=MCO4HKE attempt=11 success=1/100
+=== ABORTED MCO4HKE after 10 consecutive failures at 2026-06-26 04:46:25 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for MCO4HKE - 1 successes, 10 failures, 11 attempts ===
+Failed attempts:
+  attempt=2 seed=14256 msg=negative return code -9
+  attempt=3 seed=28456 msg=negative return code -9
+  attempt=4 seed=42656 msg=negative return code -9
+  attempt=5 seed=56856 msg=negative return code -9
+  attempt=6 seed=71056 msg=negative return code -9
+  attempt=7 seed=85256 msg=negative return code -9
+  attempt=8 seed=99456 msg=negative return code -9
+  attempt=9 seed=113656 msg=negative return code -9
+  attempt=10 seed=127856 msg=negative return code -9
+  attempt=11 seed=142056 msg=negative return code -9
+Timing summary:
+  success: count=1 total_seconds=46.069116 avg_seconds=46.069116
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=475.247839 avg_seconds=47.524784
+  success_rate=0.0909
+  wall_clock_seconds_total_run=360698.251834

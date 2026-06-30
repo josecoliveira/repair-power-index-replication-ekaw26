@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,39,20260624134028346645,memory_limit_exceeded,,,,126.035559,,,,,,,,,,,,
+2,14239,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType,8.562472,94,646,682,287,4549,1861,,,,,,
+3,28439,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType,4.988376,93,641,460,250,3177,,,,,,,
+4,42639,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType,5.532333,89,643,361,733,3335,,,,,,,
+5,56839,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System,8.863012,95,658,482,293,4656,2303,,,,,,
+6,71039,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System,4.848915,66,654,374,270,3123,,,,,,,
+7,85239,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType,8.828356,126,634,888,242,4560,2023,,,,,,
+8,99439,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType,11.183034,65,663,603,240,7102,2142,,,,,,
+9,113639,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType,4.779986,119,627,412,299,2959,,,,,,,
+10,127839,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType,6.440245,116,617,1787,197,3373,,,,,,,

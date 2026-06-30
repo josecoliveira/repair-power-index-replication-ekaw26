@@ -1,0 +1,462 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-FMPM.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-FMPM.csv
+
+=== Starting sequential trials for FMPM at 2026-06-27 05:51:04 ===
+----- FMPM attempt=1 seed=107 at 2026-06-27 05:51:04 -----
+--- stdout ---
+{"seed":107,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken","iic_values":{},"repair_runtimes_ms":{"A1":338,"A2":13023,"A3":962,"B1":894,"B2":2207}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=107, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:51:05.354] Checking precondition...
+[2026-06-27 05:51:05.371] Starting the repair...
+[2026-06-27 05:51:05.378] Found 302 possible bad axioms.
+[2026-06-27 05:51:05.380] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Spicy_cheese_salad urn:absolute:FMPM#Salad).
+[2026-06-27 05:51:05.389] Found 301 possible bad axioms.
+[2026-06-27 05:51:05.389] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fermented_meat urn:absolute:FMPM#Processed_raw_meat).
+[2026-06-27 05:51:05.394] Found 300 possible bad axioms.
+[2026-06-27 05:51:05.394] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fresh_fruits_and_vegetables owl:Nothing).
+[2026-06-27 05:51:05.400] Found 299 possible bad axioms.
+[2026-06-27 05:51:05.400] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Milk urn:absolute:FMPM#Dairy_products).
+[2026-06-27 05:51:05.404] Found 298 possible bad axioms.
+[2026-06-27 05:51:05.404] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Chemicaly_extracted_meat urn:absolute:FMPM#Processed_raw_meat).
+[2026-06-27 05:51:05.408] Found 297 possible bad axioms.
+[2026-06-27 05:51:05.409] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_beef_with_aditives urn:absolute:FMPM#Ground_meat).
+[2026-06-27 05:51:05.413] Found 296 possible bad axioms.
+[2026-06-27 05:51:05.413] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fruits_&_vegetables urn:absolute:FMPM#Pasta).
+[2026-06-27 05:51:05.417] Found 295 possible bad axioms.
+[2026-06-27 05:51:05.417] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Dressing urn:absolute:FMPM#Composited_food_products).
+[2026-06-27 05:51:05.421] Found 294 possible bad axioms.
+[2026-06-27 05:51:05.421] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Egg urn:absolute:FMPM#Non_meat).
+[2026-06-27 05:51:05.429] Found 293 possible bad axioms.
+[2026-06-27 05:51:05.430] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cheese urn:absolute:FMPMv#Spicy_cheese).
+[2026-06-27 05:51:05.433] Found 292 possible bad axioms.
+[2026-06-27 05:51:05.433] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fresh_fruits_and_vegetables urn:absolute:FMPM#Spinach).
+[2026-06-27 05:51:05.442] Found 291 possible bad axioms.
+[2026-06-27 05:51:05.443] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Pasta_salad urn:absolute:FMPM#Chorizo).
+[2026-06-27 05:51:05.447] Found 290 possible bad axioms.
+[2026-06-27 05:51:05.447] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cooked_&_cured urn:absolute:FMPM#Heat_treated_meat).
+[2026-06-27 05:51:05.451] Found 289 possible bad axioms.
+[2026-06-27 05:51:05.452] Selected the bad axiom SubClassOf(u
+...[truncated]
+FAIL: attempt=1 seed=107 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken
+progress: ontology=FMPM attempt=1 success=0/100
+----- FMPM attempt=2 seed=14307 at 2026-06-27 05:51:22 -----
+--- stdout ---
+{"seed":14307,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken","iic_values":{},"repair_runtimes_ms":{"A1":318,"A2":12904,"A3":1461,"B1":1597,"B2":1281,"B3":8080}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=14307, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:51:23.238] Checking precondition...
+[2026-06-27 05:51:23.254] Starting the repair...
+[2026-06-27 05:51:23.262] Found 302 possible bad axioms.
+[2026-06-27 05:51:23.263] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Chemicaly_extracted_meat urn:absolute:FMPM#Chicken_skin).
+[2026-06-27 05:51:23.268] Found 301 possible bad axioms.
+[2026-06-27 05:51:23.269] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Chicken_frankfurters urn:absolute:FMPM#Sausages).
+[2026-06-27 05:51:23.279] Found 300 possible bad axioms.
+[2026-06-27 05:51:23.279] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Trypticase_soy_agar urn:absolute:FMPM#Trypticase_soy_agar_and_derivatives).
+[2026-06-27 05:51:23.284] Found 299 possible bad axioms.
+[2026-06-27 05:51:23.284] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fish_products urn:absolute:FMPM#Seafood).
+[2026-06-27 05:51:23.288] Found 298 possible bad axioms.
+[2026-06-27 05:51:23.288] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Chemicaly_extracted_meat urn:absolute:FMPM#Fermented_meat).
+[2026-06-27 05:51:23.293] Found 297 possible bad axioms.
+[2026-06-27 05:51:23.293] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Chemicaly_extracted_meat urn:absolute:FMPM#Cured_&_fermented_meat).
+[2026-06-27 05:51:23.297] Found 296 possible bad axioms.
+[2026-06-27 05:51:23.297] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cheese_salad urn:absolute:FMPM#Salad).
+[2026-06-27 05:51:23.301] Found 295 possible bad axioms.
+[2026-06-27 05:51:23.301] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Dressing urn:absolute:FMPM#Composited_food_products).
+[2026-06-27 05:51:23.304] Found 294 possible bad axioms.
+[2026-06-27 05:51:23.305] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Meat urn:absolute:FMPM#Terrestrial_animal_meat).
+[2026-06-27 05:51:23.308] Found 293 possible bad axioms.
+[2026-06-27 05:51:23.308] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Raw_milk urn:absolute:FMPM#Milk).
+[2026-06-27 05:51:23.316] Found 292 possible bad axioms.
+[2026-06-27 05:51:23.316] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cokked_&_fermented_meat urn:absolute:FMPM#Cooked_meat).
+[2026-06-27 05:51:23.324] Found 291 possible bad axioms.
+[2026-06-27 05:51:23.325] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Mechanicaly_extracted_meat urn:absolute:FMPM#Processed_raw_meat).
+[2026-06-27 05:51:23.328] Found 290 possible bad axioms.
+[2026-06-27 05:51:23.328] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fresh_fruits_and_vegetables owl:Nothing).
+[2026-06-27 05:51:23.332] Found 289 possible bad
+...[truncated]
+FAIL: attempt=2 seed=14307 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken
+progress: ontology=FMPM attempt=2 success=0/100
+----- FMPM attempt=3 seed=28507 at 2026-06-27 05:51:50 -----
+--- stdout ---
+{"seed":28507,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken","iic_values":{},"repair_runtimes_ms":{"A1":195,"A2":12995,"A3":1698,"B1":916,"B2":6107}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=28507, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:51:50.642] Checking precondition...
+[2026-06-27 05:51:50.659] Starting the repair...
+[2026-06-27 05:51:50.666] Found 302 possible bad axioms.
+[2026-06-27 05:51:50.668] Selected the bad axiom SubClassOf(urn:absolute:FMC#Infant_food urn:absolute:FMPM#Sauces).
+[2026-06-27 05:51:50.673] Found 301 possible bad axioms.
+[2026-06-27 05:51:50.679] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Egg_yolk urn:absolute:FMPM#Composite_egg_food_products).
+[2026-06-27 05:51:50.685] Found 300 possible bad axioms.
+[2026-06-27 05:51:50.685] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Dairy_products urn:absolute:FMPM#Non_meat).
+[2026-06-27 05:51:50.690] Found 299 possible bad axioms.
+[2026-06-27 05:51:50.690] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cured_meat_products urn:absolute:FMPM#Processed_raw_meat).
+[2026-06-27 05:51:50.694] Found 298 possible bad axioms.
+[2026-06-27 05:51:50.695] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Modified_meat urn:absolute:FMPM#Other_type_processed_meat).
+[2026-06-27 05:51:50.698] Found 297 possible bad axioms.
+[2026-06-27 05:51:50.699] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_chicken urn:absolute:FMPM#Ground_meat).
+[2026-06-27 05:51:50.702] Found 296 possible bad axioms.
+[2026-06-27 05:51:50.703] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Agar_medium urn:absolute:FMPM#Broth_medium).
+[2026-06-27 05:51:50.706] Found 295 possible bad axioms.
+[2026-06-27 05:51:50.706] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Composite_fish_food_products urn:absolute:FMPM#Composited_food_products).
+[2026-06-27 05:51:50.709] Found 294 possible bad axioms.
+[2026-06-27 05:51:50.710] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cheese urn:absolute:FMPM#Fermented_milk).
+[2026-06-27 05:51:50.717] Found 293 possible bad axioms.
+[2026-06-27 05:51:50.717] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Food urn:absolute:FMPM#Ground_chicken_burgers).
+[2026-06-27 05:51:50.721] Found 292 possible bad axioms.
+[2026-06-27 05:51:50.721] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Spinach urn:absolute:FMPM#Grape).
+[2026-06-27 05:51:50.730] Found 291 possible bad axioms.
+[2026-06-27 05:51:50.730] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Yeast_nitrogen_base urn:absolute:FMPM#Broth_medium).
+[2026-06-27 05:51:50.733] Found 290 possible bad axioms.
+[2026-06-27 05:51:50.734] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Heat_treated_meat urn:absolute:FMPM#Fresh_meat).
+[2026-06-27 05:51:50.738] Found 289 possible bad axioms.
+[2026-06-27 05:51:50.738] Selected 
+...[truncated]
+FAIL: attempt=3 seed=28507 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken
+progress: ontology=FMPM attempt=3 success=0/100
+----- FMPM attempt=4 seed=42707 at 2026-06-27 05:52:12 -----
+--- stdout ---
+{"seed":42707,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers","iic_values":{},"repair_runtimes_ms":{"A1":97,"A2":12940,"A3":913,"B1":1632,"B2":2606}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=42707, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:52:13.024] Checking precondition...
+[2026-06-27 05:52:13.042] Starting the repair...
+[2026-06-27 05:52:13.049] Found 302 possible bad axioms.
+[2026-06-27 05:52:13.051] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cured_&_fermented_meat urn:absolute:FMPM#Mechanicaly_processed_meat).
+[2026-06-27 05:52:13.056] Found 301 possible bad axioms.
+[2026-06-27 05:52:13.056] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Chicken_skin urn:absolute:FMPM#Non_meat).
+[2026-06-27 05:52:13.066] Found 300 possible bad axioms.
+[2026-06-27 05:52:13.066] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fish_products urn:absolute:FMPM#Seafood).
+[2026-06-27 05:52:13.071] Found 299 possible bad axioms.
+[2026-06-27 05:52:13.071] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_beef urn:absolute:FMPM#Fresh_meat).
+[2026-06-27 05:52:13.076] Found 298 possible bad axioms.
+[2026-06-27 05:52:13.076] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Beef_sausages urn:absolute:FMPM#Sausages).
+[2026-06-27 05:52:13.080] Found 297 possible bad axioms.
+[2026-06-27 05:52:13.080] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sausages urn:absolute:FMPM#Sausages_with_potassium_lactate).
+[2026-06-27 05:52:13.084] Found 296 possible bad axioms.
+[2026-06-27 05:52:13.084] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(urn:absolute:FMPM#Animal_origin owl:Thing) urn:absolute:FMPM#Meat).
+[2026-06-27 05:52:13.088] Found 295 possible bad axioms.
+[2026-06-27 05:52:13.088] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cooked_beef urn:absolute:FMPM#Sterile,_coocked_ground_chicken_thigh_meat_burgers).
+[2026-06-27 05:52:13.092] Found 294 possible bad axioms.
+[2026-06-27 05:52:13.092] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cantaloupe urn:absolute:FMPM#Fresh_fruits_and_vegetables).
+[2026-06-27 05:52:13.095] Found 293 possible bad axioms.
+[2026-06-27 05:52:13.095] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Dairy_products urn:absolute:FMPM#Egg).
+[2026-06-27 05:52:13.103] Found 292 possible bad axioms.
+[2026-06-27 05:52:13.103] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Eggplant_salad urn:absolute:FMPM#Mayonnaise_based_salad).
+[2026-06-27 05:52:13.112] Found 291 possible bad axioms.
+[2026-06-27 05:52:13.112] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_chicken_burgers urn:absolute:FMPM#Ground_chicken).
+[2026-06-27 05:52:13.115] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 05:52:13.117] Checking precondition...
+[2026-06-27 05:52:13.125] Starting the repair...
+...[truncated]
+FAIL: attempt=4 seed=42707 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+progress: ontology=FMPM attempt=4 success=0/100
+----- FMPM attempt=5 seed=56907 at 2026-06-27 05:52:31 -----
+--- stdout ---
+{"seed":56907,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers","iic_values":{},"repair_runtimes_ms":{"A1":355,"A2":12918,"A3":1011,"B1":2818,"B2":1978}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=56907, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:52:31.677] Checking precondition...
+[2026-06-27 05:52:31.694] Starting the repair...
+[2026-06-27 05:52:31.702] Found 302 possible bad axioms.
+[2026-06-27 05:52:31.703] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Water urn:absolute:FMPM#Beverage).
+[2026-06-27 05:52:31.714] Found 301 possible bad axioms.
+[2026-06-27 05:52:31.714] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Carrot urn:absolute:FMPM#Melon).
+[2026-06-27 05:52:31.719] Found 300 possible bad axioms.
+[2026-06-27 05:52:31.720] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Green_leafy_vegetables urn:absolute:FMPM#Fresh_fruits_and_vegetables).
+[2026-06-27 05:52:31.724] Found 299 possible bad axioms.
+[2026-06-27 05:52:31.725] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Lettuce urn:absolute:FMPM#Fresh_fruits_and_vegetables).
+[2026-06-27 05:52:31.729] Found 298 possible bad axioms.
+[2026-06-27 05:52:31.729] Selected the bad axiom SubClassOf(urn:absolute:FMPM#UHT_milk urn:absolute:FMPM#Milk).
+[2026-06-27 05:52:31.732] Found 297 possible bad axioms.
+[2026-06-27 05:52:31.732] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_chicken urn:absolute:FMPM#Ground_pork).
+[2026-06-27 05:52:31.736] Found 296 possible bad axioms.
+[2026-06-27 05:52:31.737] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Processed_fruits_and_vegetables urn:absolute:FMPM#Tomato).
+[2026-06-27 05:52:31.741] Found 295 possible bad axioms.
+[2026-06-27 05:52:31.741] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_chicken_with_competitive_microflora urn:absolute:FMPM#Ground_chicken).
+[2026-06-27 05:52:31.744] Found 294 possible bad axioms.
+[2026-06-27 05:52:31.745] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Tryptic_soy_broth urn:absolute:FMPM#Cooked_cured_pork).
+[2026-06-27 05:52:31.753] Found 293 possible bad axioms.
+[2026-06-27 05:52:31.753] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fermented_raw_meat_sausages urn:absolute:FMPM#Soudjouk-style_fermented_sausages).
+[2026-06-27 05:52:31.757] Found 292 possible bad axioms.
+[2026-06-27 05:52:31.757] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sauces urn:absolute:FMPM#Composited_food_products).
+[2026-06-27 05:52:31.766] Found 291 possible bad axioms.
+[2026-06-27 05:52:31.766] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Meat_emulsion urn:absolute:FMPM#Heat_treated_meat).
+[2026-06-27 05:52:31.770] Found 290 possible bad axioms.
+[2026-06-27 05:52:31.770] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_beef urn:absolute:FMPM#Fresh_meat).
+[2026-06-27 05:52:31.775] Found 289 possible
+...[truncated]
+FAIL: attempt=5 seed=56907 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+progress: ontology=FMPM attempt=5 success=0/100
+----- FMPM attempt=6 seed=71107 at 2026-06-27 05:52:50 -----
+--- stdout ---
+{"seed":71107,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers","iic_values":{},"repair_runtimes_ms":{"A1":76,"A2":13021,"A3":1666,"B1":2787,"B2":2139}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=71107, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:52:51.219] Checking precondition...
+[2026-06-27 05:52:51.236] Starting the repair...
+[2026-06-27 05:52:51.243] Found 302 possible bad axioms.
+[2026-06-27 05:52:51.244] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Heat_treated_meat urn:absolute:FMPM#Fresh_meat).
+[2026-06-27 05:52:51.250] Found 301 possible bad axioms.
+[2026-06-27 05:52:51.250] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Mechanicaly_extracted_meat urn:absolute:FMPM#Chemicaly_extracted_meat).
+[2026-06-27 05:52:51.260] Found 300 possible bad axioms.
+[2026-06-27 05:52:51.261] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cantaloupe urn:absolute:FMPM#Cereals).
+[2026-06-27 05:52:51.267] Found 299 possible bad axioms.
+[2026-06-27 05:52:51.267] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Carrot urn:absolute:FMPM#Melon).
+[2026-06-27 05:52:51.272] Found 298 possible bad axioms.
+[2026-06-27 05:52:51.272] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sausages urn:absolute:FMPM#Cokked_&_fermented_meat).
+[2026-06-27 05:52:51.276] Found 297 possible bad axioms.
+[2026-06-27 05:52:51.276] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Pectin-NH4Cl-MgSO4 urn:absolute:FMPM#Tryptic_soy_broth).
+[2026-06-27 05:52:51.280] Found 296 possible bad axioms.
+[2026-06-27 05:52:51.280] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sterile,_coocked_ground_chicken_breast_meat_portions urn:absolute:FMPM#Cooked_meat).
+[2026-06-27 05:52:51.284] Found 295 possible bad axioms.
+[2026-06-27 05:52:51.284] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Gilthead_sea_bream urn:absolute:FMPM#Sea_bass).
+[2026-06-27 05:52:51.287] Found 294 possible bad axioms.
+[2026-06-27 05:52:51.287] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_chicken_burgers urn:absolute:FMPM#Ground_chicken).
+[2026-06-27 05:52:51.290] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 05:52:51.291] Checking precondition...
+[2026-06-27 05:52:51.309] Starting the repair...
+[2026-06-27 05:53:04.310] Found 2 possible bad axioms.
+[2026-06-27 05:53:04.310] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_chicken_burgers urn:absolute:FMPM#Ground_chicken).
+[2026-06-27 05:53:04.312] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 05:53:04.314] Checking precondition...
+[2026-06-27 05:53:04.316] Starting the repair...
+[2026-06-27 05:53:04.333] Selected a reference ontology with 464 axioms.
+[2026-06-27 05:53:05.146] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_chicken_burgers urn:absolute:F
+...[truncated]
+FAIL: attempt=6 seed=71107 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+progress: ontology=FMPM attempt=6 success=0/100
+----- FMPM attempt=7 seed=85307 at 2026-06-27 05:53:10 -----
+--- stdout ---
+{"seed":85307,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers","iic_values":{},"repair_runtimes_ms":{"A1":260,"A2":13044,"A3":4100,"B1":1383,"B2":2431}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=85307, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:53:11.347] Checking precondition...
+[2026-06-27 05:53:11.363] Starting the repair...
+[2026-06-27 05:53:11.370] Found 302 possible bad axioms.
+[2026-06-27 05:53:11.372] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Tryptic_soy_broth urn:absolute:FMPM#Broth_medium).
+[2026-06-27 05:53:11.377] Found 301 possible bad axioms.
+[2026-06-27 05:53:11.377] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Pectin-NH4Cl-MgSO4 urn:absolute:FMPM#Beef_sausages).
+[2026-06-27 05:53:11.389] Found 300 possible bad axioms.
+[2026-06-27 05:53:11.389] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sauces urn:absolute:FMPM#Composited_food_products).
+[2026-06-27 05:53:11.394] Found 299 possible bad axioms.
+[2026-06-27 05:53:11.394] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Beef_sausages urn:absolute:FMPM#Sausages).
+[2026-06-27 05:53:11.399] Found 298 possible bad axioms.
+[2026-06-27 05:53:11.399] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Gilthead_sea_bream urn:absolute:FMPM#Fresh_salmon).
+[2026-06-27 05:53:11.403] Found 297 possible bad axioms.
+[2026-06-27 05:53:11.404] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fresh_fruits_and_vegetables urn:absolute:FMPM#Swiss_chard).
+[2026-06-27 05:53:11.407] Found 296 possible bad axioms.
+[2026-06-27 05:53:11.407] Selected the bad axiom SubClassOf(urn:absolute:FMPMv#Spicy_cheese urn:absolute:FMPM#Cheese).
+[2026-06-27 05:53:11.411] Found 295 possible bad axioms.
+[2026-06-27 05:53:11.411] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Seafood_salad owl:Nothing).
+[2026-06-27 05:53:11.415] Found 294 possible bad axioms.
+[2026-06-27 05:53:11.415] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_meat urn:absolute:FMPM#Meat_emulsion).
+[2026-06-27 05:53:11.418] Found 293 possible bad axioms.
+[2026-06-27 05:53:11.418] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fruits_&_vegetables_juice urn:absolute:FMPM#Food_juice).
+[2026-06-27 05:53:11.426] Found 292 possible bad axioms.
+[2026-06-27 05:53:11.426] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Parsley urn:absolute:FMPM#Fresh_fruits_and_vegetables).
+[2026-06-27 05:53:11.435] Found 291 possible bad axioms.
+[2026-06-27 05:53:11.436] Selected the bad axiom SubClassOf(urn:absolute:FMPM#UHT_milk urn:absolute:FMPM#Milk).
+[2026-06-27 05:53:11.439] Found 290 possible bad axioms.
+[2026-06-27 05:53:11.439] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_pork urn:absolute:FMPM#Ground_meat).
+[2026-06-27 05:53:11.443] Found 289 possible bad axioms.
+[2026-06-27 05:53:11.443] Selected the bad axiom SubClassOf(urn:abso
+...[truncated]
+FAIL: attempt=7 seed=85307 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+progress: ontology=FMPM attempt=7 success=0/100
+----- FMPM attempt=8 seed=99507 at 2026-06-27 05:53:32 -----
+--- stdout ---
+{"seed":99507,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers","iic_values":{},"repair_runtimes_ms":{"A1":228,"A2":12896,"A3":1593,"B1":900,"B2":3101}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=99507, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:53:33.024] Checking precondition...
+[2026-06-27 05:53:33.040] Starting the repair...
+[2026-06-27 05:53:33.048] Found 302 possible bad axioms.
+[2026-06-27 05:53:33.049] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Unidentified_fermented_meat urn:absolute:FMPM#Fermented_meat).
+[2026-06-27 05:53:33.055] Found 301 possible bad axioms.
+[2026-06-27 05:53:33.056] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_beef_with_aditives urn:absolute:FMPM#Ground_meat).
+[2026-06-27 05:53:33.065] Found 300 possible bad axioms.
+[2026-06-27 05:53:33.065] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cokked_&_fermented_meat urn:absolute:FMPM#Heat_treated_meat).
+[2026-06-27 05:53:33.071] Found 299 possible bad axioms.
+[2026-06-27 05:53:33.071] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fermented_meat urn:absolute:FMPM#Processed_raw_meat).
+[2026-06-27 05:53:33.075] Found 298 possible bad axioms.
+[2026-06-27 05:53:33.075] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_meat urn:absolute:FMPM#Meat_emulsion).
+[2026-06-27 05:53:33.079] Found 297 possible bad axioms.
+[2026-06-27 05:53:33.080] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sterile,_coocked_ground_chicken_breast_meat_portions urn:absolute:FMPM#Cooked_beef).
+[2026-06-27 05:53:33.083] Found 296 possible bad axioms.
+[2026-06-27 05:53:33.084] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Meat_emulsion urn:absolute:FMPM#Heat_treated_meat).
+[2026-06-27 05:53:33.087] Found 295 possible bad axioms.
+[2026-06-27 05:53:33.087] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cooked_beef owl:Nothing).
+[2026-06-27 05:53:33.090] Found 294 possible bad axioms.
+[2026-06-27 05:53:33.090] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Brain-heart_infusion_agar urn:absolute:FMPM#Agar_medium).
+[2026-06-27 05:53:33.093] Found 293 possible bad axioms.
+[2026-06-27 05:53:33.093] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sterile_ground_chicken_portions urn:absolute:FMPM#Ground_chicken).
+[2026-06-27 05:53:33.101] Found 292 possible bad axioms.
+[2026-06-27 05:53:33.101] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Pasta urn:absolute:FMPM#Soya_milk).
+[2026-06-27 05:53:33.111] Found 291 possible bad axioms.
+[2026-06-27 05:53:33.111] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Composited_vegetables_food_proodutcs urn:absolute:FMPM#Composited_food_products).
+[2026-06-27 05:53:33.115] Found 290 possible bad axioms.
+[2026-06-27 05:53:33.115] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cured_&_fermented_meat urn:absolute:FMPM#Processed_ra
+...[truncated]
+FAIL: attempt=8 seed=99507 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+progress: ontology=FMPM attempt=8 success=0/100
+----- FMPM attempt=9 seed=113707 at 2026-06-27 05:53:51 -----
+--- stdout ---
+{"seed":113707,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers","iic_values":{},"repair_runtimes_ms":{"A1":300,"A2":12956,"A3":2638,"B1":4708,"B2":1186}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=113707, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:53:52.188] Checking precondition...
+[2026-06-27 05:53:52.203] Starting the repair...
+[2026-06-27 05:53:52.210] Found 302 possible bad axioms.
+[2026-06-27 05:53:52.212] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sausages urn:absolute:FMPM#Heat_treated_meat).
+[2026-06-27 05:53:52.221] Found 301 possible bad axioms.
+[2026-06-27 05:53:52.222] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Green_leafy_vegetables urn:absolute:FMPM#Spinach).
+[2026-06-27 05:53:52.227] Found 300 possible bad axioms.
+[2026-06-27 05:53:52.227] Selected the bad axiom SubClassOf(urn:absolute:FMPMv#Spicy_cheese urn:absolute:FMPM#Fermented_milk).
+[2026-06-27 05:53:52.233] Found 299 possible bad axioms.
+[2026-06-27 05:53:52.233] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Pasta urn:absolute:FMPM#Soya_milk).
+[2026-06-27 05:53:52.238] Found 298 possible bad axioms.
+[2026-06-27 05:53:52.238] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Gilthead_sea_bream urn:absolute:FMPM#Fresh_fish_meat).
+[2026-06-27 05:53:52.242] Found 297 possible bad axioms.
+[2026-06-27 05:53:52.242] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Gilthead_sea_bream urn:absolute:FMPM#Fresh_salmon).
+[2026-06-27 05:53:52.246] Found 296 possible bad axioms.
+[2026-06-27 05:53:52.246] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cooked_meat_with_nitrite urn:absolute:FMPM#Cooked_meat).
+[2026-06-27 05:53:52.249] Found 295 possible bad axioms.
+[2026-06-27 05:53:52.249] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sterile,_coocked_ground_chicken_thigh_meat_burgers urn:absolute:FMPM#Cooked_meat).
+[2026-06-27 05:53:52.252] Found 294 possible bad axioms.
+[2026-06-27 05:53:52.252] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Cheese urn:absolute:FMPM#Soft_cheese).
+[2026-06-27 05:53:52.255] Found 293 possible bad axioms.
+[2026-06-27 05:53:52.255] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Processed_fruits_and_vegetables urn:absolute:FMPM#Fruits_&_vegetables).
+[2026-06-27 05:53:52.263] Found 292 possible bad axioms.
+[2026-06-27 05:53:52.263] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Spinach owl:Nothing).
+[2026-06-27 05:53:52.271] Found 291 possible bad axioms.
+[2026-06-27 05:53:52.271] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Processed_raw_meat urn:absolute:FMPM#Meat).
+[2026-06-27 05:53:52.275] Found 290 possible bad axioms.
+[2026-06-27 05:53:52.275] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Salad urn:absolute:FMPM#Composited_vegetables_food_proodutcs).
+[2026-06-27 05:53:52.278] Found 289 possible bad axioms.
+[2026-06-27 05
+...[truncated]
+FAIL: attempt=9 seed=113707 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+progress: ontology=FMPM attempt=9 success=0/100
+----- FMPM attempt=10 seed=127907 at 2026-06-27 05:54:14 -----
+--- stdout ---
+{"seed":127907,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers","iic_values":{},"repair_runtimes_ms":{"A1":316,"A2":12736,"A3":1881,"B1":918,"B2":3696}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/FMPM.owl, seed=127907, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:54:14.441] Checking precondition...
+[2026-06-27 05:54:14.459] Starting the repair...
+[2026-06-27 05:54:14.467] Found 302 possible bad axioms.
+[2026-06-27 05:54:14.469] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Heat_treated_meat urn:absolute:FMPM#Cokked_&_fermented_meat).
+[2026-06-27 05:54:14.474] Found 301 possible bad axioms.
+[2026-06-27 05:54:14.474] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fermented_raw_meat_sausages urn:absolute:FMPM#Soudjouk-style_fermented_sausages).
+[2026-06-27 05:54:14.484] Found 300 possible bad axioms.
+[2026-06-27 05:54:14.484] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Dried_dairy_products urn:absolute:FMPM#Dairy_products).
+[2026-06-27 05:54:14.490] Found 299 possible bad axioms.
+[2026-06-27 05:54:14.492] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sterile_ground_chicken_burgers urn:absolute:FMPM#Ground_chicken_burgers).
+[2026-06-27 05:54:14.496] Found 298 possible bad axioms.
+[2026-06-27 05:54:14.497] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fruits_&_vegetables urn:absolute:FMPM#Beverage).
+[2026-06-27 05:54:14.500] Found 297 possible bad axioms.
+[2026-06-27 05:54:14.500] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Ground_meat urn:absolute:FMPM#Mechanicaly_processed_meat).
+[2026-06-27 05:54:14.504] Found 296 possible bad axioms.
+[2026-06-27 05:54:14.504] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Milk urn:absolute:FMPM#Fermented_milk).
+[2026-06-27 05:54:14.508] Found 295 possible bad axioms.
+[2026-06-27 05:54:14.508] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Broth_medium urn:absolute:FMPM#Beef_sausages).
+[2026-06-27 05:54:14.512] Found 294 possible bad axioms.
+[2026-06-27 05:54:14.512] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Composited_food_products urn:absolute:FMPM#Food).
+[2026-06-27 05:54:14.515] Found 293 possible bad axioms.
+[2026-06-27 05:54:14.515] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Pasta_salad urn:absolute:FMPM#Chorizo).
+[2026-06-27 05:54:14.523] Found 292 possible bad axioms.
+[2026-06-27 05:54:14.523] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Smoked_fish_meat urn:absolute:FMPM#Fish_products).
+[2026-06-27 05:54:14.532] Found 291 possible bad axioms.
+[2026-06-27 05:54:14.532] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Fruits_&_vegetables urn:absolute:FMPM#Food).
+[2026-06-27 05:54:14.536] Found 290 possible bad axioms.
+[2026-06-27 05:54:14.536] Selected the bad axiom SubClassOf(urn:absolute:FMPM#Sausages_with_potassium_lactate owl:Nothing).
+[2026-06-27 05:54:14.540] Found 289 poss
+...[truncated]
+FAIL: attempt=10 seed=127907 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+progress: ontology=FMPM attempt=10 success=0/100
+=== ABORTED FMPM after 10 consecutive failures at 2026-06-27 05:54:34 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for FMPM - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=107 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken
+  attempt=2 seed=14307 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken
+  attempt=3 seed=28507 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Ground_chicken_burgers ⊑ Ground_chicken
+  attempt=4 seed=42707 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+  attempt=5 seed=56907 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+  attempt=6 seed=71107 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+  attempt=7 seed=85307 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+  attempt=8 seed=99507 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+  attempt=9 seed=113707 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+  attempt=10 seed=127907 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Ground_chicken_burgers
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

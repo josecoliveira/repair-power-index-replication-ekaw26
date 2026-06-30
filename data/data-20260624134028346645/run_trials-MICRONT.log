@@ -1,0 +1,495 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-MICRONT.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-MICRONT.csv
+
+=== Starting sequential trials for MICRONT at 2026-06-27 22:48:42 ===
+----- MICRONT attempt=1 seed=128 at 2026-06-27 22:48:42 -----
+--- stdout ---
+{"seed":128,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":505,"A2":5901,"A3":909,"B1":871,"B2":2139}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=128, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:48:42.806] Checking precondition...
+[2026-06-27 22:48:42.824] Starting the repair...
+[2026-06-27 22:48:42.837] Found 436 possible bad axioms.
+[2026-06-27 22:48:42.839] Selected the bad axiom SubClassOf(MICRONT_03020122 MICRONT_03020120).
+[2026-06-27 22:48:42.846] Found 435 possible bad axioms.
+[2026-06-27 22:48:42.846] Selected the bad axiom SubClassOf(MICRONT_02000000 ObjectSomeValuesFrom(crosslinked_to MICRONT_02060100)).
+[2026-06-27 22:48:42.853] Found 434 possible bad axioms.
+[2026-06-27 22:48:42.854] Selected the bad axiom SubClassOf(MICRONT_01030000 MICRONT_01020100).
+[2026-06-27 22:48:42.860] Found 433 possible bad axioms.
+[2026-06-27 22:48:42.861] Selected the bad axiom SubClassOf(MICRONT_02000000 ObjectSomeValuesFrom(crosslinked_to MICRONT_09010104)).
+[2026-06-27 22:48:42.866] Found 432 possible bad axioms.
+[2026-06-27 22:48:42.866] Selected the bad axiom SubClassOf(MICRONT_04060200 MICRONT_04060300).
+[2026-06-27 22:48:42.870] Found 431 possible bad axioms.
+[2026-06-27 22:48:42.871] Selected the bad axiom SubClassOf(MICRONT_01040000 MICRONT_01000000).
+[2026-06-27 22:48:42.875] Found 430 possible bad axioms.
+[2026-06-27 22:48:42.876] Selected the bad axiom SubClassOf(MICRONT_09020400 MICRONT_09020403).
+[2026-06-27 22:48:42.888] Found 429 possible bad axioms.
+[2026-06-27 22:48:42.888] Selected the bad axiom SubClassOf(MICRONT_09020301 owl:Nothing).
+[2026-06-27 22:48:42.893] Found 428 possible bad axioms.
+[2026-06-27 22:48:42.893] Selected the bad axiom SubClassOf(MICRONT_04060300 MICRONT_04060000).
+[2026-06-27 22:48:42.897] Found 427 possible bad axioms.
+[2026-06-27 22:48:42.898] Selected the bad axiom SubClassOf(MICRONT_09020300 owl:Nothing).
+[2026-06-27 22:48:42.902] Found 426 possible bad axioms.
+[2026-06-27 22:48:42.902] Selected the bad axiom SubClassOf(MICRONT_09040100 MICRONT_09040000).
+[2026-06-27 22:48:42.912] Found 425 possible bad axioms.
+[2026-06-27 22:48:42.913] Selected the bad axiom SubClassOf(MICRONT_04030000 ObjectSomeValuesFrom(crosslinked_to MICRONT_02000000)).
+[2026-06-27 22:48:42.917] Found 424 possible bad axioms.
+[2026-06-27 22:48:42.918] Selected the bad axiom SubClassOf(MICRONT_02010100 ObjectSomeValuesFrom(crosslinked_to MICRONT_02060100)).
+[2026-06-27 22:48:42.922] Found 423 possible bad axioms.
+[2026-06-27 22:48:42.922] Selected the bad axiom SubClassOf(MICRONT_01020701 ObjectSomeValuesFrom(crosslinked_to MICRONT_02040200)).
+[2026-06-27 22:48:42.926] Found 422 possible bad axioms.
+[2026-06-27 22:48:42.926] Selected the bad axiom SubClassOf(MICRONT_04040200 MICRONT_04040100).
+[2026-06-27 22:48:42.931] 
+...[truncated]
+FAIL: attempt=1 seed=128 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=1 success=0/100
+----- MICRONT attempt=2 seed=14328 at 2026-06-27 22:48:53 -----
+--- stdout ---
+{"seed":14328,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":542,"A2":5999,"A3":6503,"B1":1752,"B2":1970,"B3":2763}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=14328, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:48:53.597] Checking precondition...
+[2026-06-27 22:48:53.615] Starting the repair...
+[2026-06-27 22:48:53.630] Found 436 possible bad axioms.
+[2026-06-27 22:48:53.631] Selected the bad axiom SubClassOf(MICRONT_02010100 MICRONT_01020700).
+[2026-06-27 22:48:53.638] Found 435 possible bad axioms.
+[2026-06-27 22:48:53.638] Selected the bad axiom SubClassOf(MICRONT_09020301 owl:Nothing).
+[2026-06-27 22:48:53.647] Found 434 possible bad axioms.
+[2026-06-27 22:48:53.648] Selected the bad axiom SubClassOf(MICRONT_03010100 MICRONT_03030300).
+[2026-06-27 22:48:53.654] Found 433 possible bad axioms.
+[2026-06-27 22:48:53.654] Selected the bad axiom SubClassOf(MICRONT_04040000 ObjectSomeValuesFrom(crosslinked_to MICRONT_02040200)).
+[2026-06-27 22:48:53.659] Found 432 possible bad axioms.
+[2026-06-27 22:48:53.659] Selected the bad axiom SubClassOf(MICRONT_02040300 ObjectSomeValuesFrom(crosslinked_to MICRONT_09010104)).
+[2026-06-27 22:48:53.664] Found 431 possible bad axioms.
+[2026-06-27 22:48:53.664] Selected the bad axiom SubClassOf(MICRONT_03020200 MICRONT_03030300).
+[2026-06-27 22:48:53.674] Found 430 possible bad axioms.
+[2026-06-27 22:48:53.674] Selected the bad axiom SubClassOf(MICRONT_09020200 MICRONT_09000000).
+[2026-06-27 22:48:53.680] Found 429 possible bad axioms.
+[2026-06-27 22:48:53.680] Selected the bad axiom SubClassOf(MICRONT_03020200 MICRONT_03020700).
+[2026-06-27 22:48:53.685] Found 428 possible bad axioms.
+[2026-06-27 22:48:53.686] Selected the bad axiom SubClassOf(MICRONT_03020124 MICRONT_03020122).
+[2026-06-27 22:48:53.690] Found 427 possible bad axioms.
+[2026-06-27 22:48:53.690] Selected the bad axiom SubClassOf(MICRONT_09010402 MICRONT_09010401).
+[2026-06-27 22:48:53.694] Found 426 possible bad axioms.
+[2026-06-27 22:48:53.695] Selected the bad axiom SubClassOf(MICRONT_04000000 ObjectSomeValuesFrom(crosslinked_to MICRONT_04060100)).
+[2026-06-27 22:48:53.705] Found 425 possible bad axioms.
+[2026-06-27 22:48:53.705] Selected the bad axiom SubClassOf(MICRONT_09020301 ObjectSomeValuesFrom(crosslinked_to MICRONT_09020401)).
+[2026-06-27 22:48:53.710] Found 424 possible bad axioms.
+[2026-06-27 22:48:53.710] Selected the bad axiom SubClassOf(MICRONT_09020202 MICRONT_09020201).
+[2026-06-27 22:48:53.714] Found 423 possible bad axioms.
+[2026-06-27 22:48:53.714] Selected the bad axiom SubClassOf(MICRONT_09020302 MICRONT_09020300).
+[2026-06-27 22:48:53.720] Found 422 possible bad axioms.
+[2026-06-27 22:48:53.720] Selected the bad axiom SubClassOf(MICRONT_04060000 MICRONT_04000000).
+[2026-06-27 22:48:53.724] Found 421 possible bad axioms.
+...[truncated]
+FAIL: attempt=2 seed=14328 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=2 success=0/100
+----- MICRONT attempt=3 seed=28528 at 2026-06-27 22:49:13 -----
+--- stdout ---
+{"seed":28528,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":342,"A2":5921,"A3":2496,"B1":1667,"B2":4485}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=28528, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:49:13.621] Checking precondition...
+[2026-06-27 22:49:13.638] Starting the repair...
+[2026-06-27 22:49:13.656] Found 436 possible bad axioms.
+[2026-06-27 22:49:13.658] Selected the bad axiom SubClassOf(MICRONT_03030200 MICRONT_03020130).
+[2026-06-27 22:49:13.667] Found 435 possible bad axioms.
+[2026-06-27 22:49:13.667] Selected the bad axiom SubClassOf(MICRONT_02080300 MICRONT_02000000).
+[2026-06-27 22:49:13.674] Found 434 possible bad axioms.
+[2026-06-27 22:49:13.674] Selected the bad axiom SubClassOf(MICRONT_02040101 MICRONT_02040100).
+[2026-06-27 22:49:13.680] Found 433 possible bad axioms.
+[2026-06-27 22:49:13.681] Selected the bad axiom SubClassOf(MICRONT_03030600 MICRONT_03020000).
+[2026-06-27 22:49:13.685] Found 432 possible bad axioms.
+[2026-06-27 22:49:13.685] Selected the bad axiom SubClassOf(MICRONT_01020701 ObjectSomeValuesFrom(crosslinked_to owl:Nothing)).
+[2026-06-27 22:49:13.690] Found 431 possible bad axioms.
+[2026-06-27 22:49:13.690] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(crosslinked_to MICRONT_03000000) MICRONT_09040300).
+[2026-06-27 22:49:13.700] Found 430 possible bad axioms.
+[2026-06-27 22:49:13.700] Selected the bad axiom SubClassOf(MICRONT_02010100 ObjectSomeValuesFrom(crosslinked_to MICRONT_02060100)).
+[2026-06-27 22:49:13.705] Found 429 possible bad axioms.
+[2026-06-27 22:49:13.706] Selected the bad axiom SubClassOf(MICRONT_09020103 MICRONT_09020100).
+[2026-06-27 22:49:13.710] Found 428 possible bad axioms.
+[2026-06-27 22:49:13.710] Selected the bad axiom SubClassOf(MICRONT_02010201 ObjectSomeValuesFrom(crosslinked_to MICRONT_02080300)).
+[2026-06-27 22:49:13.715] Found 427 possible bad axioms.
+[2026-06-27 22:49:13.715] Selected the bad axiom SubClassOf(MICRONT_01020300 MICRONT_09010205).
+[2026-06-27 22:49:13.719] Found 426 possible bad axioms.
+[2026-06-27 22:49:13.720] Selected the bad axiom SubClassOf(MICRONT_09020105 MICRONT_09020100).
+[2026-06-27 22:49:13.730] Found 425 possible bad axioms.
+[2026-06-27 22:49:13.730] Selected the bad axiom SubClassOf(MICRONT_02030100 MICRONT_02030000).
+[2026-06-27 22:49:13.734] Found 424 possible bad axioms.
+[2026-06-27 22:49:13.734] Selected the bad axiom SubClassOf(MICRONT_02010200 ObjectSomeValuesFrom(crosslinked_to MICRONT_09010101)).
+[2026-06-27 22:49:13.739] Found 423 possible bad axioms.
+[2026-06-27 22:49:13.739] Selected the bad axiom SubClassOf(MICRONT_09010400 MICRONT_09020300).
+[2026-06-27 22:49:13.743] Found 422 possible bad axioms.
+[2026-06-27 22:49:13.744] Selected the bad axiom SubClassOf(MICRONT_03010200 MICRONT_03030100).
+[2026-06-27 22:49:1
+...[truncated]
+FAIL: attempt=3 seed=28528 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=3 success=0/100
+----- MICRONT attempt=4 seed=42728 at 2026-06-27 22:49:28 -----
+--- stdout ---
+{"seed":42728,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":712,"A2":5914,"A3":4383,"B1":761,"B2":3019}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=42728, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:49:29.002] Checking precondition...
+[2026-06-27 22:49:29.020] Starting the repair...
+[2026-06-27 22:49:29.036] Found 436 possible bad axioms.
+[2026-06-27 22:49:29.037] Selected the bad axiom SubClassOf(MICRONT_02030100 MICRONT_02030000).
+[2026-06-27 22:49:29.044] Found 435 possible bad axioms.
+[2026-06-27 22:49:29.045] Selected the bad axiom SubClassOf(MICRONT_03020400 MICRONT_04030000).
+[2026-06-27 22:49:29.050] Found 434 possible bad axioms.
+[2026-06-27 22:49:29.051] Selected the bad axiom SubClassOf(MICRONT_09020301 MICRONT_09020300).
+[2026-06-27 22:49:29.057] Found 433 possible bad axioms.
+[2026-06-27 22:49:29.057] Selected the bad axiom SubClassOf(MICRONT_09020105 MICRONT_09020100).
+[2026-06-27 22:49:29.062] Found 432 possible bad axioms.
+[2026-06-27 22:49:29.062] Selected the bad axiom SubClassOf(MICRONT_09020404 MICRONT_09020403).
+[2026-06-27 22:49:29.067] Found 431 possible bad axioms.
+[2026-06-27 22:49:29.068] Selected the bad axiom SubClassOf(MICRONT_04030000 ObjectSomeValuesFrom(crosslinked_to MICRONT_02000000)).
+[2026-06-27 22:49:29.077] Found 430 possible bad axioms.
+[2026-06-27 22:49:29.077] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(crosslinked_to MICRONT_02080300) MICRONT_02010101).
+[2026-06-27 22:49:29.083] Found 429 possible bad axioms.
+[2026-06-27 22:49:29.084] Selected the bad axiom SubClassOf(MICRONT_09090100 MICRONT_09000000).
+[2026-06-27 22:49:29.088] Found 428 possible bad axioms.
+[2026-06-27 22:49:29.089] Selected the bad axiom SubClassOf(MICRONT_09040400 MICRONT_09040000).
+[2026-06-27 22:49:29.093] Found 427 possible bad axioms.
+[2026-06-27 22:49:29.093] Selected the bad axiom SubClassOf(MICRONT_01020300 MICRONT_01000000).
+[2026-06-27 22:49:29.098] Found 426 possible bad axioms.
+[2026-06-27 22:49:29.098] Selected the bad axiom SubClassOf(MICRONT_04040000 MICRONT_02040101).
+[2026-06-27 22:49:29.108] Found 425 possible bad axioms.
+[2026-06-27 22:49:29.108] Selected the bad axiom SubClassOf(MICRONT_03020200 MICRONT_03020000).
+[2026-06-27 22:49:29.113] Found 424 possible bad axioms.
+[2026-06-27 22:49:29.113] Selected the bad axiom SubClassOf(MICRONT_09040300 ObjectSomeValuesFrom(crosslinked_to MICRONT_04040200)).
+[2026-06-27 22:49:29.118] Found 423 possible bad axioms.
+[2026-06-27 22:49:29.118] Selected the bad axiom SubClassOf(MICRONT_04040200 MICRONT_04040000).
+[2026-06-27 22:49:29.122] Found 422 possible bad axioms.
+[2026-06-27 22:49:29.122] Selected the bad axiom SubClassOf(MICRONT_01000000 MICRONT_09010205).
+[2026-06-27 22:49:29.127] Found 421 possible bad axioms.
+[2026-06-27 22:49:29.127] Selec
+...[truncated]
+FAIL: attempt=4 seed=42728 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=4 success=0/100
+----- MICRONT attempt=5 seed=56928 at 2026-06-27 22:49:43 -----
+--- stdout ---
+{"seed":56928,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":629,"A2":5900,"A3":789,"B1":183683,"B2":5393}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=56928, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:49:44.256] Checking precondition...
+[2026-06-27 22:49:44.274] Starting the repair...
+[2026-06-27 22:49:44.289] Found 436 possible bad axioms.
+[2026-06-27 22:49:44.291] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(crosslinked_to MICRONT_02080300) ObjectSomeValuesFrom(crosslinked_to MICRONT_02040200)).
+[2026-06-27 22:49:44.297] Found 435 possible bad axioms.
+[2026-06-27 22:49:44.297] Selected the bad axiom SubClassOf(MICRONT_03030400 MICRONT_03030100).
+[2026-06-27 22:49:44.304] Found 434 possible bad axioms.
+[2026-06-27 22:49:44.304] Selected the bad axiom SubClassOf(MICRONT_01020703 ObjectSomeValuesFrom(crosslinked_to MICRONT_02090000)).
+[2026-06-27 22:49:44.312] Found 433 possible bad axioms.
+[2026-06-27 22:49:44.312] Selected the bad axiom SubClassOf(MICRONT_03030600 MICRONT_03020000).
+[2026-06-27 22:49:44.318] Found 432 possible bad axioms.
+[2026-06-27 22:49:44.318] Selected the bad axiom SubClassOf(MICRONT_02000000 owl:Thing).
+[2026-06-27 22:49:44.323] Found 431 possible bad axioms.
+[2026-06-27 22:49:44.323] Selected the bad axiom SubClassOf(MICRONT_09020104 MICRONT_09020100).
+[2026-06-27 22:49:44.333] Found 430 possible bad axioms.
+[2026-06-27 22:49:44.333] Selected the bad axiom SubClassOf(MICRONT_02080300 MICRONT_02000000).
+[2026-06-27 22:49:44.340] Found 429 possible bad axioms.
+[2026-06-27 22:49:44.340] Selected the bad axiom SubClassOf(MICRONT_04010300 MICRONT_04010000).
+[2026-06-27 22:49:44.348] Found 428 possible bad axioms.
+[2026-06-27 22:49:44.348] Selected the bad axiom SubClassOf(MICRONT_09040300 ObjectSomeValuesFrom(crosslinked_to MICRONT_04040200)).
+[2026-06-27 22:49:44.353] Found 427 possible bad axioms.
+[2026-06-27 22:49:44.353] Selected the bad axiom SubClassOf(MICRONT_02010201 ObjectSomeValuesFrom(crosslinked_to owl:Nothing)).
+[2026-06-27 22:49:44.358] Found 426 possible bad axioms.
+[2026-06-27 22:49:44.358] Selected the bad axiom SubClassOf(MICRONT_03010300 MICRONT_03010000).
+[2026-06-27 22:49:44.368] Found 425 possible bad axioms.
+[2026-06-27 22:49:44.368] Selected the bad axiom SubClassOf(MICRONT_09090200 MICRONT_09040000).
+[2026-06-27 22:49:44.373] Found 424 possible bad axioms.
+[2026-06-27 22:49:44.373] Selected the bad axiom SubClassOf(MICRONT_01020700 MICRONT_01000000).
+[2026-06-27 22:49:44.378] Found 423 possible bad axioms.
+[2026-06-27 22:49:44.379] Selected the bad axiom SubClassOf(MICRONT_03020600 MICRONT_03020000).
+[2026-06-27 22:49:44.382] Found 422 possible bad axioms.
+[2026-06-27 22:49:44.382] Selected the bad axiom SubClassOf(MICRONT_01020703 ObjectSomeValuesFrom(crosslinked_to owl:Nothi
+...[truncated]
+FAIL: attempt=5 seed=56928 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=5 success=0/100
+----- MICRONT attempt=6 seed=71128 at 2026-06-27 22:53:00 -----
+--- stdout ---
+{"seed":71128,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":443,"A2":5980,"A3":1771,"B1":74041,"B2":29988}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=71128, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:53:01.141] Checking precondition...
+[2026-06-27 22:53:01.159] Starting the repair...
+[2026-06-27 22:53:01.174] Found 436 possible bad axioms.
+[2026-06-27 22:53:01.175] Selected the bad axiom SubClassOf(MICRONT_02030300 ObjectSomeValuesFrom(crosslinked_to MICRONT_02060200)).
+[2026-06-27 22:53:01.183] Found 435 possible bad axioms.
+[2026-06-27 22:53:01.183] Selected the bad axiom SubClassOf(MICRONT_01020200 MICRONT_01020300).
+[2026-06-27 22:53:01.190] Found 434 possible bad axioms.
+[2026-06-27 22:53:01.190] Selected the bad axiom SubClassOf(MICRONT_01020702 ObjectSomeValuesFrom(crosslinked_to MICRONT_02080100)).
+[2026-06-27 22:53:01.197] Found 433 possible bad axioms.
+[2026-06-27 22:53:01.197] Selected the bad axiom SubClassOf(MICRONT_02060100 MICRONT_02080100).
+[2026-06-27 22:53:01.202] Found 432 possible bad axioms.
+[2026-06-27 22:53:01.202] Selected the bad axiom SubClassOf(MICRONT_03020110 MICRONT_03020100).
+[2026-06-27 22:53:01.207] Found 431 possible bad axioms.
+[2026-06-27 22:53:01.207] Selected the bad axiom SubClassOf(MICRONT_09020105 MICRONT_09020100).
+[2026-06-27 22:53:01.212] Found 430 possible bad axioms.
+[2026-06-27 22:53:01.213] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(crosslinked_to MICRONT_04040000) ObjectSomeValuesFrom(crosslinked_to MICRONT_04040100)).
+[2026-06-27 22:53:01.224] Found 429 possible bad axioms.
+[2026-06-27 22:53:01.224] Selected the bad axiom SubClassOf(MICRONT_02030200 ObjectSomeValuesFrom(crosslinked_to owl:Nothing)).
+[2026-06-27 22:53:01.229] Found 428 possible bad axioms.
+[2026-06-27 22:53:01.229] Selected the bad axiom SubClassOf(MICRONT_02080205 MICRONT_02080200).
+[2026-06-27 22:53:01.234] Found 427 possible bad axioms.
+[2026-06-27 22:53:01.234] Selected the bad axiom SubClassOf(MICRONT_01020700 MICRONT_01030000).
+[2026-06-27 22:53:01.238] Found 426 possible bad axioms.
+[2026-06-27 22:53:01.238] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(crosslinked_to MICRONT_01020700) MICRONT_02090000).
+[2026-06-27 22:53:01.248] Found 425 possible bad axioms.
+[2026-06-27 22:53:01.248] Selected the bad axiom SubClassOf(MICRONT_04010300 MICRONT_04010000).
+[2026-06-27 22:53:01.253] Found 424 possible bad axioms.
+[2026-06-27 22:53:01.253] Selected the bad axiom SubClassOf(MICRONT_03030400 MICRONT_03030100).
+[2026-06-27 22:53:01.257] Found 423 possible bad axioms.
+[2026-06-27 22:53:01.257] Selected the bad axiom SubClassOf(MICRONT_03030600 MICRONT_03020000).
+[2026-06-27 22:53:01.261] Found 422 possible bad axioms.
+[2026-06-27 22:53:01.261] Selected the bad axiom SubClassOf(MICRONT_03030501 M
+...[truncated]
+FAIL: attempt=6 seed=71128 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=6 success=0/100
+----- MICRONT attempt=7 seed=85328 at 2026-06-27 22:54:53 -----
+--- stdout ---
+{"seed":85328,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":493,"A2":5984,"A3":10006,"B1":990,"B2":3602}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=85328, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:54:53.825] Checking precondition...
+[2026-06-27 22:54:53.843] Starting the repair...
+[2026-06-27 22:54:53.858] Found 436 possible bad axioms.
+[2026-06-27 22:54:53.860] Selected the bad axiom SubClassOf(MICRONT_03010000 MICRONT_03030300).
+[2026-06-27 22:54:53.867] Found 435 possible bad axioms.
+[2026-06-27 22:54:53.867] Selected the bad axiom SubClassOf(MICRONT_02030300 ObjectSomeValuesFrom(crosslinked_to owl:Nothing)).
+[2026-06-27 22:54:53.874] Found 434 possible bad axioms.
+[2026-06-27 22:54:53.875] Selected the bad axiom SubClassOf(MICRONT_04000000 ObjectSomeValuesFrom(crosslinked_to MICRONT_04060100)).
+[2026-06-27 22:54:53.882] Found 433 possible bad axioms.
+[2026-06-27 22:54:53.882] Selected the bad axiom SubClassOf(MICRONT_02010101 MICRONT_03020600).
+[2026-06-27 22:54:53.887] Found 432 possible bad axioms.
+[2026-06-27 22:54:53.887] Selected the bad axiom SubClassOf(MICRONT_04010300 MICRONT_04010000).
+[2026-06-27 22:54:53.892] Found 431 possible bad axioms.
+[2026-06-27 22:54:53.892] Selected the bad axiom SubClassOf(MICRONT_04030100 MICRONT_04030000).
+[2026-06-27 22:54:53.898] Found 430 possible bad axioms.
+[2026-06-27 22:54:53.898] Selected the bad axiom SubClassOf(MICRONT_04060200 MICRONT_04060300).
+[2026-06-27 22:54:53.908] Found 429 possible bad axioms.
+[2026-06-27 22:54:53.909] Selected the bad axiom SubClassOf(MICRONT_03020121 MICRONT_03020120).
+[2026-06-27 22:54:53.915] Found 428 possible bad axioms.
+[2026-06-27 22:54:53.915] Selected the bad axiom SubClassOf(MICRONT_03020000 MICRONT_03020301).
+[2026-06-27 22:54:53.920] Found 427 possible bad axioms.
+[2026-06-27 22:54:53.920] Selected the bad axiom SubClassOf(MICRONT_03020600 ObjectSomeValuesFrom(crosslinked_to MICRONT_02080300)).
+[2026-06-27 22:54:53.924] Found 426 possible bad axioms.
+[2026-06-27 22:54:53.925] Selected the bad axiom SubClassOf(MICRONT_01010000 MICRONT_01020200).
+[2026-06-27 22:54:53.935] Found 425 possible bad axioms.
+[2026-06-27 22:54:53.936] Selected the bad axiom SubClassOf(MICRONT_09010101 MICRONT_09010100).
+[2026-06-27 22:54:53.940] Found 424 possible bad axioms.
+[2026-06-27 22:54:53.940] Selected the bad axiom SubClassOf(MICRONT_03020301 ObjectSomeValuesFrom(crosslinked_to MICRONT_01000000)).
+[2026-06-27 22:54:53.945] Found 423 possible bad axioms.
+[2026-06-27 22:54:53.946] Selected the bad axiom SubClassOf(MICRONT_09090200 MICRONT_09040000).
+[2026-06-27 22:54:53.949] Found 422 possible bad axioms.
+[2026-06-27 22:54:53.950] Selected the bad axiom SubClassOf(MICRONT_02000000 MICRONT_02070100).
+[2026-06-27 22:54:53.953] Found 421 possible bad axioms.
+...[truncated]
+FAIL: attempt=7 seed=85328 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=7 success=0/100
+----- MICRONT attempt=8 seed=99528 at 2026-06-27 22:55:14 -----
+--- stdout ---
+{"seed":99528,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":582,"A2":5877,"A3":968,"B1":823,"B2":5280}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=99528, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:55:15.366] Checking precondition...
+[2026-06-27 22:55:15.386] Starting the repair...
+[2026-06-27 22:55:15.400] Found 436 possible bad axioms.
+[2026-06-27 22:55:15.401] Selected the bad axiom SubClassOf(MICRONT_04040000 ObjectSomeValuesFrom(crosslinked_to MICRONT_02040200)).
+[2026-06-27 22:55:15.408] Found 435 possible bad axioms.
+[2026-06-27 22:55:15.408] Selected the bad axiom SubClassOf(MICRONT_04070000 MICRONT_04000000).
+[2026-06-27 22:55:15.415] Found 434 possible bad axioms.
+[2026-06-27 22:55:15.416] Selected the bad axiom SubClassOf(MICRONT_03030130 MICRONT_03030100).
+[2026-06-27 22:55:15.423] Found 433 possible bad axioms.
+[2026-06-27 22:55:15.423] Selected the bad axiom SubClassOf(MICRONT_03020123 MICRONT_03020120).
+[2026-06-27 22:55:15.429] Found 432 possible bad axioms.
+[2026-06-27 22:55:15.429] Selected the bad axiom SubClassOf(MICRONT_09040400 MICRONT_09040000).
+[2026-06-27 22:55:15.434] Found 431 possible bad axioms.
+[2026-06-27 22:55:15.434] Selected the bad axiom SubClassOf(MICRONT_01000000 owl:Thing).
+[2026-06-27 22:55:15.443] Found 430 possible bad axioms.
+[2026-06-27 22:55:15.443] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(crosslinked_to MICRONT_03000000) MICRONT_09040300).
+[2026-06-27 22:55:15.449] Found 429 possible bad axioms.
+[2026-06-27 22:55:15.449] Selected the bad axiom SubClassOf(MICRONT_04030200 MICRONT_04030000).
+[2026-06-27 22:55:15.453] Found 428 possible bad axioms.
+[2026-06-27 22:55:15.454] Selected the bad axiom SubClassOf(MICRONT_03020131 MICRONT_03020130).
+[2026-06-27 22:55:15.459] Found 427 possible bad axioms.
+[2026-06-27 22:55:15.459] Selected the bad axiom SubClassOf(MICRONT_03030700 MICRONT_03020000).
+[2026-06-27 22:55:15.464] Found 426 possible bad axioms.
+[2026-06-27 22:55:15.464] Selected the bad axiom SubClassOf(MICRONT_01020500 MICRONT_01000000).
+[2026-06-27 22:55:15.475] Found 425 possible bad axioms.
+[2026-06-27 22:55:15.475] Selected the bad axiom SubClassOf(MICRONT_01030000 MICRONT_01000000).
+[2026-06-27 22:55:15.480] Found 424 possible bad axioms.
+[2026-06-27 22:55:15.480] Selected the bad axiom SubClassOf(MICRONT_03030502 MICRONT_03030500).
+[2026-06-27 22:55:15.485] Found 423 possible bad axioms.
+[2026-06-27 22:55:15.485] Selected the bad axiom SubClassOf(MICRONT_01020201 ObjectSomeValuesFrom(crosslinked_to MICRONT_04040100)).
+[2026-06-27 22:55:15.489] Found 422 possible bad axioms.
+[2026-06-27 22:55:15.489] Selected the bad axiom SubClassOf(MICRONT_02060100 MICRONT_02080100).
+[2026-06-27 22:55:15.494] Found 421 possible bad axioms.
+[2026-06-27 22:55:15.495] Selected the
+...[truncated]
+FAIL: attempt=8 seed=99528 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=8 success=0/100
+----- MICRONT attempt=9 seed=113728 at 2026-06-27 22:55:28 -----
+--- stdout ---
+{"seed":113728,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":685,"A2":5824,"A3":1096,"B1":1992,"B2":4514}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=113728, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:55:29.378] Checking precondition...
+[2026-06-27 22:55:29.395] Starting the repair...
+[2026-06-27 22:55:29.410] Found 436 possible bad axioms.
+[2026-06-27 22:55:29.412] Selected the bad axiom SubClassOf(MICRONT_03030130 MICRONT_03030100).
+[2026-06-27 22:55:29.418] Found 435 possible bad axioms.
+[2026-06-27 22:55:29.418] Selected the bad axiom SubClassOf(MICRONT_02030200 ObjectSomeValuesFrom(crosslinked_to owl:Nothing)).
+[2026-06-27 22:55:29.425] Found 434 possible bad axioms.
+[2026-06-27 22:55:29.426] Selected the bad axiom SubClassOf(MICRONT_03020600 ObjectSomeValuesFrom(crosslinked_to MICRONT_02020000)).
+[2026-06-27 22:55:29.432] Found 433 possible bad axioms.
+[2026-06-27 22:55:29.433] Selected the bad axiom SubClassOf(MICRONT_04060100 MICRONT_04060300).
+[2026-06-27 22:55:29.438] Found 432 possible bad axioms.
+[2026-06-27 22:55:29.438] Selected the bad axiom SubClassOf(MICRONT_03030201 MICRONT_03030200).
+[2026-06-27 22:55:29.443] Found 431 possible bad axioms.
+[2026-06-27 22:55:29.443] Selected the bad axiom SubClassOf(MICRONT_02000000 ObjectSomeValuesFrom(crosslinked_to MICRONT_02060100)).
+[2026-06-27 22:55:29.452] Found 430 possible bad axioms.
+[2026-06-27 22:55:29.453] Selected the bad axiom SubClassOf(MICRONT_01020700 MICRONT_01030000).
+[2026-06-27 22:55:29.458] Found 429 possible bad axioms.
+[2026-06-27 22:55:29.459] Selected the bad axiom SubClassOf(MICRONT_09040300 ObjectSomeValuesFrom(crosslinked_to MICRONT_03020000)).
+[2026-06-27 22:55:29.464] Found 428 possible bad axioms.
+[2026-06-27 22:55:29.465] Selected the bad axiom SubClassOf(MICRONT_01020703 ObjectSomeValuesFrom(crosslinked_to owl:Nothing)).
+[2026-06-27 22:55:29.469] Found 427 possible bad axioms.
+[2026-06-27 22:55:29.469] Selected the bad axiom SubClassOf(MICRONT_01020701 ObjectSomeValuesFrom(crosslinked_to MICRONT_02040200)).
+[2026-06-27 22:55:29.474] Found 426 possible bad axioms.
+[2026-06-27 22:55:29.474] Selected the bad axiom SubClassOf(MICRONT_03030400 MICRONT_03020000).
+[2026-06-27 22:55:29.485] Found 425 possible bad axioms.
+[2026-06-27 22:55:29.485] Selected the bad axiom SubClassOf(MICRONT_02070200 MICRONT_02010101).
+[2026-06-27 22:55:29.489] Found 424 possible bad axioms.
+[2026-06-27 22:55:29.490] Selected the bad axiom SubClassOf(MICRONT_02010101 ObjectSomeValuesFrom(crosslinked_to MICRONT_02080300)).
+[2026-06-27 22:55:29.494] Found 423 possible bad axioms.
+[2026-06-27 22:55:29.494] Selected the bad axiom SubClassOf(MICRONT_03030112 ObjectSomeValuesFrom(crosslinked_to MICRONT_09020402)).
+[2026-06-27 22:55:29.498] Found 422 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=9 seed=113728 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=9 success=0/100
+----- MICRONT attempt=10 seed=127928 at 2026-06-27 22:55:43 -----
+--- stdout ---
+{"seed":127928,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101","iic_values":{},"repair_runtimes_ms":{"A1":610,"A2":5929,"A3":26125,"B1":1718,"B2":6341}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MICRONT.owl, seed=127928, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 22:55:43.987] Checking precondition...
+[2026-06-27 22:55:44.005] Starting the repair...
+[2026-06-27 22:55:44.020] Found 436 possible bad axioms.
+[2026-06-27 22:55:44.022] Selected the bad axiom SubClassOf(MICRONT_09040200 MICRONT_09040300).
+[2026-06-27 22:55:44.029] Found 435 possible bad axioms.
+[2026-06-27 22:55:44.029] Selected the bad axiom SubClassOf(MICRONT_03010100 MICRONT_03010000).
+[2026-06-27 22:55:44.038] Found 434 possible bad axioms.
+[2026-06-27 22:55:44.038] Selected the bad axiom SubClassOf(MICRONT_04030200 MICRONT_04030000).
+[2026-06-27 22:55:44.046] Found 433 possible bad axioms.
+[2026-06-27 22:55:44.046] Selected the bad axiom SubClassOf(MICRONT_09020402 MICRONT_09020400).
+[2026-06-27 22:55:44.051] Found 432 possible bad axioms.
+[2026-06-27 22:55:44.052] Selected the bad axiom SubClassOf(MICRONT_09010301 MICRONT_09010302).
+[2026-06-27 22:55:44.057] Found 431 possible bad axioms.
+[2026-06-27 22:55:44.057] Selected the bad axiom SubClassOf(MICRONT_09020200 MICRONT_09000000).
+[2026-06-27 22:55:44.066] Found 430 possible bad axioms.
+[2026-06-27 22:55:44.066] Selected the bad axiom SubClassOf(MICRONT_02010201 ObjectSomeValuesFrom(crosslinked_to MICRONT_02080300)).
+[2026-06-27 22:55:44.072] Found 429 possible bad axioms.
+[2026-06-27 22:55:44.073] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(crosslinked_to MICRONT_02060100) ObjectSomeValuesFrom(crosslinked_to MICRONT_01020700)).
+[2026-06-27 22:55:44.077] Found 428 possible bad axioms.
+[2026-06-27 22:55:44.078] Selected the bad axiom SubClassOf(MICRONT_03020100 MICRONT_03020121).
+[2026-06-27 22:55:44.082] Found 427 possible bad axioms.
+[2026-06-27 22:55:44.082] Selected the bad axiom SubClassOf(MICRONT_09020403 MICRONT_09020400).
+[2026-06-27 22:55:44.087] Found 426 possible bad axioms.
+[2026-06-27 22:55:44.087] Selected the bad axiom SubClassOf(MICRONT_03030500 MICRONT_03030600).
+[2026-06-27 22:55:44.098] Found 425 possible bad axioms.
+[2026-06-27 22:55:44.098] Selected the bad axiom SubClassOf(MICRONT_03030700 MICRONT_03020000).
+[2026-06-27 22:55:44.103] Found 424 possible bad axioms.
+[2026-06-27 22:55:44.103] Selected the bad axiom SubClassOf(MICRONT_04060100 MICRONT_04060200).
+[2026-06-27 22:55:44.107] Found 423 possible bad axioms.
+[2026-06-27 22:55:44.107] Selected the bad axiom SubClassOf(MICRONT_03030111 MICRONT_02040101).
+[2026-06-27 22:55:44.112] Found 422 possible bad axioms.
+[2026-06-27 22:55:44.112] Selected the bad axiom SubClassOf(MICRONT_09010200 MICRONT_09020100).
+[2026-06-27 22:55:44.117] Found 421 possible bad axioms.
+[2026-06-27 22:55:44.117] Sele
+...[truncated]
+FAIL: attempt=10 seed=127928 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+progress: ontology=MICRONT attempt=10 success=0/100
+=== ABORTED MICRONT after 10 consecutive failures at 2026-06-27 22:56:24 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for MICRONT - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=128 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=2 seed=14328 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=3 seed=28528 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=4 seed=42728 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=5 seed=56928 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=6 seed=71128 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=7 seed=85328 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=8 seed=99528 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=9 seed=113728 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+  attempt=10 seed=127928 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ crosslinked_to.MICRONT_09010101
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

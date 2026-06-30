@@ -1,0 +1,451 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-HOME.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-HOME.csv
+
+=== Starting sequential trials for HOME at 2026-06-28 09:36:46 ===
+----- HOME attempt=1 seed=143 at 2026-06-28 09:36:46 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=143, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:36:46.792] Checking precondition...
+[2026-06-28 09:36:46.818] Starting the repair...
+[2026-06-28 09:36:46.830] Found 661 possible bad axioms.
+[2026-06-28 09:36:46.834] Selected the bad axiom SubClassOf(Denial_Of_Counseling_Preventive_Service ObjectComplementOf(Denial_Of_Early_Stage_Screening)).
+[2026-06-28 09:36:46.844] Found 660 possible bad axioms.
+[2026-06-28 09:36:46.846] Selected the bad axiom SubClassOf(Physical_Assault_Of_Patient ObjectComplementOf(Dropping_Observation_From_Analyses)).
+[2026-06-28 09:36:46.854] Found 659 possible bad axioms.
+[2026-06-28 09:36:46.855] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Retaliation)).
+[2026-06-28 09:36:46.867] Found 658 possible bad axioms.
+[2026-06-28 09:36:46.868] Selected the bad axiom SubClassOf(Financial_Fraud ObjectComplementOf(Identity_Theft)).
+[2026-06-28 09:36:46.875] Found 657 possible bad axioms.
+[2026-06-28 09:36:46.875] Selected the bad axiom SubClassOf(Taser ObjectComplementOf(Baton)).
+[2026-06-28 09:36:46.882] Found 656 possible bad axioms.
+[2026-06-28 09:36:46.883] Selected the bad axiom SubClassOf(Obstructionism ObjectComplementOf(Occupational_Physical_Injury)).
+[2026-06-28 09:36:46.889] Found 655 possible bad axioms.
+[2026-06-28 09:36:46.889] Selected the bad axiom SubClassOf(Healthcare_Institution_H ObjectComplementOf(Outside_Institution_H)).
+[2026-06-28 09:36:46.896] Found 654 possible bad axioms.
+[2026-06-28 09:36:46.897] Selected the bad axiom SubClassOf(Financial_Abuse Of_Spousal).
+[2026-06-28 09:36:46.903] Found 653 possible bad axioms.
+[2026-06-28 09:36:46.903] Selected the bad axiom SubClassOf(ObjectComplementOf(Prejudicial_Bullying) ObjectComplementOf(Religious_Harassments)).
+[2026-06-28 09:36:46.909] Found 652 possible bad axioms.
+[2026-06-28 09:36:46.909] Selected the bad axiom SubClassOf(Injury_From_High_Voltage ObjectComplementOf(Doxing)).
+[2026-06-28 09:36:46.919] Found 651 possible bad axioms.
+[2026-06-28 09:36:46.920] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality ObjectComplementOf(Improper_Prescribing_Of_Drug)).
+[2026-06-28 09:36:46.931] Found 650 possible bad axioms.
+[2026-06-28 09:36:46.932] Selected the bad axiom SubClassOf(Religious_Harassments ObjectComplementOf(Doxing)).
+[2026-06-28 09:36:46.937] Found 649 possible bad axioms.
+[2026-06-28 09:36:46.937] Selected the bad axiom SubClassOf(Rubber_Bullet ObjectComplementOf(Pepper_Spray)).
+[2026-06-28 09:36:46.943] Found 648 possible bad axioms.
+[2026-06-28 09:36:46.943] Selected the bad axiom SubClassOf(Sexual_Abuse ObjectComplementOf(Quid_Pro_Quo)).
+[2026-06-28 09:36:46.94
+...[truncated]
+FAIL: attempt=1 seed=143 - negative return code -9
+progress: ontology=HOME attempt=1 success=0/100
+----- HOME attempt=2 seed=14343 at 2026-06-28 09:41:09 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=14343, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:41:09.983] Checking precondition...
+[2026-06-28 09:41:10.010] Starting the repair...
+[2026-06-28 09:41:10.023] Found 661 possible bad axioms.
+[2026-06-28 09:41:10.025] Selected the bad axiom SubClassOf(Sexual_Abuse ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 09:41:10.036] Found 660 possible bad axioms.
+[2026-06-28 09:41:10.037] Selected the bad axiom SubClassOf(Denial_Of_Emergency_Care ObjectComplementOf(Denial_Of_Inpatient_Care)).
+[2026-06-28 09:41:10.046] Found 659 possible bad axioms.
+[2026-06-28 09:41:10.046] Selected the bad axiom SubClassOf(Physical_And_Social_Isolation ObjectComplementOf(Injury_From_High_Voltage)).
+[2026-06-28 09:41:10.059] Found 658 possible bad axioms.
+[2026-06-28 09:41:10.059] Selected the bad axiom SubClassOf(Excessive_Use_Of_Physical_Force At_Elderly_Home).
+[2026-06-28 09:41:10.066] Found 657 possible bad axioms.
+[2026-06-28 09:41:10.066] Selected the bad axiom SubClassOf(Denial_Of_Care_Elderly Denial_Of_Care).
+[2026-06-28 09:41:10.073] Found 656 possible bad axioms.
+[2026-06-28 09:41:10.073] Selected the bad axiom SubClassOf(Professional_Boundary_Violation ObjectComplementOf(Failure_To_Provide_Oversight_As_Required)).
+[2026-06-28 09:41:10.080] Found 655 possible bad axioms.
+[2026-06-28 09:41:10.081] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality ObjectComplementOf(Procedure_Violation)).
+[2026-06-28 09:41:10.087] Found 654 possible bad axioms.
+[2026-06-28 09:41:10.087] Selected the bad axiom SubClassOf(Obstructionism ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 09:41:10.093] Found 653 possible bad axioms.
+[2026-06-28 09:41:10.093] Selected the bad axiom SubClassOf(Financial_Exploitation Non_Professional).
+[2026-06-28 09:41:10.099] Found 652 possible bad axioms.
+[2026-06-28 09:41:10.099] Selected the bad axiom SubClassOf(Exposure_To_Extreme_Temperature ObjectComplementOf(Exposure_To_Harmful_Chemicals)).
+[2026-06-28 09:41:10.110] Found 651 possible bad axioms.
+[2026-06-28 09:41:10.110] Selected the bad axiom SubClassOf(Relational_Aggression ObjectComplementOf(Prejudicial_Bullying)).
+[2026-06-28 09:41:10.121] Found 650 possible bad axioms.
+[2026-06-28 09:41:10.122] Selected the bad axiom SubClassOf(Physical_Abuse ObjectComplementOf(Injury_Using_Lethal_Weapon)).
+[2026-06-28 09:41:10.128] Found 649 possible bad axioms.
+[2026-06-28 09:41:10.128] Selected the bad axiom SubClassOf(Denial_Of_Counseling_Preventive_Service ObjectComplementOf(Denial_Of_Specialist_Care)).
+[2026-06-28 09:41:10.133] Found 648 possible bad axioms.
+[2026-06-28 09:41:10.134] Selected the bad axiom SubC
+...[truncated]
+FAIL: attempt=2 seed=14343 - negative return code -9
+progress: ontology=HOME attempt=2 success=0/100
+----- HOME attempt=3 seed=28543 at 2026-06-28 09:45:11 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=28543, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:45:11.666] Checking precondition...
+[2026-06-28 09:45:11.691] Starting the repair...
+[2026-06-28 09:45:11.704] Found 661 possible bad axioms.
+[2026-06-28 09:45:11.706] Selected the bad axiom SubClassOf(Exposure_To_Harmful_Chemicals ObjectComplementOf(Exposure_To_Radiation_And_Noise)).
+[2026-06-28 09:45:11.716] Found 660 possible bad axioms.
+[2026-06-28 09:45:11.717] Selected the bad axiom SubClassOf(Denial_Of_Counseling_Preventive_Service ObjectComplementOf(Denial_Of_Surgical_Service)).
+[2026-06-28 09:45:11.730] Found 659 possible bad axioms.
+[2026-06-28 09:45:11.731] Selected the bad axiom SubClassOf(Isolation_And_Intimidation Of_Spousal).
+[2026-06-28 09:45:11.737] Found 658 possible bad axioms.
+[2026-06-28 09:45:11.738] Selected the bad axiom SubClassOf(Verbal_Abuse ObjectComplementOf(Isolation_And_Intimidation)).
+[2026-06-28 09:45:11.743] Found 657 possible bad axioms.
+[2026-06-28 09:45:11.743] Selected the bad axiom SubClassOf(Rifle ObjectComplementOf(Shot_Gun)).
+[2026-06-28 09:45:11.749] Found 656 possible bad axioms.
+[2026-06-28 09:45:11.749] Selected the bad axiom SubClassOf(Emotional_Abuse Of_Elderly).
+[2026-06-28 09:45:11.755] Found 655 possible bad axioms.
+[2026-06-28 09:45:11.755] Selected the bad axiom SubClassOf(Sexual_Abuse ObjectComplementOf(Injury_From_High_Voltage)).
+[2026-06-28 09:45:11.761] Found 654 possible bad axioms.
+[2026-06-28 09:45:11.761] Selected the bad axiom SubClassOf(Exposure_To_Radiation_And_Noise ObjectComplementOf(Obstructionism)).
+[2026-06-28 09:45:11.767] Found 653 possible bad axioms.
+[2026-06-28 09:45:11.767] Selected the bad axiom SubClassOf(Taser ObjectComplementOf(Pepper_Spray)).
+[2026-06-28 09:45:11.772] Found 652 possible bad axioms.
+[2026-06-28 09:45:11.772] Selected the bad axiom SubClassOf(Injury_From_High_Voltage ObjectComplementOf(Exposure_To_Radiation_And_Noise)).
+[2026-06-28 09:45:11.783] Found 651 possible bad axioms.
+[2026-06-28 09:45:11.783] Selected the bad axiom SubClassOf(Emotional_Abuse Of_Spousal).
+[2026-06-28 09:45:11.795] Found 650 possible bad axioms.
+[2026-06-28 09:45:11.795] Selected the bad axiom SubClassOf(Outside_Family ObjectComplementOf(Within_Family)).
+[2026-06-28 09:45:11.800] Found 649 possible bad axioms.
+[2026-06-28 09:45:11.801] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality ObjectComplementOf(Physical_Assault_Of_Patient)).
+[2026-06-28 09:45:11.806] Found 648 possible bad axioms.
+[2026-06-28 09:45:11.806] Selected the bad axiom SubClassOf(Inappropriate_Restraining ObjectComplementOf(Neglect)).
+[2026-06-28 09:45:11.811] Found 647 possible bad axiom
+...[truncated]
+FAIL: attempt=3 seed=28543 - negative return code -9
+progress: ontology=HOME attempt=3 success=0/100
+----- HOME attempt=4 seed=42743 at 2026-06-28 09:49:24 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=42743, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:49:24.684] Checking precondition...
+[2026-06-28 09:49:24.709] Starting the repair...
+[2026-06-28 09:49:24.727] Found 661 possible bad axioms.
+[2026-06-28 09:49:24.729] Selected the bad axiom SubClassOf(Physical_And_Social_Isolation ObjectComplementOf(Verbal_Abuse)).
+[2026-06-28 09:49:24.739] Found 660 possible bad axioms.
+[2026-06-28 09:49:24.740] Selected the bad axiom SubClassOf(Rubber_Bullet Injury_Less_Lethal_Weapon).
+[2026-06-28 09:49:24.750] Found 659 possible bad axioms.
+[2026-06-28 09:49:24.750] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality ObjectComplementOf(Professional_Boundary_Violation)).
+[2026-06-28 09:49:24.763] Found 658 possible bad axioms.
+[2026-06-28 09:49:24.763] Selected the bad axiom SubClassOf(Exposure_To_Harmful_Chemicals ObjectComplementOf(Doxing)).
+[2026-06-28 09:49:24.770] Found 657 possible bad axioms.
+[2026-06-28 09:49:24.770] Selected the bad axiom SubClassOf(Emotional_Abuse Of_Minor).
+[2026-06-28 09:49:24.777] Found 656 possible bad axioms.
+[2026-06-28 09:49:24.777] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Prejudicial_Bullying)).
+[2026-06-28 09:49:24.783] Found 655 possible bad axioms.
+[2026-06-28 09:49:24.783] Selected the bad axiom SubClassOf(Failure_To_Provide_Oversight_As_Required ObjectComplementOf(Abuse_Of_Prescribing_Privileges)).
+[2026-06-28 09:49:24.789] Found 654 possible bad axioms.
+[2026-06-28 09:49:24.790] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality ObjectComplementOf(Improper_Prescribing_Of_Drug)).
+[2026-06-28 09:49:24.795] Found 653 possible bad axioms.
+[2026-06-28 09:49:24.796] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Occupational_Physical_Injury)).
+[2026-06-28 09:49:24.801] Found 652 possible bad axioms.
+[2026-06-28 09:49:24.802] Selected the bad axiom SubClassOf(Shot_Gun ObjectComplementOf(Rifle)).
+[2026-06-28 09:49:24.812] Found 651 possible bad axioms.
+[2026-06-28 09:49:24.813] Selected the bad axiom SubClassOf(Physical_And_Social_Isolation ObjectComplementOf(Exposure_To_Communicable_Disease)).
+[2026-06-28 09:49:24.824] Found 650 possible bad axioms.
+[2026-06-28 09:49:24.825] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Physical_And_Social_Isolation)).
+[2026-06-28 09:49:24.830] Found 649 possible bad axioms.
+[2026-06-28 09:49:24.830] Selected the bad axiom SubClassOf(Relational_Aggression ObjectComplementOf(Prejudicial_Bullying)).
+[2026-06-28 09:49:24.835] Found 648 possible bad axioms.
+[2026-06-28 09:49:24.836] Selected the bad axiom SubClassOf(Religious_Harassments Education).
+[2026-06-28 09:49:24
+...[truncated]
+FAIL: attempt=4 seed=42743 - negative return code -9
+progress: ontology=HOME attempt=4 success=0/100
+----- HOME attempt=5 seed=56943 at 2026-06-28 09:53:35 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=56943, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:53:36.400] Checking precondition...
+[2026-06-28 09:53:36.426] Starting the repair...
+[2026-06-28 09:53:36.440] Found 661 possible bad axioms.
+[2026-06-28 09:53:36.443] Selected the bad axiom SubClassOf(Procedure_Violation Substandard_Care).
+[2026-06-28 09:53:36.454] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-28 09:53:36.455] Checking precondition...
+[2026-06-28 09:53:36.476] Starting the repair...
+[2026-06-28 09:56:45.301] Found 7 possible bad axioms.
+[2026-06-28 09:56:45.301] Selected the bad axiom SubClassOf(ObjectComplementOf(Retaliation) Religious_Harassments).
+[2026-06-28 09:56:45.305] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-28 09:56:45.306] Checking precondition...
+[2026-06-28 09:56:45.310] Starting the repair...
+[2026-06-28 09:56:45.346] Selected a reference ontology with 742 axioms.
+[2026-06-28 09:56:47.130] Selected the bad axiom SubClassOf(Retaliation Education).
+[2026-06-28 09:56:47.251] Selected the weaker axiom SubClassOf(Outside_Family Education).
+[2026-06-28 09:56:47.256] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-28 09:56:47.257] Checking precondition...
+[2026-06-28 09:56:47.263] Starting the repair...
+[2026-06-28 09:56:47.295] Selected a reference ontology with 742 axioms.
+[2026-06-28 09:56:49.141] Selected the bad axiom SubClassOf(Education Outside_Family).
+[2026-06-28 09:56:49.246] Selected the weaker axiom SubClassOf(Doxing Outside_Family).
+[2026-06-28 09:56:49.249] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-28 09:56:49.251] Checking precondition...
+[2026-06-28 09:56:49.254] Starting the repair...
+[2026-06-28 09:56:49.285] Selected a reference ontology with 742 axioms.
+[2026-06-28 09:56:51.086] Selected the bad axiom SubClassOf(Education Outside_Family).
+[PowerIndexWeakerAxiomSelector] Scoring 156 candidate weakenings for Education ⊑ Outside_Family
+[PowerIndexWeakerAxiomSelector] Selected weaker axiom: Education ⊑ Education
+[2026-06-28 09:57:02.420] Selected the weaker axiom SubClassOf(Education Education).
+[2026-06-28 09:57:02.641] Finished repairing the ontology.
+Repairing with B3 (bad-in_some_mus-weaker-banzhaf)...
+[2026-06-28 09:57:02.642] Checking precondition...
+[2026-06-28 09:57:02.647] Starting the repair...
+[2026-06-28 09:57:02.688] Selected a reference ontology with 742 axioms.
+[2026-06-28 09:57:04.583] Selected the bad axiom SubClassOf(Substandard_Care Healthcare_Institution_H).
+[PowerIndexWeakerAxiomSelector] Sc
+...[truncated]
+FAIL: attempt=5 seed=56943 - negative return code -9
+progress: ontology=HOME attempt=5 success=0/100
+----- HOME attempt=6 seed=71143 at 2026-06-28 09:57:44 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=71143, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:57:44.555] Checking precondition...
+[2026-06-28 09:57:44.581] Starting the repair...
+[2026-06-28 09:57:44.593] Found 661 possible bad axioms.
+[2026-06-28 09:57:44.596] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality ObjectComplementOf(Procedure_Violation)).
+[2026-06-28 09:57:44.609] Found 660 possible bad axioms.
+[2026-06-28 09:57:44.610] Selected the bad axiom SubClassOf(Failure_To_Provide_Oversight_As_Required ObjectComplementOf(Violation_Of_Confidentiality)).
+[2026-06-28 09:57:44.618] Found 659 possible bad axioms.
+[2026-06-28 09:57:44.618] Selected the bad axiom SubClassOf(Physical_Assault Of_Elderly).
+[2026-06-28 09:57:44.630] Found 658 possible bad axioms.
+[2026-06-28 09:57:44.631] Selected the bad axiom SubClassOf(ObjectComplementOf(Denial_Of_Specialist_Care) ObjectComplementOf(Denial_Of_Care_Elderly)).
+[2026-06-28 09:57:44.637] Found 657 possible bad axioms.
+[2026-06-28 09:57:44.637] Selected the bad axiom SubClassOf(Denial_Of_Ambulatory_Service ObjectComplementOf(Denial_Of_Care_Elderly)).
+[2026-06-28 09:57:44.644] Found 656 possible bad axioms.
+[2026-06-28 09:57:44.644] Selected the bad axiom SubClassOf(Doxing Non_Professional).
+[2026-06-28 09:57:44.651] Found 655 possible bad axioms.
+[2026-06-28 09:57:44.651] Selected the bad axiom SubClassOf(Abuse_Of_Prescribing_Privileges ObjectComplementOf(Dropping_Observation_From_Analyses)).
+[2026-06-28 09:57:44.658] Found 654 possible bad axioms.
+[2026-06-28 09:57:44.658] Selected the bad axiom SubClassOf(Relational_Aggression Education).
+[2026-06-28 09:57:44.664] Found 653 possible bad axioms.
+[2026-06-28 09:57:44.664] Selected the bad axiom SubClassOf(Emotional_Intimidation Education).
+[2026-06-28 09:57:44.670] Found 652 possible bad axioms.
+[2026-06-28 09:57:44.670] Selected the bad axiom SubClassOf(Failure_To_Provide_Oversight_As_Required Substandard_Care).
+[2026-06-28 09:57:44.681] Found 651 possible bad axioms.
+[2026-06-28 09:57:44.681] Selected the bad axiom SubClassOf(Denial_Of_Surgical_Service Denial_Of_Care).
+[2026-06-28 09:57:44.692] Found 650 possible bad axioms.
+[2026-06-28 09:57:44.693] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Verbal_Abuse)).
+[2026-06-28 09:57:44.698] Found 649 possible bad axioms.
+[2026-06-28 09:57:44.699] Selected the bad axiom SubClassOf(Neglect At_Assisted_Living).
+[2026-06-28 09:57:44.704] Found 648 possible bad axioms.
+[2026-06-28 09:57:44.704] Selected the bad axiom SubClassOf(Exposure_To_Radiation_And_Noise ObjectComplementOf(Exposure_To_Extreme_Temperature)).
+[2026-06-28 09:57:44.709] Found 647 possible bad axioms.
+...[truncated]
+FAIL: attempt=6 seed=71143 - negative return code -9
+progress: ontology=HOME attempt=6 success=0/100
+----- HOME attempt=7 seed=85343 at 2026-06-28 10:02:16 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=85343, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:02:16.851] Checking precondition...
+[2026-06-28 10:02:16.876] Starting the repair...
+[2026-06-28 10:02:16.889] Found 661 possible bad axioms.
+[2026-06-28 10:02:16.891] Selected the bad axiom SubClassOf(Occupational_Physical_Injury ObjectComplementOf(Exposure_To_Extreme_Temperature)).
+[2026-06-28 10:02:16.902] Found 660 possible bad axioms.
+[2026-06-28 10:02:16.903] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Prejudicial_Bullying)).
+[2026-06-28 10:02:16.917] Found 659 possible bad axioms.
+[2026-06-28 10:02:16.917] Selected the bad axiom SubClassOf(Of_Spousal Of_Adult).
+[2026-06-28 10:02:16.925] Found 658 possible bad axioms.
+[2026-06-28 10:02:16.925] Selected the bad axiom SubClassOf(Occupational_Physical_Injury ObjectComplementOf(Physical_And_Social_Isolation)).
+[2026-06-28 10:02:16.932] Found 657 possible bad axioms.
+[2026-06-28 10:02:16.932] Selected the bad axiom SubClassOf(Denial_Of_Inpatient_Care ObjectComplementOf(Denial_Of_Early_Stage_Screening)).
+[2026-06-28 10:02:16.938] Found 656 possible bad axioms.
+[2026-06-28 10:02:16.938] Selected the bad axiom SubClassOf(Rifle ObjectComplementOf(Shot_Gun)).
+[2026-06-28 10:02:16.945] Found 655 possible bad axioms.
+[2026-06-28 10:02:16.945] Selected the bad axiom SubClassOf(Verbal_Abuse ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 10:02:16.951] Found 654 possible bad axioms.
+[2026-06-28 10:02:16.952] Selected the bad axiom SubClassOf(Physical_Assault ObjectComplementOf(Sexual_Abuse)).
+[2026-06-28 10:02:16.958] Found 653 possible bad axioms.
+[2026-06-28 10:02:16.958] Selected the bad axiom SubClassOf(Injury_From_High_Voltage ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 10:02:16.964] Found 652 possible bad axioms.
+[2026-06-28 10:02:16.964] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Injury_From_High_Voltage)).
+[2026-06-28 10:02:16.975] Found 651 possible bad axioms.
+[2026-06-28 10:02:16.975] Selected the bad axiom SubClassOf(Dropping_Observation_From_Analyses ObjectComplementOf(Improper_Prescribing_Of_Drug)).
+[2026-06-28 10:02:16.987] Found 650 possible bad axioms.
+[2026-06-28 10:02:16.987] Selected the bad axiom SubClassOf(Physical_Assault_Of_Patient ObjectComplementOf(Violation_Of_Confidentiality)).
+[2026-06-28 10:02:16.992] Found 649 possible bad axioms.
+[2026-06-28 10:02:16.993] Selected the bad axiom SubClassOf(Sexual_Abuse ObjectComplementOf(Identity_Theft)).
+[2026-06-28 10:02:16.998] Found 648 possible bad axioms.
+[2026-06-28 10:02:16.998] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality ObjectComplementOf(Dropping_O
+...[truncated]
+FAIL: attempt=7 seed=85343 - negative return code -9
+progress: ontology=HOME attempt=7 success=0/100
+----- HOME attempt=8 seed=99543 at 2026-06-28 10:06:30 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=99543, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:06:31.407] Checking precondition...
+[2026-06-28 10:06:31.433] Starting the repair...
+[2026-06-28 10:06:31.444] Found 661 possible bad axioms.
+[2026-06-28 10:06:31.447] Selected the bad axiom SubClassOf(Denial_Of_Specialist_Care ObjectComplementOf(Denial_Of_Counseling_Preventive_Service)).
+[2026-06-28 10:06:31.457] Found 660 possible bad axioms.
+[2026-06-28 10:06:31.457] Selected the bad axiom SubClassOf(Hand_Gun Injury_Using_Lethal_Weapon).
+[2026-06-28 10:06:31.467] Found 659 possible bad axioms.
+[2026-06-28 10:06:31.467] Selected the bad axiom SubClassOf(Financial_Exploitation ObjectComplementOf(Injury_From_High_Voltage)).
+[2026-06-28 10:06:31.481] Found 658 possible bad axioms.
+[2026-06-28 10:06:31.481] Selected the bad axiom SubClassOf(Improper_Prescribing_Of_Drug ObjectComplementOf(Dropping_Observation_From_Analyses)).
+[2026-06-28 10:06:31.488] Found 657 possible bad axioms.
+[2026-06-28 10:06:31.488] Selected the bad axiom SubClassOf(Rifle Injury_Using_Lethal_Weapon).
+[2026-06-28 10:06:31.495] Found 656 possible bad axioms.
+[2026-06-28 10:06:31.496] Selected the bad axiom SubClassOf(Physical_Abuse ObjectComplementOf(Injury_Less_Lethal_Weapon)).
+[2026-06-28 10:06:31.502] Found 655 possible bad axioms.
+[2026-06-28 10:06:31.502] Selected the bad axiom SubClassOf(Physical_Assault_Of_Patient ObjectComplementOf(Failure_To_Provide_Oversight_As_Required)).
+[2026-06-28 10:06:31.508] Found 654 possible bad axioms.
+[2026-06-28 10:06:31.508] Selected the bad axiom SubClassOf(Sexual_Abuse Of_Minor).
+[2026-06-28 10:06:31.514] Found 653 possible bad axioms.
+[2026-06-28 10:06:31.514] Selected the bad axiom SubClassOf(Neglect ObjectComplementOf(Inappropriate_Restraining)).
+[2026-06-28 10:06:31.520] Found 652 possible bad axioms.
+[2026-06-28 10:06:31.520] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 10:06:31.531] Found 651 possible bad axioms.
+[2026-06-28 10:06:31.531] Selected the bad axiom SubClassOf(Sexual_Abuse ObjectComplementOf(Emotional_Abuse)).
+[2026-06-28 10:06:31.542] Found 650 possible bad axioms.
+[2026-06-28 10:06:31.542] Selected the bad axiom SubClassOf(Baton ObjectComplementOf(Pepper_Spray)).
+[2026-06-28 10:06:31.547] Found 649 possible bad axioms.
+[2026-06-28 10:06:31.548] Selected the bad axiom SubClassOf(Religious_Harassments ObjectComplementOf(Prejudicial_Bullying)).
+[2026-06-28 10:06:31.553] Found 648 possible bad axioms.
+[2026-06-28 10:06:31.554] Selected the bad axiom SubClassOf(Exposure_To_Extreme_Temperature ObjectComplementOf(Emotional_Intimidation_And_Threat)).
+[2026-06-28
+...[truncated]
+FAIL: attempt=8 seed=99543 - negative return code -9
+progress: ontology=HOME attempt=8 success=0/100
+----- HOME attempt=9 seed=113743 at 2026-06-28 10:11:39 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=113743, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:11:39.857] Checking precondition...
+[2026-06-28 10:11:39.883] Starting the repair...
+[2026-06-28 10:11:39.896] Found 661 possible bad axioms.
+[2026-06-28 10:11:39.898] Selected the bad axiom SubClassOf(Verbal_Abuse Of_Spousal).
+[2026-06-28 10:11:39.909] Found 660 possible bad axioms.
+[2026-06-28 10:11:39.910] Selected the bad axiom SubClassOf(Relational_Aggression ObjectComplementOf(Prejudicial_Bullying)).
+[2026-06-28 10:11:39.917] Found 659 possible bad axioms.
+[2026-06-28 10:11:39.917] Selected the bad axiom SubClassOf(Exposure_To_Harmful_Chemicals ObjectComplementOf(Exposure_To_Radiation_And_Noise)).
+[2026-06-28 10:11:39.932] Found 658 possible bad axioms.
+[2026-06-28 10:11:39.932] Selected the bad axiom SubClassOf(Exposure_To_Extreme_Temperature ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 10:11:39.939] Found 657 possible bad axioms.
+[2026-06-28 10:11:39.940] Selected the bad axiom SubClassOf(Identity_Theft ObjectComplementOf(Physical_Abuse)).
+[2026-06-28 10:11:39.947] Found 656 possible bad axioms.
+[2026-06-28 10:11:39.947] Selected the bad axiom SubClassOf(Denial_Of_Specialist_Care ObjectComplementOf(Denial_Of_Ambulatory_Service)).
+[2026-06-28 10:11:39.954] Found 655 possible bad axioms.
+[2026-06-28 10:11:39.954] Selected the bad axiom SubClassOf(Emotional_Intimidation Education).
+[2026-06-28 10:11:39.961] Found 654 possible bad axioms.
+[2026-06-28 10:11:39.961] Selected the bad axiom SubClassOf(Denial_Of_Counseling_Preventive_Service ObjectComplementOf(Denial_Of_Inpatient_Care)).
+[2026-06-28 10:11:39.968] Found 653 possible bad axioms.
+[2026-06-28 10:11:39.968] Selected the bad axiom SubClassOf(Violation_Of_Confidentiality Substandard_Care).
+[2026-06-28 10:11:39.973] Found 652 possible bad axioms.
+[2026-06-28 10:11:39.973] Selected the bad axiom SubClassOf(Quid_Pro_Quo ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 10:11:39.985] Found 651 possible bad axioms.
+[2026-06-28 10:11:39.985] Selected the bad axiom SubClassOf(Exposure_To_Harmful_Chemicals ObjectComplementOf(Doxing)).
+[2026-06-28 10:11:39.996] Found 650 possible bad axioms.
+[2026-06-28 10:11:39.996] Selected the bad axiom SubClassOf(Doxing ObjectComplementOf(Religious_Harassments)).
+[2026-06-28 10:11:40.002] Found 649 possible bad axioms.
+[2026-06-28 10:11:40.002] Selected the bad axiom SubClassOf(Exposure_To_Extreme_Temperature ObjectComplementOf(Exposure_To_Radiation_And_Noise)).
+[2026-06-28 10:11:40.007] Found 648 possible bad axioms.
+[2026-06-28 10:11:40.007] Selected the bad axiom SubClassOf(Emotional_Intimidation_And_Threat ObjectComplementOf(
+...[truncated]
+FAIL: attempt=9 seed=113743 - negative return code -9
+progress: ontology=HOME attempt=9 success=0/100
+----- HOME attempt=10 seed=127943 at 2026-06-28 10:15:55 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HOME.owl, seed=127943, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 10:15:55.901] Checking precondition...
+[2026-06-28 10:15:55.928] Starting the repair...
+[2026-06-28 10:15:55.941] Found 661 possible bad axioms.
+[2026-06-28 10:15:55.943] Selected the bad axiom SubClassOf(Denial_Of_Surgical_Service ObjectComplementOf(Denial_Of_Emergency_Care)).
+[2026-06-28 10:15:55.954] Found 660 possible bad axioms.
+[2026-06-28 10:15:55.954] Selected the bad axiom SubClassOf(Stun_Grenades ObjectComplementOf(Rubber_Bullet)).
+[2026-06-28 10:15:55.967] Found 659 possible bad axioms.
+[2026-06-28 10:15:55.967] Selected the bad axiom SubClassOf(Retaliation ObjectComplementOf(Relational_Aggression)).
+[2026-06-28 10:15:55.975] Found 658 possible bad axioms.
+[2026-06-28 10:15:55.975] Selected the bad axiom SubClassOf(Denial_Of_Care_Elderly ObjectComplementOf(Denial_Of_Specialist_Care)).
+[2026-06-28 10:15:55.982] Found 657 possible bad axioms.
+[2026-06-28 10:15:55.983] Selected the bad axiom SubClassOf(Professional_Boundary_Violation ObjectComplementOf(Psychological_Assault_Of_Patient)).
+[2026-06-28 10:15:55.989] Found 656 possible bad axioms.
+[2026-06-28 10:15:55.990] Selected the bad axiom SubClassOf(Financial_Exploitation Professional).
+[2026-06-28 10:15:55.997] Found 655 possible bad axioms.
+[2026-06-28 10:15:55.997] Selected the bad axiom SubClassOf(Obstructionism ObjectComplementOf(Financial_Exploitation)).
+[2026-06-28 10:15:56.004] Found 654 possible bad axioms.
+[2026-06-28 10:15:56.005] Selected the bad axiom SubClassOf(Relational_Aggression ObjectComplementOf(Doxing)).
+[2026-06-28 10:15:56.011] Found 653 possible bad axioms.
+[2026-06-28 10:15:56.011] Selected the bad axiom SubClassOf(Obstructionism Non_Professional).
+[2026-06-28 10:15:56.016] Found 652 possible bad axioms.
+[2026-06-28 10:15:56.017] Selected the bad axiom SubClassOf(Emotional_Intimidation_And_Threat ObjectComplementOf(Exposure_To_Radiation_And_Noise)).
+[2026-06-28 10:15:56.027] Found 651 possible bad axioms.
+[2026-06-28 10:15:56.027] Selected the bad axiom SubClassOf(Physical_Assault_Of_Patient ObjectComplementOf(Procedure_Violation)).
+[2026-06-28 10:15:56.039] Found 650 possible bad axioms.
+[2026-06-28 10:15:56.039] Selected the bad axiom SubClassOf(Denial_Of_Surgical_Service ObjectComplementOf(Denial_Of_Care_Elderly)).
+[2026-06-28 10:15:56.044] Found 649 possible bad axioms.
+[2026-06-28 10:15:56.044] Selected the bad axiom SubClassOf(Denial_Of_Care_Elderly Denial_Of_Care).
+[2026-06-28 10:15:56.050] Found 648 possible bad axioms.
+[2026-06-28 10:15:56.050] Selected the bad axiom SubClassOf(Exposure_To_Extreme_Temperature ObjectComplementOf(Verbal_Abuse)).
+
+...[truncated]
+FAIL: attempt=10 seed=127943 - negative return code -9
+progress: ontology=HOME attempt=10 success=0/100
+=== ABORTED HOME after 10 consecutive failures at 2026-06-28 10:20:11 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for HOME - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=143 msg=negative return code -9
+  attempt=2 seed=14343 msg=negative return code -9
+  attempt=3 seed=28543 msg=negative return code -9
+  attempt=4 seed=42743 msg=negative return code -9
+  attempt=5 seed=56943 msg=negative return code -9
+  attempt=6 seed=71143 msg=negative return code -9
+  attempt=7 seed=85343 msg=negative return code -9
+  attempt=8 seed=99543 msg=negative return code -9
+  attempt=9 seed=113743 msg=negative return code -9
+  attempt=10 seed=127943 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=2604.616049 avg_seconds=260.461605
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,123,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,10.788460,483,1537,521,2821,5012,,,,,,,
+2,14323,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,8.301383,565,1499,475,457,4895,,,,,,,
+3,28523,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,9.960318,550,1498,977,473,5698,,,,,,,
+4,42723,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,9.329933,558,1513,1013,863,4980,,,,,,,
+5,56923,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,8.343865,505,1537,531,433,4933,,,,,,,
+6,71123,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,9.842433,500,1537,889,439,5148,,,,,,,
+7,85323,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,9.384584,546,1521,619,1462,4827,,,,,,,
+8,99523,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,11.895710,538,1509,1411,2867,5160,,,,,,,
+9,113723,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,8.702559,473,1547,1592,524,4175,,,,,,,
+10,127923,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008,8.285338,337,1604,461,467,5008,,,,,,,

@@ -1,0 +1,338 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-OOEVV.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-OOEVV.csv
+
+=== Starting sequential trials for OOEVV at 2026-06-26 03:46:21 ===
+----- OOEVV attempt=1 seed=52 at 2026-06-26 03:46:21 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=52, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 03:46:22.064] Checking precondition...
+[2026-06-26 03:46:22.079] Starting the repair...
+[2026-06-26 03:46:22.086] Found 92 possible bad axioms.
+[2026-06-26 03:46:22.088] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity).
+[2026-06-26 03:46:22.094] Found 91 possible bad axioms.
+[2026-06-26 03:46:22.094] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue).
+[2026-06-26 03:46:22.098] Found 90 possible bad axioms.
+[2026-06-26 03:46:22.098] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 03:46:22.102] Found 89 possible bad axioms.
+[2026-06-26 03:46:22.102] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale).
+[2026-06-26 03:46:22.106] Found 88 possible bad axioms.
+[2026-06-26 03:46:22.106] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale).
+[2026-06-26 03:46:22.109] Found 87 possible bad axioms.
+[2026-06-26 03:46:22.109] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/sets ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/ordinalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue)) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity))).
+[2026-06-26 03:46:22.114] Found 86 possible bad axioms.
+[2026-06-26 03:46:22.115] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NaturalLanguageScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScale).
+[2026-06-26 03:46:22.118] Found 85 possible bad axioms.
+[2026-06-26 03:46:22.118] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 03:46:22.125] Found 84 possible bad axioms.
+[2026-06-26 03:46:22.125] Selected the bad axiom SubC
+...[truncated]
+FAIL: attempt=1 seed=52 - negative return code -9
+progress: ontology=OOEVV attempt=1 success=0/100
+----- OOEVV attempt=2 seed=14252 at 2026-06-26 03:49:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=14252, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 03:49:18.188] Checking precondition...
+[2026-06-26 03:49:18.203] Starting the repair...
+[2026-06-26 03:49:18.210] Found 92 possible bad axioms.
+[2026-06-26 03:49:18.212] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 03:49:18.217] Found 91 possible bad axioms.
+[2026-06-26 03:49:18.217] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialProcesing).
+[2026-06-26 03:49:18.222] Found 90 possible bad axioms.
+[2026-06-26 03:49:18.222] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/exptVbs http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable) ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/nominalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue)).
+[2026-06-26 03:49:18.226] Found 89 possible bad axioms.
+[2026-06-26 03:49:18.226] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue).
+[2026-06-26 03:49:18.230] Found 88 possible bad axioms.
+[2026-06-26 03:49:18.230] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/obiTerm owl:Thing) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess)).
+[2026-06-26 03:49:18.234] Found 87 possible bad axioms.
+[2026-06-26 03:49:18.234] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/sets ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/ordinalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue)) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity))).
+[2026-06-26 03:49:18.238] Found 86 possible bad axioms.
+[2026-06-26 03:49:18.238] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/valueMappings http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValueMapping)).
+[2026-06-26 03:49:18.241] Found 85 possible bad axioms.
+[2026-06-26 03:49:18.241] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.
+...[truncated]
+FAIL: attempt=2 seed=14252 - negative return code -9
+progress: ontology=OOEVV attempt=2 success=0/100
+----- OOEVV attempt=3 seed=28452 at 2026-06-26 03:51:46 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=28452, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 03:51:47.141] Checking precondition...
+[2026-06-26 03:51:47.157] Starting the repair...
+[2026-06-26 03:51:47.164] Found 92 possible bad axioms.
+[2026-06-26 03:51:47.166] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale).
+[2026-06-26 03:51:47.172] Found 91 possible bad axioms.
+[2026-06-26 03:51:47.172] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale).
+[2026-06-26 03:51:47.176] Found 90 possible bad axioms.
+[2026-06-26 03:51:47.176] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 03:51:47.180] Found 89 possible bad axioms.
+[2026-06-26 03:51:47.180] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess).
+[2026-06-26 03:51:47.184] Found 88 possible bad axioms.
+[2026-06-26 03:51:47.184] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 03:51:47.188] Found 87 possible bad axioms.
+[2026-06-26 03:51:47.188] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/children http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue)).
+[2026-06-26 03:51:47.191] Found 86 possible bad axioms.
+[2026-06-26 03:51:47.192] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/scale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale)).
+[2026-06-26 03:51:47.199] Found 85 possible bad axioms.
+[2026-06-26 03:51:47.199] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity).
+[2026-06-26 03:51:47.202] Found 84 possible bad axioms.
+[2026-06-26 03:51:47.202] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/ordinalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue) ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/entities http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity)).
+[2026-06-26 03:51:47.20
+...[truncated]
+FAIL: attempt=3 seed=28452 - negative return code -9
+progress: ontology=OOEVV attempt=3 success=0/100
+----- OOEVV attempt=4 seed=42652 at 2026-06-26 03:54:32 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=42652, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 03:54:32.644] Checking precondition...
+[2026-06-26 03:54:32.659] Starting the repair...
+[2026-06-26 03:54:32.666] Found 92 possible bad axioms.
+[2026-06-26 03:54:32.668] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 03:54:32.675] Found 91 possible bad axioms.
+[2026-06-26 03:54:32.675] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/obiTerm owl:Thing) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess)).
+[2026-06-26 03:54:32.679] Found 90 possible bad axioms.
+[2026-06-26 03:54:32.680] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/sets ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/sets http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet)) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity))).
+[2026-06-26 03:54:32.684] Found 89 possible bad axioms.
+[2026-06-26 03:54:32.685] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/obiTerm ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/falseValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue)) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess)).
+[2026-06-26 03:54:32.688] Found 88 possible bad axioms.
+[2026-06-26 03:54:32.689] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/variables http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable) ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/exptVbs http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable)).
+[2026-06-26 03:54:32.692] Found 87 possible bad axioms.
+[2026-06-26 03:54:32.693] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/trueValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue)).
+[2026-06-26 03:54:32.695] Found 86 possible bad axioms.
+[2026-06-26 03:54:32.696] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScale).
+...[truncated]
+FAIL: attempt=4 seed=42652 - negative return code -9
+progress: ontology=OOEVV attempt=4 success=0/100
+----- OOEVV attempt=5 seed=56852 at 2026-06-26 03:57:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=56852, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 03:57:17.391] Checking precondition...
+[2026-06-26 03:57:17.407] Starting the repair...
+[2026-06-26 03:57:17.415] Found 92 possible bad axioms.
+[2026-06-26 03:57:17.416] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/targetValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue)).
+[2026-06-26 03:57:17.422] Found 91 possible bad axioms.
+[2026-06-26 03:57:17.423] Selected the bad axiom SubClassOf(owl:Thing ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity))).
+[2026-06-26 03:57:17.427] Found 90 possible bad axioms.
+[2026-06-26 03:57:17.427] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScale).
+[2026-06-26 03:57:17.431] Found 89 possible bad axioms.
+[2026-06-26 03:57:17.431] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank).
+[2026-06-26 03:57:17.435] Found 88 possible bad axioms.
+[2026-06-26 03:57:17.435] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess).
+[2026-06-26 03:57:17.439] Found 87 possible bad axioms.
+[2026-06-26 03:57:17.440] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/ordinalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue)).
+[2026-06-26 03:57:17.442] Found 86 possible bad axioms.
+[2026-06-26 03:57:17.443] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/scale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale)).
+[2026-06-26 03:57:17.450] Found 85 possible bad axioms.
+[2026-06-26 03:57:17.450] Selected the bad axiom SubClassOf(owl:Thing ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue)).
+[2026-06-26 03:57:17.454] Found 84 possible bad axioms.
+[2026-06-26 03:57:17.454] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/ordinalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.Ord
+...[truncated]
+FAIL: attempt=5 seed=56852 - negative return code -9
+progress: ontology=OOEVV attempt=5 success=0/100
+----- OOEVV attempt=6 seed=71052 at 2026-06-26 04:00:08 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=71052, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:00:08.653] Checking precondition...
+[2026-06-26 04:00:08.668] Starting the repair...
+[2026-06-26 04:00:08.676] Found 92 possible bad axioms.
+[2026-06-26 04:00:08.681] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/obiTerm ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/falseValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue)) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess)).
+[2026-06-26 04:00:08.687] Found 91 possible bad axioms.
+[2026-06-26 04:00:08.687] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://bmkeg.isi.edu/ooevv/sets owl:Thing) ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess ObjectUnionOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity))).
+[2026-06-26 04:00:08.691] Found 90 possible bad axioms.
+[2026-06-26 04:00:08.691] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/hasParts http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable)).
+[2026-06-26 04:00:08.695] Found 89 possible bad axioms.
+[2026-06-26 04:00:08.695] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/exptVbs http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable) ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/nominalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue)).
+[2026-06-26 04:00:08.699] Found 88 possible bad axioms.
+[2026-06-26 04:00:08.699] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue).
+[2026-06-26 04:00:08.703] Found 87 possible bad axioms.
+[2026-06-26 04:00:08.703] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale).
+[2026-06-26 04:00:08.706] Found 86 possible bad axioms.
+[2026-06-26 04:00:08.707] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/ordinalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue) ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/entities http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity)).
+[2026-06-26 04:00:08.712] Found 85 possible bad axioms.
+[2026-06-26 04:00:08.712] 
+...[truncated]
+FAIL: attempt=6 seed=71052 - negative return code -9
+progress: ontology=OOEVV attempt=6 success=0/100
+----- OOEVV attempt=7 seed=85252 at 2026-06-26 04:02:59 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=85252, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:03:00.067] Checking precondition...
+[2026-06-26 04:03:00.084] Starting the repair...
+[2026-06-26 04:03:00.092] Found 92 possible bad axioms.
+[2026-06-26 04:03:00.094] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 04:03:00.099] Found 91 possible bad axioms.
+[2026-06-26 04:03:00.099] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NaturalLanguageScale).
+[2026-06-26 04:03:00.103] Found 90 possible bad axioms.
+[2026-06-26 04:03:00.104] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 04:03:00.108] Found 89 possible bad axioms.
+[2026-06-26 04:03:00.108] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue).
+[2026-06-26 04:03:00.112] Found 88 possible bad axioms.
+[2026-06-26 04:03:00.112] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/processes http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess)).
+[2026-06-26 04:03:00.115] Found 87 possible bad axioms.
+[2026-06-26 04:03:00.115] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.DecimalValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue).
+[2026-06-26 04:03:00.119] Found 86 possible bad axioms.
+[2026-06-26 04:03:00.119] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 04:03:00.126] Found 85 possible bad axioms.
+[2026-06-26 04:03:00.127] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/falseValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue)).
+[2026-06-26 04:03:00.129] Found 84 possible bad axioms.
+[2026-06-26 04:03:00.129] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialEntity http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity).
+[2026-06-26 04:03:00.132] Found 83 possible bad axioms.
+[2026-06-26 04:03:00.132] Selected the bad axiom SubClassOf(http://b
+...[truncated]
+FAIL: attempt=7 seed=85252 - negative return code -9
+progress: ontology=OOEVV attempt=7 success=0/100
+----- OOEVV attempt=8 seed=99452 at 2026-06-26 04:05:34 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=99452, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:05:35.309] Checking precondition...
+[2026-06-26 04:05:35.323] Starting the repair...
+[2026-06-26 04:05:35.331] Found 92 possible bad axioms.
+[2026-06-26 04:05:35.334] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue).
+[2026-06-26 04:05:35.340] Found 91 possible bad axioms.
+[2026-06-26 04:05:35.340] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/valueScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms)).
+[2026-06-26 04:05:35.344] Found 90 possible bad axioms.
+[2026-06-26 04:05:35.345] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 04:05:35.349] Found 89 possible bad axioms.
+[2026-06-26 04:05:35.349] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NaturalLanguageScale).
+[2026-06-26 04:05:35.353] Found 88 possible bad axioms.
+[2026-06-26 04:05:35.353] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/partOf http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale)).
+[2026-06-26 04:05:35.357] Found 87 possible bad axioms.
+[2026-06-26 04:05:35.357] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 04:05:35.360] Found 86 possible bad axioms.
+[2026-06-26 04:05:35.360] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation owl:Nothing).
+[2026-06-26 04:05:35.363] Found 85 possible bad axioms.
+[2026-06-26 04:05:35.363] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/children http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue)).
+[2026-06-26 04:05:35.370] Found 84 possible bad axioms.
+[2026-06-26 04:05:35.370] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/targetValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue)).
+[2026-06-26 04:05:35.372] Found 83 possible bad axioms.
+[2026-06-26 04:05:35.373] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/nomi
+...[truncated]
+FAIL: attempt=8 seed=99452 - negative return code -9
+progress: ontology=OOEVV attempt=8 success=0/100
+----- OOEVV attempt=9 seed=113652 at 2026-06-26 04:08:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=113652, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:08:17.761] Checking precondition...
+[2026-06-26 04:08:17.776] Starting the repair...
+[2026-06-26 04:08:17.787] Found 92 possible bad axioms.
+[2026-06-26 04:08:17.789] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale).
+[2026-06-26 04:08:17.797] Found 91 possible bad axioms.
+[2026-06-26 04:08:17.798] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/children http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue)).
+[2026-06-26 04:08:17.804] Found 90 possible bad axioms.
+[2026-06-26 04:08:17.805] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/targetValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue) ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/exptVbs http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable)).
+[2026-06-26 04:08:17.810] Found 89 possible bad axioms.
+[2026-06-26 04:08:17.810] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/parent http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue)).
+[2026-06-26 04:08:17.815] Found 88 possible bad axioms.
+[2026-06-26 04:08:17.816] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScaleWithNamedValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale).
+[2026-06-26 04:08:17.820] Found 87 possible bad axioms.
+[2026-06-26 04:08:17.820] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/hierarchicalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue)).
+[2026-06-26 04:08:17.825] Found 86 possible bad axioms.
+[2026-06-26 04:08:17.825] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/nominalValues http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue)).
+[2026-06-26 04:08:17.833] Found 85 possible bad axioms.
+[2026-06-26 04:08:17.834] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/sets http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet)).
+[2026-06-26 04:08:17.839] Found 84 possible bad axioms.
+[2026-06-26 04:08:17.840] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/oScales http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks)).
+
+...[truncated]
+FAIL: attempt=9 seed=113652 - negative return code -9
+progress: ontology=OOEVV attempt=9 success=0/100
+----- OOEVV attempt=10 seed=127852 at 2026-06-26 04:11:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/OOEVV.owl, seed=127852, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 04:11:18.105] Checking precondition...
+[2026-06-26 04:11:18.120] Starting the repair...
+[2026-06-26 04:11:18.128] Found 92 possible bad axioms.
+[2026-06-26 04:11:18.130] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/trueValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue)).
+[2026-06-26 04:11:18.135] Found 91 possible bad axioms.
+[2026-06-26 04:11:18.135] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/targetValue http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue)).
+[2026-06-26 04:11:18.140] Found 90 possible bad axioms.
+[2026-06-26 04:11:18.140] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/nScales http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms) ObjectAllValuesFrom(http://bmkeg.isi.edu/ooevv/hasParts http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable)).
+[2026-06-26 04:11:18.144] Found 89 possible bad axioms.
+[2026-06-26 04:11:18.144] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale).
+[2026-06-26 04:11:18.148] Found 88 possible bad axioms.
+[2026-06-26 04:11:18.148] Selected the bad axiom SubClassOf(owl:Thing http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale).
+[2026-06-26 04:11:18.151] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 04:11:18.152] Checking precondition...
+[2026-06-26 04:11:18.158] Starting the repair...
+[2026-06-26 04:11:19.963] Found 6 possible bad axioms.
+[2026-06-26 04:11:19.963] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NaturalLanguageScale).
+[2026-06-26 04:11:19.964] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 04:11:19.972] Checking precondition...
+[2026-06-26 04:11:19.974] Starting the repair...
+[2026-06-26 04:11:19.984] Selected a reference ontology with 147 axioms.
+[2026-06-26 04:11:20.246] Selected the bad axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NaturalLanguageScale).
+[2026-06-26 04:11:20.312] Selected the weaker axiom SubClassOf(http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale http://
+...[truncated]
+FAIL: attempt=10 seed=127852 - negative return code -9
+progress: ontology=OOEVV attempt=10 success=0/100
+=== ABORTED OOEVV after 10 consecutive failures at 2026-06-26 04:14:32 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for OOEVV - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=52 msg=negative return code -9
+  attempt=2 seed=14252 msg=negative return code -9
+  attempt=3 seed=28452 msg=negative return code -9
+  attempt=4 seed=42652 msg=negative return code -9
+  attempt=5 seed=56852 msg=negative return code -9
+  attempt=6 seed=71052 msg=negative return code -9
+  attempt=7 seed=85252 msg=negative return code -9
+  attempt=8 seed=99452 msg=negative return code -9
+  attempt=9 seed=113652 msg=negative return code -9
+  attempt=10 seed=127852 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=1690.620060 avg_seconds=169.062006
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

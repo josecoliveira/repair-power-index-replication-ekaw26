@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,33,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.350678,58,468,179,297,,,,,,,,
+2,14233,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction,2.213563,37,477,183,293,885,,,,,,,
+3,28433,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding,2.293423,75,457,469,114,826,,,,,,,
+4,42633,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding,2.598238,32,507,198,487,1019,,,,,,,
+5,56833,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction,2.141862,56,473,184,295,772,,,,,,,
+6,71033,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction,2.152356,87,439,337,258,682,,,,,,,
+7,85233,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding,2.265411,78,462,183,288,903,,,,,,,
+8,99433,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding,2.278790,69,464,199,149,1042,,,,,,,
+9,113633,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.318861,90,455,317,125,,,,,,,,
+10,127833,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding,2.438843,57,470,349,332,870,,,,,,,

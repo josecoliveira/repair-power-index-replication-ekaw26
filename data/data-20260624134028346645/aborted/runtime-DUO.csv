@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,53,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DUO_0000035,2.316695,170,578,423,171,557,,,,,,,
+2,14253,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: DUO_0000035 ⊑ DUO_0000034,3.505443,112,612,239,389,1780,,,,,,,
+3,28453,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DUO_0000035,3.385340,142,598,723,539,1024,,,,,,,
+4,42653,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: DUO_0000035 ⊑ DUO_0000034,3.151481,110,642,228,168,1638,,,,,,,
+5,56853,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DUO_0000035,3.171702,117,641,1069,166,827,,,,,,,
+6,71053,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DUO_0000035,2.207961,38,659,235,173,735,,,,,,,
+7,85253,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: DUO_0000035 ⊑ DUO_0000034,3.406590,116,605,443,427,1458,,,,,,,
+8,99453,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: DUO_0000035 ⊑ DUO_0000034,3.273144,120,598,223,186,1785,,,,,,,
+9,113653,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DUO_0000035,3.297828,138,617,907,157,1131,,,,,,,
+10,127853,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DUO_0000035,2.787119,122,603,229,173,1288,,,,,,,

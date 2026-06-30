@@ -1,0 +1,438 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-LUNGMAP_H_CELL.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-LUNGMAP_H_CELL.csv
+
+=== Starting sequential trials for LUNGMAP_H_CELL at 2026-06-28 08:13:23 ===
+----- LUNGMAP_H_CELL attempt=1 seed=139 at 2026-06-28 08:13:23 -----
+--- stdout ---
+{"seed":139,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":677,"A2":7002,"A3":708,"B1":619,"B2":5570}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=139, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:13:24.151] Checking precondition...
+[2026-06-28 08:13:24.169] Starting the repair...
+[2026-06-28 08:13:24.184] Found 623 possible bad axioms.
+[2026-06-28 08:13:24.187] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00387 http://purl.obolibrary.org/obo/LMHA_00243).
+[2026-06-28 08:13:24.195] Found 622 possible bad axioms.
+[2026-06-28 08:13:24.196] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00340).
+[2026-06-28 08:13:24.202] Found 621 possible bad axioms.
+[2026-06-28 08:13:24.203] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00143 http://purl.obolibrary.org/obo/LMHA_00238).
+[2026-06-28 08:13:24.211] Found 620 possible bad axioms.
+[2026-06-28 08:13:24.211] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00691 http://purl.obolibrary.org/obo/LMHA_00378).
+[2026-06-28 08:13:24.217] Found 619 possible bad axioms.
+[2026-06-28 08:13:24.218] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00629).
+[2026-06-28 08:13:24.227] Found 618 possible bad axioms.
+[2026-06-28 08:13:24.228] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00694 http://purl.obolibrary.org/obo/LMHA_00087).
+[2026-06-28 08:13:24.233] Found 617 possible bad axioms.
+[2026-06-28 08:13:24.233] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00143 http://purl.obolibrary.org/obo/LMHA_00629).
+[2026-06-28 08:13:24.239] Found 616 possible bad axioms.
+[2026-06-28 08:13:24.239] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00150 http://purl.obolibrary.org/obo/LMHA_00185).
+[2026-06-28 08:13:24.244] Found 615 possible bad axioms.
+[2026-06-28 08:13:24.244] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_10000 http://purl.obolibrary.org/obo/LMHA_00146).
+[2026-06-28 08:13:24.249] Found 614 possible bad axioms.
+[2026-06-28 08:13:24.249] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00340 http://purl.obolibrary.org/obo/LMHA_00253).
+[2026-06-28 08:13:24.253] Found 613 possible bad axioms.
+[2026-06-28 08:13:24.254] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00241 http://purl.obolibrary.org/obo/LMHA_00622).
+[2026-06-28 08:13:24.266] Found 612 possible bad axioms.
+[2026-06-28 08:13:24.266] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00141 http://purl.obolibrary.org/obo/LMHA_00231).
+[2026-06-28 08:13:24.272] Found 611 possible bad axio
+...[truncated]
+FAIL: attempt=1 seed=139 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=1 success=0/100
+----- LUNGMAP_H_CELL attempt=2 seed=14339 at 2026-06-28 08:13:38 -----
+--- stdout ---
+{"seed":14339,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":672,"A2":6882,"A3":640}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=14339, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:13:39.191] Checking precondition...
+[2026-06-28 08:13:39.209] Starting the repair...
+[2026-06-28 08:13:39.225] Found 623 possible bad axioms.
+[2026-06-28 08:13:39.227] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00169 http://purl.obolibrary.org/obo/LMHA_00243).
+[2026-06-28 08:13:39.235] Found 622 possible bad axioms.
+[2026-06-28 08:13:39.236] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00282 http://purl.obolibrary.org/obo/LMHA_00243).
+[2026-06-28 08:13:39.242] Found 621 possible bad axioms.
+[2026-06-28 08:13:39.243] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00607 http://purl.obolibrary.org/obo/LMHA_00209).
+[2026-06-28 08:13:39.250] Found 620 possible bad axioms.
+[2026-06-28 08:13:39.250] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00577 http://purl.obolibrary.org/obo/LMHA_00343).
+[2026-06-28 08:13:39.256] Found 619 possible bad axioms.
+[2026-06-28 08:13:39.256] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00716 http://purl.obolibrary.org/obo/LMHA_00521).
+[2026-06-28 08:13:39.266] Found 618 possible bad axioms.
+[2026-06-28 08:13:39.266] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00142 http://purl.obolibrary.org/obo/LMHA_00143).
+[2026-06-28 08:13:39.272] Found 617 possible bad axioms.
+[2026-06-28 08:13:39.272] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00384 http://purl.obolibrary.org/obo/LMHA_00142).
+[2026-06-28 08:13:39.277] Found 616 possible bad axioms.
+[2026-06-28 08:13:39.277] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00716 http://purl.obolibrary.org/obo/LMHA_00378).
+[2026-06-28 08:13:39.283] Found 615 possible bad axioms.
+[2026-06-28 08:13:39.283] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00164 http://purl.obolibrary.org/obo/LMHA_00583).
+[2026-06-28 08:13:39.288] Found 614 possible bad axioms.
+[2026-06-28 08:13:39.288] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00583 http://purl.obolibrary.org/obo/LMHA_00142).
+[2026-06-28 08:13:39.294] Found 613 possible bad axioms.
+[2026-06-28 08:13:39.294] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00164 http://purl.obolibrary.org/obo/LMHA_00146).
+[2026-06-28 08:13:39.307] Found 612 possible bad axioms.
+[2026-06-28 08:13:39.309] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00086 http://purl.obolibrary.org/obo/LMHA_00223).
+[2026-06-28 08:13:39.314] Found 611 possible bad ax
+...[truncated]
+FAIL: attempt=2 seed=14339 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=LUNGMAP_H_CELL attempt=2 success=0/100
+----- LUNGMAP_H_CELL attempt=3 seed=28539 at 2026-06-28 08:13:47 -----
+--- stdout ---
+{"seed":28539,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":363,"A2":7136,"A3":739,"B1":686,"B2":5427}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=28539, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:13:47.833] Checking precondition...
+[2026-06-28 08:13:47.851] Starting the repair...
+[2026-06-28 08:13:47.867] Found 623 possible bad axioms.
+[2026-06-28 08:13:47.869] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00356 http://purl.obolibrary.org/obo/LMHA_00209).
+[2026-06-28 08:13:47.877] Found 622 possible bad axioms.
+[2026-06-28 08:13:47.878] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00227 http://purl.obolibrary.org/obo/LMHA_00623).
+[2026-06-28 08:13:47.885] Found 621 possible bad axioms.
+[2026-06-28 08:13:47.885] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00135 http://purl.obolibrary.org/obo/LMHA_00340).
+[2026-06-28 08:13:47.893] Found 620 possible bad axioms.
+[2026-06-28 08:13:47.893] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00629 http://purl.obolibrary.org/obo/LMHA_00524).
+[2026-06-28 08:13:47.899] Found 619 possible bad axioms.
+[2026-06-28 08:13:47.899] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00243 http://purl.obolibrary.org/obo/LMHA_00209).
+[2026-06-28 08:13:47.909] Found 618 possible bad axioms.
+[2026-06-28 08:13:47.910] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00136 http://purl.obolibrary.org/obo/LMHA_00242).
+[2026-06-28 08:13:47.916] Found 617 possible bad axioms.
+[2026-06-28 08:13:47.916] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00584 http://purl.obolibrary.org/obo/LMHA_00630).
+[2026-06-28 08:13:47.921] Found 616 possible bad axioms.
+[2026-06-28 08:13:47.921] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00238 http://purl.obolibrary.org/obo/LMHA_00630).
+[2026-06-28 08:13:47.926] Found 615 possible bad axioms.
+[2026-06-28 08:13:47.926] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00273 http://purl.obolibrary.org/obo/LMHA_00243).
+[2026-06-28 08:13:47.930] Found 614 possible bad axioms.
+[2026-06-28 08:13:47.930] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00179 http://purl.obolibrary.org/obo/LMHA_00692).
+[2026-06-28 08:13:47.936] Found 613 possible bad axioms.
+[2026-06-28 08:13:47.936] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00179 http://purl.obolibrary.org/obo/LMHA_00437).
+[2026-06-28 08:13:47.947] Found 612 possible bad axioms.
+[2026-06-28 08:13:47.948] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00135 http://purl.obolibrary.org/obo/LMHA_00622).
+[2026-06-28 08:13:47.956] Found 611 possible bad ax
+...[truncated]
+FAIL: attempt=3 seed=28539 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=3 success=0/100
+----- LUNGMAP_H_CELL attempt=4 seed=42739 at 2026-06-28 08:14:02 -----
+--- stdout ---
+{"seed":42739,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":513,"A2":6975,"A3":4434,"B1":641,"B2":5220}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=42739, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:14:02.651] Checking precondition...
+[2026-06-28 08:14:02.670] Starting the repair...
+[2026-06-28 08:14:02.685] Found 623 possible bad axioms.
+[2026-06-28 08:14:02.687] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00629).
+[2026-06-28 08:14:02.696] Found 622 possible bad axioms.
+[2026-06-28 08:14:02.696] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00245 http://purl.obolibrary.org/obo/LMHA_00622).
+[2026-06-28 08:14:02.704] Found 621 possible bad axioms.
+[2026-06-28 08:14:02.705] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00694 http://purl.obolibrary.org/obo/LMHA_00693).
+[2026-06-28 08:14:02.712] Found 620 possible bad axioms.
+[2026-06-28 08:14:02.712] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00384).
+[2026-06-28 08:14:02.718] Found 619 possible bad axioms.
+[2026-06-28 08:14:02.718] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00577 http://purl.obolibrary.org/obo/LMHA_00693).
+[2026-06-28 08:14:02.728] Found 618 possible bad axioms.
+[2026-06-28 08:14:02.728] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00584 http://purl.obolibrary.org/obo/LMHA_00583).
+[2026-06-28 08:14:02.732] Found 617 possible bad axioms.
+[2026-06-28 08:14:02.733] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00136 http://purl.obolibrary.org/obo/LMHA_00216).
+[2026-06-28 08:14:02.737] Found 616 possible bad axioms.
+[2026-06-28 08:14:02.737] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00716 http://purl.obolibrary.org/obo/LMHA_00137).
+[2026-06-28 08:14:02.742] Found 615 possible bad axioms.
+[2026-06-28 08:14:02.742] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00384 http://purl.obolibrary.org/obo/LMHA_00381).
+[2026-06-28 08:14:02.746] Found 614 possible bad axioms.
+[2026-06-28 08:14:02.746] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00691 owl:Nothing).
+[2026-06-28 08:14:02.750] Found 613 possible bad axioms.
+[2026-06-28 08:14:02.750] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00243 http://purl.obolibrary.org/obo/LMHA_00188).
+[2026-06-28 08:14:02.761] Found 612 possible bad axioms.
+[2026-06-28 08:14:02.761] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00805 http://purl.obolibrary.org/obo/LMHA_00161).
+[2026-06-28 08:14:02.767] Found 611 possible bad axioms.
+[2026-06-28 08:14:02.767
+...[truncated]
+FAIL: attempt=4 seed=42739 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=4 success=0/100
+----- LUNGMAP_H_CELL attempt=5 seed=56939 at 2026-06-28 08:14:20 -----
+--- stdout ---
+{"seed":56939,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":229,"A2":7090,"A3":2745,"B1":603,"B2":5749}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=56939, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:14:20.896] Checking precondition...
+[2026-06-28 08:14:20.914] Starting the repair...
+[2026-06-28 08:14:20.930] Found 623 possible bad axioms.
+[2026-06-28 08:14:20.932] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00066 http://purl.obolibrary.org/obo/LMHA_00387).
+[2026-06-28 08:14:20.940] Found 622 possible bad axioms.
+[2026-06-28 08:14:20.941] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00135 http://purl.obolibrary.org/obo/LMHA_00273).
+[2026-06-28 08:14:20.947] Found 621 possible bad axioms.
+[2026-06-28 08:14:20.947] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00583 http://purl.obolibrary.org/obo/LMHA_00143).
+[2026-06-28 08:14:20.954] Found 620 possible bad axioms.
+[2026-06-28 08:14:20.955] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00577 http://purl.obolibrary.org/obo/LMHA_00087).
+[2026-06-28 08:14:20.960] Found 619 possible bad axioms.
+[2026-06-28 08:14:20.960] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00230 http://purl.obolibrary.org/obo/LMHA_00242).
+[2026-06-28 08:14:20.971] Found 618 possible bad axioms.
+[2026-06-28 08:14:20.971] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00164 http://purl.obolibrary.org/obo/LMHA_00630).
+[2026-06-28 08:14:20.976] Found 617 possible bad axioms.
+[2026-06-28 08:14:20.977] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00185 http://purl.obolibrary.org/obo/LMHA_00135).
+[2026-06-28 08:14:20.982] Found 616 possible bad axioms.
+[2026-06-28 08:14:20.982] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00169 http://purl.obolibrary.org/obo/LMHA_00716).
+[2026-06-28 08:14:20.987] Found 615 possible bad axioms.
+[2026-06-28 08:14:20.988] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00343 http://purl.obolibrary.org/obo/LMHA_00691).
+[2026-06-28 08:14:20.993] Found 614 possible bad axioms.
+[2026-06-28 08:14:20.993] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00189 http://purl.obolibrary.org/obo/LMHA_00343).
+[2026-06-28 08:14:20.998] Found 613 possible bad axioms.
+[2026-06-28 08:14:20.998] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00189 owl:Nothing).
+[2026-06-28 08:14:21.011] Found 612 possible bad axioms.
+[2026-06-28 08:14:21.011] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00378 http://purl.obolibrary.org/obo/LMHA_00716).
+[2026-06-28 08:14:21.017] Found 611 possible bad axioms.
+[2026-06-28 08:14:21.017
+...[truncated]
+FAIL: attempt=5 seed=56939 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=5 success=0/100
+----- LUNGMAP_H_CELL attempt=6 seed=71139 at 2026-06-28 08:14:37 -----
+--- stdout ---
+{"seed":71139,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":230,"A2":7026,"A3":1861,"B1":620,"B2":6425,"B3":3700}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=71139, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:14:37.781] Checking precondition...
+[2026-06-28 08:14:37.800] Starting the repair...
+[2026-06-28 08:14:37.814] Found 623 possible bad axioms.
+[2026-06-28 08:14:37.816] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00577 http://purl.obolibrary.org/obo/LMHA_00694).
+[2026-06-28 08:14:37.825] Found 622 possible bad axioms.
+[2026-06-28 08:14:37.825] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00164 http://purl.obolibrary.org/obo/LMHA_00583).
+[2026-06-28 08:14:37.833] Found 621 possible bad axioms.
+[2026-06-28 08:14:37.833] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00142 http://purl.obolibrary.org/obo/LMHA_00584).
+[2026-06-28 08:14:37.840] Found 620 possible bad axioms.
+[2026-06-28 08:14:37.840] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00189 http://purl.obolibrary.org/obo/LMHA_00243).
+[2026-06-28 08:14:37.846] Found 619 possible bad axioms.
+[2026-06-28 08:14:37.846] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00260 http://purl.obolibrary.org/obo/LMHA_00216).
+[2026-06-28 08:14:37.856] Found 618 possible bad axioms.
+[2026-06-28 08:14:37.856] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00143 http://purl.obolibrary.org/obo/LMHA_00252).
+[2026-06-28 08:14:37.861] Found 617 possible bad axioms.
+[2026-06-28 08:14:37.861] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00694).
+[2026-06-28 08:14:37.867] Found 616 possible bad axioms.
+[2026-06-28 08:14:37.867] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00356 http://purl.obolibrary.org/obo/LMHA_00137).
+[2026-06-28 08:14:37.873] Found 615 possible bad axioms.
+[2026-06-28 08:14:37.873] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00583 http://purl.obolibrary.org/obo/LMHA_00524).
+[2026-06-28 08:14:37.878] Found 614 possible bad axioms.
+[2026-06-28 08:14:37.878] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00378 http://purl.obolibrary.org/obo/LMHA_00273).
+[2026-06-28 08:14:37.883] Found 613 possible bad axioms.
+[2026-06-28 08:14:37.883] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00164 http://purl.obolibrary.org/obo/LMHA_00146).
+[2026-06-28 08:14:37.895] Found 612 possible bad axioms.
+[2026-06-28 08:14:37.895] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00164 http://purl.obolibrary.org/obo/LMHA_00630).
+[2026-06-28 08:14:37.901] Found 611 possible bad ax
+...[truncated]
+FAIL: attempt=6 seed=71139 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=6 success=0/100
+----- LUNGMAP_H_CELL attempt=7 seed=85339 at 2026-06-28 08:14:57 -----
+--- stdout ---
+{"seed":85339,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":359,"A2":7090,"A3":1147,"B1":1793,"B2":3512}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=85339, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:14:58.128] Checking precondition...
+[2026-06-28 08:14:58.150] Starting the repair...
+[2026-06-28 08:14:58.165] Found 623 possible bad axioms.
+[2026-06-28 08:14:58.167] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00066 http://purl.obolibrary.org/obo/LMHA_00343).
+[2026-06-28 08:14:58.176] Found 622 possible bad axioms.
+[2026-06-28 08:14:58.176] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00142 http://purl.obolibrary.org/obo/LMHA_00252).
+[2026-06-28 08:14:58.183] Found 621 possible bad axioms.
+[2026-06-28 08:14:58.184] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00583 http://purl.obolibrary.org/obo/LMHA_00629).
+[2026-06-28 08:14:58.192] Found 620 possible bad axioms.
+[2026-06-28 08:14:58.192] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00135 http://purl.obolibrary.org/obo/LMHA_00392).
+[2026-06-28 08:14:58.198] Found 619 possible bad axioms.
+[2026-06-28 08:14:58.198] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00384 http://purl.obolibrary.org/obo/LMHA_00583).
+[2026-06-28 08:14:58.207] Found 618 possible bad axioms.
+[2026-06-28 08:14:58.208] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_10000 http://purl.obolibrary.org/obo/LMHA_00343).
+[2026-06-28 08:14:58.213] Found 617 possible bad axioms.
+[2026-06-28 08:14:58.213] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00054 http://purl.obolibrary.org/obo/LMHA_00169).
+[2026-06-28 08:14:58.218] Found 616 possible bad axioms.
+[2026-06-28 08:14:58.218] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00629).
+[2026-06-28 08:14:58.223] Found 615 possible bad axioms.
+[2026-06-28 08:14:58.223] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00169 http://purl.obolibrary.org/obo/LMHA_00137).
+[2026-06-28 08:14:58.227] Found 614 possible bad axioms.
+[2026-06-28 08:14:58.228] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00087 http://purl.obolibrary.org/obo/LMHA_00583).
+[2026-06-28 08:14:58.232] Found 613 possible bad axioms.
+[2026-06-28 08:14:58.233] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00189 http://purl.obolibrary.org/obo/LMHA_00343).
+[2026-06-28 08:14:58.242] Found 612 possible bad axioms.
+[2026-06-28 08:14:58.242] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00143 http://purl.obolibrary.org/obo/LMHA_00253).
+[2026-06-28 08:14:58.248] Found 611 possible bad ax
+...[truncated]
+FAIL: attempt=7 seed=85339 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=7 success=0/100
+----- LUNGMAP_H_CELL attempt=8 seed=99539 at 2026-06-28 08:15:12 -----
+--- stdout ---
+{"seed":99539,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":724,"A2":7005,"A3":715,"B1":619,"B2":10290}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=99539, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:15:12.479] Checking precondition...
+[2026-06-28 08:15:12.497] Starting the repair...
+[2026-06-28 08:15:12.511] Found 623 possible bad axioms.
+[2026-06-28 08:15:12.514] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00226 http://purl.obolibrary.org/obo/LMHA_00213).
+[2026-06-28 08:15:12.522] Found 622 possible bad axioms.
+[2026-06-28 08:15:12.522] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00586 http://purl.obolibrary.org/obo/LMHA_00384).
+[2026-06-28 08:15:12.529] Found 621 possible bad axioms.
+[2026-06-28 08:15:12.529] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00137 http://purl.obolibrary.org/obo/LMHA_00282).
+[2026-06-28 08:15:12.536] Found 620 possible bad axioms.
+[2026-06-28 08:15:12.537] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00087 http://purl.obolibrary.org/obo/LMHA_00693).
+[2026-06-28 08:15:12.544] Found 619 possible bad axioms.
+[2026-06-28 08:15:12.544] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00233 http://purl.obolibrary.org/obo/LMHA_00179).
+[2026-06-28 08:15:12.555] Found 618 possible bad axioms.
+[2026-06-28 08:15:12.555] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_10000 http://purl.obolibrary.org/obo/LMHA_00260).
+[2026-06-28 08:15:12.560] Found 617 possible bad axioms.
+[2026-06-28 08:15:12.560] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00185 http://purl.obolibrary.org/obo/LMHA_00161).
+[2026-06-28 08:15:12.566] Found 616 possible bad axioms.
+[2026-06-28 08:15:12.566] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00252 http://purl.obolibrary.org/obo/LMHA_00238).
+[2026-06-28 08:15:12.571] Found 615 possible bad axioms.
+[2026-06-28 08:15:12.571] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00356 http://purl.obolibrary.org/obo/LMHA_00066).
+[2026-06-28 08:15:12.576] Found 614 possible bad axioms.
+[2026-06-28 08:15:12.576] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00242).
+[2026-06-28 08:15:12.580] Found 613 possible bad axioms.
+[2026-06-28 08:15:12.580] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00691 http://purl.obolibrary.org/obo/LMHA_00242).
+[2026-06-28 08:15:12.593] Found 612 possible bad axioms.
+[2026-06-28 08:15:12.594] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00437 http://purl.obolibrary.org/obo/LMHA_00233).
+[2026-06-28 08:15:12.599] Found 611 possible bad ax
+...[truncated]
+FAIL: attempt=8 seed=99539 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=8 success=0/100
+----- LUNGMAP_H_CELL attempt=9 seed=113739 at 2026-06-28 08:15:31 -----
+--- stdout ---
+{"seed":113739,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":585,"A2":7018,"A3":628,"B1":2355,"B2":6353,"B3":3198}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=113739, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:15:32.326] Checking precondition...
+[2026-06-28 08:15:32.345] Starting the repair...
+[2026-06-28 08:15:32.362] Found 623 possible bad axioms.
+[2026-06-28 08:15:32.364] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00233 http://purl.obolibrary.org/obo/LMHA_00086).
+[2026-06-28 08:15:32.372] Found 622 possible bad axioms.
+[2026-06-28 08:15:32.372] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00223 http://purl.obolibrary.org/obo/LMHA_00614).
+[2026-06-28 08:15:32.379] Found 621 possible bad axioms.
+[2026-06-28 08:15:32.380] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00694 http://purl.obolibrary.org/obo/LMHA_00242).
+[2026-06-28 08:15:32.388] Found 620 possible bad axioms.
+[2026-06-28 08:15:32.388] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00136 owl:Nothing).
+[2026-06-28 08:15:32.394] Found 619 possible bad axioms.
+[2026-06-28 08:15:32.394] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00142 http://purl.obolibrary.org/obo/LMHA_00693).
+[2026-06-28 08:15:32.405] Found 618 possible bad axioms.
+[2026-06-28 08:15:32.405] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00716 http://purl.obolibrary.org/obo/LMHA_00574).
+[2026-06-28 08:15:32.411] Found 617 possible bad axioms.
+[2026-06-28 08:15:32.411] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00356 http://purl.obolibrary.org/obo/LMHA_00136).
+[2026-06-28 08:15:32.416] Found 616 possible bad axioms.
+[2026-06-28 08:15:32.416] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00185 http://purl.obolibrary.org/obo/LMHA_00161).
+[2026-06-28 08:15:32.421] Found 615 possible bad axioms.
+[2026-06-28 08:15:32.421] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00583 http://purl.obolibrary.org/obo/LMHA_00584).
+[2026-06-28 08:15:32.426] Found 614 possible bad axioms.
+[2026-06-28 08:15:32.426] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00692 http://purl.obolibrary.org/obo/LMHA_00233).
+[2026-06-28 08:15:32.432] Found 613 possible bad axioms.
+[2026-06-28 08:15:32.432] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00164 http://purl.obolibrary.org/obo/LMHA_00524).
+[2026-06-28 08:15:32.444] Found 612 possible bad axioms.
+[2026-06-28 08:15:32.444] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00090 http://purl.obolibrary.org/obo/LMHA_00179).
+[2026-06-28 08:15:32.449] Found 611 possible bad axioms.
+[2026-06-28 08:15:32.45
+...[truncated]
+FAIL: attempt=9 seed=113739 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=9 success=0/100
+----- LUNGMAP_H_CELL attempt=10 seed=127939 at 2026-06-28 08:15:52 -----
+--- stdout ---
+{"seed":127939,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146","iic_values":{},"repair_runtimes_ms":{"A1":856,"A2":6950,"A3":682,"B1":1618,"B2":3492}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/LUNGMAP_H_CELL.owl, seed=127939, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:15:52.938] Checking precondition...
+[2026-06-28 08:15:52.957] Starting the repair...
+[2026-06-28 08:15:52.973] Found 623 possible bad axioms.
+[2026-06-28 08:15:52.975] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00340 http://purl.obolibrary.org/obo/LMHA_00583).
+[2026-06-28 08:15:52.983] Found 622 possible bad axioms.
+[2026-06-28 08:15:52.983] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00356 http://purl.obolibrary.org/obo/LMHA_00209).
+[2026-06-28 08:15:52.990] Found 621 possible bad axioms.
+[2026-06-28 08:15:52.990] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00574 http://purl.obolibrary.org/obo/LMHA_00086).
+[2026-06-28 08:15:52.998] Found 620 possible bad axioms.
+[2026-06-28 08:15:52.998] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00577 http://purl.obolibrary.org/obo/LMHA_00142).
+[2026-06-28 08:15:53.004] Found 619 possible bad axioms.
+[2026-06-28 08:15:53.004] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00137 http://purl.obolibrary.org/obo/LMHA_00135).
+[2026-06-28 08:15:53.014] Found 618 possible bad axioms.
+[2026-06-28 08:15:53.015] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00693 http://purl.obolibrary.org/obo/LMHA_00577).
+[2026-06-28 08:15:53.019] Found 617 possible bad axioms.
+[2026-06-28 08:15:53.020] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00694 http://purl.obolibrary.org/obo/LMHA_00238).
+[2026-06-28 08:15:53.025] Found 616 possible bad axioms.
+[2026-06-28 08:15:53.025] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00630 http://purl.obolibrary.org/obo/LMHA_00242).
+[2026-06-28 08:15:53.030] Found 615 possible bad axioms.
+[2026-06-28 08:15:53.031] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00392 http://purl.obolibrary.org/obo/LMHA_00805).
+[2026-06-28 08:15:53.036] Found 614 possible bad axioms.
+[2026-06-28 08:15:53.036] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00253 http://purl.obolibrary.org/obo/LMHA_00582).
+[2026-06-28 08:15:53.040] Found 613 possible bad axioms.
+[2026-06-28 08:15:53.041] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00716 http://purl.obolibrary.org/obo/LMHA_00574).
+[2026-06-28 08:15:53.051] Found 612 possible bad axioms.
+[2026-06-28 08:15:53.052] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00136 http://purl.obolibrary.org/obo/LMHA_00622).
+[2026-06-28 08:15:53.058] Found 611 possible bad a
+...[truncated]
+FAIL: attempt=10 seed=127939 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+progress: ontology=LUNGMAP_H_CELL attempt=10 success=0/100
+=== ABORTED LUNGMAP_H_CELL after 10 consecutive failures at 2026-06-28 08:16:06 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for LUNGMAP_H_CELL - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=139 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=2 seed=14339 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=3 seed=28539 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=4 seed=42739 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=5 seed=56939 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=6 seed=71139 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=7 seed=85339 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=8 seed=99539 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=9 seed=113739 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+  attempt=10 seed=127939 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

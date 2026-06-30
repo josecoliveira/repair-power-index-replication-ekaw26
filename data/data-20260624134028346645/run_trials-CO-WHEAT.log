@@ -1,0 +1,422 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CO-WHEAT.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CO-WHEAT.csv
+
+=== Starting sequential trials for CO-WHEAT at 2026-06-27 19:19:40 ===
+----- CO-WHEAT attempt=1 seed=124 at 2026-06-27 19:19:40 -----
+--- stdout ---
+{"seed":124,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022","iic_values":{},"repair_runtimes_ms":{"A1":556,"A2":14220,"A3":1144,"B1":583,"B2":7237}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=124, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:19:40.735] Checking precondition...
+[2026-06-27 19:19:40.753] Starting the repair...
+[2026-06-27 19:19:40.762] Found 405 possible bad axioms.
+[2026-06-27 19:19:40.764] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000076 http://purl.obolibrary.org/obo/CO_321_0000133).
+[2026-06-27 19:19:40.774] Found 404 possible bad axioms.
+[2026-06-27 19:19:40.775] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000069 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:19:40.781] Found 403 possible bad axioms.
+[2026-06-27 19:19:40.781] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000020 http://purl.obolibrary.org/obo/CO_321_0000017).
+[2026-06-27 19:19:40.787] Found 402 possible bad axioms.
+[2026-06-27 19:19:40.787] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000002 http://purl.obolibrary.org/obo/CO_321_0000034).
+[2026-06-27 19:19:40.792] Found 401 possible bad axioms.
+[2026-06-27 19:19:40.793] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000170 http://purl.obolibrary.org/obo/CO_321_0000116).
+[2026-06-27 19:19:40.798] Found 400 possible bad axioms.
+[2026-06-27 19:19:40.798] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000008 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:19:40.803] Found 399 possible bad axioms.
+[2026-06-27 19:19:40.803] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000020 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:19:40.813] Found 398 possible bad axioms.
+[2026-06-27 19:19:40.813] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000158 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:19:40.817] Found 397 possible bad axioms.
+[2026-06-27 19:19:40.817] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000046 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:19:40.822] Found 396 possible bad axioms.
+[2026-06-27 19:19:40.822] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000175 http://purl.obolibrary.org/obo/CO_321_0000140).
+[2026-06-27 19:19:40.826] Found 395 possible bad axioms.
+[2026-06-27 19:19:40.827] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000134 http://purl.obolibrary.org/obo/CO_321_0000122).
+[2026-06-27 19:19:40.835] Found 394 possible bad axioms.
+[2026-06-27 19:19:40.836] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000070 http://purl
+...[truncated]
+FAIL: attempt=1 seed=124 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+progress: ontology=CO-WHEAT attempt=1 success=0/100
+----- CO-WHEAT attempt=2 seed=14324 at 2026-06-27 19:20:04 -----
+--- stdout ---
+{"seed":14324,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022","iic_values":{},"repair_runtimes_ms":{"A1":365,"A2":14396,"A3":628,"B1":1710,"B2":8407}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=14324, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:20:04.967] Checking precondition...
+[2026-06-27 19:20:04.985] Starting the repair...
+[2026-06-27 19:20:04.993] Found 405 possible bad axioms.
+[2026-06-27 19:20:04.995] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000018 http://purl.obolibrary.org/obo/CO_321_0000143).
+[2026-06-27 19:20:05.006] Found 404 possible bad axioms.
+[2026-06-27 19:20:05.007] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000092 http://purl.obolibrary.org/obo/CO_321_0000093).
+[2026-06-27 19:20:05.012] Found 403 possible bad axioms.
+[2026-06-27 19:20:05.012] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000149 http://purl.obolibrary.org/obo/CO_321_0000159).
+[2026-06-27 19:20:05.018] Found 402 possible bad axioms.
+[2026-06-27 19:20:05.019] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000013 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:20:05.024] Found 401 possible bad axioms.
+[2026-06-27 19:20:05.024] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000062 http://purl.obolibrary.org/obo/CO_321_0000058).
+[2026-06-27 19:20:05.029] Found 400 possible bad axioms.
+[2026-06-27 19:20:05.029] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000042 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:20:05.033] Found 399 possible bad axioms.
+[2026-06-27 19:20:05.033] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000050 owl:Nothing).
+[2026-06-27 19:20:05.042] Found 398 possible bad axioms.
+[2026-06-27 19:20:05.042] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000154 http://purl.obolibrary.org/obo/CO_321_0000150).
+[2026-06-27 19:20:05.046] Found 397 possible bad axioms.
+[2026-06-27 19:20:05.046] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000164 http://purl.obolibrary.org/obo/CO_321_0000076).
+[2026-06-27 19:20:05.050] Found 396 possible bad axioms.
+[2026-06-27 19:20:05.050] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000082 owl:Nothing).
+[2026-06-27 19:20:05.053] Found 395 possible bad axioms.
+[2026-06-27 19:20:05.053] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000041 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:20:05.063] Found 394 possible bad axioms.
+[2026-06-27 19:20:05.063] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000063 http://purl.obolibrary.org/obo/CO_321_0000141).
+[2026-06-27 19:20:05.067] Fou
+...[truncated]
+FAIL: attempt=2 seed=14324 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+progress: ontology=CO-WHEAT attempt=2 success=0/100
+----- CO-WHEAT attempt=3 seed=28524 at 2026-06-27 19:20:31 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=28524, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:20:31.954] Checking precondition...
+[2026-06-27 19:20:31.971] Starting the repair...
+[2026-06-27 19:20:31.980] Found 405 possible bad axioms.
+[2026-06-27 19:20:31.981] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000124 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:20:31.993] Found 404 possible bad axioms.
+[2026-06-27 19:20:31.994] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000003 http://purl.obolibrary.org/obo/CO_321_0000140).
+[2026-06-27 19:20:31.999] Found 403 possible bad axioms.
+[2026-06-27 19:20:32.000] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000133 http://purl.obolibrary.org/obo/CO_321_0000122).
+[2026-06-27 19:20:32.005] Found 402 possible bad axioms.
+[2026-06-27 19:20:32.005] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000082 http://purl.obolibrary.org/obo/CO_321_0000169).
+[2026-06-27 19:20:32.010] Found 401 possible bad axioms.
+[2026-06-27 19:20:32.011] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000155 owl:Nothing).
+[2026-06-27 19:20:32.015] Found 400 possible bad axioms.
+[2026-06-27 19:20:32.016] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000168 http://purl.obolibrary.org/obo/CO_321_0000134).
+[2026-06-27 19:20:32.021] Found 399 possible bad axioms.
+[2026-06-27 19:20:32.021] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000021 http://purl.obolibrary.org/obo/CO_321_0000060).
+[2026-06-27 19:20:32.029] Found 398 possible bad axioms.
+[2026-06-27 19:20:32.030] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000153 http://purl.obolibrary.org/obo/CO_321_0000150).
+[2026-06-27 19:20:32.033] Found 397 possible bad axioms.
+[2026-06-27 19:20:32.033] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000084 http://purl.obolibrary.org/obo/CO_321_0000089).
+[2026-06-27 19:20:32.037] Found 396 possible bad axioms.
+[2026-06-27 19:20:32.037] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000174 http://purl.obolibrary.org/obo/CO_321_0000072).
+[2026-06-27 19:20:32.041] Found 395 possible bad axioms.
+[2026-06-27 19:20:32.041] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000122 owl:Nothing).
+[2026-06-27 19:20:32.050] Found 394 possible bad axioms.
+[2026-06-27 19:20:32.050] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000170 http://purl.obolibrary.org/obo/CO_321_0000116).
+[2026-06-27 19:20:32.054] Fou
+...[truncated]
+FAIL: attempt=3 seed=28524 - negative return code -9
+progress: ontology=CO-WHEAT attempt=3 success=0/100
+----- CO-WHEAT attempt=4 seed=42724 at 2026-06-27 19:21:50 -----
+--- stdout ---
+{"seed":42724,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022","iic_values":{},"repair_runtimes_ms":{"A1":509,"A2":14048,"A3":762,"B1":634,"B2":8528}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=42724, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:21:50.951] Checking precondition...
+[2026-06-27 19:21:50.969] Starting the repair...
+[2026-06-27 19:21:50.978] Found 405 possible bad axioms.
+[2026-06-27 19:21:50.981] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000043 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:21:50.992] Found 404 possible bad axioms.
+[2026-06-27 19:21:50.992] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000006 http://purl.obolibrary.org/obo/CO_321_0000143).
+[2026-06-27 19:21:50.998] Found 403 possible bad axioms.
+[2026-06-27 19:21:50.998] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000155 http://purl.obolibrary.org/obo/CO_321_0000151).
+[2026-06-27 19:21:51.004] Found 402 possible bad axioms.
+[2026-06-27 19:21:51.004] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000032 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:21:51.010] Found 401 possible bad axioms.
+[2026-06-27 19:21:51.010] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000088 http://purl.obolibrary.org/obo/CO_321_0000089).
+[2026-06-27 19:21:51.016] Found 400 possible bad axioms.
+[2026-06-27 19:21:51.016] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000067 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:21:51.021] Found 399 possible bad axioms.
+[2026-06-27 19:21:51.021] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000139 http://purl.obolibrary.org/obo/CO_321_0000109).
+[2026-06-27 19:21:51.031] Found 398 possible bad axioms.
+[2026-06-27 19:21:51.032] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000077 http://purl.obolibrary.org/obo/CO_321_0000173).
+[2026-06-27 19:21:51.036] Found 397 possible bad axioms.
+[2026-06-27 19:21:51.036] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000038 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:21:51.040] Found 396 possible bad axioms.
+[2026-06-27 19:21:51.040] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000021 http://purl.obolibrary.org/obo/CO_321_0000060).
+[2026-06-27 19:21:51.045] Found 395 possible bad axioms.
+[2026-06-27 19:21:51.045] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000037 http://purl.obolibrary.org/obo/CO_321_0000043).
+[2026-06-27 19:21:51.054] Found 394 possible bad axioms.
+[2026-06-27 19:21:51.055] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000089 http://pu
+...[truncated]
+FAIL: attempt=4 seed=42724 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+progress: ontology=CO-WHEAT attempt=4 success=0/100
+----- CO-WHEAT attempt=5 seed=56924 at 2026-06-27 19:22:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=56924, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:22:17.792] Checking precondition...
+[2026-06-27 19:22:17.809] Starting the repair...
+[2026-06-27 19:22:17.818] Found 405 possible bad axioms.
+[2026-06-27 19:22:17.820] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000011 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:22:17.830] Found 404 possible bad axioms.
+[2026-06-27 19:22:17.831] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000069 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:22:17.837] Found 403 possible bad axioms.
+[2026-06-27 19:22:17.837] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000132 http://purl.obolibrary.org/obo/CO_321_0000076).
+[2026-06-27 19:22:17.843] Found 402 possible bad axioms.
+[2026-06-27 19:22:17.843] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000075 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:22:17.849] Found 401 possible bad axioms.
+[2026-06-27 19:22:17.849] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000137 http://purl.obolibrary.org/obo/CO_321_0000122).
+[2026-06-27 19:22:17.855] Found 400 possible bad axioms.
+[2026-06-27 19:22:17.855] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000059 http://purl.obolibrary.org/obo/CO_321_0000123).
+[2026-06-27 19:22:17.859] Found 399 possible bad axioms.
+[2026-06-27 19:22:17.860] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000028 http://purl.obolibrary.org/obo/CO_321_0000175).
+[2026-06-27 19:22:17.869] Found 398 possible bad axioms.
+[2026-06-27 19:22:17.869] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000121 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:22:17.874] Found 397 possible bad axioms.
+[2026-06-27 19:22:17.874] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000028 http://purl.obolibrary.org/obo/CO_321_0000140).
+[2026-06-27 19:22:17.878] Found 396 possible bad axioms.
+[2026-06-27 19:22:17.878] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000077 owl:Nothing).
+[2026-06-27 19:22:17.882] Found 395 possible bad axioms.
+[2026-06-27 19:22:17.882] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000055 http://purl.obolibrary.org/obo/CO_321_0000021).
+[2026-06-27 19:22:17.891] Found 394 possible bad axioms.
+[2026-06-27 19:22:17.892] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000145 http://purl.obolibrary.org/obo/CO_321_00000
+...[truncated]
+FAIL: attempt=5 seed=56924 - negative return code -9
+progress: ontology=CO-WHEAT attempt=5 success=0/100
+----- CO-WHEAT attempt=6 seed=71124 at 2026-06-27 19:23:35 -----
+--- stdout ---
+{"seed":71124,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022","iic_values":{},"repair_runtimes_ms":{"A1":337,"A2":14371,"A3":608,"B1":2219,"B2":7177}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=71124, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:23:35.477] Checking precondition...
+[2026-06-27 19:23:35.496] Starting the repair...
+[2026-06-27 19:23:35.505] Found 405 possible bad axioms.
+[2026-06-27 19:23:35.507] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000103 http://purl.obolibrary.org/obo/CO_321_0000136).
+[2026-06-27 19:23:35.518] Found 404 possible bad axioms.
+[2026-06-27 19:23:35.519] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000076 http://purl.obolibrary.org/obo/CO_321_0000136).
+[2026-06-27 19:23:35.525] Found 403 possible bad axioms.
+[2026-06-27 19:23:35.525] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000020 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:23:35.531] Found 402 possible bad axioms.
+[2026-06-27 19:23:35.531] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000076 http://purl.obolibrary.org/obo/CO_321_0000133).
+[2026-06-27 19:23:35.537] Found 401 possible bad axioms.
+[2026-06-27 19:23:35.537] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000059 http://purl.obolibrary.org/obo/CO_321_0000123).
+[2026-06-27 19:23:35.542] Found 400 possible bad axioms.
+[2026-06-27 19:23:35.543] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000155 owl:Nothing).
+[2026-06-27 19:23:35.548] Found 399 possible bad axioms.
+[2026-06-27 19:23:35.548] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000027 http://purl.obolibrary.org/obo/CO_321_0000035).
+[2026-06-27 19:23:35.557] Found 398 possible bad axioms.
+[2026-06-27 19:23:35.557] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000090 http://purl.obolibrary.org/obo/CO_321_0000083).
+[2026-06-27 19:23:35.562] Found 397 possible bad axioms.
+[2026-06-27 19:23:35.562] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000033 http://purl.obolibrary.org/obo/CO_321_0000048).
+[2026-06-27 19:23:35.566] Found 396 possible bad axioms.
+[2026-06-27 19:23:35.566] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000059 owl:Nothing).
+[2026-06-27 19:23:35.570] Found 395 possible bad axioms.
+[2026-06-27 19:23:35.571] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000010 http://purl.obolibrary.org/obo/CO_321_0000009).
+[2026-06-27 19:23:35.580] Found 394 possible bad axioms.
+[2026-06-27 19:23:35.580] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000155 http://purl.obolibrary.org/obo/CO_321_0000156).
+[2026-06-27 19:23:35.584] Fou
+...[truncated]
+FAIL: attempt=6 seed=71124 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+progress: ontology=CO-WHEAT attempt=6 success=0/100
+----- CO-WHEAT attempt=7 seed=85324 at 2026-06-27 19:24:00 -----
+--- stdout ---
+{"seed":85324,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":611,"A2":14240,"A3":2449,"B1":1802,"B2":8845,"B3":11052,"B4":264}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=85324, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:24:00.657] Checking precondition...
+[2026-06-27 19:24:00.674] Starting the repair...
+[2026-06-27 19:24:00.683] Found 405 possible bad axioms.
+[2026-06-27 19:24:00.685] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000089 http://purl.obolibrary.org/obo/CO_321_0000139).
+[2026-06-27 19:24:00.696] Found 404 possible bad axioms.
+[2026-06-27 19:24:00.696] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000002 http://purl.obolibrary.org/obo/CO_321_0000045).
+[2026-06-27 19:24:00.702] Found 403 possible bad axioms.
+[2026-06-27 19:24:00.703] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000057 http://purl.obolibrary.org/obo/CO_321_0000058).
+[2026-06-27 19:24:00.709] Found 402 possible bad axioms.
+[2026-06-27 19:24:00.709] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000126 http://purl.obolibrary.org/obo/CO_321_0000076).
+[2026-06-27 19:24:00.714] Found 401 possible bad axioms.
+[2026-06-27 19:24:00.714] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000031 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:24:00.719] Found 400 possible bad axioms.
+[2026-06-27 19:24:00.720] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000139 http://purl.obolibrary.org/obo/CO_321_0000089).
+[2026-06-27 19:24:00.725] Found 399 possible bad axioms.
+[2026-06-27 19:24:00.725] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000001 http://purl.obolibrary.org/obo/CO_321_0000145).
+[2026-06-27 19:24:00.733] Found 398 possible bad axioms.
+[2026-06-27 19:24:00.734] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000134 owl:Nothing).
+[2026-06-27 19:24:00.737] Found 397 possible bad axioms.
+[2026-06-27 19:24:00.737] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000151 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:24:00.741] Found 396 possible bad axioms.
+[2026-06-27 19:24:00.741] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000100 http://purl.obolibrary.org/obo/CO_321_0000098).
+[2026-06-27 19:24:00.744] Found 395 possible bad axioms.
+[2026-06-27 19:24:00.744] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000007 http://purl.obolibrary.org/obo/CO_321_0000019).
+[2026-06-27 19:24:00.754] Found 394 possible bad axioms.
+[2026-06-27 19:24:00.754] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000024 http://purl.obolibrary.org/obo/CO_321_00000
+...[truncated]
+FAIL: attempt=7 seed=85324 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=CO-WHEAT attempt=7 success=0/100
+----- CO-WHEAT attempt=8 seed=99524 at 2026-06-27 19:24:40 -----
+--- stdout ---
+{"seed":99524,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022","iic_values":{},"repair_runtimes_ms":{"A1":271,"A2":14379,"A3":782,"B1":1157,"B2":7514}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=99524, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:24:40.600] Checking precondition...
+[2026-06-27 19:24:40.617] Starting the repair...
+[2026-06-27 19:24:40.625] Found 405 possible bad axioms.
+[2026-06-27 19:24:40.627] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000001 http://purl.obolibrary.org/obo/CO_321_0000019).
+[2026-06-27 19:24:40.637] Found 404 possible bad axioms.
+[2026-06-27 19:24:40.638] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000076 http://purl.obolibrary.org/obo/CO_321_0000136).
+[2026-06-27 19:24:40.644] Found 403 possible bad axioms.
+[2026-06-27 19:24:40.644] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000080 http://purl.obolibrary.org/obo/CO_321_0000076).
+[2026-06-27 19:24:40.651] Found 402 possible bad axioms.
+[2026-06-27 19:24:40.651] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000122 owl:Nothing).
+[2026-06-27 19:24:40.656] Found 401 possible bad axioms.
+[2026-06-27 19:24:40.656] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000123 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:24:40.660] Found 400 possible bad axioms.
+[2026-06-27 19:24:40.661] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000152 http://purl.obolibrary.org/obo/CO_321_0000150).
+[2026-06-27 19:24:40.665] Found 399 possible bad axioms.
+[2026-06-27 19:24:40.665] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000157 http://purl.obolibrary.org/obo/CO_321_0000155).
+[2026-06-27 19:24:40.674] Found 398 possible bad axioms.
+[2026-06-27 19:24:40.674] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000101 http://purl.obolibrary.org/obo/CO_321_0000098).
+[2026-06-27 19:24:40.678] Found 397 possible bad axioms.
+[2026-06-27 19:24:40.678] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000055 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:24:40.682] Found 396 possible bad axioms.
+[2026-06-27 19:24:40.683] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000137 http://purl.obolibrary.org/obo/CO_321_0000139).
+[2026-06-27 19:24:40.686] Found 395 possible bad axioms.
+[2026-06-27 19:24:40.686] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000099 http://purl.obolibrary.org/obo/CO_321_0000100).
+[2026-06-27 19:24:40.697] Found 394 possible bad axioms.
+[2026-06-27 19:24:40.697] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000047 http://purl.obolibrary.org/obo/CO_321_00000
+...[truncated]
+FAIL: attempt=8 seed=99524 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+progress: ontology=CO-WHEAT attempt=8 success=0/100
+----- CO-WHEAT attempt=9 seed=113724 at 2026-06-27 19:25:04 -----
+--- stdout ---
+{"seed":113724,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022","iic_values":{},"repair_runtimes_ms":{"A1":346,"A2":14235,"A3":617,"B1":551,"B2":13823}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=113724, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:25:05.186] Checking precondition...
+[2026-06-27 19:25:05.203] Starting the repair...
+[2026-06-27 19:25:05.212] Found 405 possible bad axioms.
+[2026-06-27 19:25:05.214] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000137 http://purl.obolibrary.org/obo/CO_321_0000134).
+[2026-06-27 19:25:05.224] Found 404 possible bad axioms.
+[2026-06-27 19:25:05.224] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000028 http://purl.obolibrary.org/obo/CO_321_0000153).
+[2026-06-27 19:25:05.231] Found 403 possible bad axioms.
+[2026-06-27 19:25:05.231] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000122 http://purl.obolibrary.org/obo/CO_321_0000082).
+[2026-06-27 19:25:05.237] Found 402 possible bad axioms.
+[2026-06-27 19:25:05.237] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000113 http://purl.obolibrary.org/obo/CO_321_0000161).
+[2026-06-27 19:25:05.243] Found 401 possible bad axioms.
+[2026-06-27 19:25:05.243] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000002 http://purl.obolibrary.org/obo/CO_321_0000004).
+[2026-06-27 19:25:05.249] Found 400 possible bad axioms.
+[2026-06-27 19:25:05.249] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000145 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:25:05.253] Found 399 possible bad axioms.
+[2026-06-27 19:25:05.254] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000023 http://purl.obolibrary.org/obo/CO_321_0000022).
+[2026-06-27 19:25:05.262] Found 398 possible bad axioms.
+[2026-06-27 19:25:05.262] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000057 http://purl.obolibrary.org/obo/CO_321_0000058).
+[2026-06-27 19:25:05.267] Found 397 possible bad axioms.
+[2026-06-27 19:25:05.267] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000089 http://purl.obolibrary.org/obo/CO_321_0000139).
+[2026-06-27 19:25:05.272] Found 396 possible bad axioms.
+[2026-06-27 19:25:05.272] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000020 http://purl.obolibrary.org/obo/CO_321_0000017).
+[2026-06-27 19:25:05.275] Found 395 possible bad axioms.
+[2026-06-27 19:25:05.275] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000109 http://purl.obolibrary.org/obo/CO_321_0000110).
+[2026-06-27 19:25:05.283] Found 394 possible bad axioms.
+[2026-06-27 19:25:05.283] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000160 http://p
+...[truncated]
+FAIL: attempt=9 seed=113724 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+progress: ontology=CO-WHEAT attempt=9 success=0/100
+----- CO-WHEAT attempt=10 seed=127924 at 2026-06-27 19:25:34 -----
+--- stdout ---
+{"seed":127924,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022","iic_values":{},"repair_runtimes_ms":{"A1":436,"A2":14196,"A3":1147,"B1":576,"B2":15741,"B3":9578,"B4":175,"B5":15413}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CO-WHEAT.owl, seed=127924, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:25:35.277] Checking precondition...
+[2026-06-27 19:25:35.296] Starting the repair...
+[2026-06-27 19:25:35.305] Found 405 possible bad axioms.
+[2026-06-27 19:25:35.307] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000137 http://purl.obolibrary.org/obo/CO_321_0000139).
+[2026-06-27 19:25:35.318] Found 404 possible bad axioms.
+[2026-06-27 19:25:35.318] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000002 http://purl.obolibrary.org/obo/CO_321_0000061).
+[2026-06-27 19:25:35.324] Found 403 possible bad axioms.
+[2026-06-27 19:25:35.324] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000022 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:25:35.330] Found 402 possible bad axioms.
+[2026-06-27 19:25:35.331] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000172 http://purl.obolibrary.org/obo/CO_321_0000116).
+[2026-06-27 19:25:35.336] Found 401 possible bad axioms.
+[2026-06-27 19:25:35.337] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000136 http://purl.obolibrary.org/obo/CO_321_0000114).
+[2026-06-27 19:25:35.342] Found 400 possible bad axioms.
+[2026-06-27 19:25:35.342] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000050 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:25:35.346] Found 399 possible bad axioms.
+[2026-06-27 19:25:35.347] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000150 http://purl.obolibrary.org/obo/CO_321_0000064).
+[2026-06-27 19:25:35.355] Found 398 possible bad axioms.
+[2026-06-27 19:25:35.355] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000013 http://purl.obolibrary.org/obo/CO_321_0000001).
+[2026-06-27 19:25:35.360] Found 397 possible bad axioms.
+[2026-06-27 19:25:35.360] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000001 http://purl.obolibrary.org/obo/CO_321_0000003).
+[2026-06-27 19:25:35.364] Found 396 possible bad axioms.
+[2026-06-27 19:25:35.364] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000097 http://purl.obolibrary.org/obo/CO_321_0000082).
+[2026-06-27 19:25:35.368] Found 395 possible bad axioms.
+[2026-06-27 19:25:35.368] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000054 http://purl.obolibrary.org/obo/CO_321_0000002).
+[2026-06-27 19:25:35.377] Found 394 possible bad axioms.
+[2026-06-27 19:25:35.377] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CO_321_0000001 http://p
+...[truncated]
+FAIL: attempt=10 seed=127924 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+progress: ontology=CO-WHEAT attempt=10 success=0/100
+=== ABORTED CO-WHEAT after 10 consecutive failures at 2026-06-27 19:26:34 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CO-WHEAT - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=124 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+  attempt=2 seed=14324 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+  attempt=3 seed=28524 msg=negative return code -9
+  attempt=4 seed=42724 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+  attempt=5 seed=56924 msg=negative return code -9
+  attempt=6 seed=71124 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+  attempt=7 seed=85324 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=8 seed=99524 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+  attempt=9 seed=113724 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+  attempt=10 seed=127924 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=2 total_seconds=156.844006 avg_seconds=78.422003
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

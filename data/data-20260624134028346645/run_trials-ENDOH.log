@@ -1,0 +1,487 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ENDOH.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ENDOH.csv
+
+=== Starting sequential trials for ENDOH at 2026-06-27 01:19:35 ===
+----- ENDOH attempt=1 seed=97 at 2026-06-27 01:19:35 -----
+--- stdout ---
+{"seed":97,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Exposure_to_pollutants_home ⊑ Agriculture_pesticide_Exposure","iic_values":{},"repair_runtimes_ms":{"A1":137,"A2":5556,"A3":1579,"B1":817,"B2":3917}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=97, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:19:36.209] Checking precondition...
+[2026-06-27 01:19:36.226] Starting the repair...
+[2026-06-27 01:19:36.234] Found 243 possible bad axioms.
+[2026-06-27 01:19:36.235] Selected the bad axiom SubClassOf(Cleaning_chemical_risk owl:Nothing).
+[2026-06-27 01:19:36.240] Found 242 possible bad axioms.
+[2026-06-27 01:19:36.240] Selected the bad axiom SubClassOf(Access_to_clean_bathrooms_at_work policy_governance_effect).
+[2026-06-27 01:19:36.245] Found 241 possible bad axioms.
+[2026-06-27 01:19:36.245] Selected the bad axiom SubClassOf(acid_rain owl:Nothing).
+[2026-06-27 01:19:36.254] Found 240 possible bad axioms.
+[2026-06-27 01:19:36.254] Selected the bad axiom SubClassOf(Respiratory_disease Chronic_Disease).
+[2026-06-27 01:19:36.259] Found 239 possible bad axioms.
+[2026-06-27 01:19:36.259] Selected the bad axiom SubClassOf(Marine_pollution Organic_pollutants).
+[2026-06-27 01:19:36.263] Found 238 possible bad axioms.
+[2026-06-27 01:19:36.263] Selected the bad axiom SubClassOf(Airborne_disease_transmission_in_public_spaces owl:Nothing).
+[2026-06-27 01:19:36.266] Found 237 possible bad axioms.
+[2026-06-27 01:19:36.266] Selected the bad axiom SubClassOf(Lead_pipes_workplace Exposure_to_pollutants_workplace).
+[2026-06-27 01:19:36.270] Found 236 possible bad axioms.
+[2026-06-27 01:19:36.270] Selected the bad axiom SubClassOf(Indoor_heat_stress_in_workplace Access_to_clean_bathrooms_at_work).
+[2026-06-27 01:19:36.274] Found 235 possible bad axioms.
+[2026-06-27 01:19:36.274] Selected the bad axiom SubClassOf(Contaminants_in_public_water_source Clean_sanitation_facility).
+[2026-06-27 01:19:36.277] Found 234 possible bad axioms.
+[2026-06-27 01:19:36.277] Selected the bad axiom SubClassOf(Agriculture_pesticide_Exposure Exposure_to_pollutants_workplace).
+[2026-06-27 01:19:36.281] Found 233 possible bad axioms.
+[2026-06-27 01:19:36.281] Selected the bad axiom SubClassOf(Rising_sea_level Desertification).
+[2026-06-27 01:19:36.289] Found 232 possible bad axioms.
+[2026-06-27 01:19:36.289] Selected the bad axiom SubClassOf(Physical_safety_measures_in_workplace At_the_macroenvironmental_level).
+[2026-06-27 01:19:36.293] Found 231 possible bad axioms.
+[2026-06-27 01:19:36.293] Selected the bad axiom SubClassOf(Home_as_microenvironment owl:Nothing).
+[2026-06-27 01:19:36.301] Found 230 possible bad axioms.
+[2026-06-27 01:19:36.301] Selected the bad axiom SubClassOf(Home_as_microenvironment Local_community_infrastructre).
+[2026-06-27 01:19:36.305] Found 229 possible bad axioms.
+[2026-06-27 01:19:36.305] Selected the bad axiom SubClassOf(At_the_global_level Rising_s
+...[truncated]
+FAIL: attempt=1 seed=97 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Exposure_to_pollutants_home ⊑ Agriculture_pesticide_Exposure
+progress: ontology=ENDOH attempt=1 success=0/100
+----- ENDOH attempt=2 seed=14297 at 2026-06-27 01:19:48 -----
+--- stdout ---
+{"seed":14297,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Lung_cancer ⊑ toxin_induced_cancer_risk","iic_values":{},"repair_runtimes_ms":{"A1":91,"A2":5522,"A3":1487,"B1":802,"B2":4096}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=14297, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:19:48.791] Checking precondition...
+[2026-06-27 01:19:48.809] Starting the repair...
+[2026-06-27 01:19:48.818] Found 243 possible bad axioms.
+[2026-06-27 01:19:48.819] Selected the bad axiom SubClassOf(Exposure_to_hazards_lifestyle_factors Exposure_to_toxins_workplace).
+[2026-06-27 01:19:48.825] Found 242 possible bad axioms.
+[2026-06-27 01:19:48.825] Selected the bad axiom SubClassOf(Exposure_to_toxins_home At_the_Individual_level).
+[2026-06-27 01:19:48.830] Found 241 possible bad axioms.
+[2026-06-27 01:19:48.830] Selected the bad axiom SubClassOf(Clean_sanitation_facility Local_community_infrastructre).
+[2026-06-27 01:19:48.838] Found 240 possible bad axioms.
+[2026-06-27 01:19:48.838] Selected the bad axiom SubClassOf(Lead_pipes_community Access_to_clean_Water).
+[2026-06-27 01:19:48.842] Found 239 possible bad axioms.
+[2026-06-27 01:19:48.842] Selected the bad axiom SubClassOf(Infectious_disease Chronic_Disease).
+[2026-06-27 01:19:48.846] Found 238 possible bad axioms.
+[2026-06-27 01:19:48.847] Selected the bad axiom SubClassOf(Access_to_clean_Water Clean_sanitation_facility).
+[2026-06-27 01:19:48.850] Found 237 possible bad axioms.
+[2026-06-27 01:19:48.851] Selected the bad axiom SubClassOf(Flood_control_mechanisms Local_community_infrastructre).
+[2026-06-27 01:19:48.856] Found 236 possible bad axioms.
+[2026-06-27 01:19:48.857] Selected the bad axiom SubClassOf(regulations_on_water_quality policy_governance_effect).
+[2026-06-27 01:19:48.860] Found 235 possible bad axioms.
+[2026-06-27 01:19:48.860] Selected the bad axiom SubClassOf(Community_noise_pollution Local_community_infrastructre).
+[2026-06-27 01:19:48.863] Found 234 possible bad axioms.
+[2026-06-27 01:19:48.864] Selected the bad axiom SubClassOf(Access_to_clean_bathrooms_at_work regulations_on_water_quality).
+[2026-06-27 01:19:48.866] Found 233 possible bad axioms.
+[2026-06-27 01:19:48.866] Selected the bad axiom SubClassOf(Carbon_monoxide_Exposure Exposure_to_pollutants_home).
+[2026-06-27 01:19:48.874] Found 232 possible bad axioms.
+[2026-06-27 01:19:48.874] Selected the bad axiom SubClassOf(Agriculture_pesticide_Exposure Lung_cancer).
+[2026-06-27 01:19:48.877] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 01:19:48.878] Checking precondition...
+[2026-06-27 01:19:48.891] Starting the repair...
+[2026-06-27 01:19:54.399] Found 9 possible bad axioms.
+[2026-06-27 01:19:54.399] Selected the bad axiom SubClassOf(Exposure_to_hazards_lifestyle_factors Exposure_to_pollutants_home).
+[2026-06-27 01:19:54.401] Finished repairing the ontolo
+...[truncated]
+FAIL: attempt=2 seed=14297 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Lung_cancer ⊑ toxin_induced_cancer_risk
+progress: ontology=ENDOH attempt=2 success=0/100
+----- ENDOH attempt=3 seed=28497 at 2026-06-27 01:20:01 -----
+--- stdout ---
+{"seed":28497,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Environmental_Determinants_of_Health ⊑ Construction_dust_hazrad","iic_values":{},"repair_runtimes_ms":{"A1":233,"A2":5476,"A3":872,"B1":814,"B2":1719}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=28497, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:20:01.419] Checking precondition...
+[2026-06-27 01:20:01.435] Starting the repair...
+[2026-06-27 01:20:01.443] Found 243 possible bad axioms.
+[2026-06-27 01:20:01.445] Selected the bad axiom SubClassOf(Home_as_microenvironment workplace_as_macroenvironment).
+[2026-06-27 01:20:01.450] Found 242 possible bad axioms.
+[2026-06-27 01:20:01.450] Selected the bad axiom SubClassOf(Lead_pipes_community Access_to_clean_Water).
+[2026-06-27 01:20:01.455] Found 241 possible bad axioms.
+[2026-06-27 01:20:01.455] Selected the bad axiom SubClassOf(Accessibility_to_cleanstreets Built_in_environment).
+[2026-06-27 01:20:01.463] Found 240 possible bad axioms.
+[2026-06-27 01:20:01.463] Selected the bad axiom SubClassOf(Exposure_to_pollutants_home At_the_Individual_level).
+[2026-06-27 01:20:01.467] Found 239 possible bad axioms.
+[2026-06-27 01:20:01.467] Selected the bad axiom SubClassOf(Contaminants_in_public_water_source Lung_cancer).
+[2026-06-27 01:20:01.472] Found 238 possible bad axioms.
+[2026-06-27 01:20:01.472] Selected the bad axiom SubClassOf(Community_noise_pollution owl:Nothing).
+[2026-06-27 01:20:01.476] Found 237 possible bad axioms.
+[2026-06-27 01:20:01.476] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(affect_of Chronic_Disease)).
+[2026-06-27 01:20:01.481] Found 236 possible bad axioms.
+[2026-06-27 01:20:01.481] Selected the bad axiom SubClassOf(Arsenic_drinking_Water Microplastic_drinking_Water).
+[2026-06-27 01:20:01.485] Found 235 possible bad axioms.
+[2026-06-27 01:20:01.485] Selected the bad axiom SubClassOf(regulations_on_air_Quality policy_governance_effect).
+[2026-06-27 01:20:01.488] Found 234 possible bad axioms.
+[2026-06-27 01:20:01.488] Selected the bad axiom SubClassOf(Access_to_clean_bathrooms_at_work policy_governance_effect).
+[2026-06-27 01:20:01.492] Found 233 possible bad axioms.
+[2026-06-27 01:20:01.492] Selected the bad axiom SubClassOf(Access_to_clean_bathrooms_at_work owl:Nothing).
+[2026-06-27 01:20:01.501] Found 232 possible bad axioms.
+[2026-06-27 01:20:01.501] Selected the bad axiom SubClassOf(Climatic_changes Extreme_weather_Events).
+[2026-06-27 01:20:01.504] Found 231 possible bad axioms.
+[2026-06-27 01:20:01.504] Selected the bad axiom SubClassOf(Exposure_to_pollutants_workplace Exposure_to_toxins_workplace).
+[2026-06-27 01:20:01.513] Found 230 possible bad axioms.
+[2026-06-27 01:20:01.513] Selected the bad axiom SubClassOf(At_the_mesoenvironmental_level Environmental_Determinants_of_Health).
+[2026-06-27 01:20:01.517] Found 229 possible bad axioms.
+[2026-06-27 01:20:01.517] Selected the bad axiom Su
+...[truncated]
+FAIL: attempt=3 seed=28497 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Environmental_Determinants_of_Health ⊑ Construction_dust_hazrad
+progress: ontology=ENDOH attempt=3 success=0/100
+----- ENDOH attempt=4 seed=42697 at 2026-06-27 01:20:10 -----
+--- stdout ---
+{"seed":42697,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Environmental_Determinants_of_Health","iic_values":{},"repair_runtimes_ms":{"A1":172,"A2":5544,"A3":829,"B1":840,"B2":2605}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=42697, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:20:10.968] Checking precondition...
+[2026-06-27 01:20:10.985] Starting the repair...
+[2026-06-27 01:20:10.993] Found 243 possible bad axioms.
+[2026-06-27 01:20:10.994] Selected the bad axiom SubClassOf(Accessibility_to_cleanstreets Accesbility_to_transportation).
+[2026-06-27 01:20:10.999] Found 242 possible bad axioms.
+[2026-06-27 01:20:10.999] Selected the bad axiom SubClassOf(Exposure_to_pollutants_workplace At_the_Individual_level).
+[2026-06-27 01:20:11.003] Found 241 possible bad axioms.
+[2026-06-27 01:20:11.004] Selected the bad axiom SubClassOf(Paint_chemical_inhalation Industrial_noise_pollution).
+[2026-06-27 01:20:11.012] Found 240 possible bad axioms.
+[2026-06-27 01:20:11.013] Selected the bad axiom SubClassOf(Unregulated_cosmetic_use At_the_Individual_level).
+[2026-06-27 01:20:11.017] Found 239 possible bad axioms.
+[2026-06-27 01:20:11.017] Selected the bad axiom SubClassOf(Contaminants_in_public_water_source Clean_sanitation_facility).
+[2026-06-27 01:20:11.021] Found 238 possible bad axioms.
+[2026-06-27 01:20:11.021] Selected the bad axiom SubClassOf(Physical_safety_measures_in_workplace At_the_macroenvironmental_level).
+[2026-06-27 01:20:11.025] Found 237 possible bad axioms.
+[2026-06-27 01:20:11.026] Selected the bad axiom SubClassOf(Microplastic_drinking_Water Exposure_to_toxins_home).
+[2026-06-27 01:20:11.030] Found 236 possible bad axioms.
+[2026-06-27 01:20:11.030] Selected the bad axiom SubClassOf(Thermal_comfort_in_home Home_as_microenvironment).
+[2026-06-27 01:20:11.033] Found 235 possible bad axioms.
+[2026-06-27 01:20:11.033] Selected the bad axiom SubClassOf(Level_of_pollution At_the_mesoenvironmental_level).
+[2026-06-27 01:20:11.037] Found 234 possible bad axioms.
+[2026-06-27 01:20:11.037] Selected the bad axiom SubClassOf(Indoor_air_purification Home_as_microenvironment).
+[2026-06-27 01:20:11.040] Found 233 possible bad axioms.
+[2026-06-27 01:20:11.041] Selected the bad axiom SubClassOf(Cleaning_chemical_risk Lead_pipes_at_home).
+[2026-06-27 01:20:11.049] Found 232 possible bad axioms.
+[2026-06-27 01:20:11.049] Selected the bad axiom SubClassOf(workplace_as_macroenvironment At_the_microenvironmental_level).
+[2026-06-27 01:20:11.052] Found 231 possible bad axioms.
+[2026-06-27 01:20:11.052] Selected the bad axiom SubClassOf(Extreme_weather_Events Trans_boundary_pollution).
+[2026-06-27 01:20:11.060] Found 230 possible bad axioms.
+[2026-06-27 01:20:11.060] Selected the bad axiom SubClassOf(Access_to_nutritious_food Local_community_infrastructre).
+[2026-06-27 01:20:11.063] Found 229 possible bad axioms.
+[2026-06-27 01
+...[truncated]
+FAIL: attempt=4 seed=42697 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Environmental_Determinants_of_Health
+progress: ontology=ENDOH attempt=4 success=0/100
+----- ENDOH attempt=5 seed=56897 at 2026-06-27 01:20:21 -----
+--- stdout ---
+{"seed":56897,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: toxin_induced_cancer_risk ⊑ Chronic_Disease","iic_values":{},"repair_runtimes_ms":{"A1":156,"A2":5526,"A3":1913,"B1":1680,"B2":4036}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=56897, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:20:21.408] Checking precondition...
+[2026-06-27 01:20:21.424] Starting the repair...
+[2026-06-27 01:20:21.431] Found 243 possible bad axioms.
+[2026-06-27 01:20:21.432] Selected the bad axiom SubClassOf(Lead_pipes_workplace Exposure_to_pollutants_workplace).
+[2026-06-27 01:20:21.437] Found 242 possible bad axioms.
+[2026-06-27 01:20:21.438] Selected the bad axiom SubClassOf(Accessibility_to_cleanstreets accesibility_to_recreational_area).
+[2026-06-27 01:20:21.442] Found 241 possible bad axioms.
+[2026-06-27 01:20:21.443] Selected the bad axiom SubClassOf(Exposure_to_synthetic_materials Home_as_microenvironment).
+[2026-06-27 01:20:21.452] Found 240 possible bad axioms.
+[2026-06-27 01:20:21.452] Selected the bad axiom SubClassOf(Exposure_to_toxins_home Alcohol_consumption_effects).
+[2026-06-27 01:20:21.457] Found 239 possible bad axioms.
+[2026-06-27 01:20:21.457] Selected the bad axiom SubClassOf(Health_outcomes At_the_mesoenvironmental_level).
+[2026-06-27 01:20:21.461] Found 238 possible bad axioms.
+[2026-06-27 01:20:21.462] Selected the bad axiom SubClassOf(Accessibility_to_cleanstreets Built_in_environment).
+[2026-06-27 01:20:21.465] Found 237 possible bad axioms.
+[2026-06-27 01:20:21.465] Selected the bad axiom SubClassOf(Airborne_disease_transmission_in_public_spaces owl:Nothing).
+[2026-06-27 01:20:21.469] Found 236 possible bad axioms.
+[2026-06-27 01:20:21.469] Selected the bad axiom SubClassOf(Public_green_spaces Local_community_infrastructre).
+[2026-06-27 01:20:21.473] Found 235 possible bad axioms.
+[2026-06-27 01:20:21.473] Selected the bad axiom SubClassOf(Infectious_disease Respiratory_disease).
+[2026-06-27 01:20:21.476] Found 234 possible bad axioms.
+[2026-06-27 01:20:21.476] Selected the bad axiom SubClassOf(Extreme_weather_Events Trans_boundary_pollution).
+[2026-06-27 01:20:21.479] Found 233 possible bad axioms.
+[2026-06-27 01:20:21.480] Selected the bad axiom SubClassOf(Health_outcomes Tobacco_smoking_impact).
+[2026-06-27 01:20:21.488] Found 232 possible bad axioms.
+[2026-06-27 01:20:21.488] Selected the bad axiom SubClassOf(Trans_boundary_pollution Rising_sea_level).
+[2026-06-27 01:20:21.491] Found 231 possible bad axioms.
+[2026-06-27 01:20:21.491] Selected the bad axiom SubClassOf(Arsenic_drinking_Water Exposure_to_toxins_home).
+[2026-06-27 01:20:21.500] Found 230 possible bad axioms.
+[2026-06-27 01:20:21.500] Selected the bad axiom SubClassOf(Soil_pollution Marine_pollution).
+[2026-06-27 01:20:21.503] Found 229 possible bad axioms.
+[2026-06-27 01:20:21.504] Selected the bad axiom SubClassOf(Extreme_weather_Events Desertifi
+...[truncated]
+FAIL: attempt=5 seed=56897 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: toxin_induced_cancer_risk ⊑ Chronic_Disease
+progress: ontology=ENDOH attempt=5 success=0/100
+----- ENDOH attempt=6 seed=71097 at 2026-06-27 01:20:34 -----
+--- stdout ---
+{"seed":71097,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Exposure_to_pollutants_home ⊑ Agriculture_pesticide_Exposure","iic_values":{},"repair_runtimes_ms":{"A1":183,"A2":5473,"A3":851,"B1":857,"B2":4191}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=71097, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:20:35.312] Checking precondition...
+[2026-06-27 01:20:35.331] Starting the repair...
+[2026-06-27 01:20:35.338] Found 243 possible bad axioms.
+[2026-06-27 01:20:35.340] Selected the bad axiom SubClassOf(At_the_macroenvironmental_level owl:Nothing).
+[2026-06-27 01:20:35.345] Found 242 possible bad axioms.
+[2026-06-27 01:20:35.346] Selected the bad axiom SubClassOf(Chronic_Disease Infectious_disease).
+[2026-06-27 01:20:35.351] Found 241 possible bad axioms.
+[2026-06-27 01:20:35.351] Selected the bad axiom SubClassOf(Indoor_heat_stress_in_workplace At_the_macroenvironmental_level).
+[2026-06-27 01:20:35.360] Found 240 possible bad axioms.
+[2026-06-27 01:20:35.360] Selected the bad axiom SubClassOf(At_the_macroenvironmental_level regulations_on_water_quality).
+[2026-06-27 01:20:35.365] Found 239 possible bad axioms.
+[2026-06-27 01:20:35.366] Selected the bad axiom SubClassOf(Street_lighting_quality Local_community_infrastructre).
+[2026-06-27 01:20:35.371] Found 238 possible bad axioms.
+[2026-06-27 01:20:35.371] Selected the bad axiom SubClassOf(Indoor_air_purification owl:Nothing).
+[2026-06-27 01:20:35.375] Found 237 possible bad axioms.
+[2026-06-27 01:20:35.375] Selected the bad axiom SubClassOf(Accessibility_to_cleanstreets Accesbility_to_transportation).
+[2026-06-27 01:20:35.379] Found 236 possible bad axioms.
+[2026-06-27 01:20:35.380] Selected the bad axiom SubClassOf(Waste_recycling_facilities Local_community_infrastructre).
+[2026-06-27 01:20:35.383] Found 235 possible bad axioms.
+[2026-06-27 01:20:35.383] Selected the bad axiom SubClassOf(Access_to_nutritious_food Local_community_infrastructre).
+[2026-06-27 01:20:35.387] Found 234 possible bad axioms.
+[2026-06-27 01:20:35.387] Selected the bad axiom SubClassOf(Accessibility_to_green_space At_the_mesoenvironmental_level).
+[2026-06-27 01:20:35.391] Found 233 possible bad axioms.
+[2026-06-27 01:20:35.391] Selected the bad axiom SubClassOf(Built_in_environment Level_of_pollution).
+[2026-06-27 01:20:35.400] Found 232 possible bad axioms.
+[2026-06-27 01:20:35.401] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(affect_of owl:Thing) Health_outcomes).
+[2026-06-27 01:20:35.404] Found 231 possible bad axioms.
+[2026-06-27 01:20:35.404] Selected the bad axiom SubClassOf(At_the_global_level Desertification).
+[2026-06-27 01:20:35.413] Found 230 possible bad axioms.
+[2026-06-27 01:20:35.413] Selected the bad axiom SubClassOf(Sedentary_lifestyle_consequence Exposure_to_hazards_lifestyle_factors).
+[2026-06-27 01:20:35.418] Found 229 possible bad axioms.
+[2026-06-27 01:20:35.418] Selected the bad
+...[truncated]
+FAIL: attempt=6 seed=71097 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Exposure_to_pollutants_home ⊑ Agriculture_pesticide_Exposure
+progress: ontology=ENDOH attempt=6 success=0/100
+----- ENDOH attempt=7 seed=85297 at 2026-06-27 01:20:46 -----
+--- stdout ---
+{"seed":85297,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: toxin_induced_cancer_risk ⊑ Chronic_Disease","iic_values":{},"repair_runtimes_ms":{"A1":104,"A2":5590,"A3":879,"B1":1519,"B2":4530}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=85297, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:20:47.313] Checking precondition...
+[2026-06-27 01:20:47.330] Starting the repair...
+[2026-06-27 01:20:47.339] Found 243 possible bad axioms.
+[2026-06-27 01:20:47.340] Selected the bad axiom SubClassOf(Community_noise_pollution owl:Nothing).
+[2026-06-27 01:20:47.346] Found 242 possible bad axioms.
+[2026-06-27 01:20:47.346] Selected the bad axiom SubClassOf(Poor_indoor_light_quality Home_as_microenvironment).
+[2026-06-27 01:20:47.351] Found 241 possible bad axioms.
+[2026-06-27 01:20:47.351] Selected the bad axiom SubClassOf(Parks_and_recreational_facility_gaps Accessibility_to_green_space).
+[2026-06-27 01:20:47.360] Found 240 possible bad axioms.
+[2026-06-27 01:20:47.360] Selected the bad axiom SubClassOf(genetic_predisposition_disease Unregulated_cosmetic_use).
+[2026-06-27 01:20:47.365] Found 239 possible bad axioms.
+[2026-06-27 01:20:47.365] Selected the bad axiom SubClassOf(Respiratory_disease Chronic_Disease).
+[2026-06-27 01:20:47.369] Found 238 possible bad axioms.
+[2026-06-27 01:20:47.369] Selected the bad axiom SubClassOf(Local_community_infrastructre Access_to_clean_Water).
+[2026-06-27 01:20:47.373] Found 237 possible bad axioms.
+[2026-06-27 01:20:47.373] Selected the bad axiom SubClassOf(Level_of_pollution At_the_mesoenvironmental_level).
+[2026-06-27 01:20:47.377] Found 236 possible bad axioms.
+[2026-06-27 01:20:47.377] Selected the bad axiom SubClassOf(At_the_macroenvironmental_level owl:Nothing).
+[2026-06-27 01:20:47.381] Found 235 possible bad axioms.
+[2026-06-27 01:20:47.381] Selected the bad axiom SubClassOf(Exposure_to_hazards_lifestyle_factors At_the_Individual_level).
+[2026-06-27 01:20:47.384] Found 234 possible bad axioms.
+[2026-06-27 01:20:47.384] Selected the bad axiom SubClassOf(Accessibility_to_cleanstreets accesibility_to_recreational_area).
+[2026-06-27 01:20:47.387] Found 233 possible bad axioms.
+[2026-06-27 01:20:47.387] Selected the bad axiom SubClassOf(Indoor_heat_stress_in_workplace policy_governance_effect).
+[2026-06-27 01:20:47.395] Found 232 possible bad axioms.
+[2026-06-27 01:20:47.395] Selected the bad axiom SubClassOf(Lead_pipes_at_home Carbon_monoxide_Exposure).
+[2026-06-27 01:20:47.398] Found 231 possible bad axioms.
+[2026-06-27 01:20:47.399] Selected the bad axiom SubClassOf(At_the_global_level At_the_macroenvironmental_level).
+[2026-06-27 01:20:47.408] Found 230 possible bad axioms.
+[2026-06-27 01:20:47.408] Selected the bad axiom SubClassOf(Agriculture_pesticide_Exposure Lung_cancer).
+[2026-06-27 01:20:47.413] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-
+...[truncated]
+FAIL: attempt=7 seed=85297 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: toxin_induced_cancer_risk ⊑ Chronic_Disease
+progress: ontology=ENDOH attempt=7 success=0/100
+----- ENDOH attempt=8 seed=99497 at 2026-06-27 01:21:00 -----
+--- stdout ---
+{"seed":99497,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Construction_dust_hazrad ⊑ Exposure_to_pollutants_workplace","iic_values":{},"repair_runtimes_ms":{"A1":143,"A2":5566,"A3":1491,"B1":2108,"B2":4508}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=99497, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:21:00.386] Checking precondition...
+[2026-06-27 01:21:00.409] Starting the repair...
+[2026-06-27 01:21:00.418] Found 243 possible bad axioms.
+[2026-06-27 01:21:00.419] Selected the bad axiom SubClassOf(Exposure_to_synthetic_materials Home_as_microenvironment).
+[2026-06-27 01:21:00.426] Found 242 possible bad axioms.
+[2026-06-27 01:21:00.426] Selected the bad axiom SubClassOf(Community_sewage_management Local_community_infrastructre).
+[2026-06-27 01:21:00.432] Found 241 possible bad axioms.
+[2026-06-27 01:21:00.432] Selected the bad axiom SubClassOf(Built_in_environment Level_of_pollution).
+[2026-06-27 01:21:00.441] Found 240 possible bad axioms.
+[2026-06-27 01:21:00.441] Selected the bad axiom SubClassOf(Ozone_Depeletion Trans_boundary_pollution).
+[2026-06-27 01:21:00.446] Found 239 possible bad axioms.
+[2026-06-27 01:21:00.446] Selected the bad axiom SubClassOf(Cultural_norms At_the_macroenvironmental_level).
+[2026-06-27 01:21:00.450] Found 238 possible bad axioms.
+[2026-06-27 01:21:00.450] Selected the bad axiom SubClassOf(air_quality Exposure_to_synthetic_materials).
+[2026-06-27 01:21:00.454] Found 237 possible bad axioms.
+[2026-06-27 01:21:00.454] Selected the bad axiom SubClassOf(Health_outcomes At_the_Individual_level).
+[2026-06-27 01:21:00.458] Found 236 possible bad axioms.
+[2026-06-27 01:21:00.459] Selected the bad axiom SubClassOf(Indoor_air_purification Radiation_from_electronics).
+[2026-06-27 01:21:00.462] Found 235 possible bad axioms.
+[2026-06-27 01:21:00.462] Selected the bad axiom SubClassOf(At_the_mesoenvironmental_level Accesbility_to_transportation).
+[2026-06-27 01:21:00.466] Found 234 possible bad axioms.
+[2026-06-27 01:21:00.466] Selected the bad axiom SubClassOf(Access_to_clean_bathrooms_at_work Indoor_heat_stress_in_workplace).
+[2026-06-27 01:21:00.469] Found 233 possible bad axioms.
+[2026-06-27 01:21:00.469] Selected the bad axiom SubClassOf(Community_noise_pollution Erosion_in_irrigation_channels).
+[2026-06-27 01:21:00.478] Found 232 possible bad axioms.
+[2026-06-27 01:21:00.478] Selected the bad axiom SubClassOf(Marine_pollution Trans_boundary_pollution).
+[2026-06-27 01:21:00.481] Found 231 possible bad axioms.
+[2026-06-27 01:21:00.481] Selected the bad axiom SubClassOf(housing_quality accesibility_to_recreational_area).
+[2026-06-27 01:21:00.491] Found 230 possible bad axioms.
+[2026-06-27 01:21:00.491] Selected the bad axiom SubClassOf(Indoor_mold_growth Exposure_to_pollutants_home).
+[2026-06-27 01:21:00.495] Found 229 possible bad axioms.
+[2026-06-27 01:21:00.495] Selected the bad axiom SubClassOf(Health_outc
+...[truncated]
+FAIL: attempt=8 seed=99497 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Construction_dust_hazrad ⊑ Exposure_to_pollutants_workplace
+progress: ontology=ENDOH attempt=8 success=0/100
+----- ENDOH attempt=9 seed=113697 at 2026-06-27 01:21:14 -----
+--- stdout ---
+{"seed":113697,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Environmental_Determinants_of_Health ⊑ Construction_dust_hazrad","iic_values":{},"repair_runtimes_ms":{"A1":194,"A2":5542,"A3":875,"B1":812,"B2":2931}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=113697, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:21:15.068] Checking precondition...
+[2026-06-27 01:21:15.085] Starting the repair...
+[2026-06-27 01:21:15.093] Found 243 possible bad axioms.
+[2026-06-27 01:21:15.094] Selected the bad axiom SubClassOf(Indoor_heat_stress_in_workplace At_the_macroenvironmental_level).
+[2026-06-27 01:21:15.100] Found 242 possible bad axioms.
+[2026-06-27 01:21:15.100] Selected the bad axiom SubClassOf(Marine_pollution Trans_boundary_pollution).
+[2026-06-27 01:21:15.106] Found 241 possible bad axioms.
+[2026-06-27 01:21:15.106] Selected the bad axiom SubClassOf(Cleaning_chemical_risk Carbon_monoxide_Exposure).
+[2026-06-27 01:21:15.116] Found 240 possible bad axioms.
+[2026-06-27 01:21:15.116] Selected the bad axiom SubClassOf(Trans_boundary_pollution Ozone_Depeletion).
+[2026-06-27 01:21:15.121] Found 239 possible bad axioms.
+[2026-06-27 01:21:15.121] Selected the bad axiom SubClassOf(Tobacco_smoking_impact Exposure_to_hazards_lifestyle_factors).
+[2026-06-27 01:21:15.125] Found 238 possible bad axioms.
+[2026-06-27 01:21:15.125] Selected the bad axiom SubClassOf(Social_Support_network Community_resilience).
+[2026-06-27 01:21:15.129] Found 237 possible bad axioms.
+[2026-06-27 01:21:15.129] Selected the bad axiom SubClassOf(Community_noise_pollution Clean_sanitation_facility).
+[2026-06-27 01:21:15.134] Found 236 possible bad axioms.
+[2026-06-27 01:21:15.134] Selected the bad axiom SubClassOf(Agriculture_pesticide_Exposure Exposure_to_pollutants_workplace).
+[2026-06-27 01:21:15.138] Found 235 possible bad axioms.
+[2026-06-27 01:21:15.138] Selected the bad axiom SubClassOf(Chronic_Disease Health_outcomes).
+[2026-06-27 01:21:15.141] Found 234 possible bad axioms.
+[2026-06-27 01:21:15.141] Selected the bad axiom SubClassOf(At_the_global_level Environmental_Determinants_of_Health).
+[2026-06-27 01:21:15.144] Found 233 possible bad axioms.
+[2026-06-27 01:21:15.144] Selected the bad axiom SubClassOf(Access_to_clean_bathrooms_at_work At_the_macroenvironmental_level).
+[2026-06-27 01:21:15.153] Found 232 possible bad axioms.
+[2026-06-27 01:21:15.153] Selected the bad axiom SubClassOf(Global_heat_Wave Extreme_weather_Events).
+[2026-06-27 01:21:15.157] Found 231 possible bad axioms.
+[2026-06-27 01:21:15.157] Selected the bad axiom SubClassOf(At_the_macroenvironmental_level owl:Nothing).
+[2026-06-27 01:21:15.167] Found 230 possible bad axioms.
+[2026-06-27 01:21:15.167] Selected the bad axiom SubClassOf(housing_quality land_use_planning).
+[2026-06-27 01:21:15.170] Found 229 possible bad axioms.
+[2026-06-27 01:21:15.170] Selected the bad axiom SubClassOf(Physical_safety_measur
+...[truncated]
+FAIL: attempt=9 seed=113697 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Environmental_Determinants_of_Health ⊑ Construction_dust_hazrad
+progress: ontology=ENDOH attempt=9 success=0/100
+----- ENDOH attempt=10 seed=127897 at 2026-06-27 01:21:25 -----
+--- stdout ---
+{"seed":127897,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∀ affect_of.Chronic_Disease","iic_values":{},"repair_runtimes_ms":{"A1":204,"A2":5545,"A3":1741,"B1":806,"B2":2231,"B3":4641,"B4":117,"B5":1775}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ENDOH.owl, seed=127897, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 01:21:25.883] Checking precondition...
+[2026-06-27 01:21:25.900] Starting the repair...
+[2026-06-27 01:21:25.907] Found 243 possible bad axioms.
+[2026-06-27 01:21:25.909] Selected the bad axiom SubClassOf(Access_to_nutritious_food Local_community_infrastructre).
+[2026-06-27 01:21:25.917] Found 242 possible bad axioms.
+[2026-06-27 01:21:25.917] Selected the bad axiom SubClassOf(Environmental_triggers_Asthma genetic_predisposition_disease).
+[2026-06-27 01:21:25.922] Found 241 possible bad axioms.
+[2026-06-27 01:21:25.922] Selected the bad axiom SubClassOf(Tobacco_smoking_impact At_the_Individual_level).
+[2026-06-27 01:21:25.933] Found 240 possible bad axioms.
+[2026-06-27 01:21:25.933] Selected the bad axiom SubClassOf(Arsenic_drinking_Water Microplastic_drinking_Water).
+[2026-06-27 01:21:25.937] Found 239 possible bad axioms.
+[2026-06-27 01:21:25.938] Selected the bad axiom SubClassOf(air_quality workplace_as_macroenvironment).
+[2026-06-27 01:21:25.941] Found 238 possible bad axioms.
+[2026-06-27 01:21:25.942] Selected the bad axiom SubClassOf(At_the_macroenvironmental_level Environmental_Determinants_of_Health).
+[2026-06-27 01:21:25.945] Found 237 possible bad axioms.
+[2026-06-27 01:21:25.946] Selected the bad axiom SubClassOf(Demographics At_the_macroenvironmental_level).
+[2026-06-27 01:21:25.950] Found 236 possible bad axioms.
+[2026-06-27 01:21:25.950] Selected the bad axiom SubClassOf(genetic_predisposition_disease At_the_Individual_level).
+[2026-06-27 01:21:25.954] Found 235 possible bad axioms.
+[2026-06-27 01:21:25.954] Selected the bad axiom SubClassOf(acid_rain Ozone_Depeletion).
+[2026-06-27 01:21:25.957] Found 234 possible bad axioms.
+[2026-06-27 01:21:25.957] Selected the bad axiom SubClassOf(Paint_chemical_inhalation Exposure_to_pollutants_workplace).
+[2026-06-27 01:21:25.960] Found 233 possible bad axioms.
+[2026-06-27 01:21:25.961] Selected the bad axiom SubClassOf(Community_sewage_management Local_community_infrastructre).
+[2026-06-27 01:21:25.968] Found 232 possible bad axioms.
+[2026-06-27 01:21:25.969] Selected the bad axiom SubClassOf(Tobacco_smoking_impact Exposure_to_hazards_lifestyle_factors).
+[2026-06-27 01:21:25.972] Found 231 possible bad axioms.
+[2026-06-27 01:21:25.972] Selected the bad axiom SubClassOf(Social_Support_network Community_resilience).
+[2026-06-27 01:21:25.980] Found 230 possible bad axioms.
+[2026-06-27 01:21:25.981] Selected the bad axiom SubClassOf(Extreme_weather_Events Ozone_Depeletion).
+[2026-06-27 01:21:25.984] Found 229 possible bad axioms.
+[2026-06-27 01:21:25.984] Selected the bad axiom SubClass
+...[truncated]
+FAIL: attempt=10 seed=127897 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∀ affect_of.Chronic_Disease
+progress: ontology=ENDOH attempt=10 success=0/100
+=== ABORTED ENDOH after 10 consecutive failures at 2026-06-27 01:21:43 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ENDOH - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=97 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Exposure_to_pollutants_home ⊑ Agriculture_pesticide_Exposure
+  attempt=2 seed=14297 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Lung_cancer ⊑ toxin_induced_cancer_risk
+  attempt=3 seed=28497 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Environmental_Determinants_of_Health ⊑ Construction_dust_hazrad
+  attempt=4 seed=42697 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Environmental_Determinants_of_Health
+  attempt=5 seed=56897 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: toxin_induced_cancer_risk ⊑ Chronic_Disease
+  attempt=6 seed=71097 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Exposure_to_pollutants_home ⊑ Agriculture_pesticide_Exposure
+  attempt=7 seed=85297 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: toxin_induced_cancer_risk ⊑ Chronic_Disease
+  attempt=8 seed=99497 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Construction_dust_hazrad ⊑ Exposure_to_pollutants_workplace
+  attempt=9 seed=113697 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Environmental_Determinants_of_Health ⊑ Construction_dust_hazrad
+  attempt=10 seed=127897 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∀ affect_of.Chronic_Disease
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

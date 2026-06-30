@@ -1,0 +1,463 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-HP_O.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-HP_O.csv
+
+=== Starting sequential trials for HP_O at 2026-06-28 07:46:24 ===
+----- HP_O attempt=1 seed=138 at 2026-06-28 07:46:24 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=138, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:46:25.259] Checking precondition...
+[2026-06-28 07:46:25.284] Starting the repair...
+[2026-06-28 07:46:25.297] Found 611 possible bad axioms.
+[2026-06-28 07:46:25.299] Selected the bad axiom SubClassOf(chest_tightness ObjectComplementOf(body_itching)).
+[2026-06-28 07:46:25.309] Found 610 possible bad axioms.
+[2026-06-28 07:46:25.309] Selected the bad axiom SubClassOf(other_dust organic_dust_source_or_dust_type).
+[2026-06-28 07:46:25.318] Found 609 possible bad axioms.
+[2026-06-28 07:46:25.318] Selected the bad axiom SubClassOf(eye_itching ObjectComplementOf(fever)).
+[2026-06-28 07:46:25.333] Found 608 possible bad axioms.
+[2026-06-28 07:46:25.333] Selected the bad axiom SubClassOf(ustekinumab_treatment other_condition_at_risk).
+[2026-06-28 07:46:25.342] Found 607 possible bad axioms.
+[2026-06-28 07:46:25.342] Selected the bad axiom SubClassOf(Aspergillus_clavatus ObjectComplementOf(Aspergillus_fumigatus)).
+[2026-06-28 07:46:25.349] Found 606 possible bad axioms.
+[2026-06-28 07:46:25.349] Selected the bad axiom SubClassOf(animal_fur_protein ObjectSomeValuesFrom(is_part_of animal_fur)).
+[2026-06-28 07:46:25.356] Found 605 possible bad axioms.
+[2026-06-28 07:46:25.356] Selected the bad axiom SubClassOf(sneezing clinical_symptom).
+[2026-06-28 07:46:25.362] Found 604 possible bad axioms.
+[2026-06-28 07:46:25.363] Selected the bad axiom SubClassOf(sneezing ObjectComplementOf(general_weakness)).
+[2026-06-28 07:46:25.368] Found 603 possible bad axioms.
+[2026-06-28 07:46:25.368] Selected the bad axiom SubClassOf(Aspergillus_flavus fungi).
+[2026-06-28 07:46:25.374] Found 602 possible bad axioms.
+[2026-06-28 07:46:25.374] Selected the bad axiom SubClassOf(general_weakness ObjectComplementOf(sneezing)).
+[2026-06-28 07:46:25.379] Found 601 possible bad axioms.
+[2026-06-28 07:46:25.379] Selected the bad axiom SubClassOf(cough ObjectComplementOf(hoarseness)).
+[2026-06-28 07:46:25.395] Found 600 possible bad axioms.
+[2026-06-28 07:46:25.395] Selected the bad axiom SubClassOf(Bacillus_subtilis Gram-positive_bacteria).
+[2026-06-28 07:46:25.401] Found 599 possible bad axioms.
+[2026-06-28 07:46:25.401] Selected the bad axiom SubClassOf(chest_tightness ObjectComplementOf(general_weakness)).
+[2026-06-28 07:46:25.406] Found 598 possible bad axioms.
+[2026-06-28 07:46:25.407] Selected the bad axiom SubClassOf(sequoiosis hypersensitivity_pneumonitis).
+[2026-06-28 07:46:25.411] Found 597 possible bad axioms.
+[2026-06-28 07:46:25.411] Selected the bad axiom SubClassOf(ObjectComplementOf(Aspergillus_candidus) Aspergillus_spp).
+[2026-06-28 07:46:25.415] Found 596 poss
+...[truncated]
+FAIL: attempt=1 seed=138 - negative return code -9
+progress: ontology=HP_O attempt=1 success=0/100
+----- HP_O attempt=2 seed=14338 at 2026-06-28 07:48:47 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=14338, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:48:48.439] Checking precondition...
+[2026-06-28 07:48:48.469] Starting the repair...
+[2026-06-28 07:48:48.482] Found 611 possible bad axioms.
+[2026-06-28 07:48:48.483] Selected the bad axiom SubClassOf(fever ObjectComplementOf(hoarseness)).
+[2026-06-28 07:48:48.493] Found 610 possible bad axioms.
+[2026-06-28 07:48:48.494] Selected the bad axiom SubClassOf(eye_itching ObjectComplementOf(fever)).
+[2026-06-28 07:48:48.503] Found 609 possible bad axioms.
+[2026-06-28 07:48:48.503] Selected the bad axiom SubClassOf(Candida_albicans fungi).
+[2026-06-28 07:48:48.516] Found 608 possible bad axioms.
+[2026-06-28 07:48:48.516] Selected the bad axiom SubClassOf(fish organic_dust_of_animal_origin).
+[2026-06-28 07:48:48.523] Found 607 possible bad axioms.
+[2026-06-28 07:48:48.523] Selected the bad axiom SubClassOf(shivering ObjectComplementOf(skin_rash)).
+[2026-06-28 07:48:48.530] Found 606 possible bad axioms.
+[2026-06-28 07:48:48.531] Selected the bad axiom SubClassOf(fish_meal_dust animal).
+[2026-06-28 07:48:48.537] Found 605 possible bad axioms.
+[2026-06-28 07:48:48.537] Selected the bad axiom SubClassOf(skin_rash ObjectComplementOf(wheezing)).
+[2026-06-28 07:48:48.544] Found 604 possible bad axioms.
+[2026-06-28 07:48:48.544] Selected the bad axiom SubClassOf(body_itching ObjectComplementOf(skin_rash)).
+[2026-06-28 07:48:48.550] Found 603 possible bad axioms.
+[2026-06-28 07:48:48.550] Selected the bad axiom SubClassOf(unclean_CPAP_equipment other_source).
+[2026-06-28 07:48:48.555] Found 602 possible bad axioms.
+[2026-06-28 07:48:48.555] Selected the bad axiom SubClassOf(headache ObjectComplementOf(chest_tightness)).
+[2026-06-28 07:48:48.560] Found 601 possible bad axioms.
+[2026-06-28 07:48:48.561] Selected the bad axiom SubClassOf(Botrytis_cinerea fungi).
+[2026-06-28 07:48:48.577] Found 600 possible bad axioms.
+[2026-06-28 07:48:48.577] Selected the bad axiom SubClassOf(shivering ObjectComplementOf(general_weakness)).
+[2026-06-28 07:48:48.583] Found 599 possible bad axioms.
+[2026-06-28 07:48:48.583] Selected the bad axiom SubClassOf(woodworker’s_lung hypersensitivity_pneumonitis).
+[2026-06-28 07:48:48.589] Found 598 possible bad axioms.
+[2026-06-28 07:48:48.590] Selected the bad axiom SubClassOf(acute_hypersensitivity_pneumonitis ObjectSomeValuesFrom(is_caused_by hydrocodone)).
+[2026-06-28 07:48:48.595] Found 597 possible bad axioms.
+[2026-06-28 07:48:48.595] Selected the bad axiom SubClassOf(sick_building_syndrome hypersensitivity_pneumonitis).
+[2026-06-28 07:48:48.600] Found 596 possible bad axioms.
+[2026-06-28 07:48:48.600] Selected the bad axi
+...[truncated]
+FAIL: attempt=2 seed=14338 - negative return code -9
+progress: ontology=HP_O attempt=2 success=0/100
+----- HP_O attempt=3 seed=28538 at 2026-06-28 07:51:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=28538, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:51:18.256] Checking precondition...
+[2026-06-28 07:51:18.283] Starting the repair...
+[2026-06-28 07:51:18.295] Found 611 possible bad axioms.
+[2026-06-28 07:51:18.297] Selected the bad axiom SubClassOf(fusariosis ObjectSomeValuesFrom(is_caused_by Fusarium_spp)).
+[2026-06-28 07:51:18.306] Found 610 possible bad axioms.
+[2026-06-28 07:51:18.307] Selected the bad axiom SubClassOf(moldy_hay organic_dust_of_plant_origin).
+[2026-06-28 07:51:18.315] Found 609 possible bad axioms.
+[2026-06-28 07:51:18.315] Selected the bad axiom SubClassOf(dyspnoea ObjectComplementOf(chest_tightness)).
+[2026-06-28 07:51:18.328] Found 608 possible bad axioms.
+[2026-06-28 07:51:18.328] Selected the bad axiom SubClassOf(contaminated_water other_source).
+[2026-06-28 07:51:18.336] Found 607 possible bad axioms.
+[2026-06-28 07:51:18.336] Selected the bad axiom SubClassOf(Gram-positive_bacteria bacteria).
+[2026-06-28 07:51:18.344] Found 606 possible bad axioms.
+[2026-06-28 07:51:18.345] Selected the bad axiom SubClassOf(grape_mold organic_dust_of_plant_origin).
+[2026-06-28 07:51:18.352] Found 605 possible bad axioms.
+[2026-06-28 07:51:18.352] Selected the bad axiom SubClassOf(skin_rash ObjectComplementOf(ObjectComplementOf(hoarseness))).
+[2026-06-28 07:51:18.359] Found 604 possible bad axioms.
+[2026-06-28 07:51:18.359] Selected the bad axiom SubClassOf(Pseudomonas_folliculitis Pseudomonas_spp).
+[2026-06-28 07:51:18.366] Found 603 possible bad axioms.
+[2026-06-28 07:51:18.366] Selected the bad axiom SubClassOf(bird‑fancier’s_lung ObjectUnionOf(bird_feather ObjectSomeValuesFrom(is_caused_by bird_excreta))).
+[2026-06-28 07:51:18.371] Found 602 possible bad axioms.
+[2026-06-28 07:51:18.372] Selected the bad axiom SubClassOf(Cephalosporium_spp fungi).
+[2026-06-28 07:51:18.376] Found 601 possible bad axioms.
+[2026-06-28 07:51:18.377] Selected the bad axiom SubClassOf(cough ObjectComplementOf(shivering)).
+[2026-06-28 07:51:18.392] Found 600 possible bad axioms.
+[2026-06-28 07:51:18.393] Selected the bad axiom SubClassOf(Brevibacterium_linens ObjectComplementOf(Corynebacterium_xerosis)).
+[2026-06-28 07:51:18.399] Found 599 possible bad axioms.
+[2026-06-28 07:51:18.399] Selected the bad axiom SubClassOf(Penicillium_citrinum fungi).
+[2026-06-28 07:51:18.404] Found 598 possible bad axioms.
+[2026-06-28 07:51:18.404] Selected the bad axiom SubClassOf(skin_rash ObjectComplementOf(headache)).
+[2026-06-28 07:51:18.409] Found 597 possible bad axioms.
+[2026-06-28 07:51:18.409] Selected the bad axiom SubClassOf(skin_rash ObjectComplementOf(shivering)).
+[2026-06-28 07:51:18.413] Found 59
+...[truncated]
+FAIL: attempt=3 seed=28538 - negative return code -9
+progress: ontology=HP_O attempt=3 success=0/100
+----- HP_O attempt=4 seed=42738 at 2026-06-28 07:54:03 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=42738, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:54:03.803] Checking precondition...
+[2026-06-28 07:54:03.830] Starting the repair...
+[2026-06-28 07:54:03.842] Found 611 possible bad axioms.
+[2026-06-28 07:54:03.844] Selected the bad axiom SubClassOf(body_itching ObjectComplementOf(headache)).
+[2026-06-28 07:54:03.852] Found 610 possible bad axioms.
+[2026-06-28 07:54:03.853] Selected the bad axiom SubClassOf(Aspergillus_candidus ObjectComplementOf(Aspergillus_clavatus)).
+[2026-06-28 07:54:03.860] Found 609 possible bad axioms.
+[2026-06-28 07:54:03.860] Selected the bad axiom SubClassOf(hot_tub_lung hypersensitivity_pneumonitis).
+[2026-06-28 07:54:03.873] Found 608 possible bad axioms.
+[2026-06-28 07:54:03.874] Selected the bad axiom SubClassOf(eye_itching ObjectComplementOf(wheezing)).
+[2026-06-28 07:54:03.881] Found 607 possible bad axioms.
+[2026-06-28 07:54:03.882] Selected the bad axiom SubClassOf(Arthrobacter_globiformis ObjectComplementOf(Bacillus_subtilis)).
+[2026-06-28 07:54:03.889] Found 606 possible bad axioms.
+[2026-06-28 07:54:03.889] Selected the bad axiom SubClassOf(sweating ObjectComplementOf(chest_tightness)).
+[2026-06-28 07:54:03.895] Found 605 possible bad axioms.
+[2026-06-28 07:54:03.896] Selected the bad axiom SubClassOf(other_source organic_dust_of_animal_origin).
+[2026-06-28 07:54:03.902] Found 604 possible bad axioms.
+[2026-06-28 07:54:03.903] Selected the bad axiom SubClassOf(alveolitis_allergica ObjectSomeValuesFrom(is_caused_by Mycobacterium_avium)).
+[2026-06-28 07:54:03.908] Found 603 possible bad axioms.
+[2026-06-28 07:54:03.908] Selected the bad axiom SubClassOf(shivering ObjectComplementOf(wheezing)).
+[2026-06-28 07:54:03.914] Found 602 possible bad axioms.
+[2026-06-28 07:54:03.914] Selected the bad axiom SubClassOf(sneezing ObjectComplementOf(body_itching)).
+[2026-06-28 07:54:03.919] Found 601 possible bad axioms.
+[2026-06-28 07:54:03.919] Selected the bad axiom SubClassOf(fever ObjectComplementOf(chest_tightness)).
+[2026-06-28 07:54:03.936] Found 600 possible bad axioms.
+[2026-06-28 07:54:03.936] Selected the bad axiom SubClassOf(berylliosis ObjectSomeValuesFrom(is_caused_by beryllium)).
+[2026-06-28 07:54:03.942] Found 599 possible bad axioms.
+[2026-06-28 07:54:03.942] Selected the bad axiom SubClassOf(insecticide_lung hypersensitivity_pneumonitis).
+[2026-06-28 07:54:03.948] Found 598 possible bad axioms.
+[2026-06-28 07:54:03.948] Selected the bad axiom SubClassOf(sweating ObjectComplementOf(wheezing)).
+[2026-06-28 07:54:03.953] Found 597 possible bad axioms.
+[2026-06-28 07:54:03.953] Selected the bad axiom SubClassOf(Alternaria_alternata Alternaria_spp)
+...[truncated]
+FAIL: attempt=4 seed=42738 - negative return code -9
+progress: ontology=HP_O attempt=4 success=0/100
+----- HP_O attempt=5 seed=56938 at 2026-06-28 07:56:40 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=56938, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:56:41.311] Checking precondition...
+[2026-06-28 07:56:41.337] Starting the repair...
+[2026-06-28 07:56:41.350] Found 611 possible bad axioms.
+[2026-06-28 07:56:41.352] Selected the bad axiom SubClassOf(body_itching ObjectComplementOf(sweating)).
+[2026-06-28 07:56:41.361] Found 610 possible bad axioms.
+[2026-06-28 07:56:41.361] Selected the bad axiom SubClassOf(sneezing ObjectComplementOf(wheezing)).
+[2026-06-28 07:56:41.368] Found 609 possible bad axioms.
+[2026-06-28 07:56:41.369] Selected the bad axiom SubClassOf(skin_rash ObjectComplementOf(body_itching)).
+[2026-06-28 07:56:41.382] Found 608 possible bad axioms.
+[2026-06-28 07:56:41.382] Selected the bad axiom SubClassOf(green_tea_manufacturer profession_at_risk).
+[2026-06-28 07:56:41.391] Found 607 possible bad axioms.
+[2026-06-28 07:56:41.391] Selected the bad axiom SubClassOf(azathioprine drug).
+[2026-06-28 07:56:41.399] Found 606 possible bad axioms.
+[2026-06-28 07:56:41.399] Selected the bad axiom SubClassOf(acute_hypersensitivity_pneumonitis ObjectSomeValuesFrom(is_caused_by hydrocodone)).
+[2026-06-28 07:56:41.406] Found 605 possible bad axioms.
+[2026-06-28 07:56:41.407] Selected the bad axiom SubClassOf(hoarseness ObjectComplementOf(dyspnoea)).
+[2026-06-28 07:56:41.413] Found 604 possible bad axioms.
+[2026-06-28 07:56:41.414] Selected the bad axiom SubClassOf(Aspergillus_spp fungi).
+[2026-06-28 07:56:41.420] Found 603 possible bad axioms.
+[2026-06-28 07:56:41.420] Selected the bad axiom SubClassOf(eye_itching ObjectComplementOf(skin_rash)).
+[2026-06-28 07:56:41.425] Found 602 possible bad axioms.
+[2026-06-28 07:56:41.425] Selected the bad axiom SubClassOf(sweating ObjectComplementOf(headache)).
+[2026-06-28 07:56:41.430] Found 601 possible bad axioms.
+[2026-06-28 07:56:41.431] Selected the bad axiom SubClassOf(Saccharopolyspora_rectivirgula ObjectComplementOf(Streptomyces_albus)).
+[2026-06-28 07:56:41.447] Found 600 possible bad axioms.
+[2026-06-28 07:56:41.447] Selected the bad axiom SubClassOf(hypersensitivity_pneumonitis ObjectSomeValuesFrom(is_caused_by Mycobacterium_mucogenicum)).
+[2026-06-28 07:56:41.452] Found 599 possible bad axioms.
+[2026-06-28 07:56:41.452] Selected the bad axiom SubClassOf(mycobacteria bacteria).
+[2026-06-28 07:56:41.458] Found 598 possible bad axioms.
+[2026-06-28 07:56:41.458] Selected the bad axiom SubClassOf(Brevibacterium_linens Gram-positive_bacteria).
+[2026-06-28 07:56:41.462] Found 597 possible bad axioms.
+[2026-06-28 07:56:41.463] Selected the bad axiom SubClassOf(Aspergillus_candidus ObjectComplementOf(Aspergillus_fumigatus)).
+[2026-06-28 07:
+...[truncated]
+FAIL: attempt=5 seed=56938 - negative return code -9
+progress: ontology=HP_O attempt=5 success=0/100
+----- HP_O attempt=6 seed=71138 at 2026-06-28 07:59:31 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=71138, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 07:59:32.356] Checking precondition...
+[2026-06-28 07:59:32.382] Starting the repair...
+[2026-06-28 07:59:32.395] Found 611 possible bad axioms.
+[2026-06-28 07:59:32.397] Selected the bad axiom SubClassOf(fever ObjectComplementOf(hoarseness)).
+[2026-06-28 07:59:32.408] Found 610 possible bad axioms.
+[2026-06-28 07:59:32.409] Selected the bad axiom SubClassOf(coffee plant).
+[2026-06-28 07:59:32.416] Found 609 possible bad axioms.
+[2026-06-28 07:59:32.417] Selected the bad axiom SubClassOf(sequoiosis hypersensitivity_pneumonitis).
+[2026-06-28 07:59:32.429] Found 608 possible bad axioms.
+[2026-06-28 07:59:32.429] Selected the bad axiom SubClassOf(Pseudomonas_pseudoalcaligenes ObjectSomeValuesFrom(is_part_of metalworking_fluid_aerosol)).
+[2026-06-28 07:59:32.437] Found 607 possible bad axioms.
+[2026-06-28 07:59:32.437] Selected the bad axiom SubClassOf(Rhodococcus_sp. actinomycetes).
+[2026-06-28 07:59:32.445] Found 606 possible bad axioms.
+[2026-06-28 07:59:32.445] Selected the bad axiom SubClassOf(furrier’s_lung ObjectSomeValuesFrom(is_caused_by ObjectSomeValuesFrom(contain Acinetobacter_calcoaceticus))).
+[2026-06-28 07:59:32.452] Found 605 possible bad axioms.
+[2026-06-28 07:59:32.452] Selected the bad axiom SubClassOf(fish_meal_dust mollusk_shell_protein).
+[2026-06-28 07:59:32.459] Found 604 possible bad axioms.
+[2026-06-28 07:59:32.459] Selected the bad axiom SubClassOf(ObjectComplementOf(Aspergillus_candidus) Aspergillus_spp).
+[2026-06-28 07:59:32.465] Found 603 possible bad axioms.
+[2026-06-28 07:59:32.466] Selected the bad axiom SubClassOf(coffee‑worker’s_lung ObjectSomeValuesFrom(is_caused_by coffee_bean_dust)).
+[2026-06-28 07:59:32.471] Found 602 possible bad axioms.
+[2026-06-28 07:59:32.471] Selected the bad axiom SubClassOf(Thermoactinomyces_vulgaris ObjectComplementOf(Streptomyces_albus)).
+[2026-06-28 07:59:32.476] Found 601 possible bad axioms.
+[2026-06-28 07:59:32.476] Selected the bad axiom SubClassOf(Aspergillus_clavatus fungi).
+[2026-06-28 07:59:32.492] Found 600 possible bad axioms.
+[2026-06-28 07:59:32.492] Selected the bad axiom SubClassOf(cough ObjectComplementOf(eye_itching)).
+[2026-06-28 07:59:32.498] Found 599 possible bad axioms.
+[2026-06-28 07:59:32.498] Selected the bad axiom SubClassOf(furrier’s_lung ObjectSomeValuesFrom(is_caused_by animal_fur)).
+[2026-06-28 07:59:32.503] Found 598 possible bad axioms.
+[2026-06-28 07:59:32.504] Selected the bad axiom SubClassOf(skin_rash ObjectComplementOf(chest_tightness)).
+[2026-06-28 07:59:32.508] Found 597 possible bad axioms.
+[2026-06-28 07:59:32.509] Selected the bad axiom Su
+...[truncated]
+FAIL: attempt=6 seed=71138 - negative return code -9
+progress: ontology=HP_O attempt=6 success=0/100
+----- HP_O attempt=7 seed=85338 at 2026-06-28 08:02:21 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=85338, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:02:21.535] Checking precondition...
+[2026-06-28 08:02:21.561] Starting the repair...
+[2026-06-28 08:02:21.573] Found 611 possible bad axioms.
+[2026-06-28 08:02:21.575] Selected the bad axiom SubClassOf(Alternaria_alternata ObjectComplementOf(Aspergillus_fumigatus)).
+[2026-06-28 08:02:21.585] Found 610 possible bad axioms.
+[2026-06-28 08:02:21.585] Selected the bad axiom SubClassOf(fever ObjectComplementOf(dyspnoea)).
+[2026-06-28 08:02:21.593] Found 609 possible bad axioms.
+[2026-06-28 08:02:21.593] Selected the bad axiom SubClassOf(chest_tightness ObjectComplementOf(hoarseness)).
+[2026-06-28 08:02:21.605] Found 608 possible bad axioms.
+[2026-06-28 08:02:21.605] Selected the bad axiom SubClassOf(headache ObjectComplementOf(chest_tightness)).
+[2026-06-28 08:02:21.612] Found 607 possible bad axioms.
+[2026-06-28 08:02:21.613] Selected the bad axiom SubClassOf(other_source organic_dust_of_animal_origin).
+[2026-06-28 08:02:21.620] Found 606 possible bad axioms.
+[2026-06-28 08:02:21.620] Selected the bad axiom SubClassOf(fish_meal_dust mollusk_shell_protein).
+[2026-06-28 08:02:21.627] Found 605 possible bad axioms.
+[2026-06-28 08:02:21.627] Selected the bad axiom SubClassOf(sneezing ObjectComplementOf(cough)).
+[2026-06-28 08:02:21.634] Found 604 possible bad axioms.
+[2026-06-28 08:02:21.634] Selected the bad axiom SubClassOf(onion_farmer profession_at_risk).
+[2026-06-28 08:02:21.640] Found 603 possible bad axioms.
+[2026-06-28 08:02:21.640] Selected the bad axiom SubClassOf(green_tea_manufacturer profession_at_risk).
+[2026-06-28 08:02:21.645] Found 602 possible bad axioms.
+[2026-06-28 08:02:21.645] Selected the bad axiom SubClassOf(furrier’s_lung hypersensitivity_pneumonitis).
+[2026-06-28 08:02:21.650] Found 601 possible bad axioms.
+[2026-06-28 08:02:21.651] Selected the bad axiom SubClassOf(profession_at_risk occupational_and_non-occupational_activities_at_risk).
+[2026-06-28 08:02:21.666] Found 600 possible bad axioms.
+[2026-06-28 08:02:21.667] Selected the bad axiom SubClassOf(eye_itching ObjectComplementOf(headache)).
+[2026-06-28 08:02:21.673] Found 599 possible bad axioms.
+[2026-06-28 08:02:21.673] Selected the bad axiom SubClassOf(Rhodococcus_sp. ObjectComplementOf(Streptomyces_albus)).
+[2026-06-28 08:02:21.679] Found 598 possible bad axioms.
+[2026-06-28 08:02:21.679] Selected the bad axiom SubClassOf(fluorocarbon_waterproofing_spray other_source).
+[2026-06-28 08:02:21.684] Found 597 possible bad axioms.
+[2026-06-28 08:02:21.684] Selected the bad axiom SubClassOf(general_weakness ObjectComplementOf(headache)).
+[2026-06-28 08:02:21.688] Fou
+...[truncated]
+FAIL: attempt=7 seed=85338 - negative return code -9
+progress: ontology=HP_O attempt=7 success=0/100
+----- HP_O attempt=8 seed=99538 at 2026-06-28 08:04:53 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=99538, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:04:53.499] Checking precondition...
+[2026-06-28 08:04:53.525] Starting the repair...
+[2026-06-28 08:04:53.537] Found 611 possible bad axioms.
+[2026-06-28 08:04:53.539] Selected the bad axiom SubClassOf(pet_groomer profession_at_risk).
+[2026-06-28 08:04:53.549] Found 610 possible bad axioms.
+[2026-06-28 08:04:53.549] Selected the bad axiom SubClassOf(sweating ObjectComplementOf(wheezing)).
+[2026-06-28 08:04:53.558] Found 609 possible bad axioms.
+[2026-06-28 08:04:53.559] Selected the bad axiom SubClassOf(other_source organic_dust_source_or_dust_type).
+[2026-06-28 08:04:53.572] Found 608 possible bad axioms.
+[2026-06-28 08:04:53.573] Selected the bad axiom SubClassOf(Streptomyces_albus ObjectComplementOf(Saccharopolyspora_rectivirgula)).
+[2026-06-28 08:04:53.579] Found 607 possible bad axioms.
+[2026-06-28 08:04:53.579] Selected the bad axiom SubClassOf(dog_house_disease hypersensitivity_pneumonitis).
+[2026-06-28 08:04:53.586] Found 606 possible bad axioms.
+[2026-06-28 08:04:53.587] Selected the bad axiom SubClassOf(wheezing ObjectComplementOf(fever)).
+[2026-06-28 08:04:53.595] Found 605 possible bad axioms.
+[2026-06-28 08:04:53.595] Selected the bad axiom SubClassOf(grinder_operator ObjectSomeValuesFrom(is_exposed_to cobalt)).
+[2026-06-28 08:04:53.603] Found 604 possible bad axioms.
+[2026-06-28 08:04:53.603] Selected the bad axiom SubClassOf(ObjectComplementOf(skin_rash) ObjectComplementOf(eye_itching)).
+[2026-06-28 08:04:53.609] Found 603 possible bad axioms.
+[2026-06-28 08:04:53.609] Selected the bad axiom SubClassOf(Corynebacterium_xerosis ObjectComplementOf(Corynebacterium_spp)).
+[2026-06-28 08:04:53.614] Found 602 possible bad axioms.
+[2026-06-28 08:04:53.614] Selected the bad axiom SubClassOf(winegrower’s_lung ObjectSomeValuesFrom(is_caused_by Botrytis_cinerea)).
+[2026-06-28 08:04:53.620] Found 601 possible bad axioms.
+[2026-06-28 08:04:53.620] Selected the bad axiom SubClassOf(Brevibacterium_linens ObjectComplementOf(Arthrobacter_globiformis)).
+[2026-06-28 08:04:53.636] Found 600 possible bad axioms.
+[2026-06-28 08:04:53.636] Selected the bad axiom SubClassOf(Aureobasidium_pullulans Aureobasidium_spp).
+[2026-06-28 08:04:53.643] Found 599 possible bad axioms.
+[2026-06-28 08:04:53.643] Selected the bad axiom SubClassOf(grain_dust organic_dust_of_plant_origin).
+[2026-06-28 08:04:53.648] Found 598 possible bad axioms.
+[2026-06-28 08:04:53.649] Selected the bad axiom SubClassOf(Saccharopolyspora_rectivirgula ObjectComplementOf(Rhodococcus_sp.)).
+[2026-06-28 08:04:53.653] Found 597 possible bad axioms.
+[2026-06-28 08:04:53.653] Selected 
+...[truncated]
+FAIL: attempt=8 seed=99538 - negative return code -9
+progress: ontology=HP_O attempt=8 success=0/100
+----- HP_O attempt=9 seed=113738 at 2026-06-28 08:07:33 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=113738, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:07:34.163] Checking precondition...
+[2026-06-28 08:07:34.189] Starting the repair...
+[2026-06-28 08:07:34.201] Found 611 possible bad axioms.
+[2026-06-28 08:07:34.203] Selected the bad axiom SubClassOf(Aspergillus_candidus ObjectComplementOf(Aspergillus_fumigatus)).
+[2026-06-28 08:07:34.212] Found 610 possible bad axioms.
+[2026-06-28 08:07:34.212] Selected the bad axiom SubClassOf(oyster_shell_lung hypersensitivity_pneumonitis).
+[2026-06-28 08:07:34.221] Found 609 possible bad axioms.
+[2026-06-28 08:07:34.221] Selected the bad axiom SubClassOf(bagassosis hypersensitivity_pneumonitis).
+[2026-06-28 08:07:34.234] Found 608 possible bad axioms.
+[2026-06-28 08:07:34.234] Selected the bad axiom SubClassOf(paprika organic_dust_of_plant_origin).
+[2026-06-28 08:07:34.241] Found 607 possible bad axioms.
+[2026-06-28 08:07:34.241] Selected the bad axiom SubClassOf(sweating ObjectComplementOf(chest_tightness)).
+[2026-06-28 08:07:34.248] Found 606 possible bad axioms.
+[2026-06-28 08:07:34.248] Selected the bad axiom SubClassOf(endobronchial_valve_implant_treatment other_condition_at_risk).
+[2026-06-28 08:07:34.255] Found 605 possible bad axioms.
+[2026-06-28 08:07:34.255] Selected the bad axiom SubClassOf(cough ObjectComplementOf(sneezing)).
+[2026-06-28 08:07:34.262] Found 604 possible bad axioms.
+[2026-06-28 08:07:34.262] Selected the bad axiom SubClassOf(general_weakness ObjectComplementOf(eye_itching)).
+[2026-06-28 08:07:34.268] Found 603 possible bad axioms.
+[2026-06-28 08:07:34.268] Selected the bad axiom SubClassOf(Aspergillus_fumigatus Aspergillus_spp).
+[2026-06-28 08:07:34.273] Found 602 possible bad axioms.
+[2026-06-28 08:07:34.273] Selected the bad axiom SubClassOf(fever ObjectComplementOf(general_weakness)).
+[2026-06-28 08:07:34.279] Found 601 possible bad axioms.
+[2026-06-28 08:07:34.279] Selected the bad axiom SubClassOf(chest_tightness ObjectComplementOf(shivering)).
+[2026-06-28 08:07:34.295] Found 600 possible bad axioms.
+[2026-06-28 08:07:34.295] Selected the bad axiom SubClassOf(azathioprine drug).
+[2026-06-28 08:07:34.301] Found 599 possible bad axioms.
+[2026-06-28 08:07:34.302] Selected the bad axiom SubClassOf(hot_processed_plastic other_source).
+[2026-06-28 08:07:34.307] Found 598 possible bad axioms.
+[2026-06-28 08:07:34.307] Selected the bad axiom SubClassOf(wind_musician ObjectSomeValuesFrom(is_at_risk_of acute_hypersensitivity_pneumonitis)).
+[2026-06-28 08:07:34.312] Found 597 possible bad axioms.
+[2026-06-28 08:07:34.312] Selected the bad axiom SubClassOf(detergent_enzymes other_source).
+[2026-06-28 08:07:34.316] Found 596 p
+...[truncated]
+FAIL: attempt=9 seed=113738 - negative return code -9
+progress: ontology=HP_O attempt=9 success=0/100
+----- HP_O attempt=10 seed=127938 at 2026-06-28 08:10:17 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/HP_O.owl, seed=127938, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:10:17.807] Checking precondition...
+[2026-06-28 08:10:17.838] Starting the repair...
+[2026-06-28 08:10:17.852] Found 611 possible bad axioms.
+[2026-06-28 08:10:17.854] Selected the bad axiom SubClassOf(chest_tightness ObjectComplementOf(wheezing)).
+[2026-06-28 08:10:17.865] Found 610 possible bad axioms.
+[2026-06-28 08:10:17.865] Selected the bad axiom SubClassOf(Aspergillus_clavatus ObjectComplementOf(Aspergillus_fumigatus)).
+[2026-06-28 08:10:17.873] Found 609 possible bad axioms.
+[2026-06-28 08:10:17.873] Selected the bad axiom SubClassOf(humidifier_lung ObjectSomeValuesFrom(is_caused_by Mycobacterium_gordonae)).
+[2026-06-28 08:10:17.886] Found 608 possible bad axioms.
+[2026-06-28 08:10:17.886] Selected the bad axiom SubClassOf(anhydrides chemical).
+[2026-06-28 08:10:17.895] Found 607 possible bad axioms.
+[2026-06-28 08:10:17.895] Selected the bad axiom SubClassOf(fish_meal_dust mollusk_shell_protein).
+[2026-06-28 08:10:17.903] Found 606 possible bad axioms.
+[2026-06-28 08:10:17.904] Selected the bad axiom SubClassOf(headache ObjectComplementOf(sweating)).
+[2026-06-28 08:10:17.910] Found 605 possible bad axioms.
+[2026-06-28 08:10:17.910] Selected the bad axiom SubClassOf(Rhodococcus_sp. ObjectComplementOf(Thermoactinomyces_vulgaris)).
+[2026-06-28 08:10:17.915] Found 604 possible bad axioms.
+[2026-06-28 08:10:17.916] Selected the bad axiom SubClassOf(Cephalosporium_spp fungi).
+[2026-06-28 08:10:17.921] Found 603 possible bad axioms.
+[2026-06-28 08:10:17.921] Selected the bad axiom SubClassOf(Aspergillus_candidus ObjectComplementOf(Alternaria_alternata)).
+[2026-06-28 08:10:17.926] Found 602 possible bad axioms.
+[2026-06-28 08:10:17.926] Selected the bad axiom SubClassOf(Penicillium_citrinum fungi).
+[2026-06-28 08:10:17.932] Found 601 possible bad axioms.
+[2026-06-28 08:10:17.932] Selected the bad axiom SubClassOf(Candida_albicans ObjectSomeValuesFrom(is_part_of saxophone_mouthpiece)).
+[2026-06-28 08:10:17.948] Found 600 possible bad axioms.
+[2026-06-28 08:10:17.948] Selected the bad axiom SubClassOf(body_itching ObjectComplementOf(eye_itching)).
+[2026-06-28 08:10:17.954] Found 599 possible bad axioms.
+[2026-06-28 08:10:17.954] Selected the bad axiom SubClassOf(sneezing ObjectComplementOf(sweating)).
+[2026-06-28 08:10:17.959] Found 598 possible bad axioms.
+[2026-06-28 08:10:17.959] Selected the bad axiom SubClassOf(Candida_guilliermondii fungi).
+[2026-06-28 08:10:17.964] Found 597 possible bad axioms.
+[2026-06-28 08:10:17.964] Selected the bad axiom SubClassOf(pet_groomer beautician).
+[2026-06-28 08:10:17.968] Found 596 possible bad ax
+...[truncated]
+FAIL: attempt=10 seed=127938 - negative return code -9
+progress: ontology=HP_O attempt=10 success=0/100
+=== ABORTED HP_O after 10 consecutive failures at 2026-06-28 08:13:07 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for HP_O - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=138 msg=negative return code -9
+  attempt=2 seed=14338 msg=negative return code -9
+  attempt=3 seed=28538 msg=negative return code -9
+  attempt=4 seed=42738 msg=negative return code -9
+  attempt=5 seed=56938 msg=negative return code -9
+  attempt=6 seed=71138 msg=negative return code -9
+  attempt=7 seed=85338 msg=negative return code -9
+  attempt=8 seed=99538 msg=negative return code -9
+  attempt=9 seed=113738 msg=negative return code -9
+  attempt=10 seed=127938 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=1602.546108 avg_seconds=160.254611
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

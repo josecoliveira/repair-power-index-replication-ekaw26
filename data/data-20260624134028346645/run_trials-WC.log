@@ -1,0 +1,555 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-WC.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-WC.csv
+
+=== Starting sequential trials for WC at 2026-06-28 04:43:13 ===
+----- WC attempt=1 seed=133 at 2026-06-28 04:43:13 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=133, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:43:14.107] Checking precondition...
+[2026-06-28 04:43:14.126] Starting the repair...
+[2026-06-28 04:43:14.141] Found 480 possible bad axioms.
+[2026-06-28 04:43:14.143] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_replicationRepair http://purl.obolibrary.org/obo/WC_nuclearStructure).
+[2026-06-28 04:43:14.150] Found 479 possible bad axioms.
+[2026-06-28 04:43:14.151] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_secretory http://purl.obolibrary.org/obo/WC_signalSequence).
+[2026-06-28 04:43:14.158] Found 478 possible bad axioms.
+[2026-06-28 04:43:14.158] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_transcription http://purl.obolibrary.org/obo/WC_COG).
+[2026-06-28 04:43:14.165] Found 477 possible bad axioms.
+[2026-06-28 04:43:14.165] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_ribonucleotideBiphosphate http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 04:43:14.170] Found 476 possible bad axioms.
+[2026-06-28 04:43:14.170] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_geneWizPrediction http://purl.obolibrary.org/obo/WC_chromosomeFeature).
+[2026-06-28 04:43:14.180] Found 475 possible bad axioms.
+[2026-06-28 04:43:14.180] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_complexFormation http://purl.obolibrary.org/obo/WC_proteinModification).
+[2026-06-28 04:43:14.184] Found 474 possible bad axioms.
+[2026-06-28 04:43:14.185] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_proceedings http://purl.obolibrary.org/obo/WC_reference).
+[2026-06-28 04:43:14.189] Found 473 possible bad axioms.
+[2026-06-28 04:43:14.189] Selected the bad axiom SubClassOf(Gumbel_distribution standard-t_distribution).
+[2026-06-28 04:43:14.194] Found 472 possible bad axioms.
+[2026-06-28 04:43:14.194] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_string http://purl.obolibrary.org/obo/WC_signalSequenceType).
+[2026-06-28 04:43:14.199] Found 471 possible bad axioms.
+[2026-06-28 04:43:14.199] Selected the bad axiom SubClassOf(Vonmises_distribution gamma_distribution).
+[2026-06-28 04:43:14.204] Found 470 possible bad axioms.
+[2026-06-28 04:43:14.204] Selected the bad axiom SubClassOf(Zipf_distribution Rayleigh_distribution).
+[2026-06-28 04:43:14.215] Found 469 possible bad axioms.
+[2026-06-28 04:43:14.215] Selected the bad axiom SubClassOf(fluid_compartment encoding_target_provenance).
+[2026-06-28 04:43:14.220] Found 468 possible bad axioms.
+[2026-06-28 04:43:14.220] Selected the bad axiom SubClassOf(http:/
+...[truncated]
+FAIL: attempt=1 seed=133 - negative return code -9
+progress: ontology=WC attempt=1 success=0/100
+----- WC attempt=2 seed=14333 at 2026-06-28 04:45:48 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=14333, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:45:48.675] Checking precondition...
+[2026-06-28 04:45:48.694] Starting the repair...
+[2026-06-28 04:45:48.707] Found 480 possible bad axioms.
+[2026-06-28 04:45:48.710] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNACleavage http://purl.obolibrary.org/obo/WC_DNARepairreaction).
+[2026-06-28 04:45:48.718] Found 479 possible bad axioms.
+[2026-06-28 04:45:48.719] Selected the bad axiom SubClassOf(data_set uniform_distribution).
+[2026-06-28 04:45:48.726] Found 478 possible bad axioms.
+[2026-06-28 04:45:48.726] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_geneWizPrediction owl:Nothing).
+[2026-06-28 04:45:48.733] Found 477 possible bad axioms.
+[2026-06-28 04:45:48.733] Selected the bad axiom SubClassOf(binomial_distribution random_distribution).
+[2026-06-28 04:45:48.739] Found 476 possible bad axioms.
+[2026-06-28 04:45:48.739] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_baseMethylation http://purl.obolibrary.org/obo/WC_strandBreak).
+[2026-06-28 04:45:48.751] Found 475 possible bad axioms.
+[2026-06-28 04:45:48.752] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 04:45:48.757] Found 474 possible bad axioms.
+[2026-06-28 04:45:48.758] Selected the bad axiom SubClassOf(deletion_change_provenance http://purl.obolibrary.org/obo/WC_change).
+[2026-06-28 04:45:48.763] Found 473 possible bad axioms.
+[2026-06-28 04:45:48.763] Selected the bad axiom SubClassOf(incorrect_interpretation_reason_provenance new_goal_reason_provenance).
+[2026-06-28 04:45:48.767] Found 472 possible bad axioms.
+[2026-06-28 04:45:48.768] Selected the bad axiom SubClassOf(pseudo_species http://purl.obolibrary.org/obo/WC_protein).
+[2026-06-28 04:45:48.772] Found 471 possible bad axioms.
+[2026-06-28 04:45:48.772] Selected the bad axiom SubClassOf(Michaelis_Menten_rate_law rate_law).
+[2026-06-28 04:45:48.776] Found 470 possible bad axioms.
+[2026-06-28 04:45:48.776] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 04:45:48.786] Found 469 possible bad axioms.
+[2026-06-28 04:45:48.786] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_oxidationInactivating http://purl.obolibrary.org/obo/WC_proteinModificationReaction).
+[2026-06-28 04:45:48.790] Found 468 possible bad axioms.
+[2026-06-28 04:45:48.791] Selected the bad axiom SubClassOf(beta_distribution Dirichlet_distribution).
+[2026-06-28 04:45:48.796] Found 467 possible bad axioms.
+[2026-06-28 04:45:48.796] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_transcription http://purl.obolibrary.org/obo/WC_cellCy
+...[truncated]
+FAIL: attempt=2 seed=14333 - negative return code -9
+progress: ontology=WC attempt=2 success=0/100
+----- WC attempt=3 seed=28533 at 2026-06-28 04:48:22 -----
+--- stdout ---
+{"seed":28533,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.22072056890566547,"B1_vs_A2":1.3704496788008566E-4,"B1_vs_A3":0.14753157290470723,"B2_vs_A1":0.22170110727131673,"B2_vs_A2":1.3892265481193344E-4,"B2_vs_A3":0.41167002012072434,"B3_vs_A1":0.22170110727131673,"B3_vs_A2":1.3892265481193344E-4,"B3_vs_A3":0.41167002012072434,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.9997375833172968,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.9997375833172968,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.9997375833172968,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.9997375833172968,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.9997375833172968,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.9997375833172968},"repair_runtimes_ms":{"A1":617,"A2":96346,"A3":1089,"B1":983,"B2":10821,"B3":6912,"B4":572,"B5":398,"B6":1509,"B7":465,"B8":3254,"B9":1585}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=28533, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:48:22.811] Checking precondition...
+[2026-06-28 04:48:22.831] Starting the repair...
+[2026-06-28 04:48:22.845] Found 480 possible bad axioms.
+[2026-06-28 04:48:22.848] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_pseudogene http://purl.obolibrary.org/obo/WC_gene).
+[2026-06-28 04:48:22.854] Found 479 possible bad axioms.
+[2026-06-28 04:48:22.854] Selected the bad axiom SubClassOf(correct_intention_provenance simplify_intention_provenance).
+[2026-06-28 04:48:22.861] Found 478 possible bad axioms.
+[2026-06-28 04:48:22.861] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_replicationInitiation http://purl.obolibrary.org/obo/WC_complexFormation).
+[2026-06-28 04:48:22.868] Found 477 possible bad axioms.
+[2026-06-28 04:48:22.868] Selected the bad axiom SubClassOf(chi_square_distribution Vonmises_distribution).
+[2026-06-28 04:48:22.873] Found 476 possible bad axioms.
+[2026-06-28 04:48:22.874] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 04:48:22.885] Found 475 possible bad axioms.
+[2026-06-28 04:48:22.885] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_modifiedNucleobase http://purl.obolibrary.org/obo/WC_reactiveOxygenSpecies).
+[2026-06-28 04:48:22.890] Found 474 possible bad axioms.
+[2026-06-28 04:48:22.891] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_environment http://purl.obolibrary.org/obo/WC_activityLevel).
+[2026-06-28 04:48:22.896] Found 473 possible bad axioms.
+[2026-06-28 04:48:22.896] Selected the bad axiom SubClassOf(stop_condition).
+[2026-06-28 04:48:22.901] Found 472 possible bad axioms.
+[2026-06-28 04:48:22.901] Selected the bad axiom SubClassOf(biological_compartment http://purl.obolibrary.org/obo/WC_compartment).
+[2026-06-28 04:48:22.906] Found 471 possible bad axioms.
+[2026-06-28 04:48:22.906] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_preprint http://purl.obolibrary.org/obo/WC_website).
+[2026-06-28 04:48:22.911] Found 470 possible bad axioms.
+[2026-06-28 04:48:22.911] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_Ion http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 04:48:22.921] Found 469 possible bad axioms.
+[2026-06-28 04:48:22.921] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_transcriptionUnit http://purl.obolibrary.org/obo/WC_loci).
+[2026-06-28 04:48:22.926] Found 468 possible bad axioms.
+[2026-06-28 04:48:22.926] Selected the bad axiom SubClassOf(triangular_distribution random_distribution).
+[2026-06-28 04:48:22.931] Found 467 possible bad axi
+...[truncated]
+SUCCESS: attempt=3 seed=28533 success_count=1/100
+progress: ontology=WC attempt=3 success=1/100
+----- WC attempt=4 seed=42733 at 2026-06-28 04:50:31 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=42733, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:50:32.099] Checking precondition...
+[2026-06-28 04:50:32.118] Starting the repair...
+[2026-06-28 04:50:32.131] Found 480 possible bad axioms.
+[2026-06-28 04:50:32.133] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNAPolymerization http://purl.obolibrary.org/obo/WC_baseExcisionRepair).
+[2026-06-28 04:50:32.140] Found 479 possible bad axioms.
+[2026-06-28 04:50:32.140] Selected the bad axiom SubClassOf(model_target_provenance inconclusive_evidence).
+[2026-06-28 04:50:32.148] Found 478 possible bad axioms.
+[2026-06-28 04:50:32.148] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_energyProductionConversion http://purl.obolibrary.org/obo/WC_secondaryStructure).
+[2026-06-28 04:50:32.155] Found 477 possible bad axioms.
+[2026-06-28 04:50:32.155] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_intracellularTrafficingSecretion http://purl.obolibrary.org/obo/WC_COG).
+[2026-06-28 04:50:32.160] Found 476 possible bad axioms.
+[2026-06-28 04:50:32.160] Selected the bad axiom SubClassOf(hypergeometric_distribution random_distribution).
+[2026-06-28 04:50:32.169] Found 475 possible bad axioms.
+[2026-06-28 04:50:32.169] Selected the bad axiom SubClassOf(add_metadata_reason_provenance reason_provenance).
+[2026-06-28 04:50:32.174] Found 474 possible bad axioms.
+[2026-06-28 04:50:32.174] Selected the bad axiom SubClassOf(inconclusive_evidence).
+[2026-06-28 04:50:32.179] Found 473 possible bad axioms.
+[2026-06-28 04:50:32.179] Selected the bad axiom SubClassOf(Michaelis_Menten_rate_law rate_law).
+[2026-06-28 04:50:32.184] Found 472 possible bad axioms.
+[2026-06-28 04:50:32.184] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_carbohydrateSugar http://purl.obolibrary.org/obo/WC_Ion).
+[2026-06-28 04:50:32.189] Found 471 possible bad axioms.
+[2026-06-28 04:50:32.189] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_ribonucleotideTriphosphate http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 04:50:32.194] Found 470 possible bad axioms.
+[2026-06-28 04:50:32.194] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_TRNASynthClassIIComplex http://purl.obolibrary.org/obo/WC_complex).
+[2026-06-28 04:50:32.206] Found 469 possible bad axioms.
+[2026-06-28 04:50:32.206] Selected the bad axiom SubClassOf(Laplace_distribution random_distribution).
+[2026-06-28 04:50:32.211] Found 468 possible bad axioms.
+[2026-06-28 04:50:32.211] Selected the bad axiom SubClassOf(theoretical_observation http://purl.obolibrary.org/obo/WC_observation).
+[2026-06-28 04:50:32.
+...[truncated]
+FAIL: attempt=4 seed=42733 - negative return code -9
+progress: ontology=WC attempt=4 success=1/100
+----- WC attempt=5 seed=56933 at 2026-06-28 04:52:45 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=56933, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:52:45.892] Checking precondition...
+[2026-06-28 04:52:45.912] Starting the repair...
+[2026-06-28 04:52:45.926] Found 480 possible bad axioms.
+[2026-06-28 04:52:45.928] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_baseAlkylation http://purl.obolibrary.org/obo/WC_DNADamage).
+[2026-06-28 04:52:45.936] Found 479 possible bad axioms.
+[2026-06-28 04:52:45.936] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_tRNA http://purl.obolibrary.org/obo/WC_RNA).
+[2026-06-28 04:52:45.942] Found 478 possible bad axioms.
+[2026-06-28 04:52:45.943] Selected the bad axiom SubClassOf(membrane_compartment disputing_evidence).
+[2026-06-28 04:52:45.950] Found 477 possible bad axioms.
+[2026-06-28 04:52:45.950] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_TRNASynthClassII http://purl.obolibrary.org/obo/WC_TRNASynthClassIB).
+[2026-06-28 04:52:45.956] Found 476 possible bad axioms.
+[2026-06-28 04:52:45.957] Selected the bad axiom SubClassOf(hill_rate_law rate_law).
+[2026-06-28 04:52:45.967] Found 475 possible bad axioms.
+[2026-06-28 04:52:45.967] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_replication http://purl.obolibrary.org/obo/WC_complexFormation).
+[2026-06-28 04:52:45.973] Found 474 possible bad axioms.
+[2026-06-28 04:52:45.973] Selected the bad axiom SubClassOf(noncentral-f_distribution random_distribution).
+[2026-06-28 04:52:45.978] Found 473 possible bad axioms.
+[2026-06-28 04:52:45.978] Selected the bad axiom SubClassOf(model_target_provenance http://purl.obolibrary.org/obo/WC_active).
+[2026-06-28 04:52:45.983] Found 472 possible bad axioms.
+[2026-06-28 04:52:45.984] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_aminoAcid http://purl.obolibrary.org/obo/WC_Ion).
+[2026-06-28 04:52:45.988] Found 471 possible bad axioms.
+[2026-06-28 04:52:45.989] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_macromolecularComplexation http://purl.obolibrary.org/obo/WC_complexFormation).
+[2026-06-28 04:52:45.993] Found 470 possible bad axioms.
+[2026-06-28 04:52:45.994] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_reference http://purl.obolibrary.org/obo/WC_website).
+[2026-06-28 04:52:46.004] Found 469 possible bad axioms.
+[2026-06-28 04:52:46.004] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_update http://purl.obolibrary.org/obo/WC_move).
+[2026-06-28 04:52:46.009] Found 468 possible bad axioms.
+[2026-06-28 04:52:46.009] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_dephosphorylation
+...[truncated]
+FAIL: attempt=5 seed=56933 - negative return code -9
+progress: ontology=WC attempt=5 success=1/100
+----- WC attempt=6 seed=71133 at 2026-06-28 04:55:59 -----
+--- stdout ---
+{"seed":71133,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":480,"A2":96566,"A3":1782}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=71133, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:56:00.210] Checking precondition...
+[2026-06-28 04:56:00.230] Starting the repair...
+[2026-06-28 04:56:00.244] Found 480 possible bad axioms.
+[2026-06-28 04:56:00.246] Selected the bad axiom SubClassOf(deterministic_simulation_algorithm next_reaction_method).
+[2026-06-28 04:56:00.253] Found 479 possible bad axioms.
+[2026-06-28 04:56:00.254] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNABinding owl:Nothing).
+[2026-06-28 04:56:00.262] Found 478 possible bad axioms.
+[2026-06-28 04:56:00.263] Selected the bad axiom SubClassOf(K_m kinetic_constant).
+[2026-06-28 04:56:00.270] Found 477 possible bad axioms.
+[2026-06-28 04:56:00.270] Selected the bad axiom SubClassOf(Gumbel_distribution target_provenance).
+[2026-06-28 04:56:00.275] Found 476 possible bad axioms.
+[2026-06-28 04:56:00.276] Selected the bad axiom SubClassOf(species_type model_element).
+[2026-06-28 04:56:00.285] Found 475 possible bad axioms.
+[2026-06-28 04:56:00.286] Selected the bad axiom SubClassOf(geometric_compartment http://purl.obolibrary.org/obo/WC_compartment).
+[2026-06-28 04:56:00.291] Found 474 possible bad axioms.
+[2026-06-28 04:56:00.291] Selected the bad axiom SubClassOf(membrane_compartment physical_compartment).
+[2026-06-28 04:56:00.296] Found 473 possible bad axioms.
+[2026-06-28 04:56:00.296] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_move http://purl.obolibrary.org/obo/WC_copy).
+[2026-06-28 04:56:00.302] Found 472 possible bad axioms.
+[2026-06-28 04:56:00.302] Selected the bad axiom SubClassOf(implementation_error_reason_provenance).
+[2026-06-28 04:56:00.307] Found 471 possible bad axioms.
+[2026-06-28 04:56:00.307] Selected the bad axiom SubClassOf(model_element http://purl.obolibrary.org/obo/WC_observable).
+[2026-06-28 04:56:00.312] Found 470 possible bad axioms.
+[2026-06-28 04:56:00.312] Selected the bad axiom SubClassOf(supplementary_material http://purl.obolibrary.org/obo/WC_proceedings).
+[2026-06-28 04:56:00.323] Found 469 possible bad axioms.
+[2026-06-28 04:56:00.323] Selected the bad axiom SubClassOf(reason_provenance).
+[2026-06-28 04:56:00.329] Found 468 possible bad axioms.
+[2026-06-28 04:56:00.329] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_loci http://purl.obolibrary.org/obo/WC_submodel).
+[2026-06-28 04:56:00.335] Found 467 possible bad axioms.
+[2026-06-28 04:56:00.335] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_evidence http://purl.obolibrary.org/obo/WC_provenance).
+[2026-06-28 04:56:00.339] Found 466 possible bad axioms.
+[2026-06-28 04:56:00.340] Selected
+...[truncated]
+FAIL: attempt=6 seed=71133 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=WC attempt=6 success=1/100
+----- WC attempt=7 seed=85333 at 2026-06-28 04:57:39 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=85333, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 04:57:39.503] Checking precondition...
+[2026-06-28 04:57:39.521] Starting the repair...
+[2026-06-28 04:57:39.536] Found 480 possible bad axioms.
+[2026-06-28 04:57:39.538] Selected the bad axiom SubClassOf(model_dynamics_target_provenance model_target_provenance).
+[2026-06-28 04:57:39.545] Found 479 possible bad axioms.
+[2026-06-28 04:57:39.546] Selected the bad axiom SubClassOf(multinomial_distribution random_distribution).
+[2026-06-28 04:57:39.553] Found 478 possible bad axioms.
+[2026-06-28 04:57:39.553] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 04:57:39.560] Found 477 possible bad axioms.
+[2026-06-28 04:57:39.560] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_inactivating http://purl.obolibrary.org/obo/WC_proteinModificationReaction).
+[2026-06-28 04:57:39.565] Found 476 possible bad axioms.
+[2026-06-28 04:57:39.566] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNALigation http://purl.obolibrary.org/obo/WC_DNARepairreaction).
+[2026-06-28 04:57:39.575] Found 475 possible bad axioms.
+[2026-06-28 04:57:39.575] Selected the bad axiom SubClassOf(standard-Cauchy_distribution Poisson_distribution).
+[2026-06-28 04:57:39.580] Found 474 possible bad axioms.
+[2026-06-28 04:57:39.580] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_inactive http://purl.obolibrary.org/obo/WC_activityLevel).
+[2026-06-28 04:57:39.584] Found 473 possible bad axioms.
+[2026-06-28 04:57:39.585] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_promoter http://purl.obolibrary.org/obo/WC_TFBindingSite).
+[2026-06-28 04:57:39.589] Found 472 possible bad axioms.
+[2026-06-28 04:57:39.590] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 04:57:39.594] Found 471 possible bad axioms.
+[2026-06-28 04:57:39.594] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_move http://purl.obolibrary.org/obo/WC_change).
+[2026-06-28 04:57:39.598] Found 470 possible bad axioms.
+[2026-06-28 04:57:39.599] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_mRNA owl:Nothing).
+[2026-06-28 04:57:39.610] Found 469 possible bad axioms.
+[2026-06-28 04:57:39.610] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_geneWizPrediction owl:Nothing).
+[2026-06-28 04:57:39.615] Found 468 possible bad axioms.
+[2026-06-28 04:57:39.615] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_conclusion http://purl.obolibrary.org/obo/WC_provenance).
+[2026-06-28 04:57:39.621] Found 467 possible bad axioms.
+[2026-06-28 04:57:39.621] Selected the ba
+...[truncated]
+FAIL: attempt=7 seed=85333 - negative return code -9
+progress: ontology=WC attempt=7 success=1/100
+----- WC attempt=8 seed=99533 at 2026-06-28 05:06:18 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=99533, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:06:18.683] Checking precondition...
+[2026-06-28 05:06:18.701] Starting the repair...
+[2026-06-28 05:06:18.715] Found 480 possible bad axioms.
+[2026-06-28 05:06:18.717] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_chromosomeCondensation http://purl.obolibrary.org/obo/WC_complexFormation).
+[2026-06-28 05:06:18.724] Found 479 possible bad axioms.
+[2026-06-28 05:06:18.725] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_COG http://purl.obolibrary.org/obo/WC_tranlsation).
+[2026-06-28 05:06:18.733] Found 478 possible bad axioms.
+[2026-06-28 05:06:18.733] Selected the bad axiom SubClassOf(stop_condition model_element).
+[2026-06-28 05:06:18.740] Found 477 possible bad axioms.
+[2026-06-28 05:06:18.740] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNAABox http://purl.obolibrary.org/obo/WC_chromosomeFeature).
+[2026-06-28 05:06:18.745] Found 476 possible bad axioms.
+[2026-06-28 05:06:18.746] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_submodel http://purl.obolibrary.org/obo/WC_regulatoryElement).
+[2026-06-28 05:06:18.757] Found 475 possible bad axioms.
+[2026-06-28 05:06:18.757] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_merge http://purl.obolibrary.org/obo/WC_change).
+[2026-06-28 05:06:18.762] Found 474 possible bad axioms.
+[2026-06-28 05:06:18.762] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_chromosomeFeature http://purl.obolibrary.org/obo/WC_regulatoryElement).
+[2026-06-28 05:06:18.767] Found 473 possible bad axioms.
+[2026-06-28 05:06:18.767] Selected the bad axiom SubClassOf(supplementary_material http://purl.obolibrary.org/obo/WC_reference).
+[2026-06-28 05:06:18.772] Found 472 possible bad axioms.
+[2026-06-28 05:06:18.773] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_rRNA http://purl.obolibrary.org/obo/WC_RNA).
+[2026-06-28 05:06:18.778] Found 471 possible bad axioms.
+[2026-06-28 05:06:18.778] Selected the bad axiom SubClassOf(dynamic_flux_balance_analysis modeling_framework).
+[2026-06-28 05:06:18.783] Found 470 possible bad axioms.
+[2026-06-28 05:06:18.783] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_metabolism http://purl.obolibrary.org/obo/WC_complexFormation).
+[2026-06-28 05:06:18.794] Found 469 possible bad axioms.
+[2026-06-28 05:06:18.794] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_aminoAcidMetabolismTransport http://purl.obolibrary.org/obo/WC_intracellularTrafficingSecretion).
+[2026-06-28 05:06:18.799] Found 468 possible bad axioms.
+
+...[truncated]
+FAIL: attempt=8 seed=99533 - negative return code -9
+progress: ontology=WC attempt=8 success=1/100
+----- WC attempt=9 seed=113733 at 2026-06-28 05:08:49 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=113733, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:08:50.086] Checking precondition...
+[2026-06-28 05:08:50.106] Starting the repair...
+[2026-06-28 05:08:50.121] Found 480 possible bad axioms.
+[2026-06-28 05:08:50.124] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_transcriptionComplexFormation http://purl.obolibrary.org/obo/WC_proteinModification).
+[2026-06-28 05:08:50.131] Found 479 possible bad axioms.
+[2026-06-28 05:08:50.132] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_metabolism http://purl.obolibrary.org/obo/WC_complexFormation).
+[2026-06-28 05:08:50.139] Found 478 possible bad axioms.
+[2026-06-28 05:08:50.139] Selected the bad axiom SubClassOf(deterministic_simulation_algorithm next_reaction_method).
+[2026-06-28 05:08:50.146] Found 477 possible bad axioms.
+[2026-06-28 05:08:50.147] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNA http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 05:08:50.152] Found 476 possible bad axioms.
+[2026-06-28 05:08:50.152] Selected the bad axiom SubClassOf(stop_condition).
+[2026-06-28 05:08:50.162] Found 475 possible bad axioms.
+[2026-06-28 05:08:50.162] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_decision http://purl.obolibrary.org/obo/WC_assumption).
+[2026-06-28 05:08:50.167] Found 474 possible bad axioms.
+[2026-06-28 05:08:50.167] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 05:08:50.172] Found 473 possible bad axioms.
+[2026-06-28 05:08:50.172] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_spontaneousBaseDeamination http://purl.obolibrary.org/obo/WC_DNADamage).
+[2026-06-28 05:08:50.177] Found 472 possible bad axioms.
+[2026-06-28 05:08:50.177] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_ribonucleotideTriphosphate http://purl.obolibrary.org/obo/WC_dipeptide).
+[2026-06-28 05:08:50.182] Found 471 possible bad axioms.
+[2026-06-28 05:08:50.182] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNABinding http://purl.obolibrary.org/obo/WC_dsDNA).
+[2026-06-28 05:08:50.187] Found 470 possible bad axioms.
+[2026-06-28 05:08:50.187] Selected the bad axiom SubClassOf(next_reaction_method modeling_framework).
+[2026-06-28 05:08:50.197] Found 469 possible bad axioms.
+[2026-06-28 05:08:50.198] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_aminoAcidMetabolismTransport http://purl.obolibrary.org/obo/WC_COG).
+[2026-06-28 05:08:50.202] Found 468 possible bad axioms.
+[2026-06-28 05:08:50.202] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_baseReduction
+...[truncated]
+FAIL: attempt=9 seed=113733 - negative return code -9
+progress: ontology=WC attempt=9 success=1/100
+----- WC attempt=10 seed=127933 at 2026-06-28 05:12:33 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=127933, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:12:33.477] Checking precondition...
+[2026-06-28 05:12:33.499] Starting the repair...
+[2026-06-28 05:12:33.515] Found 480 possible bad axioms.
+[2026-06-28 05:12:33.518] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_chromatinStructureDynamics http://purl.obolibrary.org/obo/WC_COG).
+[2026-06-28 05:12:33.525] Found 479 possible bad axioms.
+[2026-06-28 05:12:33.526] Selected the bad axiom SubClassOf(theoretical_observation http://purl.obolibrary.org/obo/WC_observation).
+[2026-06-28 05:12:33.533] Found 478 possible bad axioms.
+[2026-06-28 05:12:33.533] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_replicationRepair http://purl.obolibrary.org/obo/WC_COG).
+[2026-06-28 05:12:33.540] Found 477 possible bad axioms.
+[2026-06-28 05:12:33.540] Selected the bad axiom SubClassOf(model_target_provenance data_target_provenance).
+[2026-06-28 05:12:33.545] Found 476 possible bad axioms.
+[2026-06-28 05:12:33.545] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_pseudogene http://purl.obolibrary.org/obo/WC_gene).
+[2026-06-28 05:12:33.555] Found 475 possible bad axioms.
+[2026-06-28 05:12:33.555] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_COG http://purl.obolibrary.org/obo/WC_gene).
+[2026-06-28 05:12:33.559] Found 474 possible bad axioms.
+[2026-06-28 05:12:33.560] Selected the bad axiom SubClassOf(intention_provenance http://purl.obolibrary.org/obo/WC_provenance).
+[2026-06-28 05:12:33.564] Found 473 possible bad axioms.
+[2026-06-28 05:12:33.564] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_dipeptide http://purl.obolibrary.org/obo/WC_ribonucleotideTriphosphate).
+[2026-06-28 05:12:33.568] Found 472 possible bad axioms.
+[2026-06-28 05:12:33.569] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_dephosphorylationActivating http://purl.obolibrary.org/obo/WC_proteinModificationReaction).
+[2026-06-28 05:12:33.573] Found 471 possible bad axioms.
+[2026-06-28 05:12:33.573] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_baseGlucosylTransfer http://purl.obolibrary.org/obo/WC_DNADamage).
+[2026-06-28 05:12:33.578] Found 470 possible bad axioms.
+[2026-06-28 05:12:33.578] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_complex http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 05:12:33.589] Found 469 possible bad axioms.
+[2026-06-28 05:12:33.589] Selected the bad axiom SubClassOf(binomial_distribution exponential_distribution).
+[2026-06-28 05:12:33.595] Found 468 possible bad axioms.
+[2026-06-28 05:12:
+...[truncated]
+FAIL: attempt=10 seed=127933 - negative return code -9
+progress: ontology=WC attempt=10 success=1/100
+----- WC attempt=11 seed=142133 at 2026-06-28 05:15:13 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=142133, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:15:14.385] Checking precondition...
+[2026-06-28 05:15:14.404] Starting the repair...
+[2026-06-28 05:15:14.418] Found 480 possible bad axioms.
+[2026-06-28 05:15:14.421] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_intracellularTrafficingSecretion http://purl.obolibrary.org/obo/WC_transcription).
+[2026-06-28 05:15:14.428] Found 479 possible bad axioms.
+[2026-06-28 05:15:14.428] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 05:15:14.435] Found 478 possible bad axioms.
+[2026-06-28 05:15:14.436] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_reference http://purl.obolibrary.org/obo/WC_website).
+[2026-06-28 05:15:14.443] Found 477 possible bad axioms.
+[2026-06-28 05:15:14.443] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_compartment http://purl.obolibrary.org/obo/WC_regulatoryElement).
+[2026-06-28 05:15:14.448] Found 476 possible bad axioms.
+[2026-06-28 05:15:14.448] Selected the bad axiom SubClassOf(noncentral-f_distribution multinomial_distribution).
+[2026-06-28 05:15:14.458] Found 475 possible bad axioms.
+[2026-06-28 05:15:14.458] Selected the bad axiom SubClassOf(deletion_change_provenance).
+[2026-06-28 05:15:14.463] Found 474 possible bad axioms.
+[2026-06-28 05:15:14.463] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_vitamin http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 05:15:14.468] Found 473 possible bad axioms.
+[2026-06-28 05:15:14.468] Selected the bad axiom SubClassOf(logisitic_distribution Gumbel_distribution).
+[2026-06-28 05:15:14.473] Found 472 possible bad axioms.
+[2026-06-28 05:15:14.473] Selected the bad axiom SubClassOf(Michaelis_Menten_rate_law mass_action_rate_law).
+[2026-06-28 05:15:14.478] Found 471 possible bad axioms.
+[2026-06-28 05:15:14.478] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_ribosomeAssembly http://purl.obolibrary.org/obo/WC_ftsZPolymerization).
+[2026-06-28 05:15:14.483] Found 470 possible bad axioms.
+[2026-06-28 05:15:14.483] Selected the bad axiom SubClassOf(target_provenance http://purl.obolibrary.org/obo/WC_provenance).
+[2026-06-28 05:15:14.493] Found 469 possible bad axioms.
+[2026-06-28 05:15:14.494] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 05:15:14.499] Found 468 possible bad axioms.
+[2026-06-28 05:15:14.499] Selected the bad axiom SubClassOf(fluid_compartment physical_compartment).
+[2026-06-28 05:15:14.504] Found 467 possible bad axioms.
+[2026-06-28 05:15:14.504] Selected the bad axiom SubClassOf(species_type).
+[2026-06-28 05:15:14.509] Found
+...[truncated]
+FAIL: attempt=11 seed=142133 - negative return code -9
+progress: ontology=WC attempt=11 success=1/100
+----- WC attempt=12 seed=156333 at 2026-06-28 05:17:32 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=156333, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:17:32.633] Checking precondition...
+[2026-06-28 05:17:32.652] Starting the repair...
+[2026-06-28 05:17:32.666] Found 480 possible bad axioms.
+[2026-06-28 05:17:32.668] Selected the bad axiom SubClassOf(migrate_version_reason_provenance add_metadata_reason_provenance).
+[2026-06-28 05:17:32.675] Found 479 possible bad axioms.
+[2026-06-28 05:17:32.675] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_chromosomeFeature http://purl.obolibrary.org/obo/WC_regulatoryElement).
+[2026-06-28 05:17:32.684] Found 478 possible bad axioms.
+[2026-06-28 05:17:32.684] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_DNA http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 05:17:32.691] Found 477 possible bad axioms.
+[2026-06-28 05:17:32.691] Selected the bad axiom SubClassOf(dfba_species http://purl.obolibrary.org/obo/WC_TRNASynthClassIIComplex).
+[2026-06-28 05:17:32.697] Found 476 possible bad axioms.
+[2026-06-28 05:17:32.697] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_TRNASynthClassIIComplex http://purl.obolibrary.org/obo/WC_complex).
+[2026-06-28 05:17:32.707] Found 475 possible bad axioms.
+[2026-06-28 05:17:32.707] Selected the bad axiom SubClassOf(implementation_error_reason_provenance reason_provenance).
+[2026-06-28 05:17:32.712] Found 474 possible bad axioms.
+[2026-06-28 05:17:32.712] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_conclusion http://purl.obolibrary.org/obo/WC_author).
+[2026-06-28 05:17:32.717] Found 473 possible bad axioms.
+[2026-06-28 05:17:32.717] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_CTCFBindingSite http://purl.obolibrary.org/obo/WC_regulatoryElement).
+[2026-06-28 05:17:32.721] Found 472 possible bad axioms.
+[2026-06-28 05:17:32.722] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_update http://purl.obolibrary.org/obo/WC_insertion).
+[2026-06-28 05:17:32.727] Found 471 possible bad axioms.
+[2026-06-28 05:17:32.727] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 05:17:32.732] Found 470 possible bad axioms.
+[2026-06-28 05:17:32.732] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_cellWallMembraneEnvelopBiogenesis http://purl.obolibrary.org/obo/WC_COG).
+[2026-06-28 05:17:32.743] Found 469 possible bad axioms.
+[2026-06-28 05:17:32.744] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_ribosomeAssembly http://purl.obolibrary.org/obo/WC_ftsZPolymerization).
+[2026-06-28 05:17:32.749] Found 468 possible bad axioms.
+[2026-06-28 05:17:32.749] Selected t
+...[truncated]
+FAIL: attempt=12 seed=156333 - negative return code -9
+progress: ontology=WC attempt=12 success=1/100
+----- WC attempt=13 seed=170533 at 2026-06-28 05:19:57 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WC.owl, seed=170533, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:19:58.019] Checking precondition...
+[2026-06-28 05:19:58.038] Starting the repair...
+[2026-06-28 05:19:58.052] Found 480 possible bad axioms.
+[2026-06-28 05:19:58.054] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_float http://purl.obolibrary.org/obo/WC_valueType).
+[2026-06-28 05:19:58.062] Found 479 possible bad axioms.
+[2026-06-28 05:19:58.063] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_thesis http://purl.obolibrary.org/obo/WC_reference).
+[2026-06-28 05:19:58.070] Found 478 possible bad axioms.
+[2026-06-28 05:19:58.070] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_move http://purl.obolibrary.org/obo/WC_change).
+[2026-06-28 05:19:58.076] Found 477 possible bad axioms.
+[2026-06-28 05:19:58.076] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_observation http://purl.obolibrary.org/obo/WC_provenance).
+[2026-06-28 05:19:58.082] Found 476 possible bad axioms.
+[2026-06-28 05:19:58.082] Selected the bad axiom SubClassOf(data_set owl:Nothing).
+[2026-06-28 05:19:58.092] Found 475 possible bad axioms.
+[2026-06-28 05:19:58.092] Selected the bad axiom SubClassOf(data_set WC).
+[2026-06-28 05:19:58.098] Found 474 possible bad axioms.
+[2026-06-28 05:19:58.099] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_promoter http://purl.obolibrary.org/obo/WC_openChromatinRegion).
+[2026-06-28 05:19:58.104] Found 473 possible bad axioms.
+[2026-06-28 05:19:58.104] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_ribonucleotideTriphosphate http://purl.obolibrary.org/obo/WC_metabolite).
+[2026-06-28 05:19:58.108] Found 472 possible bad axioms.
+[2026-06-28 05:19:58.108] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_poised http://purl.obolibrary.org/obo/WC_activityLevel).
+[2026-06-28 05:19:58.112] Found 471 possible bad axioms.
+[2026-06-28 05:19:58.112] Selected the bad axiom SubClassOf(extracellular_compartment cellular_compartment).
+[2026-06-28 05:19:58.116] Found 470 possible bad axioms.
+[2026-06-28 05:19:58.116] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/WC_secondaryStructure http://purl.obolibrary.org/obo/WC_COG).
+[2026-06-28 05:19:58.127] Found 469 possible bad axioms.
+[2026-06-28 05:19:58.127] Selected the bad axiom SubClassOf(abstract_compartment physical_compartment).
+[2026-06-28 05:19:58.131] Found 468 possible bad axioms.
+[2026-06-28 05:19:58.132] Selected the bad axiom SubClassOf(model_element).
+[2026-06-28 05:19:58.136] Found 467 possible bad axioms.
+[2026-06-28 05:19:58.137] Selected 
+...[truncated]
+FAIL: attempt=13 seed=170533 - negative return code -9
+progress: ontology=WC attempt=13 success=1/100
+=== ABORTED WC after 10 consecutive failures at 2026-06-28 05:22:18 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for WC - 1 successes, 12 failures, 13 attempts ===
+Failed attempts:
+  attempt=1 seed=133 msg=negative return code -9
+  attempt=2 seed=14333 msg=negative return code -9
+  attempt=4 seed=42733 msg=negative return code -9
+  attempt=5 seed=56933 msg=negative return code -9
+  attempt=6 seed=71133 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=7 seed=85333 msg=negative return code -9
+  attempt=8 seed=99533 msg=negative return code -9
+  attempt=9 seed=113733 msg=negative return code -9
+  attempt=10 seed=127933 msg=negative return code -9
+  attempt=11 seed=142133 msg=negative return code -9
+  attempt=12 seed=156333 msg=negative return code -9
+  attempt=13 seed=170533 msg=negative return code -9
+Timing summary:
+  success: count=1 total_seconds=129.259686 avg_seconds=129.259686
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=11 total_seconds=2115.821248 avg_seconds=192.347386
+  success_rate=0.0769
+  wall_clock_seconds_total_run=360698.251834

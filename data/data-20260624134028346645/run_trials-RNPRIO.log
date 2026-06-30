@@ -1,0 +1,509 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-RNPRIO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-RNPRIO.csv
+
+=== Starting sequential trials for RNPRIO at 2026-06-26 12:34:37 ===
+----- RNPRIO attempt=1 seed=77 at 2026-06-26 12:34:37 -----
+--- stdout ---
+{"seed":77,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications","iic_values":{},"repair_runtimes_ms":{"A1":43,"A2":5255,"A3":326,"B1":803,"B2":4852,"B3":3086,"B4":77,"B5":2139}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=77, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:34:38.199] Checking precondition...
+[2026-06-26 12:34:38.214] Starting the repair...
+[2026-06-26 12:34:38.221] Found 171 possible bad axioms.
+[2026-06-26 12:34:38.223] Selected the bad axiom SubClassOf(Evidence_of_clinical_care_or_quality_improvement Publications).
+[2026-06-26 12:34:38.228] Found 170 possible bad axioms.
+[2026-06-26 12:34:38.229] Selected the bad axiom SubClassOf(Gender Demographics).
+[2026-06-26 12:34:38.233] Found 169 possible bad axioms.
+[2026-06-26 12:34:38.233] Selected the bad axiom SubClassOf(Data_Processing owl:Nothing).
+[2026-06-26 12:34:38.237] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 12:34:38.238] Checking precondition...
+[2026-06-26 12:34:38.248] Starting the repair...
+[2026-06-26 12:34:43.492] Found 3 possible bad axioms.
+[2026-06-26 12:34:43.492] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[2026-06-26 12:34:43.494] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 12:34:43.495] Checking precondition...
+[2026-06-26 12:34:43.497] Starting the repair...
+[2026-06-26 12:34:43.505] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:34:43.791] Selected the bad axiom SubClassOf(Data_Processing owl:Nothing).
+[2026-06-26 12:34:43.819] Selected the weaker axiom SubClassOf(Data_Processing Extraction).
+[2026-06-26 12:34:43.820] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 12:34:43.821] Checking precondition...
+[2026-06-26 12:34:43.823] Starting the repair...
+[2026-06-26 12:34:43.831] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:34:44.102] Selected the bad axiom SubClassOf(owl:Thing Applications).
+[2026-06-26 12:34:44.121] Selected the weaker axiom SubClassOf(owl:Thing Clinical_Focus).
+[2026-06-26 12:34:44.329] Selected the bad axiom SubClassOf(Clinical_Focus Network_Characteristics).
+[2026-06-26 12:34:44.330] Selected the weaker axiom SubClassOf(Clinical_Focus Common_data_model_used).
+[2026-06-26 12:34:44.623] Selected the bad axiom SubClassOf(owl:Thing Clinical_Focus).
+[2026-06-26 12:34:44.623] Selected the weaker axiom SubClassOf(Age Clinical_Focus).
+[2026-06-26 12:34:44.624] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 12:34:44.626] Checking precondition...
+[2026-06-26 12:34:44.627] Starting the repair...
+[2026-06-26 12:34:44.634] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:34:44.891] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+...[truncated]
+FAIL: attempt=1 seed=77 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+progress: ontology=RNPRIO attempt=1 success=0/100
+----- RNPRIO attempt=2 seed=14277 at 2026-06-26 12:34:54 -----
+--- stdout ---
+{"seed":14277,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications","iic_values":{},"repair_runtimes_ms":{"A1":120,"A2":5209,"A3":722,"B1":279,"B2":4953,"B3":894,"B4":103,"B5":474}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=14277, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:34:55.247] Checking precondition...
+[2026-06-26 12:34:55.262] Starting the repair...
+[2026-06-26 12:34:55.268] Found 171 possible bad axioms.
+[2026-06-26 12:34:55.270] Selected the bad axiom SubClassOf(ED_Type Electronic_Data).
+[2026-06-26 12:34:55.277] Found 170 possible bad axioms.
+[2026-06-26 12:34:55.277] Selected the bad axiom SubClassOf(Study_type Evidence_of_Clinical_Studies_Capacity).
+[2026-06-26 12:34:55.282] Found 169 possible bad axioms.
+[2026-06-26 12:34:55.282] Selected the bad axiom SubClassOf(Clinical_Focus Network_Characteristics).
+[2026-06-26 12:34:55.285] Found 168 possible bad axioms.
+[2026-06-26 12:34:55.286] Selected the bad axiom SubClassOf(Analysis_of_biospecimens_collected_by_the_network Results_linkable_to_patient_outcomes).
+[2026-06-26 12:34:55.288] Found 167 possible bad axioms.
+[2026-06-26 12:34:55.289] Selected the bad axiom SubClassOf(Gender Demographics).
+[2026-06-26 12:34:55.295] Found 166 possible bad axioms.
+[2026-06-26 12:34:55.295] Selected the bad axiom SubClassOf(Transformation_method Data_mapping_and_transformation_mechanism).
+[2026-06-26 12:34:55.298] Found 165 possible bad axioms.
+[2026-06-26 12:34:55.299] Selected the bad axiom SubClassOf(Study_type Analysis_of_biospecimens).
+[2026-06-26 12:34:55.302] Found 164 possible bad axioms.
+[2026-06-26 12:34:55.302] Selected the bad axiom SubClassOf(Requirements_for_institutional_investigators_to_collaborate_with_each_other Data_sharing).
+[2026-06-26 12:34:55.305] Found 163 possible bad axioms.
+[2026-06-26 12:34:55.305] Selected the bad axiom SubClassOf(Evidence_of_longitudinal_follow-up_studies owl:Nothing).
+[2026-06-26 12:34:55.308] Found 162 possible bad axioms.
+[2026-06-26 12:34:55.308] Selected the bad axiom SubClassOf(Health_care_derived_data Clinical_data).
+[2026-06-26 12:34:55.311] Found 161 possible bad axioms.
+[2026-06-26 12:34:55.311] Selected the bad axiom SubClassOf(Publications Evidence_of_clinical_care_or_quality_improvement).
+[2026-06-26 12:34:55.320] Found 160 possible bad axioms.
+[2026-06-26 12:34:55.320] Selected the bad axiom SubClassOf(Architecture Query_distribution_via_central_hub).
+[2026-06-26 12:34:55.323] Found 159 possible bad axioms.
+[2026-06-26 12:34:55.323] Selected the bad axiom SubClassOf(Publications Studies_published_in_peer_reviewed_journals).
+[2026-06-26 12:34:55.326] Found 158 possible bad axioms.
+[2026-06-26 12:34:55.326] Selected the bad axiom SubClassOf(Type_of_Consent Broad_use_of_electronic_data).
+[2026-06-26 12:34:55.328] Found 157 possible bad axioms.
+[2026-06-26 12:34:55.329] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=2 seed=14277 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+progress: ontology=RNPRIO attempt=2 success=0/100
+----- RNPRIO attempt=3 seed=28477 at 2026-06-26 12:35:08 -----
+--- stdout ---
+{"seed":28477,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications","iic_values":{},"repair_runtimes_ms":{"A1":43,"A2":5331,"A3":1177,"B1":295,"B2":4269,"B3":880,"B4":96,"B5":1132}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=28477, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:35:08.459] Checking precondition...
+[2026-06-26 12:35:08.474] Starting the repair...
+[2026-06-26 12:35:08.481] Found 171 possible bad axioms.
+[2026-06-26 12:35:08.483] Selected the bad axiom SubClassOf(Mechanisms_of_participation Healthcare_organizations_engagement).
+[2026-06-26 12:35:08.489] Found 170 possible bad axioms.
+[2026-06-26 12:35:08.490] Selected the bad axiom SubClassOf(Transformation_method Description).
+[2026-06-26 12:35:08.494] Found 169 possible bad axioms.
+[2026-06-26 12:35:08.494] Selected the bad axiom SubClassOf(owl:Thing Applications).
+[2026-06-26 12:35:08.498] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 12:35:08.498] Checking precondition...
+[2026-06-26 12:35:08.509] Starting the repair...
+[2026-06-26 12:35:13.827] Found 3 possible bad axioms.
+[2026-06-26 12:35:13.828] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[2026-06-26 12:35:13.829] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 12:35:13.831] Checking precondition...
+[2026-06-26 12:35:13.833] Starting the repair...
+[2026-06-26 12:35:13.843] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:35:14.125] Selected the bad axiom SubClassOf(owl:Thing Applications).
+[2026-06-26 12:35:14.161] Selected the weaker axiom SubClassOf(owl:Thing Transformation_method).
+[2026-06-26 12:35:14.430] Selected the bad axiom SubClassOf(owl:Thing Transformation_method).
+[2026-06-26 12:35:14.431] Selected the weaker axiom SubClassOf(owl:Thing Statistical_Analysis).
+[2026-06-26 12:35:14.658] Selected the bad axiom SubClassOf(Data_Processing owl:Nothing).
+[2026-06-26 12:35:14.660] Selected the weaker axiom SubClassOf(Metadata_collected owl:Nothing).
+[2026-06-26 12:35:15.005] Selected the bad axiom SubClassOf(owl:Thing Statistical_Analysis).
+[2026-06-26 12:35:15.006] Selected the weaker axiom SubClassOf(Extraction Statistical_Analysis).
+[2026-06-26 12:35:15.006] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 12:35:15.007] Checking precondition...
+[2026-06-26 12:35:15.008] Starting the repair...
+[2026-06-26 12:35:15.016] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:35:15.283] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[2026-06-26 12:35:15.301] Selected the weaker axiom SubClassOf(Harmonization Statistical_Analysis).
+[2026-06-26 12:35:15.302] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 12:35:15.304] Checking precond
+...[truncated]
+FAIL: attempt=3 seed=28477 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+progress: ontology=RNPRIO attempt=3 success=0/100
+----- RNPRIO attempt=4 seed=42677 at 2026-06-26 12:35:22 -----
+--- stdout ---
+{"seed":42677,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":154,"A2":5207,"A3":729,"B1":297,"B2":1794}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=42677, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:35:22.378] Checking precondition...
+[2026-06-26 12:35:22.392] Starting the repair...
+[2026-06-26 12:35:22.399] Found 171 possible bad axioms.
+[2026-06-26 12:35:22.401] Selected the bad axiom SubClassOf(Tools_used Integration_for_longitudinal_analysis).
+[2026-06-26 12:35:22.406] Found 170 possible bad axioms.
+[2026-06-26 12:35:22.406] Selected the bad axiom SubClassOf(Patient_Population Methods_for_Data_Security).
+[2026-06-26 12:35:22.410] Found 169 possible bad axioms.
+[2026-06-26 12:35:22.411] Selected the bad axiom SubClassOf(Electronic_Data Clinical_data).
+[2026-06-26 12:35:22.415] Found 168 possible bad axioms.
+[2026-06-26 12:35:22.415] Selected the bad axiom SubClassOf(Aggregation Before_it_leaves_the_local_site).
+[2026-06-26 12:35:22.418] Found 167 possible bad axioms.
+[2026-06-26 12:35:22.419] Selected the bad axiom SubClassOf(Extraction Data_Processing).
+[2026-06-26 12:35:22.425] Found 166 possible bad axioms.
+[2026-06-26 12:35:22.426] Selected the bad axiom SubClassOf(Metadata_collected Standardized_terminologies_adopted).
+[2026-06-26 12:35:22.429] Found 165 possible bad axioms.
+[2026-06-26 12:35:22.429] Selected the bad axiom SubClassOf(Quality_improvement New_studies_in_the_same_or_different_condition_from_the_clinical_focus).
+[2026-06-26 12:35:22.432] Found 164 possible bad axioms.
+[2026-06-26 12:35:22.432] Selected the bad axiom SubClassOf(Evidence_of_longitudinal_follow-up_studies owl:Nothing).
+[2026-06-26 12:35:22.436] Found 163 possible bad axioms.
+[2026-06-26 12:35:22.436] Selected the bad axiom SubClassOf(Before_it_leaves_the_local_site Aggregation).
+[2026-06-26 12:35:22.439] Found 162 possible bad axioms.
+[2026-06-26 12:35:22.439] Selected the bad axiom SubClassOf(Analysis_of_biospecimens Quality_improvement).
+[2026-06-26 12:35:22.441] Found 161 possible bad axioms.
+[2026-06-26 12:35:22.441] Selected the bad axiom SubClassOf(Mechanisms_of_participation Healthcare_organizations_engagement).
+[2026-06-26 12:35:22.450] Found 160 possible bad axioms.
+[2026-06-26 12:35:22.450] Selected the bad axiom SubClassOf(Requirements_for_sharing_outside_the_network Data_sharing).
+[2026-06-26 12:35:22.454] Found 159 possible bad axioms.
+[2026-06-26 12:35:22.454] Selected the bad axiom SubClassOf(Data_sharing Policies).
+[2026-06-26 12:35:22.456] Found 158 possible bad axioms.
+[2026-06-26 12:35:22.457] Selected the bad axiom SubClassOf(Analysis_of_biospecimens_collected_by_the_network Analysis_of_biospecimens).
+[2026-06-26 12:35:22.459] Found 157 possible bad axioms.
+[2026-06-26 12:35:22.459] Selected the bad axiom SubClassOf(Harmoniza
+...[truncated]
+FAIL: attempt=4 seed=42677 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥
+progress: ontology=RNPRIO attempt=4 success=0/100
+----- RNPRIO attempt=5 seed=56877 at 2026-06-26 12:35:30 -----
+--- stdout ---
+{"seed":56877,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications","iic_values":{},"repair_runtimes_ms":{"A1":178,"A2":5123,"A3":311,"B1":617,"B2":2163}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=56877, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:35:30.977] Checking precondition...
+[2026-06-26 12:35:30.992] Starting the repair...
+[2026-06-26 12:35:30.999] Found 171 possible bad axioms.
+[2026-06-26 12:35:31.000] Selected the bad axiom SubClassOf(Transformation_method Description).
+[2026-06-26 12:35:31.006] Found 170 possible bad axioms.
+[2026-06-26 12:35:31.006] Selected the bad axiom SubClassOf(Data_sharing Policies_for_protecting_proprietary_data).
+[2026-06-26 12:35:31.011] Found 169 possible bad axioms.
+[2026-06-26 12:35:31.011] Selected the bad axiom SubClassOf(No_consent_required Broad_use_of_electronic_data).
+[2026-06-26 12:35:31.015] Found 168 possible bad axioms.
+[2026-06-26 12:35:31.015] Selected the bad axiom SubClassOf(Methods_for_Data_Security Clinical_Focus).
+[2026-06-26 12:35:31.018] Found 167 possible bad axioms.
+[2026-06-26 12:35:31.018] Selected the bad axiom SubClassOf(Healthcare_organizations_engagement Network_Characteristics).
+[2026-06-26 12:35:31.025] Found 166 possible bad axioms.
+[2026-06-26 12:35:31.026] Selected the bad axiom SubClassOf(Racial/Ethnic Demographics).
+[2026-06-26 12:35:31.029] Found 165 possible bad axioms.
+[2026-06-26 12:35:31.029] Selected the bad axiom SubClassOf(Transformation_method Aggregation).
+[2026-06-26 12:35:31.032] Found 164 possible bad axioms.
+[2026-06-26 12:35:31.032] Selected the bad axiom SubClassOf(Statistical_Analysis Integration_for_longitudinal_analysis).
+[2026-06-26 12:35:31.035] Found 163 possible bad axioms.
+[2026-06-26 12:35:31.035] Selected the bad axiom SubClassOf(Evidence_of_longitudinal_follow-up_studies Publications).
+[2026-06-26 12:35:31.038] Found 162 possible bad axioms.
+[2026-06-26 12:35:31.038] Selected the bad axiom SubClassOf(Patient_Population Methods_for_Data_Security).
+[2026-06-26 12:35:31.041] Found 161 possible bad axioms.
+[2026-06-26 12:35:31.041] Selected the bad axiom SubClassOf(Sources_of_funding Finances).
+[2026-06-26 12:35:31.048] Found 160 possible bad axioms.
+[2026-06-26 12:35:31.049] Selected the bad axiom SubClassOf(Gender Demographics).
+[2026-06-26 12:35:31.052] Found 159 possible bad axioms.
+[2026-06-26 12:35:31.052] Selected the bad axiom SubClassOf(Analysis_of_biospecimens Results_linkable_to_patient_outcomes).
+[2026-06-26 12:35:31.054] Found 158 possible bad axioms.
+[2026-06-26 12:35:31.054] Selected the bad axiom SubClassOf(Finances Sources_of_funding).
+[2026-06-26 12:35:31.057] Found 157 possible bad axioms.
+[2026-06-26 12:35:31.057] Selected the bad axiom SubClassOf(Geography Racial/Ethnic).
+[2026-06-26 12:35:31.060] Found 156 possible bad axioms.
+[2026-06-26 12:35:31.060] Select
+...[truncated]
+FAIL: attempt=5 seed=56877 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+progress: ontology=RNPRIO attempt=5 success=0/100
+----- RNPRIO attempt=6 seed=71077 at 2026-06-26 12:35:39 -----
+--- stdout ---
+{"seed":71077,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":85,"A2":5094,"A3":334,"B1":301,"B2":4880,"B3":1548}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=71077, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:35:39.793] Checking precondition...
+[2026-06-26 12:35:39.807] Starting the repair...
+[2026-06-26 12:35:39.814] Found 171 possible bad axioms.
+[2026-06-26 12:35:39.816] Selected the bad axiom SubClassOf(Harmonization Transformation_method).
+[2026-06-26 12:35:39.821] Found 170 possible bad axioms.
+[2026-06-26 12:35:39.821] Selected the bad axiom SubClassOf(Healthcare_organizations_engagement Patient_Population).
+[2026-06-26 12:35:39.826] Found 169 possible bad axioms.
+[2026-06-26 12:35:39.826] Selected the bad axiom SubClassOf(Transformation_method Before_it_leaves_the_local_site).
+[2026-06-26 12:35:39.830] Found 168 possible bad axioms.
+[2026-06-26 12:35:39.830] Selected the bad axiom SubClassOf(Governance_involvement_mechanisms Policies_for_protecting_proprietary_data).
+[2026-06-26 12:35:39.834] Found 167 possible bad axioms.
+[2026-06-26 12:35:39.834] Selected the bad axiom SubClassOf(Broad_use_of_electronic_data Type_of_Consent).
+[2026-06-26 12:35:39.840] Found 166 possible bad axioms.
+[2026-06-26 12:35:39.841] Selected the bad axiom SubClassOf(Data_collected_in_clinical_trials Source).
+[2026-06-26 12:35:39.843] Found 165 possible bad axioms.
+[2026-06-26 12:35:39.844] Selected the bad axiom SubClassOf(Geography Racial/Ethnic).
+[2026-06-26 12:35:39.847] Found 164 possible bad axioms.
+[2026-06-26 12:35:39.847] Selected the bad axiom SubClassOf(Analysis_of_biospecimens_collected_by_the_network Analysis_of_biospecimens_from_biobanks).
+[2026-06-26 12:35:39.850] Found 163 possible bad axioms.
+[2026-06-26 12:35:39.850] Selected the bad axiom SubClassOf(Standardized_terminologies_adopted Harmonization).
+[2026-06-26 12:35:39.853] Found 162 possible bad axioms.
+[2026-06-26 12:35:39.853] Selected the bad axiom SubClassOf(Total_annual_budget Sources_of_funding).
+[2026-06-26 12:35:39.856] Found 161 possible bad axioms.
+[2026-06-26 12:35:39.856] Selected the bad axiom SubClassOf(Evidence_of_randomized_control_trials Evidence_of_longitudinal_follow-up_studies).
+[2026-06-26 12:35:39.864] Found 160 possible bad axioms.
+[2026-06-26 12:35:39.865] Selected the bad axiom SubClassOf(Quality_improvement New_studies_in_the_same_or_different_condition_from_the_clinical_focus).
+[2026-06-26 12:35:39.868] Found 159 possible bad axioms.
+[2026-06-26 12:35:39.869] Selected the bad axiom SubClassOf(Clinical_care_delivery Study_type).
+[2026-06-26 12:35:39.871] Found 158 possible bad axioms.
+[2026-06-26 12:35:39.871] Selected the bad axiom SubClassOf(Data_Processing owl:Nothing).
+[2026-06-26 12:35:39.874] Finished repairing the ontology.
+Repairing with A2 (not-in-lar
+...[truncated]
+FAIL: attempt=6 seed=71077 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥
+progress: ontology=RNPRIO attempt=6 success=0/100
+----- RNPRIO attempt=7 seed=85277 at 2026-06-26 12:35:52 -----
+--- stdout ---
+{"seed":85277,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications","iic_values":{},"repair_runtimes_ms":{"A1":183,"A2":5276,"A3":589,"B1":298,"B2":1688}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=85277, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:35:52.468] Checking precondition...
+[2026-06-26 12:35:52.482] Starting the repair...
+[2026-06-26 12:35:52.489] Found 171 possible bad axioms.
+[2026-06-26 12:35:52.491] Selected the bad axiom SubClassOf(Type_of_Consent Patient-related_policies).
+[2026-06-26 12:35:52.495] Found 170 possible bad axioms.
+[2026-06-26 12:35:52.496] Selected the bad axiom SubClassOf(Finances owl:Nothing).
+[2026-06-26 12:35:52.500] Found 169 possible bad axioms.
+[2026-06-26 12:35:52.500] Selected the bad axiom SubClassOf(Mechanisms_of_participation Healthcare_organizations_engagement).
+[2026-06-26 12:35:52.503] Found 168 possible bad axioms.
+[2026-06-26 12:35:52.504] Selected the bad axiom SubClassOf(Finances Sources_of_funding).
+[2026-06-26 12:35:52.506] Found 167 possible bad axioms.
+[2026-06-26 12:35:52.507] Selected the bad axiom SubClassOf(Clinical_data Network_Characteristics).
+[2026-06-26 12:35:52.513] Found 166 possible bad axioms.
+[2026-06-26 12:35:52.514] Selected the bad axiom SubClassOf(Analysis_of_biospecimens Analysis_of_biospecimens_from_biobanks).
+[2026-06-26 12:35:52.517] Found 165 possible bad axioms.
+[2026-06-26 12:35:52.517] Selected the bad axiom SubClassOf(Healthcare_organizations_engagement ED_Type).
+[2026-06-26 12:35:52.520] Found 164 possible bad axioms.
+[2026-06-26 12:35:52.520] Selected the bad axiom SubClassOf(Evidence_of_clinical_care_or_quality_improvement Publications).
+[2026-06-26 12:35:52.523] Found 163 possible bad axioms.
+[2026-06-26 12:35:52.523] Selected the bad axiom SubClassOf(Transformation_method Data_mapping_and_transformation_mechanism).
+[2026-06-26 12:35:52.527] Found 162 possible bad axioms.
+[2026-06-26 12:35:52.527] Selected the bad axiom SubClassOf(Longitudinal_follow_up New_studies_in_the_same_or_different_condition_from_the_clinical_focus).
+[2026-06-26 12:35:52.531] Found 161 possible bad axioms.
+[2026-06-26 12:35:52.531] Selected the bad axiom SubClassOf(Total_annual_budget Finances).
+[2026-06-26 12:35:52.539] Found 160 possible bad axioms.
+[2026-06-26 12:35:52.539] Selected the bad axiom SubClassOf(Transformation_method Before_it_leaves_the_local_site).
+[2026-06-26 12:35:52.542] Found 159 possible bad axioms.
+[2026-06-26 12:35:52.542] Selected the bad axiom SubClassOf(Policies_for_protecting_proprietary_data Data_sharing).
+[2026-06-26 12:35:52.545] Found 158 possible bad axioms.
+[2026-06-26 12:35:52.545] Selected the bad axiom SubClassOf(Extraction Integration_for_longitudinal_analysis).
+[2026-06-26 12:35:52.548] Found 157 possible bad axioms.
+[2026-06-26 12:35:52.548] Selected the bad axiom SubClassOf(Total_
+...[truncated]
+FAIL: attempt=7 seed=85277 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+progress: ontology=RNPRIO attempt=7 success=0/100
+----- RNPRIO attempt=8 seed=99477 at 2026-06-26 12:36:00 -----
+--- stdout ---
+{"seed":99477,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications","iic_values":{},"repair_runtimes_ms":{"A1":74,"A2":5109,"A3":646,"B1":300,"B2":2367}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=99477, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:36:00.923] Checking precondition...
+[2026-06-26 12:36:00.938] Starting the repair...
+[2026-06-26 12:36:00.945] Found 171 possible bad axioms.
+[2026-06-26 12:36:00.946] Selected the bad axiom SubClassOf(Self-reported_data Source).
+[2026-06-26 12:36:00.950] Found 170 possible bad axioms.
+[2026-06-26 12:36:00.951] Selected the bad axiom SubClassOf(Patient_Population Methods_for_Data_Security).
+[2026-06-26 12:36:00.955] Found 169 possible bad axioms.
+[2026-06-26 12:36:00.955] Selected the bad axiom SubClassOf(Finances owl:Nothing).
+[2026-06-26 12:36:00.959] Found 168 possible bad axioms.
+[2026-06-26 12:36:00.959] Selected the bad axiom SubClassOf(Integration_for_longitudinal_analysis Applications).
+[2026-06-26 12:36:00.962] Found 167 possible bad axioms.
+[2026-06-26 12:36:00.962] Selected the bad axiom SubClassOf(Metadata_collected Description).
+[2026-06-26 12:36:00.969] Found 166 possible bad axioms.
+[2026-06-26 12:36:00.969] Selected the bad axiom SubClassOf(Data_sharing Policies).
+[2026-06-26 12:36:00.972] Found 165 possible bad axioms.
+[2026-06-26 12:36:00.972] Selected the bad axiom SubClassOf(Data_sharing Patient-related_policies).
+[2026-06-26 12:36:00.975] Found 164 possible bad axioms.
+[2026-06-26 12:36:00.975] Selected the bad axiom SubClassOf(Biospecimen Clinical_data).
+[2026-06-26 12:36:00.979] Found 163 possible bad axioms.
+[2026-06-26 12:36:00.979] Selected the bad axiom SubClassOf(Governance_involvement_mechanisms Patient-related_policies).
+[2026-06-26 12:36:00.982] Found 162 possible bad axioms.
+[2026-06-26 12:36:00.982] Selected the bad axiom SubClassOf(Type_of_Consent Patient-related_policies).
+[2026-06-26 12:36:00.984] Found 161 possible bad axioms.
+[2026-06-26 12:36:00.985] Selected the bad axiom SubClassOf(Data_Processing owl:Nothing).
+[2026-06-26 12:36:00.993] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 12:36:00.994] Checking precondition...
+[2026-06-26 12:36:00.999] Starting the repair...
+[2026-06-26 12:36:06.100] Found 3 possible bad axioms.
+[2026-06-26 12:36:06.100] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[2026-06-26 12:36:06.102] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 12:36:06.104] Checking precondition...
+[2026-06-26 12:36:06.106] Starting the repair...
+[2026-06-26 12:36:06.116] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:36:06.416] Selected the bad axiom SubClassOf(owl:Thing Applications).
+[2026-06-26 12:36:06.447] Selected the weaker axiom SubClassOf(owl:Thing Age).
+[
+...[truncated]
+FAIL: attempt=8 seed=99477 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+progress: ontology=RNPRIO attempt=8 success=0/100
+----- RNPRIO attempt=9 seed=113677 at 2026-06-26 12:36:09 -----
+--- stdout ---
+{"seed":113677,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":153,"A2":5163,"A3":327,"B1":702,"B2":4892,"B3":1077}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=113677, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:36:09.965] Checking precondition...
+[2026-06-26 12:36:09.979] Starting the repair...
+[2026-06-26 12:36:09.986] Found 171 possible bad axioms.
+[2026-06-26 12:36:09.987] Selected the bad axiom SubClassOf(Harmonization Aggregation).
+[2026-06-26 12:36:09.992] Found 170 possible bad axioms.
+[2026-06-26 12:36:09.993] Selected the bad axiom SubClassOf(Statistical_Analysis Integration_for_longitudinal_analysis).
+[2026-06-26 12:36:09.997] Found 169 possible bad axioms.
+[2026-06-26 12:36:09.997] Selected the bad axiom SubClassOf(Healthcare_organizations_engagement Network_Characteristics).
+[2026-06-26 12:36:10.001] Found 168 possible bad axioms.
+[2026-06-26 12:36:10.001] Selected the bad axiom SubClassOf(Total_annual_cost_network_infrastructure_and_maintenance Finances).
+[2026-06-26 12:36:10.004] Found 167 possible bad axioms.
+[2026-06-26 12:36:10.004] Selected the bad axiom SubClassOf(Integration_for_longitudinal_analysis Statistical_Analysis).
+[2026-06-26 12:36:10.010] Found 166 possible bad axioms.
+[2026-06-26 12:36:10.011] Selected the bad axiom SubClassOf(Total_annual_budget Sources_of_funding).
+[2026-06-26 12:36:10.014] Found 165 possible bad axioms.
+[2026-06-26 12:36:10.014] Selected the bad axiom SubClassOf(Age Demographics).
+[2026-06-26 12:36:10.017] Found 164 possible bad axioms.
+[2026-06-26 12:36:10.017] Selected the bad axiom SubClassOf(Extraction Integration_for_longitudinal_analysis).
+[2026-06-26 12:36:10.020] Found 163 possible bad axioms.
+[2026-06-26 12:36:10.020] Selected the bad axiom SubClassOf(Data_sharing Policies).
+[2026-06-26 12:36:10.023] Found 162 possible bad axioms.
+[2026-06-26 12:36:10.023] Selected the bad axiom SubClassOf(Broad_use_of_biosamples Type_of_Consent).
+[2026-06-26 12:36:10.027] Found 161 possible bad axioms.
+[2026-06-26 12:36:10.027] Selected the bad axiom SubClassOf(Studies_published_in_peer_reviewed_journals Evidence_of_clinical_care_or_quality_improvement).
+[2026-06-26 12:36:10.034] Found 160 possible bad axioms.
+[2026-06-26 12:36:10.035] Selected the bad axiom SubClassOf(Metadata_collected Description).
+[2026-06-26 12:36:10.038] Found 159 possible bad axioms.
+[2026-06-26 12:36:10.039] Selected the bad axiom SubClassOf(Patient-related_policies Policies_for_protecting_proprietary_data).
+[2026-06-26 12:36:10.041] Found 158 possible bad axioms.
+[2026-06-26 12:36:10.041] Selected the bad axiom SubClassOf(Analysis_of_biospecimens Analysis_of_biospecimens_from_biobanks).
+[2026-06-26 12:36:10.043] Found 157 possible bad axioms.
+[2026-06-26 12:36:10.044] Selected the bad axiom SubClassOf(Methods_for_Data_Sec
+...[truncated]
+FAIL: attempt=9 seed=113677 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥
+progress: ontology=RNPRIO attempt=9 success=0/100
+----- RNPRIO attempt=10 seed=127877 at 2026-06-26 12:36:22 -----
+--- stdout ---
+{"seed":127877,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications","iic_values":{},"repair_runtimes_ms":{"A1":31,"A2":5255,"A3":1103,"B1":626,"B2":2217,"B3":1256,"B4":70,"B5":2117}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/RNPRIO.owl, seed=127877, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:36:22.824] Checking precondition...
+[2026-06-26 12:36:22.838] Starting the repair...
+[2026-06-26 12:36:22.845] Found 171 possible bad axioms.
+[2026-06-26 12:36:22.846] Selected the bad axiom SubClassOf(owl:Thing Applications).
+[2026-06-26 12:36:22.851] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 12:36:22.852] Checking precondition...
+[2026-06-26 12:36:22.861] Starting the repair...
+[2026-06-26 12:36:28.105] Found 3 possible bad axioms.
+[2026-06-26 12:36:28.105] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[2026-06-26 12:36:28.107] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 12:36:28.108] Checking precondition...
+[2026-06-26 12:36:28.110] Starting the repair...
+[2026-06-26 12:36:28.120] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:36:28.404] Selected the bad axiom SubClassOf(Data_Processing owl:Nothing).
+[2026-06-26 12:36:28.444] Selected the weaker axiom SubClassOf(Data_Processing Demographics).
+[2026-06-26 12:36:28.824] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[2026-06-26 12:36:28.825] Selected the weaker axiom SubClassOf(Applications Aggregation).
+[2026-06-26 12:36:29.209] Selected the bad axiom SubClassOf(Applications Aggregation).
+[2026-06-26 12:36:29.209] Selected the weaker axiom SubClassOf(Standardized_terminologies_adopted Aggregation).
+[2026-06-26 12:36:29.210] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 12:36:29.211] Checking precondition...
+[2026-06-26 12:36:29.212] Starting the repair...
+[2026-06-26 12:36:29.220] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:36:29.472] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[2026-06-26 12:36:29.488] Selected the weaker axiom SubClassOf(Applications Geography).
+[2026-06-26 12:36:29.835] Selected the bad axiom SubClassOf(owl:Thing Applications).
+[2026-06-26 12:36:29.836] Selected the weaker axiom SubClassOf(Integration_for_longitudinal_analysis Applications).
+[2026-06-26 12:36:29.837] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 12:36:29.838] Checking precondition...
+[2026-06-26 12:36:29.840] Starting the repair...
+[2026-06-26 12:36:29.846] Selected a reference ontology with 249 axioms.
+[2026-06-26 12:36:30.104] Selected the bad axiom SubClassOf(Applications Statistical_Analysis).
+[PowerIndexWeakerAxiomSelector] Scoring 33 candidate weakenings for Applications ⊑ Statistical_Ana
+...[truncated]
+FAIL: attempt=10 seed=127877 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+progress: ontology=RNPRIO attempt=10 success=0/100
+=== ABORTED RNPRIO after 10 consecutive failures at 2026-06-26 12:36:35 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for RNPRIO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=77 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+  attempt=2 seed=14277 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+  attempt=3 seed=28477 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+  attempt=4 seed=42677 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥
+  attempt=5 seed=56877 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+  attempt=6 seed=71077 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥
+  attempt=7 seed=85277 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+  attempt=8 seed=99477 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+  attempt=9 seed=113677 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Data_Processing ⊑ ⊥
+  attempt=10 seed=127877 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Applications
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

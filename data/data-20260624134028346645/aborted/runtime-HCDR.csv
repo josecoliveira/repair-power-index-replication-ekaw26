@@ -1,0 +1,235 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,81,20260624134028346645,success,,,,21.995967,94,5945,898,399,3378,1002,72,2312,567,133,2440,1516
+2,14281,20260624134028346645,success,,,,18.017541,223,5883,474,451,2086,1745,76,2474,1577,132,1065,715
+3,28481,20260624134028346645,success,,,,16.482569,110,5952,830,424,2152,1026,132,1082,754,171,1143,1627
+4,42681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.869034,219,5908,441,922,3243,1752,107,1008,576,157,1111,
+5,56881,20260624134028346645,success,,,,16.877920,51,5954,465,456,2930,979,112,958,873,220,1170,1586
+6,71081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.179179,165,5920,941,439,2991,1013,86,2214,,,,
+7,85281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.749832,104,5918,453,427,2162,1086,146,1048,,,,
+8,99481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,8.840841,51,5961,914,435,1104,,,,,,,
+9,113681,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.855991,107,5910,809,430,1767,1217,145,1034,1455,136,1504,709
+10,127881,20260624134028346645,success,,,,19.877252,188,5940,457,420,2072,1002,127,2329,1587,151,2616,1467
+11,142081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.639361,222,5909,459,448,1682,1899,123,516,,,,
+12,156281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.563291,256,5902,1383,420,1221,,,,,,,
+13,170481,20260624134028346645,success,,,,16.974320,140,5946,477,797,1677,1252,93,1027,885,165,2688,678
+14,184681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.046381,120,5910,980,780,1875,,,,,,,
+15,198881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.761678,39,6011,461,444,3052,,,,,,,
+16,213081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.223407,34,5979,478,414,3388,909,75,551,,,,
+17,227281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.868637,182,5924,463,924,1970,,,,,,,
+18,241481,20260624134028346645,success,,,,17.793841,262,5855,453,434,2996,1006,84,949,1474,146,1566,1534
+19,255681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.494714,139,5934,490,448,3212,1872,74,933,,,,
+20,269881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.092019,113,5978,452,1264,1886,,,,,,,
+21,284081,20260624134028346645,success,,,,16.838471,38,5997,444,433,3194,1013,80,965,1394,149,1414,725
+22,298281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.113292,40,5991,466,437,3086,1314,91,1367,578,144,1186,
+23,312481,20260624134028346645,success,,,,16.680903,83,5927,507,916,1781,1015,104,2529,721,133,1034,894
+24,326681,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.502070,100,5960,444,426,3327,953,83,1006,1469,124,1095,986
+25,340881,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.596252,199,5923,457,424,3054,1928,112,1038,,,,
+26,355081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.983847,165,5933,444,451,3238,960,175,2214,,,,
+27,369281,20260624134028346645,success,,,,20.464270,198,5943,490,448,3199,1962,106,2270,880,123,2486,990
+28,383481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,11.119546,241,5919,832,799,2934,,,,,,,
+29,397681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.565525,128,5976,996,421,2143,1162,100,2213,,,,
+30,411881,20260624134028346645,success,,,,18.893174,108,5977,1456,1674,3341,1779,139,934,655,131,1041,593
+31,426081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.543258,130,5969,471,859,1773,2011,94,1185,1399,210,1030,
+32,440281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.806932,54,5953,451,431,2972,1041,84,1426,,,,
+33,454481,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.631713,89,5927,456,788,2984,998,,,,,,
+34,468681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.652797,253,5870,483,436,3072,,,,,,,
+35,482881,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.878529,149,5912,478,1587,3008,1973,121,1014,708,,,
+36,497081,20260624134028346645,success,,,,18.153794,114,5923,471,709,1753,2016,105,2450,654,151,1254,1475
+37,511281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.637617,240,5877,496,433,1776,1790,95,543,,,,
+38,525481,20260624134028346645,success,,,,19.320509,234,5889,836,2122,3074,979,92,2299,798,202,1100,628
+39,539681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.096879,114,5948,463,415,1777,,,,,,,
+40,553881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,9.145573,120,5966,451,420,1781,,,,,,,
+41,568081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.029898,122,5965,454,425,1771,2081,208,587,,,,
+42,582281,20260624134028346645,success,,,,17.487535,32,5986,436,440,3374,1958,83,1043,832,177,1142,796
+43,596481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.697283,167,5910,492,831,2259,941,116,597,,,,
+44,610681,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.803545,250,5847,1311,688,1752,994,143,1069,341,,,
+45,624881,20260624134028346645,success,,,,20.312474,121,5935,1339,380,1710,2001,110,2322,766,224,1598,1503
+46,639081,20260624134028346645,success,,,,16.430823,203,5908,491,411,2126,1185,104,2378,611,170,1140,705
+47,653281,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.575403,266,5842,452,454,1765,2038,144,984,722,205,2551,728
+48,667481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.429297,161,5946,509,470,1938,1317,113,582,,,,
+49,681681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.315780,174,5932,484,425,1930,,,,,,,
+50,695881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,11.089799,257,5867,2368,386,1801,,,,,,,
+51,710081,20260624134028346645,success,,,,17.589470,68,5949,469,434,3137,1878,79,1028,1528,162,1106,740
+52,724281,20260624134028346645,success,,,,18.431025,65,5972,449,452,3224,1856,77,1022,1460,171,1023,1521
+53,738481,20260624134028346645,success,,,,18.101851,239,5893,881,815,1779,1859,124,951,620,130,1203,1668
+54,752681,20260624134028346645,success,,,,18.876346,187,5926,829,422,1831,1880,105,2334,1512,158,1238,635
+55,766881,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.942750,130,5981,479,445,3169,1024,80,2230,,,,
+56,781081,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,13.201969,101,5954,1406,415,3185,1753,,,,,,
+57,795281,20260624134028346645,success,,,,17.178102,136,5952,494,825,1667,2540,174,1106,646,170,1495,852
+58,809481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,10.532667,185,5918,487,420,3134,,,,,,,
+59,823681,20260624134028346645,success,,,,17.977869,146,5965,447,701,1791,961,102,2481,1537,146,1126,1513
+60,837881,20260624134028346645,success,,,,16.505345,224,5868,834,410,2933,979,98,1054,852,174,1020,805
+61,852081,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.547749,234,5872,479,434,2142,,,,,,,
+62,866281,20260624134028346645,success,,,,20.653910,69,5956,1240,771,3293,985,109,2341,1417,127,1078,663
+63,880481,20260624134028346645,success,,,,17.616171,75,5965,804,411,1861,1891,148,1130,1534,134,1015,1614
+64,894681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.812383,200,5884,427,396,3111,1197,77,1123,,,,
+65,908881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.337699,159,5930,474,432,1943,,,,,,,
+66,923081,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.036622,119,5951,1747,405,1727,1842,100,1143,865,182,1093,456
+67,937281,20260624134028346645,success,,,,17.552979,129,5974,878,443,2958,1062,85,979,669,193,2448,641
+68,951481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.752187,165,5907,871,422,2162,1006,87,739,,,,
+69,965681,20260624134028346645,success,,,,20.934149,123,5963,472,1542,3021,1959,148,993,713,133,2305,800
+70,979881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,11.608188,81,5905,488,408,4336,,,,,,,
+71,994081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.141168,257,5890,1634,411,1764,1191,118,482,,,,
+72,1008281,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,11.774064,167,5912,505,430,3205,1166,,,,,,
+73,1022481,20260624134028346645,success,,,,19.407242,245,5896,464,448,4472,1035,86,2304,1445,127,1134,640
+74,1036681,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,12.329919,54,5967,466,435,4289,736,,,,,,
+75,1050881,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.369620,192,5910,449,437,1879,1123,,,,,,
+76,1065081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.393795,124,5953,459,442,3184,1167,87,577,,,,
+77,1079281,20260624134028346645,success,,,,16.261274,63,5962,462,435,1739,1781,109,1043,674,140,1113,1622
+78,1093481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,9.160628,109,5912,488,421,1856,,,,,,,
+79,1107681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.295299,313,5807,453,840,1768,1069,123,539,,,,
+80,1121881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.423610,94,5936,909,423,1678,,,,,,,
+81,1136081,20260624134028346645,success,,,,19.293602,282,5892,442,444,2975,1954,87,1384,609,252,2258,1614
+82,1150281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.110706,97,5931,469,413,2198,2014,92,510,,,,
+83,1164481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.732788,88,5950,900,405,3000,,,,,,,
+84,1178681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.534429,189,5907,477,844,1742,1918,98,960,,,,
+85,1192881,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,18.492960,142,5953,476,885,3400,1831,119,1012,1520,145,2575,
+86,1207081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.202386,249,5884,777,440,2093,1882,91,997,,,,
+87,1221281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.603902,79,5958,484,841,1863,,,,,,,
+88,1235481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.971378,220,5908,458,422,2996,934,119,510,,,,
+89,1249681,20260624134028346645,success,,,,18.290052,149,5949,445,456,3368,1045,125,2294,609,138,1138,1522
+90,1263881,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.738417,150,5965,464,437,1708,1869,113,1003,894,171,544,
+91,1278081,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,11.038839,127,5993,882,417,3235,,,,,,,
+92,1292281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.426527,251,5882,862,395,1651,,,,,,,
+93,1306481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.630589,220,5981,1355,626,1781,1081,122,1074,,,,
+94,1320681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.836366,36,5967,481,910,3333,1068,76,538,,,,
+95,1334881,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.568700,104,5939,469,418,2922,1067,84,1016,681,170,2273,
+96,1349081,20260624134028346645,success,,,,17.193747,211,5885,835,418,1801,1799,114,1158,718,167,1221,1707
+97,1363281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.393036,237,5858,1355,439,3110,1879,80,1027,,,,
+98,1377481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.292183,40,5976,486,1217,1193,,,,,,,
+99,1391681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,10.693169,64,5925,697,1602,2027,,,,,,,
+100,1405881,20260624134028346645,success,,,,16.010242,177,5897,476,426,2116,1012,104,1413,611,135,1022,1552
+101,1420081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.458058,227,5910,467,412,1896,1862,123,1034,660,161,2291,
+102,1434281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.228354,185,5879,469,467,1839,,,,,,,
+103,1448481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.936409,162,5942,478,836,3361,991,106,659,,,,
+104,1462681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.262299,284,5860,782,405,3009,1000,115,974,654,139,631,
+105,1476881,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.222823,112,5933,462,430,3051,1897,77,1045,807,,,
+106,1491081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.378437,116,5923,491,446,2139,1934,86,1063,1629,144,1195,
+107,1505281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,9.564435,184,5900,450,739,1914,,,,,,,
+108,1519481,20260624134028346645,success,,,,17.633674,129,5920,462,412,1797,1235,95,2480,633,154,2597,637
+109,1533681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.775430,196,5880,851,423,3042,,,,,,,
+110,1547881,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.801040,139,5950,474,437,2190,957,99,1160,,,,
+111,1562081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.223552,99,5913,469,421,1888,1788,98,1140,,,,
+112,1576281,20260624134028346645,success,,,,16.486729,224,5915,490,713,3042,1240,108,931,689,137,999,944
+113,1590481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,10.771151,222,5900,898,1344,2006,,,,,,,
+114,1604681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.131918,270,5873,458,428,1711,,,,,,,
+115,1618881,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.017639,179,5906,881,433,3217,1235,111,1019,1387,161,1067,
+116,1633081,20260624134028346645,success,,,,17.495023,100,5903,457,452,1801,1807,106,1067,667,164,1259,1762
+117,1647281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.492222,139,5936,484,412,1778,992,120,1245,,,,
+118,1661481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,9.682598,136,5966,468,784,1939,,,,,,,
+119,1675681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.548016,119,5960,463,429,1837,1920,178,1054,625,230,1324,
+120,1689881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,8.683788,175,5960,484,444,1242,,,,,,,
+121,1704081,20260624134028346645,success,,,,18.223106,90,5938,455,433,3121,1816,77,2441,691,206,1052,728
+122,1718281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.755106,160,5922,469,435,3296,2480,93,496,,,,
+123,1732481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.449299,98,5951,447,446,1766,1800,142,2397,,,,
+124,1746681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,10.697381,114,5934,475,439,3060,,,,,,,
+125,1760881,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,15.115207,218,5871,444,737,3349,1728,76,1050,704,171,,
+126,1775081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.430735,242,5940,482,421,3153,989,93,697,,,,
+127,1789281,20260624134028346645,success,,,,20.069800,73,5947,455,435,3077,2048,129,1039,1556,127,1019,1504
+128,1803481,20260624134028346645,success,,,,21.143020,228,5909,872,425,2919,1941,81,2602,871,140,2473,1649
+129,1817681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.831706,249,5880,446,434,3239,1970,160,1059,,,,
+130,1831881,20260624134028346645,success,,,,19.546857,263,5883,489,824,3389,967,83,2322,1518,160,1216,815
+131,1846081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.241103,252,6138,1336,436,3269,1844,98,1032,699,139,576,
+132,1860281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,8.718333,122,6171,479,396,1168,,,,,,,
+133,1874481,20260624134028346645,success,,,,18.645967,165,6172,493,445,3300,925,111,940,588,211,2537,715
+134,1888681,20260624134028346645,success,,,,18.176972,124,5891,448,1175,3083,993,130,2251,902,184,1205,658
+135,1902881,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.670822,180,5886,459,455,1900,1989,110,976,,,,
+136,1917081,20260624134028346645,success,,,,19.221296,272,5865,447,842,3304,969,80,1007,584,133,2371,873
+137,1931281,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.044951,174,5937,481,451,1689,1118,97,1102,1502,,,
+138,1945481,20260624134028346645,success,,,,20.128822,80,5996,467,441,3091,1897,97,2326,1541,161,1234,1600
+139,1959681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.155497,145,5925,910,427,1748,1011,115,1073,659,184,1554,
+140,1973881,20260624134028346645,success,,,,19.611064,50,5987,1398,421,3243,1185,74,2276,666,177,1195,980
+141,1988081,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,8.761590,81,5961,458,698,1184,,,,,,,
+142,2002281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.303075,183,5964,466,432,1858,,,,,,,
+143,2016481,20260624134028346645,success,,,,16.347319,229,5946,450,396,2080,963,126,946,657,126,2501,780
+144,2030681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.729069,121,5965,452,848,3155,1015,102,1135,833,154,533,
+145,2044881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.026022,189,5915,480,403,1665,,,,,,,
+146,2059081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.307291,306,5852,506,469,1881,1240,81,583,,,,
+147,2073281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,10.174097,280,5887,1972,419,1234,,,,,,,
+148,2087481,20260624134028346645,success,,,,17.858840,62,5938,477,436,1776,1748,99,1167,1536,260,2523,663
+149,2101681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.585951,247,5906,463,429,3294,1950,101,1423,569,142,656,
+150,2115881,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.814276,130,5935,512,443,1935,1103,121,2393,835,127,2500,
+151,2130081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.639709,94,5912,990,437,3278,1870,100,561,,,,
+152,2144281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,11.126262,178,5888,470,859,2931,,,,,,,
+153,2158481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.028234,71,5937,1199,442,1777,2057,86,1056,,,,
+154,2172681,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.957035,225,5871,474,736,1721,1943,94,979,1486,136,1204,1672
+155,2186881,20260624134028346645,success,,,,21.029596,49,5990,471,443,3113,1864,116,2265,701,133,2334,799
+156,2201081,20260624134028346645,success,,,,20.072727,100,5938,462,705,1682,2537,120,2372,1573,146,2473,706
+157,2215281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,10.938268,232,5866,463,435,1759,1108,144,544,,,,
+158,2229481,20260624134028346645,success,,,,19.379552,66,5949,474,434,1709,2046,104,2401,674,200,2558,1476
+159,2243681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,8.967516,232,5909,450,741,1238,,,,,,,
+160,2257881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.747018,141,5921,888,427,2941,,,,,,,
+161,2272081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.110648,119,5971,453,427,3370,1294,124,1370,924,129,513,
+162,2286281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.884256,202,5950,476,815,2063,,,,,,,
+163,2300481,20260624134028346645,success,,,,17.200572,124,5965,466,429,1884,2030,84,1542,1521,157,1133,742
+164,2314681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.675479,83,5940,475,426,1774,1817,157,609,,,,
+165,2328881,20260624134028346645,success,,,,16.558768,122,5991,861,408,2181,980,164,965,872,138,1279,664
+166,2343081,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,6.949846,183,5904,473,,,,,,,,,
+167,2357281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,10.819284,159,5918,419,922,3012,,,,,,,
+168,2371481,20260624134028346645,success,,,,16.329332,232,5886,780,440,3243,1060,75,1031,660,140,1066,633
+169,2385681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.044850,129,5962,468,435,2989,2587,77,799,,,,
+170,2399881,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,10.199332,130,5931,866,421,1756,704,,,,,,
+171,2414081,20260624134028346645,success,,,,17.361509,186,5928,472,455,3205,1009,81,2294,605,191,1138,664
+172,2428281,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.569730,146,5937,490,855,1686,1243,182,2327,,,,
+173,2442481,20260624134028346645,success,,,,18.082861,150,5916,472,411,2917,960,86,986,620,175,2696,664
+174,2456681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.266247,241,5908,1294,436,3101,999,84,986,612,126,1071,
+175,2470881,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,17.840584,188,5937,454,782,3112,1694,129,2297,630,229,1215,761
+176,2485081,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,11.900863,150,5959,1354,412,1770,1864,,,,,,
+177,2499281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.124974,64,5958,470,436,1814,,,,,,,
+178,2513481,20260624134028346645,success,,,,16.936974,211,5908,745,415,3224,967,98,986,650,133,1036,653
+179,2527681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,8.863668,87,5930,881,414,1176,,,,,,,
+180,2541881,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.990357,72,5969,473,436,3155,1876,87,517,,,,
+181,2556081,20260624134028346645,success,,,,17.846239,176,5950,444,432,1762,2023,108,2300,1603,193,1071,756
+182,2570281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.213722,86,5940,500,453,1744,1243,117,2489,1481,128,621,
+183,2584481,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,10.981251,37,5994,459,436,1726,1941,,,,,,
+184,2598681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.519252,143,5941,478,453,2017,1951,134,976,,,,
+185,2612881,20260624134028346645,success,,,,16.868128,39,5970,465,433,2201,1020,106,1047,893,154,2618,776
+186,2627081,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.781297,207,5946,888,406,1812,1004,94,1034,,,,
+187,2641281,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.999196,214,5900,780,403,3241,1213,85,1322,608,145,1061,600
+188,2655481,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.668364,219,5879,475,834,1735,2034,95,1021,592,177,1198,
+189,2669681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.986495,161,5936,484,846,3100,1793,83,939,1415,139,679,
+190,2683881,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,11.671568,151,5953,478,430,3094,1165,,,,,,
+191,2698081,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.952103,161,5956,947,437,2057,,,,,,,
+192,2712281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.516193,195,5905,483,401,3305,1186,73,2217,655,126,556,
+193,2726481,20260624134028346645,success,,,,17.623815,103,5927,463,433,2120,2634,92,1064,1588,256,1226,653
+194,2740681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.100373,102,5929,481,421,3344,1159,75,1067,1444,138,525,
+195,2754881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,10.328483,254,5851,467,432,2945,,,,,,,
+196,2769081,20260624134028346645,success,,,,19.462418,142,5938,484,819,3148,1027,94,2419,1441,144,1044,1673
+197,2783281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.529224,252,5883,461,412,2988,1173,113,1045,635,141,1026,
+198,2797481,20260624134028346645,success,,,,17.626100,231,5910,927,435,2946,1066,74,1235,1404,252,1290,782
+199,2811681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.095996,167,5900,932,420,1852,1803,102,541,,,,
+200,2825881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,10.908059,208,5911,449,416,3193,,,,,,,
+201,2840081,20260624134028346645,success,,,,17.944577,87,5921,497,461,1746,1903,104,1048,1475,140,2635,865
+202,2854281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.565025,99,5951,462,928,3353,931,78,1137,1467,134,614,
+203,2868481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.373931,66,5934,1278,416,1698,1946,106,545,,,,
+204,2882681,20260624134028346645,success,,,,20.124201,68,5943,736,417,3486,953,89,1073,591,136,2480,1548
+205,2896881,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,11.170844,172,5923,446,424,1767,2051,,,,,,
+206,2911081,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,10.605849,52,5944,468,443,2188,1125,,,,,,
+207,2925281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.139233,226,5875,456,429,1767,,,,,,,
+208,2939481,20260624134028346645,success,,,,19.293940,57,5945,483,431,2956,1026,111,2469,1581,174,1505,1455
+209,2953681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,9.644279,138,5941,790,397,1962,,,,,,,
+210,2967881,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.466880,40,6024,1263,409,3231,1000,87,975,592,158,1287,
+211,2982081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,19.021972,130,5940,1423,403,3370,1849,81,2278,728,129,2271,
+212,2996281,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,11.064878,253,5914,474,838,3207,,,,,,,
+213,3010481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.825981,46,5973,929,834,3271,963,112,2295,,,,
+214,3024681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.641056,209,5913,472,445,2980,1984,120,1185,613,142,1162,
+215,3038881,20260624134028346645,success,,,,15.661408,222,5874,444,438,2110,959,136,968,584,159,1414,708
+216,3053081,20260624134028346645,success,,,,17.877462,104,5945,873,395,3398,1769,158,1341,701,190,1094,746
+217,3067281,20260624134028346645,success,,,,17.367984,272,5885,479,417,1682,1864,92,2572,686,130,1491,684
+218,3081481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,12.800494,169,5923,450,832,4371,,,,,,,
+219,3095681,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.351437,89,5955,453,450,2000,,,,,,,
+220,3109881,20260624134028346645,success,,,,18.147960,216,5910,486,439,1774,2054,108,2429,1529,154,1260,657
+221,3124081,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,8.636934,197,5920,490,451,1198,,,,,,,
+222,3138281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.944920,85,5945,456,456,3192,1843,81,1051,662,143,631,
+223,3152481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: _day_care ⊑ Homeless_mental_health_care,8.561194,71,5960,443,432,1256,,,,,,,
+224,3166681,20260624134028346645,success,,,,17.458739,38,5980,749,802,1717,1755,132,2400,698,120,1196,752
+225,3180881,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,10.524135,153,5959,449,1726,1840,,,,,,,
+226,3195081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,14.164931,51,6014,494,424,3178,1037,79,1223,623,134,497,
+227,3209281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.286245,89,5958,468,436,3193,1218,89,2388,644,158,1229,
+228,3223481,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: s_Shelters ⊑ _day_care,9.198096,42,5955,486,424,1902,,,,,,,
+229,3237681,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,11.917157,167,5886,468,815,1793,1755,160,488,,,,
+230,3251881,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,13.456952,257,5919,473,433,3243,1975,169,591,,,,
+231,3266081,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.130837,49,5967,440,429,3393,1925,88,1063,1574,147,644,
+232,3280281,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,15.937113,113,5941,461,434,3043,1891,79,991,1513,162,658,
+233,3294481,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,12.572808,241,5919,482,439,1888,1871,152,1053,,,,
+234,3308681,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ s_Shelters,16.492936,107,5942,480,436,2986,2598,112,1214,667,171,742,

@@ -1,0 +1,444 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-G-PROV.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-G-PROV.csv
+
+=== Starting sequential trials for G-PROV at 2026-06-26 06:05:48 ===
+----- G-PROV attempt=1 seed=61 at 2026-06-26 06:05:48 -----
+--- stdout ---
+{"seed":61,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":182,"A2":707,"A3":611,"B1":2014,"B2":1592}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=61, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:48.486] Checking precondition...
+[2026-06-26 06:05:48.502] Starting the repair...
+[2026-06-26 06:05:48.511] Found 112 possible bad axioms.
+[2026-06-26 06:05:48.513] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Website http://purl.org/ontology/bibo/Collection).
+[2026-06-26 06:05:48.519] Found 111 possible bad axioms.
+[2026-06-26 06:05:48.519] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(wasDerivedFrom ObjectAllValuesFrom(wasDerivedFrom https://purl.org/heals/gprovGuideline)) https://purl.org/heals/gprovFormalRule).
+[2026-06-26 06:05:48.524] Found 110 possible bad axioms.
+[2026-06-26 06:05:48.525] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Collection http://purl.org/ontology/bibo/Website).
+[2026-06-26 06:05:48.531] Found 109 possible bad axioms.
+[2026-06-26 06:05:48.531] Selected the bad axiom SubClassOf(Person Agent).
+[2026-06-26 06:05:48.534] Found 108 possible bad axioms.
+[2026-06-26 06:05:48.535] Selected the bad axiom SubClassOf(wasInfluencedBy ObjectAllValuesFrom(hadMember https://purl.org/heals/gprovRecommendation))).
+[2026-06-26 06:05:48.538] Found 107 possible bad axioms.
+[2026-06-26 06:05:48.538] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Article http://purl.org/ontology/bibo/EditedBook).
+[2026-06-26 06:05:48.546] Found 106 possible bad axioms.
+[2026-06-26 06:05:48.547] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.org/dc/terms/isPartOf owl:Thing) https://purl.org/heals/gprovEvidenceSentence).
+[2026-06-26 06:05:48.551] Found 105 possible bad axioms.
+[2026-06-26 06:05:48.551] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Report http://purl.org/ontology/bibo/DocumentPart).
+[2026-06-26 06:05:48.553] Found 104 possible bad axioms.
+[2026-06-26 06:05:48.554] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Article http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:05:48.556] Found 103 possible bad axioms.
+[2026-06-26 06:05:48.556] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Article http://purl.org/ontology/bibo/DocumentPart).
+[2026-06-26 06:05:48.560] Found 102 possible bad axioms.
+[2026-06-26 06:05:48.560] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovGrade https://purl.org/heals/gprovRecommendation).
+[2026-06-26 06:05:48.569] Found 101 possible bad axioms.
+[2026-06-26 06:05:48.570] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(wasDerivedFrom ObjectAllValuesFrom(wasDerivedFrom ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovReco
+...[truncated]
+FAIL: attempt=1 seed=61 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=1 success=0/100
+----- G-PROV attempt=2 seed=14261 at 2026-06-26 06:05:53 -----
+--- stdout ---
+{"seed":14261,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":228,"A2":691,"A3":3072,"B1":20912,"B2":1211}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=14261, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:54.054] Checking precondition...
+[2026-06-26 06:05:54.070] Starting the repair...
+[2026-06-26 06:05:54.079] Found 112 possible bad axioms.
+[2026-06-26 06:05:54.080] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(wasInfluencedBy https://purl.org/heals/gprovGrade)).
+[2026-06-26 06:05:54.087] Found 111 possible bad axioms.
+[2026-06-26 06:05:54.087] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovCitation https://purl.org/heals/gprovEvidenceSentence).
+[2026-06-26 06:05:54.093] Found 110 possible bad axioms.
+[2026-06-26 06:05:54.093] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadPrimarySource https://purl.org/heals/gprovCitation) http://purl.org/ontology/bibo/CollectedDocument).
+[2026-06-26 06:05:54.098] Found 109 possible bad axioms.
+[2026-06-26 06:05:54.098] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovRecommendation https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:05:54.102] Found 108 possible bad axioms.
+[2026-06-26 06:05:54.102] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovEvidenceSentence https://purl.org/heals/gprovRecommendation).
+[2026-06-26 06:05:54.105] Found 107 possible bad axioms.
+[2026-06-26 06:05:54.105] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/EditedBook owl:Nothing).
+[2026-06-26 06:05:54.114] Found 106 possible bad axioms.
+[2026-06-26 06:05:54.114] Selected the bad axiom SubClassOf(hadMember owl:Thing)).
+[2026-06-26 06:05:54.118] Found 105 possible bad axioms.
+[2026-06-26 06:05:54.118] Selected the bad axiom SubClassOf(wasInfluencedBy ObjectAllValuesFrom(hadMember https://purl.org/heals/gprovRecommendation))).
+[2026-06-26 06:05:54.122] Found 104 possible bad axioms.
+[2026-06-26 06:05:54.122] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(wasDerivedFrom ObjectUnionOf(hadPrimarySource https://purl.org/heals/gprovCitation)).
+[2026-06-26 06:05:54.125] Found 103 possible bad axioms.
+[2026-06-26 06:05:54.125] Selected the bad axiom SubClassOf(wasInfluencedBy ObjectAllValuesFrom(used ObjectUnionOf(https://purl.org/heals/gprovDisease https://purl.org/heals/gprovGuideline)))).
+[2026-06-26 06:05:54.129] Found 102 possible bad axioms.
+[2026-06-26 06:05:54.129] Selected the bad axiom SubClassOf(Event).
+[2026-06-26 06:05:54.138] Found 101 possible bad axioms.
+[2026-06-26 06:05:54.138] Selected the bad axiom SubClassOf(hadPrimarySource owl:Thing)).
+[2026-06-26 06:05:54.142] Found 100 possible bad axioms.
+[2026-06-26 06:05:54.142] Selected the bad axiom SubClassOf(wasInfluencedBy owl:Thing)).
+[2026-06-26 06:05:54.145] Found
+...[truncated]
+FAIL: attempt=2 seed=14261 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=2 success=0/100
+----- G-PROV attempt=3 seed=28461 at 2026-06-26 06:06:20 -----
+--- stdout ---
+{"seed":28461,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":161,"A2":708,"A3":333,"B1":289,"B2":1609}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=28461, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:06:20.604] Checking precondition...
+[2026-06-26 06:06:20.623] Starting the repair...
+[2026-06-26 06:06:20.633] Found 112 possible bad axioms.
+[2026-06-26 06:06:20.635] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovGuideline http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:20.640] Found 111 possible bad axioms.
+[2026-06-26 06:06:20.641] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(wasDerivedFrom owl:Thing) https://purl.org/heals/gprovFormalRule).
+[2026-06-26 06:06:20.647] Found 110 possible bad axioms.
+[2026-06-26 06:06:20.647] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovEvidenceSentence https://purl.org/heals/gprovReference).
+[2026-06-26 06:06:20.652] Found 109 possible bad axioms.
+[2026-06-26 06:06:20.652] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/EditedBook owl:Nothing).
+[2026-06-26 06:06:20.656] Found 108 possible bad axioms.
+[2026-06-26 06:06:20.656] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/AudioDocument http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:20.660] Found 107 possible bad axioms.
+[2026-06-26 06:06:20.660] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(wasGeneratedBy owl:Thing) https://purl.org/heals/gprovRecommendation).
+[2026-06-26 06:06:20.669] Found 106 possible bad axioms.
+[2026-06-26 06:06:20.669] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/AudioVisualDocument http://purl.org/ontology/bibo/Issue).
+[2026-06-26 06:06:20.673] Found 105 possible bad axioms.
+[2026-06-26 06:06:20.673] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovGrade ObjectSomeValuesFrom(http://purl.org/dc/terms/isPartOf owl:Thing)).
+[2026-06-26 06:06:20.676] Found 104 possible bad axioms.
+[2026-06-26 06:06:20.676] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadMember wasDerivedFrom ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovRecommendation))).
+[2026-06-26 06:06:20.680] Found 103 possible bad axioms.
+[2026-06-26 06:06:20.680] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Report http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:20.684] Found 102 possible bad axioms.
+[2026-06-26 06:06:20.684] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(wasInfluencedBy https://purl.org/heals/gprovGrade)).
+[2026-06-26 06:06:20.693] Found 101 possible bad axioms.
+[2026-06-26 06:06:20.693] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/AudioVisualDocument http://purl.org/ontology/bibo/EditedBook).
+[2026-06-26 06:06:2
+...[truncated]
+FAIL: attempt=3 seed=28461 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=3 success=0/100
+----- G-PROV attempt=4 seed=42661 at 2026-06-26 06:06:23 -----
+--- stdout ---
+{"seed":42661,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":167,"A2":716,"A3":2174,"B1":224,"B2":1138}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=42661, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:06:24.129] Checking precondition...
+[2026-06-26 06:06:24.147] Starting the repair...
+[2026-06-26 06:06:24.155] Found 112 possible bad axioms.
+[2026-06-26 06:06:24.156] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hadMember ObjectAllValuesFrom(wasDerivedFrom ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovRecommendation))) https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:24.162] Found 111 possible bad axioms.
+[2026-06-26 06:06:24.162] Selected the bad axiom SubClassOf(Event).
+[2026-06-26 06:06:24.167] Found 110 possible bad axioms.
+[2026-06-26 06:06:24.168] Selected the bad axiom SubClassOf(Person Organization).
+[2026-06-26 06:06:24.172] Found 109 possible bad axioms.
+[2026-06-26 06:06:24.172] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.org/dc/terms/isPartOf owl:Thing) https://purl.org/heals/gprovRecommendation).
+[2026-06-26 06:06:24.176] Found 108 possible bad axioms.
+[2026-06-26 06:06:24.176] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(used owl:Thing) https://purl.org/heals/gprovDiseaseManagement).
+[2026-06-26 06:06:24.180] Found 107 possible bad axioms.
+[2026-06-26 06:06:24.180] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Newspaper http://purl.org/ontology/bibo/Periodical).
+[2026-06-26 06:06:24.189] Found 106 possible bad axioms.
+[2026-06-26 06:06:24.189] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.org/dc/terms/isPartOf owl:Thing) https://purl.org/heals/gprovEvidenceSentence).
+[2026-06-26 06:06:24.192] Found 105 possible bad axioms.
+[2026-06-26 06:06:24.193] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(wasGeneratedBy https://purl.org/heals/gprovEvidenceSentence)).
+[2026-06-26 06:06:24.196] Found 104 possible bad axioms.
+[2026-06-26 06:06:24.196] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(wasDerivedFrom ObjectUnionOf(hadPrimarySource https://purl.org/heals/gprovCitation)).
+[2026-06-26 06:06:24.199] Found 103 possible bad axioms.
+[2026-06-26 06:06:24.199] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovEvidenceSentence https://purl.org/heals/gprovRecommendation).
+[2026-06-26 06:06:24.203] Found 102 possible bad axioms.
+[2026-06-26 06:06:24.203] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Manuscript http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:24.212] Found 101 possible bad axioms.
+[2026-06-26 06:06:24.212] Selected the bad axiom SubClassOf(wasInfluencedBy http://purl.org/ontology/bibo/AudioVisualDocument)).
+[2026-06-26 06:06:24.216]
+...[truncated]
+FAIL: attempt=4 seed=42661 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=4 success=0/100
+----- G-PROV attempt=5 seed=56861 at 2026-06-26 06:06:28 -----
+--- stdout ---
+{"seed":56861,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":146,"A2":738,"A3":2816,"B1":252,"B2":1230}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=56861, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:06:28.972] Checking precondition...
+[2026-06-26 06:06:28.988] Starting the repair...
+[2026-06-26 06:06:28.997] Found 112 possible bad axioms.
+[2026-06-26 06:06:28.999] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadMember wasDerivedFrom ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovRecommendation))).
+[2026-06-26 06:06:29.004] Found 111 possible bad axioms.
+[2026-06-26 06:06:29.004] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(wasDerivedFrom ObjectUnionOf(hadPrimarySource https://purl.org/heals/gprovCitation)).
+[2026-06-26 06:06:29.010] Found 110 possible bad axioms.
+[2026-06-26 06:06:29.010] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hadMember ObjectSomeValuesFrom(wasInfluencedBy owl:Thing))).
+[2026-06-26 06:06:29.015] Found 109 possible bad axioms.
+[2026-06-26 06:06:29.015] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/AudioVisualDocument http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:29.018] Found 108 possible bad axioms.
+[2026-06-26 06:06:29.019] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Manual http://purl.org/ontology/bibo/CollectedDocument).
+[2026-06-26 06:06:29.022] Found 107 possible bad axioms.
+[2026-06-26 06:06:29.022] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(wasGeneratedBy owl:Thing) https://purl.org/heals/gprovRecommendation).
+[2026-06-26 06:06:29.031] Found 106 possible bad axioms.
+[2026-06-26 06:06:29.031] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Journal http://purl.org/ontology/bibo/Magazine).
+[2026-06-26 06:06:29.034] Found 105 possible bad axioms.
+[2026-06-26 06:06:29.035] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Book http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:29.038] Found 104 possible bad axioms.
+[2026-06-26 06:06:29.038] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Magazine http://purl.org/ontology/bibo/Periodical).
+[2026-06-26 06:06:29.041] Found 103 possible bad axioms.
+[2026-06-26 06:06:29.041] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovCitation https://purl.org/heals/gprovEvidenceSentence).
+[2026-06-26 06:06:29.044] Found 102 possible bad axioms.
+[2026-06-26 06:06:29.044] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(wasGeneratedBy hadPrimarySource https://purl.org/heals/gprovCitation)).
+[2026-06-26 06:06:29.052] Found 101 possible bad axioms.
+[2026-06-26 06:06:29.052] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Book http://purl.org/ontology/bibo/Ma
+...[truncated]
+FAIL: attempt=5 seed=56861 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=5 success=0/100
+----- G-PROV attempt=6 seed=71061 at 2026-06-26 06:06:34 -----
+--- stdout ---
+{"seed":71061,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":75,"A2":770,"A3":2628,"B1":3169,"B2":1553}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=71061, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:06:34.587] Checking precondition...
+[2026-06-26 06:06:34.603] Starting the repair...
+[2026-06-26 06:06:34.612] Found 112 possible bad axioms.
+[2026-06-26 06:06:34.613] Selected the bad axiom SubClassOf(Person Organization).
+[2026-06-26 06:06:34.619] Found 111 possible bad axioms.
+[2026-06-26 06:06:34.619] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hadMember owl:Thing) ObjectSomeValuesFrom(hadPrimarySource owl:Thing)).
+[2026-06-26 06:06:34.624] Found 110 possible bad axioms.
+[2026-06-26 06:06:34.625] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hadMember ObjectAllValuesFrom(wasDerivedFrom ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovRecommendation))) https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:34.629] Found 109 possible bad axioms.
+[2026-06-26 06:06:34.629] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hadMember https://purl.org/heals/gprovRecommendation)).
+[2026-06-26 06:06:34.633] Found 108 possible bad axioms.
+[2026-06-26 06:06:34.633] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(wasDerivedFrom owl:Thing) https://purl.org/heals/gprovFormalRule).
+[2026-06-26 06:06:34.637] Found 107 possible bad axioms.
+[2026-06-26 06:06:34.637] Selected the bad axiom SubClassOf(hadMember ObjectAllValuesFrom(wasInfluencedBy https://purl.org/heals/gprovGrade))).
+[2026-06-26 06:06:34.646] Found 106 possible bad axioms.
+[2026-06-26 06:06:34.646] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/AcademicArticle http://purl.org/ontology/bibo/Article).
+[2026-06-26 06:06:34.649] Found 105 possible bad axioms.
+[2026-06-26 06:06:34.650] Selected the bad axiom SubClassOf(ObjectUnionOf(https://purl.org/heals/gprovDisease https://purl.org/heals/gprovGuideline) https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:34.652] Found 104 possible bad axioms.
+[2026-06-26 06:06:34.653] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.org/dc/terms/isPartOf owl:Thing) https://purl.org/heals/gprovEvidenceSentence).
+[2026-06-26 06:06:34.656] Found 103 possible bad axioms.
+[2026-06-26 06:06:34.656] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/CollectedDocument owl:Nothing).
+[2026-06-26 06:06:34.659] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:06:34.660] Checking precondition...
+[2026-06-26 06:06:34.673] Starting the repair...
+[2026-06-26 06:06:35.427] Found 1 possible bad axioms.
+[2026-06-26 06:06:35.427] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Coll
+...[truncated]
+FAIL: attempt=6 seed=71061 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=6 success=0/100
+----- G-PROV attempt=7 seed=85261 at 2026-06-26 06:06:42 -----
+--- stdout ---
+{"seed":85261,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":155,"A2":717,"A3":2662,"B1":2814,"B2":1217}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=85261, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:06:43.223] Checking precondition...
+[2026-06-26 06:06:43.238] Starting the repair...
+[2026-06-26 06:06:43.246] Found 112 possible bad axioms.
+[2026-06-26 06:06:43.248] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Website http://purl.org/ontology/bibo/Collection).
+[2026-06-26 06:06:43.253] Found 111 possible bad axioms.
+[2026-06-26 06:06:43.254] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Periodical http://purl.org/ontology/bibo/Website).
+[2026-06-26 06:06:43.258] Found 110 possible bad axioms.
+[2026-06-26 06:06:43.258] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovEvidenceSentence https://purl.org/heals/gprovGrade).
+[2026-06-26 06:06:43.263] Found 109 possible bad axioms.
+[2026-06-26 06:06:43.263] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/CollectedDocument http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:43.267] Found 108 possible bad axioms.
+[2026-06-26 06:06:43.267] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Journal http://purl.org/ontology/bibo/Magazine).
+[2026-06-26 06:06:43.271] Found 107 possible bad axioms.
+[2026-06-26 06:06:43.271] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/AudioDocument http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:43.279] Found 106 possible bad axioms.
+[2026-06-26 06:06:43.280] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadMember wasDerivedFrom ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovRecommendation))).
+[2026-06-26 06:06:43.284] Found 105 possible bad axioms.
+[2026-06-26 06:06:43.284] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Collection http://purl.org/ontology/bibo/Website).
+[2026-06-26 06:06:43.287] Found 104 possible bad axioms.
+[2026-06-26 06:06:43.287] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(wasGeneratedBy hadPrimarySource https://purl.org/heals/gprovCitation)).
+[2026-06-26 06:06:43.290] Found 103 possible bad axioms.
+[2026-06-26 06:06:43.290] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hadMember ObjectAllValuesFrom(wasGeneratedBy https://purl.org/heals/gprovEvidenceSentence)) https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:43.294] Found 102 possible bad axioms.
+[2026-06-26 06:06:43.294] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadPrimarySource Event).
+[2026-06-26 06:06:43.303] Found 101 possible bad axioms.
+[2026-06-26 06:06:43.303] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hadPrimarySource https://purl.org/heals/gprovCitat
+...[truncated]
+FAIL: attempt=7 seed=85261 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=7 success=0/100
+----- G-PROV attempt=8 seed=99461 at 2026-06-26 06:06:50 -----
+--- stdout ---
+{"seed":99461,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":204,"A2":703,"A3":1916,"B1":3747,"B2":1259}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=99461, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:06:51.217] Checking precondition...
+[2026-06-26 06:06:51.233] Starting the repair...
+[2026-06-26 06:06:51.240] Found 112 possible bad axioms.
+[2026-06-26 06:06:51.242] Selected the bad axiom SubClassOf(wasInfluencedBy ObjectAllValuesFrom(hadMember ObjectSomeValuesFrom(wasGeneratedBy owl:Thing)))).
+[2026-06-26 06:06:51.248] Found 111 possible bad axioms.
+[2026-06-26 06:06:51.248] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Article http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:51.252] Found 110 possible bad axioms.
+[2026-06-26 06:06:51.252] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovCitation https://purl.org/heals/gprovEvidenceSentence).
+[2026-06-26 06:06:51.257] Found 109 possible bad axioms.
+[2026-06-26 06:06:51.257] Selected the bad axiom SubClassOf(Person SoftwareAgent).
+[2026-06-26 06:06:51.261] Found 108 possible bad axioms.
+[2026-06-26 06:06:51.261] Selected the bad axiom SubClassOf(wasInfluencedBy http://purl.org/ontology/bibo/AudioVisualDocument)).
+[2026-06-26 06:06:51.265] Found 107 possible bad axioms.
+[2026-06-26 06:06:51.265] Selected the bad axiom SubClassOf(wasInfluencedBy http://purl.org/ontology/bibo/AudioVisualDocument)).
+[2026-06-26 06:06:51.275] Found 106 possible bad axioms.
+[2026-06-26 06:06:51.275] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hadMember ObjectAllValuesFrom(wasGeneratedBy https://purl.org/heals/gprovEvidenceSentence)) https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:51.279] Found 105 possible bad axioms.
+[2026-06-26 06:06:51.280] Selected the bad axiom SubClassOf(Person Agent).
+[2026-06-26 06:06:51.282] Found 104 possible bad axioms.
+[2026-06-26 06:06:51.282] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadMember wasDerivedFrom ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovRecommendation))).
+[2026-06-26 06:06:51.285] Found 103 possible bad axioms.
+[2026-06-26 06:06:51.285] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadMember wasDerivedFrom ObjectUnionOf(wasInfluencedBy owl:Thing)))).
+[2026-06-26 06:06:51.289] Found 102 possible bad axioms.
+[2026-06-26 06:06:51.289] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Manuscript http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:51.298] Found 101 possible bad axioms.
+[2026-06-26 06:06:51.298] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Manual ObjectUnionOf(https://purl.org/heals/gprovGuideline https://purl.org/heals/gprovRecommendation)).
+[2026-06-26 06:06:51.302] Found 100 possible bad ax
+...[truncated]
+FAIL: attempt=8 seed=99461 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=8 success=0/100
+----- G-PROV attempt=9 seed=113661 at 2026-06-26 06:06:59 -----
+--- stdout ---
+{"seed":113661,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":102,"A2":751,"A3":711,"B1":5016,"B2":1809}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=113661, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:06:59.474] Checking precondition...
+[2026-06-26 06:06:59.490] Starting the repair...
+[2026-06-26 06:06:59.498] Found 112 possible bad axioms.
+[2026-06-26 06:06:59.500] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Report https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:59.505] Found 111 possible bad axioms.
+[2026-06-26 06:06:59.505] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadPrimarySource Event).
+[2026-06-26 06:06:59.511] Found 110 possible bad axioms.
+[2026-06-26 06:06:59.511] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovGuideline http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:59.517] Found 109 possible bad axioms.
+[2026-06-26 06:06:59.517] Selected the bad axiom SubClassOf(wasInfluencedBy ObjectAllValuesFrom(http://purl.org/dc/terms/isPartOf https://purl.org/heals/gprovGuideline))).
+[2026-06-26 06:06:59.521] Found 108 possible bad axioms.
+[2026-06-26 06:06:59.521] Selected the bad axiom SubClassOf(Event).
+[2026-06-26 06:06:59.524] Found 107 possible bad axioms.
+[2026-06-26 06:06:59.525] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadMember wasDerivedFrom ObjectUnionOf(wasInfluencedBy owl:Thing)))).
+[2026-06-26 06:06:59.534] Found 106 possible bad axioms.
+[2026-06-26 06:06:59.535] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hadMember ObjectSomeValuesFrom(wasInfluencedBy owl:Thing))).
+[2026-06-26 06:06:59.538] Found 105 possible bad axioms.
+[2026-06-26 06:06:59.538] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hadMember owl:Thing) https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:59.541] Found 104 possible bad axioms.
+[2026-06-26 06:06:59.541] Selected the bad axiom SubClassOf(ObjectUnionOf(https://purl.org/heals/gprovDisease https://purl.org/heals/gprovGuideline) https://purl.org/heals/gprovGuideline).
+[2026-06-26 06:06:59.544] Found 103 possible bad axioms.
+[2026-06-26 06:06:59.544] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/AudioVisualDocument http://purl.org/ontology/bibo/Issue).
+[2026-06-26 06:06:59.548] Found 102 possible bad axioms.
+[2026-06-26 06:06:59.548] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.org/ontology/bibo/presentedAt owl:Thing) http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:06:59.556] Found 101 possible bad axioms.
+[2026-06-26 06:06:59.558] Selected the bad axiom SubClassOf(https://purl.org/heals/gprovCitation https://purl.org/heals/gprovReference).
+[2026-06-26 06:06:59.562] Found 100 possible bad axioms.
+[2026-06-26 06:06:59.562] Selected the b
+...[truncated]
+FAIL: attempt=9 seed=113661 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=9 success=0/100
+----- G-PROV attempt=10 seed=127861 at 2026-06-26 06:07:07 -----
+--- stdout ---
+{"seed":127861,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":67,"A2":789,"A3":333,"B1":270,"B2":1315}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/G-PROV.owl, seed=127861, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:08.306] Checking precondition...
+[2026-06-26 06:07:08.323] Starting the repair...
+[2026-06-26 06:07:08.331] Found 112 possible bad axioms.
+[2026-06-26 06:07:08.332] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadPrimarySource Event).
+[2026-06-26 06:07:08.339] Found 111 possible bad axioms.
+[2026-06-26 06:07:08.339] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(hadMember hadPrimarySource https://purl.org/heals/gprovCitation)).
+[2026-06-26 06:07:08.344] Found 110 possible bad axioms.
+[2026-06-26 06:07:08.344] Selected the bad axiom SubClassOf(Organization SoftwareAgent).
+[2026-06-26 06:07:08.349] Found 109 possible bad axioms.
+[2026-06-26 06:07:08.349] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/Report http://purl.org/ontology/bibo/DocumentPart).
+[2026-06-26 06:07:08.353] Found 108 possible bad axioms.
+[2026-06-26 06:07:08.353] Selected the bad axiom SubClassOf(wasInfluencedBy owl:Thing)).
+[2026-06-26 06:07:08.357] Found 107 possible bad axioms.
+[2026-06-26 06:07:08.357] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/CollectedDocument http://purl.org/ontology/bibo/Document).
+[2026-06-26 06:07:08.365] Found 106 possible bad axioms.
+[2026-06-26 06:07:08.365] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/CollectedDocument owl:Nothing).
+[2026-06-26 06:07:08.369] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:07:08.370] Checking precondition...
+[2026-06-26 06:07:08.376] Starting the repair...
+[2026-06-26 06:07:09.156] Found 1 possible bad axioms.
+[2026-06-26 06:07:09.157] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/CollectedDocument owl:Nothing).
+[2026-06-26 06:07:09.158] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:07:09.160] Checking precondition...
+[2026-06-26 06:07:09.165] Starting the repair...
+[2026-06-26 06:07:09.187] Selected a reference ontology with 155 axioms.
+[2026-06-26 06:07:09.445] Selected the bad axiom SubClassOf(http://purl.org/ontology/bibo/CollectedDocument owl:Nothing).
+[2026-06-26 06:07:09.490] Selected the weaker axiom SubClassOf(http://purl.org/ontology/bibo/Journal owl:Nothing).
+[2026-06-26 06:07:09.492] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:07:09.493] Checking precondition...
+[2026-06-26 06:07:09.495] Starting the repair...
+[2026-06-26 06:07:09.518] Selected a reference ontology with 153 axioms.
+[2026-06-26 06:07:09.734] Selected the bad axiom SubClassOf(http://purl
+...[truncated]
+FAIL: attempt=10 seed=127861 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+progress: ontology=G-PROV attempt=10 success=0/100
+=== ABORTED G-PROV after 10 consecutive failures at 2026-06-26 06:07:11 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for G-PROV - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=61 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=2 seed=14261 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=3 seed=28461 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=4 seed=42661 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=5 seed=56861 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=6 seed=71061 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=7 seed=85261 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=8 seed=99461 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=9 seed=113661 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+  attempt=10 seed=127861 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CollectedDocument ⊑ ⊥
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

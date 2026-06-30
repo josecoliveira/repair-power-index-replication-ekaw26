@@ -1,0 +1,13 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,62,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04.02 ⊑ GV.03.04,4.349736,130,2215,256,226,1153,,,,,,,
+2,14262,20260624134028346645,success,,,,9.026358,62,2219,250,245,1277,710,63,687,530,88,786,985
+3,28462,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥,5.165320,158,2158,268,232,1203,778,,,,,,
+4,42662,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥,4.057528,48,2213,259,211,957,,,,,,,
+5,56862,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥,4.460631,150,2137,254,238,1332,,,,,,,
+6,71062,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03,6.989403,60,2228,246,466,2331,682,54,547,,,,
+7,85262,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03 ⊑ GV.03.04.02,4.325798,97,2189,267,406,1000,,,,,,,
+8,99462,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03,7.874381,159,2161,491,230,1312,706,109,703,966,83,586,
+9,113662,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03,6.870569,110,2192,261,242,1179,622,47,688,425,96,642,
+10,127862,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥,4.071067,131,2167,254,217,949,,,,,,,
+11,142062,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03,4.145845,62,2210,274,224,1015,,,,,,,
+12,156262,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03,4.384931,181,2139,386,230,1089,,,,,,,

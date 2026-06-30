@@ -1,0 +1,479 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-SUGARBIND.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-SUGARBIND.csv
+
+=== Starting sequential trials for SUGARBIND at 2026-06-25 04:33:43 ===
+----- SUGARBIND attempt=1 seed=39 at 2026-06-25 04:33:43 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=39, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:43.419] Checking precondition...
+[2026-06-25 04:33:43.438] Starting the repair...
+[2026-06-25 04:33:43.447] Found 67 possible bad axioms.
+[2026-06-25 04:33:43.449] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_area owl:Thing) ReferencedInteraction).
+[2026-06-25 04:33:43.457] Found 66 possible bad axioms.
+[2026-06-25 04:33:43.458] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) ObjectAllValuesFrom(has_structure owl:Nothing)).
+[2026-06-25 04:33:43.465] Found 65 possible bad axioms.
+[2026-06-25 04:33:43.466] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent owl:Thing) Ligand).
+[2026-06-25 04:33:43.472] Found 64 possible bad axioms.
+[2026-06-25 04:33:43.472] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:33:43.481] Found 63 possible bad axioms.
+[2026-06-25 04:33:43.481] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:33:43.489] Found 62 possible bad axioms.
+[2026-06-25 04:33:43.489] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) citation).
+[2026-06-25 04:33:43.494] Found 61 possible bad axioms.
+[2026-06-25 04:33:43.494] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes owl:Thing) Agent).
+[2026-06-25 04:33:43.498] Found 60 possible bad axioms.
+[2026-06-25 04:33:43.498] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_area Area)) Agent).
+[2026-06-25 04:33:43.503] Found 59 possible bad axioms.
+[2026-06-25 04:33:43.503] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:33:43.506] Found 58 possible bad axioms.
+[2026-06-25 04:33:43.507] Selected the bad axiom SubClassOf(Cell Organ).
+[2026-06-25 04:33:43.514] Found 57 possible bad axioms.
+[2026-06-25 04:33:43.515] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent owl:Thing) ReferencedInteraction).
+[2026-06-25 04:33:43.523] Found 56 possible bad axioms.
+[2026-06-25 04:33:43.523] Selected the bad axiom SubClassOf(Tissue AreaType).
+[2026-06-25 04:33:43.527] Found 55 possible bad axioms.
+[2026-06-25 04:33:43.527] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_lectin ObjectAllValuesFrom(caused_at Area)) ReferencedInteraction).
+[2026-06-25 04:33:43.530] Found 54 possible bad axioms.
+[2026-06-25 04:33:43.531] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_ligand Ligand)).
+[2026-06-25 04:33:43.534] Found 53 
+...[truncated]
+FAIL: attempt=1 seed=39 - negative return code -9
+progress: ontology=SUGARBIND attempt=1 success=0/100
+----- SUGARBIND attempt=2 seed=14239 at 2026-06-25 04:35:49 -----
+--- stdout ---
+{"seed":14239,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType","iic_values":{},"repair_runtimes_ms":{"A1":94,"A2":646,"A3":682,"B1":287,"B2":4549,"B3":1861}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=14239, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:35:49.575] Checking precondition...
+[2026-06-25 04:35:49.590] Starting the repair...
+[2026-06-25 04:35:49.598] Found 67 possible bad axioms.
+[2026-06-25 04:35:49.599] Selected the bad axiom SubClassOf(Tissue Organ).
+[2026-06-25 04:35:49.606] Found 66 possible bad axioms.
+[2026-06-25 04:35:49.607] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure ObjectAllValuesFrom(has_structure Saccharide)) ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:35:49.612] Found 65 possible bad axioms.
+[2026-06-25 04:35:49.613] Selected the bad axiom SubClassOf(Cell Organ).
+[2026-06-25 04:35:49.617] Found 64 possible bad axioms.
+[2026-06-25 04:35:49.617] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(found_in Area) PubMed).
+[2026-06-25 04:35:49.621] Found 63 possible bad axioms.
+[2026-06-25 04:35:49.621] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(has_ligand owl:Thing)).
+[2026-06-25 04:35:49.626] Found 62 possible bad axioms.
+[2026-06-25 04:35:49.626] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(found_in owl:Thing) Agent).
+[2026-06-25 04:35:49.630] Found 61 possible bad axioms.
+[2026-06-25 04:35:49.630] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent owl:Thing) ReferencedInteraction).
+[2026-06-25 04:35:49.633] Found 60 possible bad axioms.
+[2026-06-25 04:35:49.633] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_ligand Ligand) ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:35:49.636] Found 59 possible bad axioms.
+[2026-06-25 04:35:49.636] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent ObjectAllValuesFrom(caused_at Area)) ReferencedInteraction).
+[2026-06-25 04:35:49.638] Found 58 possible bad axioms.
+[2026-06-25 04:35:49.638] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) Agent).
+[2026-06-25 04:35:49.640] Found 57 possible bad axioms.
+[2026-06-25 04:35:49.640] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(caused_by ObjectSomeValuesFrom(found_in owl:Thing))).
+[2026-06-25 04:35:49.652] Found 56 possible bad axioms.
+[2026-06-25 04:35:49.652] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_ligand Ligand) ObjectAllValuesFrom(has_lectin Lectin)).
+[2026-06-25 04:35:49.655] Found 55 possible bad axioms.
+[2026-06-25 04:35:49.655] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_area Area)) Agent).
+[2026-06-25 04:35:49.657] Found 54 possible bad axioms.
+[2026-06-25 04:35:49.658] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_lectin Lectin) Agent).
+[2026-06-25 
+...[truncated]
+FAIL: attempt=2 seed=14239 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+progress: ontology=SUGARBIND attempt=2 success=0/100
+----- SUGARBIND attempt=3 seed=28439 at 2026-06-25 04:35:57 -----
+--- stdout ---
+{"seed":28439,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType","iic_values":{},"repair_runtimes_ms":{"A1":93,"A2":641,"A3":460,"B1":250,"B2":3177}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=28439, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:35:58.135] Checking precondition...
+[2026-06-25 04:35:58.151] Starting the repair...
+[2026-06-25 04:35:58.158] Found 67 possible bad axioms.
+[2026-06-25 04:35:58.160] Selected the bad axiom SubClassOf(Tissue Organ).
+[2026-06-25 04:35:58.167] Found 66 possible bad axioms.
+[2026-06-25 04:35:58.168] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_lectin owl:Thing) ReferencedInteraction).
+[2026-06-25 04:35:58.173] Found 65 possible bad axioms.
+[2026-06-25 04:35:58.173] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(found_in Area)).
+[2026-06-25 04:35:58.178] Found 64 possible bad axioms.
+[2026-06-25 04:35:58.178] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:35:58.181] Found 63 possible bad axioms.
+[2026-06-25 04:35:58.182] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(caused_by ObjectSomeValuesFrom(found_in Lectin))).
+[2026-06-25 04:35:58.186] Found 62 possible bad axioms.
+[2026-06-25 04:35:58.187] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent owl:Thing) ReferencedInteraction).
+[2026-06-25 04:35:58.190] Found 61 possible bad axioms.
+[2026-06-25 04:35:58.190] Selected the bad axiom SubClassOf(Cell AreaType).
+[2026-06-25 04:35:58.193] Found 60 possible bad axioms.
+[2026-06-25 04:35:58.193] Selected the bad axiom SubClassOf(AreaType System).
+[2026-06-25 04:35:58.196] Found 59 possible bad axioms.
+[2026-06-25 04:35:58.196] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) ObjectAllValuesFrom(has_structure owl:Nothing)).
+[2026-06-25 04:35:58.198] Found 58 possible bad axioms.
+[2026-06-25 04:35:58.198] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_ligand Ligand) ObjectAllValuesFrom(has_lectin Lectin)).
+[2026-06-25 04:35:58.200] Found 57 possible bad axioms.
+[2026-06-25 04:35:58.200] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_area Area)) Agent).
+[2026-06-25 04:35:58.213] Found 56 possible bad axioms.
+[2026-06-25 04:35:58.213] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(found_in ObjectAllValuesFrom(has_lectin Lectin)) Agent).
+[2026-06-25 04:35:58.216] Found 55 possible bad axioms.
+[2026-06-25 04:35:58.216] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(caused_at Area)) Agent).
+[2026-06-25 04:35:58.219] Found 54 possible bad axioms.
+[2026-06-25 04:35:58.219] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(has_ligand owl:Thing)).
+[2026-06-25 04:35:58.221] Found 53 possible bad 
+...[truncated]
+FAIL: attempt=3 seed=28439 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+progress: ontology=SUGARBIND attempt=3 success=0/100
+----- SUGARBIND attempt=4 seed=42639 at 2026-06-25 04:36:02 -----
+--- stdout ---
+{"seed":42639,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType","iic_values":{},"repair_runtimes_ms":{"A1":89,"A2":643,"A3":361,"B1":733,"B2":3335}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=42639, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:36:03.173] Checking precondition...
+[2026-06-25 04:36:03.190] Starting the repair...
+[2026-06-25 04:36:03.197] Found 67 possible bad axioms.
+[2026-06-25 04:36:03.199] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_ligand Ligand)).
+[2026-06-25 04:36:03.205] Found 66 possible bad axioms.
+[2026-06-25 04:36:03.206] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_ligand Ligand)) Agent).
+[2026-06-25 04:36:03.211] Found 65 possible bad axioms.
+[2026-06-25 04:36:03.211] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_area Area) PubMed).
+[2026-06-25 04:36:03.215] Found 64 possible bad axioms.
+[2026-06-25 04:36:03.216] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent ObjectAllValuesFrom(has_lectin Lectin)) ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:36:03.219] Found 63 possible bad axioms.
+[2026-06-25 04:36:03.219] Selected the bad axiom SubClassOf(AreaType System).
+[2026-06-25 04:36:03.222] Found 62 possible bad axioms.
+[2026-06-25 04:36:03.223] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) Agent).
+[2026-06-25 04:36:03.226] Found 61 possible bad axioms.
+[2026-06-25 04:36:03.226] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_ligand Ligand) ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:36:03.229] Found 60 possible bad axioms.
+[2026-06-25 04:36:03.229] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_agent Agent)).
+[2026-06-25 04:36:03.232] Found 59 possible bad axioms.
+[2026-06-25 04:36:03.232] Selected the bad axiom SubClassOf(owl:Thing Agent).
+[2026-06-25 04:36:03.235] Found 58 possible bad axioms.
+[2026-06-25 04:36:03.235] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by ObjectAllValuesFrom(has_area Area)) ReferencedInteraction).
+[2026-06-25 04:36:03.237] Found 57 possible bad axioms.
+[2026-06-25 04:36:03.237] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_citation owl:Thing) ReferencedInteraction).
+[2026-06-25 04:36:03.250] Found 56 possible bad axioms.
+[2026-06-25 04:36:03.250] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(has_ligand owl:Thing)).
+[2026-06-25 04:36:03.253] Found 55 possible bad axioms.
+[2026-06-25 04:36:03.253] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(found_in ObjectAllValuesFrom(has_lectin Lectin)) Agent).
+[2026-06-25 04:36:03.256] Found 54 possible bad axioms.
+[2026-06-25 04:36:03.256] Selected the bad axiom SubClassOf(AreaType ObjectSomeValuesFrom(has_structure owl:Thing)).
+[2026-06-25 04:36:03.258]
+...[truncated]
+FAIL: attempt=4 seed=42639 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+progress: ontology=SUGARBIND attempt=4 success=0/100
+----- SUGARBIND attempt=5 seed=56839 at 2026-06-25 04:36:08 -----
+--- stdout ---
+{"seed":56839,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System","iic_values":{},"repair_runtimes_ms":{"A1":95,"A2":658,"A3":482,"B1":293,"B2":4656,"B3":2303}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=56839, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:36:08.772] Checking precondition...
+[2026-06-25 04:36:08.787] Starting the repair...
+[2026-06-25 04:36:08.795] Found 67 possible bad axioms.
+[2026-06-25 04:36:08.797] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) ObjectAllValuesFrom(has_structure owl:Nothing)).
+[2026-06-25 04:36:08.806] Found 66 possible bad axioms.
+[2026-06-25 04:36:08.806] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(caused_by ObjectSomeValuesFrom(found_in Lectin))).
+[2026-06-25 04:36:08.812] Found 65 possible bad axioms.
+[2026-06-25 04:36:08.812] Selected the bad axiom SubClassOf(Cell ObjectSomeValuesFrom(has_structure owl:Thing)).
+[2026-06-25 04:36:08.817] Found 64 possible bad axioms.
+[2026-06-25 04:36:08.817] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_ligand Ligand)).
+[2026-06-25 04:36:08.821] Found 63 possible bad axioms.
+[2026-06-25 04:36:08.821] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_ligand Ligand) PubMed).
+[2026-06-25 04:36:08.826] Found 62 possible bad axioms.
+[2026-06-25 04:36:08.826] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) Agent).
+[2026-06-25 04:36:08.830] Found 61 possible bad axioms.
+[2026-06-25 04:36:08.830] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent ObjectAllValuesFrom(caused_by Agent)) ReferencedInteraction).
+[2026-06-25 04:36:08.833] Found 60 possible bad axioms.
+[2026-06-25 04:36:08.833] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(found_in Area) PubMed).
+[2026-06-25 04:36:08.836] Found 59 possible bad axioms.
+[2026-06-25 04:36:08.836] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by Agent) ReferencedInteraction).
+[2026-06-25 04:36:08.839] Found 58 possible bad axioms.
+[2026-06-25 04:36:08.839] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent ObjectAllValuesFrom(has_lectin Lectin)) Agent).
+[2026-06-25 04:36:08.841] Found 57 possible bad axioms.
+[2026-06-25 04:36:08.841] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(caused_at Area)) Agent).
+[2026-06-25 04:36:08.854] Found 56 possible bad axioms.
+[2026-06-25 04:36:08.854] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_lectin Lectin) Agent).
+[2026-06-25 04:36:08.857] Found 55 possible bad axioms.
+[2026-06-25 04:36:08.857] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(found_in Area)).
+[2026-06-25 04:36:08.859] Found 54 possible bad axioms.
+[2026-06-25 04:36:08.860] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) System
+...[truncated]
+FAIL: attempt=5 seed=56839 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System
+progress: ontology=SUGARBIND attempt=5 success=0/100
+----- SUGARBIND attempt=6 seed=71039 at 2026-06-25 04:36:17 -----
+--- stdout ---
+{"seed":71039,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System","iic_values":{},"repair_runtimes_ms":{"A1":66,"A2":654,"A3":374,"B1":270,"B2":3123}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=71039, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:36:17.678] Checking precondition...
+[2026-06-25 04:36:17.696] Starting the repair...
+[2026-06-25 04:36:17.703] Found 67 possible bad axioms.
+[2026-06-25 04:36:17.704] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by ObjectAllValuesFrom(has_area Area)) ReferencedInteraction).
+[2026-06-25 04:36:17.711] Found 66 possible bad axioms.
+[2026-06-25 04:36:17.711] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(caused_at Area)) Agent).
+[2026-06-25 04:36:17.717] Found 65 possible bad axioms.
+[2026-06-25 04:36:17.717] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:36:17.722] Found 64 possible bad axioms.
+[2026-06-25 04:36:17.722] Selected the bad axiom SubClassOf(Cell System).
+[2026-06-25 04:36:17.725] Found 63 possible bad axioms.
+[2026-06-25 04:36:17.725] Selected the bad axiom SubClassOf(owl:Thing Ligand).
+[2026-06-25 04:36:17.729] Found 62 possible bad axioms.
+[2026-06-25 04:36:17.729] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:36:17.733] Found 61 possible bad axioms.
+[2026-06-25 04:36:17.733] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_area Area)) Agent).
+[2026-06-25 04:36:17.736] Found 60 possible bad axioms.
+[2026-06-25 04:36:17.737] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) System).
+[2026-06-25 04:36:17.739] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 04:36:17.740] Checking precondition...
+[2026-06-25 04:36:17.749] Starting the repair...
+[2026-06-25 04:36:18.394] Found 3 possible bad axioms.
+[2026-06-25 04:36:18.394] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) System).
+[2026-06-25 04:36:18.394] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 04:36:18.395] Checking precondition...
+[2026-06-25 04:36:18.398] Starting the repair...
+[2026-06-25 04:36:18.406] Selected a reference ontology with 89 axioms.
+[2026-06-25 04:36:18.703] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) System).
+[2026-06-25 04:36:18.766] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(has_area owl:Thing) System).
+[2026-06-25 04:36:18.769] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 04:36:18.770] Checking precondition...
+[2026-06-25 04:36:18.772] Starting the repair...
+[2026-06-25 04:36:18.780] Selected a referenc
+...[truncated]
+FAIL: attempt=6 seed=71039 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System
+progress: ontology=SUGARBIND attempt=6 success=0/100
+----- SUGARBIND attempt=7 seed=85239 at 2026-06-25 04:36:22 -----
+--- stdout ---
+{"seed":85239,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType","iic_values":{},"repair_runtimes_ms":{"A1":126,"A2":634,"A3":888,"B1":242,"B2":4560,"B3":2023}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=85239, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:36:22.565] Checking precondition...
+[2026-06-25 04:36:22.581] Starting the repair...
+[2026-06-25 04:36:22.589] Found 67 possible bad axioms.
+[2026-06-25 04:36:22.591] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(caused_at Area)) Agent).
+[2026-06-25 04:36:22.599] Found 66 possible bad axioms.
+[2026-06-25 04:36:22.600] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent ObjectAllValuesFrom(has_lectin Lectin)) ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:36:22.605] Found 65 possible bad axioms.
+[2026-06-25 04:36:22.605] Selected the bad axiom SubClassOf(owl:Thing Ligand).
+[2026-06-25 04:36:22.610] Found 64 possible bad axioms.
+[2026-06-25 04:36:22.610] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_structure owl:Thing) Ligand).
+[2026-06-25 04:36:22.614] Found 63 possible bad axioms.
+[2026-06-25 04:36:22.614] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_agent Agent)).
+[2026-06-25 04:36:22.618] Found 62 possible bad axioms.
+[2026-06-25 04:36:22.619] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by ObjectAllValuesFrom(has_area Area)) ReferencedInteraction).
+[2026-06-25 04:36:22.623] Found 61 possible bad axioms.
+[2026-06-25 04:36:22.624] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent ObjectAllValuesFrom(has_structure Saccharide)) Agent).
+[2026-06-25 04:36:22.627] Found 60 possible bad axioms.
+[2026-06-25 04:36:22.627] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:36:22.630] Found 59 possible bad axioms.
+[2026-06-25 04:36:22.630] Selected the bad axiom SubClassOf(Cell System).
+[2026-06-25 04:36:22.633] Found 58 possible bad axioms.
+[2026-06-25 04:36:22.633] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by Agent) ReferencedInteraction).
+[2026-06-25 04:36:22.636] Found 57 possible bad axioms.
+[2026-06-25 04:36:22.636] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) Agent).
+[2026-06-25 04:36:22.648] Found 56 possible bad axioms.
+[2026-06-25 04:36:22.648] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) ObjectAllValuesFrom(has_structure owl:Nothing)).
+[2026-06-25 04:36:22.650] Found 55 possible bad axioms.
+[2026-06-25 04:36:22.650] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_area Area) PubMed).
+[2026-06-25 04:36:22.653] Found 54 possible bad axioms.
+[2026-06-25 04:36:22.653] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_ligand Ligand) PubMed).
+[2026-06-25 04
+...[truncated]
+FAIL: attempt=7 seed=85239 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+progress: ontology=SUGARBIND attempt=7 success=0/100
+----- SUGARBIND attempt=8 seed=99439 at 2026-06-25 04:36:31 -----
+--- stdout ---
+{"seed":99439,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType","iic_values":{},"repair_runtimes_ms":{"A1":65,"A2":663,"A3":603,"B1":240,"B2":7102,"B3":2142}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=99439, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:36:31.451] Checking precondition...
+[2026-06-25 04:36:31.467] Starting the repair...
+[2026-06-25 04:36:31.473] Found 67 possible bad axioms.
+[2026-06-25 04:36:31.475] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_lectin Lectin)).
+[2026-06-25 04:36:31.482] Found 66 possible bad axioms.
+[2026-06-25 04:36:31.482] Selected the bad axiom SubClassOf(Cell ObjectSomeValuesFrom(has_structure owl:Thing)).
+[2026-06-25 04:36:31.487] Found 65 possible bad axioms.
+[2026-06-25 04:36:31.487] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:36:31.492] Found 64 possible bad axioms.
+[2026-06-25 04:36:31.492] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure ObjectAllValuesFrom(has_structure Saccharide)) ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:36:31.495] Found 63 possible bad axioms.
+[2026-06-25 04:36:31.495] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by ObjectAllValuesFrom(has_area Area)) ReferencedInteraction).
+[2026-06-25 04:36:31.499] Found 62 possible bad axioms.
+[2026-06-25 04:36:31.499] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_area Area)) Agent).
+[2026-06-25 04:36:31.503] Found 61 possible bad axioms.
+[2026-06-25 04:36:31.503] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent owl:Thing) Ligand).
+[2026-06-25 04:36:31.506] Found 60 possible bad axioms.
+[2026-06-25 04:36:31.506] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(caused_by Agent)).
+[2026-06-25 04:36:31.509] Found 59 possible bad axioms.
+[2026-06-25 04:36:31.509] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure Saccharide) System).
+[2026-06-25 04:36:31.512] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 04:36:31.513] Checking precondition...
+[2026-06-25 04:36:31.527] Starting the repair...
+[2026-06-25 04:36:32.174] Found 3 possible bad axioms.
+[2026-06-25 04:36:32.174] Selected the bad axiom SubClassOf(System AreaType).
+[2026-06-25 04:36:32.175] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 04:36:32.177] Checking precondition...
+[2026-06-25 04:36:32.179] Starting the repair...
+[2026-06-25 04:36:32.189] Selected a reference ontology with 89 axioms.
+[2026-06-25 04:36:32.491] Selected the bad axiom SubClassOf(System AreaType).
+[2026-06-25 04:36:32.554] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(has_lectin Lectin) AreaType).
+[2026-06-25 04:36:32.775] Selected the bad axiom SubClass
+...[truncated]
+FAIL: attempt=8 seed=99439 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+progress: ontology=SUGARBIND attempt=8 success=0/100
+----- SUGARBIND attempt=9 seed=113639 at 2026-06-25 04:36:42 -----
+--- stdout ---
+{"seed":113639,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType","iic_values":{},"repair_runtimes_ms":{"A1":119,"A2":627,"A3":412,"B1":299,"B2":2959}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=113639, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:36:42.699] Checking precondition...
+[2026-06-25 04:36:42.714] Starting the repair...
+[2026-06-25 04:36:42.721] Found 67 possible bad axioms.
+[2026-06-25 04:36:42.723] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_structure owl:Thing) Ligand).
+[2026-06-25 04:36:42.731] Found 66 possible bad axioms.
+[2026-06-25 04:36:42.731] Selected the bad axiom SubClassOf(Cell System).
+[2026-06-25 04:36:42.737] Found 65 possible bad axioms.
+[2026-06-25 04:36:42.737] Selected the bad axiom SubClassOf(AreaType Organ).
+[2026-06-25 04:36:42.741] Found 64 possible bad axioms.
+[2026-06-25 04:36:42.742] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_ligand owl:Thing) ReferencedInteraction).
+[2026-06-25 04:36:42.745] Found 63 possible bad axioms.
+[2026-06-25 04:36:42.746] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_ligand Ligand) PubMed).
+[2026-06-25 04:36:42.750] Found 62 possible bad axioms.
+[2026-06-25 04:36:42.750] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_area Area) PubMed).
+[2026-06-25 04:36:42.756] Found 61 possible bad axioms.
+[2026-06-25 04:36:42.756] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by Agent) ReferencedInteraction).
+[2026-06-25 04:36:42.759] Found 60 possible bad axioms.
+[2026-06-25 04:36:42.760] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:36:42.763] Found 59 possible bad axioms.
+[2026-06-25 04:36:42.764] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure ObjectAllValuesFrom(has_structure Saccharide)) ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:36:42.767] Found 58 possible bad axioms.
+[2026-06-25 04:36:42.767] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(caused_by ObjectSomeValuesFrom(found_in owl:Thing))).
+[2026-06-25 04:36:42.770] Found 57 possible bad axioms.
+[2026-06-25 04:36:42.770] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_lectin Lectin) Agent).
+[2026-06-25 04:36:42.782] Found 56 possible bad axioms.
+[2026-06-25 04:36:42.782] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) ObjectAllValuesFrom(has_structure owl:Nothing)).
+[2026-06-25 04:36:42.788] Found 55 possible bad axioms.
+[2026-06-25 04:36:42.788] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent owl:Thing) ReferencedInteraction).
+[2026-06-25 04:36:42.792] Found 54 possible bad axioms.
+[2026-06-25 04:36:42.792] Selected the bad axiom SubClassOf(Organ AreaType).
+[2026-06-25 04:36:42.795] Found 53 possible bad axioms.
+[2026-06-25 04:36:42.796] Sel
+...[truncated]
+FAIL: attempt=9 seed=113639 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+progress: ontology=SUGARBIND attempt=9 success=0/100
+----- SUGARBIND attempt=10 seed=127839 at 2026-06-25 04:36:47 -----
+--- stdout ---
+{"seed":127839,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType","iic_values":{},"repair_runtimes_ms":{"A1":116,"A2":617,"A3":1787,"B1":197,"B2":3373}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SUGARBIND.owl, seed=127839, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:36:47.519] Checking precondition...
+[2026-06-25 04:36:47.535] Starting the repair...
+[2026-06-25 04:36:47.542] Found 67 possible bad axioms.
+[2026-06-25 04:36:47.544] Selected the bad axiom SubClassOf(Cell System).
+[2026-06-25 04:36:47.551] Found 66 possible bad axioms.
+[2026-06-25 04:36:47.551] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by ObjectAllValuesFrom(has_lectin Lectin)) ReferencedInteraction).
+[2026-06-25 04:36:47.557] Found 65 possible bad axioms.
+[2026-06-25 04:36:47.558] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(caused_by ObjectAllValuesFrom(has_area Area)) ReferencedInteraction).
+[2026-06-25 04:36:47.562] Found 64 possible bad axioms.
+[2026-06-25 04:36:47.562] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_structure ObjectAllValuesFrom(has_structure Saccharide)) ObjectAllValuesFrom(has_area Area)).
+[2026-06-25 04:36:47.565] Found 63 possible bad axioms.
+[2026-06-25 04:36:47.566] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_lectin owl:Thing) ReferencedInteraction).
+[2026-06-25 04:36:47.569] Found 62 possible bad axioms.
+[2026-06-25 04:36:47.570] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_ligand Ligand)) Agent).
+[2026-06-25 04:36:47.573] Found 61 possible bad axioms.
+[2026-06-25 04:36:47.574] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(has_ligand owl:Thing)).
+[2026-06-25 04:36:47.576] Found 60 possible bad axioms.
+[2026-06-25 04:36:47.577] Selected the bad axiom SubClassOf(AreaType Organ).
+[2026-06-25 04:36:47.579] Found 59 possible bad axioms.
+[2026-06-25 04:36:47.579] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(found_in Area) Agent).
+[2026-06-25 04:36:47.582] Found 58 possible bad axioms.
+[2026-06-25 04:36:47.582] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(causes ObjectAllValuesFrom(has_area Area)) Agent).
+[2026-06-25 04:36:47.584] Found 57 possible bad axioms.
+[2026-06-25 04:36:47.584] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(has_agent owl:Thing) ReferencedInteraction).
+[2026-06-25 04:36:47.595] Found 56 possible bad axioms.
+[2026-06-25 04:36:47.595] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent ObjectAllValuesFrom(has_lectin Lectin)) Agent).
+[2026-06-25 04:36:47.598] Found 55 possible bad axioms.
+[2026-06-25 04:36:47.598] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(has_agent Agent) ObjectAllValuesFrom(has_structure Saccharide)).
+[2026-06-25 04:36:47.600] Found 54 possible bad axioms.
+[2026-06-25 04:36:47.601] Selected the bad axiom Sub
+...[truncated]
+FAIL: attempt=10 seed=127839 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+progress: ontology=SUGARBIND attempt=10 success=0/100
+=== ABORTED SUGARBIND after 10 consecutive failures at 2026-06-25 04:36:53 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for SUGARBIND - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=39 msg=negative return code -9
+  attempt=2 seed=14239 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+  attempt=3 seed=28439 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+  attempt=4 seed=42639 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+  attempt=5 seed=56839 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System
+  attempt=6 seed=71039 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ∀ has_structure.Saccharide ⊑ System
+  attempt=7 seed=85239 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+  attempt=8 seed=99439 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+  attempt=9 seed=113639 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+  attempt=10 seed=127839 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: System ⊑ AreaType
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=1 total_seconds=126.035559 avg_seconds=126.035559
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

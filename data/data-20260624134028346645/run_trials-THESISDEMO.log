@@ -1,0 +1,352 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-THESISDEMO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-THESISDEMO.csv
+
+=== Starting sequential trials for THESISDEMO at 2026-06-26 19:27:01 ===
+----- THESISDEMO attempt=1 seed=89 at 2026-06-26 19:27:01 -----
+--- stdout ---
+{"seed":89,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":277,"A2":2501,"A3":321}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=89, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:02.273] Checking precondition...
+[2026-06-26 19:27:02.291] Starting the repair...
+[2026-06-26 19:27:02.302] Found 209 possible bad axioms.
+[2026-06-26 19:27:02.303] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy)).
+[2026-06-26 19:27:02.309] Found 208 possible bad axioms.
+[2026-06-26 19:27:02.309] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:02.314] Found 207 possible bad axioms.
+[2026-06-26 19:27:02.314] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:02.318] Found 206 possible bad axioms.
+[2026-06-26 19:27:02.319] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV) ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5)).
+[2026-06-26 19:27:02.328] Found 205 possible bad axioms.
+[2026-06-26 19:27:02.328] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i) http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-26 19:27:02.332] Found 204 possible bad axioms.
+[2026-06-26 19:27:02.333] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe owl:Thing) ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG)).
+[2026-06-26 19:27:02.336] Found 203 possible bad axioms.
+[2026-06-26 19:27:02.336] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV))).
+[2026-06-26 19:27:02.339] Found 202 possible bad axioms.
+[2026-06-26 19:27:02.340] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV 
+...[truncated]
+FAIL: attempt=1 seed=89 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=THESISDEMO attempt=1 success=0/100
+----- THESISDEMO attempt=2 seed=14289 at 2026-06-26 19:27:05 -----
+--- stdout ---
+{"seed":14289,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B1","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":264,"A2":2494,"A3":1590,"B1":3132}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=14289, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:05.823] Checking precondition...
+[2026-06-26 19:27:05.839] Starting the repair...
+[2026-06-26 19:27:05.849] Found 209 possible bad axioms.
+[2026-06-26 19:27:05.851] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i))).
+[2026-06-26 19:27:05.856] Found 208 possible bad axioms.
+[2026-06-26 19:27:05.857] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:05.861] Found 207 possible bad axioms.
+[2026-06-26 19:27:05.862] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:05.868] Found 206 possible bad axioms.
+[2026-06-26 19:27:05.868] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy)).
+[2026-06-26 19:27:05.877] Found 205 possible bad axioms.
+[2026-06-26 19:27:05.877] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy).
+[2026-06-26 19:27:05.881] Found 204 possible bad axioms.
+[2026-06-26 19:27:05.882] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-26 19:27:05.885] Found 203 possible bad axioms.
+[2026-06-26 19:27:05.885] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:05.888] Found 202 possible bad axioms.
+...[truncated]
+FAIL: attempt=2 seed=14289 status=memory_limit_exceeded stage=B1 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=THESISDEMO attempt=2 success=0/100
+----- THESISDEMO attempt=3 seed=28489 at 2026-06-26 19:27:13 -----
+--- stdout ---
+{"seed":28489,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":251,"A2":2499,"A3":2235}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=28489, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:13.730] Checking precondition...
+[2026-06-26 19:27:13.748] Starting the repair...
+[2026-06-26 19:27:13.757] Found 209 possible bad axioms.
+[2026-06-26 19:27:13.759] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG) http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:13.764] Found 208 possible bad axioms.
+[2026-06-26 19:27:13.765] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ ObjectSomeValuesFrom(http://webprotege.stanford.edu/R7SBrVcYIxALhpipI9Gl92Q http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG)) http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-26 19:27:13.770] Found 207 possible bad axioms.
+[2026-06-26 19:27:13.770] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi) http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:13.775] Found 206 possible bad axioms.
+[2026-06-26 19:27:13.775] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:13.783] Found 205 possible bad axioms.
+[2026-06-26 19:27:13.783] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-26 19:27:13.787] Found 204 possible bad axioms.
+[2026-06-26 19:27:13.788] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:13.791] Found 203 possible bad axioms.
+[2026-06-26 19:27:13.792] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-26 19:27:13.795] Found 202 possible bad axioms.
+[2026-06-26 19:27:13.796] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt ObjectSomeValuesFrom(http://we
+...[truncated]
+FAIL: attempt=3 seed=28489 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=THESISDEMO attempt=3 success=0/100
+----- THESISDEMO attempt=4 seed=42689 at 2026-06-26 19:27:18 -----
+--- stdout ---
+{"seed":42689,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":351,"A2":2455,"A3":2471}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=42689, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:19.147] Checking precondition...
+[2026-06-26 19:27:19.165] Starting the repair...
+[2026-06-26 19:27:19.173] Found 209 possible bad axioms.
+[2026-06-26 19:27:19.175] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:19.181] Found 208 possible bad axioms.
+[2026-06-26 19:27:19.181] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:19.186] Found 207 possible bad axioms.
+[2026-06-26 19:27:19.186] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i) http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-26 19:27:19.191] Found 206 possible bad axioms.
+[2026-06-26 19:27:19.192] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW)).
+[2026-06-26 19:27:19.200] Found 205 possible bad axioms.
+[2026-06-26 19:27:19.200] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV))).
+[2026-06-26 19:27:19.205] Found 204 possible bad axioms.
+[2026-06-26 19:27:19.205] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-26 19:27:19.208] Found 203 possible bad axioms.
+[2026-06-26 19:27:19.208] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi)).
+[2026-06-26 19:27:19.212] Found 202 possible bad axioms.
+[2026-06-26 19:27:19.212] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R7SBrVcYIxALhpipI9Gl92Q http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG) ObjectSomeValuesFrom(http://web
+...[truncated]
+FAIL: attempt=4 seed=42689 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=THESISDEMO attempt=4 success=0/100
+----- THESISDEMO attempt=5 seed=56889 at 2026-06-26 19:27:24 -----
+--- stdout ---
+{"seed":56889,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":170,"A2":2552,"A3":3047}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=56889, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:24.860] Checking precondition...
+[2026-06-26 19:27:24.878] Starting the repair...
+[2026-06-26 19:27:24.887] Found 209 possible bad axioms.
+[2026-06-26 19:27:24.888] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG)).
+[2026-06-26 19:27:24.894] Found 208 possible bad axioms.
+[2026-06-26 19:27:24.894] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS)).
+[2026-06-26 19:27:24.899] Found 207 possible bad axioms.
+[2026-06-26 19:27:24.899] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV))).
+[2026-06-26 19:27:24.904] Found 206 possible bad axioms.
+[2026-06-26 19:27:24.905] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:24.913] Found 205 possible bad axioms.
+[2026-06-26 19:27:24.913] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5).
+[2026-06-26 19:27:24.917] Found 204 possible bad axioms.
+[2026-06-26 19:27:24.918] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i) http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV).
+[2026-06-26 19:27:24.921] Found 203 possible bad axioms.
+[2026-06-26 19:27:24.921] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-26 19:27:24.924] Found 202 possible bad axioms.
+[2026-06-26 19:27:24.924] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy).
+[2026-06-26 19:27:24.927] Found 201 possible bad axioms
+...[truncated]
+FAIL: attempt=5 seed=56889 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=THESISDEMO attempt=5 success=0/100
+----- THESISDEMO attempt=6 seed=71089 at 2026-06-26 19:27:30 -----
+--- stdout ---
+{"seed":71089,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B1","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":344,"A2":2463,"A3":1524,"B1":1549}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=71089, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:31.069] Checking precondition...
+[2026-06-26 19:27:31.087] Starting the repair...
+[2026-06-26 19:27:31.097] Found 209 possible bad axioms.
+[2026-06-26 19:27:31.099] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy)).
+[2026-06-26 19:27:31.105] Found 208 possible bad axioms.
+[2026-06-26 19:27:31.105] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:31.110] Found 207 possible bad axioms.
+[2026-06-26 19:27:31.110] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-26 19:27:31.115] Found 206 possible bad axioms.
+[2026-06-26 19:27:31.115] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5).
+[2026-06-26 19:27:31.124] Found 205 possible bad axioms.
+[2026-06-26 19:27:31.124] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG)).
+[2026-06-26 19:27:31.128] Found 204 possible bad axioms.
+[2026-06-26 19:27:31.129] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW) ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG)).
+[2026-06-26 19:27:31.132] Found 203 possible bad axioms.
+[2026-06-26 19:27:31.132] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim) http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-26 19:27:31.136] Found 202 possible bad axioms.
+[2026-06-26 19:27:31.136] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi ObjectSomeValuesFrom(http://webp
+...[truncated]
+FAIL: attempt=6 seed=71089 status=memory_limit_exceeded stage=B1 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=THESISDEMO attempt=6 success=0/100
+----- THESISDEMO attempt=7 seed=85289 at 2026-06-26 19:27:37 -----
+--- stdout ---
+{"seed":85289,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i","iic_values":{},"repair_runtimes_ms":{"A1":352,"A2":2468,"A3":720,"B1":3058,"B2":3149}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=85289, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:37.378] Checking precondition...
+[2026-06-26 19:27:37.396] Starting the repair...
+[2026-06-26 19:27:37.405] Found 209 possible bad axioms.
+[2026-06-26 19:27:37.407] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-26 19:27:37.412] Found 208 possible bad axioms.
+[2026-06-26 19:27:37.412] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:37.417] Found 207 possible bad axioms.
+[2026-06-26 19:27:37.418] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/R7SBrVcYIxALhpipI9Gl92Q owl:Nothing)).
+[2026-06-26 19:27:37.423] Found 206 possible bad axioms.
+[2026-06-26 19:27:37.423] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG) http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:37.432] Found 205 possible bad axioms.
+[2026-06-26 19:27:37.432] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-26 19:27:37.436] Found 204 possible bad axioms.
+[2026-06-26 19:27:37.437] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5).
+[2026-06-26 19:27:37.440] Found 203 possible bad axioms.
+[2026-06-26 19:27:37.440] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-26 19:27:37.443] Found 202 possible bad axioms.
+[2026-06-26 19:27:37.444] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-26 19:27:37.446] Found 201 possible bad axioms.
+[2026-06-26 19:27:37.446] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:
+...[truncated]
+FAIL: attempt=7 seed=85289 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i
+progress: ontology=THESISDEMO attempt=7 success=0/100
+----- THESISDEMO attempt=8 seed=99489 at 2026-06-26 19:27:47 -----
+--- stdout ---
+{"seed":99489,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i","iic_values":{},"repair_runtimes_ms":{"A1":352,"A2":2431,"A3":1632,"B1":1568,"B2":2363}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=99489, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:47.566] Checking precondition...
+[2026-06-26 19:27:47.582] Starting the repair...
+[2026-06-26 19:27:47.592] Found 209 possible bad axioms.
+[2026-06-26 19:27:47.593] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ owl:Nothing).
+[2026-06-26 19:27:47.599] Found 208 possible bad axioms.
+[2026-06-26 19:27:47.599] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i))).
+[2026-06-26 19:27:47.604] Found 207 possible bad axioms.
+[2026-06-26 19:27:47.604] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW).
+[2026-06-26 19:27:47.610] Found 206 possible bad axioms.
+[2026-06-26 19:27:47.610] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim).
+[2026-06-26 19:27:47.618] Found 205 possible bad axioms.
+[2026-06-26 19:27:47.618] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5)).
+[2026-06-26 19:27:47.623] Found 204 possible bad axioms.
+[2026-06-26 19:27:47.623] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV) http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:27:47.627] Found 203 possible bad axioms.
+[2026-06-26 19:27:47.627] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy)).
+[2026-06-26 19:27:47.630] Found 202 possible bad axioms.
+[2026-06-26 19:27:47.631] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt) ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi)).
+[2026-06-26 19:27:47.633] Found 201 possible bad axioms.
+[2026-06-26 19:27:47.634] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87p
+...[truncated]
+FAIL: attempt=8 seed=99489 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i
+progress: ontology=THESISDEMO attempt=8 success=0/100
+----- THESISDEMO attempt=9 seed=113689 at 2026-06-26 19:27:55 -----
+--- stdout ---
+{"seed":113689,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":378,"A2":2423,"A3":1702}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=113689, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:27:56.359] Checking precondition...
+[2026-06-26 19:27:56.376] Starting the repair...
+[2026-06-26 19:27:56.385] Found 209 possible bad axioms.
+[2026-06-26 19:27:56.387] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS))).
+[2026-06-26 19:27:56.393] Found 208 possible bad axioms.
+[2026-06-26 19:27:56.393] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-26 19:27:56.398] Found 207 possible bad axioms.
+[2026-06-26 19:27:56.398] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-26 19:27:56.403] Found 206 possible bad axioms.
+[2026-06-26 19:27:56.404] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i))).
+[2026-06-26 19:27:56.412] Found 205 possible bad axioms.
+[2026-06-26 19:27:56.412] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV))).
+[2026-06-26 19:27:56.416] Found 204 possible bad axioms.
+[2026-06-26 19:27:56.417] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV) ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-26 19:27:56.420] Found 203 possible bad axioms.
+[2026-06-26 19:27:56.420] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://we
+...[truncated]
+FAIL: attempt=9 seed=113689 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=THESISDEMO attempt=9 success=0/100
+----- THESISDEMO attempt=10 seed=127889 at 2026-06-26 19:28:00 -----
+--- stdout ---
+{"seed":127889,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i","iic_values":{},"repair_runtimes_ms":{"A1":380,"A2":2405,"A3":1406,"B1":1443,"B2":2742}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/THESISDEMO.owl, seed=127889, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 19:28:01.298] Checking precondition...
+[2026-06-26 19:28:01.316] Starting the repair...
+[2026-06-26 19:28:01.324] Found 209 possible bad axioms.
+[2026-06-26 19:28:01.326] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-26 19:28:01.332] Found 208 possible bad axioms.
+[2026-06-26 19:28:01.332] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-26 19:28:01.337] Found 207 possible bad axioms.
+[2026-06-26 19:28:01.337] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy).
+[2026-06-26 19:28:01.342] Found 206 possible bad axioms.
+[2026-06-26 19:28:01.343] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-26 19:28:01.351] Found 205 possible bad axioms.
+[2026-06-26 19:28:01.351] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-26 19:28:01.355] Found 204 possible bad axioms.
+[2026-06-26 19:28:01.356] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-26 19:28:01.359] Found 203 possible bad axioms.
+[2026-06-26 19:28:01.359] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-26 19:28:01.363] Found 202 possible bad axioms.
+[2026-06-26 19:28:01.363] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy).
+[2026-06-26 19:28:01.366] Found 201 possible bad axioms.
+[2026-06-26 19:28:01.366] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-26 19:28:01.369] Found 200 possible bad axioms.
+[
+...[truncated]
+FAIL: attempt=10 seed=127889 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i
+progress: ontology=THESISDEMO attempt=10 success=0/100
+=== ABORTED THESISDEMO after 10 consecutive failures at 2026-06-26 19:28:09 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for THESISDEMO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=89 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=2 seed=14289 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=3 seed=28489 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=4 seed=42689 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=5 seed=56889 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=6 seed=71089 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=7 seed=85289 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i
+  attempt=8 seed=99489 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i
+  attempt=9 seed=113689 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=10 seed=127889 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

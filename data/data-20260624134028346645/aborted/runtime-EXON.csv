@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,17,20260624134028346645,time_limit_exceeded,timeout,B6,Repair timeout: B6 exceeded 300 seconds,303.029308,27,107,190,400,397,174,137,1118,300001,,,
+2,14217,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract),1.525029,43,90,170,178,401,228,77,,,,,
+3,28417,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,1.703597,41,99,277,234,376,150,138,,,,,
+4,42617,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,1.565605,25,102,184,103,511,222,91,,,,,
+5,56817,20260624134028346645,time_limit_exceeded,timeout,B6,Repair timeout: B6 exceeded 300 seconds,303.046995,44,87,271,366,476,197,102,1056,300001,,,
+6,71017,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(Trypticase_soy_agar_plus_yeast_extract),1.711532,30,98,362,59,450,169,66,142,,,,
+7,85217,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,1.573382,41,93,178,320,372,164,63,,,,,
+8,99417,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Culture_medium ⊑ ⊥,1.303853,42,87,276,179,380,,,,,,,
+9,113617,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,1.419127,42,92,319,63,323,160,57,,,,,
+10,127817,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊥ ⊑ ⊤,1.765157,51,86,175,359,481,208,66,,,,,

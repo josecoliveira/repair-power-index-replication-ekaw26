@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,132,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,25.338032,638,22048,1113,1080,,,,,,,,
+2,14332,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,42.195694,487,22288,15469,988,2532,,,,,,,
+3,28532,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,30.818622,428,22454,3203,914,3401,,,,,,,
+4,42732,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,31.905556,168,21995,2081,4811,2425,,,,,,,
+5,56932,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,32.113811,596,21985,2457,3420,3224,,,,,,,
+6,71132,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,43.401849,407,22118,10803,5698,3950,,,,,,,
+7,85332,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,30.343003,602,22191,2038,2445,2641,,,,,,,
+8,99532,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,45.136304,408,22322,2223,2277,17480,,,,,,,
+9,113732,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,65.053254,705,21959,2939,35369,3670,,,,,,,
+10,127932,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ XEO_00045,43.216304,571,22256,4598,12518,2853,,,,,,,

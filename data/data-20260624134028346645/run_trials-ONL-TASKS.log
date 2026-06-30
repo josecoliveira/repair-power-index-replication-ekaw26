@@ -1,0 +1,501 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ONL-TASKS.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ONL-TASKS.csv
+
+=== Starting sequential trials for ONL-TASKS at 2026-06-26 12:33:34 ===
+----- ONL-TASKS attempt=1 seed=76 at 2026-06-26 12:33:34 -----
+--- stdout ---
+{"seed":76,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":211,"A2":1230,"A3":265,"B1":221,"B2":3459,"B3":1189,"B4":50,"B5":1583}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=76, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:33:34.893] Checking precondition...
+[2026-06-26 12:33:34.909] Starting the repair...
+[2026-06-26 12:33:34.914] Found 171 possible bad axioms.
+[2026-06-26 12:33:34.916] Selected the bad axiom SubClassOf(fluid_intelligence_test intelligence_test).
+[2026-06-26 12:33:34.920] Found 170 possible bad axioms.
+[2026-06-26 12:33:34.920] Selected the bad axiom SubClassOf(Color-Word_Interference_Test Cue_detection).
+[2026-06-26 12:33:34.924] Found 169 possible bad axioms.
+[2026-06-26 12:33:34.924] Selected the bad axiom SubClassOf(Auditory_Verbal_Learning_Test Verbal_Paired_Associates).
+[2026-06-26 12:33:34.928] Found 168 possible bad axioms.
+[2026-06-26 12:33:34.928] Selected the bad axiom SubClassOf(Auditory_Verbal_Learning_Test Serial_list_verbal_memory).
+[2026-06-26 12:33:34.932] Found 167 possible bad axioms.
+[2026-06-26 12:33:34.932] Selected the bad axiom SubClassOf(Stroop_task Oddball_paradigm).
+[2026-06-26 12:33:34.934] Found 166 possible bad axioms.
+[2026-06-26 12:33:34.935] Selected the bad axiom SubClassOf(Rey_complex_figure spatial_memory_test).
+[2026-06-26 12:33:34.942] Found 165 possible bad axioms.
+[2026-06-26 12:33:34.942] Selected the bad axiom SubClassOf(Corsi_task spatial_memory_test).
+[2026-06-26 12:33:34.945] Found 164 possible bad axioms.
+[2026-06-26 12:33:34.946] Selected the bad axiom SubClassOf(Traveling_Salesman_Problem_Task Corsi_task).
+[2026-06-26 12:33:34.949] Found 163 possible bad axioms.
+[2026-06-26 12:33:34.949] Selected the bad axiom SubClassOf(Operation-span_test Card_Rotations).
+[2026-06-26 12:33:34.952] Found 162 possible bad axioms.
+[2026-06-26 12:33:34.952] Selected the bad axiom SubClassOf(Serial_list_picture_memory spatial_memory_test).
+[2026-06-26 12:33:34.954] Found 161 possible bad axioms.
+[2026-06-26 12:33:34.955] Selected the bad axiom SubClassOf(memory_systems_test general_intelligence_test).
+[2026-06-26 12:33:34.963] Found 160 possible bad axioms.
+[2026-06-26 12:33:34.963] Selected the bad axiom SubClassOf(Dual_task Operation-span_test).
+[2026-06-26 12:33:34.967] Found 159 possible bad axioms.
+[2026-06-26 12:33:34.967] Selected the bad axiom SubClassOf(intelligence_test owl:Nothing).
+[2026-06-26 12:33:34.969] Found 158 possible bad axioms.
+[2026-06-26 12:33:34.970] Selected the bad axiom SubClassOf(Stroop_task Design_Fluency_Test).
+[2026-06-26 12:33:34.972] Found 157 possible bad axioms.
+[2026-06-26 12:33:34.972] Selected the bad axiom SubClassOf(Alternate_category_test verbal_memory_test).
+[2026-06-26 12:33:34.975] Found 156 possible bad axioms.
+[2026-06-26 12:33:34.976] Selected the bad axiom Sub
+...[truncated]
+FAIL: attempt=1 seed=76 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=1 success=0/100
+----- ONL-TASKS attempt=2 seed=14276 at 2026-06-26 12:33:43 -----
+--- stdout ---
+{"seed":14276,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":191,"A2":1231,"A3":250,"B1":654,"B2":1852}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=14276, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:33:43.552] Checking precondition...
+[2026-06-26 12:33:43.566] Starting the repair...
+[2026-06-26 12:33:43.572] Found 171 possible bad axioms.
+[2026-06-26 12:33:43.573] Selected the bad axiom SubClassOf(short-term_memory_test Serial_list_verbal_memory).
+[2026-06-26 12:33:43.578] Found 170 possible bad axioms.
+[2026-06-26 12:33:43.578] Selected the bad axiom SubClassOf(Corsi_task Rey_complex_figure).
+[2026-06-26 12:33:43.582] Found 169 possible bad axioms.
+[2026-06-26 12:33:43.582] Selected the bad axiom SubClassOf(Design_Fluency_Test Stroop_task).
+[2026-06-26 12:33:43.586] Found 168 possible bad axioms.
+[2026-06-26 12:33:43.586] Selected the bad axiom SubClassOf(Go-no-go_task Trail_Making_Test).
+[2026-06-26 12:33:43.589] Found 167 possible bad axioms.
+[2026-06-26 12:33:43.590] Selected the bad axiom SubClassOf(social-emotional_intelligence_test general_intelligence_test).
+[2026-06-26 12:33:43.593] Found 166 possible bad axioms.
+[2026-06-26 12:33:43.593] Selected the bad axiom SubClassOf(Guilford-Sulliven_Test Mayer-Solovey_Emotional_Intelligence).
+[2026-06-26 12:33:43.599] Found 165 possible bad axioms.
+[2026-06-26 12:33:43.600] Selected the bad axiom SubClassOf(Auditory_Verbal_Learning_Test owl:Nothing).
+[2026-06-26 12:33:43.603] Found 164 possible bad axioms.
+[2026-06-26 12:33:43.603] Selected the bad axiom SubClassOf(Rivermead_Behavioral_Memory_Test episodic_memory_test).
+[2026-06-26 12:33:43.606] Found 163 possible bad axioms.
+[2026-06-26 12:33:43.606] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test general_intelligence_test).
+[2026-06-26 12:33:43.609] Found 162 possible bad axioms.
+[2026-06-26 12:33:43.609] Selected the bad axiom SubClassOf(Stroop_task Oddball_paradigm).
+[2026-06-26 12:33:43.612] Found 161 possible bad axioms.
+[2026-06-26 12:33:43.612] Selected the bad axiom SubClassOf(intelligence_test subject_data_acquisition_instrument).
+[2026-06-26 12:33:43.621] Found 160 possible bad axioms.
+[2026-06-26 12:33:43.621] Selected the bad axiom SubClassOf(Auditory_Verbal_Learning_Test verbal_memory_test).
+[2026-06-26 12:33:43.624] Found 159 possible bad axioms.
+[2026-06-26 12:33:43.624] Selected the bad axiom SubClassOf(Go-no-go_task attention_systems_test).
+[2026-06-26 12:33:43.627] Found 158 possible bad axioms.
+[2026-06-26 12:33:43.627] Selected the bad axiom SubClassOf(Fluency_test owl:Nothing).
+[2026-06-26 12:33:43.630] Found 157 possible bad axioms.
+[2026-06-26 12:33:43.630] Selected the bad axiom SubClassOf(Stanford–Binet_test general_intelligence_test).
+[2026-06-26 12:33:43.633] Found 156 possible bad axioms
+...[truncated]
+FAIL: attempt=2 seed=14276 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=2 success=0/100
+----- ONL-TASKS attempt=3 seed=28476 at 2026-06-26 12:33:47 -----
+--- stdout ---
+{"seed":28476,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":247,"A2":1216,"A3":1669,"B1":180,"B2":807}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=28476, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:33:48.168] Checking precondition...
+[2026-06-26 12:33:48.182] Starting the repair...
+[2026-06-26 12:33:48.187] Found 171 possible bad axioms.
+[2026-06-26 12:33:48.189] Selected the bad axiom SubClassOf(Traveling_Salesman_Problem_Task owl:Nothing).
+[2026-06-26 12:33:48.193] Found 170 possible bad axioms.
+[2026-06-26 12:33:48.193] Selected the bad axiom SubClassOf(attention_systems_test Design_Fluency_Test).
+[2026-06-26 12:33:48.197] Found 169 possible bad axioms.
+[2026-06-26 12:33:48.197] Selected the bad axiom SubClassOf(Auditory_Verbal_Learning_Test owl:Nothing).
+[2026-06-26 12:33:48.201] Found 168 possible bad axioms.
+[2026-06-26 12:33:48.201] Selected the bad axiom SubClassOf(Cue_detection attention_systems_test).
+[2026-06-26 12:33:48.204] Found 167 possible bad axioms.
+[2026-06-26 12:33:48.204] Selected the bad axiom SubClassOf(Guilford-Sulliven_Test Mayer-Solovey_Emotional_Intelligence).
+[2026-06-26 12:33:48.207] Found 166 possible bad axioms.
+[2026-06-26 12:33:48.207] Selected the bad axiom SubClassOf(general_intelligence_test fluid_intelligence_test).
+[2026-06-26 12:33:48.215] Found 165 possible bad axioms.
+[2026-06-26 12:33:48.215] Selected the bad axiom SubClassOf(Letter–Number_Sequencing_Subtest Card_Rotations).
+[2026-06-26 12:33:48.218] Found 164 possible bad axioms.
+[2026-06-26 12:33:48.219] Selected the bad axiom SubClassOf(fluid_intelligence_test general_intelligence_test).
+[2026-06-26 12:33:48.222] Found 163 possible bad axioms.
+[2026-06-26 12:33:48.222] Selected the bad axiom SubClassOf(Operation-span_test Dual_task).
+[2026-06-26 12:33:48.225] Found 162 possible bad axioms.
+[2026-06-26 12:33:48.225] Selected the bad axiom SubClassOf(Stroop_task Go-no-go_task).
+[2026-06-26 12:33:48.228] Found 161 possible bad axioms.
+[2026-06-26 12:33:48.228] Selected the bad axiom SubClassOf(Verbal_Paired_Associates verbal_memory_test).
+[2026-06-26 12:33:48.237] Found 160 possible bad axioms.
+[2026-06-26 12:33:48.237] Selected the bad axiom SubClassOf(Dual_task working_memory_test).
+[2026-06-26 12:33:48.240] Found 159 possible bad axioms.
+[2026-06-26 12:33:48.240] Selected the bad axiom SubClassOf(Stroop_task Attention_Network_Test).
+[2026-06-26 12:33:48.243] Found 158 possible bad axioms.
+[2026-06-26 12:33:48.243] Selected the bad axiom SubClassOf(fluid_intelligence_test Dual_task).
+[2026-06-26 12:33:48.246] Found 157 possible bad axioms.
+[2026-06-26 12:33:48.246] Selected the bad axiom SubClassOf(Stanford–Binet_test general_intelligence_test).
+[2026-06-26 12:33:48.249] Found 156 possible bad axioms.
+[2026-06-26 12:33:48.249] Selec
+...[truncated]
+FAIL: attempt=3 seed=28476 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=3 success=0/100
+----- ONL-TASKS attempt=4 seed=42676 at 2026-06-26 12:33:52 -----
+--- stdout ---
+{"seed":42676,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":227,"A2":1222,"A3":242,"B1":214,"B2":1929}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=42676, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:33:52.722] Checking precondition...
+[2026-06-26 12:33:52.736] Starting the repair...
+[2026-06-26 12:33:52.742] Found 171 possible bad axioms.
+[2026-06-26 12:33:52.743] Selected the bad axiom SubClassOf(Dual_task working_memory_test).
+[2026-06-26 12:33:52.747] Found 170 possible bad axioms.
+[2026-06-26 12:33:52.748] Selected the bad axiom SubClassOf(general_intelligence_test owl:Nothing).
+[2026-06-26 12:33:52.751] Found 169 possible bad axioms.
+[2026-06-26 12:33:52.752] Selected the bad axiom SubClassOf(Wisconsin_card_sorting_test working_memory_test).
+[2026-06-26 12:33:52.755] Found 168 possible bad axioms.
+[2026-06-26 12:33:52.755] Selected the bad axiom SubClassOf(Stroop_task attention_systems_test).
+[2026-06-26 12:33:52.758] Found 167 possible bad axioms.
+[2026-06-26 12:33:52.758] Selected the bad axiom SubClassOf(episodic_memory_test spatial_memory_test).
+[2026-06-26 12:33:52.761] Found 166 possible bad axioms.
+[2026-06-26 12:33:52.761] Selected the bad axiom SubClassOf(fluid_intelligence_test Card_Rotations).
+[2026-06-26 12:33:52.768] Found 165 possible bad axioms.
+[2026-06-26 12:33:52.768] Selected the bad axiom SubClassOf(fluid_intelligence_test general_intelligence_test).
+[2026-06-26 12:33:52.772] Found 164 possible bad axioms.
+[2026-06-26 12:33:52.772] Selected the bad axiom SubClassOf(Guilford-Sulliven_Test social-emotional_intelligence_test).
+[2026-06-26 12:33:52.775] Found 163 possible bad axioms.
+[2026-06-26 12:33:52.776] Selected the bad axiom SubClassOf(Wisconsin_card_sorting_test owl:Nothing).
+[2026-06-26 12:33:52.778] Found 162 possible bad axioms.
+[2026-06-26 12:33:52.778] Selected the bad axiom SubClassOf(Stroop_task Attention_Network_Test).
+[2026-06-26 12:33:52.782] Found 161 possible bad axioms.
+[2026-06-26 12:33:52.782] Selected the bad axiom SubClassOf(Operation-span_test n-back_task).
+[2026-06-26 12:33:52.791] Found 160 possible bad axioms.
+[2026-06-26 12:33:52.791] Selected the bad axiom SubClassOf(Fluency_test Go-no-go_task).
+[2026-06-26 12:33:52.795] Found 159 possible bad axioms.
+[2026-06-26 12:33:52.795] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test owl:Nothing).
+[2026-06-26 12:33:52.799] Found 158 possible bad axioms.
+[2026-06-26 12:33:52.799] Selected the bad axiom SubClassOf(Rivermead_Behavioral_Memory_Test episodic_memory_test).
+[2026-06-26 12:33:52.802] Found 157 possible bad axioms.
+[2026-06-26 12:33:52.802] Selected the bad axiom SubClassOf(intelligence_test Wisconsin_card_sorting_test).
+[2026-06-26 12:33:52.805] Found 156 possible bad axioms.
+[2026-06-26 12:33:52.805] Selected the 
+...[truncated]
+FAIL: attempt=4 seed=42676 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=4 success=0/100
+----- ONL-TASKS attempt=5 seed=56876 at 2026-06-26 12:33:56 -----
+--- stdout ---
+{"seed":56876,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":250,"A2":1208,"A3":1573,"B1":211,"B2":1459}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=56876, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:33:56.983] Checking precondition...
+[2026-06-26 12:33:56.997] Starting the repair...
+[2026-06-26 12:33:57.003] Found 171 possible bad axioms.
+[2026-06-26 12:33:57.004] Selected the bad axiom SubClassOf(verbal_memory_test Verbal_Paired_Associates).
+[2026-06-26 12:33:57.009] Found 170 possible bad axioms.
+[2026-06-26 12:33:57.009] Selected the bad axiom SubClassOf(Serial_list_verbal_memory owl:Nothing).
+[2026-06-26 12:33:57.013] Found 169 possible bad axioms.
+[2026-06-26 12:33:57.013] Selected the bad axiom SubClassOf(intelligence_test attention_systems_test).
+[2026-06-26 12:33:57.017] Found 168 possible bad axioms.
+[2026-06-26 12:33:57.017] Selected the bad axiom SubClassOf(Attention_Network_Test Divided_attention_tasks).
+[2026-06-26 12:33:57.020] Found 167 possible bad axioms.
+[2026-06-26 12:33:57.020] Selected the bad axiom SubClassOf(Stroop_task Oddball_paradigm).
+[2026-06-26 12:33:57.023] Found 166 possible bad axioms.
+[2026-06-26 12:33:57.023] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test general_intelligence_test).
+[2026-06-26 12:33:57.031] Found 165 possible bad axioms.
+[2026-06-26 12:33:57.031] Selected the bad axiom SubClassOf(Oddball_paradigm Ongoing_task).
+[2026-06-26 12:33:57.034] Found 164 possible bad axioms.
+[2026-06-26 12:33:57.034] Selected the bad axiom SubClassOf(attention_systems_test Go-no-go_task).
+[2026-06-26 12:33:57.037] Found 163 possible bad axioms.
+[2026-06-26 12:33:57.037] Selected the bad axiom SubClassOf(Operation-span_test Card_Rotations).
+[2026-06-26 12:33:57.040] Found 162 possible bad axioms.
+[2026-06-26 12:33:57.040] Selected the bad axiom SubClassOf(spatial_memory_test Traveling_Salesman_Problem_Task).
+[2026-06-26 12:33:57.043] Found 161 possible bad axioms.
+[2026-06-26 12:33:57.044] Selected the bad axiom SubClassOf(episodic_memory_test verbal_memory_test).
+[2026-06-26 12:33:57.051] Found 160 possible bad axioms.
+[2026-06-26 12:33:57.052] Selected the bad axiom SubClassOf(Rey_complex_figure spatial_memory_test).
+[2026-06-26 12:33:57.055] Found 159 possible bad axioms.
+[2026-06-26 12:33:57.055] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test owl:Nothing).
+[2026-06-26 12:33:57.058] Found 158 possible bad axioms.
+[2026-06-26 12:33:57.058] Selected the bad axiom SubClassOf(Mayer-Solovey_Emotional_Intelligence owl:Nothing).
+[2026-06-26 12:33:57.061] Found 157 possible bad axioms.
+[2026-06-26 12:33:57.061] Selected the bad axiom SubClassOf(Operation-span_test fluid_intelligence_test).
+[2026-06-26 12:33:57.064] Found 156 possible bad axioms.
+[2026-06-26 12:33:57.064] Selected 
+...[truncated]
+FAIL: attempt=5 seed=56876 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=5 success=0/100
+----- ONL-TASKS attempt=6 seed=71076 at 2026-06-26 12:34:01 -----
+--- stdout ---
+{"seed":71076,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":242,"A2":1213,"A3":252,"B1":482,"B2":3456,"B3":1833,"B4":54,"B5":1548,"B6":862}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=71076, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:34:02.120] Checking precondition...
+[2026-06-26 12:34:02.135] Starting the repair...
+[2026-06-26 12:34:02.141] Found 171 possible bad axioms.
+[2026-06-26 12:34:02.143] Selected the bad axiom SubClassOf(Serial_list_verbal_memory Alternate_category_test).
+[2026-06-26 12:34:02.147] Found 170 possible bad axioms.
+[2026-06-26 12:34:02.148] Selected the bad axiom SubClassOf(fluid_intelligence_test intelligence_test).
+[2026-06-26 12:34:02.151] Found 169 possible bad axioms.
+[2026-06-26 12:34:02.152] Selected the bad axiom SubClassOf(Rey_complex_figure owl:Nothing).
+[2026-06-26 12:34:02.156] Found 168 possible bad axioms.
+[2026-06-26 12:34:02.156] Selected the bad axiom SubClassOf(Digit_Span_forward_and_backward_measures working_memory_test).
+[2026-06-26 12:34:02.159] Found 167 possible bad axioms.
+[2026-06-26 12:34:02.159] Selected the bad axiom SubClassOf(Operation-span_test fluid_intelligence_test).
+[2026-06-26 12:34:02.164] Found 166 possible bad axioms.
+[2026-06-26 12:34:02.164] Selected the bad axiom SubClassOf(Mayer-Solovey_Emotional_Intelligence Guilford-Sulliven_Test).
+[2026-06-26 12:34:02.172] Found 165 possible bad axioms.
+[2026-06-26 12:34:02.172] Selected the bad axiom SubClassOf(Auditory_Verbal_Learning_Test Verbal_Paired_Associates).
+[2026-06-26 12:34:02.175] Found 164 possible bad axioms.
+[2026-06-26 12:34:02.175] Selected the bad axiom SubClassOf(memory_systems_test Card_Rotations).
+[2026-06-26 12:34:02.178] Found 163 possible bad axioms.
+[2026-06-26 12:34:02.179] Selected the bad axiom SubClassOf(social-emotional_intelligence_test owl:Nothing).
+[2026-06-26 12:34:02.181] Found 162 possible bad axioms.
+[2026-06-26 12:34:02.181] Selected the bad axiom SubClassOf(Operation-span_test Dual_task).
+[2026-06-26 12:34:02.184] Found 161 possible bad axioms.
+[2026-06-26 12:34:02.184] Selected the bad axiom SubClassOf(spatial_memory_test short-term_memory_test).
+[2026-06-26 12:34:02.193] Found 160 possible bad axioms.
+[2026-06-26 12:34:02.193] Selected the bad axiom SubClassOf(Traveling_Salesman_Problem_Task Corsi_task).
+[2026-06-26 12:34:02.196] Found 159 possible bad axioms.
+[2026-06-26 12:34:02.197] Selected the bad axiom SubClassOf(Guilford-Sulliven_Test social-emotional_intelligence_test).
+[2026-06-26 12:34:02.199] Found 158 possible bad axioms.
+[2026-06-26 12:34:02.199] Selected the bad axiom SubClassOf(Stroop_task Design_Fluency_Test).
+[2026-06-26 12:34:02.202] Found 157 possible bad axioms.
+[2026-06-26 12:34:02.202] Selected the bad axiom SubClassOf(Auditory_Verbal_Learning_Test owl:Nothing).
+[2026-06-26 12:34:02.205] Found 15
+...[truncated]
+FAIL: attempt=6 seed=71076 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=6 success=0/100
+----- ONL-TASKS attempt=7 seed=85276 at 2026-06-26 12:34:12 -----
+--- stdout ---
+{"seed":85276,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":263,"A2":1198,"A3":258,"B1":249,"B2":1695}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=85276, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:34:12.497] Checking precondition...
+[2026-06-26 12:34:12.511] Starting the repair...
+[2026-06-26 12:34:12.517] Found 171 possible bad axioms.
+[2026-06-26 12:34:12.519] Selected the bad axiom SubClassOf(Card_Rotations fluid_intelligence_test).
+[2026-06-26 12:34:12.523] Found 170 possible bad axioms.
+[2026-06-26 12:34:12.523] Selected the bad axiom SubClassOf(social-emotional_intelligence_test Operation-span_test).
+[2026-06-26 12:34:12.527] Found 169 possible bad axioms.
+[2026-06-26 12:34:12.527] Selected the bad axiom SubClassOf(intelligence_test owl:Nothing).
+[2026-06-26 12:34:12.531] Found 168 possible bad axioms.
+[2026-06-26 12:34:12.531] Selected the bad axiom SubClassOf(memory_systems_test fluid_intelligence_test).
+[2026-06-26 12:34:12.534] Found 167 possible bad axioms.
+[2026-06-26 12:34:12.535] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test general_intelligence_test).
+[2026-06-26 12:34:12.538] Found 166 possible bad axioms.
+[2026-06-26 12:34:12.538] Selected the bad axiom SubClassOf(Dual_task Letter–Number_Sequencing_Subtest).
+[2026-06-26 12:34:12.545] Found 165 possible bad axioms.
+[2026-06-26 12:34:12.545] Selected the bad axiom SubClassOf(memory_systems_test general_intelligence_test).
+[2026-06-26 12:34:12.549] Found 164 possible bad axioms.
+[2026-06-26 12:34:12.549] Selected the bad axiom SubClassOf(fluid_intelligence_test Card_Rotations).
+[2026-06-26 12:34:12.552] Found 163 possible bad axioms.
+[2026-06-26 12:34:12.552] Selected the bad axiom SubClassOf(Go-no-go_task attention_systems_test).
+[2026-06-26 12:34:12.554] Found 162 possible bad axioms.
+[2026-06-26 12:34:12.555] Selected the bad axiom SubClassOf(episodic_memory_test Multiple_Errands_Test).
+[2026-06-26 12:34:12.558] Found 161 possible bad axioms.
+[2026-06-26 12:34:12.558] Selected the bad axiom SubClassOf(Serial_list_verbal_memory verbal_memory_test).
+[2026-06-26 12:34:12.566] Found 160 possible bad axioms.
+[2026-06-26 12:34:12.566] Selected the bad axiom SubClassOf(episodic_memory_test short-term_memory_test).
+[2026-06-26 12:34:12.569] Found 159 possible bad axioms.
+[2026-06-26 12:34:12.569] Selected the bad axiom SubClassOf(general_intelligence_test intelligence_test).
+[2026-06-26 12:34:12.572] Found 158 possible bad axioms.
+[2026-06-26 12:34:12.572] Selected the bad axiom SubClassOf(Attention_Network_Test Divided_attention_tasks).
+[2026-06-26 12:34:12.575] Found 157 possible bad axioms.
+[2026-06-26 12:34:12.575] Selected the bad axiom SubClassOf(Traveling_Salesman_Problem_Task spatial_memory_test).
+[2026-06-26 12:34:12.578] Found 156 possible ba
+...[truncated]
+FAIL: attempt=7 seed=85276 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=7 success=0/100
+----- ONL-TASKS attempt=8 seed=99476 at 2026-06-26 12:34:16 -----
+--- stdout ---
+{"seed":99476,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":220,"A2":1203,"A3":260,"B1":408,"B2":1826}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=99476, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:34:16.576] Checking precondition...
+[2026-06-26 12:34:16.589] Starting the repair...
+[2026-06-26 12:34:16.595] Found 171 possible bad axioms.
+[2026-06-26 12:34:16.597] Selected the bad axiom SubClassOf(Stroop_task attention_systems_test).
+[2026-06-26 12:34:16.603] Found 170 possible bad axioms.
+[2026-06-26 12:34:16.603] Selected the bad axiom SubClassOf(Multiple_Errands_Test Rivermead_Behavioral_Memory_Test).
+[2026-06-26 12:34:16.607] Found 169 possible bad axioms.
+[2026-06-26 12:34:16.607] Selected the bad axiom SubClassOf(n-back_task working_memory_test).
+[2026-06-26 12:34:16.611] Found 168 possible bad axioms.
+[2026-06-26 12:34:16.612] Selected the bad axiom SubClassOf(general_intelligence_test Stanford–Binet_test).
+[2026-06-26 12:34:16.615] Found 167 possible bad axioms.
+[2026-06-26 12:34:16.615] Selected the bad axiom SubClassOf(intelligence_test attention_systems_test).
+[2026-06-26 12:34:16.618] Found 166 possible bad axioms.
+[2026-06-26 12:34:16.618] Selected the bad axiom SubClassOf(subject_data_acquisition_instrument Card_Rotations).
+[2026-06-26 12:34:16.626] Found 165 possible bad axioms.
+[2026-06-26 12:34:16.626] Selected the bad axiom SubClassOf(social-emotional_intelligence_test intelligence_test).
+[2026-06-26 12:34:16.629] Found 164 possible bad axioms.
+[2026-06-26 12:34:16.629] Selected the bad axiom SubClassOf(Operation-span_test working_memory_test).
+[2026-06-26 12:34:16.632] Found 163 possible bad axioms.
+[2026-06-26 12:34:16.633] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test owl:Nothing).
+[2026-06-26 12:34:16.635] Found 162 possible bad axioms.
+[2026-06-26 12:34:16.635] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test Stanford–Binet_test).
+[2026-06-26 12:34:16.638] Found 161 possible bad axioms.
+[2026-06-26 12:34:16.639] Selected the bad axiom SubClassOf(attention_systems_test Go-no-go_task).
+[2026-06-26 12:34:16.646] Found 160 possible bad axioms.
+[2026-06-26 12:34:16.646] Selected the bad axiom SubClassOf(Rivermead_Behavioral_Memory_Test Multiple_Errands_Test).
+[2026-06-26 12:34:16.649] Found 159 possible bad axioms.
+[2026-06-26 12:34:16.650] Selected the bad axiom SubClassOf(Oddball_paradigm Ongoing_task).
+[2026-06-26 12:34:16.652] Found 158 possible bad axioms.
+[2026-06-26 12:34:16.653] Selected the bad axiom SubClassOf(intelligence_test owl:Nothing).
+[2026-06-26 12:34:16.656] Found 157 possible bad axioms.
+[2026-06-26 12:34:16.656] Selected the bad axiom SubClassOf(short-term_memory_test Serial_list_verbal_memory).
+[2026-06-26 12:34:16.659] Found 156 possible bad axioms.
+[2026-06-26 
+...[truncated]
+FAIL: attempt=8 seed=99476 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=8 success=0/100
+----- ONL-TASKS attempt=9 seed=113676 at 2026-06-26 12:34:20 -----
+--- stdout ---
+{"seed":113676,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":242,"A2":1207,"A3":1225,"B1":215,"B2":1752}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=113676, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:34:20.920] Checking precondition...
+[2026-06-26 12:34:20.935] Starting the repair...
+[2026-06-26 12:34:20.941] Found 171 possible bad axioms.
+[2026-06-26 12:34:20.942] Selected the bad axiom SubClassOf(attention_systems_test subject_data_acquisition_instrument).
+[2026-06-26 12:34:20.947] Found 170 possible bad axioms.
+[2026-06-26 12:34:20.947] Selected the bad axiom SubClassOf(verbal_memory_test episodic_memory_test).
+[2026-06-26 12:34:20.951] Found 169 possible bad axioms.
+[2026-06-26 12:34:20.951] Selected the bad axiom SubClassOf(Attention_Network_Test Divided_attention_tasks).
+[2026-06-26 12:34:20.955] Found 168 possible bad axioms.
+[2026-06-26 12:34:20.955] Selected the bad axiom SubClassOf(Design_Fluency_Test Go-no-go_task).
+[2026-06-26 12:34:20.958] Found 167 possible bad axioms.
+[2026-06-26 12:34:20.958] Selected the bad axiom SubClassOf(Color-Word_Interference_Test Fluency_test).
+[2026-06-26 12:34:20.961] Found 166 possible bad axioms.
+[2026-06-26 12:34:20.961] Selected the bad axiom SubClassOf(Stroop_task Oddball_paradigm).
+[2026-06-26 12:34:20.969] Found 165 possible bad axioms.
+[2026-06-26 12:34:20.969] Selected the bad axiom SubClassOf(verbal_memory_test Multiple_Errands_Test).
+[2026-06-26 12:34:20.972] Found 164 possible bad axioms.
+[2026-06-26 12:34:20.973] Selected the bad axiom SubClassOf(Dual_task Raven’s_Progressive_Matrices).
+[2026-06-26 12:34:20.976] Found 163 possible bad axioms.
+[2026-06-26 12:34:20.976] Selected the bad axiom SubClassOf(Operation-span_test fluid_intelligence_test).
+[2026-06-26 12:34:20.979] Found 162 possible bad axioms.
+[2026-06-26 12:34:20.979] Selected the bad axiom SubClassOf(social-emotional_intelligence_test Mayer-Solovey_Emotional_Intelligence).
+[2026-06-26 12:34:20.982] Found 161 possible bad axioms.
+[2026-06-26 12:34:20.982] Selected the bad axiom SubClassOf(Dual_task Letter–Number_Sequencing_Subtest).
+[2026-06-26 12:34:20.991] Found 160 possible bad axioms.
+[2026-06-26 12:34:20.991] Selected the bad axiom SubClassOf(Operation-span_test Wisconsin_card_sorting_test).
+[2026-06-26 12:34:20.995] Found 159 possible bad axioms.
+[2026-06-26 12:34:20.995] Selected the bad axiom SubClassOf(Trail_Making_Test Oddball_paradigm).
+[2026-06-26 12:34:20.998] Found 158 possible bad axioms.
+[2026-06-26 12:34:20.998] Selected the bad axiom SubClassOf(Amthauer’s_Structure_Test Stanford–Binet_test).
+[2026-06-26 12:34:21.000] Found 157 possible bad axioms.
+[2026-06-26 12:34:21.001] Selected the bad axiom SubClassOf(Go-no-go_task Design_Fluency_Test).
+[2026-06-26 12:34:21.003] Found 156 possible bad axio
+...[truncated]
+FAIL: attempt=9 seed=113676 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=9 success=0/100
+----- ONL-TASKS attempt=10 seed=127876 at 2026-06-26 12:34:25 -----
+--- stdout ---
+{"seed":127876,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test","iic_values":{},"repair_runtimes_ms":{"A1":143,"A2":1280,"A3":914,"B1":228,"B2":2180}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ONL-TASKS.owl, seed=127876, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 12:34:25.979] Checking precondition...
+[2026-06-26 12:34:25.993] Starting the repair...
+[2026-06-26 12:34:25.999] Found 171 possible bad axioms.
+[2026-06-26 12:34:26.001] Selected the bad axiom SubClassOf(social-emotional_intelligence_test owl:Nothing).
+[2026-06-26 12:34:26.005] Found 170 possible bad axioms.
+[2026-06-26 12:34:26.006] Selected the bad axiom SubClassOf(Stroop_task Design_Fluency_Test).
+[2026-06-26 12:34:26.010] Found 169 possible bad axioms.
+[2026-06-26 12:34:26.010] Selected the bad axiom SubClassOf(Go-no-go_task Design_Fluency_Test).
+[2026-06-26 12:34:26.014] Found 168 possible bad axioms.
+[2026-06-26 12:34:26.014] Selected the bad axiom SubClassOf(Design_Fluency_Test Stroop_task).
+[2026-06-26 12:34:26.017] Found 167 possible bad axioms.
+[2026-06-26 12:34:26.017] Selected the bad axiom SubClassOf(Card_Rotations fluid_intelligence_test).
+[2026-06-26 12:34:26.020] Found 166 possible bad axioms.
+[2026-06-26 12:34:26.020] Selected the bad axiom SubClassOf(Raven’s_Progressive_Matrices fluid_intelligence_test).
+[2026-06-26 12:34:26.029] Found 165 possible bad axioms.
+[2026-06-26 12:34:26.029] Selected the bad axiom SubClassOf(working_memory_test short-term_memory_test).
+[2026-06-26 12:34:26.032] Found 164 possible bad axioms.
+[2026-06-26 12:34:26.032] Selected the bad axiom SubClassOf(fluid_intelligence_test Card_Rotations).
+[2026-06-26 12:34:26.036] Found 163 possible bad axioms.
+[2026-06-26 12:34:26.036] Selected the bad axiom SubClassOf(n-back_task Letter–Number_Sequencing_Subtest).
+[2026-06-26 12:34:26.039] Found 162 possible bad axioms.
+[2026-06-26 12:34:26.039] Selected the bad axiom SubClassOf(attention_systems_test Oddball_paradigm).
+[2026-06-26 12:34:26.042] Found 161 possible bad axioms.
+[2026-06-26 12:34:26.042] Selected the bad axiom SubClassOf(memory_systems_test general_intelligence_test).
+[2026-06-26 12:34:26.049] Found 160 possible bad axioms.
+[2026-06-26 12:34:26.050] Selected the bad axiom SubClassOf(Digit_Span_forward_and_backward_measures working_memory_test).
+[2026-06-26 12:34:26.052] Found 159 possible bad axioms.
+[2026-06-26 12:34:26.053] Selected the bad axiom SubClassOf(working_memory_test memory_systems_test).
+[2026-06-26 12:34:26.056] Found 158 possible bad axioms.
+[2026-06-26 12:34:26.057] Selected the bad axiom SubClassOf(fluid_intelligence_test general_intelligence_test).
+[2026-06-26 12:34:26.060] Found 157 possible bad axioms.
+[2026-06-26 12:34:26.060] Selected the bad axiom SubClassOf(general_intelligence_test owl:Nothing).
+[2026-06-26 12:34:26.063] Found 156 possible bad axioms.
+[2026-06-2
+...[truncated]
+FAIL: attempt=10 seed=127876 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+progress: ontology=ONL-TASKS attempt=10 success=0/100
+=== ABORTED ONL-TASKS after 10 consecutive failures at 2026-06-26 12:34:30 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ONL-TASKS - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=76 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=2 seed=14276 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=3 seed=28476 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=4 seed=42676 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=5 seed=56876 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=6 seed=71076 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=7 seed=85276 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=8 seed=99476 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=9 seed=113676 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+  attempt=10 seed=127876 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ intelligence_test
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,468 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-MCO4MCRE.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-MCO4MCRE.csv
+
+=== Starting sequential trials for MCO4MCRE at 2026-06-27 05:54:46 ===
+----- MCO4MCRE attempt=1 seed=108 at 2026-06-27 05:54:46 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=108, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:54:47.110] Checking precondition...
+[2026-06-27 05:54:47.127] Starting the repair...
+[2026-06-27 05:54:47.134] Found 307 possible bad axioms.
+[2026-06-27 05:54:47.136] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(methylene_blue)).
+[2026-06-27 05:54:47.147] Found 306 possible bad axioms.
+[2026-06-27 05:54:47.147] Selected the bad axiom SubClassOf(gastroscopy ObjectComplementOf(egd)).
+[2026-06-27 05:54:47.153] Found 305 possible bad axioms.
+[2026-06-27 05:54:47.153] Selected the bad axiom SubClassOf(colonoscopy ObjectComplementOf(broncoscopy)).
+[2026-06-27 05:54:47.159] Found 304 possible bad axioms.
+[2026-06-27 05:54:47.160] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(laryngoscopy)).
+[2026-06-27 05:54:47.165] Found 303 possible bad axioms.
+[2026-06-27 05:54:47.165] Selected the bad axiom SubClassOf(pas ObjectComplementOf(congo_red)).
+[2026-06-27 05:54:47.169] Found 302 possible bad axioms.
+[2026-06-27 05:54:47.170] Selected the bad axiom SubClassOf(fish ObjectComplementOf(van_gieson)).
+[2026-06-27 05:54:47.174] Found 301 possible bad axioms.
+[2026-06-27 05:54:47.174] Selected the bad axiom SubClassOf(pathology _any_instance).
+[2026-06-27 05:54:47.184] Found 300 possible bad axioms.
+[2026-06-27 05:54:47.184] Selected the bad axiom SubClassOf(x_ray radiology).
+[2026-06-27 05:54:47.188] Found 299 possible bad axioms.
+[2026-06-27 05:54:47.189] Selected the bad axiom SubClassOf(pas ObjectComplementOf(immunofluorescence)).
+[2026-06-27 05:54:47.192] Found 298 possible bad axioms.
+[2026-06-27 05:54:47.193] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(giemsa)).
+[2026-06-27 05:54:47.196] Found 297 possible bad axioms.
+[2026-06-27 05:54:47.197] Selected the bad axiom SubClassOf(other_staining ObjectComplementOf(h&e)).
+[2026-06-27 05:54:47.206] Found 296 possible bad axioms.
+[2026-06-27 05:54:47.206] Selected the bad axiom SubClassOf(acid_fast ObjectComplementOf(ObjectComplementOf(congo_red))).
+[2026-06-27 05:54:47.210] Found 295 possible bad axioms.
+[2026-06-27 05:54:47.210] Selected the bad axiom SubClassOf(broncoscopy ObjectComplementOf(laryngoscopy)).
+[2026-06-27 05:54:47.214] Found 294 possible bad axioms.
+[2026-06-27 05:54:47.214] Selected the bad axiom SubClassOf(gram ObjectComplementOf(masson_trichrome)).
+[2026-06-27 05:54:47.218] Found 293 possible bad axioms.
+[2026-06-27 05:54:47.218] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(immunofluorescence)).
+[2026-06-27 05:54:47.221] Found 292 possible bad axioms.
+[2026-06-27 05:54:47.221] Selected the bad axiom SubC
+...[truncated]
+FAIL: attempt=1 seed=108 - negative return code -9
+progress: ontology=MCO4MCRE attempt=1 success=0/100
+----- MCO4MCRE attempt=2 seed=14308 at 2026-06-27 05:55:57 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=14308, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:55:58.037] Checking precondition...
+[2026-06-27 05:55:58.053] Starting the repair...
+[2026-06-27 05:55:58.062] Found 307 possible bad axioms.
+[2026-06-27 05:55:58.065] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(ObjectComplementOf(egd))).
+[2026-06-27 05:55:58.078] Found 306 possible bad axioms.
+[2026-06-27 05:55:58.078] Selected the bad axiom SubClassOf(mri ObjectComplementOf(ct)).
+[2026-06-27 05:55:58.087] Found 305 possible bad axioms.
+[2026-06-27 05:55:58.087] Selected the bad axiom SubClassOf(colonoscopy ObjectComplementOf(arthroscopy)).
+[2026-06-27 05:55:58.093] Found 304 possible bad axioms.
+[2026-06-27 05:55:58.094] Selected the bad axiom SubClassOf(egd ObjectComplementOf(cystoscopy)).
+[2026-06-27 05:55:58.098] Found 303 possible bad axioms.
+[2026-06-27 05:55:58.098] Selected the bad axiom SubClassOf(x_ray radiology).
+[2026-06-27 05:55:58.103] Found 302 possible bad axioms.
+[2026-06-27 05:55:58.103] Selected the bad axiom SubClassOf(cystoscopy ObjectComplementOf(gastroscopy)).
+[2026-06-27 05:55:58.107] Found 301 possible bad axioms.
+[2026-06-27 05:55:58.107] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(congo_red)).
+[2026-06-27 05:55:58.117] Found 300 possible bad axioms.
+[2026-06-27 05:55:58.117] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(giemsa)).
+[2026-06-27 05:55:58.122] Found 299 possible bad axioms.
+[2026-06-27 05:55:58.122] Selected the bad axiom SubClassOf(fish ObjectComplementOf(methylene_blue)).
+[2026-06-27 05:55:58.127] Found 298 possible bad axioms.
+[2026-06-27 05:55:58.127] Selected the bad axiom SubClassOf(gastroscopy endoscopy).
+[2026-06-27 05:55:58.131] Found 297 possible bad axioms.
+[2026-06-27 05:55:58.131] Selected the bad axiom SubClassOf(masson_trichrome ObjectComplementOf(van_gieson)).
+[2026-06-27 05:55:58.139] Found 296 possible bad axioms.
+[2026-06-27 05:55:58.140] Selected the bad axiom SubClassOf(immunofluorescence ObjectComplementOf(masson_trichrome)).
+[2026-06-27 05:55:58.144] Found 295 possible bad axioms.
+[2026-06-27 05:55:58.144] Selected the bad axiom SubClassOf(endoscopy ObjectUnionOf(laryngoscopy ObjectUnionOf(gastroscopy ObjectUnionOf(egd ObjectUnionOf(cystoscopy ObjectUnionOf(colonoscopy ObjectUnionOf(arthroscopy broncoscopy))))))).
+[2026-06-27 05:55:58.147] Found 294 possible bad axioms.
+[2026-06-27 05:55:58.147] Selected the bad axiom SubClassOf(laryngoscopy ObjectComplementOf(colonoscopy)).
+[2026-06-27 05:55:58.151] Found 293 possible bad axioms.
+[2026-06-27 05:55:58.151] Selected the bad axiom SubClassOf(congo_red Obj
+...[truncated]
+FAIL: attempt=2 seed=14308 - negative return code -9
+progress: ontology=MCO4MCRE attempt=2 success=0/100
+----- MCO4MCRE attempt=3 seed=28508 at 2026-06-27 05:57:15 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=28508, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:57:15.538] Checking precondition...
+[2026-06-27 05:57:15.555] Starting the repair...
+[2026-06-27 05:57:15.563] Found 307 possible bad axioms.
+[2026-06-27 05:57:15.565] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(alcian_blue)).
+[2026-06-27 05:57:15.577] Found 306 possible bad axioms.
+[2026-06-27 05:57:15.577] Selected the bad axiom SubClassOf(laryngoscopy endoscopy).
+[2026-06-27 05:57:15.585] Found 305 possible bad axioms.
+[2026-06-27 05:57:15.586] Selected the bad axiom SubClassOf(methenamine_silver masson_trichrome).
+[2026-06-27 05:57:15.593] Found 304 possible bad axioms.
+[2026-06-27 05:57:15.593] Selected the bad axiom SubClassOf(egd ObjectComplementOf(cystoscopy)).
+[2026-06-27 05:57:15.598] Found 303 possible bad axioms.
+[2026-06-27 05:57:15.598] Selected the bad axiom SubClassOf(broncoscopy endoscopy).
+[2026-06-27 05:57:15.603] Found 302 possible bad axioms.
+[2026-06-27 05:57:15.603] Selected the bad axiom SubClassOf(egd ObjectComplementOf(gastroscopy)).
+[2026-06-27 05:57:15.608] Found 301 possible bad axioms.
+[2026-06-27 05:57:15.608] Selected the bad axiom SubClassOf(arthroscopy laryngoscopy).
+[2026-06-27 05:57:15.617] Found 300 possible bad axioms.
+[2026-06-27 05:57:15.617] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(alcian_blue)).
+[2026-06-27 05:57:15.621] Found 299 possible bad axioms.
+[2026-06-27 05:57:15.621] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(fish)).
+[2026-06-27 05:57:15.625] Found 298 possible bad axioms.
+[2026-06-27 05:57:15.625] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(alcian_blue)).
+[2026-06-27 05:57:15.629] Found 297 possible bad axioms.
+[2026-06-27 05:57:15.629] Selected the bad axiom SubClassOf(ct radiology).
+[2026-06-27 05:57:15.639] Found 296 possible bad axioms.
+[2026-06-27 05:57:15.640] Selected the bad axiom SubClassOf(masson_trichrome other_staining).
+[2026-06-27 05:57:15.644] Found 295 possible bad axioms.
+[2026-06-27 05:57:15.645] Selected the bad axiom SubClassOf(methylene_blue ObjectComplementOf(fish)).
+[2026-06-27 05:57:15.649] Found 294 possible bad axioms.
+[2026-06-27 05:57:15.649] Selected the bad axiom SubClassOf(gram papanicolaou).
+[2026-06-27 05:57:15.652] Found 293 possible bad axioms.
+[2026-06-27 05:57:15.652] Selected the bad axiom SubClassOf(pas methylene_blue).
+[2026-06-27 05:57:15.656] Found 292 possible bad axioms.
+[2026-06-27 05:57:15.656] Selected the bad axiom SubClassOf(immunofluorescence ObjectComplementOf(methenamine_silver)).
+[2026-06-27 05:57:15.659] Found 291 possible bad axioms.
+[2
+...[truncated]
+FAIL: attempt=3 seed=28508 - negative return code -9
+progress: ontology=MCO4MCRE attempt=3 success=0/100
+----- MCO4MCRE attempt=4 seed=42708 at 2026-06-27 05:59:09 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=42708, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 05:59:10.072] Checking precondition...
+[2026-06-27 05:59:10.088] Starting the repair...
+[2026-06-27 05:59:10.096] Found 307 possible bad axioms.
+[2026-06-27 05:59:10.098] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(giemsa)).
+[2026-06-27 05:59:10.111] Found 306 possible bad axioms.
+[2026-06-27 05:59:10.111] Selected the bad axiom SubClassOf(ct ObjectComplementOf(x_ray)).
+[2026-06-27 05:59:10.117] Found 305 possible bad axioms.
+[2026-06-27 05:59:10.118] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(pas)).
+[2026-06-27 05:59:10.124] Found 304 possible bad axioms.
+[2026-06-27 05:59:10.124] Selected the bad axiom SubClassOf(gram ObjectComplementOf(acid_fast)).
+[2026-06-27 05:59:10.128] Found 303 possible bad axioms.
+[2026-06-27 05:59:10.128] Selected the bad axiom SubClassOf(ct ObjectComplementOf(ultrasound)).
+[2026-06-27 05:59:10.133] Found 302 possible bad axioms.
+[2026-06-27 05:59:10.133] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(gram)).
+[2026-06-27 05:59:10.136] Found 301 possible bad axioms.
+[2026-06-27 05:59:10.137] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(methylene_blue)).
+[2026-06-27 05:59:10.146] Found 300 possible bad axioms.
+[2026-06-27 05:59:10.146] Selected the bad axiom SubClassOf(ct ObjectComplementOf(mri)).
+[2026-06-27 05:59:10.151] Found 299 possible bad axioms.
+[2026-06-27 05:59:10.151] Selected the bad axiom SubClassOf(cystoscopy ObjectComplementOf(gastroscopy)).
+[2026-06-27 05:59:10.156] Found 298 possible bad axioms.
+[2026-06-27 05:59:10.156] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(other_staining)).
+[2026-06-27 05:59:10.160] Found 297 possible bad axioms.
+[2026-06-27 05:59:10.160] Selected the bad axiom SubClassOf(endoscopy ObjectComplementOf(ObjectUnionOf(immunostaining other_staining))).
+[2026-06-27 05:59:10.169] Found 296 possible bad axioms.
+[2026-06-27 05:59:10.169] Selected the bad axiom SubClassOf(h&e ObjectComplementOf(other_staining)).
+[2026-06-27 05:59:10.174] Found 295 possible bad axioms.
+[2026-06-27 05:59:10.174] Selected the bad axiom SubClassOf(gram ObjectComplementOf(methylene_blue)).
+[2026-06-27 05:59:10.177] Found 294 possible bad axioms.
+[2026-06-27 05:59:10.178] Selected the bad axiom SubClassOf(ct radiology).
+[2026-06-27 05:59:10.181] Found 293 possible bad axioms.
+[2026-06-27 05:59:10.181] Selected the bad axiom SubClassOf(immunostaining ObjectComplementOf(h&e)).
+[2026-06-27 05:59:10.184] Found 292 possible bad axioms.
+[2026-06-27 05:59:10.185] Selected the bad axiom SubClassOf(other_staining 
+...[truncated]
+FAIL: attempt=4 seed=42708 - negative return code -9
+progress: ontology=MCO4MCRE attempt=4 success=0/100
+----- MCO4MCRE attempt=5 seed=56908 at 2026-06-27 06:00:31 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=56908, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 06:00:32.252] Checking precondition...
+[2026-06-27 06:00:32.268] Starting the repair...
+[2026-06-27 06:00:32.277] Found 307 possible bad axioms.
+[2026-06-27 06:00:32.278] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(immunofluorescence)).
+[2026-06-27 06:00:32.290] Found 306 possible bad axioms.
+[2026-06-27 06:00:32.291] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(fish)).
+[2026-06-27 06:00:32.297] Found 305 possible bad axioms.
+[2026-06-27 06:00:32.298] Selected the bad axiom SubClassOf(masson_trichrome ObjectComplementOf(congo_red)).
+[2026-06-27 06:00:32.304] Found 304 possible bad axioms.
+[2026-06-27 06:00:32.304] Selected the bad axiom SubClassOf(ObjectComplementOf(papanicolaou) ObjectComplementOf(gram)).
+[2026-06-27 06:00:32.309] Found 303 possible bad axioms.
+[2026-06-27 06:00:32.309] Selected the bad axiom SubClassOf(gram ObjectComplementOf(acid_fast)).
+[2026-06-27 06:00:32.313] Found 302 possible bad axioms.
+[2026-06-27 06:00:32.314] Selected the bad axiom SubClassOf(giemsa ObjectComplementOf(alcian_blue)).
+[2026-06-27 06:00:32.318] Found 301 possible bad axioms.
+[2026-06-27 06:00:32.318] Selected the bad axiom SubClassOf(fish ObjectComplementOf(methylene_blue)).
+[2026-06-27 06:00:32.329] Found 300 possible bad axioms.
+[2026-06-27 06:00:32.329] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(alcian_blue)).
+[2026-06-27 06:00:32.334] Found 299 possible bad axioms.
+[2026-06-27 06:00:32.334] Selected the bad axiom SubClassOf(methylene_blue ObjectComplementOf(masson_trichrome)).
+[2026-06-27 06:00:32.338] Found 298 possible bad axioms.
+[2026-06-27 06:00:32.339] Selected the bad axiom SubClassOf(arthroscopy endoscopy).
+[2026-06-27 06:00:32.342] Found 297 possible bad axioms.
+[2026-06-27 06:00:32.343] Selected the bad axiom SubClassOf(giemsa ObjectComplementOf(papanicolaou)).
+[2026-06-27 06:00:32.351] Found 296 possible bad axioms.
+[2026-06-27 06:00:32.351] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(ObjectComplementOf(egd))).
+[2026-06-27 06:00:32.356] Found 295 possible bad axioms.
+[2026-06-27 06:00:32.356] Selected the bad axiom SubClassOf(pathology ObjectComplementOf(endoscopy)).
+[2026-06-27 06:00:32.360] Found 294 possible bad axioms.
+[2026-06-27 06:00:32.360] Selected the bad axiom SubClassOf(immunofluorescence ObjectComplementOf(alcian_blue)).
+[2026-06-27 06:00:32.364] Found 293 possible bad axioms.
+[2026-06-27 06:00:32.364] Selected the bad axiom SubClassOf(papanicolaou other_staining).
+[2026-06-27 06:00:32.367] Found 292 possible bad axioms.
+[2026-06-27
+...[truncated]
+FAIL: attempt=5 seed=56908 - negative return code -9
+progress: ontology=MCO4MCRE attempt=5 success=0/100
+----- MCO4MCRE attempt=6 seed=71108 at 2026-06-27 06:02:02 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=71108, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 06:02:03.018] Checking precondition...
+[2026-06-27 06:02:03.036] Starting the repair...
+[2026-06-27 06:02:03.044] Found 307 possible bad axioms.
+[2026-06-27 06:02:03.046] Selected the bad axiom SubClassOf(cystoscopy ObjectComplementOf(arthroscopy)).
+[2026-06-27 06:02:03.059] Found 306 possible bad axioms.
+[2026-06-27 06:02:03.059] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(ObjectComplementOf(egd))).
+[2026-06-27 06:02:03.065] Found 305 possible bad axioms.
+[2026-06-27 06:02:03.065] Selected the bad axiom SubClassOf(ObjectUnionOf(x_ray ObjectUnionOf(ultrasound ObjectUnionOf(ct mri))) ObjectComplementOf(endoscopy)).
+[2026-06-27 06:02:03.071] Found 304 possible bad axioms.
+[2026-06-27 06:02:03.072] Selected the bad axiom SubClassOf(gastroscopy ObjectComplementOf(broncoscopy)).
+[2026-06-27 06:02:03.076] Found 303 possible bad axioms.
+[2026-06-27 06:02:03.076] Selected the bad axiom SubClassOf(pathology _any_instance).
+[2026-06-27 06:02:03.081] Found 302 possible bad axioms.
+[2026-06-27 06:02:03.081] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(immunofluorescence)).
+[2026-06-27 06:02:03.085] Found 301 possible bad axioms.
+[2026-06-27 06:02:03.085] Selected the bad axiom SubClassOf(fish ObjectComplementOf(ObjectUnionOf(acid_fast alcian_blue))).
+[2026-06-27 06:02:03.095] Found 300 possible bad axioms.
+[2026-06-27 06:02:03.095] Selected the bad axiom SubClassOf(pas ObjectComplementOf(methenamine_silver)).
+[2026-06-27 06:02:03.100] Found 299 possible bad axioms.
+[2026-06-27 06:02:03.100] Selected the bad axiom SubClassOf(methylene_blue ObjectComplementOf(papanicolaou)).
+[2026-06-27 06:02:03.104] Found 298 possible bad axioms.
+[2026-06-27 06:02:03.104] Selected the bad axiom SubClassOf(gram ObjectComplementOf(masson_trichrome)).
+[2026-06-27 06:02:03.108] Found 297 possible bad axioms.
+[2026-06-27 06:02:03.108] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(giemsa)).
+[2026-06-27 06:02:03.116] Found 296 possible bad axioms.
+[2026-06-27 06:02:03.116] Selected the bad axiom SubClassOf(giemsa ObjectComplementOf(ObjectComplementOf(congo_red))).
+[2026-06-27 06:02:03.120] Found 295 possible bad axioms.
+[2026-06-27 06:02:03.120] Selected the bad axiom SubClassOf(ObjectComplementOf(gram) other_staining).
+[2026-06-27 06:02:03.124] Found 294 possible bad axioms.
+[2026-06-27 06:02:03.124] Selected the bad axiom SubClassOf(echocardiogram ObjectComplementOf(other_ultrasound)).
+[2026-06-27 06:02:03.128] Found 293 possible bad axioms.
+[2026-06-27 06:02:03.128] Selected the bad axiom SubClassOf(methylene_bl
+...[truncated]
+FAIL: attempt=6 seed=71108 - negative return code -9
+progress: ontology=MCO4MCRE attempt=6 success=0/100
+----- MCO4MCRE attempt=7 seed=85308 at 2026-06-27 06:03:22 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=85308, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 06:03:22.742] Checking precondition...
+[2026-06-27 06:03:22.759] Starting the repair...
+[2026-06-27 06:03:22.767] Found 307 possible bad axioms.
+[2026-06-27 06:03:22.771] Selected the bad axiom SubClassOf(ObjectComplementOf(acid_fast) ObjectComplementOf(giemsa)).
+[2026-06-27 06:03:22.784] Found 306 possible bad axioms.
+[2026-06-27 06:03:22.785] Selected the bad axiom SubClassOf(endoscopy _any_instance).
+[2026-06-27 06:03:22.791] Found 305 possible bad axioms.
+[2026-06-27 06:03:22.791] Selected the bad axiom SubClassOf(cystoscopy ObjectComplementOf(gastroscopy)).
+[2026-06-27 06:03:22.797] Found 304 possible bad axioms.
+[2026-06-27 06:03:22.797] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(giemsa)).
+[2026-06-27 06:03:22.802] Found 303 possible bad axioms.
+[2026-06-27 06:03:22.802] Selected the bad axiom SubClassOf(gastroscopy ObjectComplementOf(cystoscopy)).
+[2026-06-27 06:03:22.807] Found 302 possible bad axioms.
+[2026-06-27 06:03:22.808] Selected the bad axiom SubClassOf(gram ObjectComplementOf(alcian_blue)).
+[2026-06-27 06:03:22.812] Found 301 possible bad axioms.
+[2026-06-27 06:03:22.812] Selected the bad axiom SubClassOf(broncoscopy ObjectComplementOf(egd)).
+[2026-06-27 06:03:22.821] Found 300 possible bad axioms.
+[2026-06-27 06:03:22.821] Selected the bad axiom SubClassOf(immunofluorescence ObjectComplementOf(pas)).
+[2026-06-27 06:03:22.826] Found 299 possible bad axioms.
+[2026-06-27 06:03:22.827] Selected the bad axiom SubClassOf(egd endoscopy).
+[2026-06-27 06:03:22.831] Found 298 possible bad axioms.
+[2026-06-27 06:03:22.831] Selected the bad axiom SubClassOf(ObjectComplementOf(papanicolaou) ObjectComplementOf(gram)).
+[2026-06-27 06:03:22.835] Found 297 possible bad axioms.
+[2026-06-27 06:03:22.835] Selected the bad axiom SubClassOf(gastroscopy endoscopy).
+[2026-06-27 06:03:22.844] Found 296 possible bad axioms.
+[2026-06-27 06:03:22.844] Selected the bad axiom SubClassOf(egd ObjectComplementOf(arthroscopy)).
+[2026-06-27 06:03:22.848] Found 295 possible bad axioms.
+[2026-06-27 06:03:22.849] Selected the bad axiom SubClassOf(gram ObjectComplementOf(masson_trichrome)).
+[2026-06-27 06:03:22.853] Found 294 possible bad axioms.
+[2026-06-27 06:03:22.853] Selected the bad axiom SubClassOf(broncoscopy ObjectComplementOf(arthroscopy)).
+[2026-06-27 06:03:22.857] Found 293 possible bad axioms.
+[2026-06-27 06:03:22.857] Selected the bad axiom SubClassOf(colonoscopy ObjectComplementOf(arthroscopy)).
+[2026-06-27 06:03:22.861] Found 292 possible bad axioms.
+[2026-06-27 06:03:22.862] Selected the bad axiom SubClassOf(methylen
+...[truncated]
+FAIL: attempt=7 seed=85308 - negative return code -9
+progress: ontology=MCO4MCRE attempt=7 success=0/100
+----- MCO4MCRE attempt=8 seed=99508 at 2026-06-27 06:04:55 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=99508, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 06:04:55.994] Checking precondition...
+[2026-06-27 06:04:56.013] Starting the repair...
+[2026-06-27 06:04:56.022] Found 307 possible bad axioms.
+[2026-06-27 06:04:56.024] Selected the bad axiom SubClassOf(ct ObjectComplementOf(mri)).
+[2026-06-27 06:04:56.043] Found 306 possible bad axioms.
+[2026-06-27 06:04:56.043] Selected the bad axiom SubClassOf(ct ObjectComplementOf(x_ray)).
+[2026-06-27 06:04:56.050] Found 305 possible bad axioms.
+[2026-06-27 06:04:56.050] Selected the bad axiom SubClassOf(endoscopy ObjectUnionOf(laryngoscopy ObjectUnionOf(gastroscopy ObjectUnionOf(egd ObjectUnionOf(cystoscopy ObjectUnionOf(colonoscopy ObjectUnionOf(arthroscopy broncoscopy))))))).
+[2026-06-27 06:04:56.056] Found 304 possible bad axioms.
+[2026-06-27 06:04:56.057] Selected the bad axiom SubClassOf(x_ray ObjectComplementOf(mri)).
+[2026-06-27 06:04:56.061] Found 303 possible bad axioms.
+[2026-06-27 06:04:56.061] Selected the bad axiom SubClassOf(pas ObjectComplementOf(masson_trichrome)).
+[2026-06-27 06:04:56.066] Found 302 possible bad axioms.
+[2026-06-27 06:04:56.066] Selected the bad axiom SubClassOf(ObjectComplementOf(fish) ObjectComplementOf(ObjectComplementOf(giemsa))).
+[2026-06-27 06:04:56.071] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 06:04:56.072] Checking precondition...
+[2026-06-27 06:04:56.085] Starting the repair...
+[2026-06-27 06:05:20.949] Found 2 possible bad axioms.
+[2026-06-27 06:05:20.949] Selected the bad axiom SubClassOf(fish ObjectComplementOf(ObjectComplementOf(alcian_blue))).
+[2026-06-27 06:05:20.951] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 06:05:20.952] Checking precondition...
+[2026-06-27 06:05:20.955] Starting the repair...
+[2026-06-27 06:05:20.974] Selected a reference ontology with 342 axioms.
+[2026-06-27 06:05:21.518] Selected the bad axiom SubClassOf(ObjectComplementOf(fish) ObjectComplementOf(ObjectComplementOf(giemsa))).
+[2026-06-27 06:05:21.590] Selected the weaker axiom SubClassOf(ObjectComplementOf(fish) ObjectComplementOf(ObjectComplementOf(ObjectUnionOf(laryngoscopy ObjectUnionOf(gastroscopy ObjectUnionOf(egd ObjectUnionOf(cystoscopy ObjectUnionOf(colonoscopy ObjectUnionOf(arthroscopy broncoscopy))))))))).
+[2026-06-27 06:05:22.406] Selected the bad axiom SubClassOf(ObjectComplementOf(gram) other_staining).
+[2026-06-27 06:05:22.411] Selected the weaker axiom SubClassOf(owl:Thing other_staining).
+[2026-06-27 06:05:23.115] Selected the bad axiom SubClassOf(fish ObjectComplementOf(ObjectComplementOf(alcian_blue))).
+[2026-0
+...[truncated]
+FAIL: attempt=8 seed=99508 - negative return code -9
+progress: ontology=MCO4MCRE attempt=8 success=0/100
+----- MCO4MCRE attempt=9 seed=113708 at 2026-06-27 06:06:24 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=113708, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 06:06:24.987] Checking precondition...
+[2026-06-27 06:06:25.004] Starting the repair...
+[2026-06-27 06:06:25.013] Found 307 possible bad axioms.
+[2026-06-27 06:06:25.015] Selected the bad axiom SubClassOf(ObjectComplementOf(papanicolaou) ObjectComplementOf(gram)).
+[2026-06-27 06:06:25.028] Found 306 possible bad axioms.
+[2026-06-27 06:06:25.029] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(fish)).
+[2026-06-27 06:06:25.036] Found 305 possible bad axioms.
+[2026-06-27 06:06:25.036] Selected the bad axiom SubClassOf(acid_fast ObjectComplementOf(ObjectComplementOf(congo_red))).
+[2026-06-27 06:06:25.042] Found 304 possible bad axioms.
+[2026-06-27 06:06:25.043] Selected the bad axiom SubClassOf(gram methylene_blue).
+[2026-06-27 06:06:25.047] Found 303 possible bad axioms.
+[2026-06-27 06:06:25.047] Selected the bad axiom SubClassOf(pas ObjectComplementOf(immunofluorescence)).
+[2026-06-27 06:06:25.052] Found 302 possible bad axioms.
+[2026-06-27 06:06:25.052] Selected the bad axiom SubClassOf(h&e ObjectComplementOf(immunostaining)).
+[2026-06-27 06:06:25.056] Found 301 possible bad axioms.
+[2026-06-27 06:06:25.056] Selected the bad axiom SubClassOf(pas ObjectComplementOf(acid_fast)).
+[2026-06-27 06:06:25.066] Found 300 possible bad axioms.
+[2026-06-27 06:06:25.066] Selected the bad axiom SubClassOf(egd endoscopy).
+[2026-06-27 06:06:25.070] Found 299 possible bad axioms.
+[2026-06-27 06:06:25.070] Selected the bad axiom SubClassOf(h&e pathology).
+[2026-06-27 06:06:25.074] Found 298 possible bad axioms.
+[2026-06-27 06:06:25.075] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(alcian_blue)).
+[2026-06-27 06:06:25.078] Found 297 possible bad axioms.
+[2026-06-27 06:06:25.078] Selected the bad axiom SubClassOf(x_ray ObjectComplementOf(ultrasound)).
+[2026-06-27 06:06:25.087] Found 296 possible bad axioms.
+[2026-06-27 06:06:25.087] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(acid_fast)).
+[2026-06-27 06:06:25.091] Found 295 possible bad axioms.
+[2026-06-27 06:06:25.091] Selected the bad axiom SubClassOf(endoscopy ObjectUnionOf(laryngoscopy ObjectUnionOf(gastroscopy ObjectUnionOf(egd ObjectUnionOf(cystoscopy ObjectUnionOf(colonoscopy ObjectUnionOf(arthroscopy broncoscopy))))))).
+[2026-06-27 06:06:25.095] Found 294 possible bad axioms.
+[2026-06-27 06:06:25.095] Selected the bad axiom SubClassOf(fish ObjectComplementOf(methenamine_silver)).
+[2026-06-27 06:06:25.099] Found 293 possible bad axioms.
+[2026-06-27 06:06:25.099] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(other_s
+...[truncated]
+FAIL: attempt=9 seed=113708 - negative return code -9
+progress: ontology=MCO4MCRE attempt=9 success=0/100
+----- MCO4MCRE attempt=10 seed=127908 at 2026-06-27 06:07:57 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCO4MCRE.owl, seed=127908, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 06:07:57.846] Checking precondition...
+[2026-06-27 06:07:57.861] Starting the repair...
+[2026-06-27 06:07:57.869] Found 307 possible bad axioms.
+[2026-06-27 06:07:57.871] Selected the bad axiom SubClassOf(endoscopy ObjectComplementOf(radiology)).
+[2026-06-27 06:07:57.886] Found 306 possible bad axioms.
+[2026-06-27 06:07:57.887] Selected the bad axiom SubClassOf(colonoscopy endoscopy).
+[2026-06-27 06:07:57.893] Found 305 possible bad axioms.
+[2026-06-27 06:07:57.894] Selected the bad axiom SubClassOf(pathology ObjectComplementOf(radiology)).
+[2026-06-27 06:07:57.900] Found 304 possible bad axioms.
+[2026-06-27 06:07:57.900] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(immunofluorescence)).
+[2026-06-27 06:07:57.904] Found 303 possible bad axioms.
+[2026-06-27 06:07:57.904] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(gram)).
+[2026-06-27 06:07:57.909] Found 302 possible bad axioms.
+[2026-06-27 06:07:57.909] Selected the bad axiom SubClassOf(radiology _any_instance).
+[2026-06-27 06:07:57.913] Found 301 possible bad axioms.
+[2026-06-27 06:07:57.914] Selected the bad axiom SubClassOf(broncoscopy ObjectComplementOf(cystoscopy)).
+[2026-06-27 06:07:57.923] Found 300 possible bad axioms.
+[2026-06-27 06:07:57.923] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(laryngoscopy)).
+[2026-06-27 06:07:57.928] Found 299 possible bad axioms.
+[2026-06-27 06:07:57.928] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(immunofluorescence)).
+[2026-06-27 06:07:57.932] Found 298 possible bad axioms.
+[2026-06-27 06:07:57.932] Selected the bad axiom SubClassOf(fish ObjectComplementOf(congo_red)).
+[2026-06-27 06:07:57.937] Found 297 possible bad axioms.
+[2026-06-27 06:07:57.937] Selected the bad axiom SubClassOf(fish ObjectComplementOf(masson_trichrome)).
+[2026-06-27 06:07:57.946] Found 296 possible bad axioms.
+[2026-06-27 06:07:57.946] Selected the bad axiom SubClassOf(masson_trichrome ObjectComplementOf(pas)).
+[2026-06-27 06:07:57.951] Found 295 possible bad axioms.
+[2026-06-27 06:07:57.951] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(other_staining)).
+[2026-06-27 06:07:57.955] Found 294 possible bad axioms.
+[2026-06-27 06:07:57.955] Selected the bad axiom SubClassOf(egd ObjectComplementOf(colonoscopy)).
+[2026-06-27 06:07:57.959] Found 293 possible bad axioms.
+[2026-06-27 06:07:57.959] Selected the bad axiom SubClassOf(echocardiogram ultrasound).
+[2026-06-27 06:07:57.962] Found 292 possible bad axioms.
+[2026-06-27 06:07:57.962] Selected the bad axiom SubClassOf(giemsa othe
+...[truncated]
+FAIL: attempt=10 seed=127908 - negative return code -9
+progress: ontology=MCO4MCRE attempt=10 success=0/100
+=== ABORTED MCO4MCRE after 10 consecutive failures at 2026-06-27 06:09:26 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for MCO4MCRE - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=108 msg=negative return code -9
+  attempt=2 seed=14308 msg=negative return code -9
+  attempt=3 seed=28508 msg=negative return code -9
+  attempt=4 seed=42708 msg=negative return code -9
+  attempt=5 seed=56908 msg=negative return code -9
+  attempt=6 seed=71108 msg=negative return code -9
+  attempt=7 seed=85308 msg=negative return code -9
+  attempt=8 seed=99508 msg=negative return code -9
+  attempt=9 seed=113708 msg=negative return code -9
+  attempt=10 seed=127908 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=879.081012 avg_seconds=87.908101
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

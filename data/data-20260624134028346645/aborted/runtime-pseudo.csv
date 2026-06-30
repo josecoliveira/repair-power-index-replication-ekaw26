@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,28,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,2.640355,78,482,171,105,525,365,41,533,,,,
+2,14228,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,1.589906,28,499,268,108,325,,,,,,,
+3,28428,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,2.126220,52,479,177,192,875,,,,,,,
+4,42628,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,3.001820,83,455,163,107,439,512,33,532,306,32,,
+5,56828,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,3.178918,116,441,344,217,532,309,29,291,187,45,332,
+6,71028,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,2.266523,35,494,241,184,422,535,,,,,,
+7,85228,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,2.440693,91,450,154,105,700,204,38,358,,,,
+8,99428,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,2.159263,101,459,163,107,979,,,,,,,
+9,113628,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,2.288277,81,461,158,110,552,582,,,,,,
+10,127828,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ PGO_0000012,3.587478,74,479,235,84,969,265,29,496,148,30,440,

@@ -1,0 +1,428 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CRYOEM.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CRYOEM.csv
+
+=== Starting sequential trials for CRYOEM at 2026-06-27 19:17:50 ===
+----- CRYOEM attempt=1 seed=123 at 2026-06-27 19:17:50 -----
+--- stdout ---
+{"seed":123,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":483,"A2":1537,"A3":521,"B1":2821,"B2":5012}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=123, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:17:50.885] Checking precondition...
+[2026-06-27 19:17:50.902] Starting the repair...
+[2026-06-27 19:17:50.911] Found 394 possible bad axioms.
+[2026-06-27 19:17:50.913] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000024 http://scipion.i2pc.es/ontology/CRYOEM_0000028).
+[2026-06-27 19:17:50.924] Found 393 possible bad axioms.
+[2026-06-27 19:17:50.925] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000032 http://scipion.i2pc.es/ontology/CRYOEM_0000072).
+[2026-06-27 19:17:50.931] Found 392 possible bad axioms.
+[2026-06-27 19:17:50.931] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000100 http://scipion.i2pc.es/ontology/CRYOEM_0000101).
+[2026-06-27 19:17:50.937] Found 391 possible bad axioms.
+[2026-06-27 19:17:50.937] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000025 http://scipion.i2pc.es/ontology/CRYOEM_0000031).
+[2026-06-27 19:17:50.942] Found 390 possible bad axioms.
+[2026-06-27 19:17:50.942] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000035 http://scipion.i2pc.es/ontology/CRYOEM_0000034).
+[2026-06-27 19:17:50.947] Found 389 possible bad axioms.
+[2026-06-27 19:17:50.947] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000074 http://scipion.i2pc.es/ontology/CRYOEM_0000073).
+[2026-06-27 19:17:50.952] Found 388 possible bad axioms.
+[2026-06-27 19:17:50.952] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000063 http://scipion.i2pc.es/ontology/CRYOEM_0000022).
+[2026-06-27 19:17:50.956] Found 387 possible bad axioms.
+[2026-06-27 19:17:50.957] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000062 http://scipion.i2pc.es/ontology/CRYOEM_0000093).
+[2026-06-27 19:17:50.965] Found 386 possible bad axioms.
+[2026-06-27 19:17:50.966] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000047 http://scipion.i2pc.es/ontology/CRYOEM_0000018).
+[2026-06-27 19:17:50.970] Found 385 possible bad axioms.
+[2026-06-27 19:17:50.970] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000071 http://scipion.i2pc.es/ontology/CRYOEM_0000072).
+[2026-06-27 19:17:50.974] Found 384 possible bad axioms.
+[2026-06-27 19:17:50.974] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000018 http://scipion.i2pc.es/ontology/CRYOEM_0000015).
+[2026-06-27 19:17:50.983] Found 383 possible bad axioms.
+[2026-06-27 19:17:50.983] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOE
+...[truncated]
+FAIL: attempt=1 seed=123 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=1 success=0/100
+----- CRYOEM attempt=2 seed=14323 at 2026-06-27 19:18:01 -----
+--- stdout ---
+{"seed":14323,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":565,"A2":1499,"A3":475,"B1":457,"B2":4895}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=14323, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:18:01.733] Checking precondition...
+[2026-06-27 19:18:01.749] Starting the repair...
+[2026-06-27 19:18:01.757] Found 394 possible bad axioms.
+[2026-06-27 19:18:01.759] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000012 http://scipion.i2pc.es/ontology/CRYOEM_0000004).
+[2026-06-27 19:18:01.769] Found 393 possible bad axioms.
+[2026-06-27 19:18:01.770] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000018 http://scipion.i2pc.es/ontology/CRYOEM_0000015).
+[2026-06-27 19:18:01.775] Found 392 possible bad axioms.
+[2026-06-27 19:18:01.775] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000072 http://scipion.i2pc.es/ontology/CRYOEM_0000099).
+[2026-06-27 19:18:01.780] Found 391 possible bad axioms.
+[2026-06-27 19:18:01.780] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000024 http://scipion.i2pc.es/ontology/CRYOEM_0000009).
+[2026-06-27 19:18:01.785] Found 390 possible bad axioms.
+[2026-06-27 19:18:01.786] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000062 http://scipion.i2pc.es/ontology/CRYOEM_0000093).
+[2026-06-27 19:18:01.790] Found 389 possible bad axioms.
+[2026-06-27 19:18:01.790] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000009 http://scipion.i2pc.es/ontology/CRYOEM_0000024).
+[2026-06-27 19:18:01.794] Found 388 possible bad axioms.
+[2026-06-27 19:18:01.794] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000081 http://scipion.i2pc.es/ontology/CRYOEM_0000036).
+[2026-06-27 19:18:01.798] Found 387 possible bad axioms.
+[2026-06-27 19:18:01.799] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000038 owl:Nothing).
+[2026-06-27 19:18:01.807] Found 386 possible bad axioms.
+[2026-06-27 19:18:01.807] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000043 owl:Nothing).
+[2026-06-27 19:18:01.811] Found 385 possible bad axioms.
+[2026-06-27 19:18:01.811] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000046 http://scipion.i2pc.es/ontology/CRYOEM_0000018).
+[2026-06-27 19:18:01.815] Found 384 possible bad axioms.
+[2026-06-27 19:18:01.815] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000018 http://scipion.i2pc.es/ontology/CRYOEM_0000020).
+[2026-06-27 19:18:01.824] Found 383 possible bad axioms.
+[2026-06-27 19:18:01.824] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000070 http://scipion.i2pc.es/ontology/CRYOEM_0000032).
+[2026-06-
+...[truncated]
+FAIL: attempt=2 seed=14323 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=2 success=0/100
+----- CRYOEM attempt=3 seed=28523 at 2026-06-27 19:18:09 -----
+--- stdout ---
+{"seed":28523,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":550,"A2":1498,"A3":977,"B1":473,"B2":5698}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=28523, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:18:10.078] Checking precondition...
+[2026-06-27 19:18:10.095] Starting the repair...
+[2026-06-27 19:18:10.103] Found 394 possible bad axioms.
+[2026-06-27 19:18:10.105] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000085 http://scipion.i2pc.es/ontology/CRYOEM_0000086).
+[2026-06-27 19:18:10.116] Found 393 possible bad axioms.
+[2026-06-27 19:18:10.116] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000054 http://scipion.i2pc.es/ontology/CRYOEM_0000055).
+[2026-06-27 19:18:10.122] Found 392 possible bad axioms.
+[2026-06-27 19:18:10.122] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000053 http://scipion.i2pc.es/ontology/CRYOEM_0000091).
+[2026-06-27 19:18:10.128] Found 391 possible bad axioms.
+[2026-06-27 19:18:10.128] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000045 http://scipion.i2pc.es/ontology/CRYOEM_0000018).
+[2026-06-27 19:18:10.133] Found 390 possible bad axioms.
+[2026-06-27 19:18:10.133] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000002 http://scipion.i2pc.es/ontology/CRYOEM_0000074).
+[2026-06-27 19:18:10.137] Found 389 possible bad axioms.
+[2026-06-27 19:18:10.138] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000062 http://scipion.i2pc.es/ontology/CRYOEM_0000092).
+[2026-06-27 19:18:10.142] Found 388 possible bad axioms.
+[2026-06-27 19:18:10.142] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000081 http://scipion.i2pc.es/ontology/CRYOEM_0000083).
+[2026-06-27 19:18:10.146] Found 387 possible bad axioms.
+[2026-06-27 19:18:10.146] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000072 http://scipion.i2pc.es/ontology/CRYOEM_0000099).
+[2026-06-27 19:18:10.155] Found 386 possible bad axioms.
+[2026-06-27 19:18:10.155] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000085 http://scipion.i2pc.es/ontology/CRYOEM_0000087).
+[2026-06-27 19:18:10.159] Found 385 possible bad axioms.
+[2026-06-27 19:18:10.159] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000062 http://scipion.i2pc.es/ontology/CRYOEM_0000063).
+[2026-06-27 19:18:10.163] Found 384 possible bad axioms.
+[2026-06-27 19:18:10.163] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000074 http://scipion.i2pc.es/ontology/CRYOEM_0000032).
+[2026-06-27 19:18:10.171] Found 383 possible bad axioms.
+[2026-06-27 19:18:10.172] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRY
+...[truncated]
+FAIL: attempt=3 seed=28523 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=3 success=0/100
+----- CRYOEM attempt=4 seed=42723 at 2026-06-27 19:18:19 -----
+--- stdout ---
+{"seed":42723,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":558,"A2":1513,"A3":1013,"B1":863,"B2":4980}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=42723, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:18:20.098] Checking precondition...
+[2026-06-27 19:18:20.115] Starting the repair...
+[2026-06-27 19:18:20.123] Found 394 possible bad axioms.
+[2026-06-27 19:18:20.125] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000003 http://scipion.i2pc.es/ontology/CRYOEM_0000001).
+[2026-06-27 19:18:20.136] Found 393 possible bad axioms.
+[2026-06-27 19:18:20.136] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000105 http://scipion.i2pc.es/ontology/CRYOEM_0000097).
+[2026-06-27 19:18:20.142] Found 392 possible bad axioms.
+[2026-06-27 19:18:20.142] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000017 http://scipion.i2pc.es/ontology/CRYOEM_0000054).
+[2026-06-27 19:18:20.148] Found 391 possible bad axioms.
+[2026-06-27 19:18:20.148] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000065 http://scipion.i2pc.es/ontology/CRYOEM_0000024).
+[2026-06-27 19:18:20.153] Found 390 possible bad axioms.
+[2026-06-27 19:18:20.153] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000070 http://scipion.i2pc.es/ontology/CRYOEM_0000071).
+[2026-06-27 19:18:20.158] Found 389 possible bad axioms.
+[2026-06-27 19:18:20.158] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000068 http://scipion.i2pc.es/ontology/CRYOEM_0000029).
+[2026-06-27 19:18:20.162] Found 388 possible bad axioms.
+[2026-06-27 19:18:20.162] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000092 http://scipion.i2pc.es/ontology/CRYOEM_0000063).
+[2026-06-27 19:18:20.167] Found 387 possible bad axioms.
+[2026-06-27 19:18:20.167] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000018 http://scipion.i2pc.es/ontology/CRYOEM_0000051).
+[2026-06-27 19:18:20.171] Found 386 possible bad axioms.
+[2026-06-27 19:18:20.175] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000042 http://scipion.i2pc.es/ontology/CRYOEM_0000052).
+[2026-06-27 19:18:20.179] Found 385 possible bad axioms.
+[2026-06-27 19:18:20.180] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000017 http://scipion.i2pc.es/ontology/CRYOEM_0000040).
+[2026-06-27 19:18:20.183] Found 384 possible bad axioms.
+[2026-06-27 19:18:20.183] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000071 http://scipion.i2pc.es/ontology/CRYOEM_0000074).
+[2026-06-27 19:18:20.192] Found 383 possible bad axioms.
+[2026-06-27 19:18:20.192] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRY
+...[truncated]
+FAIL: attempt=4 seed=42723 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=4 success=0/100
+----- CRYOEM attempt=5 seed=56923 at 2026-06-27 19:18:29 -----
+--- stdout ---
+{"seed":56923,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":505,"A2":1537,"A3":531,"B1":433,"B2":4933}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=56923, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:18:29.479] Checking precondition...
+[2026-06-27 19:18:29.495] Starting the repair...
+[2026-06-27 19:18:29.503] Found 394 possible bad axioms.
+[2026-06-27 19:18:29.505] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000082 owl:Nothing).
+[2026-06-27 19:18:29.516] Found 393 possible bad axioms.
+[2026-06-27 19:18:29.517] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000068 http://scipion.i2pc.es/ontology/CRYOEM_0000096).
+[2026-06-27 19:18:29.523] Found 392 possible bad axioms.
+[2026-06-27 19:18:29.523] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000042 http://scipion.i2pc.es/ontology/CRYOEM_0000037).
+[2026-06-27 19:18:29.529] Found 391 possible bad axioms.
+[2026-06-27 19:18:29.529] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000001 http://scipion.i2pc.es/ontology/CRYOEM_0000012).
+[2026-06-27 19:18:29.534] Found 390 possible bad axioms.
+[2026-06-27 19:18:29.535] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000004 http://scipion.i2pc.es/ontology/CRYOEM_0000009).
+[2026-06-27 19:18:29.539] Found 389 possible bad axioms.
+[2026-06-27 19:18:29.539] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000045 http://scipion.i2pc.es/ontology/CRYOEM_0000018).
+[2026-06-27 19:18:29.543] Found 388 possible bad axioms.
+[2026-06-27 19:18:29.543] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000018 http://scipion.i2pc.es/ontology/CRYOEM_0000047).
+[2026-06-27 19:18:29.547] Found 387 possible bad axioms.
+[2026-06-27 19:18:29.548] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000083 http://scipion.i2pc.es/ontology/CRYOEM_0000081).
+[2026-06-27 19:18:29.556] Found 386 possible bad axioms.
+[2026-06-27 19:18:29.556] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000012 http://scipion.i2pc.es/ontology/CRYOEM_0000099).
+[2026-06-27 19:18:29.560] Found 385 possible bad axioms.
+[2026-06-27 19:18:29.560] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000038 http://scipion.i2pc.es/ontology/CRYOEM_0000081).
+[2026-06-27 19:18:29.564] Found 384 possible bad axioms.
+[2026-06-27 19:18:29.564] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000079 http://scipion.i2pc.es/ontology/CRYOEM_0000035).
+[2026-06-27 19:18:29.571] Found 383 possible bad axioms.
+[2026-06-27 19:18:29.571] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000054 http://scipion.i2pc.es/
+...[truncated]
+FAIL: attempt=5 seed=56923 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=5 success=0/100
+----- CRYOEM attempt=6 seed=71123 at 2026-06-27 19:18:37 -----
+--- stdout ---
+{"seed":71123,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":500,"A2":1537,"A3":889,"B1":439,"B2":5148}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=71123, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:18:37.900] Checking precondition...
+[2026-06-27 19:18:37.915] Starting the repair...
+[2026-06-27 19:18:37.924] Found 394 possible bad axioms.
+[2026-06-27 19:18:37.925] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000015 http://scipion.i2pc.es/ontology/CRYOEM_0000016).
+[2026-06-27 19:18:37.936] Found 393 possible bad axioms.
+[2026-06-27 19:18:37.936] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000094 http://scipion.i2pc.es/ontology/CRYOEM_0000096).
+[2026-06-27 19:18:37.942] Found 392 possible bad axioms.
+[2026-06-27 19:18:37.942] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000030 http://scipion.i2pc.es/ontology/CRYOEM_0000009).
+[2026-06-27 19:18:37.948] Found 391 possible bad axioms.
+[2026-06-27 19:18:37.948] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000058 http://scipion.i2pc.es/ontology/CRYOEM_0000016).
+[2026-06-27 19:18:37.953] Found 390 possible bad axioms.
+[2026-06-27 19:18:37.954] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000098 http://scipion.i2pc.es/ontology/CRYOEM_0000069).
+[2026-06-27 19:18:37.959] Found 389 possible bad axioms.
+[2026-06-27 19:18:37.959] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000094 http://scipion.i2pc.es/ontology/CRYOEM_0000016).
+[2026-06-27 19:18:37.964] Found 388 possible bad axioms.
+[2026-06-27 19:18:37.964] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000109 http://scipion.i2pc.es/ontology/CRYOEM_0000111).
+[2026-06-27 19:18:37.968] Found 387 possible bad axioms.
+[2026-06-27 19:18:37.968] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000096 http://scipion.i2pc.es/ontology/CRYOEM_0000097).
+[2026-06-27 19:18:37.973] Found 386 possible bad axioms.
+[2026-06-27 19:18:37.973] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000042 http://scipion.i2pc.es/ontology/CRYOEM_0000037).
+[2026-06-27 19:18:37.984] Found 385 possible bad axioms.
+[2026-06-27 19:18:37.984] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000068 owl:Nothing).
+[2026-06-27 19:18:37.988] Found 384 possible bad axioms.
+[2026-06-27 19:18:37.988] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000067 http://scipion.i2pc.es/ontology/CRYOEM_0000106).
+[2026-06-27 19:18:37.997] Found 383 possible bad axioms.
+[2026-06-27 19:18:37.997] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000025 http://scipion.i2pc.es/
+...[truncated]
+FAIL: attempt=6 seed=71123 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=6 success=0/100
+----- CRYOEM attempt=7 seed=85323 at 2026-06-27 19:18:47 -----
+--- stdout ---
+{"seed":85323,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":546,"A2":1521,"A3":619,"B1":1462,"B2":4827}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=85323, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:18:47.791] Checking precondition...
+[2026-06-27 19:18:47.809] Starting the repair...
+[2026-06-27 19:18:47.817] Found 394 possible bad axioms.
+[2026-06-27 19:18:47.819] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000015 http://scipion.i2pc.es/ontology/CRYOEM_0000017).
+[2026-06-27 19:18:47.830] Found 393 possible bad axioms.
+[2026-06-27 19:18:47.830] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000064 http://scipion.i2pc.es/ontology/CRYOEM_0000062).
+[2026-06-27 19:18:47.836] Found 392 possible bad axioms.
+[2026-06-27 19:18:47.836] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000028 http://scipion.i2pc.es/ontology/CRYOEM_0000026).
+[2026-06-27 19:18:47.842] Found 391 possible bad axioms.
+[2026-06-27 19:18:47.843] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000072 http://scipion.i2pc.es/ontology/CRYOEM_0000074).
+[2026-06-27 19:18:47.847] Found 390 possible bad axioms.
+[2026-06-27 19:18:47.848] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000058 http://scipion.i2pc.es/ontology/CRYOEM_0000056).
+[2026-06-27 19:18:47.854] Found 389 possible bad axioms.
+[2026-06-27 19:18:47.854] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000047 owl:Nothing).
+[2026-06-27 19:18:47.858] Found 388 possible bad axioms.
+[2026-06-27 19:18:47.858] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000006 http://scipion.i2pc.es/ontology/CRYOEM_0000074).
+[2026-06-27 19:18:47.862] Found 387 possible bad axioms.
+[2026-06-27 19:18:47.862] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000009 owl:Nothing).
+[2026-06-27 19:18:47.871] Found 386 possible bad axioms.
+[2026-06-27 19:18:47.871] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000102 http://scipion.i2pc.es/ontology/CRYOEM_0000110).
+[2026-06-27 19:18:47.876] Found 385 possible bad axioms.
+[2026-06-27 19:18:47.876] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000008 http://scipion.i2pc.es/ontology/CRYOEM_0000012).
+[2026-06-27 19:18:47.880] Found 384 possible bad axioms.
+[2026-06-27 19:18:47.881] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000089 http://scipion.i2pc.es/ontology/CRYOEM_0000038).
+[2026-06-27 19:18:47.890] Found 383 possible bad axioms.
+[2026-06-27 19:18:47.890] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000105 http://scipion.i2pc.es/ontology/CRYOEM_0000097).
+[2026-06-
+...[truncated]
+FAIL: attempt=7 seed=85323 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=7 success=0/100
+----- CRYOEM attempt=8 seed=99523 at 2026-06-27 19:18:56 -----
+--- stdout ---
+{"seed":99523,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":538,"A2":1509,"A3":1411,"B1":2867,"B2":5160}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=99523, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:18:57.227] Checking precondition...
+[2026-06-27 19:18:57.245] Starting the repair...
+[2026-06-27 19:18:57.252] Found 394 possible bad axioms.
+[2026-06-27 19:18:57.254] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000015 http://scipion.i2pc.es/ontology/CRYOEM_0000003).
+[2026-06-27 19:18:57.266] Found 393 possible bad axioms.
+[2026-06-27 19:18:57.266] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000038 http://scipion.i2pc.es/ontology/CRYOEM_0000081).
+[2026-06-27 19:18:57.272] Found 392 possible bad axioms.
+[2026-06-27 19:18:57.272] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000027 http://scipion.i2pc.es/ontology/CRYOEM_0000024).
+[2026-06-27 19:18:57.278] Found 391 possible bad axioms.
+[2026-06-27 19:18:57.278] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000030 http://scipion.i2pc.es/ontology/CRYOEM_0000016).
+[2026-06-27 19:18:57.284] Found 390 possible bad axioms.
+[2026-06-27 19:18:57.284] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000002 owl:Nothing).
+[2026-06-27 19:18:57.289] Found 389 possible bad axioms.
+[2026-06-27 19:18:57.289] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000036 owl:Nothing).
+[2026-06-27 19:18:57.294] Found 388 possible bad axioms.
+[2026-06-27 19:18:57.294] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000106 http://scipion.i2pc.es/ontology/CRYOEM_0000097).
+[2026-06-27 19:18:57.298] Found 387 possible bad axioms.
+[2026-06-27 19:18:57.298] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000038 http://scipion.i2pc.es/ontology/CRYOEM_0000016).
+[2026-06-27 19:18:57.308] Found 386 possible bad axioms.
+[2026-06-27 19:18:57.308] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000077 http://scipion.i2pc.es/ontology/CRYOEM_0000034).
+[2026-06-27 19:18:57.313] Found 385 possible bad axioms.
+[2026-06-27 19:18:57.313] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000017 http://scipion.i2pc.es/ontology/CRYOEM_0000091).
+[2026-06-27 19:18:57.317] Found 384 possible bad axioms.
+[2026-06-27 19:18:57.317] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000008 http://scipion.i2pc.es/ontology/CRYOEM_0000009).
+[2026-06-27 19:18:57.326] Found 383 possible bad axioms.
+[2026-06-27 19:18:57.326] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000042 owl:Nothing).
+[2026-06-27 19:18:57.330] Found 382 possible
+...[truncated]
+FAIL: attempt=8 seed=99523 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=8 success=0/100
+----- CRYOEM attempt=9 seed=113723 at 2026-06-27 19:19:08 -----
+--- stdout ---
+{"seed":113723,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":473,"A2":1547,"A3":1592,"B1":524,"B2":4175}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=113723, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:19:09.168] Checking precondition...
+[2026-06-27 19:19:09.186] Starting the repair...
+[2026-06-27 19:19:09.193] Found 394 possible bad axioms.
+[2026-06-27 19:19:09.195] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000082 http://scipion.i2pc.es/ontology/CRYOEM_0000036).
+[2026-06-27 19:19:09.207] Found 393 possible bad axioms.
+[2026-06-27 19:19:09.207] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000047 owl:Nothing).
+[2026-06-27 19:19:09.213] Found 392 possible bad axioms.
+[2026-06-27 19:19:09.213] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000003 http://scipion.i2pc.es/ontology/CRYOEM_0000082).
+[2026-06-27 19:19:09.219] Found 391 possible bad axioms.
+[2026-06-27 19:19:09.219] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000041 http://scipion.i2pc.es/ontology/CRYOEM_0000040).
+[2026-06-27 19:19:09.224] Found 390 possible bad axioms.
+[2026-06-27 19:19:09.225] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000103 http://scipion.i2pc.es/ontology/CRYOEM_0000079).
+[2026-06-27 19:19:09.229] Found 389 possible bad axioms.
+[2026-06-27 19:19:09.230] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000040 http://scipion.i2pc.es/ontology/CRYOEM_0000041).
+[2026-06-27 19:19:09.234] Found 388 possible bad axioms.
+[2026-06-27 19:19:09.234] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000043 http://scipion.i2pc.es/ontology/CRYOEM_0000047).
+[2026-06-27 19:19:09.238] Found 387 possible bad axioms.
+[2026-06-27 19:19:09.238] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000080 http://scipion.i2pc.es/ontology/CRYOEM_0000036).
+[2026-06-27 19:19:09.247] Found 386 possible bad axioms.
+[2026-06-27 19:19:09.247] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000003 http://scipion.i2pc.es/ontology/CRYOEM_0000089).
+[2026-06-27 19:19:09.251] Found 385 possible bad axioms.
+[2026-06-27 19:19:09.251] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000022 http://scipion.i2pc.es/ontology/CRYOEM_0000003).
+[2026-06-27 19:19:09.255] Found 384 possible bad axioms.
+[2026-06-27 19:19:09.255] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000099 http://scipion.i2pc.es/ontology/CRYOEM_0000074).
+[2026-06-27 19:19:09.264] Found 383 possible bad axioms.
+[2026-06-27 19:19:09.264] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000021 http://scipion.i2pc.es
+...[truncated]
+FAIL: attempt=9 seed=113723 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=9 success=0/100
+----- CRYOEM attempt=10 seed=127923 at 2026-06-27 19:19:17 -----
+--- stdout ---
+{"seed":127923,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008","iic_values":{},"repair_runtimes_ms":{"A1":337,"A2":1604,"A3":461,"B1":467,"B2":5008}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRYOEM.owl, seed=127923, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 19:19:17.932] Checking precondition...
+[2026-06-27 19:19:17.948] Starting the repair...
+[2026-06-27 19:19:17.955] Found 394 possible bad axioms.
+[2026-06-27 19:19:17.957] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000036 http://scipion.i2pc.es/ontology/CRYOEM_0000080).
+[2026-06-27 19:19:17.968] Found 393 possible bad axioms.
+[2026-06-27 19:19:17.968] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000022 http://scipion.i2pc.es/ontology/CRYOEM_0000092).
+[2026-06-27 19:19:17.974] Found 392 possible bad axioms.
+[2026-06-27 19:19:17.974] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000082 http://scipion.i2pc.es/ontology/CRYOEM_0000036).
+[2026-06-27 19:19:17.980] Found 391 possible bad axioms.
+[2026-06-27 19:19:17.980] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000042 http://scipion.i2pc.es/ontology/CRYOEM_0000018).
+[2026-06-27 19:19:17.984] Found 390 possible bad axioms.
+[2026-06-27 19:19:17.985] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000102 http://scipion.i2pc.es/ontology/CRYOEM_0000078).
+[2026-06-27 19:19:17.989] Found 389 possible bad axioms.
+[2026-06-27 19:19:17.990] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000053 http://scipion.i2pc.es/ontology/CRYOEM_0000091).
+[2026-06-27 19:19:17.994] Found 388 possible bad axioms.
+[2026-06-27 19:19:17.995] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000059 http://scipion.i2pc.es/ontology/CRYOEM_0000057).
+[2026-06-27 19:19:17.999] Found 387 possible bad axioms.
+[2026-06-27 19:19:17.999] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000027 http://scipion.i2pc.es/ontology/CRYOEM_0000066).
+[2026-06-27 19:19:18.007] Found 386 possible bad axioms.
+[2026-06-27 19:19:18.007] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000079 http://scipion.i2pc.es/ontology/CRYOEM_0000078).
+[2026-06-27 19:19:18.011] Found 385 possible bad axioms.
+[2026-06-27 19:19:18.012] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000047 owl:Nothing).
+[2026-06-27 19:19:18.016] Found 384 possible bad axioms.
+[2026-06-27 19:19:18.016] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000016 http://scipion.i2pc.es/ontology/CRYOEM_0000021).
+[2026-06-27 19:19:18.024] Found 383 possible bad axioms.
+[2026-06-27 19:19:18.024] Selected the bad axiom SubClassOf(http://scipion.i2pc.es/ontology/CRYOEM_0000096 http://scipion.i2pc.es
+...[truncated]
+FAIL: attempt=10 seed=127923 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+progress: ontology=CRYOEM attempt=10 success=0/100
+=== ABORTED CRYOEM after 10 consecutive failures at 2026-06-27 19:19:25 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CRYOEM - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=123 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=2 seed=14323 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=3 seed=28523 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=4 seed=42723 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=5 seed=56923 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=6 seed=71123 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=7 seed=85323 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=8 seed=99523 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=9 seed=113723 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+  attempt=10 seed=127923 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CRYOEM_0000008
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

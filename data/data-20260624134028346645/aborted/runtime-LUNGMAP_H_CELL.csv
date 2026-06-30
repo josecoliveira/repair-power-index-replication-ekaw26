@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,139,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,15.025363,677,7002,708,619,5570,,,,,,,
+2,14339,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,8.589825,672,6882,640,,,,,,,,,
+3,28539,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,14.761837,363,7136,739,686,5427,,,,,,,
+4,42739,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,18.195663,513,6975,4434,641,5220,,,,,,,
+5,56939,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,16.823719,229,7090,2745,603,5749,,,,,,,
+6,71139,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,20.291999,230,7026,1861,620,6425,3700,,,,,,
+7,85339,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,14.301163,359,7090,1147,1793,3512,,,,,,,
+8,99539,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,19.790885,724,7005,715,619,10290,,,,,,,
+9,113739,20260624134028346645,java_exception,failure,B3,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,20.566744,585,7018,628,2355,6353,3198,,,,,,
+10,127939,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ LMHA_00146,13.994516,856,6950,682,1618,3492,,,,,,,

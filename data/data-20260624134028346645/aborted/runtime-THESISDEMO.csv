@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,89,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,3.488375,277,2501,321,,,,,,,,,
+2,14289,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,7.865483,264,2494,1590,3132,,,,,,,,
+3,28489,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,5.356944,251,2499,2235,,,,,,,,,
+4,42689,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,5.656172,351,2455,2471,,,,,,,,,
+5,56889,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,6.148484,170,2552,3047,,,,,,,,,
+6,71089,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,6.263559,344,2463,1524,1549,,,,,,,,
+7,85289,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i,10.133335,352,2468,720,3058,3149,,,,,,,
+8,99489,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i,8.750047,352,2431,1632,1568,2363,,,,,,,
+9,113689,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,4.873926,378,2423,1702,,,,,,,,,
+10,127889,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RxVTGslbhPiijLBs5pGtdQ.RDbHs8aJ2AG67pxcnsGVE3i,8.769174,380,2405,1406,1443,2742,,,,,,,

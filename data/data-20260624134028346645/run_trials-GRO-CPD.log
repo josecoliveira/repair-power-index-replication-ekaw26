@@ -1,0 +1,443 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-GRO-CPD.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-GRO-CPD.csv
+
+=== Starting sequential trials for GRO-CPD at 2026-06-28 05:22:34 ===
+----- GRO-CPD attempt=1 seed=134 at 2026-06-28 05:22:34 -----
+--- stdout ---
+{"seed":134,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071","iic_values":{},"repair_runtimes_ms":{"A1":500,"A2":27585,"A3":1908,"B1":942,"B2":1978,"B3":16893,"B4":279,"B5":958,"B6":8545}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=134, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:22:35.114] Checking precondition...
+[2026-06-28 05:22:35.133] Starting the repair...
+[2026-06-28 05:22:35.148] Found 510 possible bad axioms.
+[2026-06-28 05:22:35.150] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007159 http://purl.obolibrary.org/obo/GRO_0007231).
+[2026-06-28 05:22:35.157] Found 509 possible bad axioms.
+[2026-06-28 05:22:35.157] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007135 http://purl.obolibrary.org/obo/GRO_0007124).
+[2026-06-28 05:22:35.165] Found 508 possible bad axioms.
+[2026-06-28 05:22:35.166] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007022 http://purl.obolibrary.org/obo/GRO_0007208).
+[2026-06-28 05:22:35.171] Found 507 possible bad axioms.
+[2026-06-28 05:22:35.171] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007122 http://purl.obolibrary.org/obo/GRO_0007114).
+[2026-06-28 05:22:35.176] Found 506 possible bad axioms.
+[2026-06-28 05:22:35.176] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007045 http://purl.obolibrary.org/obo/GRO_0007141).
+[2026-06-28 05:22:35.187] Found 505 possible bad axioms.
+[2026-06-28 05:22:35.187] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007064 http://purl.obolibrary.org/obo/GRO_0007068).
+[2026-06-28 05:22:35.193] Found 504 possible bad axioms.
+[2026-06-28 05:22:35.193] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007182 http://purl.obolibrary.org/obo/GRO_0007188).
+[2026-06-28 05:22:35.199] Found 503 possible bad axioms.
+[2026-06-28 05:22:35.199] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007222 http://purl.obolibrary.org/obo/GRO_0007224).
+[2026-06-28 05:22:35.204] Found 502 possible bad axioms.
+[2026-06-28 05:22:35.204] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007161 http://purl.obolibrary.org/obo/GRO_0007138).
+[2026-06-28 05:22:35.209] Found 501 possible bad axioms.
+[2026-06-28 05:22:35.209] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007136 http://purl.obolibrary.org/obo/GRO_0007040).
+[2026-06-28 05:22:35.215] Found 500 possible bad axioms.
+[2026-06-28 05:22:35.215] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007210 http://purl.obolibrary.org/obo/GRO_0007212).
+[2026-06-28 05:22:35.226] Found 499 possible bad axioms.
+[2026-06-28 05:22:35.226] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007040 owl:Nothing).
+[2026-06-28 05:22:35.231] Found 498 possible bad axioms.
+[2026-06-2
+...[truncated]
+FAIL: attempt=1 seed=134 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+progress: ontology=GRO-CPD attempt=1 success=0/100
+----- GRO-CPD attempt=2 seed=14334 at 2026-06-28 05:23:35 -----
+--- stdout ---
+{"seed":14334,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071","iic_values":{},"repair_runtimes_ms":{"A1":408,"A2":27587,"A3":976,"B1":941,"B2":24427}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=14334, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:23:35.524] Checking precondition...
+[2026-06-28 05:23:35.544] Starting the repair...
+[2026-06-28 05:23:35.558] Found 510 possible bad axioms.
+[2026-06-28 05:23:35.560] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007118 http://purl.obolibrary.org/obo/GRO_0007122).
+[2026-06-28 05:23:35.568] Found 509 possible bad axioms.
+[2026-06-28 05:23:35.568] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007157 http://purl.obolibrary.org/obo/GRO_0007175).
+[2026-06-28 05:23:35.575] Found 508 possible bad axioms.
+[2026-06-28 05:23:35.576] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007186 http://purl.obolibrary.org/obo/GRO_0007187).
+[2026-06-28 05:23:35.582] Found 507 possible bad axioms.
+[2026-06-28 05:23:35.583] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007040 owl:Nothing).
+[2026-06-28 05:23:35.588] Found 506 possible bad axioms.
+[2026-06-28 05:23:35.588] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007120 http://purl.obolibrary.org/obo/GRO_0007114).
+[2026-06-28 05:23:35.598] Found 505 possible bad axioms.
+[2026-06-28 05:23:35.599] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007132 http://purl.obolibrary.org/obo/GRO_0007124).
+[2026-06-28 05:23:35.604] Found 504 possible bad axioms.
+[2026-06-28 05:23:35.604] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007035 http://purl.obolibrary.org/obo/GRO_0007029).
+[2026-06-28 05:23:35.609] Found 503 possible bad axioms.
+[2026-06-28 05:23:35.610] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007058 http://purl.obolibrary.org/obo/GRO_0007068).
+[2026-06-28 05:23:35.615] Found 502 possible bad axioms.
+[2026-06-28 05:23:35.615] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007091 http://purl.obolibrary.org/obo/GRO_0007093).
+[2026-06-28 05:23:35.620] Found 501 possible bad axioms.
+[2026-06-28 05:23:35.620] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007158 http://purl.obolibrary.org/obo/GRO_0007136).
+[2026-06-28 05:23:35.626] Found 500 possible bad axioms.
+[2026-06-28 05:23:35.626] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007044 http://purl.obolibrary.org/obo/GRO_0007140).
+[2026-06-28 05:23:35.637] Found 499 possible bad axioms.
+[2026-06-28 05:23:35.637] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007015 http://purl.obolibrary.org/obo/GRO_0007013).
+[2026-06-28 05:23:35.642] Found 498 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=2 seed=14334 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+progress: ontology=GRO-CPD attempt=2 success=0/100
+----- GRO-CPD attempt=3 seed=28534 at 2026-06-28 05:24:30 -----
+--- stdout ---
+{"seed":28534,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069","iic_values":{},"repair_runtimes_ms":{"A1":780,"A2":27459,"A3":1067,"B1":993,"B2":25309,"B3":16035}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=28534, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:24:30.619] Checking precondition...
+[2026-06-28 05:24:30.640] Starting the repair...
+[2026-06-28 05:24:30.654] Found 510 possible bad axioms.
+[2026-06-28 05:24:30.657] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007201 http://purl.obolibrary.org/obo/GRO_0007196).
+[2026-06-28 05:24:30.664] Found 509 possible bad axioms.
+[2026-06-28 05:24:30.665] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007092 http://purl.obolibrary.org/obo/GRO_0007090).
+[2026-06-28 05:24:30.672] Found 508 possible bad axioms.
+[2026-06-28 05:24:30.672] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007077 http://purl.obolibrary.org/obo/GRO_0007070).
+[2026-06-28 05:24:30.678] Found 507 possible bad axioms.
+[2026-06-28 05:24:30.678] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007195 http://purl.obolibrary.org/obo/GRO_0007157).
+[2026-06-28 05:24:30.683] Found 506 possible bad axioms.
+[2026-06-28 05:24:30.683] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007057 http://purl.obolibrary.org/obo/GRO_0007051).
+[2026-06-28 05:24:30.694] Found 505 possible bad axioms.
+[2026-06-28 05:24:30.694] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007126 http://purl.obolibrary.org/obo/GRO_0007124).
+[2026-06-28 05:24:30.700] Found 504 possible bad axioms.
+[2026-06-28 05:24:30.700] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007099 http://purl.obolibrary.org/obo/GRO_0007096).
+[2026-06-28 05:24:30.706] Found 503 possible bad axioms.
+[2026-06-28 05:24:30.706] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/GRO_0007140)).
+[2026-06-28 05:24:30.712] Found 502 possible bad axioms.
+[2026-06-28 05:24:30.712] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007091 http://purl.obolibrary.org/obo/GRO_0007093).
+[2026-06-28 05:24:30.716] Found 501 possible bad axioms.
+[2026-06-28 05:24:30.717] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007032 http://purl.obolibrary.org/obo/GRO_0007030).
+[2026-06-28 05:24:30.722] Found 500 possible bad axioms.
+[2026-06-28 05:24:30.723] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007157 owl:Nothing).
+[2026-06-28 05:24:30.733] Found 499 possible bad axioms.
+[2026-06-28 05:24:30.734] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007122 http://purl.obolibrary.org/obo/GRO_0007116).
+[2026-06-28 05:24:30.739] Found 498 possible bad axioms.
+[2026-06-28 05:24:30.739] Selected the bad
+...[truncated]
+FAIL: attempt=3 seed=28534 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+progress: ontology=GRO-CPD attempt=3 success=0/100
+----- GRO-CPD attempt=4 seed=42734 at 2026-06-28 05:25:45 -----
+--- stdout ---
+{"seed":42734,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069","iic_values":{},"repair_runtimes_ms":{"A1":606,"A2":27566,"A3":1039,"B1":991,"B2":11833}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=42734, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:25:46.339] Checking precondition...
+[2026-06-28 05:25:46.360] Starting the repair...
+[2026-06-28 05:25:46.375] Found 510 possible bad axioms.
+[2026-06-28 05:25:46.378] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007162 http://purl.obolibrary.org/obo/GRO_0007165).
+[2026-06-28 05:25:46.385] Found 509 possible bad axioms.
+[2026-06-28 05:25:46.386] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007042 http://purl.obolibrary.org/obo/GRO_0007046).
+[2026-06-28 05:25:46.393] Found 508 possible bad axioms.
+[2026-06-28 05:25:46.394] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007150 http://purl.obolibrary.org/obo/GRO_0007148).
+[2026-06-28 05:25:46.400] Found 507 possible bad axioms.
+[2026-06-28 05:25:46.401] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007204 http://purl.obolibrary.org/obo/GRO_0007205).
+[2026-06-28 05:25:46.406] Found 506 possible bad axioms.
+[2026-06-28 05:25:46.406] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007082 http://purl.obolibrary.org/obo/GRO_0007085).
+[2026-06-28 05:25:46.416] Found 505 possible bad axioms.
+[2026-06-28 05:25:46.417] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007113 http://purl.obolibrary.org/obo/GRO_0007112).
+[2026-06-28 05:25:46.422] Found 504 possible bad axioms.
+[2026-06-28 05:25:46.423] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007106 http://purl.obolibrary.org/obo/GRO_0007105).
+[2026-06-28 05:25:46.428] Found 503 possible bad axioms.
+[2026-06-28 05:25:46.428] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/GRO_0007048)).
+[2026-06-28 05:25:46.434] Found 502 possible bad axioms.
+[2026-06-28 05:25:46.434] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007014 http://purl.obolibrary.org/obo/GRO_0007012).
+[2026-06-28 05:25:46.439] Found 501 possible bad axioms.
+[2026-06-28 05:25:46.440] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007165 http://purl.obolibrary.org/obo/GRO_0007138).
+[2026-06-28 05:25:46.445] Found 500 possible bad axioms.
+[2026-06-28 05:25:46.445] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007192 http://purl.obolibrary.org/obo/GRO_0007000).
+[2026-06-28 05:25:46.456] Found 499 possible bad axioms.
+[2026-06-28 05:25:46.457] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007064 http://purl.obolibrary.org/obo/GRO_0007058).
+[2026-06-28 05:25:46.462] Found 498 possible bad axioms.
+[2026-06-28
+...[truncated]
+FAIL: attempt=4 seed=42734 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+progress: ontology=GRO-CPD attempt=4 success=0/100
+----- GRO-CPD attempt=5 seed=56934 at 2026-06-28 05:26:28 -----
+--- stdout ---
+{"seed":56934,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069","iic_values":{},"repair_runtimes_ms":{"A1":360,"A2":27688,"A3":1168,"B1":1163,"B2":24377}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=56934, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:26:28.897] Checking precondition...
+[2026-06-28 05:26:28.918] Starting the repair...
+[2026-06-28 05:26:28.933] Found 510 possible bad axioms.
+[2026-06-28 05:26:28.935] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007233 http://purl.obolibrary.org/obo/GRO_0007231).
+[2026-06-28 05:26:28.942] Found 509 possible bad axioms.
+[2026-06-28 05:26:28.943] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007103 http://purl.obolibrary.org/obo/GRO_0007102).
+[2026-06-28 05:26:28.951] Found 508 possible bad axioms.
+[2026-06-28 05:26:28.951] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007058 http://purl.obolibrary.org/obo/GRO_0007059).
+[2026-06-28 05:26:28.957] Found 507 possible bad axioms.
+[2026-06-28 05:26:28.957] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007178 http://purl.obolibrary.org/obo/GRO_0007160).
+[2026-06-28 05:26:28.963] Found 506 possible bad axioms.
+[2026-06-28 05:26:28.963] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007122 http://purl.obolibrary.org/obo/GRO_0007114).
+[2026-06-28 05:26:28.973] Found 505 possible bad axioms.
+[2026-06-28 05:26:28.974] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007116 http://purl.obolibrary.org/obo/GRO_0007114).
+[2026-06-28 05:26:28.980] Found 504 possible bad axioms.
+[2026-06-28 05:26:28.980] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007184 http://purl.obolibrary.org/obo/GRO_0007179).
+[2026-06-28 05:26:28.986] Found 503 possible bad axioms.
+[2026-06-28 05:26:28.986] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007204 http://purl.obolibrary.org/obo/GRO_0007205).
+[2026-06-28 05:26:28.991] Found 502 possible bad axioms.
+[2026-06-28 05:26:28.992] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007187 http://purl.obolibrary.org/obo/GRO_0007160).
+[2026-06-28 05:26:28.997] Found 501 possible bad axioms.
+[2026-06-28 05:26:28.997] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007136 http://purl.obolibrary.org/obo/GRO_0007172).
+[2026-06-28 05:26:29.002] Found 500 possible bad axioms.
+[2026-06-28 05:26:29.003] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007011 http://purl.obolibrary.org/obo/GRO_0007002).
+[2026-06-28 05:26:29.014] Found 499 possible bad axioms.
+[2026-06-28 05:26:29.014] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007005 http://purl.obolibrary.org/obo/GRO_0007003).
+[2026-06-28 05:26:29.018] Found 49
+...[truncated]
+FAIL: attempt=5 seed=56934 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+progress: ontology=GRO-CPD attempt=5 success=0/100
+----- GRO-CPD attempt=6 seed=71134 at 2026-06-28 05:27:24 -----
+--- stdout ---
+{"seed":71134,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071","iic_values":{},"repair_runtimes_ms":{"A1":573,"A2":27502,"A3":5473,"B1":1036,"B2":7307}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=71134, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:27:24.428] Checking precondition...
+[2026-06-28 05:27:24.449] Starting the repair...
+[2026-06-28 05:27:24.463] Found 510 possible bad axioms.
+[2026-06-28 05:27:24.465] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007111 http://purl.obolibrary.org/obo/GRO_0007158).
+[2026-06-28 05:27:24.473] Found 509 possible bad axioms.
+[2026-06-28 05:27:24.473] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007224 http://purl.obolibrary.org/obo/GRO_0007222).
+[2026-06-28 05:27:24.480] Found 508 possible bad axioms.
+[2026-06-28 05:27:24.481] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007005 http://purl.obolibrary.org/obo/GRO_0007194).
+[2026-06-28 05:27:24.487] Found 507 possible bad axioms.
+[2026-06-28 05:27:24.487] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007090 http://purl.obolibrary.org/obo/GRO_0007094).
+[2026-06-28 05:27:24.493] Found 506 possible bad axioms.
+[2026-06-28 05:27:24.493] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007093 http://purl.obolibrary.org/obo/GRO_0007090).
+[2026-06-28 05:27:24.503] Found 505 possible bad axioms.
+[2026-06-28 05:27:24.504] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007042 http://purl.obolibrary.org/obo/GRO_0007046).
+[2026-06-28 05:27:24.509] Found 504 possible bad axioms.
+[2026-06-28 05:27:24.510] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/GRO_0007140)).
+[2026-06-28 05:27:24.515] Found 503 possible bad axioms.
+[2026-06-28 05:27:24.515] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007137 http://purl.obolibrary.org/obo/GRO_0007231).
+[2026-06-28 05:27:24.520] Found 502 possible bad axioms.
+[2026-06-28 05:27:24.520] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007045 http://purl.obolibrary.org/obo/GRO_0007141).
+[2026-06-28 05:27:24.524] Found 501 possible bad axioms.
+[2026-06-28 05:27:24.525] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007178 http://purl.obolibrary.org/obo/GRO_0007160).
+[2026-06-28 05:27:24.530] Found 500 possible bad axioms.
+[2026-06-28 05:27:24.530] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007082 http://purl.obolibrary.org/obo/GRO_0007085).
+[2026-06-28 05:27:24.542] Found 499 possible bad axioms.
+[2026-06-28 05:27:24.542] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007176 http://purl.obolibrary.org/obo/GRO_0007173).
+[2026-06-28 05:27:24.547] Found 498 possible bad axioms.
+[2026-06-28
+...[truncated]
+FAIL: attempt=6 seed=71134 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+progress: ontology=GRO-CPD attempt=6 success=0/100
+----- GRO-CPD attempt=7 seed=85334 at 2026-06-28 05:28:06 -----
+--- stdout ---
+{"seed":85334,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071","iic_values":{},"repair_runtimes_ms":{"A1":431,"A2":27714,"A3":1182,"B1":1029,"B2":7759}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=85334, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:28:06.803] Checking precondition...
+[2026-06-28 05:28:06.823] Starting the repair...
+[2026-06-28 05:28:06.838] Found 510 possible bad axioms.
+[2026-06-28 05:28:06.840] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007058 http://purl.obolibrary.org/obo/GRO_0007064).
+[2026-06-28 05:28:06.848] Found 509 possible bad axioms.
+[2026-06-28 05:28:06.850] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007214 http://purl.obolibrary.org/obo/GRO_0007159).
+[2026-06-28 05:28:06.858] Found 508 possible bad axioms.
+[2026-06-28 05:28:06.858] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007101 http://purl.obolibrary.org/obo/GRO_0007156).
+[2026-06-28 05:28:06.864] Found 507 possible bad axioms.
+[2026-06-28 05:28:06.865] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007171 http://purl.obolibrary.org/obo/GRO_0007137).
+[2026-06-28 05:28:06.870] Found 506 possible bad axioms.
+[2026-06-28 05:28:06.870] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007156 http://purl.obolibrary.org/obo/GRO_0007132).
+[2026-06-28 05:28:06.881] Found 505 possible bad axioms.
+[2026-06-28 05:28:06.881] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007141 http://purl.obolibrary.org/obo/GRO_0007001).
+[2026-06-28 05:28:06.887] Found 504 possible bad axioms.
+[2026-06-28 05:28:06.888] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007177 http://purl.obolibrary.org/obo/GRO_0007175).
+[2026-06-28 05:28:06.894] Found 503 possible bad axioms.
+[2026-06-28 05:28:06.894] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007214 owl:Nothing).
+[2026-06-28 05:28:06.899] Found 502 possible bad axioms.
+[2026-06-28 05:28:06.899] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007137 http://purl.obolibrary.org/obo/GRO_0007136).
+[2026-06-28 05:28:06.904] Found 501 possible bad axioms.
+[2026-06-28 05:28:06.904] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007000 http://purl.obolibrary.org/obo/GRO_0007139).
+[2026-06-28 05:28:06.909] Found 500 possible bad axioms.
+[2026-06-28 05:28:06.910] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007013 http://purl.obolibrary.org/obo/GRO_0007016).
+[2026-06-28 05:28:06.921] Found 499 possible bad axioms.
+[2026-06-28 05:28:06.922] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007207 http://purl.obolibrary.org/obo/GRO_0007158).
+[2026-06-28 05:28:06.926] Found 498 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=7 seed=85334 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+progress: ontology=GRO-CPD attempt=7 success=0/100
+----- GRO-CPD attempt=8 seed=99534 at 2026-06-28 05:28:45 -----
+--- stdout ---
+{"seed":99534,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071","iic_values":{},"repair_runtimes_ms":{"A1":393,"A2":27534,"A3":1061,"B1":1129,"B2":13117}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=99534, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:28:45.405] Checking precondition...
+[2026-06-28 05:28:45.425] Starting the repair...
+[2026-06-28 05:28:45.440] Found 510 possible bad axioms.
+[2026-06-28 05:28:45.442] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007093 http://purl.obolibrary.org/obo/GRO_0007094).
+[2026-06-28 05:28:45.450] Found 509 possible bad axioms.
+[2026-06-28 05:28:45.450] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007165 http://purl.obolibrary.org/obo/GRO_0007138).
+[2026-06-28 05:28:45.457] Found 508 possible bad axioms.
+[2026-06-28 05:28:45.458] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007208 http://purl.obolibrary.org/obo/GRO_0007158).
+[2026-06-28 05:28:45.464] Found 507 possible bad axioms.
+[2026-06-28 05:28:45.464] Selected the bad axiom SubClassOf(part_of owl:Nothing)).
+[2026-06-28 05:28:45.470] Found 506 possible bad axioms.
+[2026-06-28 05:28:45.470] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007217 http://purl.obolibrary.org/obo/GRO_0007212).
+[2026-06-28 05:28:45.479] Found 505 possible bad axioms.
+[2026-06-28 05:28:45.480] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007086 http://purl.obolibrary.org/obo/GRO_0007087).
+[2026-06-28 05:28:45.486] Found 504 possible bad axioms.
+[2026-06-28 05:28:45.486] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007010 http://purl.obolibrary.org/obo/GRO_0007007).
+[2026-06-28 05:28:45.491] Found 503 possible bad axioms.
+[2026-06-28 05:28:45.492] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007139 http://purl.obolibrary.org/obo/GRO_0007047).
+[2026-06-28 05:28:45.497] Found 502 possible bad axioms.
+[2026-06-28 05:28:45.497] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007058 http://purl.obolibrary.org/obo/GRO_0007059).
+[2026-06-28 05:28:45.502] Found 501 possible bad axioms.
+[2026-06-28 05:28:45.502] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007206 http://purl.obolibrary.org/obo/GRO_0007158).
+[2026-06-28 05:28:45.508] Found 500 possible bad axioms.
+[2026-06-28 05:28:45.508] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007236 http://purl.obolibrary.org/obo/GRO_0007235).
+[2026-06-28 05:28:45.520] Found 499 possible bad axioms.
+[2026-06-28 05:28:45.520] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007022 http://purl.obolibrary.org/obo/GRO_0007023).
+[2026-06-28 05:28:45.525] Found 498 possible bad axioms.
+[2026-06-28 05:28:45.525] Selected the bad
+...[truncated]
+FAIL: attempt=8 seed=99534 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+progress: ontology=GRO-CPD attempt=8 success=0/100
+----- GRO-CPD attempt=9 seed=113734 at 2026-06-28 05:29:29 -----
+--- stdout ---
+{"seed":113734,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071","iic_values":{},"repair_runtimes_ms":{"A1":618,"A2":27616,"A3":1183,"B1":967,"B2":12388}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=113734, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:29:29.676] Checking precondition...
+[2026-06-28 05:29:29.695] Starting the repair...
+[2026-06-28 05:29:29.708] Found 510 possible bad axioms.
+[2026-06-28 05:29:29.710] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007186 http://purl.obolibrary.org/obo/GRO_0007187).
+[2026-06-28 05:29:29.717] Found 509 possible bad axioms.
+[2026-06-28 05:29:29.717] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007007 http://purl.obolibrary.org/obo/GRO_0007025).
+[2026-06-28 05:29:29.726] Found 508 possible bad axioms.
+[2026-06-28 05:29:29.726] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007112 http://purl.obolibrary.org/obo/GRO_0007110).
+[2026-06-28 05:29:29.732] Found 507 possible bad axioms.
+[2026-06-28 05:29:29.732] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007139 http://purl.obolibrary.org/obo/GRO_0007001).
+[2026-06-28 05:29:29.739] Found 506 possible bad axioms.
+[2026-06-28 05:29:29.739] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007167 http://purl.obolibrary.org/obo/GRO_0007138).
+[2026-06-28 05:29:29.749] Found 505 possible bad axioms.
+[2026-06-28 05:29:29.749] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007162 http://purl.obolibrary.org/obo/GRO_0007165).
+[2026-06-28 05:29:29.753] Found 504 possible bad axioms.
+[2026-06-28 05:29:29.753] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007103 http://purl.obolibrary.org/obo/GRO_0007102).
+[2026-06-28 05:29:29.758] Found 503 possible bad axioms.
+[2026-06-28 05:29:29.759] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007002 http://purl.obolibrary.org/obo/GRO_0007199).
+[2026-06-28 05:29:29.764] Found 502 possible bad axioms.
+[2026-06-28 05:29:29.764] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007052 http://purl.obolibrary.org/obo/GRO_0007051).
+[2026-06-28 05:29:29.769] Found 501 possible bad axioms.
+[2026-06-28 05:29:29.769] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007164 http://purl.obolibrary.org/obo/GRO_0007165).
+[2026-06-28 05:29:29.774] Found 500 possible bad axioms.
+[2026-06-28 05:29:29.774] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007060 http://purl.obolibrary.org/obo/GRO_0007061).
+[2026-06-28 05:29:29.786] Found 499 possible bad axioms.
+[2026-06-28 05:29:29.786] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007196 http://purl.obolibrary.org/obo/GRO_0007157).
+[2026-06-28 05:29:29.792] Found 4
+...[truncated]
+FAIL: attempt=9 seed=113734 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+progress: ontology=GRO-CPD attempt=9 success=0/100
+----- GRO-CPD attempt=10 seed=127934 at 2026-06-28 05:30:12 -----
+--- stdout ---
+{"seed":127934,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069","iic_values":{},"repair_runtimes_ms":{"A1":401,"A2":27609,"A3":1120,"B1":1103,"B2":24993}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GRO-CPD.owl, seed=127934, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:30:12.964] Checking precondition...
+[2026-06-28 05:30:12.985] Starting the repair...
+[2026-06-28 05:30:12.999] Found 510 possible bad axioms.
+[2026-06-28 05:30:13.001] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007135 http://purl.obolibrary.org/obo/GRO_0007124).
+[2026-06-28 05:30:13.009] Found 509 possible bad axioms.
+[2026-06-28 05:30:13.009] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007212 http://purl.obolibrary.org/obo/GRO_0007159).
+[2026-06-28 05:30:13.016] Found 508 possible bad axioms.
+[2026-06-28 05:30:13.016] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007212 http://purl.obolibrary.org/obo/GRO_0007222).
+[2026-06-28 05:30:13.023] Found 507 possible bad axioms.
+[2026-06-28 05:30:13.023] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007025 http://purl.obolibrary.org/obo/GRO_0007002).
+[2026-06-28 05:30:13.028] Found 506 possible bad axioms.
+[2026-06-28 05:30:13.029] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007222 http://purl.obolibrary.org/obo/GRO_0007224).
+[2026-06-28 05:30:13.039] Found 505 possible bad axioms.
+[2026-06-28 05:30:13.039] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007011 http://purl.obolibrary.org/obo/GRO_0007002).
+[2026-06-28 05:30:13.045] Found 504 possible bad axioms.
+[2026-06-28 05:30:13.045] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/GRO_0007140)).
+[2026-06-28 05:30:13.051] Found 503 possible bad axioms.
+[2026-06-28 05:30:13.051] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007184 http://purl.obolibrary.org/obo/GRO_0007179).
+[2026-06-28 05:30:13.056] Found 502 possible bad axioms.
+[2026-06-28 05:30:13.057] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007196 owl:Nothing).
+[2026-06-28 05:30:13.061] Found 501 possible bad axioms.
+[2026-06-28 05:30:13.061] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007194 http://purl.obolibrary.org/obo/GRO_0007232).
+[2026-06-28 05:30:13.066] Found 500 possible bad axioms.
+[2026-06-28 05:30:13.067] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007115 http://purl.obolibrary.org/obo/GRO_0007114).
+[2026-06-28 05:30:13.078] Found 499 possible bad axioms.
+[2026-06-28 05:30:13.078] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GRO_0007129 http://purl.obolibrary.org/obo/GRO_0007124).
+[2026-06-28 05:30:13.083] Found 498 possible bad axioms.
+[2026-06-28 05:30:13.083] Selected the ba
+...[truncated]
+FAIL: attempt=10 seed=127934 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+progress: ontology=GRO-CPD attempt=10 success=0/100
+=== ABORTED GRO-CPD after 10 consecutive failures at 2026-06-28 05:31:09 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for GRO-CPD - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=134 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+  attempt=2 seed=14334 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+  attempt=3 seed=28534 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+  attempt=4 seed=42734 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+  attempt=5 seed=56934 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+  attempt=6 seed=71134 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+  attempt=7 seed=85334 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+  attempt=8 seed=99534 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+  attempt=9 seed=113734 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GRO_0007071
+  attempt=10 seed=127934 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GRO_0007071 ⊑ GRO_0007069
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

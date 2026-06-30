@@ -1,0 +1,1067 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-GECKO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-GECKO.csv
+
+=== Starting sequential trials for GECKO at 2026-06-26 17:22:59 ===
+----- GECKO attempt=1 seed=84 at 2026-06-26 17:22:59 -----
+--- stdout ---
+{"seed":84,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":115,"A2":6041,"A3":525,"B1":449,"B2":2580}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=84, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:22:59.479] Checking precondition...
+[2026-06-26 17:22:59.494] Starting the repair...
+[2026-06-26 17:22:59.502] Found 195 possible bad axioms.
+[2026-06-26 17:22:59.503] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PATO_0000011 http://purl.obolibrary.org/obo/BFO_0000019).
+[2026-06-26 17:22:59.507] Found 194 possible bad axioms.
+[2026-06-26 17:22:59.508] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002623 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:22:59.511] Found 193 possible bad axioms.
+[2026-06-26 17:22:59.512] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000006 http://purl.obolibrary.org/obo/GECKO_0000005).
+[2026-06-26 17:22:59.520] Found 192 possible bad axioms.
+[2026-06-26 17:22:59.521] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000011 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:22:59.524] Found 191 possible bad axioms.
+[2026-06-26 17:22:59.525] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0000052 http://purl.obolibrary.org/obo/PCO_0000000) http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:22:59.529] Found 190 possible bad axioms.
+[2026-06-26 17:22:59.529] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000008 http://purl.obolibrary.org/obo/GECKO_0000106).
+[2026-06-26 17:22:59.533] Found 189 possible bad axioms.
+[2026-06-26 17:22:59.533] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000008 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/PCO_0000000)).
+[2026-06-26 17:22:59.538] Found 188 possible bad axioms.
+[2026-06-26 17:22:59.538] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000121 http://purl.obolibrary.org/obo/GO_0008150).
+[2026-06-26 17:22:59.543] Found 187 possible bad axioms.
+[2026-06-26 17:22:59.544] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000042 http://purl.obolibrary.org/obo/OBI_0000537).
+[2026-06-26 17:22:59.550] Found 186 possible bad axioms.
+[2026-06-26 17:22:59.550] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000308 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:22:59.553] Found 185 possible bad axioms.
+[2026-06-26 17:22:59.553] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000132 http://purl.obolibrary.org/obo/OGMS_0000015).
+[2026-06-26 17:22:59.560] Found 184 possible bad axioms.
+[2026-06-26 17:22:59.561] Sele
+...[truncated]
+FAIL: attempt=1 seed=84 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=1 success=0/100
+----- GECKO attempt=2 seed=14284 at 2026-06-26 17:23:09 -----
+--- stdout ---
+{"seed":14284,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":37,"A2":6164,"A3":559,"B1":420,"B2":4520,"B3":1368}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=14284, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:23:09.627] Checking precondition...
+[2026-06-26 17:23:09.642] Starting the repair...
+[2026-06-26 17:23:09.650] Found 195 possible bad axioms.
+[2026-06-26 17:23:09.651] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000032 http://purl.obolibrary.org/obo/OBI_0000070).
+[2026-06-26 17:23:09.656] Found 194 possible bad axioms.
+[2026-06-26 17:23:09.656] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000073 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:23:09.660] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 17:23:09.661] Checking precondition...
+[2026-06-26 17:23:09.674] Starting the repair...
+[2026-06-26 17:23:15.823] Found 3 possible bad axioms.
+[2026-06-26 17:23:15.823] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/GECKO_0000073).
+[2026-06-26 17:23:15.824] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 17:23:15.826] Checking precondition...
+[2026-06-26 17:23:15.829] Starting the repair...
+[2026-06-26 17:23:15.841] Selected a reference ontology with 351 axioms.
+[2026-06-26 17:23:16.168] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000300 owl:Nothing).
+[2026-06-26 17:23:16.380] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000300 http://purl.obolibrary.org/obo/GECKO_0000114).
+[2026-06-26 17:23:16.384] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 17:23:16.385] Checking precondition...
+[2026-06-26 17:23:16.387] Starting the repair...
+[2026-06-26 17:23:16.400] Selected a reference ontology with 351 axioms.
+[2026-06-26 17:23:16.704] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/GECKO_0000073).
+[2026-06-26 17:23:16.802] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/BFO_0000029) http://purl.obolibrary.org/obo/GECKO_0000073).
+[2026-06-26 17:23:16.804] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 17:23:16.806] Checking precondition...
+[2026-06-26 17:23:16.808] Starting the repair...
+[2026-06-26 17:23:16.820] Selected a reference ontology with 351 axioms.
+[2026-06-26 17:23:17.122] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000300 owl:Nothing).
+[PowerIndexWeakerAxiomSelector] Scoring 98 candidate weakenings for IAO_0000300 ⊑ ⊥
+[PowerIndexWeakerAxiomSelector] Selected weaker axi
+...[truncated]
+FAIL: attempt=2 seed=14284 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=2 success=0/100
+----- GECKO attempt=3 seed=28484 at 2026-06-26 17:23:22 -----
+--- stdout ---
+{"seed":28484,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":134,"A2":6133,"A3":535,"B1":441,"B2":7939,"B3":1178,"B4":205,"B5":1346,"B6":881}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=28484, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:23:23.153] Checking precondition...
+[2026-06-26 17:23:23.170] Starting the repair...
+[2026-06-26 17:23:23.177] Found 195 possible bad axioms.
+[2026-06-26 17:23:23.179] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:23:23.183] Found 194 possible bad axioms.
+[2026-06-26 17:23:23.184] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000115 http://purl.obolibrary.org/obo/OGMS_0000015).
+[2026-06-26 17:23:23.187] Found 193 possible bad axioms.
+[2026-06-26 17:23:23.187] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/EUPATH_0000147).
+[2026-06-26 17:23:23.196] Found 192 possible bad axioms.
+[2026-06-26 17:23:23.196] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0002081 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:23:23.200] Found 191 possible bad axioms.
+[2026-06-26 17:23:23.201] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000061 http://purl.obolibrary.org/obo/PATO_0001995).
+[2026-06-26 17:23:23.206] Found 190 possible bad axioms.
+[2026-06-26 17:23:23.206] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0021178 http://purl.obolibrary.org/obo/MONDO_0005151).
+[2026-06-26 17:23:23.210] Found 189 possible bad axioms.
+[2026-06-26 17:23:23.210] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000300 http://purl.obolibrary.org/obo/GECKO_0000073).
+[2026-06-26 17:23:23.214] Found 188 possible bad axioms.
+[2026-06-26 17:23:23.214] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000131 http://purl.obolibrary.org/obo/BFO_0000141).
+[2026-06-26 17:23:23.217] Found 187 possible bad axioms.
+[2026-06-26 17:23:23.217] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000308 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:23:23.220] Found 186 possible bad axioms.
+[2026-06-26 17:23:23.220] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OMRSE_00000501 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/PCO_0000000)).
+[2026-06-26 17:23:23.223] Found 185 possible bad axioms.
+[2026-06-26 17:23:23.223] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0010032 http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 17:23:23.231] Found 184 possible bad axioms.
+[2026-06-26 17:23:23.231] Selected the bad axiom SubClassOf(http://purl.obolibrary.
+...[truncated]
+FAIL: attempt=3 seed=28484 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=3 success=0/100
+----- GECKO attempt=4 seed=42684 at 2026-06-26 17:23:42 -----
+--- stdout ---
+{"seed":42684,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.039022181982797645,"B1_vs_A2":0.7702564102564102,"B1_vs_A3":0.3505917159763314,"B2_vs_A1":0.03830806065442937,"B2_vs_A2":1.0,"B2_vs_A3":0.2010014306151645,"B3_vs_A1":0.04071753986332574,"B3_vs_A2":1.0,"B3_vs_A3":0.4754018509498295,"B4_vs_A1":1.0,"B4_vs_A2":0.9838810154181592,"B4_vs_A3":0.9476813317479191,"B5_vs_A1":1.0,"B5_vs_A2":0.9903629938965628,"B5_vs_A3":0.963891806722689,"B6_vs_A1":1.0,"B6_vs_A2":0.9903629938965628,"B6_vs_A3":0.963891806722689,"B7_vs_A1":1.0,"B7_vs_A2":0.981973203410475,"B7_vs_A3":0.9412393162393162,"B8_vs_A1":1.0,"B8_vs_A2":0.9903629938965628,"B8_vs_A3":0.963891806722689,"B9_vs_A1":1.0,"B9_vs_A2":0.9903629938965628,"B9_vs_A3":0.963891806722689},"repair_runtimes_ms":{"A1":95,"A2":6059,"A3":525,"B1":454,"B2":4580,"B3":5431,"B4":200,"B5":624,"B6":402,"B7":287,"B8":1481,"B9":456}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=42684, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:23:42.436] Checking precondition...
+[2026-06-26 17:23:42.452] Starting the repair...
+[2026-06-26 17:23:42.459] Found 195 possible bad axioms.
+[2026-06-26 17:23:42.461] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000016 http://purl.obolibrary.org/obo/BFO_0000017).
+[2026-06-26 17:23:42.465] Found 194 possible bad axioms.
+[2026-06-26 17:23:42.466] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000612 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:23:42.469] Found 193 possible bad axioms.
+[2026-06-26 17:23:42.469] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000032 http://purl.obolibrary.org/obo/OBI_0000070).
+[2026-06-26 17:23:42.478] Found 192 possible bad axioms.
+[2026-06-26 17:23:42.478] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005151 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:23:42.482] Found 191 possible bad axioms.
+[2026-06-26 17:23:42.482] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000011 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:23:42.486] Found 190 possible bad axioms.
+[2026-06-26 17:23:42.486] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000141 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:23:42.490] Found 189 possible bad axioms.
+[2026-06-26 17:23:42.490] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000147 http://purl.obolibrary.org/obo/GECKO_0000128).
+[2026-06-26 17:23:42.494] Found 188 possible bad axioms.
+[2026-06-26 17:23:42.494] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000294 http://purl.obolibrary.org/obo/CMO_0000001).
+[2026-06-26 17:23:42.497] Found 187 possible bad axioms.
+[2026-06-26 17:23:42.497] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0008150 http://purl.obolibrary.org/obo/BFO_0000015).
+[2026-06-26 17:23:42.500] Found 186 possible bad axioms.
+[2026-06-26 17:23:42.500] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000019 http://purl.obolibrary.org/obo/UBERON_0000178).
+[2026-06-26 17:23:42.503] Found 185 possible bad axioms.
+[2026-06-26 17:23:42.503] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0004992 http://purl.obolibrary.org/obo/MONDO_0004335).
+[2026-06-26 17:23:42.510] Found 184 possible bad axioms.
+[2026-06-26 17:23:42.511] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/STATO_0000039 http://purl.obolibrary.org/obo/IAO_0000109).
+[2026-0
+...[truncated]
+SUCCESS: attempt=4 seed=42684 success_count=1/100
+progress: ontology=GECKO attempt=4 success=1/100
+----- GECKO attempt=5 seed=56884 at 2026-06-26 17:24:05 -----
+--- stdout ---
+{"seed":56884,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":222,"A2":6187,"A3":540,"B1":448,"B2":2792}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=56884, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:24:05.680] Checking precondition...
+[2026-06-26 17:24:05.697] Starting the repair...
+[2026-06-26 17:24:05.705] Found 195 possible bad axioms.
+[2026-06-26 17:24:05.706] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000029 http://purl.obolibrary.org/obo/BFO_0000141).
+[2026-06-26 17:24:05.710] Found 194 possible bad axioms.
+[2026-06-26 17:24:05.710] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000065 http://purl.obolibrary.org/obo/PATO_0001995).
+[2026-06-26 17:24:05.714] Found 193 possible bad axioms.
+[2026-06-26 17:24:05.714] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PDRO_0010022 http://purl.obolibrary.org/obo/IAO_0000033).
+[2026-06-26 17:24:05.722] Found 192 possible bad axioms.
+[2026-06-26 17:24:05.722] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000612 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:24:05.727] Found 191 possible bad axioms.
+[2026-06-26 17:24:05.727] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000105 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026-06-26 17:24:05.731] Found 190 possible bad axioms.
+[2026-06-26 17:24:05.731] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:24:05.735] Found 189 possible bad axioms.
+[2026-06-26 17:24:05.735] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/EUPATH_0000147).
+[2026-06-26 17:24:05.739] Found 188 possible bad axioms.
+[2026-06-26 17:24:05.739] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/STATO_0000039 http://purl.obolibrary.org/obo/STATO_0000047).
+[2026-06-26 17:24:05.742] Found 187 possible bad axioms.
+[2026-06-26 17:24:05.743] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000121 http://purl.obolibrary.org/obo/GO_0008150).
+[2026-06-26 17:24:05.745] Found 186 possible bad axioms.
+[2026-06-26 17:24:05.746] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000009 http://purl.obolibrary.org/obo/BFO_0000019).
+[2026-06-26 17:24:05.748] Found 185 possible bad axioms.
+[2026-06-26 17:24:05.749] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000033 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:24:05.757] Found 184 possible bad axioms.
+[2026-06-26 17:24:05.757] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000026 http://purl.obolibrary.org/obo/OBI_0302893).
+[2026-06-26
+...[truncated]
+FAIL: attempt=5 seed=56884 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+progress: ontology=GECKO attempt=5 success=1/100
+----- GECKO attempt=6 seed=71084 at 2026-06-26 17:24:15 -----
+--- stdout ---
+{"seed":71084,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":292,"A2":6042,"A3":465,"B1":432,"B2":7905,"B3":745,"B4":183,"B5":604,"B6":395,"B7":220,"B8":970}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=71084, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:24:16.325] Checking precondition...
+[2026-06-26 17:24:16.340] Starting the repair...
+[2026-06-26 17:24:16.348] Found 195 possible bad axioms.
+[2026-06-26 17:24:16.350] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000374 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:24:16.354] Found 194 possible bad axioms.
+[2026-06-26 17:24:16.354] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005550 http://purl.obolibrary.org/obo/MONDO_0004992).
+[2026-06-26 17:24:16.358] Found 193 possible bad axioms.
+[2026-06-26 17:24:16.358] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000064 http://purl.obolibrary.org/obo/BFO_0000029).
+[2026-06-26 17:24:16.366] Found 192 possible bad axioms.
+[2026-06-26 17:24:16.366] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000143 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:24:16.371] Found 191 possible bad axioms.
+[2026-06-26 17:24:16.371] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0002118 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:24:16.375] Found 190 possible bad axioms.
+[2026-06-26 17:24:16.375] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0000052 http://purl.obolibrary.org/obo/PCO_0000000) http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:24:16.380] Found 189 possible bad axioms.
+[2026-06-26 17:24:16.380] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005550 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:24:16.384] Found 188 possible bad axioms.
+[2026-06-26 17:24:16.384] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002415 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:24:16.387] Found 187 possible bad axioms.
+[2026-06-26 17:24:16.387] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/GECKO_0000136).
+[2026-06-26 17:24:16.389] Found 186 possible bad axioms.
+[2026-06-26 17:24:16.390] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0020000 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:24:16.392] Found 185 possible bad axioms.
+[2026-06-26 17:24:16.392] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000011 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:24:16.399] Found 184 possible bad axioms.
+[2026-06-26 17:24:16.400] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/o
+...[truncated]
+FAIL: attempt=6 seed=71084 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=6 success=1/100
+----- GECKO attempt=7 seed=85284 at 2026-06-26 17:24:34 -----
+--- stdout ---
+{"seed":85284,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":120,"A2":6132,"A3":480,"B1":398,"B2":2771}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=85284, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:24:35.041] Checking precondition...
+[2026-06-26 17:24:35.056] Starting the repair...
+[2026-06-26 17:24:35.064] Found 195 possible bad axioms.
+[2026-06-26 17:24:35.066] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000012 http://purl.obolibrary.org/obo/CMO_0000021).
+[2026-06-26 17:24:35.070] Found 194 possible bad axioms.
+[2026-06-26 17:24:35.070] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000134 http://purl.obolibrary.org/obo/GECKO_0000141).
+[2026-06-26 17:24:35.073] Found 193 possible bad axioms.
+[2026-06-26 17:24:35.074] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000010 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:24:35.081] Found 192 possible bad axioms.
+[2026-06-26 17:24:35.082] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000104 http://purl.obolibrary.org/obo/IAO_0000033).
+[2026-06-26 17:24:35.086] Found 191 possible bad axioms.
+[2026-06-26 17:24:35.086] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002118 http://purl.obolibrary.org/obo/OBI_0000435).
+[2026-06-26 17:24:35.090] Found 190 possible bad axioms.
+[2026-06-26 17:24:35.091] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002117 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:24:35.094] Found 189 possible bad axioms.
+[2026-06-26 17:24:35.094] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000178 http://purl.obolibrary.org/obo/UBERON_0000463).
+[2026-06-26 17:24:35.098] Found 188 possible bad axioms.
+[2026-06-26 17:24:35.099] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000435 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:24:35.102] Found 187 possible bad axioms.
+[2026-06-26 17:24:35.102] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000185 http://purl.obolibrary.org/obo/OBI_0000070).
+[2026-06-26 17:24:35.105] Found 186 possible bad axioms.
+[2026-06-26 17:24:35.105] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000124 http://purl.obolibrary.org/obo/GECKO_0000091).
+[2026-06-26 17:24:35.107] Found 185 possible bad axioms.
+[2026-06-26 17:24:35.108] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005550 http://purl.obolibrary.org/obo/MONDO_0004992).
+[2026-06-26 17:24:35.115] Found 184 possible bad axioms.
+[2026-06-26 17:24:35.115] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PATO_0000047 http://purl.obolibrary.org/obo/PATO_0001995).
+[2026-06
+...[truncated]
+FAIL: attempt=7 seed=85284 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+progress: ontology=GECKO attempt=7 success=1/100
+----- GECKO attempt=8 seed=99484 at 2026-06-26 17:24:45 -----
+--- stdout ---
+{"seed":99484,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":63,"A2":6173,"A3":565,"B1":425,"B2":1218,"B3":1142,"B4":133,"B5":1406}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=99484, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:24:45.389] Checking precondition...
+[2026-06-26 17:24:45.405] Starting the repair...
+[2026-06-26 17:24:45.412] Found 195 possible bad axioms.
+[2026-06-26 17:24:45.413] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000131 http://purl.obolibrary.org/obo/BFO_0000141).
+[2026-06-26 17:24:45.418] Found 194 possible bad axioms.
+[2026-06-26 17:24:45.418] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000114 http://purl.obolibrary.org/obo/GECKO_0000113).
+[2026-06-26 17:24:45.421] Found 193 possible bad axioms.
+[2026-06-26 17:24:45.422] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000109 http://purl.obolibrary.org/obo/IAO_0000027).
+[2026-06-26 17:24:45.431] Found 192 possible bad axioms.
+[2026-06-26 17:24:45.431] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000064 http://purl.obolibrary.org/obo/BFO_0000029).
+[2026-06-26 17:24:45.435] Found 191 possible bad axioms.
+[2026-06-26 17:24:45.435] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000010 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:24:45.440] Found 190 possible bad axioms.
+[2026-06-26 17:24:45.440] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OMRSE_00000501 http://purl.obolibrary.org/obo/IAO_0000027).
+[2026-06-26 17:24:45.443] Found 189 possible bad axioms.
+[2026-06-26 17:24:45.443] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/GECKO_0000073).
+[2026-06-26 17:24:45.447] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 17:24:45.448] Checking precondition...
+[2026-06-26 17:24:45.455] Starting the repair...
+[2026-06-26 17:24:51.620] Found 3 possible bad axioms.
+[2026-06-26 17:24:51.621] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000300 owl:Nothing).
+[2026-06-26 17:24:51.621] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 17:24:51.622] Checking precondition...
+[2026-06-26 17:24:51.625] Starting the repair...
+[2026-06-26 17:24:51.637] Selected a reference ontology with 351 axioms.
+[2026-06-26 17:24:51.959] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000300 owl:Nothing).
+[2026-06-26 17:24:52.184] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000300 http://purl.obolibrary.org/obo/GECKO_0000047).
+[2026-06-26 17:24:52.187] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 17:24:52.188] Checking precon
+...[truncated]
+FAIL: attempt=8 seed=99484 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=8 success=1/100
+----- GECKO attempt=9 seed=113684 at 2026-06-26 17:24:56 -----
+--- stdout ---
+{"seed":113684,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":96,"A2":6061,"A3":525,"B1":457,"B2":3817}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=113684, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:24:56.956] Checking precondition...
+[2026-06-26 17:24:56.975] Starting the repair...
+[2026-06-26 17:24:56.983] Found 195 possible bad axioms.
+[2026-06-26 17:24:56.985] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000143 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:24:56.989] Found 194 possible bad axioms.
+[2026-06-26 17:24:56.989] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000020 http://purl.obolibrary.org/obo/BFO_0000019).
+[2026-06-26 17:24:56.993] Found 193 possible bad axioms.
+[2026-06-26 17:24:56.993] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MF_0000041 http://purl.obolibrary.org/obo/BFO_0000016).
+[2026-06-26 17:24:57.001] Found 192 possible bad axioms.
+[2026-06-26 17:24:57.001] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000040 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:24:57.005] Found 191 possible bad axioms.
+[2026-06-26 17:24:57.005] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0500000 http://purl.obolibrary.org/obo/IAO_0000104).
+[2026-06-26 17:24:57.008] Found 190 possible bad axioms.
+[2026-06-26 17:24:57.009] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000137 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:24:57.013] Found 189 possible bad axioms.
+[2026-06-26 17:24:57.013] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000105 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026-06-26 17:24:57.016] Found 188 possible bad axioms.
+[2026-06-26 17:24:57.017] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000063 http://purl.obolibrary.org/obo/GECKO_0000064).
+[2026-06-26 17:24:57.019] Found 187 possible bad axioms.
+[2026-06-26 17:24:57.019] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000104 http://purl.obolibrary.org/obo/IAO_0000033).
+[2026-06-26 17:24:57.022] Found 186 possible bad axioms.
+[2026-06-26 17:24:57.022] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0002051 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:24:57.024] Found 185 possible bad axioms.
+[2026-06-26 17:24:57.025] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005550 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:24:57.032] Found 184 possible bad axioms.
+[2026-06-26 17:24:57.033] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000121 http://purl.obolibrary.org/obo/GO_0008150).
+[2026-0
+...[truncated]
+FAIL: attempt=9 seed=113684 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=9 success=1/100
+----- GECKO attempt=10 seed=127884 at 2026-06-26 17:25:07 -----
+--- stdout ---
+{"seed":127884,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":229,"A2":6003,"A3":458,"B1":463,"B2":7441}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=127884, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:25:08.364] Checking precondition...
+[2026-06-26 17:25:08.380] Starting the repair...
+[2026-06-26 17:25:08.387] Found 195 possible bad axioms.
+[2026-06-26 17:25:08.389] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000065 http://purl.obolibrary.org/obo/PATO_0001995).
+[2026-06-26 17:25:08.393] Found 194 possible bad axioms.
+[2026-06-26 17:25:08.394] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000113 http://purl.obolibrary.org/obo/IAO_0000612).
+[2026-06-26 17:25:08.397] Found 193 possible bad axioms.
+[2026-06-26 17:25:08.398] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000106 http://purl.obolibrary.org/obo/GECKO_0000044).
+[2026-06-26 17:25:08.406] Found 192 possible bad axioms.
+[2026-06-26 17:25:08.406] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000042 http://purl.obolibrary.org/obo/OBI_0002117).
+[2026-06-26 17:25:08.410] Found 191 possible bad axioms.
+[2026-06-26 17:25:08.410] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0004995 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:25:08.414] Found 190 possible bad axioms.
+[2026-06-26 17:25:08.415] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005550 http://purl.obolibrary.org/obo/MONDO_0004992).
+[2026-06-26 17:25:08.418] Found 189 possible bad axioms.
+[2026-06-26 17:25:08.418] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000115 http://purl.obolibrary.org/obo/GECKO_0000132).
+[2026-06-26 17:25:08.422] Found 188 possible bad axioms.
+[2026-06-26 17:25:08.422] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0001271 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:25:08.426] Found 187 possible bad axioms.
+[2026-06-26 17:25:08.426] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000142 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:25:08.428] Found 186 possible bad axioms.
+[2026-06-26 17:25:08.429] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000015 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:25:08.431] Found 185 possible bad axioms.
+[2026-06-26 17:25:08.431] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000124 http://purl.obolibrary.org/obo/GECKO_0000091).
+[2026-06-26 17:25:08.438] Found 184 possible bad axioms.
+[2026-06-26 17:25:08.439] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005570 http://purl.obolibrary.org/obo/MONDO_0000001
+...[truncated]
+FAIL: attempt=10 seed=127884 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=10 success=1/100
+----- GECKO attempt=11 seed=142084 at 2026-06-26 17:25:23 -----
+--- stdout ---
+{"seed":142084,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":366,"A2":5958,"A3":514,"B1":698,"B2":4108}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=142084, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:25:23.441] Checking precondition...
+[2026-06-26 17:25:23.459] Starting the repair...
+[2026-06-26 17:25:23.465] Found 195 possible bad axioms.
+[2026-06-26 17:25:23.467] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005084 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:25:23.471] Found 194 possible bad axioms.
+[2026-06-26 17:25:23.472] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000065 http://purl.obolibrary.org/obo/PATO_0001995).
+[2026-06-26 17:25:23.475] Found 193 possible bad axioms.
+[2026-06-26 17:25:23.475] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000012 http://purl.obolibrary.org/obo/CMO_0000106).
+[2026-06-26 17:25:23.483] Found 192 possible bad axioms.
+[2026-06-26 17:25:23.484] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005570 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:25:23.488] Found 191 possible bad axioms.
+[2026-06-26 17:25:23.488] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000310 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:25:23.491] Found 190 possible bad axioms.
+[2026-06-26 17:25:23.492] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000294 http://purl.obolibrary.org/obo/CMO_0000001).
+[2026-06-26 17:25:23.495] Found 189 possible bad axioms.
+[2026-06-26 17:25:23.495] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000029 http://purl.obolibrary.org/obo/BFO_0000141).
+[2026-06-26 17:25:23.499] Found 188 possible bad axioms.
+[2026-06-26 17:25:23.499] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000134 http://purl.obolibrary.org/obo/GECKO_0000141).
+[2026-06-26 17:25:23.503] Found 187 possible bad axioms.
+[2026-06-26 17:25:23.503] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/STATO_0000039 http://purl.obolibrary.org/obo/STATO_0000047).
+[2026-06-26 17:25:23.506] Found 186 possible bad axioms.
+[2026-06-26 17:25:23.506] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000033 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:25:23.509] Found 185 possible bad axioms.
+[2026-06-26 17:25:23.509] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000094 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026-06-26 17:25:23.516] Found 184 possible bad axioms.
+[2026-06-26 17:25:23.518] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000125 http://purl.obolibrary.org/obo/GECKO_0000091).
+[2026-06-26 
+...[truncated]
+FAIL: attempt=11 seed=142084 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+progress: ontology=GECKO attempt=11 success=1/100
+----- GECKO attempt=12 seed=156284 at 2026-06-26 17:25:35 -----
+--- stdout ---
+{"seed":156284,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":255,"A2":6075,"A3":452,"B1":465,"B2":7535}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=156284, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:25:35.528] Checking precondition...
+[2026-06-26 17:25:35.544] Starting the repair...
+[2026-06-26 17:25:35.553] Found 195 possible bad axioms.
+[2026-06-26 17:25:35.554] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PDRO_0000024 http://purl.obolibrary.org/obo/IAO_0000310).
+[2026-06-26 17:25:35.559] Found 194 possible bad axioms.
+[2026-06-26 17:25:35.559] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000130 http://purl.obolibrary.org/obo/GECKO_0000094).
+[2026-06-26 17:25:35.562] Found 193 possible bad axioms.
+[2026-06-26 17:25:35.563] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000009 http://purl.obolibrary.org/obo/BFO_0000019).
+[2026-06-26 17:25:35.571] Found 192 possible bad axioms.
+[2026-06-26 17:25:35.571] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000129 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:25:35.575] Found 191 possible bad axioms.
+[2026-06-26 17:25:35.575] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000065 http://purl.obolibrary.org/obo/GECKO_0000060).
+[2026-06-26 17:25:35.580] Found 190 possible bad axioms.
+[2026-06-26 17:25:35.580] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0001624 http://purl.obolibrary.org/obo/OBI_0000070).
+[2026-06-26 17:25:35.584] Found 189 possible bad axioms.
+[2026-06-26 17:25:35.584] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000072 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:25:35.587] Found 188 possible bad axioms.
+[2026-06-26 17:25:35.587] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000096 http://purl.obolibrary.org/obo/GO_0008150).
+[2026-06-26 17:25:35.590] Found 187 possible bad axioms.
+[2026-06-26 17:25:35.591] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000138 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:25:35.593] Found 186 possible bad axioms.
+[2026-06-26 17:25:35.593] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/STATO_0000047 http://purl.obolibrary.org/obo/IAO_0000109).
+[2026-06-26 17:25:35.596] Found 185 possible bad axioms.
+[2026-06-26 17:25:35.596] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000026 http://purl.obolibrary.org/obo/OBI_0302893).
+[2026-06-26 17:25:35.604] Found 184 possible bad axioms.
+[2026-06-26 17:25:35.605] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005550 http://purl.obolibrary.org/obo/MONDO_0004992).
+[2026
+...[truncated]
+FAIL: attempt=12 seed=156284 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=12 success=1/100
+----- GECKO attempt=13 seed=170484 at 2026-06-26 17:25:50 -----
+--- stdout ---
+{"seed":170484,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":188,"A2":6045,"A3":529,"B1":414,"B2":1222,"B3":1228,"B4":182,"B5":667,"B6":939}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=170484, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:25:50.772] Checking precondition...
+[2026-06-26 17:25:50.789] Starting the repair...
+[2026-06-26 17:25:50.797] Found 195 possible bad axioms.
+[2026-06-26 17:25:50.798] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000142 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:25:50.803] Found 194 possible bad axioms.
+[2026-06-26 17:25:50.803] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000310 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:25:50.807] Found 193 possible bad axioms.
+[2026-06-26 17:25:50.807] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000042 http://purl.obolibrary.org/obo/OBI_0000537).
+[2026-06-26 17:25:50.815] Found 192 possible bad axioms.
+[2026-06-26 17:25:50.816] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000000 http://purl.obolibrary.org/obo/IAO_0000109).
+[2026-06-26 17:25:50.820] Found 191 possible bad axioms.
+[2026-06-26 17:25:50.820] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0001988 http://purl.obolibrary.org/obo/UBERON_0000463).
+[2026-06-26 17:25:50.824] Found 190 possible bad axioms.
+[2026-06-26 17:25:50.824] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000042 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:25:50.827] Found 189 possible bad axioms.
+[2026-06-26 17:25:50.828] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000003 http://purl.obolibrary.org/obo/CMO_0000001).
+[2026-06-26 17:25:50.831] Found 188 possible bad axioms.
+[2026-06-26 17:25:50.831] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000451 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:25:50.834] Found 187 possible bad axioms.
+[2026-06-26 17:25:50.835] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000134 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:25:50.837] Found 186 possible bad axioms.
+[2026-06-26 17:25:50.837] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0001624 http://purl.obolibrary.org/obo/OBI_0000070).
+[2026-06-26 17:25:50.840] Found 185 possible bad axioms.
+[2026-06-26 17:25:50.840] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000115 http://purl.obolibrary.org/obo/GECKO_0000132).
+[2026-06-26 17:25:50.848] Found 184 possible bad axioms.
+[2026-06-26 17:25:50.849] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000044 http://purl.obolibrary.org/obo/STATO_0000047).
+[202
+...[truncated]
+FAIL: attempt=13 seed=170484 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=13 success=1/100
+----- GECKO attempt=14 seed=184684 at 2026-06-26 17:26:02 -----
+--- stdout ---
+{"seed":184684,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.9193548387096774,"B1_vs_A2":0.8927805575411007,"B1_vs_A3":0.150294947422416,"B2_vs_A1":1.0,"B2_vs_A2":1.0,"B2_vs_A3":0.48061211256646347,"B3_vs_A1":0.9906402096593037,"B3_vs_A2":0.9903629938965628,"B3_vs_A3":0.8101512933138116,"B4_vs_A1":0.9823403070559223,"B4_vs_A2":0.9816680429397192,"B4_vs_A3":0.7632639355271995,"B5_vs_A1":0.9906402096593037,"B5_vs_A2":0.9903629938965628,"B5_vs_A3":0.8101512933138116,"B6_vs_A1":0.9906402096593037,"B6_vs_A2":0.9903629938965628,"B6_vs_A3":0.8101512933138116,"B7_vs_A1":0.9844396000902053,"B7_vs_A2":0.9838810154181592,"B7_vs_A3":0.7749648382559775,"B8_vs_A1":0.9906402096593037,"B8_vs_A2":0.9903629938965628,"B8_vs_A3":0.8101512933138116,"B9_vs_A1":0.9906402096593037,"B9_vs_A2":0.9903629938965628,"B9_vs_A3":0.8101512933138116},"repair_runtimes_ms":{"A1":292,"A2":6039,"A3":494,"B1":408,"B2":5179,"B3":704,"B4":161,"B5":1329,"B6":424,"B7":221,"B8":813,"B9":777}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=184684, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:26:02.642] Checking precondition...
+[2026-06-26 17:26:02.658] Starting the repair...
+[2026-06-26 17:26:02.665] Found 195 possible bad axioms.
+[2026-06-26 17:26:02.667] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005046 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:02.671] Found 194 possible bad axioms.
+[2026-06-26 17:26:02.671] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005039 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:02.675] Found 193 possible bad axioms.
+[2026-06-26 17:26:02.675] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0000001 http://purl.obolibrary.org/obo/BFO_0000016).
+[2026-06-26 17:26:02.683] Found 192 possible bad axioms.
+[2026-06-26 17:26:02.683] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000032 http://purl.obolibrary.org/obo/OBI_0000185).
+[2026-06-26 17:26:02.687] Found 191 possible bad axioms.
+[2026-06-26 17:26:02.687] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000015 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:26:02.690] Found 190 possible bad axioms.
+[2026-06-26 17:26:02.691] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000065 http://purl.obolibrary.org/obo/PATO_0001995).
+[2026-06-26 17:26:02.694] Found 189 possible bad axioms.
+[2026-06-26 17:26:02.694] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PATO_0001995 http://purl.obolibrary.org/obo/BFO_0000019).
+[2026-06-26 17:26:02.698] Found 188 possible bad axioms.
+[2026-06-26 17:26:02.698] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000030 http://purl.obolibrary.org/obo/GECKO_0000073).
+[2026-06-26 17:26:02.701] Found 187 possible bad axioms.
+[2026-06-26 17:26:02.701] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000012 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:26:02.704] Found 186 possible bad axioms.
+[2026-06-26 17:26:02.704] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0029000 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:02.707] Found 185 possible bad axioms.
+[2026-06-26 17:26:02.707] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000308 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:26:02.715] Found 184 possible bad axioms.
+[2026-06-26 17:26:02.715] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000114 http://purl.obolibrary.org/obo/GECKO_0000113).
+[
+...[truncated]
+SUCCESS: attempt=14 seed=184684 success_count=2/100
+progress: ontology=GECKO attempt=14 success=2/100
+----- GECKO attempt=15 seed=198884 at 2026-06-26 17:26:20 -----
+--- stdout ---
+{"seed":198884,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.04394310048020295,"B1_vs_A2":0.038338658146964855,"B1_vs_A3":0.5895478567234292,"B2_vs_A1":0.2545693713652728,"B2_vs_A2":0.24303982949247369,"B2_vs_A3":0.8495952279505752,"B3_vs_A1":1.0,"B3_vs_A2":1.0,"B3_vs_A3":0.9740209131649022,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.9514037103923823,"B5_vs_A1":1.0,"B5_vs_A2":1.0,"B5_vs_A3":0.9740209131649022,"B6_vs_A1":1.0,"B6_vs_A2":1.0,"B6_vs_A3":0.9740209131649022,"B7_vs_A1":1.0,"B7_vs_A2":1.0,"B7_vs_A3":0.965030455034038,"B8_vs_A1":1.0,"B8_vs_A2":1.0,"B8_vs_A3":0.9740209131649022,"B9_vs_A1":1.0,"B9_vs_A2":1.0,"B9_vs_A3":0.9740209131649022},"repair_runtimes_ms":{"A1":97,"A2":6143,"A3":536,"B1":457,"B2":1991,"B3":728,"B4":174,"B5":619,"B6":412,"B7":230,"B8":1332,"B9":861}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=198884, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:26:20.968] Checking precondition...
+[2026-06-26 17:26:20.983] Starting the repair...
+[2026-06-26 17:26:20.990] Found 195 possible bad axioms.
+[2026-06-26 17:26:20.992] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000114 http://purl.obolibrary.org/obo/GECKO_0000113).
+[2026-06-26 17:26:20.996] Found 194 possible bad axioms.
+[2026-06-26 17:26:20.996] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/EUPATH_0000147).
+[2026-06-26 17:26:21.000] Found 193 possible bad axioms.
+[2026-06-26 17:26:21.000] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PDRO_0000024 http://purl.obolibrary.org/obo/IAO_0000310).
+[2026-06-26 17:26:21.007] Found 192 possible bad axioms.
+[2026-06-26 17:26:21.008] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000063 http://purl.obolibrary.org/obo/BFO_0000029).
+[2026-06-26 17:26:21.012] Found 191 possible bad axioms.
+[2026-06-26 17:26:21.012] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000005 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/PCO_0000000)).
+[2026-06-26 17:26:21.015] Found 190 possible bad axioms.
+[2026-06-26 17:26:21.016] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000130 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:26:21.020] Found 189 possible bad axioms.
+[2026-06-26 17:26:21.020] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000006 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/BFO_0000029)).
+[2026-06-26 17:26:21.023] Found 188 possible bad axioms.
+[2026-06-26 17:26:21.023] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000008 http://purl.obolibrary.org/obo/GECKO_0000106).
+[2026-06-26 17:26:21.026] Found 187 possible bad axioms.
+[2026-06-26 17:26:21.026] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000026 http://purl.obolibrary.org/obo/OBI_0302893).
+[2026-06-26 17:26:21.029] Found 186 possible bad axioms.
+[2026-06-26 17:26:21.029] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000094 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000050 http://purl.obolibrary.org/obo/GECKO_0000093)).
+[2026-06-26 17:26:21.032] Found 185 possible bad axioms.
+[2026-06-26 17:26:21.032] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000005 http://purl.obolibrary.org/obo/IAO_0000027).
+[2026-06-26 17
+...[truncated]
+SUCCESS: attempt=15 seed=198884 success_count=3/100
+progress: ontology=GECKO attempt=15 success=3/100
+----- GECKO attempt=16 seed=213084 at 2026-06-26 17:26:35 -----
+--- stdout ---
+{"seed":213084,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":228,"A2":6073,"A3":524,"B1":817,"B2":4650}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=213084, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:26:35.990] Checking precondition...
+[2026-06-26 17:26:36.005] Starting the repair...
+[2026-06-26 17:26:36.012] Found 195 possible bad axioms.
+[2026-06-26 17:26:36.014] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/STATO_0000039 http://purl.obolibrary.org/obo/STATO_0000047).
+[2026-06-26 17:26:36.018] Found 194 possible bad axioms.
+[2026-06-26 17:26:36.018] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MF_0000041 http://purl.obolibrary.org/obo/BFO_0000016).
+[2026-06-26 17:26:36.022] Found 193 possible bad axioms.
+[2026-06-26 17:26:36.022] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000026 http://purl.obolibrary.org/obo/OBI_0302893).
+[2026-06-26 17:26:36.032] Found 192 possible bad axioms.
+[2026-06-26 17:26:36.032] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OMRSE_00000501 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/PCO_0000000)).
+[2026-06-26 17:26:36.036] Found 191 possible bad axioms.
+[2026-06-26 17:26:36.036] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0001088 http://purl.obolibrary.org/obo/UBERON_0000463).
+[2026-06-26 17:26:36.040] Found 190 possible bad axioms.
+[2026-06-26 17:26:36.040] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0021178 http://purl.obolibrary.org/obo/MONDO_0005151).
+[2026-06-26 17:26:36.043] Found 189 possible bad axioms.
+[2026-06-26 17:26:36.043] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000104 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:26:36.046] Found 188 possible bad axioms.
+[2026-06-26 17:26:36.046] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000310 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:26:36.049] Found 187 possible bad axioms.
+[2026-06-26 17:26:36.050] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000070 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026-06-26 17:26:36.053] Found 186 possible bad axioms.
+[2026-06-26 17:26:36.053] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000135 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:26:36.055] Found 185 possible bad axioms.
+[2026-06-26 17:26:36.056] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005084 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:36.063] Found 184 possible bad axioms.
+[2026-06-26 17:26:36.063] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/o
+...[truncated]
+FAIL: attempt=16 seed=213084 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+progress: ontology=GECKO attempt=16 success=3/100
+----- GECKO attempt=17 seed=227284 at 2026-06-26 17:26:48 -----
+--- stdout ---
+{"seed":227284,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B9","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":286,"A2":5979,"A3":470,"B1":460,"B2":2000,"B3":2810,"B4":167,"B5":1294,"B6":796,"B7":194,"B8":1349,"B9":1490}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=227284, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:26:49.295] Checking precondition...
+[2026-06-26 17:26:49.313] Starting the repair...
+[2026-06-26 17:26:49.321] Found 195 possible bad axioms.
+[2026-06-26 17:26:49.322] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005151 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:49.326] Found 194 possible bad axioms.
+[2026-06-26 17:26:49.327] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000047 http://purl.obolibrary.org/obo/OBI_0000094).
+[2026-06-26 17:26:49.330] Found 193 possible bad axioms.
+[2026-06-26 17:26:49.331] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0004335 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:49.340] Found 192 possible bad axioms.
+[2026-06-26 17:26:49.340] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0024623 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:49.344] Found 191 possible bad axioms.
+[2026-06-26 17:26:49.344] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000091 http://purl.obolibrary.org/obo/GECKO_0000093).
+[2026-06-26 17:26:49.347] Found 190 possible bad axioms.
+[2026-06-26 17:26:49.348] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PATO_0000047 http://purl.obolibrary.org/obo/PATO_0001995).
+[2026-06-26 17:26:49.352] Found 189 possible bad axioms.
+[2026-06-26 17:26:49.352] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000001 http://purl.obolibrary.org/obo/CMO_0000000).
+[2026-06-26 17:26:49.356] Found 188 possible bad axioms.
+[2026-06-26 17:26:49.356] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0001271 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:26:49.359] Found 187 possible bad axioms.
+[2026-06-26 17:26:49.359] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000033 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:26:49.361] Found 186 possible bad axioms.
+[2026-06-26 17:26:49.361] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000115 http://purl.obolibrary.org/obo/GECKO_0000132).
+[2026-06-26 17:26:49.364] Found 185 possible bad axioms.
+[2026-06-26 17:26:49.364] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005039 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:26:49.372] Found 184 possible bad axioms.
+[2026-06-26 17:26:49.372] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0302893 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026
+...[truncated]
+FAIL: attempt=17 seed=227284 status=memory_limit_exceeded stage=B9 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=17 success=3/100
+----- GECKO attempt=18 seed=241484 at 2026-06-26 17:27:07 -----
+--- stdout ---
+{"seed":241484,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":129,"A2":6050,"A3":557,"B1":432,"B2":1961,"B3":1522}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=241484, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:27:08.323] Checking precondition...
+[2026-06-26 17:27:08.339] Starting the repair...
+[2026-06-26 17:27:08.347] Found 195 possible bad axioms.
+[2026-06-26 17:27:08.349] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0500000 http://purl.obolibrary.org/obo/IAO_0000104).
+[2026-06-26 17:27:08.354] Found 194 possible bad axioms.
+[2026-06-26 17:27:08.354] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000015 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:27:08.359] Found 193 possible bad axioms.
+[2026-06-26 17:27:08.359] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000044 http://purl.obolibrary.org/obo/STATO_0000047).
+[2026-06-26 17:27:08.368] Found 192 possible bad axioms.
+[2026-06-26 17:27:08.368] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000105 http://purl.obolibrary.org/obo/BFO_0000015).
+[2026-06-26 17:27:08.372] Found 191 possible bad axioms.
+[2026-06-26 17:27:08.372] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000619 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:27:08.377] Found 190 possible bad axioms.
+[2026-06-26 17:27:08.377] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000612 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:27:08.382] Found 189 possible bad axioms.
+[2026-06-26 17:27:08.382] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/BFO_0000029 http://purl.obolibrary.org/obo/BFO_0000141).
+[2026-06-26 17:27:08.386] Found 188 possible bad axioms.
+[2026-06-26 17:27:08.386] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000143 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:27:08.389] Found 187 possible bad axioms.
+[2026-06-26 17:27:08.390] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000033 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:27:08.393] Found 186 possible bad axioms.
+[2026-06-26 17:27:08.393] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000042 http://purl.obolibrary.org/obo/OBI_0002117).
+[2026-06-26 17:27:08.396] Found 185 possible bad axioms.
+[2026-06-26 17:27:08.397] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000071 http://purl.obolibrary.org/obo/GECKO_0000103).
+[2026-06-26 17:27:08.405] Found 184 possible bad axioms.
+[2026-06-26 17:27:08.405] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000020 http://purl.obolibrary.org/obo/BFO_0000019).
+[2026-06-26 17:2
+...[truncated]
+FAIL: attempt=18 seed=241484 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=18 success=3/100
+----- GECKO attempt=19 seed=255684 at 2026-06-26 17:27:19 -----
+--- stdout ---
+{"seed":255684,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":255,"A2":6146,"A3":444,"B1":478,"B2":2680}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=255684, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:27:19.425] Checking precondition...
+[2026-06-26 17:27:19.441] Starting the repair...
+[2026-06-26 17:27:19.449] Found 195 possible bad axioms.
+[2026-06-26 17:27:19.450] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000096 http://purl.obolibrary.org/obo/GO_0008150).
+[2026-06-26 17:27:19.454] Found 194 possible bad axioms.
+[2026-06-26 17:27:19.455] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000064 http://purl.obolibrary.org/obo/BFO_0000029).
+[2026-06-26 17:27:19.458] Found 193 possible bad axioms.
+[2026-06-26 17:27:19.458] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005087 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:27:19.466] Found 192 possible bad axioms.
+[2026-06-26 17:27:19.467] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:27:19.470] Found 191 possible bad axioms.
+[2026-06-26 17:27:19.470] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000113 http://purl.obolibrary.org/obo/IAO_0000612).
+[2026-06-26 17:27:19.474] Found 190 possible bad axioms.
+[2026-06-26 17:27:19.474] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PDRO_0000024 http://purl.obolibrary.org/obo/IAO_0000310).
+[2026-06-26 17:27:19.478] Found 189 possible bad axioms.
+[2026-06-26 17:27:19.478] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002623 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:27:19.483] Found 188 possible bad axioms.
+[2026-06-26 17:27:19.483] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000019 http://purl.obolibrary.org/obo/UBERON_0000178).
+[2026-06-26 17:27:19.487] Found 187 possible bad axioms.
+[2026-06-26 17:27:19.487] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000137 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26 17:27:19.490] Found 186 possible bad axioms.
+[2026-06-26 17:27:19.490] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000009 http://purl.obolibrary.org/obo/BFO_0000019).
+[2026-06-26 17:27:19.493] Found 185 possible bad axioms.
+[2026-06-26 17:27:19.493] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000068 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:27:19.501] Found 184 possible bad axioms.
+[2026-06-26 17:27:19.502] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002118 http://purl.obolibrary.org/obo/GECKO_0000032).
+[20
+...[truncated]
+FAIL: attempt=19 seed=255684 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=19 success=3/100
+----- GECKO attempt=20 seed=269884 at 2026-06-26 17:27:29 -----
+--- stdout ---
+{"seed":269884,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":119,"A2":6030,"A3":451,"B1":411,"B2":2013,"B3":765,"B4":168,"B5":666,"B6":825,"B7":187,"B8":1577}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=269884, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:27:29.889] Checking precondition...
+[2026-06-26 17:27:29.906] Starting the repair...
+[2026-06-26 17:27:29.912] Found 195 possible bad axioms.
+[2026-06-26 17:27:29.914] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0024623 http://purl.obolibrary.org/obo/MONDO_0005039).
+[2026-06-26 17:27:29.918] Found 194 possible bad axioms.
+[2026-06-26 17:27:29.918] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000359 http://purl.obolibrary.org/obo/EUPATH_0000147).
+[2026-06-26 17:27:29.922] Found 193 possible bad axioms.
+[2026-06-26 17:27:29.922] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000027 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:27:29.931] Found 192 possible bad axioms.
+[2026-06-26 17:27:29.931] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0002051 http://purl.obolibrary.org/obo/MONDO_0005151).
+[2026-06-26 17:27:29.935] Found 191 possible bad axioms.
+[2026-06-26 17:27:29.935] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000122 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:27:29.939] Found 190 possible bad axioms.
+[2026-06-26 17:27:29.940] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000072 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:27:29.944] Found 189 possible bad axioms.
+[2026-06-26 17:27:29.945] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000042 http://purl.obolibrary.org/obo/GECKO_0000032).
+[2026-06-26 17:27:29.949] Found 188 possible bad axioms.
+[2026-06-26 17:27:29.949] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000105 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026-06-26 17:27:29.952] Found 187 possible bad axioms.
+[2026-06-26 17:27:29.952] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000185 http://purl.obolibrary.org/obo/OBI_0000070).
+[2026-06-26 17:27:29.955] Found 186 possible bad axioms.
+[2026-06-26 17:27:29.955] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000131 http://purl.obolibrary.org/obo/BFO_0000141).
+[2026-06-26 17:27:29.958] Found 185 possible bad axioms.
+[2026-06-26 17:27:29.958] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0029000 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:27:29.965] Found 184 possible bad axioms.
+[2026-06-26 17:27:29.966] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PDRO_0000024 http://purl.obolibrary.org/obo/IAO_0000310).
+...[truncated]
+FAIL: attempt=20 seed=269884 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=20 success=3/100
+----- GECKO attempt=21 seed=284084 at 2026-06-26 17:27:43 -----
+--- stdout ---
+{"seed":284084,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":300,"A2":6059,"A3":509,"B1":435,"B2":2762}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=284084, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:27:43.576] Checking precondition...
+[2026-06-26 17:27:43.593] Starting the repair...
+[2026-06-26 17:27:43.600] Found 195 possible bad axioms.
+[2026-06-26 17:27:43.602] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000072 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:27:43.606] Found 194 possible bad axioms.
+[2026-06-26 17:27:43.606] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000013 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026-06-26 17:27:43.610] Found 193 possible bad axioms.
+[2026-06-26 17:27:43.611] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000125 http://purl.obolibrary.org/obo/GECKO_0000091).
+[2026-06-26 17:27:43.619] Found 192 possible bad axioms.
+[2026-06-26 17:27:43.619] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PDRO_0000024 http://purl.obolibrary.org/obo/IAO_0000310).
+[2026-06-26 17:27:43.623] Found 191 possible bad axioms.
+[2026-06-26 17:27:43.623] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/STATO_0000047 http://purl.obolibrary.org/obo/IAO_0000109).
+[2026-06-26 17:27:43.627] Found 190 possible bad axioms.
+[2026-06-26 17:27:43.627] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000115 http://purl.obolibrary.org/obo/OGMS_0000015).
+[2026-06-26 17:27:43.630] Found 189 possible bad axioms.
+[2026-06-26 17:27:43.630] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000006 http://purl.obolibrary.org/obo/GECKO_0000005).
+[2026-06-26 17:27:43.634] Found 188 possible bad axioms.
+[2026-06-26 17:27:43.634] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000000 http://purl.obolibrary.org/obo/IAO_0000109).
+[2026-06-26 17:27:43.637] Found 187 possible bad axioms.
+[2026-06-26 17:27:43.637] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0004992 http://purl.obolibrary.org/obo/MONDO_0004335).
+[2026-06-26 17:27:43.640] Found 186 possible bad axioms.
+[2026-06-26 17:27:43.640] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000005 http://purl.obolibrary.org/obo/IAO_0000027).
+[2026-06-26 17:27:43.642] Found 185 possible bad axioms.
+[2026-06-26 17:27:43.643] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000102 http://purl.obolibrary.org/obo/STATO_0000039).
+[2026-06-26 17:27:43.650] Found 184 possible bad axioms.
+[2026-06-26 17:27:43.651] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000310 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026
+...[truncated]
+FAIL: attempt=21 seed=284084 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+progress: ontology=GECKO attempt=21 success=3/100
+----- GECKO attempt=22 seed=298284 at 2026-06-26 17:27:53 -----
+--- stdout ---
+{"seed":298284,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":162,"A2":6115,"A3":497,"B1":461,"B2":3609}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=298284, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:27:54.102] Checking precondition...
+[2026-06-26 17:27:54.119] Starting the repair...
+[2026-06-26 17:27:54.126] Found 195 possible bad axioms.
+[2026-06-26 17:27:54.127] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000103 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:27:54.132] Found 194 possible bad axioms.
+[2026-06-26 17:27:54.132] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000125 http://purl.obolibrary.org/obo/GECKO_0000091).
+[2026-06-26 17:27:54.136] Found 193 possible bad axioms.
+[2026-06-26 17:27:54.136] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000047 http://purl.obolibrary.org/obo/OBI_0000094).
+[2026-06-26 17:27:54.143] Found 192 possible bad axioms.
+[2026-06-26 17:27:54.143] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000104 http://purl.obolibrary.org/obo/IAO_0000033).
+[2026-06-26 17:27:54.147] Found 191 possible bad axioms.
+[2026-06-26 17:27:54.147] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0000070 http://purl.obolibrary.org/obo/OBI_0000011).
+[2026-06-26 17:27:54.151] Found 190 possible bad axioms.
+[2026-06-26 17:27:54.151] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000094 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000050 http://purl.obolibrary.org/obo/GECKO_0000093)).
+[2026-06-26 17:27:54.155] Found 189 possible bad axioms.
+[2026-06-26 17:27:54.155] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000064 http://purl.obolibrary.org/obo/BFO_0000029).
+[2026-06-26 17:27:54.159] Found 188 possible bad axioms.
+[2026-06-26 17:27:54.159] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000003 http://purl.obolibrary.org/obo/IAO_0000033).
+[2026-06-26 17:27:54.162] Found 187 possible bad axioms.
+[2026-06-26 17:27:54.162] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0001624 http://purl.obolibrary.org/obo/OBI_0000070).
+[2026-06-26 17:27:54.165] Found 186 possible bad axioms.
+[2026-06-26 17:27:54.165] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000132 http://purl.obolibrary.org/obo/OGMS_0000015).
+[2026-06-26 17:27:54.168] Found 185 possible bad axioms.
+[2026-06-26 17:27:54.168] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0002051 http://purl.obolibrary.org/obo/MONDO_0005151).
+[2026-06-26 17:27:54.176] Found 184 possible bad axioms.
+[2026-06-26 17:27:54.176] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ST
+...[truncated]
+FAIL: attempt=22 seed=298284 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=22 success=3/100
+----- GECKO attempt=23 seed=312484 at 2026-06-26 17:28:05 -----
+--- stdout ---
+{"seed":312484,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300","iic_values":{},"repair_runtimes_ms":{"A1":66,"A2":6090,"A3":500,"B1":427,"B2":1945,"B3":1443}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=312484, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:28:05.379] Checking precondition...
+[2026-06-26 17:28:05.395] Starting the repair...
+[2026-06-26 17:28:05.402] Found 195 possible bad axioms.
+[2026-06-26 17:28:05.404] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000032 http://purl.obolibrary.org/obo/OBI_0000185).
+[2026-06-26 17:28:05.408] Found 194 possible bad axioms.
+[2026-06-26 17:28:05.409] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/EUPATH_0000451 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:28:05.412] Found 193 possible bad axioms.
+[2026-06-26 17:28:05.413] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000003 http://purl.obolibrary.org/obo/PDRO_0010022).
+[2026-06-26 17:28:05.421] Found 192 possible bad axioms.
+[2026-06-26 17:28:05.421] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000091 http://purl.obolibrary.org/obo/GECKO_0000093).
+[2026-06-26 17:28:05.425] Found 191 possible bad axioms.
+[2026-06-26 17:28:05.426] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000178 http://purl.obolibrary.org/obo/UBERON_0000463).
+[2026-06-26 17:28:05.429] Found 190 possible bad axioms.
+[2026-06-26 17:28:05.429] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000128 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:28:05.433] Found 189 possible bad axioms.
+[2026-06-26 17:28:05.433] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CMO_0000012 http://purl.obolibrary.org/obo/CMO_0000106).
+[2026-06-26 17:28:05.437] Found 188 possible bad axioms.
+[2026-06-26 17:28:05.437] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000073 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:28:05.440] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 17:28:05.441] Checking precondition...
+[2026-06-26 17:28:05.447] Starting the repair...
+[2026-06-26 17:28:11.529] Found 3 possible bad axioms.
+[2026-06-26 17:28:11.529] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000073 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:28:11.531] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 17:28:11.532] Checking precondition...
+[2026-06-26 17:28:11.534] Starting the repair...
+[2026-06-26 17:28:11.548] Selected a reference ontology with 351 axioms.
+[2026-06-26 17:28:11.858] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000073 http://purl.obolibrary.org/obo/IAO_000030
+...[truncated]
+FAIL: attempt=23 seed=312484 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+progress: ontology=GECKO attempt=23 success=3/100
+----- GECKO attempt=24 seed=326684 at 2026-06-26 17:28:15 -----
+--- stdout ---
+{"seed":326684,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073","iic_values":{},"repair_runtimes_ms":{"A1":113,"A2":6150,"A3":470,"B1":446,"B2":4503,"B3":2834,"B4":157,"B5":1232}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=326684, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:28:16.310] Checking precondition...
+[2026-06-26 17:28:16.326] Starting the repair...
+[2026-06-26 17:28:16.335] Found 195 possible bad axioms.
+[2026-06-26 17:28:16.337] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002415 http://purl.obolibrary.org/obo/EUPATH_0000451).
+[2026-06-26 17:28:16.342] Found 194 possible bad axioms.
+[2026-06-26 17:28:16.342] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0500027 http://purl.obolibrary.org/obo/IAO_0000033).
+[2026-06-26 17:28:16.347] Found 193 possible bad axioms.
+[2026-06-26 17:28:16.347] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/IAO_0000619 http://purl.obolibrary.org/obo/IAO_0000300).
+[2026-06-26 17:28:16.355] Found 192 possible bad axioms.
+[2026-06-26 17:28:16.355] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000123 http://purl.obolibrary.org/obo/GECKO_0000091).
+[2026-06-26 17:28:16.359] Found 191 possible bad axioms.
+[2026-06-26 17:28:16.359] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000094 http://purl.obolibrary.org/obo/GECKO_0000128).
+[2026-06-26 17:28:16.363] Found 190 possible bad axioms.
+[2026-06-26 17:28:16.364] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000130 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:28:16.367] Found 189 possible bad axioms.
+[2026-06-26 17:28:16.367] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000096 http://purl.obolibrary.org/obo/GO_0008150).
+[2026-06-26 17:28:16.371] Found 188 possible bad axioms.
+[2026-06-26 17:28:16.371] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0002081 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:28:16.373] Found 187 possible bad axioms.
+[2026-06-26 17:28:16.374] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/PCO_0000000 http://purl.obolibrary.org/obo/BFO_0000040).
+[2026-06-26 17:28:16.376] Found 186 possible bad axioms.
+[2026-06-26 17:28:16.377] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000105 http://purl.obolibrary.org/obo/BFO_0000015).
+[2026-06-26 17:28:16.379] Found 185 possible bad axioms.
+[2026-06-26 17:28:16.379] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0008150 http://purl.obolibrary.org/obo/BFO_0000015).
+[2026-06-26 17:28:16.388] Found 184 possible bad axioms.
+[2026-06-26 17:28:16.388] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000142 http://purl.obolibrary.org/obo/GECKO_0000119).
+[2026-06-26
+...[truncated]
+FAIL: attempt=24 seed=326684 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+progress: ontology=GECKO attempt=24 success=3/100
+----- GECKO attempt=25 seed=340884 at 2026-06-26 17:28:32 -----
+--- stdout ---
+{"seed":340884,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":216,"A2":5956,"A3":534,"B1":471,"B2":1972,"B3":1563}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GECKO.owl, seed=340884, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 17:28:32.677] Checking precondition...
+[2026-06-26 17:28:32.692] Starting the repair...
+[2026-06-26 17:28:32.701] Found 195 possible bad axioms.
+[2026-06-26 17:28:32.702] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000069 http://purl.obolibrary.org/obo/GECKO_0000067).
+[2026-06-26 17:28:32.706] Found 194 possible bad axioms.
+[2026-06-26 17:28:32.707] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000010 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:28:32.710] Found 193 possible bad axioms.
+[2026-06-26 17:28:32.710] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0002051 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:28:32.716] Found 192 possible bad axioms.
+[2026-06-26 17:28:32.716] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000012 http://purl.obolibrary.org/obo/GECKO_0000009).
+[2026-06-26 17:28:32.724] Found 191 possible bad axioms.
+[2026-06-26 17:28:32.724] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0004995 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:28:32.728] Found 190 possible bad axioms.
+[2026-06-26 17:28:32.728] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000066 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:28:32.732] Found 189 possible bad axioms.
+[2026-06-26 17:28:32.733] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GECKO_0000067 http://purl.obolibrary.org/obo/OGMS_0000015).
+[2026-06-26 17:28:32.736] Found 188 possible bad axioms.
+[2026-06-26 17:28:32.736] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0005071 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:28:32.739] Found 187 possible bad axioms.
+[2026-06-26 17:28:32.739] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OMRSE_00000501 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/IAO_0000136 http://purl.obolibrary.org/obo/PCO_0000000)).
+[2026-06-26 17:28:32.742] Found 186 possible bad axioms.
+[2026-06-26 17:28:32.742] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/MONDO_0029000 http://purl.obolibrary.org/obo/MONDO_0000001).
+[2026-06-26 17:28:32.745] Found 185 possible bad axioms.
+[2026-06-26 17:28:32.745] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OBI_0002415 http://purl.obolibrary.org/obo/IAO_0000030).
+[2026-06-26 17:28:32.753] Found 184 possible bad axioms.
+[2026-06-26 17:28:32.753] Selected the bad axiom SubClassOf(http://purl.obolibrary
+...[truncated]
+FAIL: attempt=25 seed=340884 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+progress: ontology=GECKO attempt=25 success=3/100
+=== ABORTED GECKO after 10 consecutive failures at 2026-06-26 17:28:43 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for GECKO - 3 successes, 22 failures, 25 attempts ===
+Failed attempts:
+  attempt=1 seed=84 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=2 seed=14284 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=3 seed=28484 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=5 seed=56884 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+  attempt=6 seed=71084 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=7 seed=85284 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+  attempt=8 seed=99484 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=9 seed=113684 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=10 seed=127884 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=11 seed=142084 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+  attempt=12 seed=156284 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=13 seed=170484 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=16 seed=213084 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+  attempt=17 seed=227284 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=18 seed=241484 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=19 seed=255684 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=20 seed=269884 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=21 seed=284084 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+  attempt=22 seed=298284 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=23 seed=312484 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GECKO_0000073 ⊑ IAO_0000300
+  attempt=24 seed=326684 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GECKO_0000073
+  attempt=25 seed=340884 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IAO_0000300 ⊑ ⊥
+Timing summary:
+  success: count=3 total_seconds=56.418542 avg_seconds=18.806181
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.1200
+  wall_clock_seconds_total_run=360698.251834

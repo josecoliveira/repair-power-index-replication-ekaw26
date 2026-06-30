@@ -1,0 +1,871 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-DDIEM.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-DDIEM.csv
+
+=== Starting sequential trials for DDIEM at 2026-06-25 04:32:44 ===
+----- DDIEM attempt=1 seed=38 at 2026-06-25 04:32:44 -----
+--- stdout ---
+{"seed":38,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":112,"A2":454,"A3":227,"B1":302,"B2":756}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=38, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:32:45.284] Checking precondition...
+[2026-06-25 04:32:45.297] Starting the repair...
+[2026-06-25 04:32:45.305] Found 67 possible bad axioms.
+[2026-06-25 04:32:45.306] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000012).
+[2026-06-25 04:32:45.313] Found 66 possible bad axioms.
+[2026-06-25 04:32:45.314] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:32:45.317] Found 65 possible bad axioms.
+[2026-06-25 04:32:45.317] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:32:45.321] Found 64 possible bad axioms.
+[2026-06-25 04:32:45.321] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:32:45.324] Found 63 possible bad axioms.
+[2026-06-25 04:32:45.324] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/OGMS_0000112).
+[2026-06-25 04:32:45.326] Found 62 possible bad axioms.
+[2026-06-25 04:32:45.327] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:32:45.329] Found 61 possible bad axioms.
+[2026-06-25 04:32:45.329] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000009 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:32:45.332] Found 60 possible bad axioms.
+[2026-06-25 04:32:45.332] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:32:45.335] Found 59 possible bad axioms.
+[2026-06-25 04:32:45.335] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:32:45.337] Found 58 possible bad axioms.
+[2026-06-25 04:32:45.337] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:32:45.339] Found 57 possible bad axioms.
+[2026-06-25 04:32:45.339] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:32:45.346] Found 56 possible bad axioms.
+[2026-06-25 04:32:45.346] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000020 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026
+...[truncated]
+FAIL: attempt=1 seed=38 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=1 success=0/100
+----- DDIEM attempt=2 seed=14238 at 2026-06-25 04:32:47 -----
+--- stdout ---
+{"seed":14238,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":53,"A2":492,"A3":390,"B1":895,"B2":1451}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=14238, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:32:47.539] Checking precondition...
+[2026-06-25 04:32:47.551] Starting the repair...
+[2026-06-25 04:32:47.559] Found 67 possible bad axioms.
+[2026-06-25 04:32:47.561] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000010 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:32:47.566] Found 66 possible bad axioms.
+[2026-06-25 04:32:47.567] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000001 http://purl.obolibrary.org/obo/OGMS_0000112).
+[2026-06-25 04:32:47.570] Found 65 possible bad axioms.
+[2026-06-25 04:32:47.571] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000009 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:32:47.575] Found 64 possible bad axioms.
+[2026-06-25 04:32:47.575] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:32:47.577] Found 63 possible bad axioms.
+[2026-06-25 04:32:47.578] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:32:47.580] Found 62 possible bad axioms.
+[2026-06-25 04:32:47.580] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000016).
+[2026-06-25 04:32:47.583] Found 61 possible bad axioms.
+[2026-06-25 04:32:47.583] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:32:47.586] Found 60 possible bad axioms.
+[2026-06-25 04:32:47.586] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:32:47.588] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 04:32:47.589] Checking precondition...
+[2026-06-25 04:32:47.594] Starting the repair...
+[2026-06-25 04:32:48.078] Found 1 possible bad axioms.
+[2026-06-25 04:32:48.079] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:32:48.080] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 04:32:48.082] Checking precondition...
+[2026-06-25 04:32:48.083] Starting the repair...
+[2026-06-25 04:32:48.093] Selected a reference ontology with 87 axioms.
+[2026-06-25 04:32:48.291] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:32:48.307] Selected the weaker axiom SubClassOf(o
+...[truncated]
+FAIL: attempt=2 seed=14238 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=2 success=0/100
+----- DDIEM attempt=3 seed=28438 at 2026-06-25 04:32:50 -----
+--- stdout ---
+{"seed":28438,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":109,"A2":454,"A3":490,"B1":140,"B2":704,"B3":497}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=28438, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:32:51.221] Checking precondition...
+[2026-06-25 04:32:51.234] Starting the repair...
+[2026-06-25 04:32:51.241] Found 67 possible bad axioms.
+[2026-06-25 04:32:51.243] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:32:51.248] Found 66 possible bad axioms.
+[2026-06-25 04:32:51.248] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:32:51.252] Found 65 possible bad axioms.
+[2026-06-25 04:32:51.253] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000015 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:32:51.257] Found 64 possible bad axioms.
+[2026-06-25 04:32:51.257] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:32:51.259] Found 63 possible bad axioms.
+[2026-06-25 04:32:51.260] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:32:51.262] Found 62 possible bad axioms.
+[2026-06-25 04:32:51.262] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000012).
+[2026-06-25 04:32:51.264] Found 61 possible bad axioms.
+[2026-06-25 04:32:51.265] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:32:51.267] Found 60 possible bad axioms.
+[2026-06-25 04:32:51.267] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000001 http://purl.obolibrary.org/obo/OGMS_0000112).
+[2026-06-25 04:32:51.269] Found 59 possible bad axioms.
+[2026-06-25 04:32:51.269] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:32:51.271] Found 58 possible bad axioms.
+[2026-06-25 04:32:51.271] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:32:51.273] Found 57 possible bad axioms.
+[2026-06-25 04:32:51.274] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:32:51.281] Found 56 possible bad axioms.
+[2026-06-25 04:32:51.281] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000019).
+[2
+...[truncated]
+FAIL: attempt=3 seed=28438 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=3 success=0/100
+----- DDIEM attempt=4 seed=42638 at 2026-06-25 04:32:53 -----
+--- stdout ---
+{"seed":42638,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":96,"A2":460,"A3":571,"B1":241,"B2":1566,"B3":380}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=42638, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:32:54.006] Checking precondition...
+[2026-06-25 04:32:54.019] Starting the repair...
+[2026-06-25 04:32:54.027] Found 67 possible bad axioms.
+[2026-06-25 04:32:54.029] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:32:54.035] Found 66 possible bad axioms.
+[2026-06-25 04:32:54.035] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000020 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:32:54.039] Found 65 possible bad axioms.
+[2026-06-25 04:32:54.039] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:32:54.042] Found 64 possible bad axioms.
+[2026-06-25 04:32:54.043] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000009).
+[2026-06-25 04:32:54.045] Found 63 possible bad axioms.
+[2026-06-25 04:32:54.045] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000016 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:32:54.048] Found 62 possible bad axioms.
+[2026-06-25 04:32:54.048] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000015 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:32:54.050] Found 61 possible bad axioms.
+[2026-06-25 04:32:54.051] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000012).
+[2026-06-25 04:32:54.053] Found 60 possible bad axioms.
+[2026-06-25 04:32:54.054] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:32:54.056] Found 59 possible bad axioms.
+[2026-06-25 04:32:54.056] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:32:54.058] Found 58 possible bad axioms.
+[2026-06-25 04:32:54.058] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:32:54.060] Found 57 possible bad axioms.
+[2026-06-25 04:32:54.060] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:32:54.067] Found 56 possible bad axioms.
+[2026-06-25 04:32:54.067] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000001 http://purl.obolibrary.org/obo/DDIEM_0000023).
+
+...[truncated]
+FAIL: attempt=4 seed=42638 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=4 success=0/100
+----- DDIEM attempt=5 seed=56838 at 2026-06-25 04:32:57 -----
+--- stdout ---
+{"seed":56838,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":71,"A2":476,"A3":234,"B1":160,"B2":1005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=56838, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:32:57.719] Checking precondition...
+[2026-06-25 04:32:57.731] Starting the repair...
+[2026-06-25 04:32:57.741] Found 67 possible bad axioms.
+[2026-06-25 04:32:57.743] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:32:57.748] Found 66 possible bad axioms.
+[2026-06-25 04:32:57.748] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:32:57.752] Found 65 possible bad axioms.
+[2026-06-25 04:32:57.752] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:32:57.756] Found 64 possible bad axioms.
+[2026-06-25 04:32:57.756] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:32:57.759] Found 63 possible bad axioms.
+[2026-06-25 04:32:57.759] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:32:57.761] Found 62 possible bad axioms.
+[2026-06-25 04:32:57.762] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:32:57.764] Found 61 possible bad axioms.
+[2026-06-25 04:32:57.764] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:32:57.766] Found 60 possible bad axioms.
+[2026-06-25 04:32:57.767] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000009 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:32:57.769] Found 59 possible bad axioms.
+[2026-06-25 04:32:57.769] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:32:57.771] Found 58 possible bad axioms.
+[2026-06-25 04:32:57.771] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:32:57.772] Found 57 possible bad axioms.
+[2026-06-25 04:32:57.773] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000020 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:32:57.780] Found 56 possible bad axioms.
+[2026-06-25 04:32:57.780] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000005).
+
+...[truncated]
+FAIL: attempt=5 seed=56838 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=5 success=0/100
+----- DDIEM attempt=6 seed=71038 at 2026-06-25 04:32:59 -----
+--- stdout ---
+{"seed":71038,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":89,"A2":462,"A3":790,"B1":468,"B2":839}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=71038, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:00.080] Checking precondition...
+[2026-06-25 04:33:00.092] Starting the repair...
+[2026-06-25 04:33:00.099] Found 67 possible bad axioms.
+[2026-06-25 04:33:00.100] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:00.106] Found 66 possible bad axioms.
+[2026-06-25 04:33:00.106] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000016).
+[2026-06-25 04:33:00.110] Found 65 possible bad axioms.
+[2026-06-25 04:33:00.110] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:00.114] Found 64 possible bad axioms.
+[2026-06-25 04:33:00.114] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:00.117] Found 63 possible bad axioms.
+[2026-06-25 04:33:00.117] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:00.120] Found 62 possible bad axioms.
+[2026-06-25 04:33:00.120] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:00.122] Found 61 possible bad axioms.
+[2026-06-25 04:33:00.122] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000010 http://purl.obolibrary.org/obo/DDIEM_0000009).
+[2026-06-25 04:33:00.125] Found 60 possible bad axioms.
+[2026-06-25 04:33:00.125] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000019).
+[2026-06-25 04:33:00.127] Found 59 possible bad axioms.
+[2026-06-25 04:33:00.128] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:33:00.129] Found 58 possible bad axioms.
+[2026-06-25 04:33:00.130] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000005 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:33:00.131] Found 57 possible bad axioms.
+[2026-06-25 04:33:00.132] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000009 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:00.139] Found 56 possible bad axioms.
+[2026-06-25 04:33:00.139] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000016).
+
+...[truncated]
+FAIL: attempt=6 seed=71038 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=6 success=0/100
+----- DDIEM attempt=7 seed=85238 at 2026-06-25 04:33:02 -----
+--- stdout ---
+{"seed":85238,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":81,"A2":478,"A3":364,"B1":147,"B2":576,"B3":455,"B4":60,"B5":388}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=85238, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:03.138] Checking precondition...
+[2026-06-25 04:33:03.152] Starting the repair...
+[2026-06-25 04:33:03.159] Found 67 possible bad axioms.
+[2026-06-25 04:33:03.161] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000012).
+[2026-06-25 04:33:03.167] Found 66 possible bad axioms.
+[2026-06-25 04:33:03.167] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:03.170] Found 65 possible bad axioms.
+[2026-06-25 04:33:03.171] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:03.174] Found 64 possible bad axioms.
+[2026-06-25 04:33:03.174] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:03.177] Found 63 possible bad axioms.
+[2026-06-25 04:33:03.177] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000020 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:03.180] Found 62 possible bad axioms.
+[2026-06-25 04:33:03.180] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:03.182] Found 61 possible bad axioms.
+[2026-06-25 04:33:03.182] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:03.185] Found 60 possible bad axioms.
+[2026-06-25 04:33:03.185] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:33:03.187] Found 59 possible bad axioms.
+[2026-06-25 04:33:03.187] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:03.189] Found 58 possible bad axioms.
+[2026-06-25 04:33:03.189] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:33:03.191] Found 57 possible bad axioms.
+[2026-06-25 04:33:03.192] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000013 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:03.198] Found 56 possible bad axioms.
+[2026-06-25 04:33:03.198] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 owl:Nothing).
+[2026-06-25 04:33:03.204] Found 5
+...[truncated]
+FAIL: attempt=7 seed=85238 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=7 success=0/100
+----- DDIEM attempt=8 seed=99438 at 2026-06-25 04:33:05 -----
+--- stdout ---
+{"seed":99438,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":120,"A2":442,"A3":223,"B1":173,"B2":1278,"B3":779,"B4":31,"B5":247}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=99438, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:06.097] Checking precondition...
+[2026-06-25 04:33:06.111] Starting the repair...
+[2026-06-25 04:33:06.118] Found 67 possible bad axioms.
+[2026-06-25 04:33:06.120] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000013 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:06.125] Found 66 possible bad axioms.
+[2026-06-25 04:33:06.126] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:06.129] Found 65 possible bad axioms.
+[2026-06-25 04:33:06.129] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000019).
+[2026-06-25 04:33:06.133] Found 64 possible bad axioms.
+[2026-06-25 04:33:06.133] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000012).
+[2026-06-25 04:33:06.136] Found 63 possible bad axioms.
+[2026-06-25 04:33:06.136] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:06.138] Found 62 possible bad axioms.
+[2026-06-25 04:33:06.138] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:06.140] Found 61 possible bad axioms.
+[2026-06-25 04:33:06.141] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:06.143] Found 60 possible bad axioms.
+[2026-06-25 04:33:06.143] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000016).
+[2026-06-25 04:33:06.146] Found 59 possible bad axioms.
+[2026-06-25 04:33:06.146] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000013 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:06.148] Found 58 possible bad axioms.
+[2026-06-25 04:33:06.148] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:06.150] Found 57 possible bad axioms.
+[2026-06-25 04:33:06.151] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:06.157] Found 56 possible bad axioms.
+[2026-06-25 04:33:06.158] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000001 http://purl.obolibrary.org/obo/OGMS_0000112).
+[2
+...[truncated]
+FAIL: attempt=8 seed=99438 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=8 success=0/100
+----- DDIEM attempt=9 seed=113638 at 2026-06-25 04:33:09 -----
+--- stdout ---
+{"seed":113638,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":113,"A2":445,"A3":227,"B1":162,"B2":585,"B3":616}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=113638, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:09.798] Checking precondition...
+[2026-06-25 04:33:09.811] Starting the repair...
+[2026-06-25 04:33:09.819] Found 67 possible bad axioms.
+[2026-06-25 04:33:09.821] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:33:09.827] Found 66 possible bad axioms.
+[2026-06-25 04:33:09.827] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:09.831] Found 65 possible bad axioms.
+[2026-06-25 04:33:09.831] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:33:09.834] Found 64 possible bad axioms.
+[2026-06-25 04:33:09.834] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000016 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:09.837] Found 63 possible bad axioms.
+[2026-06-25 04:33:09.837] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:09.840] Found 62 possible bad axioms.
+[2026-06-25 04:33:09.840] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:09.842] Found 61 possible bad axioms.
+[2026-06-25 04:33:09.842] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000005 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:09.844] Found 60 possible bad axioms.
+[2026-06-25 04:33:09.844] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:09.847] Found 59 possible bad axioms.
+[2026-06-25 04:33:09.847] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:09.849] Found 58 possible bad axioms.
+[2026-06-25 04:33:09.849] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:09.851] Found 57 possible bad axioms.
+[2026-06-25 04:33:09.851] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000010 http://purl.obolibrary.org/obo/DDIEM_0000009).
+[2026-06-25 04:33:09.858] Found 56 possible bad axioms.
+[2026-06-25 04:33:09.858] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000015).
+...[truncated]
+FAIL: attempt=9 seed=113638 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=9 success=0/100
+----- DDIEM attempt=10 seed=127838 at 2026-06-25 04:33:12 -----
+--- stdout ---
+{"seed":127838,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.5,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":0.5,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":0.5,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.5,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":0.5,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":0.5,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":0.5,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":0.5,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":0.5,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":56,"A2":480,"A3":488,"B1":260,"B2":1612,"B3":293,"B4":32,"B5":203,"B6":459,"B7":40,"B8":234,"B9":176}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=127838, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:12.330] Checking precondition...
+[2026-06-25 04:33:12.342] Starting the repair...
+[2026-06-25 04:33:12.350] Found 67 possible bad axioms.
+[2026-06-25 04:33:12.351] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000013 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:12.357] Found 66 possible bad axioms.
+[2026-06-25 04:33:12.357] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:12.361] Found 65 possible bad axioms.
+[2026-06-25 04:33:12.362] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:33:12.365] Found 64 possible bad axioms.
+[2026-06-25 04:33:12.365] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:33:12.368] Found 63 possible bad axioms.
+[2026-06-25 04:33:12.368] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:12.370] Found 62 possible bad axioms.
+[2026-06-25 04:33:12.371] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000009 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:12.373] Found 61 possible bad axioms.
+[2026-06-25 04:33:12.373] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:33:12.376] Found 60 possible bad axioms.
+[2026-06-25 04:33:12.376] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:12.378] Found 59 possible bad axioms.
+[2026-06-25 04:33:12.378] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:12.380] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 04:33:12.381] Checking precondition...
+[2026-06-25 04:33:12.391] Starting the repair...
+[2026-06-25 04:33:12.860] Found 1 possible bad axioms.
+[2026-06-25 04:33:12.861] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:12.861] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 04:33:12.863] Checking precondition...
+[2026-06-25 04:33:12.865] Starting the repair...
+[2026-06-25 04:33:12.875] Selected a reference ontology with 88 axioms.
+[2026
+...[truncated]
+SUCCESS: attempt=10 seed=127838 success_count=1/100
+progress: ontology=DDIEM attempt=10 success=1/100
+----- DDIEM attempt=11 seed=142038 at 2026-06-25 04:33:16 -----
+--- stdout ---
+{"seed":142038,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":71,"A2":487,"A3":350,"B1":148,"B2":1604}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=142038, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:17.106] Checking precondition...
+[2026-06-25 04:33:17.118] Starting the repair...
+[2026-06-25 04:33:17.125] Found 67 possible bad axioms.
+[2026-06-25 04:33:17.127] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000001 http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:17.132] Found 66 possible bad axioms.
+[2026-06-25 04:33:17.133] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:33:17.137] Found 65 possible bad axioms.
+[2026-06-25 04:33:17.137] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:17.140] Found 64 possible bad axioms.
+[2026-06-25 04:33:17.141] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:17.144] Found 63 possible bad axioms.
+[2026-06-25 04:33:17.144] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:17.146] Found 62 possible bad axioms.
+[2026-06-25 04:33:17.146] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000016).
+[2026-06-25 04:33:17.149] Found 61 possible bad axioms.
+[2026-06-25 04:33:17.149] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:17.152] Found 60 possible bad axioms.
+[2026-06-25 04:33:17.152] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:33:17.154] Found 59 possible bad axioms.
+[2026-06-25 04:33:17.154] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000010 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:17.156] Found 58 possible bad axioms.
+[2026-06-25 04:33:17.156] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000010 owl:Nothing).
+[2026-06-25 04:33:17.158] Found 57 possible bad axioms.
+[2026-06-25 04:33:17.159] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000020 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:17.166] Found 56 possible bad axioms.
+[2026-06-25 04:33:17.166] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:17.172] Finish
+...[truncated]
+FAIL: attempt=11 seed=142038 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=11 success=1/100
+----- DDIEM attempt=12 seed=156238 at 2026-06-25 04:33:19 -----
+--- stdout ---
+{"seed":156238,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":103,"A2":472,"A3":226,"B1":282,"B2":1046}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=156238, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:20.167] Checking precondition...
+[2026-06-25 04:33:20.180] Starting the repair...
+[2026-06-25 04:33:20.188] Found 67 possible bad axioms.
+[2026-06-25 04:33:20.190] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:20.195] Found 66 possible bad axioms.
+[2026-06-25 04:33:20.196] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000013 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:20.199] Found 65 possible bad axioms.
+[2026-06-25 04:33:20.199] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000019).
+[2026-06-25 04:33:20.203] Found 64 possible bad axioms.
+[2026-06-25 04:33:20.203] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:20.206] Found 63 possible bad axioms.
+[2026-06-25 04:33:20.206] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000019).
+[2026-06-25 04:33:20.209] Found 62 possible bad axioms.
+[2026-06-25 04:33:20.209] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:20.211] Found 61 possible bad axioms.
+[2026-06-25 04:33:20.211] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000015 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:20.214] Found 60 possible bad axioms.
+[2026-06-25 04:33:20.214] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:20.216] Found 59 possible bad axioms.
+[2026-06-25 04:33:20.216] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:20.218] Found 58 possible bad axioms.
+[2026-06-25 04:33:20.218] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000019).
+[2026-06-25 04:33:20.220] Found 57 possible bad axioms.
+[2026-06-25 04:33:20.220] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000016).
+[2026-06-25 04:33:20.227] Found 56 possible bad axioms.
+[2026-06-25 04:33:20.227] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000020).
+...[truncated]
+FAIL: attempt=12 seed=156238 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=12 success=1/100
+----- DDIEM attempt=13 seed=170438 at 2026-06-25 04:33:22 -----
+--- stdout ---
+{"seed":170438,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":71,"A2":479,"A3":242,"B1":153,"B2":1068}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=170438, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:22.703] Checking precondition...
+[2026-06-25 04:33:22.715] Starting the repair...
+[2026-06-25 04:33:22.722] Found 67 possible bad axioms.
+[2026-06-25 04:33:22.724] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:22.729] Found 66 possible bad axioms.
+[2026-06-25 04:33:22.730] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:33:22.733] Found 65 possible bad axioms.
+[2026-06-25 04:33:22.734] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:33:22.738] Found 64 possible bad axioms.
+[2026-06-25 04:33:22.738] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:22.740] Found 63 possible bad axioms.
+[2026-06-25 04:33:22.740] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:22.743] Found 62 possible bad axioms.
+[2026-06-25 04:33:22.743] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:22.745] Found 61 possible bad axioms.
+[2026-06-25 04:33:22.745] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 owl:Nothing).
+[2026-06-25 04:33:22.748] Found 60 possible bad axioms.
+[2026-06-25 04:33:22.748] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:33:22.750] Found 59 possible bad axioms.
+[2026-06-25 04:33:22.750] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:22.752] Found 58 possible bad axioms.
+[2026-06-25 04:33:22.752] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:22.754] Found 57 possible bad axioms.
+[2026-06-25 04:33:22.754] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:22.761] Found 56 possible bad axioms.
+[2026-06-25 04:33:22.762] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:22.770] Finish
+...[truncated]
+FAIL: attempt=13 seed=170438 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=13 success=1/100
+----- DDIEM attempt=14 seed=184638 at 2026-06-25 04:33:24 -----
+--- stdout ---
+{"seed":184638,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":101,"A2":463,"A3":220,"B1":153,"B2":1292}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=184638, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:25.107] Checking precondition...
+[2026-06-25 04:33:25.120] Starting the repair...
+[2026-06-25 04:33:25.127] Found 67 possible bad axioms.
+[2026-06-25 04:33:25.128] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:25.134] Found 66 possible bad axioms.
+[2026-06-25 04:33:25.134] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:25.137] Found 65 possible bad axioms.
+[2026-06-25 04:33:25.138] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:33:25.142] Found 64 possible bad axioms.
+[2026-06-25 04:33:25.142] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000009).
+[2026-06-25 04:33:25.144] Found 63 possible bad axioms.
+[2026-06-25 04:33:25.145] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000013 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:25.147] Found 62 possible bad axioms.
+[2026-06-25 04:33:25.147] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000009 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:33:25.149] Found 61 possible bad axioms.
+[2026-06-25 04:33:25.149] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:25.151] Found 60 possible bad axioms.
+[2026-06-25 04:33:25.151] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 owl:Nothing).
+[2026-06-25 04:33:25.153] Found 59 possible bad axioms.
+[2026-06-25 04:33:25.153] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:25.155] Found 58 possible bad axioms.
+[2026-06-25 04:33:25.155] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:25.157] Found 57 possible bad axioms.
+[2026-06-25 04:33:25.158] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:25.164] Found 56 possible bad axioms.
+[2026-06-25 04:33:25.164] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:25.172] Found 
+...[truncated]
+FAIL: attempt=14 seed=184638 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=14 success=1/100
+----- DDIEM attempt=15 seed=198838 at 2026-06-25 04:33:27 -----
+--- stdout ---
+{"seed":198838,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":80,"A2":482,"A3":234,"B1":302,"B2":1031}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=198838, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:27.729] Checking precondition...
+[2026-06-25 04:33:27.741] Starting the repair...
+[2026-06-25 04:33:27.749] Found 67 possible bad axioms.
+[2026-06-25 04:33:27.751] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:33:27.756] Found 66 possible bad axioms.
+[2026-06-25 04:33:27.757] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:27.761] Found 65 possible bad axioms.
+[2026-06-25 04:33:27.761] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:27.765] Found 64 possible bad axioms.
+[2026-06-25 04:33:27.765] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:27.767] Found 63 possible bad axioms.
+[2026-06-25 04:33:27.768] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:33:27.770] Found 62 possible bad axioms.
+[2026-06-25 04:33:27.770] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:27.772] Found 61 possible bad axioms.
+[2026-06-25 04:33:27.773] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:27.775] Found 60 possible bad axioms.
+[2026-06-25 04:33:27.775] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:27.778] Found 59 possible bad axioms.
+[2026-06-25 04:33:27.778] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000012).
+[2026-06-25 04:33:27.780] Found 58 possible bad axioms.
+[2026-06-25 04:33:27.780] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:27.782] Found 57 possible bad axioms.
+[2026-06-25 04:33:27.782] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 owl:Nothing).
+[2026-06-25 04:33:27.789] Found 56 possible bad axioms.
+[2026-06-25 04:33:27.789] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:27.795] Found 5
+...[truncated]
+FAIL: attempt=15 seed=198838 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=15 success=1/100
+----- DDIEM attempt=16 seed=213038 at 2026-06-25 04:33:29 -----
+--- stdout ---
+{"seed":213038,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":47,"A2":497,"A3":238,"B1":288,"B2":659}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=213038, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:30.266] Checking precondition...
+[2026-06-25 04:33:30.280] Starting the repair...
+[2026-06-25 04:33:30.287] Found 67 possible bad axioms.
+[2026-06-25 04:33:30.289] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:30.295] Found 66 possible bad axioms.
+[2026-06-25 04:33:30.295] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:30.299] Found 65 possible bad axioms.
+[2026-06-25 04:33:30.300] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:30.303] Found 64 possible bad axioms.
+[2026-06-25 04:33:30.304] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:30.306] Found 63 possible bad axioms.
+[2026-06-25 04:33:30.306] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:30.308] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 04:33:30.309] Checking precondition...
+[2026-06-25 04:33:30.315] Starting the repair...
+[2026-06-25 04:33:30.804] Found 1 possible bad axioms.
+[2026-06-25 04:33:30.805] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:30.806] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 04:33:30.808] Checking precondition...
+[2026-06-25 04:33:30.811] Starting the repair...
+[2026-06-25 04:33:30.825] Selected a reference ontology with 87 axioms.
+[2026-06-25 04:33:31.032] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:31.044] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000001 http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:31.045] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 04:33:31.046] Checking precondition...
+[2026-06-25 04:33:31.047] Starting the repair...
+[2026-06-25 04:33:31.053] Selected a reference ontology with 87 axioms.
+[2026-06-25 04:33:31.192] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:31.200] Selected the weaker axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/OGMS_0000112).
+[2026-06-25 04:33:31.333] Selected the bad ax
+...[truncated]
+FAIL: attempt=16 seed=213038 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=16 success=1/100
+----- DDIEM attempt=17 seed=227238 at 2026-06-25 04:33:32 -----
+--- stdout ---
+{"seed":227238,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":52,"A2":506,"A3":377,"B1":176,"B2":417}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=227238, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:32.394] Checking precondition...
+[2026-06-25 04:33:32.408] Starting the repair...
+[2026-06-25 04:33:32.416] Found 67 possible bad axioms.
+[2026-06-25 04:33:32.417] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:32.423] Found 66 possible bad axioms.
+[2026-06-25 04:33:32.424] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:32.427] Found 65 possible bad axioms.
+[2026-06-25 04:33:32.428] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:33:32.431] Found 64 possible bad axioms.
+[2026-06-25 04:33:32.431] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:32.434] Found 63 possible bad axioms.
+[2026-06-25 04:33:32.434] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:32.436] Found 62 possible bad axioms.
+[2026-06-25 04:33:32.437] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000015 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:32.439] Found 61 possible bad axioms.
+[2026-06-25 04:33:32.439] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:32.442] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 04:33:32.442] Checking precondition...
+[2026-06-25 04:33:32.448] Starting the repair...
+[2026-06-25 04:33:32.946] Found 1 possible bad axioms.
+[2026-06-25 04:33:32.947] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:32.948] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 04:33:32.950] Checking precondition...
+[2026-06-25 04:33:32.952] Starting the repair...
+[2026-06-25 04:33:32.963] Selected a reference ontology with 87 axioms.
+[2026-06-25 04:33:33.170] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000023).
+[2026-06-25 04:33:33.184] Selected the weaker axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:33.324] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:33.325] Selected
+...[truncated]
+FAIL: attempt=17 seed=227238 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=17 success=1/100
+----- DDIEM attempt=18 seed=241438 at 2026-06-25 04:33:34 -----
+--- stdout ---
+{"seed":241438,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":94,"A2":448,"A3":351}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=241438, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:34.316] Checking precondition...
+[2026-06-25 04:33:34.328] Starting the repair...
+[2026-06-25 04:33:34.336] Found 67 possible bad axioms.
+[2026-06-25 04:33:34.338] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000016).
+[2026-06-25 04:33:34.344] Found 66 possible bad axioms.
+[2026-06-25 04:33:34.344] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000013 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:34.348] Found 65 possible bad axioms.
+[2026-06-25 04:33:34.348] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:34.352] Found 64 possible bad axioms.
+[2026-06-25 04:33:34.352] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000005 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:34.355] Found 63 possible bad axioms.
+[2026-06-25 04:33:34.355] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:33:34.357] Found 62 possible bad axioms.
+[2026-06-25 04:33:34.357] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/OGMS_0000112 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:34.359] Found 61 possible bad axioms.
+[2026-06-25 04:33:34.360] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000010 http://purl.obolibrary.org/obo/DDIEM_0000009).
+[2026-06-25 04:33:34.362] Found 60 possible bad axioms.
+[2026-06-25 04:33:34.363] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000005).
+[2026-06-25 04:33:34.365] Found 59 possible bad axioms.
+[2026-06-25 04:33:34.365] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000020 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:34.367] Found 58 possible bad axioms.
+[2026-06-25 04:33:34.367] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:34.369] Found 57 possible bad axioms.
+[2026-06-25 04:33:34.369] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000022 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:33:34.375] Found 56 possible bad axioms.
+[2026-06-25 04:33:34.376] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000018 http://purl.obolibrary.org/obo/DDIEM_0000019).
+
+...[truncated]
+FAIL: attempt=18 seed=241438 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=DDIEM attempt=18 success=1/100
+----- DDIEM attempt=19 seed=255638 at 2026-06-25 04:33:35 -----
+--- stdout ---
+{"seed":255638,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":101,"A2":462,"A3":664,"B1":347,"B2":810}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=255638, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:35.624] Checking precondition...
+[2026-06-25 04:33:35.638] Starting the repair...
+[2026-06-25 04:33:35.644] Found 67 possible bad axioms.
+[2026-06-25 04:33:35.645] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:35.650] Found 66 possible bad axioms.
+[2026-06-25 04:33:35.651] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:35.654] Found 65 possible bad axioms.
+[2026-06-25 04:33:35.654] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:33:35.658] Found 64 possible bad axioms.
+[2026-06-25 04:33:35.658] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000020).
+[2026-06-25 04:33:35.661] Found 63 possible bad axioms.
+[2026-06-25 04:33:35.661] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000009 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:33:35.663] Found 62 possible bad axioms.
+[2026-06-25 04:33:35.664] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000002).
+[2026-06-25 04:33:35.665] Found 61 possible bad axioms.
+[2026-06-25 04:33:35.666] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000012 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:35.668] Found 60 possible bad axioms.
+[2026-06-25 04:33:35.668] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000010 http://purl.obolibrary.org/obo/DDIEM_0000008).
+[2026-06-25 04:33:35.672] Found 59 possible bad axioms.
+[2026-06-25 04:33:35.672] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000023 http://purl.obolibrary.org/obo/DDIEM_0000001).
+[2026-06-25 04:33:35.674] Found 58 possible bad axioms.
+[2026-06-25 04:33:35.674] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000009).
+[2026-06-25 04:33:35.676] Found 57 possible bad axioms.
+[2026-06-25 04:33:35.676] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:35.682] Found 56 possible bad axioms.
+[2026-06-25 04:33:35.682] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000015).
+...[truncated]
+FAIL: attempt=19 seed=255638 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=19 success=1/100
+----- DDIEM attempt=20 seed=269838 at 2026-06-25 04:33:38 -----
+--- stdout ---
+{"seed":269838,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023","iic_values":{},"repair_runtimes_ms":{"A1":90,"A2":467,"A3":370,"B1":155,"B2":908}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/DDIEM.owl, seed=269838, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:33:38.397] Checking precondition...
+[2026-06-25 04:33:38.410] Starting the repair...
+[2026-06-25 04:33:38.419] Found 67 possible bad axioms.
+[2026-06-25 04:33:38.420] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000019 http://purl.obolibrary.org/obo/DDIEM_0000017).
+[2026-06-25 04:33:38.427] Found 66 possible bad axioms.
+[2026-06-25 04:33:38.427] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000006).
+[2026-06-25 04:33:38.431] Found 65 possible bad axioms.
+[2026-06-25 04:33:38.431] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000005 http://purl.obolibrary.org/obo/DDIEM_0000010).
+[2026-06-25 04:33:38.435] Found 64 possible bad axioms.
+[2026-06-25 04:33:38.435] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000006 owl:Nothing).
+[2026-06-25 04:33:38.438] Found 63 possible bad axioms.
+[2026-06-25 04:33:38.438] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000002 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:38.441] Found 62 possible bad axioms.
+[2026-06-25 04:33:38.441] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000004 http://purl.obolibrary.org/obo/DDIEM_0000021).
+[2026-06-25 04:33:38.444] Found 61 possible bad axioms.
+[2026-06-25 04:33:38.444] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000008 http://purl.obolibrary.org/obo/DDIEM_0000022).
+[2026-06-25 04:33:38.447] Found 60 possible bad axioms.
+[2026-06-25 04:33:38.447] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000018).
+[2026-06-25 04:33:38.450] Found 59 possible bad axioms.
+[2026-06-25 04:33:38.450] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 http://purl.obolibrary.org/obo/DDIEM_0000015).
+[2026-06-25 04:33:38.453] Found 58 possible bad axioms.
+[2026-06-25 04:33:38.453] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000017 http://purl.obolibrary.org/obo/DDIEM_0000012).
+[2026-06-25 04:33:38.455] Found 57 possible bad axioms.
+[2026-06-25 04:33:38.455] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000011 owl:Nothing).
+[2026-06-25 04:33:38.462] Found 56 possible bad axioms.
+[2026-06-25 04:33:38.463] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/DDIEM_0000021 http://purl.obolibrary.org/obo/DDIEM_0000004).
+[2026-06-25 04:33:38.464] Found 55 possible bad axioms.
+[2026-06-
+...[truncated]
+FAIL: attempt=20 seed=269838 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+progress: ontology=DDIEM attempt=20 success=1/100
+=== ABORTED DDIEM after 10 consecutive failures at 2026-06-25 04:33:40 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for DDIEM - 1 successes, 19 failures, 20 attempts ===
+Failed attempts:
+  attempt=1 seed=38 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=2 seed=14238 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=3 seed=28438 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=4 seed=42638 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=5 seed=56838 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=6 seed=71038 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=7 seed=85238 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=8 seed=99438 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=9 seed=113638 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=11 seed=142038 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=12 seed=156238 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=13 seed=170438 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=14 seed=184638 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=15 seed=198838 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=16 seed=213038 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=17 seed=227238 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=18 seed=241438 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=19 seed=255638 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+  attempt=20 seed=269838 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ DDIEM_0000023
+Timing summary:
+  success: count=1 total_seconds=4.711611 avg_seconds=4.711611
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0500
+  wall_clock_seconds_total_run=360698.251834

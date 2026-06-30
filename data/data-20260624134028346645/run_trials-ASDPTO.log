@@ -1,0 +1,545 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ASDPTO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ASDPTO.csv
+
+=== Starting sequential trials for ASDPTO at 2026-06-28 17:02:35 ===
+----- ASDPTO attempt=1 seed=154 at 2026-06-28 17:02:35 -----
+--- stdout ---
+{"seed":154,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1469,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=154, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:02:35.763] Checking precondition...
+[2026-06-28 17:02:35.798] Starting the repair...
+[2026-06-28 17:02:35.813] Found 1121 possible bad axioms.
+[2026-06-28 17:02:35.815] Selected the bad axiom SubClassOf(Class_207 Class_7).
+[2026-06-28 17:02:35.828] Found 1120 possible bad axioms.
+[2026-06-28 17:02:35.828] Selected the bad axiom SubClassOf(Class_148 owl:Nothing).
+[2026-06-28 17:02:35.838] Found 1119 possible bad axioms.
+[2026-06-28 17:02:35.838] Selected the bad axiom SubClassOf(Class_54 Class_545).
+[2026-06-28 17:02:35.846] Found 1118 possible bad axioms.
+[2026-06-28 17:02:35.846] Selected the bad axiom SubClassOf(Class_2 Class_88).
+[2026-06-28 17:02:35.853] Found 1117 possible bad axioms.
+[2026-06-28 17:02:35.854] Selected the bad axiom SubClassOf(Class_187 Class_87).
+[2026-06-28 17:02:35.860] Found 1116 possible bad axioms.
+[2026-06-28 17:02:35.861] Selected the bad axiom SubClassOf(Class_152 Class_4).
+[2026-06-28 17:02:35.868] Found 1115 possible bad axioms.
+[2026-06-28 17:02:35.868] Selected the bad axiom SubClassOf(Class_449 Class_87).
+[2026-06-28 17:02:35.879] Found 1114 possible bad axioms.
+[2026-06-28 17:02:35.879] Selected the bad axiom SubClassOf(Class_52 Class_50).
+[2026-06-28 17:02:35.886] Found 1113 possible bad axioms.
+[2026-06-28 17:02:35.886] Selected the bad axiom SubClassOf(Class_384 owl:Nothing).
+[2026-06-28 17:02:35.892] Found 1112 possible bad axioms.
+[2026-06-28 17:02:35.892] Selected the bad axiom SubClassOf(Class_3 Class_30).
+[2026-06-28 17:02:35.898] Found 1111 possible bad axioms.
+[2026-06-28 17:02:35.898] Selected the bad axiom SubClassOf(Class_516 Class_120).
+[2026-06-28 17:02:35.910] Found 1110 possible bad axioms.
+[2026-06-28 17:02:35.911] Selected the bad axiom SubClassOf(Class_116 Class_57).
+[2026-06-28 17:02:35.916] Found 1109 possible bad axioms.
+[2026-06-28 17:02:35.917] Selected the bad axiom SubClassOf(Class_154 Class_120).
+[2026-06-28 17:02:35.922] Found 1108 possible bad axioms.
+[2026-06-28 17:02:35.923] Selected the bad axiom SubClassOf(Class_187 Class_61).
+[2026-06-28 17:02:35.929] Found 1107 possible bad axioms.
+[2026-06-28 17:02:35.929] Selected the bad axiom SubClassOf(Class_519 Class_517).
+[2026-06-28 17:02:35.937] Found 1106 possible bad axioms.
+[2026-06-28 17:02:35.937] Selected the bad axiom SubClassOf(Class_176 Class_22).
+[2026-06-28 17:02:35.943] Found 1105 possible bad axioms.
+[2026-06-28 17:02:35.943] Selected the bad axiom SubClassOf(Class_35 Class_212).
+[2026-06-28 17:02:35.950] Found 1104 possible bad axioms.
+[2026-06-28 17:02:35.951] Selected the bad axiom SubClassOf(Class_178 Clas
+...[truncated]
+FAIL: attempt=1 seed=154 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=1 success=0/100
+----- ASDPTO attempt=2 seed=14354 at 2026-06-28 17:07:37 -----
+--- stdout ---
+{"seed":14354,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":905,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=14354, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:07:37.729] Checking precondition...
+[2026-06-28 17:07:37.763] Starting the repair...
+[2026-06-28 17:07:37.779] Found 1121 possible bad axioms.
+[2026-06-28 17:07:37.780] Selected the bad axiom SubClassOf(Class_452 Class_500).
+[2026-06-28 17:07:37.794] Found 1120 possible bad axioms.
+[2026-06-28 17:07:37.794] Selected the bad axiom SubClassOf(Class_125 Class_47).
+[2026-06-28 17:07:37.803] Found 1119 possible bad axioms.
+[2026-06-28 17:07:37.804] Selected the bad axiom SubClassOf(Class_356 Class_253).
+[2026-06-28 17:07:37.813] Found 1118 possible bad axioms.
+[2026-06-28 17:07:37.814] Selected the bad axiom SubClassOf(Class_217 Class_111).
+[2026-06-28 17:07:37.822] Found 1117 possible bad axioms.
+[2026-06-28 17:07:37.822] Selected the bad axiom SubClassOf(Class_538 Class_76).
+[2026-06-28 17:07:37.830] Found 1116 possible bad axioms.
+[2026-06-28 17:07:37.831] Selected the bad axiom SubClassOf(Class_125 Class_6).
+[2026-06-28 17:07:37.838] Found 1115 possible bad axioms.
+[2026-06-28 17:07:37.838] Selected the bad axiom SubClassOf(Class_256 Class_111).
+[2026-06-28 17:07:37.849] Found 1114 possible bad axioms.
+[2026-06-28 17:07:37.850] Selected the bad axiom SubClassOf(Class_494 Class_517).
+[2026-06-28 17:07:37.856] Found 1113 possible bad axioms.
+[2026-06-28 17:07:37.857] Selected the bad axiom SubClassOf(Class_146 Class_42).
+[2026-06-28 17:07:37.863] Found 1112 possible bad axioms.
+[2026-06-28 17:07:37.864] Selected the bad axiom SubClassOf(Class_15 Class_146).
+[2026-06-28 17:07:37.869] Found 1111 possible bad axioms.
+[2026-06-28 17:07:37.870] Selected the bad axiom SubClassOf(Class_121 Class_96).
+[2026-06-28 17:07:37.882] Found 1110 possible bad axioms.
+[2026-06-28 17:07:37.882] Selected the bad axiom SubClassOf(Class_262 Class_332).
+[2026-06-28 17:07:37.888] Found 1109 possible bad axioms.
+[2026-06-28 17:07:37.888] Selected the bad axiom SubClassOf(Class_158 Class_2).
+[2026-06-28 17:07:37.894] Found 1108 possible bad axioms.
+[2026-06-28 17:07:37.895] Selected the bad axiom SubClassOf(Class_161 owl:Nothing).
+[2026-06-28 17:07:37.902] Found 1107 possible bad axioms.
+[2026-06-28 17:07:37.903] Selected the bad axiom SubClassOf(Class_42 Class_207).
+[2026-06-28 17:07:37.909] Found 1106 possible bad axioms.
+[2026-06-28 17:07:37.909] Selected the bad axiom SubClassOf(Class_152 Class_153).
+[2026-06-28 17:07:37.916] Found 1105 possible bad axioms.
+[2026-06-28 17:07:37.916] Selected the bad axiom SubClassOf(Class_276 Class_677).
+[2026-06-28 17:07:37.921] Found 1104 possible bad axioms.
+[2026-06-28 17:07:37.922] Selected the bad axiom SubClassOf(Class
+...[truncated]
+FAIL: attempt=2 seed=14354 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=2 success=0/100
+----- ASDPTO attempt=3 seed=28554 at 2026-06-28 17:12:38 -----
+--- stdout ---
+{"seed":28554,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1814,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=28554, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:12:39.134] Checking precondition...
+[2026-06-28 17:12:39.168] Starting the repair...
+[2026-06-28 17:12:39.184] Found 1121 possible bad axioms.
+[2026-06-28 17:12:39.186] Selected the bad axiom SubClassOf(Class_10 Class_148).
+[2026-06-28 17:12:39.201] Found 1120 possible bad axioms.
+[2026-06-28 17:12:39.201] Selected the bad axiom SubClassOf(Class_387 Class_527).
+[2026-06-28 17:12:39.211] Found 1119 possible bad axioms.
+[2026-06-28 17:12:39.211] Selected the bad axiom SubClassOf(Class_177 Class_272).
+[2026-06-28 17:12:39.220] Found 1118 possible bad axioms.
+[2026-06-28 17:12:39.220] Selected the bad axiom SubClassOf(Class_64 Class_192).
+[2026-06-28 17:12:39.228] Found 1117 possible bad axioms.
+[2026-06-28 17:12:39.229] Selected the bad axiom SubClassOf(Class_47 Class_297).
+[2026-06-28 17:12:39.236] Found 1116 possible bad axioms.
+[2026-06-28 17:12:39.236] Selected the bad axiom SubClassOf(Class_41 Class_42).
+[2026-06-28 17:12:39.242] Found 1115 possible bad axioms.
+[2026-06-28 17:12:39.243] Selected the bad axiom SubClassOf(Class_99 Class_283).
+[2026-06-28 17:12:39.254] Found 1114 possible bad axioms.
+[2026-06-28 17:12:39.254] Selected the bad axiom SubClassOf(Class_372 Class_527).
+[2026-06-28 17:12:39.260] Found 1113 possible bad axioms.
+[2026-06-28 17:12:39.260] Selected the bad axiom SubClassOf(Class_97 Class_160).
+[2026-06-28 17:12:39.266] Found 1112 possible bad axioms.
+[2026-06-28 17:12:39.266] Selected the bad axiom SubClassOf(Class_454 Class_466).
+[2026-06-28 17:12:39.272] Found 1111 possible bad axioms.
+[2026-06-28 17:12:39.272] Selected the bad axiom SubClassOf(Class_28 Class_85).
+[2026-06-28 17:12:39.284] Found 1110 possible bad axioms.
+[2026-06-28 17:12:39.284] Selected the bad axiom SubClassOf(Class_22 owl:Nothing).
+[2026-06-28 17:12:39.290] Found 1109 possible bad axioms.
+[2026-06-28 17:12:39.290] Selected the bad axiom SubClassOf(Class_665 Class_685).
+[2026-06-28 17:12:39.296] Found 1108 possible bad axioms.
+[2026-06-28 17:12:39.296] Selected the bad axiom SubClassOf(Class_168 Class_43).
+[2026-06-28 17:12:39.302] Found 1107 possible bad axioms.
+[2026-06-28 17:12:39.302] Selected the bad axiom SubClassOf(Class_134 owl:Nothing).
+[2026-06-28 17:12:39.309] Found 1106 possible bad axioms.
+[2026-06-28 17:12:39.309] Selected the bad axiom SubClassOf(Class_128 Class_385).
+[2026-06-28 17:12:39.316] Found 1105 possible bad axioms.
+[2026-06-28 17:12:39.316] Selected the bad axiom SubClassOf(Class_99 Class_306).
+[2026-06-28 17:12:39.321] Found 1104 possible bad axioms.
+[2026-06-28 17:12:39.322] Selected the bad axiom SubClassOf(Class
+...[truncated]
+FAIL: attempt=3 seed=28554 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=3 success=0/100
+----- ASDPTO attempt=4 seed=42754 at 2026-06-28 17:17:41 -----
+--- stdout ---
+{"seed":42754,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1201,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=42754, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:17:41.462] Checking precondition...
+[2026-06-28 17:17:41.497] Starting the repair...
+[2026-06-28 17:17:41.513] Found 1121 possible bad axioms.
+[2026-06-28 17:17:41.514] Selected the bad axiom SubClassOf(Class_523 Class_17).
+[2026-06-28 17:17:41.529] Found 1120 possible bad axioms.
+[2026-06-28 17:17:41.530] Selected the bad axiom SubClassOf(Class_527 Class_365).
+[2026-06-28 17:17:41.540] Found 1119 possible bad axioms.
+[2026-06-28 17:17:41.540] Selected the bad axiom SubClassOf(Class_160 Class_152).
+[2026-06-28 17:17:41.549] Found 1118 possible bad axioms.
+[2026-06-28 17:17:41.549] Selected the bad axiom SubClassOf(Class_207 Class_210).
+[2026-06-28 17:17:41.556] Found 1117 possible bad axioms.
+[2026-06-28 17:17:41.557] Selected the bad axiom SubClassOf(Class_8 Class_165).
+[2026-06-28 17:17:41.564] Found 1116 possible bad axioms.
+[2026-06-28 17:17:41.564] Selected the bad axiom SubClassOf(Class_308 Class_500).
+[2026-06-28 17:17:41.571] Found 1115 possible bad axioms.
+[2026-06-28 17:17:41.571] Selected the bad axiom SubClassOf(Class_52 Class_56).
+[2026-06-28 17:17:41.583] Found 1114 possible bad axioms.
+[2026-06-28 17:17:41.584] Selected the bad axiom SubClassOf(Class_123 Class_328).
+[2026-06-28 17:17:41.591] Found 1113 possible bad axioms.
+[2026-06-28 17:17:41.591] Selected the bad axiom SubClassOf(Class_248 Class_19).
+[2026-06-28 17:17:41.598] Found 1112 possible bad axioms.
+[2026-06-28 17:17:41.598] Selected the bad axiom SubClassOf(Class_488 Class_487).
+[2026-06-28 17:17:41.603] Found 1111 possible bad axioms.
+[2026-06-28 17:17:41.604] Selected the bad axiom SubClassOf(Class_56 Class_52).
+[2026-06-28 17:17:41.616] Found 1110 possible bad axioms.
+[2026-06-28 17:17:41.617] Selected the bad axiom SubClassOf(Class_454 Class_467).
+[2026-06-28 17:17:41.624] Found 1109 possible bad axioms.
+[2026-06-28 17:17:41.625] Selected the bad axiom SubClassOf(Class_271 owl:Nothing).
+[2026-06-28 17:17:41.632] Found 1108 possible bad axioms.
+[2026-06-28 17:17:41.632] Selected the bad axiom SubClassOf(Class_235 Class_6).
+[2026-06-28 17:17:41.638] Found 1107 possible bad axioms.
+[2026-06-28 17:17:41.638] Selected the bad axiom SubClassOf(Class_737 Class_192).
+[2026-06-28 17:17:41.645] Found 1106 possible bad axioms.
+[2026-06-28 17:17:41.645] Selected the bad axiom SubClassOf(Class_110 Class_356).
+[2026-06-28 17:17:41.651] Found 1105 possible bad axioms.
+[2026-06-28 17:17:41.651] Selected the bad axiom SubClassOf(Class_20 Class_18).
+[2026-06-28 17:17:41.659] Found 1104 possible bad axioms.
+[2026-06-28 17:17:41.660] Selected the bad axiom SubClassOf(Class_3
+...[truncated]
+FAIL: attempt=4 seed=42754 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=4 success=0/100
+----- ASDPTO attempt=5 seed=56954 at 2026-06-28 17:22:42 -----
+--- stdout ---
+{"seed":56954,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1694,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=56954, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:22:43.148] Checking precondition...
+[2026-06-28 17:22:43.184] Starting the repair...
+[2026-06-28 17:22:43.199] Found 1121 possible bad axioms.
+[2026-06-28 17:22:43.201] Selected the bad axiom SubClassOf(Class_34 Class_753).
+[2026-06-28 17:22:43.217] Found 1120 possible bad axioms.
+[2026-06-28 17:22:43.217] Selected the bad axiom SubClassOf(Class_393 Class_200).
+[2026-06-28 17:22:43.227] Found 1119 possible bad axioms.
+[2026-06-28 17:22:43.228] Selected the bad axiom SubClassOf(Class_28 Class_67).
+[2026-06-28 17:22:43.236] Found 1118 possible bad axioms.
+[2026-06-28 17:22:43.236] Selected the bad axiom SubClassOf(Class_154 Class_153).
+[2026-06-28 17:22:43.244] Found 1117 possible bad axioms.
+[2026-06-28 17:22:43.244] Selected the bad axiom SubClassOf(Class_384 Class_656).
+[2026-06-28 17:22:43.251] Found 1116 possible bad axioms.
+[2026-06-28 17:22:43.252] Selected the bad axiom SubClassOf(Class_216 Class_413).
+[2026-06-28 17:22:43.258] Found 1115 possible bad axioms.
+[2026-06-28 17:22:43.258] Selected the bad axiom SubClassOf(Class_689 Class_103).
+[2026-06-28 17:22:43.269] Found 1114 possible bad axioms.
+[2026-06-28 17:22:43.270] Selected the bad axiom SubClassOf(Class_119 Class_121).
+[2026-06-28 17:22:43.276] Found 1113 possible bad axioms.
+[2026-06-28 17:22:43.276] Selected the bad axiom SubClassOf(Class_516 Class_120).
+[2026-06-28 17:22:43.283] Found 1112 possible bad axioms.
+[2026-06-28 17:22:43.283] Selected the bad axiom SubClassOf(Class_67 Class_547).
+[2026-06-28 17:22:43.288] Found 1111 possible bad axioms.
+[2026-06-28 17:22:43.289] Selected the bad axiom SubClassOf(Class_429 Class_5).
+[2026-06-28 17:22:43.300] Found 1110 possible bad axioms.
+[2026-06-28 17:22:43.301] Selected the bad axiom SubClassOf(Class_27 Class_84).
+[2026-06-28 17:22:43.307] Found 1109 possible bad axioms.
+[2026-06-28 17:22:43.307] Selected the bad axiom SubClassOf(Class_183 Class_184).
+[2026-06-28 17:22:43.313] Found 1108 possible bad axioms.
+[2026-06-28 17:22:43.313] Selected the bad axiom SubClassOf(Class_49 Class_538).
+[2026-06-28 17:22:43.319] Found 1107 possible bad axioms.
+[2026-06-28 17:22:43.319] Selected the bad axiom SubClassOf(Class_737 Class_384).
+[2026-06-28 17:22:43.326] Found 1106 possible bad axioms.
+[2026-06-28 17:22:43.327] Selected the bad axiom SubClassOf(Class_638 Class_261).
+[2026-06-28 17:22:43.332] Found 1105 possible bad axioms.
+[2026-06-28 17:22:43.332] Selected the bad axiom SubClassOf(Class_527 Class_365).
+[2026-06-28 17:22:43.340] Found 1104 possible bad axioms.
+[2026-06-28 17:22:43.341] Selected the bad axiom SubClassOf(Class_
+...[truncated]
+FAIL: attempt=5 seed=56954 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=5 success=0/100
+----- ASDPTO attempt=6 seed=71154 at 2026-06-28 17:27:44 -----
+--- stdout ---
+{"seed":71154,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1074,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=71154, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:27:45.338] Checking precondition...
+[2026-06-28 17:27:45.371] Starting the repair...
+[2026-06-28 17:27:45.388] Found 1121 possible bad axioms.
+[2026-06-28 17:27:45.389] Selected the bad axiom SubClassOf(Class_332 Class_5).
+[2026-06-28 17:27:45.404] Found 1120 possible bad axioms.
+[2026-06-28 17:27:45.405] Selected the bad axiom SubClassOf(Class_276 Class_665).
+[2026-06-28 17:27:45.413] Found 1119 possible bad axioms.
+[2026-06-28 17:27:45.413] Selected the bad axiom SubClassOf(Class_331 Class_601).
+[2026-06-28 17:27:45.422] Found 1118 possible bad axioms.
+[2026-06-28 17:27:45.423] Selected the bad axiom SubClassOf(Class_62 Class_60).
+[2026-06-28 17:27:45.431] Found 1117 possible bad axioms.
+[2026-06-28 17:27:45.431] Selected the bad axiom SubClassOf(Class_517 Class_216).
+[2026-06-28 17:27:45.438] Found 1116 possible bad axioms.
+[2026-06-28 17:27:45.438] Selected the bad axiom SubClassOf(Class_505 Class_519).
+[2026-06-28 17:27:45.445] Found 1115 possible bad axioms.
+[2026-06-28 17:27:45.445] Selected the bad axiom SubClassOf(Class_503 Class_413).
+[2026-06-28 17:27:45.457] Found 1114 possible bad axioms.
+[2026-06-28 17:27:45.457] Selected the bad axiom SubClassOf(Class_665 Class_7).
+[2026-06-28 17:27:45.464] Found 1113 possible bad axioms.
+[2026-06-28 17:27:45.464] Selected the bad axiom SubClassOf(Class_43 owl:Nothing).
+[2026-06-28 17:27:45.470] Found 1112 possible bad axioms.
+[2026-06-28 17:27:45.471] Selected the bad axiom SubClassOf(Class_30 Class_249).
+[2026-06-28 17:27:45.476] Found 1111 possible bad axioms.
+[2026-06-28 17:27:45.476] Selected the bad axiom SubClassOf(Class_34 Class_724).
+[2026-06-28 17:27:45.488] Found 1110 possible bad axioms.
+[2026-06-28 17:27:45.488] Selected the bad axiom SubClassOf(Class_30 Class_531).
+[2026-06-28 17:27:45.494] Found 1109 possible bad axioms.
+[2026-06-28 17:27:45.495] Selected the bad axiom SubClassOf(Class_360 Class_307).
+[2026-06-28 17:27:45.500] Found 1108 possible bad axioms.
+[2026-06-28 17:27:45.501] Selected the bad axiom SubClassOf(Class_154 Class_5).
+[2026-06-28 17:27:45.507] Found 1107 possible bad axioms.
+[2026-06-28 17:27:45.507] Selected the bad axiom SubClassOf(Class_471 Class_470).
+[2026-06-28 17:27:45.513] Found 1106 possible bad axioms.
+[2026-06-28 17:27:45.513] Selected the bad axiom SubClassOf(Class_176 Class_274).
+[2026-06-28 17:27:45.519] Found 1105 possible bad axioms.
+[2026-06-28 17:27:45.520] Selected the bad axiom SubClassOf(Class_503 Class_505).
+[2026-06-28 17:27:45.525] Found 1104 possible bad axioms.
+[2026-06-28 17:27:45.526] Selected the bad axiom SubClassOf(Class_3
+...[truncated]
+FAIL: attempt=6 seed=71154 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=6 success=0/100
+----- ASDPTO attempt=7 seed=85354 at 2026-06-28 17:32:46 -----
+--- stdout ---
+{"seed":85354,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":916,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=85354, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:32:46.905] Checking precondition...
+[2026-06-28 17:32:46.940] Starting the repair...
+[2026-06-28 17:32:46.957] Found 1121 possible bad axioms.
+[2026-06-28 17:32:46.958] Selected the bad axiom SubClassOf(Class_30 owl:Nothing).
+[2026-06-28 17:32:46.974] Found 1120 possible bad axioms.
+[2026-06-28 17:32:46.974] Selected the bad axiom SubClassOf(Class_321 Class_200).
+[2026-06-28 17:32:46.984] Found 1119 possible bad axioms.
+[2026-06-28 17:32:46.984] Selected the bad axiom SubClassOf(Class_41 Class_532).
+[2026-06-28 17:32:46.992] Found 1118 possible bad axioms.
+[2026-06-28 17:32:46.992] Selected the bad axiom SubClassOf(Class_348 Class_54).
+[2026-06-28 17:32:47.001] Found 1117 possible bad axioms.
+[2026-06-28 17:32:47.002] Selected the bad axiom SubClassOf(Class_116 Class_192).
+[2026-06-28 17:32:47.010] Found 1116 possible bad axioms.
+[2026-06-28 17:32:47.010] Selected the bad axiom SubClassOf(Class_38 Class_665).
+[2026-06-28 17:32:47.016] Found 1115 possible bad axioms.
+[2026-06-28 17:32:47.017] Selected the bad axiom SubClassOf(Class_131 Class_112).
+[2026-06-28 17:32:47.028] Found 1114 possible bad axioms.
+[2026-06-28 17:32:47.028] Selected the bad axiom SubClassOf(Class_310 owl:Nothing).
+[2026-06-28 17:32:47.034] Found 1113 possible bad axioms.
+[2026-06-28 17:32:47.035] Selected the bad axiom SubClassOf(Class_54 Class_545).
+[2026-06-28 17:32:47.041] Found 1112 possible bad axioms.
+[2026-06-28 17:32:47.042] Selected the bad axiom SubClassOf(Class_8 Class_164).
+[2026-06-28 17:32:47.047] Found 1111 possible bad axioms.
+[2026-06-28 17:32:47.048] Selected the bad axiom SubClassOf(Class_216 Class_413).
+[2026-06-28 17:32:47.062] Found 1110 possible bad axioms.
+[2026-06-28 17:32:47.062] Selected the bad axiom SubClassOf(Class_387 Class_429).
+[2026-06-28 17:32:47.068] Found 1109 possible bad axioms.
+[2026-06-28 17:32:47.069] Selected the bad axiom SubClassOf(Class_153 owl:Nothing).
+[2026-06-28 17:32:47.075] Found 1108 possible bad axioms.
+[2026-06-28 17:32:47.075] Selected the bad axiom SubClassOf(Class_188 Class_5).
+[2026-06-28 17:32:47.080] Found 1107 possible bad axioms.
+[2026-06-28 17:32:47.081] Selected the bad axiom SubClassOf(Class_308 Class_500).
+[2026-06-28 17:32:47.087] Found 1106 possible bad axioms.
+[2026-06-28 17:32:47.087] Selected the bad axiom SubClassOf(Class_262 Class_156).
+[2026-06-28 17:32:47.094] Found 1105 possible bad axioms.
+[2026-06-28 17:32:47.094] Selected the bad axiom SubClassOf(Class_365 Class_154).
+[2026-06-28 17:32:47.103] Found 1104 possible bad axioms.
+[2026-06-28 17:32:47.104] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=7 seed=85354 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=7 success=0/100
+----- ASDPTO attempt=8 seed=99554 at 2026-06-28 17:37:47 -----
+--- stdout ---
+{"seed":99554,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1886,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=99554, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:37:48.308] Checking precondition...
+[2026-06-28 17:37:48.343] Starting the repair...
+[2026-06-28 17:37:48.360] Found 1121 possible bad axioms.
+[2026-06-28 17:37:48.363] Selected the bad axiom SubClassOf(Class_240 Class_424).
+[2026-06-28 17:37:48.377] Found 1120 possible bad axioms.
+[2026-06-28 17:37:48.377] Selected the bad axiom SubClassOf(Class_42 Class_210).
+[2026-06-28 17:37:48.386] Found 1119 possible bad axioms.
+[2026-06-28 17:37:48.386] Selected the bad axiom SubClassOf(Class_41 Class_42).
+[2026-06-28 17:37:48.395] Found 1118 possible bad axioms.
+[2026-06-28 17:37:48.395] Selected the bad axiom SubClassOf(Class_145 Class_532).
+[2026-06-28 17:37:48.402] Found 1117 possible bad axioms.
+[2026-06-28 17:37:48.403] Selected the bad axiom SubClassOf(Class_301 Class_682).
+[2026-06-28 17:37:48.410] Found 1116 possible bad axioms.
+[2026-06-28 17:37:48.411] Selected the bad axiom SubClassOf(Class_142 Class_516).
+[2026-06-28 17:37:48.417] Found 1115 possible bad axioms.
+[2026-06-28 17:37:48.418] Selected the bad axiom SubClassOf(Class_299 Class_356).
+[2026-06-28 17:37:48.430] Found 1114 possible bad axioms.
+[2026-06-28 17:37:48.430] Selected the bad axiom SubClassOf(Class_629 Class_148).
+[2026-06-28 17:37:48.437] Found 1113 possible bad axioms.
+[2026-06-28 17:37:48.437] Selected the bad axiom SubClassOf(Class_328 Class_327).
+[2026-06-28 17:37:48.443] Found 1112 possible bad axioms.
+[2026-06-28 17:37:48.443] Selected the bad axiom SubClassOf(Class_464 Class_452).
+[2026-06-28 17:37:48.449] Found 1111 possible bad axioms.
+[2026-06-28 17:37:48.449] Selected the bad axiom SubClassOf(Class_76 Class_321).
+[2026-06-28 17:37:48.461] Found 1110 possible bad axioms.
+[2026-06-28 17:37:48.462] Selected the bad axiom SubClassOf(Class_665 Class_7).
+[2026-06-28 17:37:48.467] Found 1109 possible bad axioms.
+[2026-06-28 17:37:48.468] Selected the bad axiom SubClassOf(Class_192 Class_229).
+[2026-06-28 17:37:48.474] Found 1108 possible bad axioms.
+[2026-06-28 17:37:48.474] Selected the bad axiom SubClassOf(Class_235 Class_17).
+[2026-06-28 17:37:48.480] Found 1107 possible bad axioms.
+[2026-06-28 17:37:48.480] Selected the bad axiom SubClassOf(Class_153 Class_163).
+[2026-06-28 17:37:48.487] Found 1106 possible bad axioms.
+[2026-06-28 17:37:48.487] Selected the bad axiom SubClassOf(Class_387 Class_381).
+[2026-06-28 17:37:48.493] Found 1105 possible bad axioms.
+[2026-06-28 17:37:48.493] Selected the bad axiom SubClassOf(Class_301 Class_7).
+[2026-06-28 17:37:48.500] Found 1104 possible bad axioms.
+[2026-06-28 17:37:48.502] Selected the bad axiom SubClassOf(Class_
+...[truncated]
+FAIL: attempt=8 seed=99554 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=8 success=0/100
+----- ASDPTO attempt=9 seed=113754 at 2026-06-28 17:42:50 -----
+--- stdout ---
+{"seed":113754,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":913,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=113754, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:42:50.690] Checking precondition...
+[2026-06-28 17:42:50.726] Starting the repair...
+[2026-06-28 17:42:50.743] Found 1121 possible bad axioms.
+[2026-06-28 17:42:50.745] Selected the bad axiom SubClassOf(Class_153 Class_87).
+[2026-06-28 17:42:50.760] Found 1120 possible bad axioms.
+[2026-06-28 17:42:50.761] Selected the bad axiom SubClassOf(Class_665 owl:Nothing).
+[2026-06-28 17:42:50.769] Found 1119 possible bad axioms.
+[2026-06-28 17:42:50.769] Selected the bad axiom SubClassOf(Class_527 Class_429).
+[2026-06-28 17:42:50.777] Found 1118 possible bad axioms.
+[2026-06-28 17:42:50.778] Selected the bad axiom SubClassOf(Class_175 Class_5).
+[2026-06-28 17:42:50.786] Found 1117 possible bad axioms.
+[2026-06-28 17:42:50.786] Selected the bad axiom SubClassOf(Class_4 Class_2).
+[2026-06-28 17:42:50.794] Found 1116 possible bad axioms.
+[2026-06-28 17:42:50.794] Selected the bad axiom SubClassOf(Class_524 owl:Nothing).
+[2026-06-28 17:42:50.801] Found 1115 possible bad axioms.
+[2026-06-28 17:42:50.801] Selected the bad axiom SubClassOf(Class_360 Class_272).
+[2026-06-28 17:42:50.813] Found 1114 possible bad axioms.
+[2026-06-28 17:42:50.813] Selected the bad axiom SubClassOf(Class_153 Class_5).
+[2026-06-28 17:42:50.820] Found 1113 possible bad axioms.
+[2026-06-28 17:42:50.820] Selected the bad axiom SubClassOf(Class_121 owl:Nothing).
+[2026-06-28 17:42:50.826] Found 1112 possible bad axioms.
+[2026-06-28 17:42:50.826] Selected the bad axiom SubClassOf(Class_137 Class_516).
+[2026-06-28 17:42:50.832] Found 1111 possible bad axioms.
+[2026-06-28 17:42:50.832] Selected the bad axiom SubClassOf(Class_531 Class_17).
+[2026-06-28 17:42:50.844] Found 1110 possible bad axioms.
+[2026-06-28 17:42:50.844] Selected the bad axiom SubClassOf(Class_457 Class_452).
+[2026-06-28 17:42:50.850] Found 1109 possible bad axioms.
+[2026-06-28 17:42:50.850] Selected the bad axiom SubClassOf(Class_357 Class_3).
+[2026-06-28 17:42:50.856] Found 1108 possible bad axioms.
+[2026-06-28 17:42:50.857] Selected the bad axiom SubClassOf(Class_230 Class_229).
+[2026-06-28 17:42:50.862] Found 1107 possible bad axioms.
+[2026-06-28 17:42:50.863] Selected the bad axiom SubClassOf(Class_381 Class_527).
+[2026-06-28 17:42:50.869] Found 1106 possible bad axioms.
+[2026-06-28 17:42:50.869] Selected the bad axiom SubClassOf(Class_168 Class_166).
+[2026-06-28 17:42:50.875] Found 1105 possible bad axioms.
+[2026-06-28 17:42:50.875] Selected the bad axiom SubClassOf(Class_250 Class_28).
+[2026-06-28 17:42:50.884] Found 1104 possible bad axioms.
+[2026-06-28 17:42:50.884] Selected the bad axiom SubClassOf(Cla
+...[truncated]
+FAIL: attempt=9 seed=113754 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=9 success=0/100
+----- ASDPTO attempt=10 seed=127954 at 2026-06-28 17:47:51 -----
+--- stdout ---
+{"seed":127954,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":564,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ASDPTO.owl, seed=127954, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 17:47:52.099] Checking precondition...
+[2026-06-28 17:47:52.134] Starting the repair...
+[2026-06-28 17:47:52.151] Found 1121 possible bad axioms.
+[2026-06-28 17:47:52.154] Selected the bad axiom SubClassOf(Class_176 Class_229).
+[2026-06-28 17:47:52.169] Found 1120 possible bad axioms.
+[2026-06-28 17:47:52.170] Selected the bad axiom SubClassOf(Class_457 Class_452).
+[2026-06-28 17:47:52.180] Found 1119 possible bad axioms.
+[2026-06-28 17:47:52.180] Selected the bad axiom SubClassOf(Class_176 Class_274).
+[2026-06-28 17:47:52.189] Found 1118 possible bad axioms.
+[2026-06-28 17:47:52.190] Selected the bad axiom SubClassOf(Class_284 Class_312).
+[2026-06-28 17:47:52.198] Found 1117 possible bad axioms.
+[2026-06-28 17:47:52.199] Selected the bad axiom SubClassOf(Class_665 Class_5).
+[2026-06-28 17:47:52.206] Found 1116 possible bad axioms.
+[2026-06-28 17:47:52.207] Selected the bad axiom SubClassOf(Class_274 Class_324).
+[2026-06-28 17:47:52.213] Found 1115 possible bad axioms.
+[2026-06-28 17:47:52.213] Selected the bad axiom SubClassOf(Class_60 Class_67).
+[2026-06-28 17:47:52.225] Found 1114 possible bad axioms.
+[2026-06-28 17:47:52.225] Selected the bad axiom SubClassOf(Class_52 Class_50).
+[2026-06-28 17:47:52.232] Found 1113 possible bad axioms.
+[2026-06-28 17:47:52.233] Selected the bad axiom SubClassOf(Class_173 Class_529).
+[2026-06-28 17:47:52.238] Found 1112 possible bad axioms.
+[2026-06-28 17:47:52.238] Selected the bad axiom SubClassOf(Class_466 Class_163).
+[2026-06-28 17:47:52.244] Found 1111 possible bad axioms.
+[2026-06-28 17:47:52.244] Selected the bad axiom SubClassOf(Class_153 Class_467).
+[2026-06-28 17:47:52.257] Found 1110 possible bad axioms.
+[2026-06-28 17:47:52.257] Selected the bad axiom SubClassOf(Class_601 Class_385).
+[2026-06-28 17:47:52.263] Found 1109 possible bad axioms.
+[2026-06-28 17:47:52.263] Selected the bad axiom SubClassOf(Class_57 Class_116).
+[2026-06-28 17:47:52.269] Found 1108 possible bad axioms.
+[2026-06-28 17:47:52.270] Selected the bad axiom SubClassOf(Class_146 Class_5).
+[2026-06-28 17:47:52.275] Found 1107 possible bad axioms.
+[2026-06-28 17:47:52.275] Selected the bad axiom SubClassOf(Class_61 Class_60).
+[2026-06-28 17:47:52.282] Found 1106 possible bad axioms.
+[2026-06-28 17:47:52.282] Selected the bad axiom SubClassOf(Class_218 Class_126).
+[2026-06-28 17:47:52.288] Found 1105 possible bad axioms.
+[2026-06-28 17:47:52.288] Selected the bad axiom SubClassOf(Class_737 Class_192).
+[2026-06-28 17:47:52.294] Found 1104 possible bad axioms.
+[2026-06-28 17:47:52.294] Selected the bad axiom SubClassOf(Class_5
+...[truncated]
+FAIL: attempt=10 seed=127954 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=ASDPTO attempt=10 success=0/100
+=== ABORTED ASDPTO after 10 consecutive failures at 2026-06-28 17:52:52 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ASDPTO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=154 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=2 seed=14354 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=3 seed=28554 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=4 seed=42754 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=5 seed=56954 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=6 seed=71154 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=7 seed=85354 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=8 seed=99554 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=9 seed=113754 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=10 seed=127954 msg=Repair timeout: A2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3016.819906 avg_seconds=301.681991
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

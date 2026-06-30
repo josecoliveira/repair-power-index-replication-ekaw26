@@ -1,0 +1,2124 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-IMOBO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-IMOBO.csv
+
+=== Starting sequential trials for IMOBO at 2026-06-27 10:49:40 ===
+----- IMOBO attempt=1 seed=111 at 2026-06-27 10:49:40 -----
+--- stdout ---
+{"seed":111,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":399,"A2":3617,"A3":447,"B1":422,"B2":8497,"B3":1554}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:49:40.507] Checking precondition...
+[2026-06-27 10:49:40.524] Starting the repair...
+[2026-06-27 10:49:40.531] Found 325 possible bad axioms.
+[2026-06-27 10:49:40.532] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000052).
+[2026-06-27 10:49:40.537] Found 324 possible bad axioms.
+[2026-06-27 10:49:40.538] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000021).
+[2026-06-27 10:49:40.547] Found 323 possible bad axioms.
+[2026-06-27 10:49:40.547] Selected the bad axiom SubClassOf(imobo_0000020 owl:Nothing).
+[2026-06-27 10:49:40.552] Found 322 possible bad axioms.
+[2026-06-27 10:49:40.552] Selected the bad axiom SubClassOf(imobo_0000072 owl:Nothing).
+[2026-06-27 10:49:40.557] Found 321 possible bad axioms.
+[2026-06-27 10:49:40.557] Selected the bad axiom SubClassOf(imobo_0000045 imobo_0000050).
+[2026-06-27 10:49:40.561] Found 320 possible bad axioms.
+[2026-06-27 10:49:40.562] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000002).
+[2026-06-27 10:49:40.567] Found 319 possible bad axioms.
+[2026-06-27 10:49:40.568] Selected the bad axiom SubClassOf(imobo_0000013 imobo_0000004).
+[2026-06-27 10:49:40.572] Found 318 possible bad axioms.
+[2026-06-27 10:49:40.572] Selected the bad axiom SubClassOf(imobo_0000086 owl:Nothing).
+[2026-06-27 10:49:40.576] Found 317 possible bad axioms.
+[2026-06-27 10:49:40.576] Selected the bad axiom SubClassOf(imobo_0000037 owl:Nothing).
+[2026-06-27 10:49:40.580] Found 316 possible bad axioms.
+[2026-06-27 10:49:40.580] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000068).
+[2026-06-27 10:49:40.588] Found 315 possible bad axioms.
+[2026-06-27 10:49:40.588] Selected the bad axiom SubClassOf(imobo_0000014 imobo_0000011).
+[2026-06-27 10:49:40.597] Found 314 possible bad axioms.
+[2026-06-27 10:49:40.597] Selected the bad axiom SubClassOf(imobo_0000012 imobo_0000004).
+[2026-06-27 10:49:40.600] Found 313 possible bad axioms.
+[2026-06-27 10:49:40.601] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000005).
+[2026-06-27 10:49:40.604] Found 312 possible bad axioms.
+[2026-06-27 10:49:40.604] Selected the bad axiom SubClassOf(imobo_0000004 owl:Nothing).
+[2026-06-27 10:49:40.608] Found 311 possible bad axioms.
+[2026-06-27 10:49:40.608] Selected the bad axiom SubClassOf(imobo_0000050 owl:Nothing).
+[2026-06-27 10:49:40.612] Found 310 possible bad axioms.
+[2026-06-27 10:49:40.612] Selected the bad axiom SubClassOf(imobo_0000020 imobo_0000030).
+[2026-06-27 10:49:40.615] Found 309 possible bad axioms.
+[2026-06-27 10:49:40.615] Selected the bad axiom SubClassOf(imobo_0000093 imobo_0000097).
+[2026-06-27
+...[truncated]
+FAIL: attempt=1 seed=111 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=1 success=0/100
+----- IMOBO attempt=2 seed=14311 at 2026-06-27 10:49:55 -----
+--- stdout ---
+{"seed":14311,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":222,"A2":3646,"A3":464,"B1":501,"B2":8234}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=14311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:49:55.907] Checking precondition...
+[2026-06-27 10:49:55.925] Starting the repair...
+[2026-06-27 10:49:55.932] Found 325 possible bad axioms.
+[2026-06-27 10:49:55.934] Selected the bad axiom SubClassOf(imobo_0000023 imobo_0000036).
+[2026-06-27 10:49:55.940] Found 324 possible bad axioms.
+[2026-06-27 10:49:55.940] Selected the bad axiom SubClassOf(imobo_0000018 imobo_0000020).
+[2026-06-27 10:49:55.949] Found 323 possible bad axioms.
+[2026-06-27 10:49:55.949] Selected the bad axiom SubClassOf(imobo_0000007 imobo_0000004).
+[2026-06-27 10:49:55.955] Found 322 possible bad axioms.
+[2026-06-27 10:49:55.955] Selected the bad axiom SubClassOf(imobo_0000036 owl:Nothing).
+[2026-06-27 10:49:55.959] Found 321 possible bad axioms.
+[2026-06-27 10:49:55.959] Selected the bad axiom SubClassOf(imobo_0000096 imobo_0000098).
+[2026-06-27 10:49:55.963] Found 320 possible bad axioms.
+[2026-06-27 10:49:55.963] Selected the bad axiom SubClassOf(imobo_0000031 imobo_0000015).
+[2026-06-27 10:49:55.967] Found 319 possible bad axioms.
+[2026-06-27 10:49:55.968] Selected the bad axiom SubClassOf(imobo_0000038 imobo_0000049).
+[2026-06-27 10:49:55.973] Found 318 possible bad axioms.
+[2026-06-27 10:49:55.973] Selected the bad axiom SubClassOf(imobo_0000067 owl:Nothing).
+[2026-06-27 10:49:55.977] Found 317 possible bad axioms.
+[2026-06-27 10:49:55.977] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000052).
+[2026-06-27 10:49:55.981] Found 316 possible bad axioms.
+[2026-06-27 10:49:55.981] Selected the bad axiom SubClassOf(imobo_0000031 imobo_0000025).
+[2026-06-27 10:49:55.989] Found 315 possible bad axioms.
+[2026-06-27 10:49:55.989] Selected the bad axiom SubClassOf(imobo_0000054 imobo_0000052).
+[2026-06-27 10:49:55.996] Found 314 possible bad axioms.
+[2026-06-27 10:49:55.997] Selected the bad axiom SubClassOf(imobo_0000028 imobo_0000015).
+[2026-06-27 10:49:56.000] Found 313 possible bad axioms.
+[2026-06-27 10:49:56.000] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000021).
+[2026-06-27 10:49:56.003] Found 312 possible bad axioms.
+[2026-06-27 10:49:56.003] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000037).
+[2026-06-27 10:49:56.007] Found 311 possible bad axioms.
+[2026-06-27 10:49:56.007] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000024).
+[2026-06-27 10:49:56.010] Found 310 possible bad axioms.
+[2026-06-27 10:49:56.011] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000045).
+[2026-06-27 10:49:56.014] Found 309 possible bad axioms.
+[2026-06-27 10:49:56.014] Selected the bad axiom SubClassOf(imobo_0000051 imobo_0000038).
+[
+...[truncated]
+FAIL: attempt=2 seed=14311 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=2 success=0/100
+----- IMOBO attempt=3 seed=28511 at 2026-06-27 10:50:09 -----
+--- stdout ---
+{"seed":28511,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":181,"A2":3652,"A3":475,"B1":431,"B2":8112}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=28511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:50:09.448] Checking precondition...
+[2026-06-27 10:50:09.465] Starting the repair...
+[2026-06-27 10:50:09.472] Found 325 possible bad axioms.
+[2026-06-27 10:50:09.474] Selected the bad axiom SubClassOf(imobo_0000056 owl:Nothing).
+[2026-06-27 10:50:09.479] Found 324 possible bad axioms.
+[2026-06-27 10:50:09.480] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000037).
+[2026-06-27 10:50:09.489] Found 323 possible bad axioms.
+[2026-06-27 10:50:09.489] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000091).
+[2026-06-27 10:50:09.494] Found 322 possible bad axioms.
+[2026-06-27 10:50:09.494] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000003).
+[2026-06-27 10:50:09.499] Found 321 possible bad axioms.
+[2026-06-27 10:50:09.499] Selected the bad axiom SubClassOf(imobo_0000065 owl:Nothing).
+[2026-06-27 10:50:09.504] Found 320 possible bad axioms.
+[2026-06-27 10:50:09.504] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000085).
+[2026-06-27 10:50:09.508] Found 319 possible bad axioms.
+[2026-06-27 10:50:09.509] Selected the bad axiom SubClassOf(imobo_0000040 owl:Nothing).
+[2026-06-27 10:50:09.513] Found 318 possible bad axioms.
+[2026-06-27 10:50:09.513] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000035).
+[2026-06-27 10:50:09.516] Found 317 possible bad axioms.
+[2026-06-27 10:50:09.516] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000081).
+[2026-06-27 10:50:09.520] Found 316 possible bad axioms.
+[2026-06-27 10:50:09.520] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000002).
+[2026-06-27 10:50:09.528] Found 315 possible bad axioms.
+[2026-06-27 10:50:09.528] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000088).
+[2026-06-27 10:50:09.536] Found 314 possible bad axioms.
+[2026-06-27 10:50:09.536] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000025).
+[2026-06-27 10:50:09.540] Found 313 possible bad axioms.
+[2026-06-27 10:50:09.540] Selected the bad axiom SubClassOf(imobo_0000009 imobo_0000004).
+[2026-06-27 10:50:09.544] Found 312 possible bad axioms.
+[2026-06-27 10:50:09.544] Selected the bad axiom SubClassOf(imobo_0000031 owl:Nothing).
+[2026-06-27 10:50:09.548] Found 311 possible bad axioms.
+[2026-06-27 10:50:09.548] Selected the bad axiom SubClassOf(imobo_0000058 imobo_0000052).
+[2026-06-27 10:50:09.552] Found 310 possible bad axioms.
+[2026-06-27 10:50:09.552] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000003).
+[2026-06-27 10:50:09.556] Found 309 possible bad axioms.
+[2026-06-27 10:50:09.556] Selected the bad axiom SubClassOf(imobo_0000070 imobo_0000052).
+[2026
+...[truncated]
+FAIL: attempt=3 seed=28511 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=3 success=0/100
+----- IMOBO attempt=4 seed=42711 at 2026-06-27 10:50:22 -----
+--- stdout ---
+{"seed":42711,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.9982478496336413,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":0.9982478496336413,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":0.9982478496336413,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.9982478496336413,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":0.9982478496336413,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":0.9982478496336413,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":0.9982478496336413,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":0.9982478496336413,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":0.9982478496336413,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":429,"A2":3586,"A3":503,"B1":441,"B2":8650,"B3":5142,"B4":115,"B5":8453,"B6":1258,"B7":388,"B8":4350,"B9":4832}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=42711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:50:22.786] Checking precondition...
+[2026-06-27 10:50:22.802] Starting the repair...
+[2026-06-27 10:50:22.809] Found 325 possible bad axioms.
+[2026-06-27 10:50:22.810] Selected the bad axiom SubClassOf(imobo_0000076 owl:Nothing).
+[2026-06-27 10:50:22.816] Found 324 possible bad axioms.
+[2026-06-27 10:50:22.816] Selected the bad axiom SubClassOf(imobo_0000056 owl:Nothing).
+[2026-06-27 10:50:22.825] Found 323 possible bad axioms.
+[2026-06-27 10:50:22.825] Selected the bad axiom SubClassOf(imobo_0000005 imobo_0000004).
+[2026-06-27 10:50:22.830] Found 322 possible bad axioms.
+[2026-06-27 10:50:22.830] Selected the bad axiom SubClassOf(imobo_0000059 imobo_0000064).
+[2026-06-27 10:50:22.835] Found 321 possible bad axioms.
+[2026-06-27 10:50:22.835] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000080).
+[2026-06-27 10:50:22.840] Found 320 possible bad axioms.
+[2026-06-27 10:50:22.840] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000015).
+[2026-06-27 10:50:22.846] Found 319 possible bad axioms.
+[2026-06-27 10:50:22.846] Selected the bad axiom SubClassOf(imobo_0000018 imobo_0000020).
+[2026-06-27 10:50:22.850] Found 318 possible bad axioms.
+[2026-06-27 10:50:22.850] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000096).
+[2026-06-27 10:50:22.854] Found 317 possible bad axioms.
+[2026-06-27 10:50:22.854] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000097).
+[2026-06-27 10:50:22.858] Found 316 possible bad axioms.
+[2026-06-27 10:50:22.858] Selected the bad axiom SubClassOf(imobo_0000074 imobo_0000075).
+[2026-06-27 10:50:22.861] Found 315 possible bad axioms.
+[2026-06-27 10:50:22.861] Selected the bad axiom SubClassOf(imobo_0000056 imobo_0000052).
+[2026-06-27 10:50:22.874] Found 314 possible bad axioms.
+[2026-06-27 10:50:22.874] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000021).
+[2026-06-27 10:50:22.878] Found 313 possible bad axioms.
+[2026-06-27 10:50:22.878] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000068).
+[2026-06-27 10:50:22.881] Found 312 possible bad axioms.
+[2026-06-27 10:50:22.881] Selected the bad axiom SubClassOf(imobo_0000032 imobo_0000015).
+[2026-06-27 10:50:22.885] Found 311 possible bad axioms.
+[2026-06-27 10:50:22.885] Selected the bad axiom SubClassOf(imobo_0000041 imobo_0000037).
+[2026-06-27 10:50:22.888] Found 310 possible bad axioms.
+[2026-06-27 10:50:22.888] Selected the bad axiom SubClassOf(imobo_0000014 imobo_0000011).
+[2026-06-27 10:50:22.892] Found 309 possible bad axioms.
+[2026-06-27 10:50:22.892] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000087).
+[
+...[truncated]
+SUCCESS: attempt=4 seed=42711 success_count=1/100
+progress: ontology=IMOBO attempt=4 success=1/100
+----- IMOBO attempt=5 seed=56911 at 2026-06-27 10:51:01 -----
+--- stdout ---
+{"seed":56911,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B9","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":377,"A2":3559,"A3":466,"B1":430,"B2":5153,"B3":5300,"B4":141,"B5":7936,"B6":3284,"B7":267,"B8":8454,"B9":1203}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=56911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:51:02.035] Checking precondition...
+[2026-06-27 10:51:02.051] Starting the repair...
+[2026-06-27 10:51:02.059] Found 325 possible bad axioms.
+[2026-06-27 10:51:02.060] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000017).
+[2026-06-27 10:51:02.067] Found 324 possible bad axioms.
+[2026-06-27 10:51:02.067] Selected the bad axiom SubClassOf(imobo_0000003 owl:Nothing).
+[2026-06-27 10:51:02.076] Found 323 possible bad axioms.
+[2026-06-27 10:51:02.076] Selected the bad axiom SubClassOf(imobo_0000047 imobo_0000037).
+[2026-06-27 10:51:02.082] Found 322 possible bad axioms.
+[2026-06-27 10:51:02.082] Selected the bad axiom SubClassOf(imobo_0000013 imobo_0000004).
+[2026-06-27 10:51:02.086] Found 321 possible bad axioms.
+[2026-06-27 10:51:02.086] Selected the bad axiom SubClassOf(imobo_0000012 imobo_0000011).
+[2026-06-27 10:51:02.091] Found 320 possible bad axioms.
+[2026-06-27 10:51:02.091] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000003).
+[2026-06-27 10:51:02.096] Found 319 possible bad axioms.
+[2026-06-27 10:51:02.096] Selected the bad axiom SubClassOf(imobo_0000101 imobo_0000102).
+[2026-06-27 10:51:02.100] Found 318 possible bad axioms.
+[2026-06-27 10:51:02.100] Selected the bad axiom SubClassOf(imobo_0000028 owl:Nothing).
+[2026-06-27 10:51:02.103] Found 317 possible bad axioms.
+[2026-06-27 10:51:02.104] Selected the bad axiom SubClassOf(imobo_0000086 owl:Nothing).
+[2026-06-27 10:51:02.107] Found 316 possible bad axioms.
+[2026-06-27 10:51:02.107] Selected the bad axiom SubClassOf(imobo_0000101 imobo_0000096).
+[2026-06-27 10:51:02.111] Found 315 possible bad axioms.
+[2026-06-27 10:51:02.111] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000003).
+[2026-06-27 10:51:02.124] Found 314 possible bad axioms.
+[2026-06-27 10:51:02.125] Selected the bad axiom SubClassOf(imobo_0000037 owl:Nothing).
+[2026-06-27 10:51:02.128] Found 313 possible bad axioms.
+[2026-06-27 10:51:02.128] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000041).
+[2026-06-27 10:51:02.131] Found 312 possible bad axioms.
+[2026-06-27 10:51:02.132] Selected the bad axiom SubClassOf(imobo_0000050 imobo_0000046).
+[2026-06-27 10:51:02.136] Found 311 possible bad axioms.
+[2026-06-27 10:51:02.136] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000019).
+[2026-06-27 10:51:02.140] Found 310 possible bad axioms.
+[2026-06-27 10:51:02.140] Selected the bad axiom SubClassOf(imobo_0000059 imobo_0000052).
+[2026-06-27 10:51:02.144] Found 309 possible bad axioms.
+[2026-06-27 10:51:02.144] Selected the bad axiom SubClassOf(imobo_0000018 imobo_0000020).
+[2026
+...[truncated]
+FAIL: attempt=5 seed=56911 status=memory_limit_exceeded stage=B9 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=5 success=1/100
+----- IMOBO attempt=6 seed=71111 at 2026-06-27 10:51:39 -----
+--- stdout ---
+{"seed":71111,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":408,"A2":3617,"A3":782,"B1":428,"B2":4239}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=71111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:51:39.426] Checking precondition...
+[2026-06-27 10:51:39.442] Starting the repair...
+[2026-06-27 10:51:39.449] Found 325 possible bad axioms.
+[2026-06-27 10:51:39.451] Selected the bad axiom SubClassOf(imobo_0000096 owl:Nothing).
+[2026-06-27 10:51:39.456] Found 324 possible bad axioms.
+[2026-06-27 10:51:39.457] Selected the bad axiom SubClassOf(imobo_0000033 imobo_0000035).
+[2026-06-27 10:51:39.467] Found 323 possible bad axioms.
+[2026-06-27 10:51:39.467] Selected the bad axiom SubClassOf(imobo_0000012 imobo_0000004).
+[2026-06-27 10:51:39.472] Found 322 possible bad axioms.
+[2026-06-27 10:51:39.472] Selected the bad axiom SubClassOf(imobo_0000007 imobo_0000004).
+[2026-06-27 10:51:39.477] Found 321 possible bad axioms.
+[2026-06-27 10:51:39.477] Selected the bad axiom SubClassOf(imobo_0000023 imobo_0000015).
+[2026-06-27 10:51:39.482] Found 320 possible bad axioms.
+[2026-06-27 10:51:39.483] Selected the bad axiom SubClassOf(imobo_0000030 imobo_0000015).
+[2026-06-27 10:51:39.487] Found 319 possible bad axioms.
+[2026-06-27 10:51:39.487] Selected the bad axiom SubClassOf(imobo_0000002 owl:Nothing).
+[2026-06-27 10:51:39.491] Found 318 possible bad axioms.
+[2026-06-27 10:51:39.491] Selected the bad axiom SubClassOf(imobo_0000008 imobo_0000004).
+[2026-06-27 10:51:39.495] Found 317 possible bad axioms.
+[2026-06-27 10:51:39.495] Selected the bad axiom SubClassOf(imobo_0000094 imobo_0000095).
+[2026-06-27 10:51:39.498] Found 316 possible bad axioms.
+[2026-06-27 10:51:39.498] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000029).
+[2026-06-27 10:51:39.505] Found 315 possible bad axioms.
+[2026-06-27 10:51:39.505] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000035).
+[2026-06-27 10:51:39.514] Found 314 possible bad axioms.
+[2026-06-27 10:51:39.514] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000096).
+[2026-06-27 10:51:39.518] Found 313 possible bad axioms.
+[2026-06-27 10:51:39.518] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000063).
+[2026-06-27 10:51:39.521] Found 312 possible bad axioms.
+[2026-06-27 10:51:39.521] Selected the bad axiom SubClassOf(imobo_0000068 imobo_0000057).
+[2026-06-27 10:51:39.524] Found 311 possible bad axioms.
+[2026-06-27 10:51:39.524] Selected the bad axiom SubClassOf(imobo_0000034 imobo_0000022).
+[2026-06-27 10:51:39.526] Found 310 possible bad axioms.
+[2026-06-27 10:51:39.527] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000020).
+[2026-06-27 10:51:39.529] Found 309 possible bad axioms.
+[2026-06-27 10:51:39.529] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000015).
+[
+...[truncated]
+FAIL: attempt=6 seed=71111 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=6 success=1/100
+----- IMOBO attempt=7 seed=85311 at 2026-06-27 10:51:49 -----
+--- stdout ---
+{"seed":85311,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":329,"A2":3675,"A3":457,"B1":437,"B2":2342,"B3":5459,"B4":171,"B5":8170,"B6":3286,"B7":245,"B8":2282,"B9":2640}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=85311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:51:49.855] Checking precondition...
+[2026-06-27 10:51:49.872] Starting the repair...
+[2026-06-27 10:51:49.879] Found 325 possible bad axioms.
+[2026-06-27 10:51:49.880] Selected the bad axiom SubClassOf(imobo_0000049 owl:Nothing).
+[2026-06-27 10:51:49.886] Found 324 possible bad axioms.
+[2026-06-27 10:51:49.886] Selected the bad axiom SubClassOf(imobo_0000075 owl:Nothing).
+[2026-06-27 10:51:49.897] Found 323 possible bad axioms.
+[2026-06-27 10:51:49.897] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000019).
+[2026-06-27 10:51:49.902] Found 322 possible bad axioms.
+[2026-06-27 10:51:49.903] Selected the bad axiom SubClassOf(imobo_0000096 imobo_0000098).
+[2026-06-27 10:51:49.907] Found 321 possible bad axioms.
+[2026-06-27 10:51:49.907] Selected the bad axiom SubClassOf(imobo_0000016 imobo_0000023).
+[2026-06-27 10:51:49.912] Found 320 possible bad axioms.
+[2026-06-27 10:51:49.912] Selected the bad axiom SubClassOf(imobo_0000055 imobo_0000052).
+[2026-06-27 10:51:49.917] Found 319 possible bad axioms.
+[2026-06-27 10:51:49.917] Selected the bad axiom SubClassOf(imobo_0000080 imobo_0000076).
+[2026-06-27 10:51:49.921] Found 318 possible bad axioms.
+[2026-06-27 10:51:49.922] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000070).
+[2026-06-27 10:51:49.925] Found 317 possible bad axioms.
+[2026-06-27 10:51:49.925] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000063).
+[2026-06-27 10:51:49.929] Found 316 possible bad axioms.
+[2026-06-27 10:51:49.929] Selected the bad axiom SubClassOf(imobo_0000039 imobo_0000044).
+[2026-06-27 10:51:49.936] Found 315 possible bad axioms.
+[2026-06-27 10:51:49.937] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000038).
+[2026-06-27 10:51:49.945] Found 314 possible bad axioms.
+[2026-06-27 10:51:49.946] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000075).
+[2026-06-27 10:51:49.949] Found 313 possible bad axioms.
+[2026-06-27 10:51:49.949] Selected the bad axiom SubClassOf(imobo_0000045 owl:Nothing).
+[2026-06-27 10:51:49.952] Found 312 possible bad axioms.
+[2026-06-27 10:51:49.953] Selected the bad axiom SubClassOf(imobo_0000038 imobo_0000037).
+[2026-06-27 10:51:49.956] Found 311 possible bad axioms.
+[2026-06-27 10:51:49.957] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000003).
+[2026-06-27 10:51:49.961] Found 310 possible bad axioms.
+[2026-06-27 10:51:49.961] Selected the bad axiom SubClassOf(imobo_0000083 imobo_0000081).
+[2026-06-27 10:51:49.964] Found 309 possible bad axioms.
+[2026-06-27 10:51:49.964] Selected the bad axiom SubClassOf(imobo_0000028 imobo_0000015).
+[20
+...[truncated]
+SUCCESS: attempt=7 seed=85311 success_count=2/100
+progress: ontology=IMOBO attempt=7 success=2/100
+----- IMOBO attempt=8 seed=99511 at 2026-06-27 10:52:20 -----
+--- stdout ---
+{"seed":99511,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":351,"A2":3602,"A3":485,"B1":763,"B2":8693,"B3":2904,"B4":117,"B5":8233,"B6":5608,"B7":185,"B8":4175,"B9":968}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=99511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:52:20.374] Checking precondition...
+[2026-06-27 10:52:20.390] Starting the repair...
+[2026-06-27 10:52:20.398] Found 325 possible bad axioms.
+[2026-06-27 10:52:20.399] Selected the bad axiom SubClassOf(imobo_0000098 owl:Nothing).
+[2026-06-27 10:52:20.405] Found 324 possible bad axioms.
+[2026-06-27 10:52:20.406] Selected the bad axiom SubClassOf(imobo_0000076 owl:Nothing).
+[2026-06-27 10:52:20.414] Found 323 possible bad axioms.
+[2026-06-27 10:52:20.415] Selected the bad axiom SubClassOf(imobo_0000048 imobo_0000044).
+[2026-06-27 10:52:20.419] Found 322 possible bad axioms.
+[2026-06-27 10:52:20.420] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000030).
+[2026-06-27 10:52:20.424] Found 321 possible bad axioms.
+[2026-06-27 10:52:20.424] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000097).
+[2026-06-27 10:52:20.428] Found 320 possible bad axioms.
+[2026-06-27 10:52:20.429] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000087).
+[2026-06-27 10:52:20.433] Found 319 possible bad axioms.
+[2026-06-27 10:52:20.434] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000002).
+[2026-06-27 10:52:20.438] Found 318 possible bad axioms.
+[2026-06-27 10:52:20.438] Selected the bad axiom SubClassOf(imobo_0000056 imobo_0000060).
+[2026-06-27 10:52:20.442] Found 317 possible bad axioms.
+[2026-06-27 10:52:20.442] Selected the bad axiom SubClassOf(imobo_0000032 imobo_0000030).
+[2026-06-27 10:52:20.446] Found 316 possible bad axioms.
+[2026-06-27 10:52:20.446] Selected the bad axiom SubClassOf(imobo_0000056 imobo_0000052).
+[2026-06-27 10:52:20.453] Found 315 possible bad axioms.
+[2026-06-27 10:52:20.453] Selected the bad axiom SubClassOf(imobo_0000077 imobo_0000072).
+[2026-06-27 10:52:20.462] Found 314 possible bad axioms.
+[2026-06-27 10:52:20.462] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000089).
+[2026-06-27 10:52:20.466] Found 313 possible bad axioms.
+[2026-06-27 10:52:20.466] Selected the bad axiom SubClassOf(imobo_0000049 imobo_0000037).
+[2026-06-27 10:52:20.470] Found 312 possible bad axioms.
+[2026-06-27 10:52:20.470] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000020).
+[2026-06-27 10:52:20.474] Found 311 possible bad axioms.
+[2026-06-27 10:52:20.474] Selected the bad axiom SubClassOf(imobo_0000028 owl:Nothing).
+[2026-06-27 10:52:20.477] Found 310 possible bad axioms.
+[2026-06-27 10:52:20.477] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000002).
+[2026-06-27 10:52:20.481] Found 309 possible bad axioms.
+[2026-06-27 10:52:20.482] Selected the bad axiom SubClassOf(imobo_0000099 imobo_0000102).
+[20
+...[truncated]
+SUCCESS: attempt=8 seed=99511 success_count=3/100
+progress: ontology=IMOBO attempt=8 success=3/100
+----- IMOBO attempt=9 seed=113711 at 2026-06-27 10:52:57 -----
+--- stdout ---
+{"seed":113711,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":352,"A2":3632,"A3":498,"B1":411,"B2":4827}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=113711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:52:57.508] Checking precondition...
+[2026-06-27 10:52:57.525] Starting the repair...
+[2026-06-27 10:52:57.533] Found 325 possible bad axioms.
+[2026-06-27 10:52:57.534] Selected the bad axiom SubClassOf(imobo_0000060 imobo_0000056).
+[2026-06-27 10:52:57.540] Found 324 possible bad axioms.
+[2026-06-27 10:52:57.540] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000025).
+[2026-06-27 10:52:57.551] Found 323 possible bad axioms.
+[2026-06-27 10:52:57.551] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000015).
+[2026-06-27 10:52:57.556] Found 322 possible bad axioms.
+[2026-06-27 10:52:57.556] Selected the bad axiom SubClassOf(imobo_0000044 imobo_0000037).
+[2026-06-27 10:52:57.561] Found 321 possible bad axioms.
+[2026-06-27 10:52:57.561] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000080).
+[2026-06-27 10:52:57.566] Found 320 possible bad axioms.
+[2026-06-27 10:52:57.566] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000020).
+[2026-06-27 10:52:57.570] Found 319 possible bad axioms.
+[2026-06-27 10:52:57.570] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000040).
+[2026-06-27 10:52:57.574] Found 318 possible bad axioms.
+[2026-06-27 10:52:57.575] Selected the bad axiom SubClassOf(imobo_0000062 imobo_0000052).
+[2026-06-27 10:52:57.578] Found 317 possible bad axioms.
+[2026-06-27 10:52:57.579] Selected the bad axiom SubClassOf(imobo_0000057 imobo_0000060).
+[2026-06-27 10:52:57.582] Found 316 possible bad axioms.
+[2026-06-27 10:52:57.582] Selected the bad axiom SubClassOf(imobo_0000006 imobo_0000004).
+[2026-06-27 10:52:57.590] Found 315 possible bad axioms.
+[2026-06-27 10:52:57.590] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000096).
+[2026-06-27 10:52:57.599] Found 314 possible bad axioms.
+[2026-06-27 10:52:57.599] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000004).
+[2026-06-27 10:52:57.603] Found 313 possible bad axioms.
+[2026-06-27 10:52:57.603] Selected the bad axiom SubClassOf(imobo_0000018 owl:Nothing).
+[2026-06-27 10:52:57.607] Found 312 possible bad axioms.
+[2026-06-27 10:52:57.608] Selected the bad axiom SubClassOf(imobo_0000088 imobo_0000081).
+[2026-06-27 10:52:57.611] Found 311 possible bad axioms.
+[2026-06-27 10:52:57.612] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000005).
+[2026-06-27 10:52:57.615] Found 310 possible bad axioms.
+[2026-06-27 10:52:57.615] Selected the bad axiom SubClassOf(imobo_0000101 imobo_0000102).
+[2026-06-27 10:52:57.619] Found 309 possible bad axioms.
+[2026-06-27 10:52:57.619] Selected the bad axiom SubClassOf(imobo_0000043 imobo_0000038)
+...[truncated]
+FAIL: attempt=9 seed=113711 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=9 success=3/100
+----- IMOBO attempt=10 seed=127911 at 2026-06-27 10:53:07 -----
+--- stdout ---
+{"seed":127911,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":315,"A2":3653,"A3":511,"B1":439,"B2":8726,"B3":2870,"B4":101,"B5":4577,"B6":972,"B7":229,"B8":8675,"B9":3040}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=127911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:53:07.702] Checking precondition...
+[2026-06-27 10:53:07.718] Starting the repair...
+[2026-06-27 10:53:07.726] Found 325 possible bad axioms.
+[2026-06-27 10:53:07.727] Selected the bad axiom SubClassOf(imobo_0000044 imobo_0000037).
+[2026-06-27 10:53:07.734] Found 324 possible bad axioms.
+[2026-06-27 10:53:07.735] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000093).
+[2026-06-27 10:53:07.744] Found 323 possible bad axioms.
+[2026-06-27 10:53:07.744] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000075).
+[2026-06-27 10:53:07.749] Found 322 possible bad axioms.
+[2026-06-27 10:53:07.749] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000002).
+[2026-06-27 10:53:07.754] Found 321 possible bad axioms.
+[2026-06-27 10:53:07.755] Selected the bad axiom SubClassOf(imobo_0000043 owl:Nothing).
+[2026-06-27 10:53:07.759] Found 320 possible bad axioms.
+[2026-06-27 10:53:07.759] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000047).
+[2026-06-27 10:53:07.764] Found 319 possible bad axioms.
+[2026-06-27 10:53:07.764] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000091).
+[2026-06-27 10:53:07.768] Found 318 possible bad axioms.
+[2026-06-27 10:53:07.769] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000036).
+[2026-06-27 10:53:07.772] Found 317 possible bad axioms.
+[2026-06-27 10:53:07.772] Selected the bad axiom SubClassOf(imobo_0000018 imobo_0000030).
+[2026-06-27 10:53:07.775] Found 316 possible bad axioms.
+[2026-06-27 10:53:07.776] Selected the bad axiom SubClassOf(imobo_0000094 imobo_0000093).
+[2026-06-27 10:53:07.784] Found 315 possible bad axioms.
+[2026-06-27 10:53:07.784] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000052).
+[2026-06-27 10:53:07.793] Found 314 possible bad axioms.
+[2026-06-27 10:53:07.793] Selected the bad axiom SubClassOf(imobo_0000050 imobo_0000037).
+[2026-06-27 10:53:07.797] Found 313 possible bad axioms.
+[2026-06-27 10:53:07.797] Selected the bad axiom SubClassOf(imobo_0000088 owl:Nothing).
+[2026-06-27 10:53:07.801] Found 312 possible bad axioms.
+[2026-06-27 10:53:07.801] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000085).
+[2026-06-27 10:53:07.804] Found 311 possible bad axioms.
+[2026-06-27 10:53:07.804] Selected the bad axiom SubClassOf(imobo_0000030 imobo_0000019).
+[2026-06-27 10:53:07.808] Found 310 possible bad axioms.
+[2026-06-27 10:53:07.808] Selected the bad axiom SubClassOf(imobo_0000032 imobo_0000015).
+[2026-06-27 10:53:07.812] Found 309 possible bad axioms.
+[2026-06-27 10:53:07.812] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000029).
+
+...[truncated]
+SUCCESS: attempt=10 seed=127911 success_count=4/100
+progress: ontology=IMOBO attempt=10 success=4/100
+----- IMOBO attempt=11 seed=142111 at 2026-06-27 10:53:43 -----
+--- stdout ---
+{"seed":142111,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":298,"A2":3610,"A3":483,"B1":405,"B2":4242}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=142111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:53:44.209] Checking precondition...
+[2026-06-27 10:53:44.226] Starting the repair...
+[2026-06-27 10:53:44.234] Found 325 possible bad axioms.
+[2026-06-27 10:53:44.235] Selected the bad axiom SubClassOf(imobo_0000004 owl:Nothing).
+[2026-06-27 10:53:44.242] Found 324 possible bad axioms.
+[2026-06-27 10:53:44.242] Selected the bad axiom SubClassOf(imobo_0000028 imobo_0000016).
+[2026-06-27 10:53:44.251] Found 323 possible bad axioms.
+[2026-06-27 10:53:44.251] Selected the bad axiom SubClassOf(imobo_0000044 imobo_0000038).
+[2026-06-27 10:53:44.256] Found 322 possible bad axioms.
+[2026-06-27 10:53:44.256] Selected the bad axiom SubClassOf(imobo_0000094 imobo_0000093).
+[2026-06-27 10:53:44.261] Found 321 possible bad axioms.
+[2026-06-27 10:53:44.261] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000050).
+[2026-06-27 10:53:44.265] Found 320 possible bad axioms.
+[2026-06-27 10:53:44.265] Selected the bad axiom SubClassOf(imobo_0000056 owl:Nothing).
+[2026-06-27 10:53:44.271] Found 319 possible bad axioms.
+[2026-06-27 10:53:44.271] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000084).
+[2026-06-27 10:53:44.276] Found 318 possible bad axioms.
+[2026-06-27 10:53:44.276] Selected the bad axiom SubClassOf(imobo_0000044 imobo_0000045).
+[2026-06-27 10:53:44.279] Found 317 possible bad axioms.
+[2026-06-27 10:53:44.280] Selected the bad axiom SubClassOf(imobo_0000023 imobo_0000021).
+[2026-06-27 10:53:44.283] Found 316 possible bad axioms.
+[2026-06-27 10:53:44.284] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000047).
+[2026-06-27 10:53:44.291] Found 315 possible bad axioms.
+[2026-06-27 10:53:44.291] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000070).
+[2026-06-27 10:53:44.300] Found 314 possible bad axioms.
+[2026-06-27 10:53:44.300] Selected the bad axiom SubClassOf(imobo_0000007 imobo_0000004).
+[2026-06-27 10:53:44.303] Found 313 possible bad axioms.
+[2026-06-27 10:53:44.304] Selected the bad axiom SubClassOf(imobo_0000024 imobo_0000015).
+[2026-06-27 10:53:44.307] Found 312 possible bad axioms.
+[2026-06-27 10:53:44.307] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000003).
+[2026-06-27 10:53:44.311] Found 311 possible bad axioms.
+[2026-06-27 10:53:44.311] Selected the bad axiom SubClassOf(imobo_0000098 imobo_0000096).
+[2026-06-27 10:53:44.315] Found 310 possible bad axioms.
+[2026-06-27 10:53:44.315] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000080).
+[2026-06-27 10:53:44.318] Found 309 possible bad axioms.
+[2026-06-27 10:53:44.318] Selected the bad axiom SubClassOf(imobo_0000057 imobo_0000060).
+
+...[truncated]
+FAIL: attempt=11 seed=142111 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=11 success=4/100
+----- IMOBO attempt=12 seed=156311 at 2026-06-27 10:53:53 -----
+--- stdout ---
+{"seed":156311,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":284,"A2":3692,"A3":769,"B1":442,"B2":8413,"B3":5653,"B4":123,"B5":4777,"B6":5419,"B7":183,"B8":7938,"B9":4141}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=156311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:53:53.701] Checking precondition...
+[2026-06-27 10:53:53.716] Starting the repair...
+[2026-06-27 10:53:53.724] Found 325 possible bad axioms.
+[2026-06-27 10:53:53.725] Selected the bad axiom SubClassOf(imobo_0000088 owl:Nothing).
+[2026-06-27 10:53:53.731] Found 324 possible bad axioms.
+[2026-06-27 10:53:53.732] Selected the bad axiom SubClassOf(imobo_0000020 imobo_0000030).
+[2026-06-27 10:53:53.741] Found 323 possible bad axioms.
+[2026-06-27 10:53:53.741] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000039).
+[2026-06-27 10:53:53.746] Found 322 possible bad axioms.
+[2026-06-27 10:53:53.746] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000086).
+[2026-06-27 10:53:53.751] Found 321 possible bad axioms.
+[2026-06-27 10:53:53.752] Selected the bad axiom SubClassOf(imobo_0000007 imobo_0000004).
+[2026-06-27 10:53:53.756] Found 320 possible bad axioms.
+[2026-06-27 10:53:53.757] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000017).
+[2026-06-27 10:53:53.761] Found 319 possible bad axioms.
+[2026-06-27 10:53:53.761] Selected the bad axiom SubClassOf(imobo_0000093 imobo_0000092).
+[2026-06-27 10:53:53.765] Found 318 possible bad axioms.
+[2026-06-27 10:53:53.765] Selected the bad axiom SubClassOf(imobo_0000043 imobo_0000037).
+[2026-06-27 10:53:53.769] Found 317 possible bad axioms.
+[2026-06-27 10:53:53.769] Selected the bad axiom SubClassOf(imobo_0000032 imobo_0000030).
+[2026-06-27 10:53:53.773] Found 316 possible bad axioms.
+[2026-06-27 10:53:53.773] Selected the bad axiom SubClassOf(imobo_0000041 imobo_0000040).
+[2026-06-27 10:53:53.780] Found 315 possible bad axioms.
+[2026-06-27 10:53:53.781] Selected the bad axiom SubClassOf(imobo_0000030 imobo_0000019).
+[2026-06-27 10:53:53.789] Found 314 possible bad axioms.
+[2026-06-27 10:53:53.789] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000069).
+[2026-06-27 10:53:53.792] Found 313 possible bad axioms.
+[2026-06-27 10:53:53.792] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000064).
+[2026-06-27 10:53:53.795] Found 312 possible bad axioms.
+[2026-06-27 10:53:53.796] Selected the bad axiom SubClassOf(imobo_0000025 imobo_0000018).
+[2026-06-27 10:53:53.799] Found 311 possible bad axioms.
+[2026-06-27 10:53:53.799] Selected the bad axiom SubClassOf(imobo_0000077 imobo_0000078).
+[2026-06-27 10:53:53.802] Found 310 possible bad axioms.
+[2026-06-27 10:53:53.803] Selected the bad axiom SubClassOf(imobo_0000034 imobo_0000022).
+[2026-06-27 10:53:53.807] Found 309 possible bad axioms.
+[2026-06-27 10:53:53.807] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000088)
+...[truncated]
+SUCCESS: attempt=12 seed=156311 success_count=5/100
+progress: ontology=IMOBO attempt=12 success=5/100
+----- IMOBO attempt=13 seed=170511 at 2026-06-27 10:54:36 -----
+--- stdout ---
+{"seed":170511,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":407,"A2":3599,"A3":480,"B1":417,"B2":4282}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=170511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:54:36.923] Checking precondition...
+[2026-06-27 10:54:36.939] Starting the repair...
+[2026-06-27 10:54:36.946] Found 325 possible bad axioms.
+[2026-06-27 10:54:36.947] Selected the bad axiom SubClassOf(imobo_0000036 imobo_0000015).
+[2026-06-27 10:54:36.953] Found 324 possible bad axioms.
+[2026-06-27 10:54:36.953] Selected the bad axiom SubClassOf(imobo_0000061 imobo_0000052).
+[2026-06-27 10:54:36.964] Found 323 possible bad axioms.
+[2026-06-27 10:54:36.964] Selected the bad axiom SubClassOf(imobo_0000056 owl:Nothing).
+[2026-06-27 10:54:36.969] Found 322 possible bad axioms.
+[2026-06-27 10:54:36.970] Selected the bad axiom SubClassOf(imobo_0000011 imobo_0000010).
+[2026-06-27 10:54:36.974] Found 321 possible bad axioms.
+[2026-06-27 10:54:36.974] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000038).
+[2026-06-27 10:54:36.979] Found 320 possible bad axioms.
+[2026-06-27 10:54:36.980] Selected the bad axiom SubClassOf(imobo_0000083 imobo_0000087).
+[2026-06-27 10:54:36.984] Found 319 possible bad axioms.
+[2026-06-27 10:54:36.984] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000089).
+[2026-06-27 10:54:36.988] Found 318 possible bad axioms.
+[2026-06-27 10:54:36.988] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000052).
+[2026-06-27 10:54:36.992] Found 317 possible bad axioms.
+[2026-06-27 10:54:36.992] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000017).
+[2026-06-27 10:54:36.996] Found 316 possible bad axioms.
+[2026-06-27 10:54:36.996] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000064).
+[2026-06-27 10:54:36.999] Found 315 possible bad axioms.
+[2026-06-27 10:54:36.999] Selected the bad axiom SubClassOf(imobo_0000040 owl:Nothing).
+[2026-06-27 10:54:37.013] Found 314 possible bad axioms.
+[2026-06-27 10:54:37.014] Selected the bad axiom SubClassOf(imobo_0000051 imobo_0000041).
+[2026-06-27 10:54:37.017] Found 313 possible bad axioms.
+[2026-06-27 10:54:37.018] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000044).
+[2026-06-27 10:54:37.021] Found 312 possible bad axioms.
+[2026-06-27 10:54:37.021] Selected the bad axiom SubClassOf(imobo_0000076 imobo_0000080).
+[2026-06-27 10:54:37.025] Found 311 possible bad axioms.
+[2026-06-27 10:54:37.025] Selected the bad axiom SubClassOf(imobo_0000095 imobo_0000093).
+[2026-06-27 10:54:37.028] Found 310 possible bad axioms.
+[2026-06-27 10:54:37.029] Selected the bad axiom SubClassOf(imobo_0000033 imobo_0000017).
+[2026-06-27 10:54:37.032] Found 309 possible bad axioms.
+[2026-06-27 10:54:37.032] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000046).
+
+...[truncated]
+FAIL: attempt=13 seed=170511 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=13 success=5/100
+----- IMOBO attempt=14 seed=184711 at 2026-06-27 10:54:46 -----
+--- stdout ---
+{"seed":184711,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":244,"A2":3665,"A3":1164,"B1":419,"B2":7960}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=184711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:54:46.895] Checking precondition...
+[2026-06-27 10:54:46.913] Starting the repair...
+[2026-06-27 10:54:46.920] Found 325 possible bad axioms.
+[2026-06-27 10:54:46.921] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000002).
+[2026-06-27 10:54:46.927] Found 324 possible bad axioms.
+[2026-06-27 10:54:46.928] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000046).
+[2026-06-27 10:54:46.937] Found 323 possible bad axioms.
+[2026-06-27 10:54:46.937] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000059).
+[2026-06-27 10:54:46.942] Found 322 possible bad axioms.
+[2026-06-27 10:54:46.942] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000091).
+[2026-06-27 10:54:46.947] Found 321 possible bad axioms.
+[2026-06-27 10:54:46.948] Selected the bad axiom SubClassOf(imobo_0000085 owl:Nothing).
+[2026-06-27 10:54:46.952] Found 320 possible bad axioms.
+[2026-06-27 10:54:46.953] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000040).
+[2026-06-27 10:54:46.958] Found 319 possible bad axioms.
+[2026-06-27 10:54:46.958] Selected the bad axiom SubClassOf(imobo_0000100 imobo_0000096).
+[2026-06-27 10:54:46.962] Found 318 possible bad axioms.
+[2026-06-27 10:54:46.962] Selected the bad axiom SubClassOf(imobo_0000020 imobo_0000021).
+[2026-06-27 10:54:46.966] Found 317 possible bad axioms.
+[2026-06-27 10:54:46.966] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000047).
+[2026-06-27 10:54:46.970] Found 316 possible bad axioms.
+[2026-06-27 10:54:46.970] Selected the bad axiom SubClassOf(imobo_0000078 imobo_0000072).
+[2026-06-27 10:54:46.978] Found 315 possible bad axioms.
+[2026-06-27 10:54:46.978] Selected the bad axiom SubClassOf(imobo_0000016 imobo_0000015).
+[2026-06-27 10:54:46.987] Found 314 possible bad axioms.
+[2026-06-27 10:54:46.987] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000096).
+[2026-06-27 10:54:46.991] Found 313 possible bad axioms.
+[2026-06-27 10:54:46.991] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000015).
+[2026-06-27 10:54:46.995] Found 312 possible bad axioms.
+[2026-06-27 10:54:46.995] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000075).
+[2026-06-27 10:54:46.998] Found 311 possible bad axioms.
+[2026-06-27 10:54:46.999] Selected the bad axiom SubClassOf(imobo_0000010 imobo_0000004).
+[2026-06-27 10:54:47.002] Found 310 possible bad axioms.
+[2026-06-27 10:54:47.002] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000069).
+[2026-06-27 10:54:47.006] Found 309 possible bad axioms.
+[2026-06-27 10:54:47.006] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000024)
+...[truncated]
+FAIL: attempt=14 seed=184711 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=14 success=5/100
+----- IMOBO attempt=15 seed=198911 at 2026-06-27 10:55:00 -----
+--- stdout ---
+{"seed":198911,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":313,"A2":3687,"A3":465,"B1":451,"B2":8546,"B3":2798,"B4":121,"B5":7916}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=198911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:55:00.815] Checking precondition...
+[2026-06-27 10:55:00.831] Starting the repair...
+[2026-06-27 10:55:00.838] Found 325 possible bad axioms.
+[2026-06-27 10:55:00.839] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000072).
+[2026-06-27 10:55:00.845] Found 324 possible bad axioms.
+[2026-06-27 10:55:00.845] Selected the bad axiom SubClassOf(imobo_0000049 imobo_0000037).
+[2026-06-27 10:55:00.855] Found 323 possible bad axioms.
+[2026-06-27 10:55:00.855] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000096).
+[2026-06-27 10:55:00.859] Found 322 possible bad axioms.
+[2026-06-27 10:55:00.860] Selected the bad axiom SubClassOf(imobo_0000065 imobo_0000056).
+[2026-06-27 10:55:00.864] Found 321 possible bad axioms.
+[2026-06-27 10:55:00.864] Selected the bad axiom SubClassOf(imobo_0000023 imobo_0000015).
+[2026-06-27 10:55:00.869] Found 320 possible bad axioms.
+[2026-06-27 10:55:00.870] Selected the bad axiom SubClassOf(imobo_0000048 imobo_0000037).
+[2026-06-27 10:55:00.874] Found 319 possible bad axioms.
+[2026-06-27 10:55:00.874] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000021).
+[2026-06-27 10:55:00.878] Found 318 possible bad axioms.
+[2026-06-27 10:55:00.878] Selected the bad axiom SubClassOf(imobo_0000060 imobo_0000056).
+[2026-06-27 10:55:00.882] Found 317 possible bad axioms.
+[2026-06-27 10:55:00.882] Selected the bad axiom SubClassOf(imobo_0000066 imobo_0000052).
+[2026-06-27 10:55:00.886] Found 316 possible bad axioms.
+[2026-06-27 10:55:00.886] Selected the bad axiom SubClassOf(imobo_0000080 imobo_0000076).
+[2026-06-27 10:55:00.893] Found 315 possible bad axioms.
+[2026-06-27 10:55:00.894] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000016).
+[2026-06-27 10:55:00.902] Found 314 possible bad axioms.
+[2026-06-27 10:55:00.902] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000044).
+[2026-06-27 10:55:00.906] Found 313 possible bad axioms.
+[2026-06-27 10:55:00.906] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000015).
+[2026-06-27 10:55:00.910] Found 312 possible bad axioms.
+[2026-06-27 10:55:00.910] Selected the bad axiom SubClassOf(imobo_0000065 owl:Nothing).
+[2026-06-27 10:55:00.913] Found 311 possible bad axioms.
+[2026-06-27 10:55:00.914] Selected the bad axiom SubClassOf(imobo_0000008 imobo_0000004).
+[2026-06-27 10:55:00.917] Found 310 possible bad axioms.
+[2026-06-27 10:55:00.917] Selected the bad axiom SubClassOf(imobo_0000050 imobo_0000044).
+[2026-06-27 10:55:00.921] Found 309 possible bad axioms.
+[2026-06-27 10:55:00.921] Selected the bad axiom SubClassOf(imobo_0000075 owl:Nothing).
+
+...[truncated]
+FAIL: attempt=15 seed=198911 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=15 success=5/100
+----- IMOBO attempt=16 seed=213111 at 2026-06-27 10:55:25 -----
+--- stdout ---
+{"seed":213111,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":218,"A2":3708,"A3":451,"B1":433,"B2":8525,"B3":4863}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=213111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:55:25.695] Checking precondition...
+[2026-06-27 10:55:25.713] Starting the repair...
+[2026-06-27 10:55:25.720] Found 325 possible bad axioms.
+[2026-06-27 10:55:25.722] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000052).
+[2026-06-27 10:55:25.727] Found 324 possible bad axioms.
+[2026-06-27 10:55:25.727] Selected the bad axiom SubClassOf(imobo_0000036 imobo_0000030).
+[2026-06-27 10:55:25.737] Found 323 possible bad axioms.
+[2026-06-27 10:55:25.738] Selected the bad axiom SubClassOf(imobo_0000090 imobo_0000081).
+[2026-06-27 10:55:25.742] Found 322 possible bad axioms.
+[2026-06-27 10:55:25.743] Selected the bad axiom SubClassOf(imobo_0000020 imobo_0000030).
+[2026-06-27 10:55:25.747] Found 321 possible bad axioms.
+[2026-06-27 10:55:25.748] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000016).
+[2026-06-27 10:55:25.753] Found 320 possible bad axioms.
+[2026-06-27 10:55:25.753] Selected the bad axiom SubClassOf(imobo_0000028 imobo_0000016).
+[2026-06-27 10:55:25.757] Found 319 possible bad axioms.
+[2026-06-27 10:55:25.757] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000088).
+[2026-06-27 10:55:25.761] Found 318 possible bad axioms.
+[2026-06-27 10:55:25.761] Selected the bad axiom SubClassOf(imobo_0000088 owl:Nothing).
+[2026-06-27 10:55:25.765] Found 317 possible bad axioms.
+[2026-06-27 10:55:25.765] Selected the bad axiom SubClassOf(imobo_0000003 imobo_0000001).
+[2026-06-27 10:55:25.769] Found 316 possible bad axioms.
+[2026-06-27 10:55:25.769] Selected the bad axiom SubClassOf(imobo_0000078 imobo_0000075).
+[2026-06-27 10:55:25.777] Found 315 possible bad axioms.
+[2026-06-27 10:55:25.777] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000088).
+[2026-06-27 10:55:25.785] Found 314 possible bad axioms.
+[2026-06-27 10:55:25.785] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000083).
+[2026-06-27 10:55:25.789] Found 313 possible bad axioms.
+[2026-06-27 10:55:25.789] Selected the bad axiom SubClassOf(imobo_0000044 imobo_0000037).
+[2026-06-27 10:55:25.792] Found 312 possible bad axioms.
+[2026-06-27 10:55:25.792] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000023).
+[2026-06-27 10:55:25.796] Found 311 possible bad axioms.
+[2026-06-27 10:55:25.796] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000049).
+[2026-06-27 10:55:25.800] Found 310 possible bad axioms.
+[2026-06-27 10:55:25.800] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000061).
+[2026-06-27 10:55:25.803] Found 309 possible bad axioms.
+[2026-06-27 10:55:25.804] Selected the bad axiom SubClassOf(imobo_0000073 owl:Nothing).
+
+...[truncated]
+FAIL: attempt=16 seed=213111 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=16 success=5/100
+----- IMOBO attempt=17 seed=227311 at 2026-06-27 10:55:44 -----
+--- stdout ---
+{"seed":227311,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.9992927864214993,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":0.9992927864214993,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":0.9992927864214993,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.9992927864214993,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":0.9992927864214993,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":0.9992927864214993,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":0.9992927864214993,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":0.9992927864214993,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":0.9992927864214993,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":326,"A2":3648,"A3":480,"B1":459,"B2":8710,"B3":5186,"B4":265,"B5":8717,"B6":2840,"B7":364,"B8":2348,"B9":4965}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=227311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:55:44.385] Checking precondition...
+[2026-06-27 10:55:44.401] Starting the repair...
+[2026-06-27 10:55:44.407] Found 325 possible bad axioms.
+[2026-06-27 10:55:44.409] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000071).
+[2026-06-27 10:55:44.414] Found 324 possible bad axioms.
+[2026-06-27 10:55:44.414] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000041).
+[2026-06-27 10:55:44.423] Found 323 possible bad axioms.
+[2026-06-27 10:55:44.424] Selected the bad axiom SubClassOf(imobo_0000076 imobo_0000072).
+[2026-06-27 10:55:44.429] Found 322 possible bad axioms.
+[2026-06-27 10:55:44.430] Selected the bad axiom SubClassOf(imobo_0000101 imobo_0000096).
+[2026-06-27 10:55:44.434] Found 321 possible bad axioms.
+[2026-06-27 10:55:44.435] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000075).
+[2026-06-27 10:55:44.439] Found 320 possible bad axioms.
+[2026-06-27 10:55:44.439] Selected the bad axiom SubClassOf(imobo_0000037 owl:Nothing).
+[2026-06-27 10:55:44.443] Found 319 possible bad axioms.
+[2026-06-27 10:55:44.443] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000095).
+[2026-06-27 10:55:44.447] Found 318 possible bad axioms.
+[2026-06-27 10:55:44.447] Selected the bad axiom SubClassOf(imobo_0000076 imobo_0000075).
+[2026-06-27 10:55:44.451] Found 317 possible bad axioms.
+[2026-06-27 10:55:44.451] Selected the bad axiom SubClassOf(imobo_0000098 imobo_0000097).
+[2026-06-27 10:55:44.455] Found 316 possible bad axioms.
+[2026-06-27 10:55:44.455] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000052).
+[2026-06-27 10:55:44.458] Found 315 possible bad axioms.
+[2026-06-27 10:55:44.459] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000059).
+[2026-06-27 10:55:44.471] Found 314 possible bad axioms.
+[2026-06-27 10:55:44.471] Selected the bad axiom SubClassOf(imobo_0000096 owl:Nothing).
+[2026-06-27 10:55:44.474] Found 313 possible bad axioms.
+[2026-06-27 10:55:44.474] Selected the bad axiom SubClassOf(imobo_0000006 imobo_0000004).
+[2026-06-27 10:55:44.477] Found 312 possible bad axioms.
+[2026-06-27 10:55:44.478] Selected the bad axiom SubClassOf(imobo_0000008 owl:Nothing).
+[2026-06-27 10:55:44.481] Found 311 possible bad axioms.
+[2026-06-27 10:55:44.481] Selected the bad axiom SubClassOf(imobo_0000046 imobo_0000037).
+[2026-06-27 10:55:44.484] Found 310 possible bad axioms.
+[2026-06-27 10:55:44.484] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000089).
+[2026-06-27 10:55:44.487] Found 309 possible bad axioms.
+[2026-06-27 10:55:44.488] Selected the bad axiom SubClassOf(imobo_0000062 imobo_0000052).
+[2
+...[truncated]
+SUCCESS: attempt=17 seed=227311 success_count=6/100
+progress: ontology=IMOBO attempt=17 success=6/100
+----- IMOBO attempt=18 seed=241511 at 2026-06-27 10:56:23 -----
+--- stdout ---
+{"seed":241511,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":198,"A2":3703,"A3":483,"B1":438,"B2":8427,"B3":5270,"B4":124,"B5":1327}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=241511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:56:23.800] Checking precondition...
+[2026-06-27 10:56:23.816] Starting the repair...
+[2026-06-27 10:56:23.823] Found 325 possible bad axioms.
+[2026-06-27 10:56:23.825] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000044).
+[2026-06-27 10:56:23.832] Found 324 possible bad axioms.
+[2026-06-27 10:56:23.832] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000019).
+[2026-06-27 10:56:23.841] Found 323 possible bad axioms.
+[2026-06-27 10:56:23.841] Selected the bad axiom SubClassOf(imobo_0000001 imobo_0000030).
+[2026-06-27 10:56:23.846] Found 322 possible bad axioms.
+[2026-06-27 10:56:23.846] Selected the bad axiom SubClassOf(imobo_0000097 imobo_0000096).
+[2026-06-27 10:56:23.850] Found 321 possible bad axioms.
+[2026-06-27 10:56:23.851] Selected the bad axiom SubClassOf(imobo_0000048 imobo_0000037).
+[2026-06-27 10:56:23.855] Found 320 possible bad axioms.
+[2026-06-27 10:56:23.855] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000091).
+[2026-06-27 10:56:23.859] Found 319 possible bad axioms.
+[2026-06-27 10:56:23.860] Selected the bad axiom SubClassOf(imobo_0000053 owl:Nothing).
+[2026-06-27 10:56:23.864] Found 318 possible bad axioms.
+[2026-06-27 10:56:23.864] Selected the bad axiom SubClassOf(imobo_0000033 imobo_0000017).
+[2026-06-27 10:56:23.868] Found 317 possible bad axioms.
+[2026-06-27 10:56:23.868] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000076).
+[2026-06-27 10:56:23.872] Found 316 possible bad axioms.
+[2026-06-27 10:56:23.872] Selected the bad axiom SubClassOf(imobo_0000049 imobo_0000037).
+[2026-06-27 10:56:23.875] Found 315 possible bad axioms.
+[2026-06-27 10:56:23.876] Selected the bad axiom SubClassOf(imobo_0000061 imobo_0000052).
+[2026-06-27 10:56:23.889] Found 314 possible bad axioms.
+[2026-06-27 10:56:23.889] Selected the bad axiom SubClassOf(imobo_0000098 owl:Nothing).
+[2026-06-27 10:56:23.893] Found 313 possible bad axioms.
+[2026-06-27 10:56:23.893] Selected the bad axiom SubClassOf(imobo_0000061 imobo_0000071).
+[2026-06-27 10:56:23.896] Found 312 possible bad axioms.
+[2026-06-27 10:56:23.896] Selected the bad axiom SubClassOf(imobo_0000077 imobo_0000078).
+[2026-06-27 10:56:23.901] Found 311 possible bad axioms.
+[2026-06-27 10:56:23.901] Selected the bad axiom SubClassOf(imobo_0000087 imobo_0000081).
+[2026-06-27 10:56:23.905] Found 310 possible bad axioms.
+[2026-06-27 10:56:23.905] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000037).
+[2026-06-27 10:56:23.908] Found 309 possible bad axioms.
+[2026-06-27 10:56:23.908] Selected the bad axiom SubClassOf(imobo_0000033 owl:Nothing).
+[2
+...[truncated]
+FAIL: attempt=18 seed=241511 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=18 success=6/100
+----- IMOBO attempt=19 seed=255711 at 2026-06-27 10:56:43 -----
+--- stdout ---
+{"seed":255711,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":251,"A2":3697,"A3":450,"B1":396,"B2":4264}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=255711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:56:44.275] Checking precondition...
+[2026-06-27 10:56:44.293] Starting the repair...
+[2026-06-27 10:56:44.300] Found 325 possible bad axioms.
+[2026-06-27 10:56:44.302] Selected the bad axiom SubClassOf(imobo_0000057 imobo_0000060).
+[2026-06-27 10:56:44.308] Found 324 possible bad axioms.
+[2026-06-27 10:56:44.308] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000068).
+[2026-06-27 10:56:44.316] Found 323 possible bad axioms.
+[2026-06-27 10:56:44.316] Selected the bad axiom SubClassOf(imobo_0000032 owl:Nothing).
+[2026-06-27 10:56:44.321] Found 322 possible bad axioms.
+[2026-06-27 10:56:44.321] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000072).
+[2026-06-27 10:56:44.325] Found 321 possible bad axioms.
+[2026-06-27 10:56:44.325] Selected the bad axiom SubClassOf(imobo_0000077 imobo_0000073).
+[2026-06-27 10:56:44.329] Found 320 possible bad axioms.
+[2026-06-27 10:56:44.329] Selected the bad axiom SubClassOf(imobo_0000057 imobo_0000052).
+[2026-06-27 10:56:44.333] Found 319 possible bad axioms.
+[2026-06-27 10:56:44.334] Selected the bad axiom SubClassOf(imobo_0000053 imobo_0000063).
+[2026-06-27 10:56:44.337] Found 318 possible bad axioms.
+[2026-06-27 10:56:44.337] Selected the bad axiom SubClassOf(imobo_0000030 imobo_0000015).
+[2026-06-27 10:56:44.341] Found 317 possible bad axioms.
+[2026-06-27 10:56:44.341] Selected the bad axiom SubClassOf(imobo_0000014 imobo_0000011).
+[2026-06-27 10:56:44.345] Found 316 possible bad axioms.
+[2026-06-27 10:56:44.345] Selected the bad axiom SubClassOf(imobo_0000032 imobo_0000030).
+[2026-06-27 10:56:44.353] Found 315 possible bad axioms.
+[2026-06-27 10:56:44.353] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000087).
+[2026-06-27 10:56:44.363] Found 314 possible bad axioms.
+[2026-06-27 10:56:44.363] Selected the bad axiom SubClassOf(imobo_0000059 imobo_0000061).
+[2026-06-27 10:56:44.366] Found 313 possible bad axioms.
+[2026-06-27 10:56:44.366] Selected the bad axiom SubClassOf(imobo_0000067 owl:Nothing).
+[2026-06-27 10:56:44.369] Found 312 possible bad axioms.
+[2026-06-27 10:56:44.370] Selected the bad axiom SubClassOf(imobo_0000031 owl:Nothing).
+[2026-06-27 10:56:44.374] Found 311 possible bad axioms.
+[2026-06-27 10:56:44.374] Selected the bad axiom SubClassOf(imobo_0000039 owl:Nothing).
+[2026-06-27 10:56:44.378] Found 310 possible bad axioms.
+[2026-06-27 10:56:44.378] Selected the bad axiom SubClassOf(imobo_0000011 imobo_0000004).
+[2026-06-27 10:56:44.381] Found 309 possible bad axioms.
+[2026-06-27 10:56:44.381] Selected the bad axiom SubClassOf(imobo_0000056 imobo_0000052).
+[202
+...[truncated]
+FAIL: attempt=19 seed=255711 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=19 success=6/100
+----- IMOBO attempt=20 seed=269911 at 2026-06-27 10:56:53 -----
+--- stdout ---
+{"seed":269911,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":370,"A2":3637,"A3":497,"B1":462,"B2":8507,"B3":5031}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=269911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:56:53.784] Checking precondition...
+[2026-06-27 10:56:53.799] Starting the repair...
+[2026-06-27 10:56:53.806] Found 325 possible bad axioms.
+[2026-06-27 10:56:53.808] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000038).
+[2026-06-27 10:56:53.813] Found 324 possible bad axioms.
+[2026-06-27 10:56:53.813] Selected the bad axiom SubClassOf(imobo_0000083 imobo_0000081).
+[2026-06-27 10:56:53.824] Found 323 possible bad axioms.
+[2026-06-27 10:56:53.824] Selected the bad axiom SubClassOf(imobo_0000008 owl:Nothing).
+[2026-06-27 10:56:53.829] Found 322 possible bad axioms.
+[2026-06-27 10:56:53.830] Selected the bad axiom SubClassOf(imobo_0000050 imobo_0000044).
+[2026-06-27 10:56:53.834] Found 321 possible bad axioms.
+[2026-06-27 10:56:53.834] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000047).
+[2026-06-27 10:56:53.839] Found 320 possible bad axioms.
+[2026-06-27 10:56:53.839] Selected the bad axiom SubClassOf(imobo_0000045 imobo_0000037).
+[2026-06-27 10:56:53.844] Found 319 possible bad axioms.
+[2026-06-27 10:56:53.844] Selected the bad axiom SubClassOf(imobo_0000025 imobo_0000018).
+[2026-06-27 10:56:53.848] Found 318 possible bad axioms.
+[2026-06-27 10:56:53.848] Selected the bad axiom SubClassOf(imobo_0000042 imobo_0000037).
+[2026-06-27 10:56:53.851] Found 317 possible bad axioms.
+[2026-06-27 10:56:53.851] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000052).
+[2026-06-27 10:56:53.854] Found 316 possible bad axioms.
+[2026-06-27 10:56:53.854] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000003).
+[2026-06-27 10:56:53.863] Found 315 possible bad axioms.
+[2026-06-27 10:56:53.864] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000046).
+[2026-06-27 10:56:53.872] Found 314 possible bad axioms.
+[2026-06-27 10:56:53.872] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000025).
+[2026-06-27 10:56:53.875] Found 313 possible bad axioms.
+[2026-06-27 10:56:53.875] Selected the bad axiom SubClassOf(imobo_0000075 imobo_0000076).
+[2026-06-27 10:56:53.879] Found 312 possible bad axioms.
+[2026-06-27 10:56:53.879] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000086).
+[2026-06-27 10:56:53.882] Found 311 possible bad axioms.
+[2026-06-27 10:56:53.882] Selected the bad axiom SubClassOf(imobo_0000009 imobo_0000004).
+[2026-06-27 10:56:53.886] Found 310 possible bad axioms.
+[2026-06-27 10:56:53.886] Selected the bad axiom SubClassOf(imobo_0000028 imobo_0000016).
+[2026-06-27 10:56:53.890] Found 309 possible bad axioms.
+[2026-06-27 10:56:53.890] Selected the bad axiom SubClassOf(imobo_0000066 imobo_0000052)
+...[truncated]
+FAIL: attempt=20 seed=269911 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=20 success=6/100
+----- IMOBO attempt=21 seed=284111 at 2026-06-27 10:57:12 -----
+--- stdout ---
+{"seed":284111,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":270,"A2":3637,"A3":469,"B1":1522,"B2":8470,"B3":2714}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=284111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:57:12.779] Checking precondition...
+[2026-06-27 10:57:12.796] Starting the repair...
+[2026-06-27 10:57:12.803] Found 325 possible bad axioms.
+[2026-06-27 10:57:12.804] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000020).
+[2026-06-27 10:57:12.810] Found 324 possible bad axioms.
+[2026-06-27 10:57:12.810] Selected the bad axiom SubClassOf(imobo_0000033 owl:Nothing).
+[2026-06-27 10:57:12.821] Found 323 possible bad axioms.
+[2026-06-27 10:57:12.821] Selected the bad axiom SubClassOf(imobo_0000062 imobo_0000052).
+[2026-06-27 10:57:12.827] Found 322 possible bad axioms.
+[2026-06-27 10:57:12.827] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000035).
+[2026-06-27 10:57:12.831] Found 321 possible bad axioms.
+[2026-06-27 10:57:12.831] Selected the bad axiom SubClassOf(imobo_0000024 imobo_0000015).
+[2026-06-27 10:57:12.836] Found 320 possible bad axioms.
+[2026-06-27 10:57:12.836] Selected the bad axiom SubClassOf(imobo_0000080 imobo_0000072).
+[2026-06-27 10:57:12.841] Found 319 possible bad axioms.
+[2026-06-27 10:57:12.841] Selected the bad axiom SubClassOf(imobo_0000042 imobo_0000049).
+[2026-06-27 10:57:12.845] Found 318 possible bad axioms.
+[2026-06-27 10:57:12.845] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000063).
+[2026-06-27 10:57:12.849] Found 317 possible bad axioms.
+[2026-06-27 10:57:12.849] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000052).
+[2026-06-27 10:57:12.852] Found 316 possible bad axioms.
+[2026-06-27 10:57:12.852] Selected the bad axiom SubClassOf(imobo_0000089 imobo_0000081).
+[2026-06-27 10:57:12.859] Found 315 possible bad axioms.
+[2026-06-27 10:57:12.859] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000037).
+[2026-06-27 10:57:12.868] Found 314 possible bad axioms.
+[2026-06-27 10:57:12.868] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000083).
+[2026-06-27 10:57:12.871] Found 313 possible bad axioms.
+[2026-06-27 10:57:12.871] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000003).
+[2026-06-27 10:57:12.874] Found 312 possible bad axioms.
+[2026-06-27 10:57:12.875] Selected the bad axiom SubClassOf(imobo_0000094 imobo_0000093).
+[2026-06-27 10:57:12.878] Found 311 possible bad axioms.
+[2026-06-27 10:57:12.878] Selected the bad axiom SubClassOf(imobo_0000066 imobo_0000052).
+[2026-06-27 10:57:12.882] Found 310 possible bad axioms.
+[2026-06-27 10:57:12.882] Selected the bad axiom SubClassOf(imobo_0000039 imobo_0000044).
+[2026-06-27 10:57:12.885] Found 309 possible bad axioms.
+[2026-06-27 10:57:12.885] Selected the bad axiom SubClassOf(imobo_0000083 imobo_0000081)
+...[truncated]
+FAIL: attempt=21 seed=284111 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=21 success=6/100
+----- IMOBO attempt=22 seed=298311 at 2026-06-27 10:57:29 -----
+--- stdout ---
+{"seed":298311,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":311,"A2":3618,"A3":474,"B1":416,"B2":4880}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=298311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:57:30.339] Checking precondition...
+[2026-06-27 10:57:30.355] Starting the repair...
+[2026-06-27 10:57:30.362] Found 325 possible bad axioms.
+[2026-06-27 10:57:30.363] Selected the bad axiom SubClassOf(imobo_0000018 imobo_0000020).
+[2026-06-27 10:57:30.369] Found 324 possible bad axioms.
+[2026-06-27 10:57:30.369] Selected the bad axiom SubClassOf(imobo_0000003 imobo_0000001).
+[2026-06-27 10:57:30.378] Found 323 possible bad axioms.
+[2026-06-27 10:57:30.379] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000021).
+[2026-06-27 10:57:30.383] Found 322 possible bad axioms.
+[2026-06-27 10:57:30.384] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000088).
+[2026-06-27 10:57:30.388] Found 321 possible bad axioms.
+[2026-06-27 10:57:30.389] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000087).
+[2026-06-27 10:57:30.393] Found 320 possible bad axioms.
+[2026-06-27 10:57:30.393] Selected the bad axiom SubClassOf(imobo_0000099 imobo_0000102).
+[2026-06-27 10:57:30.397] Found 319 possible bad axioms.
+[2026-06-27 10:57:30.398] Selected the bad axiom SubClassOf(imobo_0000039 owl:Nothing).
+[2026-06-27 10:57:30.401] Found 318 possible bad axioms.
+[2026-06-27 10:57:30.401] Selected the bad axiom SubClassOf(imobo_0000050 imobo_0000037).
+[2026-06-27 10:57:30.404] Found 317 possible bad axioms.
+[2026-06-27 10:57:30.405] Selected the bad axiom SubClassOf(imobo_0000006 imobo_0000008).
+[2026-06-27 10:57:30.408] Found 316 possible bad axioms.
+[2026-06-27 10:57:30.408] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000091).
+[2026-06-27 10:57:30.416] Found 315 possible bad axioms.
+[2026-06-27 10:57:30.416] Selected the bad axiom SubClassOf(imobo_0000007 imobo_0000004).
+[2026-06-27 10:57:30.425] Found 314 possible bad axioms.
+[2026-06-27 10:57:30.425] Selected the bad axiom SubClassOf(imobo_0000051 imobo_0000041).
+[2026-06-27 10:57:30.428] Found 313 possible bad axioms.
+[2026-06-27 10:57:30.429] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000029).
+[2026-06-27 10:57:30.432] Found 312 possible bad axioms.
+[2026-06-27 10:57:30.432] Selected the bad axiom SubClassOf(imobo_0000043 owl:Nothing).
+[2026-06-27 10:57:30.436] Found 311 possible bad axioms.
+[2026-06-27 10:57:30.436] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000070).
+[2026-06-27 10:57:30.440] Found 310 possible bad axioms.
+[2026-06-27 10:57:30.440] Selected the bad axiom SubClassOf(imobo_0000090 imobo_0000081).
+[2026-06-27 10:57:30.443] Found 309 possible bad axioms.
+[2026-06-27 10:57:30.444] Selected the bad axiom SubClassOf(imobo_0000038 imobo_0000037).
+
+...[truncated]
+FAIL: attempt=22 seed=298311 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=22 success=6/100
+----- IMOBO attempt=23 seed=312511 at 2026-06-27 10:57:40 -----
+--- stdout ---
+{"seed":312511,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":284,"A2":3676,"A3":1100,"B1":1188,"B2":8475,"B3":5332,"B4":134,"B5":4424}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=312511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:57:40.496] Checking precondition...
+[2026-06-27 10:57:40.514] Starting the repair...
+[2026-06-27 10:57:40.521] Found 325 possible bad axioms.
+[2026-06-27 10:57:40.522] Selected the bad axiom SubClassOf(imobo_0000101 owl:Nothing).
+[2026-06-27 10:57:40.528] Found 324 possible bad axioms.
+[2026-06-27 10:57:40.528] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000016).
+[2026-06-27 10:57:40.538] Found 323 possible bad axioms.
+[2026-06-27 10:57:40.538] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000087).
+[2026-06-27 10:57:40.542] Found 322 possible bad axioms.
+[2026-06-27 10:57:40.543] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000015).
+[2026-06-27 10:57:40.547] Found 321 possible bad axioms.
+[2026-06-27 10:57:40.548] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000078).
+[2026-06-27 10:57:40.552] Found 320 possible bad axioms.
+[2026-06-27 10:57:40.552] Selected the bad axiom SubClassOf(imobo_0000081 owl:Nothing).
+[2026-06-27 10:57:40.558] Found 319 possible bad axioms.
+[2026-06-27 10:57:40.558] Selected the bad axiom SubClassOf(imobo_0000029 imobo_0000033).
+[2026-06-27 10:57:40.562] Found 318 possible bad axioms.
+[2026-06-27 10:57:40.562] Selected the bad axiom SubClassOf(imobo_0000101 imobo_0000102).
+[2026-06-27 10:57:40.566] Found 317 possible bad axioms.
+[2026-06-27 10:57:40.566] Selected the bad axiom SubClassOf(imobo_0000032 imobo_0000030).
+[2026-06-27 10:57:40.569] Found 316 possible bad axioms.
+[2026-06-27 10:57:40.570] Selected the bad axiom SubClassOf(imobo_0000085 owl:Nothing).
+[2026-06-27 10:57:40.573] Found 315 possible bad axioms.
+[2026-06-27 10:57:40.573] Selected the bad axiom SubClassOf(imobo_0000075 imobo_0000072).
+[2026-06-27 10:57:40.586] Found 314 possible bad axioms.
+[2026-06-27 10:57:40.586] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000046).
+[2026-06-27 10:57:40.589] Found 313 possible bad axioms.
+[2026-06-27 10:57:40.589] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000087).
+[2026-06-27 10:57:40.593] Found 312 possible bad axioms.
+[2026-06-27 10:57:40.593] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000050).
+[2026-06-27 10:57:40.597] Found 311 possible bad axioms.
+[2026-06-27 10:57:40.597] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000072).
+[2026-06-27 10:57:40.601] Found 310 possible bad axioms.
+[2026-06-27 10:57:40.601] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000036).
+[2026-06-27 10:57:40.604] Found 309 possible bad axioms.
+[2026-06-27 10:57:40.604] Selected the bad axiom SubClassOf(imobo_0000060 imobo_0000056).
+[2
+...[truncated]
+FAIL: attempt=23 seed=312511 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=23 success=6/100
+----- IMOBO attempt=24 seed=326711 at 2026-06-27 10:58:05 -----
+--- stdout ---
+{"seed":326711,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":189,"A2":3657,"A3":2165,"B1":430,"B2":2070,"B3":5404,"B4":175,"B5":8288,"B6":5581,"B7":270,"B8":8349,"B9":2557}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=326711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:58:05.769] Checking precondition...
+[2026-06-27 10:58:05.786] Starting the repair...
+[2026-06-27 10:58:05.793] Found 325 possible bad axioms.
+[2026-06-27 10:58:05.795] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000035).
+[2026-06-27 10:58:05.800] Found 324 possible bad axioms.
+[2026-06-27 10:58:05.800] Selected the bad axiom SubClassOf(imobo_0000002 owl:Nothing).
+[2026-06-27 10:58:05.809] Found 323 possible bad axioms.
+[2026-06-27 10:58:05.810] Selected the bad axiom SubClassOf(imobo_0000025 imobo_0000015).
+[2026-06-27 10:58:05.814] Found 322 possible bad axioms.
+[2026-06-27 10:58:05.814] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000047).
+[2026-06-27 10:58:05.819] Found 321 possible bad axioms.
+[2026-06-27 10:58:05.819] Selected the bad axiom SubClassOf(imobo_0000008 imobo_0000012).
+[2026-06-27 10:58:05.824] Found 320 possible bad axioms.
+[2026-06-27 10:58:05.824] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000039).
+[2026-06-27 10:58:05.828] Found 319 possible bad axioms.
+[2026-06-27 10:58:05.829] Selected the bad axiom SubClassOf(imobo_0000090 imobo_0000081).
+[2026-06-27 10:58:05.832] Found 318 possible bad axioms.
+[2026-06-27 10:58:05.832] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000049).
+[2026-06-27 10:58:05.835] Found 317 possible bad axioms.
+[2026-06-27 10:58:05.836] Selected the bad axiom SubClassOf(imobo_0000096 imobo_0000098).
+[2026-06-27 10:58:05.839] Found 316 possible bad axioms.
+[2026-06-27 10:58:05.840] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000025).
+[2026-06-27 10:58:05.847] Found 315 possible bad axioms.
+[2026-06-27 10:58:05.848] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000072).
+[2026-06-27 10:58:05.855] Found 314 possible bad axioms.
+[2026-06-27 10:58:05.855] Selected the bad axiom SubClassOf(imobo_0000028 imobo_0000016).
+[2026-06-27 10:58:05.858] Found 313 possible bad axioms.
+[2026-06-27 10:58:05.858] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000071).
+[2026-06-27 10:58:05.862] Found 312 possible bad axioms.
+[2026-06-27 10:58:05.862] Selected the bad axiom SubClassOf(imobo_0000076 imobo_0000072).
+[2026-06-27 10:58:05.865] Found 311 possible bad axioms.
+[2026-06-27 10:58:05.866] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000029).
+[2026-06-27 10:58:05.869] Found 310 possible bad axioms.
+[2026-06-27 10:58:05.869] Selected the bad axiom SubClassOf(imobo_0000030 imobo_0000015).
+[2026-06-27 10:58:05.873] Found 309 possible bad axioms.
+[2026-06-27 10:58:05.873] Selected the bad axiom SubClassOf(imobo_0000041 imobo_0000037)
+...[truncated]
+SUCCESS: attempt=24 seed=326711 success_count=7/100
+progress: ontology=IMOBO attempt=24 success=7/100
+----- IMOBO attempt=25 seed=340911 at 2026-06-27 10:58:50 -----
+--- stdout ---
+{"seed":340911,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.997582107596212,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":0.997582107596212,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":0.997582107596212,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.997582107596212,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":0.997582107596212,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":0.997582107596212,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":0.997582107596212,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":0.997582107596212,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":0.997582107596212,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":406,"A2":3614,"A3":774,"B1":701,"B2":1745,"B3":3044,"B4":127,"B5":8065,"B6":2659,"B7":200,"B8":9473,"B9":5242}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=340911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:58:51.189] Checking precondition...
+[2026-06-27 10:58:51.206] Starting the repair...
+[2026-06-27 10:58:51.213] Found 325 possible bad axioms.
+[2026-06-27 10:58:51.215] Selected the bad axiom SubClassOf(imobo_0000049 imobo_0000047).
+[2026-06-27 10:58:51.221] Found 324 possible bad axioms.
+[2026-06-27 10:58:51.221] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000089).
+[2026-06-27 10:58:51.229] Found 323 possible bad axioms.
+[2026-06-27 10:58:51.229] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000015).
+[2026-06-27 10:58:51.235] Found 322 possible bad axioms.
+[2026-06-27 10:58:51.235] Selected the bad axiom SubClassOf(imobo_0000086 owl:Nothing).
+[2026-06-27 10:58:51.239] Found 321 possible bad axioms.
+[2026-06-27 10:58:51.239] Selected the bad axiom SubClassOf(imobo_0000004 owl:Nothing).
+[2026-06-27 10:58:51.243] Found 320 possible bad axioms.
+[2026-06-27 10:58:51.244] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000074).
+[2026-06-27 10:58:51.248] Found 319 possible bad axioms.
+[2026-06-27 10:58:51.249] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000091).
+[2026-06-27 10:58:51.253] Found 318 possible bad axioms.
+[2026-06-27 10:58:51.253] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000035).
+[2026-06-27 10:58:51.256] Found 317 possible bad axioms.
+[2026-06-27 10:58:51.257] Selected the bad axiom SubClassOf(imobo_0000001 imobo_0000030).
+[2026-06-27 10:58:51.260] Found 316 possible bad axioms.
+[2026-06-27 10:58:51.260] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000017).
+[2026-06-27 10:58:51.268] Found 315 possible bad axioms.
+[2026-06-27 10:58:51.268] Selected the bad axiom SubClassOf(imobo_0000065 imobo_0000056).
+[2026-06-27 10:58:51.276] Found 314 possible bad axioms.
+[2026-06-27 10:58:51.276] Selected the bad axiom SubClassOf(imobo_0000041 imobo_0000040).
+[2026-06-27 10:58:51.279] Found 313 possible bad axioms.
+[2026-06-27 10:58:51.280] Selected the bad axiom SubClassOf(imobo_0000076 imobo_0000072).
+[2026-06-27 10:58:51.282] Found 312 possible bad axioms.
+[2026-06-27 10:58:51.283] Selected the bad axiom SubClassOf(imobo_0000095 imobo_0000093).
+[2026-06-27 10:58:51.287] Found 311 possible bad axioms.
+[2026-06-27 10:58:51.287] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000050).
+[2026-06-27 10:58:51.290] Found 310 possible bad axioms.
+[2026-06-27 10:58:51.290] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000001).
+[2026-06-27 10:58:51.293] Found 309 possible bad axioms.
+[2026-06-27 10:58:51.294] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000068).
+
+...[truncated]
+SUCCESS: attempt=25 seed=340911 success_count=8/100
+progress: ontology=IMOBO attempt=25 success=8/100
+----- IMOBO attempt=26 seed=355111 at 2026-06-27 10:59:28 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=355111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:59:28.589] Checking precondition...
+[2026-06-27 10:59:28.605] Starting the repair...
+[2026-06-27 10:59:28.612] Found 325 possible bad axioms.
+[2026-06-27 10:59:28.613] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000015).
+[2026-06-27 10:59:28.618] Found 324 possible bad axioms.
+[2026-06-27 10:59:28.619] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000083).
+[2026-06-27 10:59:28.628] Found 323 possible bad axioms.
+[2026-06-27 10:59:28.629] Selected the bad axiom SubClassOf(imobo_0000013 imobo_0000004).
+[2026-06-27 10:59:28.633] Found 322 possible bad axioms.
+[2026-06-27 10:59:28.633] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000096).
+[2026-06-27 10:59:28.638] Found 321 possible bad axioms.
+[2026-06-27 10:59:28.639] Selected the bad axiom SubClassOf(imobo_0000024 imobo_0000015).
+[2026-06-27 10:59:28.643] Found 320 possible bad axioms.
+[2026-06-27 10:59:28.643] Selected the bad axiom SubClassOf(imobo_0000039 imobo_0000037).
+[2026-06-27 10:59:28.649] Found 319 possible bad axioms.
+[2026-06-27 10:59:28.649] Selected the bad axiom SubClassOf(imobo_0000032 imobo_0000015).
+[2026-06-27 10:59:28.653] Found 318 possible bad axioms.
+[2026-06-27 10:59:28.653] Selected the bad axiom SubClassOf(imobo_0000051 imobo_0000039).
+[2026-06-27 10:59:28.656] Found 317 possible bad axioms.
+[2026-06-27 10:59:28.656] Selected the bad axiom SubClassOf(imobo_0000036 imobo_0000030).
+[2026-06-27 10:59:28.660] Found 316 possible bad axioms.
+[2026-06-27 10:59:28.660] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000075).
+[2026-06-27 10:59:28.668] Found 315 possible bad axioms.
+[2026-06-27 10:59:28.668] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000088).
+[2026-06-27 10:59:28.677] Found 314 possible bad axioms.
+[2026-06-27 10:59:28.678] Selected the bad axiom SubClassOf(imobo_0000075 owl:Nothing).
+[2026-06-27 10:59:28.681] Found 313 possible bad axioms.
+[2026-06-27 10:59:28.681] Selected the bad axiom SubClassOf(imobo_0000020 imobo_0000030).
+[2026-06-27 10:59:28.685] Found 312 possible bad axioms.
+[2026-06-27 10:59:28.685] Selected the bad axiom SubClassOf(imobo_0000042 imobo_0000049).
+[2026-06-27 10:59:28.688] Found 311 possible bad axioms.
+[2026-06-27 10:59:28.688] Selected the bad axiom SubClassOf(imobo_0000084 imobo_0000081).
+[2026-06-27 10:59:28.692] Found 310 possible bad axioms.
+[2026-06-27 10:59:28.692] Selected the bad axiom SubClassOf(imobo_0000020 owl:Nothing).
+[2026-06-27 10:59:28.696] Found 309 possible bad axioms.
+[2026-06-27 10:59:28.696] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000093).
+
+...[truncated]
+FAIL: attempt=26 seed=355111 - negative return code -9
+progress: ontology=IMOBO attempt=26 success=8/100
+----- IMOBO attempt=27 seed=369311 at 2026-06-27 11:00:52 -----
+--- stdout ---
+{"seed":369311,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":102,"A2":3766,"A3":570,"B1":2934,"B2":8360,"B3":1276,"B4":133,"B5":7942,"B6":5158,"B7":216,"B8":8875,"B9":5393}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=369311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:00:52.533] Checking precondition...
+[2026-06-27 11:00:52.551] Starting the repair...
+[2026-06-27 11:00:52.558] Found 325 possible bad axioms.
+[2026-06-27 11:00:52.560] Selected the bad axiom SubClassOf(imobo_0000086 owl:Nothing).
+[2026-06-27 11:00:52.566] Found 324 possible bad axioms.
+[2026-06-27 11:00:52.566] Selected the bad axiom SubClassOf(imobo_0000065 owl:Nothing).
+[2026-06-27 11:00:52.575] Found 323 possible bad axioms.
+[2026-06-27 11:00:52.575] Selected the bad axiom SubClassOf(imobo_0000075 owl:Nothing).
+[2026-06-27 11:00:52.580] Found 322 possible bad axioms.
+[2026-06-27 11:00:52.581] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000052).
+[2026-06-27 11:00:52.585] Found 321 possible bad axioms.
+[2026-06-27 11:00:52.585] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000087).
+[2026-06-27 11:00:52.590] Found 320 possible bad axioms.
+[2026-06-27 11:00:52.590] Selected the bad axiom SubClassOf(imobo_0000009 imobo_0000004).
+[2026-06-27 11:00:52.594] Found 319 possible bad axioms.
+[2026-06-27 11:00:52.595] Selected the bad axiom SubClassOf(imobo_0000093 owl:Nothing).
+[2026-06-27 11:00:52.599] Found 318 possible bad axioms.
+[2026-06-27 11:00:52.599] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000088).
+[2026-06-27 11:00:52.602] Found 317 possible bad axioms.
+[2026-06-27 11:00:52.602] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000020).
+[2026-06-27 11:00:52.606] Found 316 possible bad axioms.
+[2026-06-27 11:00:52.606] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000003).
+[2026-06-27 11:00:52.614] Found 315 possible bad axioms.
+[2026-06-27 11:00:52.614] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000052).
+[2026-06-27 11:00:52.623] Found 314 possible bad axioms.
+[2026-06-27 11:00:52.623] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000002).
+[2026-06-27 11:00:52.626] Found 313 possible bad axioms.
+[2026-06-27 11:00:52.626] Selected the bad axiom SubClassOf(owl:Thing imobo_0000030).
+[2026-06-27 11:00:52.629] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 11:00:52.631] Checking precondition...
+[2026-06-27 11:00:52.637] Starting the repair...
+[2026-06-27 11:00:56.394] Found 1 possible bad axioms.
+[2026-06-27 11:00:56.394] Selected the bad axiom SubClassOf(owl:Thing imobo_0000030).
+[2026-06-27 11:00:56.396] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 11:00:56.398] Checking precondition...
+[2026-06-27 11:00:56.401] Starting the repair...
+[2026-06-27 11:00:56.460] Selected a reference
+...[truncated]
+SUCCESS: attempt=27 seed=369311 success_count=9/100
+progress: ontology=IMOBO attempt=27 success=9/100
+----- IMOBO attempt=28 seed=383511 at 2026-06-27 11:01:39 -----
+--- stdout ---
+{"seed":383511,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":423,"A2":3625,"A3":1551,"B1":439,"B2":8496,"B3":2653}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=383511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:01:40.283] Checking precondition...
+[2026-06-27 11:01:40.300] Starting the repair...
+[2026-06-27 11:01:40.308] Found 325 possible bad axioms.
+[2026-06-27 11:01:40.309] Selected the bad axiom SubClassOf(imobo_0000031 imobo_0000025).
+[2026-06-27 11:01:40.315] Found 324 possible bad axioms.
+[2026-06-27 11:01:40.315] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000081).
+[2026-06-27 11:01:40.324] Found 323 possible bad axioms.
+[2026-06-27 11:01:40.325] Selected the bad axiom SubClassOf(imobo_0000097 imobo_0000096).
+[2026-06-27 11:01:40.330] Found 322 possible bad axioms.
+[2026-06-27 11:01:40.330] Selected the bad axiom SubClassOf(imobo_0000099 imobo_0000102).
+[2026-06-27 11:01:40.334] Found 321 possible bad axioms.
+[2026-06-27 11:01:40.335] Selected the bad axiom SubClassOf(imobo_0000083 imobo_0000085).
+[2026-06-27 11:01:40.339] Found 320 possible bad axioms.
+[2026-06-27 11:01:40.340] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000071).
+[2026-06-27 11:01:40.344] Found 319 possible bad axioms.
+[2026-06-27 11:01:40.345] Selected the bad axiom SubClassOf(imobo_0000075 imobo_0000072).
+[2026-06-27 11:01:40.348] Found 318 possible bad axioms.
+[2026-06-27 11:01:40.349] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000037).
+[2026-06-27 11:01:40.352] Found 317 possible bad axioms.
+[2026-06-27 11:01:40.352] Selected the bad axiom SubClassOf(imobo_0000031 owl:Nothing).
+[2026-06-27 11:01:40.356] Found 316 possible bad axioms.
+[2026-06-27 11:01:40.356] Selected the bad axiom SubClassOf(imobo_0000033 imobo_0000035).
+[2026-06-27 11:01:40.363] Found 315 possible bad axioms.
+[2026-06-27 11:01:40.363] Selected the bad axiom SubClassOf(imobo_0000052 owl:Nothing).
+[2026-06-27 11:01:40.372] Found 314 possible bad axioms.
+[2026-06-27 11:01:40.372] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000003).
+[2026-06-27 11:01:40.376] Found 313 possible bad axioms.
+[2026-06-27 11:01:40.376] Selected the bad axiom SubClassOf(imobo_0000016 imobo_0000023).
+[2026-06-27 11:01:40.380] Found 312 possible bad axioms.
+[2026-06-27 11:01:40.380] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000046).
+[2026-06-27 11:01:40.383] Found 311 possible bad axioms.
+[2026-06-27 11:01:40.384] Selected the bad axiom SubClassOf(imobo_0000012 imobo_0000011).
+[2026-06-27 11:01:40.388] Found 310 possible bad axioms.
+[2026-06-27 11:01:40.388] Selected the bad axiom SubClassOf(imobo_0000006 imobo_0000004).
+[2026-06-27 11:01:40.391] Found 309 possible bad axioms.
+[2026-06-27 11:01:40.391] Selected the bad axiom SubClassOf(imobo_0000099 imobo_0000096).
+
+...[truncated]
+FAIL: attempt=28 seed=383511 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=28 success=9/100
+----- IMOBO attempt=29 seed=397711 at 2026-06-27 11:01:57 -----
+--- stdout ---
+{"seed":397711,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":383,"A2":3622,"A3":556,"B1":438,"B2":8010}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=397711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:01:57.946] Checking precondition...
+[2026-06-27 11:01:57.962] Starting the repair...
+[2026-06-27 11:01:57.969] Found 325 possible bad axioms.
+[2026-06-27 11:01:57.970] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000016).
+[2026-06-27 11:01:57.976] Found 324 possible bad axioms.
+[2026-06-27 11:01:57.976] Selected the bad axiom SubClassOf(imobo_0000028 imobo_0000015).
+[2026-06-27 11:01:57.985] Found 323 possible bad axioms.
+[2026-06-27 11:01:57.985] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000030).
+[2026-06-27 11:01:57.990] Found 322 possible bad axioms.
+[2026-06-27 11:01:57.990] Selected the bad axiom SubClassOf(imobo_0000023 imobo_0000015).
+[2026-06-27 11:01:57.995] Found 321 possible bad axioms.
+[2026-06-27 11:01:57.995] Selected the bad axiom SubClassOf(imobo_0000049 imobo_0000037).
+[2026-06-27 11:01:58.000] Found 320 possible bad axioms.
+[2026-06-27 11:01:58.000] Selected the bad axiom SubClassOf(imobo_0000074 imobo_0000075).
+[2026-06-27 11:01:58.005] Found 319 possible bad axioms.
+[2026-06-27 11:01:58.005] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000088).
+[2026-06-27 11:01:58.009] Found 318 possible bad axioms.
+[2026-06-27 11:01:58.009] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000070).
+[2026-06-27 11:01:58.013] Found 317 possible bad axioms.
+[2026-06-27 11:01:58.013] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000074).
+[2026-06-27 11:01:58.016] Found 316 possible bad axioms.
+[2026-06-27 11:01:58.017] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000081).
+[2026-06-27 11:01:58.025] Found 315 possible bad axioms.
+[2026-06-27 11:01:58.025] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000093).
+[2026-06-27 11:01:58.033] Found 314 possible bad axioms.
+[2026-06-27 11:01:58.034] Selected the bad axiom SubClassOf(imobo_0000059 imobo_0000052).
+[2026-06-27 11:01:58.037] Found 313 possible bad axioms.
+[2026-06-27 11:01:58.037] Selected the bad axiom SubClassOf(imobo_0000078 imobo_0000075).
+[2026-06-27 11:01:58.041] Found 312 possible bad axioms.
+[2026-06-27 11:01:58.041] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000002).
+[2026-06-27 11:01:58.044] Found 311 possible bad axioms.
+[2026-06-27 11:01:58.045] Selected the bad axiom SubClassOf(imobo_0000036 imobo_0000030).
+[2026-06-27 11:01:58.048] Found 310 possible bad axioms.
+[2026-06-27 11:01:58.048] Selected the bad axiom SubClassOf(imobo_0000068 imobo_0000057).
+[2026-06-27 11:01:58.051] Found 309 possible bad axioms.
+[2026-06-27 11:01:58.051] Selected the bad axiom SubClassOf(imobo_0000076 imobo_000008
+...[truncated]
+FAIL: attempt=29 seed=397711 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=29 success=9/100
+----- IMOBO attempt=30 seed=411911 at 2026-06-27 11:02:11 -----
+--- stdout ---
+{"seed":411911,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":364,"A2":3634,"A3":490,"B1":431,"B2":4932}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=411911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:02:11.427] Checking precondition...
+[2026-06-27 11:02:11.444] Starting the repair...
+[2026-06-27 11:02:11.452] Found 325 possible bad axioms.
+[2026-06-27 11:02:11.453] Selected the bad axiom SubClassOf(imobo_0000025 imobo_0000018).
+[2026-06-27 11:02:11.459] Found 324 possible bad axioms.
+[2026-06-27 11:02:11.459] Selected the bad axiom SubClassOf(imobo_0000100 owl:Nothing).
+[2026-06-27 11:02:11.468] Found 323 possible bad axioms.
+[2026-06-27 11:02:11.468] Selected the bad axiom SubClassOf(imobo_0000088 owl:Nothing).
+[2026-06-27 11:02:11.474] Found 322 possible bad axioms.
+[2026-06-27 11:02:11.474] Selected the bad axiom SubClassOf(imobo_0000013 imobo_0000004).
+[2026-06-27 11:02:11.479] Found 321 possible bad axioms.
+[2026-06-27 11:02:11.479] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000002).
+[2026-06-27 11:02:11.484] Found 320 possible bad axioms.
+[2026-06-27 11:02:11.485] Selected the bad axiom SubClassOf(imobo_0000050 imobo_0000037).
+[2026-06-27 11:02:11.489] Found 319 possible bad axioms.
+[2026-06-27 11:02:11.489] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000059).
+[2026-06-27 11:02:11.493] Found 318 possible bad axioms.
+[2026-06-27 11:02:11.493] Selected the bad axiom SubClassOf(imobo_0000014 imobo_0000011).
+[2026-06-27 11:02:11.497] Found 317 possible bad axioms.
+[2026-06-27 11:02:11.497] Selected the bad axiom SubClassOf(imobo_0000093 imobo_0000092).
+[2026-06-27 11:02:11.500] Found 316 possible bad axioms.
+[2026-06-27 11:02:11.500] Selected the bad axiom SubClassOf(imobo_0000096 imobo_0000003).
+[2026-06-27 11:02:11.508] Found 315 possible bad axioms.
+[2026-06-27 11:02:11.508] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000037).
+[2026-06-27 11:02:11.517] Found 314 possible bad axioms.
+[2026-06-27 11:02:11.517] Selected the bad axiom SubClassOf(imobo_0000039 imobo_0000037).
+[2026-06-27 11:02:11.521] Found 313 possible bad axioms.
+[2026-06-27 11:02:11.521] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000071).
+[2026-06-27 11:02:11.524] Found 312 possible bad axioms.
+[2026-06-27 11:02:11.525] Selected the bad axiom SubClassOf(imobo_0000045 imobo_0000037).
+[2026-06-27 11:02:11.529] Found 311 possible bad axioms.
+[2026-06-27 11:02:11.529] Selected the bad axiom SubClassOf(imobo_0000033 imobo_0000017).
+[2026-06-27 11:02:11.533] Found 310 possible bad axioms.
+[2026-06-27 11:02:11.533] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000015).
+[2026-06-27 11:02:11.537] Found 309 possible bad axioms.
+[2026-06-27 11:02:11.537] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000025).
+
+...[truncated]
+FAIL: attempt=30 seed=411911 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=30 success=9/100
+----- IMOBO attempt=31 seed=426111 at 2026-06-27 11:02:21 -----
+--- stdout ---
+{"seed":426111,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":184,"A2":3702,"A3":473,"B1":444,"B2":8599,"B3":5258,"B4":101,"B5":8376,"B6":5830,"B7":164,"B8":5020,"B9":4994}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=426111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:02:21.736] Checking precondition...
+[2026-06-27 11:02:21.754] Starting the repair...
+[2026-06-27 11:02:21.761] Found 325 possible bad axioms.
+[2026-06-27 11:02:21.762] Selected the bad axiom SubClassOf(imobo_0000054 imobo_0000052).
+[2026-06-27 11:02:21.768] Found 324 possible bad axioms.
+[2026-06-27 11:02:21.768] Selected the bad axiom SubClassOf(imobo_0000036 owl:Nothing).
+[2026-06-27 11:02:21.779] Found 323 possible bad axioms.
+[2026-06-27 11:02:21.779] Selected the bad axiom SubClassOf(imobo_0000010 imobo_0000004).
+[2026-06-27 11:02:21.785] Found 322 possible bad axioms.
+[2026-06-27 11:02:21.785] Selected the bad axiom SubClassOf(imobo_0000025 imobo_0000018).
+[2026-06-27 11:02:21.790] Found 321 possible bad axioms.
+[2026-06-27 11:02:21.790] Selected the bad axiom SubClassOf(imobo_0000045 owl:Nothing).
+[2026-06-27 11:02:21.794] Found 320 possible bad axioms.
+[2026-06-27 11:02:21.794] Selected the bad axiom SubClassOf(imobo_0000068 imobo_0000052).
+[2026-06-27 11:02:21.798] Found 319 possible bad axioms.
+[2026-06-27 11:02:21.799] Selected the bad axiom SubClassOf(imobo_0000014 imobo_0000004).
+[2026-06-27 11:02:21.802] Found 318 possible bad axioms.
+[2026-06-27 11:02:21.802] Selected the bad axiom SubClassOf(imobo_0000100 owl:Nothing).
+[2026-06-27 11:02:21.806] Found 317 possible bad axioms.
+[2026-06-27 11:02:21.806] Selected the bad axiom SubClassOf(imobo_0000012 imobo_0000011).
+[2026-06-27 11:02:21.810] Found 316 possible bad axioms.
+[2026-06-27 11:02:21.811] Selected the bad axiom SubClassOf(imobo_0000029 imobo_0000033).
+[2026-06-27 11:02:21.818] Found 315 possible bad axioms.
+[2026-06-27 11:02:21.818] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000021).
+[2026-06-27 11:02:21.827] Found 314 possible bad axioms.
+[2026-06-27 11:02:21.828] Selected the bad axiom SubClassOf(imobo_0000003 imobo_0000101).
+[2026-06-27 11:02:21.831] Found 313 possible bad axioms.
+[2026-06-27 11:02:21.831] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000083).
+[2026-06-27 11:02:21.835] Found 312 possible bad axioms.
+[2026-06-27 11:02:21.835] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000089).
+[2026-06-27 11:02:21.838] Found 311 possible bad axioms.
+[2026-06-27 11:02:21.838] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000023).
+[2026-06-27 11:02:21.842] Found 310 possible bad axioms.
+[2026-06-27 11:02:21.842] Selected the bad axiom SubClassOf(imobo_0000023 imobo_0000036).
+[2026-06-27 11:02:21.845] Found 309 possible bad axioms.
+[2026-06-27 11:02:21.846] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000017).
+[2
+...[truncated]
+SUCCESS: attempt=31 seed=426111 success_count=10/100
+progress: ontology=IMOBO attempt=31 success=10/100
+----- IMOBO attempt=32 seed=440311 at 2026-06-27 11:03:11 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=440311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:03:11.549] Checking precondition...
+[2026-06-27 11:03:11.565] Starting the repair...
+[2026-06-27 11:03:11.573] Found 325 possible bad axioms.
+[2026-06-27 11:03:11.575] Selected the bad axiom SubClassOf(imobo_0000060 imobo_0000056).
+[2026-06-27 11:03:11.581] Found 324 possible bad axioms.
+[2026-06-27 11:03:11.582] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000020).
+[2026-06-27 11:03:11.592] Found 323 possible bad axioms.
+[2026-06-27 11:03:11.592] Selected the bad axiom SubClassOf(imobo_0000001 imobo_0000017).
+[2026-06-27 11:03:11.598] Found 322 possible bad axioms.
+[2026-06-27 11:03:11.598] Selected the bad axiom SubClassOf(imobo_0000088 owl:Nothing).
+[2026-06-27 11:03:11.602] Found 321 possible bad axioms.
+[2026-06-27 11:03:11.602] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000091).
+[2026-06-27 11:03:11.607] Found 320 possible bad axioms.
+[2026-06-27 11:03:11.607] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000024).
+[2026-06-27 11:03:11.612] Found 319 possible bad axioms.
+[2026-06-27 11:03:11.612] Selected the bad axiom SubClassOf(imobo_0000046 imobo_0000037).
+[2026-06-27 11:03:11.616] Found 318 possible bad axioms.
+[2026-06-27 11:03:11.616] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000087).
+[2026-06-27 11:03:11.620] Found 317 possible bad axioms.
+[2026-06-27 11:03:11.620] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000080).
+[2026-06-27 11:03:11.623] Found 316 possible bad axioms.
+[2026-06-27 11:03:11.623] Selected the bad axiom SubClassOf(imobo_0000016 imobo_0000023).
+[2026-06-27 11:03:11.626] Found 315 possible bad axioms.
+[2026-06-27 11:03:11.627] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000081).
+[2026-06-27 11:03:11.640] Found 314 possible bad axioms.
+[2026-06-27 11:03:11.640] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000029).
+[2026-06-27 11:03:11.644] Found 313 possible bad axioms.
+[2026-06-27 11:03:11.644] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000023).
+[2026-06-27 11:03:11.647] Found 312 possible bad axioms.
+[2026-06-27 11:03:11.647] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000003).
+[2026-06-27 11:03:11.652] Found 311 possible bad axioms.
+[2026-06-27 11:03:11.652] Selected the bad axiom SubClassOf(imobo_0000031 owl:Nothing).
+[2026-06-27 11:03:11.655] Found 310 possible bad axioms.
+[2026-06-27 11:03:11.655] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000085).
+[2026-06-27 11:03:11.659] Found 309 possible bad axioms.
+[2026-06-27 11:03:11.659] Selected the bad axiom SubClassOf(imobo_0000070 imobo_0000052).
+
+...[truncated]
+FAIL: attempt=32 seed=440311 - negative return code -9
+progress: ontology=IMOBO attempt=32 success=10/100
+----- IMOBO attempt=33 seed=454511 at 2026-06-27 11:03:55 -----
+--- stdout ---
+{"seed":454511,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":399,"A2":3587,"A3":474,"B1":407,"B2":8609,"B3":5083,"B4":147,"B5":3846}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=454511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:03:56.269] Checking precondition...
+[2026-06-27 11:03:56.286] Starting the repair...
+[2026-06-27 11:03:56.294] Found 325 possible bad axioms.
+[2026-06-27 11:03:56.295] Selected the bad axiom SubClassOf(imobo_0000054 imobo_0000052).
+[2026-06-27 11:03:56.301] Found 324 possible bad axioms.
+[2026-06-27 11:03:56.301] Selected the bad axiom SubClassOf(imobo_0000061 imobo_0000071).
+[2026-06-27 11:03:56.311] Found 323 possible bad axioms.
+[2026-06-27 11:03:56.311] Selected the bad axiom SubClassOf(imobo_0000036 imobo_0000015).
+[2026-06-27 11:03:56.317] Found 322 possible bad axioms.
+[2026-06-27 11:03:56.317] Selected the bad axiom SubClassOf(imobo_0000047 imobo_0000037).
+[2026-06-27 11:03:56.321] Found 321 possible bad axioms.
+[2026-06-27 11:03:56.322] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000037).
+[2026-06-27 11:03:56.326] Found 320 possible bad axioms.
+[2026-06-27 11:03:56.326] Selected the bad axiom SubClassOf(imobo_0000032 owl:Nothing).
+[2026-06-27 11:03:56.331] Found 319 possible bad axioms.
+[2026-06-27 11:03:56.331] Selected the bad axiom SubClassOf(imobo_0000008 owl:Nothing).
+[2026-06-27 11:03:56.335] Found 318 possible bad axioms.
+[2026-06-27 11:03:56.335] Selected the bad axiom SubClassOf(imobo_0000062 imobo_0000052).
+[2026-06-27 11:03:56.339] Found 317 possible bad axioms.
+[2026-06-27 11:03:56.339] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000015).
+[2026-06-27 11:03:56.342] Found 316 possible bad axioms.
+[2026-06-27 11:03:56.342] Selected the bad axiom SubClassOf(imobo_0000031 imobo_0000015).
+[2026-06-27 11:03:56.351] Found 315 possible bad axioms.
+[2026-06-27 11:03:56.351] Selected the bad axiom SubClassOf(imobo_0000023 imobo_0000036).
+[2026-06-27 11:03:56.362] Found 314 possible bad axioms.
+[2026-06-27 11:03:56.362] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000080).
+[2026-06-27 11:03:56.366] Found 313 possible bad axioms.
+[2026-06-27 11:03:56.367] Selected the bad axiom SubClassOf(imobo_0000089 imobo_0000081).
+[2026-06-27 11:03:56.370] Found 312 possible bad axioms.
+[2026-06-27 11:03:56.370] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000003).
+[2026-06-27 11:03:56.374] Found 311 possible bad axioms.
+[2026-06-27 11:03:56.374] Selected the bad axiom SubClassOf(imobo_0000075 imobo_0000072).
+[2026-06-27 11:03:56.378] Found 310 possible bad axioms.
+[2026-06-27 11:03:56.378] Selected the bad axiom SubClassOf(imobo_0000045 imobo_0000050).
+[2026-06-27 11:03:56.382] Found 309 possible bad axioms.
+[2026-06-27 11:03:56.383] Selected the bad axiom SubClassOf(imobo_0000065 imobo_0000061).
+
+...[truncated]
+FAIL: attempt=33 seed=454511 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=33 success=10/100
+----- IMOBO attempt=34 seed=468711 at 2026-06-27 11:04:20 -----
+--- stdout ---
+{"seed":468711,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":201,"A2":3747,"A3":539,"B1":459,"B2":8516,"B3":5168,"B4":108,"B5":2132,"B6":2869,"B7":190,"B8":4747}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=468711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:04:21.285] Checking precondition...
+[2026-06-27 11:04:21.302] Starting the repair...
+[2026-06-27 11:04:21.309] Found 325 possible bad axioms.
+[2026-06-27 11:04:21.310] Selected the bad axiom SubClassOf(imobo_0000076 imobo_0000080).
+[2026-06-27 11:04:21.316] Found 324 possible bad axioms.
+[2026-06-27 11:04:21.316] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000050).
+[2026-06-27 11:04:21.327] Found 323 possible bad axioms.
+[2026-06-27 11:04:21.327] Selected the bad axiom SubClassOf(imobo_0000007 imobo_0000006).
+[2026-06-27 11:04:21.331] Found 322 possible bad axioms.
+[2026-06-27 11:04:21.332] Selected the bad axiom SubClassOf(imobo_0000042 imobo_0000049).
+[2026-06-27 11:04:21.335] Found 321 possible bad axioms.
+[2026-06-27 11:04:21.335] Selected the bad axiom SubClassOf(imobo_0000035 imobo_0000016).
+[2026-06-27 11:04:21.340] Found 320 possible bad axioms.
+[2026-06-27 11:04:21.341] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000020).
+[2026-06-27 11:04:21.346] Found 319 possible bad axioms.
+[2026-06-27 11:04:21.346] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000093).
+[2026-06-27 11:04:21.350] Found 318 possible bad axioms.
+[2026-06-27 11:04:21.350] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000030).
+[2026-06-27 11:04:21.354] Found 317 possible bad axioms.
+[2026-06-27 11:04:21.354] Selected the bad axiom SubClassOf(imobo_0000019 imobo_0000015).
+[2026-06-27 11:04:21.358] Found 316 possible bad axioms.
+[2026-06-27 11:04:21.358] Selected the bad axiom SubClassOf(imobo_0000089 imobo_0000081).
+[2026-06-27 11:04:21.361] Found 315 possible bad axioms.
+[2026-06-27 11:04:21.361] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000071).
+[2026-06-27 11:04:21.375] Found 314 possible bad axioms.
+[2026-06-27 11:04:21.375] Selected the bad axiom SubClassOf(imobo_0000015 owl:Nothing).
+[2026-06-27 11:04:21.379] Found 313 possible bad axioms.
+[2026-06-27 11:04:21.379] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000015).
+[2026-06-27 11:04:21.382] Found 312 possible bad axioms.
+[2026-06-27 11:04:21.382] Selected the bad axiom SubClassOf(imobo_0000065 imobo_0000052).
+[2026-06-27 11:04:21.386] Found 311 possible bad axioms.
+[2026-06-27 11:04:21.386] Selected the bad axiom SubClassOf(imobo_0000039 imobo_0000038).
+[2026-06-27 11:04:21.390] Found 310 possible bad axioms.
+[2026-06-27 11:04:21.390] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000086).
+[2026-06-27 11:04:21.394] Found 309 possible bad axioms.
+[2026-06-27 11:04:21.394] Selected the bad axiom SubClassOf(imobo_0000084 imobo_0000081)
+...[truncated]
+FAIL: attempt=34 seed=468711 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=34 success=10/100
+----- IMOBO attempt=35 seed=482911 at 2026-06-27 11:04:50 -----
+--- stdout ---
+{"seed":482911,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":423,"A2":3653,"A3":570,"B1":411,"B2":8615,"B3":1099,"B4":145,"B5":3137}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=482911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:04:50.734] Checking precondition...
+[2026-06-27 11:04:50.751] Starting the repair...
+[2026-06-27 11:04:50.759] Found 325 possible bad axioms.
+[2026-06-27 11:04:50.760] Selected the bad axiom SubClassOf(imobo_0000096 imobo_0000098).
+[2026-06-27 11:04:50.765] Found 324 possible bad axioms.
+[2026-06-27 11:04:50.766] Selected the bad axiom SubClassOf(imobo_0000015 owl:Nothing).
+[2026-06-27 11:04:50.776] Found 323 possible bad axioms.
+[2026-06-27 11:04:50.776] Selected the bad axiom SubClassOf(imobo_0000003 imobo_0000001).
+[2026-06-27 11:04:50.781] Found 322 possible bad axioms.
+[2026-06-27 11:04:50.782] Selected the bad axiom SubClassOf(imobo_0000056 owl:Nothing).
+[2026-06-27 11:04:50.786] Found 321 possible bad axioms.
+[2026-06-27 11:04:50.786] Selected the bad axiom SubClassOf(imobo_0000039 imobo_0000038).
+[2026-06-27 11:04:50.791] Found 320 possible bad axioms.
+[2026-06-27 11:04:50.791] Selected the bad axiom SubClassOf(imobo_0000027 imobo_0000029).
+[2026-06-27 11:04:50.795] Found 319 possible bad axioms.
+[2026-06-27 11:04:50.796] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000075).
+[2026-06-27 11:04:50.800] Found 318 possible bad axioms.
+[2026-06-27 11:04:50.800] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000069).
+[2026-06-27 11:04:50.804] Found 317 possible bad axioms.
+[2026-06-27 11:04:50.804] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000018).
+[2026-06-27 11:04:50.808] Found 316 possible bad axioms.
+[2026-06-27 11:04:50.808] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000038).
+[2026-06-27 11:04:50.815] Found 315 possible bad axioms.
+[2026-06-27 11:04:50.816] Selected the bad axiom SubClassOf(imobo_0000078 imobo_0000076).
+[2026-06-27 11:04:50.824] Found 314 possible bad axioms.
+[2026-06-27 11:04:50.824] Selected the bad axiom SubClassOf(imobo_0000044 imobo_0000045).
+[2026-06-27 11:04:50.828] Found 313 possible bad axioms.
+[2026-06-27 11:04:50.828] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000081).
+[2026-06-27 11:04:50.832] Found 312 possible bad axioms.
+[2026-06-27 11:04:50.832] Selected the bad axiom SubClassOf(imobo_0000093 owl:Nothing).
+[2026-06-27 11:04:50.835] Found 311 possible bad axioms.
+[2026-06-27 11:04:50.835] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000040).
+[2026-06-27 11:04:50.839] Found 310 possible bad axioms.
+[2026-06-27 11:04:50.839] Selected the bad axiom SubClassOf(imobo_0000074 imobo_0000072).
+[2026-06-27 11:04:50.843] Found 309 possible bad axioms.
+[2026-06-27 11:04:50.843] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000088).
+[2
+...[truncated]
+FAIL: attempt=35 seed=482911 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=35 success=10/100
+----- IMOBO attempt=36 seed=497111 at 2026-06-27 11:05:08 -----
+--- stdout ---
+{"seed":497111,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":397,"A2":3571,"A3":469,"B1":1165,"B2":8455,"B3":5179,"B4":98,"B5":8406,"B6":2697}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=497111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:05:09.282] Checking precondition...
+[2026-06-27 11:05:09.299] Starting the repair...
+[2026-06-27 11:05:09.307] Found 325 possible bad axioms.
+[2026-06-27 11:05:09.308] Selected the bad axiom SubClassOf(imobo_0000036 imobo_0000015).
+[2026-06-27 11:05:09.314] Found 324 possible bad axioms.
+[2026-06-27 11:05:09.314] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000002).
+[2026-06-27 11:05:09.322] Found 323 possible bad axioms.
+[2026-06-27 11:05:09.322] Selected the bad axiom SubClassOf(imobo_0000033 imobo_0000015).
+[2026-06-27 11:05:09.328] Found 322 possible bad axioms.
+[2026-06-27 11:05:09.328] Selected the bad axiom SubClassOf(imobo_0000098 imobo_0000097).
+[2026-06-27 11:05:09.332] Found 321 possible bad axioms.
+[2026-06-27 11:05:09.333] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000059).
+[2026-06-27 11:05:09.337] Found 320 possible bad axioms.
+[2026-06-27 11:05:09.337] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000017).
+[2026-06-27 11:05:09.340] Found 319 possible bad axioms.
+[2026-06-27 11:05:09.341] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000068).
+[2026-06-27 11:05:09.345] Found 318 possible bad axioms.
+[2026-06-27 11:05:09.345] Selected the bad axiom SubClassOf(imobo_0000016 imobo_0000023).
+[2026-06-27 11:05:09.349] Found 317 possible bad axioms.
+[2026-06-27 11:05:09.349] Selected the bad axiom SubClassOf(imobo_0000024 imobo_0000015).
+[2026-06-27 11:05:09.353] Found 316 possible bad axioms.
+[2026-06-27 11:05:09.353] Selected the bad axiom SubClassOf(imobo_0000051 owl:Nothing).
+[2026-06-27 11:05:09.361] Found 315 possible bad axioms.
+[2026-06-27 11:05:09.361] Selected the bad axiom SubClassOf(imobo_0000093 imobo_0000092).
+[2026-06-27 11:05:09.370] Found 314 possible bad axioms.
+[2026-06-27 11:05:09.370] Selected the bad axiom SubClassOf(imobo_0000093 imobo_0000096).
+[2026-06-27 11:05:09.374] Found 313 possible bad axioms.
+[2026-06-27 11:05:09.375] Selected the bad axiom SubClassOf(imobo_0000049 owl:Nothing).
+[2026-06-27 11:05:09.378] Found 312 possible bad axioms.
+[2026-06-27 11:05:09.378] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000045).
+[2026-06-27 11:05:09.382] Found 311 possible bad axioms.
+[2026-06-27 11:05:09.382] Selected the bad axiom SubClassOf(imobo_0000089 imobo_0000081).
+[2026-06-27 11:05:09.386] Found 310 possible bad axioms.
+[2026-06-27 11:05:09.386] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000039).
+[2026-06-27 11:05:09.390] Found 309 possible bad axioms.
+[2026-06-27 11:05:09.390] Selected the bad axiom SubClassOf(imobo_0000074 imobo_0000072).
+
+...[truncated]
+FAIL: attempt=36 seed=497111 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=36 success=10/100
+----- IMOBO attempt=37 seed=511311 at 2026-06-27 11:05:40 -----
+--- stdout ---
+{"seed":511311,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":236,"A2":3705,"A3":446,"B1":435,"B2":5045}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=511311, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:05:40.395] Checking precondition...
+[2026-06-27 11:05:40.410] Starting the repair...
+[2026-06-27 11:05:40.417] Found 325 possible bad axioms.
+[2026-06-27 11:05:40.419] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000047).
+[2026-06-27 11:05:40.424] Found 324 possible bad axioms.
+[2026-06-27 11:05:40.426] Selected the bad axiom SubClassOf(imobo_0000096 imobo_0000098).
+[2026-06-27 11:05:40.435] Found 323 possible bad axioms.
+[2026-06-27 11:05:40.435] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000015).
+[2026-06-27 11:05:40.440] Found 322 possible bad axioms.
+[2026-06-27 11:05:40.440] Selected the bad axiom SubClassOf(imobo_0000040 imobo_0000044).
+[2026-06-27 11:05:40.444] Found 321 possible bad axioms.
+[2026-06-27 11:05:40.445] Selected the bad axiom SubClassOf(imobo_0000041 imobo_0000037).
+[2026-06-27 11:05:40.449] Found 320 possible bad axioms.
+[2026-06-27 11:05:40.450] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000050).
+[2026-06-27 11:05:40.454] Found 319 possible bad axioms.
+[2026-06-27 11:05:40.454] Selected the bad axiom SubClassOf(imobo_0000088 imobo_0000087).
+[2026-06-27 11:05:40.458] Found 318 possible bad axioms.
+[2026-06-27 11:05:40.458] Selected the bad axiom SubClassOf(imobo_0000098 owl:Nothing).
+[2026-06-27 11:05:40.461] Found 317 possible bad axioms.
+[2026-06-27 11:05:40.461] Selected the bad axiom SubClassOf(imobo_0000033 imobo_0000015).
+[2026-06-27 11:05:40.465] Found 316 possible bad axioms.
+[2026-06-27 11:05:40.465] Selected the bad axiom SubClassOf(imobo_0000087 imobo_0000081).
+[2026-06-27 11:05:40.473] Found 315 possible bad axioms.
+[2026-06-27 11:05:40.473] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000089).
+[2026-06-27 11:05:40.482] Found 314 possible bad axioms.
+[2026-06-27 11:05:40.482] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000052).
+[2026-06-27 11:05:40.486] Found 313 possible bad axioms.
+[2026-06-27 11:05:40.486] Selected the bad axiom SubClassOf(imobo_0000061 imobo_0000052).
+[2026-06-27 11:05:40.489] Found 312 possible bad axioms.
+[2026-06-27 11:05:40.489] Selected the bad axiom SubClassOf(imobo_0000051 imobo_0000039).
+[2026-06-27 11:05:40.493] Found 311 possible bad axioms.
+[2026-06-27 11:05:40.493] Selected the bad axiom SubClassOf(imobo_0000067 imobo_0000069).
+[2026-06-27 11:05:40.497] Found 310 possible bad axioms.
+[2026-06-27 11:05:40.497] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000080).
+[2026-06-27 11:05:40.501] Found 309 possible bad axioms.
+[2026-06-27 11:05:40.501] Selected the bad axiom SubClassOf(imobo_0000020 imobo_0000015)
+...[truncated]
+FAIL: attempt=37 seed=511311 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=37 success=10/100
+----- IMOBO attempt=38 seed=525511 at 2026-06-27 11:05:50 -----
+--- stdout ---
+{"seed":525511,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":413,"A2":3647,"A3":488,"B1":1578,"B2":4612}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=525511, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:05:50.727] Checking precondition...
+[2026-06-27 11:05:50.744] Starting the repair...
+[2026-06-27 11:05:50.751] Found 325 possible bad axioms.
+[2026-06-27 11:05:50.752] Selected the bad axiom SubClassOf(imobo_0000065 imobo_0000056).
+[2026-06-27 11:05:50.757] Found 324 possible bad axioms.
+[2026-06-27 11:05:50.758] Selected the bad axiom SubClassOf(imobo_0000059 imobo_0000061).
+[2026-06-27 11:05:50.769] Found 323 possible bad axioms.
+[2026-06-27 11:05:50.769] Selected the bad axiom SubClassOf(imobo_0000031 owl:Nothing).
+[2026-06-27 11:05:50.774] Found 322 possible bad axioms.
+[2026-06-27 11:05:50.774] Selected the bad axiom SubClassOf(imobo_0000051 owl:Nothing).
+[2026-06-27 11:05:50.779] Found 321 possible bad axioms.
+[2026-06-27 11:05:50.779] Selected the bad axiom SubClassOf(imobo_0000001 imobo_0000030).
+[2026-06-27 11:05:50.785] Found 320 possible bad axioms.
+[2026-06-27 11:05:50.785] Selected the bad axiom SubClassOf(imobo_0000079 imobo_0000080).
+[2026-06-27 11:05:50.789] Found 319 possible bad axioms.
+[2026-06-27 11:05:50.790] Selected the bad axiom SubClassOf(imobo_0000075 imobo_0000076).
+[2026-06-27 11:05:50.793] Found 318 possible bad axioms.
+[2026-06-27 11:05:50.794] Selected the bad axiom SubClassOf(imobo_0000092 imobo_0000093).
+[2026-06-27 11:05:50.797] Found 317 possible bad axioms.
+[2026-06-27 11:05:50.798] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000002).
+[2026-06-27 11:05:50.801] Found 316 possible bad axioms.
+[2026-06-27 11:05:50.801] Selected the bad axiom SubClassOf(imobo_0000022 imobo_0000019).
+[2026-06-27 11:05:50.809] Found 315 possible bad axioms.
+[2026-06-27 11:05:50.809] Selected the bad axiom SubClassOf(imobo_0000058 imobo_0000052).
+[2026-06-27 11:05:50.818] Found 314 possible bad axioms.
+[2026-06-27 11:05:50.818] Selected the bad axiom SubClassOf(imobo_0000082 imobo_0000088).
+[2026-06-27 11:05:50.821] Found 313 possible bad axioms.
+[2026-06-27 11:05:50.821] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000075).
+[2026-06-27 11:05:50.825] Found 312 possible bad axioms.
+[2026-06-27 11:05:50.825] Selected the bad axiom SubClassOf(imobo_0000083 imobo_0000081).
+[2026-06-27 11:05:50.829] Found 311 possible bad axioms.
+[2026-06-27 11:05:50.829] Selected the bad axiom SubClassOf(imobo_0000018 imobo_0000015).
+[2026-06-27 11:05:50.832] Found 310 possible bad axioms.
+[2026-06-27 11:05:50.833] Selected the bad axiom SubClassOf(imobo_0000003 owl:Nothing).
+[2026-06-27 11:05:50.836] Found 309 possible bad axioms.
+[2026-06-27 11:05:50.836] Selected the bad axiom SubClassOf(imobo_0000093 imobo_0000096).
+[2
+...[truncated]
+FAIL: attempt=38 seed=525511 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=38 success=10/100
+----- IMOBO attempt=39 seed=539711 at 2026-06-27 11:06:01 -----
+--- stdout ---
+{"seed":539711,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":484,"A2":3584,"A3":486,"B1":449,"B2":4555}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=539711, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:06:01.928] Checking precondition...
+[2026-06-27 11:06:01.946] Starting the repair...
+[2026-06-27 11:06:01.954] Found 325 possible bad axioms.
+[2026-06-27 11:06:01.956] Selected the bad axiom SubClassOf(imobo_0000001 imobo_0000017).
+[2026-06-27 11:06:01.962] Found 324 possible bad axioms.
+[2026-06-27 11:06:01.962] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000021).
+[2026-06-27 11:06:01.972] Found 323 possible bad axioms.
+[2026-06-27 11:06:01.973] Selected the bad axiom SubClassOf(imobo_0000081 owl:Nothing).
+[2026-06-27 11:06:01.977] Found 322 possible bad axioms.
+[2026-06-27 11:06:01.978] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000088).
+[2026-06-27 11:06:01.982] Found 321 possible bad axioms.
+[2026-06-27 11:06:01.983] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000046).
+[2026-06-27 11:06:01.987] Found 320 possible bad axioms.
+[2026-06-27 11:06:01.987] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000044).
+[2026-06-27 11:06:01.992] Found 319 possible bad axioms.
+[2026-06-27 11:06:01.992] Selected the bad axiom SubClassOf(imobo_0000059 imobo_0000052).
+[2026-06-27 11:06:01.996] Found 318 possible bad axioms.
+[2026-06-27 11:06:01.996] Selected the bad axiom SubClassOf(imobo_0000075 owl:Nothing).
+[2026-06-27 11:06:02.000] Found 317 possible bad axioms.
+[2026-06-27 11:06:02.000] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000029).
+[2026-06-27 11:06:02.003] Found 316 possible bad axioms.
+[2026-06-27 11:06:02.003] Selected the bad axiom SubClassOf(imobo_0000030 imobo_0000024).
+[2026-06-27 11:06:02.011] Found 315 possible bad axioms.
+[2026-06-27 11:06:02.011] Selected the bad axiom SubClassOf(imobo_0000064 imobo_0000052).
+[2026-06-27 11:06:02.020] Found 314 possible bad axioms.
+[2026-06-27 11:06:02.020] Selected the bad axiom SubClassOf(imobo_0000081 imobo_0000003).
+[2026-06-27 11:06:02.024] Found 313 possible bad axioms.
+[2026-06-27 11:06:02.024] Selected the bad axiom SubClassOf(imobo_0000093 imobo_0000003).
+[2026-06-27 11:06:02.028] Found 312 possible bad axioms.
+[2026-06-27 11:06:02.028] Selected the bad axiom SubClassOf(imobo_0000026 imobo_0000021).
+[2026-06-27 11:06:02.032] Found 311 possible bad axioms.
+[2026-06-27 11:06:02.032] Selected the bad axiom SubClassOf(imobo_0000037 imobo_0000068).
+[2026-06-27 11:06:02.036] Found 310 possible bad axioms.
+[2026-06-27 11:06:02.036] Selected the bad axiom SubClassOf(imobo_0000053 imobo_0000052).
+[2026-06-27 11:06:02.039] Found 309 possible bad axioms.
+[2026-06-27 11:06:02.039] Selected the bad axiom SubClassOf(imobo_0000037 owl:Nothing).
+[2
+...[truncated]
+FAIL: attempt=39 seed=539711 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=39 success=10/100
+----- IMOBO attempt=40 seed=553911 at 2026-06-27 11:06:11 -----
+--- stdout ---
+{"seed":553911,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":475,"A2":3528,"A3":517,"B1":414,"B2":8491,"B3":1150,"B4":96,"B5":4469,"B6":5399,"B7":224,"B8":8941}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=553911, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:06:11.945] Checking precondition...
+[2026-06-27 11:06:11.962] Starting the repair...
+[2026-06-27 11:06:11.969] Found 325 possible bad axioms.
+[2026-06-27 11:06:11.971] Selected the bad axiom SubClassOf(imobo_0000034 imobo_0000015).
+[2026-06-27 11:06:11.976] Found 324 possible bad axioms.
+[2026-06-27 11:06:11.976] Selected the bad axiom SubClassOf(imobo_0000090 imobo_0000081).
+[2026-06-27 11:06:11.986] Found 323 possible bad axioms.
+[2026-06-27 11:06:11.986] Selected the bad axiom SubClassOf(imobo_0000080 imobo_0000076).
+[2026-06-27 11:06:11.991] Found 322 possible bad axioms.
+[2026-06-27 11:06:11.991] Selected the bad axiom SubClassOf(imobo_0000049 imobo_0000037).
+[2026-06-27 11:06:11.996] Found 321 possible bad axioms.
+[2026-06-27 11:06:11.996] Selected the bad axiom SubClassOf(imobo_0000052 owl:Nothing).
+[2026-06-27 11:06:12.001] Found 320 possible bad axioms.
+[2026-06-27 11:06:12.001] Selected the bad axiom SubClassOf(imobo_0000015 imobo_0000020).
+[2026-06-27 11:06:12.007] Found 319 possible bad axioms.
+[2026-06-27 11:06:12.007] Selected the bad axiom SubClassOf(imobo_0000037 owl:Nothing).
+[2026-06-27 11:06:12.011] Found 318 possible bad axioms.
+[2026-06-27 11:06:12.012] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000059).
+[2026-06-27 11:06:12.015] Found 317 possible bad axioms.
+[2026-06-27 11:06:12.015] Selected the bad axiom SubClassOf(imobo_0000021 imobo_0000015).
+[2026-06-27 11:06:12.018] Found 316 possible bad axioms.
+[2026-06-27 11:06:12.018] Selected the bad axiom SubClassOf(imobo_0000060 imobo_0000052).
+[2026-06-27 11:06:12.021] Found 315 possible bad axioms.
+[2026-06-27 11:06:12.022] Selected the bad axiom SubClassOf(imobo_0000098 imobo_0000102).
+[2026-06-27 11:06:12.037] Found 314 possible bad axioms.
+[2026-06-27 11:06:12.037] Selected the bad axiom SubClassOf(imobo_0000085 imobo_0000089).
+[2026-06-27 11:06:12.041] Found 313 possible bad axioms.
+[2026-06-27 11:06:12.041] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000040).
+[2026-06-27 11:06:12.045] Found 312 possible bad axioms.
+[2026-06-27 11:06:12.045] Selected the bad axiom SubClassOf(imobo_0000091 imobo_0000096).
+[2026-06-27 11:06:12.049] Found 311 possible bad axioms.
+[2026-06-27 11:06:12.049] Selected the bad axiom SubClassOf(imobo_0000052 imobo_0000071).
+[2026-06-27 11:06:12.053] Found 310 possible bad axioms.
+[2026-06-27 11:06:12.053] Selected the bad axiom SubClassOf(imobo_0000002 imobo_0000047).
+[2026-06-27 11:06:12.056] Found 309 possible bad axioms.
+[2026-06-27 11:06:12.056] Selected the bad axiom SubClassOf(imobo_0000086 imobo_0000084).
+
+...[truncated]
+FAIL: attempt=40 seed=553911 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=40 success=10/100
+----- IMOBO attempt=41 seed=568111 at 2026-06-27 11:06:46 -----
+--- stdout ---
+{"seed":568111,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030","iic_values":{},"repair_runtimes_ms":{"A1":369,"A2":3557,"A3":506,"B1":412,"B2":8446,"B3":2995,"B4":121,"B5":928,"B6":2683,"B7":234,"B8":4463}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/IMOBO.owl, seed=568111, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 11:06:46.534] Checking precondition...
+[2026-06-27 11:06:46.550] Starting the repair...
+[2026-06-27 11:06:46.557] Found 325 possible bad axioms.
+[2026-06-27 11:06:46.559] Selected the bad axiom SubClassOf(imobo_0000054 imobo_0000052).
+[2026-06-27 11:06:46.564] Found 324 possible bad axioms.
+[2026-06-27 11:06:46.564] Selected the bad axiom SubClassOf(imobo_0000068 imobo_0000052).
+[2026-06-27 11:06:46.574] Found 323 possible bad axioms.
+[2026-06-27 11:06:46.574] Selected the bad axiom SubClassOf(imobo_0000072 imobo_0000076).
+[2026-06-27 11:06:46.579] Found 322 possible bad axioms.
+[2026-06-27 11:06:46.579] Selected the bad axiom SubClassOf(imobo_0000069 imobo_0000059).
+[2026-06-27 11:06:46.584] Found 321 possible bad axioms.
+[2026-06-27 11:06:46.584] Selected the bad axiom SubClassOf(imobo_0000048 imobo_0000037).
+[2026-06-27 11:06:46.589] Found 320 possible bad axioms.
+[2026-06-27 11:06:46.590] Selected the bad axiom SubClassOf(imobo_0000096 imobo_0000102).
+[2026-06-27 11:06:46.593] Found 319 possible bad axioms.
+[2026-06-27 11:06:46.593] Selected the bad axiom SubClassOf(imobo_0000036 imobo_0000025).
+[2026-06-27 11:06:46.597] Found 318 possible bad axioms.
+[2026-06-27 11:06:46.597] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000072).
+[2026-06-27 11:06:46.600] Found 317 possible bad axioms.
+[2026-06-27 11:06:46.601] Selected the bad axiom SubClassOf(imobo_0000073 imobo_0000074).
+[2026-06-27 11:06:46.604] Found 316 possible bad axioms.
+[2026-06-27 11:06:46.604] Selected the bad axiom SubClassOf(imobo_0000086 owl:Nothing).
+[2026-06-27 11:06:46.612] Found 315 possible bad axioms.
+[2026-06-27 11:06:46.612] Selected the bad axiom SubClassOf(imobo_0000004 imobo_0000052).
+[2026-06-27 11:06:46.620] Found 314 possible bad axioms.
+[2026-06-27 11:06:46.621] Selected the bad axiom SubClassOf(imobo_0000057 imobo_0000060).
+[2026-06-27 11:06:46.625] Found 313 possible bad axioms.
+[2026-06-27 11:06:46.625] Selected the bad axiom SubClassOf(imobo_0000039 imobo_0000044).
+[2026-06-27 11:06:46.628] Found 312 possible bad axioms.
+[2026-06-27 11:06:46.629] Selected the bad axiom SubClassOf(imobo_0000048 imobo_0000044).
+[2026-06-27 11:06:46.632] Found 311 possible bad axioms.
+[2026-06-27 11:06:46.632] Selected the bad axiom SubClassOf(imobo_0000053 owl:Nothing).
+[2026-06-27 11:06:46.636] Found 310 possible bad axioms.
+[2026-06-27 11:06:46.636] Selected the bad axiom SubClassOf(imobo_0000066 imobo_0000052).
+[2026-06-27 11:06:46.639] Found 309 possible bad axioms.
+[2026-06-27 11:06:46.639] Selected the bad axiom SubClassOf(imobo_0000059 imobo_0000064).
+
+...[truncated]
+FAIL: attempt=41 seed=568111 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+progress: ontology=IMOBO attempt=41 success=10/100
+=== ABORTED IMOBO after 10 consecutive failures at 2026-06-27 11:07:11 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for IMOBO - 10 successes, 31 failures, 41 attempts ===
+Failed attempts:
+  attempt=1 seed=111 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=2 seed=14311 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=3 seed=28511 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=5 seed=56911 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=6 seed=71111 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=9 seed=113711 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=11 seed=142111 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=13 seed=170511 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=14 seed=184711 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=15 seed=198911 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=16 seed=213111 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=18 seed=241511 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=19 seed=255711 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=20 seed=269911 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=21 seed=284111 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=22 seed=298311 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=23 seed=312511 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=26 seed=355111 msg=negative return code -9
+  attempt=28 seed=383511 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=29 seed=397711 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=30 seed=411911 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=32 seed=440311 msg=negative return code -9
+  attempt=33 seed=454511 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=34 seed=468711 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=35 seed=482911 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=36 seed=497111 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=37 seed=511311 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=38 seed=525511 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=39 seed=539711 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=40 seed=553911 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+  attempt=41 seed=568111 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ imobo_0000030
+Timing summary:
+  success: count=10 total_seconds=405.908607 avg_seconds=40.590861
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=2 total_seconds=128.502274 avg_seconds=64.251137
+  success_rate=0.2439
+  wall_clock_seconds_total_run=360698.251834

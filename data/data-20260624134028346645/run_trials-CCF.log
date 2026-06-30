@@ -1,0 +1,468 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CCF.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CCF.csv
+
+=== Starting sequential trials for CCF at 2026-06-25 02:57:24 ===
+----- CCF attempt=1 seed=34 at 2026-06-25 02:57:24 -----
+--- stdout ---
+{"seed":34,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B3","error_message":"Repair timeout: B3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":55,"A2":94,"A3":229,"B1":140,"B2":1242,"B3":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=34, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:24.939] Checking precondition...
+[2026-06-25 02:57:24.951] Starting the repair...
+[2026-06-25 02:57:24.958] Found 56 possible bad axioms.
+[2026-06-25 02:57:24.960] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0001062 http://purl.org/sig/ont/fma/fma62955).
+[2026-06-25 02:57:24.964] Found 55 possible bad axioms.
+[2026-06-25 02:57:24.964] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10608-0 http://purl.bioontology.org/ontology/LNC/LA10608-0).
+[2026-06-25 02:57:24.966] Found 54 possible bad axioms.
+[2026-06-25 02:57:24.966] Selected the bad axiom SubClassOf(http://purl.org/ccf/Operator owl:Nothing).
+[2026-06-25 02:57:24.970] Found 53 possible bad axioms.
+[2026-06-25 02:57:24.970] Selected the bad axiom SubClassOf(http://purl.org/ccf/BiologicalSex http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2026-06-25 02:57:24.974] Found 52 possible bad axioms.
+[2026-06-25 02:57:24.975] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSuspension http://purl.org/ccf/TissueBlock).
+[2026-06-25 02:57:24.977] Found 51 possible bad axioms.
+[2026-06-25 02:57:24.978] Selected the bad axiom SubClassOf(http://purl.org/ccf/Person http://purl.org/ccf/Operator).
+[2026-06-25 02:57:24.980] Found 50 possible bad axioms.
+[2026-06-25 02:57:24.980] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.bioontology.org/ontology/LNC/LA19555-4).
+[2026-06-25 02:57:24.982] Found 49 possible bad axioms.
+[2026-06-25 02:57:24.982] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSuspension http://purl.org/ccf/Sample).
+[2026-06-25 02:57:24.985] Found 48 possible bad axioms.
+[2026-06-25 02:57:24.985] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6156-9 http://purl.bioontology.org/ontology/LNC/LA10610-6).
+[2026-06-25 02:57:24.988] Found 47 possible bad axioms.
+[2026-06-25 02:57:24.988] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 02:57:24.990] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:24.990] Checking precondition...
+[2026-06-25 02:57:25.001] Starting the repair...
+[2026-06-25 02:57:25.084] Found 2 possible bad axioms.
+[2026-06-25 02:57:25.084] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 02:57:25.084] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 02:57:25.085] Checking precondition...
+[2026-06-25 02:5
+...[truncated]
+FAIL: attempt=1 seed=34 status=time_limit_exceeded stage=B3 message=Repair timeout: B3 exceeded 300 seconds
+progress: ontology=CCF attempt=1 success=0/100
+----- CCF attempt=2 seed=14234 at 2026-06-25 03:02:26 -----
+--- stdout ---
+{"seed":14234,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)","iic_values":{},"repair_runtimes_ms":{"A1":96,"A2":74,"A3":225,"B1":136,"B2":1281,"B3":510,"B4":545}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=14234, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:02:27.099] Checking precondition...
+[2026-06-25 03:02:27.113] Starting the repair...
+[2026-06-25 03:02:27.121] Found 56 possible bad axioms.
+[2026-06-25 03:02:27.122] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA2-8 http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2026-06-25 03:02:27.124] Found 55 possible bad axioms.
+[2026-06-25 03:02:27.124] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00135 http://purl.org/ccf/CellType).
+[2026-06-25 03:02:27.128] Found 54 possible bad axioms.
+[2026-06-25 03:02:27.129] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSuspension http://purl.org/ccf/Sample).
+[2026-06-25 03:02:27.132] Found 53 possible bad axioms.
+[2026-06-25 03:02:27.133] Selected the bad axiom SubClassOf(http://purl.org/ccf/Operator owl:Nothing).
+[2026-06-25 03:02:27.137] Found 52 possible bad axioms.
+[2026-06-25 03:02:27.137] Selected the bad axiom SubClassOf(http://purl.org/ccf/PI http://purl.org/ccf/Donor).
+[2026-06-25 03:02:27.140] Found 51 possible bad axioms.
+[2026-06-25 03:02:27.140] Selected the bad axiom SubClassOf(http://purl.org/ccf/PI http://purl.org/ccf/Operator).
+[2026-06-25 03:02:27.142] Found 50 possible bad axioms.
+[2026-06-25 03:02:27.143] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.org/ccf/Ethnicity).
+[2026-06-25 03:02:27.146] Found 49 possible bad axioms.
+[2026-06-25 03:02:27.146] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6156-9 http://purl.org/ccf/Race).
+[2026-06-25 03:02:27.149] Found 48 possible bad axioms.
+[2026-06-25 03:02:27.149] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA19555-4 http://purl.bioontology.org/ontology/LNC/LA19555-4).
+[2026-06-25 03:02:27.150] Found 47 possible bad axioms.
+[2026-06-25 03:02:27.150] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSuspension http://purl.org/ccf/TissueBlock).
+[2026-06-25 03:02:27.152] Found 46 possible bad axioms.
+[2026-06-25 03:02:27.152] Selected the bad axiom SubClassOf(http://purl.org/ccf/Person http://purl.org/ccf/Donor).
+[2026-06-25 03:02:27.154] Found 45 possible bad axioms.
+[2026-06-25 03:02:27.154] Selected the bad axiom SubClassOf(http://purl.org/ccf/BiologicalSex http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2026-06-25 03:02:27.156] Found 44 possible bad axioms.
+[2026-06-25 03:02:27.156] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma62955 http://purl.obolibrary.org/obo/UBERON_0001062).
+[2026-06-25 03:02:27.163] Found 43 possibl
+...[truncated]
+FAIL: attempt=2 seed=14234 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)
+progress: ontology=CCF attempt=2 success=0/100
+----- CCF attempt=3 seed=28434 at 2026-06-25 03:02:30 -----
+--- stdout ---
+{"seed":28434,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B3","error_message":"Repair timeout: B3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":56,"A2":92,"A3":386,"B1":110,"B2":1159,"B3":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=28434, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:02:30.363] Checking precondition...
+[2026-06-25 03:02:30.375] Starting the repair...
+[2026-06-25 03:02:30.385] Found 56 possible bad axioms.
+[2026-06-25 03:02:30.387] Selected the bad axiom SubClassOf(http://purl.org/ccf/Operator http://purl.org/ccf/Donor).
+[2026-06-25 03:02:30.391] Found 55 possible bad axioms.
+[2026-06-25 03:02:30.392] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA2-8 http://purl.bioontology.org/ontology/LNC/LA3-6).
+[2026-06-25 03:02:30.396] Found 54 possible bad axioms.
+[2026-06-25 03:02:30.396] Selected the bad axiom SubClassOf(http://purl.org/ccf/Donor http://purl.org/ccf/Person).
+[2026-06-25 03:02:30.401] Found 53 possible bad axioms.
+[2026-06-25 03:02:30.401] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00135 http://purl.org/ccf/CellType).
+[2026-06-25 03:02:30.405] Found 52 possible bad axioms.
+[2026-06-25 03:02:30.405] Selected the bad axiom SubClassOf(http://purl.org/ccf/BiologicalSex http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2026-06-25 03:02:30.407] Found 51 possible bad axioms.
+[2026-06-25 03:02:30.408] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10610-6 http://purl.bioontology.org/ontology/LNC/LA6156-9).
+[2026-06-25 03:02:30.410] Found 50 possible bad axioms.
+[2026-06-25 03:02:30.410] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.obolibrary.org/obo/LMHA_00135).
+[2026-06-25 03:02:30.412] Found 49 possible bad axioms.
+[2026-06-25 03:02:30.413] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:02:30.415] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 03:02:30.416] Checking precondition...
+[2026-06-25 03:02:30.421] Starting the repair...
+[2026-06-25 03:02:30.507] Found 2 possible bad axioms.
+[2026-06-25 03:02:30.507] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:02:30.508] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 03:02:30.509] Checking precondition...
+[2026-06-25 03:02:30.513] Starting the repair...
+[2026-06-25 03:02:30.530] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:02:30.730] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:02:30.749] Selected the weaker axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.org/ccf/TissueBlock).
+[2026-06-25 03:02:
+...[truncated]
+FAIL: attempt=3 seed=28434 status=time_limit_exceeded stage=B3 message=Repair timeout: B3 exceeded 300 seconds
+progress: ontology=CCF attempt=3 success=0/100
+----- CCF attempt=4 seed=42634 at 2026-06-25 03:07:32 -----
+--- stdout ---
+{"seed":42634,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B3","error_message":"Repair timeout: B3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":117,"A2":66,"A3":226,"B1":138,"B2":1268,"B3":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=42634, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:07:32.524] Checking precondition...
+[2026-06-25 03:07:32.536] Starting the repair...
+[2026-06-25 03:07:32.544] Found 56 possible bad axioms.
+[2026-06-25 03:07:32.546] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/LMHA_00135 http://purl.org/ccf/CellType).
+[2026-06-25 03:07:32.549] Found 55 possible bad axioms.
+[2026-06-25 03:07:32.550] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueBlock owl:Nothing).
+[2026-06-25 03:07:32.553] Found 54 possible bad axioms.
+[2026-06-25 03:07:32.554] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA19555-4 http://purl.bioontology.org/ontology/LNC/LA19555-4).
+[2026-06-25 03:07:32.555] Found 53 possible bad axioms.
+[2026-06-25 03:07:32.555] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.org/ccf/Ethnicity).
+[2026-06-25 03:07:32.559] Found 52 possible bad axioms.
+[2026-06-25 03:07:32.560] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA3-6 http://purl.bioontology.org/ontology/LNC/LA3-6).
+[2026-06-25 03:07:32.560] Found 51 possible bad axioms.
+[2026-06-25 03:07:32.561] Selected the bad axiom SubClassOf(http://purl.org/ccf/Donor http://purl.org/ccf/Person).
+[2026-06-25 03:07:32.564] Found 50 possible bad axioms.
+[2026-06-25 03:07:32.564] Selected the bad axiom SubClassOf(http://purl.org/ccf/Sample http://purl.org/ccf/TissueSection).
+[2026-06-25 03:07:32.566] Found 49 possible bad axioms.
+[2026-06-25 03:07:32.566] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSection http://purl.org/ccf/Sample).
+[2026-06-25 03:07:32.568] Found 48 possible bad axioms.
+[2026-06-25 03:07:32.569] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0001062 http://purl.org/sig/ont/fma/fma62955).
+[2026-06-25 03:07:32.571] Found 47 possible bad axioms.
+[2026-06-25 03:07:32.571] Selected the bad axiom SubClassOf(http://purl.org/ccf/BiologicalSex http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2026-06-25 03:07:32.573] Found 46 possible bad axioms.
+[2026-06-25 03:07:32.573] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA6156-9 http://purl.bioontology.org/ontology/LNC/LA6156-9).
+[2026-06-25 03:07:32.574] Found 45 possible bad axioms.
+[2026-06-25 03:07:32.574] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10610-6 http://purl.bioontology.org/ontology/LNC/LA10610-6).
+[2026-06-25 03:07:32.575] Found 44 possible bad axioms.
+[2026-06-25 03:07:32.575] Selected the bad axiom SubClassOf(http://purl.obolib
+...[truncated]
+FAIL: attempt=4 seed=42634 status=time_limit_exceeded stage=B3 message=Repair timeout: B3 exceeded 300 seconds
+progress: ontology=CCF attempt=4 success=0/100
+----- CCF attempt=5 seed=56834 at 2026-06-25 03:12:34 -----
+--- stdout ---
+{"seed":56834,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":98,"A2":71,"A3":240,"B1":450,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=56834, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:12:34.744] Checking precondition...
+[2026-06-25 03:12:34.757] Starting the repair...
+[2026-06-25 03:12:34.764] Found 56 possible bad axioms.
+[2026-06-25 03:12:34.766] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.bioontology.org/ontology/LNC/LA19555-4).
+[2026-06-25 03:12:34.770] Found 55 possible bad axioms.
+[2026-06-25 03:12:34.771] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA6156-9).
+[2026-06-25 03:12:34.775] Found 54 possible bad axioms.
+[2026-06-25 03:12:34.775] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.obolibrary.org/obo/LMHA_00135).
+[2026-06-25 03:12:34.780] Found 53 possible bad axioms.
+[2026-06-25 03:12:34.780] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.bioontology.org/ontology/LNC/LA6214-6).
+[2026-06-25 03:12:34.781] Found 52 possible bad axioms.
+[2026-06-25 03:12:34.782] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.org/ccf/Ethnicity).
+[2026-06-25 03:12:34.784] Found 51 possible bad axioms.
+[2026-06-25 03:12:34.785] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA19555-4 http://purl.org/ccf/Ethnicity).
+[2026-06-25 03:12:34.787] Found 50 possible bad axioms.
+[2026-06-25 03:12:34.787] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSuspension http://purl.org/ccf/TissueBlock).
+[2026-06-25 03:12:34.790] Found 49 possible bad axioms.
+[2026-06-25 03:12:34.790] Selected the bad axiom SubClassOf(http://purl.org/ccf/Sample http://purl.org/ccf/TissueSection).
+[2026-06-25 03:12:34.793] Found 48 possible bad axioms.
+[2026-06-25 03:12:34.793] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0001062 http://purl.org/ccf/AnatomicalStructure).
+[2026-06-25 03:12:34.795] Found 47 possible bad axioms.
+[2026-06-25 03:12:34.795] Selected the bad axiom SubClassOf(http://purl.org/ccf/Person http://purl.org/ccf/Donor).
+[2026-06-25 03:12:34.798] Found 46 possible bad axioms.
+[2026-06-25 03:12:34.799] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.org/ccf/CellType).
+[2026-06-25 03:12:34.800] Found 45 possible bad axioms.
+[2026-06-25 03:12:34.800] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10608-0 http://purl.bioontology.org/ontology/LNC/LA10608-0).
+[2026-06-25 03:12:34.801] Found 44 possible bad axioms.
+[2026-06-25 03:12:34.801] Sel
+...[truncated]
+FAIL: attempt=5 seed=56834 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CCF attempt=5 success=0/100
+----- CCF attempt=6 seed=71034 at 2026-06-25 03:17:35 -----
+--- stdout ---
+{"seed":71034,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)","iic_values":{},"repair_runtimes_ms":{"A1":38,"A2":98,"A3":252,"B1":254,"B2":1166,"B3":524,"B4":501}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=71034, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:17:36.016] Checking precondition...
+[2026-06-25 03:17:36.028] Starting the repair...
+[2026-06-25 03:17:36.034] Found 56 possible bad axioms.
+[2026-06-25 03:17:36.036] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.org/ccf/CellType).
+[2026-06-25 03:17:36.040] Found 55 possible bad axioms.
+[2026-06-25 03:17:36.040] Selected the bad axiom SubClassOf(http://purl.org/ccf/Donor http://purl.org/ccf/Person).
+[2026-06-25 03:17:36.044] Found 54 possible bad axioms.
+[2026-06-25 03:17:36.044] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA3-6 http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2026-06-25 03:17:36.048] Found 53 possible bad axioms.
+[2026-06-25 03:17:36.048] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:36.050] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 03:17:36.051] Checking precondition...
+[2026-06-25 03:17:36.057] Starting the repair...
+[2026-06-25 03:17:36.148] Found 2 possible bad axioms.
+[2026-06-25 03:17:36.148] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:17:36.148] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 03:17:36.150] Checking precondition...
+[2026-06-25 03:17:36.153] Starting the repair...
+[2026-06-25 03:17:36.171] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:17:36.384] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:36.399] Selected the weaker axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA6156-9 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:36.401] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 03:17:36.402] Checking precondition...
+[2026-06-25 03:17:36.404] Starting the repair...
+[2026-06-25 03:17:36.410] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:17:36.537] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:36.544] Selected the weaker axiom ClassAssertion(http://purl.org/ccf/TissueSuspension http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:36.651] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueBlock ow
+...[truncated]
+FAIL: attempt=6 seed=71034 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)
+progress: ontology=CCF attempt=6 success=0/100
+----- CCF attempt=7 seed=85234 at 2026-06-25 03:17:38 -----
+--- stdout ---
+{"seed":85234,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":30,"A2":105,"A3":245,"B1":281,"B2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=85234, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:17:39.256] Checking precondition...
+[2026-06-25 03:17:39.268] Starting the repair...
+[2026-06-25 03:17:39.276] Found 56 possible bad axioms.
+[2026-06-25 03:17:39.278] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:17:39.282] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 03:17:39.283] Checking precondition...
+[2026-06-25 03:17:39.291] Starting the repair...
+[2026-06-25 03:17:39.386] Found 2 possible bad axioms.
+[2026-06-25 03:17:39.386] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:39.388] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 03:17:39.389] Checking precondition...
+[2026-06-25 03:17:39.393] Starting the repair...
+[2026-06-25 03:17:39.412] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:17:39.610] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:17:39.631] Selected the weaker axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:39.633] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 03:17:39.634] Checking precondition...
+[2026-06-25 03:17:39.636] Starting the repair...
+[2026-06-25 03:17:39.644] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:17:39.775] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:17:39.784] Selected the weaker axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.org/ccf/TissueSuspension).
+[2026-06-25 03:17:39.913] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:39.914] Selected the weaker axiom ClassAssertion(http://purl.obolibrary.org/obo/UBERON_0001062 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:17:39.914] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-25 03:17:39.916] Checking precondition...
+[2026-06-25 03:17:39.917] Starting the repair...
+[2026-06-25 03:17:39.922] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:17:40.031] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.o
+...[truncated]
+FAIL: attempt=7 seed=85234 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CCF attempt=7 success=0/100
+----- CCF attempt=8 seed=99434 at 2026-06-25 03:22:39 -----
+--- stdout ---
+{"seed":99434,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA6156-9)","iic_values":{},"repair_runtimes_ms":{"A1":56,"A2":90,"A3":235,"B1":135,"B2":1240,"B3":504,"B4":436}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=99434, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:22:40.319] Checking precondition...
+[2026-06-25 03:22:40.331] Starting the repair...
+[2026-06-25 03:22:40.337] Found 56 possible bad axioms.
+[2026-06-25 03:22:40.338] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA19555-4 http://purl.bioontology.org/ontology/LNC/LA19555-4).
+[2026-06-25 03:22:40.340] Found 55 possible bad axioms.
+[2026-06-25 03:22:40.340] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10610-6 http://purl.bioontology.org/ontology/LNC/LA10610-6).
+[2026-06-25 03:22:40.341] Found 54 possible bad axioms.
+[2026-06-25 03:22:40.341] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA2-8 http://purl.org/ccf/BiologicalSex).
+[2026-06-25 03:22:40.346] Found 53 possible bad axioms.
+[2026-06-25 03:22:40.346] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA2-8 http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2026-06-25 03:22:40.346] Found 52 possible bad axioms.
+[2026-06-25 03:22:40.347] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA4457-3 http://purl.org/ccf/Race).
+[2026-06-25 03:22:40.350] Found 51 possible bad axioms.
+[2026-06-25 03:22:40.350] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSuspension http://purl.org/ccf/TissueBlock).
+[2026-06-25 03:22:40.354] Found 50 possible bad axioms.
+[2026-06-25 03:22:40.355] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA2-8 http://purl.bioontology.org/ontology/LNC/LA3-6).
+[2026-06-25 03:22:40.357] Found 49 possible bad axioms.
+[2026-06-25 03:22:40.357] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueBlock owl:Nothing).
+[2026-06-25 03:22:40.360] Found 48 possible bad axioms.
+[2026-06-25 03:22:40.360] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CL_0000000 http://purl.obolibrary.org/obo/LMHA_00135).
+[2026-06-25 03:22:40.362] Found 47 possible bad axioms.
+[2026-06-25 03:22:40.362] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10608-0 http://purl.bioontology.org/ontology/LNC/LA10608-0).
+[2026-06-25 03:22:40.363] Found 46 possible bad axioms.
+[2026-06-25 03:22:40.363] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma62955 http://purl.org/ccf/AnatomicalStructure).
+[2026-06-25 03:22:40.365] Found 45 possible bad axioms.
+[2026-06-25 03:22:40.365] Selected the bad axiom SubClassOf(http://purl.org/ccf/Operator http://purl.org/ccf/PI).
+[2026-06-25 03:22:40.368] Found 44 possible bad axioms.
+[2026-06-25 03:22:40.368] Selected
+...[truncated]
+FAIL: attempt=8 seed=99434 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA6156-9)
+progress: ontology=CCF attempt=8 success=0/100
+----- CCF attempt=9 seed=113634 at 2026-06-25 03:22:43 -----
+--- stdout ---
+{"seed":113634,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)","iic_values":{},"repair_runtimes_ms":{"A1":119,"A2":68,"A3":214,"B1":142,"B2":1264,"B3":518,"B4":520}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=113634, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:22:43.411] Checking precondition...
+[2026-06-25 03:22:43.424] Starting the repair...
+[2026-06-25 03:22:43.432] Found 56 possible bad axioms.
+[2026-06-25 03:22:43.434] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSuspension http://purl.org/ccf/Sample).
+[2026-06-25 03:22:43.437] Found 55 possible bad axioms.
+[2026-06-25 03:22:43.438] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10610-6 http://purl.org/ccf/Race).
+[2026-06-25 03:22:43.442] Found 54 possible bad axioms.
+[2026-06-25 03:22:43.442] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA3-6 http://purl.org/ccf/BiologicalSex).
+[2026-06-25 03:22:43.447] Found 53 possible bad axioms.
+[2026-06-25 03:22:43.448] Selected the bad axiom SubClassOf(http://purl.org/ccf/Sample http://purl.org/ccf/TissueSection).
+[2026-06-25 03:22:43.450] Found 52 possible bad axioms.
+[2026-06-25 03:22:43.451] Selected the bad axiom SubClassOf(http://purl.org/ccf/TissueSection http://purl.org/ccf/Sample).
+[2026-06-25 03:22:43.453] Found 51 possible bad axioms.
+[2026-06-25 03:22:43.453] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6156-9 http://purl.bioontology.org/ontology/LNC/LA4457-3).
+[2026-06-25 03:22:43.456] Found 50 possible bad axioms.
+[2026-06-25 03:22:43.456] Selected the bad axiom SubClassOf(http://purl.org/ccf/Operator http://purl.org/ccf/Donor).
+[2026-06-25 03:22:43.458] Found 49 possible bad axioms.
+[2026-06-25 03:22:43.459] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.org/ccf/Ethnicity).
+[2026-06-25 03:22:43.461] Found 48 possible bad axioms.
+[2026-06-25 03:22:43.461] Selected the bad axiom SubClassOf(http://purl.org/ccf/PI http://purl.org/ccf/Person).
+[2026-06-25 03:22:43.463] Found 47 possible bad axioms.
+[2026-06-25 03:22:43.463] Selected the bad axiom SubClassOf(http://purl.org/ccf/PI http://purl.org/ccf/Operator).
+[2026-06-25 03:22:43.465] Found 46 possible bad axioms.
+[2026-06-25 03:22:43.465] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10610-6 http://purl.bioontology.org/ontology/LNC/LA10610-6).
+[2026-06-25 03:22:43.466] Found 45 possible bad axioms.
+[2026-06-25 03:22:43.467] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA2-8 http://purl.bioontology.org/ontology/LNC/LA3-6).
+[2026-06-25 03:22:43.474] Found 44 possible bad axioms.
+[2026-06-25 03:22:43.474] Selected the bad axiom SubClassOf(http://purl.org/ccf/BiologicalSex http://purl.bioontology.org/ontology/LNC/LA2-8).
+[2
+...[truncated]
+FAIL: attempt=9 seed=113634 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)
+progress: ontology=CCF attempt=9 success=0/100
+----- CCF attempt=10 seed=127834 at 2026-06-25 03:22:46 -----
+--- stdout ---
+{"seed":127834,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":33,"A2":105,"A3":257,"B1":148,"B2":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CCF.owl, seed=127834, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:22:46.651] Checking precondition...
+[2026-06-25 03:22:46.664] Starting the repair...
+[2026-06-25 03:22:46.672] Found 56 possible bad axioms.
+[2026-06-25 03:22:46.673] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA6214-6 http://purl.bioontology.org/ontology/LNC/LA6214-6).
+[2026-06-25 03:22:46.675] Found 55 possible bad axioms.
+[2026-06-25 03:22:46.675] Selected the bad axiom SubClassOf(http://purl.org/ccf/Sample http://purl.org/ccf/TissueSection).
+[2026-06-25 03:22:46.679] Found 54 possible bad axioms.
+[2026-06-25 03:22:46.679] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:22:46.680] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 03:22:46.681] Checking precondition...
+[2026-06-25 03:22:46.690] Starting the repair...
+[2026-06-25 03:22:46.785] Found 2 possible bad axioms.
+[2026-06-25 03:22:46.785] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:22:46.786] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 03:22:46.787] Checking precondition...
+[2026-06-25 03:22:46.791] Starting the repair...
+[2026-06-25 03:22:46.812] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:22:47.020] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/LNC/LA10611-4 owl:Nothing).
+[2026-06-25 03:22:47.041] Selected the weaker axiom SubClassOf(http://purl.org/ccf/Donor owl:Nothing).
+[2026-06-25 03:22:47.043] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 03:22:47.044] Checking precondition...
+[2026-06-25 03:22:47.047] Starting the repair...
+[2026-06-25 03:22:47.058] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:22:47.184] Selected the bad axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA10611-4 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:22:47.190] Selected the weaker axiom ClassAssertion(http://purl.bioontology.org/ontology/LNC/LA6156-9 http://purl.bioontology.org/ontology/LNC/LA10611-4).
+[2026-06-25 03:22:47.191] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-25 03:22:47.193] Checking precondition...
+[2026-06-25 03:22:47.195] Starting the repair...
+[2026-06-25 03:22:47.202] Selected a reference ontology with 92 axioms.
+[2026-06-25 03:22:47.298] Selected the bad axiom ClassAssertion(http://purl.
+...[truncated]
+FAIL: attempt=10 seed=127834 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CCF attempt=10 success=0/100
+=== ABORTED CCF after 10 consecutive failures at 2026-06-25 03:27:47 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CCF - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=34 msg=Repair timeout: B3 exceeded 300 seconds
+  attempt=2 seed=14234 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)
+  attempt=3 seed=28434 msg=Repair timeout: B3 exceeded 300 seconds
+  attempt=4 seed=42634 msg=Repair timeout: B3 exceeded 300 seconds
+  attempt=5 seed=56834 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=6 seed=71034 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)
+  attempt=7 seed=85234 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=8 seed=99434 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA6156-9)
+  attempt=9 seed=113634 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(LA4457-3)
+  attempt=10 seed=127834 msg=Repair timeout: B2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=6 total_seconds=1809.546555 avg_seconds=301.591093
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

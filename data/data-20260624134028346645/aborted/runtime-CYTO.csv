@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,131,20260624134028346645,memory_limit_exceeded,,,,84.544590,,,,,,,,,,,,
+2,14331,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(HIPC),56.302001,533,22697,1112,1043,14333,15759,118,,,,,
+3,28531,20260624134028346645,memory_limit_exceeded,,,,83.388111,,,,,,,,,,,,
+4,42731,20260624134028346645,memory_limit_exceeded,,,,68.875374,,,,,,,,,,,,
+5,56931,20260624134028346645,memory_limit_exceeded,,,,171.607608,,,,,,,,,,,,
+6,71131,20260624134028346645,memory_limit_exceeded,,,,86.307530,,,,,,,,,,,,
+7,85331,20260624134028346645,memory_limit_exceeded,,,,115.756611,,,,,,,,,,,,
+8,99531,20260624134028346645,memory_limit_exceeded,,,,88.882899,,,,,,,,,,,,
+9,113731,20260624134028346645,memory_limit_exceeded,,,,745.731609,,,,,,,,,,,,
+10,127931,20260624134028346645,memory_limit_exceeded,,,,89.702740,,,,,,,,,,,,

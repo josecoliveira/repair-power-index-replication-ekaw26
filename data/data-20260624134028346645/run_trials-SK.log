@@ -1,0 +1,518 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-SK.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-SK.csv
+
+=== Starting sequential trials for SK at 2026-06-25 04:37:25 ===
+----- SK attempt=1 seed=41 at 2026-06-25 04:37:25 -----
+--- stdout ---
+{"seed":41,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":106,"A2":347,"A3":231,"B1":182,"B2":1784,"B3":990,"B4":2136,"B5":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=41, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:37:25.786] Checking precondition...
+[2026-06-25 04:37:25.801] Starting the repair...
+[2026-06-25 04:37:25.807] Found 69 possible bad axioms.
+[2026-06-25 04:37:25.808] Selected the bad axiom SubClassOf(Mobile_phone Device_Identifier).
+[2026-06-25 04:37:25.814] Found 68 possible bad axioms.
+[2026-06-25 04:37:25.814] Selected the bad axiom SubClassOf(Usb_Device Device_Identifier).
+[2026-06-25 04:37:25.819] Found 67 possible bad axioms.
+[2026-06-25 04:37:25.819] Selected the bad axiom SubClassOf(What Artefact_Type_Identifier).
+[2026-06-25 04:37:25.823] Found 66 possible bad axioms.
+[2026-06-25 04:37:25.823] Selected the bad axiom SubClassOf(Pe Artefact_Reference).
+[2026-06-25 04:37:25.826] Found 65 possible bad axioms.
+[2026-06-25 04:37:25.826] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(includesartefact owl:Thing) Artefact_Investigation).
+[2026-06-25 04:37:25.829] Found 64 possible bad axioms.
+[2026-06-25 04:37:25.829] Selected the bad axiom SubClassOf(Hard_Disc_Drive Network_Address).
+[2026-06-25 04:37:25.832] Found 63 possible bad axioms.
+[2026-06-25 04:37:25.832] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(isartefacttype Artefact_Type_Identifier)).
+[2026-06-25 04:37:25.835] Found 62 possible bad axioms.
+[2026-06-25 04:37:25.835] Selected the bad axiom SubClassOf(Forensic_Action Artefact_Investigation).
+[2026-06-25 04:37:25.836] Found 61 possible bad axioms.
+[2026-06-25 04:37:25.837] Selected the bad axiom SubClassOf(Examiner Artefact_Investigation).
+[2026-06-25 04:37:25.839] Found 60 possible bad axioms.
+[2026-06-25 04:37:25.839] Selected the bad axiom SubClassOf(Sim_Card Device_Identifier).
+[2026-06-25 04:37:25.841] Found 59 possible bad axioms.
+[2026-06-25 04:37:25.841] Selected the bad axiom SubClassOf(Webhist Artefact_Reference).
+[2026-06-25 04:37:25.853] Found 58 possible bad axioms.
+[2026-06-25 04:37:25.853] Selected the bad axiom ClassAssertion(Artefact_Location_Low_Level low_artefact).
+[2026-06-25 04:37:25.854] Found 57 possible bad axioms.
+[2026-06-25 04:37:25.854] Selected the bad axiom SubClassOf(owl:Thing Digital_Forensic).
+[2026-06-25 04:37:25.857] Found 56 possible bad axioms.
+[2026-06-25 04:37:25.857] Selected the bad axiom SubClassOf(Event_High_Level Artefact_Location_High_Level).
+[2026-06-25 04:37:25.859] Found 55 possible bad axioms.
+[2026-06-25 04:37:25.859] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasprovenancereference owl:Thing) Artefact_Location).
+[2026-06-25 04:37:25.862] Found 54 possible bad axioms.
+[2026-06-25 04:37:25.862] Selected the bad axiom SubClassOf(Ssid owl:Noth
+...[truncated]
+FAIL: attempt=1 seed=41 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=SK attempt=1 success=0/100
+----- SK attempt=2 seed=14241 at 2026-06-25 04:42:31 -----
+--- stdout ---
+{"seed":14241,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":83,"A2":361,"A3":242,"B1":184,"B2":1728,"B3":932,"B4":1409,"B5":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=14241, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:42:32.073] Checking precondition...
+[2026-06-25 04:42:32.088] Starting the repair...
+[2026-06-25 04:42:32.094] Found 69 possible bad axioms.
+[2026-06-25 04:42:32.095] Selected the bad axiom SubClassOf(Artefact_Investigation Digital_Forensic).
+[2026-06-25 04:42:32.100] Found 68 possible bad axioms.
+[2026-06-25 04:42:32.101] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasprovenancereference owl:Thing) Artefact_Location).
+[2026-06-25 04:42:32.106] Found 67 possible bad axioms.
+[2026-06-25 04:42:32.106] Selected the bad axiom SubClassOf(Usb_Device Network_Address).
+[2026-06-25 04:42:32.109] Found 66 possible bad axioms.
+[2026-06-25 04:42:32.110] Selected the bad axiom SubClassOf(Event_Low_Level Artefact_Location_Low_Level).
+[2026-06-25 04:42:32.113] Found 65 possible bad axioms.
+[2026-06-25 04:42:32.113] Selected the bad axiom SubClassOf(Network_Address Sim_Card).
+[2026-06-25 04:42:32.116] Found 64 possible bad axioms.
+[2026-06-25 04:42:32.116] Selected the bad axiom SubClassOf(File_System Logical_Identifier).
+[2026-06-25 04:42:32.119] Found 63 possible bad axioms.
+[2026-06-25 04:42:32.119] Selected the bad axiom SubClassOf(Webhist Artefact_Reference).
+[2026-06-25 04:42:32.121] Found 62 possible bad axioms.
+[2026-06-25 04:42:32.121] Selected the bad axiom SubClassOf(Device_Identifier Logical_Identifier).
+[2026-06-25 04:42:32.123] Found 61 possible bad axioms.
+[2026-06-25 04:42:32.124] Selected the bad axiom SubClassOf(Why Artefact_Type_Identifier).
+[2026-06-25 04:42:32.126] Found 60 possible bad axioms.
+[2026-06-25 04:42:32.126] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasprovenancereference Webhist)).
+[2026-06-25 04:42:32.128] Found 59 possible bad axioms.
+[2026-06-25 04:42:32.128] Selected the bad axiom SubClassOf(Ssid File_System).
+[2026-06-25 04:42:32.140] Found 58 possible bad axioms.
+[2026-06-25 04:42:32.140] Selected the bad axiom SubClassOf(Event_High_Level Artefact_Location).
+[2026-06-25 04:42:32.142] Found 57 possible bad axioms.
+[2026-06-25 04:42:32.142] Selected the bad axiom SubClassOf(Artefact_Location_Low_Level Artefact_Location).
+[2026-06-25 04:42:32.144] Found 56 possible bad axioms.
+[2026-06-25 04:42:32.145] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(includesartefact owl:Thing) Artefact_Investigation).
+[2026-06-25 04:42:32.147] Found 55 possible bad axioms.
+[2026-06-25 04:42:32.148] Selected the bad axiom SubClassOf(Ssid owl:Nothing).
+[2026-06-25 04:42:32.150] Found 54 possible bad axioms.
+[2026-06-25 04:42:32.151] Selected the bad axiom ClassAssertion(Event_High_Level High_event
+...[truncated]
+FAIL: attempt=2 seed=14241 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=SK attempt=2 success=0/100
+----- SK attempt=3 seed=28441 at 2026-06-25 04:47:37 -----
+--- stdout ---
+{"seed":28441,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":97,"A2":371,"A3":241,"B1":140,"B2":1845,"B3":915,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=28441, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:47:37.526] Checking precondition...
+[2026-06-25 04:47:37.540] Starting the repair...
+[2026-06-25 04:47:37.548] Found 69 possible bad axioms.
+[2026-06-25 04:47:37.549] Selected the bad axiom SubClassOf(Mobile_phone Sim_Card).
+[2026-06-25 04:47:37.555] Found 68 possible bad axioms.
+[2026-06-25 04:47:37.555] Selected the bad axiom SubClassOf(Examiner Artefact_Investigation).
+[2026-06-25 04:47:37.560] Found 67 possible bad axioms.
+[2026-06-25 04:47:37.560] Selected the bad axiom SubClassOf(Device_Identifier What).
+[2026-06-25 04:47:37.564] Found 66 possible bad axioms.
+[2026-06-25 04:47:37.564] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isartefacttype ObjectAllValuesFrom(hasprovenancereference Artefact_Reference)) Artefact_Location).
+[2026-06-25 04:47:37.568] Found 65 possible bad axioms.
+[2026-06-25 04:47:37.568] Selected the bad axiom SubClassOf(Victim Artefact_Investigation).
+[2026-06-25 04:47:37.570] Found 64 possible bad axioms.
+[2026-06-25 04:47:37.571] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hasprovenancereference owl:Thing) Artefact_Location).
+[2026-06-25 04:47:37.573] Found 63 possible bad axioms.
+[2026-06-25 04:47:37.574] Selected the bad axiom SubClassOf(Investigator Artefact_Investigation).
+[2026-06-25 04:47:37.577] Found 62 possible bad axioms.
+[2026-06-25 04:47:37.577] Selected the bad axiom SubClassOf(Ssid owl:Nothing).
+[2026-06-25 04:47:37.579] Found 61 possible bad axioms.
+[2026-06-25 04:47:37.579] Selected the bad axiom SubClassOf(Log Artefact_Reference).
+[2026-06-25 04:47:37.581] Found 60 possible bad axioms.
+[2026-06-25 04:47:37.581] Selected the bad axiom SubClassOf(File Artefact_Reference).
+[2026-06-25 04:47:37.583] Found 59 possible bad axioms.
+[2026-06-25 04:47:37.583] Selected the bad axiom SubClassOf(Event_Low_Level Artefact_Location_Low_Level).
+[2026-06-25 04:47:37.594] Found 58 possible bad axioms.
+[2026-06-25 04:47:37.594] Selected the bad axiom SubClassOf(Device_Identifier Logical_Identifier).
+[2026-06-25 04:47:37.596] Found 57 possible bad axioms.
+[2026-06-25 04:47:37.597] Selected the bad axiom SubClassOf(Examiner Subject).
+[2026-06-25 04:47:37.599] Found 56 possible bad axioms.
+[2026-06-25 04:47:37.599] Selected the bad axiom SubClassOf(Logical_Identifier File_System).
+[2026-06-25 04:47:37.601] Found 55 possible bad axioms.
+[2026-06-25 04:47:37.601] Selected the bad axiom SubClassOf(Artefact_Investigation Digital_Forensic).
+[2026-06-25 04:47:37.603] Found 54 possible bad axioms.
+[2026-06-25 04:47:37.604] Selected the bad axiom SubClassOf(Who Artefact_Type_Identifier).
+[2026-06-25 04:
+...[truncated]
+FAIL: attempt=3 seed=28441 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=SK attempt=3 success=0/100
+----- SK attempt=4 seed=42641 at 2026-06-25 04:52:41 -----
+--- stdout ---
+{"seed":42641,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":94,"A2":387,"A3":245,"B1":170,"B2":1769,"B3":968,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=42641, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:52:41.618] Checking precondition...
+[2026-06-25 04:52:41.631] Starting the repair...
+[2026-06-25 04:52:41.638] Found 69 possible bad axioms.
+[2026-06-25 04:52:41.639] Selected the bad axiom SubClassOf(Artefact_Reference Artefact_Type_Identifier).
+[2026-06-25 04:52:41.645] Found 68 possible bad axioms.
+[2026-06-25 04:52:41.645] Selected the bad axiom SubClassOf(Meta Artefact_Reference).
+[2026-06-25 04:52:41.649] Found 67 possible bad axioms.
+[2026-06-25 04:52:41.649] Selected the bad axiom SubClassOf(Artefact_Location_Low_Level Artefact_Location).
+[2026-06-25 04:52:41.652] Found 66 possible bad axioms.
+[2026-06-25 04:52:41.652] Selected the bad axiom SubClassOf(Sim_Card Device_Identifier).
+[2026-06-25 04:52:41.657] Found 65 possible bad axioms.
+[2026-06-25 04:52:41.657] Selected the bad axiom SubClassOf(Device_Identifier Logical_Identifier).
+[2026-06-25 04:52:41.660] Found 64 possible bad axioms.
+[2026-06-25 04:52:41.660] Selected the bad axiom SubClassOf(Forensic_Action Artefact_Investigation).
+[2026-06-25 04:52:41.663] Found 63 possible bad axioms.
+[2026-06-25 04:52:41.663] Selected the bad axiom SubClassOf(Investigator Artefact_Investigation).
+[2026-06-25 04:52:41.666] Found 62 possible bad axioms.
+[2026-06-25 04:52:41.666] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isartefacttype ObjectAllValuesFrom(hasprovenancereference Artefact_Reference)) Artefact_Location).
+[2026-06-25 04:52:41.668] Found 61 possible bad axioms.
+[2026-06-25 04:52:41.669] Selected the bad axiom SubClassOf(When Artefact_Type_Identifier).
+[2026-06-25 04:52:41.670] Found 60 possible bad axioms.
+[2026-06-25 04:52:41.671] Selected the bad axiom SubClassOf(Why Artefact_Type_Identifier).
+[2026-06-25 04:52:41.672] Found 59 possible bad axioms.
+[2026-06-25 04:52:41.672] Selected the bad axiom SubClassOf(Event_Low_Level Artefact_Location).
+[2026-06-25 04:52:41.683] Found 58 possible bad axioms.
+[2026-06-25 04:52:41.683] Selected the bad axiom SubClassOf(Mobile_phone Sim_Card).
+[2026-06-25 04:52:41.685] Found 57 possible bad axioms.
+[2026-06-25 04:52:41.685] Selected the bad axiom SubClassOf(Who Artefact_Type_Identifier).
+[2026-06-25 04:52:41.687] Found 56 possible bad axioms.
+[2026-06-25 04:52:41.687] Selected the bad axiom SubClassOf(Usb_Device Device_Identifier).
+[2026-06-25 04:52:41.690] Found 55 possible bad axioms.
+[2026-06-25 04:52:41.690] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(includesartefact owl:Thing) Artefact_Investigation).
+[2026-06-25 04:52:41.692] Found 54 possible bad axioms.
+[2026-06-25 04:52:41.692] Selected the bad axiom SubClass
+...[truncated]
+FAIL: attempt=4 seed=42641 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=SK attempt=4 success=0/100
+----- SK attempt=5 seed=56841 at 2026-06-25 04:57:45 -----
+--- stdout ---
+{"seed":56841,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":77,"A2":353,"A3":230,"B1":191,"B2":524,"B3":1106,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=56841, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 04:57:45.722] Checking precondition...
+[2026-06-25 04:57:45.737] Starting the repair...
+[2026-06-25 04:57:45.744] Found 69 possible bad axioms.
+[2026-06-25 04:57:45.745] Selected the bad axiom SubClassOf(Mobile_phone Sim_Card).
+[2026-06-25 04:57:45.751] Found 68 possible bad axioms.
+[2026-06-25 04:57:45.751] Selected the bad axiom SubClassOf(Artefact_Investigation Digital_Forensic).
+[2026-06-25 04:57:45.755] Found 67 possible bad axioms.
+[2026-06-25 04:57:45.756] Selected the bad axiom SubClassOf(Forensic_Action Artefact_Investigation).
+[2026-06-25 04:57:45.760] Found 66 possible bad axioms.
+[2026-06-25 04:57:45.760] Selected the bad axiom SubClassOf(Who Artefact_Type_Identifier).
+[2026-06-25 04:57:45.763] Found 65 possible bad axioms.
+[2026-06-25 04:57:45.763] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isartefacttype ObjectAllValuesFrom(hasprovenancereference Artefact_Reference)) Artefact_Location).
+[2026-06-25 04:57:45.765] Found 64 possible bad axioms.
+[2026-06-25 04:57:45.766] Selected the bad axiom ClassAssertion(Artefact_Location_Low_Level low_artefact).
+[2026-06-25 04:57:45.767] Found 63 possible bad axioms.
+[2026-06-25 04:57:45.767] Selected the bad axiom SubClassOf(Victim Artefact_Investigation).
+[2026-06-25 04:57:45.770] Found 62 possible bad axioms.
+[2026-06-25 04:57:45.770] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(isfoundat Artefact_Location)).
+[2026-06-25 04:57:45.772] Found 61 possible bad axioms.
+[2026-06-25 04:57:45.772] Selected the bad axiom SubClassOf(How Artefact_Type_Identifier).
+[2026-06-25 04:57:45.774] Found 60 possible bad axioms.
+[2026-06-25 04:57:45.774] Selected the bad axiom SubClassOf(Reg Artefact_Reference).
+[2026-06-25 04:57:45.776] Found 59 possible bad axioms.
+[2026-06-25 04:57:45.776] Selected the bad axiom SubClassOf(Artefact_Location Digital_Forensic).
+[2026-06-25 04:57:45.778] Found 58 possible bad axioms.
+[2026-06-25 04:57:45.778] Selected the bad axiom SubClassOf(Artefact_Type_Identifier Digital_Forensic).
+[2026-06-25 04:57:45.789] Found 57 possible bad axioms.
+[2026-06-25 04:57:45.789] Selected the bad axiom SubClassOf(Event_Low_Level Artefact_Location_Low_Level).
+[2026-06-25 04:57:45.792] Found 56 possible bad axioms.
+[2026-06-25 04:57:45.792] Selected the bad axiom SubClassOf(owl:Thing Digital_Forensic).
+[2026-06-25 04:57:45.794] Found 55 possible bad axioms.
+[2026-06-25 04:57:45.795] Selected the bad axiom ClassAssertion(Event_High_Level High_event).
+[2026-06-25 04:57:45.795] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-
+...[truncated]
+FAIL: attempt=5 seed=56841 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=SK attempt=5 success=0/100
+----- SK attempt=6 seed=71041 at 2026-06-25 05:02:48 -----
+--- stdout ---
+{"seed":71041,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":126,"A2":350,"A3":236,"B1":181,"B2":509,"B3":1126,"B4":1890,"B5":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=71041, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 05:02:48.660] Checking precondition...
+[2026-06-25 05:02:48.674] Starting the repair...
+[2026-06-25 05:02:48.681] Found 69 possible bad axioms.
+[2026-06-25 05:02:48.682] Selected the bad axiom ClassAssertion(Artefact_Location_High_Level high_artefact).
+[2026-06-25 05:02:48.684] Found 68 possible bad axioms.
+[2026-06-25 05:02:48.684] Selected the bad axiom SubClassOf(Event_High_Level ObjectSomeValuesFrom(isartefacttype owl:Thing)).
+[2026-06-25 05:02:48.688] Found 67 possible bad axioms.
+[2026-06-25 05:02:48.689] Selected the bad axiom SubClassOf(Investigator Artefact_Investigation).
+[2026-06-25 05:02:48.693] Found 66 possible bad axioms.
+[2026-06-25 05:02:48.693] Selected the bad axiom SubClassOf(Who Artefact_Type_Identifier).
+[2026-06-25 05:02:48.696] Found 65 possible bad axioms.
+[2026-06-25 05:02:48.697] Selected the bad axiom SubClassOf(Artefact_Type_Identifier Digital_Forensic).
+[2026-06-25 05:02:48.700] Found 64 possible bad axioms.
+[2026-06-25 05:02:48.700] Selected the bad axiom SubClassOf(Ssid File_System).
+[2026-06-25 05:02:48.703] Found 63 possible bad axioms.
+[2026-06-25 05:02:48.703] Selected the bad axiom ClassAssertion(Artefact_Location_Low_Level low_artefact).
+[2026-06-25 05:02:48.704] Found 62 possible bad axioms.
+[2026-06-25 05:02:48.704] Selected the bad axiom SubClassOf(Ip_Address Ssid).
+[2026-06-25 05:02:48.706] Found 61 possible bad axioms.
+[2026-06-25 05:02:48.706] Selected the bad axiom SubClassOf(Logical_Identifier What).
+[2026-06-25 05:02:48.709] Found 60 possible bad axioms.
+[2026-06-25 05:02:48.709] Selected the bad axiom SubClassOf(File_System Logical_Identifier).
+[2026-06-25 05:02:48.711] Found 59 possible bad axioms.
+[2026-06-25 05:02:48.711] Selected the bad axiom SubClassOf(Ssid owl:Nothing).
+[2026-06-25 05:02:48.713] Found 58 possible bad axioms.
+[2026-06-25 05:02:48.713] Selected the bad axiom SubClassOf(Victim Artefact_Investigation).
+[2026-06-25 05:02:48.720] Found 57 possible bad axioms.
+[2026-06-25 05:02:48.720] Selected the bad axiom SubClassOf(Ssid Logical_Identifier).
+[2026-06-25 05:02:48.726] Found 56 possible bad axioms.
+[2026-06-25 05:02:48.727] Selected the bad axiom SubClassOf(Event_Low_Level Artefact_Location).
+[2026-06-25 05:02:48.729] Found 55 possible bad axioms.
+[2026-06-25 05:02:48.729] Selected the bad axiom SubClassOf(Network_Address Device_Identifier).
+[2026-06-25 05:02:48.731] Found 54 possible bad axioms.
+[2026-06-25 05:02:48.731] Selected the bad axiom SubClassOf(Artefact_Location_Low_Level Artefact_Location).
+[2026-06-25 05:02:48.733] Found 53 possible bad axioms.
+[2026-06-25 05:02:4
+...[truncated]
+FAIL: attempt=6 seed=71041 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=SK attempt=6 success=0/100
+----- SK attempt=7 seed=85241 at 2026-06-25 05:07:53 -----
+--- stdout ---
+{"seed":85241,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":143,"A2":339,"A3":224,"B1":188,"B2":512,"B3":1200,"B4":1575,"B5":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=85241, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 05:07:53.593] Checking precondition...
+[2026-06-25 05:07:53.608] Starting the repair...
+[2026-06-25 05:07:53.614] Found 69 possible bad axioms.
+[2026-06-25 05:07:53.616] Selected the bad axiom SubClassOf(Victim Artefact_Investigation).
+[2026-06-25 05:07:53.621] Found 68 possible bad axioms.
+[2026-06-25 05:07:53.621] Selected the bad axiom SubClassOf(Event_Low_Level Artefact_Location).
+[2026-06-25 05:07:53.625] Found 67 possible bad axioms.
+[2026-06-25 05:07:53.626] Selected the bad axiom SubClassOf(Network_Address Sim_Card).
+[2026-06-25 05:07:53.629] Found 66 possible bad axioms.
+[2026-06-25 05:07:53.629] Selected the bad axiom ClassAssertion(Event_Low_Level low_event).
+[2026-06-25 05:07:53.631] Found 65 possible bad axioms.
+[2026-06-25 05:07:53.631] Selected the bad axiom SubClassOf(Examiner Artefact_Investigation).
+[2026-06-25 05:07:53.634] Found 64 possible bad axioms.
+[2026-06-25 05:07:53.634] Selected the bad axiom SubClassOf(Forensic_Action Artefact_Investigation).
+[2026-06-25 05:07:53.637] Found 63 possible bad axioms.
+[2026-06-25 05:07:53.637] Selected the bad axiom SubClassOf(Reg Artefact_Reference).
+[2026-06-25 05:07:53.639] Found 62 possible bad axioms.
+[2026-06-25 05:07:53.639] Selected the bad axiom SubClassOf(Artefact_Reference Digital_Forensic).
+[2026-06-25 05:07:53.642] Found 61 possible bad axioms.
+[2026-06-25 05:07:53.642] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(isfoundat Artefact_Location)).
+[2026-06-25 05:07:53.644] Found 60 possible bad axioms.
+[2026-06-25 05:07:53.645] Selected the bad axiom SubClassOf(Why Artefact_Type_Identifier).
+[2026-06-25 05:07:53.647] Found 59 possible bad axioms.
+[2026-06-25 05:07:53.647] Selected the bad axiom SubClassOf(Olecf Artefact_Reference).
+[2026-06-25 05:07:53.653] Found 58 possible bad axioms.
+[2026-06-25 05:07:53.653] Selected the bad axiom SubClassOf(owl:Thing Digital_Forensic).
+[2026-06-25 05:07:53.660] Found 57 possible bad axioms.
+[2026-06-25 05:07:53.660] Selected the bad axiom ClassAssertion(Artefact_Location_High_Level high_artefact).
+[2026-06-25 05:07:53.661] Found 56 possible bad axioms.
+[2026-06-25 05:07:53.661] Selected the bad axiom SubClassOf(Artefact_Reference Artefact_Type_Identifier).
+[2026-06-25 05:07:53.663] Found 55 possible bad axioms.
+[2026-06-25 05:07:53.663] Selected the bad axiom SubClassOf(Who Artefact_Type_Identifier).
+[2026-06-25 05:07:53.665] Found 54 possible bad axioms.
+[2026-06-25 05:07:53.665] Selected the bad axiom SubClassOf(Ssid Logical_Identifier).
+[2026-06-25 05:07:53.668] Found 53 possible bad axioms.
+[2026-06-25 05:07:53.6
+...[truncated]
+FAIL: attempt=7 seed=85241 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=SK attempt=7 success=0/100
+----- SK attempt=8 seed=99441 at 2026-06-25 05:12:57 -----
+--- stdout ---
+{"seed":99441,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":63,"A2":368,"A3":244,"B1":165,"B2":533,"B3":279,"B4":1759,"B5":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=99441, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 05:12:58.247] Checking precondition...
+[2026-06-25 05:12:58.263] Starting the repair...
+[2026-06-25 05:12:58.269] Found 69 possible bad axioms.
+[2026-06-25 05:12:58.271] Selected the bad axiom SubClassOf(Ssid File_System).
+[2026-06-25 05:12:58.276] Found 68 possible bad axioms.
+[2026-06-25 05:12:58.276] Selected the bad axiom SubClassOf(Investigator Artefact_Investigation).
+[2026-06-25 05:12:58.280] Found 67 possible bad axioms.
+[2026-06-25 05:12:58.280] Selected the bad axiom SubClassOf(Examiner Subject).
+[2026-06-25 05:12:58.283] Found 66 possible bad axioms.
+[2026-06-25 05:12:58.284] Selected the bad axiom SubClassOf(Meta Artefact_Reference).
+[2026-06-25 05:12:58.287] Found 65 possible bad axioms.
+[2026-06-25 05:12:58.287] Selected the bad axiom SubClassOf(Usb_Device Device_Identifier).
+[2026-06-25 05:12:58.289] Found 64 possible bad axioms.
+[2026-06-25 05:12:58.289] Selected the bad axiom SubClassOf(Event_Low_Level Artefact_Location_Low_Level).
+[2026-06-25 05:12:58.292] Found 63 possible bad axioms.
+[2026-06-25 05:12:58.292] Selected the bad axiom SubClassOf(Victim Artefact_Investigation).
+[2026-06-25 05:12:58.295] Found 62 possible bad axioms.
+[2026-06-25 05:12:58.295] Selected the bad axiom SubClassOf(What Artefact_Type_Identifier).
+[2026-06-25 05:12:58.297] Found 61 possible bad axioms.
+[2026-06-25 05:12:58.297] Selected the bad axiom ClassAssertion(Event_Low_Level low_event).
+[2026-06-25 05:12:58.298] Found 60 possible bad axioms.
+[2026-06-25 05:12:58.298] Selected the bad axiom ClassAssertion(Artefact_Location_Low_Level low_artefact).
+[2026-06-25 05:12:58.299] Found 59 possible bad axioms.
+[2026-06-25 05:12:58.299] Selected the bad axiom SubClassOf(Hard_Disc_Drive Network_Address).
+[2026-06-25 05:12:58.301] Found 58 possible bad axioms.
+[2026-06-25 05:12:58.301] Selected the bad axiom ClassAssertion(Event_High_Level High_event).
+[2026-06-25 05:12:58.305] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 05:12:58.306] Checking precondition...
+[2026-06-25 05:12:58.315] Starting the repair...
+[2026-06-25 05:12:58.672] Found 2 possible bad axioms.
+[2026-06-25 05:12:58.672] Selected the bad axiom ClassAssertion(Event_High_Level High_event).
+[2026-06-25 05:12:58.674] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 05:12:58.676] Checking precondition...
+[2026-06-25 05:12:58.678] Starting the repair...
+[2026-06-25 05:12:58.695] Selected a reference ontology with 114 axioms.
+[2026-06-25 05:12:58.858] Selected the bad axiom SubClassOf(Event_High_Level owl:Nothi
+...[truncated]
+FAIL: attempt=8 seed=99441 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=SK attempt=8 success=0/100
+----- SK attempt=9 seed=113641 at 2026-06-25 05:18:01 -----
+--- stdout ---
+{"seed":113641,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":81,"A2":386,"A3":240,"B1":313,"B2":1816,"B3":999,"B4":1612,"B5":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=113641, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 05:18:02.134] Checking precondition...
+[2026-06-25 05:18:02.150] Starting the repair...
+[2026-06-25 05:18:02.156] Found 69 possible bad axioms.
+[2026-06-25 05:18:02.157] Selected the bad axiom SubClassOf(Usb_Device Device_Identifier).
+[2026-06-25 05:18:02.163] Found 68 possible bad axioms.
+[2026-06-25 05:18:02.163] Selected the bad axiom SubClassOf(Forensic_Action Artefact_Investigation).
+[2026-06-25 05:18:02.167] Found 67 possible bad axioms.
+[2026-06-25 05:18:02.167] Selected the bad axiom SubClassOf(Artefact_Location_High_Level Artefact_Location).
+[2026-06-25 05:18:02.171] Found 66 possible bad axioms.
+[2026-06-25 05:18:02.171] Selected the bad axiom SubClassOf(Reg Artefact_Reference).
+[2026-06-25 05:18:02.174] Found 65 possible bad axioms.
+[2026-06-25 05:18:02.175] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(isartefacttype Artefact_Type_Identifier)).
+[2026-06-25 05:18:02.177] Found 64 possible bad axioms.
+[2026-06-25 05:18:02.178] Selected the bad axiom SubClassOf(Mobile_phone Device_Identifier).
+[2026-06-25 05:18:02.180] Found 63 possible bad axioms.
+[2026-06-25 05:18:02.180] Selected the bad axiom SubClassOf(Victim Artefact_Investigation).
+[2026-06-25 05:18:02.183] Found 62 possible bad axioms.
+[2026-06-25 05:18:02.183] Selected the bad axiom SubClassOf(Event_High_Level Artefact_Location).
+[2026-06-25 05:18:02.186] Found 61 possible bad axioms.
+[2026-06-25 05:18:02.186] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasprovenancereference Webhist)).
+[2026-06-25 05:18:02.188] Found 60 possible bad axioms.
+[2026-06-25 05:18:02.188] Selected the bad axiom SubClassOf(Mobile_phone Sim_Card).
+[2026-06-25 05:18:02.190] Found 59 possible bad axioms.
+[2026-06-25 05:18:02.190] Selected the bad axiom SubClassOf(Pe Artefact_Reference).
+[2026-06-25 05:18:02.202] Found 58 possible bad axioms.
+[2026-06-25 05:18:02.202] Selected the bad axiom SubClassOf(Hard_Disc_Drive Device_Identifier).
+[2026-06-25 05:18:02.204] Found 57 possible bad axioms.
+[2026-06-25 05:18:02.204] Selected the bad axiom SubClassOf(Where Why).
+[2026-06-25 05:18:02.206] Found 56 possible bad axioms.
+[2026-06-25 05:18:02.207] Selected the bad axiom SubClassOf(Artefact_Location_Low_Level Artefact_Location).
+[2026-06-25 05:18:02.209] Found 55 possible bad axioms.
+[2026-06-25 05:18:02.209] Selected the bad axiom ClassAssertion(Event_High_Level High_event).
+[2026-06-25 05:18:02.210] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 05:18:02.211] Checking precondition...
+[2026-06-25 05:18:02.217] Starting 
+...[truncated]
+FAIL: attempt=9 seed=113641 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=SK attempt=9 success=0/100
+----- SK attempt=10 seed=127841 at 2026-06-25 05:23:07 -----
+--- stdout ---
+{"seed":127841,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B5","error_message":"Repair timeout: B5 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":103,"A2":353,"A3":191,"B1":190,"B2":516,"B3":1143,"B4":1538,"B5":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SK.owl, seed=127841, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 05:23:08.134] Checking precondition...
+[2026-06-25 05:23:08.147] Starting the repair...
+[2026-06-25 05:23:08.154] Found 69 possible bad axioms.
+[2026-06-25 05:23:08.155] Selected the bad axiom SubClassOf(Who Artefact_Type_Identifier).
+[2026-06-25 05:23:08.160] Found 68 possible bad axioms.
+[2026-06-25 05:23:08.160] Selected the bad axiom SubClassOf(Ip_Address Logical_Identifier).
+[2026-06-25 05:23:08.164] Found 67 possible bad axioms.
+[2026-06-25 05:23:08.165] Selected the bad axiom SubClassOf(Logical_Identifier File_System).
+[2026-06-25 05:23:08.168] Found 66 possible bad axioms.
+[2026-06-25 05:23:08.169] Selected the bad axiom SubClassOf(Artefact_Reference Artefact_Type_Identifier).
+[2026-06-25 05:23:08.171] Found 65 possible bad axioms.
+[2026-06-25 05:23:08.172] Selected the bad axiom SubClassOf(Artefact_Location_High_Level Artefact_Location).
+[2026-06-25 05:23:08.174] Found 64 possible bad axioms.
+[2026-06-25 05:23:08.174] Selected the bad axiom SubClassOf(Usb_Device Device_Identifier).
+[2026-06-25 05:23:08.177] Found 63 possible bad axioms.
+[2026-06-25 05:23:08.177] Selected the bad axiom SubClassOf(Victim Artefact_Investigation).
+[2026-06-25 05:23:08.179] Found 62 possible bad axioms.
+[2026-06-25 05:23:08.180] Selected the bad axiom SubClassOf(Webhist Artefact_Reference).
+[2026-06-25 05:23:08.182] Found 61 possible bad axioms.
+[2026-06-25 05:23:08.182] Selected the bad axiom SubClassOf(Usb_Device Network_Address).
+[2026-06-25 05:23:08.184] Found 60 possible bad axioms.
+[2026-06-25 05:23:08.184] Selected the bad axiom SubClassOf(Hard_Disc_Drive Network_Address).
+[2026-06-25 05:23:08.187] Found 59 possible bad axioms.
+[2026-06-25 05:23:08.187] Selected the bad axiom SubClassOf(Examiner Artefact_Investigation).
+[2026-06-25 05:23:08.198] Found 58 possible bad axioms.
+[2026-06-25 05:23:08.199] Selected the bad axiom ClassAssertion(Artefact_Location_High_Level high_artefact).
+[2026-06-25 05:23:08.199] Found 57 possible bad axioms.
+[2026-06-25 05:23:08.200] Selected the bad axiom SubClassOf(Ip_Address Ssid).
+[2026-06-25 05:23:08.202] Found 56 possible bad axioms.
+[2026-06-25 05:23:08.202] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(hasprovenancereference Webhist)).
+[2026-06-25 05:23:08.205] Found 55 possible bad axioms.
+[2026-06-25 05:23:08.205] Selected the bad axiom SubClassOf(Event_High_Level Artefact_Location).
+[2026-06-25 05:23:08.208] Found 54 possible bad axioms.
+[2026-06-25 05:23:08.208] Selected the bad axiom SubClassOf(Artefact_Type_Identifier Digital_Forensic).
+[2026-06-25 05:23:08.211] Found 53 possible bad ax
+...[truncated]
+FAIL: attempt=10 seed=127841 status=time_limit_exceeded stage=B5 message=Repair timeout: B5 exceeded 300 seconds
+progress: ontology=SK attempt=10 success=0/100
+=== ABORTED SK after 10 consecutive failures at 2026-06-25 05:28:12 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for SK - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=41 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=2 seed=14241 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=3 seed=28441 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=4 seed=42641 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=5 seed=56841 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=6 seed=71041 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=7 seed=85241 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=8 seed=99441 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=9 seed=113641 msg=Repair timeout: B5 exceeded 300 seconds
+  attempt=10 seed=127841 msg=Repair timeout: B5 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3046.301529 avg_seconds=304.630153
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

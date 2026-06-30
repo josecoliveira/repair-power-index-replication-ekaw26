@@ -1,0 +1,541 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-UNITSONT.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-UNITSONT.csv
+
+=== Starting sequential trials for UNITSONT at 2026-06-26 23:25:42 ===
+----- UNITSONT attempt=1 seed=93 at 2026-06-26 23:25:42 -----
+--- stdout ---
+{"seed":93,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)","iic_values":{},"repair_runtimes_ms":{"A1":322,"A2":11559,"A3":679,"B1":1037,"B2":2999,"B3":3199,"B4":61}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=93, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:25:42.652] Checking precondition...
+[2026-06-26 23:25:42.667] Starting the repair...
+[2026-06-26 23:25:42.673] Found 233 possible bad axioms.
+[2026-06-26 23:25:42.674] Selected the bad axiom SubClassOf(density_unit volume_flow_unit).
+[2026-06-26 23:25:42.679] Found 232 possible bad axioms.
+[2026-06-26 23:25:42.679] Selected the bad axiom SubClassOf(Non-SI_unit density_unit).
+[2026-06-26 23:25:42.683] Found 231 possible bad axioms.
+[2026-06-26 23:25:42.684] Selected the bad axiom SubClassOf(named_ratio fraction).
+[2026-06-26 23:25:42.690] Found 230 possible bad axioms.
+[2026-06-26 23:25:42.690] Selected the bad axiom SubClassOf(month owl:Nothing).
+[2026-06-26 23:25:42.698] Found 229 possible bad axioms.
+[2026-06-26 23:25:42.698] Selected the bad axiom SubClassOf(year time_unit).
+[2026-06-26 23:25:42.702] Found 228 possible bad axioms.
+[2026-06-26 23:25:42.702] Selected the bad axiom SubClassOf(percent ratio).
+[2026-06-26 23:25:42.705] Found 227 possible bad axioms.
+[2026-06-26 23:25:42.705] Selected the bad axiom SubClassOf(ratio fraction).
+[2026-06-26 23:25:42.709] Found 226 possible bad axioms.
+[2026-06-26 23:25:42.709] Selected the bad axiom SubClassOf(frequency_unit density_unit).
+[2026-06-26 23:25:42.713] Found 225 possible bad axioms.
+[2026-06-26 23:25:42.713] Selected the bad axiom SubClassOf(US_ounce US_pound).
+[2026-06-26 23:25:42.715] Found 224 possible bad axioms.
+[2026-06-26 23:25:42.715] Selected the bad axiom SubClassOf(metric_system unit).
+[2026-06-26 23:25:42.719] Found 223 possible bad axioms.
+[2026-06-26 23:25:42.719] Selected the bad axiom SubClassOf(volume_flow_unit derived_unit).
+[2026-06-26 23:25:42.727] Found 222 possible bad axioms.
+[2026-06-26 23:25:42.728] Selected the bad axiom SubClassOf(pressure_unit dimensionless_unit).
+[2026-06-26 23:25:42.731] Found 221 possible bad axioms.
+[2026-06-26 23:25:42.731] Selected the bad axiom SubClassOf(length_unit centimeter).
+[2026-06-26 23:25:42.734] Found 220 possible bad axioms.
+[2026-06-26 23:25:42.734] Selected the bad axiom SubClassOf(hour day).
+[2026-06-26 23:25:42.737] Found 219 possible bad axioms.
+[2026-06-26 23:25:42.737] Selected the bad axiom SubClassOf(centimeter length_unit).
+[2026-06-26 23:25:42.744] Found 218 possible bad axioms.
+[2026-06-26 23:25:42.744] Selected the bad axiom SubClassOf(density_unit count).
+[2026-06-26 23:25:42.747] Found 217 possible bad axioms.
+[2026-06-26 23:25:42.748] Selected the bad axiom SubClassOf(decibel named_ratio).
+[2026-06-26 23:25:42.750] Found 216 possible bad axioms.
+[2026-06-26 23:25:42.750] Selected the bad axiom SubClas
+...[truncated]
+FAIL: attempt=1 seed=93 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+progress: ontology=UNITSONT attempt=1 success=0/100
+----- UNITSONT attempt=2 seed=14293 at 2026-06-26 23:26:02 -----
+--- stdout ---
+{"seed":14293,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)","iic_values":{},"repair_runtimes_ms":{"A1":210,"A2":11678,"A3":689,"B1":337,"B2":2985,"B3":455,"B4":67}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=14293, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:26:02.953] Checking precondition...
+[2026-06-26 23:26:02.969] Starting the repair...
+[2026-06-26 23:26:02.975] Found 233 possible bad axioms.
+[2026-06-26 23:26:02.977] Selected the bad axiom SubClassOf(mass_unit base_unit).
+[2026-06-26 23:26:02.981] Found 232 possible bad axioms.
+[2026-06-26 23:26:02.982] Selected the bad axiom SubClassOf(events_per_year events_per_hour).
+[2026-06-26 23:26:02.986] Found 231 possible bad axioms.
+[2026-06-26 23:26:02.986] Selected the bad axiom SubClassOf(derived_unit density_unit).
+[2026-06-26 23:26:02.990] Found 230 possible bad axioms.
+[2026-06-26 23:26:02.991] Selected the bad axiom SubClassOf(metric_system non-SI_pressure_unit).
+[2026-06-26 23:26:02.998] Found 229 possible bad axioms.
+[2026-06-26 23:26:02.998] Selected the bad axiom SubClassOf(volume_unit cubic_meter).
+[2026-06-26 23:26:03.002] Found 228 possible bad axioms.
+[2026-06-26 23:26:03.002] Selected the bad axiom SubClassOf(mass_unit time_unit).
+[2026-06-26 23:26:03.006] Found 227 possible bad axioms.
+[2026-06-26 23:26:03.006] Selected the bad axiom SubClassOf(fraction ratio).
+[2026-06-26 23:26:03.009] Found 226 possible bad axioms.
+[2026-06-26 23:26:03.010] Selected the bad axiom SubClassOf(yard mile).
+[2026-06-26 23:26:03.013] Found 225 possible bad axioms.
+[2026-06-26 23:26:03.013] Selected the bad axiom SubClassOf(gram mass_unit).
+[2026-06-26 23:26:03.016] Found 224 possible bad axioms.
+[2026-06-26 23:26:03.016] Selected the bad axiom SubClassOf(pressure_unit ratio).
+[2026-06-26 23:26:03.019] Found 223 possible bad axioms.
+[2026-06-26 23:26:03.019] Selected the bad axiom SubClassOf(pressure_unit hertz).
+[2026-06-26 23:26:03.027] Found 222 possible bad axioms.
+[2026-06-26 23:26:03.027] Selected the bad axiom SubClassOf(density_unit frequency_unit).
+[2026-06-26 23:26:03.031] Found 221 possible bad axioms.
+[2026-06-26 23:26:03.031] Selected the bad axiom SubClassOf(hour day).
+[2026-06-26 23:26:03.034] Found 220 possible bad axioms.
+[2026-06-26 23:26:03.034] Selected the bad axiom SubClassOf(english_system unit).
+[2026-06-26 23:26:03.037] Found 219 possible bad axioms.
+[2026-06-26 23:26:03.037] Selected the bad axiom SubClassOf(event_frequency hertz).
+[2026-06-26 23:26:03.045] Found 218 possible bad axioms.
+[2026-06-26 23:26:03.046] Selected the bad axiom SubClassOf(length_unit meter).
+[2026-06-26 23:26:03.048] Found 217 possible bad axioms.
+[2026-06-26 23:26:03.049] Selected the bad axiom SubClassOf(month week).
+[2026-06-26 23:26:03.051] Found 216 possible bad axioms.
+[2026-06-26 23:26:03.051] Selected the bad axiom SubClassOf(event_fr
+...[truncated]
+FAIL: attempt=2 seed=14293 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+progress: ontology=UNITSONT attempt=2 success=0/100
+----- UNITSONT attempt=3 seed=28493 at 2026-06-26 23:26:19 -----
+--- stdout ---
+{"seed":28493,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)","iic_values":{},"repair_runtimes_ms":{"A1":193,"A2":11728,"A3":383,"B1":570,"B2":542,"B3":3323,"B4":78}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=28493, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:26:20.181] Checking precondition...
+[2026-06-26 23:26:20.197] Starting the repair...
+[2026-06-26 23:26:20.202] Found 233 possible bad axioms.
+[2026-06-26 23:26:20.204] Selected the bad axiom SubClassOf(length_unit week).
+[2026-06-26 23:26:20.208] Found 232 possible bad axioms.
+[2026-06-26 23:26:20.209] Selected the bad axiom SubClassOf(frequency_unit events_per_year).
+[2026-06-26 23:26:20.213] Found 231 possible bad axioms.
+[2026-06-26 23:26:20.213] Selected the bad axiom SubClassOf(Non-SI_unit metric_system).
+[2026-06-26 23:26:20.217] Found 230 possible bad axioms.
+[2026-06-26 23:26:20.217] Selected the bad axiom SubClassOf(hertz events_per_day).
+[2026-06-26 23:26:20.226] Found 229 possible bad axioms.
+[2026-06-26 23:26:20.226] Selected the bad axiom SubClassOf(length_unit base_unit).
+[2026-06-26 23:26:20.230] Found 228 possible bad axioms.
+[2026-06-26 23:26:20.230] Selected the bad axiom SubClassOf(events_per_month kilogram_per_square_meter).
+[2026-06-26 23:26:20.234] Found 227 possible bad axioms.
+[2026-06-26 23:26:20.234] Selected the bad axiom SubClassOf(SI_system meter).
+[2026-06-26 23:26:20.238] Found 226 possible bad axioms.
+[2026-06-26 23:26:20.239] Selected the bad axiom SubClassOf(metric_system non-SI_pressure_unit).
+[2026-06-26 23:26:20.242] Found 225 possible bad axioms.
+[2026-06-26 23:26:20.242] Selected the bad axiom SubClassOf(centimeter millimeter).
+[2026-06-26 23:26:20.245] Found 224 possible bad axioms.
+[2026-06-26 23:26:20.245] Selected the bad axiom SubClassOf(derived_unit volume_unit).
+[2026-06-26 23:26:20.248] Found 223 possible bad axioms.
+[2026-06-26 23:26:20.249] Selected the bad axiom SubClassOf(millimeter owl:Nothing).
+[2026-06-26 23:26:20.256] Found 222 possible bad axioms.
+[2026-06-26 23:26:20.256] Selected the bad axiom SubClassOf(event_frequency events_per_day).
+[2026-06-26 23:26:20.260] Found 221 possible bad axioms.
+[2026-06-26 23:26:20.260] Selected the bad axiom SubClassOf(named_ratio percent).
+[2026-06-26 23:26:20.262] Found 220 possible bad axioms.
+[2026-06-26 23:26:20.263] Selected the bad axiom SubClassOf(ratio dimensionless_unit).
+[2026-06-26 23:26:20.265] Found 219 possible bad axioms.
+[2026-06-26 23:26:20.265] Selected the bad axiom SubClassOf(ratio scale).
+[2026-06-26 23:26:20.272] Found 218 possible bad axioms.
+[2026-06-26 23:26:20.273] Selected the bad axiom SubClassOf(events_per_second event_frequency).
+[2026-06-26 23:26:20.275] Found 217 possible bad axioms.
+[2026-06-26 23:26:20.275] Selected the bad axiom SubClassOf(percent ratio).
+[2026-06-26 23:26:20.278] Found 216 possible bad axio
+...[truncated]
+FAIL: attempt=3 seed=28493 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+progress: ontology=UNITSONT attempt=3 success=0/100
+----- UNITSONT attempt=4 seed=42693 at 2026-06-26 23:26:37 -----
+--- stdout ---
+{"seed":42693,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit","iic_values":{},"repair_runtimes_ms":{"A1":314,"A2":11734,"A3":387,"B1":649,"B2":1781}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=42693, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:26:37.859] Checking precondition...
+[2026-06-26 23:26:37.875] Starting the repair...
+[2026-06-26 23:26:37.881] Found 233 possible bad axioms.
+[2026-06-26 23:26:37.883] Selected the bad axiom SubClassOf(Non-SI_unit millimeters_of_mercury).
+[2026-06-26 23:26:37.887] Found 232 possible bad axioms.
+[2026-06-26 23:26:37.888] Selected the bad axiom SubClassOf(day hour).
+[2026-06-26 23:26:37.892] Found 231 possible bad axioms.
+[2026-06-26 23:26:37.892] Selected the bad axiom SubClassOf(named_ratio ratio).
+[2026-06-26 23:26:37.896] Found 230 possible bad axioms.
+[2026-06-26 23:26:37.896] Selected the bad axiom SubClassOf(named_ratio kilogram_per_square_meter).
+[2026-06-26 23:26:37.904] Found 229 possible bad axioms.
+[2026-06-26 23:26:37.904] Selected the bad axiom SubClassOf(time_unit meter).
+[2026-06-26 23:26:37.907] Found 228 possible bad axioms.
+[2026-06-26 23:26:37.908] Selected the bad axiom SubClassOf(US_length_unit owl:Nothing).
+[2026-06-26 23:26:37.911] Found 227 possible bad axioms.
+[2026-06-26 23:26:37.911] Selected the bad axiom SubClassOf(length_unit base_unit).
+[2026-06-26 23:26:37.915] Found 226 possible bad axioms.
+[2026-06-26 23:26:37.915] Selected the bad axiom SubClassOf(frequency_unit events_per_second).
+[2026-06-26 23:26:37.919] Found 225 possible bad axioms.
+[2026-06-26 23:26:37.919] Selected the bad axiom SubClassOf(day kilogram_per_square_meter).
+[2026-06-26 23:26:37.922] Found 224 possible bad axioms.
+[2026-06-26 23:26:37.922] Selected the bad axiom SubClassOf(time_unit year).
+[2026-06-26 23:26:37.925] Found 223 possible bad axioms.
+[2026-06-26 23:26:37.925] Selected the bad axiom SubClassOf(length_unit mass_unit).
+[2026-06-26 23:26:37.933] Found 222 possible bad axioms.
+[2026-06-26 23:26:37.934] Selected the bad axiom SubClassOf(events_per_week events_per_day).
+[2026-06-26 23:26:37.936] Found 221 possible bad axioms.
+[2026-06-26 23:26:37.937] Selected the bad axiom SubClassOf(US_length_unit united_states_customary_units).
+[2026-06-26 23:26:37.939] Found 220 possible bad axioms.
+[2026-06-26 23:26:37.940] Selected the bad axiom SubClassOf(yard US_length_unit).
+[2026-06-26 23:26:37.943] Found 219 possible bad axioms.
+[2026-06-26 23:26:37.943] Selected the bad axiom SubClassOf(percent ratio).
+[2026-06-26 23:26:37.950] Found 218 possible bad axioms.
+[2026-06-26 23:26:37.950] Selected the bad axiom SubClassOf(derived_unit density_unit).
+[2026-06-26 23:26:37.953] Found 217 possible bad axioms.
+[2026-06-26 23:26:37.953] Selected the bad axiom SubClassOf(milligram kilogram_per_square_meter).
+[2026-06-26 23:26:37.956] Found 2
+...[truncated]
+FAIL: attempt=4 seed=42693 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit
+progress: ontology=UNITSONT attempt=4 success=0/100
+----- UNITSONT attempt=5 seed=56893 at 2026-06-26 23:26:52 -----
+--- stdout ---
+{"seed":56893,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit","iic_values":{},"repair_runtimes_ms":{"A1":322,"A2":11685,"A3":373,"B1":368,"B2":4634}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=56893, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:26:53.156] Checking precondition...
+[2026-06-26 23:26:53.172] Starting the repair...
+[2026-06-26 23:26:53.179] Found 233 possible bad axioms.
+[2026-06-26 23:26:53.180] Selected the bad axiom SubClassOf(hertz events_per_year).
+[2026-06-26 23:26:53.185] Found 232 possible bad axioms.
+[2026-06-26 23:26:53.185] Selected the bad axiom SubClassOf(events_per_day event_frequency).
+[2026-06-26 23:26:53.189] Found 231 possible bad axioms.
+[2026-06-26 23:26:53.189] Selected the bad axiom SubClassOf(time_unit day).
+[2026-06-26 23:26:53.193] Found 230 possible bad axioms.
+[2026-06-26 23:26:53.193] Selected the bad axiom SubClassOf(events_per_year events_per_hour).
+[2026-06-26 23:26:53.205] Found 229 possible bad axioms.
+[2026-06-26 23:26:53.205] Selected the bad axiom SubClassOf(inch US_length_unit).
+[2026-06-26 23:26:53.209] Found 228 possible bad axioms.
+[2026-06-26 23:26:53.209] Selected the bad axiom SubClassOf(length_unit mass_unit).
+[2026-06-26 23:26:53.213] Found 227 possible bad axioms.
+[2026-06-26 23:26:53.214] Selected the bad axiom SubClassOf(hour kilogram_per_square_meter).
+[2026-06-26 23:26:53.217] Found 226 possible bad axioms.
+[2026-06-26 23:26:53.217] Selected the bad axiom SubClassOf(derived_unit dimensionless_unit).
+[2026-06-26 23:26:53.221] Found 225 possible bad axioms.
+[2026-06-26 23:26:53.221] Selected the bad axiom SubClassOf(length_unit time_unit).
+[2026-06-26 23:26:53.224] Found 224 possible bad axioms.
+[2026-06-26 23:26:53.224] Selected the bad axiom SubClassOf(centimeter length_unit).
+[2026-06-26 23:26:53.227] Found 223 possible bad axioms.
+[2026-06-26 23:26:53.227] Selected the bad axiom SubClassOf(length_unit base_unit).
+[2026-06-26 23:26:53.236] Found 222 possible bad axioms.
+[2026-06-26 23:26:53.236] Selected the bad axiom SubClassOf(time_unit millimeter).
+[2026-06-26 23:26:53.239] Found 221 possible bad axioms.
+[2026-06-26 23:26:53.239] Selected the bad axiom SubClassOf(events_per_minute event_frequency).
+[2026-06-26 23:26:53.242] Found 220 possible bad axioms.
+[2026-06-26 23:26:53.242] Selected the bad axiom SubClassOf(dimensionless_unit percent).
+[2026-06-26 23:26:53.245] Found 219 possible bad axioms.
+[2026-06-26 23:26:53.245] Selected the bad axiom SubClassOf(inch foot).
+[2026-06-26 23:26:53.253] Found 218 possible bad axioms.
+[2026-06-26 23:26:53.253] Selected the bad axiom SubClassOf(day kilogram_per_square_meter).
+[2026-06-26 23:26:53.256] Found 217 possible bad axioms.
+[2026-06-26 23:26:53.256] Selected the bad axiom SubClassOf(US_mass_unit united_states_customary_units).
+[2026-06-26 23:26:53.259] Found 21
+...[truncated]
+FAIL: attempt=5 seed=56893 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit
+progress: ontology=UNITSONT attempt=5 success=0/100
+----- UNITSONT attempt=6 seed=71093 at 2026-06-26 23:27:10 -----
+--- stdout ---
+{"seed":71093,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":252,"A2":11610,"A3":729,"B1":364,"B2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=71093, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:27:10.983] Checking precondition...
+[2026-06-26 23:27:10.998] Starting the repair...
+[2026-06-26 23:27:11.005] Found 233 possible bad axioms.
+[2026-06-26 23:27:11.007] Selected the bad axiom SubClassOf(month year).
+[2026-06-26 23:27:11.012] Found 232 possible bad axioms.
+[2026-06-26 23:27:11.012] Selected the bad axiom SubClassOf(derived_unit volume_unit).
+[2026-06-26 23:27:11.016] Found 231 possible bad axioms.
+[2026-06-26 23:27:11.016] Selected the bad axiom SubClassOf(count ratio).
+[2026-06-26 23:27:11.020] Found 230 possible bad axioms.
+[2026-06-26 23:27:11.021] Selected the bad axiom SubClassOf(base_unit volume_unit).
+[2026-06-26 23:27:11.028] Found 229 possible bad axioms.
+[2026-06-26 23:27:11.028] Selected the bad axiom SubClassOf(month kilogram_per_square_meter).
+[2026-06-26 23:27:11.032] Found 228 possible bad axioms.
+[2026-06-26 23:27:11.032] Selected the bad axiom SubClassOf(day kilogram_per_square_meter).
+[2026-06-26 23:27:11.036] Found 227 possible bad axioms.
+[2026-06-26 23:27:11.036] Selected the bad axiom SubClassOf(time_unit meter).
+[2026-06-26 23:27:11.040] Found 226 possible bad axioms.
+[2026-06-26 23:27:11.040] Selected the bad axiom SubClassOf(frequency_unit hertz).
+[2026-06-26 23:27:11.043] Found 225 possible bad axioms.
+[2026-06-26 23:27:11.043] Selected the bad axiom SubClassOf(milligram kilogram_per_square_meter).
+[2026-06-26 23:27:11.046] Found 224 possible bad axioms.
+[2026-06-26 23:27:11.047] Selected the bad axiom SubClassOf(events_per_day event_frequency).
+[2026-06-26 23:27:11.050] Found 223 possible bad axioms.
+[2026-06-26 23:27:11.050] Selected the bad axiom SubClassOf(millimeters_of_mercury non-SI_pressure_unit).
+[2026-06-26 23:27:11.058] Found 222 possible bad axioms.
+[2026-06-26 23:27:11.059] Selected the bad axiom SubClassOf(events_per_year event_frequency).
+[2026-06-26 23:27:11.062] Found 221 possible bad axioms.
+[2026-06-26 23:27:11.062] Selected the bad axiom SubClassOf(week hour).
+[2026-06-26 23:27:11.065] Found 220 possible bad axioms.
+[2026-06-26 23:27:11.065] Selected the bad axiom SubClassOf(united_states_customary_units english_system).
+[2026-06-26 23:27:11.068] Found 219 possible bad axioms.
+[2026-06-26 23:27:11.068] Selected the bad axiom SubClassOf(time_unit owl:Nothing).
+[2026-06-26 23:27:11.076] Found 218 possible bad axioms.
+[2026-06-26 23:27:11.076] Selected the bad axiom SubClassOf(density_unit ratio).
+[2026-06-26 23:27:11.079] Found 217 possible bad axioms.
+[2026-06-26 23:27:11.079] Selected the bad axiom SubClassOf(month week).
+[2026-06-26 23:27:11.081] Found 216 possible bad ax
+...[truncated]
+FAIL: attempt=6 seed=71093 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=UNITSONT attempt=6 success=0/100
+----- UNITSONT attempt=7 seed=85293 at 2026-06-26 23:32:24 -----
+--- stdout ---
+{"seed":85293,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit","iic_values":{},"repair_runtimes_ms":{"A1":194,"A2":11722,"A3":1404,"B1":388,"B2":2695}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=85293, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:32:24.374] Checking precondition...
+[2026-06-26 23:32:24.389] Starting the repair...
+[2026-06-26 23:32:24.395] Found 233 possible bad axioms.
+[2026-06-26 23:32:24.396] Selected the bad axiom SubClassOf(day kilogram_per_square_meter).
+[2026-06-26 23:32:24.401] Found 232 possible bad axioms.
+[2026-06-26 23:32:24.401] Selected the bad axiom SubClassOf(SI_system Non-SI_unit).
+[2026-06-26 23:32:24.405] Found 231 possible bad axioms.
+[2026-06-26 23:32:24.406] Selected the bad axiom SubClassOf(metric_system SI_system).
+[2026-06-26 23:32:24.410] Found 230 possible bad axioms.
+[2026-06-26 23:32:24.410] Selected the bad axiom SubClassOf(month day).
+[2026-06-26 23:32:24.419] Found 229 possible bad axioms.
+[2026-06-26 23:32:24.419] Selected the bad axiom SubClassOf(volume_unit derived_unit).
+[2026-06-26 23:32:24.423] Found 228 possible bad axioms.
+[2026-06-26 23:32:24.423] Selected the bad axiom SubClassOf(US_mass_unit US_length_unit).
+[2026-06-26 23:32:24.427] Found 227 possible bad axioms.
+[2026-06-26 23:32:24.427] Selected the bad axiom SubClassOf(centimeter millimeter).
+[2026-06-26 23:32:24.431] Found 226 possible bad axioms.
+[2026-06-26 23:32:24.431] Selected the bad axiom ClassAssertion(owl:Thing kilogram).
+[2026-06-26 23:32:24.433] Found 225 possible bad axioms.
+[2026-06-26 23:32:24.433] Selected the bad axiom SubClassOf(ratio percent).
+[2026-06-26 23:32:24.436] Found 224 possible bad axioms.
+[2026-06-26 23:32:24.437] Selected the bad axiom SubClassOf(month kilogram_per_square_meter).
+[2026-06-26 23:32:24.439] Found 223 possible bad axioms.
+[2026-06-26 23:32:24.439] Selected the bad axiom SubClassOf(metric_system Non-SI_unit).
+[2026-06-26 23:32:24.442] Found 222 possible bad axioms.
+[2026-06-26 23:32:24.442] Selected the bad axiom SubClassOf(base_unit hour).
+[2026-06-26 23:32:24.450] Found 221 possible bad axioms.
+[2026-06-26 23:32:24.450] Selected the bad axiom SubClassOf(week second).
+[2026-06-26 23:32:24.453] Found 220 possible bad axioms.
+[2026-06-26 23:32:24.453] Selected the bad axiom SubClassOf(event_frequency events_per_second).
+[2026-06-26 23:32:24.456] Found 219 possible bad axioms.
+[2026-06-26 23:32:24.456] Selected the bad axiom SubClassOf(base_unit non-SI_pressure_unit).
+[2026-06-26 23:32:24.460] Found 218 possible bad axioms.
+[2026-06-26 23:32:24.460] Selected the bad axiom SubClassOf(mass_unit time_unit).
+[2026-06-26 23:32:24.468] Found 217 possible bad axioms.
+[2026-06-26 23:32:24.468] Selected the bad axiom SubClassOf(area_density_unit density_unit).
+[2026-06-26 23:32:24.471] Found 216 possible bad axioms.
+[2026-06-26 23
+...[truncated]
+FAIL: attempt=7 seed=85293 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit
+progress: ontology=UNITSONT attempt=7 success=0/100
+----- UNITSONT attempt=8 seed=99493 at 2026-06-26 23:32:40 -----
+--- stdout ---
+{"seed":99493,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B3","error_message":"Repair timeout: B3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":187,"A2":11796,"A3":391,"B1":3558,"B2":599,"B3":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=99493, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:32:41.229] Checking precondition...
+[2026-06-26 23:32:41.244] Starting the repair...
+[2026-06-26 23:32:41.250] Found 233 possible bad axioms.
+[2026-06-26 23:32:41.252] Selected the bad axiom SubClassOf(event_frequency events_per_hour).
+[2026-06-26 23:32:41.256] Found 232 possible bad axioms.
+[2026-06-26 23:32:41.257] Selected the bad axiom SubClassOf(SI_system metric_system).
+[2026-06-26 23:32:41.261] Found 231 possible bad axioms.
+[2026-06-26 23:32:41.261] Selected the bad axiom SubClassOf(week second).
+[2026-06-26 23:32:41.265] Found 230 possible bad axioms.
+[2026-06-26 23:32:41.265] Selected the bad axiom SubClassOf(liter volume_unit).
+[2026-06-26 23:32:41.274] Found 229 possible bad axioms.
+[2026-06-26 23:32:41.274] Selected the bad axiom SubClassOf(hertz owl:Nothing).
+[2026-06-26 23:32:41.278] Found 228 possible bad axioms.
+[2026-06-26 23:32:41.278] Selected the bad axiom SubClassOf(month second).
+[2026-06-26 23:32:41.281] Found 227 possible bad axioms.
+[2026-06-26 23:32:41.282] Selected the bad axiom SubClassOf(events_per_day event_frequency).
+[2026-06-26 23:32:41.285] Found 226 possible bad axioms.
+[2026-06-26 23:32:41.286] Selected the bad axiom SubClassOf(density_unit ratio).
+[2026-06-26 23:32:41.289] Found 225 possible bad axioms.
+[2026-06-26 23:32:41.289] Selected the bad axiom SubClassOf(event_frequency frequency_unit).
+[2026-06-26 23:32:41.292] Found 224 possible bad axioms.
+[2026-06-26 23:32:41.292] Selected the bad axiom SubClassOf(base_unit kilogram_per_square_meter).
+[2026-06-26 23:32:41.295] Found 223 possible bad axioms.
+[2026-06-26 23:32:41.295] Selected the bad axiom SubClassOf(SI_system frequency_unit).
+[2026-06-26 23:32:41.304] Found 222 possible bad axioms.
+[2026-06-26 23:32:41.304] Selected the bad axiom SubClassOf(length_unit owl:Nothing).
+[2026-06-26 23:32:41.308] Found 221 possible bad axioms.
+[2026-06-26 23:32:41.308] Selected the bad axiom SubClassOf(month kilogram_per_square_meter).
+[2026-06-26 23:32:41.311] Found 220 possible bad axioms.
+[2026-06-26 23:32:41.311] Selected the bad axiom SubClassOf(SI_system hertz).
+[2026-06-26 23:32:41.314] Found 219 possible bad axioms.
+[2026-06-26 23:32:41.314] Selected the bad axiom SubClassOf(length_unit minute).
+[2026-06-26 23:32:41.321] Found 218 possible bad axioms.
+[2026-06-26 23:32:41.321] Selected the bad axiom SubClassOf(millimeter centimeter).
+[2026-06-26 23:32:41.324] Found 217 possible bad axioms.
+[2026-06-26 23:32:41.324] Selected the bad axiom SubClassOf(events_per_hour events_per_day).
+[2026-06-26 23:32:41.326] Found 216 possible bad axioms.
+[2026-06-2
+...[truncated]
+FAIL: attempt=8 seed=99493 status=time_limit_exceeded stage=B3 message=Repair timeout: B3 exceeded 300 seconds
+progress: ontology=UNITSONT attempt=8 success=0/100
+----- UNITSONT attempt=9 seed=113693 at 2026-06-26 23:37:57 -----
+--- stdout ---
+{"seed":113693,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)","iic_values":{},"repair_runtimes_ms":{"A1":113,"A2":11710,"A3":405,"B1":734,"B2":894,"B3":1842,"B4":70}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=113693, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:37:58.194] Checking precondition...
+[2026-06-26 23:37:58.209] Starting the repair...
+[2026-06-26 23:37:58.215] Found 233 possible bad axioms.
+[2026-06-26 23:37:58.217] Selected the bad axiom SubClassOf(month kilogram_per_square_meter).
+[2026-06-26 23:37:58.221] Found 232 possible bad axioms.
+[2026-06-26 23:37:58.221] Selected the bad axiom SubClassOf(time_unit base_unit).
+[2026-06-26 23:37:58.226] Found 231 possible bad axioms.
+[2026-06-26 23:37:58.226] Selected the bad axiom SubClassOf(mass_unit length_unit).
+[2026-06-26 23:37:58.231] Found 230 possible bad axioms.
+[2026-06-26 23:37:58.231] Selected the bad axiom SubClassOf(second time_unit).
+[2026-06-26 23:37:58.238] Found 229 possible bad axioms.
+[2026-06-26 23:37:58.238] Selected the bad axiom SubClassOf(kilogram gram).
+[2026-06-26 23:37:58.242] Found 228 possible bad axioms.
+[2026-06-26 23:37:58.242] Selected the bad axiom SubClassOf(mass_unit base_unit).
+[2026-06-26 23:37:58.246] Found 227 possible bad axioms.
+[2026-06-26 23:37:58.246] Selected the bad axiom SubClassOf(US_length_unit US_mass_unit).
+[2026-06-26 23:37:58.250] Found 226 possible bad axioms.
+[2026-06-26 23:37:58.250] Selected the bad axiom SubClassOf(SI_system frequency_unit).
+[2026-06-26 23:37:58.253] Found 225 possible bad axioms.
+[2026-06-26 23:37:58.254] Selected the bad axiom SubClassOf(millimeter length_unit).
+[2026-06-26 23:37:58.256] Found 224 possible bad axioms.
+[2026-06-26 23:37:58.257] Selected the bad axiom SubClassOf(pressure_unit hertz).
+[2026-06-26 23:37:58.260] Found 223 possible bad axioms.
+[2026-06-26 23:37:58.260] Selected the bad axiom SubClassOf(liter volume_unit).
+[2026-06-26 23:37:58.269] Found 222 possible bad axioms.
+[2026-06-26 23:37:58.269] Selected the bad axiom SubClassOf(Non-SI_unit area_density_unit).
+[2026-06-26 23:37:58.272] Found 221 possible bad axioms.
+[2026-06-26 23:37:58.273] Selected the bad axiom SubClassOf(foot yard).
+[2026-06-26 23:37:58.276] Found 220 possible bad axioms.
+[2026-06-26 23:37:58.276] Selected the bad axiom SubClassOf(month day).
+[2026-06-26 23:37:58.279] Found 219 possible bad axioms.
+[2026-06-26 23:37:58.279] Selected the bad axiom SubClassOf(gram mass_unit).
+[2026-06-26 23:37:58.286] Found 218 possible bad axioms.
+[2026-06-26 23:37:58.287] Selected the bad axiom SubClassOf(frequency_unit events_per_minute).
+[2026-06-26 23:37:58.290] Found 217 possible bad axioms.
+[2026-06-26 23:37:58.290] Selected the bad axiom SubClassOf(frequency_unit derived_unit).
+[2026-06-26 23:37:58.293] Found 216 possible bad axioms.
+[2026-06-26 23:37:58.293] Selected the bad axio
+...[truncated]
+FAIL: attempt=9 seed=113693 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+progress: ontology=UNITSONT attempt=9 success=0/100
+----- UNITSONT attempt=10 seed=127893 at 2026-06-26 23:38:14 -----
+--- stdout ---
+{"seed":127893,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)","iic_values":{},"repair_runtimes_ms":{"A1":285,"A2":11691,"A3":388,"B1":603,"B2":530,"B3":445,"B4":95}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/UNITSONT.owl, seed=127893, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:38:14.404] Checking precondition...
+[2026-06-26 23:38:14.420] Starting the repair...
+[2026-06-26 23:38:14.426] Found 233 possible bad axioms.
+[2026-06-26 23:38:14.427] Selected the bad axiom SubClassOf(time_unit week).
+[2026-06-26 23:38:14.432] Found 232 possible bad axioms.
+[2026-06-26 23:38:14.432] Selected the bad axiom SubClassOf(ratio percent).
+[2026-06-26 23:38:14.436] Found 231 possible bad axioms.
+[2026-06-26 23:38:14.437] Selected the bad axiom SubClassOf(week hour).
+[2026-06-26 23:38:14.441] Found 230 possible bad axioms.
+[2026-06-26 23:38:14.441] Selected the bad axiom SubClassOf(events_per_month events_per_minute).
+[2026-06-26 23:38:14.449] Found 229 possible bad axioms.
+[2026-06-26 23:38:14.449] Selected the bad axiom SubClassOf(mass_unit kilogram).
+[2026-06-26 23:38:14.453] Found 228 possible bad axioms.
+[2026-06-26 23:38:14.453] Selected the bad axiom SubClassOf(decibel named_ratio).
+[2026-06-26 23:38:14.457] Found 227 possible bad axioms.
+[2026-06-26 23:38:14.457] Selected the bad axiom SubClassOf(SI_system Non-SI_unit).
+[2026-06-26 23:38:14.461] Found 226 possible bad axioms.
+[2026-06-26 23:38:14.461] Selected the bad axiom SubClassOf(pressure_unit hertz).
+[2026-06-26 23:38:14.465] Found 225 possible bad axioms.
+[2026-06-26 23:38:14.465] Selected the bad axiom SubClassOf(metric_system non-SI_pressure_unit).
+[2026-06-26 23:38:14.468] Found 224 possible bad axioms.
+[2026-06-26 23:38:14.468] Selected the bad axiom SubClassOf(length_unit week).
+[2026-06-26 23:38:14.471] Found 223 possible bad axioms.
+[2026-06-26 23:38:14.471] Selected the bad axiom SubClassOf(minute time_unit).
+[2026-06-26 23:38:14.480] Found 222 possible bad axioms.
+[2026-06-26 23:38:14.481] Selected the bad axiom SubClassOf(base_unit kilogram).
+[2026-06-26 23:38:14.483] Found 221 possible bad axioms.
+[2026-06-26 23:38:14.484] Selected the bad axiom SubClassOf(Non-SI_unit density_unit).
+[2026-06-26 23:38:14.487] Found 220 possible bad axioms.
+[2026-06-26 23:38:14.487] Selected the bad axiom SubClassOf(day time_unit).
+[2026-06-26 23:38:14.490] Found 219 possible bad axioms.
+[2026-06-26 23:38:14.490] Selected the bad axiom SubClassOf(liter owl:Nothing).
+[2026-06-26 23:38:14.497] Found 218 possible bad axioms.
+[2026-06-26 23:38:14.498] Selected the bad axiom SubClassOf(liter_per_minute volume_flow_unit).
+[2026-06-26 23:38:14.501] Found 217 possible bad axioms.
+[2026-06-26 23:38:14.501] Selected the bad axiom ClassAssertion(owl:Thing kilogram).
+[2026-06-26 23:38:14.502] Found 216 possible bad axioms.
+[2026-06-26 23:38:14.503] Selected the bad axiom SubCla
+...[truncated]
+FAIL: attempt=10 seed=127893 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+progress: ontology=UNITSONT attempt=10 success=0/100
+=== ABORTED UNITSONT after 10 consecutive failures at 2026-06-26 23:38:28 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for UNITSONT - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=93 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+  attempt=2 seed=14293 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+  attempt=3 seed=28493 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+  attempt=4 seed=42693 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit
+  attempt=5 seed=56893 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit
+  attempt=6 seed=71093 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=7 seed=85293 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: non-SI_pressure_unit ⊑ Non-SI_unit
+  attempt=8 seed=99493 msg=Repair timeout: B3 exceeded 300 seconds
+  attempt=9 seed=113693 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+  attempt=10 seed=127893 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤(kilogram)
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=2 total_seconds=630.285647 avg_seconds=315.142824
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

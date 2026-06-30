@@ -1,0 +1,434 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-STY.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-STY.csv
+
+=== Starting sequential trials for STY at 2026-06-27 10:45:12 ===
+----- STY attempt=1 seed=110 at 2026-06-27 10:45:12 -----
+--- stdout ---
+{"seed":110,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017","iic_values":{},"repair_runtimes_ms":{"A1":55,"A2":10535,"A3":791,"B1":1416,"B2":8971}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=110, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:45:13.327] Checking precondition...
+[2026-06-27 10:45:13.343] Starting the repair...
+[2026-06-27 10:45:13.351] Found 316 possible bad axioms.
+[2026-06-27 10:45:13.353] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T122 http://purl.bioontology.org/ontology/STY/T120).
+[2026-06-27 10:45:13.358] Found 315 possible bad axioms.
+[2026-06-27 10:45:13.358] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T092 http://purl.bioontology.org/ontology/STY/T093).
+[2026-06-27 10:45:13.368] Found 314 possible bad axioms.
+[2026-06-27 10:45:13.368] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T125 http://purl.bioontology.org/ontology/STY/T129).
+[2026-06-27 10:45:13.373] Found 313 possible bad axioms.
+[2026-06-27 10:45:13.373] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T071 http://purl.bioontology.org/ontology/STY/T017).
+[2026-06-27 10:45:13.377] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 10:45:13.379] Checking precondition...
+[2026-06-27 10:45:13.388] Starting the repair...
+[2026-06-27 10:45:23.911] Found 2 possible bad axioms.
+[2026-06-27 10:45:23.911] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T051 http://purl.bioontology.org/ontology/STY/T071).
+[2026-06-27 10:45:23.913] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 10:45:23.915] Checking precondition...
+[2026-06-27 10:45:23.917] Starting the repair...
+[2026-06-27 10:45:23.943] Selected a reference ontology with 442 axioms.
+[2026-06-27 10:45:24.645] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T071 http://purl.bioontology.org/ontology/STY/T017).
+[2026-06-27 10:45:24.702] Selected the weaker axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T071 http://purl.bioontology.org/ontology/STY/T065).
+[2026-06-27 10:45:24.704] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 10:45:24.705] Checking precondition...
+[2026-06-27 10:45:24.707] Starting the repair...
+[2026-06-27 10:45:24.721] Selected a reference ontology with 443 axioms.
+[2026-06-27 10:45:25.361] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T071 http://purl.bioontology.org/ontology/STY/T017).
+[2026-06-27 10:45:25.416] Selected the weaker axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T071 http://purl.bioontology.org/ontology/STY/T045).
+[2026-06-27 10:45:26.117] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=1 seed=110 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017
+progress: ontology=STY attempt=1 success=0/100
+----- STY attempt=2 seed=14310 at 2026-06-27 10:45:36 -----
+--- stdout ---
+{"seed":14310,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T055","iic_values":{},"repair_runtimes_ms":{"A1":278,"A2":10431,"A3":747,"B1":1428,"B2":2938,"B3":4057,"B4":172,"B5":3629,"B6":1206}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=14310, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:45:36.533] Checking precondition...
+[2026-06-27 10:45:36.549] Starting the repair...
+[2026-06-27 10:45:36.557] Found 316 possible bad axioms.
+[2026-06-27 10:45:36.558] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T089 http://purl.bioontology.org/ontology/STY/T170).
+[2026-06-27 10:45:36.564] Found 315 possible bad axioms.
+[2026-06-27 10:45:36.564] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T028 http://purl.bioontology.org/ontology/STY/T021).
+[2026-06-27 10:45:36.573] Found 314 possible bad axioms.
+[2026-06-27 10:45:36.573] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T057 http://purl.bioontology.org/ontology/STY/T064).
+[2026-06-27 10:45:36.578] Found 313 possible bad axioms.
+[2026-06-27 10:45:36.578] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T194 http://purl.bioontology.org/ontology/STY/T001).
+[2026-06-27 10:45:36.583] Found 312 possible bad axioms.
+[2026-06-27 10:45:36.584] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T121 http://purl.bioontology.org/ontology/STY/T120).
+[2026-06-27 10:45:36.589] Found 311 possible bad axioms.
+[2026-06-27 10:45:36.590] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T201 http://purl.bioontology.org/ontology/STY/T032).
+[2026-06-27 10:45:36.594] Found 310 possible bad axioms.
+[2026-06-27 10:45:36.595] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T095 http://purl.bioontology.org/ontology/STY/T092).
+[2026-06-27 10:45:36.599] Found 309 possible bad axioms.
+[2026-06-27 10:45:36.599] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T031 http://purl.bioontology.org/ontology/STY/T122).
+[2026-06-27 10:45:36.602] Found 308 possible bad axioms.
+[2026-06-27 10:45:36.603] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T023 http://purl.bioontology.org/ontology/STY/T028).
+[2026-06-27 10:45:36.606] Found 307 possible bad axioms.
+[2026-06-27 10:45:36.606] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T033 http://purl.bioontology.org/ontology/STY/T090).
+[2026-06-27 10:45:36.614] Found 306 possible bad axioms.
+[2026-06-27 10:45:36.614] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T125 http://purl.bioontology.org/ontology/STY/T045).
+[2026-06-27 10:45:36.623] Found 305 possible bad axioms.
+[2026-06-27 10:45:36.623] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T014 http://purl.bi
+...[truncated]
+FAIL: attempt=2 seed=14310 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T055
+progress: ontology=STY attempt=2 success=0/100
+----- STY attempt=3 seed=28510 at 2026-06-27 10:46:02 -----
+--- stdout ---
+{"seed":28510,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071","iic_values":{},"repair_runtimes_ms":{"A1":311,"A2":10433,"A3":804,"B1":7565,"B2":10368,"B3":4059}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=28510, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:46:03.052] Checking precondition...
+[2026-06-27 10:46:03.070] Starting the repair...
+[2026-06-27 10:46:03.077] Found 316 possible bad axioms.
+[2026-06-27 10:46:03.079] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T116 http://purl.bioontology.org/ontology/STY/T109).
+[2026-06-27 10:46:03.084] Found 315 possible bad axioms.
+[2026-06-27 10:46:03.084] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T093 http://purl.bioontology.org/ontology/STY/T095).
+[2026-06-27 10:46:03.094] Found 314 possible bad axioms.
+[2026-06-27 10:46:03.094] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T069 http://purl.bioontology.org/ontology/STY/T068).
+[2026-06-27 10:46:03.100] Found 313 possible bad axioms.
+[2026-06-27 10:46:03.100] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T012 http://purl.bioontology.org/ontology/STY/T010).
+[2026-06-27 10:46:03.107] Found 312 possible bad axioms.
+[2026-06-27 10:46:03.107] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T007 http://purl.bioontology.org/ontology/STY/T204).
+[2026-06-27 10:46:03.112] Found 311 possible bad axioms.
+[2026-06-27 10:46:03.113] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T061 http://purl.bioontology.org/ontology/STY/T058).
+[2026-06-27 10:46:03.117] Found 310 possible bad axioms.
+[2026-06-27 10:46:03.117] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T127 http://purl.bioontology.org/ontology/STY/T123).
+[2026-06-27 10:46:03.121] Found 309 possible bad axioms.
+[2026-06-27 10:46:03.121] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T032 http://purl.bioontology.org/ontology/STY/T077).
+[2026-06-27 10:46:03.124] Found 308 possible bad axioms.
+[2026-06-27 10:46:03.125] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T062 http://purl.bioontology.org/ontology/STY/T065).
+[2026-06-27 10:46:03.129] Found 307 possible bad axioms.
+[2026-06-27 10:46:03.129] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T056 http://purl.bioontology.org/ontology/STY/T057).
+[2026-06-27 10:46:03.137] Found 306 possible bad axioms.
+[2026-06-27 10:46:03.137] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T056 http://purl.bioontology.org/ontology/STY/T062).
+[2026-06-27 10:46:03.144] Found 305 possible bad axioms.
+[2026-06-27 10:46:03.144] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T010 http://purl.bi
+...[truncated]
+FAIL: attempt=3 seed=28510 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+progress: ontology=STY attempt=3 success=0/100
+----- STY attempt=4 seed=42710 at 2026-06-27 10:46:36 -----
+--- stdout ---
+{"seed":42710,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017","iic_values":{},"repair_runtimes_ms":{"A1":214,"A2":10531,"A3":4317,"B1":752,"B2":2223}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=42710, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:46:37.090] Checking precondition...
+[2026-06-27 10:46:37.106] Starting the repair...
+[2026-06-27 10:46:37.115] Found 316 possible bad axioms.
+[2026-06-27 10:46:37.117] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T126 http://purl.bioontology.org/ontology/STY/T129).
+[2026-06-27 10:46:37.122] Found 315 possible bad axioms.
+[2026-06-27 10:46:37.122] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T168 http://purl.bioontology.org/ontology/STY/T167).
+[2026-06-27 10:46:37.133] Found 314 possible bad axioms.
+[2026-06-27 10:46:37.133] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T005 owl:Nothing).
+[2026-06-27 10:46:37.138] Found 313 possible bad axioms.
+[2026-06-27 10:46:37.139] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T058 http://purl.bioontology.org/ontology/STY/T065).
+[2026-06-27 10:46:37.143] Found 312 possible bad axioms.
+[2026-06-27 10:46:37.143] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T015 http://purl.bioontology.org/ontology/STY/T045).
+[2026-06-27 10:46:37.150] Found 311 possible bad axioms.
+[2026-06-27 10:46:37.150] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T098 http://purl.bioontology.org/ontology/STY/T045).
+[2026-06-27 10:46:37.155] Found 310 possible bad axioms.
+[2026-06-27 10:46:37.155] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T033 http://purl.bioontology.org/ontology/STY/T077).
+[2026-06-27 10:46:37.160] Found 309 possible bad axioms.
+[2026-06-27 10:46:37.160] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T064 http://purl.bioontology.org/ontology/STY/T061).
+[2026-06-27 10:46:37.164] Found 308 possible bad axioms.
+[2026-06-27 10:46:37.164] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T062 http://purl.bioontology.org/ontology/STY/T065).
+[2026-06-27 10:46:37.167] Found 307 possible bad axioms.
+[2026-06-27 10:46:37.168] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T054 http://purl.bioontology.org/ontology/STY/T053).
+[2026-06-27 10:46:37.175] Found 306 possible bad axioms.
+[2026-06-27 10:46:37.175] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T171 http://purl.bioontology.org/ontology/STY/T077).
+[2026-06-27 10:46:37.183] Found 305 possible bad axioms.
+[2026-06-27 10:46:37.184] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T056 http://purl.bioontology.org/ontology/STY/T052).
+
+...[truncated]
+FAIL: attempt=4 seed=42710 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017
+progress: ontology=STY attempt=4 success=0/100
+----- STY attempt=5 seed=56910 at 2026-06-27 10:46:55 -----
+--- stdout ---
+{"seed":56910,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053","iic_values":{},"repair_runtimes_ms":{"A1":178,"A2":10468,"A3":2749,"B1":3990,"B2":3586,"B3":2108,"B4":169,"B5":3861,"B6":2976,"B7":214,"B8":2691}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=56910, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:46:55.574] Checking precondition...
+[2026-06-27 10:46:55.591] Starting the repair...
+[2026-06-27 10:46:55.599] Found 316 possible bad axioms.
+[2026-06-27 10:46:55.601] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T099 http://purl.bioontology.org/ontology/STY/T096).
+[2026-06-27 10:46:55.608] Found 315 possible bad axioms.
+[2026-06-27 10:46:55.608] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T121 http://purl.bioontology.org/ontology/STY/T120).
+[2026-06-27 10:46:55.617] Found 314 possible bad axioms.
+[2026-06-27 10:46:55.617] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T086 http://purl.bioontology.org/ontology/STY/T085).
+[2026-06-27 10:46:55.622] Found 313 possible bad axioms.
+[2026-06-27 10:46:55.622] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T064 http://purl.bioontology.org/ontology/STY/T065).
+[2026-06-27 10:46:55.626] Found 312 possible bad axioms.
+[2026-06-27 10:46:55.626] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T014 http://purl.bioontology.org/ontology/STY/T015).
+[2026-06-27 10:46:55.632] Found 311 possible bad axioms.
+[2026-06-27 10:46:55.632] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T072 http://purl.bioontology.org/ontology/STY/T017).
+[2026-06-27 10:46:55.636] Found 310 possible bad axioms.
+[2026-06-27 10:46:55.636] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T088 http://purl.bioontology.org/ontology/STY/T085).
+[2026-06-27 10:46:55.640] Found 309 possible bad axioms.
+[2026-06-27 10:46:55.640] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T005 http://purl.bioontology.org/ontology/STY/T001).
+[2026-06-27 10:46:55.644] Found 308 possible bad axioms.
+[2026-06-27 10:46:55.644] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T195 http://purl.bioontology.org/ontology/STY/T121).
+[2026-06-27 10:46:55.647] Found 307 possible bad axioms.
+[2026-06-27 10:46:55.647] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T102 http://purl.bioontology.org/ontology/STY/T077).
+[2026-06-27 10:46:55.655] Found 306 possible bad axioms.
+[2026-06-27 10:46:55.655] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T204 http://purl.bioontology.org/ontology/STY/T001).
+[2026-06-27 10:46:55.663] Found 305 possible bad axioms.
+[2026-06-27 10:46:55.663] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T039 http://purl.bi
+...[truncated]
+FAIL: attempt=5 seed=56910 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053
+progress: ontology=STY attempt=5 success=0/100
+----- STY attempt=6 seed=71110 at 2026-06-27 10:47:28 -----
+--- stdout ---
+{"seed":71110,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071","iic_values":{},"repair_runtimes_ms":{"A1":298,"A2":10399,"A3":1368,"B1":2100,"B2":3626,"B3":3790}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=71110, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:47:29.066] Checking precondition...
+[2026-06-27 10:47:29.083] Starting the repair...
+[2026-06-27 10:47:29.091] Found 316 possible bad axioms.
+[2026-06-27 10:47:29.093] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T167 http://purl.bioontology.org/ontology/STY/T072).
+[2026-06-27 10:47:29.099] Found 315 possible bad axioms.
+[2026-06-27 10:47:29.099] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T023 http://purl.bioontology.org/ontology/STY/T028).
+[2026-06-27 10:47:29.109] Found 314 possible bad axioms.
+[2026-06-27 10:47:29.109] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T120 http://purl.bioontology.org/ontology/STY/T103).
+[2026-06-27 10:47:29.114] Found 313 possible bad axioms.
+[2026-06-27 10:47:29.114] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T073 owl:Nothing).
+[2026-06-27 10:47:29.119] Found 312 possible bad axioms.
+[2026-06-27 10:47:29.119] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T004 http://purl.bioontology.org/ontology/STY/T204).
+[2026-06-27 10:47:29.126] Found 311 possible bad axioms.
+[2026-06-27 10:47:29.127] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T127 http://purl.bioontology.org/ontology/STY/T125).
+[2026-06-27 10:47:29.131] Found 310 possible bad axioms.
+[2026-06-27 10:47:29.131] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T055 http://purl.bioontology.org/ontology/STY/T053).
+[2026-06-27 10:47:29.135] Found 309 possible bad axioms.
+[2026-06-27 10:47:29.135] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T015 http://purl.bioontology.org/ontology/STY/T010).
+[2026-06-27 10:47:29.138] Found 308 possible bad axioms.
+[2026-06-27 10:47:29.138] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T010 http://purl.bioontology.org/ontology/STY/T045).
+[2026-06-27 10:47:29.141] Found 307 possible bad axioms.
+[2026-06-27 10:47:29.141] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T078 owl:Nothing).
+[2026-06-27 10:47:29.149] Found 306 possible bad axioms.
+[2026-06-27 10:47:29.149] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T201 http://purl.bioontology.org/ontology/STY/T032).
+[2026-06-27 10:47:29.158] Found 305 possible bad axioms.
+[2026-06-27 10:47:29.158] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T031 http://purl.bioontology.org/ontology/STY/T120).
+[2026-06-27 10:47:29.162] Found 30
+...[truncated]
+FAIL: attempt=6 seed=71110 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+progress: ontology=STY attempt=6 success=0/100
+----- STY attempt=7 seed=85310 at 2026-06-27 10:47:50 -----
+--- stdout ---
+{"seed":85310,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053","iic_values":{},"repair_runtimes_ms":{"A1":294,"A2":10490,"A3":1545,"B1":2061,"B2":3913,"B3":5833,"B4":203,"B5":7821}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=85310, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:47:51.111] Checking precondition...
+[2026-06-27 10:47:51.126] Starting the repair...
+[2026-06-27 10:47:51.134] Found 316 possible bad axioms.
+[2026-06-27 10:47:51.136] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T077 http://purl.bioontology.org/ontology/STY/T001).
+[2026-06-27 10:47:51.142] Found 315 possible bad axioms.
+[2026-06-27 10:47:51.142] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T077 http://purl.bioontology.org/ontology/STY/T072).
+[2026-06-27 10:47:51.151] Found 314 possible bad axioms.
+[2026-06-27 10:47:51.151] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T102 http://purl.bioontology.org/ontology/STY/T077).
+[2026-06-27 10:47:51.155] Found 313 possible bad axioms.
+[2026-06-27 10:47:51.156] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T096 http://purl.bioontology.org/ontology/STY/T097).
+[2026-06-27 10:47:51.161] Found 312 possible bad axioms.
+[2026-06-27 10:47:51.161] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T170 http://purl.bioontology.org/ontology/STY/T096).
+[2026-06-27 10:47:51.168] Found 311 possible bad axioms.
+[2026-06-27 10:47:51.169] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T067 http://purl.bioontology.org/ontology/STY/T057).
+[2026-06-27 10:47:51.173] Found 310 possible bad axioms.
+[2026-06-27 10:47:51.174] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T067 http://purl.bioontology.org/ontology/STY/T051).
+[2026-06-27 10:47:51.177] Found 309 possible bad axioms.
+[2026-06-27 10:47:51.177] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T070 http://purl.bioontology.org/ontology/STY/T067).
+[2026-06-27 10:47:51.181] Found 308 possible bad axioms.
+[2026-06-27 10:47:51.181] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T197 http://purl.bioontology.org/ontology/STY/T104).
+[2026-06-27 10:47:51.184] Found 307 possible bad axioms.
+[2026-06-27 10:47:51.185] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T127 http://purl.bioontology.org/ontology/STY/T123).
+[2026-06-27 10:47:51.193] Found 306 possible bad axioms.
+[2026-06-27 10:47:51.193] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T195 http://purl.bioontology.org/ontology/STY/T045).
+[2026-06-27 10:47:51.201] Found 305 possible bad axioms.
+[2026-06-27 10:47:51.201] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T099 http://purl.bi
+...[truncated]
+FAIL: attempt=7 seed=85310 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053
+progress: ontology=STY attempt=7 success=0/100
+----- STY attempt=8 seed=99510 at 2026-06-27 10:48:24 -----
+--- stdout ---
+{"seed":99510,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071","iic_values":{},"repair_runtimes_ms":{"A1":349,"A2":10397,"A3":770,"B1":1339,"B2":3873}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=99510, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:48:24.994] Checking precondition...
+[2026-06-27 10:48:25.011] Starting the repair...
+[2026-06-27 10:48:25.019] Found 316 possible bad axioms.
+[2026-06-27 10:48:25.021] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T088 http://purl.bioontology.org/ontology/STY/T085).
+[2026-06-27 10:48:25.026] Found 315 possible bad axioms.
+[2026-06-27 10:48:25.026] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T125 http://purl.bioontology.org/ontology/STY/T129).
+[2026-06-27 10:48:25.036] Found 314 possible bad axioms.
+[2026-06-27 10:48:25.036] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T095 http://purl.bioontology.org/ontology/STY/T092).
+[2026-06-27 10:48:25.041] Found 313 possible bad axioms.
+[2026-06-27 10:48:25.041] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T033 http://purl.bioontology.org/ontology/STY/T090).
+[2026-06-27 10:48:25.046] Found 312 possible bad axioms.
+[2026-06-27 10:48:25.046] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T051 owl:Thing).
+[2026-06-27 10:48:25.052] Found 311 possible bad axioms.
+[2026-06-27 10:48:25.053] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T018 http://purl.bioontology.org/ontology/STY/T017).
+[2026-06-27 10:48:25.057] Found 310 possible bad axioms.
+[2026-06-27 10:48:25.057] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T080 http://purl.bioontology.org/ontology/STY/T078).
+[2026-06-27 10:48:25.061] Found 309 possible bad axioms.
+[2026-06-27 10:48:25.061] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T002 http://purl.bioontology.org/ontology/STY/T004).
+[2026-06-27 10:48:25.064] Found 308 possible bad axioms.
+[2026-06-27 10:48:25.064] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T197 http://purl.bioontology.org/ontology/STY/T104).
+[2026-06-27 10:48:25.068] Found 307 possible bad axioms.
+[2026-06-27 10:48:25.068] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T069 http://purl.bioontology.org/ontology/STY/T038).
+[2026-06-27 10:48:25.075] Found 306 possible bad axioms.
+[2026-06-27 10:48:25.076] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T054 http://purl.bioontology.org/ontology/STY/T055).
+[2026-06-27 10:48:25.084] Found 305 possible bad axioms.
+[2026-06-27 10:48:25.085] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T103 http://purl.bioontology.org/ontology/STY/T168).
+[2
+...[truncated]
+FAIL: attempt=8 seed=99510 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+progress: ontology=STY attempt=8 success=0/100
+----- STY attempt=9 seed=113710 at 2026-06-27 10:48:41 -----
+--- stdout ---
+{"seed":113710,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071","iic_values":{},"repair_runtimes_ms":{"A1":124,"A2":10429,"A3":780,"B1":1527,"B2":3619,"B3":3777}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=113710, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:48:42.165] Checking precondition...
+[2026-06-27 10:48:42.181] Starting the repair...
+[2026-06-27 10:48:42.189] Found 316 possible bad axioms.
+[2026-06-27 10:48:42.191] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T008 http://purl.bioontology.org/ontology/STY/T204).
+[2026-06-27 10:48:42.196] Found 315 possible bad axioms.
+[2026-06-27 10:48:42.196] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T191 http://purl.bioontology.org/ontology/STY/T048).
+[2026-06-27 10:48:42.205] Found 314 possible bad axioms.
+[2026-06-27 10:48:42.205] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T086 http://purl.bioontology.org/ontology/STY/T085).
+[2026-06-27 10:48:42.210] Found 313 possible bad axioms.
+[2026-06-27 10:48:42.210] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T047 http://purl.bioontology.org/ontology/STY/T050).
+[2026-06-27 10:48:42.216] Found 312 possible bad axioms.
+[2026-06-27 10:48:42.217] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T054 http://purl.bioontology.org/ontology/STY/T053).
+[2026-06-27 10:48:42.222] Found 311 possible bad axioms.
+[2026-06-27 10:48:42.223] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T120 http://purl.bioontology.org/ontology/STY/T104).
+[2026-06-27 10:48:42.227] Found 310 possible bad axioms.
+[2026-06-27 10:48:42.227] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T103 http://purl.bioontology.org/ontology/STY/T031).
+[2026-06-27 10:48:42.231] Found 309 possible bad axioms.
+[2026-06-27 10:48:42.231] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T001 http://purl.bioontology.org/ontology/STY/T072).
+[2026-06-27 10:48:42.234] Found 308 possible bad axioms.
+[2026-06-27 10:48:42.234] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T025 http://purl.bioontology.org/ontology/STY/T023).
+[2026-06-27 10:48:42.238] Found 307 possible bad axioms.
+[2026-06-27 10:48:42.238] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T170 http://purl.bioontology.org/ontology/STY/T077).
+[2026-06-27 10:48:42.246] Found 306 possible bad axioms.
+[2026-06-27 10:48:42.246] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T125 owl:Nothing).
+[2026-06-27 10:48:42.254] Found 305 possible bad axioms.
+[2026-06-27 10:48:42.254] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T130 http://purl.bioontology.org/ontology/STY/T121).
+...[truncated]
+FAIL: attempt=9 seed=113710 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+progress: ontology=STY attempt=9 success=0/100
+----- STY attempt=10 seed=127910 at 2026-06-27 10:49:02 -----
+--- stdout ---
+{"seed":127910,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071","iic_values":{},"repair_runtimes_ms":{"A1":204,"A2":10483,"A3":1381,"B1":2717,"B2":6366,"B3":2325}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/STY.owl, seed=127910, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 10:49:03.306] Checking precondition...
+[2026-06-27 10:49:03.321] Starting the repair...
+[2026-06-27 10:49:03.328] Found 316 possible bad axioms.
+[2026-06-27 10:49:03.330] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T075 http://purl.bioontology.org/ontology/STY/T073).
+[2026-06-27 10:49:03.335] Found 315 possible bad axioms.
+[2026-06-27 10:49:03.336] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T078 http://purl.bioontology.org/ontology/STY/T092).
+[2026-06-27 10:49:03.344] Found 314 possible bad axioms.
+[2026-06-27 10:49:03.345] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T127 http://purl.bioontology.org/ontology/STY/T044).
+[2026-06-27 10:49:03.349] Found 313 possible bad axioms.
+[2026-06-27 10:49:03.350] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T104 http://purl.bioontology.org/ontology/STY/T109).
+[2026-06-27 10:49:03.354] Found 312 possible bad axioms.
+[2026-06-27 10:49:03.354] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T078 http://purl.bioontology.org/ontology/STY/T170).
+[2026-06-27 10:49:03.360] Found 311 possible bad axioms.
+[2026-06-27 10:49:03.360] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T010 owl:Nothing).
+[2026-06-27 10:49:03.365] Found 310 possible bad axioms.
+[2026-06-27 10:49:03.366] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T053 http://purl.bioontology.org/ontology/STY/T057).
+[2026-06-27 10:49:03.369] Found 309 possible bad axioms.
+[2026-06-27 10:49:03.369] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T067 http://purl.bioontology.org/ontology/STY/T057).
+[2026-06-27 10:49:03.373] Found 308 possible bad axioms.
+[2026-06-27 10:49:03.373] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T047 http://purl.bioontology.org/ontology/STY/T048).
+[2026-06-27 10:49:03.377] Found 307 possible bad axioms.
+[2026-06-27 10:49:03.377] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T039 http://purl.bioontology.org/ontology/STY/T038).
+[2026-06-27 10:49:03.385] Found 306 possible bad axioms.
+[2026-06-27 10:49:03.385] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T077 http://purl.bioontology.org/ontology/STY/T102).
+[2026-06-27 10:49:03.393] Found 305 possible bad axioms.
+[2026-06-27 10:49:03.394] Selected the bad axiom SubClassOf(http://purl.bioontology.org/ontology/STY/T078 owl:Nothing).
+[2026-06-27 10:49:03.397] Found 3
+...[truncated]
+FAIL: attempt=10 seed=127910 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+progress: ontology=STY attempt=10 success=0/100
+=== ABORTED STY after 10 consecutive failures at 2026-06-27 10:49:26 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for STY - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=110 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017
+  attempt=2 seed=14310 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T055
+  attempt=3 seed=28510 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+  attempt=4 seed=42710 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T071 ⊑ T017
+  attempt=5 seed=56910 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053
+  attempt=6 seed=71110 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+  attempt=7 seed=85310 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ T053
+  attempt=8 seed=99510 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+  attempt=9 seed=113710 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+  attempt=10 seed=127910 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: T051 ⊑ T071
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

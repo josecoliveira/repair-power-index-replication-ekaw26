@@ -1,0 +1,537 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-VDOT.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-VDOT.csv
+
+=== Starting sequential trials for VDOT at 2026-06-26 09:08:59 ===
+----- VDOT attempt=1 seed=66 at 2026-06-26 09:08:59 -----
+--- stdout ---
+{"seed":66,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":198,"A2":1794,"A3":258,"B1":213,"B2":1048,"B3":473,"B4":63,"B5":766}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=66, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:08:59.934] Checking precondition...
+[2026-06-26 09:08:59.948] Starting the repair...
+[2026-06-26 09:08:59.955] Found 125 possible bad axioms.
+[2026-06-26 09:08:59.956] Selected the bad axiom SubClassOf(vdot_0000022 C76244).
+[2026-06-26 09:08:59.961] Found 124 possible bad axioms.
+[2026-06-26 09:08:59.961] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62854 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:08:59.965] Found 123 possible bad axioms.
+[2026-06-26 09:08:59.965] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma86475 http://purl.org/sig/ont/fma/fma84789).
+[2026-06-26 09:08:59.970] Found 122 possible bad axioms.
+[2026-06-26 09:08:59.970] Selected the bad axiom SubClassOf(C138187 C76244).
+[2026-06-26 09:08:59.973] Found 121 possible bad axioms.
+[2026-06-26 09:08:59.973] Selected the bad axiom SubClassOf(C76246 C76248).
+[2026-06-26 09:08:59.976] Found 120 possible bad axioms.
+[2026-06-26 09:08:59.976] Selected the bad axiom SubClassOf(vdot_0000022 vdot_0000021).
+[2026-06-26 09:08:59.979] Found 119 possible bad axioms.
+[2026-06-26 09:08:59.979] Selected the bad axiom SubClassOf(fma72300 fma67513).
+[2026-06-26 09:08:59.986] Found 118 possible bad axioms.
+[2026-06-26 09:08:59.986] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma86711 http://purl.org/sig/ont/fma/fma84789).
+[2026-06-26 09:08:59.989] Found 117 possible bad axioms.
+[2026-06-26 09:08:59.989] Selected the bad axiom SubClassOf(C89820 C14260).
+[2026-06-26 09:08:59.991] Found 116 possible bad axioms.
+[2026-06-26 09:08:59.991] Selected the bad axiom SubClassOf(C14217 C14253).
+[2026-06-26 09:08:59.993] Found 115 possible bad axioms.
+[2026-06-26 09:08:59.993] Selected the bad axiom SubClassOf(C3063 C4727).
+[2026-06-26 09:09:00.001] Found 114 possible bad axioms.
+[2026-06-26 09:09:00.001] Selected the bad axiom SubClassOf(vdot_0000024 vdot_0000022).
+[2026-06-26 09:09:00.005] Found 113 possible bad axioms.
+[2026-06-26 09:09:00.005] Selected the bad axiom SubClassOf(C76249 C76246).
+[2026-06-26 09:09:00.008] Found 112 possible bad axioms.
+[2026-06-26 09:09:00.008] Selected the bad axiom SubClassOf(C114666 C38759).
+[2026-06-26 09:09:00.010] Found 111 possible bad axioms.
+[2026-06-26 09:09:00.011] Selected the bad axiom SubClassOf(C4727 C27233).
+[2026-06-26 09:09:00.012] Found 110 possible bad axioms.
+[2026-06-26 09:09:00.013] Selected the bad axiom SubClassOf(fma62863 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:00.015] Found 109 possible bad axioms.
+[2026-06-26 09:09:00.015] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=1 seed=66 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=1 success=0/100
+----- VDOT attempt=2 seed=14266 at 2026-06-26 09:09:04 -----
+--- stdout ---
+{"seed":14266,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":138,"A2":1811,"A3":243,"B1":413,"B2":1240}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=14266, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:05.160] Checking precondition...
+[2026-06-26 09:09:05.174] Starting the repair...
+[2026-06-26 09:09:05.181] Found 125 possible bad axioms.
+[2026-06-26 09:09:05.183] Selected the bad axiom SubClassOf(fma70336 http://purl.obolibrary.org/obo/FMA_63368).
+[2026-06-26 09:09:05.188] Found 124 possible bad axioms.
+[2026-06-26 09:09:05.189] Selected the bad axiom SubClassOf(C14348 C14200).
+[2026-06-26 09:09:05.195] Found 123 possible bad axioms.
+[2026-06-26 09:09:05.195] Selected the bad axiom SubClassOf(vdot_0000023 vdot_0000022).
+[2026-06-26 09:09:05.200] Found 122 possible bad axioms.
+[2026-06-26 09:09:05.200] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_63368 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:05.203] Found 121 possible bad axioms.
+[2026-06-26 09:09:05.203] Selected the bad axiom SubClassOf(C14200 NCBITaxon_10239).
+[2026-06-26 09:09:05.205] Found 120 possible bad axioms.
+[2026-06-26 09:09:05.206] Selected the bad axiom SubClassOf(vdot_core_000018 vdot_core_000019).
+[2026-06-26 09:09:05.208] Found 119 possible bad axioms.
+[2026-06-26 09:09:05.208] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62855 http://purl.obolibrary.org/obo/FMA_62854).
+[2026-06-26 09:09:05.215] Found 118 possible bad axioms.
+[2026-06-26 09:09:05.215] Selected the bad axiom SubClassOf(fma62863).
+[2026-06-26 09:09:05.217] Found 117 possible bad axioms.
+[2026-06-26 09:09:05.217] Selected the bad axiom SubClassOf(C76245 C76244).
+[2026-06-26 09:09:05.219] Found 116 possible bad axioms.
+[2026-06-26 09:09:05.219] Selected the bad axiom SubClassOf(C4981 C3063).
+[2026-06-26 09:09:05.221] Found 115 possible bad axioms.
+[2026-06-26 09:09:05.222] Selected the bad axiom SubClassOf(fma72300).
+[2026-06-26 09:09:05.228] Found 114 possible bad axioms.
+[2026-06-26 09:09:05.228] Selected the bad axiom SubClassOf(C14260 C14253).
+[2026-06-26 09:09:05.231] Found 113 possible bad axioms.
+[2026-06-26 09:09:05.231] Selected the bad axiom SubClassOf(C3063 C4981).
+[2026-06-26 09:09:05.235] Found 112 possible bad axioms.
+[2026-06-26 09:09:05.235] Selected the bad axiom SubClassOf(C26726 C114666).
+[2026-06-26 09:09:05.238] Found 111 possible bad axioms.
+[2026-06-26 09:09:05.238] Selected the bad axiom SubClassOf(C35686 C27351).
+[2026-06-26 09:09:05.240] Found 110 possible bad axioms.
+[2026-06-26 09:09:05.240] Selected the bad axiom SubClassOf(CHEBI:33304 CHEBI:33675).
+[2026-06-26 09:09:05.242] Found 109 possible bad axioms.
+[2026-06-26 09:09:05.242] Selected the bad axiom SubClassOf(CHEBI:33304).
+[2026-06-26 09:09:05.244] Fo
+...[truncated]
+FAIL: attempt=2 seed=14266 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=2 success=0/100
+----- VDOT attempt=3 seed=28466 at 2026-06-26 09:09:09 -----
+--- stdout ---
+{"seed":28466,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":223,"A2":1777,"A3":239,"B1":212,"B2":1225}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=28466, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:09.417] Checking precondition...
+[2026-06-26 09:09:09.429] Starting the repair...
+[2026-06-26 09:09:09.436] Found 125 possible bad axioms.
+[2026-06-26 09:09:09.437] Selected the bad axiom SubClassOf(C26726 C114666).
+[2026-06-26 09:09:09.442] Found 124 possible bad axioms.
+[2026-06-26 09:09:09.443] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62854 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:09.447] Found 123 possible bad axioms.
+[2026-06-26 09:09:09.447] Selected the bad axiom SubClassOf(vdot_0000022 vdot_0000021).
+[2026-06-26 09:09:09.453] Found 122 possible bad axioms.
+[2026-06-26 09:09:09.453] Selected the bad axiom SubClassOf(fma70340 fma70336).
+[2026-06-26 09:09:09.456] Found 121 possible bad axioms.
+[2026-06-26 09:09:09.457] Selected the bad axiom SubClassOf(C76246 C76245).
+[2026-06-26 09:09:09.459] Found 120 possible bad axioms.
+[2026-06-26 09:09:09.459] Selected the bad axiom SubClassOf(C53649 C76244).
+[2026-06-26 09:09:09.462] Found 119 possible bad axioms.
+[2026-06-26 09:09:09.462] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma86474 http://purl.org/sig/ont/fma/fma84789).
+[2026-06-26 09:09:09.468] Found 118 possible bad axioms.
+[2026-06-26 09:09:09.469] Selected the bad axiom SubClassOf(C76247 C76246).
+[2026-06-26 09:09:09.471] Found 117 possible bad axioms.
+[2026-06-26 09:09:09.472] Selected the bad axiom SubClassOf(C76249 C76245).
+[2026-06-26 09:09:09.474] Found 116 possible bad axioms.
+[2026-06-26 09:09:09.474] Selected the bad axiom SubClassOf(C14204 C14260).
+[2026-06-26 09:09:09.476] Found 115 possible bad axioms.
+[2026-06-26 09:09:09.477] Selected the bad axiom SubClassOf(C89820 C14260).
+[2026-06-26 09:09:09.484] Found 114 possible bad axioms.
+[2026-06-26 09:09:09.485] Selected the bad axiom SubClassOf(vdot_0000003 vdot_0000002).
+[2026-06-26 09:09:09.489] Found 113 possible bad axioms.
+[2026-06-26 09:09:09.489] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_63368 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:09.491] Found 112 possible bad axioms.
+[2026-06-26 09:09:09.492] Selected the bad axiom SubClassOf(vdot_core_000012 vdot_core_000018).
+[2026-06-26 09:09:09.494] Found 111 possible bad axioms.
+[2026-06-26 09:09:09.494] Selected the bad axiom SubClassOf(C14200 NCBITaxon_10239).
+[2026-06-26 09:09:09.497] Found 110 possible bad axioms.
+[2026-06-26 09:09:09.497] Selected the bad axiom SubClassOf(C46089 C15431).
+[2026-06-26 09:09:09.499] Found 109 possible bad axioms.
+[2026-06-26 09:09:09.499] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=3 seed=28466 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=3 success=0/100
+----- VDOT attempt=4 seed=42666 at 2026-06-26 09:09:13 -----
+--- stdout ---
+{"seed":42666,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":48,"A2":1872,"A3":254,"B1":220,"B2":921,"B3":1132}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=42666, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:13.521] Checking precondition...
+[2026-06-26 09:09:13.536] Starting the repair...
+[2026-06-26 09:09:13.542] Found 125 possible bad axioms.
+[2026-06-26 09:09:13.544] Selected the bad axiom SubClassOf(C76248 C76245).
+[2026-06-26 09:09:13.549] Found 124 possible bad axioms.
+[2026-06-26 09:09:13.549] Selected the bad axiom SubClassOf(C16039 C15431).
+[2026-06-26 09:09:13.553] Found 123 possible bad axioms.
+[2026-06-26 09:09:13.553] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma86475 http://purl.org/sig/ont/fma/fma84789).
+[2026-06-26 09:09:13.557] Found 122 possible bad axioms.
+[2026-06-26 09:09:13.557] Selected the bad axiom SubClassOf(C76247 C76246).
+[2026-06-26 09:09:13.560] Found 121 possible bad axioms.
+[2026-06-26 09:09:13.560] Selected the bad axiom SubClassOf(C76247 C76248).
+[2026-06-26 09:09:13.563] Found 120 possible bad axioms.
+[2026-06-26 09:09:13.563] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:13.566] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 09:09:13.566] Checking precondition...
+[2026-06-26 09:09:13.576] Starting the repair...
+[2026-06-26 09:09:15.437] Found 1 possible bad axioms.
+[2026-06-26 09:09:15.438] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:15.438] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 09:09:15.439] Checking precondition...
+[2026-06-26 09:09:15.441] Starting the repair...
+[2026-06-26 09:09:15.451] Selected a reference ontology with 201 axioms.
+[2026-06-26 09:09:15.659] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:15.690] Selected the weaker axiom SubClassOf(owl:Thing C14196).
+[2026-06-26 09:09:15.692] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 09:09:15.693] Checking precondition...
+[2026-06-26 09:09:15.695] Starting the repair...
+[2026-06-26 09:09:15.709] Selected a reference ontology with 198 axioms.
+[2026-06-26 09:09:15.896] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:15.911] Selected the weaker axiom SubClassOf(vdot_0000002 vdot_core_000018).
+[2026-06-26 09:09:15.913] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 09:09:15.915] Checking precondition...
+[2026-06-26 09:09:15.917] Starting the repair...
+[2026-06-26 09:09:15.930] Selected a reference ontology with 198 axioms.
+[2026-06-26 09:09:16.112] Selected the bad axiom SubClassOf(owl:Thing vdot
+...[truncated]
+FAIL: attempt=4 seed=42666 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=4 success=0/100
+----- VDOT attempt=5 seed=56866 at 2026-06-26 09:09:18 -----
+--- stdout ---
+{"seed":56866,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":155,"A2":1821,"A3":669,"B1":206,"B2":1141}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=56866, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:18.385] Checking precondition...
+[2026-06-26 09:09:18.402] Starting the repair...
+[2026-06-26 09:09:18.409] Found 125 possible bad axioms.
+[2026-06-26 09:09:18.411] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62854 http://purl.obolibrary.org/obo/FMA_62852).
+[2026-06-26 09:09:18.416] Found 124 possible bad axioms.
+[2026-06-26 09:09:18.416] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma0326453 http://purl.org/sig/ont/fma/fma86475).
+[2026-06-26 09:09:18.421] Found 123 possible bad axioms.
+[2026-06-26 09:09:18.421] Selected the bad axiom SubClassOf(fma70336 fma72300).
+[2026-06-26 09:09:18.427] Found 122 possible bad axioms.
+[2026-06-26 09:09:18.427] Selected the bad axiom SubClassOf(C76245 owl:Nothing).
+[2026-06-26 09:09:18.430] Found 121 possible bad axioms.
+[2026-06-26 09:09:18.430] Selected the bad axiom SubClassOf(C4727 C76246).
+[2026-06-26 09:09:18.434] Found 120 possible bad axioms.
+[2026-06-26 09:09:18.434] Selected the bad axiom SubClassOf(C3063 C27233).
+[2026-06-26 09:09:18.437] Found 119 possible bad axioms.
+[2026-06-26 09:09:18.437] Selected the bad axiom SubClassOf(C53649 C76244).
+[2026-06-26 09:09:18.443] Found 118 possible bad axioms.
+[2026-06-26 09:09:18.444] Selected the bad axiom SubClassOf(C14200 NCBITaxon_10239).
+[2026-06-26 09:09:18.446] Found 117 possible bad axioms.
+[2026-06-26 09:09:18.446] Selected the bad axiom SubClassOf(C14253 C14217).
+[2026-06-26 09:09:18.449] Found 116 possible bad axioms.
+[2026-06-26 09:09:18.449] Selected the bad axiom SubClassOf(C14204 C14217).
+[2026-06-26 09:09:18.452] Found 115 possible bad axioms.
+[2026-06-26 09:09:18.452] Selected the bad axiom SubClassOf(C123276 C38759).
+[2026-06-26 09:09:18.460] Found 114 possible bad axioms.
+[2026-06-26 09:09:18.460] Selected the bad axiom SubClassOf(C4980 C4981).
+[2026-06-26 09:09:18.463] Found 113 possible bad axioms.
+[2026-06-26 09:09:18.463] Selected the bad axiom SubClassOf(vdot_0000025 vdot_0000021).
+[2026-06-26 09:09:18.466] Found 112 possible bad axioms.
+[2026-06-26 09:09:18.466] Selected the bad axiom SubClassOf(vdot_0000022 vdot_0000025).
+[2026-06-26 09:09:18.468] Found 111 possible bad axioms.
+[2026-06-26 09:09:18.468] Selected the bad axiom SubClassOf(C4980 C3063).
+[2026-06-26 09:09:18.470] Found 110 possible bad axioms.
+[2026-06-26 09:09:18.470] Selected the bad axiom SubClassOf(NCBITaxon_10239 http://purl.obolibrary.org/obo/OBI_0100026).
+[2026-06-26 09:09:18.472] Found 109 possible bad axioms.
+[2026-06-26 09:09:18.473] Selected the bad axiom SubClassOf(C76248 C76246).
+[2026-06-26 09:09:18.475
+...[truncated]
+FAIL: attempt=5 seed=56866 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=5 success=0/100
+----- VDOT attempt=6 seed=71066 at 2026-06-26 09:09:22 -----
+--- stdout ---
+{"seed":71066,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":84,"A2":1857,"A3":263,"B1":216,"B2":1940}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=71066, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:22.802] Checking precondition...
+[2026-06-26 09:09:22.816] Starting the repair...
+[2026-06-26 09:09:22.823] Found 125 possible bad axioms.
+[2026-06-26 09:09:22.825] Selected the bad axiom SubClassOf(C14253 C14217).
+[2026-06-26 09:09:22.830] Found 124 possible bad axioms.
+[2026-06-26 09:09:22.831] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62854 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:22.835] Found 123 possible bad axioms.
+[2026-06-26 09:09:22.835] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62855 http://purl.obolibrary.org/obo/FMA_62852).
+[2026-06-26 09:09:22.840] Found 122 possible bad axioms.
+[2026-06-26 09:09:22.840] Selected the bad axiom SubClassOf(C76247 C76245).
+[2026-06-26 09:09:22.843] Found 121 possible bad axioms.
+[2026-06-26 09:09:22.843] Selected the bad axiom SubClassOf(fma62863 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:22.845] Found 120 possible bad axioms.
+[2026-06-26 09:09:22.845] Selected the bad axiom SubClassOf(C138187 C46089).
+[2026-06-26 09:09:22.848] Found 119 possible bad axioms.
+[2026-06-26 09:09:22.848] Selected the bad axiom SubClassOf(CHEBI:33582 CHEBI:33675).
+[2026-06-26 09:09:22.855] Found 118 possible bad axioms.
+[2026-06-26 09:09:22.855] Selected the bad axiom SubClassOf(C27233 C4981).
+[2026-06-26 09:09:22.857] Found 117 possible bad axioms.
+[2026-06-26 09:09:22.858] Selected the bad axiom SubClassOf(vdot_core_000019 owl:Nothing).
+[2026-06-26 09:09:22.860] Found 116 possible bad axioms.
+[2026-06-26 09:09:22.860] Selected the bad axiom SubClassOf(C76247 C76248).
+[2026-06-26 09:09:22.862] Found 115 possible bad axioms.
+[2026-06-26 09:09:22.862] Selected the bad axiom SubClassOf(vdot_0000015 vdot_0000014).
+[2026-06-26 09:09:22.869] Found 114 possible bad axioms.
+[2026-06-26 09:09:22.870] Selected the bad axiom SubClassOf(C26726 C93210).
+[2026-06-26 09:09:22.873] Found 113 possible bad axioms.
+[2026-06-26 09:09:22.873] Selected the bad axiom SubClassOf(C14260 C14253).
+[2026-06-26 09:09:22.876] Found 112 possible bad axioms.
+[2026-06-26 09:09:22.876] Selected the bad axiom SubClassOf(fma70336 http://purl.obolibrary.org/obo/FMA_63368).
+[2026-06-26 09:09:22.878] Found 111 possible bad axioms.
+[2026-06-26 09:09:22.879] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:22.881] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 09:09:22.882] Checking precondition...
+[2026-06-26 09:09:22.887] Starting the repair...
+[2026-06-26 09:09:24.739] Found 1 p
+...[truncated]
+FAIL: attempt=6 seed=71066 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=6 success=0/100
+----- VDOT attempt=7 seed=85266 at 2026-06-26 09:09:27 -----
+--- stdout ---
+{"seed":85266,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":125,"A2":1840,"A3":251,"B1":412,"B2":944,"B3":592,"B4":91,"B5":721}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=85266, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:27.582] Checking precondition...
+[2026-06-26 09:09:27.596] Starting the repair...
+[2026-06-26 09:09:27.602] Found 125 possible bad axioms.
+[2026-06-26 09:09:27.604] Selected the bad axiom SubClassOf(fma62863 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:27.609] Found 124 possible bad axioms.
+[2026-06-26 09:09:27.609] Selected the bad axiom SubClassOf(C138187 C76244).
+[2026-06-26 09:09:27.613] Found 123 possible bad axioms.
+[2026-06-26 09:09:27.613] Selected the bad axiom SubClassOf(C3439 C26726).
+[2026-06-26 09:09:27.618] Found 122 possible bad axioms.
+[2026-06-26 09:09:27.618] Selected the bad axiom SubClassOf(vdot_0000024 vdot_0000022).
+[2026-06-26 09:09:27.621] Found 121 possible bad axioms.
+[2026-06-26 09:09:27.622] Selected the bad axiom SubClassOf(C14253 C14217).
+[2026-06-26 09:09:27.624] Found 120 possible bad axioms.
+[2026-06-26 09:09:27.624] Selected the bad axiom SubClassOf(vdot_0000021 vdot_0000025).
+[2026-06-26 09:09:27.627] Found 119 possible bad axioms.
+[2026-06-26 09:09:27.627] Selected the bad axiom SubClassOf(C123276 C38759).
+[2026-06-26 09:09:27.633] Found 118 possible bad axioms.
+[2026-06-26 09:09:27.634] Selected the bad axiom SubClassOf(vdot_0000023 vdot_0000022).
+[2026-06-26 09:09:27.636] Found 117 possible bad axioms.
+[2026-06-26 09:09:27.636] Selected the bad axiom SubClassOf(vdot_core_000018 vdot_core_000012).
+[2026-06-26 09:09:27.639] Found 116 possible bad axioms.
+[2026-06-26 09:09:27.639] Selected the bad axiom SubClassOf(C26726 C114666).
+[2026-06-26 09:09:27.641] Found 115 possible bad axioms.
+[2026-06-26 09:09:27.641] Selected the bad axiom SubClassOf(C46089 C15431).
+[2026-06-26 09:09:27.649] Found 114 possible bad axioms.
+[2026-06-26 09:09:27.649] Selected the bad axiom SubClassOf(C3063 C4727).
+[2026-06-26 09:09:27.652] Found 113 possible bad axioms.
+[2026-06-26 09:09:27.653] Selected the bad axiom SubClassOf(C4980 C4981).
+[2026-06-26 09:09:27.656] Found 112 possible bad axioms.
+[2026-06-26 09:09:27.656] Selected the bad axiom SubClassOf(fma62864 fma62863).
+[2026-06-26 09:09:27.658] Found 111 possible bad axioms.
+[2026-06-26 09:09:27.658] Selected the bad axiom SubClassOf(vdot_core_000012 owl:Nothing).
+[2026-06-26 09:09:27.660] Found 110 possible bad axioms.
+[2026-06-26 09:09:27.660] Selected the bad axiom SubClassOf(C3063 C27233).
+[2026-06-26 09:09:27.662] Found 109 possible bad axioms.
+[2026-06-26 09:09:27.662] Selected the bad axiom SubClassOf(CHEBI:33582 CHEBI:33304).
+[2026-06-26 09:09:27.664] Found 108 possible bad axioms.
+[2026-06-26 09:09:27.664] Selected the bad axiom SubClassOf(C
+...[truncated]
+FAIL: attempt=7 seed=85266 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=7 success=0/100
+----- VDOT attempt=8 seed=99466 at 2026-06-26 09:09:32 -----
+--- stdout ---
+{"seed":99466,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":127,"A2":1822,"A3":685,"B1":193,"B2":1186}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=99466, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:32.983] Checking precondition...
+[2026-06-26 09:09:32.996] Starting the repair...
+[2026-06-26 09:09:33.004] Found 125 possible bad axioms.
+[2026-06-26 09:09:33.005] Selected the bad axiom SubClassOf(vdot_0000015 vdot_0000014).
+[2026-06-26 09:09:33.010] Found 124 possible bad axioms.
+[2026-06-26 09:09:33.011] Selected the bad axiom SubClassOf(fma62863 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:33.015] Found 123 possible bad axioms.
+[2026-06-26 09:09:33.015] Selected the bad axiom SubClassOf(vdot_core_000019 owl:Nothing).
+[2026-06-26 09:09:33.020] Found 122 possible bad axioms.
+[2026-06-26 09:09:33.021] Selected the bad axiom SubClassOf(C76245 C76244).
+[2026-06-26 09:09:33.024] Found 121 possible bad axioms.
+[2026-06-26 09:09:33.024] Selected the bad axiom SubClassOf(C14348 C14200).
+[2026-06-26 09:09:33.027] Found 120 possible bad axioms.
+[2026-06-26 09:09:33.027] Selected the bad axiom SubClassOf(C76248 C76246).
+[2026-06-26 09:09:33.029] Found 119 possible bad axioms.
+[2026-06-26 09:09:33.029] Selected the bad axiom SubClassOf(vdot_0000021 vdot_0000025).
+[2026-06-26 09:09:33.036] Found 118 possible bad axioms.
+[2026-06-26 09:09:33.036] Selected the bad axiom SubClassOf(vdot_0000025 vdot_0000022).
+[2026-06-26 09:09:33.039] Found 117 possible bad axioms.
+[2026-06-26 09:09:33.039] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma86474 http://purl.org/sig/ont/fma/fma86475).
+[2026-06-26 09:09:33.041] Found 116 possible bad axioms.
+[2026-06-26 09:09:33.042] Selected the bad axiom SubClassOf(C26726 C93210).
+[2026-06-26 09:09:33.044] Found 115 possible bad axioms.
+[2026-06-26 09:09:33.044] Selected the bad axiom SubClassOf(fma62863).
+[2026-06-26 09:09:33.052] Found 114 possible bad axioms.
+[2026-06-26 09:09:33.053] Selected the bad axiom SubClassOf(vdot_0000003 vdot_0000002).
+[2026-06-26 09:09:33.056] Found 113 possible bad axioms.
+[2026-06-26 09:09:33.056] Selected the bad axiom SubClassOf(C14200 NCBITaxon_10239).
+[2026-06-26 09:09:33.059] Found 112 possible bad axioms.
+[2026-06-26 09:09:33.059] Selected the bad axiom SubClassOf(C3439 C26726).
+[2026-06-26 09:09:33.062] Found 111 possible bad axioms.
+[2026-06-26 09:09:33.062] Selected the bad axiom SubClassOf(CHEBI:33304 CHEBI:33582).
+[2026-06-26 09:09:33.064] Found 110 possible bad axioms.
+[2026-06-26 09:09:33.064] Selected the bad axiom SubClassOf(vdot_core_000016 vdot_core_000019).
+[2026-06-26 09:09:33.066] Found 109 possible bad axioms.
+[2026-06-26 09:09:33.066] Selected the bad axiom SubClassOf(fma62863).
+[2026-06-26 09:09:33.068] Found 108 possible bad 
+...[truncated]
+FAIL: attempt=8 seed=99466 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=8 success=0/100
+----- VDOT attempt=9 seed=113666 at 2026-06-26 09:09:37 -----
+--- stdout ---
+{"seed":113666,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":57,"A2":1863,"A3":425,"B1":203,"B2":1164}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=113666, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:37.404] Checking precondition...
+[2026-06-26 09:09:37.417] Starting the repair...
+[2026-06-26 09:09:37.424] Found 125 possible bad axioms.
+[2026-06-26 09:09:37.425] Selected the bad axiom SubClassOf(fma72300).
+[2026-06-26 09:09:37.431] Found 124 possible bad axioms.
+[2026-06-26 09:09:37.431] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62854 http://purl.obolibrary.org/obo/FMA_62855).
+[2026-06-26 09:09:37.435] Found 123 possible bad axioms.
+[2026-06-26 09:09:37.436] Selected the bad axiom SubClassOf(C4980 vdot_0000016).
+[2026-06-26 09:09:37.440] Found 122 possible bad axioms.
+[2026-06-26 09:09:37.441] Selected the bad axiom SubClassOf(CHEBI:33582 CHEBI:33304).
+[2026-06-26 09:09:37.444] Found 121 possible bad axioms.
+[2026-06-26 09:09:37.444] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma0326142 http://purl.obolibrary.org/obo/FMA_63368).
+[2026-06-26 09:09:37.447] Found 120 possible bad axioms.
+[2026-06-26 09:09:37.447] Selected the bad axiom SubClassOf(vdot_0000024 vdot_0000022).
+[2026-06-26 09:09:37.449] Found 119 possible bad axioms.
+[2026-06-26 09:09:37.449] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:37.456] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 09:09:37.457] Checking precondition...
+[2026-06-26 09:09:37.463] Starting the repair...
+[2026-06-26 09:09:39.320] Found 1 possible bad axioms.
+[2026-06-26 09:09:39.320] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:39.321] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 09:09:39.322] Checking precondition...
+[2026-06-26 09:09:39.324] Starting the repair...
+[2026-06-26 09:09:39.343] Selected a reference ontology with 197 axioms.
+[2026-06-26 09:09:39.540] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:39.568] Selected the weaker axiom SubClassOf(owl:Thing vdot_core_000017).
+[2026-06-26 09:09:39.744] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000017).
+[2026-06-26 09:09:39.745] Selected the weaker axiom SubClassOf(vdot_0000034 vdot_core_000017).
+[2026-06-26 09:09:39.747] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 09:09:39.747] Checking precondition...
+[2026-06-26 09:09:39.748] Starting the repair...
+[2026-06-26 09:09:39.762] Selected a reference ontology with 199 axioms.
+[2026-06-26 09:09:39.935] Selected the bad axiom SubClassOf(owl:Thing vdot_core_000018).
+[2026-06-26 09:09:39.948] Selec
+...[truncated]
+FAIL: attempt=9 seed=113666 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=9 success=0/100
+----- VDOT attempt=10 seed=127866 at 2026-06-26 09:09:41 -----
+--- stdout ---
+{"seed":127866,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018","iic_values":{},"repair_runtimes_ms":{"A1":144,"A2":1800,"A3":1104,"B1":190,"B2":1041,"B3":1112,"B4":52,"B5":594,"B6":298,"B7":89,"B8":1428}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/VDOT.owl, seed=127866, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 09:09:41.533] Checking precondition...
+[2026-06-26 09:09:41.547] Starting the repair...
+[2026-06-26 09:09:41.553] Found 125 possible bad axioms.
+[2026-06-26 09:09:41.555] Selected the bad axiom SubClassOf(vdot_0000021 vdot_0000025).
+[2026-06-26 09:09:41.562] Found 124 possible bad axioms.
+[2026-06-26 09:09:41.562] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma86475 http://purl.org/sig/ont/fma/fma84789).
+[2026-06-26 09:09:41.566] Found 123 possible bad axioms.
+[2026-06-26 09:09:41.566] Selected the bad axiom SubClassOf(C14217 C14348).
+[2026-06-26 09:09:41.570] Found 122 possible bad axioms.
+[2026-06-26 09:09:41.571] Selected the bad axiom SubClassOf(vdot_core_000012 vdot_core_000018).
+[2026-06-26 09:09:41.573] Found 121 possible bad axioms.
+[2026-06-26 09:09:41.574] Selected the bad axiom SubClassOf(vdot_0000016 C4981).
+[2026-06-26 09:09:41.576] Found 120 possible bad axioms.
+[2026-06-26 09:09:41.576] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/FMA_62855 http://purl.obolibrary.org/obo/FMA_62854).
+[2026-06-26 09:09:41.579] Found 119 possible bad axioms.
+[2026-06-26 09:09:41.579] Selected the bad axiom SubClassOf(http://purl.org/sig/ont/fma/fma86711 http://purl.org/sig/ont/fma/fma84789).
+[2026-06-26 09:09:41.586] Found 118 possible bad axioms.
+[2026-06-26 09:09:41.586] Selected the bad axiom SubClassOf(C4981 C3063).
+[2026-06-26 09:09:41.589] Found 117 possible bad axioms.
+[2026-06-26 09:09:41.589] Selected the bad axiom SubClassOf(C4727 C27233).
+[2026-06-26 09:09:41.591] Found 116 possible bad axioms.
+[2026-06-26 09:09:41.591] Selected the bad axiom SubClassOf(vdot_0000024 vdot_0000022).
+[2026-06-26 09:09:41.593] Found 115 possible bad axioms.
+[2026-06-26 09:09:41.593] Selected the bad axiom SubClassOf(C4980 C3063).
+[2026-06-26 09:09:41.601] Found 114 possible bad axioms.
+[2026-06-26 09:09:41.601] Selected the bad axiom SubClassOf(C76249 C76245).
+[2026-06-26 09:09:41.605] Found 113 possible bad axioms.
+[2026-06-26 09:09:41.605] Selected the bad axiom SubClassOf(vdot_0000022 C76244).
+[2026-06-26 09:09:41.608] Found 112 possible bad axioms.
+[2026-06-26 09:09:41.608] Selected the bad axiom SubClassOf(vdot_0000016 C4980).
+[2026-06-26 09:09:41.611] Found 111 possible bad axioms.
+[2026-06-26 09:09:41.611] Selected the bad axiom SubClassOf(vdot_0000022 vdot_0000021).
+[2026-06-26 09:09:41.613] Found 110 possible bad axioms.
+[2026-06-26 09:09:41.614] Selected the bad axiom SubClassOf(C3063 C4981).
+[2026-06-26 09:09:41.615] Found 109 possible bad axioms.
+[2026-06-26 09:09:41.616] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=10 seed=127866 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+progress: ontology=VDOT attempt=10 success=0/100
+=== ABORTED VDOT after 10 consecutive failures at 2026-06-26 09:09:49 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for VDOT - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=66 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=2 seed=14266 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=3 seed=28466 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=4 seed=42666 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=5 seed=56866 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=6 seed=71066 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=7 seed=85266 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=8 seed=99466 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=9 seed=113666 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+  attempt=10 seed=127866 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ vdot_core_000018
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

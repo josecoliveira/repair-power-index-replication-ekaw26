@@ -1,0 +1,566 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-GVO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-GVO.csv
+
+=== Starting sequential trials for GVO at 2026-06-26 06:05:09 ===
+----- GVO attempt=1 seed=60 at 2026-06-26 06:05:09 -----
+--- stdout ---
+{"seed":60,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR","iic_values":{},"repair_runtimes_ms":{"A1":49,"A2":1315,"A3":258,"B1":204,"B2":1168}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=60, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:09.663] Checking precondition...
+[2026-06-26 06:05:09.677] Starting the repair...
+[2026-06-26 06:05:09.684] Found 111 possible bad axioms.
+[2026-06-26 06:05:09.686] Selected the bad axiom SubClassOf(SNV owl:Nothing).
+[2026-06-26 06:05:09.690] Found 110 possible bad axioms.
+[2026-06-26 06:05:09.690] Selected the bad axiom SubClassOf(DelME Del).
+[2026-06-26 06:05:09.694] Found 109 possible bad axioms.
+[2026-06-26 06:05:09.694] Selected the bad axiom SubClassOf(CNG CNV).
+[2026-06-26 06:05:09.698] Found 108 possible bad axioms.
+[2026-06-26 06:05:09.698] Selected the bad axiom SubClassOf(Inv TDup).
+[2026-06-26 06:05:09.702] Found 107 possible bad axioms.
+[2026-06-26 06:05:09.702] Selected the bad axiom SubClassOf(InsAlu InsLINE1).
+[2026-06-26 06:05:09.705] Found 106 possible bad axioms.
+[2026-06-26 06:05:09.705] Selected the bad axiom SubClassOf(TR STRV).
+[2026-06-26 06:05:09.708] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:09.708] Checking precondition...
+[2026-06-26 06:05:09.718] Starting the repair...
+[2026-06-26 06:05:11.022] Found 4 possible bad axioms.
+[2026-06-26 06:05:11.022] Selected the bad axiom SubClassOf(owl:Thing TR).
+[2026-06-26 06:05:11.024] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:05:11.025] Checking precondition...
+[2026-06-26 06:05:11.027] Starting the repair...
+[2026-06-26 06:05:11.036] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:11.251] Selected the bad axiom SubClassOf(TR STRV).
+[2026-06-26 06:05:11.281] Selected the weaker axiom SubClassOf(MNV STRV).
+[2026-06-26 06:05:11.283] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:05:11.283] Checking precondition...
+[2026-06-26 06:05:11.285] Starting the repair...
+[2026-06-26 06:05:11.291] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:11.476] Selected the bad axiom SubClassOf(owl:Thing TR).
+[2026-06-26 06:05:11.486] Selected the weaker axiom SubClassOf(TR).
+[2026-06-26 06:05:11.487] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 06:05:11.489] Checking precondition...
+[2026-06-26 06:05:11.490] Starting the repair...
+[2026-06-26 06:05:11.497] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:11.691] Selected the bad axiom SubClassOf(owl:Thing TR).
+[PowerIndexWeakerAxiomSelector] Scoring 65 candidate weakenings for ⊤ ⊑ TR
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repai
+...[truncated]
+FAIL: attempt=1 seed=60 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR
+progress: ontology=GVO attempt=1 success=0/100
+----- GVO attempt=2 seed=14260 at 2026-06-26 06:05:12 -----
+--- stdout ---
+{"seed":14260,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV","iic_values":{},"repair_runtimes_ms":{"A1":42,"A2":1331,"A3":401,"B1":206,"B2":1066}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=14260, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:13.092] Checking precondition...
+[2026-06-26 06:05:13.108] Starting the repair...
+[2026-06-26 06:05:13.115] Found 111 possible bad axioms.
+[2026-06-26 06:05:13.116] Selected the bad axiom SubClassOf(DupInv InvDup).
+[2026-06-26 06:05:13.120] Found 110 possible bad axioms.
+[2026-06-26 06:05:13.121] Selected the bad axiom SubClassOf(InsIDel DupInvDel).
+[2026-06-26 06:05:13.126] Found 109 possible bad axioms.
+[2026-06-26 06:05:13.126] Selected the bad axiom SubClassOf(STRV CNV).
+[2026-06-26 06:05:13.130] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:13.130] Checking precondition...
+[2026-06-26 06:05:13.137] Starting the repair...
+[2026-06-26 06:05:14.460] Found 4 possible bad axioms.
+[2026-06-26 06:05:14.460] Selected the bad axiom SubClassOf(STRV CNV).
+[2026-06-26 06:05:14.462] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:05:14.463] Checking precondition...
+[2026-06-26 06:05:14.465] Starting the repair...
+[2026-06-26 06:05:14.475] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:14.674] Selected the bad axiom SubClassOf(TR STRV).
+[2026-06-26 06:05:14.704] Selected the weaker axiom SubClassOf(TR DupInv).
+[2026-06-26 06:05:14.860] Selected the bad axiom SubClassOf(owl:Thing TR).
+[2026-06-26 06:05:14.862] Selected the weaker axiom SubClassOf(TR TR).
+[2026-06-26 06:05:14.863] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:05:14.864] Checking precondition...
+[2026-06-26 06:05:14.865] Starting the repair...
+[2026-06-26 06:05:14.880] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:15.059] Selected the bad axiom SubClassOf(CNV owl:Nothing).
+[2026-06-26 06:05:15.069] Selected the weaker axiom SubClassOf(CNV InterCtx).
+[2026-06-26 06:05:15.070] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 06:05:15.071] Checking precondition...
+[2026-06-26 06:05:15.073] Starting the repair...
+[2026-06-26 06:05:15.079] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:15.266] Selected the bad axiom SubClassOf(TR STRV).
+[PowerIndexWeakerAxiomSelector] Scoring 34 candidate weakenings for TR ⊑ STRV
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsistencyValueApproximate.java:282)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.sampleTargetsInParallel(ShapleyInconsisten
+...[truncated]
+FAIL: attempt=2 seed=14260 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+progress: ontology=GVO attempt=2 success=0/100
+----- GVO attempt=3 seed=28460 at 2026-06-26 06:05:16 -----
+--- stdout ---
+{"seed":28460,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CNV ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":125,"A2":1273,"A3":279,"B1":213,"B2":1074}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=28460, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:16.555] Checking precondition...
+[2026-06-26 06:05:16.569] Starting the repair...
+[2026-06-26 06:05:16.575] Found 111 possible bad axioms.
+[2026-06-26 06:05:16.577] Selected the bad axiom SubClassOf(DDup Cpx).
+[2026-06-26 06:05:16.582] Found 110 possible bad axioms.
+[2026-06-26 06:05:16.582] Selected the bad axiom SubClassOf(DelInv Cpx).
+[2026-06-26 06:05:16.587] Found 109 possible bad axioms.
+[2026-06-26 06:05:16.587] Selected the bad axiom SubClassOf(CS MNV).
+[2026-06-26 06:05:16.591] Found 108 possible bad axioms.
+[2026-06-26 06:05:16.591] Selected the bad axiom SubClassOf(Ctx IntraCtx).
+[2026-06-26 06:05:16.594] Found 107 possible bad axioms.
+[2026-06-26 06:05:16.594] Selected the bad axiom SubClassOf(SA Variation).
+[2026-06-26 06:05:16.597] Found 106 possible bad axioms.
+[2026-06-26 06:05:16.597] Selected the bad axiom SubClassOf(DelME DelAlu).
+[2026-06-26 06:05:16.600] Found 105 possible bad axioms.
+[2026-06-26 06:05:16.600] Selected the bad axiom SubClassOf(Ins Dup).
+[2026-06-26 06:05:16.603] Found 104 possible bad axioms.
+[2026-06-26 06:05:16.603] Selected the bad axiom SubClassOf(InvDup Cpx).
+[2026-06-26 06:05:16.609] Found 103 possible bad axioms.
+[2026-06-26 06:05:16.609] Selected the bad axiom SubClassOf(InsIDel DupInvDel).
+[2026-06-26 06:05:16.611] Found 102 possible bad axioms.
+[2026-06-26 06:05:16.611] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/FileFormat http://purl.org/dc/terms/MediaType).
+[2026-06-26 06:05:16.613] Found 101 possible bad axioms.
+[2026-06-26 06:05:16.614] Selected the bad axiom SubClassOf(TDup Indel).
+[2026-06-26 06:05:16.620] Found 100 possible bad axioms.
+[2026-06-26 06:05:16.620] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/MediaType http://purl.org/dc/terms/FileFormat).
+[2026-06-26 06:05:16.623] Found 99 possible bad axioms.
+[2026-06-26 06:05:16.623] Selected the bad axiom SubClassOf(InsNS InsME).
+[2026-06-26 06:05:16.626] Found 98 possible bad axioms.
+[2026-06-26 06:05:16.627] Selected the bad axiom SubClassOf(CNV Variation).
+[2026-06-26 06:05:16.629] Found 97 possible bad axioms.
+[2026-06-26 06:05:16.629] Selected the bad axiom SubClassOf(InsUnknown InsME).
+[2026-06-26 06:05:16.631] Found 96 possible bad axioms.
+[2026-06-26 06:05:16.631] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/MediaType http://purl.org/dc/terms/MediaTypeOrExtent).
+[2026-06-26 06:05:16.633] Found 95 possible bad axioms.
+[2026-06-26 06:05:16.634] Selected the bad axiom SubClassOf(MCNV Variation).
+[2026-06-26 06:05:16.636] Found 94 possible bad axioms.
+[2026-06-26 06:05:16.636] Select
+...[truncated]
+FAIL: attempt=3 seed=28460 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CNV ⊑ ⊥
+progress: ontology=GVO attempt=3 success=0/100
+----- GVO attempt=4 seed=42660 at 2026-06-26 06:05:19 -----
+--- stdout ---
+{"seed":42660,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV","iic_values":{},"repair_runtimes_ms":{"A1":50,"A2":1322,"A3":261,"B1":202,"B2":1228}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=42660, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:19.931] Checking precondition...
+[2026-06-26 06:05:19.945] Starting the repair...
+[2026-06-26 06:05:19.952] Found 111 possible bad axioms.
+[2026-06-26 06:05:19.953] Selected the bad axiom SubClassOf(InsIDel DelInvDel).
+[2026-06-26 06:05:19.957] Found 110 possible bad axioms.
+[2026-06-26 06:05:19.958] Selected the bad axiom SubClassOf(DelInvDel Cpx).
+[2026-06-26 06:05:19.963] Found 109 possible bad axioms.
+[2026-06-26 06:05:19.963] Selected the bad axiom SubClassOf(InsLINE1 InsME).
+[2026-06-26 06:05:19.967] Found 108 possible bad axioms.
+[2026-06-26 06:05:19.967] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/PhysicalMedium http://purl.org/dc/terms/FileFormat).
+[2026-06-26 06:05:19.970] Found 107 possible bad axioms.
+[2026-06-26 06:05:19.970] Selected the bad axiom SubClassOf(InsNS InsME).
+[2026-06-26 06:05:19.973] Found 106 possible bad axioms.
+[2026-06-26 06:05:19.974] Selected the bad axiom SubClassOf(TR STRV).
+[2026-06-26 06:05:19.976] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:19.977] Checking precondition...
+[2026-06-26 06:05:19.987] Starting the repair...
+[2026-06-26 06:05:21.299] Found 4 possible bad axioms.
+[2026-06-26 06:05:21.299] Selected the bad axiom SubClassOf(CNV owl:Nothing).
+[2026-06-26 06:05:21.299] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:05:21.301] Checking precondition...
+[2026-06-26 06:05:21.304] Starting the repair...
+[2026-06-26 06:05:21.314] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:21.531] Selected the bad axiom SubClassOf(owl:Thing TR).
+[2026-06-26 06:05:21.560] Selected the weaker axiom SubClassOf(IntraCtx TR).
+[2026-06-26 06:05:21.561] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:05:21.562] Checking precondition...
+[2026-06-26 06:05:21.563] Starting the repair...
+[2026-06-26 06:05:21.570] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:21.747] Selected the bad axiom SubClassOf(STRV CNV).
+[2026-06-26 06:05:21.763] Selected the weaker axiom SubClassOf(CNV).
+[2026-06-26 06:05:21.764] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 06:05:21.765] Checking precondition...
+[2026-06-26 06:05:21.767] Starting the repair...
+[2026-06-26 06:05:21.773] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:21.960] Selected the bad axiom SubClassOf(STRV CNV).
+[PowerIndexWeakerAxiomSelector] Scoring 70 candidate weakenings for STRV ⊑ CNV
+java.lang.Run
+...[truncated]
+FAIL: attempt=4 seed=42660 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV
+progress: ontology=GVO attempt=4 success=0/100
+----- GVO attempt=5 seed=56860 at 2026-06-26 06:05:23 -----
+--- stdout ---
+{"seed":56860,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV","iic_values":{},"repair_runtimes_ms":{"A1":128,"A2":1246,"A3":256,"B1":208,"B2":1025}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=56860, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:23.411] Checking precondition...
+[2026-06-26 06:05:23.427] Starting the repair...
+[2026-06-26 06:05:23.435] Found 111 possible bad axioms.
+[2026-06-26 06:05:23.437] Selected the bad axiom SubClassOf(InsNS Ins).
+[2026-06-26 06:05:23.441] Found 110 possible bad axioms.
+[2026-06-26 06:05:23.441] Selected the bad axiom SubClassOf(InsUnknown Ins).
+[2026-06-26 06:05:23.445] Found 109 possible bad axioms.
+[2026-06-26 06:05:23.446] Selected the bad axiom SubClassOf(SNV Variation).
+[2026-06-26 06:05:23.449] Found 108 possible bad axioms.
+[2026-06-26 06:05:23.450] Selected the bad axiom SubClassOf(InterCtx Ctx).
+[2026-06-26 06:05:23.453] Found 107 possible bad axioms.
+[2026-06-26 06:05:23.453] Selected the bad axiom SubClassOf(InsIDel DelInvDel).
+[2026-06-26 06:05:23.456] Found 106 possible bad axioms.
+[2026-06-26 06:05:23.456] Selected the bad axiom SubClassOf(Inv TDup).
+[2026-06-26 06:05:23.458] Found 105 possible bad axioms.
+[2026-06-26 06:05:23.459] Selected the bad axiom SubClassOf(CS MNV).
+[2026-06-26 06:05:23.461] Found 104 possible bad axioms.
+[2026-06-26 06:05:23.462] Selected the bad axiom SubClassOf(Ins InsUnknown).
+[2026-06-26 06:05:23.467] Found 103 possible bad axioms.
+[2026-06-26 06:05:23.468] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/FileFormat http://purl.org/dc/terms/PhysicalMedium).
+[2026-06-26 06:05:23.470] Found 102 possible bad axioms.
+[2026-06-26 06:05:23.470] Selected the bad axiom SubClassOf(Dup Variation).
+[2026-06-26 06:05:23.472] Found 101 possible bad axioms.
+[2026-06-26 06:05:23.472] Selected the bad axiom SubClassOf(DupInvDel Cpx).
+[2026-06-26 06:05:23.479] Found 100 possible bad axioms.
+[2026-06-26 06:05:23.479] Selected the bad axiom SubClassOf(Ctx IntraCtx).
+[2026-06-26 06:05:23.482] Found 99 possible bad axioms.
+[2026-06-26 06:05:23.483] Selected the bad axiom SubClassOf(DelSVA owl:Nothing).
+[2026-06-26 06:05:23.486] Found 98 possible bad axioms.
+[2026-06-26 06:05:23.486] Selected the bad axiom SubClassOf(DelInv Cpx).
+[2026-06-26 06:05:23.488] Found 97 possible bad axioms.
+[2026-06-26 06:05:23.488] Selected the bad axiom SubClassOf(Ins Dup).
+[2026-06-26 06:05:23.492] Found 96 possible bad axioms.
+[2026-06-26 06:05:23.492] Selected the bad axiom SubClassOf(DDupIdel Cpx).
+[2026-06-26 06:05:23.494] Found 95 possible bad axioms.
+[2026-06-26 06:05:23.495] Selected the bad axiom SubClassOf(SNV owl:Nothing).
+[2026-06-26 06:05:23.496] Found 94 possible bad axioms.
+[2026-06-26 06:05:23.497] Selected the bad axiom SubClassOf(DelInvDup InsIDel).
+[2026-06-26 06:05:23.499] Found 93 possible bad axioms.
+[20
+...[truncated]
+FAIL: attempt=5 seed=56860 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+progress: ontology=GVO attempt=5 success=0/100
+----- GVO attempt=6 seed=71060 at 2026-06-26 06:05:26 -----
+--- stdout ---
+{"seed":71060,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV","iic_values":{},"repair_runtimes_ms":{"A1":86,"A2":1311,"A3":484,"B1":209,"B2":757}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=71060, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:26.683] Checking precondition...
+[2026-06-26 06:05:26.698] Starting the repair...
+[2026-06-26 06:05:26.704] Found 111 possible bad axioms.
+[2026-06-26 06:05:26.706] Selected the bad axiom SubClassOf(NSA Variation).
+[2026-06-26 06:05:26.711] Found 110 possible bad axioms.
+[2026-06-26 06:05:26.711] Selected the bad axiom SubClassOf(DupInv InvDup).
+[2026-06-26 06:05:26.715] Found 109 possible bad axioms.
+[2026-06-26 06:05:26.715] Selected the bad axiom SubClassOf(Inv TDup).
+[2026-06-26 06:05:26.719] Found 108 possible bad axioms.
+[2026-06-26 06:05:26.719] Selected the bad axiom SubClassOf(CNV TDup).
+[2026-06-26 06:05:26.722] Found 107 possible bad axioms.
+[2026-06-26 06:05:26.722] Selected the bad axiom SubClassOf(InsAlu InsME).
+[2026-06-26 06:05:26.725] Found 106 possible bad axioms.
+[2026-06-26 06:05:26.725] Selected the bad axiom SubClassOf(DelLINE1 DelME).
+[2026-06-26 06:05:26.728] Found 105 possible bad axioms.
+[2026-06-26 06:05:26.728] Selected the bad axiom SubClassOf(DelHERV DelME).
+[2026-06-26 06:05:26.731] Found 104 possible bad axioms.
+[2026-06-26 06:05:26.731] Selected the bad axiom SubClassOf(DupInv owl:Nothing).
+[2026-06-26 06:05:26.738] Found 103 possible bad axioms.
+[2026-06-26 06:05:26.739] Selected the bad axiom SubClassOf(IntraCtx Ctx).
+[2026-06-26 06:05:26.741] Found 102 possible bad axioms.
+[2026-06-26 06:05:26.741] Selected the bad axiom SubClassOf(SNV owl:Nothing).
+[2026-06-26 06:05:26.743] Found 101 possible bad axioms.
+[2026-06-26 06:05:26.743] Selected the bad axiom SubClassOf(IntraBnd Bnd).
+[2026-06-26 06:05:26.750] Found 100 possible bad axioms.
+[2026-06-26 06:05:26.751] Selected the bad axiom SubClassOf(DelInvDup InsIDel).
+[2026-06-26 06:05:26.754] Found 99 possible bad axioms.
+[2026-06-26 06:05:26.754] Selected the bad axiom ClassAssertion(http://purl.org/dc/terms/AgentClass http://purl.org/dc/terms/Agent).
+[2026-06-26 06:05:26.755] Found 98 possible bad axioms.
+[2026-06-26 06:05:26.756] Selected the bad axiom SubClassOf(DelInvDel Cpx).
+[2026-06-26 06:05:26.759] Found 97 possible bad axioms.
+[2026-06-26 06:05:26.759] Selected the bad axiom SubClassOf(InterBnd Bnd).
+[2026-06-26 06:05:26.762] Found 96 possible bad axioms.
+[2026-06-26 06:05:26.762] Selected the bad axiom SubClassOf(STRV CNV).
+[2026-06-26 06:05:26.764] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:26.765] Checking precondition...
+[2026-06-26 06:05:26.770] Starting the repair...
+[2026-06-26 06:05:28.076] Found 4 possible bad axioms.
+[2026-06-26 06:05:28.076] Selected the bad axiom SubClassOf(
+...[truncated]
+FAIL: attempt=6 seed=71060 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+progress: ontology=GVO attempt=6 success=0/100
+----- GVO attempt=7 seed=85260 at 2026-06-26 06:05:29 -----
+--- stdout ---
+{"seed":85260,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV","iic_values":{},"repair_runtimes_ms":{"A1":50,"A2":1310,"A3":249,"B1":202,"B2":1072}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=85260, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:29.951] Checking precondition...
+[2026-06-26 06:05:29.966] Starting the repair...
+[2026-06-26 06:05:29.973] Found 111 possible bad axioms.
+[2026-06-26 06:05:29.975] Selected the bad axiom SubClassOf(Ctx Variation).
+[2026-06-26 06:05:29.979] Found 110 possible bad axioms.
+[2026-06-26 06:05:29.979] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/FileFormat http://purl.org/dc/terms/MediaType).
+[2026-06-26 06:05:29.982] Found 109 possible bad axioms.
+[2026-06-26 06:05:29.983] Selected the bad axiom SubClassOf(InsIDel DupInvDel).
+[2026-06-26 06:05:29.987] Found 108 possible bad axioms.
+[2026-06-26 06:05:29.987] Selected the bad axiom SubClassOf(IntraCtx Ctx).
+[2026-06-26 06:05:29.992] Found 107 possible bad axioms.
+[2026-06-26 06:05:29.992] Selected the bad axiom SubClassOf(STRV CNV).
+[2026-06-26 06:05:29.996] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:29.997] Checking precondition...
+[2026-06-26 06:05:30.002] Starting the repair...
+[2026-06-26 06:05:31.305] Found 4 possible bad axioms.
+[2026-06-26 06:05:31.306] Selected the bad axiom SubClassOf(TR STRV).
+[2026-06-26 06:05:31.307] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:05:31.309] Checking precondition...
+[2026-06-26 06:05:31.311] Starting the repair...
+[2026-06-26 06:05:31.321] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:31.522] Selected the bad axiom SubClassOf(owl:Thing TR).
+[2026-06-26 06:05:31.555] Selected the weaker axiom SubClassOf(Bnd TR).
+[2026-06-26 06:05:31.557] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:05:31.557] Checking precondition...
+[2026-06-26 06:05:31.559] Starting the repair...
+[2026-06-26 06:05:31.564] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:31.748] Selected the bad axiom SubClassOf(owl:Thing TR).
+[2026-06-26 06:05:31.758] Selected the weaker axiom SubClassOf(TR TR).
+[2026-06-26 06:05:31.759] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 06:05:31.761] Checking precondition...
+[2026-06-26 06:05:31.763] Starting the repair...
+[2026-06-26 06:05:31.769] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:31.949] Selected the bad axiom SubClassOf(TR STRV).
+[PowerIndexWeakerAxiomSelector] Scoring 105 candidate weakenings for TR ⊑ STRV
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAl
+...[truncated]
+FAIL: attempt=7 seed=85260 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+progress: ontology=GVO attempt=7 success=0/100
+----- GVO attempt=8 seed=99460 at 2026-06-26 06:05:32 -----
+--- stdout ---
+{"seed":99460,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR","iic_values":{},"repair_runtimes_ms":{"A1":133,"A2":1247,"A3":439,"B1":207,"B2":1014}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=99460, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:33.260] Checking precondition...
+[2026-06-26 06:05:33.274] Starting the repair...
+[2026-06-26 06:05:33.281] Found 111 possible bad axioms.
+[2026-06-26 06:05:33.282] Selected the bad axiom SubClassOf(DelSVA owl:Nothing).
+[2026-06-26 06:05:33.287] Found 110 possible bad axioms.
+[2026-06-26 06:05:33.287] Selected the bad axiom SubClassOf(TR Variation).
+[2026-06-26 06:05:33.290] Found 109 possible bad axioms.
+[2026-06-26 06:05:33.291] Selected the bad axiom SubClassOf(InvDel Cpx).
+[2026-06-26 06:05:33.294] Found 108 possible bad axioms.
+[2026-06-26 06:05:33.294] Selected the bad axiom SubClassOf(CNV Variation).
+[2026-06-26 06:05:33.297] Found 107 possible bad axioms.
+[2026-06-26 06:05:33.298] Selected the bad axiom SubClassOf(InsNS InsUnknown).
+[2026-06-26 06:05:33.301] Found 106 possible bad axioms.
+[2026-06-26 06:05:33.301] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/PhysicalMedium http://purl.org/dc/terms/FileFormat).
+[2026-06-26 06:05:33.303] Found 105 possible bad axioms.
+[2026-06-26 06:05:33.304] Selected the bad axiom SubClassOf(DDupIdel DupInvDup).
+[2026-06-26 06:05:33.306] Found 104 possible bad axioms.
+[2026-06-26 06:05:33.306] Selected the bad axiom SubClassOf(InsAlu InsME).
+[2026-06-26 06:05:33.313] Found 103 possible bad axioms.
+[2026-06-26 06:05:33.313] Selected the bad axiom SubClassOf(Cpx Variation).
+[2026-06-26 06:05:33.315] Found 102 possible bad axioms.
+[2026-06-26 06:05:33.315] Selected the bad axiom SubClassOf(http://purl.org/dc/terms/MediaType http://purl.org/dc/terms/SizeOrDuration).
+[2026-06-26 06:05:33.317] Found 101 possible bad axioms.
+[2026-06-26 06:05:33.317] Selected the bad axiom SubClassOf(DDupIdel Cpx).
+[2026-06-26 06:05:33.324] Found 100 possible bad axioms.
+[2026-06-26 06:05:33.324] Selected the bad axiom SubClassOf(Ins InsME).
+[2026-06-26 06:05:33.327] Found 99 possible bad axioms.
+[2026-06-26 06:05:33.327] Selected the bad axiom SubClassOf(SNV Variation).
+[2026-06-26 06:05:33.330] Found 98 possible bad axioms.
+[2026-06-26 06:05:33.330] Selected the bad axiom SubClassOf(DelSVA DelME).
+[2026-06-26 06:05:33.332] Found 97 possible bad axioms.
+[2026-06-26 06:05:33.333] Selected the bad axiom SubClassOf(DupInvDup Cpx).
+[2026-06-26 06:05:33.338] Found 96 possible bad axioms.
+[2026-06-26 06:05:33.338] Selected the bad axiom SubClassOf(DelInvDel Cpx).
+[2026-06-26 06:05:33.340] Found 95 possible bad axioms.
+[2026-06-26 06:05:33.340] Selected the bad axiom SubClassOf(DelInvDup Cpx).
+[2026-06-26 06:05:33.342] Found 94 possible bad axioms.
+[2026-06-26 06:05:33.342] Selected the bad axiom SubClassOf(D
+...[truncated]
+FAIL: attempt=8 seed=99460 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR
+progress: ontology=GVO attempt=8 success=0/100
+----- GVO attempt=9 seed=113660 at 2026-06-26 06:05:36 -----
+--- stdout ---
+{"seed":113660,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV","iic_values":{},"repair_runtimes_ms":{"A1":31,"A2":1362,"A3":270,"B1":207,"B2":1063}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=113660, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:36.707] Checking precondition...
+[2026-06-26 06:05:36.721] Starting the repair...
+[2026-06-26 06:05:36.728] Found 111 possible bad axioms.
+[2026-06-26 06:05:36.730] Selected the bad axiom SubClassOf(TR STRV).
+[2026-06-26 06:05:36.734] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:36.734] Checking precondition...
+[2026-06-26 06:05:36.741] Starting the repair...
+[2026-06-26 06:05:38.094] Found 4 possible bad axioms.
+[2026-06-26 06:05:38.094] Selected the bad axiom SubClassOf(STRV CNV).
+[2026-06-26 06:05:38.096] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:05:38.098] Checking precondition...
+[2026-06-26 06:05:38.101] Starting the repair...
+[2026-06-26 06:05:38.113] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:38.331] Selected the bad axiom SubClassOf(STRV CNV).
+[2026-06-26 06:05:38.365] Selected the weaker axiom SubClassOf(STRV TDup).
+[2026-06-26 06:05:38.367] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:05:38.368] Checking precondition...
+[2026-06-26 06:05:38.369] Starting the repair...
+[2026-06-26 06:05:38.376] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:38.550] Selected the bad axiom SubClassOf(CNV owl:Nothing).
+[2026-06-26 06:05:38.573] Selected the weaker axiom SubClassOf(NSA owl:Nothing).
+[2026-06-26 06:05:38.574] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 06:05:38.576] Checking precondition...
+[2026-06-26 06:05:38.577] Starting the repair...
+[2026-06-26 06:05:38.583] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:38.768] Selected the bad axiom SubClassOf(STRV CNV).
+[PowerIndexWeakerAxiomSelector] Scoring 63 candidate weakenings for STRV ⊑ CNV
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsistencyValueApproximate.java:282)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.sampleTargetsInParallel(ShapleyInconsistencyValueApproximate.java:236)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.computeScoresAdaptive(ShapleyInconsistencyValueApproximate.java:139)
+	at www.ontologyutils.repair.strategy.weaker.PowerIndexWeakerAxiomSelector.selectBest(PowerIndexWeakerAxiomSelector.java:46)
+	at www.ontologyutils.repair.OntologyRepairWeakening.repair(OntologyRepairWeakening.java:193)
+	at www.ontology
+...[truncated]
+FAIL: attempt=9 seed=113660 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV
+progress: ontology=GVO attempt=9 success=0/100
+----- GVO attempt=10 seed=127860 at 2026-06-26 06:05:39 -----
+--- stdout ---
+{"seed":127860,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV","iic_values":{},"repair_runtimes_ms":{"A1":64,"A2":1285,"A3":246,"B1":444,"B2":1292}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/GVO.owl, seed=127860, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:40.055] Checking precondition...
+[2026-06-26 06:05:40.071] Starting the repair...
+[2026-06-26 06:05:40.077] Found 111 possible bad axioms.
+[2026-06-26 06:05:40.079] Selected the bad axiom SubClassOf(Ctx IntraCtx).
+[2026-06-26 06:05:40.083] Found 110 possible bad axioms.
+[2026-06-26 06:05:40.083] Selected the bad axiom SubClassOf(DelInvDup Cpx).
+[2026-06-26 06:05:40.087] Found 109 possible bad axioms.
+[2026-06-26 06:05:40.087] Selected the bad axiom SubClassOf(InsUnknown InsME).
+[2026-06-26 06:05:40.092] Found 108 possible bad axioms.
+[2026-06-26 06:05:40.092] Selected the bad axiom SubClassOf(DelSVA owl:Nothing).
+[2026-06-26 06:05:40.095] Found 107 possible bad axioms.
+[2026-06-26 06:05:40.095] Selected the bad axiom SubClassOf(DelME owl:Nothing).
+[2026-06-26 06:05:40.098] Found 106 possible bad axioms.
+[2026-06-26 06:05:40.098] Selected the bad axiom ClassAssertion(http://purl.org/dc/terms/AgentClass http://purl.org/dc/terms/Agent).
+[2026-06-26 06:05:40.100] Found 105 possible bad axioms.
+[2026-06-26 06:05:40.100] Selected the bad axiom SubClassOf(DDup DupInv).
+[2026-06-26 06:05:40.103] Found 104 possible bad axioms.
+[2026-06-26 06:05:40.103] Selected the bad axiom SubClassOf(InsME InsUnknown).
+[2026-06-26 06:05:40.109] Found 103 possible bad axioms.
+[2026-06-26 06:05:40.109] Selected the bad axiom SubClassOf(IntraCtx Ctx).
+[2026-06-26 06:05:40.112] Found 102 possible bad axioms.
+[2026-06-26 06:05:40.112] Selected the bad axiom SubClassOf(owl:Thing TR).
+[2026-06-26 06:05:40.114] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:40.115] Checking precondition...
+[2026-06-26 06:05:40.124] Starting the repair...
+[2026-06-26 06:05:41.399] Found 4 possible bad axioms.
+[2026-06-26 06:05:41.400] Selected the bad axiom SubClassOf(CNV owl:Nothing).
+[2026-06-26 06:05:41.400] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:05:41.401] Checking precondition...
+[2026-06-26 06:05:41.403] Starting the repair...
+[2026-06-26 06:05:41.414] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:41.619] Selected the bad axiom SubClassOf(TR STRV).
+[2026-06-26 06:05:41.644] Selected the weaker axiom SubClassOf(TR Del).
+[2026-06-26 06:05:41.646] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:05:41.647] Checking precondition...
+[2026-06-26 06:05:41.649] Starting the repair...
+[2026-06-26 06:05:41.656] Selected a reference ontology with 171 axioms.
+[2026-06-26 06:05:41.842] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=10 seed=127860 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV
+progress: ontology=GVO attempt=10 success=0/100
+=== ABORTED GVO after 10 consecutive failures at 2026-06-26 06:05:43 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for GVO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=60 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR
+  attempt=2 seed=14260 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+  attempt=3 seed=28460 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: CNV ⊑ ⊥
+  attempt=4 seed=42660 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV
+  attempt=5 seed=56860 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+  attempt=6 seed=71060 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+  attempt=7 seed=85260 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: TR ⊑ STRV
+  attempt=8 seed=99460 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ TR
+  attempt=9 seed=113660 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV
+  attempt=10 seed=127860 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: STRV ⊑ CNV
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

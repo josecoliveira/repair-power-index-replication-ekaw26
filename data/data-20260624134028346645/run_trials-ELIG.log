@@ -1,0 +1,478 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ELIG.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ELIG.csv
+
+=== Starting sequential trials for ELIG at 2026-06-25 03:27:49 ===
+----- ELIG attempt=1 seed=35 at 2026-06-25 03:27:49 -----
+--- stdout ---
+{"seed":35,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":103,"A2":149,"A3":469,"B1":161,"B2":1363}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=35, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:27:50.040] Checking precondition...
+[2026-06-25 03:27:50.054] Starting the repair...
+[2026-06-25 03:27:50.062] Found 63 possible bad axioms.
+[2026-06-25 03:27:50.064] Selected the bad axiom SubClassOf(OWLClass_00000012866630259579 OWLClass_00000012704859288544).
+[2026-06-25 03:27:50.069] Found 62 possible bad axioms.
+[2026-06-25 03:27:50.069] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 OWLClass_00000016471779736015).
+[2026-06-25 03:27:50.075] Found 61 possible bad axioms.
+[2026-06-25 03:27:50.075] Selected the bad axiom SubClassOf(OWLClass_00000012653274523132 DiseaseCharacteristic).
+[2026-06-25 03:27:50.079] Found 60 possible bad axioms.
+[2026-06-25 03:27:50.080] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012672209560157).
+[2026-06-25 03:27:50.082] Found 59 possible bad axioms.
+[2026-06-25 03:27:50.082] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012688218520629).
+[2026-06-25 03:27:50.085] Found 58 possible bad axioms.
+[2026-06-25 03:27:50.085] Selected the bad axiom SubClassOf(OWLClass_00000012688218520629 OWLClass_00000012735735439791).
+[2026-06-25 03:27:50.088] Found 57 possible bad axioms.
+[2026-06-25 03:27:50.088] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016426490066310 owl:Thing) OWLClass_00000016471779736015).
+[2026-06-25 03:27:50.091] Found 56 possible bad axioms.
+[2026-06-25 03:27:50.092] Selected the bad axiom SubClassOf(OWLClass_00000012814578026312 OWLClass_00000012646351044205).
+[2026-06-25 03:27:50.094] Found 55 possible bad axioms.
+[2026-06-25 03:27:50.094] Selected the bad axiom SubClassOf(OWLClass_00000012834024485975 OWLClass_00000012646351044205).
+[2026-06-25 03:27:50.097] Found 54 possible bad axioms.
+[2026-06-25 03:27:50.097] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(OWLObjectProperty_00000016265531237795 OWLClass_00000012646351044205)).
+[2026-06-25 03:27:50.099] Found 53 possible bad axioms.
+[2026-06-25 03:27:50.101] Selected the bad axiom SubClassOf(OWLClass_00000012769242641062 PatientCharacteristic).
+[2026-06-25 03:27:50.107] Found 52 possible bad axioms.
+[2026-06-25 03:27:50.108] Selected the bad axiom SubClassOf(OWLClass_00000012646351044205 OWLClass_00000012735735439791).
+[2026-06-25 03:27:50.114] Found 51 possible bad axioms.
+[2026-06-25 03:27:50.114] Selected the bad axiom SubClassOf(OWLClass_00000012744023866919 PatientCharacteristic).
+[2026-06-25 03:27:50.116] Found 50 possible bad axioms.
+[2026-06-25 03:27:50.116] Selected the bad axiom SubClassOf(OWLClass_0000
+...[truncated]
+FAIL: attempt=1 seed=35 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=1 success=0/100
+----- ELIG attempt=2 seed=14235 at 2026-06-25 03:27:52 -----
+--- stdout ---
+{"seed":14235,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":134,"A2":127,"A3":288,"B1":158,"B2":926}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=14235, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:27:52.700] Checking precondition...
+[2026-06-25 03:27:52.714] Starting the repair...
+[2026-06-25 03:27:52.720] Found 63 possible bad axioms.
+[2026-06-25 03:27:52.722] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 DiseaseCharacteristic).
+[2026-06-25 03:27:52.727] Found 62 possible bad axioms.
+[2026-06-25 03:27:52.727] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 DiseaseCharacteristic).
+[2026-06-25 03:27:52.733] Found 61 possible bad axioms.
+[2026-06-25 03:27:52.733] Selected the bad axiom ClassAssertion(OWLClass_00000012680746500680 OWLNamedIndividual_00000016686111880926).
+[2026-06-25 03:27:52.734] Found 60 possible bad axioms.
+[2026-06-25 03:27:52.734] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012866630259579).
+[2026-06-25 03:27:52.738] Found 59 possible bad axioms.
+[2026-06-25 03:27:52.738] Selected the bad axiom SubClassOf(OWLClass_00000012826245584593 OWLClass_00000012814578026312).
+[2026-06-25 03:27:52.741] Found 58 possible bad axioms.
+[2026-06-25 03:27:52.742] Selected the bad axiom SubClassOf(OWLClass_00000012794343328094 PatientCharacteristic).
+[2026-06-25 03:27:52.745] Found 57 possible bad axioms.
+[2026-06-25 03:27:52.745] Selected the bad axiom SubClassOf(OWLClass_00000012875009033223 OWLClass_00000012704859288544).
+[2026-06-25 03:27:52.747] Found 56 possible bad axioms.
+[2026-06-25 03:27:52.747] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 owl:Nothing).
+[2026-06-25 03:27:52.751] Found 55 possible bad axioms.
+[2026-06-25 03:27:52.751] Selected the bad axiom SubClassOf(OWLClass_00000012779214634901 PatientCharacteristic).
+[2026-06-25 03:27:52.753] Found 54 possible bad axioms.
+[2026-06-25 03:27:52.753] Selected the bad axiom SubClassOf(OWLClass_00000016471779736015 OWLClass_00000012615273587629).
+[2026-06-25 03:27:52.755] Found 53 possible bad axioms.
+[2026-06-25 03:27:52.755] Selected the bad axiom SubClassOf(OWLClass_00000012826245584593 OWLClass_00000012646351044205).
+[2026-06-25 03:27:52.758] Found 52 possible bad axioms.
+[2026-06-25 03:27:52.758] Selected the bad axiom SubClassOf(OWLClass_00000012814578026312 OWLClass_00000012646351044205).
+[2026-06-25 03:27:52.769] Found 51 possible bad axioms.
+[2026-06-25 03:27:52.769] Selected the bad axiom SubClassOf(OWLClass_00000012744023866919 PatientCharacteristic).
+[2026-06-25 03:27:52.772] Found 50 possible bad axioms.
+[2026-06-25 03:27:52.772] Selected the bad axiom SubClassOf(OWLClass_00000012719974275465 OWLClass_00000016471779736015).
+[2026-06-25 03:27:52.774] Found 49 possible bad a
+...[truncated]
+FAIL: attempt=2 seed=14235 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=2 success=0/100
+----- ELIG attempt=3 seed=28435 at 2026-06-25 03:27:54 -----
+--- stdout ---
+{"seed":28435,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":92,"A2":142,"A3":290,"B1":163,"B2":948}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=28435, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:27:54.740] Checking precondition...
+[2026-06-25 03:27:54.753] Starting the repair...
+[2026-06-25 03:27:54.760] Found 63 possible bad axioms.
+[2026-06-25 03:27:54.762] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012860101728760).
+[2026-06-25 03:27:54.767] Found 62 possible bad axioms.
+[2026-06-25 03:27:54.767] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 DiseaseCharacteristic).
+[2026-06-25 03:27:54.774] Found 61 possible bad axioms.
+[2026-06-25 03:27:54.774] Selected the bad axiom SubClassOf(OWLClass_00000012805791665904 OWLClass_00000012814578026312).
+[2026-06-25 03:27:54.777] Found 60 possible bad axioms.
+[2026-06-25 03:27:54.778] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016265531237795 owl:Thing) OWLClass_00000012615273587629).
+[2026-06-25 03:27:54.781] Found 59 possible bad axioms.
+[2026-06-25 03:27:54.781] Selected the bad axiom SubClassOf(OWLClass_00000012826245584593 OWLClass_00000012646351044205).
+[2026-06-25 03:27:54.784] Found 58 possible bad axioms.
+[2026-06-25 03:27:54.784] Selected the bad axiom SubClassOf(OWLClass_00000016677444915815 ObjectSomeValuesFrom(OWLObjectProperty_00000016426490066310 owl:Thing)).
+[2026-06-25 03:27:54.786] Found 57 possible bad axioms.
+[2026-06-25 03:27:54.786] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012866630259579).
+[2026-06-25 03:27:54.789] Found 56 possible bad axioms.
+[2026-06-25 03:27:54.789] Selected the bad axiom SubClassOf(OWLClass_00000012757270309800 PatientCharacteristic).
+[2026-06-25 03:27:54.792] Found 55 possible bad axioms.
+[2026-06-25 03:27:54.792] Selected the bad axiom SubClassOf(OWLClass_00000012744023866919 PatientCharacteristic).
+[2026-06-25 03:27:54.794] Found 54 possible bad axioms.
+[2026-06-25 03:27:54.794] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 OWLClass_00000016677444915815).
+[2026-06-25 03:27:54.796] Found 53 possible bad axioms.
+[2026-06-25 03:27:54.796] Selected the bad axiom ClassAssertion(OWLClass_00000012615273587629 OWLNamedIndividual_00000012882936039923).
+[2026-06-25 03:27:54.799] Found 52 possible bad axioms.
+[2026-06-25 03:27:54.799] Selected the bad axiom SubClassOf(OWLClass_00000012751321181768 PatientCharacteristic).
+[2026-06-25 03:27:54.805] Found 51 possible bad axioms.
+[2026-06-25 03:27:54.805] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016019789133441 owl:Thing) OWLClass_00000012646351044205).
+[2026-06-25 03:27:54.811] Found 50 possible bad axioms.
+[2026-06-25 03:27:54.8
+...[truncated]
+FAIL: attempt=3 seed=28435 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=3 success=0/100
+----- ELIG attempt=4 seed=42635 at 2026-06-25 03:27:56 -----
+--- stdout ---
+{"seed":42635,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":81,"A2":148,"A3":313,"B1":157,"B2":2049}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=42635, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:27:56.774] Checking precondition...
+[2026-06-25 03:27:56.787] Starting the repair...
+[2026-06-25 03:27:56.795] Found 63 possible bad axioms.
+[2026-06-25 03:27:56.797] Selected the bad axiom SubClassOf(OWLClass_00000012779214634901 PatientCharacteristic).
+[2026-06-25 03:27:56.801] Found 62 possible bad axioms.
+[2026-06-25 03:27:56.801] Selected the bad axiom ClassAssertion(OWLClass_00000012680746500680 OWLNamedIndividual_00000016686111880926).
+[2026-06-25 03:27:56.803] Found 61 possible bad axioms.
+[2026-06-25 03:27:56.803] Selected the bad axiom SubClassOf(OWLClass_00000012653274523132 DiseaseCharacteristic).
+[2026-06-25 03:27:56.808] Found 60 possible bad axioms.
+[2026-06-25 03:27:56.808] Selected the bad axiom SubClassOf(OWLClass_00000012860101728760 OWLClass_00000012704859288544).
+[2026-06-25 03:27:56.812] Found 59 possible bad axioms.
+[2026-06-25 03:27:56.812] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012688218520629).
+[2026-06-25 03:27:56.815] Found 58 possible bad axioms.
+[2026-06-25 03:27:56.815] Selected the bad axiom SubClassOf(PatientCharacteristic OWLClass_00000012585538592381).
+[2026-06-25 03:27:56.818] Found 57 possible bad axioms.
+[2026-06-25 03:27:56.818] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012860101728760).
+[2026-06-25 03:27:56.820] Found 56 possible bad axioms.
+[2026-06-25 03:27:56.820] Selected the bad axiom SubClassOf(OWLClass_00000012635419619309 OWLClass_00000012735735439791).
+[2026-06-25 03:27:56.823] Found 55 possible bad axioms.
+[2026-06-25 03:27:56.823] Selected the bad axiom SubClassOf(OWLClass_00000012866630259579 OWLClass_00000012860101728760).
+[2026-06-25 03:27:56.826] Found 54 possible bad axioms.
+[2026-06-25 03:27:56.826] Selected the bad axiom SubClassOf(OWLClass_00000012751321181768 PatientCharacteristic).
+[2026-06-25 03:27:56.828] Found 53 possible bad axioms.
+[2026-06-25 03:27:56.828] Selected the bad axiom SubClassOf(OWLClass_00000012805791665904 OWLClass_00000012646351044205).
+[2026-06-25 03:27:56.831] Found 52 possible bad axioms.
+[2026-06-25 03:27:56.831] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016426490066310 owl:Thing) OWLClass_00000016677444915815).
+[2026-06-25 03:27:56.837] Found 51 possible bad axioms.
+[2026-06-25 03:27:56.838] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 OWLClass_00000016677444915815).
+[2026-06-25 03:27:56.844] Found 50 possible bad axioms.
+[2026-06-25 03:27:56.844] Selected the bad axiom SubClassOf(DiseaseCharacteristic OWLClass_0000001258553
+...[truncated]
+FAIL: attempt=4 seed=42635 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=4 success=0/100
+----- ELIG attempt=5 seed=56835 at 2026-06-25 03:27:59 -----
+--- stdout ---
+{"seed":56835,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":48,"A2":181,"A3":295,"B1":328,"B2":1445}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=56835, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:27:59.937] Checking precondition...
+[2026-06-25 03:27:59.950] Starting the repair...
+[2026-06-25 03:27:59.957] Found 63 possible bad axioms.
+[2026-06-25 03:27:59.958] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000016471779736015).
+[2026-06-25 03:27:59.963] Found 62 possible bad axioms.
+[2026-06-25 03:27:59.963] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016265531237795 owl:Thing) OWLClass_00000012615273587629).
+[2026-06-25 03:27:59.968] Found 61 possible bad axioms.
+[2026-06-25 03:27:59.968] Selected the bad axiom SubClassOf(OWLClass_00000012635419619309 OWLClass_00000016677444915815).
+[2026-06-25 03:27:59.972] Found 60 possible bad axioms.
+[2026-06-25 03:27:59.972] Selected the bad axiom SubClassOf(OWLClass_00000012826245584593 OWLClass_00000012646351044205).
+[2026-06-25 03:27:59.975] Found 59 possible bad axioms.
+[2026-06-25 03:27:59.975] Selected the bad axiom SubClassOf(OWLClass_00000016471779736015 OWLClass_00000012615273587629).
+[2026-06-25 03:27:59.978] Found 58 possible bad axioms.
+[2026-06-25 03:27:59.978] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:27:59.981] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 03:27:59.982] Checking precondition...
+[2026-06-25 03:27:59.987] Starting the repair...
+[2026-06-25 03:28:00.162] Found 1 possible bad axioms.
+[2026-06-25 03:28:00.162] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:28:00.162] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 03:28:00.164] Checking precondition...
+[2026-06-25 03:28:00.167] Starting the repair...
+[2026-06-25 03:28:00.180] Selected a reference ontology with 96 axioms.
+[2026-06-25 03:28:00.423] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:28:00.456] Selected the weaker axiom SubClassOf(OWLClass_00000012615273587629 OWLClass_00000012779214634901).
+[2026-06-25 03:28:00.458] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 03:28:00.459] Checking precondition...
+[2026-06-25 03:28:00.461] Starting the repair...
+[2026-06-25 03:28:00.470] Selected a reference ontology with 96 axioms.
+[2026-06-25 03:28:00.617] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:28:00.631] Selected the weaker axiom SubClassOf(OWLClass_00000012615273587629 OWLClass_00000012704859288544).
+[2026-06-25 03:28:00.785
+...[truncated]
+FAIL: attempt=5 seed=56835 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=5 success=0/100
+----- ELIG attempt=6 seed=71035 at 2026-06-25 03:28:02 -----
+--- stdout ---
+{"seed":71035,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":87,"A2":147,"A3":480,"B1":153,"B2":948}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=71035, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:28:02.633] Checking precondition...
+[2026-06-25 03:28:02.647] Starting the repair...
+[2026-06-25 03:28:02.654] Found 63 possible bad axioms.
+[2026-06-25 03:28:02.656] Selected the bad axiom SubClassOf(OWLClass_00000012834024485975 OWLClass_00000012646351044205).
+[2026-06-25 03:28:02.661] Found 62 possible bad axioms.
+[2026-06-25 03:28:02.661] Selected the bad axiom SubClassOf(OWLClass_00000012680746500680 DiseaseCharacteristic).
+[2026-06-25 03:28:02.667] Found 61 possible bad axioms.
+[2026-06-25 03:28:02.667] Selected the bad axiom SubClassOf(OWLClass_00000012653274523132 OWLClass_00000016677444915815).
+[2026-06-25 03:28:02.671] Found 60 possible bad axioms.
+[2026-06-25 03:28:02.671] Selected the bad axiom SubClassOf(OWLClass_00000012646351044205 OWLClass_00000012735735439791).
+[2026-06-25 03:28:02.673] Found 59 possible bad axioms.
+[2026-06-25 03:28:02.673] Selected the bad axiom SubClassOf(OWLClass_00000012672209560157 OWLClass_00000016471779736015).
+[2026-06-25 03:28:02.676] Found 58 possible bad axioms.
+[2026-06-25 03:28:02.676] Selected the bad axiom SubClassOf(DiseaseCharacteristic OWLClass_00000012585538592381).
+[2026-06-25 03:28:02.678] Found 57 possible bad axioms.
+[2026-06-25 03:28:02.678] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 owl:Nothing).
+[2026-06-25 03:28:02.681] Found 56 possible bad axioms.
+[2026-06-25 03:28:02.681] Selected the bad axiom ClassAssertion(OWLClass_00000012680746500680 OWLNamedIndividual_00000016686111880926).
+[2026-06-25 03:28:02.682] Found 55 possible bad axioms.
+[2026-06-25 03:28:02.682] Selected the bad axiom SubClassOf(OWLClass_00000012757270309800 PatientCharacteristic).
+[2026-06-25 03:28:02.685] Found 54 possible bad axioms.
+[2026-06-25 03:28:02.685] Selected the bad axiom SubClassOf(OWLClass_00000012635419619309 OWLClass_00000012735735439791).
+[2026-06-25 03:28:02.687] Found 53 possible bad axioms.
+[2026-06-25 03:28:02.687] Selected the bad axiom SubClassOf(OWLClass_00000012805791665904 OWLClass_00000012646351044205).
+[2026-06-25 03:28:02.689] Found 52 possible bad axioms.
+[2026-06-25 03:28:02.690] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 OWLClass_00000016677444915815).
+[2026-06-25 03:28:02.696] Found 51 possible bad axioms.
+[2026-06-25 03:28:02.696] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016265531237795 owl:Thing) OWLClass_00000012615273587629).
+[2026-06-25 03:28:02.702] Found 50 possible bad axioms.
+[2026-06-25 03:28:02.703] Selected the bad axiom SubClassOf(OWLClass_00000016677444915815 ObjectSomeValuesFrom(OWL
+...[truncated]
+FAIL: attempt=6 seed=71035 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=6 success=0/100
+----- ELIG attempt=7 seed=85235 at 2026-06-25 03:28:04 -----
+--- stdout ---
+{"seed":85235,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B4","error_message":"Repair timeout: B4 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":125,"A2":123,"A3":533,"B1":133,"B2":1434,"B3":711,"B4":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=85235, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:28:04.864] Checking precondition...
+[2026-06-25 03:28:04.878] Starting the repair...
+[2026-06-25 03:28:04.885] Found 63 possible bad axioms.
+[2026-06-25 03:28:04.886] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012688218520629).
+[2026-06-25 03:28:04.890] Found 62 possible bad axioms.
+[2026-06-25 03:28:04.891] Selected the bad axiom ClassAssertion(OWLClass_00000012680746500680 OWLNamedIndividual_00000016686111880926).
+[2026-06-25 03:28:04.892] Found 61 possible bad axioms.
+[2026-06-25 03:28:04.892] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 OWLClass_00000016677444915815).
+[2026-06-25 03:28:04.897] Found 60 possible bad axioms.
+[2026-06-25 03:28:04.897] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(OWLObjectProperty_00000016265531237795 OWLClass_00000012646351044205)).
+[2026-06-25 03:28:04.901] Found 59 possible bad axioms.
+[2026-06-25 03:28:04.901] Selected the bad axiom SubClassOf(OWLClass_00000012805791665904 OWLClass_00000012814578026312).
+[2026-06-25 03:28:04.904] Found 58 possible bad axioms.
+[2026-06-25 03:28:04.904] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016426490066310 owl:Thing) OWLClass_00000012615273587629).
+[2026-06-25 03:28:04.906] Found 57 possible bad axioms.
+[2026-06-25 03:28:04.907] Selected the bad axiom SubClassOf(OWLClass_00000012635419619309 OWLClass_00000012735735439791).
+[2026-06-25 03:28:04.908] Found 56 possible bad axioms.
+[2026-06-25 03:28:04.909] Selected the bad axiom SubClassOf(OWLClass_00000012744023866919 PatientCharacteristic).
+[2026-06-25 03:28:04.911] Found 55 possible bad axioms.
+[2026-06-25 03:28:04.911] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 OWLClass_00000016471779736015).
+[2026-06-25 03:28:04.913] Found 54 possible bad axioms.
+[2026-06-25 03:28:04.914] Selected the bad axiom SubClassOf(OWLClass_00000012719974275465 OWLClass_00000016471779736015).
+[2026-06-25 03:28:04.916] Found 53 possible bad axioms.
+[2026-06-25 03:28:04.916] Selected the bad axiom SubClassOf(OWLClass_00000012635419619309 OWLClass_00000016677444915815).
+[2026-06-25 03:28:04.918] Found 52 possible bad axioms.
+[2026-06-25 03:28:04.919] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(OWLObjectProperty_00000016426490066310 OWLClass_00000012672209560157)).
+[2026-06-25 03:28:04.925] Found 51 possible bad axioms.
+[2026-06-25 03:28:04.926] Selected the bad axiom SubClassOf(OWLClass_00000012779214634901 PatientCharacteristic).
+[2026-06-25 03:28:04.932] Found 50 possible bad axioms.
+[2026-06
+...[truncated]
+FAIL: attempt=7 seed=85235 status=time_limit_exceeded stage=B4 message=Repair timeout: B4 exceeded 300 seconds
+progress: ontology=ELIG attempt=7 success=0/100
+----- ELIG attempt=8 seed=99435 at 2026-06-25 03:33:08 -----
+--- stdout ---
+{"seed":99435,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":76,"A2":151,"A3":280,"B1":193,"B2":1482,"B3":394}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=99435, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:33:08.394] Checking precondition...
+[2026-06-25 03:33:08.408] Starting the repair...
+[2026-06-25 03:33:08.415] Found 63 possible bad axioms.
+[2026-06-25 03:33:08.416] Selected the bad axiom SubClassOf(OWLClass_00000012860101728760 OWLClass_00000012704859288544).
+[2026-06-25 03:33:08.421] Found 62 possible bad axioms.
+[2026-06-25 03:33:08.421] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016426490066310 owl:Thing) OWLClass_00000016471779736015).
+[2026-06-25 03:33:08.425] Found 61 possible bad axioms.
+[2026-06-25 03:33:08.426] Selected the bad axiom SubClassOf(OWLClass_00000012826245584593 OWLClass_00000012646351044205).
+[2026-06-25 03:33:08.429] Found 60 possible bad axioms.
+[2026-06-25 03:33:08.429] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(OWLObjectProperty_00000016265531237795 OWLClass_00000012646351044205)).
+[2026-06-25 03:33:08.433] Found 59 possible bad axioms.
+[2026-06-25 03:33:08.433] Selected the bad axiom SubClassOf(OWLClass_00000012672209560157 OWLClass_00000016471779736015).
+[2026-06-25 03:33:08.435] Found 58 possible bad axioms.
+[2026-06-25 03:33:08.435] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016426490066310 owl:Thing) OWLClass_00000016677444915815).
+[2026-06-25 03:33:08.437] Found 57 possible bad axioms.
+[2026-06-25 03:33:08.438] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012688218520629).
+[2026-06-25 03:33:08.441] Found 56 possible bad axioms.
+[2026-06-25 03:33:08.441] Selected the bad axiom SubClassOf(OWLClass_00000012635419619309 OWLClass_00000012735735439791).
+[2026-06-25 03:33:08.443] Found 55 possible bad axioms.
+[2026-06-25 03:33:08.443] Selected the bad axiom SubClassOf(OWLClass_00000012860101728760 owl:Nothing).
+[2026-06-25 03:33:08.446] Found 54 possible bad axioms.
+[2026-06-25 03:33:08.446] Selected the bad axiom SubClassOf(OWLClass_00000012875009033223 OWLClass_00000012704859288544).
+[2026-06-25 03:33:08.448] Found 53 possible bad axioms.
+[2026-06-25 03:33:08.448] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012866630259579).
+[2026-06-25 03:33:08.454] Found 52 possible bad axioms.
+[2026-06-25 03:33:08.455] Selected the bad axiom SubClassOf(OWLClass_00000016471779736015 OWLClass_00000012672209560157).
+[2026-06-25 03:33:08.461] Found 51 possible bad axioms.
+[2026-06-25 03:33:08.461] Selected the bad axiom SubClassOf(OWLClass_00000012834024485975 OWLClass_00000012805791665904).
+[2026-06-25 03:33:08.463] Found 50 possible bad axioms.
+[2026-06-25 03:33:08.46
+...[truncated]
+FAIL: attempt=8 seed=99435 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=8 success=0/100
+----- ELIG attempt=9 seed=113635 at 2026-06-25 03:33:11 -----
+--- stdout ---
+{"seed":113635,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":82,"A2":154,"A3":432,"B1":176,"B2":1332}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=113635, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:33:11.386] Checking precondition...
+[2026-06-25 03:33:11.399] Starting the repair...
+[2026-06-25 03:33:11.406] Found 63 possible bad axioms.
+[2026-06-25 03:33:11.408] Selected the bad axiom SubClassOf(OWLClass_00000012814578026312 OWLClass_00000012646351044205).
+[2026-06-25 03:33:11.413] Found 62 possible bad axioms.
+[2026-06-25 03:33:11.413] Selected the bad axiom SubClassOf(OWLClass_00000012805791665904 OWLClass_00000012814578026312).
+[2026-06-25 03:33:11.419] Found 61 possible bad axioms.
+[2026-06-25 03:33:11.419] Selected the bad axiom SubClassOf(DiseaseCharacteristic OWLClass_00000012585538592381).
+[2026-06-25 03:33:11.422] Found 60 possible bad axioms.
+[2026-06-25 03:33:11.423] Selected the bad axiom SubClassOf(OWLClass_00000012646351044205 OWLClass_00000016677444915815).
+[2026-06-25 03:33:11.426] Found 59 possible bad axioms.
+[2026-06-25 03:33:11.426] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(OWLObjectProperty_00000016426490066310 owl:Thing) OWLClass_00000016677444915815).
+[2026-06-25 03:33:11.429] Found 58 possible bad axioms.
+[2026-06-25 03:33:11.429] Selected the bad axiom SubClassOf(OWLClass_00000012826245584593 OWLClass_00000012814578026312).
+[2026-06-25 03:33:11.431] Found 57 possible bad axioms.
+[2026-06-25 03:33:11.432] Selected the bad axiom SubClassOf(OWLClass_00000012688218520629 OWLClass_00000016677444915815).
+[2026-06-25 03:33:11.434] Found 56 possible bad axioms.
+[2026-06-25 03:33:11.434] Selected the bad axiom SubClassOf(OWLClass_00000012735735439791 OWLClass_00000016677444915815).
+[2026-06-25 03:33:11.437] Found 55 possible bad axioms.
+[2026-06-25 03:33:11.437] Selected the bad axiom SubClassOf(OWLClass_00000012704859288544 OWLClass_00000012688218520629).
+[2026-06-25 03:33:11.439] Found 54 possible bad axioms.
+[2026-06-25 03:33:11.439] Selected the bad axiom SubClassOf(OWLClass_00000012875009033223 OWLClass_00000012704859288544).
+[2026-06-25 03:33:11.441] Found 53 possible bad axioms.
+[2026-06-25 03:33:11.441] Selected the bad axiom SubClassOf(OWLClass_00000016677444915815 OWLClass_00000012615273587629).
+[2026-06-25 03:33:11.452] Found 52 possible bad axioms.
+[2026-06-25 03:33:11.452] Selected the bad axiom SubClassOf(OWLClass_00000012653274523132 OWLClass_00000016471779736015).
+[2026-06-25 03:33:11.454] Found 51 possible bad axioms.
+[2026-06-25 03:33:11.454] Selected the bad axiom SubClassOf(OWLClass_00000012866630259579 OWLClass_00000012860101728760).
+[2026-06-25 03:33:11.457] Found 50 possible bad axioms.
+[2026-06-25 03:33:11.457] Selected the bad axiom SubClassOf(OWLClass_00000012779214634901 Pat
+...[truncated]
+FAIL: attempt=9 seed=113635 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=9 success=0/100
+----- ELIG attempt=10 seed=127835 at 2026-06-25 03:33:13 -----
+--- stdout ---
+{"seed":127835,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":43,"A2":175,"A3":303,"B1":170,"B2":1419}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ELIG.owl, seed=127835, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 03:33:13.973] Checking precondition...
+[2026-06-25 03:33:13.987] Starting the repair...
+[2026-06-25 03:33:13.995] Found 63 possible bad axioms.
+[2026-06-25 03:33:13.996] Selected the bad axiom SubClassOf(OWLClass_00000012805791665904 OWLClass_00000012646351044205).
+[2026-06-25 03:33:14.001] Found 62 possible bad axioms.
+[2026-06-25 03:33:14.001] Selected the bad axiom SubClassOf(OWLClass_00000012826245584593 OWLClass_00000012646351044205).
+[2026-06-25 03:33:14.008] Found 61 possible bad axioms.
+[2026-06-25 03:33:14.008] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:33:14.012] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 03:33:14.013] Checking precondition...
+[2026-06-25 03:33:14.019] Starting the repair...
+[2026-06-25 03:33:14.187] Found 1 possible bad axioms.
+[2026-06-25 03:33:14.187] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:33:14.188] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 03:33:14.189] Checking precondition...
+[2026-06-25 03:33:14.192] Starting the repair...
+[2026-06-25 03:33:14.212] Selected a reference ontology with 94 axioms.
+[2026-06-25 03:33:14.463] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:33:14.489] Selected the weaker axiom SubClassOf(OWLClass_00000012615273587629 OWLClass_00000012757270309800).
+[2026-06-25 03:33:14.491] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 03:33:14.492] Checking precondition...
+[2026-06-25 03:33:14.494] Starting the repair...
+[2026-06-25 03:33:14.501] Selected a reference ontology with 96 axioms.
+[2026-06-25 03:33:14.643] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[2026-06-25 03:33:14.661] Selected the weaker axiom SubClassOf(OWLClass_00000012615273587629 OWLClass_00000012757270309800).
+[2026-06-25 03:33:14.662] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-25 03:33:14.664] Checking precondition...
+[2026-06-25 03:33:14.666] Starting the repair...
+[2026-06-25 03:33:14.671] Selected a reference ontology with 96 axioms.
+[2026-06-25 03:33:14.808] Selected the bad axiom SubClassOf(OWLClass_00000012615273587629 owl:Nothing).
+[PowerIndexWeakerAxiomSelector] Scoring 26 candidate weakenings for OWLClass_00000012615273587629 ⊑ ⊥
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.power
+...[truncated]
+FAIL: attempt=10 seed=127835 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+progress: ontology=ELIG attempt=10 success=0/100
+=== ABORTED ELIG after 10 consecutive failures at 2026-06-25 03:33:16 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ELIG - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=35 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=2 seed=14235 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=3 seed=28435 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=4 seed=42635 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=5 seed=56835 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=6 seed=71035 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=7 seed=85235 msg=Repair timeout: B4 exceeded 300 seconds
+  attempt=8 seed=99435 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=9 seed=113635 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+  attempt=10 seed=127835 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: OWLClass_00000012615273587629 ⊑ ⊥
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=1 total_seconds=303.483584 avg_seconds=303.483584
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

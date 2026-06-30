@@ -1,0 +1,1324 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-TDWGSPEC.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-TDWGSPEC.csv
+
+=== Starting sequential trials for TDWGSPEC at 2026-06-25 17:36:41 ===
+----- TDWGSPEC attempt=1 seed=49 at 2026-06-25 17:36:41 -----
+--- stdout ---
+{"seed":49,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":156,"A2":1507,"A3":330003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=49, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:36:42.088] Checking precondition...
+[2026-06-25 17:36:42.105] Starting the repair...
+[2026-06-25 17:36:42.113] Found 87 possible bad axioms.
+[2026-06-25 17:36:42.115] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:36:42.120] Found 86 possible bad axioms.
+[2026-06-25 17:36:42.121] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) owl:Nothing).
+[2026-06-25 17:36:42.126] Found 85 possible bad axioms.
+[2026-06-25 17:36:42.126] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 17:36:42.131] Found 84 possible bad axioms.
+[2026-06-25 17:36:42.131] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 17:36:42.135] Found 83 possible bad axioms.
+[2026-06-25 17:36:42.135] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) Specimen).
+[2026-06-25 17:36:42.139] Found 82 possible bad axioms.
+[2026-06-25 17:36:42.139] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 17:36:42.142] Found 81 possible bad axioms.
+[2026-06-25 17:36:42.142] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Digital).
+[2026-06-25 17:36:42.144] Found 80 possible bad axioms.
+[2026-06-25 17:36:42.144] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 17:36:42.146] Found 79 possible bad axioms.
+[2026-06-25 17:36:42.147] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) Specimen).
+[2026-06-25 17:36:42.149] Found 78 possible bad axioms.
+[2026-06-25 17:36:42.149] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 17:36:42.157] Found 77 possible bad axioms.
+[2026-06-25 17:36:42.157] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 17:36:42.158] Found 76 possible bad axioms.
+[2026-06-25 17:36:42.158] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026
+...[truncated]
+FAIL: attempt=1 seed=49 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=1 success=0/100
+----- TDWGSPEC attempt=2 seed=14249 at 2026-06-25 17:42:13 -----
+--- stdout ---
+{"seed":14249,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.3333333333333333,"B1_vs_A2":0.3333333333333333,"B1_vs_A3":0.3333333333333333,"B2_vs_A1":0.3333333333333333,"B2_vs_A2":0.3333333333333333,"B2_vs_A3":0.3333333333333333,"B3_vs_A1":0.5,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.3333333333333333,"B4_vs_A2":0.3333333333333333,"B4_vs_A3":0.3333333333333333,"B5_vs_A1":0.3333333333333333,"B5_vs_A2":0.3333333333333333,"B5_vs_A3":0.3333333333333333,"B6_vs_A1":0.3333333333333333,"B6_vs_A2":0.3333333333333333,"B6_vs_A3":0.3333333333333333,"B7_vs_A1":0.3333333333333333,"B7_vs_A2":0.3333333333333333,"B7_vs_A3":0.3333333333333333,"B8_vs_A1":0.3333333333333333,"B8_vs_A2":0.3333333333333333,"B8_vs_A3":0.3333333333333333,"B9_vs_A1":0.3333333333333333,"B9_vs_A2":0.3333333333333333,"B9_vs_A3":0.3333333333333333},"repair_runtimes_ms":{"A1":35,"A2":1621,"A3":1227,"B1":210733,"B2":31982,"B3":11873,"B4":125,"B5":17067,"B6":11093,"B7":173,"B8":33798,"B9":29640}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=14249, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:42:14.176] Checking precondition...
+[2026-06-25 17:42:14.191] Starting the repair...
+[2026-06-25 17:42:14.200] Found 87 possible bad axioms.
+[2026-06-25 17:42:14.202] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:42:14.207] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 17:42:14.208] Checking precondition...
+[2026-06-25 17:42:14.216] Starting the repair...
+[2026-06-25 17:42:15.825] Found 2 possible bad axioms.
+[2026-06-25 17:42:15.826] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:42:15.828] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 17:42:15.830] Checking precondition...
+[2026-06-25 17:42:15.833] Starting the repair...
+[2026-06-25 17:42:15.843] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:42:16.380] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:42:16.417] Selected the weaker axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 17:42:16.866] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 17:42:16.868] Selected the weaker axiom SubClassOf(Specimen ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 17:42:17.052] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 17:42:17.054] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen Specimen) ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 17:42:17.055] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 17:42:17.056] Checking precondition...
+[2026-06-25 17:42:17.058] Starting the repair...
+[2026-06-25 17:42:17.065] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:45:47.779] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 17:45:47.789] Selected the weaker axiom SubClassOf(owl:Thing ObjectAllValuesFrom(derivedFrom owl:Thing)).
+[2026-06-25 17:45:47.790] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_m
+...[truncated]
+SUCCESS: attempt=2 seed=14249 success_count=1/100
+progress: ontology=TDWGSPEC attempt=2 success=1/100
+----- TDWGSPEC attempt=3 seed=28449 at 2026-06-25 17:48:04 -----
+--- stdout ---
+{"seed":28449,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":51,"A2":1579,"A3":330001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=28449, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:48:04.365] Checking precondition...
+[2026-06-25 17:48:04.380] Starting the repair...
+[2026-06-25 17:48:04.389] Found 87 possible bad axioms.
+[2026-06-25 17:48:04.390] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 17:48:04.395] Found 86 possible bad axioms.
+[2026-06-25 17:48:04.396] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:48:04.400] Found 85 possible bad axioms.
+[2026-06-25 17:48:04.401] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 17:48:04.405] Found 84 possible bad axioms.
+[2026-06-25 17:48:04.405] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(derivedFrom owl:Thing)).
+[2026-06-25 17:48:04.409] Found 83 possible bad axioms.
+[2026-06-25 17:48:04.409] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:48:04.412] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 17:48:04.413] Checking precondition...
+[2026-06-25 17:48:04.418] Starting the repair...
+[2026-06-25 17:48:05.991] Found 2 possible bad axioms.
+[2026-06-25 17:48:05.992] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 17:48:05.992] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 17:48:05.993] Checking precondition...
+[2026-06-25 17:48:05.997] Starting the repair...
+[2026-06-25 17:48:06.352] Selected a reference ontology with 93 axioms.
+  WARNING: Repair thread for A3 did not terminate promptly after cancellation.
+Timeout: Repair timeout: A3 exceeded 300 seconds
+
+FAIL: attempt=3 seed=28449 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=3 success=1/100
+----- TDWGSPEC attempt=4 seed=42649 at 2026-06-25 17:53:36 -----
+--- stdout ---
+{"seed":42649,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":156,"A2":1488,"A3":534,"B1":365,"B2":330001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=42649, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:53:36.413] Checking precondition...
+[2026-06-25 17:53:36.433] Starting the repair...
+[2026-06-25 17:53:36.443] Found 87 possible bad axioms.
+[2026-06-25 17:53:36.444] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 17:53:36.446] Found 86 possible bad axioms.
+[2026-06-25 17:53:36.446] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 17:53:36.452] Found 85 possible bad axioms.
+[2026-06-25 17:53:36.452] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:53:36.457] Found 84 possible bad axioms.
+[2026-06-25 17:53:36.457] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:53:36.462] Found 83 possible bad axioms.
+[2026-06-25 17:53:36.462] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(derivedFrom ObjectSomeValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 17:53:36.465] Found 82 possible bad axioms.
+[2026-06-25 17:53:36.466] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 17:53:36.469] Found 81 possible bad axioms.
+[2026-06-25 17:53:36.469] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) Specimen).
+[2026-06-25 17:53:36.472] Found 80 possible bad axioms.
+[2026-06-25 17:53:36.473] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 17:53:36.475] Found 79 possible bad axioms.
+[2026-06-25 17:53:36.476] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 17:53:36.479] Found 78 possible bad axioms.
+[2026-06-25 17:53:36.479] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 17:53:36.486] Found 77 possible bad axioms.
+[2026
+...[truncated]
+FAIL: attempt=4 seed=42649 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=4 success=1/100
+----- TDWGSPEC attempt=5 seed=56849 at 2026-06-25 17:59:09 -----
+--- stdout ---
+{"seed":56849,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)","iic_values":{},"repair_runtimes_ms":{"A1":175,"A2":1489,"A3":12721,"B1":8001,"B2":5471}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=56849, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:59:09.376] Checking precondition...
+[2026-06-25 17:59:09.393] Starting the repair...
+[2026-06-25 17:59:09.401] Found 87 possible bad axioms.
+[2026-06-25 17:59:09.403] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) Specimen).
+[2026-06-25 17:59:09.408] Found 86 possible bad axioms.
+[2026-06-25 17:59:09.408] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:59:09.413] Found 85 possible bad axioms.
+[2026-06-25 17:59:09.413] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Digital).
+[2026-06-25 17:59:09.415] Found 84 possible bad axioms.
+[2026-06-25 17:59:09.415] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) Specimen).
+[2026-06-25 17:59:09.419] Found 83 possible bad axioms.
+[2026-06-25 17:59:09.419] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(procedure owl:Thing) Specimen).
+[2026-06-25 17:59:09.423] Found 82 possible bad axioms.
+[2026-06-25 17:59:09.423] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(derivedFrom ObjectSomeValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 17:59:09.426] Found 81 possible bad axioms.
+[2026-06-25 17:59:09.426] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm StillImage).
+[2026-06-25 17:59:09.427] Found 80 possible bad axioms.
+[2026-06-25 17:59:09.428] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 17:59:09.431] Found 79 possible bad axioms.
+[2026-06-25 17:59:09.431] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 17:59:09.434] Found 78 possible bad axioms.
+[2026-06-25 17:59:09.434] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 17:59:09.441] Found 77 possible bad axioms.
+[2026-06-25 17:59:09.441] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:59:09.443] Found 76 possible bad axioms.
+[2026-06-25 17:59:09.443] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 17:59:09.444] Found 75 possible bad axioms.
+[2026-06-25 17:59:09.444] Selected the bad axi
+...[truncated]
+FAIL: attempt=5 seed=56849 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+progress: ontology=TDWGSPEC attempt=5 success=1/100
+----- TDWGSPEC attempt=6 seed=71049 at 2026-06-25 17:59:37 -----
+--- stdout ---
+{"seed":71049,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":58,"A2":1610,"A3":539,"B1":435,"B2":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=71049, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 17:59:37.660] Checking precondition...
+[2026-06-25 17:59:37.675] Starting the repair...
+[2026-06-25 17:59:37.685] Found 87 possible bad axioms.
+[2026-06-25 17:59:37.687] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(isVoucherFor KindOfSpecimenTerm)).
+[2026-06-25 17:59:37.692] Found 86 possible bad axioms.
+[2026-06-25 17:59:37.692] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 17:59:37.696] Found 85 possible bad axioms.
+[2026-06-25 17:59:37.697] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 17:59:37.702] Found 84 possible bad axioms.
+[2026-06-25 17:59:37.703] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) ObjectSomeValuesFrom(ObjectInverseOf(typeForName) owl:Thing)).
+[2026-06-25 17:59:37.707] Found 83 possible bad axioms.
+[2026-06-25 17:59:37.707] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 17:59:37.710] Found 82 possible bad axioms.
+[2026-06-25 17:59:37.711] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 17:59:37.713] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 17:59:37.714] Checking precondition...
+[2026-06-25 17:59:37.720] Starting the repair...
+[2026-06-25 17:59:39.324] Found 2 possible bad axioms.
+[2026-06-25 17:59:39.324] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 17:59:39.324] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 17:59:39.325] Checking precondition...
+[2026-06-25 17:59:39.328] Starting the repair...
+[2026-06-25 17:59:39.338] Selected a reference ontology with 104 axioms.
+[2026-06-25 17:59:39.821] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:59:39.862] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 17:59:39.864] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 17:59:39.865] Checking preconditio
+...[truncated]
+FAIL: attempt=6 seed=71049 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=6 success=1/100
+----- TDWGSPEC attempt=7 seed=85249 at 2026-06-25 18:05:10 -----
+--- stdout ---
+{"seed":85249,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":153,"A2":1520,"A3":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=85249, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:05:10.723] Checking precondition...
+[2026-06-25 18:05:10.741] Starting the repair...
+[2026-06-25 18:05:10.751] Found 87 possible bad axioms.
+[2026-06-25 18:05:10.752] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(isVoucherFor KindOfSpecimenTerm)).
+[2026-06-25 18:05:10.758] Found 86 possible bad axioms.
+[2026-06-25 18:05:10.758] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) Specimen).
+[2026-06-25 18:05:10.763] Found 85 possible bad axioms.
+[2026-06-25 18:05:10.764] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 18:05:10.769] Found 84 possible bad axioms.
+[2026-06-25 18:05:10.769] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus KindOfSpecimenTerm)).
+[2026-06-25 18:05:10.773] Found 83 possible bad axioms.
+[2026-06-25 18:05:10.773] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) Specimen).
+[2026-06-25 18:05:10.777] Found 82 possible bad axioms.
+[2026-06-25 18:05:10.777] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection KindOfSpecimenTerm)).
+[2026-06-25 18:05:10.780] Found 81 possible bad axioms.
+[2026-06-25 18:05:10.780] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:05:10.783] Found 80 possible bad axioms.
+[2026-06-25 18:05:10.783] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) owl:Nothing).
+[2026-06-25 18:05:10.785] Found 79 possible bad axioms.
+[2026-06-25 18:05:10.786] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:05:10.788] Found 78 possible bad axioms.
+[2026-06-25 18:05:10.788] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 18:05:10.796] Found 77 possible bad axioms.
+[2026-06-25 18:05:10.796] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) O
+...[truncated]
+FAIL: attempt=7 seed=85249 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=7 success=1/100
+----- TDWGSPEC attempt=8 seed=99449 at 2026-06-25 18:10:42 -----
+--- stdout ---
+{"seed":99449,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":104,"A2":1543,"A3":2275,"B1":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=99449, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:10:42.838] Checking precondition...
+[2026-06-25 18:10:42.854] Starting the repair...
+[2026-06-25 18:10:42.865] Found 87 possible bad axioms.
+[2026-06-25 18:10:42.866] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 18:10:42.871] Found 86 possible bad axioms.
+[2026-06-25 18:10:42.872] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) owl:Nothing).
+[2026-06-25 18:10:42.877] Found 85 possible bad axioms.
+[2026-06-25 18:10:42.878] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(derivedFrom Specimen)).
+[2026-06-25 18:10:42.882] Found 84 possible bad axioms.
+[2026-06-25 18:10:42.883] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeStatus owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 18:10:42.886] Found 83 possible bad axioms.
+[2026-06-25 18:10:42.886] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeStatus owl:Thing) Specimen).
+[2026-06-25 18:10:42.890] Found 82 possible bad axioms.
+[2026-06-25 18:10:42.890] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) Specimen).
+[2026-06-25 18:10:42.893] Found 81 possible bad axioms.
+[2026-06-25 18:10:42.893] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) Specimen).
+[2026-06-25 18:10:42.896] Found 80 possible bad axioms.
+[2026-06-25 18:10:42.896] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 18:10:42.899] Found 79 possible bad axioms.
+[2026-06-25 18:10:42.899] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 18:10:42.907] Found 78 possible bad axioms.
+[2026-06-25 18:10:42.907] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom owl:Thing)) ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:10:42.910] Found 77 possible bad axioms.
+[2026-06-25 18:10:42.910] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:10:42.918] Found 76 possible bad axioms.
+[2026-06-25 18:10:42.918] Selected the bad axio
+...[truncated]
+FAIL: attempt=8 seed=99449 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=8 success=1/100
+----- TDWGSPEC attempt=9 seed=113649 at 2026-06-25 18:16:16 -----
+--- stdout ---
+{"seed":113649,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":201,"A2":1478,"A3":1803,"B1":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=113649, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:16:17.180] Checking precondition...
+[2026-06-25 18:16:17.195] Starting the repair...
+[2026-06-25 18:16:17.204] Found 87 possible bad axioms.
+[2026-06-25 18:16:17.205] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:16:17.210] Found 86 possible bad axioms.
+[2026-06-25 18:16:17.211] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 18:16:17.216] Found 85 possible bad axioms.
+[2026-06-25 18:16:17.216] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) Specimen).
+[2026-06-25 18:16:17.221] Found 84 possible bad axioms.
+[2026-06-25 18:16:17.222] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 18:16:17.225] Found 83 possible bad axioms.
+[2026-06-25 18:16:17.226] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:16:17.229] Found 82 possible bad axioms.
+[2026-06-25 18:16:17.229] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection KindOfSpecimenTerm)).
+[2026-06-25 18:16:17.232] Found 81 possible bad axioms.
+[2026-06-25 18:16:17.232] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) Specimen).
+[2026-06-25 18:16:17.235] Found 80 possible bad axioms.
+[2026-06-25 18:16:17.235] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 18:16:17.237] Found 79 possible bad axioms.
+[2026-06-25 18:16:17.238] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeStatus owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 18:16:17.245] Found 78 possible bad axioms.
+[2026-06-25 18:16:17.245] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:16:17.248] Found 77 possible bad axioms.
+[2026-06-25 18:16:17.248] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllV
+...[truncated]
+FAIL: attempt=9 seed=113649 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=9 success=1/100
+----- TDWGSPEC attempt=10 seed=127849 at 2026-06-25 18:21:50 -----
+--- stdout ---
+{"seed":127849,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":155,"A2":1508,"A3":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=127849, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:21:51.092] Checking precondition...
+[2026-06-25 18:21:51.107] Starting the repair...
+[2026-06-25 18:21:51.116] Found 87 possible bad axioms.
+[2026-06-25 18:21:51.118] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) owl:Nothing).
+[2026-06-25 18:21:51.123] Found 86 possible bad axioms.
+[2026-06-25 18:21:51.123] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Illustration).
+[2026-06-25 18:21:51.125] Found 85 possible bad axioms.
+[2026-06-25 18:21:51.126] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)).
+[2026-06-25 18:21:51.130] Found 84 possible bad axioms.
+[2026-06-25 18:21:51.130] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) Specimen).
+[2026-06-25 18:21:51.135] Found 83 possible bad axioms.
+[2026-06-25 18:21:51.135] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) Specimen).
+[2026-06-25 18:21:51.139] Found 82 possible bad axioms.
+[2026-06-25 18:21:51.139] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) Specimen).
+[2026-06-25 18:21:51.143] Found 81 possible bad axioms.
+[2026-06-25 18:21:51.143] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeStatus owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 18:21:51.146] Found 80 possible bad axioms.
+[2026-06-25 18:21:51.146] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom owl:Thing)) ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:21:51.149] Found 79 possible bad axioms.
+[2026-06-25 18:21:51.149] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:21:51.156] Found 78 possible bad axioms.
+[2026-06-25 18:21:51.156] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm StillImage).
+[2026-06-25 18:21:51.157] Found 77 possible bad axioms.
+[2026-06-25 18:21:51.158] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 18:21:51.161] Found 76 possible bad axioms.
+[2026-06-25 18:21:51.161] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(hostColl
+...[truncated]
+FAIL: attempt=10 seed=127849 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=10 success=1/100
+----- TDWGSPEC attempt=11 seed=142049 at 2026-06-25 18:27:22 -----
+--- stdout ---
+{"seed":142049,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.5,"B1_vs_A2":0.6666666666666666,"B1_vs_A3":0.6666666666666666,"B2_vs_A1":0.3333333333333333,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":0.3333333333333333,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.3333333333333333,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":0.3333333333333333,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":0.3333333333333333,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":0.3333333333333333,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":0.3333333333333333,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":0.3333333333333333,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":181,"A2":1517,"A3":364,"B1":14431,"B2":3675,"B3":5307,"B4":117,"B5":16977,"B6":24772,"B7":149,"B8":16769,"B9":24549}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=142049, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:27:23.157] Checking precondition...
+[2026-06-25 18:27:23.175] Starting the repair...
+[2026-06-25 18:27:23.184] Found 87 possible bad axioms.
+[2026-06-25 18:27:23.186] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus KindOfSpecimenTerm)).
+[2026-06-25 18:27:23.192] Found 86 possible bad axioms.
+[2026-06-25 18:27:23.192] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Illustration).
+[2026-06-25 18:27:23.194] Found 85 possible bad axioms.
+[2026-06-25 18:27:23.194] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 18:27:23.199] Found 84 possible bad axioms.
+[2026-06-25 18:27:23.200] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Preserved).
+[2026-06-25 18:27:23.201] Found 83 possible bad axioms.
+[2026-06-25 18:27:23.201] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) Specimen).
+[2026-06-25 18:27:23.205] Found 82 possible bad axioms.
+[2026-06-25 18:27:23.205] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:27:23.209] Found 81 possible bad axioms.
+[2026-06-25 18:27:23.209] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) owl:Nothing).
+[2026-06-25 18:27:23.212] Found 80 possible bad axioms.
+[2026-06-25 18:27:23.212] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeStatus owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 18:27:23.215] Found 79 possible bad axioms.
+[2026-06-25 18:27:23.215] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 18:27:23.218] Found 78 possible bad axioms.
+[2026-06-25 18:27:23.218] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(isVoucherFor KindOfSpecimenTerm)).
+[2026-06-25 18:27:23.225] Found 77 possible bad axioms.
+[2026-06-25 18:27:23.225] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen owl:Thing))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 18:27:23.228] Found 76 possible bad axioms.
+[2026-06-25 
+...[truncated]
+SUCCESS: attempt=11 seed=142049 success_count=2/100
+progress: ontology=TDWGSPEC attempt=11 success=2/100
+----- TDWGSPEC attempt=12 seed=156249 at 2026-06-25 18:29:12 -----
+--- stdout ---
+{"seed":156249,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":49,"A2":1610,"A3":1758,"B1":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=156249, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:29:12.715] Checking precondition...
+[2026-06-25 18:29:12.732] Starting the repair...
+[2026-06-25 18:29:12.740] Found 87 possible bad axioms.
+[2026-06-25 18:29:12.742] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 18:29:12.748] Found 86 possible bad axioms.
+[2026-06-25 18:29:12.748] Selected the bad axiom SubClassOf(owl:Thing KindOfSpecimenTerm).
+[2026-06-25 18:29:12.752] Found 85 possible bad axioms.
+[2026-06-25 18:29:12.753] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Living).
+[2026-06-25 18:29:12.755] Found 84 possible bad axioms.
+[2026-06-25 18:29:12.755] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:29:12.760] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 18:29:12.760] Checking precondition...
+[2026-06-25 18:29:12.767] Starting the repair...
+[2026-06-25 18:29:14.368] Found 2 possible bad axioms.
+[2026-06-25 18:29:14.368] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:29:14.370] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 18:29:14.372] Checking precondition...
+[2026-06-25 18:29:14.374] Starting the repair...
+[2026-06-25 18:29:15.086] Selected a reference ontology with 101 axioms.
+[2026-06-25 18:29:15.877] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 18:29:16.127] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen)) Specimen).
+[2026-06-25 18:29:16.129] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 18:29:16.130] Checking precondition...
+[2026-06-25 18:29:16.132] Starting the repair...
+[2026-06-25 18:29:16.140] Selected a reference ontology with 104 axioms.
+  WARNING: Repair thread for B1 did not terminate promptly after cancellation.
+Timeout: Repair timeout: B1 exceeded 300 seconds
+
+FAIL: attempt=12 seed=156249 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=12 success=2/100
+----- TDWGSPEC attempt=13 seed=170449 at 2026-06-25 18:34:46 -----
+--- stdout ---
+{"seed":170449,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B7","error_message":"Repair timeout: B7 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":117,"A2":1524,"A3":362,"B1":4727,"B2":7304,"B3":2050,"B4":84,"B5":33508,"B6":26355,"B7":300110}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=170449, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:34:46.559] Checking precondition...
+[2026-06-25 18:34:46.576] Starting the repair...
+[2026-06-25 18:34:46.584] Found 87 possible bad axioms.
+[2026-06-25 18:34:46.585] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) Specimen).
+[2026-06-25 18:34:46.591] Found 86 possible bad axioms.
+[2026-06-25 18:34:46.591] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Preserved).
+[2026-06-25 18:34:46.592] Found 85 possible bad axioms.
+[2026-06-25 18:34:46.593] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(kindOfSpecimen owl:Nothing)).
+[2026-06-25 18:34:46.597] Found 84 possible bad axioms.
+[2026-06-25 18:34:46.597] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:34:46.601] Found 83 possible bad axioms.
+[2026-06-25 18:34:46.602] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 18:34:46.605] Found 82 possible bad axioms.
+[2026-06-25 18:34:46.605] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) ObjectSomeValuesFrom(ObjectInverseOf(typeForName) owl:Thing)).
+[2026-06-25 18:34:46.609] Found 81 possible bad axioms.
+[2026-06-25 18:34:46.609] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 18:34:46.612] Found 80 possible bad axioms.
+[2026-06-25 18:34:46.612] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(derivedFrom ObjectSomeValuesFrom(kindOfSpecimen owl:Thing))).
+[2026-06-25 18:34:46.615] Found 79 possible bad axioms.
+[2026-06-25 18:34:46.615] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:34:46.618] Found 78 possible bad axioms.
+[2026-06-25 18:34:46.618] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:34:46.625] Found 77 possible bad axioms.
+[2026-06-25 18:34:46.625] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 18:34:46.628] Found 76 possible bad axioms.
+[2026-06-
+...[truncated]
+FAIL: attempt=13 seed=170449 status=time_limit_exceeded stage=B7 message=Repair timeout: B7 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=13 success=2/100
+----- TDWGSPEC attempt=14 seed=184649 at 2026-06-25 18:41:03 -----
+--- stdout ---
+{"seed":184649,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)","iic_values":{},"repair_runtimes_ms":{"A1":169,"A2":1501,"A3":9435,"B1":568,"B2":4094}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=184649, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:41:03.395] Checking precondition...
+[2026-06-25 18:41:03.412] Starting the repair...
+[2026-06-25 18:41:03.420] Found 87 possible bad axioms.
+[2026-06-25 18:41:03.422] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:41:03.427] Found 86 possible bad axioms.
+[2026-06-25 18:41:03.428] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 18:41:03.432] Found 85 possible bad axioms.
+[2026-06-25 18:41:03.432] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(derivedFrom ObjectSomeValuesFrom(derivedFrom owl:Thing))).
+[2026-06-25 18:41:03.437] Found 84 possible bad axioms.
+[2026-06-25 18:41:03.438] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 18:41:03.441] Found 83 possible bad axioms.
+[2026-06-25 18:41:03.441] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 18:41:03.444] Found 82 possible bad axioms.
+[2026-06-25 18:41:03.445] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) owl:Nothing).
+[2026-06-25 18:41:03.448] Found 81 possible bad axioms.
+[2026-06-25 18:41:03.448] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) Specimen).
+[2026-06-25 18:41:03.451] Found 80 possible bad axioms.
+[2026-06-25 18:41:03.451] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen owl:Thing))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 18:41:03.454] Found 79 possible bad axioms.
+[2026-06-25 18:41:03.454] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm StillImage).
+[2026-06-25 18:41:03.455] Found 78 possible bad axioms.
+[2026-06-25 18:41:03.455] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:41:03.463] Found 77 possible bad axioms.
+[2026-06-25 18:41:03.463] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllV
+...[truncated]
+FAIL: attempt=14 seed=184649 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+progress: ontology=TDWGSPEC attempt=14 success=2/100
+----- TDWGSPEC attempt=15 seed=198849 at 2026-06-25 18:41:19 -----
+--- stdout ---
+{"seed":198849,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)","iic_values":{},"repair_runtimes_ms":{"A1":169,"A2":1493,"A3":8803,"B1":492,"B2":7099,"B3":3128}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=198849, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:41:19.587] Checking precondition...
+[2026-06-25 18:41:19.602] Starting the repair...
+[2026-06-25 18:41:19.612] Found 87 possible bad axioms.
+[2026-06-25 18:41:19.613] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Living).
+[2026-06-25 18:41:19.615] Found 86 possible bad axioms.
+[2026-06-25 18:41:19.616] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 18:41:19.621] Found 85 possible bad axioms.
+[2026-06-25 18:41:19.621] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:41:19.627] Found 84 possible bad axioms.
+[2026-06-25 18:41:19.627] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(derivedFrom owl:Thing)).
+[2026-06-25 18:41:19.632] Found 83 possible bad axioms.
+[2026-06-25 18:41:19.632] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(derivedFrom owl:Thing)).
+[2026-06-25 18:41:19.635] Found 82 possible bad axioms.
+[2026-06-25 18:41:19.636] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:41:19.638] Found 81 possible bad axioms.
+[2026-06-25 18:41:19.639] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 18:41:19.642] Found 80 possible bad axioms.
+[2026-06-25 18:41:19.642] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) Specimen).
+[2026-06-25 18:41:19.645] Found 79 possible bad axioms.
+[2026-06-25 18:41:19.645] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:41:19.647] Found 78 possible bad axioms.
+[2026-06-25 18:41:19.647] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) Specimen).
+[2026-06-25 18:41:19.655] Found 77 possible bad axioms.
+[2026-06-25 18:41:19.656] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:41:19.658] Found 76 possible bad axioms.
+[2
+...[truncated]
+FAIL: attempt=15 seed=198849 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+progress: ontology=TDWGSPEC attempt=15 success=2/100
+----- TDWGSPEC attempt=16 seed=213049 at 2026-06-25 18:41:40 -----
+--- stdout ---
+{"seed":213049,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":169,"A2":1483,"A3":485,"B1":330001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=213049, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:41:41.207] Checking precondition...
+[2026-06-25 18:41:41.225] Starting the repair...
+[2026-06-25 18:41:41.232] Found 87 possible bad axioms.
+[2026-06-25 18:41:41.233] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 18:41:41.239] Found 86 possible bad axioms.
+[2026-06-25 18:41:41.239] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) owl:Nothing).
+[2026-06-25 18:41:41.243] Found 85 possible bad axioms.
+[2026-06-25 18:41:41.244] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) Specimen).
+[2026-06-25 18:41:41.249] Found 84 possible bad axioms.
+[2026-06-25 18:41:41.249] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:41:41.253] Found 83 possible bad axioms.
+[2026-06-25 18:41:41.254] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:41:41.257] Found 82 possible bad axioms.
+[2026-06-25 18:41:41.257] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:41:41.260] Found 81 possible bad axioms.
+[2026-06-25 18:41:41.261] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(derivedFrom owl:Thing)).
+[2026-06-25 18:41:41.264] Found 80 possible bad axioms.
+[2026-06-25 18:41:41.264] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 18:41:41.267] Found 79 possible bad axioms.
+[2026-06-25 18:41:41.267] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 18:41:41.274] Found 78 possible bad axioms.
+[2026-06-25 18:41:41.274] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:41:41.277] Found 77 possible bad axioms.
+[2026-06-25 18:41:41.277] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)).
+[2026-06-25 18:41:41.284] Found 76 possible bad axioms.
+[2026-06-25 18:41:41.285] Selected the bad axiom Su
+...[truncated]
+FAIL: attempt=16 seed=213049 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=16 success=2/100
+----- TDWGSPEC attempt=17 seed=227249 at 2026-06-25 18:47:13 -----
+--- stdout ---
+{"seed":227249,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":152,"A2":1510,"A3":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=227249, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:47:13.804] Checking precondition...
+[2026-06-25 18:47:13.819] Starting the repair...
+[2026-06-25 18:47:13.828] Found 87 possible bad axioms.
+[2026-06-25 18:47:13.829] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 18:47:13.835] Found 86 possible bad axioms.
+[2026-06-25 18:47:13.835] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 18:47:13.839] Found 85 possible bad axioms.
+[2026-06-25 18:47:13.840] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:47:13.845] Found 84 possible bad axioms.
+[2026-06-25 18:47:13.846] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 18:47:13.849] Found 83 possible bad axioms.
+[2026-06-25 18:47:13.849] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:47:13.853] Found 82 possible bad axioms.
+[2026-06-25 18:47:13.853] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 18:47:13.857] Found 81 possible bad axioms.
+[2026-06-25 18:47:13.857] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus KindOfSpecimenTerm)).
+[2026-06-25 18:47:13.859] Found 80 possible bad axioms.
+[2026-06-25 18:47:13.859] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) Specimen).
+[2026-06-25 18:47:13.862] Found 79 possible bad axioms.
+[2026-06-25 18:47:13.862] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 18:47:13.865] Found 78 possible bad axioms.
+[2026-06-25 18:47:13.865] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 18:47:13.872] Found 77 possible bad axioms.
+[2026-06-25 18:47:13.872] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) ObjectSomeValuesFrom(procedure owl:T
+...[truncated]
+FAIL: attempt=17 seed=227249 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=17 success=2/100
+----- TDWGSPEC attempt=18 seed=241449 at 2026-06-25 18:52:45 -----
+--- stdout ---
+{"seed":241449,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.5,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":0.5,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":0.5,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.5,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":0.5,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":0.5,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":0.5,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":0.5,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":0.5,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":167,"A2":1489,"A3":8884,"B1":1078,"B2":48181,"B3":6003,"B4":102,"B5":17028,"B6":10657,"B7":170,"B8":45907,"B9":27774}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=241449, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:52:45.890] Checking precondition...
+[2026-06-25 18:52:45.906] Starting the repair...
+[2026-06-25 18:52:45.914] Found 87 possible bad axioms.
+[2026-06-25 18:52:45.916] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(derivedFrom owl:Thing)).
+[2026-06-25 18:52:45.921] Found 86 possible bad axioms.
+[2026-06-25 18:52:45.921] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(derivedFrom ObjectSomeValuesFrom(kindOfSpecimen owl:Thing))).
+[2026-06-25 18:52:45.926] Found 85 possible bad axioms.
+[2026-06-25 18:52:45.926] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom owl:Thing)) ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:52:45.930] Found 84 possible bad axioms.
+[2026-06-25 18:52:45.931] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:52:45.934] Found 83 possible bad axioms.
+[2026-06-25 18:52:45.935] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 18:52:45.938] Found 82 possible bad axioms.
+[2026-06-25 18:52:45.938] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 18:52:45.941] Found 81 possible bad axioms.
+[2026-06-25 18:52:45.942] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(derivedFrom Specimen)).
+[2026-06-25 18:52:45.945] Found 80 possible bad axioms.
+[2026-06-25 18:52:45.945] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) ObjectSomeValuesFrom(ObjectInverseOf(typeForName) owl:Thing)).
+[2026-06-25 18:52:45.948] Found 79 possible bad axioms.
+[2026-06-25 18:52:45.948] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen owl:Thing))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 18:52:45.955] Found 78 possible bad axioms.
+[2026-06-25 18:52:45.955] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 18:52:45.958] Found 77 possible bad axioms.
+[2026-06-25 18:52:45.959] Selected the bad axiom SubClassOf(ObjectSomeValu
+...[truncated]
+SUCCESS: attempt=18 seed=241449 success_count=3/100
+progress: ontology=TDWGSPEC attempt=18 success=3/100
+----- TDWGSPEC attempt=19 seed=255649 at 2026-06-25 18:55:33 -----
+--- stdout ---
+{"seed":255649,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":103,"A2":1544,"A3":345,"B1":330001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=255649, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 18:55:34.306] Checking precondition...
+[2026-06-25 18:55:34.321] Starting the repair...
+[2026-06-25 18:55:34.330] Found 87 possible bad axioms.
+[2026-06-25 18:55:34.331] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:55:34.337] Found 86 possible bad axioms.
+[2026-06-25 18:55:34.337] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 18:55:34.341] Found 85 possible bad axioms.
+[2026-06-25 18:55:34.342] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:55:34.347] Found 84 possible bad axioms.
+[2026-06-25 18:55:34.347] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 18:55:34.350] Found 83 possible bad axioms.
+[2026-06-25 18:55:34.351] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection KindOfSpecimenTerm)).
+[2026-06-25 18:55:34.354] Found 82 possible bad axioms.
+[2026-06-25 18:55:34.354] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 18:55:34.357] Found 81 possible bad axioms.
+[2026-06-25 18:55:34.357] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 18:55:34.360] Found 80 possible bad axioms.
+[2026-06-25 18:55:34.360] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 18:55:34.363] Found 79 possible bad axioms.
+[2026-06-25 18:55:34.363] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen owl:Thing))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 18:55:34.372] Found 78 possible bad axioms.
+[2026-06-25 18:55:34.372] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom
+...[truncated]
+FAIL: attempt=19 seed=255649 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=19 success=3/100
+----- TDWGSPEC attempt=20 seed=269849 at 2026-06-25 19:01:06 -----
+--- stdout ---
+{"seed":269849,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":37,"A2":1636,"A3":25987,"B1":330008}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=269849, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:01:06.721] Checking precondition...
+[2026-06-25 19:01:06.738] Starting the repair...
+[2026-06-25 19:01:06.747] Found 87 possible bad axioms.
+[2026-06-25 19:01:06.749] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:01:06.754] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 19:01:06.755] Checking precondition...
+[2026-06-25 19:01:06.764] Starting the repair...
+[2026-06-25 19:01:08.391] Found 2 possible bad axioms.
+[2026-06-25 19:01:08.391] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 19:01:08.391] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 19:01:08.393] Checking precondition...
+[2026-06-25 19:01:08.396] Starting the repair...
+[2026-06-25 19:01:08.405] Selected a reference ontology with 104 axioms.
+[2026-06-25 19:01:08.717] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 19:01:08.753] Selected the weaker axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:01:34.376] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:01:34.377] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:01:34.378] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 19:01:34.379] Checking precondition...
+[2026-06-25 19:01:34.380] Starting the repair...
+[2026-06-25 19:01:34.386] Selected a reference ontology with 104 axioms.
+[2026-06-25 19:01:34.642] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 19:01:34.653] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) Specimen).
+  WARNING: Repair thread for B1 did not terminate promptly after cancellation.
+Timeout: Repair timeout: B1 exceeded 300 seconds
+
+FAIL: attempt=20 seed=269849 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=20 success=3/100
+----- TDWGSPEC attempt=21 seed=284049 at 2026-06-25 19:07:04 -----
+--- stdout ---
+{"seed":284049,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":168,"A2":1490,"A3":306545}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=284049, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:07:04.823] Checking precondition...
+[2026-06-25 19:07:04.839] Starting the repair...
+[2026-06-25 19:07:04.847] Found 87 possible bad axioms.
+[2026-06-25 19:07:04.848] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm StillImage).
+[2026-06-25 19:07:04.850] Found 86 possible bad axioms.
+[2026-06-25 19:07:04.850] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 19:07:04.852] Found 85 possible bad axioms.
+[2026-06-25 19:07:04.852] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(derivedFrom Specimen)).
+[2026-06-25 19:07:04.858] Found 84 possible bad axioms.
+[2026-06-25 19:07:04.858] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:07:04.863] Found 83 possible bad axioms.
+[2026-06-25 19:07:04.863] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 19:07:04.867] Found 82 possible bad axioms.
+[2026-06-25 19:07:04.867] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:07:04.871] Found 81 possible bad axioms.
+[2026-06-25 19:07:04.871] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)).
+[2026-06-25 19:07:04.874] Found 80 possible bad axioms.
+[2026-06-25 19:07:04.875] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:07:04.877] Found 79 possible bad axioms.
+[2026-06-25 19:07:04.878] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) Specimen).
+[2026-06-25 19:07:04.880] Found 78 possible bad axioms.
+[2026-06-25 19:07:04.881] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:07:04.884] Found 77 possible bad axioms.
+[2026-06-25 19:07:04.884] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) Specimen).
+[2026-06-25 19:07:04.892] Found 76 possible bad axioms.
+[2026-06-25 19:07:04.892] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollecti
+...[truncated]
+FAIL: attempt=21 seed=284049 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=21 success=3/100
+----- TDWGSPEC attempt=22 seed=298249 at 2026-06-25 19:12:13 -----
+--- stdout ---
+{"seed":298249,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.75,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.3333333333333333,"B2_vs_A3":0.3333333333333333,"B3_vs_A1":1.0,"B3_vs_A2":0.3333333333333333,"B3_vs_A3":0.3333333333333333,"B4_vs_A1":1.0,"B4_vs_A2":0.3333333333333333,"B4_vs_A3":0.3333333333333333,"B5_vs_A1":1.0,"B5_vs_A2":0.3333333333333333,"B5_vs_A3":0.3333333333333333,"B6_vs_A1":1.0,"B6_vs_A2":0.3333333333333333,"B6_vs_A3":0.3333333333333333,"B7_vs_A1":1.0,"B7_vs_A2":0.3333333333333333,"B7_vs_A3":0.3333333333333333,"B8_vs_A1":1.0,"B8_vs_A2":0.3333333333333333,"B8_vs_A3":0.3333333333333333,"B9_vs_A1":1.0,"B9_vs_A2":0.3333333333333333,"B9_vs_A3":0.3333333333333333},"repair_runtimes_ms":{"A1":99,"A2":1549,"A3":475,"B1":102353,"B2":3068,"B3":1668,"B4":179,"B5":16965,"B6":36458,"B7":130,"B8":16880,"B9":11888}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=298249, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:12:13.457] Checking precondition...
+[2026-06-25 19:12:13.473] Starting the repair...
+[2026-06-25 19:12:13.481] Found 87 possible bad axioms.
+[2026-06-25 19:12:13.482] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:12:13.488] Found 86 possible bad axioms.
+[2026-06-25 19:12:13.488] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Digital).
+[2026-06-25 19:12:13.490] Found 85 possible bad axioms.
+[2026-06-25 19:12:13.490] Selected the bad axiom SubClassOf(owl:Thing KindOfSpecimenTerm).
+[2026-06-25 19:12:13.496] Found 84 possible bad axioms.
+[2026-06-25 19:12:13.496] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:12:13.500] Found 83 possible bad axioms.
+[2026-06-25 19:12:13.500] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:12:13.503] Found 82 possible bad axioms.
+[2026-06-25 19:12:13.504] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) Specimen).
+[2026-06-25 19:12:13.507] Found 81 possible bad axioms.
+[2026-06-25 19:12:13.507] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Preserved).
+[2026-06-25 19:12:13.508] Found 80 possible bad axioms.
+[2026-06-25 19:12:13.508] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:12:13.511] Found 79 possible bad axioms.
+[2026-06-25 19:12:13.511] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:12:13.514] Found 78 possible bad axioms.
+[2026-06-25 19:12:13.515] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) owl:Nothing).
+[2026-06-25 19:12:13.521] Found 77 possible bad axioms.
+[2026-06-25 19:12:13.521] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 19:12:13.524] Found 76 possible bad axioms.
+[2026-06-25 19:12:13.524] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 19:12:13.526] Found 75 possible bad axioms.
+[2026-06-25 19:12:13.527] Selected the ba
+...[truncated]
+SUCCESS: attempt=22 seed=298249 success_count=4/100
+progress: ontology=TDWGSPEC attempt=22 success=4/100
+----- TDWGSPEC attempt=23 seed=312449 at 2026-06-25 19:15:25 -----
+--- stdout ---
+{"seed":312449,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":135,"A2":1508,"A3":324215}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=312449, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:15:25.827] Checking precondition...
+[2026-06-25 19:15:25.843] Starting the repair...
+[2026-06-25 19:15:25.852] Found 87 possible bad axioms.
+[2026-06-25 19:15:25.854] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:15:25.859] Found 86 possible bad axioms.
+[2026-06-25 19:15:25.860] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:15:25.864] Found 85 possible bad axioms.
+[2026-06-25 19:15:25.865] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:15:25.869] Found 84 possible bad axioms.
+[2026-06-25 19:15:25.869] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeStatus owl:Thing) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 19:15:25.873] Found 83 possible bad axioms.
+[2026-06-25 19:15:25.873] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:15:25.876] Found 82 possible bad axioms.
+[2026-06-25 19:15:25.877] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(isVoucherFor KindOfSpecimenTerm)).
+[2026-06-25 19:15:25.879] Found 81 possible bad axioms.
+[2026-06-25 19:15:25.880] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 19:15:25.882] Found 80 possible bad axioms.
+[2026-06-25 19:15:25.883] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:15:25.885] Found 79 possible bad axioms.
+[2026-06-25 19:15:25.885] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:15:25.893] Found 78 possible bad axioms.
+[2026-06-25 19:15:25.893] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm MovingImage).
+[2026-06-25 19:15:25.894] Found 77 possible bad axioms.
+[2026-06-25 19:15:25.895] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 19:15:25.898] Fo
+...[truncated]
+FAIL: attempt=23 seed=312449 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=23 success=4/100
+----- TDWGSPEC attempt=24 seed=326649 at 2026-06-25 19:20:51 -----
+--- stdout ---
+{"seed":326649,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":214,"A2":1513,"A3":712,"B1":330001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=326649, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:20:52.114] Checking precondition...
+[2026-06-25 19:20:52.129] Starting the repair...
+[2026-06-25 19:20:52.137] Found 87 possible bad axioms.
+[2026-06-25 19:20:52.139] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 19:20:52.144] Found 86 possible bad axioms.
+[2026-06-25 19:20:52.145] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) owl:Nothing).
+[2026-06-25 19:20:52.149] Found 85 possible bad axioms.
+[2026-06-25 19:20:52.149] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 19:20:52.153] Found 84 possible bad axioms.
+[2026-06-25 19:20:52.154] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:20:52.157] Found 83 possible bad axioms.
+[2026-06-25 19:20:52.158] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:20:52.161] Found 82 possible bad axioms.
+[2026-06-25 19:20:52.161] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(derivedFrom Specimen)).
+[2026-06-25 19:20:52.164] Found 81 possible bad axioms.
+[2026-06-25 19:20:52.164] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) Specimen).
+[2026-06-25 19:20:52.167] Found 80 possible bad axioms.
+[2026-06-25 19:20:52.167] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 19:20:52.169] Found 79 possible bad axioms.
+[2026-06-25 19:20:52.169] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:20:52.172] Found 78 possible bad axioms.
+[2026-06-25 19:20:52.172] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:20:52.180] Found 77 possible bad axioms.
+[2026-06-25 19:20:52.180] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 19:20:52.182] Found 76 possible bad axioms.
+[2026-06-25 19:20:52.182] Selected the bad axiom ClassAssertion(
+...[truncated]
+FAIL: attempt=24 seed=326649 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=24 success=4/100
+----- TDWGSPEC attempt=25 seed=340849 at 2026-06-25 19:26:24 -----
+--- stdout ---
+{"seed":340849,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)","iic_values":{},"repair_runtimes_ms":{"A1":145,"A2":1518,"A3":1947,"B1":355,"B2":3707}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=340849, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:26:24.967] Checking precondition...
+[2026-06-25 19:26:24.982] Starting the repair...
+[2026-06-25 19:26:24.991] Found 87 possible bad axioms.
+[2026-06-25 19:26:24.992] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 19:26:24.994] Found 86 possible bad axioms.
+[2026-06-25 19:26:24.994] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) owl:Nothing).
+[2026-06-25 19:26:25.000] Found 85 possible bad axioms.
+[2026-06-25 19:26:25.000] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:26:25.005] Found 84 possible bad axioms.
+[2026-06-25 19:26:25.005] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:26:25.010] Found 83 possible bad axioms.
+[2026-06-25 19:26:25.010] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus KindOfSpecimenTerm)).
+[2026-06-25 19:26:25.014] Found 82 possible bad axioms.
+[2026-06-25 19:26:25.014] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 19:26:25.017] Found 81 possible bad axioms.
+[2026-06-25 19:26:25.017] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:26:25.020] Found 80 possible bad axioms.
+[2026-06-25 19:26:25.021] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:26:25.024] Found 79 possible bad axioms.
+[2026-06-25 19:26:25.024] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) Specimen).
+[2026-06-25 19:26:25.027] Found 78 possible bad axioms.
+[2026-06-25 19:26:25.027] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) Specimen).
+[2026-06-25 19:26:25.035] Found 77 possible bad axioms.
+[2026-06-25 19:26:25.035] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(kindOfSpecimen owl:Nothing)).
+[2026-06-25 19:26:25.038] Found 76 possible bad axioms.
+[2026-06-25 19:26:25.039] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) Obj
+...[truncated]
+FAIL: attempt=25 seed=340849 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+progress: ontology=TDWGSPEC attempt=25 success=4/100
+----- TDWGSPEC attempt=26 seed=355049 at 2026-06-25 19:26:32 -----
+--- stdout ---
+{"seed":355049,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":156,"A2":1467,"A3":13184,"B1":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=355049, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:26:33.048] Checking precondition...
+[2026-06-25 19:26:33.065] Starting the repair...
+[2026-06-25 19:26:33.074] Found 87 possible bad axioms.
+[2026-06-25 19:26:33.075] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:26:33.081] Found 86 possible bad axioms.
+[2026-06-25 19:26:33.081] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:26:33.085] Found 85 possible bad axioms.
+[2026-06-25 19:26:33.086] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) Specimen).
+[2026-06-25 19:26:33.090] Found 84 possible bad axioms.
+[2026-06-25 19:26:33.091] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 19:26:33.095] Found 83 possible bad axioms.
+[2026-06-25 19:26:33.095] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 19:26:33.098] Found 82 possible bad axioms.
+[2026-06-25 19:26:33.098] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:26:33.101] Found 81 possible bad axioms.
+[2026-06-25 19:26:33.102] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(derivedFrom Specimen)).
+[2026-06-25 19:26:33.104] Found 80 possible bad axioms.
+[2026-06-25 19:26:33.105] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(derivedFrom owl:Thing)).
+[2026-06-25 19:26:33.107] Found 79 possible bad axioms.
+[2026-06-25 19:26:33.107] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:26:33.116] Found 78 possible bad axioms.
+[2026-06-25 19:26:33.116] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:26:33.119] Found 77 possible bad axioms.
+[2026-06-25 19:26:33.120] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpe
+...[truncated]
+FAIL: attempt=26 seed=355049 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=26 success=4/100
+----- TDWGSPEC attempt=27 seed=369249 at 2026-06-25 19:32:17 -----
+--- stdout ---
+{"seed":369249,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)","iic_values":{},"repair_runtimes_ms":{"A1":52,"A2":1590,"A3":95822,"B1":98193,"B2":8232}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=369249, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:32:18.272] Checking precondition...
+[2026-06-25 19:32:18.287] Starting the repair...
+[2026-06-25 19:32:18.295] Found 87 possible bad axioms.
+[2026-06-25 19:32:18.297] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen Specimen)).
+[2026-06-25 19:32:18.302] Found 86 possible bad axioms.
+[2026-06-25 19:32:18.303] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:32:18.308] Found 85 possible bad axioms.
+[2026-06-25 19:32:18.308] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:32:18.313] Found 84 possible bad axioms.
+[2026-06-25 19:32:18.313] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:32:18.317] Found 83 possible bad axioms.
+[2026-06-25 19:32:18.317] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:32:18.320] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 19:32:18.321] Checking precondition...
+[2026-06-25 19:32:18.327] Starting the repair...
+[2026-06-25 19:32:19.908] Found 2 possible bad axioms.
+[2026-06-25 19:32:19.909] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:32:19.911] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 19:32:19.912] Checking precondition...
+[2026-06-25 19:32:19.915] Starting the repair...
+[2026-06-25 19:32:19.925] Selected a reference ontology with 104 axioms.
+[2026-06-25 19:33:55.700] Selected the bad axiom SubClassOf(owl:Thing Specimen).
+[2026-06-25 19:33:55.730] Selected the weaker axiom SubClassOf(owl:Thing KindOfSpecimenTerm).
+[2026-06-25 19:33:55.732] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 19:33:55.733] Checking precondition...
+[2026-06-25 19:33:55.735] Starting the repair...
+[2026-06-25 19:33:55.743] Selected a reference ontology with 104 axioms.
+[2026-06-25 19:35:33.477] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:35:33.49
+...[truncated]
+FAIL: attempt=27 seed=369249 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+progress: ontology=TDWGSPEC attempt=27 success=4/100
+----- TDWGSPEC attempt=28 seed=383449 at 2026-06-25 19:35:42 -----
+--- stdout ---
+{"seed":383449,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)","iic_values":{},"repair_runtimes_ms":{"A1":63,"A2":1601,"A3":228359,"B1":296,"B2":7325,"B3":9033}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=383449, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:35:42.585] Checking precondition...
+[2026-06-25 19:35:42.600] Starting the repair...
+[2026-06-25 19:35:42.609] Found 87 possible bad axioms.
+[2026-06-25 19:35:42.611] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:35:42.616] Found 86 possible bad axioms.
+[2026-06-25 19:35:42.616] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:35:42.621] Found 85 possible bad axioms.
+[2026-06-25 19:35:42.621] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:35:42.626] Found 84 possible bad axioms.
+[2026-06-25 19:35:42.626] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection KindOfSpecimenTerm)).
+[2026-06-25 19:35:42.630] Found 83 possible bad axioms.
+[2026-06-25 19:35:42.630] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:35:42.633] Found 82 possible bad axioms.
+[2026-06-25 19:35:42.634] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(hostCollection owl:Thing)).
+[2026-06-25 19:35:42.637] Found 81 possible bad axioms.
+[2026-06-25 19:35:42.637] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) Specimen).
+[2026-06-25 19:35:42.640] Found 80 possible bad axioms.
+[2026-06-25 19:35:42.640] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:35:42.643] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 19:35:42.644] Checking precondition...
+[2026-06-25 19:35:42.655] Starting the repair...
+[2026-06-25 19:35:44.243] Found 2 possible bad axioms.
+[2026-06-25 19:35:44.244] Selected the bad axiom SubClassOf(Specimen ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:35:44.245] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 
+...[truncated]
+FAIL: attempt=28 seed=383449 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+progress: ontology=TDWGSPEC attempt=28 success=4/100
+----- TDWGSPEC attempt=29 seed=397649 at 2026-06-25 19:39:49 -----
+--- stdout ---
+{"seed":397649,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A3","error_message":"Repair timeout: A3 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":117,"A2":1551,"A3":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=397649, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:39:49.698] Checking precondition...
+[2026-06-25 19:39:49.721] Starting the repair...
+[2026-06-25 19:39:49.731] Found 87 possible bad axioms.
+[2026-06-25 19:39:49.732] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) owl:Nothing).
+[2026-06-25 19:39:49.738] Found 86 possible bad axioms.
+[2026-06-25 19:39:49.738] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(kindOfSpecimen owl:Thing)).
+[2026-06-25 19:39:49.743] Found 85 possible bad axioms.
+[2026-06-25 19:39:49.744] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:39:49.748] Found 84 possible bad axioms.
+[2026-06-25 19:39:49.748] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:39:49.752] Found 83 possible bad axioms.
+[2026-06-25 19:39:49.752] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Illustration).
+[2026-06-25 19:39:49.754] Found 82 possible bad axioms.
+[2026-06-25 19:39:49.754] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm MovingImage).
+[2026-06-25 19:39:49.755] Found 81 possible bad axioms.
+[2026-06-25 19:39:49.755] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:39:49.759] Found 80 possible bad axioms.
+[2026-06-25 19:39:49.759] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:39:49.762] Found 79 possible bad axioms.
+[2026-06-25 19:39:49.762] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(collectorTeam owl:Thing)).
+[2026-06-25 19:39:49.765] Found 78 possible bad axioms.
+[2026-06-25 19:39:49.765] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 19:39:49.766] Found 77 possible bad axioms.
+[2026-06-25 19:39:49.766] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 19:39:49.773] Found 76 possible bad axioms.
+[2026-06-25 19:39:49.773] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFr
+...[truncated]
+FAIL: attempt=29 seed=397649 status=time_limit_exceeded stage=A3 message=Repair timeout: A3 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=29 success=4/100
+----- TDWGSPEC attempt=30 seed=411849 at 2026-06-25 19:45:21 -----
+--- stdout ---
+{"seed":411849,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)","iic_values":{},"repair_runtimes_ms":{"A1":150,"A2":1510,"A3":1764,"B1":565,"B2":196425}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=411849, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:45:21.792] Checking precondition...
+[2026-06-25 19:45:21.811] Starting the repair...
+[2026-06-25 19:45:21.821] Found 87 possible bad axioms.
+[2026-06-25 19:45:21.823] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:45:21.829] Found 86 possible bad axioms.
+[2026-06-25 19:45:21.829] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:45:21.834] Found 85 possible bad axioms.
+[2026-06-25 19:45:21.835] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Living).
+[2026-06-25 19:45:21.837] Found 84 possible bad axioms.
+[2026-06-25 19:45:21.837] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)).
+[2026-06-25 19:45:21.842] Found 83 possible bad axioms.
+[2026-06-25 19:45:21.842] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:45:21.846] Found 82 possible bad axioms.
+[2026-06-25 19:45:21.846] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(hostCollection KindOfSpecimenTerm)).
+[2026-06-25 19:45:21.850] Found 81 possible bad axioms.
+[2026-06-25 19:45:21.850] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(derivedFrom ObjectSomeValuesFrom(kindOfSpecimen owl:Thing))).
+[2026-06-25 19:45:21.853] Found 80 possible bad axioms.
+[2026-06-25 19:45:21.854] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:45:21.856] Found 79 possible bad axioms.
+[2026-06-25 19:45:21.857] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))) ObjectSomeValuesFrom(typeStatus owl:Thing)).
+[2026-06-25 19:45:21.859] Found 78 possible bad axioms.
+[2026-06-25 19:45:21.859] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Digital).
+[2026-06-25 19:45:21.860] Found 77 possible bad axioms.
+[2026-06-25 19:45:21.861] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Preserved).
+[2026-06-25 19:45:21.866] Found 76 possible bad axioms.
+[2026-06-25 19:45:21.866] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm StillImage).
+[2026-06-25 19:45:21.867] Found 75 possib
+...[truncated]
+FAIL: attempt=30 seed=411849 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+progress: ontology=TDWGSPEC attempt=30 success=4/100
+----- TDWGSPEC attempt=31 seed=426049 at 2026-06-25 19:48:42 -----
+--- stdout ---
+{"seed":426049,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B1","error_message":"Repair timeout: B1 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":118,"A2":1542,"A3":317,"B1":330002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=426049, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:48:42.636] Checking precondition...
+[2026-06-25 19:48:42.651] Starting the repair...
+[2026-06-25 19:48:42.659] Found 87 possible bad axioms.
+[2026-06-25 19:48:42.660] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 19:48:42.665] Found 86 possible bad axioms.
+[2026-06-25 19:48:42.666] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:48:42.670] Found 85 possible bad axioms.
+[2026-06-25 19:48:42.670] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 19:48:42.677] Found 84 possible bad axioms.
+[2026-06-25 19:48:42.677] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom owl:Thing) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:48:42.681] Found 83 possible bad axioms.
+[2026-06-25 19:48:42.682] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Fossil).
+[2026-06-25 19:48:42.683] Found 82 possible bad axioms.
+[2026-06-25 19:48:42.683] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection owl:Thing) ObjectSomeValuesFrom(ObjectInverseOf(typeForName) owl:Thing)).
+[2026-06-25 19:48:42.687] Found 81 possible bad axioms.
+[2026-06-25 19:48:42.687] Selected the bad axiom ClassAssertion(KindOfSpecimenTerm Preserved).
+[2026-06-25 19:48:42.688] Found 80 possible bad axioms.
+[2026-06-25 19:48:42.688] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)) ObjectSomeValuesFrom(typeStatus ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:48:42.691] Found 79 possible bad axioms.
+[2026-06-25 19:48:42.691] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen))).
+[2026-06-25 19:48:42.694] Found 78 possible bad axioms.
+[2026-06-25 19:48:42.694] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(isVoucherFor owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:48:42.696] Found 77 possible bad axioms.
+[2026-06-25 19:48:42.697] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm)).
+[2026-06-25 19:48:42.704] Found 76 pos
+...[truncated]
+FAIL: attempt=31 seed=426049 status=time_limit_exceeded stage=B1 message=Repair timeout: B1 exceeded 300 seconds
+progress: ontology=TDWGSPEC attempt=31 success=4/100
+----- TDWGSPEC attempt=32 seed=440249 at 2026-06-25 19:54:14 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/TDWGSPEC.owl, seed=440249, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 19:54:15.036] Checking precondition...
+[2026-06-25 19:54:15.051] Starting the repair...
+[2026-06-25 19:54:15.061] Found 87 possible bad axioms.
+[2026-06-25 19:54:15.062] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:54:15.068] Found 86 possible bad axioms.
+[2026-06-25 19:54:15.068] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))) ObjectSomeValuesFrom(typeForName owl:Thing)).
+[2026-06-25 19:54:15.074] Found 85 possible bad axioms.
+[2026-06-25 19:54:15.074] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(kindOfSpecimen ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:54:15.079] Found 84 possible bad axioms.
+[2026-06-25 19:54:15.079] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(collectorTeam owl:Thing) ObjectSomeValuesFrom(digitalRepresentation ObjectAllValuesFrom(kindOfSpecimen KindOfSpecimenTerm))).
+[2026-06-25 19:54:15.083] Found 83 possible bad axioms.
+[2026-06-25 19:54:15.083] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(kindOfSpecimen owl:Thing) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:54:15.086] Found 82 possible bad axioms.
+[2026-06-25 19:54:15.086] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) Specimen).
+[2026-06-25 19:54:15.089] Found 81 possible bad axioms.
+[2026-06-25 19:54:15.089] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(isVoucherFor KindOfSpecimenTerm)).
+[2026-06-25 19:54:15.092] Found 80 possible bad axioms.
+[2026-06-25 19:54:15.092] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(digitalRepresentation owl:Thing) ObjectSomeValuesFrom(isVoucherFor owl:Thing)).
+[2026-06-25 19:54:15.095] Found 79 possible bad axioms.
+[2026-06-25 19:54:15.095] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName owl:Thing) ObjectSomeValuesFrom(procedure owl:Thing)).
+[2026-06-25 19:54:15.102] Found 78 possible bad axioms.
+[2026-06-25 19:54:15.102] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(hostCollection ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSomeValuesFrom(digitalRepresentation owl:Thing)).
+[2026-06-25 19:54:15.105] Found 77 possible bad axioms.
+[2026-06-25 19:54:15.105] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(typeForName ObjectAllValuesFrom(derivedFrom Specimen)) ObjectSom
+...[truncated]
+FAIL: attempt=32 seed=440249 - negative return code -9
+progress: ontology=TDWGSPEC attempt=32 success=4/100
+=== ABORTED TDWGSPEC after 10 consecutive failures at 2026-06-25 19:56:26 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for TDWGSPEC - 4 successes, 28 failures, 32 attempts ===
+Failed attempts:
+  attempt=1 seed=49 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=3 seed=28449 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=4 seed=42649 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=5 seed=56849 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+  attempt=6 seed=71049 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=7 seed=85249 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=8 seed=99449 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=9 seed=113649 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=10 seed=127849 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=12 seed=156249 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=13 seed=170449 msg=Repair timeout: B7 exceeded 300 seconds
+  attempt=14 seed=184649 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+  attempt=15 seed=198849 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+  attempt=16 seed=213049 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=17 seed=227249 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=19 seed=255649 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=20 seed=269849 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=21 seed=284049 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=23 seed=312449 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=24 seed=326649 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=25 seed=340849 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+  attempt=26 seed=355049 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=27 seed=369249 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+  attempt=28 seed=383449 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+  attempt=29 seed=397649 msg=Repair timeout: A3 exceeded 300 seconds
+  attempt=30 seed=411849 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Specimen ⊑ ∃ digitalRepresentation.(∀ kindOfSpecimen.KindOfSpecimenTerm)
+  attempt=31 seed=426049 msg=Repair timeout: B1 exceeded 300 seconds
+  attempt=32 seed=440249 msg=negative return code -9
+Timing summary:
+  success: count=4 total_seconds=820.361995 avg_seconds=205.090499
+  time_limit_exceeded: count=20 total_seconds=6704.895119 avg_seconds=335.244756
+  memory_limit_exceeded: count=1 total_seconds=132.106471 avg_seconds=132.106471
+  success_rate=0.1250
+  wall_clock_seconds_total_run=360698.251834

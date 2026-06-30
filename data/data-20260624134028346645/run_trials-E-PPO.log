@@ -1,0 +1,1708 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-E-PPO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-E-PPO.csv
+
+=== Starting sequential trials for E-PPO at 2026-06-26 08:38:54 ===
+----- E-PPO attempt=1 seed=64 at 2026-06-26 08:38:54 -----
+--- stdout ---
+{"seed":64,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":94,"A2":748,"A3":252,"B1":467,"B2":1820}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=64, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:38:55.168] Checking precondition...
+[2026-06-26 08:38:55.183] Starting the repair...
+[2026-06-26 08:38:55.189] Found 121 possible bad axioms.
+[2026-06-26 08:38:55.191] Selected the bad axiom SubClassOf(Rank Responsibilities).
+[2026-06-26 08:38:55.196] Found 120 possible bad axioms.
+[2026-06-26 08:38:55.196] Selected the bad axiom SubClassOf(State City).
+[2026-06-26 08:38:55.200] Found 119 possible bad axioms.
+[2026-06-26 08:38:55.200] Selected the bad axiom SubClassOf(NAPTEB owl:Nothing).
+[2026-06-26 08:38:55.203] Found 118 possible bad axioms.
+[2026-06-26 08:38:55.203] Selected the bad axiom SubClassOf(Trade_Test NAPTEB).
+[2026-06-26 08:38:55.206] Found 117 possible bad axioms.
+[2026-06-26 08:38:55.206] Selected the bad axiom SubClassOf(State Permanent).
+[2026-06-26 08:38:55.209] Found 116 possible bad axioms.
+[2026-06-26 08:38:55.210] Selected the bad axiom SubClassOf(Surname Name).
+[2026-06-26 08:38:55.212] Found 115 possible bad axioms.
+[2026-06-26 08:38:55.213] Selected the bad axiom SubClassOf(Area_of_Specialization Personal_Profile).
+[2026-06-26 08:38:55.216] Found 114 possible bad axioms.
+[2026-06-26 08:38:55.216] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:38:55.222] Found 113 possible bad axioms.
+[2026-06-26 08:38:55.222] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:38:55.224] Found 112 possible bad axioms.
+[2026-06-26 08:38:55.224] Selected the bad axiom SubClassOf(NAPTEB NECO).
+[2026-06-26 08:38:55.227] Found 111 possible bad axioms.
+[2026-06-26 08:38:55.227] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[2026-06-26 08:38:55.234] Found 110 possible bad axioms.
+[2026-06-26 08:38:55.235] Selected the bad axiom SubClassOf(Gender Personal_Profile).
+[2026-06-26 08:38:55.237] Found 109 possible bad axioms.
+[2026-06-26 08:38:55.238] Selected the bad axiom SubClassOf(Date_of_Birth owl:Nothing).
+[2026-06-26 08:38:55.240] Found 108 possible bad axioms.
+[2026-06-26 08:38:55.241] Selected the bad axiom SubClassOf(Educational_Qualification Personal_Profile).
+[2026-06-26 08:38:55.243] Found 107 possible bad axioms.
+[2026-06-26 08:38:55.243] Selected the bad axiom SubClassOf(Masters_Degree Educational_Qualification).
+[2026-06-26 08:38:55.246] Found 106 possible bad axioms.
+[2026-06-26 08:38:55.246] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:38:55.249] Found 105 possible bad axioms.
+[2026-06-26 08:38:55.249] Selected the bad axiom SubClassOf(Middlename Surname).
+[2026-06-26 08:38:55.251] Found 104 possible bad axioms.
+[2026-06-26 08:38:55.251] Selecte
+...[truncated]
+FAIL: attempt=1 seed=64 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=1 success=0/100
+----- E-PPO attempt=2 seed=14264 at 2026-06-26 08:38:58 -----
+--- stdout ---
+{"seed":14264,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":83,"A2":781,"A3":259,"B1":225,"B2":3092,"B3":1020}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=14264, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:38:58.969] Checking precondition...
+[2026-06-26 08:38:58.983] Starting the repair...
+[2026-06-26 08:38:58.989] Found 121 possible bad axioms.
+[2026-06-26 08:38:58.991] Selected the bad axiom SubClassOf(Year_of_last_Promotion Personal_Profile).
+[2026-06-26 08:38:58.995] Found 120 possible bad axioms.
+[2026-06-26 08:38:58.996] Selected the bad axiom SubClassOf(Preferred_Title Personal_Profile).
+[2026-06-26 08:38:58.999] Found 119 possible bad axioms.
+[2026-06-26 08:38:58.999] Selected the bad axiom SubClassOf(Journals Researches).
+[2026-06-26 08:38:59.003] Found 118 possible bad axioms.
+[2026-06-26 08:38:59.003] Selected the bad axiom SubClassOf(Firstname Name).
+[2026-06-26 08:38:59.006] Found 117 possible bad axioms.
+[2026-06-26 08:38:59.006] Selected the bad axiom SubClassOf(Outside Responsibilities).
+[2026-06-26 08:38:59.009] Found 116 possible bad axioms.
+[2026-06-26 08:38:59.009] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:38:59.012] Found 115 possible bad axioms.
+[2026-06-26 08:38:59.012] Selected the bad axiom SubClassOf(Educational_Qualification NAPTEB).
+[2026-06-26 08:38:59.015] Found 114 possible bad axioms.
+[2026-06-26 08:38:59.015] Selected the bad axiom SubClassOf(Date_of_Birth Personal_Profile).
+[2026-06-26 08:38:59.022] Found 113 possible bad axioms.
+[2026-06-26 08:38:59.022] Selected the bad axiom SubClassOf(Name Personal_Profile).
+[2026-06-26 08:38:59.024] Found 112 possible bad axioms.
+[2026-06-26 08:38:59.024] Selected the bad axiom SubClassOf(Researches Textbooks).
+[2026-06-26 08:38:59.026] Found 111 possible bad axioms.
+[2026-06-26 08:38:59.027] Selected the bad axiom SubClassOf(Rank Responsibilities).
+[2026-06-26 08:38:59.034] Found 110 possible bad axioms.
+[2026-06-26 08:38:59.034] Selected the bad axiom SubClassOf(Contact State).
+[2026-06-26 08:38:59.037] Found 109 possible bad axioms.
+[2026-06-26 08:38:59.037] Selected the bad axiom SubClassOf(StreetName Permanent).
+[2026-06-26 08:38:59.039] Found 108 possible bad axioms.
+[2026-06-26 08:38:59.040] Selected the bad axiom SubClassOf(Researches Community_Development).
+[2026-06-26 08:38:59.042] Found 107 possible bad axioms.
+[2026-06-26 08:38:59.042] Selected the bad axiom SubClassOf(Within Outside).
+[2026-06-26 08:38:59.045] Found 106 possible bad axioms.
+[2026-06-26 08:38:59.045] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:38:59.048] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:38:59.049] Checking precondition...
+[2026-06-26 08:38:59.054] Starting the repair...
+[2026-06-26 
+...[truncated]
+FAIL: attempt=2 seed=14264 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=2 success=0/100
+----- E-PPO attempt=3 seed=28464 at 2026-06-26 08:39:04 -----
+--- stdout ---
+{"seed":28464,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":38,"A2":800,"A3":497,"B1":431,"B2":3108}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=28464, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:04.853] Checking precondition...
+[2026-06-26 08:39:04.867] Starting the repair...
+[2026-06-26 08:39:04.874] Found 121 possible bad axioms.
+[2026-06-26 08:39:04.875] Selected the bad axiom SubClassOf(Personal_Profile Rank).
+[2026-06-26 08:39:04.880] Found 120 possible bad axioms.
+[2026-06-26 08:39:04.880] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:39:04.884] Found 119 possible bad axioms.
+[2026-06-26 08:39:04.884] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:04.887] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:39:04.888] Checking precondition...
+[2026-06-26 08:39:04.893] Starting the repair...
+[2026-06-26 08:39:05.687] Found 2 possible bad axioms.
+[2026-06-26 08:39:05.688] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:05.688] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:39:05.690] Checking precondition...
+[2026-06-26 08:39:05.693] Starting the repair...
+[2026-06-26 08:39:05.705] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:39:05.926] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:39:05.952] Selected the weaker axiom SubClassOf(owl:Thing Profession).
+[2026-06-26 08:39:06.183] Selected the bad axiom SubClassOf(owl:Thing Profession).
+[2026-06-26 08:39:06.185] Selected the weaker axiom SubClassOf(Present_Status Profession).
+[2026-06-26 08:39:06.186] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 08:39:06.187] Checking precondition...
+[2026-06-26 08:39:06.188] Starting the repair...
+[2026-06-26 08:39:06.196] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:39:06.371] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:06.382] Selected the weaker axiom SubClassOf(WAEC StreetName).
+[2026-06-26 08:39:06.616] Selected the bad axiom SubClassOf(WAEC StreetName).
+[2026-06-26 08:39:06.617] Selected the weaker axiom SubClassOf(NCE StreetName).
+[2026-06-26 08:39:06.618] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 08:39:06.619] Checking precondition...
+[2026-06-26 08:39:06.620] Starting the repair...
+[2026-06-26 08:39:06.625] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:39:06.798] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[PowerIndexWeakerAxiomSelector] Scoring 110 candidate weakenings for WAEC ⊑ Educational_Qualification
+java.lang.
+...[truncated]
+FAIL: attempt=3 seed=28464 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=3 success=0/100
+----- E-PPO attempt=4 seed=42664 at 2026-06-26 08:39:10 -----
+--- stdout ---
+{"seed":42664,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":70,"A2":776,"A3":242,"B1":219,"B2":3063,"B3":1189,"B4":51,"B5":2648,"B6":491}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=42664, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:10.494] Checking precondition...
+[2026-06-26 08:39:10.508] Starting the repair...
+[2026-06-26 08:39:10.514] Found 121 possible bad axioms.
+[2026-06-26 08:39:10.516] Selected the bad axiom SubClassOf(Researches Textbooks).
+[2026-06-26 08:39:10.521] Found 120 possible bad axioms.
+[2026-06-26 08:39:10.521] Selected the bad axiom SubClassOf(Trade_Test NAPTEB).
+[2026-06-26 08:39:10.524] Found 119 possible bad axioms.
+[2026-06-26 08:39:10.525] Selected the bad axiom SubClassOf(Educational_Qualification Personal_Profile).
+[2026-06-26 08:39:10.528] Found 118 possible bad axioms.
+[2026-06-26 08:39:10.528] Selected the bad axiom SubClassOf(Personal_Profile Rank).
+[2026-06-26 08:39:10.531] Found 117 possible bad axioms.
+[2026-06-26 08:39:10.531] Selected the bad axiom SubClassOf(Researches Mobile).
+[2026-06-26 08:39:10.534] Found 116 possible bad axioms.
+[2026-06-26 08:39:10.534] Selected the bad axiom SubClassOf(State Permanent).
+[2026-06-26 08:39:10.537] Found 115 possible bad axioms.
+[2026-06-26 08:39:10.537] Selected the bad axiom SubClassOf(Year_of_last_Promotion Personal_Profile).
+[2026-06-26 08:39:10.539] Found 114 possible bad axioms.
+[2026-06-26 08:39:10.540] Selected the bad axiom SubClassOf(Higher_National_Diploma Ordinary_National_Diploma).
+[2026-06-26 08:39:10.547] Found 113 possible bad axioms.
+[2026-06-26 08:39:10.547] Selected the bad axiom SubClassOf(Address Contact).
+[2026-06-26 08:39:10.549] Found 112 possible bad axioms.
+[2026-06-26 08:39:10.550] Selected the bad axiom SubClassOf(NAPTEB NCE).
+[2026-06-26 08:39:10.552] Found 111 possible bad axioms.
+[2026-06-26 08:39:10.552] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:10.559] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:39:10.560] Checking precondition...
+[2026-06-26 08:39:10.565] Starting the repair...
+[2026-06-26 08:39:11.335] Found 2 possible bad axioms.
+[2026-06-26 08:39:11.336] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:11.336] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:39:11.338] Checking precondition...
+[2026-06-26 08:39:11.340] Starting the repair...
+[2026-06-26 08:39:11.350] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:39:11.552] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:39:11.577] Selected the weaker axiom SubClassOf(owl:Thing owl:Thing).
+[2026-06-26 08:39:11.579] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random).
+...[truncated]
+FAIL: attempt=4 seed=42664 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=4 success=0/100
+----- E-PPO attempt=5 seed=56864 at 2026-06-26 08:39:20 -----
+--- stdout ---
+{"seed":56864,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":76,"A2":776,"A3":487,"B1":607,"B2":1345,"B3":805,"B4":64,"B5":2557,"B6":1835,"B7":138,"B8":2677}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=56864, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:20.605] Checking precondition...
+[2026-06-26 08:39:20.618] Starting the repair...
+[2026-06-26 08:39:20.625] Found 121 possible bad axioms.
+[2026-06-26 08:39:20.627] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:39:20.631] Found 120 possible bad axioms.
+[2026-06-26 08:39:20.631] Selected the bad axiom SubClassOf(Researches Mobile).
+[2026-06-26 08:39:20.636] Found 119 possible bad axioms.
+[2026-06-26 08:39:20.636] Selected the bad axiom SubClassOf(Block Office).
+[2026-06-26 08:39:20.639] Found 118 possible bad axioms.
+[2026-06-26 08:39:20.639] Selected the bad axiom SubClassOf(Block Affilliation).
+[2026-06-26 08:39:20.642] Found 117 possible bad axioms.
+[2026-06-26 08:39:20.642] Selected the bad axiom SubClassOf(Gender Educational_Qualification).
+[2026-06-26 08:39:20.645] Found 116 possible bad axioms.
+[2026-06-26 08:39:20.645] Selected the bad axiom SubClassOf(Office Address).
+[2026-06-26 08:39:20.647] Found 115 possible bad axioms.
+[2026-06-26 08:39:20.648] Selected the bad axiom SubClassOf(Firstname Middlename).
+[2026-06-26 08:39:20.651] Found 114 possible bad axioms.
+[2026-06-26 08:39:20.651] Selected the bad axiom SubClassOf(Higher_National_Diploma Ordinary_National_Diploma).
+[2026-06-26 08:39:20.657] Found 113 possible bad axioms.
+[2026-06-26 08:39:20.657] Selected the bad axiom SubClassOf(Textbooks Researches).
+[2026-06-26 08:39:20.659] Found 112 possible bad axioms.
+[2026-06-26 08:39:20.659] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:39:20.662] Found 111 possible bad axioms.
+[2026-06-26 08:39:20.662] Selected the bad axiom SubClassOf(Masters_Degree Educational_Qualification).
+[2026-06-26 08:39:20.669] Found 110 possible bad axioms.
+[2026-06-26 08:39:20.669] Selected the bad axiom SubClassOf(State Permanent).
+[2026-06-26 08:39:20.672] Found 109 possible bad axioms.
+[2026-06-26 08:39:20.672] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:39:20.676] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:39:20.677] Checking precondition...
+[2026-06-26 08:39:20.683] Starting the repair...
+[2026-06-26 08:39:21.451] Found 2 possible bad axioms.
+[2026-06-26 08:39:21.452] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:21.452] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:39:21.454] Checking precondition...
+[2026-06-26 08:39:21.457] Starting the repair...
+[2026-06-26 08:39:21.475] Selected a reference ontology with 171 axioms.
+[2026-06-26 08:
+...[truncated]
+FAIL: attempt=5 seed=56864 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=5 success=0/100
+----- E-PPO attempt=6 seed=71064 at 2026-06-26 08:39:32 -----
+--- stdout ---
+{"seed":71064,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":85,"A2":755,"A3":409,"B1":410,"B2":2989}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=71064, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:32.417] Checking precondition...
+[2026-06-26 08:39:32.430] Starting the repair...
+[2026-06-26 08:39:32.436] Found 121 possible bad axioms.
+[2026-06-26 08:39:32.438] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:39:32.442] Found 120 possible bad axioms.
+[2026-06-26 08:39:32.442] Selected the bad axiom SubClassOf(NECO Educational_Qualification).
+[2026-06-26 08:39:32.446] Found 119 possible bad axioms.
+[2026-06-26 08:39:32.446] Selected the bad axiom SubClassOf(Middlename owl:Nothing).
+[2026-06-26 08:39:32.449] Found 118 possible bad axioms.
+[2026-06-26 08:39:32.449] Selected the bad axiom SubClassOf(Ordinary_National_Diploma NAPTEB).
+[2026-06-26 08:39:32.452] Found 117 possible bad axioms.
+[2026-06-26 08:39:32.452] Selected the bad axiom SubClassOf(Educational_Qualification NAPTEB).
+[2026-06-26 08:39:32.455] Found 116 possible bad axioms.
+[2026-06-26 08:39:32.455] Selected the bad axiom SubClassOf(Office Permanent).
+[2026-06-26 08:39:32.458] Found 115 possible bad axioms.
+[2026-06-26 08:39:32.458] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:39:32.464] Found 114 possible bad axioms.
+[2026-06-26 08:39:32.464] Selected the bad axiom SubClassOf(Block RoomNo).
+[2026-06-26 08:39:32.467] Found 113 possible bad axioms.
+[2026-06-26 08:39:32.467] Selected the bad axiom SubClassOf(Gender Educational_Qualification).
+[2026-06-26 08:39:32.470] Found 112 possible bad axioms.
+[2026-06-26 08:39:32.470] Selected the bad axiom SubClassOf(Researches Personal_Profile).
+[2026-06-26 08:39:32.472] Found 111 possible bad axioms.
+[2026-06-26 08:39:32.472] Selected the bad axiom SubClassOf(Ordinary_National_Diploma Educational_Qualification).
+[2026-06-26 08:39:32.478] Found 110 possible bad axioms.
+[2026-06-26 08:39:32.479] Selected the bad axiom SubClassOf(Block owl:Nothing).
+[2026-06-26 08:39:32.481] Found 109 possible bad axioms.
+[2026-06-26 08:39:32.482] Selected the bad axiom SubClassOf(Textbooks Researches).
+[2026-06-26 08:39:32.484] Found 108 possible bad axioms.
+[2026-06-26 08:39:32.485] Selected the bad axiom SubClassOf(Contact Email).
+[2026-06-26 08:39:32.487] Found 107 possible bad axioms.
+[2026-06-26 08:39:32.487] Selected the bad axiom SubClassOf(Journals Textbooks).
+[2026-06-26 08:39:32.490] Found 106 possible bad axioms.
+[2026-06-26 08:39:32.490] Selected the bad axiom SubClassOf(Year_of_last_Promotion Personal_Profile).
+[2026-06-26 08:39:32.493] Found 105 possible bad axioms.
+[2026-06-26 08:39:32.493] Selected the bad axiom SubClassOf(Outside Responsibilities).
+[2026-06-26 08:39:32.49
+...[truncated]
+FAIL: attempt=6 seed=71064 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=6 success=0/100
+----- E-PPO attempt=7 seed=85264 at 2026-06-26 08:39:37 -----
+--- stdout ---
+{"seed":85264,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":122,"A2":743,"A3":261,"B1":198,"B2":952}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=85264, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:37.498] Checking precondition...
+[2026-06-26 08:39:37.512] Starting the repair...
+[2026-06-26 08:39:37.519] Found 121 possible bad axioms.
+[2026-06-26 08:39:37.520] Selected the bad axiom SubClassOf(Bachelors_Degree Educational_Qualification).
+[2026-06-26 08:39:37.524] Found 120 possible bad axioms.
+[2026-06-26 08:39:37.525] Selected the bad axiom SubClassOf(Permanent State).
+[2026-06-26 08:39:37.529] Found 119 possible bad axioms.
+[2026-06-26 08:39:37.529] Selected the bad axiom SubClassOf(RoomNo Affilliation).
+[2026-06-26 08:39:37.532] Found 118 possible bad axioms.
+[2026-06-26 08:39:37.533] Selected the bad axiom SubClassOf(Name Outside).
+[2026-06-26 08:39:37.535] Found 117 possible bad axioms.
+[2026-06-26 08:39:37.535] Selected the bad axiom SubClassOf(Researches Textbooks).
+[2026-06-26 08:39:37.538] Found 116 possible bad axioms.
+[2026-06-26 08:39:37.539] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:39:37.541] Found 115 possible bad axioms.
+[2026-06-26 08:39:37.542] Selected the bad axiom SubClassOf(Contact Skills).
+[2026-06-26 08:39:37.545] Found 114 possible bad axioms.
+[2026-06-26 08:39:37.545] Selected the bad axiom SubClassOf(Personal_Profile Rank).
+[2026-06-26 08:39:37.552] Found 113 possible bad axioms.
+[2026-06-26 08:39:37.552] Selected the bad axiom SubClassOf(Address owl:Nothing).
+[2026-06-26 08:39:37.555] Found 112 possible bad axioms.
+[2026-06-26 08:39:37.555] Selected the bad axiom SubClassOf(Address Phone).
+[2026-06-26 08:39:37.557] Found 111 possible bad axioms.
+[2026-06-26 08:39:37.557] Selected the bad axiom SubClassOf(Educational_Qualification owl:Nothing).
+[2026-06-26 08:39:37.564] Found 110 possible bad axioms.
+[2026-06-26 08:39:37.565] Selected the bad axiom SubClassOf(Personal_Profile Educational_Qualification).
+[2026-06-26 08:39:37.568] Found 109 possible bad axioms.
+[2026-06-26 08:39:37.568] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:39:37.570] Found 108 possible bad axioms.
+[2026-06-26 08:39:37.571] Selected the bad axiom SubClassOf(StreetName State).
+[2026-06-26 08:39:37.573] Found 107 possible bad axioms.
+[2026-06-26 08:39:37.574] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:39:37.576] Found 106 possible bad axioms.
+[2026-06-26 08:39:37.577] Selected the bad axiom SubClassOf(HouseNo Permanent).
+[2026-06-26 08:39:37.579] Found 105 possible bad axioms.
+[2026-06-26 08:39:37.579] Selected the bad axiom SubClassOf(Date_of_Birth owl:Nothing).
+[2026-06-26 08:39:37.581] Found 104 possible bad axioms.
+[2026-06-26 08:39:37.581] 
+...[truncated]
+FAIL: attempt=7 seed=85264 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=7 success=0/100
+----- E-PPO attempt=8 seed=99464 at 2026-06-26 08:39:39 -----
+--- stdout ---
+{"seed":99464,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.9818181818181818,"B1_vs_A3":0.9818181818181818,"B2_vs_A1":0.6687116564417178,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.9818181818181818,"B3_vs_A3":0.9818181818181818,"B4_vs_A1":1.0,"B4_vs_A2":0.9818181818181818,"B4_vs_A3":0.9818181818181818,"B5_vs_A1":1.0,"B5_vs_A2":0.9818181818181818,"B5_vs_A3":0.9818181818181818,"B6_vs_A1":1.0,"B6_vs_A2":0.9818181818181818,"B6_vs_A3":0.9818181818181818,"B7_vs_A1":1.0,"B7_vs_A2":0.9818181818181818,"B7_vs_A3":0.9818181818181818,"B8_vs_A1":1.0,"B8_vs_A2":0.9818181818181818,"B8_vs_A3":0.9818181818181818,"B9_vs_A1":1.0,"B9_vs_A2":0.9818181818181818,"B9_vs_A3":0.9818181818181818},"repair_runtimes_ms":{"A1":61,"A2":769,"A3":693,"B1":212,"B2":1249,"B3":1136,"B4":44,"B5":2722,"B6":1786,"B7":81,"B8":749,"B9":927}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=99464, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:40.197] Checking precondition...
+[2026-06-26 08:39:40.211] Starting the repair...
+[2026-06-26 08:39:40.217] Found 121 possible bad axioms.
+[2026-06-26 08:39:40.218] Selected the bad axiom SubClassOf(Date_of_Birth Personal_Profile).
+[2026-06-26 08:39:40.222] Found 120 possible bad axioms.
+[2026-06-26 08:39:40.223] Selected the bad axiom SubClassOf(NCE Educational_Qualification).
+[2026-06-26 08:39:40.226] Found 119 possible bad axioms.
+[2026-06-26 08:39:40.227] Selected the bad axiom SubClassOf(Higher_National_Diploma Ordinary_National_Diploma).
+[2026-06-26 08:39:40.230] Found 118 possible bad axioms.
+[2026-06-26 08:39:40.230] Selected the bad axiom SubClassOf(NAPTEB NECO).
+[2026-06-26 08:39:40.233] Found 117 possible bad axioms.
+[2026-06-26 08:39:40.233] Selected the bad axiom SubClassOf(Outside Responsibilities).
+[2026-06-26 08:39:40.236] Found 116 possible bad axioms.
+[2026-06-26 08:39:40.236] Selected the bad axiom SubClassOf(PostalCode Permanent).
+[2026-06-26 08:39:40.239] Found 115 possible bad axioms.
+[2026-06-26 08:39:40.239] Selected the bad axiom SubClassOf(Firstname Name).
+[2026-06-26 08:39:40.242] Found 114 possible bad axioms.
+[2026-06-26 08:39:40.242] Selected the bad axiom SubClassOf(Journals Textbooks).
+[2026-06-26 08:39:40.248] Found 113 possible bad axioms.
+[2026-06-26 08:39:40.249] Selected the bad axiom SubClassOf(Date_of_Birth Middlename).
+[2026-06-26 08:39:40.251] Found 112 possible bad axioms.
+[2026-06-26 08:39:40.251] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:39:40.253] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:39:40.254] Checking precondition...
+[2026-06-26 08:39:40.263] Starting the repair...
+[2026-06-26 08:39:41.023] Found 2 possible bad axioms.
+[2026-06-26 08:39:41.023] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:41.023] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:39:41.025] Checking precondition...
+[2026-06-26 08:39:41.028] Starting the repair...
+[2026-06-26 08:39:41.037] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:39:41.246] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:41.272] Selected the weaker axiom SubClassOf(WAEC Home).
+[2026-06-26 08:39:41.514] Selected the bad axiom SubClassOf(WAEC Home).
+[2026-06-26 08:39:41.516] Selected the weaker axiom SubClassOf(WAEC NCE).
+[2026-06-26 08:39:41.714] Selected the bad axiom SubClassOf(WAEC NCE).
+[2026-06-26 08:39:41.715] Selected the weaker ax
+...[truncated]
+SUCCESS: attempt=8 seed=99464 success_count=1/100
+progress: ontology=E-PPO attempt=8 success=1/100
+----- E-PPO attempt=9 seed=113664 at 2026-06-26 08:39:50 -----
+--- stdout ---
+{"seed":113664,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":89,"A2":735,"A3":243,"B1":392,"B2":1160,"B3":1809}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=113664, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:51.161] Checking precondition...
+[2026-06-26 08:39:51.176] Starting the repair...
+[2026-06-26 08:39:51.182] Found 121 possible bad axioms.
+[2026-06-26 08:39:51.184] Selected the bad axiom SubClassOf(Ordinary_National_Diploma NAPTEB).
+[2026-06-26 08:39:51.188] Found 120 possible bad axioms.
+[2026-06-26 08:39:51.189] Selected the bad axiom SubClassOf(StreetName State).
+[2026-06-26 08:39:51.192] Found 119 possible bad axioms.
+[2026-06-26 08:39:51.192] Selected the bad axiom SubClassOf(Higher_National_Diploma Educational_Qualification).
+[2026-06-26 08:39:51.195] Found 118 possible bad axioms.
+[2026-06-26 08:39:51.195] Selected the bad axiom SubClassOf(Trade_Test Ordinary_National_Diploma).
+[2026-06-26 08:39:51.198] Found 117 possible bad axioms.
+[2026-06-26 08:39:51.198] Selected the bad axiom SubClassOf(Name Outside).
+[2026-06-26 08:39:51.201] Found 116 possible bad axioms.
+[2026-06-26 08:39:51.201] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:39:51.204] Found 115 possible bad axioms.
+[2026-06-26 08:39:51.204] Selected the bad axiom SubClassOf(Ordinary_National_Diploma owl:Nothing).
+[2026-06-26 08:39:51.207] Found 114 possible bad axioms.
+[2026-06-26 08:39:51.207] Selected the bad axiom SubClassOf(Researches Community_Development).
+[2026-06-26 08:39:51.213] Found 113 possible bad axioms.
+[2026-06-26 08:39:51.214] Selected the bad axiom SubClassOf(Educational_Qualification WAEC).
+[2026-06-26 08:39:51.216] Found 112 possible bad axioms.
+[2026-06-26 08:39:51.216] Selected the bad axiom SubClassOf(Phone Address).
+[2026-06-26 08:39:51.218] Found 111 possible bad axioms.
+[2026-06-26 08:39:51.218] Selected the bad axiom SubClassOf(Surname Name).
+[2026-06-26 08:39:51.225] Found 110 possible bad axioms.
+[2026-06-26 08:39:51.226] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:39:51.228] Found 109 possible bad axioms.
+[2026-06-26 08:39:51.228] Selected the bad axiom SubClassOf(Personal_Profile Rank).
+[2026-06-26 08:39:51.231] Found 108 possible bad axioms.
+[2026-06-26 08:39:51.231] Selected the bad axiom SubClassOf(Personal_Profile Educational_Qualification).
+[2026-06-26 08:39:51.234] Found 107 possible bad axioms.
+[2026-06-26 08:39:51.234] Selected the bad axiom SubClassOf(Contact State).
+[2026-06-26 08:39:51.236] Found 106 possible bad axioms.
+[2026-06-26 08:39:51.237] Selected the bad axiom SubClassOf(Contact Email).
+[2026-06-26 08:39:51.239] Found 105 possible bad axioms.
+[2026-06-26 08:39:51.239] Selected the bad axiom SubClassOf(Block RoomNo).
+[2026-06-26 08:39:51.241] Found 104 possible bad axioms.
+[
+...[truncated]
+FAIL: attempt=9 seed=113664 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=9 success=1/100
+----- E-PPO attempt=10 seed=127864 at 2026-06-26 08:39:55 -----
+--- stdout ---
+{"seed":127864,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":68,"A2":775,"A3":270,"B1":195,"B2":936,"B3":488}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=127864, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:56.008] Checking precondition...
+[2026-06-26 08:39:56.021] Starting the repair...
+[2026-06-26 08:39:56.028] Found 121 possible bad axioms.
+[2026-06-26 08:39:56.029] Selected the bad axiom SubClassOf(Textbooks Researches).
+[2026-06-26 08:39:56.034] Found 120 possible bad axioms.
+[2026-06-26 08:39:56.034] Selected the bad axiom SubClassOf(Within Outside).
+[2026-06-26 08:39:56.038] Found 119 possible bad axioms.
+[2026-06-26 08:39:56.038] Selected the bad axiom SubClassOf(Ordinary_National_Diploma NAPTEB).
+[2026-06-26 08:39:56.041] Found 118 possible bad axioms.
+[2026-06-26 08:39:56.041] Selected the bad axiom SubClassOf(Affilliation Office).
+[2026-06-26 08:39:56.044] Found 117 possible bad axioms.
+[2026-06-26 08:39:56.044] Selected the bad axiom SubClassOf(Bachelors_Degree NCE).
+[2026-06-26 08:39:56.047] Found 116 possible bad axioms.
+[2026-06-26 08:39:56.047] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[2026-06-26 08:39:56.050] Found 115 possible bad axioms.
+[2026-06-26 08:39:56.050] Selected the bad axiom SubClassOf(Educational_Qualification Personal_Profile).
+[2026-06-26 08:39:56.053] Found 114 possible bad axioms.
+[2026-06-26 08:39:56.053] Selected the bad axiom SubClassOf(Prizes_Awards_Prizes Personal_Profile).
+[2026-06-26 08:39:56.060] Found 113 possible bad axioms.
+[2026-06-26 08:39:56.061] Selected the bad axiom SubClassOf(Block RoomNo).
+[2026-06-26 08:39:56.063] Found 112 possible bad axioms.
+[2026-06-26 08:39:56.063] Selected the bad axiom SubClassOf(Phone Contact).
+[2026-06-26 08:39:56.065] Found 111 possible bad axioms.
+[2026-06-26 08:39:56.066] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:39:56.072] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:39:56.073] Checking precondition...
+[2026-06-26 08:39:56.078] Starting the repair...
+[2026-06-26 08:39:56.847] Found 2 possible bad axioms.
+[2026-06-26 08:39:56.848] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:56.848] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:39:56.849] Checking precondition...
+[2026-06-26 08:39:56.852] Starting the repair...
+[2026-06-26 08:39:56.871] Selected a reference ontology with 172 axioms.
+[2026-06-26 08:39:57.076] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:39:57.110] Selected the weaker axiom SubClassOf(WAEC owl:Thing).
+[2026-06-26 08:39:57.112] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06
+...[truncated]
+FAIL: attempt=10 seed=127864 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=10 success=1/100
+----- E-PPO attempt=11 seed=142064 at 2026-06-26 08:39:58 -----
+--- stdout ---
+{"seed":142064,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":127,"A2":714,"A3":241,"B1":210,"B2":3035}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=142064, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:39:59.156] Checking precondition...
+[2026-06-26 08:39:59.169] Starting the repair...
+[2026-06-26 08:39:59.176] Found 121 possible bad axioms.
+[2026-06-26 08:39:59.178] Selected the bad axiom SubClassOf(Email Contact).
+[2026-06-26 08:39:59.182] Found 120 possible bad axioms.
+[2026-06-26 08:39:59.183] Selected the bad axiom SubClassOf(Community_Development Personal_Profile).
+[2026-06-26 08:39:59.186] Found 119 possible bad axioms.
+[2026-06-26 08:39:59.186] Selected the bad axiom SubClassOf(Trade_Test Educational_Qualification).
+[2026-06-26 08:39:59.190] Found 118 possible bad axioms.
+[2026-06-26 08:39:59.190] Selected the bad axiom SubClassOf(NCE Educational_Qualification).
+[2026-06-26 08:39:59.192] Found 117 possible bad axioms.
+[2026-06-26 08:39:59.192] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:39:59.195] Found 116 possible bad axioms.
+[2026-06-26 08:39:59.195] Selected the bad axiom SubClassOf(Researches Mobile).
+[2026-06-26 08:39:59.198] Found 115 possible bad axioms.
+[2026-06-26 08:39:59.199] Selected the bad axiom SubClassOf(Profession Personal_Profile).
+[2026-06-26 08:39:59.201] Found 114 possible bad axioms.
+[2026-06-26 08:39:59.202] Selected the bad axiom SubClassOf(City Permanent).
+[2026-06-26 08:39:59.208] Found 113 possible bad axioms.
+[2026-06-26 08:39:59.208] Selected the bad axiom SubClassOf(Area_of_Specialization Personal_Profile).
+[2026-06-26 08:39:59.211] Found 112 possible bad axioms.
+[2026-06-26 08:39:59.211] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:39:59.213] Found 111 possible bad axioms.
+[2026-06-26 08:39:59.213] Selected the bad axiom SubClassOf(Conferences BookChapters).
+[2026-06-26 08:39:59.220] Found 110 possible bad axioms.
+[2026-06-26 08:39:59.220] Selected the bad axiom SubClassOf(StreetName State).
+[2026-06-26 08:39:59.224] Found 109 possible bad axioms.
+[2026-06-26 08:39:59.224] Selected the bad axiom SubClassOf(Office Permanent).
+[2026-06-26 08:39:59.226] Found 108 possible bad axioms.
+[2026-06-26 08:39:59.227] Selected the bad axiom SubClassOf(Researches Community_Development).
+[2026-06-26 08:39:59.229] Found 107 possible bad axioms.
+[2026-06-26 08:39:59.229] Selected the bad axiom SubClassOf(Within Outside).
+[2026-06-26 08:39:59.231] Found 106 possible bad axioms.
+[2026-06-26 08:39:59.231] Selected the bad axiom SubClassOf(NAPTEB NECO).
+[2026-06-26 08:39:59.233] Found 105 possible bad axioms.
+[2026-06-26 08:39:59.233] Selected the bad axiom SubClassOf(Responsibilities Rank).
+[2026-06-26 08:39:59.236] Found 104 possible bad axioms.
+[2026-06-26 08:39:59
+...[truncated]
+FAIL: attempt=11 seed=142064 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=11 success=1/100
+----- E-PPO attempt=12 seed=156264 at 2026-06-26 08:40:03 -----
+--- stdout ---
+{"seed":156264,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.9818181818181818,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.9818181818181818,"B3_vs_A1":0.8863157894736842,"B3_vs_A2":0.01818181818181818,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.9818181818181818,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.9818181818181818,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.9818181818181818,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.9818181818181818,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.9818181818181818,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.9818181818181818},"repair_runtimes_ms":{"A1":90,"A2":754,"A3":249,"B1":212,"B2":1299,"B3":1888,"B4":41,"B5":2488,"B6":1661,"B7":87,"B8":2857,"B9":204}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=156264, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:03.904] Checking precondition...
+[2026-06-26 08:40:03.920] Starting the repair...
+[2026-06-26 08:40:03.926] Found 121 possible bad axioms.
+[2026-06-26 08:40:03.927] Selected the bad axiom SubClassOf(Email Contact).
+[2026-06-26 08:40:03.932] Found 120 possible bad axioms.
+[2026-06-26 08:40:03.933] Selected the bad axiom SubClassOf(Address Email).
+[2026-06-26 08:40:03.936] Found 119 possible bad axioms.
+[2026-06-26 08:40:03.936] Selected the bad axiom SubClassOf(NAPTEB NCE).
+[2026-06-26 08:40:03.939] Found 118 possible bad axioms.
+[2026-06-26 08:40:03.939] Selected the bad axiom SubClassOf(Date_of_Birth Middlename).
+[2026-06-26 08:40:03.942] Found 117 possible bad axioms.
+[2026-06-26 08:40:03.942] Selected the bad axiom SubClassOf(NAPTEB Educational_Qualification).
+[2026-06-26 08:40:03.945] Found 116 possible bad axioms.
+[2026-06-26 08:40:03.945] Selected the bad axiom SubClassOf(Block RoomNo).
+[2026-06-26 08:40:03.948] Found 115 possible bad axioms.
+[2026-06-26 08:40:03.948] Selected the bad axiom SubClassOf(Doctor_or_Philosophy_(Ph.D) Educational_Qualification).
+[2026-06-26 08:40:03.956] Found 114 possible bad axioms.
+[2026-06-26 08:40:03.956] Selected the bad axiom SubClassOf(Ordinary_National_Diploma owl:Nothing).
+[2026-06-26 08:40:03.958] Found 113 possible bad axioms.
+[2026-06-26 08:40:03.959] Selected the bad axiom SubClassOf(StreetName State).
+[2026-06-26 08:40:03.961] Found 112 possible bad axioms.
+[2026-06-26 08:40:03.961] Selected the bad axiom SubClassOf(Textbooks Conferences).
+[2026-06-26 08:40:03.963] Found 111 possible bad axioms.
+[2026-06-26 08:40:03.963] Selected the bad axiom SubClassOf(Address Phone).
+[2026-06-26 08:40:03.970] Found 110 possible bad axioms.
+[2026-06-26 08:40:03.970] Selected the bad axiom SubClassOf(Permanent Address).
+[2026-06-26 08:40:03.973] Found 109 possible bad axioms.
+[2026-06-26 08:40:03.973] Selected the bad axiom SubClassOf(Conferences Journals).
+[2026-06-26 08:40:03.976] Found 108 possible bad axioms.
+[2026-06-26 08:40:03.976] Selected the bad axiom SubClassOf(StreetName Permanent).
+[2026-06-26 08:40:03.978] Found 107 possible bad axioms.
+[2026-06-26 08:40:03.979] Selected the bad axiom SubClassOf(Journals Textbooks).
+[2026-06-26 08:40:03.981] Found 106 possible bad axioms.
+[2026-06-26 08:40:03.982] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:40:03.984] Found 105 possible bad axioms.
+[2026-06-26 08:40:03.984] Selected the bad axiom SubClassOf(Trade_Test Ordinary_National_Diploma).
+[2026-06-26 08:40:03.986] Found 104 possible bad axioms.
+[2026-06-26 08:40:03.987] 
+...[truncated]
+SUCCESS: attempt=12 seed=156264 success_count=2/100
+progress: ontology=E-PPO attempt=12 success=2/100
+----- E-PPO attempt=13 seed=170464 at 2026-06-26 08:40:15 -----
+--- stdout ---
+{"seed":170464,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":129,"A2":726,"A3":487,"B1":213,"B2":1817}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=170464, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:16.308] Checking precondition...
+[2026-06-26 08:40:16.322] Starting the repair...
+[2026-06-26 08:40:16.328] Found 121 possible bad axioms.
+[2026-06-26 08:40:16.330] Selected the bad axiom SubClassOf(Trade_Test Ordinary_National_Diploma).
+[2026-06-26 08:40:16.334] Found 120 possible bad axioms.
+[2026-06-26 08:40:16.335] Selected the bad axiom SubClassOf(Educational_Qualification NAPTEB).
+[2026-06-26 08:40:16.338] Found 119 possible bad axioms.
+[2026-06-26 08:40:16.338] Selected the bad axiom SubClassOf(Textbooks Journals).
+[2026-06-26 08:40:16.341] Found 118 possible bad axioms.
+[2026-06-26 08:40:16.341] Selected the bad axiom SubClassOf(Researches Community_Development).
+[2026-06-26 08:40:16.344] Found 117 possible bad axioms.
+[2026-06-26 08:40:16.344] Selected the bad axiom SubClassOf(Block RoomNo).
+[2026-06-26 08:40:16.347] Found 116 possible bad axioms.
+[2026-06-26 08:40:16.348] Selected the bad axiom SubClassOf(Educational_Qualification owl:Nothing).
+[2026-06-26 08:40:16.350] Found 115 possible bad axioms.
+[2026-06-26 08:40:16.351] Selected the bad axiom SubClassOf(Mobile Phone).
+[2026-06-26 08:40:16.354] Found 114 possible bad axioms.
+[2026-06-26 08:40:16.354] Selected the bad axiom SubClassOf(Address Phone).
+[2026-06-26 08:40:16.360] Found 113 possible bad axioms.
+[2026-06-26 08:40:16.360] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:40:16.362] Found 112 possible bad axioms.
+[2026-06-26 08:40:16.362] Selected the bad axiom SubClassOf(Name Responsibilities).
+[2026-06-26 08:40:16.364] Found 111 possible bad axioms.
+[2026-06-26 08:40:16.365] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:40:16.373] Found 110 possible bad axioms.
+[2026-06-26 08:40:16.373] Selected the bad axiom SubClassOf(Preferred_Title Personal_Profile).
+[2026-06-26 08:40:16.376] Found 109 possible bad axioms.
+[2026-06-26 08:40:16.376] Selected the bad axiom SubClassOf(Affilliation Office).
+[2026-06-26 08:40:16.380] Found 108 possible bad axioms.
+[2026-06-26 08:40:16.381] Selected the bad axiom SubClassOf(Block Office).
+[2026-06-26 08:40:16.384] Found 107 possible bad axioms.
+[2026-06-26 08:40:16.384] Selected the bad axiom SubClassOf(Responsibilities Rank).
+[2026-06-26 08:40:16.387] Found 106 possible bad axioms.
+[2026-06-26 08:40:16.387] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:40:16.389] Found 105 possible bad axioms.
+[2026-06-26 08:40:16.389] Selected the bad axiom SubClassOf(Rank Personal_Profile).
+[2026-06-26 08:40:16.391] Found 104 possible bad axioms.
+[2026-06-26
+...[truncated]
+FAIL: attempt=13 seed=170464 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=13 success=2/100
+----- E-PPO attempt=14 seed=184664 at 2026-06-26 08:40:19 -----
+--- stdout ---
+{"seed":184664,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":143,"A2":728,"A3":264,"B1":230,"B2":2106,"B3":1824,"B4":44,"B5":401}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=184664, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:20.108] Checking precondition...
+[2026-06-26 08:40:20.123] Starting the repair...
+[2026-06-26 08:40:20.129] Found 121 possible bad axioms.
+[2026-06-26 08:40:20.131] Selected the bad axiom SubClassOf(Surname Name).
+[2026-06-26 08:40:20.135] Found 120 possible bad axioms.
+[2026-06-26 08:40:20.136] Selected the bad axiom SubClassOf(Rank Responsibilities).
+[2026-06-26 08:40:20.139] Found 119 possible bad axioms.
+[2026-06-26 08:40:20.140] Selected the bad axiom SubClassOf(Educational_Qualification NAPTEB).
+[2026-06-26 08:40:20.143] Found 118 possible bad axioms.
+[2026-06-26 08:40:20.143] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:40:20.146] Found 117 possible bad axioms.
+[2026-06-26 08:40:20.146] Selected the bad axiom SubClassOf(Textbooks BookChapters).
+[2026-06-26 08:40:20.148] Found 116 possible bad axioms.
+[2026-06-26 08:40:20.148] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:40:20.151] Found 115 possible bad axioms.
+[2026-06-26 08:40:20.151] Selected the bad axiom SubClassOf(Phone Address).
+[2026-06-26 08:40:20.154] Found 114 possible bad axioms.
+[2026-06-26 08:40:20.155] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:40:20.162] Found 113 possible bad axioms.
+[2026-06-26 08:40:20.162] Selected the bad axiom SubClassOf(Personal_Profile Date_of_Birth).
+[2026-06-26 08:40:20.164] Found 112 possible bad axioms.
+[2026-06-26 08:40:20.165] Selected the bad axiom SubClassOf(Name Responsibilities).
+[2026-06-26 08:40:20.167] Found 111 possible bad axioms.
+[2026-06-26 08:40:20.167] Selected the bad axiom SubClassOf(Ordinary_National_Diploma NAPTEB).
+[2026-06-26 08:40:20.174] Found 110 possible bad axioms.
+[2026-06-26 08:40:20.174] Selected the bad axiom SubClassOf(Researches Mobile).
+[2026-06-26 08:40:20.177] Found 109 possible bad axioms.
+[2026-06-26 08:40:20.177] Selected the bad axiom SubClassOf(State Permanent).
+[2026-06-26 08:40:20.180] Found 108 possible bad axioms.
+[2026-06-26 08:40:20.180] Selected the bad axiom SubClassOf(Textbooks Journals).
+[2026-06-26 08:40:20.182] Found 107 possible bad axioms.
+[2026-06-26 08:40:20.182] Selected the bad axiom SubClassOf(Trade_Test Educational_Qualification).
+[2026-06-26 08:40:20.184] Found 106 possible bad axioms.
+[2026-06-26 08:40:20.184] Selected the bad axiom SubClassOf(NAPTEB NCE).
+[2026-06-26 08:40:20.187] Found 105 possible bad axioms.
+[2026-06-26 08:40:20.187] Selected the bad axiom SubClassOf(Personal_Profile Educational_Qualification).
+[2026-06-26 08:40:20.190] Found 104 possible bad axioms.
+[2026-
+...[truncated]
+FAIL: attempt=14 seed=184664 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=14 success=2/100
+----- E-PPO attempt=15 seed=198864 at 2026-06-26 08:40:25 -----
+--- stdout ---
+{"seed":198864,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":126,"A2":718,"A3":248,"B1":668,"B2":1245,"B3":1049}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=198864, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:26.265] Checking precondition...
+[2026-06-26 08:40:26.278] Starting the repair...
+[2026-06-26 08:40:26.285] Found 121 possible bad axioms.
+[2026-06-26 08:40:26.287] Selected the bad axiom SubClassOf(Date_of_Birth owl:Nothing).
+[2026-06-26 08:40:26.291] Found 120 possible bad axioms.
+[2026-06-26 08:40:26.291] Selected the bad axiom SubClassOf(Journals Researches).
+[2026-06-26 08:40:26.295] Found 119 possible bad axioms.
+[2026-06-26 08:40:26.295] Selected the bad axiom SubClassOf(Personal_Profile WAEC).
+[2026-06-26 08:40:26.298] Found 118 possible bad axioms.
+[2026-06-26 08:40:26.298] Selected the bad axiom SubClassOf(Name Personal_Profile).
+[2026-06-26 08:40:26.301] Found 117 possible bad axioms.
+[2026-06-26 08:40:26.302] Selected the bad axiom SubClassOf(Conferences BookChapters).
+[2026-06-26 08:40:26.304] Found 116 possible bad axioms.
+[2026-06-26 08:40:26.304] Selected the bad axiom SubClassOf(Contact Skills).
+[2026-06-26 08:40:26.308] Found 115 possible bad axioms.
+[2026-06-26 08:40:26.308] Selected the bad axiom SubClassOf(Higher_National_Diploma Educational_Qualification).
+[2026-06-26 08:40:26.311] Found 114 possible bad axioms.
+[2026-06-26 08:40:26.311] Selected the bad axiom SubClassOf(Bachelors_Degree Educational_Qualification).
+[2026-06-26 08:40:26.318] Found 113 possible bad axioms.
+[2026-06-26 08:40:26.318] Selected the bad axiom SubClassOf(Textbooks Researches).
+[2026-06-26 08:40:26.320] Found 112 possible bad axioms.
+[2026-06-26 08:40:26.321] Selected the bad axiom SubClassOf(Prizes_Awards_Prizes Personal_Profile).
+[2026-06-26 08:40:26.324] Found 111 possible bad axioms.
+[2026-06-26 08:40:26.324] Selected the bad axiom SubClassOf(Middlename owl:Nothing).
+[2026-06-26 08:40:26.331] Found 110 possible bad axioms.
+[2026-06-26 08:40:26.332] Selected the bad axiom SubClassOf(Permanent State).
+[2026-06-26 08:40:26.335] Found 109 possible bad axioms.
+[2026-06-26 08:40:26.335] Selected the bad axiom SubClassOf(Address owl:Nothing).
+[2026-06-26 08:40:26.338] Found 108 possible bad axioms.
+[2026-06-26 08:40:26.338] Selected the bad axiom SubClassOf(Contact Email).
+[2026-06-26 08:40:26.341] Found 107 possible bad axioms.
+[2026-06-26 08:40:26.341] Selected the bad axiom SubClassOf(Journals Textbooks).
+[2026-06-26 08:40:26.343] Found 106 possible bad axioms.
+[2026-06-26 08:40:26.343] Selected the bad axiom SubClassOf(Address State).
+[2026-06-26 08:40:26.345] Found 105 possible bad axioms.
+[2026-06-26 08:40:26.345] Selected the bad axiom SubClassOf(Name Responsibilities).
+[2026-06-26 08:40:26.348] Found 104 possible bad axioms.
+[2026
+...[truncated]
+FAIL: attempt=15 seed=198864 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=15 success=2/100
+----- E-PPO attempt=16 seed=213064 at 2026-06-26 08:40:30 -----
+--- stdout ---
+{"seed":213064,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":74,"A2":763,"A3":260,"B1":1093,"B2":1781}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=213064, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:30.725] Checking precondition...
+[2026-06-26 08:40:30.739] Starting the repair...
+[2026-06-26 08:40:30.746] Found 121 possible bad axioms.
+[2026-06-26 08:40:30.747] Selected the bad axiom SubClassOf(Within Responsibilities).
+[2026-06-26 08:40:30.751] Found 120 possible bad axioms.
+[2026-06-26 08:40:30.752] Selected the bad axiom SubClassOf(Date_of_Birth Rank).
+[2026-06-26 08:40:30.755] Found 119 possible bad axioms.
+[2026-06-26 08:40:30.755] Selected the bad axiom SubClassOf(Preferred_Title Personal_Profile).
+[2026-06-26 08:40:30.758] Found 118 possible bad axioms.
+[2026-06-26 08:40:30.759] Selected the bad axiom SubClassOf(Personal_Profile WAEC).
+[2026-06-26 08:40:30.761] Found 117 possible bad axioms.
+[2026-06-26 08:40:30.762] Selected the bad axiom SubClassOf(Conferences BookChapters).
+[2026-06-26 08:40:30.765] Found 116 possible bad axioms.
+[2026-06-26 08:40:30.765] Selected the bad axiom SubClassOf(Personal_Profile Date_of_Birth).
+[2026-06-26 08:40:30.767] Found 115 possible bad axioms.
+[2026-06-26 08:40:30.767] Selected the bad axiom SubClassOf(Researches owl:Nothing).
+[2026-06-26 08:40:30.770] Found 114 possible bad axioms.
+[2026-06-26 08:40:30.770] Selected the bad axiom SubClassOf(Textbooks Journals).
+[2026-06-26 08:40:30.776] Found 113 possible bad axioms.
+[2026-06-26 08:40:30.776] Selected the bad axiom SubClassOf(Office Permanent).
+[2026-06-26 08:40:30.778] Found 112 possible bad axioms.
+[2026-06-26 08:40:30.779] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:40:30.781] Found 111 possible bad axioms.
+[2026-06-26 08:40:30.781] Selected the bad axiom SubClassOf(Others Phone).
+[2026-06-26 08:40:30.788] Found 110 possible bad axioms.
+[2026-06-26 08:40:30.789] Selected the bad axiom SubClassOf(Within Outside).
+[2026-06-26 08:40:30.792] Found 109 possible bad axioms.
+[2026-06-26 08:40:30.792] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:40:30.795] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:40:30.796] Checking precondition...
+[2026-06-26 08:40:30.801] Starting the repair...
+[2026-06-26 08:40:31.558] Found 2 possible bad axioms.
+[2026-06-26 08:40:31.559] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:40:31.559] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:40:31.560] Checking precondition...
+[2026-06-26 08:40:31.563] Starting the repair...
+[2026-06-26 08:40:31.585] Selected a reference ontology with 172 axioms.
+[2026-06-26 08:40:31.788] Selected the bad
+...[truncated]
+FAIL: attempt=16 seed=213064 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=16 success=2/100
+----- E-PPO attempt=17 seed=227264 at 2026-06-26 08:40:34 -----
+--- stdout ---
+{"seed":227264,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":124,"A2":731,"A3":271,"B1":196,"B2":1834}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=227264, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:35.118] Checking precondition...
+[2026-06-26 08:40:35.133] Starting the repair...
+[2026-06-26 08:40:35.139] Found 121 possible bad axioms.
+[2026-06-26 08:40:35.141] Selected the bad axiom SubClassOf(Outside Responsibilities).
+[2026-06-26 08:40:35.146] Found 120 possible bad axioms.
+[2026-06-26 08:40:35.147] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:40:35.150] Found 119 possible bad axioms.
+[2026-06-26 08:40:35.150] Selected the bad axiom SubClassOf(Conferences BookChapters).
+[2026-06-26 08:40:35.154] Found 118 possible bad axioms.
+[2026-06-26 08:40:35.154] Selected the bad axiom SubClassOf(Educational_Qualification WAEC).
+[2026-06-26 08:40:35.156] Found 117 possible bad axioms.
+[2026-06-26 08:40:35.157] Selected the bad axiom SubClassOf(NAPTEB owl:Nothing).
+[2026-06-26 08:40:35.159] Found 116 possible bad axioms.
+[2026-06-26 08:40:35.160] Selected the bad axiom SubClassOf(Permanent Address).
+[2026-06-26 08:40:35.162] Found 115 possible bad axioms.
+[2026-06-26 08:40:35.162] Selected the bad axiom SubClassOf(Date_of_Birth owl:Nothing).
+[2026-06-26 08:40:35.165] Found 114 possible bad axioms.
+[2026-06-26 08:40:35.165] Selected the bad axiom SubClassOf(Skills Personal_Profile).
+[2026-06-26 08:40:35.171] Found 113 possible bad axioms.
+[2026-06-26 08:40:35.172] Selected the bad axiom SubClassOf(Masters_Degree Educational_Qualification).
+[2026-06-26 08:40:35.174] Found 112 possible bad axioms.
+[2026-06-26 08:40:35.174] Selected the bad axiom SubClassOf(Researches Mobile).
+[2026-06-26 08:40:35.176] Found 111 possible bad axioms.
+[2026-06-26 08:40:35.176] Selected the bad axiom SubClassOf(Middlename owl:Nothing).
+[2026-06-26 08:40:35.182] Found 110 possible bad axioms.
+[2026-06-26 08:40:35.183] Selected the bad axiom SubClassOf(NECO Educational_Qualification).
+[2026-06-26 08:40:35.185] Found 109 possible bad axioms.
+[2026-06-26 08:40:35.185] Selected the bad axiom SubClassOf(Middlename Name).
+[2026-06-26 08:40:35.188] Found 108 possible bad axioms.
+[2026-06-26 08:40:35.189] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:40:35.191] Found 107 possible bad axioms.
+[2026-06-26 08:40:35.191] Selected the bad axiom SubClassOf(NAPTEB NECO).
+[2026-06-26 08:40:35.195] Found 106 possible bad axioms.
+[2026-06-26 08:40:35.195] Selected the bad axiom SubClassOf(Textbooks Journals).
+[2026-06-26 08:40:35.198] Found 105 possible bad axioms.
+[2026-06-26 08:40:35.198] Selected the bad axiom SubClassOf(Contact State).
+[2026-06-26 08:40:35.200] Found 104 possible bad axioms.
+[2026-06-26 08:40:35.
+...[truncated]
+FAIL: attempt=17 seed=227264 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=17 success=2/100
+----- E-PPO attempt=18 seed=241464 at 2026-06-26 08:40:38 -----
+--- stdout ---
+{"seed":241464,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":123,"A2":743,"A3":259,"B1":214,"B2":3032}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=241464, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:38.697] Checking precondition...
+[2026-06-26 08:40:38.713] Starting the repair...
+[2026-06-26 08:40:38.720] Found 121 possible bad axioms.
+[2026-06-26 08:40:38.721] Selected the bad axiom SubClassOf(Phone Address).
+[2026-06-26 08:40:38.726] Found 120 possible bad axioms.
+[2026-06-26 08:40:38.726] Selected the bad axiom SubClassOf(RoomNo Office).
+[2026-06-26 08:40:38.730] Found 119 possible bad axioms.
+[2026-06-26 08:40:38.730] Selected the bad axiom SubClassOf(Researches Educational_Qualification).
+[2026-06-26 08:40:38.733] Found 118 possible bad axioms.
+[2026-06-26 08:40:38.733] Selected the bad axiom SubClassOf(Date_of_Birth Middlename).
+[2026-06-26 08:40:38.736] Found 117 possible bad axioms.
+[2026-06-26 08:40:38.736] Selected the bad axiom SubClassOf(Responsibilities Rank).
+[2026-06-26 08:40:38.739] Found 116 possible bad axioms.
+[2026-06-26 08:40:38.739] Selected the bad axiom SubClassOf(NAPTEB NCE).
+[2026-06-26 08:40:38.741] Found 115 possible bad axioms.
+[2026-06-26 08:40:38.742] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[2026-06-26 08:40:38.745] Found 114 possible bad axioms.
+[2026-06-26 08:40:38.745] Selected the bad axiom SubClassOf(Date_of_Birth Personal_Profile).
+[2026-06-26 08:40:38.752] Found 113 possible bad axioms.
+[2026-06-26 08:40:38.752] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:40:38.754] Found 112 possible bad axioms.
+[2026-06-26 08:40:38.755] Selected the bad axiom SubClassOf(Trade_Test Ordinary_National_Diploma).
+[2026-06-26 08:40:38.756] Found 111 possible bad axioms.
+[2026-06-26 08:40:38.757] Selected the bad axiom SubClassOf(Ordinary_National_Diploma owl:Nothing).
+[2026-06-26 08:40:38.764] Found 110 possible bad axioms.
+[2026-06-26 08:40:38.764] Selected the bad axiom SubClassOf(Masters_Degree Bachelors_Degree).
+[2026-06-26 08:40:38.767] Found 109 possible bad axioms.
+[2026-06-26 08:40:38.767] Selected the bad axiom SubClassOf(City Permanent).
+[2026-06-26 08:40:38.770] Found 108 possible bad axioms.
+[2026-06-26 08:40:38.770] Selected the bad axiom SubClassOf(Researches Textbooks).
+[2026-06-26 08:40:38.772] Found 107 possible bad axioms.
+[2026-06-26 08:40:38.772] Selected the bad axiom SubClassOf(Gender Personal_Profile).
+[2026-06-26 08:40:38.774] Found 106 possible bad axioms.
+[2026-06-26 08:40:38.775] Selected the bad axiom SubClassOf(Salary_Scale Personal_Profile).
+[2026-06-26 08:40:38.777] Found 105 possible bad axioms.
+[2026-06-26 08:40:38.777] Selected the bad axiom SubClassOf(Educational_Qualification NAPTEB).
+[2026-06-26 08:40:38.779] Found 104 
+...[truncated]
+FAIL: attempt=18 seed=241464 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=18 success=2/100
+----- E-PPO attempt=19 seed=255664 at 2026-06-26 08:40:43 -----
+--- stdout ---
+{"seed":255664,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":34,"A2":794,"A3":271,"B1":211,"B2":3003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=255664, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:43.478] Checking precondition...
+[2026-06-26 08:40:43.494] Starting the repair...
+[2026-06-26 08:40:43.501] Found 121 possible bad axioms.
+[2026-06-26 08:40:43.502] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:40:43.507] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:40:43.508] Checking precondition...
+[2026-06-26 08:40:43.514] Starting the repair...
+[2026-06-26 08:40:44.299] Found 2 possible bad axioms.
+[2026-06-26 08:40:44.300] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:40:44.301] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:40:44.303] Checking precondition...
+[2026-06-26 08:40:44.305] Starting the repair...
+[2026-06-26 08:40:44.325] Selected a reference ontology with 172 axioms.
+[2026-06-26 08:40:44.539] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:40:44.572] Selected the weaker axiom SubClassOf(Year_of_last_Promotion Educational_Qualification).
+[2026-06-26 08:40:44.573] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 08:40:44.574] Checking precondition...
+[2026-06-26 08:40:44.576] Starting the repair...
+[2026-06-26 08:40:44.587] Selected a reference ontology with 171 axioms.
+[2026-06-26 08:40:44.772] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:40:44.783] Selected the weaker axiom SubClassOf(Preferred_Title WAEC).
+[2026-06-26 08:40:44.785] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 08:40:44.786] Checking precondition...
+[2026-06-26 08:40:44.788] Starting the repair...
+[2026-06-26 08:40:44.794] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:40:44.976] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[PowerIndexWeakerAxiomSelector] Scoring 110 candidate weakenings for WAEC ⊑ Educational_Qualification
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsistencyValueApproximate.java:282)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.sampleTargetsInParallel(ShapleyInconsistencyValueApproximate.java:236)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.computeScoresAdaptive(ShapleyInconsistencyValueApproximate.java:139)
+	at www.ontologyutils.repair.strategy.weaker.PowerIndexWeakerAxiomSelector.selectBest(PowerInd
+...[truncated]
+FAIL: attempt=19 seed=255664 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=19 success=2/100
+----- E-PPO attempt=20 seed=269864 at 2026-06-26 08:40:47 -----
+--- stdout ---
+{"seed":269864,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":153,"A2":746,"A3":466,"B1":212,"B2":3204,"B3":997}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=269864, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:48.200] Checking precondition...
+[2026-06-26 08:40:48.214] Starting the repair...
+[2026-06-26 08:40:48.221] Found 121 possible bad axioms.
+[2026-06-26 08:40:48.223] Selected the bad axiom SubClassOf(State Permanent).
+[2026-06-26 08:40:48.229] Found 120 possible bad axioms.
+[2026-06-26 08:40:48.229] Selected the bad axiom SubClassOf(Masters_Degree Educational_Qualification).
+[2026-06-26 08:40:48.232] Found 119 possible bad axioms.
+[2026-06-26 08:40:48.233] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:40:48.236] Found 118 possible bad axioms.
+[2026-06-26 08:40:48.236] Selected the bad axiom SubClassOf(Firstname Name).
+[2026-06-26 08:40:48.239] Found 117 possible bad axioms.
+[2026-06-26 08:40:48.239] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:40:48.242] Found 116 possible bad axioms.
+[2026-06-26 08:40:48.242] Selected the bad axiom SubClassOf(Name Personal_Profile).
+[2026-06-26 08:40:48.245] Found 115 possible bad axioms.
+[2026-06-26 08:40:48.245] Selected the bad axiom SubClassOf(Block Office).
+[2026-06-26 08:40:48.248] Found 114 possible bad axioms.
+[2026-06-26 08:40:48.248] Selected the bad axiom SubClassOf(Permanent Address).
+[2026-06-26 08:40:48.254] Found 113 possible bad axioms.
+[2026-06-26 08:40:48.254] Selected the bad axiom SubClassOf(Trade_Test NAPTEB).
+[2026-06-26 08:40:48.256] Found 112 possible bad axioms.
+[2026-06-26 08:40:48.257] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:40:48.259] Found 111 possible bad axioms.
+[2026-06-26 08:40:48.259] Selected the bad axiom SubClassOf(NAPTEB owl:Nothing).
+[2026-06-26 08:40:48.266] Found 110 possible bad axioms.
+[2026-06-26 08:40:48.266] Selected the bad axiom SubClassOf(Community_Development Personal_Profile).
+[2026-06-26 08:40:48.269] Found 109 possible bad axioms.
+[2026-06-26 08:40:48.269] Selected the bad axiom SubClassOf(Responsibilities Rank).
+[2026-06-26 08:40:48.272] Found 108 possible bad axioms.
+[2026-06-26 08:40:48.272] Selected the bad axiom SubClassOf(Educational_Qualification Personal_Profile).
+[2026-06-26 08:40:48.275] Found 107 possible bad axioms.
+[2026-06-26 08:40:48.275] Selected the bad axiom SubClassOf(Journals Researches).
+[2026-06-26 08:40:48.279] Found 106 possible bad axioms.
+[2026-06-26 08:40:48.279] Selected the bad axiom SubClassOf(Textbooks Researches).
+[2026-06-26 08:40:48.282] Found 105 possible bad axioms.
+[2026-06-26 08:40:48.282] Selected the bad axiom SubClassOf(Affilliation Office).
+[2026-06-26 08:40:48.284] Found 104 possible bad axioms.
+[2026-06-26 08:40:48.284] Selected th
+...[truncated]
+FAIL: attempt=20 seed=269864 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=20 success=2/100
+----- E-PPO attempt=21 seed=284064 at 2026-06-26 08:40:54 -----
+--- stdout ---
+{"seed":284064,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":133,"A2":735,"A3":264,"B1":430,"B2":2035}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=284064, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:54.397] Checking precondition...
+[2026-06-26 08:40:54.410] Starting the repair...
+[2026-06-26 08:40:54.417] Found 121 possible bad axioms.
+[2026-06-26 08:40:54.419] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:40:54.423] Found 120 possible bad axioms.
+[2026-06-26 08:40:54.423] Selected the bad axiom SubClassOf(Masters_Degree Bachelors_Degree).
+[2026-06-26 08:40:54.427] Found 119 possible bad axioms.
+[2026-06-26 08:40:54.427] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[2026-06-26 08:40:54.430] Found 118 possible bad axioms.
+[2026-06-26 08:40:54.430] Selected the bad axiom SubClassOf(City Permanent).
+[2026-06-26 08:40:54.433] Found 117 possible bad axioms.
+[2026-06-26 08:40:54.433] Selected the bad axiom SubClassOf(Bachelors_Degree Educational_Qualification).
+[2026-06-26 08:40:54.436] Found 116 possible bad axioms.
+[2026-06-26 08:40:54.436] Selected the bad axiom SubClassOf(Trade_Test Ordinary_National_Diploma).
+[2026-06-26 08:40:54.439] Found 115 possible bad axioms.
+[2026-06-26 08:40:54.439] Selected the bad axiom SubClassOf(Address State).
+[2026-06-26 08:40:54.446] Found 114 possible bad axioms.
+[2026-06-26 08:40:54.446] Selected the bad axiom SubClassOf(Preferred_Title Personal_Profile).
+[2026-06-26 08:40:54.448] Found 113 possible bad axioms.
+[2026-06-26 08:40:54.449] Selected the bad axiom SubClassOf(Date_of_Birth owl:Nothing).
+[2026-06-26 08:40:54.451] Found 112 possible bad axioms.
+[2026-06-26 08:40:54.451] Selected the bad axiom SubClassOf(Trade_Test NAPTEB).
+[2026-06-26 08:40:54.453] Found 111 possible bad axioms.
+[2026-06-26 08:40:54.453] Selected the bad axiom SubClassOf(Researches Journals).
+[2026-06-26 08:40:54.460] Found 110 possible bad axioms.
+[2026-06-26 08:40:54.460] Selected the bad axiom SubClassOf(Personal_Profile Educational_Qualification).
+[2026-06-26 08:40:54.463] Found 109 possible bad axioms.
+[2026-06-26 08:40:54.463] Selected the bad axiom SubClassOf(Responsibilities Rank).
+[2026-06-26 08:40:54.466] Found 108 possible bad axioms.
+[2026-06-26 08:40:54.466] Selected the bad axiom SubClassOf(Journals Researches).
+[2026-06-26 08:40:54.468] Found 107 possible bad axioms.
+[2026-06-26 08:40:54.468] Selected the bad axiom SubClassOf(Contact State).
+[2026-06-26 08:40:54.470] Found 106 possible bad axioms.
+[2026-06-26 08:40:54.470] Selected the bad axiom SubClassOf(Area_of_Specialization Personal_Profile).
+[2026-06-26 08:40:54.472] Found 105 possible bad axioms.
+[2026-06-26 08:40:54.473] Selected the bad axiom SubClassOf(PostalCode Permanent).
+[2026-06-26 08:40:54.476
+...[truncated]
+FAIL: attempt=21 seed=284064 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=21 success=2/100
+----- E-PPO attempt=22 seed=298264 at 2026-06-26 08:40:58 -----
+--- stdout ---
+{"seed":298264,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.9992565055762082,"B1_vs_A2":0.5,"B1_vs_A3":0.9818181818181818,"B2_vs_A1":0.9992415623814941,"B2_vs_A2":0.01818181818181818,"B2_vs_A3":0.5,"B3_vs_A1":0.9992565055762082,"B3_vs_A2":0.5,"B3_vs_A3":0.9818181818181818,"B4_vs_A1":0.9992565055762082,"B4_vs_A2":0.5,"B4_vs_A3":0.9818181818181818,"B5_vs_A1":0.9992565055762082,"B5_vs_A2":0.5,"B5_vs_A3":0.9818181818181818,"B6_vs_A1":0.9992565055762082,"B6_vs_A2":0.5,"B6_vs_A3":0.9818181818181818,"B7_vs_A1":0.9992565055762082,"B7_vs_A2":0.5,"B7_vs_A3":0.9818181818181818,"B8_vs_A1":0.9992565055762082,"B8_vs_A2":0.5,"B8_vs_A3":0.9818181818181818,"B9_vs_A1":0.9992565055762082,"B9_vs_A2":0.5,"B9_vs_A3":0.9818181818181818},"repair_runtimes_ms":{"A1":231,"A2":701,"A3":252,"B1":208,"B2":1207,"B3":1120,"B4":76,"B5":2586,"B6":910,"B7":68,"B8":2690,"B9":630}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=298264, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:40:58.408] Checking precondition...
+[2026-06-26 08:40:58.422] Starting the repair...
+[2026-06-26 08:40:58.429] Found 121 possible bad axioms.
+[2026-06-26 08:40:58.430] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[2026-06-26 08:40:58.435] Found 120 possible bad axioms.
+[2026-06-26 08:40:58.435] Selected the bad axiom SubClassOf(Skills Personal_Profile).
+[2026-06-26 08:40:58.438] Found 119 possible bad axioms.
+[2026-06-26 08:40:58.439] Selected the bad axiom SubClassOf(Trade_Test Bachelors_Degree).
+[2026-06-26 08:40:58.442] Found 118 possible bad axioms.
+[2026-06-26 08:40:58.442] Selected the bad axiom SubClassOf(StreetName State).
+[2026-06-26 08:40:58.445] Found 117 possible bad axioms.
+[2026-06-26 08:40:58.445] Selected the bad axiom SubClassOf(Personal_Profile Rank).
+[2026-06-26 08:40:58.448] Found 116 possible bad axioms.
+[2026-06-26 08:40:58.448] Selected the bad axiom SubClassOf(Office Address).
+[2026-06-26 08:40:58.451] Found 115 possible bad axioms.
+[2026-06-26 08:40:58.451] Selected the bad axiom SubClassOf(Date_of_Birth Personal_Profile).
+[2026-06-26 08:40:58.459] Found 114 possible bad axioms.
+[2026-06-26 08:40:58.460] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:40:58.462] Found 113 possible bad axioms.
+[2026-06-26 08:40:58.462] Selected the bad axiom SubClassOf(Researches Community_Development).
+[2026-06-26 08:40:58.464] Found 112 possible bad axioms.
+[2026-06-26 08:40:58.464] Selected the bad axiom SubClassOf(Office Permanent).
+[2026-06-26 08:40:58.466] Found 111 possible bad axioms.
+[2026-06-26 08:40:58.466] Selected the bad axiom SubClassOf(NAPTEB NECO).
+[2026-06-26 08:40:58.473] Found 110 possible bad axioms.
+[2026-06-26 08:40:58.473] Selected the bad axiom SubClassOf(Trade_Test Ordinary_National_Diploma).
+[2026-06-26 08:40:58.476] Found 109 possible bad axioms.
+[2026-06-26 08:40:58.476] Selected the bad axiom SubClassOf(Name Personal_Profile).
+[2026-06-26 08:40:58.479] Found 108 possible bad axioms.
+[2026-06-26 08:40:58.479] Selected the bad axiom SubClassOf(Address Contact).
+[2026-06-26 08:40:58.481] Found 107 possible bad axioms.
+[2026-06-26 08:40:58.481] Selected the bad axiom SubClassOf(RoomNo Affilliation).
+[2026-06-26 08:40:58.483] Found 106 possible bad axioms.
+[2026-06-26 08:40:58.483] Selected the bad axiom SubClassOf(Rank Personal_Profile).
+[2026-06-26 08:40:58.486] Found 105 possible bad axioms.
+[2026-06-26 08:40:58.486] Selected the bad axiom SubClassOf(NECO Educational_Qualification).
+[2026-06-26 08:40:58.490] Found 104 possible bad axioms.
+[2026-06-26 08:40:
+...[truncated]
+SUCCESS: attempt=22 seed=298264 success_count=3/100
+progress: ontology=E-PPO attempt=22 success=3/100
+----- E-PPO attempt=23 seed=312464 at 2026-06-26 08:41:09 -----
+--- stdout ---
+{"seed":312464,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":152,"A2":737,"A3":235,"B1":670,"B2":2103,"B3":958}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=312464, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:09.952] Checking precondition...
+[2026-06-26 08:41:09.966] Starting the repair...
+[2026-06-26 08:41:09.973] Found 121 possible bad axioms.
+[2026-06-26 08:41:09.974] Selected the bad axiom SubClassOf(PostalCode Permanent).
+[2026-06-26 08:41:09.978] Found 120 possible bad axioms.
+[2026-06-26 08:41:09.979] Selected the bad axiom SubClassOf(Date_of_Birth Personal_Profile).
+[2026-06-26 08:41:09.982] Found 119 possible bad axioms.
+[2026-06-26 08:41:09.983] Selected the bad axiom SubClassOf(Researches Journals).
+[2026-06-26 08:41:09.986] Found 118 possible bad axioms.
+[2026-06-26 08:41:09.986] Selected the bad axiom SubClassOf(Middlename Name).
+[2026-06-26 08:41:09.988] Found 117 possible bad axioms.
+[2026-06-26 08:41:09.989] Selected the bad axiom SubClassOf(Doctor_or_Philosophy_(Ph.D) Educational_Qualification).
+[2026-06-26 08:41:09.991] Found 116 possible bad axioms.
+[2026-06-26 08:41:09.991] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:41:09.994] Found 115 possible bad axioms.
+[2026-06-26 08:41:09.994] Selected the bad axiom SubClassOf(Name Outside).
+[2026-06-26 08:41:09.997] Found 114 possible bad axioms.
+[2026-06-26 08:41:09.997] Selected the bad axiom SubClassOf(Address Email).
+[2026-06-26 08:41:10.004] Found 113 possible bad axioms.
+[2026-06-26 08:41:10.004] Selected the bad axiom SubClassOf(StreetName State).
+[2026-06-26 08:41:10.006] Found 112 possible bad axioms.
+[2026-06-26 08:41:10.006] Selected the bad axiom SubClassOf(Date_of_Birth owl:Nothing).
+[2026-06-26 08:41:10.008] Found 111 possible bad axioms.
+[2026-06-26 08:41:10.008] Selected the bad axiom SubClassOf(Office Affilliation).
+[2026-06-26 08:41:10.014] Found 110 possible bad axioms.
+[2026-06-26 08:41:10.015] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:41:10.017] Found 109 possible bad axioms.
+[2026-06-26 08:41:10.017] Selected the bad axiom SubClassOf(Middlename Surname).
+[2026-06-26 08:41:10.020] Found 108 possible bad axioms.
+[2026-06-26 08:41:10.021] Selected the bad axiom SubClassOf(Contact Personal_Profile).
+[2026-06-26 08:41:10.023] Found 107 possible bad axioms.
+[2026-06-26 08:41:10.023] Selected the bad axiom SubClassOf(Block RoomNo).
+[2026-06-26 08:41:10.025] Found 106 possible bad axioms.
+[2026-06-26 08:41:10.026] Selected the bad axiom SubClassOf(Masters_Degree Bachelors_Degree).
+[2026-06-26 08:41:10.028] Found 105 possible bad axioms.
+[2026-06-26 08:41:10.028] Selected the bad axiom SubClassOf(State City).
+[2026-06-26 08:41:10.030] Found 104 possible bad axioms.
+[2026-06-26 08:41:10.030] Selected the bad a
+...[truncated]
+FAIL: attempt=23 seed=312464 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=23 success=3/100
+----- E-PPO attempt=24 seed=326664 at 2026-06-26 08:41:14 -----
+--- stdout ---
+{"seed":326664,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":95,"A2":739,"A3":240,"B1":216,"B2":1955}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=326664, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:15.229] Checking precondition...
+[2026-06-26 08:41:15.243] Starting the repair...
+[2026-06-26 08:41:15.249] Found 121 possible bad axioms.
+[2026-06-26 08:41:15.250] Selected the bad axiom SubClassOf(Researches Textbooks).
+[2026-06-26 08:41:15.255] Found 120 possible bad axioms.
+[2026-06-26 08:41:15.255] Selected the bad axiom SubClassOf(NCE Educational_Qualification).
+[2026-06-26 08:41:15.259] Found 119 possible bad axioms.
+[2026-06-26 08:41:15.259] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:41:15.262] Found 118 possible bad axioms.
+[2026-06-26 08:41:15.262] Selected the bad axiom SubClassOf(Surname Name).
+[2026-06-26 08:41:15.265] Found 117 possible bad axioms.
+[2026-06-26 08:41:15.265] Selected the bad axiom SubClassOf(Office Address).
+[2026-06-26 08:41:15.268] Found 116 possible bad axioms.
+[2026-06-26 08:41:15.268] Selected the bad axiom SubClassOf(Area_of_Specialization Personal_Profile).
+[2026-06-26 08:41:15.271] Found 115 possible bad axioms.
+[2026-06-26 08:41:15.271] Selected the bad axiom SubClassOf(Researches Personal_Profile).
+[2026-06-26 08:41:15.274] Found 114 possible bad axioms.
+[2026-06-26 08:41:15.274] Selected the bad axiom SubClassOf(NAPTEB NCE).
+[2026-06-26 08:41:15.281] Found 113 possible bad axioms.
+[2026-06-26 08:41:15.281] Selected the bad axiom SubClassOf(Conferences Journals).
+[2026-06-26 08:41:15.283] Found 112 possible bad axioms.
+[2026-06-26 08:41:15.284] Selected the bad axiom SubClassOf(Rank Responsibilities).
+[2026-06-26 08:41:15.286] Found 111 possible bad axioms.
+[2026-06-26 08:41:15.286] Selected the bad axiom SubClassOf(Middlename owl:Nothing).
+[2026-06-26 08:41:15.293] Found 110 possible bad axioms.
+[2026-06-26 08:41:15.293] Selected the bad axiom SubClassOf(Outside Within).
+[2026-06-26 08:41:15.296] Found 109 possible bad axioms.
+[2026-06-26 08:41:15.297] Selected the bad axiom SubClassOf(Gender Educational_Qualification).
+[2026-06-26 08:41:15.299] Found 108 possible bad axioms.
+[2026-06-26 08:41:15.299] Selected the bad axiom SubClassOf(Profession Personal_Profile).
+[2026-06-26 08:41:15.302] Found 107 possible bad axioms.
+[2026-06-26 08:41:15.302] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[2026-06-26 08:41:15.304] Found 106 possible bad axioms.
+[2026-06-26 08:41:15.304] Selected the bad axiom SubClassOf(Phone Contact).
+[2026-06-26 08:41:15.307] Found 105 possible bad axioms.
+[2026-06-26 08:41:15.307] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:41:15.310] Found 104 possible bad axioms.
+[2026-06-26 08:41:15.310] Selected the 
+...[truncated]
+FAIL: attempt=24 seed=326664 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=24 success=3/100
+----- E-PPO attempt=25 seed=340864 at 2026-06-26 08:41:18 -----
+--- stdout ---
+{"seed":340864,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":57,"A2":797,"A3":248,"B1":210,"B2":1286,"B3":1885,"B4":50}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=340864, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:18.908] Checking precondition...
+[2026-06-26 08:41:18.922] Starting the repair...
+[2026-06-26 08:41:18.929] Found 121 possible bad axioms.
+[2026-06-26 08:41:18.931] Selected the bad axiom SubClassOf(Email Contact).
+[2026-06-26 08:41:18.935] Found 120 possible bad axioms.
+[2026-06-26 08:41:18.935] Selected the bad axiom SubClassOf(Permanent Address).
+[2026-06-26 08:41:18.939] Found 119 possible bad axioms.
+[2026-06-26 08:41:18.939] Selected the bad axiom SubClassOf(Personal_Profile WAEC).
+[2026-06-26 08:41:18.942] Found 118 possible bad axioms.
+[2026-06-26 08:41:18.942] Selected the bad axiom SubClassOf(Middlename Surname).
+[2026-06-26 08:41:18.945] Found 117 possible bad axioms.
+[2026-06-26 08:41:18.945] Selected the bad axiom SubClassOf(PostalCode Permanent).
+[2026-06-26 08:41:18.948] Found 116 possible bad axioms.
+[2026-06-26 08:41:18.948] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:41:18.951] Found 115 possible bad axioms.
+[2026-06-26 08:41:18.951] Selected the bad axiom SubClassOf(Ordinary_National_Diploma owl:Nothing).
+[2026-06-26 08:41:18.958] Found 114 possible bad axioms.
+[2026-06-26 08:41:18.958] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:41:18.960] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:41:18.961] Checking precondition...
+[2026-06-26 08:41:18.966] Starting the repair...
+[2026-06-26 08:41:19.758] Found 2 possible bad axioms.
+[2026-06-26 08:41:19.758] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:41:19.758] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:41:19.760] Checking precondition...
+[2026-06-26 08:41:19.763] Starting the repair...
+[2026-06-26 08:41:19.773] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:41:19.979] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:41:20.005] Selected the weaker axiom SubClassOf(NECO Educational_Qualification).
+[2026-06-26 08:41:20.007] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 08:41:20.007] Checking precondition...
+[2026-06-26 08:41:20.009] Starting the repair...
+[2026-06-26 08:41:20.016] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:41:20.203] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:41:20.215] Selected the weaker axiom SubClassOf(Email WAEC).
+[2026-06-26 08:41:20.217] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06
+...[truncated]
+FAIL: attempt=25 seed=340864 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=E-PPO attempt=25 success=3/100
+----- E-PPO attempt=26 seed=355064 at 2026-06-26 08:41:23 -----
+--- stdout ---
+{"seed":355064,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":119,"A2":737,"A3":260,"B1":232,"B2":3024}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=355064, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:23.864] Checking precondition...
+[2026-06-26 08:41:23.880] Starting the repair...
+[2026-06-26 08:41:23.886] Found 121 possible bad axioms.
+[2026-06-26 08:41:23.888] Selected the bad axiom SubClassOf(RoomNo Office).
+[2026-06-26 08:41:23.893] Found 120 possible bad axioms.
+[2026-06-26 08:41:23.893] Selected the bad axiom SubClassOf(Conferences BookChapters).
+[2026-06-26 08:41:23.896] Found 119 possible bad axioms.
+[2026-06-26 08:41:23.897] Selected the bad axiom SubClassOf(Ordinary_National_Diploma NAPTEB).
+[2026-06-26 08:41:23.900] Found 118 possible bad axioms.
+[2026-06-26 08:41:23.900] Selected the bad axiom SubClassOf(Permanent State).
+[2026-06-26 08:41:23.903] Found 117 possible bad axioms.
+[2026-06-26 08:41:23.903] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:41:23.906] Found 116 possible bad axioms.
+[2026-06-26 08:41:23.906] Selected the bad axiom SubClassOf(Gender Educational_Qualification).
+[2026-06-26 08:41:23.909] Found 115 possible bad axioms.
+[2026-06-26 08:41:23.910] Selected the bad axiom SubClassOf(Outside Responsibilities).
+[2026-06-26 08:41:23.918] Found 114 possible bad axioms.
+[2026-06-26 08:41:23.918] Selected the bad axiom SubClassOf(Date_of_Birth Personal_Profile).
+[2026-06-26 08:41:23.921] Found 113 possible bad axioms.
+[2026-06-26 08:41:23.921] Selected the bad axiom SubClassOf(BookChapters Researches).
+[2026-06-26 08:41:23.923] Found 112 possible bad axioms.
+[2026-06-26 08:41:23.923] Selected the bad axiom SubClassOf(Salary_Scale Personal_Profile).
+[2026-06-26 08:41:23.925] Found 111 possible bad axioms.
+[2026-06-26 08:41:23.925] Selected the bad axiom SubClassOf(Personal_Profile Date_of_Birth).
+[2026-06-26 08:41:23.933] Found 110 possible bad axioms.
+[2026-06-26 08:41:23.933] Selected the bad axiom SubClassOf(Middlename Surname).
+[2026-06-26 08:41:23.935] Found 109 possible bad axioms.
+[2026-06-26 08:41:23.935] Selected the bad axiom SubClassOf(NAPTEB NCE).
+[2026-06-26 08:41:23.938] Found 108 possible bad axioms.
+[2026-06-26 08:41:23.939] Selected the bad axiom SubClassOf(Personal_Profile Educational_Qualification).
+[2026-06-26 08:41:23.941] Found 107 possible bad axioms.
+[2026-06-26 08:41:23.941] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:41:23.943] Found 106 possible bad axioms.
+[2026-06-26 08:41:23.943] Selected the bad axiom SubClassOf(Educational_Qualification NAPTEB).
+[2026-06-26 08:41:23.946] Found 105 possible bad axioms.
+[2026-06-26 08:41:23.946] Selected the bad axiom SubClassOf(Outside Within).
+[2026-06-26 08:41:23.950] Found 104 
+...[truncated]
+FAIL: attempt=26 seed=355064 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=26 success=3/100
+----- E-PPO attempt=27 seed=369264 at 2026-06-26 08:41:28 -----
+--- stdout ---
+{"seed":369264,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":133,"A2":737,"A3":268,"B1":217,"B2":1834}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=369264, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:28.655] Checking precondition...
+[2026-06-26 08:41:28.670] Starting the repair...
+[2026-06-26 08:41:28.676] Found 121 possible bad axioms.
+[2026-06-26 08:41:28.678] Selected the bad axiom SubClassOf(Higher_National_Diploma Educational_Qualification).
+[2026-06-26 08:41:28.683] Found 120 possible bad axioms.
+[2026-06-26 08:41:28.683] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:41:28.686] Found 119 possible bad axioms.
+[2026-06-26 08:41:28.687] Selected the bad axiom SubClassOf(NAPTEB owl:Nothing).
+[2026-06-26 08:41:28.689] Found 118 possible bad axioms.
+[2026-06-26 08:41:28.690] Selected the bad axiom SubClassOf(Doctor_or_Philosophy_(Ph.D) Educational_Qualification).
+[2026-06-26 08:41:28.692] Found 117 possible bad axioms.
+[2026-06-26 08:41:28.692] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:41:28.695] Found 116 possible bad axioms.
+[2026-06-26 08:41:28.695] Selected the bad axiom SubClassOf(Personal_Profile WAEC).
+[2026-06-26 08:41:28.698] Found 115 possible bad axioms.
+[2026-06-26 08:41:28.698] Selected the bad axiom SubClassOf(Masters_Degree Educational_Qualification).
+[2026-06-26 08:41:28.703] Found 114 possible bad axioms.
+[2026-06-26 08:41:28.703] Selected the bad axiom SubClassOf(Permanent State).
+[2026-06-26 08:41:28.710] Found 113 possible bad axioms.
+[2026-06-26 08:41:28.710] Selected the bad axiom SubClassOf(Masters_Degree Trade_Test).
+[2026-06-26 08:41:28.712] Found 112 possible bad axioms.
+[2026-06-26 08:41:28.712] Selected the bad axiom SubClassOf(Ordinary_National_Diploma Educational_Qualification).
+[2026-06-26 08:41:28.714] Found 111 possible bad axioms.
+[2026-06-26 08:41:28.715] Selected the bad axiom SubClassOf(Trade_Test Educational_Qualification).
+[2026-06-26 08:41:28.722] Found 110 possible bad axioms.
+[2026-06-26 08:41:28.722] Selected the bad axiom SubClassOf(Gender Educational_Qualification).
+[2026-06-26 08:41:28.725] Found 109 possible bad axioms.
+[2026-06-26 08:41:28.725] Selected the bad axiom SubClassOf(Researches owl:Nothing).
+[2026-06-26 08:41:28.728] Found 108 possible bad axioms.
+[2026-06-26 08:41:28.728] Selected the bad axiom SubClassOf(Researches Community_Development).
+[2026-06-26 08:41:28.730] Found 107 possible bad axioms.
+[2026-06-26 08:41:28.731] Selected the bad axiom SubClassOf(State City).
+[2026-06-26 08:41:28.733] Found 106 possible bad axioms.
+[2026-06-26 08:41:28.733] Selected the bad axiom SubClassOf(Community_Development Personal_Profile).
+[2026-06-26 08:41:28.736] Found 105 possible bad axioms.
+[2026-06-26 08:41:28.736] Selected 
+...[truncated]
+FAIL: attempt=27 seed=369264 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=27 success=3/100
+----- E-PPO attempt=28 seed=383464 at 2026-06-26 08:41:31 -----
+--- stdout ---
+{"seed":383464,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":109,"A2":745,"A3":742,"B1":208,"B2":3071,"B3":1087,"B4":41,"B5":1435}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=383464, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:32.251] Checking precondition...
+[2026-06-26 08:41:32.264] Starting the repair...
+[2026-06-26 08:41:32.271] Found 121 possible bad axioms.
+[2026-06-26 08:41:32.272] Selected the bad axiom SubClassOf(HouseNo Permanent).
+[2026-06-26 08:41:32.276] Found 120 possible bad axioms.
+[2026-06-26 08:41:32.277] Selected the bad axiom SubClassOf(Masters_Degree Bachelors_Degree).
+[2026-06-26 08:41:32.281] Found 119 possible bad axioms.
+[2026-06-26 08:41:32.282] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:41:32.285] Found 118 possible bad axioms.
+[2026-06-26 08:41:32.285] Selected the bad axiom SubClassOf(Masters_Degree Educational_Qualification).
+[2026-06-26 08:41:32.288] Found 117 possible bad axioms.
+[2026-06-26 08:41:32.288] Selected the bad axiom SubClassOf(Address Contact).
+[2026-06-26 08:41:32.291] Found 116 possible bad axioms.
+[2026-06-26 08:41:32.291] Selected the bad axiom SubClassOf(Higher_National_Diploma Ordinary_National_Diploma).
+[2026-06-26 08:41:32.294] Found 115 possible bad axioms.
+[2026-06-26 08:41:32.294] Selected the bad axiom SubClassOf(Skills Personal_Profile).
+[2026-06-26 08:41:32.297] Found 114 possible bad axioms.
+[2026-06-26 08:41:32.297] Selected the bad axiom SubClassOf(Educational_Qualification Personal_Profile).
+[2026-06-26 08:41:32.303] Found 113 possible bad axioms.
+[2026-06-26 08:41:32.303] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:41:32.305] Found 112 possible bad axioms.
+[2026-06-26 08:41:32.305] Selected the bad axiom SubClassOf(NAPTEB WAEC).
+[2026-06-26 08:41:32.307] Found 111 possible bad axioms.
+[2026-06-26 08:41:32.307] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[2026-06-26 08:41:32.315] Found 110 possible bad axioms.
+[2026-06-26 08:41:32.315] Selected the bad axiom SubClassOf(StreetName Permanent).
+[2026-06-26 08:41:32.318] Found 109 possible bad axioms.
+[2026-06-26 08:41:32.318] Selected the bad axiom SubClassOf(Educational_Qualification WAEC).
+[2026-06-26 08:41:32.321] Found 108 possible bad axioms.
+[2026-06-26 08:41:32.321] Selected the bad axiom SubClassOf(Salary_Scale Personal_Profile).
+[2026-06-26 08:41:32.323] Found 107 possible bad axioms.
+[2026-06-26 08:41:32.324] Selected the bad axiom SubClassOf(NAPTEB Educational_Qualification).
+[2026-06-26 08:41:32.326] Found 106 possible bad axioms.
+[2026-06-26 08:41:32.326] Selected the bad axiom SubClassOf(Within Outside).
+[2026-06-26 08:41:32.329] Found 105 possible bad axioms.
+[2026-06-26 08:41:32.329] Selected the bad axiom SubClassOf(Permanent Address).
+[202
+...[truncated]
+FAIL: attempt=28 seed=383464 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=28 success=3/100
+----- E-PPO attempt=29 seed=397664 at 2026-06-26 08:41:40 -----
+--- stdout ---
+{"seed":397664,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B9","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC","iic_values":{},"repair_runtimes_ms":{"A1":199,"A2":693,"A3":445,"B1":192,"B2":3179,"B3":1781,"B4":42,"B5":2692,"B6":1916,"B7":74,"B8":1614,"B9":965}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=397664, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:40.645] Checking precondition...
+[2026-06-26 08:41:40.659] Starting the repair...
+[2026-06-26 08:41:40.666] Found 121 possible bad axioms.
+[2026-06-26 08:41:40.667] Selected the bad axiom SubClassOf(Affilliation Office).
+[2026-06-26 08:41:40.673] Found 120 possible bad axioms.
+[2026-06-26 08:41:40.673] Selected the bad axiom SubClassOf(Prizes_Awards_Prizes Personal_Profile).
+[2026-06-26 08:41:40.677] Found 119 possible bad axioms.
+[2026-06-26 08:41:40.677] Selected the bad axiom SubClassOf(Responsibilities Personal_Profile).
+[2026-06-26 08:41:40.680] Found 118 possible bad axioms.
+[2026-06-26 08:41:40.681] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:41:40.683] Found 117 possible bad axioms.
+[2026-06-26 08:41:40.683] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:41:40.686] Found 116 possible bad axioms.
+[2026-06-26 08:41:40.686] Selected the bad axiom SubClassOf(Name Personal_Profile).
+[2026-06-26 08:41:40.689] Found 115 possible bad axioms.
+[2026-06-26 08:41:40.689] Selected the bad axiom SubClassOf(Ordinary_National_Diploma NAPTEB).
+[2026-06-26 08:41:40.692] Found 114 possible bad axioms.
+[2026-06-26 08:41:40.692] Selected the bad axiom SubClassOf(Block owl:Nothing).
+[2026-06-26 08:41:40.699] Found 113 possible bad axioms.
+[2026-06-26 08:41:40.699] Selected the bad axiom SubClassOf(Office Permanent).
+[2026-06-26 08:41:40.701] Found 112 possible bad axioms.
+[2026-06-26 08:41:40.701] Selected the bad axiom SubClassOf(NECO Educational_Qualification).
+[2026-06-26 08:41:40.703] Found 111 possible bad axioms.
+[2026-06-26 08:41:40.704] Selected the bad axiom SubClassOf(Higher_National_Diploma Educational_Qualification).
+[2026-06-26 08:41:40.711] Found 110 possible bad axioms.
+[2026-06-26 08:41:40.711] Selected the bad axiom SubClassOf(Country Permanent).
+[2026-06-26 08:41:40.714] Found 109 possible bad axioms.
+[2026-06-26 08:41:40.714] Selected the bad axiom SubClassOf(Year_of_last_Promotion Personal_Profile).
+[2026-06-26 08:41:40.716] Found 108 possible bad axioms.
+[2026-06-26 08:41:40.717] Selected the bad axiom SubClassOf(BookChapters Researches).
+[2026-06-26 08:41:40.719] Found 107 possible bad axioms.
+[2026-06-26 08:41:40.719] Selected the bad axiom SubClassOf(Present_Status Personal_Profile).
+[2026-06-26 08:41:40.721] Found 106 possible bad axioms.
+[2026-06-26 08:41:40.722] Selected the bad axiom SubClassOf(HouseNo Permanent).
+[2026-06-26 08:41:40.724] Found 105 possible bad axioms.
+[2026-06-26 08:41:40.724] Selected the bad axiom SubClassOf(Preferred_Title Date_of_Birth).
+[202
+...[truncated]
+FAIL: attempt=29 seed=397664 status=memory_limit_exceeded stage=B9 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+progress: ontology=E-PPO attempt=29 success=3/100
+----- E-PPO attempt=30 seed=411864 at 2026-06-26 08:41:54 -----
+--- stdout ---
+{"seed":411864,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":125,"A2":743,"A3":494,"B1":202,"B2":3118}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=411864, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:54.889] Checking precondition...
+[2026-06-26 08:41:54.904] Starting the repair...
+[2026-06-26 08:41:54.910] Found 121 possible bad axioms.
+[2026-06-26 08:41:54.912] Selected the bad axiom SubClassOf(Journals Researches).
+[2026-06-26 08:41:54.916] Found 120 possible bad axioms.
+[2026-06-26 08:41:54.917] Selected the bad axiom SubClassOf(Middlename Firstname).
+[2026-06-26 08:41:54.920] Found 119 possible bad axioms.
+[2026-06-26 08:41:54.920] Selected the bad axiom SubClassOf(Journals Textbooks).
+[2026-06-26 08:41:54.923] Found 118 possible bad axioms.
+[2026-06-26 08:41:54.924] Selected the bad axiom SubClassOf(Ordinary_National_Diploma NAPTEB).
+[2026-06-26 08:41:54.926] Found 117 possible bad axioms.
+[2026-06-26 08:41:54.926] Selected the bad axiom SubClassOf(Textbooks BookChapters).
+[2026-06-26 08:41:54.929] Found 116 possible bad axioms.
+[2026-06-26 08:41:54.929] Selected the bad axiom SubClassOf(Researches Community_Development).
+[2026-06-26 08:41:54.932] Found 115 possible bad axioms.
+[2026-06-26 08:41:54.932] Selected the bad axiom SubClassOf(Phone Contact).
+[2026-06-26 08:41:54.936] Found 114 possible bad axioms.
+[2026-06-26 08:41:54.936] Selected the bad axiom SubClassOf(Firstname Middlename).
+[2026-06-26 08:41:54.942] Found 113 possible bad axioms.
+[2026-06-26 08:41:54.942] Selected the bad axiom SubClassOf(Date_of_Birth owl:Nothing).
+[2026-06-26 08:41:54.944] Found 112 possible bad axioms.
+[2026-06-26 08:41:54.944] Selected the bad axiom SubClassOf(Gender Educational_Qualification).
+[2026-06-26 08:41:54.946] Found 111 possible bad axioms.
+[2026-06-26 08:41:54.947] Selected the bad axiom SubClassOf(Trade_Test Ordinary_National_Diploma).
+[2026-06-26 08:41:54.954] Found 110 possible bad axioms.
+[2026-06-26 08:41:54.955] Selected the bad axiom SubClassOf(Conferences Textbooks).
+[2026-06-26 08:41:54.958] Found 109 possible bad axioms.
+[2026-06-26 08:41:54.958] Selected the bad axiom SubClassOf(Researches Journals).
+[2026-06-26 08:41:54.960] Found 108 possible bad axioms.
+[2026-06-26 08:41:54.961] Selected the bad axiom SubClassOf(Textbooks Researches).
+[2026-06-26 08:41:54.963] Found 107 possible bad axioms.
+[2026-06-26 08:41:54.963] Selected the bad axiom SubClassOf(Block Office).
+[2026-06-26 08:41:54.965] Found 106 possible bad axioms.
+[2026-06-26 08:41:54.966] Selected the bad axiom SubClassOf(Surname Name).
+[2026-06-26 08:41:54.968] Found 105 possible bad axioms.
+[2026-06-26 08:41:54.968] Selected the bad axiom SubClassOf(Educational_Qualification NAPTEB).
+[2026-06-26 08:41:54.971] Found 104 possible bad axioms.
+[2026-06-26 0
+...[truncated]
+FAIL: attempt=30 seed=411864 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=30 success=3/100
+----- E-PPO attempt=31 seed=426064 at 2026-06-26 08:41:59 -----
+--- stdout ---
+{"seed":426064,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"A3","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":52,"A2":777,"A3":900}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=426064, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:41:59.997] Checking precondition...
+[2026-06-26 08:42:00.011] Starting the repair...
+[2026-06-26 08:42:00.016] Found 121 possible bad axioms.
+[2026-06-26 08:42:00.018] Selected the bad axiom SubClassOf(StreetName State).
+[2026-06-26 08:42:00.023] Found 120 possible bad axioms.
+[2026-06-26 08:42:00.023] Selected the bad axiom SubClassOf(Educational_Qualification WAEC).
+[2026-06-26 08:42:00.028] Found 119 possible bad axioms.
+[2026-06-26 08:42:00.028] Selected the bad axiom SubClassOf(Home Phone).
+[2026-06-26 08:42:00.032] Found 118 possible bad axioms.
+[2026-06-26 08:42:00.032] Selected the bad axiom SubClassOf(Within Responsibilities).
+[2026-06-26 08:42:00.034] Found 117 possible bad axioms.
+[2026-06-26 08:42:00.035] Selected the bad axiom SubClassOf(Personal_Profile WAEC).
+[2026-06-26 08:42:00.038] Found 116 possible bad axioms.
+[2026-06-26 08:42:00.038] Selected the bad axiom SubClassOf(Educational_Qualification Personal_Profile).
+[2026-06-26 08:42:00.041] Found 115 possible bad axioms.
+[2026-06-26 08:42:00.041] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:42:00.044] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:42:00.045] Checking precondition...
+[2026-06-26 08:42:00.055] Starting the repair...
+[2026-06-26 08:42:00.820] Found 2 possible bad axioms.
+[2026-06-26 08:42:00.820] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:42:00.821] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:42:00.823] Checking precondition...
+[2026-06-26 08:42:00.825] Starting the repair...
+[2026-06-26 08:42:00.837] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:42:01.045] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:42:01.071] Selected the weaker axiom SubClassOf(owl:Thing Journals).
+[2026-06-26 08:42:01.296] Selected the bad axiom SubClassOf(owl:Thing Journals).
+[2026-06-26 08:42:01.298] Selected the weaker axiom SubClassOf(owl:Thing StreetName).
+[2026-06-26 08:42:01.535] Selected the bad axiom SubClassOf(owl:Thing StreetName).
+[2026-06-26 08:42:01.536] Selected the weaker axiom SubClassOf(owl:Thing Prizes_Awards_Prizes).
+[2026-06-26 08:42:01.720] Selected the bad axiom SubClassOf(owl:Thing Prizes_Awards_Prizes).
+[2026-06-26 08:42:01.721] Selected the weaker axiom SubClassOf(owl:Thing owl:Nothing).
+Failure: Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+
+FAIL: attempt=31 seed=426064 status=memory_limit_exceeded stage=A3 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=E-PPO attempt=31 success=3/100
+----- E-PPO attempt=32 seed=440264 at 2026-06-26 08:42:01 -----
+--- stdout ---
+{"seed":440264,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification","iic_values":{},"repair_runtimes_ms":{"A1":31,"A2":796,"A3":257,"B1":236,"B2":1855}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/E-PPO.owl, seed=440264, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 08:42:02.133] Checking precondition...
+[2026-06-26 08:42:02.147] Starting the repair...
+[2026-06-26 08:42:02.154] Found 121 possible bad axioms.
+[2026-06-26 08:42:02.155] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:42:02.160] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 08:42:02.161] Checking precondition...
+[2026-06-26 08:42:02.167] Starting the repair...
+[2026-06-26 08:42:02.956] Found 2 possible bad axioms.
+[2026-06-26 08:42:02.957] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:42:02.957] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 08:42:02.958] Checking precondition...
+[2026-06-26 08:42:02.962] Starting the repair...
+[2026-06-26 08:42:02.974] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:42:03.189] Selected the bad axiom SubClassOf(owl:Thing WAEC).
+[2026-06-26 08:42:03.213] Selected the weaker axiom SubClassOf(Mobile WAEC).
+[2026-06-26 08:42:03.214] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 08:42:03.215] Checking precondition...
+[2026-06-26 08:42:03.217] Starting the repair...
+[2026-06-26 08:42:03.229] Selected a reference ontology with 171 axioms.
+[2026-06-26 08:42:03.427] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[2026-06-26 08:42:03.450] Selected the weaker axiom SubClassOf(Profession Educational_Qualification).
+[2026-06-26 08:42:03.451] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 08:42:03.453] Checking precondition...
+[2026-06-26 08:42:03.454] Starting the repair...
+[2026-06-26 08:42:03.462] Selected a reference ontology with 174 axioms.
+[2026-06-26 08:42:03.646] Selected the bad axiom SubClassOf(WAEC Educational_Qualification).
+[PowerIndexWeakerAxiomSelector] Scoring 110 candidate weakenings for WAEC ⊑ Educational_Qualification
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsistencyValueApproximate.java:282)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.sampleTargetsInParallel(ShapleyInconsistencyValueApproximate.java:236)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.computeScoresAdaptive(ShapleyInconsistencyValueApproximate.java:139)
+	at www.ontologyutils.repair.strategy.weaker.PowerIndexWeakerAxiomSelector.selectBest(PowerIndexWea
+...[truncated]
+FAIL: attempt=32 seed=440264 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+progress: ontology=E-PPO attempt=32 success=3/100
+=== ABORTED E-PPO after 10 consecutive failures at 2026-06-26 08:42:05 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for E-PPO - 3 successes, 29 failures, 32 attempts ===
+Failed attempts:
+  attempt=1 seed=64 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=2 seed=14264 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=3 seed=28464 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=4 seed=42664 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=5 seed=56864 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=6 seed=71064 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=7 seed=85264 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=9 seed=113664 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=10 seed=127864 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=11 seed=142064 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=13 seed=170464 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=14 seed=184664 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=15 seed=198864 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=16 seed=213064 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=17 seed=227264 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=18 seed=241464 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=19 seed=255664 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=20 seed=269864 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=21 seed=284064 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=23 seed=312464 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=24 seed=326664 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=25 seed=340864 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=26 seed=355064 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=27 seed=369264 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=28 seed=383464 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=29 seed=397664 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ WAEC
+  attempt=30 seed=411864 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+  attempt=31 seed=426064 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=32 seed=440264 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: WAEC ⊑ Educational_Qualification
+Timing summary:
+  success: count=3 total_seconds=34.750420 avg_seconds=11.583473
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0938
+  wall_clock_seconds_total_run=360698.251834

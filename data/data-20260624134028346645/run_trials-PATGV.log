@@ -1,0 +1,509 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-PATGV.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-PATGV.csv
+
+=== Starting sequential trials for PATGV at 2026-06-26 06:07:15 ===
+----- PATGV attempt=1 seed=62 at 2026-06-26 06:07:15 -----
+--- stdout ---
+{"seed":62,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04.02 ⊑ GV.03.04","iic_values":{},"repair_runtimes_ms":{"A1":130,"A2":2215,"A3":256,"B1":226,"B2":1153}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=62, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:16.156] Checking precondition...
+[2026-06-26 06:07:16.169] Starting the repair...
+[2026-06-26 06:07:16.177] Found 116 possible bad axioms.
+[2026-06-26 06:07:16.178] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.02 owl:Nothing).
+[2026-06-26 06:07:16.183] Found 115 possible bad axioms.
+[2026-06-26 06:07:16.183] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:07:16.187] Found 114 possible bad axioms.
+[2026-06-26 06:07:16.188] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05).
+[2026-06-26 06:07:16.191] Found 113 possible bad axioms.
+[2026-06-26 06:07:16.192] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.08).
+[2026-06-26 06:07:16.195] Found 112 possible bad axioms.
+[2026-06-26 06:07:16.195] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02).
+[2026-06-26 06:07:16.198] Found 111 possible bad axioms.
+[2026-06-26 06:07:16.198] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02).
+[2026-06-26 06:07:16.200] Found 110 possible bad axioms.
+[2026-06-26 06:07:16.201] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:07:16.203] Found 109 possible bad axioms.
+[2026-06-26 06:07:16.203] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:16.209] Found 108 possible bad axioms.
+[2026-06-26 06:07:16.210] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:07:16.212] Found 107 possible bad axioms.
+[2026-06-26 06:07:16.212] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.10).
+[2026-06-26 06:07:16.214] Found 106 possible bad axioms.
+[2026-06-26 06:07:16.214] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01).
+[2026-06-26 06:07:16.221] Found 105 possible bad a
+...[truncated]
+FAIL: attempt=1 seed=62 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04.02 ⊑ GV.03.04
+progress: ontology=PATGV attempt=1 success=0/100
+----- PATGV attempt=2 seed=14262 at 2026-06-26 06:07:20 -----
+--- stdout ---
+{"seed":14262,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.7899543378995434,"B1_vs_A3":0.7146814404432132,"B2_vs_A1":0.9723791588198368,"B2_vs_A2":0.9602888086642599,"B2_vs_A3":0.9532908704883227,"B3_vs_A1":0.9723791588198368,"B3_vs_A2":0.9602888086642599,"B3_vs_A3":0.9532908704883227,"B4_vs_A1":0.8733031674208145,"B4_vs_A2":0.8360290016731734,"B4_vs_A3":0.8115384615384615,"B5_vs_A1":0.9723791588198368,"B5_vs_A2":0.9602888086642599,"B5_vs_A3":0.9532908704883227,"B6_vs_A1":0.9723791588198368,"B6_vs_A2":0.9602888086642599,"B6_vs_A3":0.9532908704883227,"B7_vs_A1":0.8733031674208145,"B7_vs_A2":0.8360290016731734,"B7_vs_A3":0.8115384615384615,"B8_vs_A1":0.9723791588198368,"B8_vs_A2":0.9602888086642599,"B8_vs_A3":0.9532908704883227,"B9_vs_A1":0.9723791588198368,"B9_vs_A2":0.9602888086642599,"B9_vs_A3":0.9532908704883227},"repair_runtimes_ms":{"A1":62,"A2":2219,"A3":250,"B1":245,"B2":1277,"B3":710,"B4":63,"B5":687,"B6":530,"B7":88,"B8":786,"B9":985}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=14262, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:20.562] Checking precondition...
+[2026-06-26 06:07:20.575] Starting the repair...
+[2026-06-26 06:07:20.585] Found 116 possible bad axioms.
+[2026-06-26 06:07:20.586] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.09).
+[2026-06-26 06:07:20.591] Found 115 possible bad axioms.
+[2026-06-26 06:07:20.592] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 owl:Thing).
+[2026-06-26 06:07:20.596] Found 114 possible bad axioms.
+[2026-06-26 06:07:20.596] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:07:20.601] Found 113 possible bad axioms.
+[2026-06-26 06:07:20.601] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.01 owl:Thing).
+[2026-06-26 06:07:20.604] Found 112 possible bad axioms.
+[2026-06-26 06:07:20.605] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.05).
+[2026-06-26 06:07:20.607] Found 111 possible bad axioms.
+[2026-06-26 06:07:20.608] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.10).
+[2026-06-26 06:07:20.610] Found 110 possible bad axioms.
+[2026-06-26 06:07:20.610] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.08 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:20.612] Found 109 possible bad axioms.
+[2026-06-26 06:07:20.613] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:07:20.619] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:07:20.620] Checking precondition...
+[2026-06-26 06:07:20.626] Starting the repair...
+[2026-06-26 06:07:22.838] Found 4 possible bad axioms.
+[2026-06-26 06:07:22.838] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04 owl:Nothing).
+[2026-06-26 06:07:22.839] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:07:22.841] Checking precondition...
+[2026-06-26 06:07:22.842] Starting the repair...
+[2026-06-26 06:07:22.851] Selected a reference ontology with 188 axioms.
+[2026-06-26 06:07:23.051] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.0
+...[truncated]
+SUCCESS: attempt=2 seed=14262 success_count=1/100
+progress: ontology=PATGV attempt=2 success=1/100
+----- PATGV attempt=3 seed=28462 at 2026-06-26 06:07:29 -----
+--- stdout ---
+{"seed":28462,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":158,"A2":2158,"A3":268,"B1":232,"B2":1203,"B3":778}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=28462, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:29.651] Checking precondition...
+[2026-06-26 06:07:29.667] Starting the repair...
+[2026-06-26 06:07:29.676] Found 116 possible bad axioms.
+[2026-06-26 06:07:29.678] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.08.03).
+[2026-06-26 06:07:29.682] Found 115 possible bad axioms.
+[2026-06-26 06:07:29.683] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.08 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:07:29.686] Found 114 possible bad axioms.
+[2026-06-26 06:07:29.686] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.09 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:29.691] Found 113 possible bad axioms.
+[2026-06-26 06:07:29.691] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:29.694] Found 112 possible bad axioms.
+[2026-06-26 06:07:29.694] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.08 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:07:29.697] Found 111 possible bad axioms.
+[2026-06-26 06:07:29.697] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.07 owl:Thing).
+[2026-06-26 06:07:29.700] Found 110 possible bad axioms.
+[2026-06-26 06:07:29.700] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:29.706] Found 109 possible bad axioms.
+[2026-06-26 06:07:29.706] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02).
+[2026-06-26 06:07:29.709] Found 108 possible bad axioms.
+[2026-06-26 06:07:29.709] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.08.06).
+[2026-06-26 06:07:29.711] Found 107 possible bad axioms.
+[2026-06-26 06:07:29.711] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 owl:Thing).
+[2026-06-26 06:07:29.713] Found 106 possible bad axioms.
+[2026-06-26 06:07:29.713] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:07:29.720] Found 105 possible bad axioms.
+[2026-06-26 06:07:29.720] Selected t
+...[truncated]
+FAIL: attempt=3 seed=28462 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+progress: ontology=PATGV attempt=3 success=1/100
+----- PATGV attempt=4 seed=42662 at 2026-06-26 06:07:34 -----
+--- stdout ---
+{"seed":42662,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":48,"A2":2213,"A3":259,"B1":211,"B2":957}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=42662, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:34.862] Checking precondition...
+[2026-06-26 06:07:34.875] Starting the repair...
+[2026-06-26 06:07:34.883] Found 116 possible bad axioms.
+[2026-06-26 06:07:34.884] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:07:34.888] Found 115 possible bad axioms.
+[2026-06-26 06:07:34.888] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.08.06).
+[2026-06-26 06:07:34.894] Found 114 possible bad axioms.
+[2026-06-26 06:07:34.894] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02).
+[2026-06-26 06:07:34.897] Found 113 possible bad axioms.
+[2026-06-26 06:07:34.898] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:07:34.901] Found 112 possible bad axioms.
+[2026-06-26 06:07:34.901] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.04).
+[2026-06-26 06:07:34.903] Found 111 possible bad axioms.
+[2026-06-26 06:07:34.903] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04).
+[2026-06-26 06:07:34.906] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:07:34.907] Checking precondition...
+[2026-06-26 06:07:34.916] Starting the repair...
+[2026-06-26 06:07:37.118] Found 4 possible bad axioms.
+[2026-06-26 06:07:37.119] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:07:37.119] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:07:37.121] Checking precondition...
+[2026-06-26 06:07:37.122] Starting the repair...
+[2026-06-26 06:07:37.131] Selected a reference ontology with 188 axioms.
+[2026-06-26 06:07:37.335] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04).
+[2026-06-26 06:07:37.377] Selected the weaker axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04).
+[2026-06-26 06:07:37.379] Finished repairing the ontology.
+Repairing with B1 (bad
+...[truncated]
+FAIL: attempt=4 seed=42662 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+progress: ontology=PATGV attempt=4 success=1/100
+----- PATGV attempt=5 seed=56862 at 2026-06-26 06:07:38 -----
+--- stdout ---
+{"seed":56862,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":150,"A2":2137,"A3":254,"B1":238,"B2":1332}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=56862, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:38.972] Checking precondition...
+[2026-06-26 06:07:38.986] Starting the repair...
+[2026-06-26 06:07:38.994] Found 116 possible bad axioms.
+[2026-06-26 06:07:38.995] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.06 owl:Thing).
+[2026-06-26 06:07:38.999] Found 115 possible bad axioms.
+[2026-06-26 06:07:38.999] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.05).
+[2026-06-26 06:07:39.004] Found 114 possible bad axioms.
+[2026-06-26 06:07:39.004] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:07:39.007] Found 113 possible bad axioms.
+[2026-06-26 06:07:39.008] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01).
+[2026-06-26 06:07:39.011] Found 112 possible bad axioms.
+[2026-06-26 06:07:39.011] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.02).
+[2026-06-26 06:07:39.013] Found 111 possible bad axioms.
+[2026-06-26 06:07:39.014] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03).
+[2026-06-26 06:07:39.016] Found 110 possible bad axioms.
+[2026-06-26 06:07:39.016] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:07:39.019] Found 109 possible bad axioms.
+[2026-06-26 06:07:39.019] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.02 owl:Nothing).
+[2026-06-26 06:07:39.026] Found 108 possible bad axioms.
+[2026-06-26 06:07:39.026] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.07 owl:Thing).
+[2026-06-26 06:07:39.029] Found 107 possible bad axioms.
+[2026-06-26 06:07:39.029] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.10).
+[2026-06-26 06:07:39.031] Found 106 possible bad axioms.
+[2026-06-26 06:07:39.031] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.08 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:39.039] Found 105 possible bad axioms.
+[2026-06-26 06:07:39.039] Selected the bad axiom SubClassOf(htt
+...[truncated]
+FAIL: attempt=5 seed=56862 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+progress: ontology=PATGV attempt=5 success=1/100
+----- PATGV attempt=6 seed=71062 at 2026-06-26 06:07:43 -----
+--- stdout ---
+{"seed":71062,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03","iic_values":{},"repair_runtimes_ms":{"A1":60,"A2":2228,"A3":246,"B1":466,"B2":2331,"B3":682,"B4":54,"B5":547}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=71062, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:43.483] Checking precondition...
+[2026-06-26 06:07:43.497] Starting the repair...
+[2026-06-26 06:07:43.505] Found 116 possible bad axioms.
+[2026-06-26 06:07:43.507] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.01).
+[2026-06-26 06:07:43.512] Found 115 possible bad axioms.
+[2026-06-26 06:07:43.512] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.07 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:07:43.516] Found 114 possible bad axioms.
+[2026-06-26 06:07:43.516] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:07:43.520] Found 113 possible bad axioms.
+[2026-06-26 06:07:43.521] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.08 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:07:43.524] Found 112 possible bad axioms.
+[2026-06-26 06:07:43.524] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02).
+[2026-06-26 06:07:43.526] Found 111 possible bad axioms.
+[2026-06-26 06:07:43.527] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01).
+[2026-06-26 06:07:43.529] Found 110 possible bad axioms.
+[2026-06-26 06:07:43.529] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01.02).
+[2026-06-26 06:07:43.532] Found 109 possible bad axioms.
+[2026-06-26 06:07:43.532] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04 owl:Nothing).
+[2026-06-26 06:07:43.539] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:07:43.540] Checking precondition...
+[2026-06-26 06:07:43.544] Starting the repair...
+[2026-06-26 06:07:45.767] Found 4 possible bad axioms.
+[2026-06-26 06:07:45.767] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:07:45.768] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:07:45.769] Checking precondition...
+[2026-06-26 06:07:45.771] Starting the repair...
+[2026-06-26 06:07:45.779] Selected a reference ontology with 188
+...[truncated]
+FAIL: attempt=6 seed=71062 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+progress: ontology=PATGV attempt=6 success=1/100
+----- PATGV attempt=7 seed=85262 at 2026-06-26 06:07:50 -----
+--- stdout ---
+{"seed":85262,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03 ⊑ GV.03.04.02","iic_values":{},"repair_runtimes_ms":{"A1":97,"A2":2189,"A3":267,"B1":406,"B2":1000}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=85262, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:50.534] Checking precondition...
+[2026-06-26 06:07:50.547] Starting the repair...
+[2026-06-26 06:07:50.556] Found 116 possible bad axioms.
+[2026-06-26 06:07:50.557] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.10).
+[2026-06-26 06:07:50.563] Found 115 possible bad axioms.
+[2026-06-26 06:07:50.563] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:07:50.567] Found 114 possible bad axioms.
+[2026-06-26 06:07:50.567] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10 owl:Thing).
+[2026-06-26 06:07:50.571] Found 113 possible bad axioms.
+[2026-06-26 06:07:50.571] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.04).
+[2026-06-26 06:07:50.574] Found 112 possible bad axioms.
+[2026-06-26 06:07:50.574] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02).
+[2026-06-26 06:07:50.577] Found 111 possible bad axioms.
+[2026-06-26 06:07:50.577] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.01).
+[2026-06-26 06:07:50.579] Found 110 possible bad axioms.
+[2026-06-26 06:07:50.580] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.09 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.10).
+[2026-06-26 06:07:50.586] Found 109 possible bad axioms.
+[2026-06-26 06:07:50.586] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05).
+[2026-06-26 06:07:50.589] Found 108 possible bad axioms.
+[2026-06-26 06:07:50.589] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:07:50.591] Found 107 possible bad axioms.
+[2026-06-26 06:07:50.591] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:50.593] Found 106 possible bad axioms.
+[2026-06-26 06:07:50.593] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01.02).
+[2026-06-26 06:07:50.600]
+...[truncated]
+FAIL: attempt=7 seed=85262 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03 ⊑ GV.03.04.02
+progress: ontology=PATGV attempt=7 success=1/100
+----- PATGV attempt=8 seed=99462 at 2026-06-26 06:07:54 -----
+--- stdout ---
+{"seed":99462,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03","iic_values":{},"repair_runtimes_ms":{"A1":159,"A2":2161,"A3":491,"B1":230,"B2":1312,"B3":706,"B4":109,"B5":703,"B6":966,"B7":83,"B8":586}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=99462, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:07:54.913] Checking precondition...
+[2026-06-26 06:07:54.927] Starting the repair...
+[2026-06-26 06:07:54.935] Found 116 possible bad axioms.
+[2026-06-26 06:07:54.937] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:07:54.941] Found 115 possible bad axioms.
+[2026-06-26 06:07:54.941] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.10 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:07:54.945] Found 114 possible bad axioms.
+[2026-06-26 06:07:54.945] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:54.949] Found 113 possible bad axioms.
+[2026-06-26 06:07:54.949] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.10).
+[2026-06-26 06:07:54.952] Found 112 possible bad axioms.
+[2026-06-26 06:07:54.952] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.05).
+[2026-06-26 06:07:54.954] Found 111 possible bad axioms.
+[2026-06-26 06:07:54.955] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.08).
+[2026-06-26 06:07:54.957] Found 110 possible bad axioms.
+[2026-06-26 06:07:54.957] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:07:54.959] Found 109 possible bad axioms.
+[2026-06-26 06:07:54.960] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.02).
+[2026-06-26 06:07:54.966] Found 108 possible bad axioms.
+[2026-06-26 06:07:54.967] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05).
+[2026-06-26 06:07:54.969] Found 107 possible bad axioms.
+[2026-06-26 06:07:54.969] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01).
+[2026-06-26 06:07:54.971] Found 106 possible bad axioms.
+[2026-06-26 06:07:54.971] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.1
+...[truncated]
+FAIL: attempt=8 seed=99462 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+progress: ontology=PATGV attempt=8 success=1/100
+----- PATGV attempt=9 seed=113662 at 2026-06-26 06:08:02 -----
+--- stdout ---
+{"seed":113662,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03","iic_values":{},"repair_runtimes_ms":{"A1":110,"A2":2192,"A3":261,"B1":242,"B2":1179,"B3":622,"B4":47,"B5":688,"B6":425,"B7":96,"B8":642}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=113662, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:08:02.834] Checking precondition...
+[2026-06-26 06:08:02.848] Starting the repair...
+[2026-06-26 06:08:02.856] Found 116 possible bad axioms.
+[2026-06-26 06:08:02.857] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.01).
+[2026-06-26 06:08:02.862] Found 115 possible bad axioms.
+[2026-06-26 06:08:02.862] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:08:02.866] Found 114 possible bad axioms.
+[2026-06-26 06:08:02.866] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:08:02.870] Found 113 possible bad axioms.
+[2026-06-26 06:08:02.870] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:08:02.873] Found 112 possible bad axioms.
+[2026-06-26 06:08:02.873] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:08:02.876] Found 111 possible bad axioms.
+[2026-06-26 06:08:02.876] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:08:02.879] Found 110 possible bad axioms.
+[2026-06-26 06:08:02.879] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.07.01).
+[2026-06-26 06:08:02.882] Found 109 possible bad axioms.
+[2026-06-26 06:08:02.882] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01).
+[2026-06-26 06:08:02.888] Found 108 possible bad axioms.
+[2026-06-26 06:08:02.888] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03.02).
+[2026-06-26 06:08:02.890] Found 107 possible bad axioms.
+[2026-06-26 06:08:02.891] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:08:02.892] Found 106 possible bad axioms.
+[2026-06-26 06:08:02.893] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02 https://pat.nichd.nih.go
+...[truncated]
+FAIL: attempt=9 seed=113662 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+progress: ontology=PATGV attempt=9 success=1/100
+----- PATGV attempt=10 seed=127862 at 2026-06-26 06:08:09 -----
+--- stdout ---
+{"seed":127862,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":131,"A2":2167,"A3":254,"B1":217,"B2":949}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=127862, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:08:09.762] Checking precondition...
+[2026-06-26 06:08:09.777] Starting the repair...
+[2026-06-26 06:08:09.783] Found 116 possible bad axioms.
+[2026-06-26 06:08:09.785] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01).
+[2026-06-26 06:08:09.789] Found 115 possible bad axioms.
+[2026-06-26 06:08:09.789] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.08 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:08:09.793] Found 114 possible bad axioms.
+[2026-06-26 06:08:09.793] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02).
+[2026-06-26 06:08:09.797] Found 113 possible bad axioms.
+[2026-06-26 06:08:09.797] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:08:09.800] Found 112 possible bad axioms.
+[2026-06-26 06:08:09.800] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.04.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.04).
+[2026-06-26 06:08:09.803] Found 111 possible bad axioms.
+[2026-06-26 06:08:09.803] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01).
+[2026-06-26 06:08:09.805] Found 110 possible bad axioms.
+[2026-06-26 06:08:09.806] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03).
+[2026-06-26 06:08:09.808] Found 109 possible bad axioms.
+[2026-06-26 06:08:09.808] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.04 owl:Thing).
+[2026-06-26 06:08:09.814] Found 108 possible bad axioms.
+[2026-06-26 06:08:09.815] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:08:09.817] Found 107 possible bad axioms.
+[2026-06-26 06:08:09.817] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03).
+[2026-06-26 06:08:09.819] Found 106 possible bad axioms.
+[2026-06-26 06:08:09.819] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.08 https://pat.nichd.nih.gov/patgeneticvariance/GV.08.07).
+[2026-06-26 06:08:09.827] Found 105 
+...[truncated]
+FAIL: attempt=10 seed=127862 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+progress: ontology=PATGV attempt=10 success=1/100
+----- PATGV attempt=11 seed=142062 at 2026-06-26 06:08:13 -----
+--- stdout ---
+{"seed":142062,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03","iic_values":{},"repair_runtimes_ms":{"A1":62,"A2":2210,"A3":274,"B1":224,"B2":1015}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=142062, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:08:13.889] Checking precondition...
+[2026-06-26 06:08:13.904] Starting the repair...
+[2026-06-26 06:08:13.911] Found 116 possible bad axioms.
+[2026-06-26 06:08:13.913] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02).
+[2026-06-26 06:08:13.917] Found 115 possible bad axioms.
+[2026-06-26 06:08:13.917] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.09).
+[2026-06-26 06:08:13.922] Found 114 possible bad axioms.
+[2026-06-26 06:08:13.922] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 06:08:13.926] Found 113 possible bad axioms.
+[2026-06-26 06:08:13.927] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:08:13.929] Found 112 possible bad axioms.
+[2026-06-26 06:08:13.930] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.02).
+[2026-06-26 06:08:13.932] Found 111 possible bad axioms.
+[2026-06-26 06:08:13.932] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.06 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:08:13.935] Found 110 possible bad axioms.
+[2026-06-26 06:08:13.935] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.09).
+[2026-06-26 06:08:13.937] Found 109 possible bad axioms.
+[2026-06-26 06:08:13.941] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05).
+[2026-06-26 06:08:13.944] Found 108 possible bad axioms.
+[2026-06-26 06:08:13.944] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04).
+[2026-06-26 06:08:13.946] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:08:13.947] Checking precondition...
+[2026-06-26 06:08:13.956] Starting the repair...
+[2026-06-26 06:08:16.157] Found 4 possible bad axioms.
+[2026-06-26 06:08:16.157] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.04.02).
+[2026-06-26 
+...[truncated]
+FAIL: attempt=11 seed=142062 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+progress: ontology=PATGV attempt=11 success=1/100
+----- PATGV attempt=12 seed=156262 at 2026-06-26 06:08:17 -----
+--- stdout ---
+{"seed":156262,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03","iic_values":{},"repair_runtimes_ms":{"A1":181,"A2":2139,"A3":386,"B1":230,"B2":1089}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/PATGV.owl, seed=156262, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:08:18.105] Checking precondition...
+[2026-06-26 06:08:18.119] Starting the repair...
+[2026-06-26 06:08:18.127] Found 116 possible bad axioms.
+[2026-06-26 06:08:18.129] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:08:18.135] Found 115 possible bad axioms.
+[2026-06-26 06:08:18.135] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01.02.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.02.01.02).
+[2026-06-26 06:08:18.140] Found 114 possible bad axioms.
+[2026-06-26 06:08:18.140] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.01).
+[2026-06-26 06:08:18.144] Found 113 possible bad axioms.
+[2026-06-26 06:08:18.144] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.08.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.08).
+[2026-06-26 06:08:18.148] Found 112 possible bad axioms.
+[2026-06-26 06:08:18.148] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02).
+[2026-06-26 06:08:18.151] Found 111 possible bad axioms.
+[2026-06-26 06:08:18.151] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.05 https://pat.nichd.nih.gov/patgeneticvariance/GV.03.07.01).
+[2026-06-26 06:08:18.153] Found 110 possible bad axioms.
+[2026-06-26 06:08:18.154] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.03.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.03).
+[2026-06-26 06:08:18.156] Found 109 possible bad axioms.
+[2026-06-26 06:08:18.156] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.02 https://pat.nichd.nih.gov/patgeneticvariance/GV.02.03.09).
+[2026-06-26 06:08:18.163] Found 108 possible bad axioms.
+[2026-06-26 06:08:18.163] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03.01 https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03.02).
+[2026-06-26 06:08:18.166] Found 107 possible bad axioms.
+[2026-06-26 06:08:18.166] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.10.03 https://pat.nichd.nih.gov/patgeneticvariance/GV.10.01).
+[2026-06-26 06:08:18.168] Found 106 possible bad axioms.
+[2026-06-26 06:08:18.168] Selected the bad axiom SubClassOf(https://pat.nichd.nih.gov/patgeneticvariance/GV.05 owl:Thing).
+[2026-06-26 06:08:18.177] F
+...[truncated]
+FAIL: attempt=12 seed=156262 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+progress: ontology=PATGV attempt=12 success=1/100
+=== ABORTED PATGV after 10 consecutive failures at 2026-06-26 06:08:22 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for PATGV - 1 successes, 11 failures, 12 attempts ===
+Failed attempts:
+  attempt=1 seed=62 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04.02 ⊑ GV.03.04
+  attempt=3 seed=28462 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+  attempt=4 seed=42662 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+  attempt=5 seed=56862 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+  attempt=6 seed=71062 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+  attempt=7 seed=85262 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03 ⊑ GV.03.04.02
+  attempt=8 seed=99462 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+  attempt=9 seed=113662 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+  attempt=10 seed=127862 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: GV.03.04 ⊑ ⊥
+  attempt=11 seed=142062 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+  attempt=12 seed=156262 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ GV.03
+Timing summary:
+  success: count=1 total_seconds=9.026358 avg_seconds=9.026358
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0833
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,452 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CEDARVS.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CEDARVS.csv
+
+=== Starting sequential trials for CEDARVS at 2026-06-27 03:01:23 ===
+----- CEDARVS attempt=1 seed=101 at 2026-06-27 03:01:23 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=101, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:01:24.293] Checking precondition...
+[2026-06-27 03:01:24.309] Starting the repair...
+[2026-06-27 03:01:24.316] Found 260 possible bad axioms.
+[2026-06-27 03:01:24.318] Selected the bad axiom SubClassOf(ObjectComplementOf(Adverse_Events) ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:01:24.324] Found 259 possible bad axioms.
+[2026-06-27 03:01:24.324] Selected the bad axiom SubClassOf(ObjectComplementOf(Other_Detection_Method) ObjectComplementOf(Unknown)).
+[2026-06-27 03:01:24.333] Found 258 possible bad axioms.
+[2026-06-27 03:01:24.334] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Interventions)).
+[2026-06-27 03:01:24.339] Found 257 possible bad axioms.
+[2026-06-27 03:01:24.339] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Assessment_Results)).
+[2026-06-27 03:01:24.344] Found 256 possible bad axioms.
+[2026-06-27 03:01:24.344] Selected the bad axiom SubClassOf(Study_Medication ObjectComplementOf(Study_Summary_Description)).
+[2026-06-27 03:01:24.348] Found 255 possible bad axioms.
+[2026-06-27 03:01:24.348] Selected the bad axiom SubClassOf(Study_Data Study_File_Type).
+[2026-06-27 03:01:24.352] Found 254 possible bad axioms.
+[2026-06-27 03:01:24.352] Selected the bad axiom SubClassOf(Lab_Test_Results ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:01:24.355] Found 253 possible bad axioms.
+[2026-06-27 03:01:24.355] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Lab_Test_Results)).
+[2026-06-27 03:01:24.359] Found 252 possible bad axioms.
+[2026-06-27 03:01:24.359] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Study_Data)).
+[2026-06-27 03:01:24.362] Found 251 possible bad axioms.
+[2026-06-27 03:01:24.362] Selected the bad axiom SubClassOf(ObjectComplementOf(Assessment_Results) ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:01:24.365] Found 250 possible bad axioms.
+[2026-06-27 03:01:24.365] Selected the bad axiom SubClassOf(Data_Dictionary Study_Summary_Description).
+[2026-06-27 03:01:24.378] Found 249 possible bad axioms.
+[2026-06-27 03:01:24.378] Selected the bad axiom SubClassOf(Study_Medication ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:01:24.382] Found 248 possible bad axioms.
+[2026-06-27 03:01:24.383] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Interventions)).
+[2026-06-27 03:01:24.386] Found 247 possible bad axioms.
+[2026-06-27 03:01:24.386] Selected the bad axiom SubClassOf(Adverse_Events ObjectComplementOf(Demographics)).
+[2026-06-27 03:01:24.390] Found 246 possible bad axioms.
+[2026-06-2
+...[truncated]
+FAIL: attempt=1 seed=101 - negative return code -9
+progress: ontology=CEDARVS attempt=1 success=0/100
+----- CEDARVS attempt=2 seed=14301 at 2026-06-27 03:02:12 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=14301, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:02:12.531] Checking precondition...
+[2026-06-27 03:02:12.547] Starting the repair...
+[2026-06-27 03:02:12.554] Found 260 possible bad axioms.
+[2026-06-27 03:02:12.556] Selected the bad axiom SubClassOf(Unknown Titration_Process).
+[2026-06-27 03:02:12.563] Found 259 possible bad axioms.
+[2026-06-27 03:02:12.563] Selected the bad axiom SubClassOf(Unknown ObjectComplementOf(ph_Meter_Sensed)).
+[2026-06-27 03:02:12.573] Found 258 possible bad axioms.
+[2026-06-27 03:02:12.573] Selected the bad axiom SubClassOf(ObjectComplementOf(Lab_Test_Results) ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:02:12.578] Found 257 possible bad axioms.
+[2026-06-27 03:02:12.578] Selected the bad axiom SubClassOf(Observational ObjectComplementOf(Longitudinal)).
+[2026-06-27 03:02:12.584] Found 256 possible bad axioms.
+[2026-06-27 03:02:12.584] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:02:12.589] Found 255 possible bad axioms.
+[2026-06-27 03:02:12.589] Selected the bad axiom SubClassOf(Unknown ObjectComplementOf(Optically_Sensed)).
+[2026-06-27 03:02:12.593] Found 254 possible bad axioms.
+[2026-06-27 03:02:12.593] Selected the bad axiom SubClassOf(Interventional ObjectComplementOf(Longitudinal)).
+[2026-06-27 03:02:12.596] Found 253 possible bad axioms.
+[2026-06-27 03:02:12.596] Selected the bad axiom SubClassOf(Study_Medication ObjectComplementOf(Concomitant_Medications)).
+[2026-06-27 03:02:12.599] Found 252 possible bad axioms.
+[2026-06-27 03:02:12.600] Selected the bad axiom SubClassOf(Adverse_Events ObjectComplementOf(Lab_Test_Results)).
+[2026-06-27 03:02:12.602] Found 251 possible bad axioms.
+[2026-06-27 03:02:12.603] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Interventions)).
+[2026-06-27 03:02:12.606] Found 250 possible bad axioms.
+[2026-06-27 03:02:12.606] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Concomitant_Medications)).
+[2026-06-27 03:02:12.620] Found 249 possible bad axioms.
+[2026-06-27 03:02:12.620] Selected the bad axiom SubClassOf(Medical_Monitor ObjectComplementOf(Principal_Investigator)).
+[2026-06-27 03:02:12.623] Found 248 possible bad axioms.
+[2026-06-27 03:02:12.623] Selected the bad axiom SubClassOf(Study_Medication ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:02:12.626] Found 247 possible bad axioms.
+[2026-06-27 03:02:12.627] Selected the bad axiom SubClassOf(Substance_Use Interventions).
+[2026-06-27 03:02:12.629] Found 246 possible bad axioms.
+[2026-06-27 03:02:12.629] Selected the bad axiom SubClassOf(Advers
+...[truncated]
+FAIL: attempt=2 seed=14301 - negative return code -9
+progress: ontology=CEDARVS attempt=2 success=0/100
+----- CEDARVS attempt=3 seed=28501 at 2026-06-27 03:02:59 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=28501, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:03:00.217] Checking precondition...
+[2026-06-27 03:03:00.233] Starting the repair...
+[2026-06-27 03:03:00.240] Found 260 possible bad axioms.
+[2026-06-27 03:03:00.243] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Study_Summary_Description)).
+[2026-06-27 03:03:00.248] Found 259 possible bad axioms.
+[2026-06-27 03:03:00.249] Selected the bad axiom SubClassOf(Unknown ObjectComplementOf(Optically_Sensed)).
+[2026-06-27 03:03:00.258] Found 258 possible bad axioms.
+[2026-06-27 03:03:00.258] Selected the bad axiom SubClassOf(Study_Summary_Description Study_File_Type).
+[2026-06-27 03:03:00.263] Found 257 possible bad axioms.
+[2026-06-27 03:03:00.263] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Interventions)).
+[2026-06-27 03:03:00.268] Found 256 possible bad axioms.
+[2026-06-27 03:03:00.268] Selected the bad axiom SubClassOf(ObjectComplementOf(Fully_Manual) ObjectComplementOf(Other_Detection_Method)).
+[2026-06-27 03:03:00.272] Found 255 possible bad axioms.
+[2026-06-27 03:03:00.272] Selected the bad axiom SubClassOf(Medical_Monitor ObjectComplementOf(Site_Manager)).
+[2026-06-27 03:03:00.277] Found 254 possible bad axioms.
+[2026-06-27 03:03:00.277] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:03:00.280] Found 253 possible bad axioms.
+[2026-06-27 03:03:00.280] Selected the bad axiom SubClassOf(Intervention_Longitudinal ObjectComplementOf(ObjectComplementOf(Interventional))).
+[2026-06-27 03:03:00.283] Found 252 possible bad axioms.
+[2026-06-27 03:03:00.284] Selected the bad axiom SubClassOf(Sub-Investigator ObjectComplementOf(Co-Principal_Investigator)).
+[2026-06-27 03:03:00.286] Found 251 possible bad axioms.
+[2026-06-27 03:03:00.287] Selected the bad axiom SubClassOf(Assessment_Results Study_File_Type).
+[2026-06-27 03:03:00.290] Found 250 possible bad axioms.
+[2026-06-27 03:03:00.290] Selected the bad axiom SubClassOf(Study_Medication ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:03:00.303] Found 249 possible bad axioms.
+[2026-06-27 03:03:00.303] Selected the bad axiom SubClassOf(ObjectComplementOf(Data_Dictionary) ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:03:00.306] Found 248 possible bad axioms.
+[2026-06-27 03:03:00.306] Selected the bad axiom SubClassOf(Observational ObjectComplementOf(Longitudinal)).
+[2026-06-27 03:03:00.309] Found 247 possible bad axioms.
+[2026-06-27 03:03:00.310] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:03:00.312] Found 246 possible bad axi
+...[truncated]
+FAIL: attempt=3 seed=28501 - negative return code -9
+progress: ontology=CEDARVS attempt=3 success=0/100
+----- CEDARVS attempt=4 seed=42701 at 2026-06-27 03:03:56 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=42701, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:03:56.852] Checking precondition...
+[2026-06-27 03:03:56.867] Starting the repair...
+[2026-06-27 03:03:56.876] Found 260 possible bad axioms.
+[2026-06-27 03:03:56.877] Selected the bad axiom SubClassOf(Substance_Use ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:03:56.883] Found 259 possible bad axioms.
+[2026-06-27 03:03:56.883] Selected the bad axiom SubClassOf(Other ObjectComplementOf(Co-Principal_Investigator)).
+[2026-06-27 03:03:56.893] Found 258 possible bad axioms.
+[2026-06-27 03:03:56.893] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Interventions)).
+[2026-06-27 03:03:56.898] Found 257 possible bad axioms.
+[2026-06-27 03:03:56.898] Selected the bad axiom SubClassOf(ObjectComplementOf(Fully_Manual) ObjectComplementOf(Other_Detection_Method)).
+[2026-06-27 03:03:56.904] Found 256 possible bad axioms.
+[2026-06-27 03:03:56.904] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:03:56.908] Found 255 possible bad axioms.
+[2026-06-27 03:03:56.908] Selected the bad axiom SubClassOf(Observational ObjectComplementOf(Interventional)).
+[2026-06-27 03:03:56.912] Found 254 possible bad axioms.
+[2026-06-27 03:03:56.912] Selected the bad axiom SubClassOf(Other ObjectComplementOf(Sub-Investigator)).
+[2026-06-27 03:03:56.916] Found 253 possible bad axioms.
+[2026-06-27 03:03:56.916] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:03:56.919] Found 252 possible bad axioms.
+[2026-06-27 03:03:56.919] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Study_Data)).
+[2026-06-27 03:03:56.922] Found 251 possible bad axioms.
+[2026-06-27 03:03:56.922] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Concomitant_Medications)).
+[2026-06-27 03:03:56.925] Found 250 possible bad axioms.
+[2026-06-27 03:03:56.925] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Interventions)).
+[2026-06-27 03:03:56.938] Found 249 possible bad axioms.
+[2026-06-27 03:03:56.939] Selected the bad axiom SubClassOf(Lab_Test_Results ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:03:56.942] Found 248 possible bad axioms.
+[2026-06-27 03:03:56.943] Selected the bad axiom SubClassOf(Inclusion Criterion_Category).
+[2026-06-27 03:03:56.946] Found 247 possible bad axioms.
+[2026-06-27 03:03:56.946] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:03:56.950] Found 246 possible bad axioms.
+[2026-06-27 03:03:56.950] Selected the b
+...[truncated]
+FAIL: attempt=4 seed=42701 - negative return code -9
+progress: ontology=CEDARVS attempt=4 success=0/100
+----- CEDARVS attempt=5 seed=56901 at 2026-06-27 03:04:47 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=56901, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:04:48.234] Checking precondition...
+[2026-06-27 03:04:48.249] Starting the repair...
+[2026-06-27 03:04:48.257] Found 260 possible bad axioms.
+[2026-06-27 03:04:48.259] Selected the bad axiom SubClassOf(ObjectComplementOf(Principal_Investigator) Co-Principal_Investigator).
+[2026-06-27 03:04:48.264] Found 259 possible bad axioms.
+[2026-06-27 03:04:48.265] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Interventions)).
+[2026-06-27 03:04:48.274] Found 258 possible bad axioms.
+[2026-06-27 03:04:48.274] Selected the bad axiom SubClassOf(ObjectComplementOf(Concomitant_Medications) ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:04:48.278] Found 257 possible bad axioms.
+[2026-06-27 03:04:48.278] Selected the bad axiom SubClassOf(Longitudinal ObjectComplementOf(Interventional)).
+[2026-06-27 03:04:48.283] Found 256 possible bad axioms.
+[2026-06-27 03:04:48.283] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:04:48.288] Found 255 possible bad axioms.
+[2026-06-27 03:04:48.288] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Study_Summary_Description)).
+[2026-06-27 03:04:48.292] Found 254 possible bad axioms.
+[2026-06-27 03:04:48.292] Selected the bad axiom SubClassOf(Site_Manager ObjectComplementOf(Other)).
+[2026-06-27 03:04:48.298] Found 253 possible bad axioms.
+[2026-06-27 03:04:48.299] Selected the bad axiom SubClassOf(Site_Manager ObjectComplementOf(Co-Principal_Investigator)).
+[2026-06-27 03:04:48.303] Found 252 possible bad axioms.
+[2026-06-27 03:04:48.303] Selected the bad axiom SubClassOf(Unknown Titration_Process).
+[2026-06-27 03:04:48.306] Found 251 possible bad axioms.
+[2026-06-27 03:04:48.306] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Demographics)).
+[2026-06-27 03:04:48.309] Found 250 possible bad axioms.
+[2026-06-27 03:04:48.310] Selected the bad axiom SubClassOf(Study_Medication ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:04:48.324] Found 249 possible bad axioms.
+[2026-06-27 03:04:48.324] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:04:48.327] Found 248 possible bad axioms.
+[2026-06-27 03:04:48.328] Selected the bad axiom SubClassOf(Interventional ObjectComplementOf(Intervention_Longitudinal)).
+[2026-06-27 03:04:48.331] Found 247 possible bad axioms.
+[2026-06-27 03:04:48.332] Selected the bad axiom SubClassOf(Exclusion ObjectComplementOf(Inclusion)).
+[2026-06-27 03:04:48.334] Found 246 possible bad axioms.
+[2026-06-27 03:04:48.334] S
+...[truncated]
+FAIL: attempt=5 seed=56901 - negative return code -9
+progress: ontology=CEDARVS attempt=5 success=0/100
+----- CEDARVS attempt=6 seed=71101 at 2026-06-27 03:05:40 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=71101, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:05:40.832] Checking precondition...
+[2026-06-27 03:05:40.847] Starting the repair...
+[2026-06-27 03:05:40.855] Found 260 possible bad axioms.
+[2026-06-27 03:05:40.856] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:05:40.862] Found 259 possible bad axioms.
+[2026-06-27 03:05:40.863] Selected the bad axiom SubClassOf(Exclusion Criterion_Category).
+[2026-06-27 03:05:40.872] Found 258 possible bad axioms.
+[2026-06-27 03:05:40.872] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:05:40.877] Found 257 possible bad axioms.
+[2026-06-27 03:05:40.877] Selected the bad axiom SubClassOf(Adverse_Events ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:05:40.882] Found 256 possible bad axioms.
+[2026-06-27 03:05:40.883] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:05:40.887] Found 255 possible bad axioms.
+[2026-06-27 03:05:40.888] Selected the bad axiom SubClassOf(Optically_Sensed ObjectComplementOf(Other_Detection_Method)).
+[2026-06-27 03:05:40.892] Found 254 possible bad axioms.
+[2026-06-27 03:05:40.892] Selected the bad axiom SubClassOf(Sub-Investigator ObjectComplementOf(Site_Manager)).
+[2026-06-27 03:05:40.896] Found 253 possible bad axioms.
+[2026-06-27 03:05:40.896] Selected the bad axiom SubClassOf(Case_Report_Form ObjectComplementOf(Lab_Test_Results)).
+[2026-06-27 03:05:40.899] Found 252 possible bad axioms.
+[2026-06-27 03:05:40.899] Selected the bad axiom SubClassOf(Fully_Manual Other_Detection_Method).
+[2026-06-27 03:05:40.902] Found 251 possible bad axioms.
+[2026-06-27 03:05:40.903] Selected the bad axiom SubClassOf(Adverse_Events ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:05:40.905] Found 250 possible bad axioms.
+[2026-06-27 03:05:40.906] Selected the bad axiom SubClassOf(Substance_Use ObjectComplementOf(Study_Data)).
+[2026-06-27 03:05:40.919] Found 249 possible bad axioms.
+[2026-06-27 03:05:40.919] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Concomitant_Medications)).
+[2026-06-27 03:05:40.922] Found 248 possible bad axioms.
+[2026-06-27 03:05:40.923] Selected the bad axiom SubClassOf(ObjectComplementOf(Data_Dictionary) ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:05:40.926] Found 247 possible bad axioms.
+[2026-06-27 03:05:40.926] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:05:40.929] Found 246 possible bad axioms.
+[2026-06-27 03:05:40.930
+...[truncated]
+FAIL: attempt=6 seed=71101 - negative return code -9
+progress: ontology=CEDARVS attempt=6 success=0/100
+----- CEDARVS attempt=7 seed=85301 at 2026-06-27 03:06:39 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=85301, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:06:39.647] Checking precondition...
+[2026-06-27 03:06:39.663] Starting the repair...
+[2026-06-27 03:06:39.671] Found 260 possible bad axioms.
+[2026-06-27 03:06:39.673] Selected the bad axiom SubClassOf(Longitudinal ObjectComplementOf(Intervention_Longitudinal)).
+[2026-06-27 03:06:39.679] Found 259 possible bad axioms.
+[2026-06-27 03:06:39.679] Selected the bad axiom SubClassOf(Adverse_Events Study_File_Type).
+[2026-06-27 03:06:39.689] Found 258 possible bad axioms.
+[2026-06-27 03:06:39.689] Selected the bad axiom SubClassOf(Site_Manager ObjectComplementOf(Medical_Monitor)).
+[2026-06-27 03:06:39.694] Found 257 possible bad axioms.
+[2026-06-27 03:06:39.694] Selected the bad axiom SubClassOf(ObjectComplementOf(Lab_Test_Results) ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:06:39.699] Found 256 possible bad axioms.
+[2026-06-27 03:06:39.699] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Interventions)).
+[2026-06-27 03:06:39.704] Found 255 possible bad axioms.
+[2026-06-27 03:06:39.706] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:06:39.711] Found 254 possible bad axioms.
+[2026-06-27 03:06:39.711] Selected the bad axiom SubClassOf(Assessment_Results ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:06:39.715] Found 253 possible bad axioms.
+[2026-06-27 03:06:39.715] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:06:39.718] Found 252 possible bad axioms.
+[2026-06-27 03:06:39.719] Selected the bad axiom SubClassOf(Unknown ObjectComplementOf(Optically_Sensed)).
+[2026-06-27 03:06:39.722] Found 251 possible bad axioms.
+[2026-06-27 03:06:39.722] Selected the bad axiom SubClassOf(Fully_Manual ObjectComplementOf(Optically_Sensed)).
+[2026-06-27 03:06:39.725] Found 250 possible bad axioms.
+[2026-06-27 03:06:39.725] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:06:39.738] Found 249 possible bad axioms.
+[2026-06-27 03:06:39.738] Selected the bad axiom SubClassOf(Adverse_Events Substance_Use).
+[2026-06-27 03:06:39.742] Found 248 possible bad axioms.
+[2026-06-27 03:06:39.742] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Assessment_Results)).
+[2026-06-27 03:06:39.745] Found 247 possible bad axioms.
+[2026-06-27 03:06:39.746] Selected the bad axiom SubClassOf(Other ObjectComplementOf(Principal_Investigator)).
+[2026-06-27 03:06:39.749] Found 246 possible bad axioms.
+[2026-06-27 03:06:39.749] Selected the bad axiom SubC
+...[truncated]
+FAIL: attempt=7 seed=85301 - negative return code -9
+progress: ontology=CEDARVS attempt=7 success=0/100
+----- CEDARVS attempt=8 seed=99501 at 2026-06-27 03:07:28 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=99501, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:07:28.742] Checking precondition...
+[2026-06-27 03:07:28.761] Starting the repair...
+[2026-06-27 03:07:28.771] Found 260 possible bad axioms.
+[2026-06-27 03:07:28.773] Selected the bad axiom SubClassOf(ObjectComplementOf(Data_Dictionary) ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:07:28.780] Found 259 possible bad axioms.
+[2026-06-27 03:07:28.781] Selected the bad axiom SubClassOf(Sub-Investigator ObjectComplementOf(Other)).
+[2026-06-27 03:07:28.792] Found 258 possible bad axioms.
+[2026-06-27 03:07:28.792] Selected the bad axiom SubClassOf(Co-Principal_Investigator ObjectComplementOf(Role_In_Study)).
+[2026-06-27 03:07:28.798] Found 257 possible bad axioms.
+[2026-06-27 03:07:28.798] Selected the bad axiom SubClassOf(Data_Dictionary ObjectComplementOf(Concomitant_Medications)).
+[2026-06-27 03:07:28.803] Found 256 possible bad axioms.
+[2026-06-27 03:07:28.803] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:07:28.807] Found 255 possible bad axioms.
+[2026-06-27 03:07:28.808] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Study_Summary_Description)).
+[2026-06-27 03:07:28.812] Found 254 possible bad axioms.
+[2026-06-27 03:07:28.812] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Lab_Test_Results)).
+[2026-06-27 03:07:28.815] Found 253 possible bad axioms.
+[2026-06-27 03:07:28.815] Selected the bad axiom SubClassOf(Interventions ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:07:28.819] Found 252 possible bad axioms.
+[2026-06-27 03:07:28.819] Selected the bad axiom SubClassOf(Site_Manager ObjectComplementOf(Principal_Investigator)).
+[2026-06-27 03:07:28.822] Found 251 possible bad axioms.
+[2026-06-27 03:07:28.822] Selected the bad axiom SubClassOf(Optically_Sensed Titration_Process).
+[2026-06-27 03:07:28.825] Found 250 possible bad axioms.
+[2026-06-27 03:07:28.825] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:07:28.839] Found 249 possible bad axioms.
+[2026-06-27 03:07:28.840] Selected the bad axiom SubClassOf(Substance_Use Interventions).
+[2026-06-27 03:07:28.843] Found 248 possible bad axioms.
+[2026-06-27 03:07:28.843] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(ObjectComplementOf(Interventions))).
+[2026-06-27 03:07:28.846] Found 247 possible bad axioms.
+[2026-06-27 03:07:28.847] Selected the bad axiom SubClassOf(Adverse_Events ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:07:28.850] Found 246 possible bad axioms.
+[20
+...[truncated]
+FAIL: attempt=8 seed=99501 - negative return code -9
+progress: ontology=CEDARVS attempt=8 success=0/100
+----- CEDARVS attempt=9 seed=113701 at 2026-06-27 03:08:15 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=113701, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:08:15.422] Checking precondition...
+[2026-06-27 03:08:15.437] Starting the repair...
+[2026-06-27 03:08:15.445] Found 260 possible bad axioms.
+[2026-06-27 03:08:15.446] Selected the bad axiom SubClassOf(Unknown ObjectComplementOf(ph_Meter_Sensed)).
+[2026-06-27 03:08:15.453] Found 259 possible bad axioms.
+[2026-06-27 03:08:15.453] Selected the bad axiom SubClassOf(Lab_Test_Results ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:08:15.462] Found 258 possible bad axioms.
+[2026-06-27 03:08:15.463] Selected the bad axiom SubClassOf(Adverse_Events ObjectComplementOf(Study_File_Type)).
+[2026-06-27 03:08:15.468] Found 257 possible bad axioms.
+[2026-06-27 03:08:15.468] Selected the bad axiom SubClassOf(Lab_Test_Results ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:08:15.473] Found 256 possible bad axioms.
+[2026-06-27 03:08:15.473] Selected the bad axiom SubClassOf(ObjectComplementOf(Assessment_Results) ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:08:15.478] Found 255 possible bad axioms.
+[2026-06-27 03:08:15.478] Selected the bad axiom SubClassOf(Case_Report_Form ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:08:15.482] Found 254 possible bad axioms.
+[2026-06-27 03:08:15.482] Selected the bad axiom SubClassOf(Study_Data ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:08:15.485] Found 253 possible bad axioms.
+[2026-06-27 03:08:15.485] Selected the bad axiom SubClassOf(Demographics Study_File_Type).
+[2026-06-27 03:08:15.489] Found 252 possible bad axioms.
+[2026-06-27 03:08:15.489] Selected the bad axiom SubClassOf(Study_Medication ObjectComplementOf(Adverse_Events)).
+[2026-06-27 03:08:15.492] Found 251 possible bad axioms.
+[2026-06-27 03:08:15.492] Selected the bad axiom SubClassOf(Study_Summary_Description ObjectComplementOf(Study_Medication)).
+[2026-06-27 03:08:15.495] Found 250 possible bad axioms.
+[2026-06-27 03:08:15.495] Selected the bad axiom SubClassOf(Substance_Use ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:08:15.509] Found 249 possible bad axioms.
+[2026-06-27 03:08:15.510] Selected the bad axiom SubClassOf(Intervention_Longitudinal ObjectComplementOf(Study_Type)).
+[2026-06-27 03:08:15.513] Found 248 possible bad axioms.
+[2026-06-27 03:08:15.513] Selected the bad axiom SubClassOf(Site_Manager ObjectComplementOf(Other)).
+[2026-06-27 03:08:15.516] Found 247 possible bad axioms.
+[2026-06-27 03:08:15.516] Selected the bad axiom SubClassOf(Data_Dictionary Study_Summary_Description).
+[2026-06-27 03:08:15.519] Found 246 possible bad axioms.
+[2026-06-27 03:08:15.519] Selected the bad axiom SubClassOf(Longi
+...[truncated]
+FAIL: attempt=9 seed=113701 - negative return code -9
+progress: ontology=CEDARVS attempt=9 success=0/100
+----- CEDARVS attempt=10 seed=127901 at 2026-06-27 03:10:48 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CEDARVS.owl, seed=127901, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:10:48.911] Checking precondition...
+[2026-06-27 03:10:48.928] Starting the repair...
+[2026-06-27 03:10:48.937] Found 260 possible bad axioms.
+[2026-06-27 03:10:48.939] Selected the bad axiom SubClassOf(ObjectComplementOf(Concomitant_Medications) ObjectComplementOf(Case_Report_Form)).
+[2026-06-27 03:10:48.945] Found 259 possible bad axioms.
+[2026-06-27 03:10:48.945] Selected the bad axiom SubClassOf(Principal_Investigator ObjectComplementOf(Co-Principal_Investigator)).
+[2026-06-27 03:10:48.955] Found 258 possible bad axioms.
+[2026-06-27 03:10:48.955] Selected the bad axiom SubClassOf(Intervention_Longitudinal ObjectComplementOf(ObjectComplementOf(Interventional))).
+[2026-06-27 03:10:48.960] Found 257 possible bad axioms.
+[2026-06-27 03:10:48.960] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Interventions)).
+[2026-06-27 03:10:48.964] Found 256 possible bad axioms.
+[2026-06-27 03:10:48.964] Selected the bad axiom SubClassOf(ObjectComplementOf(Concomitant_Medications) ObjectComplementOf(Data_Dictionary)).
+[2026-06-27 03:10:48.968] Found 255 possible bad axioms.
+[2026-06-27 03:10:48.969] Selected the bad axiom SubClassOf(Concomitant_Medications ObjectComplementOf(Assessment_Results)).
+[2026-06-27 03:10:48.973] Found 254 possible bad axioms.
+[2026-06-27 03:10:48.973] Selected the bad axiom SubClassOf(Case_Report_Form ObjectComplementOf(Interventions)).
+[2026-06-27 03:10:48.977] Found 253 possible bad axioms.
+[2026-06-27 03:10:48.977] Selected the bad axiom SubClassOf(Substance_Use ObjectComplementOf(Assessment_Results)).
+[2026-06-27 03:10:48.980] Found 252 possible bad axioms.
+[2026-06-27 03:10:48.981] Selected the bad axiom SubClassOf(Intervention_Longitudinal Study_Type).
+[2026-06-27 03:10:48.984] Found 251 possible bad axioms.
+[2026-06-27 03:10:48.984] Selected the bad axiom SubClassOf(ObjectComplementOf(Assessment_Results) ObjectComplementOf(Substance_Use)).
+[2026-06-27 03:10:48.987] Found 250 possible bad axioms.
+[2026-06-27 03:10:48.987] Selected the bad axiom SubClassOf(Substance_Use ObjectComplementOf(Demographics)).
+[2026-06-27 03:10:49.001] Found 249 possible bad axioms.
+[2026-06-27 03:10:49.001] Selected the bad axiom SubClassOf(Adverse_Events ObjectComplementOf(Study_Summary_Description)).
+[2026-06-27 03:10:49.005] Found 248 possible bad axioms.
+[2026-06-27 03:10:49.005] Selected the bad axiom SubClassOf(Substance_Use ObjectComplementOf(Study_Data)).
+[2026-06-27 03:10:49.008] Found 247 possible bad axioms.
+[2026-06-27 03:10:49.009] Selected the bad axiom SubClassOf(Demographics ObjectComplementOf(Substance
+...[truncated]
+FAIL: attempt=10 seed=127901 - negative return code -9
+progress: ontology=CEDARVS attempt=10 success=0/100
+=== ABORTED CEDARVS after 10 consecutive failures at 2026-06-27 03:11:39 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CEDARVS - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=101 msg=negative return code -9
+  attempt=2 seed=14301 msg=negative return code -9
+  attempt=3 seed=28501 msg=negative return code -9
+  attempt=4 seed=42701 msg=negative return code -9
+  attempt=5 seed=56901 msg=negative return code -9
+  attempt=6 seed=71101 msg=negative return code -9
+  attempt=7 seed=85301 msg=negative return code -9
+  attempt=8 seed=99501 msg=negative return code -9
+  attempt=9 seed=113701 msg=negative return code -9
+  attempt=10 seed=127901 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=614.906507 avg_seconds=61.490651
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,456 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-ZEA.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-ZEA.csv
+
+=== Starting sequential trials for ZEA at 2026-06-27 15:33:10 ===
+----- ZEA attempt=1 seed=118 at 2026-06-27 15:33:10 -----
+--- stdout ---
+{"seed":118,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":436,"A2":7988,"A3":9116,"B1":1828,"B2":4910}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=118, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:33:10.673] Checking precondition...
+[2026-06-27 15:33:10.694] Starting the repair...
+[2026-06-27 15:33:10.708] Found 354 possible bad axioms.
+[2026-06-27 15:33:10.710] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015173 http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:33:10.717] Found 353 possible bad axioms.
+[2026-06-27 15:33:10.717] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015097)).
+[2026-06-27 15:33:10.724] Found 352 possible bad axioms.
+[2026-06-27 15:33:10.725] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015086)).
+[2026-06-27 15:33:10.731] Found 351 possible bad axioms.
+[2026-06-27 15:33:10.732] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015024)).
+[2026-06-27 15:33:10.736] Found 350 possible bad axioms.
+[2026-06-27 15:33:10.737] Selected the bad axiom SubClassOf(part_of ObjectSomeValuesFrom(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166))).
+[2026-06-27 15:33:10.741] Found 349 possible bad axioms.
+[2026-06-27 15:33:10.741] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015037)).
+[2026-06-27 15:33:10.745] Found 348 possible bad axioms.
+[2026-06-27 15:33:10.745] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015064 http://purl.obolibrary.org/obo/ZEA_0015066).
+[2026-06-27 15:33:10.754] Found 347 possible bad axioms.
+[2026-06-27 15:33:10.754] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015151 http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:33:10.759] Found 346 possible bad axioms.
+[2026-06-27 15:33:10.759] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015129 http://purl.obolibrary.org/obo/ZEA_0015130).
+[2026-06-27 15:33:10.764] Found 345 possible bad axioms.
+[2026-06-27 15:33:10.764] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015033)).
+[2026-06-27 15:33:10.769] Found 344 possible bad axioms.
+[2026-06-27 15:33:10.769] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015006 http://purl.obolibrary.org/obo/ZEA_0015014).
+[2026-06-27 15:33:10.780] Found 343 possible bad axioms.
+[2026-06-27 15:33:10.781] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015072 http://purl.obolibrary.org/obo/ZEA_0015073).
+[2026-06-27 15:33:10.785] Found 342 possible bad axioms.
+[2026-06-27 15:33:10.786] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015131)).
+[2026-06-27 15:33:10.790] F
+...[truncated]
+FAIL: attempt=1 seed=118 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=1 success=0/100
+----- ZEA attempt=2 seed=14318 at 2026-06-27 15:33:35 -----
+--- stdout ---
+{"seed":14318,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B4","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":267,"A2":8047,"A3":3587,"B1":1136,"B2":7138,"B3":3528,"B4":912}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=14318, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:33:35.433] Checking precondition...
+[2026-06-27 15:33:35.451] Starting the repair...
+[2026-06-27 15:33:35.465] Found 354 possible bad axioms.
+[2026-06-27 15:33:35.467] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015156 http://purl.obolibrary.org/obo/ZEA_0015100).
+[2026-06-27 15:33:35.474] Found 353 possible bad axioms.
+[2026-06-27 15:33:35.474] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015131)).
+[2026-06-27 15:33:35.481] Found 352 possible bad axioms.
+[2026-06-27 15:33:35.481] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015150)).
+[2026-06-27 15:33:35.487] Found 351 possible bad axioms.
+[2026-06-27 15:33:35.487] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015066)).
+[2026-06-27 15:33:35.493] Found 350 possible bad axioms.
+[2026-06-27 15:33:35.493] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015167)).
+[2026-06-27 15:33:35.498] Found 349 possible bad axioms.
+[2026-06-27 15:33:35.498] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015150 http://purl.obolibrary.org/obo/ZEA_0015173).
+[2026-06-27 15:33:35.502] Found 348 possible bad axioms.
+[2026-06-27 15:33:35.502] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015045)).
+[2026-06-27 15:33:35.511] Found 347 possible bad axioms.
+[2026-06-27 15:33:35.512] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015062 http://purl.obolibrary.org/obo/ZEA_0015061).
+[2026-06-27 15:33:35.516] Found 346 possible bad axioms.
+[2026-06-27 15:33:35.516] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015165)).
+[2026-06-27 15:33:35.522] Found 345 possible bad axioms.
+[2026-06-27 15:33:35.522] Selected the bad axiom SubClassOf(part_of ObjectSomeValuesFrom(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166))).
+[2026-06-27 15:33:35.526] Found 344 possible bad axioms.
+[2026-06-27 15:33:35.526] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015064 http://purl.obolibrary.org/obo/ZEA_0015063).
+[2026-06-27 15:33:35.536] Found 343 possible bad axioms.
+[2026-06-27 15:33:35.536] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015097)).
+[2026-06-27 15:33:35.541] Found 342 possible bad axioms.
+[2026-06-27 15:33:35.541] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166)).
+[2026-06-27 15:33:35.547] Fou
+...[truncated]
+FAIL: attempt=2 seed=14318 status=memory_limit_exceeded stage=B4 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=ZEA attempt=2 success=0/100
+----- ZEA attempt=3 seed=28518 at 2026-06-27 15:34:00 -----
+--- stdout ---
+{"seed":28518,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":60,"A2":8042,"A3":4519,"B1":2829,"B2":55171,"B3":2249}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=28518, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:34:00.556] Checking precondition...
+[2026-06-27 15:34:00.576] Starting the repair...
+[2026-06-27 15:34:00.584] Found 354 possible bad axioms.
+[2026-06-27 15:34:00.586] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015045)).
+[2026-06-27 15:34:00.597] Found 353 possible bad axioms.
+[2026-06-27 15:34:00.598] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015125 http://purl.obolibrary.org/obo/ZEA_0015100).
+[2026-06-27 15:34:00.604] Found 352 possible bad axioms.
+[2026-06-27 15:34:00.604] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:34:00.611] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 15:34:00.612] Checking precondition...
+[2026-06-27 15:34:00.621] Starting the repair...
+[2026-06-27 15:34:08.651] Found 1 possible bad axioms.
+[2026-06-27 15:34:08.651] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:34:08.654] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 15:34:08.657] Checking precondition...
+[2026-06-27 15:34:08.661] Starting the repair...
+[2026-06-27 15:34:08.683] Selected a reference ontology with 534 axioms.
+[2026-06-27 15:34:09.265] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:34:09.733] Selected the weaker axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015142)).
+[2026-06-27 15:34:10.668] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015142)).
+[2026-06-27 15:34:10.680] Selected the weaker axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015053)).
+[2026-06-27 15:34:11.271] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015053)).
+[2026-06-27 15:34:11.281] Selected the weaker axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015096)).
+[2026-06-27 15:34:12.160] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015089)).
+[2026-06-27 15:34:12.173] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015096 http://purl.obolibrary.org/obo/ZEA_0015126).
+[2026-06-27 15:34:13.168] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA
+...[truncated]
+FAIL: attempt=3 seed=28518 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=3 success=0/100
+----- ZEA attempt=4 seed=42718 at 2026-06-27 15:35:13 -----
+--- stdout ---
+{"seed":42718,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":413,"A2":7914,"A3":2010,"B1":1716,"B2":4002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=42718, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:35:13.915] Checking precondition...
+[2026-06-27 15:35:13.934] Starting the repair...
+[2026-06-27 15:35:13.947] Found 354 possible bad axioms.
+[2026-06-27 15:35:13.949] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015001 http://purl.obolibrary.org/obo/ZEA_0015056).
+[2026-06-27 15:35:13.956] Found 353 possible bad axioms.
+[2026-06-27 15:35:13.956] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015017)).
+[2026-06-27 15:35:13.962] Found 352 possible bad axioms.
+[2026-06-27 15:35:13.962] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015078)).
+[2026-06-27 15:35:13.968] Found 351 possible bad axioms.
+[2026-06-27 15:35:13.969] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015018 http://purl.obolibrary.org/obo/ZEA_0015100).
+[2026-06-27 15:35:13.975] Found 350 possible bad axioms.
+[2026-06-27 15:35:13.975] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015172)).
+[2026-06-27 15:35:13.981] Found 349 possible bad axioms.
+[2026-06-27 15:35:13.982] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015085 http://purl.obolibrary.org/obo/ZEA_0015073).
+[2026-06-27 15:35:13.986] Found 348 possible bad axioms.
+[2026-06-27 15:35:13.986] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:35:13.996] Found 347 possible bad axioms.
+[2026-06-27 15:35:13.996] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015027)).
+[2026-06-27 15:35:14.001] Found 346 possible bad axioms.
+[2026-06-27 15:35:14.001] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166)).
+[2026-06-27 15:35:14.006] Found 345 possible bad axioms.
+[2026-06-27 15:35:14.006] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015037)).
+[2026-06-27 15:35:14.011] Found 344 possible bad axioms.
+[2026-06-27 15:35:14.011] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015073)).
+[2026-06-27 15:35:14.021] Found 343 possible bad axioms.
+[2026-06-27 15:35:14.021] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015066 http://purl.obolibrary.org/obo/ZEA_0015100).
+[2026-06-27 15:35:14.026] Found 342 possible bad axioms.
+[2026-06-27 15:35:14.026] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:35:14.031] Found 341 possible bad axioms.
+[2026-06-27 15:35:14.031] Selected the bad axiom S
+...[truncated]
+FAIL: attempt=4 seed=42718 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=4 success=0/100
+----- ZEA attempt=5 seed=56918 at 2026-06-27 15:35:30 -----
+--- stdout ---
+{"seed":56918,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":543,"A2":7989,"A3":2211,"B1":2540,"B2":4020}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=56918, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:35:30.453] Checking precondition...
+[2026-06-27 15:35:30.474] Starting the repair...
+[2026-06-27 15:35:30.482] Found 354 possible bad axioms.
+[2026-06-27 15:35:30.484] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015127)).
+[2026-06-27 15:35:30.496] Found 353 possible bad axioms.
+[2026-06-27 15:35:30.496] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015017)).
+[2026-06-27 15:35:30.502] Found 352 possible bad axioms.
+[2026-06-27 15:35:30.503] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015024)).
+[2026-06-27 15:35:30.509] Found 351 possible bad axioms.
+[2026-06-27 15:35:30.510] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015001 http://purl.obolibrary.org/obo/ZEA_0015002).
+[2026-06-27 15:35:30.515] Found 350 possible bad axioms.
+[2026-06-27 15:35:30.515] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:35:30.520] Found 349 possible bad axioms.
+[2026-06-27 15:35:30.521] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015151)).
+[2026-06-27 15:35:30.526] Found 348 possible bad axioms.
+[2026-06-27 15:35:30.526] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(part_of part_of http://purl.obolibrary.org/obo/ZEA_0015063)).
+[2026-06-27 15:35:30.536] Found 347 possible bad axioms.
+[2026-06-27 15:35:30.536] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015012 http://purl.obolibrary.org/obo/ZEA_0015014).
+[2026-06-27 15:35:30.541] Found 346 possible bad axioms.
+[2026-06-27 15:35:30.541] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015106)).
+[2026-06-27 15:35:30.547] Found 345 possible bad axioms.
+[2026-06-27 15:35:30.547] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015155 http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:35:30.551] Found 344 possible bad axioms.
+[2026-06-27 15:35:30.552] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015064 http://purl.obolibrary.org/obo/ZEA_0015062).
+[2026-06-27 15:35:30.562] Found 343 possible bad axioms.
+[2026-06-27 15:35:30.562] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015145 http://purl.obolibrary.org/obo/ZEA_0015107).
+[2026-06-27 15:35:30.567] Found 342 possible bad axioms.
+[2026-06-27 15:35:30.567] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(part_of ObjectSomeValuesFrom(part_of part_of http://purl.obolibrary.org/obo/ZEA_0015103)).
+[2
+...[truncated]
+FAIL: attempt=5 seed=56918 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=5 success=0/100
+----- ZEA attempt=6 seed=71118 at 2026-06-27 15:35:47 -----
+--- stdout ---
+{"seed":71118,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":446,"A2":7960,"A3":5153,"B1":2036,"B2":4733}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=71118, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:35:48.238] Checking precondition...
+[2026-06-27 15:35:48.257] Starting the repair...
+[2026-06-27 15:35:48.266] Found 354 possible bad axioms.
+[2026-06-27 15:35:48.267] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015167)).
+[2026-06-27 15:35:48.279] Found 353 possible bad axioms.
+[2026-06-27 15:35:48.279] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015139)).
+[2026-06-27 15:35:48.285] Found 352 possible bad axioms.
+[2026-06-27 15:35:48.285] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015065)).
+[2026-06-27 15:35:48.292] Found 351 possible bad axioms.
+[2026-06-27 15:35:48.292] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015009)).
+[2026-06-27 15:35:48.297] Found 350 possible bad axioms.
+[2026-06-27 15:35:48.297] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015160 http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:35:48.302] Found 349 possible bad axioms.
+[2026-06-27 15:35:48.303] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015049 http://purl.obolibrary.org/obo/ZEA_0015023).
+[2026-06-27 15:35:48.307] Found 348 possible bad axioms.
+[2026-06-27 15:35:48.307] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015149 http://purl.obolibrary.org/obo/ZEA_0015172).
+[2026-06-27 15:35:48.317] Found 347 possible bad axioms.
+[2026-06-27 15:35:48.317] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015073)).
+[2026-06-27 15:35:48.322] Found 346 possible bad axioms.
+[2026-06-27 15:35:48.322] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015059)).
+[2026-06-27 15:35:48.327] Found 345 possible bad axioms.
+[2026-06-27 15:35:48.327] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015121 http://purl.obolibrary.org/obo/ZEA_0015113).
+[2026-06-27 15:35:48.331] Found 344 possible bad axioms.
+[2026-06-27 15:35:48.332] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015042) http://purl.obolibrary.org/obo/ZEA_0015048).
+[2026-06-27 15:35:48.342] Found 343 possible bad axioms.
+[2026-06-27 15:35:48.343] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015067)).
+[2026-06-27 15:35:48.348] Found 342 possible bad axioms.
+[2026-06-27 15:35:48.348] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015078 http://purl.obolibrary.org/obo/ZEA_0015087).
+[2026-06-27 15:35:48.353]
+...[truncated]
+FAIL: attempt=6 seed=71118 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=6 success=0/100
+----- ZEA attempt=7 seed=85318 at 2026-06-27 15:36:08 -----
+--- stdout ---
+{"seed":85318,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":462,"A2":7930,"A3":1085,"B1":1050,"B2":4469}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=85318, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:36:09.045] Checking precondition...
+[2026-06-27 15:36:09.063] Starting the repair...
+[2026-06-27 15:36:09.071] Found 354 possible bad axioms.
+[2026-06-27 15:36:09.073] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015059 http://purl.obolibrary.org/obo/ZEA_0015031).
+[2026-06-27 15:36:09.085] Found 353 possible bad axioms.
+[2026-06-27 15:36:09.085] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015057 owl:Nothing).
+[2026-06-27 15:36:09.091] Found 352 possible bad axioms.
+[2026-06-27 15:36:09.091] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015164 http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:36:09.098] Found 351 possible bad axioms.
+[2026-06-27 15:36:09.098] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015019)).
+[2026-06-27 15:36:09.103] Found 350 possible bad axioms.
+[2026-06-27 15:36:09.104] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015041)).
+[2026-06-27 15:36:09.108] Found 349 possible bad axioms.
+[2026-06-27 15:36:09.109] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015075 http://purl.obolibrary.org/obo/ZEA_0015071).
+[2026-06-27 15:36:09.114] Found 348 possible bad axioms.
+[2026-06-27 15:36:09.115] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166)).
+[2026-06-27 15:36:09.124] Found 347 possible bad axioms.
+[2026-06-27 15:36:09.124] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015064)).
+[2026-06-27 15:36:09.129] Found 346 possible bad axioms.
+[2026-06-27 15:36:09.129] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015001 http://purl.obolibrary.org/obo/ZEA_0015002).
+[2026-06-27 15:36:09.134] Found 345 possible bad axioms.
+[2026-06-27 15:36:09.134] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015150 http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:36:09.138] Found 344 possible bad axioms.
+[2026-06-27 15:36:09.139] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015139)).
+[2026-06-27 15:36:09.148] Found 343 possible bad axioms.
+[2026-06-27 15:36:09.148] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015037)).
+[2026-06-27 15:36:09.153] Found 342 possible bad axioms.
+[2026-06-27 15:36:09.154] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015097)).
+[2026-06-27 15:36:09.159] Found 341 possible bad axioms.
+[2026-06-27 15:36:09.159] Sel
+...[truncated]
+FAIL: attempt=7 seed=85318 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=7 success=0/100
+----- ZEA attempt=8 seed=99518 at 2026-06-27 15:36:24 -----
+--- stdout ---
+{"seed":99518,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":471,"A2":8006,"A3":1261,"B1":2900,"B2":5017}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=99518, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:36:24.520] Checking precondition...
+[2026-06-27 15:36:24.540] Starting the repair...
+[2026-06-27 15:36:24.548] Found 354 possible bad axioms.
+[2026-06-27 15:36:24.555] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015039)).
+[2026-06-27 15:36:24.561] Found 353 possible bad axioms.
+[2026-06-27 15:36:24.561] Selected the bad axiom SubClassOf(part_of ObjectSomeValuesFrom(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166))).
+[2026-06-27 15:36:24.568] Found 352 possible bad axioms.
+[2026-06-27 15:36:24.568] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015075 http://purl.obolibrary.org/obo/ZEA_0015071).
+[2026-06-27 15:36:24.574] Found 351 possible bad axioms.
+[2026-06-27 15:36:24.575] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015062 http://purl.obolibrary.org/obo/ZEA_0015034).
+[2026-06-27 15:36:24.580] Found 350 possible bad axioms.
+[2026-06-27 15:36:24.580] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015104)).
+[2026-06-27 15:36:24.585] Found 349 possible bad axioms.
+[2026-06-27 15:36:24.585] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015037)).
+[2026-06-27 15:36:24.590] Found 348 possible bad axioms.
+[2026-06-27 15:36:24.590] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015027)).
+[2026-06-27 15:36:24.599] Found 347 possible bad axioms.
+[2026-06-27 15:36:24.600] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015065)).
+[2026-06-27 15:36:24.605] Found 346 possible bad axioms.
+[2026-06-27 15:36:24.605] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015089)).
+[2026-06-27 15:36:24.610] Found 345 possible bad axioms.
+[2026-06-27 15:36:24.610] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015089)).
+[2026-06-27 15:36:24.615] Found 344 possible bad axioms.
+[2026-06-27 15:36:24.615] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015020 http://purl.obolibrary.org/obo/ZEA_0015014).
+[2026-06-27 15:36:24.626] Found 343 possible bad axioms.
+[2026-06-27 15:36:24.626] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015051 http://purl.obolibrary.org/obo/ZEA_0015024).
+[2026-06-27 15:36:24.632] Found 342 possible bad axioms.
+[2026-06-27 15:36:24.632] Selected the bad axiom SubClassOf(part_of ObjectSomeValuesFrom(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166))).
+[2026-06-27 15:36:24.637] Found 341 possible ba
+...[truncated]
+FAIL: attempt=8 seed=99518 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=8 success=0/100
+----- ZEA attempt=9 seed=113718 at 2026-06-27 15:36:42 -----
+--- stdout ---
+{"seed":113718,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":269,"A2":8001,"A3":1904,"B1":1660,"B2":4552}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=113718, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:36:42.668] Checking precondition...
+[2026-06-27 15:36:42.688] Starting the repair...
+[2026-06-27 15:36:42.701] Found 354 possible bad axioms.
+[2026-06-27 15:36:42.703] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015164)).
+[2026-06-27 15:36:42.709] Found 353 possible bad axioms.
+[2026-06-27 15:36:42.710] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015009)).
+[2026-06-27 15:36:42.715] Found 352 possible bad axioms.
+[2026-06-27 15:36:42.716] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015037)).
+[2026-06-27 15:36:42.723] Found 351 possible bad axioms.
+[2026-06-27 15:36:42.723] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015131)).
+[2026-06-27 15:36:42.729] Found 350 possible bad axioms.
+[2026-06-27 15:36:42.729] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015009)).
+[2026-06-27 15:36:42.734] Found 349 possible bad axioms.
+[2026-06-27 15:36:42.734] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015073)).
+[2026-06-27 15:36:42.738] Found 348 possible bad axioms.
+[2026-06-27 15:36:42.738] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015106)).
+[2026-06-27 15:36:42.748] Found 347 possible bad axioms.
+[2026-06-27 15:36:42.748] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015024)).
+[2026-06-27 15:36:42.753] Found 346 possible bad axioms.
+[2026-06-27 15:36:42.754] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015125 http://purl.obolibrary.org/obo/ZEA_0015100).
+[2026-06-27 15:36:42.759] Found 345 possible bad axioms.
+[2026-06-27 15:36:42.759] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166)).
+[2026-06-27 15:36:42.764] Found 344 possible bad axioms.
+[2026-06-27 15:36:42.764] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:36:42.774] Found 343 possible bad axioms.
+[2026-06-27 15:36:42.775] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015164 http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:36:42.780] Found 342 possible bad axioms.
+[2026-06-27 15:36:42.781] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015089)).
+[2026-06-27 15:36:42.786] Found 341 possible bad axioms.
+[2026-06-27 15:36:42.786] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM ObjectSomeValuesFrom(DERIVED%2FDE
+...[truncated]
+FAIL: attempt=9 seed=113718 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=9 success=0/100
+----- ZEA attempt=10 seed=127918 at 2026-06-27 15:36:59 -----
+--- stdout ---
+{"seed":127918,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018","iic_values":{},"repair_runtimes_ms":{"A1":177,"A2":8001,"A3":2986,"B1":1715,"B2":3707}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/ZEA.owl, seed=127918, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 15:36:59.528] Checking precondition...
+[2026-06-27 15:36:59.548] Starting the repair...
+[2026-06-27 15:36:59.562] Found 354 possible bad axioms.
+[2026-06-27 15:36:59.563] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015157)).
+[2026-06-27 15:36:59.571] Found 353 possible bad axioms.
+[2026-06-27 15:36:59.571] Selected the bad axiom SubClassOf(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166)).
+[2026-06-27 15:36:59.578] Found 352 possible bad axioms.
+[2026-06-27 15:36:59.578] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015043 http://purl.obolibrary.org/obo/ZEA_0015011).
+[2026-06-27 15:36:59.584] Found 351 possible bad axioms.
+[2026-06-27 15:36:59.584] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015174) http://purl.obolibrary.org/obo/ZEA_0015149).
+[2026-06-27 15:36:59.590] Found 350 possible bad axioms.
+[2026-06-27 15:36:59.590] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(part_of DERIVED%2FDEVELOPS_FROM http://purl.obolibrary.org/obo/ZEA_0015166)).
+[2026-06-27 15:36:59.595] Found 349 possible bad axioms.
+[2026-06-27 15:36:59.595] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(part_of http://purl.obolibrary.org/obo/ZEA_0015019) owl:Nothing).
+[2026-06-27 15:36:59.600] Found 348 possible bad axioms.
+[2026-06-27 15:36:59.601] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015178 http://purl.obolibrary.org/obo/ZEA_0015177).
+[2026-06-27 15:36:59.610] Found 347 possible bad axioms.
+[2026-06-27 15:36:59.610] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015132 http://purl.obolibrary.org/obo/ZEA_0015130).
+[2026-06-27 15:36:59.614] Found 346 possible bad axioms.
+[2026-06-27 15:36:59.614] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015072)).
+[2026-06-27 15:36:59.619] Found 345 possible bad axioms.
+[2026-06-27 15:36:59.619] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015018)).
+[2026-06-27 15:36:59.623] Found 344 possible bad axioms.
+[2026-06-27 15:36:59.624] Selected the bad axiom SubClassOf(part_of http://purl.obolibrary.org/obo/ZEA_0015060)).
+[2026-06-27 15:36:59.634] Found 343 possible bad axioms.
+[2026-06-27 15:36:59.634] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/ZEA_0015010 http://purl.obolibrary.org/obo/ZEA_0015020).
+[2026-06-27 15:36:59.639] Found 342 possible bad axioms.
+[2026-06-27 15:36:59.639] Selected the bad axiom SubClassOf(pa
+...[truncated]
+FAIL: attempt=10 seed=127918 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+progress: ontology=ZEA attempt=10 success=0/100
+=== ABORTED ZEA after 10 consecutive failures at 2026-06-27 15:37:16 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for ZEA - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=118 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=2 seed=14318 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=3 seed=28518 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=4 seed=42718 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=5 seed=56918 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=6 seed=71118 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=7 seed=85318 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=8 seed=99518 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=9 seed=113718 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+  attempt=10 seed=127918 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ part_of.ZEA_0015018
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

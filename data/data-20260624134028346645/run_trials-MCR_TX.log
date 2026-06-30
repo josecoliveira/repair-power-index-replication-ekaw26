@@ -1,0 +1,501 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-MCR_TX.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-MCR_TX.csv
+
+=== Starting sequential trials for MCR_TX at 2026-06-28 14:43:01 ===
+----- MCR_TX attempt=1 seed=151 at 2026-06-28 14:43:01 -----
+--- stdout ---
+{"seed":151,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1033,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=151, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:43:01.718] Checking precondition...
+[2026-06-28 14:43:01.745] Starting the repair...
+[2026-06-28 14:43:01.764] Found 890 possible bad axioms.
+[2026-06-28 14:43:01.766] Selected the bad axiom SubClassOf(brain_window ct).
+[2026-06-28 14:43:01.776] Found 889 possible bad axioms.
+[2026-06-28 14:43:01.776] Selected the bad axiom SubClassOf(gastroscopy egd).
+[2026-06-28 14:43:01.788] Found 888 possible bad axioms.
+[2026-06-28 14:43:01.788] Selected the bad axiom SubClassOf(fish ObjectComplementOf(van_gieson)).
+[2026-06-28 14:43:01.798] Found 887 possible bad axioms.
+[2026-06-28 14:43:01.798] Selected the bad axiom SubClassOf(no_m_mode ObjectComplementOf(anterior_segment_image)).
+[2026-06-28 14:43:01.812] Found 886 possible bad axioms.
+[2026-06-28 14:43:01.812] Selected the bad axiom SubClassOf(bone_window soft_tissue_window).
+[2026-06-28 14:43:01.821] Found 885 possible bad axioms.
+[2026-06-28 14:43:01.821] Selected the bad axiom SubClassOf(subcostal ObjectComplementOf(apical)).
+[2026-06-28 14:43:01.829] Found 884 possible bad axioms.
+[2026-06-28 14:43:01.829] Selected the bad axiom SubClassOf(upper_arm upper_limb).
+[2026-06-28 14:43:01.836] Found 883 possible bad axioms.
+[2026-06-28 14:43:01.836] Selected the bad axiom SubClassOf(oblique ObjectComplementOf(sagittal)).
+[2026-06-28 14:43:01.844] Found 882 possible bad axioms.
+[2026-06-28 14:43:01.844] Selected the bad axiom SubClassOf(ObjectUnionOf(ihc no_ihc) immunostaining).
+[2026-06-28 14:43:01.851] Found 881 possible bad axioms.
+[2026-06-28 14:43:01.851] Selected the bad axiom SubClassOf(mri ObjectComplementOf(tractography)).
+[2026-06-28 14:43:01.859] Found 880 possible bad axioms.
+[2026-06-28 14:43:01.859] Selected the bad axiom SubClassOf(ObjectUnionOf(flair stir) ir).
+[2026-06-28 14:43:01.872] Found 879 possible bad axioms.
+[2026-06-28 14:43:01.872] Selected the bad axiom SubClassOf(ObjectUnionOf(nbi no_nbi) endoscopy).
+[2026-06-28 14:43:01.880] Found 878 possible bad axioms.
+[2026-06-28 14:43:01.881] Selected the bad axiom SubClassOf(h&e ObjectComplementOf(acid_fast)).
+[2026-06-28 14:43:01.887] Found 877 possible bad axioms.
+[2026-06-28 14:43:01.887] Selected the bad axiom SubClassOf(breast ObjectComplementOf(head)).
+[2026-06-28 14:43:01.894] Found 876 possible bad axioms.
+[2026-06-28 14:43:01.894] Selected the bad axiom SubClassOf(congo_red pathology).
+[2026-06-28 14:43:01.900] Found 875 possible bad axioms.
+[2026-06-28 14:43:01.901] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(h&e)).
+[2026-06-28 14:43:01.907] Found 874 possible bad axioms.
+[2026-06-28 14:43:01.907]
+...[truncated]
+FAIL: attempt=1 seed=151 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=1 success=0/100
+----- MCR_TX attempt=2 seed=14351 at 2026-06-28 14:48:02 -----
+--- stdout ---
+{"seed":14351,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":547,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=14351, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:48:03.284] Checking precondition...
+[2026-06-28 14:48:03.315] Starting the repair...
+[2026-06-28 14:48:03.335] Found 890 possible bad axioms.
+[2026-06-28 14:48:03.337] Selected the bad axiom SubClassOf(acid_fast ObjectComplementOf(gram)).
+[2026-06-28 14:48:03.347] Found 889 possible bad axioms.
+[2026-06-28 14:48:03.348] Selected the bad axiom SubClassOf(ObjectUnionOf(ihc no_ihc) immunostaining).
+[2026-06-28 14:48:03.359] Found 888 possible bad axioms.
+[2026-06-28 14:48:03.360] Selected the bad axiom SubClassOf(wrist upper_limb).
+[2026-06-28 14:48:03.369] Found 887 possible bad axioms.
+[2026-06-28 14:48:03.369] Selected the bad axiom SubClassOf(acid_fast ObjectComplementOf(giemsa)).
+[2026-06-28 14:48:03.384] Found 886 possible bad axioms.
+[2026-06-28 14:48:03.384] Selected the bad axiom SubClassOf(hysteroscopy ObjectComplementOf(laryngoscopy)).
+[2026-06-28 14:48:03.391] Found 885 possible bad axioms.
+[2026-06-28 14:48:03.392] Selected the bad axiom SubClassOf(ObjectUnionOf(immunofluorescence no_immunofluorescence) ihc).
+[2026-06-28 14:48:03.399] Found 884 possible bad axioms.
+[2026-06-28 14:48:03.400] Selected the bad axiom SubClassOf(shoulder ObjectComplementOf(elbow)).
+[2026-06-28 14:48:03.407] Found 883 possible bad axioms.
+[2026-06-28 14:48:03.407] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(papanicolaou)).
+[2026-06-28 14:48:03.414] Found 882 possible bad axioms.
+[2026-06-28 14:48:03.415] Selected the bad axiom SubClassOf(head axial_region).
+[2026-06-28 14:48:03.422] Found 881 possible bad axioms.
+[2026-06-28 14:48:03.422] Selected the bad axiom SubClassOf(ObjectUnionOf(body_part whole_body) radiology).
+[2026-06-28 14:48:03.428] Found 880 possible bad axioms.
+[2026-06-28 14:48:03.429] Selected the bad axiom SubClassOf(radiology ObjectComplementOf(chart)).
+[2026-06-28 14:48:03.441] Found 879 possible bad axioms.
+[2026-06-28 14:48:03.441] Selected the bad axiom SubClassOf(breast axial_region).
+[2026-06-28 14:48:03.448] Found 878 possible bad axioms.
+[2026-06-28 14:48:03.448] Selected the bad axiom SubClassOf(radiology root_class).
+[2026-06-28 14:48:03.454] Found 877 possible bad axioms.
+[2026-06-28 14:48:03.455] Selected the bad axiom SubClassOf(electrography ObjectComplementOf(endoscopy)).
+[2026-06-28 14:48:03.462] Found 876 possible bad axioms.
+[2026-06-28 14:48:03.462] Selected the bad axiom SubClassOf(cardiac_view ObjectComplementOf(dental_view)).
+[2026-06-28 14:48:03.468] Found 875 possible bad axioms.
+[2026-06-28 14:48:03.468] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(congo_red)
+...[truncated]
+FAIL: attempt=2 seed=14351 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=2 success=0/100
+----- MCR_TX attempt=3 seed=28551 at 2026-06-28 14:53:03 -----
+--- stdout ---
+{"seed":28551,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1506,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=28551, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:53:04.364] Checking precondition...
+[2026-06-28 14:53:04.394] Starting the repair...
+[2026-06-28 14:53:04.414] Found 890 possible bad axioms.
+[2026-06-28 14:53:04.416] Selected the bad axiom SubClassOf(ObjectUnionOf(eeg ekg) ObjectComplementOf(methylene_blue)).
+[2026-06-28 14:53:04.429] Found 889 possible bad axioms.
+[2026-06-28 14:53:04.429] Selected the bad axiom SubClassOf(ankle ObjectComplementOf(foot)).
+[2026-06-28 14:53:04.440] Found 888 possible bad axioms.
+[2026-06-28 14:53:04.441] Selected the bad axiom SubClassOf(3_chamber ObjectComplementOf(2_chamber)).
+[2026-06-28 14:53:04.450] Found 887 possible bad axioms.
+[2026-06-28 14:53:04.451] Selected the bad axiom SubClassOf(upper_arm upper_limb).
+[2026-06-28 14:53:04.464] Found 886 possible bad axioms.
+[2026-06-28 14:53:04.464] Selected the bad axiom SubClassOf(ObjectUnionOf(gonioscopy slit_lamp_photograph) anterior_segment_image).
+[2026-06-28 14:53:04.473] Found 885 possible bad axioms.
+[2026-06-28 14:53:04.473] Selected the bad axiom SubClassOf(hip ObjectComplementOf(knee)).
+[2026-06-28 14:53:04.481] Found 884 possible bad axioms.
+[2026-06-28 14:53:04.481] Selected the bad axiom SubClassOf(nbi ObjectComplementOf(no_nbi)).
+[2026-06-28 14:53:04.489] Found 883 possible bad axioms.
+[2026-06-28 14:53:04.490] Selected the bad axiom SubClassOf(neck ObjectComplementOf(torso)).
+[2026-06-28 14:53:04.497] Found 882 possible bad axioms.
+[2026-06-28 14:53:04.497] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(fish)).
+[2026-06-28 14:53:04.504] Found 881 possible bad axioms.
+[2026-06-28 14:53:04.505] Selected the bad axiom SubClassOf(pet ObjectComplementOf(spect)).
+[2026-06-28 14:53:04.511] Found 880 possible bad axioms.
+[2026-06-28 14:53:04.511] Selected the bad axiom SubClassOf(fat_suppression mri).
+[2026-06-28 14:53:04.524] Found 879 possible bad axioms.
+[2026-06-28 14:53:04.524] Selected the bad axiom SubClassOf(shoulder ObjectComplementOf(wrist)).
+[2026-06-28 14:53:04.532] Found 878 possible bad axioms.
+[2026-06-28 14:53:04.533] Selected the bad axiom SubClassOf(cardiac_view region_specific_view).
+[2026-06-28 14:53:04.539] Found 877 possible bad axioms.
+[2026-06-28 14:53:04.540] Selected the bad axiom SubClassOf(dental_view ObjectComplementOf(transabdominal)).
+[2026-06-28 14:53:04.546] Found 876 possible bad axioms.
+[2026-06-28 14:53:04.546] Selected the bad axiom SubClassOf(short_axis ObjectComplementOf(long_axis)).
+[2026-06-28 14:53:04.553] Found 875 possible bad axioms.
+[2026-06-28 14:53:04.553] Selected the bad axiom SubClassOf(anterior_segment_image ObjectComplementO
+...[truncated]
+FAIL: attempt=3 seed=28551 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=3 success=0/100
+----- MCR_TX attempt=4 seed=42751 at 2026-06-28 14:58:05 -----
+--- stdout ---
+{"seed":42751,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1084,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=42751, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:58:06.405] Checking precondition...
+[2026-06-28 14:58:06.435] Starting the repair...
+[2026-06-28 14:58:06.455] Found 890 possible bad axioms.
+[2026-06-28 14:58:06.457] Selected the bad axiom SubClassOf(slit_lamp_photograph ObjectComplementOf(gonioscopy)).
+[2026-06-28 14:58:06.469] Found 889 possible bad axioms.
+[2026-06-28 14:58:06.469] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(congo_red)).
+[2026-06-28 14:58:06.480] Found 888 possible bad axioms.
+[2026-06-28 14:58:06.481] Selected the bad axiom SubClassOf(h&e ObjectComplementOf(ObjectUnionOf(oral_photograph other_medical_photograph))).
+[2026-06-28 14:58:06.491] Found 887 possible bad axioms.
+[2026-06-28 14:58:06.491] Selected the bad axiom SubClassOf(doppler m_mode).
+[2026-06-28 14:58:06.501] Found 886 possible bad axioms.
+[2026-06-28 14:58:06.501] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(methenamine_silver)).
+[2026-06-28 14:58:06.515] Found 885 possible bad axioms.
+[2026-06-28 14:58:06.515] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(giemsa)).
+[2026-06-28 14:58:06.523] Found 884 possible bad axioms.
+[2026-06-28 14:58:06.523] Selected the bad axiom SubClassOf(ekg ObjectComplementOf(eeg)).
+[2026-06-28 14:58:06.531] Found 883 possible bad axioms.
+[2026-06-28 14:58:06.531] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(cystoscopy)).
+[2026-06-28 14:58:06.538] Found 882 possible bad axioms.
+[2026-06-28 14:58:06.538] Selected the bad axiom SubClassOf(foot ObjectComplementOf(hysteroscopy)).
+[2026-06-28 14:58:06.546] Found 881 possible bad axioms.
+[2026-06-28 14:58:06.546] Selected the bad axiom SubClassOf(fish ObjectComplementOf(methylene_blue)).
+[2026-06-28 14:58:06.554] Found 880 possible bad axioms.
+[2026-06-28 14:58:06.554] Selected the bad axiom SubClassOf(knee ObjectComplementOf(foot)).
+[2026-06-28 14:58:06.567] Found 879 possible bad axioms.
+[2026-06-28 14:58:06.568] Selected the bad axiom SubClassOf(long_axis ObjectComplementOf(short_axis)).
+[2026-06-28 14:58:06.575] Found 878 possible bad axioms.
+[2026-06-28 14:58:06.575] Selected the bad axiom SubClassOf(venogram ObjectComplementOf(arteriogram)).
+[2026-06-28 14:58:06.582] Found 877 possible bad axioms.
+[2026-06-28 14:58:06.583] Selected the bad axiom SubClassOf(endoscopy ObjectUnionOf(laryngoscopy ObjectUnionOf(hysteroscopy ObjectUnionOf(enteroscopy ObjectUnionOf(egd ObjectUnionOf(cystoscopy ObjectUnionOf(colonoscopy ObjectUnionOf(arthroscopy bronchoscopy)))))))).
+[2026-06-28 14:58:06.589] Found 876 possible bad axioms.
+[2026-06-28 14:58:06.5
+...[truncated]
+FAIL: attempt=4 seed=42751 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=4 success=0/100
+----- MCR_TX attempt=5 seed=56951 at 2026-06-28 15:03:07 -----
+--- stdout ---
+{"seed":56951,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":647,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=56951, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 15:03:08.001] Checking precondition...
+[2026-06-28 15:03:08.031] Starting the repair...
+[2026-06-28 15:03:08.053] Found 890 possible bad axioms.
+[2026-06-28 15:03:08.055] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(pas)).
+[2026-06-28 15:03:08.068] Found 889 possible bad axioms.
+[2026-06-28 15:03:08.069] Selected the bad axiom SubClassOf(wrist upper_limb).
+[2026-06-28 15:03:08.079] Found 888 possible bad axioms.
+[2026-06-28 15:03:08.079] Selected the bad axiom SubClassOf(enteroscopy ObjectComplementOf(egd)).
+[2026-06-28 15:03:08.090] Found 887 possible bad axioms.
+[2026-06-28 15:03:08.090] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(methenamine_silver)).
+[2026-06-28 15:03:08.099] Found 886 possible bad axioms.
+[2026-06-28 15:03:08.100] Selected the bad axiom SubClassOf(upper_arm ObjectComplementOf(forearm)).
+[2026-06-28 15:03:08.113] Found 885 possible bad axioms.
+[2026-06-28 15:03:08.113] Selected the bad axiom SubClassOf(gram ObjectComplementOf(h&e)).
+[2026-06-28 15:03:08.121] Found 884 possible bad axioms.
+[2026-06-28 15:03:08.121] Selected the bad axiom SubClassOf(endoscopy ObjectUnionOf(nbi no_nbi)).
+[2026-06-28 15:03:08.129] Found 883 possible bad axioms.
+[2026-06-28 15:03:08.129] Selected the bad axiom SubClassOf(masson_trichrome ObjectComplementOf(h&e)).
+[2026-06-28 15:03:08.137] Found 882 possible bad axioms.
+[2026-06-28 15:03:08.137] Selected the bad axiom SubClassOf(transesophageal cardiac_view).
+[2026-06-28 15:03:08.147] Found 881 possible bad axioms.
+[2026-06-28 15:03:08.147] Selected the bad axiom SubClassOf(ObjectUnionOf(5_chamber ObjectUnionOf(4_chamber ObjectUnionOf(2_chamber 3_chamber))) cardiac_view).
+[2026-06-28 15:03:08.154] Found 880 possible bad axioms.
+[2026-06-28 15:03:08.154] Selected the bad axiom SubClassOf(immunostaining ObjectComplementOf(methylene_blue)).
+[2026-06-28 15:03:08.167] Found 879 possible bad axioms.
+[2026-06-28 15:03:08.168] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(immunostaining)).
+[2026-06-28 15:03:08.174] Found 878 possible bad axioms.
+[2026-06-28 15:03:08.175] Selected the bad axiom SubClassOf(scintigraphy ObjectComplementOf(pet)).
+[2026-06-28 15:03:08.181] Found 877 possible bad axioms.
+[2026-06-28 15:03:08.181] Selected the bad axiom SubClassOf(colonoscopy ObjectComplementOf(egd)).
+[2026-06-28 15:03:08.188] Found 876 possible bad axioms.
+[2026-06-28 15:03:08.188] Selected the bad axiom SubClassOf(masson_trichrome ObjectComplementOf(pas)).
+[2026-06-28 15:03:08.194] Found 875 possible bad axioms.
+[2026-06-28 15:03:08.195]
+...[truncated]
+FAIL: attempt=5 seed=56951 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=5 success=0/100
+----- MCR_TX attempt=6 seed=71151 at 2026-06-28 15:08:08 -----
+--- stdout ---
+{"seed":71151,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":645,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=71151, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 15:08:09.171] Checking precondition...
+[2026-06-28 15:08:09.202] Starting the repair...
+[2026-06-28 15:08:09.222] Found 890 possible bad axioms.
+[2026-06-28 15:08:09.224] Selected the bad axiom SubClassOf(foot lower_limb).
+[2026-06-28 15:08:09.236] Found 889 possible bad axioms.
+[2026-06-28 15:08:09.236] Selected the bad axiom SubClassOf(angiography ObjectUnionOf(arteriogram venogram)).
+[2026-06-28 15:08:09.248] Found 888 possible bad axioms.
+[2026-06-28 15:08:09.248] Selected the bad axiom SubClassOf(abdomen ObjectUnionOf(cholangiogram no_cholangiogram)).
+[2026-06-28 15:08:09.258] Found 887 possible bad axioms.
+[2026-06-28 15:08:09.258] Selected the bad axiom SubClassOf(fundus_image ObjectComplementOf(b_scan)).
+[2026-06-28 15:08:09.266] Found 886 possible bad axioms.
+[2026-06-28 15:08:09.266] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(masson_trichrome)).
+[2026-06-28 15:08:09.279] Found 885 possible bad axioms.
+[2026-06-28 15:08:09.280] Selected the bad axiom SubClassOf(panoramic ObjectComplementOf(occlusal)).
+[2026-06-28 15:08:09.288] Found 884 possible bad axioms.
+[2026-06-28 15:08:09.288] Selected the bad axiom SubClassOf(spectral_domain ObjectComplementOf(no_spectral_domain)).
+[2026-06-28 15:08:09.295] Found 883 possible bad axioms.
+[2026-06-28 15:08:09.296] Selected the bad axiom SubClassOf(ultrasound ObjectUnionOf(doppler no_doppler)).
+[2026-06-28 15:08:09.303] Found 882 possible bad axioms.
+[2026-06-28 15:08:09.303] Selected the bad axiom SubClassOf(acid_fast ObjectComplementOf(immunostaining)).
+[2026-06-28 15:08:09.310] Found 881 possible bad axioms.
+[2026-06-28 15:08:09.311] Selected the bad axiom SubClassOf(immunostaining ObjectComplementOf(masson_trichrome)).
+[2026-06-28 15:08:09.317] Found 880 possible bad axioms.
+[2026-06-28 15:08:09.318] Selected the bad axiom SubClassOf(egd ObjectComplementOf(arthroscopy)).
+[2026-06-28 15:08:09.330] Found 879 possible bad axioms.
+[2026-06-28 15:08:09.331] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(papanicolaou)).
+[2026-06-28 15:08:09.338] Found 878 possible bad axioms.
+[2026-06-28 15:08:09.338] Selected the bad axiom SubClassOf(van_gieson ObjectComplementOf(papanicolaou)).
+[2026-06-28 15:08:09.345] Found 877 possible bad axioms.
+[2026-06-28 15:08:09.345] Selected the bad axiom SubClassOf(medical_photograph root_class).
+[2026-06-28 15:08:09.351] Found 876 possible bad axioms.
+[2026-06-28 15:08:09.352] Selected the bad axiom SubClassOf(pas ObjectComplementOf(papanicolaou)).
+[2026-06-28 15:08:09.357] Found 875 possible bad axioms.
+[2026-06-28
+...[truncated]
+FAIL: attempt=6 seed=71151 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=6 success=0/100
+----- MCR_TX attempt=7 seed=85351 at 2026-06-28 15:13:09 -----
+--- stdout ---
+{"seed":85351,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1650,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=85351, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 15:13:10.353] Checking precondition...
+[2026-06-28 15:13:10.387] Starting the repair...
+[2026-06-28 15:13:10.410] Found 890 possible bad axioms.
+[2026-06-28 15:13:10.412] Selected the bad axiom SubClassOf(x_ray ObjectComplementOf(ct)).
+[2026-06-28 15:13:10.424] Found 889 possible bad axioms.
+[2026-06-28 15:13:10.424] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(bronchoscopy)).
+[2026-06-28 15:13:10.434] Found 888 possible bad axioms.
+[2026-06-28 15:13:10.435] Selected the bad axiom SubClassOf(abdominopelvic_region ObjectComplementOf(thorax)).
+[2026-06-28 15:13:10.444] Found 887 possible bad axioms.
+[2026-06-28 15:13:10.445] Selected the bad axiom SubClassOf(thigh ObjectComplementOf(ankle)).
+[2026-06-28 15:13:10.453] Found 886 possible bad axioms.
+[2026-06-28 15:13:10.454] Selected the bad axiom SubClassOf(tractography ObjectComplementOf(ct)).
+[2026-06-28 15:13:10.467] Found 885 possible bad axioms.
+[2026-06-28 15:13:10.467] Selected the bad axiom SubClassOf(no_cholangiogram cholangiogram).
+[2026-06-28 15:13:10.475] Found 884 possible bad axioms.
+[2026-06-28 15:13:10.475] Selected the bad axiom SubClassOf(hysteroscopy ObjectComplementOf(bronchoscopy)).
+[2026-06-28 15:13:10.482] Found 883 possible bad axioms.
+[2026-06-28 15:13:10.482] Selected the bad axiom SubClassOf(transabdominal region_specific_view).
+[2026-06-28 15:13:10.490] Found 882 possible bad axioms.
+[2026-06-28 15:13:10.490] Selected the bad axiom SubClassOf(head ObjectComplementOf(breast)).
+[2026-06-28 15:13:10.498] Found 881 possible bad axioms.
+[2026-06-28 15:13:10.498] Selected the bad axiom SubClassOf(bronchoscopy ObjectComplementOf(laryngoscopy)).
+[2026-06-28 15:13:10.512] Found 880 possible bad axioms.
+[2026-06-28 15:13:10.512] Selected the bad axiom SubClassOf(breast ObjectComplementOf(torso)).
+[2026-06-28 15:13:10.526] Found 879 possible bad axioms.
+[2026-06-28 15:13:10.526] Selected the bad axiom SubClassOf(axial_region ObjectComplementOf(appendicular_region)).
+[2026-06-28 15:13:10.533] Found 878 possible bad axioms.
+[2026-06-28 15:13:10.533] Selected the bad axiom SubClassOf(pet ObjectComplementOf(scintigraphy)).
+[2026-06-28 15:13:10.540] Found 877 possible bad axioms.
+[2026-06-28 15:13:10.540] Selected the bad axiom SubClassOf(laryngoscopy ObjectComplementOf(arthroscopy)).
+[2026-06-28 15:13:10.546] Found 876 possible bad axioms.
+[2026-06-28 15:13:10.547] Selected the bad axiom SubClassOf(ObjectUnionOf(anteroposterior posteroanterior) frontal).
+[2026-06-28 15:13:10.553] Found 875 possible bad axioms.
+[2026-06-28 15:13:10.553] Selected the bad axiom
+...[truncated]
+FAIL: attempt=7 seed=85351 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=7 success=0/100
+----- MCR_TX attempt=8 seed=99551 at 2026-06-28 15:18:12 -----
+--- stdout ---
+{"seed":99551,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":826,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=99551, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 15:18:12.533] Checking precondition...
+[2026-06-28 15:18:12.561] Starting the repair...
+[2026-06-28 15:18:12.582] Found 890 possible bad axioms.
+[2026-06-28 15:18:12.584] Selected the bad axiom SubClassOf(immunostaining ObjectComplementOf(gram)).
+[2026-06-28 15:18:12.596] Found 889 possible bad axioms.
+[2026-06-28 15:18:12.597] Selected the bad axiom SubClassOf(oct ObjectComplementOf(anterior_segment_image)).
+[2026-06-28 15:18:12.609] Found 888 possible bad axioms.
+[2026-06-28 15:18:12.609] Selected the bad axiom SubClassOf(acid_fast ObjectComplementOf(methenamine_silver)).
+[2026-06-28 15:18:12.619] Found 887 possible bad axioms.
+[2026-06-28 15:18:12.619] Selected the bad axiom SubClassOf(ct ObjectComplementOf(x_ray)).
+[2026-06-28 15:18:12.634] Found 886 possible bad axioms.
+[2026-06-28 15:18:12.634] Selected the bad axiom SubClassOf(axial ObjectUnionOf(transvaginal ObjectUnionOf(transabdominal ObjectUnionOf(intravascular ObjectUnionOf(cardiac_view dental_view))))).
+[2026-06-28 15:18:12.641] Found 885 possible bad axioms.
+[2026-06-28 15:18:12.641] Selected the bad axiom SubClassOf(methenamine_silver ObjectComplementOf(acid_fast)).
+[2026-06-28 15:18:12.649] Found 884 possible bad axioms.
+[2026-06-28 15:18:12.649] Selected the bad axiom SubClassOf(forearm ObjectComplementOf(shoulder)).
+[2026-06-28 15:18:12.657] Found 883 possible bad axioms.
+[2026-06-28 15:18:12.658] Selected the bad axiom SubClassOf(brain_window ObjectComplementOf(lung_window)).
+[2026-06-28 15:18:12.665] Found 882 possible bad axioms.
+[2026-06-28 15:18:12.665] Selected the bad axiom SubClassOf(acid_fast ObjectComplementOf(papanicolaou)).
+[2026-06-28 15:18:12.673] Found 881 possible bad axioms.
+[2026-06-28 15:18:12.673] Selected the bad axiom SubClassOf(ObjectUnionOf(radiology ObjectUnionOf(pathology ObjectUnionOf(ophthalmic_imaging ObjectUnionOf(medical_photograph ObjectUnionOf(endoscopy no_mass))))) root_class).
+[2026-06-28 15:18:12.680] Found 880 possible bad axioms.
+[2026-06-28 15:18:12.680] Selected the bad axiom SubClassOf(fish ObjectComplementOf(gram)).
+[2026-06-28 15:18:12.693] Found 879 possible bad axioms.
+[2026-06-28 15:18:12.693] Selected the bad axiom SubClassOf(papanicolaou ObjectComplementOf(van_gieson)).
+[2026-06-28 15:18:12.700] Found 878 possible bad axioms.
+[2026-06-28 15:18:12.700] Selected the bad axiom SubClassOf(giemsa ObjectComplementOf(congo_red)).
+[2026-06-28 15:18:12.707] Found 877 possible bad axioms.
+[2026-06-28 15:18:12.707] Selected the bad axiom SubClassOf(neck ObjectComplementOf(torso)).
+[2026-06-28 15:18:12.713] Found 876 possible bad axio
+...[truncated]
+FAIL: attempt=8 seed=99551 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=8 success=0/100
+----- MCR_TX attempt=9 seed=113751 at 2026-06-28 15:23:13 -----
+--- stdout ---
+{"seed":113751,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1383,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=113751, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 15:23:13.869] Checking precondition...
+[2026-06-28 15:23:13.901] Starting the repair...
+[2026-06-28 15:23:13.922] Found 890 possible bad axioms.
+[2026-06-28 15:23:13.924] Selected the bad axiom SubClassOf(5_chamber ObjectComplementOf(3_chamber)).
+[2026-06-28 15:23:13.936] Found 889 possible bad axioms.
+[2026-06-28 15:23:13.936] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(alcian_blue)).
+[2026-06-28 15:23:13.948] Found 888 possible bad axioms.
+[2026-06-28 15:23:13.948] Selected the bad axiom SubClassOf(masson_trichrome ObjectComplementOf(congo_red)).
+[2026-06-28 15:23:13.959] Found 887 possible bad axioms.
+[2026-06-28 15:23:13.960] Selected the bad axiom SubClassOf(gram ObjectComplementOf(fish)).
+[2026-06-28 15:23:13.969] Found 886 possible bad axioms.
+[2026-06-28 15:23:13.969] Selected the bad axiom SubClassOf(shoulder ObjectComplementOf(hand)).
+[2026-06-28 15:23:13.983] Found 885 possible bad axioms.
+[2026-06-28 15:23:13.984] Selected the bad axiom SubClassOf(radiology ObjectComplementOf(ophthalmic_imaging)).
+[2026-06-28 15:23:13.992] Found 884 possible bad axioms.
+[2026-06-28 15:23:13.992] Selected the bad axiom SubClassOf(x_ray ObjectComplementOf(nuclear_medicine)).
+[2026-06-28 15:23:14.000] Found 883 possible bad axioms.
+[2026-06-28 15:23:14.001] Selected the bad axiom SubClassOf(alcian_blue ObjectComplementOf(methylene_blue)).
+[2026-06-28 15:23:14.008] Found 882 possible bad axioms.
+[2026-06-28 15:23:14.008] Selected the bad axiom SubClassOf(congo_red ObjectComplementOf(gram)).
+[2026-06-28 15:23:14.015] Found 881 possible bad axioms.
+[2026-06-28 15:23:14.015] Selected the bad axiom SubClassOf(cystoscopy ObjectComplementOf(egd)).
+[2026-06-28 15:23:14.021] Found 880 possible bad axioms.
+[2026-06-28 15:23:14.021] Selected the bad axiom SubClassOf(transesophageal cardiac_view).
+[2026-06-28 15:23:14.034] Found 879 possible bad axioms.
+[2026-06-28 15:23:14.035] Selected the bad axiom SubClassOf(ophthalmic_imaging ObjectUnionOf(oct ObjectUnionOf(fundus_image ObjectUnionOf(anterior_segment_image b_scan)))).
+[2026-06-28 15:23:14.042] Found 878 possible bad axioms.
+[2026-06-28 15:23:14.042] Selected the bad axiom SubClassOf(autofluorescence ObjectComplementOf(ophtalmic_angiography)).
+[2026-06-28 15:23:14.049] Found 877 possible bad axioms.
+[2026-06-28 15:23:14.049] Selected the bad axiom SubClassOf(fundus_image ObjectComplementOf(anterior_segment_image)).
+[2026-06-28 15:23:14.056] Found 876 possible bad axioms.
+[2026-06-28 15:23:14.056] Selected the bad axiom SubClassOf(h&e ObjectComplementOf(pas)).
+[2026-06-28 15:23:14.062
+...[truncated]
+FAIL: attempt=9 seed=113751 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=9 success=0/100
+----- MCR_TX attempt=10 seed=127951 at 2026-06-28 15:28:15 -----
+--- stdout ---
+{"seed":127951,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":1303,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MCR_TX.owl, seed=127951, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 15:28:15.778] Checking precondition...
+[2026-06-28 15:28:15.811] Starting the repair...
+[2026-06-28 15:28:15.832] Found 890 possible bad axioms.
+[2026-06-28 15:28:15.834] Selected the bad axiom SubClassOf(left ObjectComplementOf(laryngoscopy)).
+[2026-06-28 15:28:15.846] Found 889 possible bad axioms.
+[2026-06-28 15:28:15.846] Selected the bad axiom SubClassOf(suprasternal ObjectComplementOf(apical)).
+[2026-06-28 15:28:15.858] Found 888 possible bad axioms.
+[2026-06-28 15:28:15.858] Selected the bad axiom SubClassOf(h&e ObjectComplementOf(ObjectUnionOf(oral_photograph other_medical_photograph))).
+[2026-06-28 15:28:15.868] Found 887 possible bad axioms.
+[2026-06-28 15:28:15.868] Selected the bad axiom SubClassOf(egd ObjectComplementOf(arthroscopy)).
+[2026-06-28 15:28:15.877] Found 886 possible bad axioms.
+[2026-06-28 15:28:15.877] Selected the bad axiom SubClassOf(no_mip radiology).
+[2026-06-28 15:28:15.891] Found 885 possible bad axioms.
+[2026-06-28 15:28:15.891] Selected the bad axiom SubClassOf(lung_window ObjectComplementOf(soft_tissue_window)).
+[2026-06-28 15:28:15.898] Found 884 possible bad axioms.
+[2026-06-28 15:28:15.899] Selected the bad axiom SubClassOf(arthroscopy ObjectComplementOf(enteroscopy)).
+[2026-06-28 15:28:15.906] Found 883 possible bad axioms.
+[2026-06-28 15:28:15.906] Selected the bad axiom SubClassOf(without_contrast ObjectComplementOf(contrast)).
+[2026-06-28 15:28:15.913] Found 882 possible bad axioms.
+[2026-06-28 15:28:15.914] Selected the bad axiom SubClassOf(body_part ObjectComplementOf(whole_body)).
+[2026-06-28 15:28:15.920] Found 881 possible bad axioms.
+[2026-06-28 15:28:15.920] Selected the bad axiom SubClassOf(ObjectUnionOf(no_3d 3d) radiology).
+[2026-06-28 15:28:15.929] Found 880 possible bad axioms.
+[2026-06-28 15:28:15.929] Selected the bad axiom SubClassOf(abdomen abdominopelvic_region).
+[2026-06-28 15:28:15.942] Found 879 possible bad axioms.
+[2026-06-28 15:28:15.942] Selected the bad axiom SubClassOf(2_chamber ObjectComplementOf(3_chamber)).
+[2026-06-28 15:28:15.949] Found 878 possible bad axioms.
+[2026-06-28 15:28:15.950] Selected the bad axiom SubClassOf(wrist ObjectComplementOf(hand)).
+[2026-06-28 15:28:15.956] Found 877 possible bad axioms.
+[2026-06-28 15:28:15.957] Selected the bad axiom SubClassOf(cystoscopy ObjectComplementOf(egd)).
+[2026-06-28 15:28:15.963] Found 876 possible bad axioms.
+[2026-06-28 15:28:15.963] Selected the bad axiom SubClassOf(nbi ObjectComplementOf(no_nbi)).
+[2026-06-28 15:28:15.969] Found 875 possible bad axioms.
+[2026-06-28 15:28:15.969] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=10 seed=127951 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=MCR_TX attempt=10 success=0/100
+=== ABORTED MCR_TX after 10 consecutive failures at 2026-06-28 15:33:17 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for MCR_TX - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=151 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=2 seed=14351 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=3 seed=28551 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=4 seed=42751 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=5 seed=56951 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=6 seed=71151 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=7 seed=85351 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=8 seed=99551 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=9 seed=113751 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=10 seed=127951 msg=Repair timeout: A2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3015.384223 avg_seconds=301.538422
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

@@ -1,0 +1,1244 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-SOS.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-SOS.csv
+
+=== Starting sequential trials for SOS at 2026-06-26 23:09:39 ===
+----- SOS attempt=1 seed=91 at 2026-06-26 23:09:39 -----
+--- stdout ---
+{"seed":91,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":133,"A2":6159,"A3":292,"B1":292,"B2":4658,"B3":2869,"B4":69,"B5":1854}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=91, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:09:39.476] Checking precondition...
+[2026-06-26 23:09:39.495] Starting the repair...
+[2026-06-26 23:09:39.501] Found 228 possible bad axioms.
+[2026-06-26 23:09:39.502] Selected the bad axiom SubClassOf(FAB Picada_mordida).
+[2026-06-26 23:09:39.506] Found 227 possible bad axioms.
+[2026-06-26 23:09:39.507] Selected the bad axiom SubClassOf(Condição_patologica Febre).
+[2026-06-26 23:09:39.511] Found 226 possible bad axioms.
+[2026-06-26 23:09:39.511] Selected the bad axiom SubClassOf(Neurológico_funcional Dor).
+[2026-06-26 23:09:39.515] Found 225 possible bad axioms.
+[2026-06-26 23:09:39.515] Selected the bad axiom SubClassOf(Afogamento Eletrificação).
+[2026-06-26 23:09:39.524] Found 224 possible bad axioms.
+[2026-06-26 23:09:39.524] Selected the bad axiom SubClassOf(Digestivos Neurológico_clinico).
+[2026-06-26 23:09:39.528] Found 223 possible bad axioms.
+[2026-06-26 23:09:39.528] Selected the bad axiom SubClassOf(Causa_externa Afogamento).
+[2026-06-26 23:09:39.532] Found 222 possible bad axioms.
+[2026-06-26 23:09:39.533] Selected the bad axiom SubClassOf(Envenenamento Causa_externa).
+[2026-06-26 23:09:39.536] Found 221 possible bad axioms.
+[2026-06-26 23:09:39.537] Selected the bad axiom SubClassOf(Queimadura Causa_externa).
+[2026-06-26 23:09:39.540] Found 220 possible bad axioms.
+[2026-06-26 23:09:39.541] Selected the bad axiom SubClassOf(Eletrificação Envenenamento).
+[2026-06-26 23:09:39.543] Found 219 possible bad axioms.
+[2026-06-26 23:09:39.543] Selected the bad axiom SubClassOf(Desenho_anormal Evento_obstétrico).
+[2026-06-26 23:09:39.546] Found 218 possible bad axioms.
+[2026-06-26 23:09:39.546] Selected the bad axiom SubClassOf(Neurológico_funcional Mal-estar).
+[2026-06-26 23:09:39.554] Found 217 possible bad axioms.
+[2026-06-26 23:09:39.554] Selected the bad axiom SubClassOf(Depedência_química Parada_cardio-respistória).
+[2026-06-26 23:09:39.558] Found 216 possible bad axioms.
+[2026-06-26 23:09:39.558] Selected the bad axiom SubClassOf(intoxicação_alcoolica owl:Nothing).
+[2026-06-26 23:09:39.561] Found 215 possible bad axioms.
+[2026-06-26 23:09:39.561] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais owl:Nothing).
+[2026-06-26 23:09:39.563] Found 214 possible bad axioms.
+[2026-06-26 23:09:39.564] Selected the bad axiom SubClassOf(Eletrificação Afogamento).
+[2026-06-26 23:09:39.570] Found 213 possible bad axioms.
+[2026-06-26 23:09:39.570] Selected the bad axiom SubClassOf(Sinal_clínico owl:Nothing).
+[2026-06-26 23:09:39.573] Found 212 possible bad axioms.
+[2026-06-26 23:09:39.573] Selected the bad axiom SubClassOf(Sinal_funcional 
+...[truncated]
+FAIL: attempt=1 seed=91 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=1 success=0/100
+----- SOS attempt=2 seed=14291 at 2026-06-26 23:09:55 -----
+--- stdout ---
+{"seed":14291,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":132,"A2":6104,"A3":312,"B1":512,"B2":4727,"B3":1744,"B4":72,"B5":1111}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=14291, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:09:56.266] Checking precondition...
+[2026-06-26 23:09:56.283] Starting the repair...
+[2026-06-26 23:09:56.290] Found 228 possible bad axioms.
+[2026-06-26 23:09:56.291] Selected the bad axiom SubClassOf(Espancamento_violência Agente_mecanico).
+[2026-06-26 23:09:56.296] Found 227 possible bad axioms.
+[2026-06-26 23:09:56.296] Selected the bad axiom SubClassOf(Psiquiátrico owl:Nothing).
+[2026-06-26 23:09:56.300] Found 226 possible bad axioms.
+[2026-06-26 23:09:56.300] Selected the bad axiom SubClassOf(Intoxicação_por_outras_drogas Cardiologica).
+[2026-06-26 23:09:56.304] Found 225 possible bad axioms.
+[2026-06-26 23:09:56.304] Selected the bad axiom SubClassOf(Evento_clínico Sinal_funcional).
+[2026-06-26 23:09:56.313] Found 224 possible bad axioms.
+[2026-06-26 23:09:56.313] Selected the bad axiom SubClassOf(Perda_de_líquido Crise_de_abstinência).
+[2026-06-26 23:09:56.317] Found 223 possible bad axioms.
+[2026-06-26 23:09:56.317] Selected the bad axiom SubClassOf(Sinal_clínico Evento_clínico).
+[2026-06-26 23:09:56.321] Found 222 possible bad axioms.
+[2026-06-26 23:09:56.321] Selected the bad axiom SubClassOf(Febre Sinais_clinicos_gerais).
+[2026-06-26 23:09:56.324] Found 221 possible bad axioms.
+[2026-06-26 23:09:56.324] Selected the bad axiom SubClassOf(Sinal_clínico Imunologica).
+[2026-06-26 23:09:56.327] Found 220 possible bad axioms.
+[2026-06-26 23:09:56.328] Selected the bad axiom SubClassOf(Agente_mecanico FAF).
+[2026-06-26 23:09:56.330] Found 219 possible bad axioms.
+[2026-06-26 23:09:56.330] Selected the bad axiom SubClassOf(Eletrificação Envenenamento).
+[2026-06-26 23:09:56.333] Found 218 possible bad axioms.
+[2026-06-26 23:09:56.333] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Espancamento_violência).
+[2026-06-26 23:09:56.341] Found 217 possible bad axioms.
+[2026-06-26 23:09:56.341] Selected the bad axiom SubClassOf(Condição_patologica Dor).
+[2026-06-26 23:09:56.345] Found 216 possible bad axioms.
+[2026-06-26 23:09:56.345] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Convulsão).
+[2026-06-26 23:09:56.348] Found 215 possible bad axioms.
+[2026-06-26 23:09:56.348] Selected the bad axiom SubClassOf(Digestivos Hipoglicemia).
+[2026-06-26 23:09:56.351] Found 214 possible bad axioms.
+[2026-06-26 23:09:56.351] Selected the bad axiom SubClassOf(Condição_patologica Dor_torácica).
+[2026-06-26 23:09:56.358] Found 213 possible bad axioms.
+[2026-06-26 23:09:56.358] Selected the bad axiom SubClassOf(Neurológico_clinico Sinal_clínico).
+[2026-06-26 23:09:56.361] Found 212 possible bad axioms.
+[2026-06-26 23:09:56.361] Selected 
+...[truncated]
+FAIL: attempt=2 seed=14291 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=2 success=0/100
+----- SOS attempt=3 seed=28491 at 2026-06-26 23:10:11 -----
+--- stdout ---
+{"seed":28491,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":298,"A2":6058,"A3":321,"B1":276,"B2":2878,"B3":1664,"B4":75,"B5":2438,"B6":2571,"B7":118,"B8":1938}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=28491, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:10:11.448] Checking precondition...
+[2026-06-26 23:10:11.463] Starting the repair...
+[2026-06-26 23:10:11.471] Found 228 possible bad axioms.
+[2026-06-26 23:10:11.472] Selected the bad axiom SubClassOf(Dor_torácica Dor).
+[2026-06-26 23:10:11.476] Found 227 possible bad axioms.
+[2026-06-26 23:10:11.477] Selected the bad axiom SubClassOf(Paresia_parestesia Inconsciente).
+[2026-06-26 23:10:11.481] Found 226 possible bad axioms.
+[2026-06-26 23:10:11.481] Selected the bad axiom SubClassOf(Intoxicação_exogena Transtorno_de_personalidade).
+[2026-06-26 23:10:11.485] Found 225 possible bad axioms.
+[2026-06-26 23:10:11.485] Selected the bad axiom SubClassOf(Sinal_funcional Desmaio).
+[2026-06-26 23:10:11.493] Found 224 possible bad axioms.
+[2026-06-26 23:10:11.494] Selected the bad axiom SubClassOf(Dor_lombar Dor_abdominal).
+[2026-06-26 23:10:11.498] Found 223 possible bad axioms.
+[2026-06-26 23:10:11.499] Selected the bad axiom SubClassOf(Intoxicação intoxicação_alcoolica).
+[2026-06-26 23:10:11.502] Found 222 possible bad axioms.
+[2026-06-26 23:10:11.502] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Espancamento_violência).
+[2026-06-26 23:10:11.506] Found 221 possible bad axioms.
+[2026-06-26 23:10:11.506] Selected the bad axiom SubClassOf(Hipertensão Hipoglicemia).
+[2026-06-26 23:10:11.509] Found 220 possible bad axioms.
+[2026-06-26 23:10:11.509] Selected the bad axiom SubClassOf(Neurológico_funcional Mal-estar).
+[2026-06-26 23:10:11.512] Found 219 possible bad axioms.
+[2026-06-26 23:10:11.512] Selected the bad axiom SubClassOf(Transtorno_de_conduta Evento_psiquiatrico).
+[2026-06-26 23:10:11.516] Found 218 possible bad axioms.
+[2026-06-26 23:10:11.516] Selected the bad axiom SubClassOf(Agente_mecanico Causa_externa).
+[2026-06-26 23:10:11.524] Found 217 possible bad axioms.
+[2026-06-26 23:10:11.524] Selected the bad axiom SubClassOf(Digestivos Sinais_clinicos_gerais).
+[2026-06-26 23:10:11.527] Found 216 possible bad axioms.
+[2026-06-26 23:10:11.528] Selected the bad axiom SubClassOf(Dor Alergia_reações_alergicas).
+[2026-06-26 23:10:11.531] Found 215 possible bad axioms.
+[2026-06-26 23:10:11.531] Selected the bad axiom SubClassOf(Trauma_por_dispositivo FAF).
+[2026-06-26 23:10:11.533] Found 214 possible bad axioms.
+[2026-06-26 23:10:11.534] Selected the bad axiom SubClassOf(Cardiologica Alergia_reações_alergicas).
+[2026-06-26 23:10:11.540] Found 213 possible bad axioms.
+[2026-06-26 23:10:11.541] Selected the bad axiom SubClassOf(Neurológico_funcional owl:Nothing).
+[2026-06-26 23:10:11.544] Found 212 possible bad axioms.
+[2026-06-26 23:10:
+...[truncated]
+FAIL: attempt=3 seed=28491 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=3 success=0/100
+----- SOS attempt=4 seed=42691 at 2026-06-26 23:10:30 -----
+--- stdout ---
+{"seed":42691,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":179,"A2":6084,"A3":283,"B1":288,"B2":2395}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=42691, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:10:30.563] Checking precondition...
+[2026-06-26 23:10:30.578] Starting the repair...
+[2026-06-26 23:10:30.585] Found 228 possible bad axioms.
+[2026-06-26 23:10:30.586] Selected the bad axiom SubClassOf(FAB Transtorno_de_personalidade).
+[2026-06-26 23:10:30.591] Found 227 possible bad axioms.
+[2026-06-26 23:10:30.591] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Espancamento_violência).
+[2026-06-26 23:10:30.596] Found 226 possible bad axioms.
+[2026-06-26 23:10:30.596] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Convulsão).
+[2026-06-26 23:10:30.601] Found 225 possible bad axioms.
+[2026-06-26 23:10:30.601] Selected the bad axiom SubClassOf(Alcoolismo Transtorno_de_conduta).
+[2026-06-26 23:10:30.609] Found 224 possible bad axioms.
+[2026-06-26 23:10:30.609] Selected the bad axiom SubClassOf(Respiratório Sinal_funcional).
+[2026-06-26 23:10:30.613] Found 223 possible bad axioms.
+[2026-06-26 23:10:30.613] Selected the bad axiom SubClassOf(Convulsão Neurológico_clinico).
+[2026-06-26 23:10:30.617] Found 222 possible bad axioms.
+[2026-06-26 23:10:30.617] Selected the bad axiom SubClassOf(Agente_mecanico Afogamento).
+[2026-06-26 23:10:30.621] Found 221 possible bad axioms.
+[2026-06-26 23:10:30.621] Selected the bad axiom SubClassOf(Eletrificação Afogamento).
+[2026-06-26 23:10:30.624] Found 220 possible bad axioms.
+[2026-06-26 23:10:30.625] Selected the bad axiom SubClassOf(Sinal_funcional owl:Nothing).
+[2026-06-26 23:10:30.627] Found 219 possible bad axioms.
+[2026-06-26 23:10:30.628] Selected the bad axiom SubClassOf(Sinal_funcional Sinal_clínico).
+[2026-06-26 23:10:30.631] Found 218 possible bad axioms.
+[2026-06-26 23:10:30.631] Selected the bad axiom SubClassOf(Afogamento Eletrificação).
+[2026-06-26 23:10:30.639] Found 217 possible bad axioms.
+[2026-06-26 23:10:30.639] Selected the bad axiom SubClassOf(Neurologica Parada_cardio-respistória).
+[2026-06-26 23:10:30.642] Found 216 possible bad axioms.
+[2026-06-26 23:10:30.643] Selected the bad axiom SubClassOf(Sinal_clínico Neurológico_clinico).
+[2026-06-26 23:10:30.645] Found 215 possible bad axioms.
+[2026-06-26 23:10:30.646] Selected the bad axiom SubClassOf(Psiquiátrico Dor).
+[2026-06-26 23:10:30.649] Found 214 possible bad axioms.
+[2026-06-26 23:10:30.649] Selected the bad axiom SubClassOf(Psiquiátrico Dor_torácica).
+[2026-06-26 23:10:30.656] Found 213 possible bad axioms.
+[2026-06-26 23:10:30.656] Selected the bad axiom SubClassOf(Sinal_clínico owl:Nothing).
+[2026-06-26 23:10:30.660] Found 212 possible bad axioms.
+[2026-06-26 23:10:30.660] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=4 seed=42691 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=4 success=0/100
+----- SOS attempt=5 seed=56891 at 2026-06-26 23:10:39 -----
+--- stdout ---
+{"seed":56891,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":220,"A2":6102,"A3":841,"B1":286,"B2":2921,"B3":2771}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=56891, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:10:40.225] Checking precondition...
+[2026-06-26 23:10:40.240] Starting the repair...
+[2026-06-26 23:10:40.247] Found 228 possible bad axioms.
+[2026-06-26 23:10:40.248] Selected the bad axiom SubClassOf(Síncope Neurológico_funcional).
+[2026-06-26 23:10:40.253] Found 227 possible bad axioms.
+[2026-06-26 23:10:40.253] Selected the bad axiom SubClassOf(Sinal_clínico Evento_clínico).
+[2026-06-26 23:10:40.257] Found 226 possible bad axioms.
+[2026-06-26 23:10:40.257] Selected the bad axiom SubClassOf(Causa_externa Eletrificação).
+[2026-06-26 23:10:40.263] Found 225 possible bad axioms.
+[2026-06-26 23:10:40.263] Selected the bad axiom SubClassOf(Depedência_química Parada_cardio-respistória).
+[2026-06-26 23:10:40.270] Found 224 possible bad axioms.
+[2026-06-26 23:10:40.271] Selected the bad axiom SubClassOf(Trauma_por_dispositivo owl:Nothing).
+[2026-06-26 23:10:40.274] Found 223 possible bad axioms.
+[2026-06-26 23:10:40.275] Selected the bad axiom SubClassOf(Picada_mordida Trauma_por_dispositivo).
+[2026-06-26 23:10:40.279] Found 222 possible bad axioms.
+[2026-06-26 23:10:40.279] Selected the bad axiom SubClassOf(Neurológico_funcional Mal-estar).
+[2026-06-26 23:10:40.282] Found 221 possible bad axioms.
+[2026-06-26 23:10:40.282] Selected the bad axiom SubClassOf(Agente_mecanico Picada_mordida).
+[2026-06-26 23:10:40.286] Found 220 possible bad axioms.
+[2026-06-26 23:10:40.286] Selected the bad axiom SubClassOf(Dor_lombar Dor_abdominal).
+[2026-06-26 23:10:40.289] Found 219 possible bad axioms.
+[2026-06-26 23:10:40.289] Selected the bad axiom SubClassOf(Causa_externa Picada_mordida).
+[2026-06-26 23:10:40.292] Found 218 possible bad axioms.
+[2026-06-26 23:10:40.292] Selected the bad axiom SubClassOf(Psiquiátrico Neurológico_funcional).
+[2026-06-26 23:10:40.299] Found 217 possible bad axioms.
+[2026-06-26 23:10:40.299] Selected the bad axiom SubClassOf(Evento_psiquiatrico Transtorno_de_conduta).
+[2026-06-26 23:10:40.303] Found 216 possible bad axioms.
+[2026-06-26 23:10:40.303] Selected the bad axiom SubClassOf(Neurológico_funcional owl:Nothing).
+[2026-06-26 23:10:40.306] Found 215 possible bad axioms.
+[2026-06-26 23:10:40.306] Selected the bad axiom SubClassOf(Mal-estar Neurológico_funcional).
+[2026-06-26 23:10:40.309] Found 214 possible bad axioms.
+[2026-06-26 23:10:40.309] Selected the bad axiom SubClassOf(Trabalho_de_parto Desenho_anormal).
+[2026-06-26 23:10:40.316] Found 213 possible bad axioms.
+[2026-06-26 23:10:40.316] Selected the bad axiom SubClassOf(Evento_clínico Condição_patologica).
+[2026-06-26 23:10:40.320] Found 212 possible bad axioms.
+[20
+...[truncated]
+FAIL: attempt=5 seed=56891 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=5 success=0/100
+----- SOS attempt=6 seed=71091 at 2026-06-26 23:10:53 -----
+--- stdout ---
+{"seed":71091,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":227,"A2":6057,"A3":319,"B1":270,"B2":2937,"B3":1596}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=71091, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:10:53.806] Checking precondition...
+[2026-06-26 23:10:53.823] Starting the repair...
+[2026-06-26 23:10:53.830] Found 228 possible bad axioms.
+[2026-06-26 23:10:53.832] Selected the bad axiom SubClassOf(intoxicação_alcoolica Intoxicação_exogena).
+[2026-06-26 23:10:53.837] Found 227 possible bad axioms.
+[2026-06-26 23:10:53.838] Selected the bad axiom SubClassOf(Evento_psiquiatrico Episódio_psicótico).
+[2026-06-26 23:10:53.842] Found 226 possible bad axioms.
+[2026-06-26 23:10:53.843] Selected the bad axiom SubClassOf(Dor_torácica Êmese_vômitos).
+[2026-06-26 23:10:53.847] Found 225 possible bad axioms.
+[2026-06-26 23:10:53.847] Selected the bad axiom SubClassOf(Condição_patologica Sinal_clínico).
+[2026-06-26 23:10:53.854] Found 224 possible bad axioms.
+[2026-06-26 23:10:53.855] Selected the bad axiom SubClassOf(Intoxicação_medicamentosa Intoxicação).
+[2026-06-26 23:10:53.858] Found 223 possible bad axioms.
+[2026-06-26 23:10:53.859] Selected the bad axiom SubClassOf(Desmaio Síncope).
+[2026-06-26 23:10:53.862] Found 222 possible bad axioms.
+[2026-06-26 23:10:53.863] Selected the bad axiom SubClassOf(Desmaio Neurológico_funcional).
+[2026-06-26 23:10:53.866] Found 221 possible bad axioms.
+[2026-06-26 23:10:53.867] Selected the bad axiom SubClassOf(Condição_patologica Sinal_funcional).
+[2026-06-26 23:10:53.870] Found 220 possible bad axioms.
+[2026-06-26 23:10:53.870] Selected the bad axiom SubClassOf(Hipertensão owl:Nothing).
+[2026-06-26 23:10:53.873] Found 219 possible bad axioms.
+[2026-06-26 23:10:53.873] Selected the bad axiom SubClassOf(Aborto Desenho_anormal).
+[2026-06-26 23:10:53.876] Found 218 possible bad axioms.
+[2026-06-26 23:10:53.876] Selected the bad axiom SubClassOf(FAB FAF).
+[2026-06-26 23:10:53.884] Found 217 possible bad axioms.
+[2026-06-26 23:10:53.885] Selected the bad axiom SubClassOf(Sinal_clínico owl:Nothing).
+[2026-06-26 23:10:53.887] Found 216 possible bad axioms.
+[2026-06-26 23:10:53.888] Selected the bad axiom SubClassOf(Paresia_parestesia Inconsciente).
+[2026-06-26 23:10:53.891] Found 215 possible bad axioms.
+[2026-06-26 23:10:53.891] Selected the bad axiom SubClassOf(Dispneia Respiratório).
+[2026-06-26 23:10:53.893] Found 214 possible bad axioms.
+[2026-06-26 23:10:53.895] Selected the bad axiom SubClassOf(Neurológico_funcional owl:Nothing).
+[2026-06-26 23:10:53.902] Found 213 possible bad axioms.
+[2026-06-26 23:10:53.902] Selected the bad axiom SubClassOf(Dor Sinal_funcional).
+[2026-06-26 23:10:53.905] Found 212 possible bad axioms.
+[2026-06-26 23:10:53.905] Selected the bad axiom SubClassOf(Cefaleia owl:Nothing).
+[20
+...[truncated]
+FAIL: attempt=6 seed=71091 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=6 success=0/100
+----- SOS attempt=7 seed=85291 at 2026-06-26 23:11:05 -----
+--- stdout ---
+{"seed":85291,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":261,"A2":6047,"A3":286,"B1":286,"B2":2929,"B3":2952,"B4":82,"B5":3985}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=85291, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:11:05.657] Checking precondition...
+[2026-06-26 23:11:05.673] Starting the repair...
+[2026-06-26 23:11:05.679] Found 228 possible bad axioms.
+[2026-06-26 23:11:05.681] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais Hipoglicemia).
+[2026-06-26 23:11:05.685] Found 227 possible bad axioms.
+[2026-06-26 23:11:05.685] Selected the bad axiom SubClassOf(FAB Parada_cardio-respistória).
+[2026-06-26 23:11:05.689] Found 226 possible bad axioms.
+[2026-06-26 23:11:05.689] Selected the bad axiom SubClassOf(Psiquiátrico Alergia_reações_alergicas).
+[2026-06-26 23:11:05.693] Found 225 possible bad axioms.
+[2026-06-26 23:11:05.693] Selected the bad axiom SubClassOf(Agente_mecanico FAF).
+[2026-06-26 23:11:05.702] Found 224 possible bad axioms.
+[2026-06-26 23:11:05.703] Selected the bad axiom SubClassOf(Evento_psiquiatrico Agitação).
+[2026-06-26 23:11:05.706] Found 223 possible bad axioms.
+[2026-06-26 23:11:05.706] Selected the bad axiom SubClassOf(Dor_lombar Dor).
+[2026-06-26 23:11:05.711] Found 222 possible bad axioms.
+[2026-06-26 23:11:05.711] Selected the bad axiom SubClassOf(Dor Sinal_funcional).
+[2026-06-26 23:11:05.714] Found 221 possible bad axioms.
+[2026-06-26 23:11:05.714] Selected the bad axiom SubClassOf(Picada_mordida FAB).
+[2026-06-26 23:11:05.717] Found 220 possible bad axioms.
+[2026-06-26 23:11:05.718] Selected the bad axiom SubClassOf(Intoxicação_exogena Intoxicação).
+[2026-06-26 23:11:05.721] Found 219 possible bad axioms.
+[2026-06-26 23:11:05.721] Selected the bad axiom SubClassOf(AVC Depedência_química).
+[2026-06-26 23:11:05.723] Found 218 possible bad axioms.
+[2026-06-26 23:11:05.724] Selected the bad axiom SubClassOf(Condição_patologica Crise_de_abstinência).
+[2026-06-26 23:11:05.731] Found 217 possible bad axioms.
+[2026-06-26 23:11:05.731] Selected the bad axiom SubClassOf(Psiquiátrico Neurológico_funcional).
+[2026-06-26 23:11:05.734] Found 216 possible bad axioms.
+[2026-06-26 23:11:05.734] Selected the bad axiom SubClassOf(Alcoolismo Crise_de_abstinência).
+[2026-06-26 23:11:05.737] Found 215 possible bad axioms.
+[2026-06-26 23:11:05.737] Selected the bad axiom SubClassOf(Dor_torácica Êmese_vômitos).
+[2026-06-26 23:11:05.740] Found 214 possible bad axioms.
+[2026-06-26 23:11:05.740] Selected the bad axiom SubClassOf(Perda_de_líquido Crise_de_abstinência).
+[2026-06-26 23:11:05.747] Found 213 possible bad axioms.
+[2026-06-26 23:11:05.748] Selected the bad axiom SubClassOf(Psiquiátrico owl:Nothing).
+[2026-06-26 23:11:05.751] Found 212 possible bad axioms.
+[2026-06-26 23:11:05.751] Selected the bad axiom SubClassOf(Trauma_por_dispo
+...[truncated]
+FAIL: attempt=7 seed=85291 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=7 success=0/100
+----- SOS attempt=8 seed=99491 at 2026-06-26 23:11:22 -----
+--- stdout ---
+{"seed":99491,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":213,"A2":6083,"A3":313,"B1":534,"B2":4691,"B3":1755,"B4":72,"B5":3869}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=99491, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:11:22.951] Checking precondition...
+[2026-06-26 23:11:22.967] Starting the repair...
+[2026-06-26 23:11:22.974] Found 228 possible bad axioms.
+[2026-06-26 23:11:22.975] Selected the bad axiom SubClassOf(Depedência_química Transtorno_de_personalidade).
+[2026-06-26 23:11:22.980] Found 227 possible bad axioms.
+[2026-06-26 23:11:22.980] Selected the bad axiom SubClassOf(Mal-estar Síncope).
+[2026-06-26 23:11:22.984] Found 226 possible bad axioms.
+[2026-06-26 23:11:22.984] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais Digestivos).
+[2026-06-26 23:11:22.988] Found 225 possible bad axioms.
+[2026-06-26 23:11:22.988] Selected the bad axiom SubClassOf(Hipertensão Febre).
+[2026-06-26 23:11:22.996] Found 224 possible bad axioms.
+[2026-06-26 23:11:22.997] Selected the bad axiom SubClassOf(Condição_patologica Alcoolismo).
+[2026-06-26 23:11:23.001] Found 223 possible bad axioms.
+[2026-06-26 23:11:23.001] Selected the bad axiom SubClassOf(Sangramento Perda_de_líquido).
+[2026-06-26 23:11:23.004] Found 222 possible bad axioms.
+[2026-06-26 23:11:23.005] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Agente_mecanico).
+[2026-06-26 23:11:23.008] Found 221 possible bad axioms.
+[2026-06-26 23:11:23.008] Selected the bad axiom SubClassOf(Envenenamento Causa_externa).
+[2026-06-26 23:11:23.012] Found 220 possible bad axioms.
+[2026-06-26 23:11:23.013] Selected the bad axiom SubClassOf(Desmaio Neurológico_funcional).
+[2026-06-26 23:11:23.016] Found 219 possible bad axioms.
+[2026-06-26 23:11:23.016] Selected the bad axiom SubClassOf(Perda_de_líquido Sangramento).
+[2026-06-26 23:11:23.019] Found 218 possible bad axioms.
+[2026-06-26 23:11:23.019] Selected the bad axiom SubClassOf(Cardiologica Condição_patologica).
+[2026-06-26 23:11:23.027] Found 217 possible bad axioms.
+[2026-06-26 23:11:23.027] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Convulsão).
+[2026-06-26 23:11:23.030] Found 216 possible bad axioms.
+[2026-06-26 23:11:23.030] Selected the bad axiom SubClassOf(Transtorno_de_conduta Agitação).
+[2026-06-26 23:11:23.033] Found 215 possible bad axioms.
+[2026-06-26 23:11:23.033] Selected the bad axiom SubClassOf(Intoxicação intoxicação_alcoolica).
+[2026-06-26 23:11:23.036] Found 214 possible bad axioms.
+[2026-06-26 23:11:23.036] Selected the bad axiom SubClassOf(Episódio_psicótico Transtorno_de_conduta).
+[2026-06-26 23:11:23.043] Found 213 possible bad axioms.
+[2026-06-26 23:11:23.044] Selected the bad axiom SubClassOf(Neurologica owl:Nothing).
+[2026-06-26 23:11:23.046] Found 212 possible bad axioms.
+[2026-06-26 23:11:23.046] Selected the
+...[truncated]
+FAIL: attempt=8 seed=99491 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=8 success=0/100
+----- SOS attempt=9 seed=113691 at 2026-06-26 23:11:40 -----
+--- stdout ---
+{"seed":113691,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":199,"A2":6017,"A3":311,"B1":269,"B2":2591}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=113691, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:11:40.950] Checking precondition...
+[2026-06-26 23:11:40.966] Starting the repair...
+[2026-06-26 23:11:40.972] Found 228 possible bad axioms.
+[2026-06-26 23:11:40.974] Selected the bad axiom SubClassOf(Digestivos Neurológico_clinico).
+[2026-06-26 23:11:40.978] Found 227 possible bad axioms.
+[2026-06-26 23:11:40.978] Selected the bad axiom SubClassOf(Alergia_reações_alergicas Imunologica).
+[2026-06-26 23:11:40.982] Found 226 possible bad axioms.
+[2026-06-26 23:11:40.982] Selected the bad axiom SubClassOf(Causa_externa Eletrificação).
+[2026-06-26 23:11:40.986] Found 225 possible bad axioms.
+[2026-06-26 23:11:40.986] Selected the bad axiom SubClassOf(Digestivos Sinais_clinicos_gerais).
+[2026-06-26 23:11:40.993] Found 224 possible bad axioms.
+[2026-06-26 23:11:40.994] Selected the bad axiom SubClassOf(Cardiologica Alergia_reações_alergicas).
+[2026-06-26 23:11:40.997] Found 223 possible bad axioms.
+[2026-06-26 23:11:40.998] Selected the bad axiom SubClassOf(Sinal_clínico Condição_patologica).
+[2026-06-26 23:11:41.001] Found 222 possible bad axioms.
+[2026-06-26 23:11:41.002] Selected the bad axiom SubClassOf(Intoxicação Convulsão).
+[2026-06-26 23:11:41.004] Found 221 possible bad axioms.
+[2026-06-26 23:11:41.005] Selected the bad axiom SubClassOf(Psiquiátrico Neurológico_funcional).
+[2026-06-26 23:11:41.008] Found 220 possible bad axioms.
+[2026-06-26 23:11:41.008] Selected the bad axiom SubClassOf(Hipertensão Febre).
+[2026-06-26 23:11:41.011] Found 219 possible bad axioms.
+[2026-06-26 23:11:41.011] Selected the bad axiom SubClassOf(Mal-estar Síncope).
+[2026-06-26 23:11:41.014] Found 218 possible bad axioms.
+[2026-06-26 23:11:41.014] Selected the bad axiom SubClassOf(Neurológico_funcional owl:Nothing).
+[2026-06-26 23:11:41.022] Found 217 possible bad axioms.
+[2026-06-26 23:11:41.022] Selected the bad axiom SubClassOf(Psiquiátrico Sinal_funcional).
+[2026-06-26 23:11:41.025] Found 216 possible bad axioms.
+[2026-06-26 23:11:41.026] Selected the bad axiom SubClassOf(Hipertensão owl:Nothing).
+[2026-06-26 23:11:41.029] Found 215 possible bad axioms.
+[2026-06-26 23:11:41.029] Selected the bad axiom SubClassOf(Sinal_funcional Cardiologica).
+[2026-06-26 23:11:41.032] Found 214 possible bad axioms.
+[2026-06-26 23:11:41.032] Selected the bad axiom SubClassOf(Trauma_por_dispositivo FAB).
+[2026-06-26 23:11:41.039] Found 213 possible bad axioms.
+[2026-06-26 23:11:41.039] Selected the bad axiom SubClassOf(Condição_patologica Intoxicação_por_outras_drogas).
+[2026-06-26 23:11:41.042] Found 212 possible bad axioms.
+[2026-06-26 23:11:41.042] Selected the bad axi
+...[truncated]
+FAIL: attempt=9 seed=113691 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=9 success=0/100
+----- SOS attempt=10 seed=127891 at 2026-06-26 23:11:50 -----
+--- stdout ---
+{"seed":127891,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":1.0,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":1.0,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":256,"A2":5968,"A3":306,"B1":268,"B2":2850,"B3":1682,"B4":92,"B5":2305,"B6":1337,"B7":119,"B8":2230,"B9":2750}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=127891, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:11:50.773] Checking precondition...
+[2026-06-26 23:11:50.790] Starting the repair...
+[2026-06-26 23:11:50.796] Found 228 possible bad axioms.
+[2026-06-26 23:11:50.797] Selected the bad axiom SubClassOf(Alcoolismo Depedência_química).
+[2026-06-26 23:11:50.802] Found 227 possible bad axioms.
+[2026-06-26 23:11:50.802] Selected the bad axiom SubClassOf(FAF Trauma_por_dispositivo).
+[2026-06-26 23:11:50.806] Found 226 possible bad axioms.
+[2026-06-26 23:11:50.806] Selected the bad axiom SubClassOf(Dor_torácica Dor_abdominal).
+[2026-06-26 23:11:50.810] Found 225 possible bad axioms.
+[2026-06-26 23:11:50.811] Selected the bad axiom SubClassOf(Transtorno_de_personalidade Transtorno_de_conduta).
+[2026-06-26 23:11:50.818] Found 224 possible bad axioms.
+[2026-06-26 23:11:50.819] Selected the bad axiom SubClassOf(Respiratório Sinal_funcional).
+[2026-06-26 23:11:50.822] Found 223 possible bad axioms.
+[2026-06-26 23:11:50.822] Selected the bad axiom SubClassOf(Condição_patologica Crise_de_abstinência).
+[2026-06-26 23:11:50.826] Found 222 possible bad axioms.
+[2026-06-26 23:11:50.826] Selected the bad axiom SubClassOf(Digestivos owl:Nothing).
+[2026-06-26 23:11:50.830] Found 221 possible bad axioms.
+[2026-06-26 23:11:50.830] Selected the bad axiom SubClassOf(Condição_patologica Dor_lombar).
+[2026-06-26 23:11:50.833] Found 220 possible bad axioms.
+[2026-06-26 23:11:50.834] Selected the bad axiom SubClassOf(Sinal_funcional Imunologica).
+[2026-06-26 23:11:50.836] Found 219 possible bad axioms.
+[2026-06-26 23:11:50.837] Selected the bad axiom SubClassOf(Depedência_química Crise_de_abstinência).
+[2026-06-26 23:11:50.839] Found 218 possible bad axioms.
+[2026-06-26 23:11:50.840] Selected the bad axiom SubClassOf(Psiquiátrico Dor_torácica).
+[2026-06-26 23:11:50.848] Found 217 possible bad axioms.
+[2026-06-26 23:11:50.848] Selected the bad axiom SubClassOf(Transtorno_de_conduta Evento_psiquiatrico).
+[2026-06-26 23:11:50.851] Found 216 possible bad axioms.
+[2026-06-26 23:11:50.851] Selected the bad axiom SubClassOf(Dor_torácica Dor).
+[2026-06-26 23:11:50.855] Found 215 possible bad axioms.
+[2026-06-26 23:11:50.855] Selected the bad axiom SubClassOf(Intoxicação Envenenamento).
+[2026-06-26 23:11:50.857] Found 214 possible bad axioms.
+[2026-06-26 23:11:50.858] Selected the bad axiom SubClassOf(Dor Alergia_reações_alergicas).
+[2026-06-26 23:11:50.865] Found 213 possible bad axioms.
+[2026-06-26 23:11:50.865] Selected the bad axiom SubClassOf(Perda_de_líquido Sangramento).
+[2026-06-26 23:11:50.868] Found 212 possible bad axioms.
+[2026-06-26 23:11:50.868] Selected the b
+...[truncated]
+SUCCESS: attempt=10 seed=127891 success_count=1/100
+progress: ontology=SOS attempt=10 success=1/100
+----- SOS attempt=11 seed=142091 at 2026-06-26 23:12:11 -----
+--- stdout ---
+{"seed":142091,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":180,"A2":6089,"A3":308,"B1":264,"B2":4740,"B3":1766,"B4":74,"B5":3685}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=142091, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:12:11.522] Checking precondition...
+[2026-06-26 23:12:11.539] Starting the repair...
+[2026-06-26 23:12:11.545] Found 228 possible bad axioms.
+[2026-06-26 23:12:11.547] Selected the bad axiom SubClassOf(Agitação Episódio_psicótico).
+[2026-06-26 23:12:11.551] Found 227 possible bad axioms.
+[2026-06-26 23:12:11.551] Selected the bad axiom SubClassOf(Eletrificação Convulsão).
+[2026-06-26 23:12:11.556] Found 226 possible bad axioms.
+[2026-06-26 23:12:11.556] Selected the bad axiom SubClassOf(Cardiologica Neurologica).
+[2026-06-26 23:12:11.560] Found 225 possible bad axioms.
+[2026-06-26 23:12:11.560] Selected the bad axiom SubClassOf(Mal-estar Síncope).
+[2026-06-26 23:12:11.567] Found 224 possible bad axioms.
+[2026-06-26 23:12:11.568] Selected the bad axiom SubClassOf(Agente_mecanico Causa_externa).
+[2026-06-26 23:12:11.572] Found 223 possible bad axioms.
+[2026-06-26 23:12:11.572] Selected the bad axiom SubClassOf(Cardiologica Imunologica).
+[2026-06-26 23:12:11.576] Found 222 possible bad axioms.
+[2026-06-26 23:12:11.576] Selected the bad axiom SubClassOf(Paresia_parestesia Síncope).
+[2026-06-26 23:12:11.579] Found 221 possible bad axioms.
+[2026-06-26 23:12:11.579] Selected the bad axiom SubClassOf(Afogamento Causa_externa).
+[2026-06-26 23:12:11.582] Found 220 possible bad axioms.
+[2026-06-26 23:12:11.582] Selected the bad axiom SubClassOf(Intoxicação_medicamentosa Intoxicação_exogena).
+[2026-06-26 23:12:11.585] Found 219 possible bad axioms.
+[2026-06-26 23:12:11.585] Selected the bad axiom SubClassOf(Mal-estar Desmaio).
+[2026-06-26 23:12:11.589] Found 218 possible bad axioms.
+[2026-06-26 23:12:11.590] Selected the bad axiom SubClassOf(Desenho_anormal Trabalho_de_parto).
+[2026-06-26 23:12:11.597] Found 217 possible bad axioms.
+[2026-06-26 23:12:11.597] Selected the bad axiom SubClassOf(Intoxicação_exogena Transtorno_de_personalidade).
+[2026-06-26 23:12:11.600] Found 216 possible bad axioms.
+[2026-06-26 23:12:11.600] Selected the bad axiom SubClassOf(Eletrificação Causa_externa).
+[2026-06-26 23:12:11.603] Found 215 possible bad axioms.
+[2026-06-26 23:12:11.603] Selected the bad axiom SubClassOf(Psiquiátrico Dor_torácica).
+[2026-06-26 23:12:11.605] Found 214 possible bad axioms.
+[2026-06-26 23:12:11.605] Selected the bad axiom SubClassOf(Intoxicação Convulsão).
+[2026-06-26 23:12:11.613] Found 213 possible bad axioms.
+[2026-06-26 23:12:11.613] Selected the bad axiom SubClassOf(Agente_mecanico Trauma_por_dispositivo).
+[2026-06-26 23:12:11.616] Found 212 possible bad axioms.
+[2026-06-26 23:12:11.616] Selected the bad axiom SubClassOf(Dor Psiquiátr
+...[truncated]
+FAIL: attempt=11 seed=142091 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=11 success=1/100
+----- SOS attempt=12 seed=156291 at 2026-06-26 23:12:28 -----
+--- stdout ---
+{"seed":156291,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":253,"A2":6032,"A3":306,"B1":275,"B2":4669,"B3":2904,"B4":62,"B5":3887,"B6":2782,"B7":145,"B8":1974}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=156291, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:12:29.088] Checking precondition...
+[2026-06-26 23:12:29.104] Starting the repair...
+[2026-06-26 23:12:29.111] Found 228 possible bad axioms.
+[2026-06-26 23:12:29.112] Selected the bad axiom SubClassOf(Sinal_clínico Neurológico_clinico).
+[2026-06-26 23:12:29.116] Found 227 possible bad axioms.
+[2026-06-26 23:12:29.117] Selected the bad axiom SubClassOf(Febre Hipoglicemia).
+[2026-06-26 23:12:29.120] Found 226 possible bad axioms.
+[2026-06-26 23:12:29.120] Selected the bad axiom SubClassOf(Intoxicação Envenenamento).
+[2026-06-26 23:12:29.125] Found 225 possible bad axioms.
+[2026-06-26 23:12:29.125] Selected the bad axiom SubClassOf(Afogamento Causa_externa).
+[2026-06-26 23:12:29.133] Found 224 possible bad axioms.
+[2026-06-26 23:12:29.133] Selected the bad axiom SubClassOf(Febre Hipertensão).
+[2026-06-26 23:12:29.138] Found 223 possible bad axioms.
+[2026-06-26 23:12:29.138] Selected the bad axiom SubClassOf(Condição_patologica Dor_lombar).
+[2026-06-26 23:12:29.142] Found 222 possible bad axioms.
+[2026-06-26 23:12:29.142] Selected the bad axiom SubClassOf(Condição_patologica Febre).
+[2026-06-26 23:12:29.145] Found 221 possible bad axioms.
+[2026-06-26 23:12:29.146] Selected the bad axiom SubClassOf(Sinal_funcional owl:Nothing).
+[2026-06-26 23:12:29.149] Found 220 possible bad axioms.
+[2026-06-26 23:12:29.149] Selected the bad axiom SubClassOf(Picada_mordida owl:Nothing).
+[2026-06-26 23:12:29.153] Found 219 possible bad axioms.
+[2026-06-26 23:12:29.153] Selected the bad axiom SubClassOf(Dor Psiquiátrico).
+[2026-06-26 23:12:29.155] Found 218 possible bad axioms.
+[2026-06-26 23:12:29.156] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais Hipoglicemia).
+[2026-06-26 23:12:29.164] Found 217 possible bad axioms.
+[2026-06-26 23:12:29.164] Selected the bad axiom SubClassOf(Queimadura Causa_externa).
+[2026-06-26 23:12:29.167] Found 216 possible bad axioms.
+[2026-06-26 23:12:29.167] Selected the bad axiom SubClassOf(Agitação Episódio_psicótico).
+[2026-06-26 23:12:29.169] Found 215 possible bad axioms.
+[2026-06-26 23:12:29.170] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Picada_mordida).
+[2026-06-26 23:12:29.172] Found 214 possible bad axioms.
+[2026-06-26 23:12:29.173] Selected the bad axiom SubClassOf(Espancamento_violência FAB).
+[2026-06-26 23:12:29.180] Found 213 possible bad axioms.
+[2026-06-26 23:12:29.180] Selected the bad axiom SubClassOf(Dor_torácica Dor_abdominal).
+[2026-06-26 23:12:29.183] Found 212 possible bad axioms.
+[2026-06-26 23:12:29.183] Selected the bad axiom SubClassOf(Intoxicação intoxicação_alcoolica).
+[2026-06
+...[truncated]
+FAIL: attempt=12 seed=156291 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=12 success=1/100
+----- SOS attempt=13 seed=170491 at 2026-06-26 23:12:52 -----
+--- stdout ---
+{"seed":170491,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":84,"A2":6088,"A3":324,"B1":608,"B2":2859,"B3":2766}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=170491, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:12:52.865] Checking precondition...
+[2026-06-26 23:12:52.879] Starting the repair...
+[2026-06-26 23:12:52.886] Found 228 possible bad axioms.
+[2026-06-26 23:12:52.888] Selected the bad axiom SubClassOf(Sinal_clínico Imunologica).
+[2026-06-26 23:12:52.892] Found 227 possible bad axioms.
+[2026-06-26 23:12:52.892] Selected the bad axiom SubClassOf(Trauma_por_dispositivo FAB).
+[2026-06-26 23:12:52.896] Found 226 possible bad axioms.
+[2026-06-26 23:12:52.896] Selected the bad axiom SubClassOf(Evento_clínico Sinal_funcional).
+[2026-06-26 23:12:52.900] Found 225 possible bad axioms.
+[2026-06-26 23:12:52.900] Selected the bad axiom SubClassOf(Neurologica Cardiologica).
+[2026-06-26 23:12:52.910] Found 224 possible bad axioms.
+[2026-06-26 23:12:52.911] Selected the bad axiom SubClassOf(Inconsciente Paresia_parestesia).
+[2026-06-26 23:12:52.914] Found 223 possible bad axioms.
+[2026-06-26 23:12:52.914] Selected the bad axiom SubClassOf(Dor_abdominal Dor).
+[2026-06-26 23:12:52.918] Found 222 possible bad axioms.
+[2026-06-26 23:12:52.919] Selected the bad axiom SubClassOf(Hipertensão owl:Nothing).
+[2026-06-26 23:12:52.922] Found 221 possible bad axioms.
+[2026-06-26 23:12:52.922] Selected the bad axiom SubClassOf(Sinal_funcional Cardiologica).
+[2026-06-26 23:12:52.925] Found 220 possible bad axioms.
+[2026-06-26 23:12:52.926] Selected the bad axiom SubClassOf(Sinal_funcional Sinal_clínico).
+[2026-06-26 23:12:52.928] Found 219 possible bad axioms.
+[2026-06-26 23:12:52.929] Selected the bad axiom SubClassOf(Sinal_clínico Condição_patologica).
+[2026-06-26 23:12:52.931] Found 218 possible bad axioms.
+[2026-06-26 23:12:52.931] Selected the bad axiom SubClassOf(Hipertensão Sinais_clinicos_gerais).
+[2026-06-26 23:12:52.940] Found 217 possible bad axioms.
+[2026-06-26 23:12:52.940] Selected the bad axiom SubClassOf(Desmaio Êmese_vômitos).
+[2026-06-26 23:12:52.943] Found 216 possible bad axioms.
+[2026-06-26 23:12:52.943] Selected the bad axiom SubClassOf(owl:Thing Transtorno_de_conduta).
+[2026-06-26 23:12:52.945] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 23:12:52.946] Checking precondition...
+[2026-06-26 23:12:52.957] Starting the repair...
+[2026-06-26 23:12:59.034] Found 1 possible bad axioms.
+[2026-06-26 23:12:59.034] Selected the bad axiom SubClassOf(owl:Thing Transtorno_de_conduta).
+[2026-06-26 23:12:59.034] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 23:12:59.035] Checking precondition...
+[2026-06-26 23:12:59.038] Starting the repair...
+[2026-06-26 23:12:59.050] S
+...[truncated]
+FAIL: attempt=13 seed=170491 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=13 success=1/100
+----- SOS attempt=14 seed=184691 at 2026-06-26 23:13:06 -----
+--- stdout ---
+{"seed":184691,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.9903381642512077,"B1_vs_A2":0.5,"B1_vs_A3":0.5,"B2_vs_A1":0.9903381642512077,"B2_vs_A2":0.5,"B2_vs_A3":0.5,"B3_vs_A1":0.9903381642512077,"B3_vs_A2":0.5,"B3_vs_A3":0.5,"B4_vs_A1":0.9903381642512077,"B4_vs_A2":0.5,"B4_vs_A3":0.5,"B5_vs_A1":0.9903381642512077,"B5_vs_A2":0.5,"B5_vs_A3":0.5,"B6_vs_A1":0.9903381642512077,"B6_vs_A2":0.5,"B6_vs_A3":0.5,"B7_vs_A1":0.9903381642512077,"B7_vs_A2":0.5,"B7_vs_A3":0.5,"B8_vs_A1":0.9903381642512077,"B8_vs_A2":0.5,"B8_vs_A3":0.5,"B9_vs_A1":0.9903381642512077,"B9_vs_A2":0.5,"B9_vs_A3":0.5},"repair_runtimes_ms":{"A1":172,"A2":6054,"A3":313,"B1":279,"B2":2860,"B3":1689,"B4":68,"B5":2350,"B6":1353,"B7":129,"B8":4183,"B9":1533}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=184691, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:13:06.817] Checking precondition...
+[2026-06-26 23:13:06.833] Starting the repair...
+[2026-06-26 23:13:06.840] Found 228 possible bad axioms.
+[2026-06-26 23:13:06.842] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Agente_mecanico).
+[2026-06-26 23:13:06.846] Found 227 possible bad axioms.
+[2026-06-26 23:13:06.847] Selected the bad axiom SubClassOf(Dor Sinal_funcional).
+[2026-06-26 23:13:06.851] Found 226 possible bad axioms.
+[2026-06-26 23:13:06.851] Selected the bad axiom SubClassOf(Intoxicação Convulsão).
+[2026-06-26 23:13:06.856] Found 225 possible bad axioms.
+[2026-06-26 23:13:06.857] Selected the bad axiom SubClassOf(FAB Trauma_por_dispositivo).
+[2026-06-26 23:13:06.865] Found 224 possible bad axioms.
+[2026-06-26 23:13:06.866] Selected the bad axiom SubClassOf(Agitação Episódio_psicótico).
+[2026-06-26 23:13:06.869] Found 223 possible bad axioms.
+[2026-06-26 23:13:06.870] Selected the bad axiom SubClassOf(Eletrificação Intoxicação).
+[2026-06-26 23:13:06.873] Found 222 possible bad axioms.
+[2026-06-26 23:13:06.874] Selected the bad axiom SubClassOf(Intoxicação_exogena Convulsão).
+[2026-06-26 23:13:06.877] Found 221 possible bad axioms.
+[2026-06-26 23:13:06.878] Selected the bad axiom SubClassOf(AVC Depedência_química).
+[2026-06-26 23:13:06.881] Found 220 possible bad axioms.
+[2026-06-26 23:13:06.882] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais owl:Nothing).
+[2026-06-26 23:13:06.885] Found 219 possible bad axioms.
+[2026-06-26 23:13:06.885] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Espancamento_violência).
+[2026-06-26 23:13:06.888] Found 218 possible bad axioms.
+[2026-06-26 23:13:06.889] Selected the bad axiom SubClassOf(Evento_clínico Dor_lombar).
+[2026-06-26 23:13:06.897] Found 217 possible bad axioms.
+[2026-06-26 23:13:06.897] Selected the bad axiom SubClassOf(Intoxicação_por_outras_drogas Depedência_química).
+[2026-06-26 23:13:06.900] Found 216 possible bad axioms.
+[2026-06-26 23:13:06.900] Selected the bad axiom SubClassOf(Neurologica Alergia_reações_alergicas).
+[2026-06-26 23:13:06.903] Found 215 possible bad axioms.
+[2026-06-26 23:13:06.903] Selected the bad axiom SubClassOf(FAB Convulsão).
+[2026-06-26 23:13:06.906] Found 214 possible bad axioms.
+[2026-06-26 23:13:06.906] Selected the bad axiom SubClassOf(FAB Parada_cardio-respistória).
+[2026-06-26 23:13:06.913] Found 213 possible bad axioms.
+[2026-06-26 23:13:06.913] Selected the bad axiom SubClassOf(Picada_mordida Trauma_por_dispositivo).
+[2026-06-26 23:13:06.916] Found 212 possible bad axioms.
+[2026-06-26 23:13:06.917] Selected the bad ax
+...[truncated]
+SUCCESS: attempt=14 seed=184691 success_count=2/100
+progress: ontology=SOS attempt=14 success=2/100
+----- SOS attempt=15 seed=198891 at 2026-06-26 23:13:29 -----
+--- stdout ---
+{"seed":198891,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":198,"A2":6018,"A3":282,"B1":501,"B2":4739,"B3":2933,"B4":104,"B5":2314,"B6":1344}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=198891, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:13:30.230] Checking precondition...
+[2026-06-26 23:13:30.246] Starting the repair...
+[2026-06-26 23:13:30.252] Found 228 possible bad axioms.
+[2026-06-26 23:13:30.254] Selected the bad axiom SubClassOf(Sinal_funcional Desmaio).
+[2026-06-26 23:13:30.258] Found 227 possible bad axioms.
+[2026-06-26 23:13:30.258] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais owl:Nothing).
+[2026-06-26 23:13:30.262] Found 226 possible bad axioms.
+[2026-06-26 23:13:30.262] Selected the bad axiom SubClassOf(Desmaio Síncope).
+[2026-06-26 23:13:30.266] Found 225 possible bad axioms.
+[2026-06-26 23:13:30.266] Selected the bad axiom SubClassOf(Queimadura Neurológico_clinico).
+[2026-06-26 23:13:30.276] Found 224 possible bad axioms.
+[2026-06-26 23:13:30.276] Selected the bad axiom SubClassOf(Febre Hipoglicemia).
+[2026-06-26 23:13:30.280] Found 223 possible bad axioms.
+[2026-06-26 23:13:30.280] Selected the bad axiom SubClassOf(Neurologica Transtorno_de_personalidade).
+[2026-06-26 23:13:30.284] Found 222 possible bad axioms.
+[2026-06-26 23:13:30.284] Selected the bad axiom SubClassOf(Intoxicação_exogena Intoxicação).
+[2026-06-26 23:13:30.287] Found 221 possible bad axioms.
+[2026-06-26 23:13:30.287] Selected the bad axiom SubClassOf(Psiquiátrico Desmaio).
+[2026-06-26 23:13:30.291] Found 220 possible bad axioms.
+[2026-06-26 23:13:30.291] Selected the bad axiom SubClassOf(Transtorno_de_personalidade Cardiologica).
+[2026-06-26 23:13:30.294] Found 219 possible bad axioms.
+[2026-06-26 23:13:30.294] Selected the bad axiom SubClassOf(FAB Transtorno_de_personalidade).
+[2026-06-26 23:13:30.297] Found 218 possible bad axioms.
+[2026-06-26 23:13:30.297] Selected the bad axiom SubClassOf(Depedência_química Cardiologica).
+[2026-06-26 23:13:30.305] Found 217 possible bad axioms.
+[2026-06-26 23:13:30.306] Selected the bad axiom SubClassOf(Perda_de_líquido Crise_de_abstinência).
+[2026-06-26 23:13:30.310] Found 216 possible bad axioms.
+[2026-06-26 23:13:30.311] Selected the bad axiom SubClassOf(intoxicação_alcoolica owl:Nothing).
+[2026-06-26 23:13:30.314] Found 215 possible bad axioms.
+[2026-06-26 23:13:30.314] Selected the bad axiom SubClassOf(Sinal_clínico Imunologica).
+[2026-06-26 23:13:30.316] Found 214 possible bad axioms.
+[2026-06-26 23:13:30.316] Selected the bad axiom SubClassOf(FAB Picada_mordida).
+[2026-06-26 23:13:30.323] Found 213 possible bad axioms.
+[2026-06-26 23:13:30.323] Selected the bad axiom SubClassOf(Dor_lombar Dor_torácica).
+[2026-06-26 23:13:30.327] Found 212 possible bad axioms.
+[2026-06-26 23:13:30.327] Selected the bad axiom SubClassOf(Transtorno_d
+...[truncated]
+FAIL: attempt=15 seed=198891 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=15 success=2/100
+----- SOS attempt=16 seed=213091 at 2026-06-26 23:13:48 -----
+--- stdout ---
+{"seed":213091,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":211,"A2":6121,"A3":292,"B1":285,"B2":2672}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=213091, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:13:49.140] Checking precondition...
+[2026-06-26 23:13:49.156] Starting the repair...
+[2026-06-26 23:13:49.163] Found 228 possible bad axioms.
+[2026-06-26 23:13:49.164] Selected the bad axiom SubClassOf(Evento_psiquiatrico Transtorno_de_conduta).
+[2026-06-26 23:13:49.168] Found 227 possible bad axioms.
+[2026-06-26 23:13:49.168] Selected the bad axiom SubClassOf(Agente_mecanico FAF).
+[2026-06-26 23:13:49.172] Found 226 possible bad axioms.
+[2026-06-26 23:13:49.173] Selected the bad axiom SubClassOf(Psiquiátrico Alergia_reações_alergicas).
+[2026-06-26 23:13:49.176] Found 225 possible bad axioms.
+[2026-06-26 23:13:49.177] Selected the bad axiom SubClassOf(Dor_torácica Dor_abdominal).
+[2026-06-26 23:13:49.184] Found 224 possible bad axioms.
+[2026-06-26 23:13:49.184] Selected the bad axiom SubClassOf(Psiquiátrico Neurológico_funcional).
+[2026-06-26 23:13:49.188] Found 223 possible bad axioms.
+[2026-06-26 23:13:49.188] Selected the bad axiom SubClassOf(Dispneia Respiratório).
+[2026-06-26 23:13:49.192] Found 222 possible bad axioms.
+[2026-06-26 23:13:49.192] Selected the bad axiom SubClassOf(Inconsciente Paresia_parestesia).
+[2026-06-26 23:13:49.195] Found 221 possible bad axioms.
+[2026-06-26 23:13:49.195] Selected the bad axiom SubClassOf(Evento_psiquiatrico Episódio_psicótico).
+[2026-06-26 23:13:49.198] Found 220 possible bad axioms.
+[2026-06-26 23:13:49.198] Selected the bad axiom SubClassOf(Dor Psiquiátrico).
+[2026-06-26 23:13:49.201] Found 219 possible bad axioms.
+[2026-06-26 23:13:49.201] Selected the bad axiom SubClassOf(intoxicação_alcoolica owl:Nothing).
+[2026-06-26 23:13:49.204] Found 218 possible bad axioms.
+[2026-06-26 23:13:49.204] Selected the bad axiom SubClassOf(Agitação Evento_psiquiatrico).
+[2026-06-26 23:13:49.213] Found 217 possible bad axioms.
+[2026-06-26 23:13:49.213] Selected the bad axiom SubClassOf(Febre Hipertensão).
+[2026-06-26 23:13:49.216] Found 216 possible bad axioms.
+[2026-06-26 23:13:49.216] Selected the bad axiom SubClassOf(Hipoglicemia Hipertensão).
+[2026-06-26 23:13:49.220] Found 215 possible bad axioms.
+[2026-06-26 23:13:49.220] Selected the bad axiom SubClassOf(Dor_torácica Dor).
+[2026-06-26 23:13:49.223] Found 214 possible bad axioms.
+[2026-06-26 23:13:49.223] Selected the bad axiom SubClassOf(Cefaleia Neurológico_funcional).
+[2026-06-26 23:13:49.230] Found 213 possible bad axioms.
+[2026-06-26 23:13:49.230] Selected the bad axiom SubClassOf(Envenenamento Causa_externa).
+[2026-06-26 23:13:49.234] Found 212 possible bad axioms.
+[2026-06-26 23:13:49.234] Selected the bad axiom SubClassOf(Mal-estar Neurológico
+...[truncated]
+FAIL: attempt=16 seed=213091 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=16 success=2/100
+----- SOS attempt=17 seed=227291 at 2026-06-26 23:13:58 -----
+--- stdout ---
+{"seed":227291,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":241,"A2":6052,"A3":565,"B1":781,"B2":4479}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=227291, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:13:59.144] Checking precondition...
+[2026-06-26 23:13:59.160] Starting the repair...
+[2026-06-26 23:13:59.167] Found 228 possible bad axioms.
+[2026-06-26 23:13:59.168] Selected the bad axiom SubClassOf(Inconsciente Desmaio).
+[2026-06-26 23:13:59.173] Found 227 possible bad axioms.
+[2026-06-26 23:13:59.173] Selected the bad axiom SubClassOf(Desmaio Síncope).
+[2026-06-26 23:13:59.177] Found 226 possible bad axioms.
+[2026-06-26 23:13:59.177] Selected the bad axiom SubClassOf(Psiquiátrico Desmaio).
+[2026-06-26 23:13:59.181] Found 225 possible bad axioms.
+[2026-06-26 23:13:59.181] Selected the bad axiom SubClassOf(Condição_patologica owl:Nothing).
+[2026-06-26 23:13:59.191] Found 224 possible bad axioms.
+[2026-06-26 23:13:59.191] Selected the bad axiom SubClassOf(Causa_externa owl:Nothing).
+[2026-06-26 23:13:59.195] Found 223 possible bad axioms.
+[2026-06-26 23:13:59.195] Selected the bad axiom SubClassOf(Picada_mordida FAB).
+[2026-06-26 23:13:59.198] Found 222 possible bad axioms.
+[2026-06-26 23:13:59.199] Selected the bad axiom SubClassOf(Trauma_por_dispositivo Agente_mecanico).
+[2026-06-26 23:13:59.202] Found 221 possible bad axioms.
+[2026-06-26 23:13:59.202] Selected the bad axiom SubClassOf(Queimadura Causa_externa).
+[2026-06-26 23:13:59.206] Found 220 possible bad axioms.
+[2026-06-26 23:13:59.206] Selected the bad axiom SubClassOf(Cefaleia Inconsciente).
+[2026-06-26 23:13:59.209] Found 219 possible bad axioms.
+[2026-06-26 23:13:59.209] Selected the bad axiom SubClassOf(Paresia_parestesia Inconsciente).
+[2026-06-26 23:13:59.212] Found 218 possible bad axioms.
+[2026-06-26 23:13:59.212] Selected the bad axiom SubClassOf(Picada_mordida owl:Nothing).
+[2026-06-26 23:13:59.220] Found 217 possible bad axioms.
+[2026-06-26 23:13:59.220] Selected the bad axiom SubClassOf(Cardiologica Neurologica).
+[2026-06-26 23:13:59.223] Found 216 possible bad axioms.
+[2026-06-26 23:13:59.223] Selected the bad axiom SubClassOf(Mal-estar Desmaio).
+[2026-06-26 23:13:59.226] Found 215 possible bad axioms.
+[2026-06-26 23:13:59.226] Selected the bad axiom SubClassOf(FAF Trauma_por_dispositivo).
+[2026-06-26 23:13:59.229] Found 214 possible bad axioms.
+[2026-06-26 23:13:59.229] Selected the bad axiom SubClassOf(Inconsciente Neurológico_funcional).
+[2026-06-26 23:13:59.236] Found 213 possible bad axioms.
+[2026-06-26 23:13:59.236] Selected the bad axiom SubClassOf(Digestivos Sinais_clinicos_gerais).
+[2026-06-26 23:13:59.239] Found 212 possible bad axioms.
+[2026-06-26 23:13:59.239] Selected the bad axiom SubClassOf(Inconsciente Cefaleia).
+[2026-06-26 23:13:59.241] Found 2
+...[truncated]
+FAIL: attempt=17 seed=227291 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=17 success=2/100
+----- SOS attempt=18 seed=241491 at 2026-06-26 23:14:11 -----
+--- stdout ---
+{"seed":241491,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":316,"A2":6012,"A3":323,"B1":277,"B2":4415}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=241491, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:14:11.697] Checking precondition...
+[2026-06-26 23:14:11.712] Starting the repair...
+[2026-06-26 23:14:11.719] Found 228 possible bad axioms.
+[2026-06-26 23:14:11.720] Selected the bad axiom SubClassOf(Causa_externa Eletrificação).
+[2026-06-26 23:14:11.725] Found 227 possible bad axioms.
+[2026-06-26 23:14:11.725] Selected the bad axiom SubClassOf(Neurológico_funcional Dor).
+[2026-06-26 23:14:11.730] Found 226 possible bad axioms.
+[2026-06-26 23:14:11.730] Selected the bad axiom SubClassOf(Afogamento owl:Nothing).
+[2026-06-26 23:14:11.734] Found 225 possible bad axioms.
+[2026-06-26 23:14:11.734] Selected the bad axiom SubClassOf(Sangramento Perda_de_líquido).
+[2026-06-26 23:14:11.741] Found 224 possible bad axioms.
+[2026-06-26 23:14:11.742] Selected the bad axiom SubClassOf(FAB Transtorno_de_personalidade).
+[2026-06-26 23:14:11.745] Found 223 possible bad axioms.
+[2026-06-26 23:14:11.746] Selected the bad axiom SubClassOf(Psiquiátrico Dor_torácica).
+[2026-06-26 23:14:11.750] Found 222 possible bad axioms.
+[2026-06-26 23:14:11.750] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais Neurológico_clinico).
+[2026-06-26 23:14:11.753] Found 221 possible bad axioms.
+[2026-06-26 23:14:11.753] Selected the bad axiom SubClassOf(Sinal_clínico Evento_clínico).
+[2026-06-26 23:14:11.757] Found 220 possible bad axioms.
+[2026-06-26 23:14:11.757] Selected the bad axiom SubClassOf(Paresia_parestesia Cefaleia).
+[2026-06-26 23:14:11.759] Found 219 possible bad axioms.
+[2026-06-26 23:14:11.759] Selected the bad axiom SubClassOf(Cardiologica Alergia_reações_alergicas).
+[2026-06-26 23:14:11.762] Found 218 possible bad axioms.
+[2026-06-26 23:14:11.763] Selected the bad axiom SubClassOf(FAB Trauma_por_dispositivo).
+[2026-06-26 23:14:11.771] Found 217 possible bad axioms.
+[2026-06-26 23:14:11.771] Selected the bad axiom SubClassOf(Evento_clínico Imunologica).
+[2026-06-26 23:14:11.774] Found 216 possible bad axioms.
+[2026-06-26 23:14:11.774] Selected the bad axiom SubClassOf(Sinal_funcional Evento_clínico).
+[2026-06-26 23:14:11.777] Found 215 possible bad axioms.
+[2026-06-26 23:14:11.777] Selected the bad axiom SubClassOf(Condição_patologica Sinal_funcional).
+[2026-06-26 23:14:11.780] Found 214 possible bad axioms.
+[2026-06-26 23:14:11.780] Selected the bad axiom SubClassOf(Dor Alergia_reações_alergicas).
+[2026-06-26 23:14:11.787] Found 213 possible bad axioms.
+[2026-06-26 23:14:11.787] Selected the bad axiom SubClassOf(Sinal_funcional Desmaio).
+[2026-06-26 23:14:11.791] Found 212 possible bad axioms.
+[2026-06-26 23:14:11.791] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=18 seed=241491 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=18 success=2/100
+----- SOS attempt=19 seed=255691 at 2026-06-26 23:14:23 -----
+--- stdout ---
+{"seed":255691,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":199,"A2":6038,"A3":1055,"B1":264,"B2":2922,"B3":2908,"B4":92,"B5":3960,"B6":694}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=255691, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:14:23.470] Checking precondition...
+[2026-06-26 23:14:23.487] Starting the repair...
+[2026-06-26 23:14:23.493] Found 228 possible bad axioms.
+[2026-06-26 23:14:23.495] Selected the bad axiom SubClassOf(Evento_obstétrico Trabalho_de_parto).
+[2026-06-26 23:14:23.499] Found 227 possible bad axioms.
+[2026-06-26 23:14:23.499] Selected the bad axiom SubClassOf(Cardiologica Neurologica).
+[2026-06-26 23:14:23.503] Found 226 possible bad axioms.
+[2026-06-26 23:14:23.503] Selected the bad axiom SubClassOf(Depedência_química Crise_de_abstinência).
+[2026-06-26 23:14:23.507] Found 225 possible bad axioms.
+[2026-06-26 23:14:23.507] Selected the bad axiom SubClassOf(Neurologica Transtorno_de_personalidade).
+[2026-06-26 23:14:23.515] Found 224 possible bad axioms.
+[2026-06-26 23:14:23.516] Selected the bad axiom SubClassOf(Causa_externa owl:Nothing).
+[2026-06-26 23:14:23.519] Found 223 possible bad axioms.
+[2026-06-26 23:14:23.519] Selected the bad axiom SubClassOf(Perda_de_líquido Crise_de_abstinência).
+[2026-06-26 23:14:23.523] Found 222 possible bad axioms.
+[2026-06-26 23:14:23.523] Selected the bad axiom SubClassOf(Sinal_funcional Alergia_reações_alergicas).
+[2026-06-26 23:14:23.527] Found 221 possible bad axioms.
+[2026-06-26 23:14:23.527] Selected the bad axiom SubClassOf(Causa_externa Eletrificação).
+[2026-06-26 23:14:23.530] Found 220 possible bad axioms.
+[2026-06-26 23:14:23.531] Selected the bad axiom SubClassOf(Neurológico_funcional Mal-estar).
+[2026-06-26 23:14:23.533] Found 219 possible bad axioms.
+[2026-06-26 23:14:23.534] Selected the bad axiom SubClassOf(Paresia_parestesia owl:Nothing).
+[2026-06-26 23:14:23.536] Found 218 possible bad axioms.
+[2026-06-26 23:14:23.537] Selected the bad axiom SubClassOf(Condição_patologica Cardiologica).
+[2026-06-26 23:14:23.545] Found 217 possible bad axioms.
+[2026-06-26 23:14:23.545] Selected the bad axiom SubClassOf(Depedência_química Parada_cardio-respistória).
+[2026-06-26 23:14:23.548] Found 216 possible bad axioms.
+[2026-06-26 23:14:23.548] Selected the bad axiom SubClassOf(Neurologica Imunologica).
+[2026-06-26 23:14:23.551] Found 215 possible bad axioms.
+[2026-06-26 23:14:23.551] Selected the bad axiom SubClassOf(Condição_patologica Alcoolismo).
+[2026-06-26 23:14:23.554] Found 214 possible bad axioms.
+[2026-06-26 23:14:23.554] Selected the bad axiom SubClassOf(Neurologica Cardiologica).
+[2026-06-26 23:14:23.561] Found 213 possible bad axioms.
+[2026-06-26 23:14:23.562] Selected the bad axiom SubClassOf(Neurologica Alergia_reações_alergicas).
+[2026-06-26 23:14:23.565] Found 212 possible bad axioms.
+[2
+...[truncated]
+FAIL: attempt=19 seed=255691 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=19 success=2/100
+----- SOS attempt=20 seed=269891 at 2026-06-26 23:14:41 -----
+--- stdout ---
+{"seed":269891,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":196,"A2":5999,"A3":316,"B1":828,"B2":2560}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=269891, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:14:42.061] Checking precondition...
+[2026-06-26 23:14:42.077] Starting the repair...
+[2026-06-26 23:14:42.083] Found 228 possible bad axioms.
+[2026-06-26 23:14:42.084] Selected the bad axiom SubClassOf(Desmaio Êmese_vômitos).
+[2026-06-26 23:14:42.089] Found 227 possible bad axioms.
+[2026-06-26 23:14:42.089] Selected the bad axiom SubClassOf(Afogamento Causa_externa).
+[2026-06-26 23:14:42.093] Found 226 possible bad axioms.
+[2026-06-26 23:14:42.093] Selected the bad axiom SubClassOf(Espancamento_violência Agente_mecanico).
+[2026-06-26 23:14:42.097] Found 225 possible bad axioms.
+[2026-06-26 23:14:42.098] Selected the bad axiom SubClassOf(Neurologica Alergia_reações_alergicas).
+[2026-06-26 23:14:42.105] Found 224 possible bad axioms.
+[2026-06-26 23:14:42.105] Selected the bad axiom SubClassOf(Condição_patologica Sinais_clinicos_gerais).
+[2026-06-26 23:14:42.109] Found 223 possible bad axioms.
+[2026-06-26 23:14:42.109] Selected the bad axiom SubClassOf(Agitação owl:Nothing).
+[2026-06-26 23:14:42.113] Found 222 possible bad axioms.
+[2026-06-26 23:14:42.113] Selected the bad axiom SubClassOf(Dor_torácica Dor_abdominal).
+[2026-06-26 23:14:42.117] Found 221 possible bad axioms.
+[2026-06-26 23:14:42.117] Selected the bad axiom SubClassOf(Intoxicação_medicamentosa Intoxicação).
+[2026-06-26 23:14:42.119] Found 220 possible bad axioms.
+[2026-06-26 23:14:42.120] Selected the bad axiom SubClassOf(Perda_de_líquido Desenho_anormal).
+[2026-06-26 23:14:42.122] Found 219 possible bad axioms.
+[2026-06-26 23:14:42.123] Selected the bad axiom SubClassOf(Causa_externa Afogamento).
+[2026-06-26 23:14:42.126] Found 218 possible bad axioms.
+[2026-06-26 23:14:42.126] Selected the bad axiom SubClassOf(Agente_mecanico owl:Nothing).
+[2026-06-26 23:14:42.134] Found 217 possible bad axioms.
+[2026-06-26 23:14:42.134] Selected the bad axiom SubClassOf(Intoxicação Convulsão).
+[2026-06-26 23:14:42.137] Found 216 possible bad axioms.
+[2026-06-26 23:14:42.138] Selected the bad axiom SubClassOf(Psiquiátrico Desmaio).
+[2026-06-26 23:14:42.141] Found 215 possible bad axioms.
+[2026-06-26 23:14:42.141] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais Hipoglicemia).
+[2026-06-26 23:14:42.144] Found 214 possible bad axioms.
+[2026-06-26 23:14:42.144] Selected the bad axiom SubClassOf(Afogamento Intoxicação).
+[2026-06-26 23:14:42.151] Found 213 possible bad axioms.
+[2026-06-26 23:14:42.151] Selected the bad axiom SubClassOf(Cefaleia owl:Nothing).
+[2026-06-26 23:14:42.155] Found 212 possible bad axioms.
+[2026-06-26 23:14:42.155] Selected the bad axiom SubClassOf(intoxicação_al
+...[truncated]
+FAIL: attempt=20 seed=269891 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=20 success=2/100
+----- SOS attempt=21 seed=284091 at 2026-06-26 23:14:52 -----
+--- stdout ---
+{"seed":284091,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B8","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":318,"A2":5983,"A3":317,"B1":301,"B2":2994,"B3":1710,"B4":91,"B5":4185,"B6":1514,"B7":197,"B8":2298}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=284091, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:14:52.385] Checking precondition...
+[2026-06-26 23:14:52.401] Starting the repair...
+[2026-06-26 23:14:52.408] Found 228 possible bad axioms.
+[2026-06-26 23:14:52.409] Selected the bad axiom SubClassOf(Eletrificação Queimadura).
+[2026-06-26 23:14:52.414] Found 227 possible bad axioms.
+[2026-06-26 23:14:52.414] Selected the bad axiom SubClassOf(intoxicação_alcoolica Intoxicação).
+[2026-06-26 23:14:52.418] Found 226 possible bad axioms.
+[2026-06-26 23:14:52.419] Selected the bad axiom SubClassOf(Alcoolismo Transtorno_de_conduta).
+[2026-06-26 23:14:52.423] Found 225 possible bad axioms.
+[2026-06-26 23:14:52.423] Selected the bad axiom SubClassOf(FAB Trauma_por_dispositivo).
+[2026-06-26 23:14:52.430] Found 224 possible bad axioms.
+[2026-06-26 23:14:52.430] Selected the bad axiom SubClassOf(Dor_lombar Dor).
+[2026-06-26 23:14:52.434] Found 223 possible bad axioms.
+[2026-06-26 23:14:52.434] Selected the bad axiom SubClassOf(Picada_mordida owl:Nothing).
+[2026-06-26 23:14:52.438] Found 222 possible bad axioms.
+[2026-06-26 23:14:52.438] Selected the bad axiom SubClassOf(Causa_externa Picada_mordida).
+[2026-06-26 23:14:52.442] Found 221 possible bad axioms.
+[2026-06-26 23:14:52.442] Selected the bad axiom SubClassOf(FAF FAB).
+[2026-06-26 23:14:52.445] Found 220 possible bad axioms.
+[2026-06-26 23:14:52.445] Selected the bad axiom SubClassOf(Cefaleia Neurológico_funcional).
+[2026-06-26 23:14:52.448] Found 219 possible bad axioms.
+[2026-06-26 23:14:52.448] Selected the bad axiom SubClassOf(Condição_patologica Cardiologica).
+[2026-06-26 23:14:52.451] Found 218 possible bad axioms.
+[2026-06-26 23:14:52.451] Selected the bad axiom SubClassOf(Hipertensão Sinais_clinicos_gerais).
+[2026-06-26 23:14:52.459] Found 217 possible bad axioms.
+[2026-06-26 23:14:52.460] Selected the bad axiom SubClassOf(Neurológico_funcional Dor).
+[2026-06-26 23:14:52.463] Found 216 possible bad axioms.
+[2026-06-26 23:14:52.463] Selected the bad axiom SubClassOf(Depedência_química Cardiologica).
+[2026-06-26 23:14:52.466] Found 215 possible bad axioms.
+[2026-06-26 23:14:52.467] Selected the bad axiom SubClassOf(FAB Picada_mordida).
+[2026-06-26 23:14:52.469] Found 214 possible bad axioms.
+[2026-06-26 23:14:52.470] Selected the bad axiom SubClassOf(Dor_torácica Dor).
+[2026-06-26 23:14:52.478] Found 213 possible bad axioms.
+[2026-06-26 23:14:52.478] Selected the bad axiom SubClassOf(Espancamento_violência FAB).
+[2026-06-26 23:14:52.481] Found 212 possible bad axioms.
+[2026-06-26 23:14:52.482] Selected the bad axiom SubClassOf(Mal-estar Síncope).
+[2026-06-26 23:14:52.484] Found 211 po
+...[truncated]
+FAIL: attempt=21 seed=284091 status=memory_limit_exceeded stage=B8 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=21 success=2/100
+----- SOS attempt=22 seed=298291 at 2026-06-26 23:15:12 -----
+--- stdout ---
+{"seed":298291,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":218,"A2":6097,"A3":319,"B1":299,"B2":2537}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=298291, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:15:12.779] Checking precondition...
+[2026-06-26 23:15:12.796] Starting the repair...
+[2026-06-26 23:15:12.802] Found 228 possible bad axioms.
+[2026-06-26 23:15:12.804] Selected the bad axiom SubClassOf(Dor_lombar Dor_torácica).
+[2026-06-26 23:15:12.808] Found 227 possible bad axioms.
+[2026-06-26 23:15:12.808] Selected the bad axiom SubClassOf(Agente_mecanico Picada_mordida).
+[2026-06-26 23:15:12.812] Found 226 possible bad axioms.
+[2026-06-26 23:15:12.812] Selected the bad axiom SubClassOf(Hipoglicemia Hipertensão).
+[2026-06-26 23:15:12.817] Found 225 possible bad axioms.
+[2026-06-26 23:15:12.817] Selected the bad axiom SubClassOf(Inconsciente Neurológico_funcional).
+[2026-06-26 23:15:12.826] Found 224 possible bad axioms.
+[2026-06-26 23:15:12.826] Selected the bad axiom SubClassOf(Neurológico_funcional Sinal_funcional).
+[2026-06-26 23:15:12.829] Found 223 possible bad axioms.
+[2026-06-26 23:15:12.829] Selected the bad axiom SubClassOf(Sinal_funcional Cardiologica).
+[2026-06-26 23:15:12.833] Found 222 possible bad axioms.
+[2026-06-26 23:15:12.834] Selected the bad axiom SubClassOf(Sinal_clínico Evento_clínico).
+[2026-06-26 23:15:12.837] Found 221 possible bad axioms.
+[2026-06-26 23:15:12.837] Selected the bad axiom SubClassOf(Convulsão Neurológico_clinico).
+[2026-06-26 23:15:12.841] Found 220 possible bad axioms.
+[2026-06-26 23:15:12.841] Selected the bad axiom SubClassOf(Neurológico_funcional Cefaleia).
+[2026-06-26 23:15:12.844] Found 219 possible bad axioms.
+[2026-06-26 23:15:12.844] Selected the bad axiom SubClassOf(Transtorno_de_conduta Evento_psiquiatrico).
+[2026-06-26 23:15:12.847] Found 218 possible bad axioms.
+[2026-06-26 23:15:12.848] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais owl:Nothing).
+[2026-06-26 23:15:12.856] Found 217 possible bad axioms.
+[2026-06-26 23:15:12.856] Selected the bad axiom SubClassOf(Perda_de_líquido Sangramento).
+[2026-06-26 23:15:12.860] Found 216 possible bad axioms.
+[2026-06-26 23:15:12.860] Selected the bad axiom SubClassOf(Mal-estar Desmaio).
+[2026-06-26 23:15:12.862] Found 215 possible bad axioms.
+[2026-06-26 23:15:12.863] Selected the bad axiom SubClassOf(Condição_patologica Evento_clínico).
+[2026-06-26 23:15:12.865] Found 214 possible bad axioms.
+[2026-06-26 23:15:12.865] Selected the bad axiom SubClassOf(Inconsciente Paresia_parestesia).
+[2026-06-26 23:15:12.872] Found 213 possible bad axioms.
+[2026-06-26 23:15:12.872] Selected the bad axiom SubClassOf(Afogamento Eletrificação).
+[2026-06-26 23:15:12.876] Found 212 possible bad axioms.
+[2026-06-26 23:15:12.876] Selected the bad axiom
+...[truncated]
+FAIL: attempt=22 seed=298291 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=22 success=2/100
+----- SOS attempt=23 seed=312491 at 2026-06-26 23:15:22 -----
+--- stdout ---
+{"seed":312491,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":129,"A2":6114,"A3":310,"B1":272,"B2":4550}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=312491, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:15:22.674] Checking precondition...
+[2026-06-26 23:15:22.691] Starting the repair...
+[2026-06-26 23:15:22.698] Found 228 possible bad axioms.
+[2026-06-26 23:15:22.699] Selected the bad axiom SubClassOf(Evento_psiquiatrico Agitação).
+[2026-06-26 23:15:22.704] Found 227 possible bad axioms.
+[2026-06-26 23:15:22.704] Selected the bad axiom SubClassOf(Condição_patologica Sinais_clinicos_gerais).
+[2026-06-26 23:15:22.709] Found 226 possible bad axioms.
+[2026-06-26 23:15:22.709] Selected the bad axiom SubClassOf(Condição_patologica Dor).
+[2026-06-26 23:15:22.713] Found 225 possible bad axioms.
+[2026-06-26 23:15:22.713] Selected the bad axiom SubClassOf(Transtorno_de_conduta Episódio_psicótico).
+[2026-06-26 23:15:22.721] Found 224 possible bad axioms.
+[2026-06-26 23:15:22.721] Selected the bad axiom SubClassOf(Sinal_clínico Evento_clínico).
+[2026-06-26 23:15:22.725] Found 223 possible bad axioms.
+[2026-06-26 23:15:22.725] Selected the bad axiom SubClassOf(Hipoglicemia Hipertensão).
+[2026-06-26 23:15:22.729] Found 222 possible bad axioms.
+[2026-06-26 23:15:22.729] Selected the bad axiom SubClassOf(Sangramento Desenho_anormal).
+[2026-06-26 23:15:22.733] Found 221 possible bad axioms.
+[2026-06-26 23:15:22.733] Selected the bad axiom SubClassOf(Dor_abdominal Depedência_química).
+[2026-06-26 23:15:22.736] Found 220 possible bad axioms.
+[2026-06-26 23:15:22.736] Selected the bad axiom SubClassOf(Intoxicação_exogena intoxicação_alcoolica).
+[2026-06-26 23:15:22.739] Found 219 possible bad axioms.
+[2026-06-26 23:15:22.740] Selected the bad axiom SubClassOf(Causa_externa Eletrificação).
+[2026-06-26 23:15:22.743] Found 218 possible bad axioms.
+[2026-06-26 23:15:22.743] Selected the bad axiom SubClassOf(Transtorno_de_personalidade Cardiologica).
+[2026-06-26 23:15:22.752] Found 217 possible bad axioms.
+[2026-06-26 23:15:22.752] Selected the bad axiom SubClassOf(Digestivos Sinal_clínico).
+[2026-06-26 23:15:22.755] Found 216 possible bad axioms.
+[2026-06-26 23:15:22.755] Selected the bad axiom SubClassOf(Desmaio Síncope).
+[2026-06-26 23:15:22.758] Found 215 possible bad axioms.
+[2026-06-26 23:15:22.758] Selected the bad axiom SubClassOf(Afogamento Intoxicação).
+[2026-06-26 23:15:22.760] Found 214 possible bad axioms.
+[2026-06-26 23:15:22.761] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais owl:Nothing).
+[2026-06-26 23:15:22.768] Found 213 possible bad axioms.
+[2026-06-26 23:15:22.768] Selected the bad axiom SubClassOf(Espancamento_violência Agente_mecanico).
+[2026-06-26 23:15:22.771] Found 212 possible bad axioms.
+[2026-06-26 23:15:22.772] Selected 
+...[truncated]
+FAIL: attempt=23 seed=312491 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=23 success=2/100
+----- SOS attempt=24 seed=326691 at 2026-06-26 23:15:34 -----
+--- stdout ---
+{"seed":326691,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta","iic_values":{},"repair_runtimes_ms":{"A1":194,"A2":6061,"A3":291,"B1":304,"B2":2903,"B3":1681}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOS.owl, seed=326691, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 23:15:34.497] Checking precondition...
+[2026-06-26 23:15:34.514] Starting the repair...
+[2026-06-26 23:15:34.521] Found 228 possible bad axioms.
+[2026-06-26 23:15:34.522] Selected the bad axiom SubClassOf(Sinais_clinicos_gerais Neurológico_clinico).
+[2026-06-26 23:15:34.526] Found 227 possible bad axioms.
+[2026-06-26 23:15:34.526] Selected the bad axiom SubClassOf(Psiquiátrico Dor).
+[2026-06-26 23:15:34.530] Found 226 possible bad axioms.
+[2026-06-26 23:15:34.531] Selected the bad axiom SubClassOf(Imunologica Condição_patologica).
+[2026-06-26 23:15:34.535] Found 225 possible bad axioms.
+[2026-06-26 23:15:34.535] Selected the bad axiom SubClassOf(Êmese_vômitos Digestivos).
+[2026-06-26 23:15:34.543] Found 224 possible bad axioms.
+[2026-06-26 23:15:34.543] Selected the bad axiom SubClassOf(FAF FAB).
+[2026-06-26 23:15:34.547] Found 223 possible bad axioms.
+[2026-06-26 23:15:34.547] Selected the bad axiom SubClassOf(Condição_patologica Transtorno_de_personalidade).
+[2026-06-26 23:15:34.550] Found 222 possible bad axioms.
+[2026-06-26 23:15:34.550] Selected the bad axiom SubClassOf(Agente_mecanico Afogamento).
+[2026-06-26 23:15:34.554] Found 221 possible bad axioms.
+[2026-06-26 23:15:34.554] Selected the bad axiom SubClassOf(Sinal_funcional Sinal_clínico).
+[2026-06-26 23:15:34.558] Found 220 possible bad axioms.
+[2026-06-26 23:15:34.559] Selected the bad axiom SubClassOf(Hipoglicemia Hipertensão).
+[2026-06-26 23:15:34.561] Found 219 possible bad axioms.
+[2026-06-26 23:15:34.561] Selected the bad axiom SubClassOf(Desmaio Neurológico_funcional).
+[2026-06-26 23:15:34.564] Found 218 possible bad axioms.
+[2026-06-26 23:15:34.564] Selected the bad axiom SubClassOf(Evento_psiquiatrico Episódio_psicótico).
+[2026-06-26 23:15:34.572] Found 217 possible bad axioms.
+[2026-06-26 23:15:34.573] Selected the bad axiom SubClassOf(Neurológico_funcional Sinal_funcional).
+[2026-06-26 23:15:34.576] Found 216 possible bad axioms.
+[2026-06-26 23:15:34.576] Selected the bad axiom SubClassOf(Intoxicação_por_outras_drogas Depedência_química).
+[2026-06-26 23:15:34.578] Found 215 possible bad axioms.
+[2026-06-26 23:15:34.579] Selected the bad axiom SubClassOf(Inconsciente Neurológico_funcional).
+[2026-06-26 23:15:34.581] Found 214 possible bad axioms.
+[2026-06-26 23:15:34.582] Selected the bad axiom SubClassOf(Condição_patologica Intoxicação_por_outras_drogas).
+[2026-06-26 23:15:34.589] Found 213 possible bad axioms.
+[2026-06-26 23:15:34.589] Selected the bad axiom SubClassOf(Espancamento_violência Agente_mecanico).
+[2026-06-26 23:15:34.593] Found 212 possible bad axioms.
+[
+...[truncated]
+FAIL: attempt=24 seed=326691 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+progress: ontology=SOS attempt=24 success=2/100
+=== ABORTED SOS after 10 consecutive failures at 2026-06-26 23:15:46 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for SOS - 2 successes, 22 failures, 24 attempts ===
+Failed attempts:
+  attempt=1 seed=91 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=2 seed=14291 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=3 seed=28491 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=4 seed=42691 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=5 seed=56891 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=6 seed=71091 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=7 seed=85291 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=8 seed=99491 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=9 seed=113691 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=11 seed=142091 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=12 seed=156291 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=13 seed=170491 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=15 seed=198891 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=16 seed=213091 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=17 seed=227291 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=18 seed=241491 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=19 seed=255691 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=20 seed=269891 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=21 seed=284091 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=22 seed=298291 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=23 seed=312491 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+  attempt=24 seed=326691 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Transtorno_de_conduta
+Timing summary:
+  success: count=2 total_seconds=44.071365 avg_seconds=22.035682
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0833
+  wall_clock_seconds_total_run=360698.251834

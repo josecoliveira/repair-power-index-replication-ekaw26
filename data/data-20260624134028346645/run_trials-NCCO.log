@@ -1,0 +1,619 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-NCCO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-NCCO.csv
+
+=== Starting sequential trials for NCCO at 2026-06-28 08:55:48 ===
+----- NCCO attempt=1 seed=142 at 2026-06-28 08:55:48 -----
+--- stdout ---
+{"seed":142,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.9998321194276564,"B1_vs_A2":0.9989925474342249,"B1_vs_A3":0.9974872984316324,"B2_vs_A1":1.0,"B2_vs_A2":0.8194238194238195,"B2_vs_A3":0.004864947043024375,"B3_vs_A1":0.9989123679303915,"B3_vs_A2":0.9935286161853075,"B3_vs_A3":0.9745145631067961,"B4_vs_A1":0.9989123679303915,"B4_vs_A2":0.9935286161853075,"B4_vs_A3":0.9745145631067961,"B5_vs_A1":0.9989123679303915,"B5_vs_A2":0.9935286161853075,"B5_vs_A3":0.9745145631067961,"B6_vs_A1":0.9989123679303915,"B6_vs_A2":0.9935286161853075,"B6_vs_A3":0.9745145631067961,"B7_vs_A1":0.9989123679303915,"B7_vs_A2":0.9935286161853075,"B7_vs_A3":0.9745145631067961,"B8_vs_A1":0.9989123679303915,"B8_vs_A2":0.9935286161853075,"B8_vs_A3":0.9745145631067961,"B9_vs_A1":0.9989123679303915,"B9_vs_A2":0.9935286161853075,"B9_vs_A3":0.9745145631067961},"repair_runtimes_ms":{"A1":202,"A2":148091,"A3":5608,"B1":1148,"B2":5852,"B3":3439,"B4":277,"B5":4986,"B6":743,"B7":482,"B8":1231,"B9":797}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=142, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:55:48.712] Checking precondition...
+[2026-06-28 08:55:48.739] Starting the repair...
+[2026-06-28 08:55:48.752] Found 655 possible bad axioms.
+[2026-06-28 08:55:48.754] Selected the bad axiom SubClassOf(Confuse cognition).
+[2026-06-28 08:55:48.763] Found 654 possible bad axioms.
+[2026-06-28 08:55:48.763] Selected the bad axiom SubClassOf(Blister Pressure_Ulcer).
+[2026-06-28 08:55:48.777] Found 653 possible bad axioms.
+[2026-06-28 08:55:48.777] Selected the bad axiom SubClassOf(Grandson grandchild).
+[2026-06-28 08:55:48.784] Found 652 possible bad axioms.
+[2026-06-28 08:55:48.784] Selected the bad axiom SubClassOf(Worker People).
+[2026-06-28 08:55:48.790] Found 651 possible bad axioms.
+[2026-06-28 08:55:48.790] Selected the bad axiom SubClassOf(Prescription Medication).
+[2026-06-28 08:55:48.797] Found 650 possible bad axioms.
+[2026-06-28 08:55:48.797] Selected the bad axiom SubClassOf(Symptom Problem_Assessment).
+[2026-06-28 08:55:48.804] Found 649 possible bad axioms.
+[2026-06-28 08:55:48.804] Selected the bad axiom SubClassOf(Dressing_Change Problem_Intervention).
+[2026-06-28 08:55:48.811] Found 648 possible bad axioms.
+[2026-06-28 08:55:48.811] Selected the bad axiom SubClassOf(Grooming Bathe).
+[2026-06-28 08:55:48.818] Found 647 possible bad axioms.
+[2026-06-28 08:55:48.818] Selected the bad axiom SubClassOf(Medicaid Finances).
+[2026-06-28 08:55:48.824] Found 646 possible bad axioms.
+[2026-06-28 08:55:48.824] Selected the bad axiom SubClassOf(Ask Meet).
+[2026-06-28 08:55:48.834] Found 645 possible bad axioms.
+[2026-06-28 08:55:48.834] Selected the bad axiom SubClassOf(Adjust Option).
+[2026-06-28 08:55:48.845] Found 644 possible bad axioms.
+[2026-06-28 08:55:48.846] Selected the bad axiom SubClassOf(Coagulation Potassium_Level).
+[2026-06-28 08:55:48.850] Found 643 possible bad axioms.
+[2026-06-28 08:55:48.851] Selected the bad axiom SubClassOf(Worker Care_Coordinator).
+[2026-06-28 08:55:48.856] Found 642 possible bad axioms.
+[2026-06-28 08:55:48.856] Selected the bad axiom SubClassOf(Aide People).
+[2026-06-28 08:55:48.861] Found 641 possible bad axioms.
+[2026-06-28 08:55:48.861] Selected the bad axiom SubClassOf(Tube_Feeding Problem_Intervention).
+[2026-06-28 08:55:48.866] Found 640 possible bad axioms.
+[2026-06-28 08:55:48.866] Selected the bad axiom SubClassOf(Team Staff).
+[2026-06-28 08:55:48.871] Found 639 possible bad axioms.
+[2026-06-28 08:55:48.872] Selected the bad axiom SubClassOf(Gauze Supplies).
+[2026-06-28 08:55:48.877] Found 638 possible bad axioms.
+[2026-06-28 08:55:48.877] Selected the bad axiom SubClassOf(Family People).
+
+...[truncated]
+SUCCESS: attempt=1 seed=142 success_count=1/100
+progress: ontology=NCCO attempt=1 success=1/100
+----- NCCO attempt=2 seed=14342 at 2026-06-28 08:58:54 -----
+--- stdout ---
+{"seed":14342,"run_id":"20260624134028346645","trial_status":"success","error_type":null,"failure_stage":null,"error_message":null,"iic_values":{"B1_vs_A1":0.7979235457427759,"B1_vs_A2":0.007561339437271745,"B1_vs_A3":0.004976549353764634,"B2_vs_A1":1.0,"B2_vs_A2":0.5,"B2_vs_A3":0.9876244106862232,"B3_vs_A1":0.8235553146805772,"B3_vs_A2":0.0011324824734855294,"B3_vs_A3":0.08833322661202536,"B4_vs_A1":1.0,"B4_vs_A2":0.5,"B4_vs_A3":0.9876244106862232,"B5_vs_A1":1.0,"B5_vs_A2":0.5,"B5_vs_A3":0.9876244106862232,"B6_vs_A1":1.0,"B6_vs_A2":0.5,"B6_vs_A3":0.9876244106862232,"B7_vs_A1":1.0,"B7_vs_A2":0.5,"B7_vs_A3":0.9876244106862232,"B8_vs_A1":1.0,"B8_vs_A2":0.5,"B8_vs_A3":0.9876244106862232,"B9_vs_A1":1.0,"B9_vs_A2":0.5,"B9_vs_A3":0.9876244106862232},"repair_runtimes_ms":{"A1":838,"A2":148547,"A3":1962,"B1":1775,"B2":2123,"B3":3476,"B4":294,"B5":923,"B6":2480,"B7":500,"B8":1191,"B9":2974}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=14342, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:58:54.495] Checking precondition...
+[2026-06-28 08:58:54.522] Starting the repair...
+[2026-06-28 08:58:54.535] Found 655 possible bad axioms.
+[2026-06-28 08:58:54.537] Selected the bad axiom SubClassOf(Pharmacy Places).
+[2026-06-28 08:58:54.546] Found 654 possible bad axioms.
+[2026-06-28 08:58:54.546] Selected the bad axiom SubClassOf(Social_Work skilled_services).
+[2026-06-28 08:58:54.559] Found 653 possible bad axioms.
+[2026-06-28 08:58:54.560] Selected the bad axiom SubClassOf(Function Weight_Loss).
+[2026-06-28 08:58:54.567] Found 652 possible bad axioms.
+[2026-06-28 08:58:54.567] Selected the bad axiom SubClassOf(Nail Foot).
+[2026-06-28 08:58:54.574] Found 651 possible bad axioms.
+[2026-06-28 08:58:54.574] Selected the bad axiom SubClassOf(Incontinence Elimination).
+[2026-06-28 08:58:54.580] Found 650 possible bad axioms.
+[2026-06-28 08:58:54.580] Selected the bad axiom SubClassOf(Sample collect).
+[2026-06-28 08:58:54.587] Found 649 possible bad axioms.
+[2026-06-28 08:58:54.587] Selected the bad axiom SubClassOf(Physical_Ability Fracture).
+[2026-06-28 08:58:54.593] Found 648 possible bad axioms.
+[2026-06-28 08:58:54.593] Selected the bad axiom SubClassOf(Instruct Coordination_Activities).
+[2026-06-28 08:58:54.599] Found 647 possible bad axioms.
+[2026-06-28 08:58:54.600] Selected the bad axiom SubClassOf(Foot Physical_Care).
+[2026-06-28 08:58:54.606] Found 646 possible bad axioms.
+[2026-06-28 08:58:54.606] Selected the bad axiom SubClassOf(Laboratory_Tests Self_Care_Monitoring).
+[2026-06-28 08:58:54.616] Found 645 possible bad axioms.
+[2026-06-28 08:58:54.616] Selected the bad axiom SubClassOf(Duoderm Dressing_Change).
+[2026-06-28 08:58:54.628] Found 644 possible bad axioms.
+[2026-06-28 08:58:54.628] Selected the bad axiom SubClassOf(Grandson grandchild).
+[2026-06-28 08:58:54.634] Found 643 possible bad axioms.
+[2026-06-28 08:58:54.634] Selected the bad axiom SubClassOf(Supervisor Pharmacist).
+[2026-06-28 08:58:54.640] Found 642 possible bad axioms.
+[2026-06-28 08:58:54.640] Selected the bad axiom SubClassOf(Medicare Finances).
+[2026-06-28 08:58:54.645] Found 641 possible bad axioms.
+[2026-06-28 08:58:54.645] Selected the bad axiom SubClassOf(Problem_Evaluation Purpose).
+[2026-06-28 08:58:54.650] Found 640 possible bad axioms.
+[2026-06-28 08:58:54.651] Selected the bad axiom SubClassOf(Fever Diabetes).
+[2026-06-28 08:58:54.655] Found 639 possible bad axioms.
+[2026-06-28 08:58:54.655] Selected the bad axiom SubClassOf(Admit Manage).
+[2026-06-28 08:58:54.660] Found 638 possible bad axioms.
+[2026-06-28 08:58:54.660] Selected the bad axi
+...[truncated]
+SUCCESS: attempt=2 seed=14342 success_count=2/100
+progress: ontology=NCCO attempt=2 success=2/100
+----- NCCO attempt=3 seed=28542 at 2026-06-28 09:01:52 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=28542, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:01:53.312] Checking precondition...
+[2026-06-28 09:01:53.339] Starting the repair...
+[2026-06-28 09:01:53.351] Found 655 possible bad axioms.
+[2026-06-28 09:01:53.353] Selected the bad axiom SubClassOf(Nausea Ambulance).
+[2026-06-28 09:01:53.363] Found 654 possible bad axioms.
+[2026-06-28 09:01:53.363] Selected the bad axiom SubClassOf(Patch Medication).
+[2026-06-28 09:01:53.375] Found 653 possible bad axioms.
+[2026-06-28 09:01:53.375] Selected the bad axiom SubClassOf(Funding Medicare).
+[2026-06-28 09:01:53.383] Found 652 possible bad axioms.
+[2026-06-28 09:01:53.383] Selected the bad axiom SubClassOf(Manage Assist).
+[2026-06-28 09:01:53.390] Found 651 possible bad axioms.
+[2026-06-28 09:01:53.391] Selected the bad axiom SubClassOf(Blood_Pressure_Machine Urine_Incontinence).
+[2026-06-28 09:01:53.397] Found 650 possible bad axioms.
+[2026-06-28 09:01:53.397] Selected the bad axiom SubClassOf(Weakness Physical_Ability).
+[2026-06-28 09:01:53.403] Found 649 possible bad axioms.
+[2026-06-28 09:01:53.403] Selected the bad axiom SubClassOf(Assign Manage).
+[2026-06-28 09:01:53.409] Found 648 possible bad axioms.
+[2026-06-28 09:01:53.410] Selected the bad axiom SubClassOf(Elimination Physical_problems).
+[2026-06-28 09:01:53.416] Found 647 possible bad axioms.
+[2026-06-28 09:01:53.416] Selected the bad axiom SubClassOf(Note Documentation).
+[2026-06-28 09:01:53.422] Found 646 possible bad axioms.
+[2026-06-28 09:01:53.422] Selected the bad axiom SubClassOf(Client People).
+[2026-06-28 09:01:53.431] Found 645 possible bad axioms.
+[2026-06-28 09:01:53.432] Selected the bad axiom SubClassOf(Safety Care).
+[2026-06-28 09:01:53.443] Found 644 possible bad axioms.
+[2026-06-28 09:01:53.443] Selected the bad axiom SubClassOf(Medicaid Payment).
+[2026-06-28 09:01:53.448] Found 643 possible bad axioms.
+[2026-06-28 09:01:53.448] Selected the bad axiom SubClassOf(Respiratory_Status Problem_Assessment).
+[2026-06-28 09:01:53.454] Found 642 possible bad axioms.
+[2026-06-28 09:01:53.454] Selected the bad axiom SubClassOf(Primary_Care_Physician Friend).
+[2026-06-28 09:01:53.460] Found 641 possible bad axioms.
+[2026-06-28 09:01:53.460] Selected the bad axiom SubClassOf(Physician Nurse_Practitioner).
+[2026-06-28 09:01:53.465] Found 640 possible bad axioms.
+[2026-06-28 09:01:53.465] Selected the bad axiom SubClassOf(Glucometer Blood_Sugar).
+[2026-06-28 09:01:53.469] Found 639 possible bad axioms.
+[2026-06-28 09:01:53.469] Selected the bad axiom SubClassOf(Problems Discomfort).
+[2026-06-28 09:01:53.474] Found 638 possible bad axioms.
+[2026-06-28 09:01:53.474] Selected the
+...[truncated]
+FAIL: attempt=3 seed=28542 - negative return code -9
+progress: ontology=NCCO attempt=3 success=2/100
+----- NCCO attempt=4 seed=42742 at 2026-06-28 09:05:05 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=42742, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:05:05.894] Checking precondition...
+[2026-06-28 09:05:05.921] Starting the repair...
+[2026-06-28 09:05:05.933] Found 655 possible bad axioms.
+[2026-06-28 09:05:05.935] Selected the bad axiom SubClassOf(Cope Mental_Status).
+[2026-06-28 09:05:05.943] Found 654 possible bad axioms.
+[2026-06-28 09:05:05.944] Selected the bad axiom SubClassOf(Bathe Personal_Care).
+[2026-06-28 09:05:05.956] Found 653 possible bad axioms.
+[2026-06-28 09:05:05.956] Selected the bad axiom SubClassOf(Durable_Medical_Equipment Services).
+[2026-06-28 09:05:05.964] Found 652 possible bad axioms.
+[2026-06-28 09:05:05.964] Selected the bad axiom SubClassOf(Laboratory Physical_Care).
+[2026-06-28 09:05:05.970] Found 651 possible bad axioms.
+[2026-06-28 09:05:05.970] Selected the bad axiom SubClassOf(Problem_Management Concern).
+[2026-06-28 09:05:05.976] Found 650 possible bad axioms.
+[2026-06-28 09:05:05.977] Selected the bad axiom SubClassOf(Worker People).
+[2026-06-28 09:05:05.983] Found 649 possible bad axioms.
+[2026-06-28 09:05:05.983] Selected the bad axiom SubClassOf(Meal Nutrition).
+[2026-06-28 09:05:05.988] Found 648 possible bad axioms.
+[2026-06-28 09:05:05.989] Selected the bad axiom SubClassOf(Blood_Pressure Foot).
+[2026-06-28 09:05:05.994] Found 647 possible bad axioms.
+[2026-06-28 09:05:05.994] Selected the bad axiom SubClassOf(Placement Manage).
+[2026-06-28 09:05:05.999] Found 646 possible bad axioms.
+[2026-06-28 09:05:05.999] Selected the bad axiom SubClassOf(Speech_Therapist Physical_Therapist).
+[2026-06-28 09:05:06.009] Found 645 possible bad axioms.
+[2026-06-28 09:05:06.009] Selected the bad axiom SubClassOf(Home House).
+[2026-06-28 09:05:06.019] Found 644 possible bad axioms.
+[2026-06-28 09:05:06.019] Selected the bad axiom SubClassOf(Weakness Strength).
+[2026-06-28 09:05:06.025] Found 643 possible bad axioms.
+[2026-06-28 09:05:06.025] Selected the bad axiom SubClassOf(Deliver Manage).
+[2026-06-28 09:05:06.031] Found 642 possible bad axioms.
+[2026-06-28 09:05:06.031] Selected the bad axiom SubClassOf(Address owl:Nothing).
+[2026-06-28 09:05:06.036] Found 641 possible bad axioms.
+[2026-06-28 09:05:06.036] Selected the bad axiom SubClassOf(Discharge Manage).
+[2026-06-28 09:05:06.041] Found 640 possible bad axioms.
+[2026-06-28 09:05:06.041] Selected the bad axiom SubClassOf(Problem_Assessment owl:Nothing).
+[2026-06-28 09:05:06.045] Found 639 possible bad axioms.
+[2026-06-28 09:05:06.046] Selected the bad axiom SubClassOf(Cough Respiratory).
+[2026-06-28 09:05:06.050] Found 638 possible bad axioms.
+[2026-06-28 09:05:06.051] Selected the bad axiom SubClassOf
+...[truncated]
+FAIL: attempt=4 seed=42742 - negative return code -9
+progress: ontology=NCCO attempt=4 success=2/100
+----- NCCO attempt=5 seed=56942 at 2026-06-28 09:08:46 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=56942, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:08:46.732] Checking precondition...
+[2026-06-28 09:08:46.759] Starting the repair...
+[2026-06-28 09:08:46.771] Found 655 possible bad axioms.
+[2026-06-28 09:08:46.773] Selected the bad axiom SubClassOf(Staples Supplies).
+[2026-06-28 09:08:46.785] Found 654 possible bad axioms.
+[2026-06-28 09:08:46.785] Selected the bad axiom SubClassOf(Manage Assist).
+[2026-06-28 09:08:46.798] Found 653 possible bad axioms.
+[2026-06-28 09:08:46.798] Selected the bad axiom SubClassOf(Boot Medical_Devices).
+[2026-06-28 09:08:46.805] Found 652 possible bad axioms.
+[2026-06-28 09:08:46.805] Selected the bad axiom SubClassOf(Attempt Coordination_Activities).
+[2026-06-28 09:08:46.812] Found 651 possible bad axioms.
+[2026-06-28 09:08:46.812] Selected the bad axiom SubClassOf(Qualify Manage).
+[2026-06-28 09:08:46.818] Found 650 possible bad axioms.
+[2026-06-28 09:08:46.819] Selected the bad axiom SubClassOf(Forget Confuse).
+[2026-06-28 09:08:46.825] Found 649 possible bad axioms.
+[2026-06-28 09:08:46.825] Selected the bad axiom SubClassOf(Depression Mood).
+[2026-06-28 09:08:46.832] Found 648 possible bad axioms.
+[2026-06-28 09:08:46.832] Selected the bad axiom SubClassOf(TED_Hose Medical_Devices).
+[2026-06-28 09:08:46.839] Found 647 possible bad axioms.
+[2026-06-28 09:08:46.839] Selected the bad axiom SubClassOf(Physical_problems Problems).
+[2026-06-28 09:08:46.845] Found 646 possible bad axioms.
+[2026-06-28 09:08:46.845] Selected the bad axiom SubClassOf(Antibiotics Medication).
+[2026-06-28 09:08:46.855] Found 645 possible bad axioms.
+[2026-06-28 09:08:46.856] Selected the bad axiom SubClassOf(History Log).
+[2026-06-28 09:08:46.868] Found 644 possible bad axioms.
+[2026-06-28 09:08:46.868] Selected the bad axiom SubClassOf(Ramp Environment).
+[2026-06-28 09:08:46.873] Found 643 possible bad axioms.
+[2026-06-28 09:08:46.874] Selected the bad axiom SubClassOf(Registered_Nurse Licensed_Practical_Nurse).
+[2026-06-28 09:08:46.879] Found 642 possible bad axioms.
+[2026-06-28 09:08:46.880] Selected the bad axiom SubClassOf(Sister Sibling).
+[2026-06-28 09:08:46.885] Found 641 possible bad axioms.
+[2026-06-28 09:08:46.885] Selected the bad axiom SubClassOf(Dress Personal_Care).
+[2026-06-28 09:08:46.890] Found 640 possible bad axioms.
+[2026-06-28 09:08:46.890] Selected the bad axiom SubClassOf(Leave_Message List).
+[2026-06-28 09:08:46.894] Found 639 possible bad axioms.
+[2026-06-28 09:08:46.894] Selected the bad axiom SubClassOf(Bowel_Function Incontinence).
+[2026-06-28 09:08:46.899] Found 638 possible bad axioms.
+[2026-06-28 09:08:46.899] Selected the bad axiom SubClassOf
+...[truncated]
+FAIL: attempt=5 seed=56942 - negative return code -9
+progress: ontology=NCCO attempt=5 success=2/100
+----- NCCO attempt=6 seed=71142 at 2026-06-28 09:12:35 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=71142, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:12:36.198] Checking precondition...
+[2026-06-28 09:12:36.233] Starting the repair...
+[2026-06-28 09:12:36.245] Found 655 possible bad axioms.
+[2026-06-28 09:12:36.247] Selected the bad axiom SubClassOf(Coordination_Focus Payment).
+[2026-06-28 09:12:36.256] Found 654 possible bad axioms.
+[2026-06-28 09:12:36.257] Selected the bad axiom SubClassOf(Access Coordination_Focus).
+[2026-06-28 09:12:36.271] Found 653 possible bad axioms.
+[2026-06-28 09:12:36.271] Selected the bad axiom SubClassOf(Costs owl:Nothing).
+[2026-06-28 09:12:36.277] Found 652 possible bad axioms.
+[2026-06-28 09:12:36.277] Selected the bad axiom SubClassOf(Foot Infusion).
+[2026-06-28 09:12:36.283] Found 651 possible bad axioms.
+[2026-06-28 09:12:36.283] Selected the bad axiom SubClassOf(Chair Assistive_Devices).
+[2026-06-28 09:12:36.290] Found 650 possible bad axioms.
+[2026-06-28 09:12:36.290] Selected the bad axiom SubClassOf(Nail Foot).
+[2026-06-28 09:12:36.297] Found 649 possible bad axioms.
+[2026-06-28 09:12:36.297] Selected the bad axiom SubClassOf(Adjust Manage).
+[2026-06-28 09:12:36.304] Found 648 possible bad axioms.
+[2026-06-28 09:12:36.304] Selected the bad axiom SubClassOf(Sample collect).
+[2026-06-28 09:12:36.310] Found 647 possible bad axioms.
+[2026-06-28 09:12:36.311] Selected the bad axiom SubClassOf(Child Family).
+[2026-06-28 09:12:36.317] Found 646 possible bad axioms.
+[2026-06-28 09:12:36.317] Selected the bad axiom SubClassOf(Equipment Durable_Medical_Equipment).
+[2026-06-28 09:12:36.327] Found 645 possible bad axioms.
+[2026-06-28 09:12:36.327] Selected the bad axiom SubClassOf(History Documentation).
+[2026-06-28 09:12:36.339] Found 644 possible bad axioms.
+[2026-06-28 09:12:36.339] Selected the bad axiom SubClassOf(Coverage Services).
+[2026-06-28 09:12:36.344] Found 643 possible bad axioms.
+[2026-06-28 09:12:36.344] Selected the bad axiom SubClassOf(Speech_Therapist Therapist).
+[2026-06-28 09:12:36.349] Found 642 possible bad axioms.
+[2026-06-28 09:12:36.349] Selected the bad axiom SubClassOf(Talk Communicate).
+[2026-06-28 09:12:36.354] Found 641 possible bad axioms.
+[2026-06-28 09:12:36.354] Selected the bad axiom SubClassOf(Page Communicate).
+[2026-06-28 09:12:36.359] Found 640 possible bad axioms.
+[2026-06-28 09:12:36.359] Selected the bad axiom SubClassOf(Medication Care).
+[2026-06-28 09:12:36.364] Found 639 possible bad axioms.
+[2026-06-28 09:12:36.364] Selected the bad axiom SubClassOf(list Signature).
+[2026-06-28 09:12:36.369] Found 638 possible bad axioms.
+[2026-06-28 09:12:36.369] Selected the bad axiom SubClassOf(Social_Work Nursing).
+[2026-
+...[truncated]
+FAIL: attempt=6 seed=71142 - negative return code -9
+progress: ontology=NCCO attempt=6 success=2/100
+----- NCCO attempt=7 seed=85342 at 2026-06-28 09:16:12 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=85342, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:16:12.572] Checking precondition...
+[2026-06-28 09:16:12.600] Starting the repair...
+[2026-06-28 09:16:12.613] Found 655 possible bad axioms.
+[2026-06-28 09:16:12.615] Selected the bad axiom SubClassOf(Schedule Manage).
+[2026-06-28 09:16:12.624] Found 654 possible bad axioms.
+[2026-06-28 09:16:12.625] Selected the bad axiom SubClassOf(Costs Job).
+[2026-06-28 09:16:12.637] Found 653 possible bad axioms.
+[2026-06-28 09:16:12.637] Selected the bad axiom SubClassOf(Authorize Manage).
+[2026-06-28 09:16:12.644] Found 652 possible bad axioms.
+[2026-06-28 09:16:12.644] Selected the bad axiom SubClassOf(Oats_bus Transportation).
+[2026-06-28 09:16:12.650] Found 651 possible bad axioms.
+[2026-06-28 09:16:12.651] Selected the bad axiom SubClassOf(Assistive_Devices Supplies).
+[2026-06-28 09:16:12.658] Found 650 possible bad axioms.
+[2026-06-28 09:16:12.658] Selected the bad axiom SubClassOf(Room House).
+[2026-06-28 09:16:12.666] Found 649 possible bad axioms.
+[2026-06-28 09:16:12.666] Selected the bad axiom SubClassOf(Primary_Care_Physician Friend).
+[2026-06-28 09:16:12.673] Found 648 possible bad axioms.
+[2026-06-28 09:16:12.673] Selected the bad axiom SubClassOf(Hospital_Bed Durable_Medical_Equipment).
+[2026-06-28 09:16:12.679] Found 647 possible bad axioms.
+[2026-06-28 09:16:12.679] Selected the bad axiom SubClassOf(Documentation Coordination_Focus).
+[2026-06-28 09:16:12.685] Found 646 possible bad axioms.
+[2026-06-28 09:16:12.686] Selected the bad axiom SubClassOf(Information Coordination_Focus).
+[2026-06-28 09:16:12.696] Found 645 possible bad axioms.
+[2026-06-28 09:16:12.696] Selected the bad axiom SubClassOf(Mental_problems Problems).
+[2026-06-28 09:16:12.708] Found 644 possible bad axioms.
+[2026-06-28 09:16:12.708] Selected the bad axiom SubClassOf(Intake Fluids).
+[2026-06-28 09:16:12.714] Found 643 possible bad axioms.
+[2026-06-28 09:16:12.714] Selected the bad axiom SubClassOf(Impaired_Skin_Integrity Dizziness).
+[2026-06-28 09:16:12.720] Found 642 possible bad axioms.
+[2026-06-28 09:16:12.720] Selected the bad axiom SubClassOf(Dressing_Change Problem_Intervention).
+[2026-06-28 09:16:12.725] Found 641 possible bad axioms.
+[2026-06-28 09:16:12.725] Selected the bad axiom SubClassOf(Problem_Management Problems).
+[2026-06-28 09:16:12.730] Found 640 possible bad axioms.
+[2026-06-28 09:16:12.730] Selected the bad axiom SubClassOf(skilled_services Services).
+[2026-06-28 09:16:12.734] Found 639 possible bad axioms.
+[2026-06-28 09:16:12.735] Selected the bad axiom SubClassOf(Change Continue).
+[2026-06-28 09:16:12.739] Found 638 possible bad axioms.
+...[truncated]
+FAIL: attempt=7 seed=85342 - negative return code -9
+progress: ontology=NCCO attempt=7 success=2/100
+----- NCCO attempt=8 seed=99542 at 2026-06-28 09:19:40 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=99542, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:19:40.504] Checking precondition...
+[2026-06-28 09:19:40.530] Starting the repair...
+[2026-06-28 09:19:40.543] Found 655 possible bad axioms.
+[2026-06-28 09:19:40.545] Selected the bad axiom SubClassOf(Basic_Metabolic_Panel Coagulation).
+[2026-06-28 09:19:40.554] Found 654 possible bad axioms.
+[2026-06-28 09:19:40.555] Selected the bad axiom SubClassOf(Fever owl:Nothing).
+[2026-06-28 09:19:40.568] Found 653 possible bad axioms.
+[2026-06-28 09:19:40.568] Selected the bad axiom SubClassOf(Gait Infusion).
+[2026-06-28 09:19:40.576] Found 652 possible bad axioms.
+[2026-06-28 09:19:40.576] Selected the bad axiom SubClassOf(Concern Problems).
+[2026-06-28 09:19:40.582] Found 651 possible bad axioms.
+[2026-06-28 09:19:40.583] Selected the bad axiom SubClassOf(Oral_medication Medication).
+[2026-06-28 09:19:40.589] Found 650 possible bad axioms.
+[2026-06-28 09:19:40.590] Selected the bad axiom SubClassOf(UTI Wound_Infection).
+[2026-06-28 09:19:40.596] Found 649 possible bad axioms.
+[2026-06-28 09:19:40.596] Selected the bad axiom SubClassOf(Physician's_Office Clinic).
+[2026-06-28 09:19:40.602] Found 648 possible bad axioms.
+[2026-06-28 09:19:40.603] Selected the bad axiom SubClassOf(Kitchen Room).
+[2026-06-28 09:19:40.609] Found 647 possible bad axioms.
+[2026-06-28 09:19:40.609] Selected the bad axiom SubClassOf(Laboratory Foot).
+[2026-06-28 09:19:40.616] Found 646 possible bad axioms.
+[2026-06-28 09:19:40.617] Selected the bad axiom SubClassOf(Wife Spouse).
+[2026-06-28 09:19:40.626] Found 645 possible bad axioms.
+[2026-06-28 09:19:40.626] Selected the bad axiom SubClassOf(Psychiatrist Physician).
+[2026-06-28 09:19:40.640] Found 644 possible bad axioms.
+[2026-06-28 09:19:40.640] Selected the bad axiom SubClassOf(Information Idea).
+[2026-06-28 09:19:40.646] Found 643 possible bad axioms.
+[2026-06-28 09:19:40.646] Selected the bad axiom SubClassOf(Diet Nutrition).
+[2026-06-28 09:19:40.652] Found 642 possible bad axioms.
+[2026-06-28 09:19:40.652] Selected the bad axiom SubClassOf(Communicate List).
+[2026-06-28 09:19:40.658] Found 641 possible bad axioms.
+[2026-06-28 09:19:40.658] Selected the bad axiom SubClassOf(Incontinence Elimination).
+[2026-06-28 09:19:40.663] Found 640 possible bad axioms.
+[2026-06-28 09:19:40.663] Selected the bad axiom SubClassOf(Finances Payment).
+[2026-06-28 09:19:40.668] Found 639 possible bad axioms.
+[2026-06-28 09:19:40.668] Selected the bad axiom SubClassOf(Mental_problems Ability_Assessment).
+[2026-06-28 09:19:40.672] Found 638 possible bad axioms.
+[2026-06-28 09:19:40.673] Selected the bad axiom SubClassOf(Risk Clutte
+...[truncated]
+FAIL: attempt=8 seed=99542 - negative return code -9
+progress: ontology=NCCO attempt=8 success=2/100
+----- NCCO attempt=9 seed=113742 at 2026-06-28 09:23:11 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=113742, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:23:12.107] Checking precondition...
+[2026-06-28 09:23:12.135] Starting the repair...
+[2026-06-28 09:23:12.147] Found 655 possible bad axioms.
+[2026-06-28 09:23:12.149] Selected the bad axiom SubClassOf(Therapist People).
+[2026-06-28 09:23:12.159] Found 654 possible bad axioms.
+[2026-06-28 09:23:12.159] Selected the bad axiom SubClassOf(Gastrointestinal_Problems Injury).
+[2026-06-28 09:23:12.172] Found 653 possible bad axioms.
+[2026-06-28 09:23:12.173] Selected the bad axiom SubClassOf(Child Family).
+[2026-06-28 09:23:12.180] Found 652 possible bad axioms.
+[2026-06-28 09:23:12.180] Selected the bad axiom SubClassOf(Foot Infusion).
+[2026-06-28 09:23:12.186] Found 651 possible bad axioms.
+[2026-06-28 09:23:12.187] Selected the bad axiom SubClassOf(Physical_Care Care).
+[2026-06-28 09:23:12.193] Found 650 possible bad axioms.
+[2026-06-28 09:23:12.193] Selected the bad axiom SubClassOf(Neighbor People).
+[2026-06-28 09:23:12.199] Found 649 possible bad axioms.
+[2026-06-28 09:23:12.199] Selected the bad axiom SubClassOf(Hospitalize Manage).
+[2026-06-28 09:23:12.205] Found 648 possible bad axioms.
+[2026-06-28 09:23:12.206] Selected the bad axiom SubClassOf(Brace Medical_Devices).
+[2026-06-28 09:23:12.212] Found 647 possible bad axioms.
+[2026-06-28 09:23:12.212] Selected the bad axiom SubClassOf(Strength Endurance).
+[2026-06-28 09:23:12.218] Found 646 possible bad axioms.
+[2026-06-28 09:23:12.218] Selected the bad axiom SubClassOf(Emergency Problem_Intervention).
+[2026-06-28 09:23:12.229] Found 645 possible bad axioms.
+[2026-06-28 09:23:12.229] Selected the bad axiom SubClassOf(Follow-up Coordination_Focus).
+[2026-06-28 09:23:12.240] Found 644 possible bad axioms.
+[2026-06-28 09:23:12.240] Selected the bad axiom SubClassOf(Dining_Room Room).
+[2026-06-28 09:23:12.245] Found 643 possible bad axioms.
+[2026-06-28 09:23:12.245] Selected the bad axiom SubClassOf(Surgeon Primary_Physician).
+[2026-06-28 09:23:12.250] Found 642 possible bad axioms.
+[2026-06-28 09:23:12.250] Selected the bad axiom SubClassOf(Caseworker People).
+[2026-06-28 09:23:12.254] Found 641 possible bad axioms.
+[2026-06-28 09:23:12.254] Selected the bad axiom SubClassOf(Blood_Pressure_Machine Cast).
+[2026-06-28 09:23:12.259] Found 640 possible bad axioms.
+[2026-06-28 09:23:12.259] Selected the bad axiom SubClassOf(Urine_Incontinence Incontinence).
+[2026-06-28 09:23:12.264] Found 639 possible bad axioms.
+[2026-06-28 09:23:12.264] Selected the bad axiom SubClassOf(Respiratory Infection).
+[2026-06-28 09:23:12.268] Found 638 possible bad axioms.
+[2026-06-28 09:23:12.269] Selected the ba
+...[truncated]
+FAIL: attempt=9 seed=113742 - negative return code -9
+progress: ontology=NCCO attempt=9 success=2/100
+----- NCCO attempt=10 seed=127942 at 2026-06-28 09:26:26 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=127942, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:26:26.560] Checking precondition...
+[2026-06-28 09:26:26.588] Starting the repair...
+[2026-06-28 09:26:26.599] Found 655 possible bad axioms.
+[2026-06-28 09:26:26.602] Selected the bad axiom SubClassOf(Diet Nutrition).
+[2026-06-28 09:26:26.611] Found 654 possible bad axioms.
+[2026-06-28 09:26:26.612] Selected the bad axiom SubClassOf(Physician Primary_Physician).
+[2026-06-28 09:26:26.625] Found 653 possible bad axioms.
+[2026-06-28 09:26:26.625] Selected the bad axiom SubClassOf(Respiratory_Status Symptom).
+[2026-06-28 09:26:26.633] Found 652 possible bad axioms.
+[2026-06-28 09:26:26.633] Selected the bad axiom SubClassOf(Assign Manage).
+[2026-06-28 09:26:26.640] Found 651 possible bad axioms.
+[2026-06-28 09:26:26.640] Selected the bad axiom SubClassOf(Mother Family).
+[2026-06-28 09:26:26.647] Found 650 possible bad axioms.
+[2026-06-28 09:26:26.648] Selected the bad axiom SubClassOf(Assistive_Devices Walker).
+[2026-06-28 09:26:26.655] Found 649 possible bad axioms.
+[2026-06-28 09:26:26.655] Selected the bad axiom SubClassOf(list Documentation).
+[2026-06-28 09:26:26.662] Found 648 possible bad axioms.
+[2026-06-28 09:26:26.662] Selected the bad axiom SubClassOf(Summary Problem_Evaluation).
+[2026-06-28 09:26:26.668] Found 647 possible bad axioms.
+[2026-06-28 09:26:26.668] Selected the bad axiom SubClassOf(Confirm Manage).
+[2026-06-28 09:26:26.674] Found 646 possible bad axioms.
+[2026-06-28 09:26:26.674] Selected the bad axiom SubClassOf(Check Monitor).
+[2026-06-28 09:26:26.684] Found 645 possible bad axioms.
+[2026-06-28 09:26:26.684] Selected the bad axiom SubClassOf(Ask Meet).
+[2026-06-28 09:26:26.695] Found 644 possible bad axioms.
+[2026-06-28 09:26:26.695] Selected the bad axiom SubClassOf(Basic_Metabolic_Panel Laboratory_Tests).
+[2026-06-28 09:26:26.700] Found 643 possible bad axioms.
+[2026-06-28 09:26:26.700] Selected the bad axiom SubClassOf(Infusion Physical_Care).
+[2026-06-28 09:26:26.705] Found 642 possible bad axioms.
+[2026-06-28 09:26:26.706] Selected the bad axiom SubClassOf(Pain owl:Nothing).
+[2026-06-28 09:26:26.710] Found 641 possible bad axioms.
+[2026-06-28 09:26:26.711] Selected the bad axiom SubClassOf(Nebulizer Ointment).
+[2026-06-28 09:26:26.715] Found 640 possible bad axioms.
+[2026-06-28 09:26:26.715] Selected the bad axiom SubClassOf(Weight_Gain Weight).
+[2026-06-28 09:26:26.719] Found 639 possible bad axioms.
+[2026-06-28 09:26:26.720] Selected the bad axiom SubClassOf(Injection Medication).
+[2026-06-28 09:26:26.725] Found 638 possible bad axioms.
+[2026-06-28 09:26:26.725] Selected the bad axiom SubClassOf(Treatment P
+...[truncated]
+FAIL: attempt=10 seed=127942 - negative return code -9
+progress: ontology=NCCO attempt=10 success=2/100
+----- NCCO attempt=11 seed=142142 at 2026-06-28 09:29:36 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=142142, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:29:36.475] Checking precondition...
+[2026-06-28 09:29:36.500] Starting the repair...
+[2026-06-28 09:29:36.512] Found 655 possible bad axioms.
+[2026-06-28 09:29:36.514] Selected the bad axiom SubClassOf(Discomfort Pain).
+[2026-06-28 09:29:36.525] Found 654 possible bad axioms.
+[2026-06-28 09:29:36.525] Selected the bad axiom SubClassOf(Apartment Office).
+[2026-06-28 09:29:36.538] Found 653 possible bad axioms.
+[2026-06-28 09:29:36.538] Selected the bad axiom SubClassOf(Incision Impaired_Skin_Integrity).
+[2026-06-28 09:29:36.546] Found 652 possible bad axioms.
+[2026-06-28 09:29:36.547] Selected the bad axiom SubClassOf(Brother Sibling).
+[2026-06-28 09:29:36.554] Found 651 possible bad axioms.
+[2026-06-28 09:29:36.554] Selected the bad axiom SubClassOf(Office Places).
+[2026-06-28 09:29:36.561] Found 650 possible bad axioms.
+[2026-06-28 09:29:36.561] Selected the bad axiom SubClassOf(TED_Hose Medical_Devices).
+[2026-06-28 09:29:36.567] Found 649 possible bad axioms.
+[2026-06-28 09:29:36.568] Selected the bad axiom SubClassOf(Impaired_Skin_Integrity Dizziness).
+[2026-06-28 09:29:36.573] Found 648 possible bad axioms.
+[2026-06-28 09:29:36.574] Selected the bad axiom SubClassOf(Initiate Manage).
+[2026-06-28 09:29:36.580] Found 647 possible bad axioms.
+[2026-06-28 09:29:36.580] Selected the bad axiom SubClassOf(Gastrostomy_Tube Medical_Devices).
+[2026-06-28 09:29:36.585] Found 646 possible bad axioms.
+[2026-06-28 09:29:36.585] Selected the bad axiom SubClassOf(Child Family).
+[2026-06-28 09:29:36.594] Found 645 possible bad axioms.
+[2026-06-28 09:29:36.595] Selected the bad axiom SubClassOf(Cognitive_Status Problem_Assessment).
+[2026-06-28 09:29:36.605] Found 644 possible bad axioms.
+[2026-06-28 09:29:36.606] Selected the bad axiom SubClassOf(Problem_Evaluation owl:Nothing).
+[2026-06-28 09:29:36.610] Found 643 possible bad axioms.
+[2026-06-28 09:29:36.611] Selected the bad axiom SubClassOf(Neighbor People).
+[2026-06-28 09:29:36.616] Found 642 possible bad axioms.
+[2026-06-28 09:29:36.616] Selected the bad axiom SubClassOf(Housekeeping Homemaker_Chore).
+[2026-06-28 09:29:36.621] Found 641 possible bad axioms.
+[2026-06-28 09:29:36.621] Selected the bad axiom SubClassOf(Oats_bus Transportation).
+[2026-06-28 09:29:36.625] Found 640 possible bad axioms.
+[2026-06-28 09:29:36.626] Selected the bad axiom SubClassOf(Follow Monitor).
+[2026-06-28 09:29:36.630] Found 639 possible bad axioms.
+[2026-06-28 09:29:36.631] Selected the bad axiom SubClassOf(Niece owl:Nothing).
+[2026-06-28 09:29:36.635] Found 638 possible bad axioms.
+[2026-06-28 09:29:36.635] Sele
+...[truncated]
+FAIL: attempt=11 seed=142142 - negative return code -9
+progress: ontology=NCCO attempt=11 success=2/100
+----- NCCO attempt=12 seed=156342 at 2026-06-28 09:33:05 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NCCO.owl, seed=156342, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 09:33:05.853] Checking precondition...
+[2026-06-28 09:33:05.881] Starting the repair...
+[2026-06-28 09:33:05.894] Found 655 possible bad axioms.
+[2026-06-28 09:33:05.896] Selected the bad axiom SubClassOf(Coagulation Laboratory_Tests).
+[2026-06-28 09:33:05.905] Found 654 possible bad axioms.
+[2026-06-28 09:33:05.905] Selected the bad axiom SubClassOf(Diarrhea Gastrointestinal_Problems).
+[2026-06-28 09:33:05.918] Found 653 possible bad axioms.
+[2026-06-28 09:33:05.918] Selected the bad axiom SubClassOf(Cognitive_Status Ability_Assessment).
+[2026-06-28 09:33:05.926] Found 652 possible bad axioms.
+[2026-06-28 09:33:05.926] Selected the bad axiom SubClassOf(Telephone Environment).
+[2026-06-28 09:33:05.934] Found 651 possible bad axioms.
+[2026-06-28 09:33:05.934] Selected the bad axiom SubClassOf(Blood_Pressure_Machine Medical_Devices).
+[2026-06-28 09:33:05.941] Found 650 possible bad axioms.
+[2026-06-28 09:33:05.941] Selected the bad axiom SubClassOf(Food Nutrition).
+[2026-06-28 09:33:05.947] Found 649 possible bad axioms.
+[2026-06-28 09:33:05.948] Selected the bad axiom SubClassOf(Equipment Commode).
+[2026-06-28 09:33:05.954] Found 648 possible bad axioms.
+[2026-06-28 09:33:05.954] Selected the bad axiom SubClassOf(Insurance Income).
+[2026-06-28 09:33:05.960] Found 647 possible bad axioms.
+[2026-06-28 09:33:05.960] Selected the bad axiom SubClassOf(Worker People).
+[2026-06-28 09:33:05.965] Found 646 possible bad axioms.
+[2026-06-28 09:33:05.965] Selected the bad axiom SubClassOf(Injury Physical_problems).
+[2026-06-28 09:33:05.975] Found 645 possible bad axioms.
+[2026-06-28 09:33:05.976] Selected the bad axiom SubClassOf(Chemotherapy Antibiotics).
+[2026-06-28 09:33:05.987] Found 644 possible bad axioms.
+[2026-06-28 09:33:05.987] Selected the bad axiom SubClassOf(Manage Coordination_Activities).
+[2026-06-28 09:33:05.992] Found 643 possible bad axioms.
+[2026-06-28 09:33:05.992] Selected the bad axiom SubClassOf(Sample venipuncture).
+[2026-06-28 09:33:05.997] Found 642 possible bad axioms.
+[2026-06-28 09:33:05.997] Selected the bad axiom SubClassOf(Record owl:Nothing).
+[2026-06-28 09:33:06.002] Found 641 possible bad axioms.
+[2026-06-28 09:33:06.003] Selected the bad axiom SubClassOf(Wheeled_walker Durable_Medical_Equipment).
+[2026-06-28 09:33:06.007] Found 640 possible bad axioms.
+[2026-06-28 09:33:06.008] Selected the bad axiom SubClassOf(Hospitalization Care).
+[2026-06-28 09:33:06.012] Found 639 possible bad axioms.
+[2026-06-28 09:33:06.012] Selected the bad axiom SubClassOf(Risk Safety).
+[2026-06-28 09:33:06.016] Found 638 possible bad axiom
+...[truncated]
+FAIL: attempt=12 seed=156342 - negative return code -9
+progress: ontology=NCCO attempt=12 success=2/100
+=== ABORTED NCCO after 10 consecutive failures at 2026-06-28 09:36:30 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for NCCO - 2 successes, 10 failures, 12 attempts ===
+Failed attempts:
+  attempt=3 seed=28542 msg=negative return code -9
+  attempt=4 seed=42742 msg=negative return code -9
+  attempt=5 seed=56942 msg=negative return code -9
+  attempt=6 seed=71142 msg=negative return code -9
+  attempt=7 seed=85342 msg=negative return code -9
+  attempt=8 seed=99542 msg=negative return code -9
+  attempt=9 seed=113742 msg=negative return code -9
+  attempt=10 seed=127942 msg=negative return code -9
+  attempt=11 seed=142142 msg=negative return code -9
+  attempt=12 seed=156342 msg=negative return code -9
+Timing summary:
+  success: count=2 total_seconds=364.483253 avg_seconds=182.241626
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=2077.048301 avg_seconds=207.704830
+  success_rate=0.1667
+  wall_clock_seconds_total_run=360698.251834

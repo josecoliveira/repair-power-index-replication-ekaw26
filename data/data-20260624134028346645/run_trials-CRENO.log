@@ -1,0 +1,519 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CRENO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CRENO.csv
+
+=== Starting sequential trials for CRENO at 2026-06-28 08:46:17 ===
+----- CRENO attempt=1 seed=141 at 2026-06-28 08:46:17 -----
+--- stdout ---
+{"seed":141,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":560,"A2":43786,"A3":1034,"B1":935,"B2":8586}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=141, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:46:17.613] Checking precondition...
+[2026-06-28 08:46:17.644] Starting the repair...
+[2026-06-28 08:46:17.657] Found 654 possible bad axioms.
+[2026-06-28 08:46:17.659] Selected the bad axiom SubClassOf(Colorism Discrimination).
+[2026-06-28 08:46:17.668] Found 653 possible bad axioms.
+[2026-06-28 08:46:17.668] Selected the bad axiom SubClassOf(Spanish Hispanic).
+[2026-06-28 08:46:17.680] Found 652 possible bad axioms.
+[2026-06-28 08:46:17.681] Selected the bad axiom SubClassOf(Death_By_Motor_Vehicle_Injury Death_By_Pedistrian_Road_Death).
+[2026-06-28 08:46:17.688] Found 651 possible bad axioms.
+[2026-06-28 08:46:17.688] Selected the bad axiom SubClassOf(Death_By_Stroke Death_By_Non-communicable_Disease).
+[2026-06-28 08:46:17.696] Found 650 possible bad axioms.
+[2026-06-28 08:46:17.696] Selected the bad axiom SubClassOf(Primary_Education Formal_Education).
+[2026-06-28 08:46:17.704] Found 649 possible bad axioms.
+[2026-06-28 08:46:17.704] Selected the bad axiom SubClassOf(Prostrate_Cancer Cancer).
+[2026-06-28 08:46:17.711] Found 648 possible bad axioms.
+[2026-06-28 08:46:17.711] Selected the bad axiom SubClassOf(Matriarchy Human_Hierarchy).
+[2026-06-28 08:46:17.718] Found 647 possible bad axioms.
+[2026-06-28 08:46:17.718] Selected the bad axiom SubClassOf(Foreign_Policy Policies).
+[2026-06-28 08:46:17.726] Found 646 possible bad axioms.
+[2026-06-28 08:46:17.727] Selected the bad axiom SubClassOf(Fashion Festivals).
+[2026-06-28 08:46:17.732] Found 645 possible bad axioms.
+[2026-06-28 08:46:17.732] Selected the bad axiom SubClassOf(Polyethnicity Ethnicity).
+[2026-06-28 08:46:17.744] Found 644 possible bad axioms.
+[2026-06-28 08:46:17.744] Selected the bad axiom ClassAssertion(Native_American_Males _native_american_men).
+[2026-06-28 08:46:17.747] Found 643 possible bad axioms.
+[2026-06-28 08:46:17.747] Selected the bad axiom SubClassOf(Hyperplatyrrhine Nasal_Index).
+[2026-06-28 08:46:17.758] Found 642 possible bad axioms.
+[2026-06-28 08:46:17.758] Selected the bad axiom SubClassOf(Death_By_Non-communicable_Disease Death_By_Disease).
+[2026-06-28 08:46:17.763] Found 641 possible bad axioms.
+[2026-06-28 08:46:17.764] Selected the bad axiom SubClassOf(Death_By_Interpersonal_Violence Death_By_Injuries).
+[2026-06-28 08:46:17.769] Found 640 possible bad axioms.
+[2026-06-28 08:46:17.770] Selected the bad axiom SubClassOf(Contemporary_Period_(1945_to_present) Late_Modern_Period_(1800_to_present)).
+[2026-06-28 08:46:17.775] Found 639 possible bad axioms.
+[2026-06-28 08:46:17.775] Selected the bad axiom SubClassOf(Type_III Fitzpatrick_Scale).
+[2026-06-28
+...[truncated]
+FAIL: attempt=1 seed=141 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+progress: ontology=CRENO attempt=1 success=0/100
+----- CRENO attempt=2 seed=14341 at 2026-06-28 08:47:12 -----
+--- stdout ---
+{"seed":14341,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":617,"A2":43413,"A3":2056,"B1":1857,"B2":6623}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=14341, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:47:13.046] Checking precondition...
+[2026-06-28 08:47:13.077] Starting the repair...
+[2026-06-28 08:47:13.090] Found 654 possible bad axioms.
+[2026-06-28 08:47:13.092] Selected the bad axiom SubClassOf(Lung_Cancer Cancer).
+[2026-06-28 08:47:13.102] Found 653 possible bad axioms.
+[2026-06-28 08:47:13.103] Selected the bad axiom SubClassOf(Art Sacrifices).
+[2026-06-28 08:47:13.115] Found 652 possible bad axioms.
+[2026-06-28 08:47:13.115] Selected the bad axiom SubClassOf(First_Baby_Boomer_Generation Japanese_Cultural_Generation).
+[2026-06-28 08:47:13.122] Found 651 possible bad axioms.
+[2026-06-28 08:47:13.123] Selected the bad axiom SubClassOf(Plastic_Pollution Pollution).
+[2026-06-28 08:47:13.132] Found 650 possible bad axioms.
+[2026-06-28 08:47:13.132] Selected the bad axiom SubClassOf(Wheel Technology).
+[2026-06-28 08:47:13.139] Found 649 possible bad axioms.
+[2026-06-28 08:47:13.139] Selected the bad axiom SubClassOf(Pharmacy_Education Nurse_Education).
+[2026-06-28 08:47:13.146] Found 648 possible bad axioms.
+[2026-06-28 08:47:13.146] Selected the bad axiom SubClassOf(Volcanoes Natural_Pollutants).
+[2026-06-28 08:47:13.153] Found 647 possible bad axioms.
+[2026-06-28 08:47:13.154] Selected the bad axiom SubClassOf(Coarse FIA_Hair_Typing_System).
+[2026-06-28 08:47:13.161] Found 646 possible bad axioms.
+[2026-06-28 08:47:13.161] Selected the bad axiom SubClassOf(Death_By_Hot_Substances Death_By_Drowning).
+[2026-06-28 08:47:13.171] Found 645 possible bad axioms.
+[2026-06-28 08:47:13.172] Selected the bad axiom SubClassOf(Lack_of_Exercise Exercise).
+[2026-06-28 08:47:13.178] Found 644 possible bad axioms.
+[2026-06-28 08:47:13.178] Selected the bad axiom SubClassOf(Sacrifices Prayer).
+[2026-06-28 08:47:13.188] Found 643 possible bad axioms.
+[2026-06-28 08:47:13.189] Selected the bad axiom SubClassOf(Family_Dynamic Socioeconomic_Status).
+[2026-06-28 08:47:13.194] Found 642 possible bad axioms.
+[2026-06-28 08:47:13.194] Selected the bad axiom SubClassOf(Renal_Pelvis_Cancer Cancer).
+[2026-06-28 08:47:13.199] Found 641 possible bad axioms.
+[2026-06-28 08:47:13.200] Selected the bad axiom SubClassOf(Religious_Conversion Ethnic_Shift).
+[2026-06-28 08:47:13.205] Found 640 possible bad axioms.
+[2026-06-28 08:47:13.205] Selected the bad axiom SubClassOf(UK_Ethnic_Classification Ethnicity).
+[2026-06-28 08:47:13.211] Found 639 possible bad axioms.
+[2026-06-28 08:47:13.211] Selected the bad axiom ClassAssertion(Samoan_American_Males _american_samoan_men).
+[2026-06-28 08:47:13.213] Found 638 possible bad axioms.
+[2026-06-28 08:47:13.214] Selected the 
+...[truncated]
+FAIL: attempt=2 seed=14341 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+progress: ontology=CRENO attempt=2 success=0/100
+----- CRENO attempt=3 seed=28541 at 2026-06-28 08:48:07 -----
+--- stdout ---
+{"seed":28541,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)","iic_values":{},"repair_runtimes_ms":{"A1":308,"A2":42482,"A3":1050,"B1":980,"B2":1259,"B3":12806}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=28541, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:48:08.121] Checking precondition...
+[2026-06-28 08:48:08.150] Starting the repair...
+[2026-06-28 08:48:08.163] Found 654 possible bad axioms.
+[2026-06-28 08:48:08.165] Selected the bad axiom ClassAssertion(Spanish _hispanic_americans).
+[2026-06-28 08:48:08.168] Found 653 possible bad axioms.
+[2026-06-28 08:48:08.168] Selected the bad axiom SubClassOf(Transitional_Housing Affordable_Housing_Policy).
+[2026-06-28 08:48:08.177] Found 652 possible bad axioms.
+[2026-06-28 08:48:08.177] Selected the bad axiom SubClassOf(Hispanic_Females Hispanic).
+[2026-06-28 08:48:08.189] Found 651 possible bad axioms.
+[2026-06-28 08:48:08.190] Selected the bad axiom ClassAssertion(Hispanic _hispanic_americans).
+[2026-06-28 08:48:08.192] Found 650 possible bad axioms.
+[2026-06-28 08:48:08.192] Selected the bad axiom SubClassOf(Radiation Tobacco).
+[2026-06-28 08:48:08.199] Found 649 possible bad axioms.
+[2026-06-28 08:48:08.199] Selected the bad axiom SubClassOf(Cancer Disease).
+[2026-06-28 08:48:08.207] Found 648 possible bad axioms.
+[2026-06-28 08:48:08.207] Selected the bad axiom SubClassOf(Artisanal_Mining owl:Nothing).
+[2026-06-28 08:48:08.214] Found 647 possible bad axioms.
+[2026-06-28 08:48:08.215] Selected the bad axiom SubClassOf(Native_Hawaiian Asian_American).
+[2026-06-28 08:48:08.221] Found 646 possible bad axioms.
+[2026-06-28 08:48:08.221] Selected the bad axiom SubClassOf(Hyperleptorrhine owl:Nothing).
+[2026-06-28 08:48:08.228] Found 645 possible bad axioms.
+[2026-06-28 08:48:08.228] Selected the bad axiom SubClassOf(Death_By_Neurological_Disorder Death_By_Hypertensive_Heart_Disease).
+[2026-06-28 08:48:08.234] Found 644 possible bad axioms.
+[2026-06-28 08:48:08.235] Selected the bad axiom SubClassOf(Thin FIA_Hair_Typing_System).
+[2026-06-28 08:48:08.246] Found 643 possible bad axioms.
+[2026-06-28 08:48:08.246] Selected the bad axiom SubClassOf(Astrology Sermons).
+[2026-06-28 08:48:08.253] Found 642 possible bad axioms.
+[2026-06-28 08:48:08.253] Selected the bad axiom SubClassOf(Direct_Democracy Democracy).
+[2026-06-28 08:48:08.264] Found 641 possible bad axioms.
+[2026-06-28 08:48:08.264] Selected the bad axiom SubClassOf(Youth Age_Group).
+[2026-06-28 08:48:08.269] Found 640 possible bad axioms.
+[2026-06-28 08:48:08.269] Selected the bad axiom SubClassOf(Emergency_Homeless_Shelters Affordable_Housing_Policy).
+[2026-06-28 08:48:08.275] Found 639 possible bad axioms.
+[2026-06-28 08:48:08.275] Selected the bad axiom SubClassOf(Jewish Ethno-Religous).
+[2026-06-28 08:48:08.280] Found 638 possible bad axioms.
+[2026-06-28 08:48:08.280] Selected the bad 
+...[truncated]
+FAIL: attempt=3 seed=28541 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+progress: ontology=CRENO attempt=3 success=0/100
+----- CRENO attempt=4 seed=42741 at 2026-06-28 08:49:07 -----
+--- stdout ---
+{"seed":42741,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)","iic_values":{},"repair_runtimes_ms":{"A1":971,"A2":43321,"A3":2046,"B1":1887,"B2":1146}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=42741, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:49:07.557] Checking precondition...
+[2026-06-28 08:49:07.587] Starting the repair...
+[2026-06-28 08:49:07.600] Found 654 possible bad axioms.
+[2026-06-28 08:49:07.602] Selected the bad axiom SubClassOf(Islam Religion).
+[2026-06-28 08:49:07.611] Found 653 possible bad axioms.
+[2026-06-28 08:49:07.611] Selected the bad axiom SubClassOf(Biological_Female Biological_Sex).
+[2026-06-28 08:49:07.624] Found 652 possible bad axioms.
+[2026-06-28 08:49:07.624] Selected the bad axiom SubClassOf(Cervical_Cancer Cancer).
+[2026-06-28 08:49:07.632] Found 651 possible bad axioms.
+[2026-06-28 08:49:07.632] Selected the bad axiom SubClassOf(Patriarchy Human_Hierarchy).
+[2026-06-28 08:49:07.639] Found 650 possible bad axioms.
+[2026-06-28 08:49:07.639] Selected the bad axiom SubClassOf(Asbestos Physical_Agents).
+[2026-06-28 08:49:07.647] Found 649 possible bad axioms.
+[2026-06-28 08:49:07.647] Selected the bad axiom SubClassOf(White_Passing owl:Nothing).
+[2026-06-28 08:49:07.654] Found 648 possible bad axioms.
+[2026-06-28 08:49:07.654] Selected the bad axiom SubClassOf(Tyranny Government).
+[2026-06-28 08:49:07.661] Found 647 possible bad axioms.
+[2026-06-28 08:49:07.662] Selected the bad axiom SubClassOf(Government_Reports Media).
+[2026-06-28 08:49:07.668] Found 646 possible bad axioms.
+[2026-06-28 08:49:07.668] Selected the bad axiom SubClassOf(Type_I Fitzpatrick_Scale).
+[2026-06-28 08:49:07.674] Found 645 possible bad axioms.
+[2026-06-28 08:49:07.674] Selected the bad axiom SubClassOf(F_to_L Fischer-Saller_Scale).
+[2026-06-28 08:49:07.685] Found 644 possible bad axioms.
+[2026-06-28 08:49:07.685] Selected the bad axiom SubClassOf(Hyperleptorrhine Mesorrhine).
+[2026-06-28 08:49:07.696] Found 643 possible bad axioms.
+[2026-06-28 08:49:07.696] Selected the bad axiom SubClassOf(Coarse FIA_Hair_Typing_System).
+[2026-06-28 08:49:07.702] Found 642 possible bad axioms.
+[2026-06-28 08:49:07.702] Selected the bad axiom ClassAssertion(Native_American_Females _native_american_women).
+[2026-06-28 08:49:07.704] Found 641 possible bad axioms.
+[2026-06-28 08:49:07.705] Selected the bad axiom SubClassOf(Samoan_American_Females Samoan_American_Males).
+[2026-06-28 08:49:07.710] Found 640 possible bad axioms.
+[2026-06-28 08:49:07.710] Selected the bad axiom SubClassOf(V,_VI Fischer-Saller_Scale).
+[2026-06-28 08:49:07.715] Found 639 possible bad axioms.
+[2026-06-28 08:49:07.715] Selected the bad axiom SubClassOf(Artisanal_Mining Lead-Acid_Battery_Recycling).
+[2026-06-28 08:49:07.719] Found 638 possible bad axioms.
+[2026-06-28 08:49:07.719] Selected the bad axiom SubClassOf(Re
+...[truncated]
+FAIL: attempt=4 seed=42741 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+progress: ontology=CRENO attempt=4 success=0/100
+----- CRENO attempt=5 seed=56941 at 2026-06-28 08:49:57 -----
+--- stdout ---
+{"seed":56941,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)","iic_values":{},"repair_runtimes_ms":{"A1":446,"A2":42459,"A3":2066,"B1":1877,"B2":8279}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=56941, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:49:57.440] Checking precondition...
+[2026-06-28 08:49:57.472] Starting the repair...
+[2026-06-28 08:49:57.486] Found 654 possible bad axioms.
+[2026-06-28 08:49:57.488] Selected the bad axiom SubClassOf(Integral_Nationalism Nationalism).
+[2026-06-28 08:49:57.497] Found 653 possible bad axioms.
+[2026-06-28 08:49:57.497] Selected the bad axiom SubClassOf(Normal FIA_Hair_Typing_System).
+[2026-06-28 08:49:57.510] Found 652 possible bad axioms.
+[2026-06-28 08:49:57.511] Selected the bad axiom SubClassOf(Left-wing_Nationalism Nationalism).
+[2026-06-28 08:49:57.518] Found 651 possible bad axioms.
+[2026-06-28 08:49:57.518] Selected the bad axiom SubClassOf(Geographical_Location Place).
+[2026-06-28 08:49:57.525] Found 650 possible bad axioms.
+[2026-06-28 08:49:57.526] Selected the bad axiom SubClassOf(Death_By_Neurological_Disorder Death_By_Hypertensive_Heart_Disease).
+[2026-06-28 08:49:57.533] Found 649 possible bad axioms.
+[2026-06-28 08:49:57.533] Selected the bad axiom SubClassOf(P_to_T A).
+[2026-06-28 08:49:57.540] Found 648 possible bad axioms.
+[2026-06-28 08:49:57.540] Selected the bad axiom SubClassOf(Death_By_Non-communicable_Disease Death_By_Communicable_Disease).
+[2026-06-28 08:49:57.547] Found 647 possible bad axioms.
+[2026-06-28 08:49:57.547] Selected the bad axiom SubClassOf(Private_Health_Care Health_Care).
+[2026-06-28 08:49:57.553] Found 646 possible bad axioms.
+[2026-06-28 08:49:57.553] Selected the bad axiom SubClassOf(Generation_X Western_Cultural_Generation).
+[2026-06-28 08:49:57.559] Found 645 possible bad axioms.
+[2026-06-28 08:49:57.559] Selected the bad axiom SubClassOf(Hyper-Pigmentation Skin_Pigmentation).
+[2026-06-28 08:49:57.571] Found 644 possible bad axioms.
+[2026-06-28 08:49:57.572] Selected the bad axiom SubClassOf(Nurse_Education Podiatric_Medicine_School).
+[2026-06-28 08:49:57.582] Found 643 possible bad axioms.
+[2026-06-28 08:49:57.582] Selected the bad axiom SubClassOf(Judaism Religion).
+[2026-06-28 08:49:57.588] Found 642 possible bad axioms.
+[2026-06-28 08:49:57.589] Selected the bad axiom SubClassOf(Diabetes Disease).
+[2026-06-28 08:49:57.594] Found 641 possible bad axioms.
+[2026-06-28 08:49:57.595] Selected the bad axiom SubClassOf(Representative_Democracy Democracy).
+[2026-06-28 08:49:57.599] Found 640 possible bad axioms.
+[2026-06-28 08:49:57.599] Selected the bad axiom SubClassOf(Festivals Sacred_Dance).
+[2026-06-28 08:49:57.603] Found 639 possible bad axioms.
+[2026-06-28 08:49:57.604] Selected the bad axiom SubClassOf(Socioeconomic_Status Human_Hierarchy).
+[2026-06-28 08:49:57.608] Found 638 possible b
+...[truncated]
+FAIL: attempt=5 seed=56941 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+progress: ontology=CRENO attempt=5 success=0/100
+----- CRENO attempt=6 seed=71141 at 2026-06-28 08:50:52 -----
+--- stdout ---
+{"seed":71141,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":943,"A2":42530,"A3":1985,"B1":1811,"B2":8135}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=71141, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:50:53.091] Checking precondition...
+[2026-06-28 08:50:53.122] Starting the repair...
+[2026-06-28 08:50:53.135] Found 654 possible bad axioms.
+[2026-06-28 08:50:53.137] Selected the bad axiom SubClassOf(Hyperleptorrhine owl:Nothing).
+[2026-06-28 08:50:53.146] Found 653 possible bad axioms.
+[2026-06-28 08:50:53.147] Selected the bad axiom SubClassOf(Artisanal_Mining owl:Nothing).
+[2026-06-28 08:50:53.159] Found 652 possible bad axioms.
+[2026-06-28 08:50:53.159] Selected the bad axiom SubClassOf(Black/Black_British UK_Ethnic_Classification).
+[2026-06-28 08:50:53.166] Found 651 possible bad axioms.
+[2026-06-28 08:50:53.167] Selected the bad axiom SubClassOf(Posters Media).
+[2026-06-28 08:50:53.174] Found 650 possible bad axioms.
+[2026-06-28 08:50:53.174] Selected the bad axiom SubClassOf(Private_Business_Insurance Insurance).
+[2026-06-28 08:50:53.180] Found 649 possible bad axioms.
+[2026-06-28 08:50:53.181] Selected the bad axiom SubClassOf(Dental_School Tertiary_education).
+[2026-06-28 08:50:53.186] Found 648 possible bad axioms.
+[2026-06-28 08:50:53.186] Selected the bad axiom ClassAssertion(Renal_Pelvis_Cancer renal_pelvis_cancer_incidence).
+[2026-06-28 08:50:53.189] Found 647 possible bad axioms.
+[2026-06-28 08:50:53.190] Selected the bad axiom SubClassOf(Death_By_Substance_Use_Disorder Death_By_Non-communicable_Disease).
+[2026-06-28 08:50:53.196] Found 646 possible bad axioms.
+[2026-06-28 08:50:53.196] Selected the bad axiom SubClassOf(Death_By_Injuries Death).
+[2026-06-28 08:50:53.202] Found 645 possible bad axioms.
+[2026-06-28 08:50:53.202] Selected the bad axiom SubClassOf(OMB_Race Race).
+[2026-06-28 08:50:53.213] Found 644 possible bad axioms.
+[2026-06-28 08:50:53.213] Selected the bad axiom SubClassOf(Death_From_Self-Harm_By_Firearm Death_By_Self_Harm).
+[2026-06-28 08:50:53.219] Found 643 possible bad axioms.
+[2026-06-28 08:50:53.219] Selected the bad axiom SubClassOf(Foreign_Policy Policies).
+[2026-06-28 08:50:53.231] Found 642 possible bad axioms.
+[2026-06-28 08:50:53.231] Selected the bad axiom SubClassOf(School Common_Interest_Purpose).
+[2026-06-28 08:50:53.236] Found 641 possible bad axioms.
+[2026-06-28 08:50:53.237] Selected the bad axiom SubClassOf(Death_By_Police_Conflict Death_By_Execution).
+[2026-06-28 08:50:53.242] Found 640 possible bad axioms.
+[2026-06-28 08:50:53.242] Selected the bad axiom SubClassOf(Motor_Vehicle_Emission Carcinogens).
+[2026-06-28 08:50:53.247] Found 639 possible bad axioms.
+[2026-06-28 08:50:53.247] Selected the bad axiom SubClassOf(Public_Health_Care Health_Care).
+[2026-06-28 08:50:53.251] Found
+...[truncated]
+FAIL: attempt=6 seed=71141 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+progress: ontology=CRENO attempt=6 success=0/100
+----- CRENO attempt=7 seed=85341 at 2026-06-28 08:51:48 -----
+--- stdout ---
+{"seed":85341,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)","iic_values":{},"repair_runtimes_ms":{"A1":813,"A2":43483,"A3":940,"B1":2002,"B2":6919}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=85341, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:51:49.021] Checking precondition...
+[2026-06-28 08:51:49.052] Starting the repair...
+[2026-06-28 08:51:49.067] Found 654 possible bad axioms.
+[2026-06-28 08:51:49.069] Selected the bad axiom SubClassOf(Financial_Resources Resources).
+[2026-06-28 08:51:49.078] Found 653 possible bad axioms.
+[2026-06-28 08:51:49.078] Selected the bad axiom SubClassOf(Death_By_Non-communicable_Disease Death_By_Prostrate_Cancer).
+[2026-06-28 08:51:49.090] Found 652 possible bad axioms.
+[2026-06-28 08:51:49.091] Selected the bad axiom SubClassOf(Hyperleptorrhine owl:Nothing).
+[2026-06-28 08:51:49.098] Found 651 possible bad axioms.
+[2026-06-28 08:51:49.098] Selected the bad axiom SubClassOf(Industrial_Parks Human_Generated_Pollutants).
+[2026-06-28 08:51:49.106] Found 650 possible bad axioms.
+[2026-06-28 08:51:49.107] Selected the bad axiom SubClassOf(Nasal_Index Mesorrhine).
+[2026-06-28 08:51:49.113] Found 649 possible bad axioms.
+[2026-06-28 08:51:49.114] Selected the bad axiom SubClassOf(YouTube_Community Online_Community).
+[2026-06-28 08:51:49.120] Found 648 possible bad axioms.
+[2026-06-28 08:51:49.121] Selected the bad axiom ClassAssertion(Death_By_Prostrate_Cancer prostrate_cancer_mortality).
+[2026-06-28 08:51:49.123] Found 647 possible bad axioms.
+[2026-06-28 08:51:49.124] Selected the bad axiom SubClassOf(Caucasian UK_Ethnic_Classification).
+[2026-06-28 08:51:49.130] Found 646 possible bad axioms.
+[2026-06-28 08:51:49.130] Selected the bad axiom SubClassOf(Dyeing Human_Generated_Pollutants).
+[2026-06-28 08:51:49.136] Found 645 possible bad axioms.
+[2026-06-28 08:51:49.136] Selected the bad axiom SubClassOf(Volcanoes Natural_Pollutants).
+[2026-06-28 08:51:49.147] Found 644 possible bad axioms.
+[2026-06-28 08:51:49.147] Selected the bad axiom SubClassOf(Meditation Cultural_Practices).
+[2026-06-28 08:51:49.154] Found 643 possible bad axioms.
+[2026-06-28 08:51:49.154] Selected the bad axiom SubClassOf(Instagram_Community TikTok_Community).
+[2026-06-28 08:51:49.167] Found 642 possible bad axioms.
+[2026-06-28 08:51:49.168] Selected the bad axiom ClassAssertion(Breast_Cancer breast_cancer_incidence).
+[2026-06-28 08:51:49.169] Found 641 possible bad axioms.
+[2026-06-28 08:51:49.170] Selected the bad axiom SubClassOf(Democracy Government).
+[2026-06-28 08:51:49.175] Found 640 possible bad axioms.
+[2026-06-28 08:51:49.175] Selected the bad axiom ClassAssertion(Native_American _native_americans).
+[2026-06-28 08:51:49.177] Found 639 possible bad axioms.
+[2026-06-28 08:51:49.177] Selected the bad axiom ClassAssertion(Spanish _hispanic_americans).
+[2026-06-28 08:5
+...[truncated]
+FAIL: attempt=7 seed=85341 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+progress: ontology=CRENO attempt=7 success=0/100
+----- CRENO attempt=8 seed=99541 at 2026-06-28 08:52:43 -----
+--- stdout ---
+{"seed":99541,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":1249,"A2":42331,"A3":1034,"B1":964,"B2":7845}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=99541, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:52:43.698] Checking precondition...
+[2026-06-28 08:52:43.730] Starting the repair...
+[2026-06-28 08:52:43.744] Found 654 possible bad axioms.
+[2026-06-28 08:52:43.746] Selected the bad axiom SubClassOf(Strawberry_Generation Taiwanese_Cultural_Generation).
+[2026-06-28 08:52:43.756] Found 653 possible bad axioms.
+[2026-06-28 08:52:43.757] Selected the bad axiom SubClassOf(Private_Health_Care Health_Care).
+[2026-06-28 08:52:43.769] Found 652 possible bad axioms.
+[2026-06-28 08:52:43.770] Selected the bad axiom SubClassOf(Instagram_Community TikTok_Community).
+[2026-06-28 08:52:43.776] Found 651 possible bad axioms.
+[2026-06-28 08:52:43.776] Selected the bad axiom SubClassOf(Donations_to_Health_Charities Funding).
+[2026-06-28 08:52:43.783] Found 650 possible bad axioms.
+[2026-06-28 08:52:43.784] Selected the bad axiom ClassAssertion(Samoan_American _other_pacific_islanders).
+[2026-06-28 08:52:43.787] Found 649 possible bad axioms.
+[2026-06-28 08:52:43.787] Selected the bad axiom SubClassOf(Gamma_Radiation Radiation).
+[2026-06-28 08:52:43.794] Found 648 possible bad axioms.
+[2026-06-28 08:52:43.795] Selected the bad axiom SubClassOf(Native_American_Females Native_American).
+[2026-06-28 08:52:43.802] Found 647 possible bad axioms.
+[2026-06-28 08:52:43.803] Selected the bad axiom ClassAssertion(African_American _african_american).
+[2026-06-28 08:52:43.805] Found 646 possible bad axioms.
+[2026-06-28 08:52:43.805] Selected the bad axiom SubClassOf(Visual_Arts Art).
+[2026-06-28 08:52:43.810] Found 645 possible bad axioms.
+[2026-06-28 08:52:43.810] Selected the bad axiom SubClassOf(Sacrifices Prayer).
+[2026-06-28 08:52:43.816] Found 644 possible bad axioms.
+[2026-06-28 08:52:43.816] Selected the bad axiom SubClassOf(White_Passing Non-white_Passing).
+[2026-06-28 08:52:43.828] Found 643 possible bad axioms.
+[2026-06-28 08:52:43.828] Selected the bad axiom SubClassOf(Death_By_Nutritional_Disorder Death_By_Disease).
+[2026-06-28 08:52:43.834] Found 642 possible bad axioms.
+[2026-06-28 08:52:43.834] Selected the bad axiom SubClassOf(Death_By_Enteric_Infection Death_By_Respiratory_Infection).
+[2026-06-28 08:52:43.845] Found 641 possible bad axioms.
+[2026-06-28 08:52:43.845] Selected the bad axiom SubClassOf(Skin_Cancer Cancer).
+[2026-06-28 08:52:43.850] Found 640 possible bad axioms.
+[2026-06-28 08:52:43.850] Selected the bad axiom SubClassOf(Asian_American OMB_Race).
+[2026-06-28 08:52:43.856] Found 639 possible bad axioms.
+[2026-06-28 08:52:43.856] Selected the bad axiom SubClassOf(Albinism Skin_Pigmentation).
+[2026-06-28 08:52:43.861] Found 638 possib
+...[truncated]
+FAIL: attempt=8 seed=99541 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+progress: ontology=CRENO attempt=8 success=0/100
+----- CRENO attempt=9 seed=113741 at 2026-06-28 08:53:37 -----
+--- stdout ---
+{"seed":113741,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":595,"A2":43490,"A3":2099,"B1":1915,"B2":9746}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=113741, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:53:37.644] Checking precondition...
+[2026-06-28 08:53:37.674] Starting the repair...
+[2026-06-28 08:53:37.686] Found 654 possible bad axioms.
+[2026-06-28 08:53:37.688] Selected the bad axiom SubClassOf(Representative_Democracy Democracy).
+[2026-06-28 08:53:37.697] Found 653 possible bad axioms.
+[2026-06-28 08:53:37.697] Selected the bad axiom ClassAssertion(Spanish _hispanic_americans).
+[2026-06-28 08:53:37.700] Found 652 possible bad axioms.
+[2026-06-28 08:53:37.701] Selected the bad axiom SubClassOf(Japanese_Cultural_Generation Regional_Cultural_Generation).
+[2026-06-28 08:53:37.713] Found 651 possible bad axioms.
+[2026-06-28 08:53:37.713] Selected the bad axiom SubClassOf(Millennials Baby_Boomers).
+[2026-06-28 08:53:37.721] Found 650 possible bad axioms.
+[2026-06-28 08:53:37.722] Selected the bad axiom SubClassOf(Taiwanese_Cultural_Generation Regional_Cultural_Generation).
+[2026-06-28 08:53:37.729] Found 649 possible bad axioms.
+[2026-06-28 08:53:37.730] Selected the bad axiom SubClassOf(Native_Hawaiian Asian_American).
+[2026-06-28 08:53:37.737] Found 648 possible bad axioms.
+[2026-06-28 08:53:37.737] Selected the bad axiom SubClassOf(Processed_Meat Carcinogens).
+[2026-06-28 08:53:37.745] Found 647 possible bad axioms.
+[2026-06-28 08:53:37.745] Selected the bad axiom SubClassOf(Type_1_Diabetes Diabetes).
+[2026-06-28 08:53:37.751] Found 646 possible bad axioms.
+[2026-06-28 08:53:37.751] Selected the bad axiom SubClassOf(Greatest_Generation Generation_X).
+[2026-06-28 08:53:37.757] Found 645 possible bad axioms.
+[2026-06-28 08:53:37.757] Selected the bad axiom SubClassOf(Death_By_Transport_Injury Death_By_Injuries).
+[2026-06-28 08:53:37.768] Found 644 possible bad axioms.
+[2026-06-28 08:53:37.769] Selected the bad axiom SubClassOf(Fee-for-Service Salary).
+[2026-06-28 08:53:37.774] Found 643 possible bad axioms.
+[2026-06-28 08:53:37.774] Selected the bad axiom SubClassOf(Autoimmune_Disease Disease).
+[2026-06-28 08:53:37.785] Found 642 possible bad axioms.
+[2026-06-28 08:53:37.786] Selected the bad axiom SubClassOf(Affordable_Housing_Policy Policies).
+[2026-06-28 08:53:37.791] Found 641 possible bad axioms.
+[2026-06-28 08:53:37.791] Selected the bad axiom SubClassOf(Death_By_Non-communicable_Disease Death_By_Prostrate_Cancer).
+[2026-06-28 08:53:37.796] Found 640 possible bad axioms.
+[2026-06-28 08:53:37.796] Selected the bad axiom SubClassOf(Vocational_Education Formal_Education).
+[2026-06-28 08:53:37.801] Found 639 possible bad axioms.
+[2026-06-28 08:53:37.801] Selected the bad axiom SubClassOf(Radiation Benzene).
+[2026-06-28 08:53:37.
+...[truncated]
+FAIL: attempt=9 seed=113741 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+progress: ontology=CRENO attempt=9 success=0/100
+----- CRENO attempt=10 seed=127941 at 2026-06-28 08:54:35 -----
+--- stdout ---
+{"seed":127941,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":584,"A2":42503,"A3":2137,"B1":1848,"B2":9352}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CRENO.owl, seed=127941, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 08:54:36.038] Checking precondition...
+[2026-06-28 08:54:36.070] Starting the repair...
+[2026-06-28 08:54:36.084] Found 654 possible bad axioms.
+[2026-06-28 08:54:36.086] Selected the bad axiom SubClassOf(Type_2_Diabetes Diabetes).
+[2026-06-28 08:54:36.096] Found 653 possible bad axioms.
+[2026-06-28 08:54:36.096] Selected the bad axiom SubClassOf(Latin_Americans Hispanic).
+[2026-06-28 08:54:36.109] Found 652 possible bad axioms.
+[2026-06-28 08:54:36.109] Selected the bad axiom SubClassOf(Work Common_Interest_Purpose).
+[2026-06-28 08:54:36.117] Found 651 possible bad axioms.
+[2026-06-28 08:54:36.117] Selected the bad axiom SubClassOf(Native_Hawaiian Asian_American).
+[2026-06-28 08:54:36.125] Found 650 possible bad axioms.
+[2026-06-28 08:54:36.125] Selected the bad axiom SubClassOf(Nonviolent_Resistance Riot).
+[2026-06-28 08:54:36.132] Found 649 possible bad axioms.
+[2026-06-28 08:54:36.132] Selected the bad axiom SubClassOf(Rental_Housing Affordable_Housing_Policy).
+[2026-06-28 08:54:36.139] Found 648 possible bad axioms.
+[2026-06-28 08:54:36.139] Selected the bad axiom SubClassOf(Economic_Policy Policies).
+[2026-06-28 08:54:36.146] Found 647 possible bad axioms.
+[2026-06-28 08:54:36.147] Selected the bad axiom SubClassOf(Oligarchy Government).
+[2026-06-28 08:54:36.153] Found 646 possible bad axioms.
+[2026-06-28 08:54:36.153] Selected the bad axiom SubClassOf(Exogamy Marriage).
+[2026-06-28 08:54:36.163] Found 645 possible bad axioms.
+[2026-06-28 08:54:36.163] Selected the bad axiom SubClassOf(Sunless_Tanning Human_Generated_Pollutants).
+[2026-06-28 08:54:36.169] Found 644 possible bad axioms.
+[2026-06-28 08:54:36.169] Selected the bad axiom SubClassOf(Death_By_Motor_Vehicle_Injury Death_By_Road_Injuries).
+[2026-06-28 08:54:36.180] Found 643 possible bad axioms.
+[2026-06-28 08:54:36.180] Selected the bad axiom SubClassOf(Judiciary_Branch Government).
+[2026-06-28 08:54:36.185] Found 642 possible bad axioms.
+[2026-06-28 08:54:36.186] Selected the bad axiom SubClassOf(Japan Ethnic_Nation).
+[2026-06-28 08:54:36.191] Found 641 possible bad axioms.
+[2026-06-28 08:54:36.191] Selected the bad axiom SubClassOf(Aristocracy Government).
+[2026-06-28 08:54:36.197] Found 640 possible bad axioms.
+[2026-06-28 08:54:36.197] Selected the bad axiom SubClassOf(YouTube_Community Virtual_Community).
+[2026-06-28 08:54:36.202] Found 639 possible bad axioms.
+[2026-06-28 08:54:36.202] Selected the bad axiom SubClassOf(Death_By_Non-communicable_Disease Death_By_Maternal_Disorder).
+[2026-06-28 08:54:36.206] Found 638 possible bad axioms.
+[2026-06-28 08:54:36.206] Sel
+...[truncated]
+FAIL: attempt=10 seed=127941 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+progress: ontology=CRENO attempt=10 success=0/100
+=== ABORTED CRENO after 10 consecutive failures at 2026-06-28 08:55:32 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CRENO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=141 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+  attempt=2 seed=14341 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+  attempt=3 seed=28541 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+  attempt=4 seed=42741 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+  attempt=5 seed=56941 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+  attempt=6 seed=71141 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+  attempt=7 seed=85341 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer(IBD_cancer_incidence)
+  attempt=8 seed=99541 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+  attempt=9 seed=113741 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+  attempt=10 seed=127941 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: IBD_Cancer ⊑ ⊥
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

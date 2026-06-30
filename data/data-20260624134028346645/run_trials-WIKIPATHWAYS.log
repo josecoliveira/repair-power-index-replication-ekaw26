@@ -1,0 +1,539 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-WIKIPATHWAYS.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-WIKIPATHWAYS.csv
+
+=== Starting sequential trials for WIKIPATHWAYS at 2026-06-25 02:57:00 ===
+----- WIKIPATHWAYS attempt=1 seed=33 at 2026-06-25 02:57:00 -----
+--- stdout ---
+{"seed":33,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B1","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":58,"A2":468,"A3":179,"B1":297}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=33, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:00.923] Checking precondition...
+[2026-06-25 02:57:00.937] Starting the repair...
+[2026-06-25 02:57:00.946] Found 53 possible bad axioms.
+[2026-06-25 02:57:00.948] Selected the bad axiom SubClassOf(Translocation Binding).
+[2026-06-25 02:57:00.952] Found 52 possible bad axioms.
+[2026-06-25 02:57:00.952] Selected the bad axiom SubClassOf(Rna DataNode).
+[2026-06-25 02:57:00.956] Found 51 possible bad axioms.
+[2026-06-25 02:57:00.957] Selected the bad axiom SubClassOf(Complex Rna).
+[2026-06-25 02:57:00.962] Found 50 possible bad axioms.
+[2026-06-25 02:57:00.962] Selected the bad axiom SubClassOf(Catalysis Binding).
+[2026-06-25 02:57:00.965] Found 49 possible bad axioms.
+[2026-06-25 02:57:00.966] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57:00.968] Found 48 possible bad axioms.
+[2026-06-25 02:57:00.968] Selected the bad axiom SubClassOf(Catalysis Translocation).
+[2026-06-25 02:57:00.971] Found 47 possible bad axioms.
+[2026-06-25 02:57:00.971] Selected the bad axiom SubClassOf(Protein GeneProduct).
+[2026-06-25 02:57:00.974] Found 46 possible bad axioms.
+[2026-06-25 02:57:00.974] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:00.976] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:00.977] Checking precondition...
+[2026-06-25 02:57:00.981] Starting the repair...
+[2026-06-25 02:57:01.443] Found 2 possible bad axioms.
+[2026-06-25 02:57:01.444] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:01.445] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 02:57:01.446] Checking precondition...
+[2026-06-25 02:57:01.449] Starting the repair...
+[2026-06-25 02:57:01.459] Selected a reference ontology with 72 axioms.
+[2026-06-25 02:57:01.605] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:01.622] Selected the weaker axiom SubClassOf(DataNode Interaction).
+[2026-06-25 02:57:01.624] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 02:57:01.625] Checking precondition...
+[2026-06-25 02:57:01.627] Starting the repair...
+[2026-06-25 02:57:01.634] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:01.776] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:01.787] Selected the weaker axiom SubClassOf(owl:Thing Conversion).
+[2026-06-25 02:57:01.920] Selected the bad axiom SubClassOf(owl:Thing Conversion).
+[2026-06-25 02:57:01.920] Selected the wea
+...[truncated]
+FAIL: attempt=1 seed=33 status=memory_limit_exceeded stage=B1 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=WIKIPATHWAYS attempt=1 success=0/100
+----- WIKIPATHWAYS attempt=2 seed=14233 at 2026-06-25 02:57:02 -----
+--- stdout ---
+{"seed":14233,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction","iic_values":{},"repair_runtimes_ms":{"A1":37,"A2":477,"A3":183,"B1":293,"B2":885}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=14233, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:02.327] Checking precondition...
+[2026-06-25 02:57:02.341] Starting the repair...
+[2026-06-25 02:57:02.348] Found 53 possible bad axioms.
+[2026-06-25 02:57:02.350] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(target owl:Thing) DirectedInteraction).
+[2026-06-25 02:57:02.354] Found 52 possible bad axioms.
+[2026-06-25 02:57:02.354] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:02.359] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:02.360] Checking precondition...
+[2026-06-25 02:57:02.368] Starting the repair...
+[2026-06-25 02:57:02.837] Found 2 possible bad axioms.
+[2026-06-25 02:57:02.837] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:02.837] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 02:57:02.841] Checking precondition...
+[2026-06-25 02:57:02.844] Starting the repair...
+[2026-06-25 02:57:02.853] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:03.002] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:03.020] Selected the weaker axiom SubClassOf(Interaction Interaction).
+[2026-06-25 02:57:03.021] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 02:57:03.022] Checking precondition...
+[2026-06-25 02:57:03.025] Starting the repair...
+[2026-06-25 02:57:03.030] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:03.161] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:03.174] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(bdbPubChem Metabolite) Interaction).
+[2026-06-25 02:57:03.314] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(bdbPubChem Metabolite) Interaction).
+[2026-06-25 02:57:03.315] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(bdbPubChem Metabolite) ObjectAllValuesFrom(bdbPubChem Metabolite)).
+[2026-06-25 02:57:03.315] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-25 02:57:03.317] Checking precondition...
+[2026-06-25 02:57:03.318] Starting the repair...
+[2026-06-25 02:57:03.322] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:03.422] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[PowerIndexWeakerAxiomSelector] Scoring 23 candidate weakenings for ⊤ ⊑ Interaction
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsi
+...[truncated]
+FAIL: attempt=2 seed=14233 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction
+progress: ontology=WIKIPATHWAYS attempt=2 success=0/100
+----- WIKIPATHWAYS attempt=3 seed=28433 at 2026-06-25 02:57:04 -----
+--- stdout ---
+{"seed":28433,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding","iic_values":{},"repair_runtimes_ms":{"A1":75,"A2":457,"A3":469,"B1":114,"B2":826}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=28433, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:04.608] Checking precondition...
+[2026-06-25 02:57:04.620] Starting the repair...
+[2026-06-25 02:57:04.628] Found 53 possible bad axioms.
+[2026-06-25 02:57:04.630] Selected the bad axiom SubClassOf(Catalysis Binding).
+[2026-06-25 02:57:04.634] Found 52 possible bad axioms.
+[2026-06-25 02:57:04.635] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(bdbChemspider Metabolite) ObjectAllValuesFrom(source DataNode)).
+[2026-06-25 02:57:04.639] Found 51 possible bad axioms.
+[2026-06-25 02:57:04.639] Selected the bad axiom SubClassOf(Stimulation DirectedInteraction).
+[2026-06-25 02:57:04.644] Found 50 possible bad axioms.
+[2026-06-25 02:57:04.644] Selected the bad axiom SubClassOf(Catalysis ComplexBinding).
+[2026-06-25 02:57:04.647] Found 49 possible bad axioms.
+[2026-06-25 02:57:04.647] Selected the bad axiom SubClassOf(Catalysis Translocation).
+[2026-06-25 02:57:04.650] Found 48 possible bad axioms.
+[2026-06-25 02:57:04.650] Selected the bad axiom SubClassOf(Catalysis ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57:04.652] Found 47 possible bad axioms.
+[2026-06-25 02:57:04.652] Selected the bad axiom SubClassOf(Translocation Binding).
+[2026-06-25 02:57:04.655] Found 46 possible bad axioms.
+[2026-06-25 02:57:04.655] Selected the bad axiom SubClassOf(Translocation ComplexBinding).
+[2026-06-25 02:57:04.658] Found 45 possible bad axioms.
+[2026-06-25 02:57:04.658] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(target ObjectAllValuesFrom(bdbHmdb Metabolite))).
+[2026-06-25 02:57:04.660] Found 44 possible bad axioms.
+[2026-06-25 02:57:04.660] Selected the bad axiom SubClassOf(Catalysis DirectedInteraction).
+[2026-06-25 02:57:04.662] Found 43 possible bad axioms.
+[2026-06-25 02:57:04.662] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57:04.669] Found 42 possible bad axioms.
+[2026-06-25 02:57:04.669] Selected the bad axiom SubClassOf(Translocation DirectedInteraction).
+[2026-06-25 02:57:04.672] Found 41 possible bad axioms.
+[2026-06-25 02:57:04.672] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:04.678] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:04.679] Checking precondition...
+[2026-06-25 02:57:04.685] Starting the repair...
+[2026-06-25 02:57:05.134] Found 2 possible bad axioms.
+[2026-06-25 02:57:05.134] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:05.136] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25
+...[truncated]
+FAIL: attempt=3 seed=28433 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+progress: ontology=WIKIPATHWAYS attempt=3 success=0/100
+----- WIKIPATHWAYS attempt=4 seed=42633 at 2026-06-25 02:57:06 -----
+--- stdout ---
+{"seed":42633,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding","iic_values":{},"repair_runtimes_ms":{"A1":32,"A2":507,"A3":198,"B1":487,"B2":1019}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=42633, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:06.946] Checking precondition...
+[2026-06-25 02:57:06.959] Starting the repair...
+[2026-06-25 02:57:06.967] Found 53 possible bad axioms.
+[2026-06-25 02:57:06.969] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:06.973] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:06.974] Checking precondition...
+[2026-06-25 02:57:06.985] Starting the repair...
+[2026-06-25 02:57:07.480] Found 2 possible bad axioms.
+[2026-06-25 02:57:07.480] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:07.481] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 02:57:07.483] Checking precondition...
+[2026-06-25 02:57:07.486] Starting the repair...
+[2026-06-25 02:57:07.498] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:07.653] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:07.674] Selected the weaker axiom SubClassOf(owl:Thing ObjectAllValuesFrom(bdbHmdb Metabolite)).
+[2026-06-25 02:57:07.679] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 02:57:07.681] Checking precondition...
+[2026-06-25 02:57:07.683] Starting the repair...
+[2026-06-25 02:57:07.691] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:07.821] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:07.833] Selected the weaker axiom SubClassOf(Interaction owl:Nothing).
+[2026-06-25 02:57:07.910] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:07.911] Selected the weaker axiom SubClassOf(ObjectAllValuesFrom(bdbHmdb Metabolite) Interaction).
+[2026-06-25 02:57:08.019] Selected the bad axiom SubClassOf(Interaction owl:Nothing).
+[2026-06-25 02:57:08.019] Selected the weaker axiom SubClassOf(Interaction ObjectSomeValuesFrom(source owl:Thing)).
+[2026-06-25 02:57:08.167] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(bdbHmdb Metabolite)).
+[2026-06-25 02:57:08.167] Selected the weaker axiom SubClassOf(DataNode ObjectAllValuesFrom(bdbHmdb Metabolite)).
+[2026-06-25 02:57:08.168] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-25 02:57:08.170] Checking precondition...
+[2026-06-25 02:57:08.171] Starting the repair...
+[2026-06-25 02:57:08.176] Selected a reference ontology with 72 axioms.
+[2026-06-25 02:57:08.271] Selected the bad axiom SubClassOf(Interaction Binding).
+[PowerIndexWeakerAxiomSelector] Scoring 28 candidate weakenings for Interaction ⊑ B
+...[truncated]
+FAIL: attempt=4 seed=42633 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+progress: ontology=WIKIPATHWAYS attempt=4 success=0/100
+----- WIKIPATHWAYS attempt=5 seed=56833 at 2026-06-25 02:57:09 -----
+--- stdout ---
+{"seed":56833,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction","iic_values":{},"repair_runtimes_ms":{"A1":56,"A2":473,"A3":184,"B1":295,"B2":772}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=56833, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:09.607] Checking precondition...
+[2026-06-25 02:57:09.621] Starting the repair...
+[2026-06-25 02:57:09.630] Found 53 possible bad axioms.
+[2026-06-25 02:57:09.631] Selected the bad axiom SubClassOf(Inhibition TranscriptionTranslation).
+[2026-06-25 02:57:09.635] Found 52 possible bad axioms.
+[2026-06-25 02:57:09.636] Selected the bad axiom SubClassOf(Translocation DirectedInteraction).
+[2026-06-25 02:57:09.640] Found 51 possible bad axioms.
+[2026-06-25 02:57:09.640] Selected the bad axiom SubClassOf(Binding DirectedInteraction).
+[2026-06-25 02:57:09.645] Found 50 possible bad axioms.
+[2026-06-25 02:57:09.645] Selected the bad axiom SubClassOf(Protein GeneProduct).
+[2026-06-25 02:57:09.648] Found 49 possible bad axioms.
+[2026-06-25 02:57:09.648] Selected the bad axiom SubClassOf(Stimulation DirectedInteraction).
+[2026-06-25 02:57:09.651] Found 48 possible bad axioms.
+[2026-06-25 02:57:09.651] Selected the bad axiom SubClassOf(DirectedInteraction ComplexBinding).
+[2026-06-25 02:57:09.654] Found 47 possible bad axioms.
+[2026-06-25 02:57:09.654] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57:09.656] Found 46 possible bad axioms.
+[2026-06-25 02:57:09.657] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:09.659] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:09.660] Checking precondition...
+[2026-06-25 02:57:09.665] Starting the repair...
+[2026-06-25 02:57:10.130] Found 2 possible bad axioms.
+[2026-06-25 02:57:10.131] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:10.132] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 02:57:10.134] Checking precondition...
+[2026-06-25 02:57:10.135] Starting the repair...
+[2026-06-25 02:57:10.143] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:10.296] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:10.314] Selected the weaker axiom SubClassOf(Interaction Interaction).
+[2026-06-25 02:57:10.316] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 02:57:10.317] Checking precondition...
+[2026-06-25 02:57:10.319] Starting the repair...
+[2026-06-25 02:57:10.330] Selected a reference ontology with 72 axioms.
+[2026-06-25 02:57:10.460] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:10.474] Selected the weaker axiom SubClassOf(Interaction ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57
+...[truncated]
+FAIL: attempt=5 seed=56833 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction
+progress: ontology=WIKIPATHWAYS attempt=5 success=0/100
+----- WIKIPATHWAYS attempt=6 seed=71033 at 2026-06-25 02:57:11 -----
+--- stdout ---
+{"seed":71033,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction","iic_values":{},"repair_runtimes_ms":{"A1":87,"A2":439,"A3":337,"B1":258,"B2":682}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=71033, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:11.792] Checking precondition...
+[2026-06-25 02:57:11.805] Starting the repair...
+[2026-06-25 02:57:11.812] Found 53 possible bad axioms.
+[2026-06-25 02:57:11.814] Selected the bad axiom SubClassOf(Binding owl:Nothing).
+[2026-06-25 02:57:11.818] Found 52 possible bad axioms.
+[2026-06-25 02:57:11.819] Selected the bad axiom SubClassOf(Complex GeneProduct).
+[2026-06-25 02:57:11.824] Found 51 possible bad axioms.
+[2026-06-25 02:57:11.824] Selected the bad axiom SubClassOf(Catalysis Translocation).
+[2026-06-25 02:57:11.829] Found 50 possible bad axioms.
+[2026-06-25 02:57:11.829] Selected the bad axiom SubClassOf(Inhibition DirectedInteraction).
+[2026-06-25 02:57:11.831] Found 49 possible bad axioms.
+[2026-06-25 02:57:11.832] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(bdbHmdb Metabolite)).
+[2026-06-25 02:57:11.834] Found 48 possible bad axioms.
+[2026-06-25 02:57:11.835] Selected the bad axiom SubClassOf(Catalysis DirectedInteraction).
+[2026-06-25 02:57:11.838] Found 47 possible bad axioms.
+[2026-06-25 02:57:11.838] Selected the bad axiom SubClassOf(DirectedInteraction Binding).
+[2026-06-25 02:57:11.841] Found 46 possible bad axioms.
+[2026-06-25 02:57:11.841] Selected the bad axiom SubClassOf(DataNode GeneProduct).
+[2026-06-25 02:57:11.844] Found 45 possible bad axioms.
+[2026-06-25 02:57:11.844] Selected the bad axiom SubClassOf(Catalysis ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57:11.846] Found 44 possible bad axioms.
+[2026-06-25 02:57:11.846] Selected the bad axiom SubClassOf(Rna Complex).
+[2026-06-25 02:57:11.848] Found 43 possible bad axioms.
+[2026-06-25 02:57:11.848] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(source owl:Thing)).
+[2026-06-25 02:57:11.855] Found 42 possible bad axioms.
+[2026-06-25 02:57:11.855] Selected the bad axiom SubClassOf(Catalysis ComplexBinding).
+[2026-06-25 02:57:11.857] Found 41 possible bad axioms.
+[2026-06-25 02:57:11.857] Selected the bad axiom SubClassOf(Complex Rna).
+[2026-06-25 02:57:11.864] Found 40 possible bad axioms.
+[2026-06-25 02:57:11.864] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(target ObjectAllValuesFrom(bdbHmdb Metabolite))).
+[2026-06-25 02:57:11.866] Found 39 possible bad axioms.
+[2026-06-25 02:57:11.866] Selected the bad axiom SubClassOf(Protein GeneProduct).
+[2026-06-25 02:57:11.868] Found 38 possible bad axioms.
+[2026-06-25 02:57:11.868] Selected the bad axiom SubClassOf(Binding Catalysis).
+[2026-06-25 02:57:11.869] Found 37 possible bad axioms.
+[2026-06-25 02:57:11.870] Selected the bad axiom SubCla
+...[truncated]
+FAIL: attempt=6 seed=71033 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction
+progress: ontology=WIKIPATHWAYS attempt=6 success=0/100
+----- WIKIPATHWAYS attempt=7 seed=85233 at 2026-06-25 02:57:13 -----
+--- stdout ---
+{"seed":85233,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding","iic_values":{},"repair_runtimes_ms":{"A1":78,"A2":462,"A3":183,"B1":288,"B2":903}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=85233, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:14.003] Checking precondition...
+[2026-06-25 02:57:14.016] Starting the repair...
+[2026-06-25 02:57:14.024] Found 53 possible bad axioms.
+[2026-06-25 02:57:14.026] Selected the bad axiom SubClassOf(TranscriptionTranslation DirectedInteraction).
+[2026-06-25 02:57:14.030] Found 52 possible bad axioms.
+[2026-06-25 02:57:14.030] Selected the bad axiom SubClassOf(Inhibition TranscriptionTranslation).
+[2026-06-25 02:57:14.036] Found 51 possible bad axioms.
+[2026-06-25 02:57:14.037] Selected the bad axiom SubClassOf(Binding owl:Nothing).
+[2026-06-25 02:57:14.042] Found 50 possible bad axioms.
+[2026-06-25 02:57:14.042] Selected the bad axiom SubClassOf(Conversion Translocation).
+[2026-06-25 02:57:14.045] Found 49 possible bad axioms.
+[2026-06-25 02:57:14.045] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(target owl:Thing) DirectedInteraction).
+[2026-06-25 02:57:14.048] Found 48 possible bad axioms.
+[2026-06-25 02:57:14.048] Selected the bad axiom SubClassOf(Metabolite Protein).
+[2026-06-25 02:57:14.051] Found 47 possible bad axioms.
+[2026-06-25 02:57:14.051] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(target ObjectAllValuesFrom(bdbHmdb Metabolite))).
+[2026-06-25 02:57:14.053] Found 46 possible bad axioms.
+[2026-06-25 02:57:14.054] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(source owl:Thing) DirectedInteraction).
+[2026-06-25 02:57:14.056] Found 45 possible bad axioms.
+[2026-06-25 02:57:14.056] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(source owl:Thing)).
+[2026-06-25 02:57:14.059] Found 44 possible bad axioms.
+[2026-06-25 02:57:14.059] Selected the bad axiom SubClassOf(Catalysis ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57:14.060] Found 43 possible bad axioms.
+[2026-06-25 02:57:14.061] Selected the bad axiom SubClassOf(Translocation ComplexBinding).
+[2026-06-25 02:57:14.068] Found 42 possible bad axioms.
+[2026-06-25 02:57:14.068] Selected the bad axiom SubClassOf(Metabolite GeneProduct).
+[2026-06-25 02:57:14.070] Found 41 possible bad axioms.
+[2026-06-25 02:57:14.070] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:14.077] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:14.078] Checking precondition...
+[2026-06-25 02:57:14.084] Starting the repair...
+[2026-06-25 02:57:14.539] Found 2 possible bad axioms.
+[2026-06-25 02:57:14.539] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:14.540] Finished repairing the ontology.
+Repairing with A3 (default-weake
+...[truncated]
+FAIL: attempt=7 seed=85233 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+progress: ontology=WIKIPATHWAYS attempt=7 success=0/100
+----- WIKIPATHWAYS attempt=8 seed=99433 at 2026-06-25 02:57:16 -----
+--- stdout ---
+{"seed":99433,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding","iic_values":{},"repair_runtimes_ms":{"A1":69,"A2":464,"A3":199,"B1":149,"B2":1042}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=99433, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:16.330] Checking precondition...
+[2026-06-25 02:57:16.342] Starting the repair...
+[2026-06-25 02:57:16.351] Found 53 possible bad axioms.
+[2026-06-25 02:57:16.353] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(bdbChEBI Metabolite)).
+[2026-06-25 02:57:16.357] Found 52 possible bad axioms.
+[2026-06-25 02:57:16.358] Selected the bad axiom SubClassOf(DirectedInteraction ObjectSomeValuesFrom(source owl:Thing)).
+[2026-06-25 02:57:16.363] Found 51 possible bad axioms.
+[2026-06-25 02:57:16.363] Selected the bad axiom SubClassOf(Catalysis ObjectSomeValuesFrom(target owl:Thing)).
+[2026-06-25 02:57:16.368] Found 50 possible bad axioms.
+[2026-06-25 02:57:16.368] Selected the bad axiom SubClassOf(Conversion DirectedInteraction).
+[2026-06-25 02:57:16.370] Found 49 possible bad axioms.
+[2026-06-25 02:57:16.371] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(bdbHmdb Metabolite)).
+[2026-06-25 02:57:16.373] Found 48 possible bad axioms.
+[2026-06-25 02:57:16.373] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(target owl:Thing) DirectedInteraction).
+[2026-06-25 02:57:16.376] Found 47 possible bad axioms.
+[2026-06-25 02:57:16.376] Selected the bad axiom SubClassOf(Catalysis Inhibition).
+[2026-06-25 02:57:16.379] Found 46 possible bad axioms.
+[2026-06-25 02:57:16.379] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(source owl:Thing) DirectedInteraction).
+[2026-06-25 02:57:16.381] Found 45 possible bad axioms.
+[2026-06-25 02:57:16.381] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(bdbChemspider Metabolite)).
+[2026-06-25 02:57:16.383] Found 44 possible bad axioms.
+[2026-06-25 02:57:16.383] Selected the bad axiom SubClassOf(Catalysis Translocation).
+[2026-06-25 02:57:16.385] Found 43 possible bad axioms.
+[2026-06-25 02:57:16.386] Selected the bad axiom SubClassOf(Catalysis ComplexBinding).
+[2026-06-25 02:57:16.392] Found 42 possible bad axioms.
+[2026-06-25 02:57:16.392] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:16.395] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:16.395] Checking precondition...
+[2026-06-25 02:57:16.405] Starting the repair...
+[2026-06-25 02:57:16.858] Found 2 possible bad axioms.
+[2026-06-25 02:57:16.858] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:16.859] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 02:57:16.861] Checking precondition...
+[2026-06-25 02:57:16.863] Starting the repair...
+[2026-06-25 02:57:16.
+...[truncated]
+FAIL: attempt=8 seed=99433 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+progress: ontology=WIKIPATHWAYS attempt=8 success=0/100
+----- WIKIPATHWAYS attempt=9 seed=113633 at 2026-06-25 02:57:18 -----
+--- stdout ---
+{"seed":113633,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B1","error_message":"Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty","iic_values":{},"repair_runtimes_ms":{"A1":90,"A2":455,"A3":317,"B1":125}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=113633, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:18.655] Checking precondition...
+[2026-06-25 02:57:18.667] Starting the repair...
+[2026-06-25 02:57:18.675] Found 53 possible bad axioms.
+[2026-06-25 02:57:18.677] Selected the bad axiom SubClassOf(Metabolite DataNode).
+[2026-06-25 02:57:18.681] Found 52 possible bad axioms.
+[2026-06-25 02:57:18.682] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(bdbChEBI Metabolite)).
+[2026-06-25 02:57:18.687] Found 51 possible bad axioms.
+[2026-06-25 02:57:18.687] Selected the bad axiom SubClassOf(Complex Rna).
+[2026-06-25 02:57:18.694] Found 50 possible bad axioms.
+[2026-06-25 02:57:18.694] Selected the bad axiom SubClassOf(Inhibition TranscriptionTranslation).
+[2026-06-25 02:57:18.697] Found 49 possible bad axioms.
+[2026-06-25 02:57:18.698] Selected the bad axiom SubClassOf(Metabolite GeneProduct).
+[2026-06-25 02:57:18.700] Found 48 possible bad axioms.
+[2026-06-25 02:57:18.700] Selected the bad axiom SubClassOf(Protein GeneProduct).
+[2026-06-25 02:57:18.703] Found 47 possible bad axioms.
+[2026-06-25 02:57:18.703] Selected the bad axiom SubClassOf(DirectedInteraction ObjectSomeValuesFrom(source owl:Thing)).
+[2026-06-25 02:57:18.706] Found 46 possible bad axioms.
+[2026-06-25 02:57:18.706] Selected the bad axiom SubClassOf(Binding Catalysis).
+[2026-06-25 02:57:18.708] Found 45 possible bad axioms.
+[2026-06-25 02:57:18.708] Selected the bad axiom SubClassOf(DirectedInteraction Inhibition).
+[2026-06-25 02:57:18.710] Found 44 possible bad axioms.
+[2026-06-25 02:57:18.711] Selected the bad axiom SubClassOf(Translocation ComplexBinding).
+[2026-06-25 02:57:18.712] Found 43 possible bad axioms.
+[2026-06-25 02:57:18.712] Selected the bad axiom SubClassOf(Translocation DirectedInteraction).
+[2026-06-25 02:57:18.719] Found 42 possible bad axioms.
+[2026-06-25 02:57:18.720] Selected the bad axiom SubClassOf(Conversion ObjectSomeValuesFrom(source owl:Thing)).
+[2026-06-25 02:57:18.722] Found 41 possible bad axioms.
+[2026-06-25 02:57:18.722] Selected the bad axiom SubClassOf(DirectedInteraction TranscriptionTranslation).
+[2026-06-25 02:57:18.729] Found 40 possible bad axioms.
+[2026-06-25 02:57:18.730] Selected the bad axiom SubClassOf(Rna DataNode).
+[2026-06-25 02:57:18.738] Found 39 possible bad axioms.
+[2026-06-25 02:57:18.738] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:18.740] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:18.741] Checking precondition...
+[2026-06-25 02:57:18.745] Starting the repair...
+[2026-06-25 02:57:19.195] Found 2 possible bad a
+...[truncated]
+FAIL: attempt=9 seed=113633 status=memory_limit_exceeded stage=B1 message=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+progress: ontology=WIKIPATHWAYS attempt=9 success=0/100
+----- WIKIPATHWAYS attempt=10 seed=127833 at 2026-06-25 02:57:19 -----
+--- stdout ---
+{"seed":127833,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding","iic_values":{},"repair_runtimes_ms":{"A1":57,"A2":470,"A3":349,"B1":332,"B2":870}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/WIKIPATHWAYS.owl, seed=127833, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 02:57:20.038] Checking precondition...
+[2026-06-25 02:57:20.051] Starting the repair...
+[2026-06-25 02:57:20.059] Found 53 possible bad axioms.
+[2026-06-25 02:57:20.060] Selected the bad axiom SubClassOf(Translocation DirectedInteraction).
+[2026-06-25 02:57:20.064] Found 52 possible bad axioms.
+[2026-06-25 02:57:20.065] Selected the bad axiom SubClassOf(ComplexBinding Binding).
+[2026-06-25 02:57:20.070] Found 51 possible bad axioms.
+[2026-06-25 02:57:20.071] Selected the bad axiom SubClassOf(DirectedInteraction Interaction).
+[2026-06-25 02:57:20.076] Found 50 possible bad axioms.
+[2026-06-25 02:57:20.077] Selected the bad axiom SubClassOf(Conversion DirectedInteraction).
+[2026-06-25 02:57:20.079] Found 49 possible bad axioms.
+[2026-06-25 02:57:20.079] Selected the bad axiom SubClassOf(Binding ComplexBinding).
+[2026-06-25 02:57:20.082] Found 48 possible bad axioms.
+[2026-06-25 02:57:20.083] Selected the bad axiom SubClassOf(DirectedInteraction TranscriptionTranslation).
+[2026-06-25 02:57:20.085] Found 47 possible bad axioms.
+[2026-06-25 02:57:20.085] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(source DataNode)).
+[2026-06-25 02:57:20.088] Found 46 possible bad axioms.
+[2026-06-25 02:57:20.088] Selected the bad axiom SubClassOf(owl:Thing Interaction).
+[2026-06-25 02:57:20.090] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 02:57:20.091] Checking precondition...
+[2026-06-25 02:57:20.097] Starting the repair...
+[2026-06-25 02:57:20.560] Found 2 possible bad axioms.
+[2026-06-25 02:57:20.561] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:20.561] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 02:57:20.564] Checking precondition...
+[2026-06-25 02:57:20.565] Starting the repair...
+[2026-06-25 02:57:20.574] Selected a reference ontology with 74 axioms.
+[2026-06-25 02:57:20.718] Selected the bad axiom SubClassOf(Interaction Binding).
+[2026-06-25 02:57:20.735] Selected the weaker axiom SubClassOf(Interaction Stimulation).
+[2026-06-25 02:57:20.906] Selected the bad axiom SubClassOf(Stimulation DirectedInteraction).
+[2026-06-25 02:57:20.909] Selected the weaker axiom SubClassOf(ObjectSomeValuesFrom(target owl:Thing) DirectedInteraction).
+[2026-06-25 02:57:20.911] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 02:57:20.912] Checking precondition...
+[2026-06-25 02:57:20.913] Starting the repair...
+[2026-06-25 02:57:20.918] Selected a reference ontology with 74 axio
+...[truncated]
+FAIL: attempt=10 seed=127833 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+progress: ontology=WIKIPATHWAYS attempt=10 success=0/100
+=== ABORTED WIKIPATHWAYS after 10 consecutive failures at 2026-06-25 02:57:22 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for WIKIPATHWAYS - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=33 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=2 seed=14233 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction
+  attempt=3 seed=28433 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+  attempt=4 seed=42633 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+  attempt=5 seed=56833 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction
+  attempt=6 seed=71033 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Interaction
+  attempt=7 seed=85233 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+  attempt=8 seed=99433 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+  attempt=9 seed=113633 msg=Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty
+  attempt=10 seed=127833 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Interaction ⊑ Binding
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

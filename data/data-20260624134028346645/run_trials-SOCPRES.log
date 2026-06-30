@@ -1,0 +1,551 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-SOCPRES.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-SOCPRES.csv
+
+=== Starting sequential trials for SOCPRES at 2026-06-26 06:04:24 ===
+----- SOCPRES attempt=1 seed=59 at 2026-06-26 06:04:24 -----
+--- stdout ---
+{"seed":59,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012","iic_values":{},"repair_runtimes_ms":{"A1":71,"A2":1482,"A3":304,"B1":275,"B2":1155}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=59, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:24.850] Checking precondition...
+[2026-06-26 06:04:24.864] Starting the repair...
+[2026-06-26 06:04:24.871] Found 109 possible bad axioms.
+[2026-06-26 06:04:24.873] Selected the bad axiom SubClassOf(mdo000016 mdo000053).
+[2026-06-26 06:04:24.877] Found 108 possible bad axioms.
+[2026-06-26 06:04:24.878] Selected the bad axiom SubClassOf(mdo000036 mdo000054).
+[2026-06-26 06:04:24.881] Found 107 possible bad axioms.
+[2026-06-26 06:04:24.881] Selected the bad axiom SubClassOf(mdo000020 mdo000012).
+[2026-06-26 06:04:24.885] Found 106 possible bad axioms.
+[2026-06-26 06:04:24.885] Selected the bad axiom SubClassOf(mdo000034 mdo000020).
+[2026-06-26 06:04:24.888] Found 105 possible bad axioms.
+[2026-06-26 06:04:24.888] Selected the bad axiom SubClassOf(mdo000041 owl:Nothing).
+[2026-06-26 06:04:24.891] Found 104 possible bad axioms.
+[2026-06-26 06:04:24.891] Selected the bad axiom SubClassOf(mdo000052 mdo000048).
+[2026-06-26 06:04:24.894] Found 103 possible bad axioms.
+[2026-06-26 06:04:24.894] Selected the bad axiom SubClassOf(mdo000014 mdo000011).
+[2026-06-26 06:04:24.896] Found 102 possible bad axioms.
+[2026-06-26 06:04:24.897] Selected the bad axiom SubClassOf(mdo000010 mdo000039).
+[2026-06-26 06:04:24.903] Found 101 possible bad axioms.
+[2026-06-26 06:04:24.904] Selected the bad axiom SubClassOf(mdo000039 mdo000010).
+[2026-06-26 06:04:24.906] Found 100 possible bad axioms.
+[2026-06-26 06:04:24.906] Selected the bad axiom SubClassOf(mdo000002 mdo000000).
+[2026-06-26 06:04:24.908] Found 99 possible bad axioms.
+[2026-06-26 06:04:24.908] Selected the bad axiom SubClassOf(mdo000001 owl:Nothing).
+[2026-06-26 06:04:24.916] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:04:24.917] Checking precondition...
+[2026-06-26 06:04:24.924] Starting the repair...
+[2026-06-26 06:04:26.397] Found 4 possible bad axioms.
+[2026-06-26 06:04:26.398] Selected the bad axiom SubClassOf(mdo000019 mdo000012).
+[2026-06-26 06:04:26.399] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:04:26.401] Checking precondition...
+[2026-06-26 06:04:26.403] Starting the repair...
+[2026-06-26 06:04:26.412] Selected a reference ontology with 163 axioms.
+[2026-06-26 06:04:26.676] Selected the bad axiom SubClassOf(mdo000029 mdo000019).
+[2026-06-26 06:04:26.702] Selected the weaker axiom SubClassOf(mdo000019 mdo000019).
+[2026-06-26 06:04:26.703] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:04:26.704] Checking precondition...
+[2026-06-26 06:0
+...[truncated]
+FAIL: attempt=1 seed=59 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+progress: ontology=SOCPRES attempt=1 success=0/100
+----- SOCPRES attempt=2 seed=14259 at 2026-06-26 06:04:28 -----
+--- stdout ---
+{"seed":14259,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012","iic_values":{},"repair_runtimes_ms":{"A1":121,"A2":1451,"A3":300,"B1":265,"B2":1307}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=14259, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:28.573] Checking precondition...
+[2026-06-26 06:04:28.589] Starting the repair...
+[2026-06-26 06:04:28.595] Found 109 possible bad axioms.
+[2026-06-26 06:04:28.597] Selected the bad axiom SubClassOf(mdo000003 mdo000012).
+[2026-06-26 06:04:28.602] Found 108 possible bad axioms.
+[2026-06-26 06:04:28.602] Selected the bad axiom SubClassOf(mdo000007 mdo000008).
+[2026-06-26 06:04:28.606] Found 107 possible bad axioms.
+[2026-06-26 06:04:28.606] Selected the bad axiom SubClassOf(mdo000001 mdo000002).
+[2026-06-26 06:04:28.610] Found 106 possible bad axioms.
+[2026-06-26 06:04:28.610] Selected the bad axiom SubClassOf(mdo000008 mdo000017).
+[2026-06-26 06:04:28.613] Found 105 possible bad axioms.
+[2026-06-26 06:04:28.613] Selected the bad axiom SubClassOf(mdo000001 ObjectSomeValuesFrom(mdo000004 owl:Thing)).
+[2026-06-26 06:04:28.615] Found 104 possible bad axioms.
+[2026-06-26 06:04:28.616] Selected the bad axiom SubClassOf(mdo000056 mdo000006).
+[2026-06-26 06:04:28.618] Found 103 possible bad axioms.
+[2026-06-26 06:04:28.618] Selected the bad axiom SubClassOf(mdo000008 mdo000059).
+[2026-06-26 06:04:28.621] Found 102 possible bad axioms.
+[2026-06-26 06:04:28.621] Selected the bad axiom SubClassOf(mdo000045 mdo000037).
+[2026-06-26 06:04:28.627] Found 101 possible bad axioms.
+[2026-06-26 06:04:28.628] Selected the bad axiom SubClassOf(mdo000041 mdo000010).
+[2026-06-26 06:04:28.630] Found 100 possible bad axioms.
+[2026-06-26 06:04:28.630] Selected the bad axiom SubClassOf(mdo000038 mdo000037).
+[2026-06-26 06:04:28.632] Found 99 possible bad axioms.
+[2026-06-26 06:04:28.632] Selected the bad axiom SubClassOf(mdo000032 mdo000023).
+[2026-06-26 06:04:28.640] Found 98 possible bad axioms.
+[2026-06-26 06:04:28.640] Selected the bad axiom SubClassOf(mdo000037 mdo000015).
+[2026-06-26 06:04:28.642] Found 97 possible bad axioms.
+[2026-06-26 06:04:28.643] Selected the bad axiom SubClassOf(mdo000051 mdo000048).
+[2026-06-26 06:04:28.645] Found 96 possible bad axioms.
+[2026-06-26 06:04:28.646] Selected the bad axiom SubClassOf(mdo000006 mdo000008).
+[2026-06-26 06:04:28.648] Found 95 possible bad axioms.
+[2026-06-26 06:04:28.648] Selected the bad axiom SubClassOf(mdo000015 mdo000010).
+[2026-06-26 06:04:28.651] Found 94 possible bad axioms.
+[2026-06-26 06:04:28.651] Selected the bad axiom SubClassOf(mdo000059 mdo000026).
+[2026-06-26 06:04:28.654] Found 93 possible bad axioms.
+[2026-06-26 06:04:28.654] Selected the bad axiom SubClassOf(mdo000001 mdo000000).
+[2026-06-26 06:04:28.657] Found 92 possible bad axioms.
+[2026-06-26 06:04:28.657] Selected the bad axiom S
+...[truncated]
+FAIL: attempt=2 seed=14259 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+progress: ontology=SOCPRES attempt=2 success=0/100
+----- SOCPRES attempt=3 seed=28459 at 2026-06-26 06:04:32 -----
+--- stdout ---
+{"seed":28459,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":139,"A2":1473,"A3":282,"B1":276,"B2":1177}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=28459, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:32.433] Checking precondition...
+[2026-06-26 06:04:32.448] Starting the repair...
+[2026-06-26 06:04:32.455] Found 109 possible bad axioms.
+[2026-06-26 06:04:32.457] Selected the bad axiom SubClassOf(mdo000022 mdo000021).
+[2026-06-26 06:04:32.461] Found 108 possible bad axioms.
+[2026-06-26 06:04:32.462] Selected the bad axiom SubClassOf(mdo000016 mdo000053).
+[2026-06-26 06:04:32.465] Found 107 possible bad axioms.
+[2026-06-26 06:04:32.465] Selected the bad axiom SubClassOf(mdo000045 mdo000058).
+[2026-06-26 06:04:32.469] Found 106 possible bad axioms.
+[2026-06-26 06:04:32.469] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mdo000004 owl:Thing) mdo000001).
+[2026-06-26 06:04:32.472] Found 105 possible bad axioms.
+[2026-06-26 06:04:32.472] Selected the bad axiom SubClassOf(mdo000001 mdo000050).
+[2026-06-26 06:04:32.475] Found 104 possible bad axioms.
+[2026-06-26 06:04:32.475] Selected the bad axiom SubClassOf(mdo000037 mdo000015).
+[2026-06-26 06:04:32.478] Found 103 possible bad axioms.
+[2026-06-26 06:04:32.478] Selected the bad axiom SubClassOf(mdo000021 mdo000012).
+[2026-06-26 06:04:32.481] Found 102 possible bad axioms.
+[2026-06-26 06:04:32.481] Selected the bad axiom SubClassOf(mdo000003 mdo000001).
+[2026-06-26 06:04:32.487] Found 101 possible bad axioms.
+[2026-06-26 06:04:32.487] Selected the bad axiom SubClassOf(mdo000059 mdo000060).
+[2026-06-26 06:04:32.490] Found 100 possible bad axioms.
+[2026-06-26 06:04:32.490] Selected the bad axiom SubClassOf(mdo000003 mdo000021).
+[2026-06-26 06:04:32.492] Found 99 possible bad axioms.
+[2026-06-26 06:04:32.492] Selected the bad axiom SubClassOf(mdo000006 mdo000017).
+[2026-06-26 06:04:32.500] Found 98 possible bad axioms.
+[2026-06-26 06:04:32.500] Selected the bad axiom SubClassOf(mdo000056 mdo000018).
+[2026-06-26 06:04:32.503] Found 97 possible bad axioms.
+[2026-06-26 06:04:32.503] Selected the bad axiom SubClassOf(mdo000028 mdo000019).
+[2026-06-26 06:04:32.506] Found 96 possible bad axioms.
+[2026-06-26 06:04:32.506] Selected the bad axiom SubClassOf(mdo000027 mdo000026).
+[2026-06-26 06:04:32.508] Found 95 possible bad axioms.
+[2026-06-26 06:04:32.508] Selected the bad axiom SubClassOf(mdo000025 mdo000020).
+[2026-06-26 06:04:32.511] Found 94 possible bad axioms.
+[2026-06-26 06:04:32.511] Selected the bad axiom SubClassOf(mdo000007 mdo000005).
+[2026-06-26 06:04:32.513] Found 93 possible bad axioms.
+[2026-06-26 06:04:32.513] Selected the bad axiom SubClassOf(mdo000050 mdo000048).
+[2026-06-26 06:04:32.515] Found 92 possible bad axioms.
+[2026-06-26 06:04:32.515] Selected the bad axiom S
+...[truncated]
+FAIL: attempt=3 seed=28459 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥
+progress: ontology=SOCPRES attempt=3 success=0/100
+----- SOCPRES attempt=4 seed=42659 at 2026-06-26 06:04:35 -----
+--- stdout ---
+{"seed":42659,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029","iic_values":{},"repair_runtimes_ms":{"A1":100,"A2":1475,"A3":591,"B1":276,"B2":516}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=42659, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:36.194] Checking precondition...
+[2026-06-26 06:04:36.210] Starting the repair...
+[2026-06-26 06:04:36.216] Found 109 possible bad axioms.
+[2026-06-26 06:04:36.218] Selected the bad axiom SubClassOf(mdo000011 mdo000010).
+[2026-06-26 06:04:36.222] Found 108 possible bad axioms.
+[2026-06-26 06:04:36.223] Selected the bad axiom SubClassOf(mdo000026 mdo000019).
+[2026-06-26 06:04:36.226] Found 107 possible bad axioms.
+[2026-06-26 06:04:36.226] Selected the bad axiom SubClassOf(mdo000036 mdo000010).
+[2026-06-26 06:04:36.230] Found 106 possible bad axioms.
+[2026-06-26 06:04:36.230] Selected the bad axiom SubClassOf(mdo000033 mdo000025).
+[2026-06-26 06:04:36.233] Found 105 possible bad axioms.
+[2026-06-26 06:04:36.233] Selected the bad axiom SubClassOf(mdo000041 mdo000039).
+[2026-06-26 06:04:36.236] Found 104 possible bad axioms.
+[2026-06-26 06:04:36.236] Selected the bad axiom SubClassOf(mdo000031 mdo000053).
+[2026-06-26 06:04:36.239] Found 103 possible bad axioms.
+[2026-06-26 06:04:36.239] Selected the bad axiom SubClassOf(mdo000045 mdo000037).
+[2026-06-26 06:04:36.242] Found 102 possible bad axioms.
+[2026-06-26 06:04:36.242] Selected the bad axiom SubClassOf(mdo000000 mdo000019).
+[2026-06-26 06:04:36.248] Found 101 possible bad axioms.
+[2026-06-26 06:04:36.248] Selected the bad axiom SubClassOf(mdo000006 owl:Nothing).
+[2026-06-26 06:04:36.250] Found 100 possible bad axioms.
+[2026-06-26 06:04:36.250] Selected the bad axiom SubClassOf(mdo000033 mdo000020).
+[2026-06-26 06:04:36.253] Found 99 possible bad axioms.
+[2026-06-26 06:04:36.253] Selected the bad axiom SubClassOf(mdo000006 mdo000005).
+[2026-06-26 06:04:36.260] Found 98 possible bad axioms.
+[2026-06-26 06:04:36.260] Selected the bad axiom SubClassOf(mdo000051 mdo000048).
+[2026-06-26 06:04:36.263] Found 97 possible bad axioms.
+[2026-06-26 06:04:36.263] Selected the bad axiom SubClassOf(mdo000003 mdo000021).
+[2026-06-26 06:04:36.266] Found 96 possible bad axioms.
+[2026-06-26 06:04:36.266] Selected the bad axiom SubClassOf(mdo000041 mdo000010).
+[2026-06-26 06:04:36.269] Found 95 possible bad axioms.
+[2026-06-26 06:04:36.269] Selected the bad axiom SubClassOf(mdo000054 mdo000010).
+[2026-06-26 06:04:36.272] Found 94 possible bad axioms.
+[2026-06-26 06:04:36.272] Selected the bad axiom SubClassOf(mdo000023 mdo000021).
+[2026-06-26 06:04:36.274] Found 93 possible bad axioms.
+[2026-06-26 06:04:36.275] Selected the bad axiom SubClassOf(mdo000027 mdo000026).
+[2026-06-26 06:04:36.277] Found 92 possible bad axioms.
+[2026-06-26 06:04:36.277] Selected the bad axiom SubClassOf(mdo000056 mdo000006)
+...[truncated]
+FAIL: attempt=4 seed=42659 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029
+progress: ontology=SOCPRES attempt=4 success=0/100
+----- SOCPRES attempt=5 seed=56859 at 2026-06-26 06:04:39 -----
+--- stdout ---
+{"seed":56859,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012","iic_values":{},"repair_runtimes_ms":{"A1":94,"A2":1464,"A3":1819,"B1":238,"B2":969}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=56859, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:39.569] Checking precondition...
+[2026-06-26 06:04:39.584] Starting the repair...
+[2026-06-26 06:04:39.591] Found 109 possible bad axioms.
+[2026-06-26 06:04:39.592] Selected the bad axiom SubClassOf(mdo000049 mdo000048).
+[2026-06-26 06:04:39.597] Found 108 possible bad axioms.
+[2026-06-26 06:04:39.597] Selected the bad axiom SubClassOf(mdo000028 mdo000019).
+[2026-06-26 06:04:39.601] Found 107 possible bad axioms.
+[2026-06-26 06:04:39.601] Selected the bad axiom SubClassOf(mdo000001 mdo000000).
+[2026-06-26 06:04:39.605] Found 106 possible bad axioms.
+[2026-06-26 06:04:39.605] Selected the bad axiom SubClassOf(mdo000059 mdo000060).
+[2026-06-26 06:04:39.608] Found 105 possible bad axioms.
+[2026-06-26 06:04:39.608] Selected the bad axiom SubClassOf(mdo000005 mdo000008).
+[2026-06-26 06:04:39.611] Found 104 possible bad axioms.
+[2026-06-26 06:04:39.611] Selected the bad axiom SubClassOf(mdo000051 mdo000049).
+[2026-06-26 06:04:39.614] Found 103 possible bad axioms.
+[2026-06-26 06:04:39.614] Selected the bad axiom SubClassOf(mdo000003 mdo000021).
+[2026-06-26 06:04:39.616] Found 102 possible bad axioms.
+[2026-06-26 06:04:39.616] Selected the bad axiom SubClassOf(mdo000012 mdo000001).
+[2026-06-26 06:04:39.623] Found 101 possible bad axioms.
+[2026-06-26 06:04:39.623] Selected the bad axiom SubClassOf(mdo000059 mdo000026).
+[2026-06-26 06:04:39.625] Found 100 possible bad axioms.
+[2026-06-26 06:04:39.626] Selected the bad axiom SubClassOf(mdo000028 mdo000031).
+[2026-06-26 06:04:39.628] Found 99 possible bad axioms.
+[2026-06-26 06:04:39.628] Selected the bad axiom SubClassOf(mdo000007 mdo000008).
+[2026-06-26 06:04:39.635] Found 98 possible bad axioms.
+[2026-06-26 06:04:39.636] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(mdo000004 mdo000002)).
+[2026-06-26 06:04:39.639] Found 97 possible bad axioms.
+[2026-06-26 06:04:39.640] Selected the bad axiom SubClassOf(mdo000051 mdo000048).
+[2026-06-26 06:04:39.643] Found 96 possible bad axioms.
+[2026-06-26 06:04:39.643] Selected the bad axiom SubClassOf(mdo000001 ObjectSomeValuesFrom(mdo000004 owl:Thing)).
+[2026-06-26 06:04:39.645] Found 95 possible bad axioms.
+[2026-06-26 06:04:39.646] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mdo000004 owl:Thing) mdo000052).
+[2026-06-26 06:04:39.648] Found 94 possible bad axioms.
+[2026-06-26 06:04:39.649] Selected the bad axiom SubClassOf(mdo000058 mdo000037).
+[2026-06-26 06:04:39.651] Found 93 possible bad axioms.
+[2026-06-26 06:04:39.651] Selected the bad axiom SubClassOf(mdo000010 mdo000009).
+[2026-06-26 06:04:39.654] Found 92 possible
+...[truncated]
+FAIL: attempt=5 seed=56859 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+progress: ontology=SOCPRES attempt=5 success=0/100
+----- SOCPRES attempt=6 seed=71059 at 2026-06-26 06:04:44 -----
+--- stdout ---
+{"seed":71059,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019","iic_values":{},"repair_runtimes_ms":{"A1":64,"A2":1502,"A3":301,"B1":639,"B2":934}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=71059, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:44.566] Checking precondition...
+[2026-06-26 06:04:44.581] Starting the repair...
+[2026-06-26 06:04:44.587] Found 109 possible bad axioms.
+[2026-06-26 06:04:44.589] Selected the bad axiom SubClassOf(mdo000007 mdo000005).
+[2026-06-26 06:04:44.595] Found 108 possible bad axioms.
+[2026-06-26 06:04:44.596] Selected the bad axiom SubClassOf(mdo000002 ObjectSomeValuesFrom(mdo000004 owl:Thing)).
+[2026-06-26 06:04:44.599] Found 107 possible bad axioms.
+[2026-06-26 06:04:44.599] Selected the bad axiom SubClassOf(mdo000000 mdo000019).
+[2026-06-26 06:04:44.603] Found 106 possible bad axioms.
+[2026-06-26 06:04:44.603] Selected the bad axiom SubClassOf(mdo000001 mdo000050).
+[2026-06-26 06:04:44.606] Found 105 possible bad axioms.
+[2026-06-26 06:04:44.607] Selected the bad axiom SubClassOf(mdo000030 mdo000029).
+[2026-06-26 06:04:44.609] Found 104 possible bad axioms.
+[2026-06-26 06:04:44.609] Selected the bad axiom SubClassOf(mdo000005 mdo000008).
+[2026-06-26 06:04:44.612] Found 103 possible bad axioms.
+[2026-06-26 06:04:44.612] Selected the bad axiom SubClassOf(mdo000013 mdo000023).
+[2026-06-26 06:04:44.615] Found 102 possible bad axioms.
+[2026-06-26 06:04:44.615] Selected the bad axiom SubClassOf(mdo000037 mdo000058).
+[2026-06-26 06:04:44.621] Found 101 possible bad axioms.
+[2026-06-26 06:04:44.621] Selected the bad axiom SubClassOf(mdo000013 mdo000021).
+[2026-06-26 06:04:44.623] Found 100 possible bad axioms.
+[2026-06-26 06:04:44.623] Selected the bad axiom SubClassOf(owl:Thing mdo000029).
+[2026-06-26 06:04:44.626] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:04:44.626] Checking precondition...
+[2026-06-26 06:04:44.637] Starting the repair...
+[2026-06-26 06:04:46.127] Found 4 possible bad axioms.
+[2026-06-26 06:04:46.127] Selected the bad axiom SubClassOf(owl:Thing mdo000029).
+[2026-06-26 06:04:46.128] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:04:46.130] Checking precondition...
+[2026-06-26 06:04:46.132] Starting the repair...
+[2026-06-26 06:04:46.141] Selected a reference ontology with 163 axioms.
+[2026-06-26 06:04:46.379] Selected the bad axiom SubClassOf(mdo000001 owl:Nothing).
+[2026-06-26 06:04:46.428] Selected the weaker axiom SubClassOf(mdo000049 owl:Nothing).
+[2026-06-26 06:04:46.430] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:04:46.430] Checking precondition...
+[2026-06-26 06:04:46.432] Starting the repair...
+[2026-06-26 06:04:46.440] Selected a reference ontology with 163 axiom
+...[truncated]
+FAIL: attempt=6 seed=71059 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019
+progress: ontology=SOCPRES attempt=6 success=0/100
+----- SOCPRES attempt=7 seed=85259 at 2026-06-26 06:04:48 -----
+--- stdout ---
+{"seed":85259,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029","iic_values":{},"repair_runtimes_ms":{"A1":33,"A2":1517,"A3":288,"B1":276,"B2":1261}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=85259, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:48.429] Checking precondition...
+[2026-06-26 06:04:48.444] Starting the repair...
+[2026-06-26 06:04:48.451] Found 109 possible bad axioms.
+[2026-06-26 06:04:48.452] Selected the bad axiom SubClassOf(mdo000019 mdo000012).
+[2026-06-26 06:04:48.458] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:04:48.458] Checking precondition...
+[2026-06-26 06:04:48.465] Starting the repair...
+[2026-06-26 06:04:49.975] Found 4 possible bad axioms.
+[2026-06-26 06:04:49.975] Selected the bad axiom SubClassOf(mdo000001 owl:Nothing).
+[2026-06-26 06:04:49.975] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:04:49.977] Checking precondition...
+[2026-06-26 06:04:49.980] Starting the repair...
+[2026-06-26 06:04:49.990] Selected a reference ontology with 163 axioms.
+[2026-06-26 06:04:50.236] Selected the bad axiom SubClassOf(mdo000001 owl:Nothing).
+[2026-06-26 06:04:50.262] Selected the weaker axiom SubClassOf(mdo000001 mdo000000).
+[2026-06-26 06:04:50.264] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:04:50.265] Checking precondition...
+[2026-06-26 06:04:50.267] Starting the repair...
+[2026-06-26 06:04:50.275] Selected a reference ontology with 163 axioms.
+[2026-06-26 06:04:50.517] Selected the bad axiom SubClassOf(mdo000019 mdo000012).
+[2026-06-26 06:04:50.538] Selected the weaker axiom SubClassOf(mdo000019 mdo000030).
+[2026-06-26 06:04:50.540] Finished repairing the ontology.
+Repairing with B2 (bad-in_some_mus-weaker-shapley)...
+[2026-06-26 06:04:50.542] Checking precondition...
+[2026-06-26 06:04:50.543] Starting the repair...
+[2026-06-26 06:04:50.551] Selected a reference ontology with 163 axioms.
+[2026-06-26 06:04:50.786] Selected the bad axiom SubClassOf(owl:Thing mdo000029).
+[PowerIndexWeakerAxiomSelector] Scoring 114 candidate weakenings for ⊤ ⊑ mdo000029
+java.lang.RuntimeException: Failed to sample approximate Shapley values.
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.invokeAll(ShapleyInconsistencyValueApproximate.java:282)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.sampleTargetsInParallel(ShapleyInconsistencyValueApproximate.java:236)
+	at www.ontologyutils.repair.powerindex.ShapleyInconsistencyValueApproximate.computeScoresAdaptive(ShapleyInconsistencyValueApproximate.java:139)
+	at www.ontologyutils.repair.strategy.weaker.PowerIndexWeakerAxiomSelector.selectBest(PowerIndexWeakerAxiomSelector.java:46)
+	at www.ontologyutils.repair.Ontolog
+...[truncated]
+FAIL: attempt=7 seed=85259 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029
+progress: ontology=SOCPRES attempt=7 success=0/100
+----- SOCPRES attempt=8 seed=99459 at 2026-06-26 06:04:51 -----
+--- stdout ---
+{"seed":99459,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012","iic_values":{},"repair_runtimes_ms":{"A1":135,"A2":1479,"A3":514,"B1":239,"B2":1290}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=99459, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:52.232] Checking precondition...
+[2026-06-26 06:04:52.247] Starting the repair...
+[2026-06-26 06:04:52.254] Found 109 possible bad axioms.
+[2026-06-26 06:04:52.255] Selected the bad axiom SubClassOf(mdo000013 mdo000021).
+[2026-06-26 06:04:52.259] Found 108 possible bad axioms.
+[2026-06-26 06:04:52.260] Selected the bad axiom SubClassOf(mdo000018 mdo000006).
+[2026-06-26 06:04:52.264] Found 107 possible bad axioms.
+[2026-06-26 06:04:52.264] Selected the bad axiom SubClassOf(mdo000045 mdo000058).
+[2026-06-26 06:04:52.268] Found 106 possible bad axioms.
+[2026-06-26 06:04:52.268] Selected the bad axiom SubClassOf(mdo000056 mdo000018).
+[2026-06-26 06:04:52.272] Found 105 possible bad axioms.
+[2026-06-26 06:04:52.272] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(mdo000004 owl:Thing) mdo000059).
+[2026-06-26 06:04:52.275] Found 104 possible bad axioms.
+[2026-06-26 06:04:52.275] Selected the bad axiom SubClassOf(mdo000020 mdo000012).
+[2026-06-26 06:04:52.278] Found 103 possible bad axioms.
+[2026-06-26 06:04:52.278] Selected the bad axiom SubClassOf(mdo000048 mdo000060).
+[2026-06-26 06:04:52.280] Found 102 possible bad axioms.
+[2026-06-26 06:04:52.281] Selected the bad axiom SubClassOf(mdo000021 mdo000012).
+[2026-06-26 06:04:52.289] Found 101 possible bad axioms.
+[2026-06-26 06:04:52.289] Selected the bad axiom SubClassOf(mdo000039 mdo000010).
+[2026-06-26 06:04:52.291] Found 100 possible bad axioms.
+[2026-06-26 06:04:52.291] Selected the bad axiom SubClassOf(mdo000039 mdo000037).
+[2026-06-26 06:04:52.293] Found 99 possible bad axioms.
+[2026-06-26 06:04:52.294] Selected the bad axiom SubClassOf(mdo000059 ObjectSomeValuesFrom(mdo000004 owl:Thing)).
+[2026-06-26 06:04:52.301] Found 98 possible bad axioms.
+[2026-06-26 06:04:52.301] Selected the bad axiom SubClassOf(mdo000042 mdo000005).
+[2026-06-26 06:04:52.304] Found 97 possible bad axioms.
+[2026-06-26 06:04:52.304] Selected the bad axiom SubClassOf(mdo000000 mdo000029).
+[2026-06-26 06:04:52.307] Found 96 possible bad axioms.
+[2026-06-26 06:04:52.307] Selected the bad axiom SubClassOf(mdo000058 mdo000037).
+[2026-06-26 06:04:52.309] Found 95 possible bad axioms.
+[2026-06-26 06:04:52.309] Selected the bad axiom SubClassOf(mdo000053 mdo000010).
+[2026-06-26 06:04:52.312] Found 94 possible bad axioms.
+[2026-06-26 06:04:52.312] Selected the bad axiom SubClassOf(mdo000044 mdo000037).
+[2026-06-26 06:04:52.314] Found 93 possible bad axioms.
+[2026-06-26 06:04:52.314] Selected the bad axiom SubClassOf(mdo000059 mdo000026).
+[2026-06-26 06:04:52.316] Found 92 possible bad axioms.
+[2026-06-26 06:04:
+...[truncated]
+FAIL: attempt=8 seed=99459 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+progress: ontology=SOCPRES attempt=8 success=0/100
+----- SOCPRES attempt=9 seed=113659 at 2026-06-26 06:04:55 -----
+--- stdout ---
+{"seed":113659,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019","iic_values":{},"repair_runtimes_ms":{"A1":61,"A2":1507,"A3":302,"B1":1467,"B2":912}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=113659, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:04:56.323] Checking precondition...
+[2026-06-26 06:04:56.338] Starting the repair...
+[2026-06-26 06:04:56.345] Found 109 possible bad axioms.
+[2026-06-26 06:04:56.346] Selected the bad axiom SubClassOf(mdo000002 ObjectSomeValuesFrom(mdo000004 owl:Thing)).
+[2026-06-26 06:04:56.351] Found 108 possible bad axioms.
+[2026-06-26 06:04:56.351] Selected the bad axiom SubClassOf(mdo000041 owl:Nothing).
+[2026-06-26 06:04:56.355] Found 107 possible bad axioms.
+[2026-06-26 06:04:56.355] Selected the bad axiom SubClassOf(mdo000023 mdo000021).
+[2026-06-26 06:04:56.358] Found 106 possible bad axioms.
+[2026-06-26 06:04:56.359] Selected the bad axiom SubClassOf(mdo000025 mdo000020).
+[2026-06-26 06:04:56.362] Found 105 possible bad axioms.
+[2026-06-26 06:04:56.362] Selected the bad axiom SubClassOf(mdo000002 mdo000000).
+[2026-06-26 06:04:56.364] Found 104 possible bad axioms.
+[2026-06-26 06:04:56.365] Selected the bad axiom SubClassOf(mdo000013 mdo000021).
+[2026-06-26 06:04:56.367] Found 103 possible bad axioms.
+[2026-06-26 06:04:56.367] Selected the bad axiom SubClassOf(mdo000000 mdo000029).
+[2026-06-26 06:04:56.370] Found 102 possible bad axioms.
+[2026-06-26 06:04:56.370] Selected the bad axiom SubClassOf(mdo000038 mdo000037).
+[2026-06-26 06:04:56.376] Found 101 possible bad axioms.
+[2026-06-26 06:04:56.376] Selected the bad axiom SubClassOf(mdo000001 owl:Nothing).
+[2026-06-26 06:04:56.379] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:04:56.380] Checking precondition...
+[2026-06-26 06:04:56.390] Starting the repair...
+[2026-06-26 06:04:57.886] Found 4 possible bad axioms.
+[2026-06-26 06:04:57.886] Selected the bad axiom SubClassOf(mdo000029 mdo000019).
+[2026-06-26 06:04:57.887] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-26 06:04:57.889] Checking precondition...
+[2026-06-26 06:04:57.891] Starting the repair...
+[2026-06-26 06:04:57.900] Selected a reference ontology with 163 axioms.
+[2026-06-26 06:04:58.155] Selected the bad axiom SubClassOf(owl:Thing mdo000029).
+[2026-06-26 06:04:58.188] Selected the weaker axiom SubClassOf(mdo000030 mdo000029).
+[2026-06-26 06:04:58.189] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-26 06:04:58.190] Checking precondition...
+[2026-06-26 06:04:58.192] Starting the repair...
+[2026-06-26 06:04:58.200] Selected a reference ontology with 163 axioms.
+[2026-06-26 06:04:58.428] Selected the bad axiom SubClassOf(mdo000029 mdo000019).
+[2026-06-26 06:04:58.448] Selected the weaker axiom S
+...[truncated]
+FAIL: attempt=9 seed=113659 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019
+progress: ontology=SOCPRES attempt=9 success=0/100
+----- SOCPRES attempt=10 seed=127859 at 2026-06-26 06:05:00 -----
+--- stdout ---
+{"seed":127859,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥","iic_values":{},"repair_runtimes_ms":{"A1":93,"A2":1476,"A3":598,"B1":246,"B2":1116}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/SOCPRES.owl, seed=127859, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-26 06:05:01.005] Checking precondition...
+[2026-06-26 06:05:01.021] Starting the repair...
+[2026-06-26 06:05:01.028] Found 109 possible bad axioms.
+[2026-06-26 06:05:01.030] Selected the bad axiom SubClassOf(mdo000002 mdo000000).
+[2026-06-26 06:05:01.035] Found 108 possible bad axioms.
+[2026-06-26 06:05:01.035] Selected the bad axiom SubClassOf(mdo000024 mdo000020).
+[2026-06-26 06:05:01.039] Found 107 possible bad axioms.
+[2026-06-26 06:05:01.039] Selected the bad axiom SubClassOf(mdo000003 mdo000001).
+[2026-06-26 06:05:01.043] Found 106 possible bad axioms.
+[2026-06-26 06:05:01.044] Selected the bad axiom SubClassOf(mdo000000 mdo000019).
+[2026-06-26 06:05:01.047] Found 105 possible bad axioms.
+[2026-06-26 06:05:01.047] Selected the bad axiom SubClassOf(mdo000000 mdo000028).
+[2026-06-26 06:05:01.050] Found 104 possible bad axioms.
+[2026-06-26 06:05:01.050] Selected the bad axiom SubClassOf(mdo000011 mdo000010).
+[2026-06-26 06:05:01.053] Found 103 possible bad axioms.
+[2026-06-26 06:05:01.053] Selected the bad axiom SubClassOf(mdo000001 ObjectSomeValuesFrom(mdo000004 owl:Thing)).
+[2026-06-26 06:05:01.056] Found 102 possible bad axioms.
+[2026-06-26 06:05:01.056] Selected the bad axiom SubClassOf(mdo000036 mdo000054).
+[2026-06-26 06:05:01.063] Found 101 possible bad axioms.
+[2026-06-26 06:05:01.063] Selected the bad axiom SubClassOf(mdo000060 mdo000002).
+[2026-06-26 06:05:01.065] Found 100 possible bad axioms.
+[2026-06-26 06:05:01.066] Selected the bad axiom SubClassOf(mdo000060 mdo000019).
+[2026-06-26 06:05:01.068] Found 99 possible bad axioms.
+[2026-06-26 06:05:01.068] Selected the bad axiom SubClassOf(mdo000002 ObjectSomeValuesFrom(mdo000004 owl:Thing)).
+[2026-06-26 06:05:01.077] Found 98 possible bad axioms.
+[2026-06-26 06:05:01.077] Selected the bad axiom SubClassOf(mdo000041 owl:Nothing).
+[2026-06-26 06:05:01.080] Found 97 possible bad axioms.
+[2026-06-26 06:05:01.080] Selected the bad axiom SubClassOf(mdo000053 mdo000010).
+[2026-06-26 06:05:01.084] Found 96 possible bad axioms.
+[2026-06-26 06:05:01.084] Selected the bad axiom SubClassOf(mdo000037 mdo000010).
+[2026-06-26 06:05:01.088] Found 95 possible bad axioms.
+[2026-06-26 06:05:01.089] Selected the bad axiom SubClassOf(mdo000010 mdo000039).
+[2026-06-26 06:05:01.091] Found 94 possible bad axioms.
+[2026-06-26 06:05:01.092] Selected the bad axiom SubClassOf(owl:Thing mdo000029).
+[2026-06-26 06:05:01.094] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-26 06:05:01.095] Checking precondition...
+[2026-06-26 06:05:01.099] Starting the repair...
+
+...[truncated]
+FAIL: attempt=10 seed=127859 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥
+progress: ontology=SOCPRES attempt=10 success=0/100
+=== ABORTED SOCPRES after 10 consecutive failures at 2026-06-26 06:05:04 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for SOCPRES - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=59 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+  attempt=2 seed=14259 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+  attempt=3 seed=28459 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥
+  attempt=4 seed=42659 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029
+  attempt=5 seed=56859 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+  attempt=6 seed=71059 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019
+  attempt=7 seed=85259 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ mdo000029
+  attempt=8 seed=99459 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000019 ⊑ mdo000012
+  attempt=9 seed=113659 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000029 ⊑ mdo000019
+  attempt=10 seed=127859 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: mdo000001 ⊑ ⊥
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

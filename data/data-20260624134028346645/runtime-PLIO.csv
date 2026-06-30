@@ -1,0 +1,213 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,18,20260624134028346645,success,,,,2.935627,32,129,172,106,423,349,31,407,343,26,344,213
+2,14218,20260624134028346645,success,,,,3.159925,50,135,160,116,552,382,27,436,336,19,310,290
+3,28418,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.028831,35,117,178,188,568,293,28,278,,,,
+4,42618,20260624134028346645,success,,,,3.125351,48,114,175,238,505,395,33,368,285,36,303,278
+5,56818,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.686346,46,123,165,101,525,312,35,483,359,26,185,
+6,71018,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.944188,64,131,174,233,,,,,,,,
+7,85218,20260624134028346645,success,,,,3.163638,49,139,250,83,570,294,27,442,265,20,355,309
+8,99418,20260624134028346645,success,,,,3.039471,47,119,172,192,420,323,24,394,320,19,349,316
+9,113618,20260624134028346645,success,,,,3.182928,32,131,273,142,433,387,34,449,287,25,361,278
+10,127818,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.832797,48,115,612,92,399,323,31,451,327,300001,,
+11,142018,20260624134028346645,success,,,,3.081987,63,131,279,257,414,338,26,364,328,16,289,245
+12,156218,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,3.090068,39,126,174,114,563,418,26,464,310,17,349,158
+13,170418,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.238183,28,129,278,90,428,336,28,486,99,,,
+14,184618,20260624134028346645,success,,,,3.020822,70,106,170,105,435,325,25,419,352,20,344,302
+15,198818,20260624134028346645,success,,,,2.957219,34,133,176,109,518,352,30,399,289,22,310,249
+16,213018,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.811628,61,124,169,107,458,272,39,265,,,,
+17,227218,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.772934,42,119,173,102,,,,,,,,
+18,241418,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.863126,33,132,187,169,448,281,22,468,323,18,297,147
+19,255618,20260624134028346645,success,,,,3.126350,48,120,168,135,508,314,39,489,301,18,351,296
+20,269818,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.812704,34,144,171,118,545,386,300002,,,,,
+21,284018,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.017455,37,128,172,112,557,380,31,260,,,,
+22,298218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.608690,51,133,169,110,529,376,23,403,286,23,178,
+23,312418,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.836359,56,119,181,168,587,306,300001,,,,,
+24,326618,20260624134028346645,success,,,,3.224573,43,123,180,248,533,335,40,402,360,18,342,254
+25,340818,20260624134028346645,success,,,,3.178492,34,126,174,175,541,298,35,488,313,22,328,293
+26,355018,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.705286,47,121,185,114,502,374,32,,,,,
+27,369218,20260624134028346645,success,,,,3.169301,46,134,171,114,560,385,28,440,321,16,339,279
+28,383418,20260624134028346645,success,,,,3.127283,42,143,153,113,551,320,26,481,334,28,297,284
+29,397618,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.822349,55,112,283,83,573,297,300001,,,,,
+30,411818,20260624134028346645,success,,,,3.064348,42,141,165,104,503,369,28,451,242,22,376,272
+31,426018,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.244899,50,122,277,85,552,277,30,400,109,,,
+32,440218,20260624134028346645,success,,,,3.186693,41,147,174,124,543,384,30,448,318,19,342,269
+33,454418,20260624134028346645,success,,,,3.281818,43,122,458,72,499,369,29,380,326,23,328,281
+34,468618,20260624134028346645,success,,,,3.032862,36,145,173,108,443,272,72,466,331,30,321,284
+35,482818,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.895588,59,121,176,97,542,316,25,219,,,,
+36,497018,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.800817,53,116,173,96,534,411,300001,,,,,
+37,511218,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.921133,60,111,279,144,514,401,300001,,,,,
+38,525418,20260624134028346645,success,,,,3.000025,39,143,167,98,525,302,29,406,281,19,336,303
+39,539618,20260624134028346645,success,,,,3.179275,38,128,284,87,583,271,31,434,318,23,348,282
+40,553818,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.350347,49,140,155,112,531,388,37,405,192,,,
+41,568018,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.616442,57,120,163,120,442,350,26,,,,,
+42,582218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.667541,51,125,162,109,454,340,32,490,359,22,198,
+43,596418,20260624134028346645,success,,,,3.055366,53,123,176,294,407,357,28,436,247,18,330,249
+44,610618,20260624134028346645,success,,,,3.046390,42,145,159,104,520,408,23,323,272,22,391,291
+45,624818,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.796830,48,124,172,109,537,392,300001,,,,,
+46,639018,20260624134028346645,success,,,,3.068231,28,124,177,107,499,363,33,448,332,18,306,294
+47,653218,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.887819,43,141,163,108,512,382,41,170,,,,
+48,667418,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.112662,49,133,333,65,535,395,32,234,,,,
+49,681618,20260624134028346645,success,,,,3.363013,46,137,468,114,528,281,58,377,332,22,357,292
+50,695818,20260624134028346645,success,,,,3.316242,35,121,277,135,470,423,26,454,321,20,357,318
+51,710018,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.725975,33,145,177,112,527,362,33,,,,,
+52,724218,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.333280,47,111,166,116,512,390,35,446,185,,,
+53,738418,20260624134028346645,success,,,,3.087511,47,142,267,86,576,197,24,469,319,20,353,226
+54,752618,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.879206,44,139,185,177,,,,,,,,
+55,766818,20260624134028346645,success,,,,3.140524,30,148,262,85,550,304,24,425,314,27,342,288
+56,781018,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.804062,32,129,167,174,418,278,25,387,351,20,315,180
+57,795218,20260624134028346645,success,,,,3.074739,43,152,258,85,566,257,22,440,265,20,347,268
+58,809418,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.871208,53,150,254,87,,,,,,,,
+59,823618,20260624134028346645,success,,,,2.907990,43,125,185,114,439,252,55,402,336,27,335,254
+60,837818,20260624134028346645,success,,,,3.233643,28,144,329,127,514,349,24,416,340,26,310,289
+61,852018,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.379726,50,138,169,224,503,320,33,443,173,,,
+62,866218,20260624134028346645,success,,,,3.126829,39,130,269,92,580,280,29,393,319,40,327,295
+63,880418,20260624134028346645,success,,,,3.175928,57,113,267,89,581,268,24,387,336,18,370,320
+64,894618,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.954595,29,147,170,231,,,,,,,,
+65,908818,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.774888,58,117,161,106,,,,,,,,
+66,923018,20260624134028346645,success,,,,3.194610,30,134,171,99,548,416,34,470,287,22,346,293
+67,937218,20260624134028346645,success,,,,3.094804,40,146,153,188,582,237,36,434,289,24,344,284
+68,951418,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.770159,55,121,166,107,,,,,,,,
+69,965618,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.700779,54,115,280,83,578,226,25,,,,,
+70,979818,20260624134028346645,success,,,,3.036042,41,133,170,184,545,192,27,455,336,18,291,276
+71,994018,20260624134028346645,success,,,,3.189579,48,147,244,135,532,373,45,447,273,17,340,237
+72,1008218,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.772442,41,139,257,,,,,,,,,
+73,1022418,20260624134028346645,success,,,,3.235059,27,137,172,278,522,318,27,450,307,20,339,299
+74,1036618,20260624134028346645,success,,,,2.985102,52,138,169,112,433,333,24,413,301,24,331,279
+75,1050818,20260624134028346645,success,,,,3.114659,57,130,164,175,549,224,30,401,357,22,365,293
+76,1065018,20260624134028346645,success,,,,2.951075,30,127,177,104,442,326,70,414,293,18,333,272
+77,1079218,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.666953,50,139,151,,,,,,,,,
+78,1093418,20260624134028346645,success,,,,3.016675,41,114,172,108,549,408,25,381,296,44,302,237
+79,1107618,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.677810,40,129,168,,,,,,,,,
+80,1121818,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.966790,28,134,170,105,546,321,41,279,,,,
+81,1136018,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.899491,48,143,157,107,548,357,29,154,,,,
+82,1150218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.620881,49,136,319,66,430,218,34,517,379,18,131,
+83,1164418,20260624134028346645,success,,,,3.027275,37,135,158,170,547,233,32,486,312,29,302,229
+84,1178618,20260624134028346645,success,,,,3.017702,66,106,271,78,560,218,22,446,325,21,293,278
+85,1192818,20260624134028346645,success,,,,3.017972,43,126,167,96,439,354,32,463,312,24,361,255
+86,1207018,20260624134028346645,success,,,,3.063390,45,145,152,108,537,318,25,495,292,33,301,260
+87,1221218,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.916350,35,139,412,,,,,,,,,
+88,1235418,20260624134028346645,success,,,,3.172148,42,137,372,67,532,339,45,339,355,19,289,301
+89,1249618,20260624134028346645,success,,,,3.075670,43,137,264,78,559,279,29,441,249,22,351,292
+90,1263818,20260624134028346645,success,,,,3.105334,33,123,180,104,518,374,26,400,326,21,362,297
+91,1278018,20260624134028346645,success,,,,3.033695,36,136,180,165,574,234,23,418,286,21,340,288
+92,1292218,20260624134028346645,success,,,,3.174476,49,134,161,114,532,396,24,412,339,26,362,291
+93,1306418,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.862369,32,139,177,181,,,,,,,,
+94,1320618,20260624134028346645,success,,,,2.985735,32,122,175,111,455,338,35,466,308,23,305,272
+95,1334818,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.579787,45,119,176,176,574,299,22,413,322,300001,,
+96,1349018,20260624134028346645,success,,,,3.131620,41,137,259,89,557,287,22,452,314,19,316,285
+97,1363218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.696024,50,134,316,65,416,424,29,463,324,23,110,
+98,1377418,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.773459,45,126,169,105,,,,,,,,
+99,1391618,20260624134028346645,success,,,,3.001334,26,157,176,177,550,214,22,474,290,24,297,261
+100,1405818,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.360365,49,112,175,105,543,389,29,430,199,,,
+101,1420018,20260624134028346645,success,,,,3.123634,45,123,172,119,495,390,28,444,322,17,337,296
+102,1434218,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.931562,45,142,160,104,529,405,23,436,330,17,330,77
+103,1448418,20260624134028346645,success,,,,3.264505,45,137,252,165,534,378,33,485,260,17,316,303
+104,1462618,20260624134028346645,success,,,,3.104924,44,130,177,182,560,256,24,436,338,18,343,254
+105,1476818,20260624134028346645,success,,,,3.076351,48,126,177,113,531,392,34,389,328,18,288,289
+106,1491018,20260624134028346645,success,,,,3.119927,59,114,176,186,601,208,28,456,324,20,341,252
+107,1505218,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,2.581488,46,121,177,106,573,390,39,476,309,18,,
+108,1519418,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.429792,49,115,183,186,537,209,30,343,339,300001,,
+109,1533618,20260624134028346645,success,,,,3.043504,37,121,174,106,550,327,48,441,323,20,304,253
+110,1547818,20260624134028346645,success,,,,2.958811,40,127,171,109,436,271,33,455,347,33,330,269
+111,1562018,20260624134028346645,success,,,,3.071392,36,139,176,194,413,305,33,451,335,21,337,286
+112,1576218,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.836238,26,132,182,165,428,289,42,244,,,,
+113,1590418,20260624134028346645,success,,,,3.100229,50,122,170,184,555,275,33,473,272,19,347,262
+114,1604618,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,2.442610,26,137,183,110,524,389,24,342,351,25,,
+115,1618818,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.616666,33,128,271,90,576,270,23,432,317,23,126,
+116,1633018,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.648103,36,131,268,147,442,419,33,413,299,19,120,
+117,1647218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.929080,30,130,266,86,884,233,40,408,311,18,186,
+118,1661418,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.159063,46,133,167,93,447,356,37,433,108,,,
+119,1675618,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,3.045179,29,132,348,120,428,335,25,451,341,19,342,150
+120,1689818,20260624134028346645,success,,,,3.201409,47,141,169,117,542,377,21,454,335,20,339,287
+121,1704018,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.511410,43,117,400,127,514,301,32,434,206,,,
+122,1718218,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.521635,39,126,167,183,540,230,31,466,303,300001,,
+123,1732418,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.673810,42,115,172,104,546,341,42,468,269,48,185,
+124,1746618,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.215383,57,114,158,116,465,346,43,454,116,,,
+125,1760818,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.410845,45,121,176,178,493,406,31,445,192,,,
+126,1775018,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.759385,45,148,313,128,490,286,26,492,316,26,161,
+127,1789218,20260624134028346645,success,,,,3.052172,46,138,167,99,537,305,28,432,349,43,331,221
+128,1803418,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.493359,50,139,166,99,499,381,22,402,298,300001,,
+129,1817618,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.674050,48,119,168,,,,,,,,,
+130,1831818,20260624134028346645,success,,,,3.008189,42,135,256,82,423,365,43,373,324,34,326,249
+131,1846018,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.794629,29,126,176,106,436,329,31,224,,,,
+132,1860218,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.757826,58,115,173,106,510,294,26,146,,,,
+133,1874418,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.804964,30,148,162,171,565,208,28,154,,,,
+134,1888618,20260624134028346645,success,,,,3.111101,27,137,171,176,527,316,27,446,295,29,324,290
+135,1902818,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.165295,46,117,263,86,557,216,38,404,113,,,
+136,1917018,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.769806,34,126,177,100,,,,,,,,
+137,1931218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.627171,38,148,160,104,512,374,26,489,307,17,109,
+138,1945418,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.051711,47,116,279,302,516,288,30,136,,,,
+139,1959618,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.758178,39,121,179,160,569,308,26,487,318,17,205,
+140,1973818,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.845389,50,132,158,108,518,366,30,165,,,,
+141,1988018,20260624134028346645,success,,,,3.134219,46,123,170,103,537,395,45,434,271,41,322,293
+142,2002218,20260624134028346645,success,,,,3.061376,42,119,177,168,423,345,29,447,324,19,341,288
+143,2016418,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.579850,45,151,176,129,630,279,32,411,288,300001,,
+144,2030618,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.840622,25,139,272,84,431,359,30,408,312,25,350,76
+145,2044818,20260624134028346645,success,,,,3.114443,28,155,160,226,422,357,29,455,330,19,339,248
+146,2059018,20260624134028346645,success,,,,3.143728,40,131,183,104,548,362,31,418,349,18,293,309
+147,2073218,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.506525,45,131,275,90,507,281,31,413,293,300002,,
+148,2087418,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.635365,34,128,188,160,574,218,24,405,341,20,219,
+149,2101618,20260624134028346645,success,,,,3.045625,45,134,162,110,533,217,35,475,305,19,377,284
+150,2115818,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.712447,43,135,184,,,,,,,,,
+151,2130018,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.362178,39,118,163,188,553,300,39,431,206,,,
+152,2144218,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.100044,44,118,265,128,501,383,32,291,,,,
+153,2158418,20260624134028346645,success,,,,2.972926,62,106,178,183,451,320,24,460,311,26,247,240
+154,2172618,20260624134028346645,success,,,,3.213526,42,142,262,130,460,424,28,432,275,22,347,311
+155,2186818,20260624134028346645,success,,,,3.063549,40,133,170,113,546,374,27,399,270,19,349,293
+156,2201018,20260624134028346645,success,,,,3.109325,35,133,174,111,537,348,35,450,318,17,324,288
+157,2215218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.762886,33,129,264,274,496,341,29,429,343,27,77,
+158,2229418,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.879741,40,128,173,113,504,370,31,417,279,21,343,145
+159,2243618,20260624134028346645,success,,,,3.179663,34,133,184,114,520,376,32,473,321,19,315,310
+160,2257818,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.581887,48,142,258,87,577,251,38,400,322,21,101,
+161,2272018,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.141765,62,106,273,142,545,394,28,256,,,,
+162,2286218,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.668325,40,123,178,,,,,,,,,
+163,2300418,20260624134028346645,success,,,,2.986976,46,117,165,106,528,309,32,374,352,29,303,284
+164,2314618,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.715162,33,125,183,99,529,389,23,,,,,
+165,2328818,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.139445,47,118,348,122,525,361,35,262,,,,
+166,2343018,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.976083,26,138,172,98,544,366,24,389,347,18,332,192
+167,2357218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.541477,46,116,176,105,476,371,38,430,329,17,111,
+168,2371418,20260624134028346645,java_exception,failure,B9,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,3.037415,41,132,329,191,574,220,37,400,298,24,307,151
+169,2385618,20260624134028346645,success,,,,3.152290,36,123,176,115,508,376,28,446,336,20,337,296
+170,2399818,20260624134028346645,success,,,,3.191755,55,117,267,142,436,417,23,401,359,21,343,271
+171,2414018,20260624134028346645,success,,,,3.095111,40,144,170,112,541,317,22,440,288,21,356,293
+172,2428218,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.481068,37,131,178,100,432,352,40,418,318,38,99,
+173,2442418,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.259419,38,120,178,109,542,380,24,435,73,,,
+174,2456618,20260624134028346645,success,,,,3.184433,62,115,168,232,494,410,27,432,306,25,314,262
+175,2470818,20260624134028346645,success,,,,3.120678,33,128,176,103,544,399,23,408,341,19,318,288
+176,2485018,20260624134028346645,success,,,,3.324327,45,117,445,133,468,296,34,444,343,34,325,297
+177,2499218,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.767615,48,117,264,89,415,350,22,144,,,,
+178,2513418,20260624134028346645,success,,,,3.055324,57,109,260,79,570,266,32,387,312,21,372,250
+179,2527618,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.537696,61,108,162,109,532,314,30,466,302,41,96,
+180,2541818,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.325167,41,120,304,76,563,303,27,444,109,,,
+181,2556018,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.731675,51,121,183,179,527,304,27,,,,,
+182,2570218,20260624134028346645,success,,,,3.153244,26,139,165,256,523,359,38,428,276,29,328,251
+183,2584418,20260624134028346645,success,,,,3.094048,29,148,161,103,537,361,41,436,325,19,296,290
+184,2598618,20260624134028346645,success,,,,3.142715,35,131,179,105,534,373,34,441,310,20,338,294
+185,2612818,20260624134028346645,success,,,,3.076165,30,127,185,116,543,384,23,422,303,33,304,278
+186,2627018,20260624134028346645,success,,,,3.216090,45,117,390,70,513,359,42,389,312,20,287,319
+187,2641218,20260624134028346645,success,,,,3.057963,31,156,189,113,478,379,26,418,312,31,299,280
+188,2655418,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.824016,28,134,159,99,517,370,24,164,,,,
+189,2669618,20260624134028346645,java_exception,failure,B7,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,2.399067,29,123,185,101,509,298,36,455,295,38,,
+190,2683818,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.561895,45,140,150,113,535,365,25,435,272,34,125,
+191,2698018,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.863941,30,155,175,122,626,296,55,81,,,,
+192,2712218,20260624134028346645,java_exception,failure,B6,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.109930,49,139,152,117,440,269,39,484,95,,,
+193,2726418,20260624134028346645,success,,,,3.111911,39,122,337,72,550,306,54,399,319,16,315,250
+194,2740618,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.895368,24,127,271,147,412,416,27,132,,,,
+195,2754818,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.939240,31,147,332,192,524,303,300001,,,,,
+196,2769018,20260624134028346645,time_limit_exceeded,timeout,B7,Repair timeout: B7 exceeded 300 seconds,302.554404,57,128,173,120,543,308,21,447,324,300001,,
+197,2783218,20260624134028346645,success,,,,2.885979,26,139,166,106,423,268,27,437,326,23,350,256
+198,2797418,20260624134028346645,java_exception,failure,B1,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.030198,50,119,170,343,,,,,,,,
+199,2811618,20260624134028346645,success,,,,3.037288,40,140,163,107,459,358,32,406,313,18,349,314
+200,2825818,20260624134028346645,success,,,,3.117274,62,115,167,191,538,301,24,423,317,42,296,290
+201,2840018,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,1.851209,49,147,277,128,494,381,35,,,,,
+202,2854218,20260624134028346645,success,,,,3.165329,48,138,156,175,564,286,34,485,293,17,350,285
+203,2868418,20260624134028346645,success,,,,3.152122,43,137,173,233,509,368,31,393,326,18,354,228
+204,2882618,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.941595,48,123,182,115,494,374,39,226,,,,
+205,2896818,20260624134028346645,success,,,,3.227444,49,114,407,71,518,333,39,443,307,17,304,284
+206,2911018,20260624134028346645,success,,,,3.219568,48,117,180,296,533,346,46,416,324,23,295,261
+207,2925218,20260624134028346645,java_exception,failure,A3,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,0.708470,30,150,178,,,,,,,,,
+208,2939418,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,1.861627,47,134,167,99,539,378,22,135,,,,
+209,2953618,20260624134028346645,time_limit_exceeded,timeout,B4,Repair timeout: B4 exceeded 300 seconds,301.691579,28,144,161,176,569,198,300001,,,,,
+210,2967818,20260624134028346645,success,,,,3.120680,59,115,177,103,508,370,39,449,331,19,352,256
+211,2982018,20260624134028346645,java_exception,failure,B8,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Processual_Entity,2.762465,49,116,168,122,536,398,30,439,316,32,210,
+212,2996218,20260624134028346645,success,,,,3.185593,26,133,172,102,540,396,34,492,308,22,336,255

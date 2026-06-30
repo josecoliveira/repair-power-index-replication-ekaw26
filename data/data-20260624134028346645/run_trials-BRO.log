@@ -1,0 +1,506 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-BRO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-BRO.csv
+
+=== Starting sequential trials for BRO at 2026-06-28 13:40:30 ===
+----- BRO attempt=1 seed=149 at 2026-06-28 13:40:30 -----
+--- stdout ---
+{"seed":149,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":184,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=149, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 13:40:31.215] Checking precondition...
+[2026-06-28 13:40:31.243] Starting the repair...
+[2026-06-28 13:40:31.258] Found 757 possible bad axioms.
+[2026-06-28 13:40:31.260] Selected the bad axiom SubClassOf(Computational_Service Service_Resource).
+[2026-06-28 13:40:31.274] Found 756 possible bad axioms.
+[2026-06-28 13:40:31.275] Selected the bad axiom SubClassOf(Model_Fitting_Algorithm Hypothesis_Testing_Algorithm).
+[2026-06-28 13:40:31.283] Found 755 possible bad axioms.
+[2026-06-28 13:40:31.283] Selected the bad axiom SubClassOf(Continuous_Data Deprecated_Resource).
+[2026-06-28 13:40:31.291] Found 754 possible bad axioms.
+[2026-06-28 13:40:31.291] Selected the bad axiom SubClassOf(Numerical_Integrator Linear_Algebra_Tool).
+[2026-06-28 13:40:31.300] Found 753 possible bad axioms.
+[2026-06-28 13:40:31.300] Selected the bad axiom SubClassOf(Research_Lab_Management Health_Services).
+[2026-06-28 13:40:31.310] Found 752 possible bad axioms.
+[2026-06-28 13:40:31.311] Selected the bad axiom SubClassOf(Testing_Tools Software_Development_Tool).
+[2026-06-28 13:40:31.319] Found 751 possible bad axioms.
+[2026-06-28 13:40:31.319] Selected the bad axiom SubClassOf(Vibrotome Instrument).
+[2026-06-28 13:40:31.326] Found 750 possible bad axioms.
+[2026-06-28 13:40:31.326] Selected the bad axiom SubClassOf(RDF_Data Structured_File).
+[2026-06-28 13:40:31.337] Found 749 possible bad axioms.
+[2026-06-28 13:40:31.337] Selected the bad axiom SubClassOf(Controllers Meshing).
+[2026-06-28 13:40:31.344] Found 748 possible bad axioms.
+[2026-06-28 13:40:31.344] Selected the bad axiom SubClassOf(Prediction_of_Side-Chain_Conformations Molecular_Dynamics).
+[2026-06-28 13:40:31.349] Found 747 possible bad axioms.
+[2026-06-28 13:40:31.349] Selected the bad axiom SubClassOf(Pattern_and_Motif_Inference Inference_From_Data).
+[2026-06-28 13:40:31.361] Found 746 possible bad axioms.
+[2026-06-28 13:40:31.362] Selected the bad axiom SubClassOf(White_Paper Narrative_Resource).
+[2026-06-28 13:40:31.370] Found 745 possible bad axioms.
+[2026-06-28 13:40:31.370] Selected the bad axiom SubClassOf(Modular_Component Deprecated_Resource).
+[2026-06-28 13:40:31.376] Found 744 possible bad axioms.
+[2026-06-28 13:40:31.377] Selected the bad axiom SubClassOf(Outreach_Program Training_Resource).
+[2026-06-28 13:40:31.382] Found 743 possible bad axioms.
+[2026-06-28 13:40:31.383] Selected the bad axiom SubClassOf(Manifold_Viewer Imaging).
+[2026-06-28 13:40:31.388] Found 742 possible bad axioms.
+[2026-06-28 13:40:31.388] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(version_information Version_I
+...[truncated]
+FAIL: attempt=1 seed=149 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=1 success=0/100
+----- BRO attempt=2 seed=14349 at 2026-06-28 13:45:31 -----
+--- stdout ---
+{"seed":14349,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":322,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=14349, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 13:45:31.900] Checking precondition...
+[2026-06-28 13:45:31.932] Starting the repair...
+[2026-06-28 13:45:31.945] Found 757 possible bad axioms.
+[2026-06-28 13:45:31.947] Selected the bad axiom SubClassOf(Controllers Meshing).
+[2026-06-28 13:45:31.961] Found 756 possible bad axioms.
+[2026-06-28 13:45:31.961] Selected the bad axiom SubClassOf(Service_Resource Funding_Resource).
+[2026-06-28 13:45:31.969] Found 755 possible bad axioms.
+[2026-06-28 13:45:31.970] Selected the bad axiom SubClassOf(Network_Interaction_Model Mechanical_Simulation).
+[2026-06-28 13:45:31.979] Found 754 possible bad axioms.
+[2026-06-28 13:45:31.979] Selected the bad axiom SubClassOf(Document_Generation Software_Development_Tool).
+[2026-06-28 13:45:31.987] Found 753 possible bad axioms.
+[2026-06-28 13:45:31.987] Selected the bad axiom SubClassOf(Pattern_and_Motif_Inference Signaling_Network_Reconstruction).
+[2026-06-28 13:45:31.996] Found 752 possible bad axioms.
+[2026-06-28 13:45:31.996] Selected the bad axiom SubClassOf(PCR_Instrument Instrument).
+[2026-06-28 13:45:32.004] Found 751 possible bad axioms.
+[2026-06-28 13:45:32.004] Selected the bad axiom SubClassOf(Electrode_Holder Pressure_Regulator).
+[2026-06-28 13:45:32.011] Found 750 possible bad axioms.
+[2026-06-28 13:45:32.011] Selected the bad axiom SubClassOf(Non_Computational_Service Deprecated_Resource).
+[2026-06-28 13:45:32.023] Found 749 possible bad axioms.
+[2026-06-28 13:45:32.023] Selected the bad axiom SubClassOf(Knowledge_Mining_and_Capturing Interactive_Tool).
+[2026-06-28 13:45:32.030] Found 748 possible bad axioms.
+[2026-06-28 13:45:32.030] Selected the bad axiom SubClassOf(Cell_Biology_Facility Research_Animals_Facility).
+[2026-06-28 13:45:32.036] Found 747 possible bad axioms.
+[2026-06-28 13:45:32.037] Selected the bad axiom SubClassOf(Software_development Discrete_Data).
+[2026-06-28 13:45:32.048] Found 746 possible bad axioms.
+[2026-06-28 13:45:32.049] Selected the bad axiom SubClassOf(Convolution Numerical_Method).
+[2026-06-28 13:45:32.056] Found 745 possible bad axioms.
+[2026-06-28 13:45:32.056] Selected the bad axiom SubClassOf(Data_Ontology_Development_and_Management).
+[2026-06-28 13:45:32.063] Found 744 possible bad axioms.
+[2026-06-28 13:45:32.064] Selected the bad axiom SubClassOf(Integration_and_Interoperability_Tools EDA).
+[2026-06-28 13:45:32.069] Found 743 possible bad axioms.
+[2026-06-28 13:45:32.069] Selected the bad axiom SubClassOf(Instrument Facility_Core).
+[2026-06-28 13:45:32.074] Found 742 possible bad axioms.
+[2026-06-28 13:45:32.074] Selected the bad axiom SubClassOf(Interactiv
+...[truncated]
+FAIL: attempt=2 seed=14349 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=2 success=0/100
+----- BRO attempt=3 seed=28549 at 2026-06-28 13:50:32 -----
+--- stdout ---
+{"seed":28549,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":689,"A2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=28549, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 13:50:32.720] Checking precondition...
+[2026-06-28 13:50:32.751] Starting the repair...
+[2026-06-28 13:50:32.764] Found 757 possible bad axioms.
+[2026-06-28 13:50:32.765] Selected the bad axiom SubClassOf(Controllers Mechanical_Simulation).
+[2026-06-28 13:50:32.779] Found 756 possible bad axioms.
+[2026-06-28 13:50:32.780] Selected the bad axiom SubClassOf(Documentation_Generation Version_Source_Control_System).
+[2026-06-28 13:50:32.789] Found 755 possible bad axioms.
+[2026-06-28 13:50:32.789] Selected the bad axiom SubClassOf(Calorimeter Instrument).
+[2026-06-28 13:50:32.798] Found 754 possible bad axioms.
+[2026-06-28 13:50:32.798] Selected the bad axiom SubClassOf(Material_Storage_Service Service_Resource).
+[2026-06-28 13:50:32.805] Found 753 possible bad axioms.
+[2026-06-28 13:50:32.806] Selected the bad axiom SubClassOf(Research_Funding Activity).
+[2026-06-28 13:50:32.814] Found 752 possible bad axioms.
+[2026-06-28 13:50:32.815] Selected the bad axiom SubClassOf(EDA Deprecated_Resource).
+[2026-06-28 13:50:32.822] Found 751 possible bad axioms.
+[2026-06-28 13:50:32.822] Selected the bad axiom SubClassOf(Neurological_Facility Physiology_Facility).
+[2026-06-28 13:50:32.829] Found 750 possible bad axioms.
+[2026-06-28 13:50:32.829] Selected the bad axiom SubClassOf(Graph_Viewer Visualization).
+[2026-06-28 13:50:32.841] Found 749 possible bad axioms.
+[2026-06-28 13:50:32.841] Selected the bad axiom SubClassOf(Exploratory_Data_Analysis Image_Processing).
+[2026-06-28 13:50:32.848] Found 748 possible bad axioms.
+[2026-06-28 13:50:32.848] Selected the bad axiom SubClassOf(Manifold_Viewer Imaging).
+[2026-06-28 13:50:32.854] Found 747 possible bad axioms.
+[2026-06-28 13:50:32.854] Selected the bad axiom SubClassOf(Toolkit High_Dimensional_Data).
+[2026-06-28 13:50:32.867] Found 746 possible bad axioms.
+[2026-06-28 13:50:32.868] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(version_information owl:Thing) Resource_Description).
+[2026-06-28 13:50:32.874] Found 745 possible bad axioms.
+[2026-06-28 13:50:32.875] Selected the bad axiom SubClassOf(Searching_Sorting_and_Indexing Algorithm).
+[2026-06-28 13:50:32.880] Found 744 possible bad axioms.
+[2026-06-28 13:50:32.881] Selected the bad axiom SubClassOf(Database_Software Data_Processing_Software).
+[2026-06-28 13:50:32.886] Found 743 possible bad axioms.
+[2026-06-28 13:50:32.886] Selected the bad axiom SubClassOf(Calendar_Schedule_and_Resource_Management Data_Service).
+[2026-06-28 13:50:32.891] Found 742 possible bad axioms.
+[2026-06-28 13:50:32.891] Selected the bad axiom SubClassOf(PCR_Instrument
+...[truncated]
+FAIL: attempt=3 seed=28549 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=3 success=0/100
+----- BRO attempt=4 seed=42749 at 2026-06-28 13:55:33 -----
+--- stdout ---
+{"seed":42749,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":735,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=42749, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 13:55:33.899] Checking precondition...
+[2026-06-28 13:55:33.936] Starting the repair...
+[2026-06-28 13:55:33.953] Found 757 possible bad axioms.
+[2026-06-28 13:55:33.955] Selected the bad axiom SubClassOf(Knowledge_Mining_and_Capturing Data_Transfer_and_Communication).
+[2026-06-28 13:55:33.970] Found 756 possible bad axioms.
+[2026-06-28 13:55:33.970] Selected the bad axiom SubClassOf(Protein-Protein_Interaction Interaction_Network).
+[2026-06-28 13:55:33.979] Found 755 possible bad axioms.
+[2026-06-28 13:55:33.979] Selected the bad axiom SubClassOf(Hosting Data_Computation_Service).
+[2026-06-28 13:55:33.988] Found 754 possible bad axioms.
+[2026-06-28 13:55:33.988] Selected the bad axiom SubClassOf(Gene_Therapy_Facility Cell_Processing_Clean_Room_Facility).
+[2026-06-28 13:55:33.996] Found 753 possible bad axioms.
+[2026-06-28 13:55:33.996] Selected the bad axiom SubClassOf(PCR_Instrument Microscope).
+[2026-06-28 13:55:34.006] Found 752 possible bad axioms.
+[2026-06-28 13:55:34.006] Selected the bad axiom SubClassOf(Vector_Data Deprecated_Resource).
+[2026-06-28 13:55:34.014] Found 751 possible bad axioms.
+[2026-06-28 13:55:34.014] Selected the bad axiom SubClassOf(Knowledge_Mining_and_Capturing Interactive_Network_Analysis).
+[2026-06-28 13:55:34.021] Found 750 possible bad axioms.
+[2026-06-28 13:55:34.021] Selected the bad axiom SubClassOf(PCR_Instrument Instrument).
+[2026-06-28 13:55:34.032] Found 749 possible bad axioms.
+[2026-06-28 13:55:34.033] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(version_information ObjectAllValuesFrom(related_resource Resource_Description)) Resource_Description).
+[2026-06-28 13:55:34.039] Found 748 possible bad axioms.
+[2026-06-28 13:55:34.040] Selected the bad axiom SubClassOf(Vibrotome Instrument).
+[2026-06-28 13:55:34.045] Found 747 possible bad axioms.
+[2026-06-28 13:55:34.045] Selected the bad axiom SubClassOf(Averaging_and_Agglomeration Signal_Processing).
+[2026-06-28 13:55:34.057] Found 746 possible bad axioms.
+[2026-06-28 13:55:34.057] Selected the bad axiom SubClassOf(Web_Posting Dissemination_Vehicle).
+[2026-06-28 13:55:34.064] Found 745 possible bad axioms.
+[2026-06-28 13:55:34.064] Selected the bad axiom SubClassOf(Network_Editor Deprecated_Resource).
+[2026-06-28 13:55:34.071] Found 744 possible bad axioms.
+[2026-06-28 13:55:34.071] Selected the bad axiom SubClassOf(Cell_Biology_Facility Facility_Core).
+[2026-06-28 13:55:34.077] Found 743 possible bad axioms.
+[2026-06-28 13:55:34.078] Selected the bad axiom SubClassOf(Disaster_Recovery_Service Computational_Service).
+[2026-06-28 13:55:34.083]
+...[truncated]
+FAIL: attempt=4 seed=42749 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=4 success=0/100
+----- BRO attempt=5 seed=56949 at 2026-06-28 14:00:34 -----
+--- stdout ---
+{"seed":56949,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":821,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=56949, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:00:35.137] Checking precondition...
+[2026-06-28 14:00:35.166] Starting the repair...
+[2026-06-28 14:00:35.180] Found 757 possible bad axioms.
+[2026-06-28 14:00:35.181] Selected the bad axiom SubClassOf(Pharmacokinetics_Pharmacodynamics_Expertise Industry_Partnership_Expertise).
+[2026-06-28 14:00:35.196] Found 756 possible bad axioms.
+[2026-06-28 14:00:35.197] Selected the bad axiom SubClassOf(Deep_Parsing Parsing).
+[2026-06-28 14:00:35.204] Found 755 possible bad axioms.
+[2026-06-28 14:00:35.205] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(data_output Data_Resource)).
+[2026-06-28 14:00:35.212] Found 754 possible bad axioms.
+[2026-06-28 14:00:35.212] Selected the bad axiom SubClassOf(Document Deprecated_Resource).
+[2026-06-28 14:00:35.220] Found 753 possible bad axioms.
+[2026-06-28 14:00:35.220] Selected the bad axiom SubClassOf(Human_Embryonic_Stem_Cell_Resource Regulatory_Compliance_Resource).
+[2026-06-28 14:00:35.230] Found 752 possible bad axioms.
+[2026-06-28 14:00:35.231] Selected the bad axiom SubClassOf(Reagent_Resource Material_Resource).
+[2026-06-28 14:00:35.239] Found 751 possible bad axioms.
+[2026-06-28 14:00:35.239] Selected the bad axiom SubClassOf(Searching_Sorting_and_Indexing Graph_Alignment).
+[2026-06-28 14:00:35.246] Found 750 possible bad axioms.
+[2026-06-28 14:00:35.247] Selected the bad axiom SubClassOf(Searching_Sorting_and_Indexing Algorithm).
+[2026-06-28 14:00:35.259] Found 749 possible bad axioms.
+[2026-06-28 14:00:35.259] Selected the bad axiom SubClassOf(Numerical_Method Algorithm).
+[2026-06-28 14:00:35.266] Found 748 possible bad axioms.
+[2026-06-28 14:00:35.266] Selected the bad axiom SubClassOf(Online_Support Interactive_Web-Based_Tool).
+[2026-06-28 14:00:35.272] Found 747 possible bad axioms.
+[2026-06-28 14:00:35.272] Selected the bad axiom SubClassOf(Shape_Analysis Feature_Analysis).
+[2026-06-28 14:00:35.284] Found 746 possible bad axioms.
+[2026-06-28 14:00:35.285] Selected the bad axiom SubClassOf(Data_Exploration Visualization).
+[2026-06-28 14:00:35.291] Found 745 possible bad axioms.
+[2026-06-28 14:00:35.292] Selected the bad axiom SubClassOf(Assessment_Material_Resource Material_Resource).
+[2026-06-28 14:00:35.297] Found 744 possible bad axioms.
+[2026-06-28 14:00:35.298] Selected the bad axiom SubClassOf(Web_Service Stochastic_Data).
+[2026-06-28 14:00:35.303] Found 743 possible bad axioms.
+[2026-06-28 14:00:35.303] Selected the bad axiom SubClassOf(Numerical_Integrator Optimizer).
+[2026-06-28 14:00:35.308] Found 742 possible bad axioms.
+[2026-06-28 14:00:35.308] Selected the bad axio
+...[truncated]
+FAIL: attempt=5 seed=56949 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=5 success=0/100
+----- BRO attempt=6 seed=71149 at 2026-06-28 14:05:36 -----
+--- stdout ---
+{"seed":71149,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":591,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=71149, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:05:36.463] Checking precondition...
+[2026-06-28 14:05:36.493] Starting the repair...
+[2026-06-28 14:05:36.507] Found 757 possible bad axioms.
+[2026-06-28 14:05:36.509] Selected the bad axiom SubClassOf(Image_Reconstruction Image_Algorithm).
+[2026-06-28 14:05:36.523] Found 756 possible bad axioms.
+[2026-06-28 14:05:36.524] Selected the bad axiom SubClassOf(Vibrotome Instrument).
+[2026-06-28 14:05:36.532] Found 755 possible bad axioms.
+[2026-06-28 14:05:36.532] Selected the bad axiom SubClassOf(Clinical_Chart Clinical_Data).
+[2026-06-28 14:05:36.541] Found 754 possible bad axioms.
+[2026-06-28 14:05:36.542] Selected the bad axiom SubClassOf(Graph_Viewer Visualization).
+[2026-06-28 14:05:36.550] Found 753 possible bad axioms.
+[2026-06-28 14:05:36.550] Selected the bad axiom SubClassOf(PET_Scanner Electrode_Puller).
+[2026-06-28 14:05:36.559] Found 752 possible bad axioms.
+[2026-06-28 14:05:36.559] Selected the bad axiom SubClassOf(Mechanical_Simulation owl:Nothing).
+[2026-06-28 14:05:36.567] Found 751 possible bad axioms.
+[2026-06-28 14:05:36.567] Selected the bad axiom SubClassOf(Ontology Structured_Knowledge_Resource).
+[2026-06-28 14:05:36.574] Found 750 possible bad axioms.
+[2026-06-28 14:05:36.574] Selected the bad axiom SubClassOf(Interaction_Modeling Modeling_and_Simulation).
+[2026-06-28 14:05:36.586] Found 749 possible bad axioms.
+[2026-06-28 14:05:36.586] Selected the bad axiom SubClassOf(Drug_Delivery_Device Instrument).
+[2026-06-28 14:05:36.593] Found 748 possible bad axioms.
+[2026-06-28 14:05:36.593] Selected the bad axiom SubClassOf(Dynamic_Model Computational_Model).
+[2026-06-28 14:05:36.599] Found 747 possible bad axioms.
+[2026-06-28 14:05:36.599] Selected the bad axiom SubClassOf(Data_Service Computational_Service).
+[2026-06-28 14:05:36.611] Found 746 possible bad axioms.
+[2026-06-28 14:05:36.611] Selected the bad axiom SubClassOf(Proteomics Area_of_Research).
+[2026-06-28 14:05:36.617] Found 745 possible bad axioms.
+[2026-06-28 14:05:36.618] Selected the bad axiom SubClassOf(Oscilloscope Instrument).
+[2026-06-28 14:05:36.624] Found 744 possible bad axioms.
+[2026-06-28 14:05:36.624] Selected the bad axiom SubClassOf(Portal Data_Resource).
+[2026-06-28 14:05:36.631] Found 743 possible bad axioms.
+[2026-06-28 14:05:36.631] Selected the bad axiom SubClassOf(Preclinical Area_of_Research).
+[2026-06-28 14:05:36.637] Found 742 possible bad axioms.
+[2026-06-28 14:05:36.637] Selected the bad axiom SubClassOf(Gene_Expression Molecular_and_Cellular_Data).
+[2026-06-28 14:05:36.642] Found 741 possible bad axioms.
+[2026-06-28 14:05:36.642] Sel
+...[truncated]
+FAIL: attempt=6 seed=71149 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=6 success=0/100
+----- BRO attempt=7 seed=85349 at 2026-06-28 14:10:37 -----
+--- stdout ---
+{"seed":85349,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":378,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=85349, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:10:37.558] Checking precondition...
+[2026-06-28 14:10:37.589] Starting the repair...
+[2026-06-28 14:10:37.605] Found 757 possible bad axioms.
+[2026-06-28 14:10:37.608] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(related_activities ObjectUnionOf(Activity Deprecated_Activity))).
+[2026-06-28 14:10:37.623] Found 756 possible bad axioms.
+[2026-06-28 14:10:37.623] Selected the bad axiom SubClassOf(Communication_Interface Dissemination_Vehicle).
+[2026-06-28 14:10:37.631] Found 755 possible bad axioms.
+[2026-06-28 14:10:37.631] Selected the bad axiom SubClassOf(Signaling_Network_Reconstruction Inference_From_Data).
+[2026-06-28 14:10:37.640] Found 754 possible bad axioms.
+[2026-06-28 14:10:37.640] Selected the bad axiom SubClassOf(Linear_Algebra_Tool Fast_Fourier_Transform).
+[2026-06-28 14:10:37.649] Found 753 possible bad axioms.
+[2026-06-28 14:10:37.649] Selected the bad axiom SubClassOf(Data_Editor Interactive_Tool).
+[2026-06-28 14:10:37.657] Found 752 possible bad axioms.
+[2026-06-28 14:10:37.658] Selected the bad axiom SubClassOf(Mechanical_Simulation Controllers).
+[2026-06-28 14:10:37.665] Found 751 possible bad axioms.
+[2026-06-28 14:10:37.665] Selected the bad axiom SubClassOf(Regulatory_Policy_Resource Regulatory_Compliance_Resource).
+[2026-06-28 14:10:37.672] Found 750 possible bad axioms.
+[2026-06-28 14:10:37.673] Selected the bad axiom SubClassOf(Version_Information Biositemaps_Information_Model).
+[2026-06-28 14:10:37.685] Found 749 possible bad axioms.
+[2026-06-28 14:10:37.685] Selected the bad axiom SubClassOf(News Web_Posting).
+[2026-06-28 14:10:37.692] Found 748 possible bad axioms.
+[2026-06-28 14:10:37.692] Selected the bad axiom SubClassOf(Biomaterial_Manufacture Material_Service).
+[2026-06-28 14:10:37.698] Found 747 possible bad axioms.
+[2026-06-28 14:10:37.698] Selected the bad axiom SubClassOf(Community_Structure_Analysis Graph_Algorithm).
+[2026-06-28 14:10:37.710] Found 746 possible bad axioms.
+[2026-06-28 14:10:37.711] Selected the bad axiom SubClassOf(Mapper Integration).
+[2026-06-28 14:10:37.717] Found 745 possible bad axioms.
+[2026-06-28 14:10:37.718] Selected the bad axiom SubClassOf(Graph_Viewer Visualization).
+[2026-06-28 14:10:37.723] Found 744 possible bad axioms.
+[2026-06-28 14:10:37.723] Selected the bad axiom SubClassOf(Metabolomics Epidemiology).
+[2026-06-28 14:10:37.729] Found 743 possible bad axioms.
+[2026-06-28 14:10:37.729] Selected the bad axiom SubClassOf(Numerical_Method Algorithm).
+[2026-06-28 14:10:37.735] Found 742 possible bad axioms.
+[2026-06-28 14:10:37.735] Selected the bad axio
+...[truncated]
+FAIL: attempt=7 seed=85349 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=7 success=0/100
+----- BRO attempt=8 seed=99549 at 2026-06-28 14:15:38 -----
+--- stdout ---
+{"seed":99549,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":765,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=99549, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:15:38.439] Checking precondition...
+[2026-06-28 14:15:38.473] Starting the repair...
+[2026-06-28 14:15:38.487] Found 757 possible bad axioms.
+[2026-06-28 14:15:38.489] Selected the bad axiom SubClassOf(Connectivity_Matrix owl:Nothing).
+[2026-06-28 14:15:38.504] Found 756 possible bad axioms.
+[2026-06-28 14:15:38.504] Selected the bad axiom SubClassOf(Deprecated_Resource Portlet_Component).
+[2026-06-28 14:15:38.512] Found 755 possible bad axioms.
+[2026-06-28 14:15:38.512] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(related_resource Resource_Description)).
+[2026-06-28 14:15:38.522] Found 754 possible bad axioms.
+[2026-06-28 14:15:38.522] Selected the bad axiom SubClassOf(Outlier_Detection_and_Removal Data_Normalization).
+[2026-06-28 14:15:38.531] Found 753 possible bad axioms.
+[2026-06-28 14:15:38.531] Selected the bad axiom SubClassOf(Hosting Material_Analysis_Service).
+[2026-06-28 14:15:38.539] Found 752 possible bad axioms.
+[2026-06-28 14:15:38.540] Selected the bad axiom SubClassOf(Ontology_Diff_and_Alignment Ontology_Development_and_Management).
+[2026-06-28 14:15:38.548] Found 751 possible bad axioms.
+[2026-06-28 14:15:38.548] Selected the bad axiom SubClassOf(Computational_Geometry Image_Algorithm).
+[2026-06-28 14:15:38.555] Found 750 possible bad axioms.
+[2026-06-28 14:15:38.555] Selected the bad axiom SubClassOf(Protein_Expression Molecular_and_Cellular_Data).
+[2026-06-28 14:15:38.567] Found 749 possible bad axioms.
+[2026-06-28 14:15:38.568] Selected the bad axiom SubClassOf(Computational_Service Material_Analysis_Service).
+[2026-06-28 14:15:38.574] Found 748 possible bad axioms.
+[2026-06-28 14:15:38.575] Selected the bad axiom SubClassOf(Microtome Robotic_Arrayer).
+[2026-06-28 14:15:38.581] Found 747 possible bad axioms.
+[2026-06-28 14:15:38.581] Selected the bad axiom SubClassOf(Facility_Core Material_Resource).
+[2026-06-28 14:15:38.594] Found 746 possible bad axioms.
+[2026-06-28 14:15:38.594] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(data_output owl:Thing) Resource_Description).
+[2026-06-28 14:15:38.600] Found 745 possible bad axioms.
+[2026-06-28 14:15:38.600] Selected the bad axiom SubClassOf(Matrix Experimental_Measurment).
+[2026-06-28 14:15:38.607] Found 744 possible bad axioms.
+[2026-06-28 14:15:38.607] Selected the bad axiom SubClassOf(Wavelet_Transform Spectral_Transform).
+[2026-06-28 14:15:38.612] Found 743 possible bad axioms.
+[2026-06-28 14:15:38.612] Selected the bad axiom SubClassOf(Model_Fitting_Algorithm Statistical_Algorithm).
+[2026-06-28 14:15:38.617] Found 742 possible bad axioms.
+...[truncated]
+FAIL: attempt=8 seed=99549 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=8 success=0/100
+----- BRO attempt=9 seed=113749 at 2026-06-28 14:20:39 -----
+--- stdout ---
+{"seed":113749,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":787,"A2":300001}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=113749, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:20:39.719] Checking precondition...
+[2026-06-28 14:20:39.751] Starting the repair...
+[2026-06-28 14:20:39.764] Found 757 possible bad axioms.
+[2026-06-28 14:20:39.766] Selected the bad axiom SubClassOf(Processing_Pipeline Graphical_Processing_Workflow_Environments).
+[2026-06-28 14:20:39.782] Found 756 possible bad axioms.
+[2026-06-28 14:20:39.782] Selected the bad axiom SubClassOf(Cross-Language_Wrapping Software_Development_Tool).
+[2026-06-28 14:20:39.792] Found 755 possible bad axioms.
+[2026-06-28 14:20:39.792] Selected the bad axiom SubClassOf(Discrete_Data Deprecated_Resource).
+[2026-06-28 14:20:39.801] Found 754 possible bad axioms.
+[2026-06-28 14:20:39.801] Selected the bad axiom SubClassOf(MRI_Scanner NMR_Instrument).
+[2026-06-28 14:20:39.809] Found 753 possible bad axioms.
+[2026-06-28 14:20:39.809] Selected the bad axiom SubClassOf(Medical_Device Material_Resource).
+[2026-06-28 14:20:39.817] Found 752 possible bad axioms.
+[2026-06-28 14:20:39.817] Selected the bad axiom SubClassOf(Imaging Visualization).
+[2026-06-28 14:20:39.825] Found 751 possible bad axioms.
+[2026-06-28 14:20:39.825] Selected the bad axiom SubClassOf(Government_Publication Narrative_Resource).
+[2026-06-28 14:20:39.831] Found 750 possible bad axioms.
+[2026-06-28 14:20:39.832] Selected the bad axiom SubClassOf(Signaling_Network_Reconstruction Pattern_and_Motif_Inference).
+[2026-06-28 14:20:39.843] Found 749 possible bad axioms.
+[2026-06-28 14:20:39.843] Selected the bad axiom SubClassOf(Interaction_Modeling Modeling_and_Simulation).
+[2026-06-28 14:20:39.849] Found 748 possible bad axioms.
+[2026-06-28 14:20:39.849] Selected the bad axiom SubClassOf(Instrument Material_Resource).
+[2026-06-28 14:20:39.856] Found 747 possible bad axioms.
+[2026-06-28 14:20:39.856] Selected the bad axiom SubClassOf(Numerical_Methods Deprecated_Resource).
+[2026-06-28 14:20:39.867] Found 746 possible bad axioms.
+[2026-06-28 14:20:39.868] Selected the bad axiom SubClassOf(Data_Transforms Deprecated_Resource).
+[2026-06-28 14:20:39.873] Found 745 possible bad axioms.
+[2026-06-28 14:20:39.874] Selected the bad axiom SubClassOf(Deprecated_Data_Resource Deprecated_Resource).
+[2026-06-28 14:20:39.879] Found 744 possible bad axioms.
+[2026-06-28 14:20:39.880] Selected the bad axiom SubClassOf(Web_Posting Dissemination_Vehicle).
+[2026-06-28 14:20:39.885] Found 743 possible bad axioms.
+[2026-06-28 14:20:39.886] Selected the bad axiom SubClassOf(X-Ray_Crystallography_Facility Molecular_Biology_Facility).
+[2026-06-28 14:20:39.897] Found 742 possible bad axioms.
+[2026-06-28 14:20:39.897] Selected the
+...[truncated]
+FAIL: attempt=9 seed=113749 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=9 success=0/100
+----- BRO attempt=10 seed=127949 at 2026-06-28 14:25:40 -----
+--- stdout ---
+{"seed":127949,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"A2","error_message":"Repair timeout: A2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":492,"A2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/BRO.owl, seed=127949, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 14:25:41.012] Checking precondition...
+[2026-06-28 14:25:41.043] Starting the repair...
+[2026-06-28 14:25:41.057] Found 757 possible bad axioms.
+[2026-06-28 14:25:41.059] Selected the bad axiom SubClassOf(MRI_Scanner Instrument).
+[2026-06-28 14:25:41.074] Found 756 possible bad axioms.
+[2026-06-28 14:25:41.074] Selected the bad axiom SubClassOf(Skull_Stripping Data_Transform).
+[2026-06-28 14:25:41.082] Found 755 possible bad axioms.
+[2026-06-28 14:25:41.083] Selected the bad axiom SubClassOf(Resource_Integration_Component Integration).
+[2026-06-28 14:25:41.091] Found 754 possible bad axioms.
+[2026-06-28 14:25:41.092] Selected the bad axiom SubClassOf(Protein_Interaction_Modeling Interaction_Modeling).
+[2026-06-28 14:25:41.100] Found 753 possible bad axioms.
+[2026-06-28 14:25:41.101] Selected the bad axiom SubClassOf(Molecular_Biology_Facility NMR_Facility).
+[2026-06-28 14:25:41.111] Found 752 possible bad axioms.
+[2026-06-28 14:25:41.111] Selected the bad axiom SubClassOf(Animal_Models_Facility owl:Nothing).
+[2026-06-28 14:25:41.119] Found 751 possible bad axioms.
+[2026-06-28 14:25:41.119] Selected the bad axiom SubClassOf(Behavioral_Science Area_of_Research).
+[2026-06-28 14:25:41.126] Found 750 possible bad axioms.
+[2026-06-28 14:25:41.126] Selected the bad axiom SubClassOf(Database_Hosting Integrated_Hosting).
+[2026-06-28 14:25:41.138] Found 749 possible bad axioms.
+[2026-06-28 14:25:41.139] Selected the bad axiom SubClassOf(Free_Text Deprecated_Resource).
+[2026-06-28 14:25:41.145] Found 748 possible bad axioms.
+[2026-06-28 14:25:41.145] Selected the bad axiom SubClassOf(Proteomics_Facility PCR_Facility).
+[2026-06-28 14:25:41.151] Found 747 possible bad axioms.
+[2026-06-28 14:25:41.152] Selected the bad axiom SubClassOf(Pathology_Laboratory_Screening Instrument_Manufacture).
+[2026-06-28 14:25:41.164] Found 746 possible bad axioms.
+[2026-06-28 14:25:41.164] Selected the bad axiom SubClassOf(Protocol_Development_Expertise Technical_Support).
+[2026-06-28 14:25:41.170] Found 745 possible bad axioms.
+[2026-06-28 14:25:41.171] Selected the bad axiom SubClassOf(Filtering Pre-Processing).
+[2026-06-28 14:25:41.176] Found 744 possible bad axioms.
+[2026-06-28 14:25:41.177] Selected the bad axiom SubClassOf(Data_Editor Interactive_Tool).
+[2026-06-28 14:25:41.182] Found 743 possible bad axioms.
+[2026-06-28 14:25:41.182] Selected the bad axiom SubClassOf(Service_Resource Resource).
+[2026-06-28 14:25:41.187] Found 742 possible bad axioms.
+[2026-06-28 14:25:41.187] Selected the bad axiom SubClassOf(Data_Transform Pre-Processing).
+[2026-06-28 14:25:41.19
+...[truncated]
+FAIL: attempt=10 seed=127949 status=time_limit_exceeded stage=A2 message=Repair timeout: A2 exceeded 300 seconds
+progress: ontology=BRO attempt=10 success=0/100
+=== ABORTED BRO after 10 consecutive failures at 2026-06-28 14:30:41 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for BRO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=149 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=2 seed=14349 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=3 seed=28549 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=4 seed=42749 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=5 seed=56949 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=6 seed=71149 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=7 seed=85349 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=8 seed=99549 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=9 seed=113749 msg=Repair timeout: A2 exceeded 300 seconds
+  attempt=10 seed=127949 msg=Repair timeout: A2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3010.257512 avg_seconds=301.025751
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

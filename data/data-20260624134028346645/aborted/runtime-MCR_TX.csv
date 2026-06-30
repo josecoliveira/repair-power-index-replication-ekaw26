@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,151,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.510578,1033,300002,,,,,,,,,,
+2,14351,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.025403,547,300001,,,,,,,,,,
+3,28551,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.984093,1506,300003,,,,,,,,,,
+4,42751,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.566677,1084,300003,,,,,,,,,,
+5,56951,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.121650,647,300001,,,,,,,,,,
+6,71151,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.113716,645,300001,,,,,,,,,,
+7,85351,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,302.133206,1650,300002,,,,,,,,,,
+8,99551,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.309316,826,300002,,,,,,,,,,
+9,113751,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.845656,1383,300001,,,,,,,,,,
+10,127951,20260624134028346645,time_limit_exceeded,timeout,A2,Repair timeout: A2 exceeded 300 seconds,301.773928,1303,300002,,,,,,,,,,

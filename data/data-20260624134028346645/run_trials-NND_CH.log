@@ -1,0 +1,428 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-NND_CH.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-NND_CH.csv
+
+=== Starting sequential trials for NND_CH at 2026-06-27 13:29:26 ===
+----- NND_CH attempt=1 seed=115 at 2026-06-27 13:29:26 -----
+--- stdout ---
+{"seed":115,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms","iic_values":{},"repair_runtimes_ms":{"A1":380,"A2":24771,"A3":1175,"B1":484,"B2":1819}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=115, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:29:27.256] Checking precondition...
+[2026-06-27 13:29:27.272] Starting the repair...
+[2026-06-27 13:29:27.279] Found 331 possible bad axioms.
+[2026-06-27 13:29:27.281] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Autonomic_dysfunction http://purl.obolibrary.org/obo/Hypotension_orthostatic).
+[2026-06-27 13:29:27.287] Found 330 possible bad axioms.
+[2026-06-27 13:29:27.287] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disorientation owl:Nothing).
+[2026-06-27 13:29:27.297] Found 329 possible bad axioms.
+[2026-06-27 13:29:27.297] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Anxiety http://purl.obolibrary.org/obo/Disturbances_in_mood_and_behaviour).
+[2026-06-27 13:29:27.302] Found 328 possible bad axioms.
+[2026-06-27 13:29:27.303] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor http://purl.obolibrary.org/obo/Tremor).
+[2026-06-27 13:29:27.307] Found 327 possible bad axioms.
+[2026-06-27 13:29:27.307] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Parkinsonism http://purl.obolibrary.org/obo/Expressionless_face).
+[2026-06-27 13:29:27.312] Found 326 possible bad axioms.
+[2026-06-27 13:29:27.312] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Wandering_behavior owl:Nothing).
+[2026-06-27 13:29:27.316] Found 325 possible bad axioms.
+[2026-06-27 13:29:27.317] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Poor_short-term_memory http://purl.obolibrary.org/obo/Memory_impairment).
+[2026-06-27 13:29:27.321] Found 324 possible bad axioms.
+[2026-06-27 13:29:27.321] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Other_signs_and_symptoms_of_cortical_dysfunction http://purl.obolibrary.org/obo/Apraxias).
+[2026-06-27 13:29:27.324] Found 323 possible bad axioms.
+[2026-06-27 13:29:27.324] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dementia http://purl.obolibrary.org/obo/Cognitive_decline).
+[2026-06-27 13:29:27.327] Found 322 possible bad axioms.
+[2026-06-27 13:29:27.328] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disturbances_of_memory http://purl.obolibrary.org/obo/Dementia).
+[2026-06-27 13:29:27.336] Found 321 possible bad axioms.
+[2026-06-27 13:29:27.336] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bradykinesia http://purl.obolibrary.org/obo/Ataxia).
+[2026-06-27 13:29:27.344] Found 320 possible bad axioms.
+[2026-06-27 13:29:27.345] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Vivid_dreaming http://purl.obolibrary.org/obo/Sle
+...[truncated]
+FAIL: attempt=1 seed=115 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+progress: ontology=NND_CH attempt=1 success=0/100
+----- NND_CH attempt=2 seed=14315 at 2026-06-27 13:29:55 -----
+--- stdout ---
+{"seed":14315,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B6","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache","iic_values":{},"repair_runtimes_ms":{"A1":277,"A2":24426,"A3":1456,"B1":11108,"B2":842,"B3":616,"B4":1122,"B5":250,"B6":2670}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=14315, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:29:56.320] Checking precondition...
+[2026-06-27 13:29:56.335] Starting the repair...
+[2026-06-27 13:29:56.343] Found 331 possible bad axioms.
+[2026-06-27 13:29:56.344] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bradyphrenia http://purl.obolibrary.org/obo/Disturbances_of_memory).
+[2026-06-27 13:29:56.350] Found 330 possible bad axioms.
+[2026-06-27 13:29:56.351] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Headturning_sign http://purl.obolibrary.org/obo/Amnesia).
+[2026-06-27 13:29:56.360] Found 329 possible bad axioms.
+[2026-06-27 13:29:56.360] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Fatigue http://purl.obolibrary.org/obo/Unable_to_concentrate).
+[2026-06-27 13:29:56.365] Found 328 possible bad axioms.
+[2026-06-27 13:29:56.365] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Muscular_fasciculation http://purl.obolibrary.org/obo/Motor_deficits).
+[2026-06-27 13:29:56.371] Found 327 possible bad axioms.
+[2026-06-27 13:29:56.371] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Signs_of_impaired_mobility http://purl.obolibrary.org/obo/Nystagmus).
+[2026-06-27 13:29:56.375] Found 326 possible bad axioms.
+[2026-06-27 13:29:56.376] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disorientation http://purl.obolibrary.org/obo/Ataxia).
+[2026-06-27 13:29:56.381] Found 325 possible bad axioms.
+[2026-06-27 13:29:56.381] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebellar_and_vestibular_system_dysfunction http://purl.obolibrary.org/obo/Vertigo).
+[2026-06-27 13:29:56.385] Found 324 possible bad axioms.
+[2026-06-27 13:29:56.385] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Signs_of_impaired_mobility http://purl.obolibrary.org/obo/Decreased_fine_motor_skills).
+[2026-06-27 13:29:56.389] Found 323 possible bad axioms.
+[2026-06-27 13:29:56.389] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Parkinsonism http://purl.obolibrary.org/obo/Expressionless_face).
+[2026-06-27 13:29:56.392] Found 322 possible bad axioms.
+[2026-06-27 13:29:56.392] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Aspecific_symptoms http://purl.obolibrary.org/obo/General_decline).
+[2026-06-27 13:29:56.400] Found 321 possible bad axioms.
+[2026-06-27 13:29:56.400] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Amnesia http://purl.obolibrary.org/obo/Headturning_sign).
+[2026-06-27 13:29:56.408] Found 320 possible bad axioms.
+[2026-06-27 13:29:56.409] Selected the bad axiom SubClassO
+...[truncated]
+FAIL: attempt=2 seed=14315 status=memory_limit_exceeded stage=B6 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+progress: ontology=NND_CH attempt=2 success=0/100
+----- NND_CH attempt=3 seed=28515 at 2026-06-27 13:30:39 -----
+--- stdout ---
+{"seed":28515,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache","iic_values":{},"repair_runtimes_ms":{"A1":62,"A2":24251,"A3":951,"B1":2684,"B2":846,"B3":5554,"B4":122,"B5":2229}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=28515, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:30:39.790] Checking precondition...
+[2026-06-27 13:30:39.805] Starting the repair...
+[2026-06-27 13:30:39.813] Found 331 possible bad axioms.
+[2026-06-27 13:30:39.815] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor_deficits http://purl.obolibrary.org/obo/Extrapyramidal_symptoms).
+[2026-06-27 13:30:39.821] Found 330 possible bad axioms.
+[2026-06-27 13:30:39.822] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive_and_memory_impairment http://purl.obolibrary.org/obo/Cognitive).
+[2026-06-27 13:30:39.831] Found 329 possible bad axioms.
+[2026-06-27 13:30:39.831] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Signs_of_impaired_mobility http://purl.obolibrary.org/obo/Ataxia).
+[2026-06-27 13:30:39.836] Found 328 possible bad axioms.
+[2026-06-27 13:30:39.837] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Agitation http://purl.obolibrary.org/obo/Disturbances_in_mood_and_behaviour).
+[2026-06-27 13:30:39.842] Found 327 possible bad axioms.
+[2026-06-27 13:30:39.842] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/Headache).
+[2026-06-27 13:30:39.847] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 13:30:39.848] Checking precondition...
+[2026-06-27 13:30:39.856] Starting the repair...
+[2026-06-27 13:31:04.098] Found 2 possible bad axioms.
+[2026-06-27 13:31:04.098] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/Headache).
+[2026-06-27 13:31:04.099] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-27 13:31:04.100] Checking precondition...
+[2026-06-27 13:31:04.103] Starting the repair...
+[2026-06-27 13:31:04.158] Selected a reference ontology with 436 axioms.
+[2026-06-27 13:31:04.618] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/Headache).
+[2026-06-27 13:31:04.669] Selected the weaker axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/Weight_loss).
+[2026-06-27 13:31:05.048] Selected the bad axiom SubClassOf(owl:Thing http://purl.obolibrary.org/obo/Weight_loss).
+[2026-06-27 13:31:05.049] Selected the weaker axiom SubClassOf(http://purl.obolibrary.org/obo/Vertigo http://purl.obolibrary.org/obo/Weight_loss).
+[2026-06-27 13:31:05.050] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-27 13:31:05.051] Checking precondition...
+[2026-06-27 13:31:05.053] Starting the repair...
+[2026-06-27 13:31:05.062] Selected a reference ontology with 443 axioms.
+[2026-06-27 13:3
+...[truncated]
+FAIL: attempt=3 seed=28515 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+progress: ontology=NND_CH attempt=3 success=0/100
+----- NND_CH attempt=4 seed=42715 at 2026-06-27 13:31:16 -----
+--- stdout ---
+{"seed":42715,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache","iic_values":{},"repair_runtimes_ms":{"A1":389,"A2":24570,"A3":1634,"B1":8923,"B2":2794}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=42715, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:31:16.966] Checking precondition...
+[2026-06-27 13:31:16.982] Starting the repair...
+[2026-06-27 13:31:16.990] Found 331 possible bad axioms.
+[2026-06-27 13:31:16.991] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bradykinesia http://purl.obolibrary.org/obo/Ataxia).
+[2026-06-27 13:31:16.997] Found 330 possible bad axioms.
+[2026-06-27 13:31:16.997] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Stress http://purl.obolibrary.org/obo/Unable_to_concentrate).
+[2026-06-27 13:31:17.006] Found 329 possible bad axioms.
+[2026-06-27 13:31:17.007] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Aspecific_symptoms http://purl.obolibrary.org/obo/Fatigue).
+[2026-06-27 13:31:17.011] Found 328 possible bad axioms.
+[2026-06-27 13:31:17.012] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Verbal_impairment http://purl.obolibrary.org/obo/Disturbances_of_language_and_speech).
+[2026-06-27 13:31:17.017] Found 327 possible bad axioms.
+[2026-06-27 13:31:17.017] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Aspecific_symptoms owl:Nothing).
+[2026-06-27 13:31:17.021] Found 326 possible bad axioms.
+[2026-06-27 13:31:17.022] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disturbances_of_memory http://purl.obolibrary.org/obo/Bradyphrenia).
+[2026-06-27 13:31:17.027] Found 325 possible bad axioms.
+[2026-06-27 13:31:17.027] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frequent_falls http://purl.obolibrary.org/obo/Loss_of_coordination).
+[2026-06-27 13:31:17.031] Found 324 possible bad axioms.
+[2026-06-27 13:31:17.031] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Unable_to_concentrate http://purl.obolibrary.org/obo/Stress).
+[2026-06-27 13:31:17.035] Found 323 possible bad axioms.
+[2026-06-27 13:31:17.035] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Bradykinesia http://purl.obolibrary.org/obo/Extrapyramidal_symptoms).
+[2026-06-27 13:31:17.038] Found 322 possible bad axioms.
+[2026-06-27 13:31:17.038] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Weight_loss http://purl.obolibrary.org/obo/Aspecific_symptoms).
+[2026-06-27 13:31:17.046] Found 321 possible bad axioms.
+[2026-06-27 13:31:17.046] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Expressionless_face http://purl.obolibrary.org/obo/Extrapyramidal_symptoms).
+[2026-06-27 13:31:17.054] Found 320 possible bad axioms.
+[2026-06-27 13:31:17.054] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive_and
+...[truncated]
+FAIL: attempt=4 seed=42715 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+progress: ontology=NND_CH attempt=4 success=0/100
+----- NND_CH attempt=5 seed=56915 at 2026-06-27 13:31:55 -----
+--- stdout ---
+{"seed":56915,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms","iic_values":{},"repair_runtimes_ms":{"A1":367,"A2":24596,"A3":3364,"B1":2668,"B2":3159}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=56915, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:31:55.723] Checking precondition...
+[2026-06-27 13:31:55.738] Starting the repair...
+[2026-06-27 13:31:55.746] Found 331 possible bad axioms.
+[2026-06-27 13:31:55.747] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive_and_memory_impairment http://purl.obolibrary.org/obo/Other_signs_and_symptoms_of_cortical_dysfunction).
+[2026-06-27 13:31:55.753] Found 330 possible bad axioms.
+[2026-06-27 13:31:55.753] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Memory_impairment http://purl.obolibrary.org/obo/Sleep_disorders_circadian_rhythm).
+[2026-06-27 13:31:55.762] Found 329 possible bad axioms.
+[2026-06-27 13:31:55.763] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive http://purl.obolibrary.org/obo/Other_signs_and_symptoms_of_cortical_dysfunction).
+[2026-06-27 13:31:55.768] Found 328 possible bad axioms.
+[2026-06-27 13:31:55.768] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Stress http://purl.obolibrary.org/obo/Fatigue).
+[2026-06-27 13:31:55.773] Found 327 possible bad axioms.
+[2026-06-27 13:31:55.773] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Memory_impairment http://purl.obolibrary.org/obo/Forgetful).
+[2026-06-27 13:31:55.778] Found 326 possible bad axioms.
+[2026-06-27 13:31:55.778] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor http://purl.obolibrary.org/obo/Tremor).
+[2026-06-27 13:31:55.782] Found 325 possible bad axioms.
+[2026-06-27 13:31:55.783] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive_and_memory_impairment http://purl.obolibrary.org/obo/Signs_of_dis_inhibition).
+[2026-06-27 13:31:55.786] Found 324 possible bad axioms.
+[2026-06-27 13:31:55.786] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive http://purl.obolibrary.org/obo/Disturbances_of_memory).
+[2026-06-27 13:31:55.789] Found 323 possible bad axioms.
+[2026-06-27 13:31:55.789] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Wandering_behavior http://purl.obolibrary.org/obo/Hallucinations).
+[2026-06-27 13:31:55.793] Found 322 possible bad axioms.
+[2026-06-27 13:31:55.793] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Vertigo http://purl.obolibrary.org/obo/Cerebellar_and_vestibular_system_dysfunction).
+[2026-06-27 13:31:55.801] Found 321 possible bad axioms.
+[2026-06-27 13:31:55.801] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Signs_of_dis_inhibition http://purl.obolibrary.org/obo/Bradyphrenia).
+[2026-06-27 13:31:55.810] Found 320 possible
+...[truncated]
+FAIL: attempt=5 seed=56915 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+progress: ontology=NND_CH attempt=5 success=0/100
+----- NND_CH attempt=6 seed=71115 at 2026-06-27 13:32:29 -----
+--- stdout ---
+{"seed":71115,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache","iic_values":{},"repair_runtimes_ms":{"A1":160,"A2":24492,"A3":1064,"B1":527,"B2":853,"B3":1734}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=71115, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:32:30.317] Checking precondition...
+[2026-06-27 13:32:30.333] Starting the repair...
+[2026-06-27 13:32:30.340] Found 331 possible bad axioms.
+[2026-06-27 13:32:30.342] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Muscular_fasciculation http://purl.obolibrary.org/obo/Findings_related_to_sleep).
+[2026-06-27 13:32:30.348] Found 330 possible bad axioms.
+[2026-06-27 13:32:30.348] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Loss_of_sympathy_empathy http://purl.obolibrary.org/obo/Signs_of_dis_inhibition).
+[2026-06-27 13:32:30.357] Found 329 possible bad axioms.
+[2026-06-27 13:32:30.357] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Olfactory_and_gustatory_dysfunction http://purl.obolibrary.org/obo/Sensory_deficits).
+[2026-06-27 13:32:30.362] Found 328 possible bad axioms.
+[2026-06-27 13:32:30.362] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Parkinsonism http://purl.obolibrary.org/obo/Muscle_rigidity).
+[2026-06-27 13:32:30.367] Found 327 possible bad axioms.
+[2026-06-27 13:32:30.367] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Activities_of_daily_living_impaired http://purl.obolibrary.org/obo/Day_care_medical).
+[2026-06-27 13:32:30.372] Found 326 possible bad axioms.
+[2026-06-27 13:32:30.372] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Admission_to_psychiatric_hospital http://purl.obolibrary.org/obo/Other_psychiatric_signs_and_symptoms).
+[2026-06-27 13:32:30.376] Found 325 possible bad axioms.
+[2026-06-27 13:32:30.376] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Restlessness http://purl.obolibrary.org/obo/Disturbances_in_mood_and_behaviour).
+[2026-06-27 13:32:30.380] Found 324 possible bad axioms.
+[2026-06-27 13:32:30.380] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Muscle_rigidity http://purl.obolibrary.org/obo/Ataxia).
+[2026-06-27 13:32:30.383] Found 323 possible bad axioms.
+[2026-06-27 13:32:30.383] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Decreased_fine_motor_skills http://purl.obolibrary.org/obo/Signs_of_impaired_mobility).
+[2026-06-27 13:32:30.386] Found 322 possible bad axioms.
+[2026-06-27 13:32:30.386] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Swallowing_problem http://purl.obolibrary.org/obo/Motor_deficits).
+[2026-06-27 13:32:30.395] Found 321 possible bad axioms.
+[2026-06-27 13:32:30.395] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cerebellar_and_vestibular_system_dysfunction http://purl.obolibrary.org/o
+...[truncated]
+FAIL: attempt=6 seed=71115 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+progress: ontology=NND_CH attempt=6 success=0/100
+----- NND_CH attempt=7 seed=85315 at 2026-06-27 13:32:59 -----
+--- stdout ---
+{"seed":85315,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms","iic_values":{},"repair_runtimes_ms":{"A1":390,"A2":24516,"A3":541,"B1":885,"B2":2629}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=85315, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:32:59.586] Checking precondition...
+[2026-06-27 13:32:59.602] Starting the repair...
+[2026-06-27 13:32:59.608] Found 331 possible bad axioms.
+[2026-06-27 13:32:59.610] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disturbances_of_language_and_speech http://purl.obolibrary.org/obo/Verbal_impairment).
+[2026-06-27 13:32:59.616] Found 330 possible bad axioms.
+[2026-06-27 13:32:59.616] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor_deficits http://purl.obolibrary.org/obo/Extrapyramidal_symptoms).
+[2026-06-27 13:32:59.625] Found 329 possible bad axioms.
+[2026-06-27 13:32:59.625] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Expressionless_face http://purl.obolibrary.org/obo/Extrapyramidal_symptoms).
+[2026-06-27 13:32:59.631] Found 328 possible bad axioms.
+[2026-06-27 13:32:59.631] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Hyperorality http://purl.obolibrary.org/obo/Signs_of_dis_inhibition).
+[2026-06-27 13:32:59.636] Found 327 possible bad axioms.
+[2026-06-27 13:32:59.636] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disturbed_gait http://purl.obolibrary.org/obo/Impaired_mobility).
+[2026-06-27 13:32:59.641] Found 326 possible bad axioms.
+[2026-06-27 13:32:59.641] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Psychiatric http://purl.obolibrary.org/obo/Paranoia).
+[2026-06-27 13:32:59.646] Found 325 possible bad axioms.
+[2026-06-27 13:32:59.646] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Muscle_weakness http://purl.obolibrary.org/obo/Motor_deficits).
+[2026-06-27 13:32:59.650] Found 324 possible bad axioms.
+[2026-06-27 13:32:59.650] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Activities_of_daily_living_impaired http://purl.obolibrary.org/obo/Day_care_medical).
+[2026-06-27 13:32:59.654] Found 323 possible bad axioms.
+[2026-06-27 13:32:59.654] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Admission_to_nursing_home http://purl.obolibrary.org/obo/Day_care_medical).
+[2026-06-27 13:32:59.657] Found 322 possible bad axioms.
+[2026-06-27 13:32:59.658] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Other_signs_and_symptoms_of_cortical_dysfunction http://purl.obolibrary.org/obo/Anomia).
+[2026-06-27 13:32:59.665] Found 321 possible bad axioms.
+[2026-06-27 13:32:59.666] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Parkinsonism http://purl.obolibrary.org/obo/Expressionless_face).
+[2026-06-27 13:32:59.674] Found 320 possible bad axioms.
+[20
+...[truncated]
+FAIL: attempt=7 seed=85315 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+progress: ontology=NND_CH attempt=7 success=0/100
+----- NND_CH attempt=8 seed=99515 at 2026-06-27 13:33:28 -----
+--- stdout ---
+{"seed":99515,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache","iic_values":{},"repair_runtimes_ms":{"A1":219,"A2":24619,"A3":558,"B1":527,"B2":835,"B3":3133}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=99515, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:33:29.004] Checking precondition...
+[2026-06-27 13:33:29.019] Starting the repair...
+[2026-06-27 13:33:29.026] Found 331 possible bad axioms.
+[2026-06-27 13:33:29.028] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Aspecific_symptoms http://purl.obolibrary.org/obo/General_decline).
+[2026-06-27 13:33:29.034] Found 330 possible bad axioms.
+[2026-06-27 13:33:29.034] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Wandering_behavior http://purl.obolibrary.org/obo/Hallucinations).
+[2026-06-27 13:33:29.043] Found 329 possible bad axioms.
+[2026-06-27 13:33:29.043] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Paranoia owl:Nothing).
+[2026-06-27 13:33:29.048] Found 328 possible bad axioms.
+[2026-06-27 13:33:29.048] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Findings_related_to_sleep http://purl.obolibrary.org/obo/Aspecific_symptoms).
+[2026-06-27 13:33:29.053] Found 327 possible bad axioms.
+[2026-06-27 13:33:29.054] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Poor_short-term_memory http://purl.obolibrary.org/obo/Memory_impairment).
+[2026-06-27 13:33:29.059] Found 326 possible bad axioms.
+[2026-06-27 13:33:29.060] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Compulsive_behavior http://purl.obolibrary.org/obo/Restlessness).
+[2026-06-27 13:33:29.065] Found 325 possible bad axioms.
+[2026-06-27 13:33:29.065] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Admission_to_nursing_home http://purl.obolibrary.org/obo/Day_care_medical).
+[2026-06-27 13:33:29.069] Found 324 possible bad axioms.
+[2026-06-27 13:33:29.069] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Verbal_impairment http://purl.obolibrary.org/obo/Disturbances_of_language_and_speech).
+[2026-06-27 13:33:29.073] Found 323 possible bad axioms.
+[2026-06-27 13:33:29.073] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Weight_loss http://purl.obolibrary.org/obo/Aspecific_symptoms).
+[2026-06-27 13:33:29.076] Found 322 possible bad axioms.
+[2026-06-27 13:33:29.076] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Dysarthria http://purl.obolibrary.org/obo/Swallowing_problem).
+[2026-06-27 13:33:29.084] Found 321 possible bad axioms.
+[2026-06-27 13:33:29.084] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Nystagmus http://purl.obolibrary.org/obo/Vertigo).
+[2026-06-27 13:33:29.093] Found 320 possible bad axioms.
+[2026-06-27 13:33:29.094] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Me
+...[truncated]
+FAIL: attempt=8 seed=99515 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+progress: ontology=NND_CH attempt=8 success=0/100
+----- NND_CH attempt=9 seed=113715 at 2026-06-27 13:33:58 -----
+--- stdout ---
+{"seed":113715,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Anomia ⊑ Verbal_impairment","iic_values":{},"repair_runtimes_ms":{"A1":300,"A2":24286,"A3":511,"B1":454,"B2":1541,"B3":8635}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=113715, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:33:59.341] Checking precondition...
+[2026-06-27 13:33:59.356] Starting the repair...
+[2026-06-27 13:33:59.363] Found 331 possible bad axioms.
+[2026-06-27 13:33:59.365] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Unable_to_concentrate http://purl.obolibrary.org/obo/Weight_loss).
+[2026-06-27 13:33:59.371] Found 330 possible bad axioms.
+[2026-06-27 13:33:59.371] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/General_health_deterioration http://purl.obolibrary.org/obo/General_decline).
+[2026-06-27 13:33:59.380] Found 329 possible bad axioms.
+[2026-06-27 13:33:59.380] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive_and_memory_impairment http://purl.obolibrary.org/obo/Other_signs_and_symptoms_of_cortical_dysfunction).
+[2026-06-27 13:33:59.386] Found 328 possible bad axioms.
+[2026-06-27 13:33:59.386] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disturbances_in_mood_and_behaviour http://purl.obolibrary.org/obo/Feeling_suicidal).
+[2026-06-27 13:33:59.390] Found 327 possible bad axioms.
+[2026-06-27 13:33:59.390] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Ataxia http://purl.obolibrary.org/obo/Loss_of_coordination).
+[2026-06-27 13:33:59.395] Found 326 possible bad axioms.
+[2026-06-27 13:33:59.395] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Admission_to_nursing_home http://purl.obolibrary.org/obo/Day_care_medical).
+[2026-06-27 13:33:59.399] Found 325 possible bad axioms.
+[2026-06-27 13:33:59.400] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Nystagmus http://purl.obolibrary.org/obo/Vertigo).
+[2026-06-27 13:33:59.404] Found 324 possible bad axioms.
+[2026-06-27 13:33:59.404] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Frequent_falls http://purl.obolibrary.org/obo/Signs_of_impaired_mobility).
+[2026-06-27 13:33:59.408] Found 323 possible bad axioms.
+[2026-06-27 13:33:59.408] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Aggressive_behavior http://purl.obolibrary.org/obo/Disturbances_in_mood_and_behaviour).
+[2026-06-27 13:33:59.411] Found 322 possible bad axioms.
+[2026-06-27 13:33:59.411] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Amnesia http://purl.obolibrary.org/obo/Ataxia).
+[2026-06-27 13:33:59.419] Found 321 possible bad axioms.
+[2026-06-27 13:33:59.419] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Lack_of_planning_organization_overview http://purl.obolibrary.org/obo/Other_signs_and_symptoms_of_cortical_dysfunction).
+[2
+...[truncated]
+FAIL: attempt=9 seed=113715 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Anomia ⊑ Verbal_impairment
+progress: ontology=NND_CH attempt=9 success=0/100
+----- NND_CH attempt=10 seed=127915 at 2026-06-27 13:34:35 -----
+--- stdout ---
+{"seed":127915,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms","iic_values":{},"repair_runtimes_ms":{"A1":402,"A2":24460,"A3":522,"B1":506,"B2":2729}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/NND_CH.owl, seed=127915, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 13:34:35.549] Checking precondition...
+[2026-06-27 13:34:35.567] Starting the repair...
+[2026-06-27 13:34:35.574] Found 331 possible bad axioms.
+[2026-06-27 13:34:35.576] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Motor http://purl.obolibrary.org/obo/Loss_of_coordination).
+[2026-06-27 13:34:35.582] Found 330 possible bad axioms.
+[2026-06-27 13:34:35.582] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Nystagmus owl:Nothing).
+[2026-06-27 13:34:35.590] Found 329 possible bad axioms.
+[2026-06-27 13:34:35.591] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Signs_of_impaired_mobility http://purl.obolibrary.org/obo/Cerebellar_and_vestibular_system_dysfunction).
+[2026-06-27 13:34:35.595] Found 328 possible bad axioms.
+[2026-06-27 13:34:35.595] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Agnosia http://purl.obolibrary.org/obo/Disturbances_of_memory).
+[2026-06-27 13:34:35.600] Found 327 possible bad axioms.
+[2026-06-27 13:34:35.600] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Aspecific_symptoms http://purl.obolibrary.org/obo/General_decline).
+[2026-06-27 13:34:35.604] Found 326 possible bad axioms.
+[2026-06-27 13:34:35.605] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Cognitive http://purl.obolibrary.org/obo/Anosognosia).
+[2026-06-27 13:34:35.609] Found 325 possible bad axioms.
+[2026-06-27 13:34:35.609] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/General http://purl.obolibrary.org/obo/Communication_impairment).
+[2026-06-27 13:34:35.614] Found 324 possible bad axioms.
+[2026-06-27 13:34:35.614] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Nystagmus http://purl.obolibrary.org/obo/Cerebellar_and_vestibular_system_dysfunction).
+[2026-06-27 13:34:35.617] Found 323 possible bad axioms.
+[2026-06-27 13:34:35.618] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disturbed_gait http://purl.obolibrary.org/obo/Frequent_falls).
+[2026-06-27 13:34:35.621] Found 322 possible bad axioms.
+[2026-06-27 13:34:35.621] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Disturbances_in_mood_and_behaviour http://purl.obolibrary.org/obo/Other_psychiatric_signs_and_symptoms).
+[2026-06-27 13:34:35.629] Found 321 possible bad axioms.
+[2026-06-27 13:34:35.630] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/Equilibration_disorder http://purl.obolibrary.org/obo/Cerebellar_and_vestibular_system_dysfunction).
+[2026-06-27 13:34:35.638] Found 320 possible bad axioms.
+[2026-06-2
+...[truncated]
+FAIL: attempt=10 seed=127915 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+progress: ontology=NND_CH attempt=10 success=0/100
+=== ABORTED NND_CH after 10 consecutive failures at 2026-06-27 13:35:04 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for NND_CH - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=115 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+  attempt=2 seed=14315 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+  attempt=3 seed=28515 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+  attempt=4 seed=42715 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+  attempt=5 seed=56915 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+  attempt=6 seed=71115 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+  attempt=7 seed=85315 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+  attempt=8 seed=99515 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ Headache
+  attempt=9 seed=113715 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Anomia ⊑ Verbal_impairment
+  attempt=10 seed=127915 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: Headache ⊑ Aspecific_symptoms
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

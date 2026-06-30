@@ -1,0 +1,386 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CTENO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CTENO.csv
+
+=== Starting sequential trials for CTENO at 2026-06-27 03:15:08 ===
+----- CTENO attempt=1 seed=103 at 2026-06-27 03:15:08 -----
+--- stdout ---
+{"seed":103,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":240,"A2":24281,"A3":5790,"B1":7487,"B2":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=103, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:15:08.472] Checking precondition...
+[2026-06-27 03:15:08.492] Starting the repair...
+[2026-06-27 03:15:08.507] Found 273 possible bad axioms.
+[2026-06-27 03:15:08.509] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000084 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000081 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000072))).
+[2026-06-27 03:15:08.516] Found 272 possible bad axioms.
+[2026-06-27 03:15:08.516] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000081 http://purl.obolibrary.org/obo/CTENO_0000082).
+[2026-06-27 03:15:08.524] Found 271 possible bad axioms.
+[2026-06-27 03:15:08.525] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000070 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000075 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/UBERON_0007236))).
+[2026-06-27 03:15:08.531] Found 270 possible bad axioms.
+[2026-06-27 03:15:08.532] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000088 http://purl.obolibrary.org/obo/CTENO_0000075).
+[2026-06-27 03:15:08.538] Found 269 possible bad axioms.
+[2026-06-27 03:15:08.538] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000079 http://purl.obolibrary.org/obo/CTENO_0000088).
+[2026-06-27 03:15:08.543] Found 268 possible bad axioms.
+[2026-06-27 03:15:08.544] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000084 http://purl.obolibrary.org/obo/CTENO_0000081).
+[2026-06-27 03:15:08.549] Found 267 possible bad axioms.
+[2026-06-27 03:15:08.549] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000013 http://purl.obolibrary.org/obo/CTENO_0000008).
+[2026-06-27 03:15:08.560] Found 266 possible bad axioms.
+[2026-06-27 03:15:08.561] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000109 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000103)).
+[2026-06-27 03:15:08.566] Found 265 possible bad axioms.
+[2026-06-27 03:15:08.566] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000093 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000067 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000090))).
+[2026-06-27 03:15:08.571] Found 264 possible bad axioms.
+[2026-06-27 03:15:08.571] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrar
+...[truncated]
+FAIL: attempt=1 seed=103 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=1 success=0/100
+----- CTENO attempt=2 seed=14303 at 2026-06-27 03:20:46 -----
+--- stdout ---
+{"seed":14303,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":181,"A2":24249,"A3":4252,"B1":5874,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=14303, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:20:46.783] Checking precondition...
+[2026-06-27 03:20:46.804] Starting the repair...
+[2026-06-27 03:20:46.814] Found 273 possible bad axioms.
+[2026-06-27 03:20:46.816] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000081 ObjectUnionOf(http://purl.obolibrary.org/obo/CTENO_0000073 http://purl.obolibrary.org/obo/CTENO_0000083)).
+[2026-06-27 03:20:46.829] Found 272 possible bad axioms.
+[2026-06-27 03:20:46.829] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000037 http://purl.obolibrary.org/obo/UBERON_0001135).
+[2026-06-27 03:20:46.836] Found 271 possible bad axioms.
+[2026-06-27 03:20:46.837] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000093 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000067 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000090))).
+[2026-06-27 03:20:46.844] Found 270 possible bad axioms.
+[2026-06-27 03:20:46.845] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000081 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000072)) http://purl.obolibrary.org/obo/CTENO_0000083).
+[2026-06-27 03:20:46.851] Found 269 possible bad axioms.
+[2026-06-27 03:20:46.851] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0007236 http://purl.obolibrary.org/obo/UBERON_0000067).
+[2026-06-27 03:20:46.857] Found 268 possible bad axioms.
+[2026-06-27 03:20:46.857] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/CTENO_0000141 http://purl.obolibrary.org/obo/CTENO_0000142) http://purl.obolibrary.org/obo/CTENO_0000062).
+[2026-06-27 03:20:46.862] Found 267 possible bad axioms.
+[2026-06-27 03:20:46.863] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000008 http://purl.obolibrary.org/obo/GO_0005929).
+[2026-06-27 03:20:46.873] Found 266 possible bad axioms.
+[2026-06-27 03:20:46.873] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000073 ObjectComplementOf(http://purl.obolibrary.org/obo/CTENO_0000083)).
+[2026-06-27 03:20:46.879] Found 265 possible bad axioms.
+[2026-06-27 03:20:46.879] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000084 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000081 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000071))).
+[2026-06-27 03:20:46.884] Found 264 possible bad axioms.
+[2026-06-27 03:20:46.884]
+...[truncated]
+FAIL: attempt=2 seed=14303 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=2 success=0/100
+----- CTENO attempt=3 seed=28503 at 2026-06-27 03:26:21 -----
+--- stdout ---
+{"seed":28503,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":462,"A2":24279,"A3":1453,"B1":1515,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=28503, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:26:21.851] Checking precondition...
+[2026-06-27 03:26:21.871] Starting the repair...
+[2026-06-27 03:26:21.885] Found 273 possible bad axioms.
+[2026-06-27 03:26:21.887] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000066 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000118)) http://purl.obolibrary.org/obo/CTENO_0000098).
+[2026-06-27 03:26:21.894] Found 272 possible bad axioms.
+[2026-06-27 03:26:21.895] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000066 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000082)) http://purl.obolibrary.org/obo/CTENO_0000096).
+[2026-06-27 03:26:21.902] Found 271 possible bad axioms.
+[2026-06-27 03:26:21.902] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000093 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000090)).
+[2026-06-27 03:26:21.909] Found 270 possible bad axioms.
+[2026-06-27 03:26:21.910] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000048 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0001025 http://purl.obolibrary.org/obo/CTENO_0000026)).
+[2026-06-27 03:26:21.915] Found 269 possible bad axioms.
+[2026-06-27 03:26:21.916] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000085 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000064)) http://purl.obolibrary.org/obo/CTENO_0000086).
+[2026-06-27 03:26:21.920] Found 268 possible bad axioms.
+[2026-06-27 03:26:21.921] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000154 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002254 http://purl.obolibrary.org/obo/CTENO_0000081)).
+[2026-06-27 03:26:21.926] Found 267 possible bad axioms.
+[2026-06-27 03:26:21.926] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000141 ObjectComplementOf(http://purl.obolibrary.org/obo/CTENO_0000142)).
+[2026-06-27 03:26:21.936] Found 266 possible bad axioms.
+[2026-06-27 03:26:21.936] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000075 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/UBERON_0007236)) http://purl.obolibrary.org/obo/CTENO_0000082).
+[2026-06-27 03:26:21.940] Found 265 possible bad axioms.
+[2026-06-27 03:26:21.940] Sele
+...[truncated]
+FAIL: attempt=3 seed=28503 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=3 success=0/100
+----- CTENO attempt=4 seed=42703 at 2026-06-27 03:31:49 -----
+--- stdout ---
+{"seed":42703,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":107,"A2":24109,"A3":4940,"B1":1200,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=42703, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:31:50.064] Checking precondition...
+[2026-06-27 03:31:50.083] Starting the repair...
+[2026-06-27 03:31:50.093] Found 273 possible bad axioms.
+[2026-06-27 03:31:50.095] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000156 http://purl.obolibrary.org/obo/UBERON_0000100).
+[2026-06-27 03:31:50.107] Found 272 possible bad axioms.
+[2026-06-27 03:31:50.107] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000001 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002254 http://purl.obolibrary.org/obo/CTENO_0000103)).
+[2026-06-27 03:31:50.115] Found 271 possible bad axioms.
+[2026-06-27 03:31:50.115] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000075 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000116)) http://purl.obolibrary.org/obo/CTENO_0000085).
+[2026-06-27 03:31:50.122] Found 270 possible bad axioms.
+[2026-06-27 03:31:50.123] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000075 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000118)) http://purl.obolibrary.org/obo/CTENO_0000088).
+[2026-06-27 03:31:50.128] Found 269 possible bad axioms.
+[2026-06-27 03:31:50.129] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000096 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000066 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000116))).
+[2026-06-27 03:31:50.135] Found 268 possible bad axioms.
+[2026-06-27 03:31:50.135] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000086 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000075 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000116))).
+[2026-06-27 03:31:50.140] Found 267 possible bad axioms.
+[2026-06-27 03:31:50.141] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000072 http://purl.obolibrary.org/obo/CTENO_0000070).
+[2026-06-27 03:31:50.152] Found 266 possible bad axioms.
+[2026-06-27 03:31:50.152] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000066 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000068 http://purl.obolibrary.org/obo/UBERON_0000109)).
+[2026-06-27 03:31:50.167] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-27 03:31:50.168] Checking precondition...
+[2026-06-
+...[truncated]
+FAIL: attempt=4 seed=42703 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=4 success=0/100
+----- CTENO attempt=5 seed=56903 at 2026-06-27 03:37:20 -----
+--- stdout ---
+{"seed":56903,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":219,"A2":24373,"A3":1820,"B1":1524,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=56903, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:37:20.918] Checking precondition...
+[2026-06-27 03:37:20.937] Starting the repair...
+[2026-06-27 03:37:20.953] Found 273 possible bad axioms.
+[2026-06-27 03:37:20.955] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000081 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000072)) http://purl.obolibrary.org/obo/CTENO_0000083).
+[2026-06-27 03:37:20.962] Found 272 possible bad axioms.
+[2026-06-27 03:37:20.962] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0000067 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002087 http://purl.obolibrary.org/obo/CTENO_0000117)).
+[2026-06-27 03:37:20.970] Found 271 possible bad axioms.
+[2026-06-27 03:37:20.970] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000006 http://purl.obolibrary.org/obo/GO_0005929).
+[2026-06-27 03:37:20.977] Found 270 possible bad axioms.
+[2026-06-27 03:37:20.977] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000085 http://purl.obolibrary.org/obo/CTENO_0000075).
+[2026-06-27 03:37:20.982] Found 269 possible bad axioms.
+[2026-06-27 03:37:20.983] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000031 http://purl.obolibrary.org/obo/CTENO_0000030).
+[2026-06-27 03:37:20.987] Found 268 possible bad axioms.
+[2026-06-27 03:37:20.988] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000037 http://purl.obolibrary.org/obo/UBERON_0001135).
+[2026-06-27 03:37:20.993] Found 267 possible bad axioms.
+[2026-06-27 03:37:20.994] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000111 http://purl.obolibrary.org/obo/CTENO_0000098).
+[2026-06-27 03:37:21.004] Found 266 possible bad axioms.
+[2026-06-27 03:37:21.005] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000073 http://purl.obolibrary.org/obo/CTENO_0000074).
+[2026-06-27 03:37:21.010] Found 265 possible bad axioms.
+[2026-06-27 03:37:21.010] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000022 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000025)).
+[2026-06-27 03:37:21.016] Found 264 possible bad axioms.
+[2026-06-27 03:37:21.016] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000082 http://purl.obolibrary.org/obo/CTENO_0000075).
+[2026-06-27 03:37:21.022] Found 263 possible bad axioms.
+[2026-06-27 03:37:21.022] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/
+...[truncated]
+FAIL: attempt=5 seed=56903 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=5 success=0/100
+----- CTENO attempt=6 seed=71103 at 2026-06-27 03:42:48 -----
+--- stdout ---
+{"seed":71103,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":233,"A2":24209,"A3":3876,"B1":3465,"B2":300005}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=71103, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:42:49.314] Checking precondition...
+[2026-06-27 03:42:49.338] Starting the repair...
+[2026-06-27 03:42:49.350] Found 273 possible bad axioms.
+[2026-06-27 03:42:49.352] Selected the bad axiom SubClassOf(ObjectUnionOf(http://purl.obolibrary.org/obo/CTENO_0000073 http://purl.obolibrary.org/obo/CTENO_0000083) http://purl.obolibrary.org/obo/CTENO_0000081).
+[2026-06-27 03:42:49.364] Found 272 possible bad axioms.
+[2026-06-27 03:42:49.364] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000099 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000096 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000064))).
+[2026-06-27 03:42:49.372] Found 271 possible bad axioms.
+[2026-06-27 03:42:49.372] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000100 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000081)).
+[2026-06-27 03:42:49.382] Found 270 possible bad axioms.
+[2026-06-27 03:42:49.382] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000030 http://purl.obolibrary.org/obo/GO_0005575).
+[2026-06-27 03:42:49.390] Found 269 possible bad axioms.
+[2026-06-27 03:42:49.390] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000015 http://purl.obolibrary.org/obo/GO_0031012).
+[2026-06-27 03:42:49.395] Found 268 possible bad axioms.
+[2026-06-27 03:42:49.396] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000005 http://purl.obolibrary.org/obo/CTENO_0000006).
+[2026-06-27 03:42:49.401] Found 267 possible bad axioms.
+[2026-06-27 03:42:49.402] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000041 http://purl.obolibrary.org/obo/CTENO_0000038).
+[2026-06-27 03:42:49.412] Found 266 possible bad axioms.
+[2026-06-27 03:42:49.412] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0001135 http://purl.obolibrary.org/obo/UBERON_0002385).
+[2026-06-27 03:42:49.417] Found 265 possible bad axioms.
+[2026-06-27 03:42:49.417] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000137 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002473 http://purl.obolibrary.org/obo/CTENO_0000001)).
+[2026-06-27 03:42:49.421] Found 264 possible bad axioms.
+[2026-06-27 03:42:49.422] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000098 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000102)).
+[2026-06-27 03:42:49.426] F
+...[truncated]
+FAIL: attempt=6 seed=71103 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=6 success=0/100
+----- CTENO attempt=7 seed=85303 at 2026-06-27 03:48:21 -----
+--- stdout ---
+{"seed":85303,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":394,"A2":24291,"A3":3850,"B1":2165,"B2":300003}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=85303, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:48:21.589] Checking precondition...
+[2026-06-27 03:48:21.609] Starting the repair...
+[2026-06-27 03:48:21.623] Found 273 possible bad axioms.
+[2026-06-27 03:48:21.625] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000048 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002134 http://purl.obolibrary.org/obo/CTENO_0000019)).
+[2026-06-27 03:48:21.632] Found 272 possible bad axioms.
+[2026-06-27 03:48:21.633] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000108 http://purl.obolibrary.org/obo/CTENO_0000107).
+[2026-06-27 03:48:21.640] Found 271 possible bad axioms.
+[2026-06-27 03:48:21.640] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000119 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000068 http://purl.obolibrary.org/obo/UBERON_0000109)).
+[2026-06-27 03:48:21.648] Found 270 possible bad axioms.
+[2026-06-27 03:48:21.648] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000048 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0001025 http://purl.obolibrary.org/obo/CTENO_0000003)).
+[2026-06-27 03:48:21.653] Found 269 possible bad axioms.
+[2026-06-27 03:48:21.653] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000081 http://purl.obolibrary.org/obo/CTENO_0000083).
+[2026-06-27 03:48:21.658] Found 268 possible bad axioms.
+[2026-06-27 03:48:21.659] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000084 ObjectUnionOf(http://purl.obolibrary.org/obo/CTENO_0000073 owl:Nothing)).
+[2026-06-27 03:48:21.664] Found 267 possible bad axioms.
+[2026-06-27 03:48:21.665] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000119 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000066 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/BFO_0000068 http://purl.obolibrary.org/obo/UBERON_0000109))).
+[2026-06-27 03:48:21.684] Found 266 possible bad axioms.
+[2026-06-27 03:48:21.685] Selected the bad axiom SubClassOf(owl:Nothing owl:Nothing).
+[2026-06-27 03:48:21.690] Found 265 possible bad axioms.
+[2026-06-27 03:48:21.690] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000048 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002134 owl:Nothing)).
+[2026-06-27 03:48:21.695] Found 264 possible bad axioms.
+[2026-06-27 03:48:21.695] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000075 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000117)) htt
+...[truncated]
+FAIL: attempt=7 seed=85303 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=7 success=0/100
+----- CTENO attempt=8 seed=99503 at 2026-06-27 03:53:52 -----
+--- stdout ---
+{"seed":99503,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":186,"A2":24274,"A3":2840,"B1":1194,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=99503, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:53:52.797] Checking precondition...
+[2026-06-27 03:53:52.817] Starting the repair...
+[2026-06-27 03:53:52.827] Found 273 possible bad axioms.
+[2026-06-27 03:53:52.829] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000081 http://purl.obolibrary.org/obo/CTENO_0000083).
+[2026-06-27 03:53:52.841] Found 272 possible bad axioms.
+[2026-06-27 03:53:52.842] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000012 http://purl.obolibrary.org/obo/CTENO_0000006).
+[2026-06-27 03:53:52.848] Found 271 possible bad axioms.
+[2026-06-27 03:53:52.849] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000091 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000073)).
+[2026-06-27 03:53:52.856] Found 270 possible bad axioms.
+[2026-06-27 03:53:52.856] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000024 http://purl.obolibrary.org/obo/UBERON_0000069).
+[2026-06-27 03:53:52.863] Found 269 possible bad axioms.
+[2026-06-27 03:53:52.863] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000070 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/UBERON_0007233)).
+[2026-06-27 03:53:52.868] Found 268 possible bad axioms.
+[2026-06-27 03:53:52.869] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000099 http://purl.obolibrary.org/obo/CTENO_0000096).
+[2026-06-27 03:53:52.873] Found 267 possible bad axioms.
+[2026-06-27 03:53:52.874] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000100 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000081)).
+[2026-06-27 03:53:52.885] Found 266 possible bad axioms.
+[2026-06-27 03:53:52.885] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000108 http://purl.obolibrary.org/obo/CTENO_0000107).
+[2026-06-27 03:53:52.890] Found 265 possible bad axioms.
+[2026-06-27 03:53:52.891] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000141 ObjectComplementOf(http://purl.obolibrary.org/obo/CTENO_0000142)).
+[2026-06-27 03:53:52.896] Found 264 possible bad axioms.
+[2026-06-27 03:53:52.896] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000084 http://purl.obolibrary.org/obo/CTENO_0000081).
+[2026-06-27 03:53:52.901] Found 263 possible bad axioms.
+[2026-06-27 03:53:52.901] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/UBERON_0007236 http://purl.obolibrary.org/ob
+...[truncated]
+FAIL: attempt=8 seed=99503 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=8 success=0/100
+----- CTENO attempt=9 seed=113703 at 2026-06-27 03:59:21 -----
+--- stdout ---
+{"seed":113703,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":157,"A2":24345,"A3":1969,"B1":3449,"B2":300002}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=113703, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 03:59:21.779] Checking precondition...
+[2026-06-27 03:59:21.802] Starting the repair...
+[2026-06-27 03:59:21.822] Found 273 possible bad axioms.
+[2026-06-27 03:59:21.824] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000096 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000066 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000116))).
+[2026-06-27 03:59:21.832] Found 272 possible bad axioms.
+[2026-06-27 03:59:21.832] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000076 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000085 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000081))).
+[2026-06-27 03:59:21.839] Found 271 possible bad axioms.
+[2026-06-27 03:59:21.840] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000099 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000096 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000064))).
+[2026-06-27 03:59:21.848] Found 270 possible bad axioms.
+[2026-06-27 03:59:21.849] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000075 http://purl.obolibrary.org/obo/CTENO_0000063).
+[2026-06-27 03:59:21.854] Found 269 possible bad axioms.
+[2026-06-27 03:59:21.855] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000081 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000072)) http://purl.obolibrary.org/obo/CTENO_0000083).
+[2026-06-27 03:59:21.860] Found 268 possible bad axioms.
+[2026-06-27 03:59:21.861] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000096 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000081)) http://purl.obolibrary.org/obo/CTENO_0000100).
+[2026-06-27 03:59:21.866] Found 267 possible bad axioms.
+[2026-06-27 03:59:21.866] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000074 http://purl.obolibrary.org/obo/CTENO_0000065).
+[2026-06-27 03:59:21.876] Found 266 possible bad axioms.
+[2026-06-27 03:59:21.876] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000081 ObjectComplementOf(http://purl.obolibrary.org/obo/CTENO_0000064)).
+[2026-06-27 03:59:21.882] Found 265 possible bad axioms.
+[2026-06-27 03:59:21.882] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/
+...[truncated]
+FAIL: attempt=9 seed=113703 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=9 success=0/100
+----- CTENO attempt=10 seed=127903 at 2026-06-27 04:04:51 -----
+--- stdout ---
+{"seed":127903,"run_id":"20260624134028346645","trial_status":"time_limit_exceeded","error_type":"timeout","failure_stage":"B2","error_message":"Repair timeout: B2 exceeded 300 seconds","iic_values":{},"repair_runtimes_ms":{"A1":269,"A2":24314,"A3":7616,"B1":7082,"B2":300004}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CTENO.owl, seed=127903, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-27 04:04:52.207] Checking precondition...
+[2026-06-27 04:04:52.227] Starting the repair...
+[2026-06-27 04:04:52.242] Found 273 possible bad axioms.
+[2026-06-27 04:04:52.243] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000014 http://purl.obolibrary.org/obo/GO_0005929).
+[2026-06-27 04:04:52.250] Found 272 possible bad axioms.
+[2026-06-27 04:04:52.251] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000067 http://purl.obolibrary.org/obo/CTENO_0000087).
+[2026-06-27 04:04:52.258] Found 271 possible bad axioms.
+[2026-06-27 04:04:52.258] Selected the bad axiom SubClassOf(owl:Nothing owl:Nothing).
+[2026-06-27 04:04:52.265] Found 270 possible bad axioms.
+[2026-06-27 04:04:52.266] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000087 ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000075 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002491 http://purl.obolibrary.org/obo/CTENO_0000117))).
+[2026-06-27 04:04:52.273] Found 269 possible bad axioms.
+[2026-06-27 04:04:52.273] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000096 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000082)).
+[2026-06-27 04:04:52.278] Found 268 possible bad axioms.
+[2026-06-27 04:04:52.278] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000118 http://purl.obolibrary.org/obo/UBERON_0000067).
+[2026-06-27 04:04:52.283] Found 267 possible bad axioms.
+[2026-06-27 04:04:52.284] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000097 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000076)) http://purl.obolibrary.org/obo/CTENO_0000101).
+[2026-06-27 04:04:52.295] Found 266 possible bad axioms.
+[2026-06-27 04:04:52.295] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/CTENO_0000154 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002254 http://purl.obolibrary.org/obo/CTENO_0000081)).
+[2026-06-27 04:04:52.301] Found 265 possible bad axioms.
+[2026-06-27 04:04:52.301] Selected the bad axiom SubClassOf(ObjectIntersectionOf(http://purl.obolibrary.org/obo/CTENO_0000096 ObjectSomeValuesFrom(http://purl.obolibrary.org/obo/RO_0002207 http://purl.obolibrary.org/obo/CTENO_0000064)) http://purl.obolibrary.org/obo/CTENO_0000099).
+[2026-06-27 04:04:52.305] Found 264 possible bad axioms.
+[2026-06-27 04:04:52.306] Selected the bad axiom SubClassOf(http://purl.obolibrary.org/obo/GO_0005575 ow
+...[truncated]
+FAIL: attempt=10 seed=127903 status=time_limit_exceeded stage=B2 message=Repair timeout: B2 exceeded 300 seconds
+progress: ontology=CTENO attempt=10 success=0/100
+=== ABORTED CTENO after 10 consecutive failures at 2026-06-27 04:10:31 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CTENO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=103 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=2 seed=14303 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=3 seed=28503 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=4 seed=42703 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=5 seed=56903 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=6 seed=71103 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=7 seed=85303 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=8 seed=99503 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=9 seed=113703 msg=Repair timeout: B2 exceeded 300 seconds
+  attempt=10 seed=127903 msg=Repair timeout: B2 exceeded 300 seconds
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=10 total_seconds=3323.007676 avg_seconds=332.300768
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

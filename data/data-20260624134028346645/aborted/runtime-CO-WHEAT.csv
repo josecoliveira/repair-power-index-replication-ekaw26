@@ -1,0 +1,11 @@
+trial_number,seed,run_id,trial_status,error_type,failure_stage,error_message,trial_elapsed_seconds,A1_ms,A2_ms,A3_ms,B1_ms,B2_ms,B3_ms,B4_ms,B5_ms,B6_ms,B7_ms,B8_ms,B9_ms
+1,124,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022,24.164526,556,14220,1144,583,7237,,,,,,,
+2,14324,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022,26.948008,365,14396,628,1710,8407,,,,,,,
+3,28524,20260624134028346645,memory_limit_exceeded,,,,79.243247,,,,,,,,,,,,
+4,42724,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022,26.477558,509,14048,762,634,8528,,,,,,,
+5,56924,20260624134028346645,memory_limit_exceeded,,,,77.600759,,,,,,,,,,,,
+6,71124,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022,25.170943,337,14371,608,2219,7177,,,,,,,
+7,85324,20260624134028346645,java_exception,failure,B4,Repair failed: ExecutionException: java.lang.NullPointerException: operands cannot be null or empty,39.881767,611,14240,2449,1802,8845,11052,264,,,,,
+8,99524,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022,24.526501,271,14379,782,1157,7514,,,,,,,
+9,113724,20260624134028346645,java_exception,failure,B2,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022,30.040829,346,14235,617,551,13823,,,,,,,
+10,127924,20260624134028346645,java_exception,failure,B5,Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ CO_321_0000022,59.753556,436,14196,1147,576,15741,9578,175,15413,,,,

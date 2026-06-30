@@ -1,0 +1,484 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-CDMONTO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-CDMONTO.csv
+
+=== Starting sequential trials for CDMONTO at 2026-06-28 05:31:24 ===
+----- CDMONTO attempt=1 seed=135 at 2026-06-28 05:31:24 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=135, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:31:25.304] Checking precondition...
+[2026-06-28 05:31:25.336] Starting the repair...
+[2026-06-28 05:31:25.348] Found 564 possible bad axioms.
+[2026-06-28 05:31:25.350] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(HasRecord owl:Thing) Patient-Diabetes).
+[2026-06-28 05:31:25.359] Found 563 possible bad axioms.
+[2026-06-28 05:31:25.359] Selected the bad axiom SubClassOf(Metformin-Canagliflozin Metformin).
+[2026-06-28 05:31:25.368] Found 562 possible bad axioms.
+[2026-06-28 05:31:25.368] Selected the bad axiom ClassAssertion(Rosiglitazone Avandia).
+[2026-06-28 05:31:25.370] Found 561 possible bad axioms.
+[2026-06-28 05:31:25.370] Selected the bad axiom SubClassOf(Blurred-Vision Eye-Symptom).
+[2026-06-28 05:31:25.382] Found 560 possible bad axioms.
+[2026-06-28 05:31:25.382] Selected the bad axiom SubClassOf(DPP-4-Inhibitors Sulfonylureas).
+[2026-06-28 05:31:25.389] Found 559 possible bad axioms.
+[2026-06-28 05:31:25.390] Selected the bad axiom ClassAssertion(Insulin-Isophane Novolin-N-FlexPen-ReliOn).
+[2026-06-28 05:31:25.391] Found 558 possible bad axioms.
+[2026-06-28 05:31:25.391] Selected the bad axiom SubClassOf(Metformin-Empagliflozin Metformin).
+[2026-06-28 05:31:25.397] Found 557 possible bad axioms.
+[2026-06-28 05:31:25.397] Selected the bad axiom SubClassOf(Nerve_pain Symptoms-Diabetes).
+[2026-06-28 05:31:25.403] Found 556 possible bad axioms.
+[2026-06-28 05:31:25.403] Selected the bad axiom SubClassOf(Catecholamine-Mediated Symptoms-Diabetes).
+[2026-06-28 05:31:25.410] Found 555 possible bad axioms.
+[2026-06-28 05:31:25.410] Selected the bad axiom ClassAssertion(Bromocriptine Cycloset).
+[2026-06-28 05:31:25.412] Found 554 possible bad axioms.
+[2026-06-28 05:31:25.413] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(TreatDiab2 owl:Thing) GLP-1_Receptor_Agonists).
+[2026-06-28 05:31:25.419] Found 553 possible bad axioms.
+[2026-06-28 05:31:25.419] Selected the bad axiom ClassAssertion(Dulaglutide Trulicity).
+[2026-06-28 05:31:25.421] Found 552 possible bad axioms.
+[2026-06-28 05:31:25.421] Selected the bad axiom SubClassOf(Light-Exercise Exercise).
+[2026-06-28 05:31:25.429] Found 551 possible bad axioms.
+[2026-06-28 05:31:25.429] Selected the bad axiom SubClassOf(Vision-Loss Cardiovasculair-Disease).
+[2026-06-28 05:31:25.435] Found 550 possible bad axioms.
+[2026-06-28 05:31:25.436] Selected the bad axiom SubClassOf(Thiazolidinediones Oral-Antidiabetic-Medications).
+[2026-06-28 05:31:25.447] Found 549 possible bad axioms.
+[2026-06-28 05:31:25.454] Selected the bad axiom SubClassOf(Hypertension Complications-Diabetes).
+
+...[truncated]
+FAIL: attempt=1 seed=135 - negative return code -9
+progress: ontology=CDMONTO attempt=1 success=0/100
+----- CDMONTO attempt=2 seed=14335 at 2026-06-28 05:34:32 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=14335, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:34:32.473] Checking precondition...
+[2026-06-28 05:34:32.502] Starting the repair...
+[2026-06-28 05:34:32.515] Found 564 possible bad axioms.
+[2026-06-28 05:34:32.517] Selected the bad axiom SubClassOf(Headache Symptoms-Diabetes).
+[2026-06-28 05:34:32.527] Found 563 possible bad axioms.
+[2026-06-28 05:34:32.528] Selected the bad axiom SubClassOf(Novolin-R-FlexPen Short-Acting-Insulin).
+[2026-06-28 05:34:32.535] Found 562 possible bad axioms.
+[2026-06-28 05:34:32.535] Selected the bad axiom SubClassOf(Vision-Loss Heart-Attack).
+[2026-06-28 05:34:32.548] Found 561 possible bad axioms.
+[2026-06-28 05:34:32.548] Selected the bad axiom SubClassOf(Light-Exercise Exercise).
+[2026-06-28 05:34:32.555] Found 560 possible bad axioms.
+[2026-06-28 05:34:32.555] Selected the bad axiom SubClassOf(Headache Stomach-Pain).
+[2026-06-28 05:34:32.561] Found 559 possible bad axioms.
+[2026-06-28 05:34:32.561] Selected the bad axiom SubClassOf(Low-Blood-Pressure Blood-Pressure).
+[2026-06-28 05:34:32.567] Found 558 possible bad axioms.
+[2026-06-28 05:34:32.568] Selected the bad axiom SubClassOf(Strenuous-Exercise Exercise).
+[2026-06-28 05:34:32.573] Found 557 possible bad axioms.
+[2026-06-28 05:34:32.573] Selected the bad axiom ClassAssertion(Exenatide Byetta).
+[2026-06-28 05:34:32.575] Found 556 possible bad axioms.
+[2026-06-28 05:34:32.576] Selected the bad axiom SubClassOf(SGLT_2_inhibitors Ertugliflozin).
+[2026-06-28 05:34:32.582] Found 555 possible bad axioms.
+[2026-06-28 05:34:32.582] Selected the bad axiom SubClassOf(Meglitinides Prandial_glucose_regulators).
+[2026-06-28 05:34:32.590] Found 554 possible bad axioms.
+[2026-06-28 05:34:32.590] Selected the bad axiom SubClassOf(Numbness_in_the_hand Drowsiness).
+[2026-06-28 05:34:32.597] Found 553 possible bad axioms.
+[2026-06-28 05:34:32.597] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(TreatDiab2 Type-2-Diabetes-Mellitus)).
+[2026-06-28 05:34:32.609] Found 552 possible bad axioms.
+[2026-06-28 05:34:32.610] Selected the bad axiom SubClassOf(Medical-History Patient-Record).
+[2026-06-28 05:34:32.616] Found 551 possible bad axioms.
+[2026-06-28 05:34:32.616] Selected the bad axiom ClassAssertion(Dapagliflozin-Saxagliptin Qtern).
+[2026-06-28 05:34:32.623] Found 550 possible bad axioms.
+[2026-06-28 05:34:32.623] Selected the bad axiom SubClassOf(NovoLog-PenFill Insulin-Aspart).
+[2026-06-28 05:34:32.629] Found 549 possible bad axioms.
+[2026-06-28 05:34:32.629] Selected the bad axiom SubClassOf(Hypoglycemia Meglitinides_side-effects).
+[2026-06-28 05:34:32.636] Found 548 possible bad axioms.
+[202
+...[truncated]
+FAIL: attempt=2 seed=14335 - negative return code -9
+progress: ontology=CDMONTO attempt=2 success=0/100
+----- CDMONTO attempt=3 seed=28535 at 2026-06-28 05:38:45 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=28535, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:38:45.606] Checking precondition...
+[2026-06-28 05:38:45.637] Starting the repair...
+[2026-06-28 05:38:45.650] Found 564 possible bad axioms.
+[2026-06-28 05:38:45.653] Selected the bad axiom SubClassOf(MODY-Diabetes-Mellitus MODY4).
+[2026-06-28 05:38:45.662] Found 563 possible bad axioms.
+[2026-06-28 05:38:45.663] Selected the bad axiom SubClassOf(Diagnosis Gender).
+[2026-06-28 05:38:45.671] Found 562 possible bad axioms.
+[2026-06-28 05:38:45.671] Selected the bad axiom SubClassOf(Diarrhea Gliptin_side-effects).
+[2026-06-28 05:38:45.683] Found 561 possible bad axioms.
+[2026-06-28 05:38:45.683] Selected the bad axiom SubClassOf(Diabetes-Patient Patient-Diabetes).
+[2026-06-28 05:38:45.689] Found 560 possible bad axioms.
+[2026-06-28 05:38:45.690] Selected the bad axiom SubClassOf(Metformin-Linagliptin DPP-4-Inhibitors).
+[2026-06-28 05:38:45.695] Found 559 possible bad axioms.
+[2026-06-28 05:38:45.695] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(TreatDiab2 owl:Thing) Meglitinides).
+[2026-06-28 05:38:45.701] Found 558 possible bad axioms.
+[2026-06-28 05:38:45.701] Selected the bad axiom SubClassOf(Colesevelam Bile_acid_sequestrants).
+[2026-06-28 05:38:45.707] Found 557 possible bad axioms.
+[2026-06-28 05:38:45.707] Selected the bad axiom SubClassOf(Insulin-Detemir Long-Acting-Insulin).
+[2026-06-28 05:38:45.712] Found 556 possible bad axioms.
+[2026-06-28 05:38:45.713] Selected the bad axiom SubClassOf(Metformin-Alogliptin Metformin).
+[2026-06-28 05:38:45.719] Found 555 possible bad axioms.
+[2026-06-28 05:38:45.719] Selected the bad axiom ClassAssertion(Insulin-Isophane Novolin-N-ReliOn).
+[2026-06-28 05:38:45.721] Found 554 possible bad axioms.
+[2026-06-28 05:38:45.722] Selected the bad axiom SubClassOf(Lab-Tests Allergic-History).
+[2026-06-28 05:38:45.728] Found 553 possible bad axioms.
+[2026-06-28 05:38:45.729] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(HasComplication Complications-Diabetes)).
+[2026-06-28 05:38:45.741] Found 552 possible bad axioms.
+[2026-06-28 05:38:45.741] Selected the bad axiom SubClassOf(Numbness_in_the_feet Foot-Symprom).
+[2026-06-28 05:38:45.748] Found 551 possible bad axioms.
+[2026-06-28 05:38:45.748] Selected the bad axiom ClassAssertion(Insulin-Isophane Humulin-N-U-100).
+[2026-06-28 05:38:45.755] Found 550 possible bad axioms.
+[2026-06-28 05:38:45.755] Selected the bad axiom ClassAssertion(Metformin-Glipizide Metaglip).
+[2026-06-28 05:38:45.757] Found 549 possible bad axioms.
+[2026-06-28 05:38:45.757] Selected the bad axiom ClassAssertion(Insulin-Glargine Lantus).
+[2026-06-28 05:3
+...[truncated]
+FAIL: attempt=3 seed=28535 - negative return code -9
+progress: ontology=CDMONTO attempt=3 success=0/100
+----- CDMONTO attempt=4 seed=42735 at 2026-06-28 05:42:50 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=42735, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:42:50.485] Checking precondition...
+[2026-06-28 05:42:50.518] Starting the repair...
+[2026-06-28 05:42:50.532] Found 564 possible bad axioms.
+[2026-06-28 05:42:50.536] Selected the bad axiom SubClassOf(Insulin-Lispro-Aabc Insulin-Lispro).
+[2026-06-28 05:42:50.546] Found 563 possible bad axioms.
+[2026-06-28 05:42:50.546] Selected the bad axiom SubClassOf(Metformin Biguanide).
+[2026-06-28 05:42:50.555] Found 562 possible bad axioms.
+[2026-06-28 05:42:50.555] Selected the bad axiom SubClassOf(Skin_rash Metformin_side-effects).
+[2026-06-28 05:42:50.567] Found 561 possible bad axioms.
+[2026-06-28 05:42:50.567] Selected the bad axiom SubClassOf(Constipation Incretin_mimetics).
+[2026-06-28 05:42:50.573] Found 560 possible bad axioms.
+[2026-06-28 05:42:50.573] Selected the bad axiom SubClassOf(Catecholamine-Mediated Symptoms-Diabetes).
+[2026-06-28 05:42:50.579] Found 559 possible bad axioms.
+[2026-06-28 05:42:50.579] Selected the bad axiom SubClassOf(Nerve_pain Symptoms-Diabetes).
+[2026-06-28 05:42:50.585] Found 558 possible bad axioms.
+[2026-06-28 05:42:50.585] Selected the bad axiom ClassAssertion(Activity-of-Daily-Living Cooking).
+[2026-06-28 05:42:50.587] Found 557 possible bad axioms.
+[2026-06-28 05:42:50.587] Selected the bad axiom SubClassOf(Light-Exercise Exercise).
+[2026-06-28 05:42:50.593] Found 556 possible bad axioms.
+[2026-06-28 05:42:50.593] Selected the bad axiom ClassAssertion(Insulin-Degludec Tresiba-FlexTouch).
+[2026-06-28 05:42:50.595] Found 555 possible bad axioms.
+[2026-06-28 05:42:50.595] Selected the bad axiom SubClassOf(Diabetes-Mellitus-Non-Insulin-Dependent Type-Diabetes).
+[2026-06-28 05:42:50.600] Found 554 possible bad axioms.
+[2026-06-28 05:42:50.601] Selected the bad axiom SubClassOf(Tachycardia Symptoms-Diabetes).
+[2026-06-28 05:42:50.606] Found 553 possible bad axioms.
+[2026-06-28 05:42:50.607] Selected the bad axiom SubClassOf(ObjectAllValuesFrom(Treats Type-1-Diabetes-Mellitus) ObjectAllValuesFrom(HasGender Gender)).
+[2026-06-28 05:42:50.612] Found 552 possible bad axioms.
+[2026-06-28 05:42:50.613] Selected the bad axiom SubClassOf(Insulin-Aspart Rapid-Acting-Insulin).
+[2026-06-28 05:42:50.623] Found 551 possible bad axioms.
+[2026-06-28 05:42:50.623] Selected the bad axiom SubClassOf(Sulfonylureas Oral-Antidiabetic-Medications).
+[2026-06-28 05:42:50.634] Found 550 possible bad axioms.
+[2026-06-28 05:42:50.634] Selected the bad axiom SubClassOf(Metformin-Sitagliptin DPP-4-Inhibitors).
+[2026-06-28 05:42:50.640] Found 549 possible bad axioms.
+[2026-06-28 05:42:50.641] Selected the bad axiom ClassAssertion(Linag
+...[truncated]
+FAIL: attempt=4 seed=42735 - negative return code -9
+progress: ontology=CDMONTO attempt=4 success=0/100
+----- CDMONTO attempt=5 seed=56935 at 2026-06-28 05:46:47 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=56935, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:46:47.454] Checking precondition...
+[2026-06-28 05:46:47.485] Starting the repair...
+[2026-06-28 05:46:47.499] Found 564 possible bad axioms.
+[2026-06-28 05:46:47.502] Selected the bad axiom SubClassOf(Hematological-Profile Lab-Tests).
+[2026-06-28 05:46:47.513] Found 563 possible bad axioms.
+[2026-06-28 05:46:47.513] Selected the bad axiom SubClassOf(Acarbose Alpha-Glucosidase-Inhibitors).
+[2026-06-28 05:46:47.521] Found 562 possible bad axioms.
+[2026-06-28 05:46:47.521] Selected the bad axiom SubClassOf(Exenatide GLP-1_Receptor_Agonists).
+[2026-06-28 05:46:47.533] Found 561 possible bad axioms.
+[2026-06-28 05:46:47.534] Selected the bad axiom ClassAssertion(Pioglitazone-glimepiride Actos).
+[2026-06-28 05:46:47.536] Found 560 possible bad axioms.
+[2026-06-28 05:46:47.536] Selected the bad axiom SubClassOf(Weight-Gain Sulfonylureas_side-effects).
+[2026-06-28 05:46:47.543] Found 559 possible bad axioms.
+[2026-06-28 05:46:47.543] Selected the bad axiom ClassAssertion(Glipizide Glucotrol_XL).
+[2026-06-28 05:46:47.545] Found 558 possible bad axioms.
+[2026-06-28 05:46:47.545] Selected the bad axiom SubClassOf(Hypoglycaemia Metformin_side-effects).
+[2026-06-28 05:46:47.552] Found 557 possible bad axioms.
+[2026-06-28 05:46:47.552] Selected the bad axiom ClassAssertion(Pioglitazone-metformin Actoplus_Met_XR).
+[2026-06-28 05:46:47.554] Found 556 possible bad axioms.
+[2026-06-28 05:46:47.554] Selected the bad axiom SubClassOf(Stomach-Pain Symptoms-Diabetes).
+[2026-06-28 05:46:47.559] Found 555 possible bad axioms.
+[2026-06-28 05:46:47.559] Selected the bad axiom SubClassOf(Llung_disease Dizziness).
+[2026-06-28 05:46:47.564] Found 554 possible bad axioms.
+[2026-06-28 05:46:47.564] Selected the bad axiom SubClassOf(Hyperthyroidism Hormonal_Conditions).
+[2026-06-28 05:46:47.572] Found 553 possible bad axioms.
+[2026-06-28 05:46:47.572] Selected the bad axiom ClassAssertion(Colesevelam Welchol).
+[2026-06-28 05:46:47.574] Found 552 possible bad axioms.
+[2026-06-28 05:46:47.575] Selected the bad axiom SubClassOf(Adult Child).
+[2026-06-28 05:46:47.581] Found 551 possible bad axioms.
+[2026-06-28 05:46:47.581] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(Decrease-Ins-Res owl:Thing) Thiazolidinediones).
+[2026-06-28 05:46:47.586] Found 550 possible bad axioms.
+[2026-06-28 05:46:47.586] Selected the bad axiom SubClassOf(Activity-of-Daily-Living Physical-Activity).
+[2026-06-28 05:46:47.597] Found 549 possible bad axioms.
+[2026-06-28 05:46:47.597] Selected the bad axiom SubClassOf(Weight-Gain Symptoms-Diabetes).
+[2026-06-28 05:46:47.609] Found 548 p
+...[truncated]
+FAIL: attempt=5 seed=56935 - negative return code -9
+progress: ontology=CDMONTO attempt=5 success=0/100
+----- CDMONTO attempt=6 seed=71135 at 2026-06-28 05:50:22 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=71135, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:50:22.769] Checking precondition...
+[2026-06-28 05:50:22.806] Starting the repair...
+[2026-06-28 05:50:22.820] Found 564 possible bad axioms.
+[2026-06-28 05:50:22.823] Selected the bad axiom ClassAssertion(Sitagliptin-Simvastatin Juvisync).
+[2026-06-28 05:50:22.827] Found 563 possible bad axioms.
+[2026-06-28 05:50:22.828] Selected the bad axiom SubClassOf(Insulin-Resistance Type-Diabetes).
+[2026-06-28 05:50:22.837] Found 562 possible bad axioms.
+[2026-06-28 05:50:22.838] Selected the bad axiom ClassAssertion(Concentrated-Regular-Insulin Humulin_R_U-500_KwikPen).
+[2026-06-28 05:50:22.840] Found 561 possible bad axioms.
+[2026-06-28 05:50:22.840] Selected the bad axiom SubClassOf(Repaglinide ObjectSomeValuesFrom(TreatDiab2 owl:Thing)).
+[2026-06-28 05:50:22.848] Found 560 possible bad axioms.
+[2026-06-28 05:50:22.848] Selected the bad axiom SubClassOf(Glitazone_side-effects Side_Effects_of_diabetes_medication).
+[2026-06-28 05:50:22.861] Found 559 possible bad axioms.
+[2026-06-28 05:50:22.861] Selected the bad axiom SubClassOf(owl:Thing Physical-Examination-Diabetes).
+[2026-06-28 05:50:22.869] Found 558 possible bad axioms.
+[2026-06-28 05:50:22.869] Selected the bad axiom SubClassOf(Obesity-C Insulin_resistance).
+[2026-06-28 05:50:22.875] Found 557 possible bad axioms.
+[2026-06-28 05:50:22.876] Selected the bad axiom SubClassOf(Mixed-Insulin Insulin).
+[2026-06-28 05:50:22.881] Found 556 possible bad axioms.
+[2026-06-28 05:50:22.881] Selected the bad axiom SubClassOf(Liver_inflammation-causing Metformin_side-effects).
+[2026-06-28 05:50:22.887] Found 555 possible bad axioms.
+[2026-06-28 05:50:22.887] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(HasDiagnosis owl:Thing) Patient-Diabetes).
+[2026-06-28 05:50:22.892] Found 554 possible bad axioms.
+[2026-06-28 05:50:22.893] Selected the bad axiom ClassAssertion(Insulin-Glargine Lantus-SoloStar).
+[2026-06-28 05:50:22.894] Found 553 possible bad axioms.
+[2026-06-28 05:50:22.894] Selected the bad axiom SubClassOf(Empagliflozin SGLT_2_inhibitors).
+[2026-06-28 05:50:22.900] Found 552 possible bad axioms.
+[2026-06-28 05:50:22.900] Selected the bad axiom SubClassOf(Insulin-Detemir Insulin-Glargine).
+[2026-06-28 05:50:22.906] Found 551 possible bad axioms.
+[2026-06-28 05:50:22.906] Selected the bad axiom SubClassOf(Sulfonylureas Oral-Antidiabetic-Medications).
+[2026-06-28 05:50:22.917] Found 550 possible bad axioms.
+[2026-06-28 05:50:22.917] Selected the bad axiom ClassAssertion(Sport BasketBall).
+[2026-06-28 05:50:22.919] Found 549 possible bad axioms.
+[2026-06-28 05:50:22.919] Selected the ba
+...[truncated]
+FAIL: attempt=6 seed=71135 - negative return code -9
+progress: ontology=CDMONTO attempt=6 success=0/100
+----- CDMONTO attempt=7 seed=85335 at 2026-06-28 05:54:04 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=85335, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:54:05.242] Checking precondition...
+[2026-06-28 05:54:05.273] Starting the repair...
+[2026-06-28 05:54:05.287] Found 564 possible bad axioms.
+[2026-06-28 05:54:05.289] Selected the bad axiom ClassAssertion(Liraglutide Saxenda).
+[2026-06-28 05:54:05.292] Found 563 possible bad axioms.
+[2026-06-28 05:54:05.293] Selected the bad axiom SubClassOf(MODY4 MODY-Diabetes-Mellitus).
+[2026-06-28 05:54:05.302] Found 562 possible bad axioms.
+[2026-06-28 05:54:05.302] Selected the bad axiom SubClassOf(Slow-Wound-Healing Weight-Loss).
+[2026-06-28 05:54:05.310] Found 561 possible bad axioms.
+[2026-06-28 05:54:05.310] Selected the bad axiom SubClassOf(Liver_inflammation-causing Metformin_side-effects).
+[2026-06-28 05:54:05.323] Found 560 possible bad axioms.
+[2026-06-28 05:54:05.323] Selected the bad axiom SubClassOf(owl:Thing Physical-Examination-Diabetes).
+[2026-06-28 05:54:05.330] Found 559 possible bad axioms.
+[2026-06-28 05:54:05.330] Selected the bad axiom SubClassOf(Humulin-R-U-100 Short-Acting-Insulin).
+[2026-06-28 05:54:05.337] Found 558 possible bad axioms.
+[2026-06-28 05:54:05.337] Selected the bad axiom ClassAssertion(Pioglitazone-metformin Actoplus_Met_XR).
+[2026-06-28 05:54:05.339] Found 557 possible bad axioms.
+[2026-06-28 05:54:05.339] Selected the bad axiom SubClassOf(owl:Thing Neurologic-examinations).
+[2026-06-28 05:54:05.344] Found 556 possible bad axioms.
+[2026-06-28 05:54:05.345] Selected the bad axiom ClassAssertion(Metformin-Empagliflozin Synjardy).
+[2026-06-28 05:54:05.346] Found 555 possible bad axioms.
+[2026-06-28 05:54:05.346] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(TreatDiab2 owl:Thing) Dopamine-2-Agonist).
+[2026-06-28 05:54:05.352] Found 554 possible bad axioms.
+[2026-06-28 05:54:05.352] Selected the bad axiom SubClassOf(Metformin SGLT_2_inhibitors).
+[2026-06-28 05:54:05.357] Found 553 possible bad axioms.
+[2026-06-28 05:54:05.358] Selected the bad axiom ClassAssertion(Insulin-Isophane Novolin-N-FlexPen-ReliOn).
+[2026-06-28 05:54:05.359] Found 552 possible bad axioms.
+[2026-06-28 05:54:05.360] Selected the bad axiom ClassAssertion(Glipizide_ER Glipizide_XL).
+[2026-06-28 05:54:05.361] Found 551 possible bad axioms.
+[2026-06-28 05:54:05.362] Selected the bad axiom SubClassOf(Sitagliptin DPP-4-Inhibitors).
+[2026-06-28 05:54:05.367] Found 550 possible bad axioms.
+[2026-06-28 05:54:05.367] Selected the bad axiom SubClassOf(Vomiting Symptoms-Diabetes).
+[2026-06-28 05:54:05.372] Found 549 possible bad axioms.
+[2026-06-28 05:54:05.373] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(HasLab Lab-Test
+...[truncated]
+FAIL: attempt=7 seed=85335 - negative return code -9
+progress: ontology=CDMONTO attempt=7 success=0/100
+----- CDMONTO attempt=8 seed=99535 at 2026-06-28 05:58:23 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=99535, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 05:58:23.848] Checking precondition...
+[2026-06-28 05:58:23.880] Starting the repair...
+[2026-06-28 05:58:23.894] Found 564 possible bad axioms.
+[2026-06-28 05:58:23.896] Selected the bad axiom SubClassOf(Insulin-Degludec Long-Acting-Insulin).
+[2026-06-28 05:58:23.906] Found 563 possible bad axioms.
+[2026-06-28 05:58:23.906] Selected the bad axiom SubClassOf(Diarrhea Gliptin_side-effects).
+[2026-06-28 05:58:23.914] Found 562 possible bad axioms.
+[2026-06-28 05:58:23.915] Selected the bad axiom SubClassOf(Exenatide_extended-release GLP-1_Receptor_Agonists).
+[2026-06-28 05:58:23.927] Found 561 possible bad axioms.
+[2026-06-28 05:58:23.927] Selected the bad axiom SubClassOf(Physical-Activity Treatment-Diabetes).
+[2026-06-28 05:58:23.934] Found 560 possible bad axioms.
+[2026-06-28 05:58:23.934] Selected the bad axiom SubClassOf(Short-Acting-Insulin Insulin).
+[2026-06-28 05:58:23.941] Found 559 possible bad axioms.
+[2026-06-28 05:58:23.941] Selected the bad axiom SubClassOf(Insulin-Detemir Long-Acting-Insulin).
+[2026-06-28 05:58:23.947] Found 558 possible bad axioms.
+[2026-06-28 05:58:23.947] Selected the bad axiom SubClassOf(Metformin-Repaglinide Metformin).
+[2026-06-28 05:58:23.953] Found 557 possible bad axioms.
+[2026-06-28 05:58:23.953] Selected the bad axiom SubClassOf(Glimepiride Sulfonylureas).
+[2026-06-28 05:58:23.960] Found 556 possible bad axioms.
+[2026-06-28 05:58:23.960] Selected the bad axiom SubClassOf(NovoLog Insulin-Aspart).
+[2026-06-28 05:58:23.966] Found 555 possible bad axioms.
+[2026-06-28 05:58:23.967] Selected the bad axiom SubClassOf(MODY5 MODY-Diabetes-Mellitus).
+[2026-06-28 05:58:23.972] Found 554 possible bad axioms.
+[2026-06-28 05:58:23.973] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(TreatDiab2 owl:Thing) GLP-1_Receptor_Agonists).
+[2026-06-28 05:58:23.984] Found 553 possible bad axioms.
+[2026-06-28 05:58:23.985] Selected the bad axiom ClassAssertion(Metformin-Linagliptin Jentadueto_XR).
+[2026-06-28 05:58:23.987] Found 552 possible bad axioms.
+[2026-06-28 05:58:23.987] Selected the bad axiom ClassAssertion(Metformin-Sitagliptin Janumet).
+[2026-06-28 05:58:23.989] Found 551 possible bad axioms.
+[2026-06-28 05:58:23.989] Selected the bad axiom SubClassOf(Fruits Milk).
+[2026-06-28 05:58:24.001] Found 550 possible bad axioms.
+[2026-06-28 05:58:24.001] Selected the bad axiom ClassAssertion(Glyburide Micronase).
+[2026-06-28 05:58:24.003] Found 549 possible bad axioms.
+[2026-06-28 05:58:24.003] Selected the bad axiom SubClassOf(Light-Exercise Exercise).
+[2026-06-28 05:58:24.008] Found 548 possible bad axioms.
+[2
+...[truncated]
+FAIL: attempt=8 seed=99535 - negative return code -9
+progress: ontology=CDMONTO attempt=8 success=0/100
+----- CDMONTO attempt=9 seed=113735 at 2026-06-28 06:01:26 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=113735, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:01:26.954] Checking precondition...
+[2026-06-28 06:01:26.987] Starting the repair...
+[2026-06-28 06:01:27.002] Found 564 possible bad axioms.
+[2026-06-28 06:01:27.005] Selected the bad axiom ClassAssertion(Metformin-Dapagliflozin Xigduo_XR).
+[2026-06-28 06:01:27.008] Found 563 possible bad axioms.
+[2026-06-28 06:01:27.009] Selected the bad axiom SubClassOf(Neurologic-examinations Glimepiride).
+[2026-06-28 06:01:27.019] Found 562 possible bad axioms.
+[2026-06-28 06:01:27.019] Selected the bad axiom SubClassOf(Calendula Homeopathic-Remedies).
+[2026-06-28 06:01:27.027] Found 561 possible bad axioms.
+[2026-06-28 06:01:27.027] Selected the bad axiom ClassAssertion(Metformin-Sitagliptin Janumet).
+[2026-06-28 06:01:27.029] Found 560 possible bad axioms.
+[2026-06-28 06:01:27.029] Selected the bad axiom SubClassOf(Nausea Incretin_mimetics).
+[2026-06-28 06:01:27.041] Found 559 possible bad axioms.
+[2026-06-28 06:01:27.041] Selected the bad axiom SubClassOf(Sitagliptin-Simvastatin Linagliptin).
+[2026-06-28 06:01:27.047] Found 558 possible bad axioms.
+[2026-06-28 06:01:27.048] Selected the bad axiom SubClassOf(Lixisenatide Liraglutide).
+[2026-06-28 06:01:27.054] Found 557 possible bad axioms.
+[2026-06-28 06:01:27.055] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(Take Medications)).
+[2026-06-28 06:01:27.061] Found 556 possible bad axioms.
+[2026-06-28 06:01:27.061] Selected the bad axiom SubClassOf(Diarrhea Foot-Symprom).
+[2026-06-28 06:01:27.066] Found 555 possible bad axioms.
+[2026-06-28 06:01:27.066] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(HasLab owl:Thing) Patient-Diabetes).
+[2026-06-28 06:01:27.072] Found 554 possible bad axioms.
+[2026-06-28 06:01:27.072] Selected the bad axiom SubClassOf(Metformin-Dapagliflozin Metformin).
+[2026-06-28 06:01:27.079] Found 553 possible bad axioms.
+[2026-06-28 06:01:27.079] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(TreatDiab2 owl:Thing) GLP-1_Receptor_Agonists).
+[2026-06-28 06:01:27.084] Found 552 possible bad axioms.
+[2026-06-28 06:01:27.084] Selected the bad axiom SubClassOf(ReliOn-NovoLog Insulin-Aspart).
+[2026-06-28 06:01:27.096] Found 551 possible bad axioms.
+[2026-06-28 06:01:27.096] Selected the bad axiom SubClassOf(Gender Patient-Age).
+[2026-06-28 06:01:27.101] Found 550 possible bad axioms.
+[2026-06-28 06:01:27.102] Selected the bad axiom ClassAssertion(Canagliflozin-metformin Invokamet_XR).
+[2026-06-28 06:01:27.108] Found 549 possible bad axioms.
+[2026-06-28 06:01:27.108] Selected the bad axiom ClassAssertion(Insulin-Isophane Novolin-N-FlexPen-ReliOn).
+[
+...[truncated]
+FAIL: attempt=9 seed=113735 - negative return code -9
+progress: ontology=CDMONTO attempt=9 success=0/100
+----- CDMONTO attempt=10 seed=127935 at 2026-06-28 06:05:15 -----
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/CDMONTO.owl, seed=127935, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-28 06:05:16.225] Checking precondition...
+[2026-06-28 06:05:16.263] Starting the repair...
+[2026-06-28 06:05:16.277] Found 564 possible bad axioms.
+[2026-06-28 06:05:16.279] Selected the bad axiom SubClassOf(Metformin-Saxagliptin Metformin).
+[2026-06-28 06:05:16.290] Found 563 possible bad axioms.
+[2026-06-28 06:05:16.290] Selected the bad axiom ClassAssertion(Metmorfin-Ertugliflozin Segluromet).
+[2026-06-28 06:05:16.294] Found 562 possible bad axioms.
+[2026-06-28 06:05:16.294] Selected the bad axiom SubClassOf(Blood-Ketone Lab-Tests).
+[2026-06-28 06:05:16.302] Found 561 possible bad axioms.
+[2026-06-28 06:05:16.302] Selected the bad axiom SubClassOf(Glyburide Sulfonylureas).
+[2026-06-28 06:05:16.314] Found 560 possible bad axioms.
+[2026-06-28 06:05:16.315] Selected the bad axiom SubClassOf(Polyphagia Symptoms-Diabetes).
+[2026-06-28 06:05:16.321] Found 559 possible bad axioms.
+[2026-06-28 06:05:16.321] Selected the bad axiom SubClassOf(Metformin-Linagliptin Alogliptin).
+[2026-06-28 06:05:16.327] Found 558 possible bad axioms.
+[2026-06-28 06:05:16.327] Selected the bad axiom SubClassOf(Nerve_pain Symptoms-Diabetes).
+[2026-06-28 06:05:16.333] Found 557 possible bad axioms.
+[2026-06-28 06:05:16.333] Selected the bad axiom ClassAssertion(Bromocriptine Cycloset).
+[2026-06-28 06:05:16.335] Found 556 possible bad axioms.
+[2026-06-28 06:05:16.335] Selected the bad axiom SubClassOf(Limited-Vascular Mixed-Insulin).
+[2026-06-28 06:05:16.340] Found 555 possible bad axioms.
+[2026-06-28 06:05:16.341] Selected the bad axiom ClassAssertion(Activity-of-Daily-Living Cooking).
+[2026-06-28 06:05:16.342] Found 554 possible bad axioms.
+[2026-06-28 06:05:16.342] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(HasGender owl:Thing) Patient-Diabetes).
+[2026-06-28 06:05:16.347] Found 553 possible bad axioms.
+[2026-06-28 06:05:16.348] Selected the bad axiom SubClassOf(owl:Thing ObjectAllValuesFrom(HasComplication Complications-Diabetes)).
+[2026-06-28 06:05:16.353] Found 552 possible bad axioms.
+[2026-06-28 06:05:16.353] Selected the bad axiom SubClassOf(Vegetative Symptoms-Diabetes).
+[2026-06-28 06:05:16.358] Found 551 possible bad axioms.
+[2026-06-28 06:05:16.359] Selected the bad axiom SubClassOf(Metformin ObjectSomeValuesFrom(TreatDiab2 owl:Thing)).
+[2026-06-28 06:05:16.370] Found 550 possible bad axioms.
+[2026-06-28 06:05:16.370] Selected the bad axiom SubClassOf(Activity-of-Daily-Living Physical-Activity).
+[2026-06-28 06:05:16.381] Found 549 possible bad axioms.
+[2026-06-28 06:05:16.382] Selected the bad axiom SubClassOf(Weight-Gain Vegetative).
+[2026-06
+...[truncated]
+FAIL: attempt=10 seed=127935 - negative return code -9
+progress: ontology=CDMONTO attempt=10 success=0/100
+=== ABORTED CDMONTO after 10 consecutive failures at 2026-06-28 06:08:46 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for CDMONTO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=135 msg=negative return code -9
+  attempt=2 seed=14335 msg=negative return code -9
+  attempt=3 seed=28535 msg=negative return code -9
+  attempt=4 seed=42735 msg=negative return code -9
+  attempt=5 seed=56935 msg=negative return code -9
+  attempt=6 seed=71135 msg=negative return code -9
+  attempt=7 seed=85335 msg=negative return code -9
+  attempt=8 seed=99535 msg=negative return code -9
+  attempt=9 seed=113735 msg=negative return code -9
+  attempt=10 seed=127935 msg=negative return code -9
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=10 total_seconds=2241.473055 avg_seconds=224.147306
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834

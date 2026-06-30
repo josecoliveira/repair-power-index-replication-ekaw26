@@ -1,0 +1,377 @@
+=== run_trials started at 2026-06-24 13:41:30 run_id=20260624134028346645 ===
+ontology_path=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl
+iic_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/iic-MEDICALINFO.csv
+runtime_csv=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/data/data-20260624134028346645/runtime-MEDICALINFO.csv
+
+=== Starting sequential trials for MEDICALINFO at 2026-06-25 06:02:29 ===
+----- MEDICALINFO attempt=1 seed=44 at 2026-06-25 06:02:29 -----
+--- stdout ---
+{"seed":44,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":130,"A2":369,"A3":521,"B1":473,"B2":1040,"B3":786,"B4":84,"B5":1169}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=44, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:02:29.928] Checking precondition...
+[2026-06-25 06:02:29.944] Starting the repair...
+[2026-06-25 06:02:29.951] Found 74 possible bad axioms.
+[2026-06-25 06:02:29.953] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-25 06:02:29.959] Found 73 possible bad axioms.
+[2026-06-25 06:02:29.959] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) owl:Nothing).
+[2026-06-25 06:02:29.963] Found 72 possible bad axioms.
+[2026-06-25 06:02:29.963] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 owl:Nothing).
+[2026-06-25 06:02:29.967] Found 71 possible bad axioms.
+[2026-06-25 06:02:29.967] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:29.970] Found 70 possible bad axioms.
+[2026-06-25 06:02:29.970] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW owl:Nothing).
+[2026-06-25 06:02:29.973] Found 69 possible bad axioms.
+[2026-06-25 06:02:29.974] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i) http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-25 06:02:29.976] Found 68 possible bad axioms.
+[2026-06-25 06:02:29.977] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-25 06:02:29.979] Found 67 possible bad axioms.
+[2026-06-25 06:02:29.979] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:02:29.982] Found 66 possible bad axioms.
+[2026-06-25 06:02:29.982] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-25 06:02:29.984] Found 65 possi
+...[truncated]
+FAIL: attempt=1 seed=44 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=1 success=0/100
+----- MEDICALINFO attempt=2 seed=14244 at 2026-06-25 06:02:34 -----
+--- stdout ---
+{"seed":14244,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":165,"A2":348,"A3":244,"B1":180,"B2":2656}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=14244, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:02:34.913] Checking precondition...
+[2026-06-25 06:02:34.929] Starting the repair...
+[2026-06-25 06:02:34.936] Found 74 possible bad axioms.
+[2026-06-25 06:02:34.938] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-25 06:02:34.944] Found 73 possible bad axioms.
+[2026-06-25 06:02:34.945] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-25 06:02:34.950] Found 72 possible bad axioms.
+[2026-06-25 06:02:34.950] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5) owl:Nothing).
+[2026-06-25 06:02:34.955] Found 71 possible bad axioms.
+[2026-06-25 06:02:34.955] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW))).
+[2026-06-25 06:02:34.958] Found 70 possible bad axioms.
+[2026-06-25 06:02:34.958] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV).
+[2026-06-25 06:02:34.961] Found 69 possible bad axioms.
+[2026-06-25 06:02:34.961] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5).
+[2026-06-25 06:02:34.964] Found 68 possible bad axioms.
+[2026-06-25 06:02:34.964] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim).
+[2026-06-25 06:02:34.967] Found 67 possible bad axioms.
+[2026-06-25 06:02:34.967] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-25 06:02:34.969] Found 66 possible bad axioms.
+[2026-06-25 06:02:34.970] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/R7SBrVcYIxALhpipI9Gl92Q ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webp
+...[truncated]
+FAIL: attempt=2 seed=14244 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=2 success=0/100
+----- MEDICALINFO attempt=3 seed=28444 at 2026-06-25 06:02:38 -----
+--- stdout ---
+{"seed":28444,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":136,"A2":365,"A3":253,"B1":314,"B2":1396,"B3":1595}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=28444, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:02:38.918] Checking precondition...
+[2026-06-25 06:02:38.932] Starting the repair...
+[2026-06-25 06:02:38.940] Found 74 possible bad axioms.
+[2026-06-25 06:02:38.941] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV).
+[2026-06-25 06:02:38.947] Found 73 possible bad axioms.
+[2026-06-25 06:02:38.947] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi)).
+[2026-06-25 06:02:38.951] Found 72 possible bad axioms.
+[2026-06-25 06:02:38.951] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:38.955] Found 71 possible bad axioms.
+[2026-06-25 06:02:38.955] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim)).
+[2026-06-25 06:02:38.959] Found 70 possible bad axioms.
+[2026-06-25 06:02:38.959] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-25 06:02:38.962] Found 69 possible bad axioms.
+[2026-06-25 06:02:38.963] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-25 06:02:38.966] Found 68 possible bad axioms.
+[2026-06-25 06:02:38.966] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-25 06:02:38.969] Found 67 possible bad axioms.
+[2026-06-25 06:02:38.969] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt)).
+[2026-06-25 06:02:38.972] Found 66 possible bad axioms.
+[2026-06-25 06:02:38.972] Selected the bad axiom SubClassOf(http://webprotege.st
+...[truncated]
+FAIL: attempt=3 seed=28444 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=3 success=0/100
+----- MEDICALINFO attempt=4 seed=42644 at 2026-06-25 06:02:43 -----
+--- stdout ---
+{"seed":42644,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":56,"A2":422,"A3":258,"B1":282,"B2":1153,"B3":920}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=42644, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:02:43.388] Checking precondition...
+[2026-06-25 06:02:43.403] Starting the repair...
+[2026-06-25 06:02:43.410] Found 74 possible bad axioms.
+[2026-06-25 06:02:43.412] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:02:43.417] Found 73 possible bad axioms.
+[2026-06-25 06:02:43.418] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW)).
+[2026-06-25 06:02:43.423] Found 72 possible bad axioms.
+[2026-06-25 06:02:43.423] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-25 06:02:43.427] Found 71 possible bad axioms.
+[2026-06-25 06:02:43.428] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV).
+[2026-06-25 06:02:43.431] Found 70 possible bad axioms.
+[2026-06-25 06:02:43.431] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:02:43.434] Found 69 possible bad axioms.
+[2026-06-25 06:02:43.435] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt).
+[2026-06-25 06:02:43.437] Found 68 possible bad axioms.
+[2026-06-25 06:02:43.437] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:43.440] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 06:02:43.441] Checking precondition...
+[2026-06-25 06:02:43.446] Starting the repair...
+[2026-06-25 06:02:43.862] Found 1 possible bad axioms.
+[2026-06-25 06:02:43.863] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:43.8
+...[truncated]
+FAIL: attempt=4 seed=42644 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=4 success=0/100
+----- MEDICALINFO attempt=5 seed=56844 at 2026-06-25 06:02:46 -----
+--- stdout ---
+{"seed":56844,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B5","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":36,"A2":433,"A3":250,"B1":400,"B2":1122,"B3":1084,"B4":75,"B5":1866}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=56844, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:02:46.887] Checking precondition...
+[2026-06-25 06:02:46.901] Starting the repair...
+[2026-06-25 06:02:46.908] Found 74 possible bad axioms.
+[2026-06-25 06:02:46.910] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-25 06:02:46.915] Found 73 possible bad axioms.
+[2026-06-25 06:02:46.916] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:46.920] Finished repairing the ontology.
+Repairing with A2 (not-in-largest-mcs-removal)...
+[2026-06-25 06:02:46.920] Checking precondition...
+[2026-06-25 06:02:46.928] Starting the repair...
+[2026-06-25 06:02:47.352] Found 1 possible bad axioms.
+[2026-06-25 06:02:47.353] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:47.353] Finished repairing the ontology.
+Repairing with A3 (default-weakening)...
+[2026-06-25 06:02:47.355] Checking precondition...
+[2026-06-25 06:02:47.358] Starting the repair...
+[2026-06-25 06:02:47.369] Selected a reference ontology with 92 axioms.
+[2026-06-25 06:02:47.570] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:47.601] Selected the weaker axiom SubClassOf(http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:47.604] Finished repairing the ontology.
+Repairing with B1 (bad-in_some_mus-weaker-random)...
+[2026-06-25 06:02:47.605] Checking precondition...
+[2026-06-25 06:02:47.607] Starting the repair...
+[2026-06-25 06:02:47.613] Selected a reference ontology with 92 axioms.
+[2026-06-25 06:02:47.762] Selected the bad axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:47.777] Selected the weaker axiom SubClassOf(owl:Thing ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:02:47.895] Selected the bad 
+...[truncated]
+FAIL: attempt=5 seed=56844 status=memory_limit_exceeded stage=B5 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=5 success=0/100
+----- MEDICALINFO attempt=6 seed=71044 at 2026-06-25 06:02:52 -----
+--- stdout ---
+{"seed":71044,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":118,"A2":366,"A3":223,"B1":344,"B2":1134,"B3":1294}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=71044, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:02:52.571] Checking precondition...
+[2026-06-25 06:02:52.583] Starting the repair...
+[2026-06-25 06:02:52.589] Found 74 possible bad axioms.
+[2026-06-25 06:02:52.591] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5).
+[2026-06-25 06:02:52.596] Found 73 possible bad axioms.
+[2026-06-25 06:02:52.596] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim)).
+[2026-06-25 06:02:52.601] Found 72 possible bad axioms.
+[2026-06-25 06:02:52.601] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-25 06:02:52.605] Found 71 possible bad axioms.
+[2026-06-25 06:02:52.606] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:02:52.609] Found 70 possible bad axioms.
+[2026-06-25 06:02:52.609] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-25 06:02:52.612] Found 69 possible bad axioms.
+[2026-06-25 06:02:52.612] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:02:52.615] Found 68 possible bad axioms.
+[2026-06-25 06:02:52.615] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:02:52.618] Found 67 possible bad axioms.
+[2026-06-25 06:02:52.618] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDjWFzo6OQy
+...[truncated]
+FAIL: attempt=6 seed=71044 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=6 success=0/100
+----- MEDICALINFO attempt=7 seed=85244 at 2026-06-25 06:02:56 -----
+--- stdout ---
+{"seed":85244,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B3","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":158,"A2":361,"A3":227,"B1":195,"B2":1078,"B3":1228}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=85244, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:02:56.459] Checking precondition...
+[2026-06-25 06:02:56.475] Starting the repair...
+[2026-06-25 06:02:56.482] Found 74 possible bad axioms.
+[2026-06-25 06:02:56.483] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) owl:Nothing).
+[2026-06-25 06:02:56.488] Found 73 possible bad axioms.
+[2026-06-25 06:02:56.489] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt).
+[2026-06-25 06:02:56.493] Found 72 possible bad axioms.
+[2026-06-25 06:02:56.493] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-25 06:02:56.497] Found 71 possible bad axioms.
+[2026-06-25 06:02:56.497] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 owl:Nothing).
+[2026-06-25 06:02:56.501] Found 70 possible bad axioms.
+[2026-06-25 06:02:56.501] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-25 06:02:56.504] Found 69 possible bad axioms.
+[2026-06-25 06:02:56.504] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5) http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-25 06:02:56.507] Found 68 possible bad axioms.
+[2026-06-25 06:02:56.507] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim http://webprotege.stanford.edu/RDjWFzo6OQyRS8kaoygWIHi).
+[2026-06-25 06:02:56.510] Found 67 possible bad axioms.
+[2026-06-25 06:02:56.510] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-25 06:02:56.513] Found 66 possible bad axioms.
+[2026-06-25 06:02:56.513] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV).
+[2026-06-25 06:02:56.515] Found 65 possible bad axioms.
+[2026-06-25 06:02:56.515] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5).
+...[truncated]
+FAIL: attempt=7 seed=85244 status=memory_limit_exceeded stage=B3 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=7 success=0/100
+----- MEDICALINFO attempt=8 seed=99444 at 2026-06-25 06:02:59 -----
+--- stdout ---
+{"seed":99444,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":96,"A2":402,"A3":260,"B1":308,"B2":1890}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=99444, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:03:00.130] Checking precondition...
+[2026-06-25 06:03:00.145] Starting the repair...
+[2026-06-25 06:03:00.152] Found 74 possible bad axioms.
+[2026-06-25 06:03:00.154] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW).
+[2026-06-25 06:03:00.159] Found 73 possible bad axioms.
+[2026-06-25 06:03:00.160] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:03:00.165] Found 72 possible bad axioms.
+[2026-06-25 06:03:00.165] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/RCUkauZVkcIINvWeq2JcVXe http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV)).
+[2026-06-25 06:03:00.169] Found 71 possible bad axioms.
+[2026-06-25 06:03:00.169] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG)).
+[2026-06-25 06:03:00.172] Found 70 possible bad axioms.
+[2026-06-25 06:03:00.172] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim)).
+[2026-06-25 06:03:00.175] Found 69 possible bad axioms.
+[2026-06-25 06:03:00.175] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5)).
+[2026-06-25 06:03:00.178] Found 68 possible bad axioms.
+[2026-06-25 06:03:00.178] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-25 06:03:00.181] Found 67 possible bad axioms.
+[2026-06-25 06:03:00.182] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt)).
+[2026-06-25 06:03:00.184] Found 66 possible bad axioms.
+[2026-06-25 06:03:00.184] Selected the bad axiom SubClassOf(http://webprotege.st
+...[truncated]
+FAIL: attempt=8 seed=99444 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=8 success=0/100
+----- MEDICALINFO attempt=9 seed=113644 at 2026-06-25 06:03:03 -----
+--- stdout ---
+{"seed":113644,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":154,"A2":377,"A3":243,"B1":175,"B2":2117}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=113644, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:03:03.489] Checking precondition...
+[2026-06-25 06:03:03.502] Starting the repair...
+[2026-06-25 06:03:03.509] Found 74 possible bad axioms.
+[2026-06-25 06:03:03.510] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV).
+[2026-06-25 06:03:03.515] Found 73 possible bad axioms.
+[2026-06-25 06:03:03.517] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:03:03.521] Found 72 possible bad axioms.
+[2026-06-25 06:03:03.521] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RCV9eFcMNCITnsL0qMXcGlG ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:03:03.526] Found 71 possible bad axioms.
+[2026-06-25 06:03:03.526] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/Rm8btyGq2rHQmiY7gltbtt) owl:Nothing).
+[2026-06-25 06:03:03.530] Found 70 possible bad axioms.
+[2026-06-25 06:03:03.530] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-25 06:03:03.534] Found 69 possible bad axioms.
+[2026-06-25 06:03:03.534] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5) ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ)).
+[2026-06-25 06:03:03.537] Found 68 possible bad axioms.
+[2026-06-25 06:03:03.537] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5).
+[2026-06-25 06:03:03.541] Found 67 possible bad axioms.
+[2026-06-25 06:03:03.541] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV).
+[2026-06-25 06:03:03.544] Found 66 possible bad axioms.
+[2026-06-25 06:03:03.544] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS).
+[2026-06-25 06:03:03.547] Foun
+...[truncated]
+FAIL: attempt=9 seed=113644 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=9 success=0/100
+----- MEDICALINFO attempt=10 seed=127844 at 2026-06-25 06:03:06 -----
+--- stdout ---
+{"seed":127844,"run_id":"20260624134028346645","trial_status":"memory_limit_exceeded","error_type":"failure","failure_stage":"B2","error_message":"Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ","iic_values":{},"repair_runtimes_ms":{"A1":115,"A2":379,"A3":559,"B1":251,"B2":2190}}
+
+--- stderr ---
+SingleTrialExperiment starting: ontology=/workspaces/ontologyutils-ekaw26/repair-power-index-replication-ekaw26/ontologies/inconsistent/MEDICALINFO.owl, seed=127844, run_id=20260624134028346645
+Loaded ontology.
+Normalizing ontology with SROIQ normalization...
+Normalized ontology with SROIQ normalization.
+Ontology is already inconsistent, skipping make-inconsistent step.
+Repairing with A1 (random-removal)...
+[2026-06-25 06:03:06.953] Checking precondition...
+[2026-06-25 06:03:06.968] Starting the repair...
+[2026-06-25 06:03:06.975] Found 74 possible bad axioms.
+[2026-06-25 06:03:06.977] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW) http://webprotege.stanford.edu/R8CRuAYY0e1WIhZ2eFUXdLQ).
+[2026-06-25 06:03:06.982] Found 73 possible bad axioms.
+[2026-06-25 06:03:06.982] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RbVF6AlvIHr0rJfsBFTXvW http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy).
+[2026-06-25 06:03:06.987] Found 72 possible bad axioms.
+[2026-06-25 06:03:06.987] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/RxVTGslbhPiijLBs5pGtdQ http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i)).
+[2026-06-25 06:03:06.991] Found 71 possible bad axioms.
+[2026-06-25 06:03:06.991] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy http://webprotege.stanford.edu/RNYoEoAOEZxTSLuVVDfgKV).
+[2026-06-25 06:03:06.995] Found 70 possible bad axioms.
+[2026-06-25 06:03:06.995] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy ObjectSomeValuesFrom(http://webprotege.stanford.edu/R80RzekkVb3zm1FQ5gHpJ9H http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV)).
+[2026-06-25 06:03:06.998] Found 69 possible bad axioms.
+[2026-06-25 06:03:06.998] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/R9GFo52uEkrXAMhYZpGaiaS ObjectSomeValuesFrom(http://webprotege.stanford.edu/R87pNK4oMImS3BAal46eiXT ObjectSomeValuesFrom(http://webprotege.stanford.edu/R9o1p2LN5WZy8kRq3ZscO1G http://webprotege.stanford.edu/R0Ev7dJKSfIHo4reuHxVR5))).
+[2026-06-25 06:03:07.001] Found 68 possible bad axioms.
+[2026-06-25 06:03:07.002] Selected the bad axiom SubClassOf(ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy) owl:Nothing).
+[2026-06-25 06:03:07.004] Found 67 possible bad axioms.
+[2026-06-25 06:03:07.004] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDbHs8aJ2AG67pxcnsGVE3i ObjectSomeValuesFrom(http://webprotege.stanford.edu/RNoBO9NO1ATwWFl2BO5JF2 http://webprotege.stanford.edu/R64oyMgF2nakOeAlf5tMDy)).
+[2026-06-25 06:03:07.007] Found 66 possible bad axioms.
+[2026-06-25 06:03:07.007] Selected the bad axiom SubClassOf(http://webprotege.stanford.edu/RDc0Qnk1BWN4LWQ3xvwOQim http://webp
+...[truncated]
+FAIL: attempt=10 seed=127844 status=memory_limit_exceeded stage=B2 message=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+progress: ontology=MEDICALINFO attempt=10 success=0/100
+=== ABORTED MEDICALINFO after 10 consecutive failures at 2026-06-25 06:03:10 - switching to next ontology ===
+=== run_trials finished at 2026-06-28 17:53:08 for MEDICALINFO - 0 successes, 10 failures, 10 attempts ===
+Failed attempts:
+  attempt=1 seed=44 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=2 seed=14244 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=3 seed=28444 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=4 seed=42644 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=5 seed=56844 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=6 seed=71044 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=7 seed=85244 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=8 seed=99444 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=9 seed=113644 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+  attempt=10 seed=127844 msg=Repair failed: ExecutionException: java.lang.IllegalStateException: Could not find a weakening for axiom: ⊤ ⊑ ∃ RNoBO9NO1ATwWFl2BO5JF2.R8CRuAYY0e1WIhZ2eFUXdLQ
+Timing summary:
+  success: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  time_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  memory_limit_exceeded: count=0 total_seconds=0.000000 avg_seconds=0.000000
+  success_rate=0.0000
+  wall_clock_seconds_total_run=360698.251834
