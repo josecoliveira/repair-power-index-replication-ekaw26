@@ -59,9 +59,16 @@ def main() -> None:
         if key == "estimation":
             # Print estimation summary inline
             print(f"  estimation (see report for full details):")
+            if not value:
+                print("    N/A (not enough completed ontologies yet)")
+                continue
             print(f"    best_fit  = {value.get('best_fit', 'N/A')}")
-            print(f"    r2_poly   = {value.get('r2_poly', 'N/A'):.4f}")
-            print(f"    r2_exp    = {value.get('r2_exp', 'N/A'):.4f}")
+            for field in ("r2_poly", "r2_exp"):
+                score = value.get(field)
+                if isinstance(score, (int, float)):
+                    print(f"    {field:<10}= {score:.4f}")
+                else:
+                    print(f"    {field:<10}= {score if score is not None else 'N/A'}")
             print(f"    conclusion= {value.get('conclusion', 'N/A')}")
         else:
             print(f"  {key}={value}")
