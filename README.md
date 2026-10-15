@@ -11,12 +11,14 @@ It includes:
   - `analyzer.py` — analysis and report generation
   - `preprocessor.py` — ontology preprocessing pipeline
   - `classifier.py` — ontology classification
+  - `notifier.py` — optional Telegram progress notifications
 - `cli/` — view layer: thin CLI entry points
   - `run_trials.py` — CLI for the experiment runner
   - `analyze_results.py` — CLI for the analysis module
   - `preprocess_ontologies.py` — CLI for the preprocessing pipeline
   - `classify_ontologies.py` — CLI for ontology classification
   - `estimator.py` — CLI for complexity estimation
+  - `telegram_notify.py` — chat-ID discovery and notifier test helper
 
 ## Requirements
 
@@ -97,7 +99,7 @@ Run round-robin single-trial Java experiments for all ontologies and collect A/B
 | `-n`, `--n-trials` | `int` | `100` | Target number of successful trials per ontology. |
 | `--base-seed` | `int` | `13` | Base random seed. |
 | `--step` | `int` | `100` | Seed step between attempts. |
-| `--analysis-interval` | `int` | `1` | Run analysis every K rounds; `0` to disable. |
+| `--analysis-interval` | `int` | `1` | Run the interim analysis after every K completed ontologies; `0` disables interim analysis (the final analysis after the last ontology always runs). |
 | **Timeouts** | | | |
 | `--removal-timeout` | `int` | `300` | Removal repair timeout in seconds. |
 | `--weakening-timeout` | `int` | `300` | Weakening repair timeout in seconds. |
@@ -111,6 +113,9 @@ Run round-robin single-trial Java experiments for all ontologies and collect A/B
 | **Run identity** | | | |
 | `--run-id` | `str` | auto (timestamp) | Run identifier. When resuming, point to an existing run ID to continue from where it left off. |
 | `--seed` | `int` | — | Explicit seed override. When used with `--run-id`, sets the base seed for the resumed run. |
+| **Notifications** | | | |
+| `--notify` | flag | auto | Force Telegram progress notifications on. Without it, notifications are enabled automatically when `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` resolve (environment or `.env` file). |
+| `--no-notify` | flag | — | Disable Telegram progress notifications for this run. |
 | **Miscellaneous** | | | |
 | `--java-mem` | `str` | `-Xms1g -Xmx8g -Xss8m` | JVM memory and stack options. |
 | `--dry-run` | flag | `False` | Print the effective configuration and exit without running any experiments. |
@@ -128,6 +133,40 @@ python cli/run_trials.py -n 25 --base-seed 42 --step 50
 python cli/run_trials.py --removal-timeout 600 --weakening-timeout 600
 python cli/run_trials.py --run-id experiment-01
 python cli/run_trials.py --run-id experiment-01 --seed 13
+```
+
+#### Telegram progress notifications
+
+The runner can report progress to a Telegram chat. Messages are sent at
+milestones only — run start, each ontology start/completion, aborts, run end
+and crashes/interrupts — never once per trial. Sends are best-effort: a missing
+token or an unreachable network can never abort or slow down an experiment.
+
+Set up credentials in a git-ignored `.env` file at the replication package root
+(copy `.env.example`):
+
+```dotenv
+TELEGRAM_BOT_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+TELEGRAM_CHAT_ID=123456789
+```
+
+Values in `.env` override variables already present in the process environment.
+Credentials are optional — when they are absent the runner runs normally and
+stays quiet. Use `--notify` to require notifications and `--no-notify` to
+suppress them even when credentials are present.
+
+```bash
+# Find your chat ID (send any message to the bot first)
+python -m cli.telegram_notify chat-id
+
+# Verify the token and chat ID end-to-end
+python -m cli.telegram_notify test
+
+# Run the experiment with notifications
+python cli/run_trials.py -n 50
+
+# Force off for a quiet run
+python cli/run_trials.py -n 50 --no-notify
 ```
 
 ### `analyze_results.py`

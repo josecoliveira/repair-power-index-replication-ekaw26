@@ -29,6 +29,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+from analysis import notifier
 from analysis.analyzer import run_analysis
 from analysis.ontologyutils_service import (
     classify_ontology,
@@ -180,10 +181,64 @@ def resume_state(
     return successes, attempts, failures
 
 
+def mean_or_none(values: list[float]) -> float | None:
+    """Return the mean of *values*, or ``None`` when the list is empty."""
+    if not values:
+        return None
+    return sum(values) / len(values)
+
+
+def estimate_remaining_eta(
+    mean_trial_seconds: float | None,
+    ontologies_remaining: int,
+    max_successes: int,
+) -> float | None:
+    """Rough wall-clock estimate for the trials still to run.
+
+    *ontologies_remaining* counts ontologies that still owe successes,
+    including the one currently in progress. Returns ``None`` until at least
+    one trial has been timed, so early messages simply omit the ETA.
+    """
+    if mean_trial_seconds is None or ontologies_remaining <= 0:
+        return None
+    return mean_trial_seconds * ontologies_remaining * max_successes
+
+
+def _ontologies_still_needing_work(
+    ontologies: list[Path],
+    start_index: int,
+    successes: dict[str, int],
+    max_successes: int,
+) -> int:
+    """Count ontologies from *start_index* on that still need successes."""
+    return sum(
+        1 for ontology in ontologies[start_index:] if successes[ontology.stem] < max_successes
+    )
+
+
 # ── Experiment entry point ─────────────────────────────────────────────
 
 
 def run_experiment(args: argparse.Namespace) -> None:
+    """Execute the experiment, reporting fatal errors to the notifier.
+
+    Resolves the Telegram notification gate once for the whole run and
+    delegates the work to :func:`_run_experiment`.
+    """
+    # ``--notify`` / ``--no-notify`` from the CLI wins; when absent (None)
+    # the notifier auto-detects credentials from the environment / .env.
+    notify_enabled = notifier.configure(getattr(args, "notify", None))
+    if notify_enabled and not getattr(args, "dry_run", False):
+        print("[notifier] Telegram progress notifications enabled.")
+
+    try:
+        _run_experiment(args)
+    except BaseException as exc:
+        notifier.notify_exception(exc)
+        raise
+
+
+def _run_experiment(args: argparse.Namespace) -> None:
     """Execute the experiment with the given parsed arguments.
 
     All configuration defaults are supplied by the CLI layer
@@ -276,6 +331,7 @@ def run_experiment(args: argparse.Namespace) -> None:
     iic_paths: dict[str, Path] = {}
     runtime_paths: dict[str, Path] = {}
     log_paths: dict[str, Path] = {}
+    all_trial_durations: list[float] = []
 
     is_resume = args.run_id is not None
 
@@ -325,6 +381,17 @@ def run_experiment(args: argparse.Namespace) -> None:
 
     wall_clock_start = time.perf_counter()
 
+    notifier.notify_run_start(
+        run_id=run_id,
+        n_ontologies=len(ontologies),
+        target_successes=max_successes,
+        base_seed=effective_base_seed,
+        data_dir=data_dir,
+        results_dir=results_dir,
+    )
+
+    ontologies_finished = 0
+
     for ontology_index, ontology in enumerate(ontologies):
         name = ontology.stem
         if successes[name] >= max_successes:
@@ -334,6 +401,24 @@ def run_experiment(args: argparse.Namespace) -> None:
         log_path = log_paths[name]
         with open(log_path, "a", encoding="utf-8") as log:
             log.write(f"\n=== Starting sequential trials for {name} at {timestamp()} ===\n")
+
+        ontology_start = time.perf_counter()
+        axiom_count = axiom_counts.get(name)
+        if axiom_count is None or axiom_count >= 10**9:
+            axiom_count = None
+        notifier.notify_ontology_start(
+            index=ontology_index + 1,
+            total=len(ontologies),
+            name=name,
+            axioms=axiom_count,
+            eta_seconds=estimate_remaining_eta(
+                mean_or_none(all_trial_durations),
+                _ontologies_still_needing_work(
+                    ontologies, ontology_index, successes, max_successes
+                ),
+                max_successes,
+            ),
+        )
 
         consecutive_failures = 0
 
@@ -358,6 +443,7 @@ def run_experiment(args: argparse.Namespace) -> None:
                     make_inconsistent_timeout=args.make_inconsistent_timeout,
                 )
                 trial_elapsed = time.perf_counter() - trial_start
+                all_trial_durations.append(trial_elapsed)
 
                 payload = result.payload
                 attempt_outcome = "memory_limit_exceeded"
@@ -442,6 +528,13 @@ def run_experiment(args: argparse.Namespace) -> None:
                     f"Aborted {name}: {consecutive_failures} consecutive failures, "
                     f"{successes[name]} successes before abort"
                 )
+                notifier.notify_abort(
+                    index=ontology_index + 1,
+                    total=len(ontologies),
+                    name=name,
+                    consecutive_failures=consecutive_failures,
+                    successes=successes[name],
+                )
                 # Move CSV files out of the data dir so they are excluded from analysis
                 abort_dir = data_dir / "aborted"
                 abort_dir.mkdir(parents=True, exist_ok=True)
@@ -454,13 +547,33 @@ def run_experiment(args: argparse.Namespace) -> None:
 
         # Ontology complete (or aborted): run analysis so partial results are saved
         print(f"Completed {name}: {successes[name]} successes in {attempts[name]} attempts")
-        try:
-            analysis_outputs = run_analysis(data_dir, results_dir)
-            print(f"Analysis updated after {name}:")
-            for key, value in analysis_outputs.items():
-                print(f"  {key}={value}")
-        except Exception as exc:
-            print(f"Warning: analysis failed after {name}: {exc}", file=sys.stderr)
+        notifier.notify_ontology_end(
+            index=ontology_index + 1,
+            total=len(ontologies),
+            name=name,
+            successes=successes[name],
+            attempts=attempts[name],
+            elapsed_seconds=time.perf_counter() - ontology_start,
+            eta_seconds=estimate_remaining_eta(
+                mean_or_none(all_trial_durations),
+                _ontologies_still_needing_work(
+                    ontologies, ontology_index + 1, successes, max_successes
+                ),
+                max_successes,
+            ),
+        )
+        # Interim analysis, throttled by --analysis-interval: run after every K
+        # completed ontologies. A value of 0 disables these interim runs (the
+        # final analysis at the end of the experiment always runs).
+        ontologies_finished += 1
+        if effective_analysis_interval > 0 and ontologies_finished % effective_analysis_interval == 0:
+            try:
+                analysis_outputs = run_analysis(data_dir, results_dir)
+                print(f"Analysis updated after {name}:")
+                for key, value in analysis_outputs.items():
+                    print(f"  {key}={value}")
+            except Exception as exc:
+                print(f"Warning: analysis failed after {name}: {exc}", file=sys.stderr)
 
     wall_clock_seconds = time.perf_counter() - wall_clock_start
 
@@ -487,6 +600,15 @@ def run_experiment(args: argparse.Namespace) -> None:
             log.write(f"  wall_clock_seconds_total_run={wall_clock_seconds:.6f}\n")
 
     analysis_outputs = run_analysis(data_dir, results_dir)
+
+    notifier.notify_run_end(
+        run_id=run_id,
+        n_ontologies=len(ontologies),
+        wall_clock_seconds=wall_clock_seconds,
+        data_dir=data_dir,
+        results_dir=results_dir,
+        analysis_outputs=analysis_outputs,
+    )
 
     print("Done:")
     print(f"  run_id={run_id}")

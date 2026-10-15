@@ -65,7 +65,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--analysis-interval",
         type=int, default=ANALYSIS_INTERVAL_ROUNDS,
-        help="Run analysis every K rounds; 0 to disable (default: %(default)s)",
+        help=(
+            "Run the interim analysis after every K completed ontologies; "
+            "0 disables interim analysis, leaving only the final analysis "
+            "(default: %(default)s)"
+        ),
     )
 
     # --- Timeouts ---
@@ -93,6 +97,26 @@ def build_parser() -> argparse.ArgumentParser:
         "--consecutive-failure-limit",
         type=int, default=CONSECUTIVE_FAILURE_LIMIT,
         help="Abort ontology after this many consecutive failures (default: %(default)s)",
+    )
+
+    # --- Notifications ---
+    notify_group = parser.add_mutually_exclusive_group()
+    notify_group.add_argument(
+        "--notify",
+        dest="notify",
+        action="store_true",
+        default=None,
+        help=(
+            "Force Telegram progress notifications on. Without this flag, "
+            "notifications are enabled automatically when TELEGRAM_BOT_TOKEN "
+            "and TELEGRAM_CHAT_ID resolve (environment or .env file)."
+        ),
+    )
+    notify_group.add_argument(
+        "--no-notify",
+        dest="notify",
+        action="store_false",
+        help="Disable Telegram progress notifications for this run.",
     )
 
     # --- Path overrides ---
