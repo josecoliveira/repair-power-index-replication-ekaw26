@@ -305,12 +305,6 @@ def format_duration(seconds: float | None) -> str:
     return f"{secs}s"
 
 
-def _line_eta(eta_seconds: float | None) -> list[str]:
-    if eta_seconds is None:
-        return []
-    return [f"estimated remaining: {format_duration(eta_seconds)}"]
-
-
 # ── Milestone messages ─────────────────────────────────────────────────
 
 
@@ -343,15 +337,16 @@ def notify_ontology_start(
     total: int,
     name: str,
     axioms: int | None = None,
-    eta_seconds: float | None = None,
 ) -> bool:
     """Announce that trials for one ontology have begun."""
-    lines = [
-        f"▶️ [{index}/{total}] {name}",
-        f"axioms: {axioms if axioms is not None else 'unknown'}",
-    ]
-    lines.extend(_line_eta(eta_seconds))
-    return notify("\n".join(lines))
+    return notify(
+        "\n".join(
+            [
+                f"▶️ [{index}/{total}] {name}",
+                f"axioms: {axioms if axioms is not None else 'unknown'}",
+            ]
+        )
+    )
 
 
 def notify_ontology_end(
@@ -361,17 +356,18 @@ def notify_ontology_end(
     successes: int,
     attempts: int,
     elapsed_seconds: float | None,
-    eta_seconds: float | None = None,
 ) -> bool:
     """Report the outcome of one ontology's trials."""
-    lines = [
-        f"✅ [{index}/{total}] {name} complete",
-        f"successes: {successes}",
-        f"attempts: {attempts}",
-        f"elapsed: {format_duration(elapsed_seconds)}",
-    ]
-    lines.extend(_line_eta(eta_seconds))
-    return notify("\n".join(lines))
+    return notify(
+        "\n".join(
+            [
+                f"✅ [{index}/{total}] {name} complete",
+                f"successes: {successes}",
+                f"attempts: {attempts}",
+                f"elapsed: {format_duration(elapsed_seconds)}",
+            ]
+        )
+    )
 
 
 def notify_abort(

@@ -181,41 +181,6 @@ def resume_state(
     return successes, attempts, failures
 
 
-def mean_or_none(values: list[float]) -> float | None:
-    """Return the mean of *values*, or ``None`` when the list is empty."""
-    if not values:
-        return None
-    return sum(values) / len(values)
-
-
-def estimate_remaining_eta(
-    mean_trial_seconds: float | None,
-    ontologies_remaining: int,
-    max_successes: int,
-) -> float | None:
-    """Rough wall-clock estimate for the trials still to run.
-
-    *ontologies_remaining* counts ontologies that still owe successes,
-    including the one currently in progress. Returns ``None`` until at least
-    one trial has been timed, so early messages simply omit the ETA.
-    """
-    if mean_trial_seconds is None or ontologies_remaining <= 0:
-        return None
-    return mean_trial_seconds * ontologies_remaining * max_successes
-
-
-def _ontologies_still_needing_work(
-    ontologies: list[Path],
-    start_index: int,
-    successes: dict[str, int],
-    max_successes: int,
-) -> int:
-    """Count ontologies from *start_index* on that still need successes."""
-    return sum(
-        1 for ontology in ontologies[start_index:] if successes[ontology.stem] < max_successes
-    )
-
-
 # ── Experiment entry point ─────────────────────────────────────────────
 
 
@@ -331,7 +296,6 @@ def _run_experiment(args: argparse.Namespace) -> None:
     iic_paths: dict[str, Path] = {}
     runtime_paths: dict[str, Path] = {}
     log_paths: dict[str, Path] = {}
-    all_trial_durations: list[float] = []
 
     is_resume = args.run_id is not None
 
@@ -411,13 +375,6 @@ def _run_experiment(args: argparse.Namespace) -> None:
             total=len(ontologies),
             name=name,
             axioms=axiom_count,
-            eta_seconds=estimate_remaining_eta(
-                mean_or_none(all_trial_durations),
-                _ontologies_still_needing_work(
-                    ontologies, ontology_index, successes, max_successes
-                ),
-                max_successes,
-            ),
         )
 
         consecutive_failures = 0
@@ -443,7 +400,6 @@ def _run_experiment(args: argparse.Namespace) -> None:
                     make_inconsistent_timeout=args.make_inconsistent_timeout,
                 )
                 trial_elapsed = time.perf_counter() - trial_start
-                all_trial_durations.append(trial_elapsed)
 
                 payload = result.payload
                 attempt_outcome = "memory_limit_exceeded"
@@ -554,13 +510,6 @@ def _run_experiment(args: argparse.Namespace) -> None:
             successes=successes[name],
             attempts=attempts[name],
             elapsed_seconds=time.perf_counter() - ontology_start,
-            eta_seconds=estimate_remaining_eta(
-                mean_or_none(all_trial_durations),
-                _ontologies_still_needing_work(
-                    ontologies, ontology_index + 1, successes, max_successes
-                ),
-                max_successes,
-            ),
         )
         # Interim analysis, throttled by --analysis-interval: run after every K
         # completed ontologies. A value of 0 disables these interim runs (the
