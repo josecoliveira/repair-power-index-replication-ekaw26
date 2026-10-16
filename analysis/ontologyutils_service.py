@@ -132,6 +132,56 @@ class TrialResult:
     stderr: str
 
 
+def build_single_trial_command(
+    ontology_path: Path,
+    seed: int,
+    run_id: str,
+    java_mem: str = "-Xms1g -Xmx8g -Xss8m",
+    lib_dir: Path | None = None,
+    removal_timeout: int = 300,
+    weakening_timeout: int = 300,
+    power_index_timeout: int = 300,
+    make_inconsistent_timeout: int = 300,
+) -> list[str]:
+    """Build the ``java`` command line for one ``SingleTrialExperiment`` run.
+
+    Exposed separately from :func:`run_single_trial_experiment` so callers that
+    need the process handle (e.g. a parallel runner that must be able to kill
+    in-flight trials) can spawn it themselves while sharing the exact same
+    argument construction.
+    """
+    jar = find_shaded_jar(lib_dir)
+    args = [
+        "--ontology", str(ontology_path),
+        "--seed", str(seed),
+        "--run-id", str(run_id),
+        "--removal-timeout-secs", str(removal_timeout),
+        "--weakening-timeout-secs", str(weakening_timeout),
+        "--power-index-timeout-secs", str(power_index_timeout),
+        "--make-inconsistent-timeout-secs", str(make_inconsistent_timeout),
+        "--verbose",
+    ]
+    return _build_java_cmd(
+        "www.ontologyutils.apps.SingleTrialExperiment",
+        args, java_mem, jar,
+    )
+
+
+def parse_trial_stdout(raw_stdout: str) -> dict:
+    """Parse the JSON object ``SingleTrialExperiment`` prints on stdout.
+
+    Returns an empty dict when the output is empty, not JSON, or not a JSON
+    object.
+    """
+    if not raw_stdout:
+        return {}
+    try:
+        payload = json.loads(raw_stdout.strip() or "{}")
+    except json.JSONDecodeError:
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
 def run_single_trial_experiment(
     ontology_path: Path,
     seed: int,
@@ -144,33 +194,23 @@ def run_single_trial_experiment(
     make_inconsistent_timeout: int = 300,
 ) -> TrialResult:
     """Run ``SingleTrialExperiment`` and return the parsed JSON result."""
-    jar = find_shaded_jar(lib_dir)
-    args = [
-        "--ontology", str(ontology_path),
-        "--seed", str(seed),
-        "--run-id", str(run_id),
-        "--removal-timeout-secs", str(removal_timeout),
-        "--weakening-timeout-secs", str(weakening_timeout),
-        "--power-index-timeout-secs", str(power_index_timeout),
-        "--make-inconsistent-timeout-secs", str(make_inconsistent_timeout),
-        "--verbose",
-    ]
-    cmd = _build_java_cmd(
-        "www.ontologyutils.apps.SingleTrialExperiment",
-        args, java_mem, jar,
+    cmd = build_single_trial_command(
+        ontology_path=ontology_path,
+        seed=seed,
+        run_id=run_id,
+        java_mem=java_mem,
+        lib_dir=lib_dir,
+        removal_timeout=removal_timeout,
+        weakening_timeout=weakening_timeout,
+        power_index_timeout=power_index_timeout,
+        make_inconsistent_timeout=make_inconsistent_timeout,
     )
     proc = _run_captured(cmd)
     raw_stdout = proc.stdout or ""
 
     payload: dict = {}
     if proc.returncode >= 0 and raw_stdout:
-        try:
-            payload = json.loads(raw_stdout.strip() or "{}")
-        except json.JSONDecodeError:
-            payload = {}
-
-    if not isinstance(payload, dict):
-        payload = {}
+        payload = parse_trial_stdout(raw_stdout)
 
     return TrialResult(
         returncode=proc.returncode,

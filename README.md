@@ -8,12 +8,14 @@ It includes:
 - `ontologies/inconsistent/*.owl`
 - `analysis/` — model layer: reusable computation modules
   - `orchestrator.py` — experiment orchestration
+  - `parallel_orchestrator.py` — experiment orchestration with several trials in flight
   - `analyzer.py` — analysis and report generation
   - `preprocessor.py` — ontology preprocessing pipeline
   - `classifier.py` — ontology classification
   - `notifier.py` — optional Telegram progress notifications
 - `cli/` — view layer: thin CLI entry points
   - `run_trials.py` — CLI for the experiment runner
+  - `run_trials_parallel.py` — CLI for the parallel experiment runner
   - `analyze_results.py` — CLI for the analysis module
   - `preprocess_ontologies.py` — CLI for the preprocessing pipeline
   - `classify_ontologies.py` — CLI for ontology classification
@@ -167,6 +169,101 @@ python cli/run_trials.py -n 50
 
 # Force off for a quiet run
 python cli/run_trials.py -n 50 --no-notify
+```
+
+### `run_trials_parallel.py`
+
+Runs the *same* experiment as `run_trials.py`, but keeps **K** Java trials in flight for
+one ontology instead of running them one at a time. The sequential runner remains the
+reference implementation; this runner only changes the scheduling.
+
+It writes the same per-trial CSVs and logs under `data/data-<run-id>/` and the same
+aggregates under `data/results-<run-id>/`, so `analyze_results.py` and `estimator.py`
+work unchanged. Rows appear in *completion* order rather than attempt order — sort by
+the `trial_number` column. The consecutive-failure abort is evaluated in completion
+order too, so the exact abort point can differ.
+
+| Flag / Arg | Type | Default | Description |
+|---|---|---|---|
+| **Parallelism** | | | |
+| `-K`, `--parallel-trials` | `int` | `1` | Trials kept in flight for one ontology. `1` behaves exactly like the sequential runner. |
+| `-t`, `--threads-per-trial` | `int` | `16` | Sampling threads per trial JVM, passed as `-Dontologyutils.samplingThreads`. |
+| `--cap-jvm-cpus` / `--no-cap-jvm-cpus` | flag | `--cap-jvm-cpus` | Also pass `-XX:ActiveProcessorCount=<t>` so each JVM sizes its own thread pools (GC, ForkJoin) for its share of the CPU budget instead of the whole machine. |
+| `--ontologies` | `str` | all | Comma-separated ontology names to run (e.g. `--ontologies OGR,XEO`). |
+| **Trial control** | | | |
+| `-n`, `--n-trials` | `int` | `100` | Target number of successful trials per ontology. |
+| `--base-seed` | `int` | `13` | Base random seed. |
+| `--step` | `int` | `100` | Seed step between attempts. |
+| `--analysis-interval` | `int` | `1` | Run the interim analysis after every K completed ontologies; `0` disables interim analysis (the final analysis always runs). |
+| **Timeouts** | | | |
+| `--removal-timeout` | `int` | `300` | Removal repair timeout in seconds. |
+| `--weakening-timeout` | `int` | `300` | Weakening repair timeout in seconds. |
+| `--power-index-timeout` | `int` | `300` | Power index computation timeout in seconds. |
+| `--make-inconsistent-timeout` | `int` | `300` | Make-inconsistent timeout in seconds. |
+| `--consecutive-failure-limit` | `int` | `10` | Abort an ontology after this many consecutive failures. |
+| **Paths** | | | |
+| `--inconsistent-dir` | `Path` | `ontologies/inconsistent/` | Directory containing inconsistent ontologies. |
+| `--lib-dir` | `Path` | `lib/` | Directory containing the shaded jar. |
+| `--data-dir` / `--results-dir` | `Path` | auto | Output directories. With `--run-id`, default to `data/data-<run-id>` / `data/results-<run-id>`. |
+| `--java-mem` | `str` | `-Xms1g -Xmx64g -Xss8m` | JVM memory/stack options; the sampling-thread property is appended automatically. |
+| **Run identity** | | | |
+| `--run-id` | `str` | auto (timestamp) | Run identifier. Point it at an existing run ID to resume. |
+| `--seed` | `int` | — | Explicit base-seed override. |
+| **Notifications** | | | |
+| `--notify` / `--no-notify` | flag | auto | Same semantics as `run_trials.py`. |
+| **Miscellaneous** | | | |
+| `--dry-run` | flag | `False` | Print the effective configuration (including `K`, `t` and the total thread count) and exit. |
+
+#### Choosing `K` and `t`
+
+Each trial JVM already spawns `t` sampling threads, so keep `K * t` within the machine's
+CPU budget (leave headroom for the JVM's main thread, GC and JIT threads). Measured on a
+24-core container with 63 GB RAM (`--cap-jvm-cpus`, no interim analysis):
+
+| config | OGR | ELIG | XEO |
+|---|---|---|---|
+| `K=1, t=16` (sequential default) | 1.00x | 1.00x | 1.00x |
+| `K=1, t=4` | 0.80x | — | — |
+| `K=2, t=8` | 1.48x | 1.45x | 1.34x |
+| **`K=4, t=4`** | **2.17x** | **1.71x** | **2.06x** |
+| `K=8, t=2` | 2.32x | **0.80x** | — |
+
+Speed-up in trials/second over `K=1, t=16`.
+
+* **`K=4, t=4` is the recommended configuration** — 1.7-2.2x on every ontology measured.
+* Lowering `t` alone is a loss (`K=1, t=4` is *slower* than `K=1, t=16`); the gain comes
+  from overlapping the serial part of several trials.
+* A large `K` with a small `t` can be *worse* than sequential: `K=8, t=2` collapsed to
+  0.80x on ELIG because eight JVMs' main/GC/JIT threads exceed the core budget. Measure
+  before raising `K`.
+
+#### Two caveats
+
+* **Changing `t` changes the results, not just the speed.** The 735 samples are split
+  across the workers, so a different `t` samples different coalitions and yields
+  different approximate values. Only compare IIC values between runs that used the same
+  `t`.
+* **Per-trial IIC values are not reproducible even sequentially.** Two identical
+  `run_trials.py` runs with the same seeds already differ (e.g. 21 of 27 values for one
+  HOM trial). The cause is that `Utils` keeps its RNG in a `ThreadLocal` and
+  `Utils.randomSeed()` seeds only the calling thread, so random draws made on other
+  threads (parallel streams, power-index base seeds) are unseeded. Attempt numbers,
+  seeds, trial statuses and row counts *are* reproducible. See
+  `plans/parallel-trials-plan.md` for details; treat only aggregates as meaningful.
+
+**Examples:**
+```bash
+# Sanity check the effective configuration
+python cli/run_trials_parallel.py -K 4 -t 4 --dry-run
+
+# Recommended configuration
+python cli/run_trials_parallel.py -K 4 -t 4
+
+# Same, but only two ontologies and 10 trials each (quick calibration)
+python cli/run_trials_parallel.py -K 4 -t 4 -n 10 --ontologies OGR,XEO
+
+# Reproduce the sequential runner exactly
+python cli/run_trials_parallel.py -K 1 -t 16
 ```
 
 ### `analyze_results.py`
