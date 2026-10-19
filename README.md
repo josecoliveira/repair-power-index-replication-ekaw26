@@ -243,13 +243,12 @@ Speed-up in trials/second over `K=1, t=16`.
   across the workers, so a different `t` samples different coalitions and yields
   different approximate values. Only compare IIC values between runs that used the same
   `t`.
-* **Per-trial IIC values are not reproducible even sequentially.** Two identical
-  `run_trials.py` runs with the same seeds already differ (e.g. 21 of 27 values for one
-  HOM trial). The cause is that `Utils` keeps its RNG in a `ThreadLocal` and
-  `Utils.randomSeed()` seeds only the calling thread, so random draws made on other
-  threads (parallel streams, power-index base seeds) are unseeded. Attempt numbers,
-  seeds, trial statuses and row counts *are* reproducible. See
-  `plans/parallel-trials-plan.md` for details; treat only aggregates as meaningful.
+* **Reproducibility.** A seeded run is reproducible: seeds, attempt numbers, statuses and
+  the resulting IIC values are identical between runs, and `run_trials_parallel.py -K 1
+  -t 16` reproduces `cli/run_trials.py` exactly. This required making random selection
+  independent of hash-based collection iteration order, which varies between JVM runs
+  because equal hash codes are tie-broken with `System.identityHashCode`. Results produced
+  with jars built before that fix are therefore not comparable with new runs.
 
 **Examples:**
 ```bash
