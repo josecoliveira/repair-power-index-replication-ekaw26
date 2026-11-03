@@ -19,6 +19,8 @@ It includes:
   - `analyze_results.py` — CLI for the analysis module
   - `preprocess_ontologies.py` — CLI for the preprocessing pipeline
   - `classify_ontologies.py` — CLI for ontology classification
+  - `classify_original_corpus.py` — CLI that classifies a raw ontology folder into a JSON manifest
+  - `build_nocleanup_corpus.py` — CLI that builds the ALC corpus without the cleanup stage
   - `estimator.py` — CLI for complexity estimation
   - `telegram_notify.py` — chat-ID discovery and notifier test helper
 
@@ -35,6 +37,27 @@ python -m pip install -r requirements.txt
 ```
 
 No Maven build is required for the replication scripts because they run against the bundled shaded jar.
+
+## Ontology folders
+
+`ontologies/` holds two parallel corpora: the paper's pipeline (`original` →
+`cleanup` → `alc` → `inconsistent`) and the same corpus built **without** the
+cleanup stage (`alc-nocleanup` → `inconsistent-nocleanup`).
+
+| Folder | Built by | Contents |
+|---|---|---|
+| `original/` | the BioPortal download | raw downloads, mixed serialisations, `owl:imports` intact |
+| `cleanup/` | stage 1 of `preprocess_ontologies.py` | lossy cleanup: annotations (including `rdfs:label`), data properties, declarations and non-SROIQ axioms removed; imports dropped |
+| `alc/` | stage 2 | verbatim **copies** of the cleanup files that pass the ALC gate |
+| `inconsistent/` | stage 3 | `MakeInconsistent` output for `alc/` |
+| `alc-nocleanup/` | `build_nocleanup_corpus.py` | verbatim copies of the **raw** originals that pass the ALC gate, labels intact |
+| `inconsistent-nocleanup/` | `build_nocleanup_corpus.py` | `MakeInconsistent` output for `alc-nocleanup/` |
+| `removed/` | manual archive | cleaned ontologies that were not usable (mostly ALC-gate rejects), kept for reference |
+
+The ALC gate is not a transformation: it classifies a file and copies it
+unchanged when its DL expressivity is one of `AL, ALC, ALE, EL, FL, FL0,
+FLMINUS`. The two `inconsistent*` folders are interchangeable for the runners,
+which select one with `--inconsistent-dir`.
 
 ## CLI Reference
 
@@ -89,6 +112,95 @@ python cli/classify_ontologies.py
 python cli/classify_ontologies.py -o my_table.md
 python cli/classify_ontologies.py --verbose --java-mem '-Xms2g -Xmx8g'
 python cli/classify_ontologies.py --workers 8 --sort-by-axioms
+```
+
+### `classify_original_corpus.py`
+
+Classify every ontology in a folder and write a JSON manifest. This is how the
+ALC-suitable ontologies are located among the raw downloads, i.e. **without**
+running the lossy cleanup stage first.
+
+Each manifest entry records the axiom count, the number of concept names, the
+DL expressivity as printed by `ClassifyOntology`, and whether the ontology is
+ALC-suitable by the same rule the preprocessing pipeline uses
+(`analysis.preprocessor.is_alc_suitable`).
+
+When an ontology cannot be loaded because its `owl:imports` cannot be resolved,
+the file is retried with `-Dontologyutils.ignoreImports=true` and the entry is
+flagged `imports_missing`: the reported numbers then only cover the axioms in
+the file itself. These entries can be included or excluded later
+(see `build_nocleanup_corpus.py`).
+
+Big files are processed one at a time (biggest first) so they get a generous
+heap instead of competing with the many small ones. The manifest is written
+every `--checkpoint-every` ontologies and existing entries are skipped on
+restart, so an interrupted run can simply be started again; entries that failed
+are retried.
+
+| Flag / Arg | Type | Default | Description |
+|---|---|---|---|
+| `--ontologies-dir` | `Path` | `ontologies/original` | Folder with the ontologies to classify. |
+| `-o`, `--output` | `Path` | `original_classification.json` | JSON manifest to write. |
+| `--java-mem` | `str` | `-Xms1g -Xmx6g -Xss8m` | JVM options for the small ontologies. |
+| `--big-java-mem` | `str` | `-Xms2g -Xmx24g -Xss8m` | JVM options for the big ones, run one at a time. |
+| `--big-threshold-mb` | `int` | `40` | Files at least this large are classified sequentially. |
+| `-j`, `--workers` | `int` | `4` | Parallel workers for the small ontologies. |
+| `--timeout` | `int` | `900` | Timeout per ontology, in seconds. |
+| `--checkpoint-every` | `int` | `25` | Write the manifest every N classified ontologies. |
+| `--force` | flag | `False` | Re-classify ontologies already in the manifest. |
+
+**Examples:**
+```bash
+python -m cli.classify_original_corpus
+python -m cli.classify_original_corpus --big-threshold-mb 350 -j 5
+python -m cli.classify_original_corpus --ontologies-dir ontologies/alc -o alc.json
+```
+
+### `build_nocleanup_corpus.py`
+
+Build an ALC corpus straight from the raw ontologies, skipping the cleanup
+stage. Cleanup is lossy — it drops annotations (including `rdfs:label`), data
+properties, declarations and every axiom outside SROIQ — so this variant keeps
+every original axiom:
+
+1. **Copy** — `original/{name}.owl` → `alc-nocleanup/{name}.owl`, byte for byte.
+2. **MakeInconsistent** — `alc-nocleanup/{name}.owl` → `inconsistent-nocleanup/{name}.owl`,
+   with the same flags as the paper's pipeline.
+3. **Verify** — `CheckConsistency --basic` on every result; anything still
+   consistent, or inconclusive, is reported.
+
+The ontologies to build are taken from a manifest produced by
+`classify_original_corpus.py`. Ontologies whose `owl:imports` could not be
+resolved are skipped by default, because the cleanup stage dropped them as well
+(their content would be truncated to the local axioms); pass
+`--include-truncated` to keep them. A per-ontology report is written as JSON.
+
+The runners consume the result with
+`--inconsistent-dir ontologies/inconsistent-nocleanup`.
+
+| Flag / Arg | Type | Default | Description |
+|---|---|---|---|
+| `--manifest` | `Path` | `original_classification.json` | Classification manifest to read. |
+| `--source-dir` | `Path` | `ontologies/original` | Folder with the raw ontologies. |
+| `--alc-dir` | `Path` | `ontologies/alc-nocleanup` | Output folder for the ALC copies. |
+| `--inconsistent-dir` | `Path` | `ontologies/inconsistent-nocleanup` | Output folder for the inconsistent variants. |
+| `--report` | `Path` | `nocleanup_corpus_report.json` | JSON report to write. |
+| `--include-truncated` | flag | `False` | Also include ontologies with unresolved `owl:imports`. |
+| `--only-names` | `str` | all | Comma-separated subset of names to build. |
+| `--java-mem` | `str` | `-Xms1g -Xmx8g -Xss8m` | JVM options for the small ontologies. |
+| `--big-java-mem` | `str` | `-Xms2g -Xmx24g -Xss8m` | JVM options for the big ones, run one at a time. |
+| `--big-threshold-mb` | `int` | `40` | Files at least this large are processed sequentially. |
+| `-j`, `--workers` | `int` | `4` | Parallel workers. |
+| `--timeout` | `int` | `900` | Timeout per ontology, in seconds. |
+| `--skip-verify` | flag | `False` | Do not run `CheckConsistency` on the results. |
+| `--force` | flag | `False` | Rebuild outputs that already exist. |
+| `--dry-run` | flag | `False` | Only print the selected ontologies. |
+
+**Examples:**
+```bash
+python -m cli.build_nocleanup_corpus --dry-run
+python -m cli.build_nocleanup_corpus
+python -m cli.build_nocleanup_corpus --only-names BCTT,HOM --force
 ```
 
 ### `run_trials.py`

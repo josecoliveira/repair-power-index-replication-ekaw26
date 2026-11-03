@@ -95,8 +95,19 @@ def _run_streaming(cmd: list[str], verbose: bool = False,
                         print(f"{prefix}{line}", file=sys.stderr, flush=True)
                     stderr_lines.append(line)
 
+    def _drain_stdout() -> None:
+        # Some apps write their entire result to stdout (``MakeInconsistent
+        # --verbose`` prints every axiom). If nobody reads the pipe it fills up
+        # after 64 KB and the JVM blocks forever inside FileOutputStream.write,
+        # which looks exactly like a hang until the timeout fires.
+        with process.stdout:
+            for _ in process.stdout:
+                pass
+
     reader = threading.Thread(target=_read_stderr, daemon=True)
     reader.start()
+    stdout_reader = threading.Thread(target=_drain_stdout, daemon=True)
+    stdout_reader.start()
 
     try:
         process.wait(timeout=timeout)
@@ -104,6 +115,7 @@ def _run_streaming(cmd: list[str], verbose: bool = False,
         process.kill()
         process.wait()
         reader.join(timeout=2)
+        stdout_reader.join(timeout=2)
         full_stderr = "\n".join(stderr_lines)
         if full_stderr:
             full_stderr += "\n"
@@ -111,6 +123,7 @@ def _run_streaming(cmd: list[str], verbose: bool = False,
         return False, full_stderr
 
     reader.join()
+    stdout_reader.join()
     full_stderr = "\n".join(stderr_lines)
 
     if verbose and process.returncode != 0:
@@ -267,10 +280,13 @@ def run_make_inconsistent(
         "--strict-simple-roles",
         "--simple-ria-weakening",
         "--strict-owl2",
-        "--verbose",
         "-o", str(output_path),
         str(input_path),
     ]
+    if verbose:
+        # ``--verbose`` makes the app print every resulting axiom to stdout.
+        # Harmless (the pipe is drained) but slow, so it is opt-in.
+        args.insert(6, "--verbose")
     cmd = _build_java_cmd(
         "www.ontologyutils.apps.MakeInconsistent",
         args, java_mem, jar,
@@ -334,3 +350,33 @@ def classify_ontology(
         return None
 
     return _parse_classify_output(proc.stdout)
+
+
+# ── CheckConsistency ───────────────────────────────────────────────────
+
+
+def check_consistency(
+    owl_path: Path,
+    java_mem: str = "-Xms1g -Xmx8g -Xss8m",
+    lib_dir: Path | None = None,
+    timeout: int | None = None,
+) -> bool | None:
+    """Run ``CheckConsistency --basic``.
+
+    Returns ``True`` if the ontology is consistent, ``False`` if it is
+    inconsistent, and ``None`` if the check itself failed (timeout or an
+    unexpected exit code).
+    """
+    jar = find_shaded_jar(lib_dir)
+    cmd = _build_java_cmd(
+        "www.ontologyutils.apps.CheckConsistency",
+        ["--basic", str(owl_path)], java_mem, jar,
+    )
+    proc = _run_captured(cmd, timeout=timeout)
+    if getattr(proc, "timed_out", False):
+        return None
+    if proc.returncode == 0:
+        return True
+    if proc.returncode == 1:
+        return False
+    return None
