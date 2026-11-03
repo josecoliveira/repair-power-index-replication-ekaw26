@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+  LIMITATION 2 - the weakening repair aborts when the selected bad axiom has no
+  strictly weaker form.
+
+  Inconsistent ontology (three axioms):
+    (1) owl:Thing(a)          a tautology, but a *refutable* axiom
+    (2) A \sqsubseteq owl:Nothing
+    (3) A(b)                  which contradicts (2)
+
+  The power-index bad-axiom selectors do not restrict themselves to axioms in a
+  MUS, so the tautology (1) can be selected as the bad axiom.  Weakening
+  owl:Thing(a) is impossible: the type would have to be generalised and
+  owl:Thing has no proper superclass.  OntologyRepairWeakening then throws
+
+      IllegalStateException: Could not find a weakening for axiom: \u22a4(a)
+
+  instead of skipping the axiom, which aborts the whole trial.
+
+  Reproduced deterministically through SingleTrialExperiment for seeds 0-4, in
+  stage B4 (Shapley bad-selector + random weaker-selector) - the same stage that
+  accounts for 44 of the 113 failures observed on the no-cleanup corpus.
+
+  With the standalone RepairWeakening app the same ontology also reproduces the
+  failure, but only when the random bad-axiom strategy happens to select the
+  tautology first, because the default strategy (in-some-mus) never selects
+  tautologies.
+-->
+<rdf:RDF xmlns="http://example.org/limitations/noweakening#"
+     xml:base="http://example.org/limitations/noweakening"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://example.org/limitations/noweakening"/>
+
+    <!-- (2) A \sqsubseteq owl:Nothing -->
+    <owl:Class rdf:about="http://example.org/limitations/noweakening#A">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+
+    <!-- (3) A(b) -->
+    <rdf:Description rdf:about="http://example.org/limitations/noweakening#b">
+        <rdf:type rdf:resource="http://example.org/limitations/noweakening#A"/>
+    </rdf:Description>
+
+    <!-- (1) owl:Thing(a) -->
+    <rdf:Description rdf:about="http://example.org/limitations/noweakening#a">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+
+</rdf:RDF>
