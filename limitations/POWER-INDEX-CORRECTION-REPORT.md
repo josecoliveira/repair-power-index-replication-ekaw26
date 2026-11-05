@@ -27,9 +27,11 @@ this report came from**. Everything needed is stated here.
 4. The published numbers are genuine outputs of that code and reproduce, but they
    measure the tie-break policy, not the power index.
 5. A fix is prepared (`0c03114` on branch `fix/power-index-adaptive-sampling` of the
-   outer repo). With the fix, a partial re-run (3 of 8 ontologies, 100 trials each)
-   gives **≈0.50 against the default weakening baseline instead of 0.77**, i.e. no
-   advantage; by the paper's own criterion (lower CI bound > 0.5) no arm qualifies.
+   outer repo). With the fix, the **full** re-run (8 ontologies, 800 trials) gives
+   **0.499 against the default weakening baseline instead of 0.77** for the paper's
+   arm — parity, not an advantage; one arm is **significantly worse** (in-MUS +
+   Shapley weakening, 0.4697) and one **significantly better** (Banzhaf bad axiom +
+   random weakening, 0.5320). All arms still beat removal and MCS removal.
 6. The plausible reason is objective misalignment, not sampling noise (see §8).
    Candidate replacement policies are listed there.
 
@@ -269,49 +271,70 @@ Full suite after the fix: 2118 tests, 0 failures, 0 errors, `BUILD SUCCESS`.
 
 ---
 
-## 6. What the fix did to the published claim (partial re-run)
+## 6. What the fix did to the published claim (full re-run)
 
 Run `old8-fixed-K1` on `ontologies.old/inconsistent` (the paper's 8 ontologies),
-`-n 100`, `-K 3`, `-t 8`, Openllet. Partial status at the time of writing: **3 of 8
-ontologies complete** (ELIG, HOM, OGR; 300 successful trials, 11 timeouts on HOM in B
-arms). Remaining: TAXRANK, BCTT, PE, XEO, CO-WHEAT.
+`-n 100`, `-K 3`, `-t 8`, Openllet. **Complete: 8 of 8 ontologies, 800 successful
+trials in 828 attempts (28 timeouts: TAXRANK 13, HOM 11, XEO 4); wall clock 29,360 s
+(8.2 h) with 3 trials in flight.**
 
-Mean IIC and 95% CI, overall over the three ontologies:
+Mean IIC and 95% CI, overall, n = 800:
 
 | arm | vs random removal (A1) | vs not-in-largest-MCS removal (A2) | vs default weakening (A3) |
 | --- | --- | --- | --- |
-| in-MUS + Shapley (B2) | 0.7246 [0.688; 0.761] | 0.5226 [0.481; 0.565] | **0.4572 [0.414; 0.501]** |
-| in-MUS + Banzhaf (B3) | 0.7365 [0.699; 0.774] | 0.5379 [0.495; 0.581] | 0.4791 [0.435; 0.523] |
-| Shapley + random (B4) | 0.7470 [0.712; 0.782] | 0.5486 [0.505; 0.592] | 0.4963 [0.453; 0.540] |
-| **Shapley + Shapley (B5)** | 0.7305 [0.693; 0.768] | 0.5422 [0.499; 0.585] | **0.4954 [0.452; 0.539]** |
-| Shapley + Banzhaf (B6) | 0.7682 [0.734; 0.803] | 0.5488 [0.504; 0.593] | 0.5263 [0.480; 0.572] |
-| Banzhaf + random (B7) | 0.7541 [0.717; 0.791] | 0.5882 [0.545; 0.632] | 0.5398 [0.499; 0.580] |
-| Banzhaf + Shapley (B8) | 0.7725 [0.737; 0.808] | 0.5723 [0.528; 0.616] | 0.5243 [0.482; 0.567] |
-| Banzhaf + Banzhaf (B9) | 0.7464 [0.711; 0.782] | 0.5724 [0.529; 0.616] | 0.5275 [0.484; 0.571] |
+| in-MUS + Shapley (B2) | 0.7777 [0.755; 0.801] | 0.5209 [0.496; 0.546] | **0.4697 [0.444; 0.496]** |
+| in-MUS + Banzhaf (B3) | 0.7826 [0.759; 0.806] | 0.5343 [0.509; 0.560] | 0.4902 [0.464; 0.516] |
+| Shapley + random (B4) | 0.8063 [0.785; 0.828] | 0.5687 [0.543; 0.594] | 0.5203 [0.495; 0.545] |
+| **Shapley + Shapley (B5)** | 0.7931 [0.771; 0.816] | 0.5429 [0.517; 0.568] | **0.4990 [0.473; 0.525]** |
+| Shapley + Banzhaf (B6) | 0.8142 [0.793; 0.836] | 0.5563 [0.531; 0.582] | 0.5084 [0.482; 0.535] |
+| Banzhaf + random (B7) | 0.8140 [0.793; 0.835] | 0.5891 [0.564; 0.615] | **0.5320 [0.507; 0.557]** |
+| Banzhaf + Shapley (B8) | 0.8123 [0.791; 0.834] | 0.5643 [0.539; 0.590] | 0.5217 [0.496; 0.547] |
+| Banzhaf + Banzhaf (B9) | 0.8005 [0.779; 0.822] | 0.5477 [0.522; 0.573] | 0.5037 [0.478; 0.530] |
 
-Paper for comparison (Table 2, overall over 8 ontologies): 0.95 / 0.76 / 0.77 for
-Shapley+Shapley, and it is stated to be statistically significantly better.
+Paper for comparison (Table 2, overall): 0.95 / 0.76 / 0.77 for Shapley+Shapley,
+reported as statistically significantly better.
 
-Interpretation, stated carefully:
+Bold = CI strictly on one side of 0.5. Against the default weakening baseline (A3),
+using the paper's own criterion (lower CI bound > 0.5):
 
-- By the paper's own criterion (**lower CI bound > 0.5**) **no arm qualifies** on this
-  partial set. The published improvement is gone.
-- B5 vs the default weakening baseline is `0.4954`, i.e. the point estimate is *below*
-  0.5: the corrected Shapley repair retains slightly less information than the baseline.
-  On three ontologies this is not yet significant at 95% (the CI straddles 0.5), so the
-  accurate statement is "no evidence of improvement, point estimate below the
-  baseline". B2's interval `[0.414, 0.501]` is the closest to significantly worse.
-- Runtime went up as expected: overall mean per trial `A3 = 529 ms`, `B5 = 3067 ms`.
+- **B2 is significantly worse** (0.4697, CI [0.444, 0.496]) — the upper bound is
+  below 0.5.
+- **B5, the paper's headline arm, is at parity**: 0.4990, CI [0.473, 0.525]. Published
+  0.77; now indistinguishable from the baseline it claims to beat.
+- **B7 (Banzhaf bad axiom + random weakening) is the only arm significantly better**
+  than the baseline: 0.5320, CI [0.507, 0.557].
+- Against removal (A1) and MCS removal (A2) every arm is still better, so the
+  weakening-based repairs do retain more information than removal. That part of the
+  paper stands.
 
-Caveats that must be resolved before comparing to Table 2:
+The ordering is monotone and consistent across all three bad-axiom policies (§7):
 
-- Only 3 of 8 ontologies, and they are the three smallest.
+| bad axiom rule | random weakening | Banzhaf weakening | Shapley weakening |
+| --- | --- | --- | --- |
+| in-MUS (= baseline A3) | 0.500 (by definition) | 0.4902 | **0.4697** |
+| Shapley | 0.5203 | 0.5084 | 0.4990 |
+| Banzhaf | **0.5320** | 0.5217 | 0.5037 |
+
+Reading down a column: using a power index on the *weakening* is always worse than
+random, in the same order everywhere (Shapley worst). Reading across: using a power
+index on the *bad axiom* helps slightly, Banzhaf more than Shapley. The two uses of the
+index have opposite effects, and the paper's configuration (both) cancels them out.
+
+Runtime (overall mean per trial, n = 800): A1 199 ms, A3 930 ms, B2 6,147 ms,
+B3 3,854 ms, B4 9,941 ms, **B5 12,280 ms**, B6 10,760 ms, B7 8,042 ms, B8 11,533 ms,
+B9 10,044 ms, A2 6,688 ms. B5 is 13× the baseline. The paper's "less than 20 seconds
+for ontologies up to 350 axioms" survives only in the loosest sense, and the corrected
+estimator dominates the cost.
+
+Caveats that must be resolved before a like-for-like comparison with Table 2:
+
 - The corpus is **not** exactly the paper's preprocessing: this folder gives HOM 133
   axioms vs 106 in Table 1, OGR 72 vs 82, CO-WHEAT 401 vs 377, XEO 303 vs 329
   (ELIG 74 = 74, BCTT 201 vs 207, PE 233 vs 229, TAXRANK 136 vs 137). Confirm which
-  files back Table 1 before drawing conclusions.
-- HOM had 11 timeouts, all in B arms (B5 5, B9 3, B8 2, B6 1); only successful trials
-  are analysed.
+  files back Table 1 before quoting these differences as corrections.
+- 28 of 828 trials timed out (TAXRANK 13, HOM 11, XEO 4), all in B arms; only
+  successful trials are analysed, so the B arms are measured on a slightly easier
+  subset.
 
 ---
 
@@ -333,6 +356,18 @@ Two misalignments, both masked by the degenerate estimator:
 
 Both objectives optimise *responsibility for inconsistency*; IIC measures *entailments
 preserved*. On these ontologies they appear anti-correlated.
+
+**Direct evidence (full run, §6).** The corrected estimator gives a clean 3×3 grid of
+bad-axiom rule × weakening rule. Within every bad-axiom family the weakening policy
+orders identically — random best, then Banzhaf, then Shapley (e.g. in-MUS: 0.500 /
+0.4902 / 0.4697; Shapley: 0.5203 / 0.5084 / 0.4990; Banzhaf: 0.5320 / 0.5217 / 0.5037).
+That is a monotone effect of the weakening objective, not sampling noise, and it
+matches the prediction of point (1). The bad-axiom side shows the opposite sign: with
+random weakenings, in-MUS 0.500 → Shapley 0.5203 → Banzhaf 0.5320, only the last being
+significantly above 0.5.
+
+Still to confirm for (1): the rank correlation between a candidate weakening's index
+and its information loss $d(\varphi,\varphi')$ on a sample of steps.
 
 ---
 
@@ -505,8 +540,9 @@ for it, and proactive disclosure is strongly to the authors' credit.
 
 - Confirm which input files back Table 1 of the paper (the current
   `ontologies.old/inconsistent` differs on HOM, OGR, CO-WHEAT, XEO).
-- Finish `old8-fixed-K1` (5 ontologies outstanding) and then run the pre-fix control
-  (`old8-broken-K1`) for an apples-to-apples A/B on the estimator alone.
+- Run the pre-fix control (`old8-broken-K1`, using `--lib-dir lib-prefix` as in §9.4)
+  for an apples-to-apples A/B on the estimator alone; `old8-fixed-K1` is complete
+  (8/8, 800 trials) and its results are in `data/results-old8-fixed-K1/`.
 - Verify the monotonicity claim of §7 empirically (rank correlation between a weakening's
   power-index score and its information loss) before building P1/P2 on it.
 - Decide whether the follow-up reports the corrected negative result alone or together
