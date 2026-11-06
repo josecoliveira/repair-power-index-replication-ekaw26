@@ -164,18 +164,37 @@ always tie.
 * Still valid: A1/A2/A3 (no power index involved), the corpus build statistics,
   the two minimal reproducers in this folder, and the 17 genuine empty-`Phi` cases.
 
-## 9. The published results are at risk
+## 9. The published results were produced by the same defective path (CONFIRMED)
 
-The paper's own implementation note describes exactly this Monte Carlo + 50-sample
-adaptive routine, and `OntologyRepairBuilder.withPowerIndex` (used by the paper's
-`RepairWithPowerIndexes` app) wires exactly these two selectors. The defect was
-introduced on 2026-05-13 (`computeScoresAdaptive` / `sampleTargetsInParallel`),
-before the repair-strategy refactor of 2026-05-28. On the paper's Example 3 the
-implementation selects `RaiseWelfare(Brazil)`, not the reported `RaiseWages(Brazil)`
-with value 0.83, and 0.83 is not obtainable from the routine at all (it returns 0
-for every axiom). Action item: confirm which build produced the published numbers;
-if it contained this routine, the published Shapley-guided results need to be
-re-examined.
+Checked against the version used for the paper's results,
+`0ab066b26f223d1dcf4c8a88ebdea5abc287e2b2` (2026-05-23, repo
+`josecoliveira/ontologyutils-ekaw26`). The scoring calls are the same:
+
+| element | 0ab066b2 (paper) | HEAD |
+|---|---|---|
+| bad-axiom scoring | `OntologyRepairWithPowerIndexes.java:281` `computeScoresAdaptive(currentAxioms, currentAxioms, 50, 1000, false)` | `PowerIndexBadAxiomSelector.java:43` `computeScoresAdaptive(current, current, chunkSize, maxSamples, false)` |
+| weaker scoring | `OntologyRepairWithPowerIndexes.java:264` `computeScoresAdaptive(currentAxioms, weakenings, 50, 1000)` | `PowerIndexWeakerAxiomSelector.java:46` `computeScoresAdaptive(context, weakenings, ...)` |
+| sampler | `ShapleyInconsistencyValueApproximate.java:220-228`, `prefixBase` receives only non-targets | identical (`:227-235`) |
+| tie-break | `OntologyRepairWithPowerIndexes.java:284-290` `.max(...)` then `prettyPrintAxiomDL`; `:267-273` `.min(...)` | identical in both selectors (`:48`) |
+| empty weakenings | `:260-262` throws `IllegalStateException` | throws |
+
+The only changes to that file since the paper's commit are performance related
+(`-Dontologyutils.samplingThreads`, default 16 instead of 6, and an LRU cache
+replacing the unbounded `ConcurrentHashMap`); the sampling semantics and the
+`prefixBase` handling are unchanged.
+
+Consequences:
+
+* `FindBadAxiom` was, in the released code, `argmax` over a map in which every
+  entry is `0.0`, resolved by `prettyPrintAxiomDL`; `SelectWeakerAxiom` was the
+  analogous `argmin`. The paper's Alg. 2 was therefore not the procedure that
+  produced the published numbers.
+* The values reported in the paper's Example 3 (e.g. `0.83` for axiom 5) cannot
+  be produced by the released implementation, which returns `0.0` for every
+  axiom. They would be consistent with the *exact* Shapley implementation
+  (`SHAPLEY_EXACT`), not with the Monte Carlo path used in the experiments.
+* Action: the Shapley-guided results in the paper need to be re-examined /
+  re-run after fixing Defects A and B below.
 
 ## 10. Fixes
 
