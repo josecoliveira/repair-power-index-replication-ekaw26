@@ -7,6 +7,11 @@ available so the published configuration can be rebuilt and re-run.
 Audience: an engineer/agent with the repositories but **no access to the conversation
 this report came from**. Everything needed is stated here.
 
+> **Read §12 before acting on this document.** The correction applied in §5 fixed the
+> bad-axiom stage correctly but also changed the weakening stage, which was *not*
+> defective: §3.4 and §7 point 1 are superseded, and §5.2 is reverted. The re-run in §6
+> therefore does not measure the paper's weakening rule.
+
 ---
 
 ## 0. TL;DR
@@ -176,6 +181,11 @@ candidates included. Excluding every target makes the coalition empty whenever
 
 ### 3.4 The weakening arm is also wrong, more subtly
 
+> **Superseded by §12.** The game described below *is* the paper's game for weakenings,
+> so this section's premise is wrong; the weakening stage was correct in the published
+> build. Kept for the record, because the "most marginals are `0`" observation in the
+> last sentence is still true and still matters for tie-breaking.
+
 For weakenings, `targets = W ⊂ universe = context ∪ W`. The prefix therefore contains
 only a random subset of the *context*, never the other candidate weakenings. That is
 not the Shapley value in the game on the universe either: it ignores interactions among
@@ -228,6 +238,13 @@ for (OWLAxiom current : permutation) {
 
 ### 5.2 Banzhaf — draw the coalition over the whole universe, remove the target from it
 
+> **Reverted by §12.** Drawing the coalition over `axioms ∪ targets` makes a candidate
+> weakening a player in the game, which is not the paper's definition. The coalition
+> must be drawn over `axioms` only. The Shapley change in §5.1 needs the same
+> qualification. What survives from §5.1/§5.2 is the requirement that a target which
+> *is* part of `axioms` sees every predecessor in its prefix/coalition — that part is
+> correct and is kept.
+
 ```java
 Set<OWLAxiom> coalition = randomCoalition(orderedUniverse, random);   // each axiom w.p. 1/2
 for (OWLAxiom target : orderedTargets) {
@@ -272,6 +289,13 @@ Full suite after the fix: 2118 tests, 0 failures, 0 errors, `BUILD SUCCESS`.
 ---
 
 ## 6. What the fix did to the published claim (full re-run)
+
+> **Invalid for the weakening arms — see §12.** The run below scored the weakening
+> candidates in a game that contains the other candidates and the bad axiom, so every
+> `B` arm in the table differs from the paper in *two* respects, not one. Only the
+> bad-axiom effect is isolated here (`B1`→`B4`/`B7` with random weakening, and the
+> `A3` baseline, are the closest to usable). The 3×3 grid at the end of this section
+> must be re-measured.
 
 Run `old8-fixed-K1` on `ontologies.old/inconsistent` (the paper's 8 ontologies),
 `-n 100`, `-K 3`, `-t 8`, Openllet. **Complete: 8 of 8 ontologies, 800 successful
@@ -339,6 +363,11 @@ Caveats that must be resolved before a like-for-like comparison with Table 2:
 ---
 
 ## 7. Why the corrected method does *worse* (diagnosis, to be verified)
+
+> **Superseded by §12.** Both misalignments below are derived from the incorrect
+> shared-game weakening scores of §6, so point 1 and the "3×3 grid" argument do not
+> stand. Point 2 (bad axiom: `argmax` selects hubs) is not affected by §12 and remains
+> a live hypothesis.
 
 Two misalignments, both masked by the degenerate estimator:
 
@@ -542,8 +571,168 @@ for it, and proactive disclosure is strongly to the authors' credit.
   `ontologies.old/inconsistent` differs on HOM, OGR, CO-WHEAT, XEO).
 - Run the pre-fix control (`old8-broken-K1`, using `--lib-dir lib-prefix` as in §9.4)
   for an apples-to-apples A/B on the estimator alone; `old8-fixed-K1` is complete
-  (8/8, 800 trials) and its results are in `data/results-old8-fixed-K1/`.
+  (8/8, 800 trials) and its results are in `data/results-old8-fixed-K1/`. Note (§12.4)
+  that the useful control is the pre-fix build, which is degenerate at the bad-axiom
+  step but correct at the weakening step; `old8-fixed-K1` is not that control.
 - Verify the monotonicity claim of §7 empirically (rank correlation between a weakening's
   power-index score and its information loss) before building P1/P2 on it.
 - Decide whether the follow-up reports the corrected negative result alone or together
   with one of the P1–P5 policies.
+
+---
+
+## 12. Addendum — 2026-11-06: the weakening stage was never defective, and §5 broke it
+
+Written on the Windows machine after checking the definitions against the paper source
+(`main-flattened.tex`, EKAW 2026 camera-ready).
+
+### 12.1 The paper fixes both games explicitly
+
+| Stage | Paper | Line |
+| --- | --- | --- |
+| `FindBadAxiom` | `argmax_{φ ∈ O} S_φ(O)` | `main-flattened.tex:296` |
+| `SelectWeakerAxiom` | `argmin_{φ' ∈ Φ\{φ_bad}} S_{φ'}(O \ {φ_bad} ∪ {φ'})` | `main-flattened.tex:299` |
+
+Prose to the same effect: *"the Shapley inconsistency value of each weakening
+`φ' ∈ Φ_weaker` with respect to its candidate ontology `O \ {φ_bad} ∪ {φ'}`"*
+(`:287`) and *"`SelectWeakerAxiom` also needs the ontology `O` as input to compute the
+Shapley inconsistency value of each weakening with respect to the candidate ontology
+`O \ {φ_bad} ∪ {φ'}`"* (`:289`). The definition `S_φ(O)` (`:269`) quantifies over
+subontologies of one fixed universe, so the game is `N = O` for bad axioms and
+`N = O \ {φ_bad} ∪ {φ'}` — a **different game per candidate** — for weakenings.
+
+Consequences, in the form of three rules the implementation must satisfy:
+
+- **R1** every target is scored in `axioms ∪ {target}`, so a batch call must agree with
+  `PowerIndex.computeScore(axioms, target)` — this is also the contract that
+  `PowerIndex.computeScores`' default implementation and its Javadoc state;
+- **R2** the bad-axiom call therefore uses `axioms = O`, and every axiom of `O` is a
+  player, so the prefix/coalition of an axiom must contain *all* its predecessors —
+  this is the part of §5 that is correct;
+- **R3** the weakening call must use `axioms = O \ {φ_bad}` and no candidate may be a
+  player of another candidate's game.
+
+### 12.2 §3.4 and §7 point 1 are wrong: the published weakening stage was correct
+
+The published build (`0ab066b`) routes its experiments through
+`OntologyRepairWithPowerIndexes` (`apps/SingleTrialExperiment.java:createPowerIndexRepair`,
+no strategy classes existed then), and that class already scored weakenings on
+`currentAxioms \ {badAxiom}` (`axiomSetWithoutBadAxiom`).
+
+In the pre-fix batched sampler, for `targets ∩ axioms = ∅`, `prefixBase` accumulated
+only non-target axioms. A target's position in a permutation of
+`universe = axioms ∪ targets` is uniform, so the set of non-target axioms preceding it
+is a **uniform random subset of `axioms`**, and the estimator is exactly the Shapley
+marginal of that candidate in `axioms ∪ {φ'}`. Same argument for
+`randomCoalitionExcludingTargets` and Banzhaf. With `axioms = O \ {φ_bad}` this is the
+paper's game, by R1.
+
+So in the published build:
+
+- the **bad-axiom stage was defective** (all scores `0.0`, alphabetical tie-break) —
+  §3.1–3.3 stand;
+- the **weakening stage was correct** per the paper — §3.4 and §7 point 1 do not;
+- the published Table 2 still measures a tie-break at the bad-axiom step, so §10's
+  reporting requirement is unchanged: one claim in the record is unsupported.
+
+One nuance from §3.4 survives and should be measured, not asserted: with the drastic
+value on a mostly-consistent `O \ {φ_bad}`, most weakening marginals are `0`, so
+`argmin` is frequently decided by the alphabetical tie-break too. The paper's own
+Example 3 selects a weakening whose value is `0.00`. That is a property of `I_d` plus
+`argmin`, not an implementation defect. Report the tie fraction per step.
+
+### 12.3 What `0c03114` actually did, and the corrected patch
+
+`0c03114` fixed the bad-axiom stage (R2) but, in the same change, made both samplers
+draw the permutation/coalition over `axioms ∪ targets`. With `targets = Φ_weaker` that
+violates R3: each candidate becomes a player in its siblings' game, the score stops
+depending only on the candidate and the ontology, `Σ_i φ_i = v(N) − v(∅)` over that
+game must be shared with the context *and* the siblings, and the approximate arm stops
+agreeing with the exact arm (which goes through the interface default →
+`computeScore` → per-target game).
+
+The corrected patch keeps R2 and enforces R1/R3:
+
+- `ShapleyInconsistencyValueApproximate.sampleTargetsInParallel` samples permutations
+  of the **context**; targets that belong to the context take their prefix from the
+  permutation (bad-axiom case), and every other target is inserted at a uniformly drawn
+  cut of that permutation, which is a uniform permutation of `axioms ∪ {target}`
+  (weakening case);
+- `BanzhafInconsistencyValueApproximate.sampleTargetsInParallel` draws the coalition
+  over the context only and uses `coalition \ {target}` as the base, which is uniform
+  over `(axioms ∪ {target}) \ {target}` in both cases;
+- `PowerIndexWeakerAxiomSelector` removes the bad axiom from the scoring context, so the
+  experiments' path also uses `O \ {φ_bad}` (it was passing `refutableAxioms()`, which
+  still contains `φ_bad`; `OntologyRepairWithPowerIndexes` already did this correctly);
+- the Javadoc of `PowerIndex.computeScores`/`computeScoresAdaptive` and of both
+  approximate classes now states R1.
+
+Regression tests (`batchScoresUseTheGameOfEachTargetAlone`, one per index) use a
+two-axiom context in which the candidates are harmless alone: the batch must return
+exactly `0`, whereas the shared game returns `1/2`. A second assertion checks
+`batch == computeScore` and the analytic value (`1/3` Shapley, `1/4` Banzhaf). Targeted
+suite after the change: 38 tests, 0 failures.
+
+Each batch sample still costs two reasoner calls per candidate, so the correction does
+not change the asymptotic cost of a step.
+
+### 12.4 The §6 re-run is invalid for the weakening arms
+
+`old8-fixed-K1` was produced with `0c03114` *and* with the strategy selectors, i.e. its
+weakening candidates were scored in `O ∪ Φ_weaker` with `φ_bad` still a player. Every
+`B` arm in §6 therefore differs from the paper in two independent ways. In particular
+the monotone "random > Banzhaf > Shapley" ordering across weakening policies in §6 and
+§7 — the main diagnostic argument of the report — is an artefact of that game and must
+be re-measured. The bad-axiom conclusion is not affected.
+
+What this means for the correction:
+
+- the conclusion "Shapley guidance does not beat the default weakening baseline as
+  published" still stands, because the published bad-axiom step was a tie-break;
+- but the *magnitude* and any statement about the weakening rule need a clean re-run
+  with the paper's game — see 12.5;
+- §7 point 2 (bad axiom `argmax` selects hubs) and §8 (P1–P5) remain open hypotheses.
+
+### 12.5 The clean re-run
+
+Run id `old8-paperdef-K1`, on the Windows machine
+(`C:\Users\josecoliveira\projects\ekaw26\ontologyutils`), with the jar built from the
+corrected patch:
+
+```bash
+cd repair-power-index-replication-ekaw26
+# jar: ../target/shaded-ontologyutils-0.1.0.jar -> lib/shaded-ontologyutils-0.1.0.jar
+#      (previous jar backed up in lib/backup/)
+python -m cli.run_trials_parallel --run-id old8-paperdef-K1 \
+  -n 100 -K 2 -t 8 --java-mem "-Xms2g -Xmx5g -Xss8m" --notify
+```
+
+Corpus: `ontologies/inconsistent` (the same 8 ontologies; `elig` = 74 axioms confirmed
+by the classifier). `-K 2 -t 8` instead of `-K 3 -t 8` because the machine has 16
+logical cores and 15.3 GB RAM; use `-K 3 -t 8` only on a machine with ≥ 24 cores and
+≥ 20 GB. Progress in `data/data-old8-paperdef-K1/`, interim report in
+`data/results-old8-paperdef-K1/combined_report.md`, Telegram notifications on.
+
+Before any of this the Python environment had to be rebuilt: the package's `.venv` was
+a Linux venv created in `/workspaces/...` and could not run on Windows. Recreate it with
+`python -m venv .venv` and `python -m pip install -r requirements.txt`; `requests` and
+`rich` are enough for the notifier and the runner, the full set is needed because
+`analysis.orchestrator` imports `analysis.analyzer` (numpy/pandas/scipy/statsmodels).
+
+Also fixed while preparing the run: `.env` contained `TELEGRAM_CHAT_ID=123456789`, a
+placeholder, so the notifier failed with `Bad Request: chat not found`. The real ID is
+obtained with `python -m cli.telegram_notify chat-id` (the bot is `@jcolabwatcherbot`
+and must have received a message first).
+
+### 12.6 Residual deviations from the paper (minor, unchanged)
+
+- `O` in the code is `ontology.refutableAxioms()`; static axioms are players in no
+  coalition. The paper's `O = {T, A}`. Consistent across the exact and approximate
+  indices, but worth one sentence in an implementation section.
+- `main-flattened.tex:296` writes `argmax_{φ ∈ O'}` — presumably a typo for `O`.
+- The paper's stopping rule is "same top 5 **and** bottom 5 in two consecutive
+  samplings" (§4 of the paper); the code compares only the end of the ranking that
+  decides the selection. Sample-count effect only.
+- The adaptive stopping rule inspects the sampled values, so the returned averages are
+  not unbiased estimates of `S_φ`; they are usable for ordering, not to be reported as
+  estimates with sampling error.
