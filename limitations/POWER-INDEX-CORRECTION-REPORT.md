@@ -791,3 +791,106 @@ and must have received a message first).
 - The adaptive stopping rule inspects the sampled values, so the returned averages are
   not unbiased estimates of `S_φ`; they are usable for ordering, not to be reported as
   estimates with sampling error.
+
+---
+
+## 13. What remains true of the published claim — 2026-11-07
+
+All figures below are from `publication-K1` (§6.1): corpus identical to Table 1,
+estimator `c2d5b2e`, Openllet, 8 ontologies, 800 trials, 95% CI, n = 800.
+
+### 13.1 Verdict per claim
+
+| # | claim in the paper | status | evidence |
+| --- | --- | --- | --- |
+| 1 | the Shapley inconsistency value, and using power indexes to guide repair, is formally sound | **holds** | untouched by the defect; §3.2 |
+| 2 | the Monte Carlo estimator with 50+50 adaptive sampling implements that definition | **only now** | the published build did not (§3.1); `c2d5b2e` does |
+| 3 | Example 3 illustrates the mechanism | **holds** | exact Shapley, reproduces exactly (§4) |
+| 4 | power-index repair preserves much more information than removal | **holds, strong** | B5 0.8025 vs published 0.95 |
+| 5 | …than MCS removal | **holds, weaker** | B5 0.5682 vs published 0.76 |
+| 6 | …than the default weakening baseline, overall IIC **0.77** | **direction holds, number does not** | B5 0.5447 [0.520; 0.570]; significant, about half the published size |
+| 7 | selecting **both** the bad axiom and the weakening by Shapley values is what produces the improvement | **not supported** | 13.2: the weakening carries it, the bad-axiom index does not measurably contribute |
+| 8 | the improvement is uniform across ontologies | **false** | co-wheat 0.4288 [0.360; 0.498], significantly worse than the baseline |
+| 9 | runtime is practical; "less than 20 seconds … up to 350+ axioms" | **broadly holds, not literally** | 13.3: xeo 47 s, co-wheat 20 s; same order as Table 3 |
+
+### 13.2 The weakening selection carries the effect; the bad-axiom selection does not
+
+Mean IIC against the default weakening baseline, by stage:
+
+| bad axiom rule | random weakening | Shapley weakening | Banzhaf weakening |
+| --- | --- | --- | --- |
+| in-MUS (= baseline) | 0.500 (by definition) | 0.5528 [0.528; 0.578] | 0.5513 [0.527; 0.576] |
+| Shapley | 0.5056 [0.481; 0.530] | 0.5447 [0.520; 0.570] | 0.5509 [0.526; 0.576] |
+| Banzhaf | 0.5025 [0.478; 0.527] | 0.5584 [0.533; 0.584] | 0.5673 [0.542; 0.592] |
+
+- **Down a column** (effect of the weakening index, bad axiom held fixed): +0.04 to
+  +0.06, every interval clear of 0.5.
+- **Across a row** (effect of the bad-axiom index, weakening held fixed): +0.003 to
+  +0.02, every interval overlapping 0.5. With n = 800 the CI half-width is about
+  ±0.025, so an effect of 0.01 would be undetectable; "no evidence that it helps" is
+  the correct statement, not "it has no effect".
+
+This inverts the narrative of the paper, which is *identify the axiom responsible for
+the inconsistency, then weaken it*: the discriminating decision is which replacement to
+install, not which axiom to blame.
+
+### 13.3 Runtime (B5, per ontology) against Table 3
+
+| ontology | this run (ms) | Table 3, Shapley column (ms) |
+| --- | --- | --- |
+| elig | 1,841 | 10,458 |
+| ogr | 1,116 | 1,656 |
+| hom | 2,331 | 2,391 |
+| taxrank | 3,278 | 8,764 |
+| bctt | 5,529 | 2,835 |
+| pe | 9,748 | 6,625 |
+| xeo | 47,237 | 57,623 |
+| co-wheat | 20,016 | 15,546 |
+
+Overall mean 11,387 ms against a baseline of 997 ms: about 11×. Same order as the
+published figures (sometimes faster, sometimes slower), so the feasibility claim stands
+and the "under 20 s" phrasing does not: xeo exceeds it in both the published run and
+this one.
+
+### 13.4 The negative outlier, and what it does to §7
+
+`co-wheat` is significantly worse than the baseline for B5 (0.4288 [0.360; 0.498]),
+while the published table had no such case. Two consequences:
+
+- The method is **not uniformly beneficial**, and a per-ontology analysis (MUS structure,
+  number of candidate weakenings, tie rate) becomes a real research question rather
+  than a footnote.
+- **§7 point 1 does not survive this run.** It predicted that minimising the power index
+  of a weakening selects the most destructive replacement; with the corrected game the
+  index in fact helps. How much of the gain comes from the score ordering, and how much
+  from eliminating candidates that fail to repair (which now score above zero), is not
+  measured. The concrete diagnostic is the **tie fraction at weakening steps** together
+  with the rank correlation between candidate score and information loss
+  $d(\varphi,\varphi')$ — neither is recorded yet.
+
+### 13.5 Consequences: correction versus follow-up
+
+**Correction** (for the version of record): claims 2, 6, 8, 9 — the implementation did
+not compute the index as described; with the corrected code the advantage over the
+default weakening baseline is 0.54 rather than 0.77 and is not uniform; the runtime
+phrasing needs adjusting.
+
+**Follow-up**: claim 7, the mechanism. The supported statement is *choosing the
+weakening by power index improves information retention over random weakening by about
+4–6 IIC points at roughly 2× the runtime; choosing the bad axiom by power index does
+not measurably help*. That is smaller but cleaner, and it comes with a reusable
+estimator semantics (`axioms ∪ {target}` per candidate), regression tests, and a
+negative outlier worth explaining.
+
+### 13.6 Still open
+
+- **Reasoner.** All figures here are Openllet; the paper used FaCT++. The erratum needs
+  the same run on the FaCT++ machine, otherwise the difference can be attributed to the
+  reasoner.
+- **Control.** The pre-fix jar on `ontologies.publication` has not been run. Until it
+  is, "the published 0.77 came from the defective code" rests on code analysis plus the
+  `old8-fixed-K1` comparison, not on a like-for-like number.
+- **Power.** The bad-axiom question needs many more trials, or a targeted experiment
+  with a strong bad-axiom baseline and the weakening fixed.
+- **Generality.** Eight ontologies from one preprocessing pipeline; the heterogeneity
+  argues for a larger corpus before any universal claim.
