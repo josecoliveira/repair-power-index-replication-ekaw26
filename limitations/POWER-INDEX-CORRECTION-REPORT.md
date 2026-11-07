@@ -31,12 +31,15 @@ this report came from**. Everything needed is stated here.
    build, unchanged.
 4. The published numbers are genuine outputs of that code and reproduce, but they
    measure the tie-break policy, not the power index.
-5. A fix is prepared (`0c03114` on branch `fix/power-index-adaptive-sampling` of the
-   outer repo). With the fix, the **full** re-run (8 ontologies, 800 trials) gives
-   **0.499 against the default weakening baseline instead of 0.77** for the paper's
-   arm — parity, not an advantage; one arm is **significantly worse** (in-MUS +
-   Shapley weakening, 0.4697) and one **significantly better** (Banzhaf bad axiom +
-   random weakening, 0.5320). All arms still beat removal and MCS removal.
+5. A fix is prepared (`0c03114`, then `c2d5b2e`, on branch
+   `fix/power-index-adaptive-sampling` of the outer repo). On the paper's own corpus
+   (`ontologies.publication`, axiom counts identical to Table 1; 8 ontologies, 800
+   trials) the paper's arm gives **0.5447 [0.520, 0.570] against the default weakening
+   baseline instead of 0.77** — significantly better, but a much smaller effect; six of
+   the eight arms are significantly above 0.5, none significantly below. Against
+   removal 0.80, against MCS removal 0.57. An intermediate state (estimator fixed but
+   the weaker-axiom selector still scoring against an inconsistent context) gave parity
+   or worse; the second fix is what restored the effect.
 6. The plausible reason is objective misalignment, not sampling noise (see §8).
    Candidate replacement policies are listed there.
 
@@ -295,7 +298,59 @@ Full suite after the fix: 2118 tests, 0 failures, 0 errors, `BUILD SUCCESS`.
 > `B` arm in the table differs from the paper in *two* respects, not one. Only the
 > bad-axiom effect is isolated here (`B1`→`B4`/`B7` with random weakening, and the
 > `A3` baseline, are the closest to usable). The 3×3 grid at the end of this section
-> must be re-measured.
+> must be re-measured — done in **6.1** below.
+
+### 6.1 `publication-K1` — the clean re-run (estimator `c2d5b2e`)
+
+Run on `ontologies.publication` (the eight ontologies taken from the published branch;
+the classifier reports bctt 207, co-wheat 377, elig 74, hom 106, ogr 82, pe 229,
+taxrank 137, xeo 329 — **identical to Table 1**), jar built from `c2d5b2e`, `-n 100`,
+`-K 3`, `-t 8`, Openllet. 800 successes in 801 attempts (one memory limit on elig) in
+22,151 s (6.2 h).
+
+Mean IIC and 95% CI, overall, n = 800 (bold: CI strictly above 0.5 vs A3):
+
+| arm | vs removal (A1) | vs MCS removal (A2) | vs default weakening (A3) |
+| --- | --- | --- | --- |
+| in-MUS + Shapley (B2) | 0.8064 | 0.5760 | **0.5528 [0.528; 0.578]** |
+| in-MUS + Banzhaf (B3) | 0.7980 | 0.5678 | **0.5513 [0.527; 0.576]** |
+| Shapley + random (B4) | 0.7806 | 0.5259 | 0.5056 [0.481; 0.530] |
+| **Shapley + Shapley (B5)** | 0.8025 | 0.5682 | **0.5447 [0.520; 0.570]** |
+| Shapley + Banzhaf (B6) | 0.8143 | 0.5735 | **0.5509 [0.526; 0.576]** |
+| Banzhaf + random (B7) | 0.7777 | 0.5351 | 0.5025 [0.478; 0.527] |
+| Banzhaf + Shapley (B8) | 0.8207 | 0.5725 | **0.5584 [0.533; 0.584]** |
+| Banzhaf + Banzhaf (B9) | 0.8228 | 0.5902 | **0.5673 [0.542; 0.592]** |
+
+Against the published figures (0.95 / 0.76 / 0.77 for Shapley+Shapley):
+
+- **The method works; the effect is real but roughly halved.** B5 gives 0.5447 against
+  the baseline it claims to beat (published 0.77), 0.8025 against removal (0.95) and
+  0.5682 against MCS removal (0.76). Direction preserved, magnitude much smaller.
+- **Six of eight arms are significantly better** than the default weakening baseline;
+  **none is significantly worse**. Best: B9 0.5673, B8 0.5584, B2 0.5528.
+- Every arm remains far better than removal (0.78–0.82) and better than MCS removal
+  (0.53–0.59), most significantly.
+- **Heterogeneity, absent from the published table.** For B5 per ontology: ogr 0.6162,
+  bctt 0.6149, hom 0.5787, taxrank 0.5522, pe 0.5491, xeo 0.5263, elig 0.4914
+  (parity), **co-wheat 0.4288 [0.360; 0.498] — significantly worse than the baseline**.
+- **The weakening stage now helps, reversing §6.2.** Within each bad-axiom family the
+  order is random < Shapley ≈ Banzhaf: in-MUS 0.500 (by definition) < B3 0.5513 ≤ B2
+  0.5528; with a Shapley bad axiom, B4 0.5056 < B5 0.5447 < B6 0.5509; with a Banzhaf
+  bad axiom, B7 0.5025 < B8 0.5584 < B9 0.5673. This is the empirical confirmation of
+  §12.2: the defect in the weakening stage was in the **selector** (candidates scored
+  against a context that still contained the axiom being replaced), not in the
+  estimator.
+
+Runtime (overall mean per trial): A1 176 ms, A3 997 ms, B2 3,571 ms, B3 2,370 ms,
+B4 14,154 ms, **B5 11,387 ms**, B6 12,393 ms, B7 10,500 ms, B8 8,479 ms, B9 8,539 ms,
+A2 7,428 ms. B5 is comparable to the published Shapley column of Table 3 (10,458 ms for
+elig), and 11× the baseline.
+
+Caveats: reasoner is Openllet rather than the published FaCT++, and the machine differs,
+so absolute values are not bit-identical to the paper; the comparison to Table 1 is now
+like-for-like in corpus and protocol.
+
+### 6.2 `old8-fixed-K1` — intermediate fix (superseded, invalid for the weakening arms)
 
 Run `old8-fixed-K1` on `ontologies.old/inconsistent` (the paper's 8 ontologies),
 `-n 100`, `-K 3`, `-t 8`, Openllet. **Complete: 8 of 8 ontologies, 800 successful
