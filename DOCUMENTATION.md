@@ -105,6 +105,12 @@ data/data-<run-id>/
 data/results-<run-id>/        written by the analysis
 ```
 
+The run id is a free-form label; nothing parses it. It names the two directories,
+tags every CSV row, is passed to the Java experiment and appears in the
+notifications. The examples use `<experiment>-K<K>t<t>` so that the label records
+how the run was launched, for instance `shapley-K3t8` for three trials in flight
+with eight sampling threads each.
+
 ---
 
 ## Analysis
@@ -234,17 +240,17 @@ Reproduce the paper's experiment:
 
 ```bash
 .venv/bin/python -m cli.run_trials_parallel \
-    --inconsistent-dir ontologies.publication --run-id shapley-K1 \
+    --inconsistent-dir ontologies.publication --run-id shapley-K3t8 \
     -n 100 -K 3 -t 8 \
     --removal-timeout 600 --weakening-timeout 600 \
     --power-index-timeout 600 --make-inconsistent-timeout 600
-.venv/bin/python -m cli.analyze_results data/data-shapley-K1 data/results-shapley-K1
+.venv/bin/python -m cli.analyze_results data/data-shapley-K3t8 data/results-shapley-K3t8
 ```
 
 Rebuild the report of a finished run without touching the trials:
 
 ```bash
-.venv/bin/python -m cli.analyze_results data/data-shapley-K1 /tmp/report
+.venv/bin/python -m cli.analyze_results data/data-shapley-K3t8 /tmp/report
 ```
 
 Explore the arm grid on a subset of the corpus:

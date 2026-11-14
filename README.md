@@ -44,14 +44,14 @@ No Maven build is needed: the trials run against the jar in `lib/`.
 One ontology, in the foreground:
 
 ```bash
-.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies.publication --run-id shapley-K1 -n 100
+.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies.publication --run-id shapley-K3t8 -n 100
 ```
 
 The whole corpus, with three trials in flight:
 
 ```bash
 .venv/bin/python -m cli.run_trials_parallel \
-    --inconsistent-dir ontologies.publication --run-id shapley-K1 \
+    --inconsistent-dir ontologies.publication --run-id shapley-K3t8 \
     -n 100 -K 3 -t 8 \
     --java-mem "-Xms2g -Xmx6g -Xss8m" \
     --removal-timeout 600 --weakening-timeout 600 \
@@ -75,7 +75,7 @@ number the paper reports.
 ## Aggregate The Results
 
 ```bash
-.venv/bin/python -m cli.analyze_results data/data-shapley-K1 data/results-shapley-K1
+.venv/bin/python -m cli.analyze_results data/data-shapley-K3t8 data/results-shapley-K3t8
 ```
 
 The reports are written to `data/results-<run-id>/`:
