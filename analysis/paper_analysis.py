@@ -18,6 +18,7 @@ Outputs are written under `analysis/output/shapley-shapley`.
 from __future__ import annotations
 
 import math
+import os
 import re
 import sys
 from pathlib import Path
@@ -59,8 +60,15 @@ CSV_NAME_RE = re.compile(
 
 # The experiment writes one column per arm of its grid. The paper compares a
 # single arm against the three baselines, so those columns are renamed to the
-# canonical names used by the reports.
-ARM = "B5"
+# canonical names used by the reports. ``ONTOLOGYUTILS_B_REPAIRS`` selects a
+# different arm when it names exactly one; a grid of several arms is reported
+# through the paper's arm, because the reports have a single power-index column.
+_REQUESTED_ARMS = [
+    arm.strip()
+    for arm in os.environ.get("ONTOLOGYUTILS_B_REPAIRS", "").split(",")
+    if arm.strip()
+]
+ARM = _REQUESTED_ARMS[0] if len(_REQUESTED_ARMS) == 1 else "B5"
 IIC_COLUMNS = {
     "A1": "iic_power_vs_random",
     "A2": "iic_power_vs_not_in_largest_mcs",
