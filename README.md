@@ -20,8 +20,8 @@ lowest Shapley value in the game that its own replacement produces.
 ## Contents
 
 - `lib/shaded-ontologyutils-0.1.0.jar` — the Java implementation, already built.
-- `ontologies.publication/` — the eight ontologies of the paper, in the state the
-  experiment uses them.
+- `ontologies/` — the corpus of the paper: `cleanup/` and `original/` hold the
+  inputs, and `inconsistent/` the eight ontologies the trials run on.
 - `cli/run_trials.py`, `cli/run_trials_parallel.py` — trial runners.
 - `cli/analyze_results.py` — aggregates the trials into the published tables.
 - `analysis/` — the trial orchestration and the analysis pipeline.
@@ -44,14 +44,14 @@ No Maven build is needed: the trials run against the jar in `lib/`.
 One ontology, in the foreground:
 
 ```bash
-.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies.publication --run-id shapley-K3t8 -n 100
+.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies/inconsistent --run-id shapley-K3t8 -n 100
 ```
 
 The whole corpus, with three trials in flight:
 
 ```bash
 .venv/bin/python -m cli.run_trials_parallel \
-    --inconsistent-dir ontologies.publication --run-id shapley-K3t8 \
+    --inconsistent-dir ontologies/inconsistent --run-id shapley-K3t8 \
     -n 100 -K 3 -t 8 \
     --java-mem "-Xms2g -Xmx6g -Xss8m" \
     --removal-timeout 600 --weakening-timeout 600 \

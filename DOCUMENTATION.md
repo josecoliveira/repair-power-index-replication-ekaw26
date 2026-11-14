@@ -240,7 +240,7 @@ Reproduce the paper's experiment:
 
 ```bash
 .venv/bin/python -m cli.run_trials_parallel \
-    --inconsistent-dir ontologies.publication --run-id shapley-K3t8 \
+    --inconsistent-dir ontologies/inconsistent --run-id shapley-K3t8 \
     -n 100 -K 3 -t 8 \
     --removal-timeout 600 --weakening-timeout 600 \
     --power-index-timeout 600 --make-inconsistent-timeout 600
@@ -257,6 +257,6 @@ Explore the arm grid on a subset of the corpus:
 
 ```bash
 .venv/bin/python -m cli.run_trials_parallel_ablation \
-    --ontologies bctt,elig --inconsistent-dir ontologies.publication \
+    --ontologies bctt,elig --inconsistent-dir ontologies/inconsistent \
     --run-id grid-probe -n 10 -K 2 -t 8
 ```
