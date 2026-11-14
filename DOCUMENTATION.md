@@ -68,8 +68,9 @@ Same experiment, but several trials run concurrently. It accepts every option of
 | `--ontologies` | all | restrict the run to the named ontologies |
 
 Sizing advice: `-K` times `--java-mem` must stay well below the memory of the
-machine, and `-K` against `-t` matters more than either alone. `-K 3 -t 8` is a
-safe default on a 24-core machine; large `-K` with a large `-t` oversubscribes
+machine, and `-K` against `-t` matters more than either alone. One trial in flight
+with eight sampling threads is a safe choice on a single desktop; more trials in
+flight only pay off on many cores, and large `-K` with a large `-t` oversubscribes
 the CPUs and slows the run down.
 
 The run is resumable: passing the same `--run-id` skips the ontologies that
@@ -107,9 +108,8 @@ data/results-<run-id>/        written by the analysis
 
 The run id is a free-form label; nothing parses it. It names the two directories,
 tags every CSV row, is passed to the Java experiment and appears in the
-notifications. The examples use `<experiment>-K<K>t<t>` so that the label records
-how the run was launched, for instance `shapley-K3t8` for three trials in flight
-with eight sampling threads each.
+notifications. When it is omitted the run gets a timestamp, and that is the id to
+pass back with `--run-id` in order to resume the run.
 
 ---
 
@@ -240,17 +240,16 @@ Reproduce the paper's experiment:
 
 ```bash
 .venv/bin/python -m cli.run_trials_parallel \
-    --inconsistent-dir ontologies/inconsistent --run-id shapley-K3t8 \
-    -n 100 -K 3 -t 8 \
+    --inconsistent-dir ontologies/inconsistent -n 100 -K 1 -t 8 \
     --removal-timeout 600 --weakening-timeout 600 \
     --power-index-timeout 600 --make-inconsistent-timeout 600
-.venv/bin/python -m cli.analyze_results data/data-shapley-K3t8 data/results-shapley-K3t8
+.venv/bin/python -m cli.analyze_results
 ```
 
 Rebuild the report of a finished run without touching the trials:
 
 ```bash
-.venv/bin/python -m cli.analyze_results data/data-shapley-K3t8 /tmp/report
+.venv/bin/python -m cli.analyze_results data/data-<run-id> /tmp/report
 ```
 
 Explore the arm grid on a subset of the corpus:
@@ -258,5 +257,5 @@ Explore the arm grid on a subset of the corpus:
 ```bash
 .venv/bin/python -m cli.run_trials_parallel_ablation \
     --ontologies bctt,elig --inconsistent-dir ontologies/inconsistent \
-    --run-id grid-probe -n 10 -K 2 -t 8
+    -n 10 -K 1 -t 8
 ```

@@ -44,15 +44,14 @@ No Maven build is needed: the trials run against the jar in `lib/`.
 One ontology, in the foreground:
 
 ```bash
-.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies/inconsistent --run-id shapley-K3t8 -n 100
+.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies/inconsistent -n 100
 ```
 
-The whole corpus, with three trials in flight:
+The whole corpus:
 
 ```bash
 .venv/bin/python -m cli.run_trials_parallel \
-    --inconsistent-dir ontologies/inconsistent --run-id shapley-K3t8 \
-    -n 100 -K 3 -t 8 \
+    --inconsistent-dir ontologies/inconsistent -n 100 -K 1 -t 8 \
     --java-mem "-Xms2g -Xmx6g -Xss8m" \
     --removal-timeout 600 --weakening-timeout 600 \
     --power-index-timeout 600 --make-inconsistent-timeout 600
@@ -75,10 +74,11 @@ number the paper reports.
 ## Aggregate The Results
 
 ```bash
-.venv/bin/python -m cli.analyze_results data/data-shapley-K3t8 data/results-shapley-K3t8
+.venv/bin/python -m cli.analyze_results
 ```
 
-The reports are written to `data/results-<run-id>/`:
+With no arguments it takes the newest `data/data-*` directory and writes next to
+it, so the reports land in `data/results-<run-id>/`:
 
 | File | Content |
 |---|---|
@@ -90,9 +90,6 @@ The reports are written to `data/results-<run-id>/`:
 The decision rule is the one of the paper: the null hypothesis that the power
 index does not improve on a baseline is rejected when the lower bound of the
 95 % confidence interval of the mean improvement is greater than 0.5.
-
-`cli/analyze_results.py` with no arguments picks the newest `data/data-*`
-directory and writes next to it.
 
 ## Reading The Numbers
 
@@ -108,8 +105,7 @@ does.
 ## Reproduction Notes
 
 - Every trial runs the Java experiment in its own JVM; a run of the whole corpus
-  at 100 trials per ontology takes roughly 1.5 hours with `-K 3 -t 8` on 24
-  cores.
+  at 100 trials per ontology takes several hours.
 - A trial that exceeds a timeout is retried with a fresh seed and is counted in
   the outcome table, so `outcome_summary.csv` is part of the result.
 - The reports are regenerated from the CSVs alone, so they can be rebuilt
