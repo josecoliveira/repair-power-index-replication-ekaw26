@@ -1,28 +1,30 @@
 # Power Index Replication Package
 
-This repository is self-contained for reproducing the power-index experiments from the paper.
+This repository reproduces the power-index experiment of the paper *Guiding
+Ontology Repair with Axiom Weakening and Shapley Values* (EKAW 2026, LNAI 16897,
+pp. 208-223).
 
-It includes:
+The experiment compares one repair configuration against three baselines on the
+paper's corpus of eight inconsistent ontologies, 100 trials each. The
+configuration is **Shapley + Shapley**: the bad axiom is chosen by its Shapley
+value in the inconsistency game, and the replacement is the weakening with the
+lowest Shapley value in the game that its own replacement produces.
 
-- `lib/shaded-ontologyutils-0.1.0.jar`
-- `ontologies/inconsistent/*.owl`
-- `analysis/` — model layer: reusable computation modules
-  - `orchestrator.py` — experiment orchestration
-  - `parallel_orchestrator.py` — experiment orchestration with several trials in flight
-  - `analyzer.py` — analysis and report generation
-  - `preprocessor.py` — ontology preprocessing pipeline
-  - `classifier.py` — ontology classification
-  - `notifier.py` — optional Telegram progress notifications
-- `cli/` — view layer: thin CLI entry points
-  - `run_trials.py` — CLI for the experiment runner
-  - `run_trials_parallel.py` — CLI for the parallel experiment runner
-  - `analyze_results.py` — CLI for the analysis module
-  - `preprocess_ontologies.py` — CLI for the preprocessing pipeline
-  - `classify_ontologies.py` — CLI for ontology classification
-  - `classify_original_corpus.py` — CLI that classifies a raw ontology folder into a JSON manifest
-  - `build_nocleanup_corpus.py` — CLI that builds the ALC corpus without the cleanup stage
-  - `estimator.py` — CLI for complexity estimation
-  - `telegram_notify.py` — chat-ID discovery and notifier test helper
+| Arm | Repair |
+|---|---|
+| `A1` | random removal |
+| `A2` | not-in-largest-MCS removal |
+| `A3` | default weakening (in-MUS bad axiom + random weakening) |
+| power index | Shapley bad axiom + Shapley weakening |
+
+## Contents
+
+- `lib/shaded-ontologyutils-0.1.0.jar` — the Java implementation, already built.
+- `ontologies.publication/` — the eight ontologies of the paper, in the state the
+  experiment uses them.
+- `cli/run_trials.py`, `cli/run_trials_parallel.py` — trial runners.
+- `cli/analyze_results.py` — aggregates the trials into the published tables.
+- `analysis/` — the trial orchestration and the analysis pipeline.
 
 ## Requirements
 
@@ -30,388 +32,85 @@ It includes:
 - Python 3.10+
 - `pip`
 
-Install the Python dependencies from the repository root:
+```bash
+python -m venv .venv
+.venv/bin/pip install -r analysis/requirements.txt
+```
+
+No Maven build is needed: the trials run against the jar in `lib/`.
+
+## Run The Trials
+
+One ontology, in the foreground:
 
 ```bash
-python -m pip install -r requirements.txt
+.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies.publication --run-id shapley-K1 -n 100
 ```
 
-No Maven build is required for the replication scripts because they run against the bundled shaded jar.
-
-## Ontology folders
-
-`ontologies/` holds two parallel corpora: the paper's pipeline (`original` →
-`cleanup` → `alc` → `inconsistent`) and the same corpus built **without** the
-cleanup stage (`alc-nocleanup` → `inconsistent-nocleanup`).
-
-| Folder | Built by | Contents |
-|---|---|---|
-| `original/` | the BioPortal download | raw downloads, mixed serialisations, `owl:imports` intact |
-| `cleanup/` | stage 1 of `preprocess_ontologies.py` | lossy cleanup: annotations (including `rdfs:label`), data properties, declarations and non-SROIQ axioms removed; imports dropped |
-| `alc/` | stage 2 | verbatim **copies** of the cleanup files that pass the ALC gate |
-| `inconsistent/` | stage 3 | `MakeInconsistent` output for `alc/` |
-| `alc-nocleanup/` | `build_nocleanup_corpus.py` | verbatim copies of the **raw** originals that pass the ALC gate, labels intact |
-| `inconsistent-nocleanup/` | `build_nocleanup_corpus.py` | `MakeInconsistent` output for `alc-nocleanup/` |
-| `removed/` | manual archive | cleaned ontologies that were not usable (mostly ALC-gate rejects), kept for reference |
-
-The ALC gate is not a transformation: it classifies a file and copies it
-unchanged when its DL expressivity is one of `AL, ALC, ALE, EL, FL, FL0,
-FLMINUS`. The two `inconsistent*` folders are interchangeable for the runners,
-which select one with `--inconsistent-dir`.
-
-## CLI Reference
-
-### `preprocess_ontologies.py`
-
-Clean up and make ontologies inconsistent. Runs a 3-stage pipeline:
-1. **Cleanup** — `original/{name}.owl` → `cleanup/{name}.owl`
-2. **Classify & Filter** — `cleanup/{name}.owl` → `alc/{name}.owl` (ALC only)
-3. **MakeInconsistent** — `alc/{name}.owl` → `inconsistent/{name}.owl`
-
-Processes all ontologies in `ontologies/original/` by default.
-
-| Flag / Arg | Type | Default | Description |
-|---|---|---|---|
-| `ontologies` | `str [...]` | all | Ontology name(s) without `.owl` extension (e.g. `bctt co-wheat`). If omitted, all ontologies in `original/` are processed. |
-| `-v`, `--verbose` | flag | `False` | Print detailed progress and Java subprocess output. |
-| `--dry-run` | flag | `False` | Print the operations that would be performed without executing them. |
-| `--force` | flag | `False` | Re-process ontologies even if the output files already exist. |
-| `--java-mem` | `str` | `-Xms1g -Xmx8g -Xss8m` | JVM memory and stack options. |
-| `-j`, `--workers` | `int` | CPU count | Number of parallel workers. |
-| `--no-progress` | flag | `False` | Disable the live-progress display; fall back to simple log output. |
-| `--start-stage` | `int` (1–3) | `1` | Pipeline stage to start from: `1`=cleanup (default), `2`=classify/filter, `3`=make-inconsistent. |
-| `--timeout` | `int` | no timeout | Timeout in seconds for the MakeInconsistent stage. |
-
-**Examples:**
-```bash
-python cli/preprocess_ontologies.py
-python cli/preprocess_ontologies.py bctt elig
-python cli/preprocess_ontologies.py --verbose co-wheat
-python cli/preprocess_ontologies.py --dry-run --force
-python cli/preprocess_ontologies.py --workers 8 --start-stage 2
-python cli/preprocess_ontologies.py --start-stage 3 --timeout 600
-```
-
-### `classify_ontologies.py`
-
-Classify all ontologies across the `original/`, `cleanup/`, and `inconsistent/` folders using a Java reasoner (HermiT via the bundled shaded jar) and produce a markdown table with logical axiom counts and classification results.
-
-| Flag / Arg | Type | Default | Description |
-|---|---|---|---|
-| `-o`, `--output` | `Path` | `ontology_classification.md` | Output markdown file path. |
-| `--java-mem` | `str` | `-Xms1g -Xmx8g -Xss8m` | JVM memory and stack options. |
-| `--timeout` | `int` | `300` | Timeout per ontology in seconds. |
-| `-v`, `--verbose` | flag | `False` | Print detailed progress and Java subprocess output. |
-| `-j`, `--workers` | `int` | CPU count | Number of parallel workers. |
-| `--no-progress` | flag | `False` | Disable the live-progress display; fall back to simple log output. |
-| `--sort-by-axioms` | flag | `False` | Sort ontologies by axiom count (smallest first) instead of alphabetically. |
-
-**Examples:**
-```bash
-python cli/classify_ontologies.py
-python cli/classify_ontologies.py -o my_table.md
-python cli/classify_ontologies.py --verbose --java-mem '-Xms2g -Xmx8g'
-python cli/classify_ontologies.py --workers 8 --sort-by-axioms
-```
-
-### `classify_original_corpus.py`
-
-Classify every ontology in a folder and write a JSON manifest. This is how the
-ALC-suitable ontologies are located among the raw downloads, i.e. **without**
-running the lossy cleanup stage first.
-
-Each manifest entry records the axiom count, the number of concept names, the
-DL expressivity as printed by `ClassifyOntology`, and whether the ontology is
-ALC-suitable by the same rule the preprocessing pipeline uses
-(`analysis.preprocessor.is_alc_suitable`).
-
-When an ontology cannot be loaded because its `owl:imports` cannot be resolved,
-the file is retried with `-Dontologyutils.ignoreImports=true` and the entry is
-flagged `imports_missing`: the reported numbers then only cover the axioms in
-the file itself. These entries can be included or excluded later
-(see `build_nocleanup_corpus.py`).
-
-Big files are processed one at a time (biggest first) so they get a generous
-heap instead of competing with the many small ones. The manifest is written
-every `--checkpoint-every` ontologies and existing entries are skipped on
-restart, so an interrupted run can simply be started again; entries that failed
-are retried.
-
-| Flag / Arg | Type | Default | Description |
-|---|---|---|---|
-| `--ontologies-dir` | `Path` | `ontologies/original` | Folder with the ontologies to classify. |
-| `-o`, `--output` | `Path` | `original_classification.json` | JSON manifest to write. |
-| `--java-mem` | `str` | `-Xms1g -Xmx6g -Xss8m` | JVM options for the small ontologies. |
-| `--big-java-mem` | `str` | `-Xms2g -Xmx24g -Xss8m` | JVM options for the big ones, run one at a time. |
-| `--big-threshold-mb` | `int` | `40` | Files at least this large are classified sequentially. |
-| `-j`, `--workers` | `int` | `4` | Parallel workers for the small ontologies. |
-| `--timeout` | `int` | `900` | Timeout per ontology, in seconds. |
-| `--checkpoint-every` | `int` | `25` | Write the manifest every N classified ontologies. |
-| `--force` | flag | `False` | Re-classify ontologies already in the manifest. |
-
-**Examples:**
-```bash
-python -m cli.classify_original_corpus
-python -m cli.classify_original_corpus --big-threshold-mb 350 -j 5
-python -m cli.classify_original_corpus --ontologies-dir ontologies/alc -o alc.json
-```
-
-### `build_nocleanup_corpus.py`
-
-Build an ALC corpus straight from the raw ontologies, skipping the cleanup
-stage. Cleanup is lossy — it drops annotations (including `rdfs:label`), data
-properties, declarations and every axiom outside SROIQ — so this variant keeps
-every original axiom:
-
-1. **Copy** — `original/{name}.owl` → `alc-nocleanup/{name}.owl`, byte for byte.
-2. **MakeInconsistent** — `alc-nocleanup/{name}.owl` → `inconsistent-nocleanup/{name}.owl`,
-   with the same flags as the paper's pipeline.
-3. **Verify** — `CheckConsistency --basic` on every result; anything still
-   consistent, or inconclusive, is reported.
-
-The ontologies to build are taken from a manifest produced by
-`classify_original_corpus.py`. Ontologies whose `owl:imports` could not be
-resolved are skipped by default, because the cleanup stage dropped them as well
-(their content would be truncated to the local axioms); pass
-`--include-truncated` to keep them. A per-ontology report is written as JSON.
-
-The runners consume the result with
-`--inconsistent-dir ontologies/inconsistent-nocleanup`.
-
-| Flag / Arg | Type | Default | Description |
-|---|---|---|---|
-| `--manifest` | `Path` | `original_classification.json` | Classification manifest to read. |
-| `--source-dir` | `Path` | `ontologies/original` | Folder with the raw ontologies. |
-| `--alc-dir` | `Path` | `ontologies/alc-nocleanup` | Output folder for the ALC copies. |
-| `--inconsistent-dir` | `Path` | `ontologies/inconsistent-nocleanup` | Output folder for the inconsistent variants. |
-| `--report` | `Path` | `nocleanup_corpus_report.json` | JSON report to write. |
-| `--include-truncated` | flag | `False` | Also include ontologies with unresolved `owl:imports`. |
-| `--only-names` | `str` | all | Comma-separated subset of names to build. |
-| `--java-mem` | `str` | `-Xms1g -Xmx8g -Xss8m` | JVM options for the small ontologies. |
-| `--big-java-mem` | `str` | `-Xms2g -Xmx24g -Xss8m` | JVM options for the big ones, run one at a time. |
-| `--big-threshold-mb` | `int` | `40` | Files at least this large are processed sequentially. |
-| `-j`, `--workers` | `int` | `4` | Parallel workers. |
-| `--timeout` | `int` | `900` | Timeout per ontology, in seconds. |
-| `--skip-verify` | flag | `False` | Do not run `CheckConsistency` on the results. |
-| `--force` | flag | `False` | Rebuild outputs that already exist. |
-| `--dry-run` | flag | `False` | Only print the selected ontologies. |
-
-**Examples:**
-```bash
-python -m cli.build_nocleanup_corpus --dry-run
-python -m cli.build_nocleanup_corpus
-python -m cli.build_nocleanup_corpus --only-names BCTT,HOM --force
-```
-
-### `run_trials.py`
-
-Run round-robin single-trial Java experiments for all ontologies and collect A/B results comparing removal vs weakening repair strategies. The runner writes per-trial CSVs and logs under `data/data-<run-id>/`.
-
-| Flag / Arg | Type | Default | Description |
-|---|---|---|---|
-| **Trial control** | | | |
-| `-n`, `--n-trials` | `int` | `100` | Target number of successful trials per ontology. |
-| `--base-seed` | `int` | `13` | Base random seed. |
-| `--step` | `int` | `100` | Seed step between attempts. |
-| `--analysis-interval` | `int` | `1` | Run the interim analysis after every K completed ontologies; `0` disables interim analysis (the final analysis after the last ontology always runs). |
-| **Timeouts** | | | |
-| `--removal-timeout` | `int` | `300` | Removal repair timeout in seconds. |
-| `--weakening-timeout` | `int` | `300` | Weakening repair timeout in seconds. |
-| `--power-index-timeout` | `int` | `300` | Power index computation timeout in seconds. |
-| `--make-inconsistent-timeout` | `int` | `300` | Make-inconsistent timeout in seconds. |
-| **Paths** | | | |
-| `--inconsistent-dir` | `Path` | `ontologies/inconsistent/` | Directory containing inconsistent ontologies. |
-| `--lib-dir` | `Path` | `lib/` | Directory containing the shaded jar. |
-| `--data-dir` | `Path` | auto-generated | Output data directory. With `--run-id`, defaults to `data/data-<run-id>`. |
-| `--results-dir` | `Path` | auto-generated | Output results directory. With `--run-id`, defaults to `data/results-<run-id>`. |
-| **Run identity** | | | |
-| `--run-id` | `str` | auto (timestamp) | Run identifier. When resuming, point to an existing run ID to continue from where it left off. |
-| `--seed` | `int` | — | Explicit seed override. When used with `--run-id`, sets the base seed for the resumed run. |
-| **Notifications** | | | |
-| `--notify` | flag | auto | Force Telegram progress notifications on. Without it, notifications are enabled automatically when `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` resolve (environment or `.env` file). |
-| `--no-notify` | flag | — | Disable Telegram progress notifications for this run. |
-| **Miscellaneous** | | | |
-| `--java-mem` | `str` | `-Xms1g -Xmx8g -Xss8m` | JVM memory and stack options. |
-| `--dry-run` | flag | `False` | Print the effective configuration and exit without running any experiments. |
-| `n_trials_pos` | `int` | — | **[DEPRECATED]** Positional argument for backward compatibility. Use `-n` instead. |
-
-The runner uses the bundled jar in `lib/` and passes the same repair flags used in the paper:
-`--ontology`, `--seed`, `--run-id`, `--removal-timeout-secs`, `--weakening-timeout-secs`, `--power-index-timeout-secs`, `--make-inconsistent-timeout-secs`.
-
-**Examples:**
-```bash
-python cli/run_trials.py
-python cli/run_trials.py --dry-run
-python cli/run_trials.py -n 50
-python cli/run_trials.py -n 25 --base-seed 42 --step 50
-python cli/run_trials.py --removal-timeout 600 --weakening-timeout 600
-python cli/run_trials.py --run-id experiment-01
-python cli/run_trials.py --run-id experiment-01 --seed 13
-```
-
-#### Telegram progress notifications
-
-The runner can report progress to a Telegram chat. Messages are sent at
-milestones only — run start, each ontology start/completion, aborts, run end
-and crashes/interrupts — never once per trial. Sends are best-effort: a missing
-token or an unreachable network can never abort or slow down an experiment.
-
-Set up credentials in a git-ignored `.env` file at the replication package root
-(copy `.env.example`):
-
-```dotenv
-TELEGRAM_BOT_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
-TELEGRAM_CHAT_ID=123456789
-```
-
-Values in `.env` override variables already present in the process environment.
-Credentials are optional — when they are absent the runner runs normally and
-stays quiet. Use `--notify` to require notifications and `--no-notify` to
-suppress them even when credentials are present.
+The whole corpus, with three trials in flight:
 
 ```bash
-# Find your chat ID (send any message to the bot first)
-python -m cli.telegram_notify chat-id
-
-# Verify the token and chat ID end-to-end
-python -m cli.telegram_notify test
-
-# Run the experiment with notifications
-python cli/run_trials.py -n 50
-
-# Force off for a quiet run
-python cli/run_trials.py -n 50 --no-notify
+.venv/bin/python -m cli.run_trials_parallel \
+    --inconsistent-dir ontologies.publication --run-id shapley-K1 \
+    -n 100 -K 3 -t 8 \
+    --java-mem "-Xms2g -Xmx6g -Xss8m" \
+    --removal-timeout 600 --weakening-timeout 600 \
+    --power-index-timeout 600 --make-inconsistent-timeout 600
 ```
 
-### `run_trials_parallel.py`
+`-n` is the number of successful trials per ontology, `-K` the number of trials
+in flight and `-t` the number of sampling threads per trial. A run can be
+resumed by passing the same `--run-id`: ontologies that already hold `-n`
+successful trials are skipped.
 
-Runs the *same* experiment as `run_trials.py`, but keeps **K** Java trials in flight for
-one ontology instead of running them one at a time. The sequential runner remains the
-reference implementation; this runner only changes the scheduling.
+The trials write to `data/data-<run-id>/`, one pair of files per ontology:
 
-It writes the same per-trial CSVs and logs under `data/data-<run-id>/` and the same
-aggregates under `data/results-<run-id>/`, so `analyze_results.py` and `estimator.py`
-work unchanged. Rows appear in *completion* order rather than attempt order — sort by
-the `trial_number` column. The consecutive-failure abort is evaluated in completion
-order too, so the exact abort point can differ.
+- `iic-<ontology>.csv` — one row per trial, with the information content of the
+  repair relative to each baseline;
+- `runtime-<ontology>.csv` — the outcome and the timing of each repair.
 
-| Flag / Arg | Type | Default | Description |
-|---|---|---|---|
-| **Parallelism** | | | |
-| `-K`, `--parallel-trials` | `int` | `1` | Trials kept in flight for one ontology. `1` behaves exactly like the sequential runner. |
-| `-t`, `--threads-per-trial` | `int` | `16` | Sampling threads per trial JVM, passed as `-Dontologyutils.samplingThreads`. |
-| `--cap-jvm-cpus` / `--no-cap-jvm-cpus` | flag | `--cap-jvm-cpus` | Also pass `-XX:ActiveProcessorCount=<t>` so each JVM sizes its own thread pools (GC, ForkJoin) for its share of the CPU budget instead of the whole machine. |
-| `--ontologies` | `str` | all | Comma-separated ontology names to run (e.g. `--ontologies OGR,XEO`). |
-| **Trial control** | | | |
-| `-n`, `--n-trials` | `int` | `100` | Target number of successful trials per ontology. |
-| `--base-seed` | `int` | `13` | Base random seed. |
-| `--step` | `int` | `100` | Seed step between attempts. |
-| `--analysis-interval` | `int` | `1` | Run the interim analysis after every K completed ontologies; `0` disables interim analysis (the final analysis always runs). |
-| **Timeouts** | | | |
-| `--removal-timeout` | `int` | `300` | Removal repair timeout in seconds. |
-| `--weakening-timeout` | `int` | `300` | Weakening repair timeout in seconds. |
-| `--power-index-timeout` | `int` | `300` | Power index computation timeout in seconds. |
-| `--make-inconsistent-timeout` | `int` | `300` | Make-inconsistent timeout in seconds. |
-| `--consecutive-failure-limit` | `int` | `10` | Abort an ontology after this many consecutive failures. |
-| **Paths** | | | |
-| `--inconsistent-dir` | `Path` | `ontologies/inconsistent/` | Directory containing inconsistent ontologies. |
-| `--lib-dir` | `Path` | `lib/` | Directory containing the shaded jar. |
-| `--data-dir` / `--results-dir` | `Path` | auto | Output directories. With `--run-id`, default to `data/data-<run-id>` / `data/results-<run-id>`. |
-| `--java-mem` | `str` | `-Xms1g -Xmx64g -Xss8m` | JVM memory/stack options; the sampling-thread property is appended automatically. |
-| **Run identity** | | | |
-| `--run-id` | `str` | auto (timestamp) | Run identifier. Point it at an existing run ID to resume. |
-| `--seed` | `int` | — | Explicit base-seed override. |
-| **Notifications** | | | |
-| `--notify` / `--no-notify` | flag | auto | Same semantics as `run_trials.py`. |
-| **Miscellaneous** | | | |
-| `--dry-run` | flag | `False` | Print the effective configuration (including `K`, `t` and the total thread count) and exit. |
+Both are also written for the three baselines, so a single run yields every
+number the paper reports.
 
-#### Choosing `K` and `t`
+## Aggregate The Results
 
-Each trial JVM already spawns `t` sampling threads, so keep `K * t` within the machine's
-CPU budget (leave headroom for the JVM's main thread, GC and JIT threads). Measured on a
-24-core container with 63 GB RAM (`--cap-jvm-cpus`, no interim analysis):
-
-| config | OGR | ELIG | XEO |
-|---|---|---|---|
-| `K=1, t=16` (sequential default) | 1.00x | 1.00x | 1.00x |
-| `K=1, t=4` | 0.80x | — | — |
-| `K=2, t=8` | 1.48x | 1.45x | 1.34x |
-| **`K=4, t=4`** | **2.17x** | **1.71x** | **2.06x** |
-| `K=8, t=2` | 2.32x | **0.80x** | — |
-
-Speed-up in trials/second over `K=1, t=16`.
-
-* **`K=4, t=4` is the recommended configuration** — 1.7-2.2x on every ontology measured.
-* Lowering `t` alone is a loss (`K=1, t=4` is *slower* than `K=1, t=16`); the gain comes
-  from overlapping the serial part of several trials.
-* A large `K` with a small `t` can be *worse* than sequential: `K=8, t=2` collapsed to
-  0.80x on ELIG because eight JVMs' main/GC/JIT threads exceed the core budget. Measure
-  before raising `K`.
-
-#### Two caveats
-
-* **Changing `t` changes the results, not just the speed.** The 735 samples are split
-  across the workers, so a different `t` samples different coalitions and yields
-  different approximate values. Only compare IIC values between runs that used the same
-  `t`.
-* **Reproducibility.** A seeded run is reproducible: seeds, attempt numbers, statuses and
-  the resulting IIC values are identical between runs, and `run_trials_parallel.py -K 1
-  -t 16` reproduces `cli/run_trials.py` exactly. This required making random selection
-  independent of hash-based collection iteration order, which varies between JVM runs
-  because equal hash codes are tie-broken with `System.identityHashCode`. Results produced
-  with jars built before that fix are therefore not comparable with new runs.
-
-**Examples:**
 ```bash
-# Sanity check the effective configuration
-python cli/run_trials_parallel.py -K 4 -t 4 --dry-run
-
-# Recommended configuration
-python cli/run_trials_parallel.py -K 4 -t 4
-
-# Same, but only two ontologies and 10 trials each (quick calibration)
-python cli/run_trials_parallel.py -K 4 -t 4 -n 10 --ontologies OGR,XEO
-
-# Reproduce the sequential runner exactly
-python cli/run_trials_parallel.py -K 1 -t 16
+.venv/bin/python -m cli.analyze_results data/data-shapley-K1 data/results-shapley-K1
 ```
 
-### `analyze_results.py`
+The reports are written to `data/results-<run-id>/`:
 
-Aggregate trial outputs from a completed experiment run into CSV, Markdown, and LaTeX report files. Auto-detects the latest `data/data-*` directory if no argument is given.
+| File | Content |
+|---|---|
+| `iic_summary.csv` | mean, standard deviation, 95 % confidence interval and the decision of the test, for each ontology and each baseline |
+| `runtime_summary.csv` | mean, median, range and confidence interval of the runtime of each repair method |
+| `outcome_summary.csv` | success, timeout and memory-limit rates |
+| `combined_report.md`, `combined_report.tex` | the three tables, ready for Markdown or LaTeX |
 
-| Arg | Type | Default | Description |
-|---|---|---|---|
-| `data_dir` (positional, optional) | `Path` | latest `data/data-*` | Path to the data directory containing per-trial CSV files. |
-| `out_dir` (positional, optional) | `Path` | `data/results-<stamp>/` | Output directory for the generated reports. |
+The decision rule is the one of the paper: the null hypothesis that the power
+index does not improve on a baseline is rejected when the lower bound of the
+95 % confidence interval of the mean improvement is greater than 0.5.
 
-The aggregated outputs are written to `data/results-<stamp>/`.
+`cli/analyze_results.py` with no arguments picks the newest `data/data-*`
+directory and writes next to it.
 
-**Examples:**
-```bash
-python cli/analyze_results.py
-python cli/analyze_results.py data/data-20250301
-python cli/analyze_results.py data/data-20250301 my_results/
-```
+## Reading The Numbers
 
-### `estimator.py`
+The report is organised by baseline, not by arm: `vs random`, `vs
+non_in_largest_mcs` and `vs weakening` are the three comparisons of the paper's
+Table 2. The `reject_h0` column is the outcome of the test described above.
 
-Run the complexity estimation for the repair algorithm. Uses hardcoded data points from the paper experiments (ignoring `bctt` and `co-wheat` as outliers) and fits both polynomial (`O(N^k)`) and exponential (`O(b^N)`) models, reporting the R² values to show which model fits better.
+Note that a trial's seed is derived from the trial index and from the position of
+an arm within the experiment, so results from different experiment compositions
+are not comparable trial by trial. Compare aggregates, which is what the report
+does.
 
-This app takes **no arguments**.
+## Reproduction Notes
 
-**Example:**
-```bash
-python cli/estimator.py
-```
-
-## Module vs CLI Architecture
-
-The code is organized following a model/view separation:
-
-- **`analysis/` (Model)**: Core computation modules — reusable, importable, testable.
-- **`cli/` (View)**: Thin CLI entry points — parse arguments and delegate to model functions.
-
-For example, `analysis/analyzer.py` provides `run_analysis()` which is imported by both
-`cli/analyze_results.py` (standalone CLI) and `analysis/orchestrator.py` (experiment runner).
+- Every trial runs the Java experiment in its own JVM; a run of the whole corpus
+  at 100 trials per ontology takes roughly 1.5 hours with `-K 3 -t 8` on 24
+  cores.
+- A trial that exceeds a timeout is retried with a fresh seed and is counted in
+  the outcome table, so `outcome_summary.csv` is part of the result.
+- The reports are regenerated from the CSVs alone, so they can be rebuilt
+  without rerunning any trial.

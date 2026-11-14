@@ -14,8 +14,13 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
+
+# This runner drives the four-arm experiment (A1, A2, A3 and Shapley-Shapley), so
+# the analysis must only report that arm. Set before ``analysis`` is imported.
+os.environ.setdefault("ONTOLOGYUTILS_B_REPAIRS", "B5")
 
 # Allow running as ``python cli/run_trials_parallel.py`` (without ``-m``)
 if __name__ == "__main__" and __package__ is None:
