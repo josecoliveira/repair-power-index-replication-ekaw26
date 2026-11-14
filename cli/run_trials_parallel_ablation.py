@@ -21,13 +21,12 @@ if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 # Must be set before ``analysis`` is imported: the service reads the experiment
-# class and the analyzer reads the arms it should report.
+# class, and the analysis uses it to pick the report of the ablation grid.
 os.environ.setdefault(
     "ONTOLOGYUTILS_EXPERIMENT_CLASS", "www.ontologyutils.apps.SingleTrialAblationExperiment"
 )
-# The analysis keeps its historical arm list (B2-B9), so the ablation reports the
-# same tables it always did; B1 runs but is not summarised, exactly as before.
-os.environ.setdefault("ONTOLOGYUTILS_B_REPAIRS", ",".join(f"B{i}" for i in range(2, 10)))
+# The reports of an ablation run are written to ``<results-dir>-ablation`` and
+# cover the whole B1-B9 grid, so they never touch the paper's output.
 
 from cli import run_trials_parallel  # noqa: E402
 

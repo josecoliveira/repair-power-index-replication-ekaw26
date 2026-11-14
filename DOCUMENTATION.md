@@ -109,6 +109,32 @@ data/results-<run-id>/        written by the analysis
 
 ## Analysis
 
+### When the analysis runs
+
+The trial runners call the analysis themselves; you do not have to run it to get
+results. The orchestrators invoke it:
+
+- **after every `--analysis-interval` completed ontologies** (default `1`, so
+after each one), and
+- **once at the end of the run**, unconditionally, whose output is also reported
+to the notifier.
+
+An interim failure is printed as a warning and does not stop the run, so a run
+that aborts early still leaves the tables of the ontologies it finished. Passing
+`--analysis-interval 0` disables the interim runs and keeps only the final one.
+The analysis reads the CSVs only, so it can always be re-run by hand later.
+
+### Two reports, one per experiment
+
+| Runner | Java experiment | Report | Output directory |
+|---|---|---|---|
+| `run_trials.py`, `run_trials_parallel.py` | `SingleTrialExperiment` — the paper's Shapley + Shapley arm, with A1/A2/A3 | one power-index column against each baseline, as published | `data/results-<run-id>/` |
+| `run_trials_parallel_ablation.py` | `SingleTrialAblationExperiment` — A1/A2/A3 plus the nine arms B1-B9 | a matrix of arm against baseline for every arm | `data/results-<run-id>-ablation/` |
+
+The report is chosen automatically from `ONTOLOGYUTILS_EXPERIMENT_CLASS`, and the
+ablation appends `-ablation` to the results directory so that the two outputs can
+never overwrite each other.
+
 ### `cli/analyze_results.py`
 
 ```bash
@@ -134,9 +160,13 @@ and `power_index_ms`. `reject_h0` applies the paper's decision rule: reject when
 the lower bound of the 95 % confidence interval is greater than 0.5.
 
 The reported arm is `B5`, the paper's Shapley + Shapley arm. Setting
-`ONTOLOGYUTILS_B_REPAIRS` to a single arm name reports that arm instead; a list of
-several arms is reported through `B5`, because the report has one power-index
-column.
+`ONTOLOGYUTILS_B_REPAIRS` to a single arm name reports that arm instead.
+
+When the command is run while `ONTOLOGYUTILS_EXPERIMENT_CLASS` names the ablation
+experiment, the same command produces the ablation report instead: one
+`iic_summary.csv` row per arm and baseline (`b_repair`, `a_repair`), a runtime row
+per repair id, and an extra `per_repair_outcome_summary.csv`. Those files are
+written to `<out_dir>-ablation`.
 
 ### `cli/estimator.py`
 
@@ -191,8 +221,8 @@ Note that `.env` overrides real environment variables.
 
 | Name | Effect |
 |---|---|
-| `ONTOLOGYUTILS_EXPERIMENT_CLASS` | Java class driving a trial. Default `www.ontologyutils.apps.SingleTrialExperiment` (the paper's arm); the ablation runner sets the nine-arm experiment |
-| `ONTOLOGYUTILS_B_REPAIRS` | which arm the report shows as the power index; set by the ablation runner |
+| `ONTOLOGYUTILS_EXPERIMENT_CLASS` | Java class driving a trial, and the switch that picks the report. Default `www.ontologyutils.apps.SingleTrialExperiment` (the paper's arm); the ablation runner sets the nine-arm experiment |
+| `ONTOLOGYUTILS_B_REPAIRS` | arms the ablation report covers (default `B1`-`B9`); a single arm name picks the arm reported as the power index in the paper report |
 | `-Dontologyutils.samplingThreads` | sampling threads per strategy call inside the JVM (default 16) |
 | `-Dontologyutils.ignoreImports` | load ontologies without resolving `owl:imports`; needed for raw corpora |
 
