@@ -20,8 +20,9 @@ bool. A single warning is written to stderr the first time credentials are
 missing, and the first time a send fails; after that the notifier stays
 silent.
 
-Only the experiment runner (``cli/run_trials.py``) uses this module; the
-batch CLIs (preprocess / classify) intentionally do not notify.
+Only the experiment runners (``cli/run_trials.py`` and
+``cli/run_trials_parallel.py``) use this module; the batch CLIs (preprocess /
+classify) intentionally do not notify.
 
 Use ``cli/telegram_notify.py`` to discover the chat ID and to send a test
 message.
@@ -29,6 +30,7 @@ message.
 
 from __future__ import annotations
 
+import csv
 import math
 import os
 import sys
@@ -389,6 +391,74 @@ def notify_abort(
     )
 
 
+def _read_report_rows(path: Any) -> list[dict[str, str]]:
+    """Read a CSV written by the analysis, or return nothing if it is missing."""
+    if not path:
+        return []
+    try:
+        with Path(path).open(newline="", encoding="utf-8") as handle:
+            return list(csv.DictReader(handle))
+    except OSError:
+        return []
+
+
+def _overall_row(rows: list[dict[str, str]], **match: str) -> dict[str, str] | None:
+    """Return the ``overall`` row that matches the given columns, if there is one."""
+    for row in rows:
+        if row.get("ontology") != "overall":
+            continue
+        if all(row.get(key) == value for key, value in match.items()):
+            return row
+    return None
+
+
+def format_analysis_results(analysis_outputs: dict[str, Any] | None) -> list[str]:
+    """Reduce the reports of a run to the few lines worth a notification.
+
+    The message cannot carry the whole report, so it keeps the overall result of
+    each baseline plus the runtime and the outcome rate. Every problem is
+    swallowed and yields no lines: notifications must never fail a run.
+    """
+    if not analysis_outputs:
+        return []
+    labels = [
+        ("iic_power_vs_random", "vs random removal"),
+        ("iic_power_vs_not_in_largest_mcs", "vs not-in-largest-MCS removal"),
+        ("iic_power_vs_weakening", "vs default weakening"),
+    ]
+    try:
+        lines: list[str] = []
+        iic_rows = _read_report_rows(analysis_outputs.get("iic_summary_csv"))
+        for comparison, label in labels:
+            row = _overall_row(iic_rows, comparison=comparison)
+            if row is None:
+                continue
+            verdict = "better" if row.get("reject_h0") == "True" else "not better"
+            lines.append(
+                f"{label}: {float(row['mean']):.3f} "
+                f"[{float(row['ci_low']):.3f}; {float(row['ci_high']):.3f}] "
+                f"{verdict} (n={row['n']})"
+            )
+
+        runtime_rows = _read_report_rows(analysis_outputs.get("runtime_summary_csv"))
+        runtime = _overall_row(runtime_rows, repair_method="power_index_ms")
+        if runtime is not None:
+            lines.append(
+                f"power index: {float(runtime['mean_ms']) / 1000:.1f} s per trial "
+                f"(median {float(runtime['median_ms']) / 1000:.1f} s)"
+            )
+
+        outcome_rows = _read_report_rows(analysis_outputs.get("outcome_summary_csv"))
+        outcome = _overall_row(outcome_rows)
+        if outcome is not None:
+            lines.append(
+                f"outcome: {outcome['success_count']}/{outcome['total_trials']} successful"
+            )
+        return lines
+    except Exception:  # noqa: BLE001 - a notification must never break the run
+        return []
+
+
 def notify_run_end(
     run_id: str,
     n_ontologies: int,
@@ -415,6 +485,10 @@ def notify_run_end(
         if report_lines:
             lines.append("reports:")
             lines.extend(report_lines)
+        results = format_analysis_results(analysis_outputs)
+        if results:
+            lines.append("results:")
+            lines.extend(f"  {line}" for line in results)
     return notify("\n".join(lines))
 
 
