@@ -14,6 +14,7 @@ module needs to be updated. The rest of ``analysis/`` is Java-agnostic.
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import threading
@@ -25,6 +26,22 @@ import sys
 
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent
 LIB_DIR = PACKAGE_ROOT / "lib"
+
+#: Environment variable naming the Java class that drives one trial.
+EXPERIMENT_CLASS_ENV_VAR = "ONTOLOGYUTILS_EXPERIMENT_CLASS"
+#: The four-arm experiment that produced the paper's numbers.
+DEFAULT_EXPERIMENT_CLASS = "www.ontologyutils.apps.SingleTrialExperiment"
+
+
+def experiment_class() -> str:
+    """Return the Java class that drives one trial.
+
+    The ablation runner selects ``SingleTrialAblationExperiment`` through the
+    environment, so the launcher has to read the same variable the analysis
+    reads; otherwise an ablation run would execute the four-arm experiment while
+    its reports claim to cover the nine-arm grid.
+    """
+    return os.environ.get(EXPERIMENT_CLASS_ENV_VAR, "").strip() or DEFAULT_EXPERIMENT_CLASS
 
 
 def find_shaded_jar(lib_dir: Path | None = None) -> Path:
@@ -156,7 +173,7 @@ def build_single_trial_command(
     power_index_timeout: int = 300,
     make_inconsistent_timeout: int = 300,
 ) -> list[str]:
-    """Build the ``java`` command line for one ``SingleTrialExperiment`` run.
+    """Build the ``java`` command line for one trial of the selected experiment.
 
     Exposed separately from :func:`run_single_trial_experiment` so callers that
     need the process handle (e.g. a parallel runner that must be able to kill
@@ -175,7 +192,7 @@ def build_single_trial_command(
         "--verbose",
     ]
     return _build_java_cmd(
-        "www.ontologyutils.apps.SingleTrialExperiment",
+        experiment_class(),
         args, java_mem, jar,
     )
 
