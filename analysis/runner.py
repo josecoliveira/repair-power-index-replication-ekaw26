@@ -1,12 +1,14 @@
-"""Parallel variant of the experiment runner.
+"""Trial runner of the paper's experiment.
 
-Runs up to ``--parallel-trials K`` ``SingleTrialExperiment`` trials
-**concurrently** for the same ontology, instead of one at a time.
+Runs up to ``--parallel-trials K`` ``SingleTrialExperiment`` trials **concurrently** for
+one ontology, records the results of the four arms the paper reports - ``A1``, ``A2``,
+``A3`` and the Shapley repair ``SHAPLEY`` - and calls the paper's analysis
+(:mod:`analysis.analysis`) after every ``--analysis-interval`` ontologies and at the end.
 
-Why a separate module: ``analysis/orchestrator.py`` stays the canonical,
-reproducible path.  This module reuses its helpers (seed derivation, CSV
-schemas, analysis triggering) but implements a different scheduling policy, so
-keeping the two apart makes the difference explicit.
+This module owns everything this experiment writes: the arm ids, the CSV headers, the
+row building, the log layout, and the results directory (``data/results-<run-id>/``, no
+suffix). The nine-arm grid has its own, independent :mod:`analysis.ablation_runner`; the
+two modules never import each other, so the grid cannot change what the paper produces.
 
 Design
 ------
@@ -16,29 +18,22 @@ Design
 * At most ``K`` trials are in flight for one ontology, and never more attempts
   are launched than are still needed (``successes + in_flight < target``).
 * Attempt numbers are assigned **at launch time**, so the seed of the k-th
-  attempt matches the sequential runner exactly.  A trial derives everything it
-  needs from its own seed, so results stay comparable across runs and a
-  parallel run can be resumed by the sequential one.
+  attempt depends only on the configuration, not on the scheduling: two runs of the
+  same configuration produce the same seeds, and an interrupted run can be resumed.
 * All CSV/log/notifier side effects happen on the main thread, which is the one
   consuming finished futures, so no two threads write the same file.
 * On interruption the in-flight JVMs are killed by process group, so a run that
   is stopped never leaves orphaned JVMs behind.
 * Ontologies are still processed one at a time (the parallelism is *within* an
   ontology); the smallest ontology still finishes first, giving early feedback.
-
-Observable differences from the sequential runner
--------------------------------------------------
-* Rows appear in completion order rather than attempt order; the
-  ``trial_number`` column still identifies each attempt, so analysis sorts.
-* The consecutive-failure abort is evaluated in completion order, so the exact
-  abort point can differ.
-* With ``--parallel-trials 1`` the behaviour, seeds and rows are identical to
-  ``cli/run_trials.py``.
+* With ``--parallel-trials 1`` the behaviour, seeds and rows are identical to the
+  reference sequential runner this module replaced.
 """
 
 from __future__ import annotations
 
 import argparse
+import csv
 import os
 import signal
 import subprocess
@@ -49,30 +44,165 @@ from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Callable
 
 from analysis import notifier
+from analysis.analysis import run_analysis
 from analysis.ontologyutils_service import (
     build_single_trial_command,
     classify_ontology,
     parse_trial_stdout,
 )
-from analysis.orchestrator import (
-    ANALYSIS_DIR,
-    IIC_KEYS,
-    RUNTIME_KEYS,
-    append_dict_row,
-    append_iic_row,
-    ensure_csv_with_header,
-    list_ontologies,
-    make_paths_for_ontology,
-    normalize_status,
-    resume_state,
-    runtime_row_from_payload,
-    seed_for_attempt,
-    timestamp,
-    write_log_header,
-)
+
+# ── This experiment's schema ────────────────────────────────────────────
+#: The three baselines, reported for every arm.
+A_REPAIRS = ["A1", "A2", "A3"]
+#: The paper's own arm: bad axiom and weaker replacement both ranked by Shapley value.
+SHAPLEY_ARM = "SHAPLEY"
+#: Columns of the IIC table: one comparison per baseline.
+IIC_KEYS = [f"{SHAPLEY_ARM}_vs_{baseline}" for baseline in A_REPAIRS]
+#: Repairs whose runtime is recorded.
+RUNTIME_KEYS = A_REPAIRS + [SHAPLEY_ARM]
+
+#: The Java class that drives one trial.
+EXPERIMENT_CLASS = "www.ontologyutils.apps.SingleTrialExperiment"
+
+# ── Path constants (package layout, not user-configurable) ──────────────
+PACKAGE_ROOT = Path(__file__).resolve().parent.parent
+INCONSISTENT_DIR = PACKAGE_ROOT / "ontologies" / "inconsistent"
+ANALYSIS_DIR = PACKAGE_ROOT / "data"
+
+
+# ── Helpers ─────────────────────────────────────────────────────────────
+
+
+def timestamp() -> str:
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+def list_ontologies(inconsistent_dir: Path) -> list[Path]:
+    ontologies = sorted(inconsistent_dir.glob("*.owl"))
+    if not ontologies:
+        raise FileNotFoundError(f"No .owl files found in {inconsistent_dir}")
+    return ontologies
+
+
+def make_paths_for_ontology(ontology_name: str, data_dir: Path) -> tuple[Path, Path, Path]:
+    iic_path = data_dir / f"iic-{ontology_name}.csv"
+    runtime_path = data_dir / f"runtime-{ontology_name}.csv"
+    log_path = data_dir / f"run_trials-{ontology_name}.log"
+    return iic_path, runtime_path, log_path
+
+
+def ensure_csv_with_header(path: Path, fieldnames: list[str]) -> None:
+    if path.exists() and path.stat().st_size > 0:
+        return
+    with open(path, "w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+
+
+def normalize_status(status: str | None) -> str:
+    status = (status or "").strip().lower()
+    if status in {"success", "time_limit_exceeded", "memory_limit_exceeded", "java_exception"}:
+        return status
+    return "memory_limit_exceeded"
+
+
+def write_log_header(handle, ontology_name: str, attempt_number: int, seed: int) -> None:
+    handle.write(
+        f"----- {ontology_name} attempt={attempt_number} seed={seed} at {timestamp()} -----\n"
+    )
+
+
+def append_iic_row(iic_path: Path, payload: dict, run_id: str) -> None:
+    iic_values = payload.get("iic_values") if isinstance(payload, dict) else {}
+    iic_values = iic_values if isinstance(iic_values, dict) else {}
+    row = {key: iic_values.get(key) for key in IIC_KEYS}
+    row["run_id"] = payload.get("run_id", run_id)
+    with open(iic_path, "a", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=IIC_KEYS + ["run_id"])
+        writer.writerow(row)
+
+
+def runtime_row_from_payload(
+    trial_number: int,
+    seed: int,
+    payload: dict | None,
+    trial_elapsed_seconds: float,
+    outcome: str,
+    run_id: str,
+) -> dict:
+    repair_runtimes = payload.get("repair_runtimes_ms") if isinstance(payload, dict) else {}
+    repair_runtimes = repair_runtimes if isinstance(repair_runtimes, dict) else {}
+    row = {
+        "trial_number": trial_number,
+        "seed": seed,
+        "run_id": run_id,
+        "trial_status": outcome,
+        "error_type": (payload or {}).get("error_type", "") if isinstance(payload, dict) else "",
+        "failure_stage": (payload or {}).get("failure_stage", "") if isinstance(payload, dict) else "",
+        "error_message": (payload or {}).get("error_message", "") if isinstance(payload, dict) else "",
+        "trial_elapsed_seconds": f"{trial_elapsed_seconds:.6f}",
+    }
+    for repair_id in RUNTIME_KEYS:
+        row[f"{repair_id}_ms"] = repair_runtimes.get(repair_id)
+    return row
+
+
+def append_dict_row(path: Path, fieldnames: list[str], row: dict) -> None:
+    with open(path, "a", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writerow(row)
+
+
+def seed_for_attempt(ontology_index: int, attempted_for_ontology: int,
+                     ontology_count: int, base_seed: int, step: int) -> int:
+    return base_seed + ontology_index + attempted_for_ontology * step * ontology_count
+
+
+def resume_state(
+    data_dir: Path,
+    ontology_names: list[str],
+) -> tuple[dict[str, int], dict[str, int], dict[str, list[tuple[int, int, str]]]]:
+    """Read existing runtime CSVs to recover per-ontology state when resuming.
+
+    Returns (successes, attempts, failures) dicts keyed by ontology name.
+    For ontologies with no existing data, counters start at zero.
+    """
+    successes: dict[str, int] = {}
+    attempts: dict[str, int] = {}
+    failures: dict[str, list[tuple[int, int, str]]] = {}
+
+    for name in ontology_names:
+        runtime_path = data_dir / f"runtime-{name}.csv"
+        ont_successes = 0
+        ont_attempts = 0
+        ont_failures: list[tuple[int, int, str]] = []
+
+        if runtime_path.exists():
+            with open(runtime_path, "r", encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    ont_attempts += 1
+                    status = (row.get("trial_status") or "").strip().lower()
+                    if status == "success":
+                        ont_successes += 1
+                    else:
+                        trial_num = int(row.get("trial_number", 0))
+                        seed_val = int(row.get("seed", 0))
+                        err_msg = (
+                            row.get("error_message")
+                            or row.get("error_type")
+                            or status
+                            or "unknown"
+                        )
+                        ont_failures.append((trial_num, seed_val, err_msg))
+
+        successes[name] = ont_successes
+        attempts[name] = ont_attempts
+        failures[name] = ont_failures
+
+    return successes, attempts, failures
 
 # ── In-flight process registry (for interrupt cleanup) ──────────────────
 
@@ -170,31 +300,18 @@ def _run_trial_process(cmd: list[str], attempt_number: int, seed: int) -> TrialO
 
 # ── Entry point ─────────────────────────────────────────────────────────
 
-#: Signature of the analysis the runner drives: ``(data_dir, out_dir) -> outputs``.
-AnalysisRunner = Callable[..., dict]
 
-
-def run_experiment_parallel(
-    args: argparse.Namespace,
-    analyze: AnalysisRunner,
-    results_suffix: str = "",
-) -> None:
-    """Execute the parallel experiment, reporting fatal errors to the notifier.
+def run_experiment(args: argparse.Namespace) -> None:
+    """Execute the paper's experiment, reporting fatal errors to the notifier.
 
     :param args: The parsed command line.
-    :param analyze: The analysis of the experiment being run, called after every
-        ``--analysis-interval`` completed ontologies and once at the end. The paper's runner
-        passes :func:`analysis.analysis.run_analysis`, the ablation runner
-        :func:`analysis.ablation_analysis.run_analysis`; this module imports neither.
-    :param results_suffix: Appended to the results directory name, so that two experiments
-        on the same data never write their reports over each other.
     """
     notify_enabled = notifier.configure(getattr(args, "notify", None))
     if notify_enabled and not getattr(args, "dry_run", False):
         print("[notifier] Telegram progress notifications enabled.")
 
     try:
-        _run_experiment_parallel(args, analyze, results_suffix)
+        _run_experiment(args)
     except BaseException as exc:
         _terminate_active_processes()
         notifier.notify_exception(exc)
@@ -218,18 +335,14 @@ def _resolve_ontology_subset(
     return selected
 
 
-def _run_experiment_parallel(
-    args: argparse.Namespace,
-    analyze: AnalysisRunner,
-    results_suffix: str = "",
-) -> None:
+def _run_experiment(args: argparse.Namespace) -> None:
     parallel_trials = max(1, int(getattr(args, "parallel_trials", 1)))
     threads_per_trial = int(getattr(args, "threads_per_trial", 0) or 16)
     cap_jvm_cpus = bool(getattr(args, "cap_jvm_cpus", True))
     java_mem = effective_java_mem(args.java_mem, threads_per_trial, cap_jvm_cpus)
 
     if args.dry_run:
-        print("[DRY RUN] Effective configuration (parallel):")
+        print("[DRY RUN] Effective configuration (paper experiment):")
         print(f"  PARALLEL_TRIALS          = {parallel_trials}")
         print(f"  THREADS_PER_TRIAL        = {threads_per_trial}")
         print(f"  CAP_JVM_CPUS             = {cap_jvm_cpus}")
@@ -247,7 +360,8 @@ def _run_experiment_parallel(
         print(f"  INCONSISTENT_DIR         = {args.inconsistent_dir}")
         print(f"  ONTOLOGIES               = {args.ontologies or '<all>'}")
         print(f"  LIB_DIR                  = {args.lib_dir}")
-        print(f"  ANALYSIS                 = {getattr(analyze, '__module__', analyze)}")
+        print(f"  EXPERIMENT_CLASS         = {EXPERIMENT_CLASS}")
+        print(f"  ANALYSIS                 = {run_analysis.__module__}")
         print(f"  RUN_ID                   = {args.run_id or '<auto>'}")
         print()
         print("No experiments run. Omit --dry-run to execute.")
@@ -260,8 +374,6 @@ def _run_experiment_parallel(
     run_id = args.run_id or datetime.now().strftime("%Y%m%d%H%M%S%f")
     data_dir = args.data_dir or (ANALYSIS_DIR / f"data-{run_id}")
     results_dir = args.results_dir or (ANALYSIS_DIR / f"results-{run_id}")
-    if results_suffix:
-        results_dir = results_dir.parent / f"{results_dir.name}{results_suffix}"
 
     effective_base_seed = args.seed if args.seed is not None else args.base_seed
     effective_step = args.step
@@ -346,11 +458,11 @@ def _run_experiment_parallel(
         log_path = log_paths[name]
         if is_resume and log_path.exists():
             with open(log_path, "a", encoding="utf-8") as log:
-                log.write(f"\n=== run_trials_parallel RESUMED at {timestamp()} run_id={run_id} ===\n")
+                log.write(f"\n=== run_trials RESUMED at {timestamp()} run_id={run_id} ===\n")
                 log.write(f"resuming from successes={successes[name]} attempts={attempts[name]}\n")
         else:
             with open(log_path, "w" if not is_resume else "a", encoding="utf-8") as log:
-                log.write(f"=== run_trials_parallel started at {timestamp()} run_id={run_id} ===\n")
+                log.write(f"=== run_trials started at {timestamp()} run_id={run_id} ===\n")
                 log.write(f"ontology_path={ontology}\n")
                 log.write(f"iic_csv={iic_paths[name]}\n")
                 log.write(f"runtime_csv={runtime_paths[name]}\n")
@@ -425,7 +537,7 @@ def _run_experiment_parallel(
             ontologies_finished += 1
             if effective_analysis_interval > 0 and ontologies_finished % effective_analysis_interval == 0:
                 try:
-                    analysis_outputs = analyze(data_dir, results_dir)
+                    analysis_outputs = run_analysis(data_dir, results_dir)
                     print(f"Analysis updated after {name}:")
                     for key, value in analysis_outputs.items():
                         print(f"  {key}={value}")
@@ -442,7 +554,7 @@ def _run_experiment_parallel(
         name = ontology.stem
         with open(log_paths[name], "a", encoding="utf-8") as log:
             log.write(
-                f"=== run_trials_parallel finished at {timestamp()} for {name} - "
+                f"=== run_trials finished at {timestamp()} for {name} - "
                 f"{successes[name]} successes, {len(failures[name])} failures, "
                 f"{attempts[name]} attempts ===\n"
             )
@@ -461,7 +573,7 @@ def _run_experiment_parallel(
             log.write(f"  success_rate={success_rate:.4f}\n")
             log.write(f"  wall_clock_seconds_total_run={wall_clock_seconds:.6f}\n")
 
-    analysis_outputs = analyze(data_dir, results_dir)
+    analysis_outputs = run_analysis(data_dir, results_dir)
 
     notifier.notify_run_end(
         run_id=run_id,

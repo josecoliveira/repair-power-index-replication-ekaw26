@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""CLI entry point for the experiment orchestrator.
+"""CLI entry point of the paper's experiment.
 
-Run sequential per-ontology Java trials for all ontologies and collect A/B results.
-Ontologies are sorted by axiom count (smallest first); each ontology runs trials
-until it reaches N successful trials before moving to the next ontology.
+Runs the trials that produce the paper's numbers: for each ontology in the corpus, up to
+``-K`` ``SingleTrialExperiment`` trials in flight, each with ``-t`` sampling threads, until
+``-n`` trials succeed. The results are recorded for the three baselines and the Shapley
+repair, and the paper's report is refreshed after every ``--analysis-interval`` ontologies
+and once at the end.
+
+``-K 1 -t 8`` is the safe choice on a single desktop and the setting the README uses.
 
 Usage:
-    python -m cli.run_trials [--dry-run]
+    python -m cli.run_trials [options]
     python cli/run_trials.py [options]
 """
 
@@ -21,8 +25,8 @@ from pathlib import Path
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from analysis.orchestrator import run_experiment, INCONSISTENT_DIR
 from analysis.ontologyutils_service import LIB_DIR
+from analysis.runner import EXPERIMENT_CLASS, INCONSISTENT_DIR, run_experiment
 
 # ── Default configuration (CONFIGURE HERE) ─────────────────────────────
 N_TRIALS_PER_ONTOLOGY = 100
@@ -35,19 +39,61 @@ POWER_INDEX_TIMEOUT_SECONDS = 300
 MAKE_INCONSISTENT_TIMEOUT_SECONDS = 300
 CONSECUTIVE_FAILURE_LIMIT = 10
 DEFAULT_JAVA_MEM = "-Xms1g -Xmx64g -Xss8m"
+PARALLEL_TRIALS = 1
+THREADS_PER_TRIAL = 8
 
 
 def build_parser() -> argparse.ArgumentParser:
-    """Build the argument parser with local default values."""
+    """Build the argument parser of the paper's runner."""
     parser = argparse.ArgumentParser(
         description=(
-            "Run sequential per-ontology Java trials for all ontologies "
-            "and collect A/B results. Ontologies are processed one at a time "
-            "in order of increasing axiom count."
+            "Run the paper's experiment: Java trials for every ontology of the "
+            "corpus, up to -K in flight for the same ontology, and collect the "
+            "results against the three baselines. Ontologies are processed one at "
+            "a time in order of increasing axiom count."
+        ),
+    )
+
+    # --- Parallelism ---
+    parser.add_argument(
+        "-K", "--parallel-trials",
+        type=int, default=PARALLEL_TRIALS,
+        help=(
+            "Number of trials to keep in flight for one ontology (default: "
+            "%(default)s). 1 runs them one at a time."
+        ),
+    )
+    parser.add_argument(
+        "-t", "--threads-per-trial",
+        type=int, default=THREADS_PER_TRIAL,
+        help=(
+            "Sampling threads per trial JVM, passed as "
+            "-Dontologyutils.samplingThreads (default: %(default)s). "
+            "Keep K * t within the machine's CPU budget."
+        ),
+    )
+    parser.add_argument(
+        "--cap-jvm-cpus",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help=(
+            "Also pass -XX:ActiveProcessorCount=<t> so each JVM sizes its own "
+            "thread pools (GC, ForkJoin) for its share of the budget instead of "
+            "the whole machine (default: %(default)s)."
         ),
     )
 
     # --- Trial control ---
+    parser.add_argument(
+        "--ontologies",
+        type=str, default=None,
+        help=(
+            "Comma-separated ontology names to run (e.g. --ontologies OGR,XEO). "
+            "Default: every ontology in --inconsistent-dir. Restricting the set "
+            "changes the seed indexing, so all configurations being compared "
+            "must use the same set."
+        ),
+    )
     parser.add_argument(
         "-n", "--n-trials",
         type=int, default=N_TRIALS_PER_ONTOLOGY,
@@ -135,18 +181,16 @@ def build_parser() -> argparse.ArgumentParser:
         "--data-dir",
         type=Path, default=None,
         help=(
-            "Output data directory. "
-            "If --run-id is given but --data-dir is not, defaults to data/data-<run-id>. "
-            "Otherwise defaults to data/data-<auto-run-id>."
+            "Output data directory. If --run-id is given but --data-dir is not, "
+            "defaults to data/data-<run-id>."
         ),
     )
     parser.add_argument(
         "--results-dir",
         type=Path, default=None,
         help=(
-            "Output results directory. "
-            "If --run-id is given but --results-dir is not, defaults to data/results-<run-id>. "
-            "Otherwise defaults to data/results-<auto-run-id>."
+            "Output results directory. If --run-id is given but --results-dir is "
+            "not, defaults to data/results-<run-id>."
         ),
     )
     parser.add_argument(
@@ -154,7 +198,8 @@ def build_parser() -> argparse.ArgumentParser:
         type=str, default=DEFAULT_JAVA_MEM,
         help=(
             "JVM memory and stack options passed directly to java "
-            "(default: '%(default)s')."
+            "(default: '%(default)s'). The sampling-thread property is appended "
+            "automatically."
         ),
     )
 
@@ -164,18 +209,13 @@ def build_parser() -> argparse.ArgumentParser:
         type=str, default=None,
         help=(
             "Run identifier. Auto-generated as timestamp if not provided. "
-            "When resuming an existing experiment, point this to the existing run ID "
-            "and the script will continue from where it left off."
+            "When resuming, point this to the existing run ID."
         ),
     )
     parser.add_argument(
         "--seed",
         type=int, default=None,
-        help=(
-            "Explicit seed override. When used with --run-id, this sets the base seed "
-            "for the resumed run. When omitted during resume, the base seed from the "
-            "CONFIGURE HERE section is used."
-        ),
+        help="Explicit seed override (sets the base seed for the run).",
     )
     parser.add_argument(
         "--dry-run",
@@ -183,19 +223,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="Print the effective configuration and exit without running any experiments.",
     )
 
-    # --- Positional (backward compatible) ---
-    parser.add_argument(
-        "n_trials_pos",
-        type=int, nargs="?",
-        help="[DEPRECATED] Positional argument for N_TRIALS_PER_ONTOLOGY",
-    )
-
     return parser
 
 
 def main() -> None:
-    parser = build_parser()
-    args = parser.parse_args()
+    args = build_parser().parse_args()
+    # Pin the Java app: the paper's runner always drives the paper's experiment, whatever
+    # the surrounding environment says.
+    os.environ["ONTOLOGYUTILS_EXPERIMENT_CLASS"] = EXPERIMENT_CLASS
     run_experiment(args)
 
 

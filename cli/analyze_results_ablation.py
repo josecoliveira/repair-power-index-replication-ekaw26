@@ -23,8 +23,8 @@ if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from analysis.ablation_analysis import run_analysis
+from analysis.ablation_runner import RESULTS_SUFFIX
 from cli.analyze_results import print_outputs, resolve_dirs, resolve_inconsistent_dir
-from cli.run_trials_parallel_ablation import RESULTS_SUFFIX
 
 
 def main() -> None:

@@ -15,21 +15,20 @@ lowest Shapley value in the game that its own replacement produces.
 | `A1` | random removal |
 | `A2` | not-in-largest-MCS removal |
 | `A3` | default weakening (in-MUS bad axiom + random weakening) |
-| power index | Shapley bad axiom + Shapley weakening |
+| `SHAPLEY` | Shapley bad axiom + Shapley weakening |
 
 ## Contents
 
 - `lib/shaded-ontologyutils-0.1.0.jar` — the Java implementation, already built.
 - `ontologies/` — the corpus of the paper: `cleanup/` and `original/` hold the
   inputs, and `inconsistent/` the eight ontologies the trials run on.
-- `cli/run_trials.py`, `cli/run_trials_parallel.py` — trial runners.
+- `cli/run_trials.py` — the trial runner.
 - `cli/analyze_results.py` — aggregates the trials into the published tables.
-- `cli/run_trials_parallel_ablation.py`, `cli/analyze_results_ablation.py` — the
-  nine-arm ablation, which has its own runner and its own report.
-- `analysis/` — the trial orchestration and the analysis pipeline. The paper's
-  analysis (`analysis/analysis.py`) and the ablation's
-  (`analysis/ablation_analysis.py`) are independent modules, and each runner calls
-  the one it needs.
+- `analysis/` — the runner (`runner.py`) and the analysis (`analysis.py`) behind
+  those two commands.
+
+`DOCUMENTATION.md` has the full reference, including the development tools and a
+nine-arm ablation that is still work in progress.
 
 ## Requirements
 
@@ -46,16 +45,8 @@ No Maven build is needed: the trials run against the jar in `lib/`.
 
 ## Run The Trials
 
-One ontology, in the foreground:
-
 ```bash
-.venv/bin/python -m cli.run_trials --inconsistent-dir ontologies/inconsistent -n 100
-```
-
-The whole corpus:
-
-```bash
-.venv/bin/python -m cli.run_trials_parallel \
+.venv/bin/python -m cli.run_trials \
     --inconsistent-dir ontologies/inconsistent -n 100 -K 1 -t 8 \
     --java-mem "-Xms2g -Xmx6g -Xss8m" \
     --removal-timeout 600 --weakening-timeout 600 \
@@ -63,18 +54,20 @@ The whole corpus:
 ```
 
 `-n` is the number of successful trials per ontology, `-K` the number of trials
-in flight and `-t` the number of sampling threads per trial. A run can be
-resumed by passing the same `--run-id`: ontologies that already hold `-n`
-successful trials are skipped.
+in flight for one ontology and `-t` the number of sampling threads inside each
+trial. `-K 1 -t 8` is the default and a safe choice on a single desktop; raise
+`-K` only when the machine has cores to spare, keeping `-K` times `--java-mem`
+well below its memory. A run can be resumed by passing the same `--run-id`:
+ontologies that already hold `-n` successful trials are skipped.
 
 The trials write to `data/data-<run-id>/`, one pair of files per ontology:
 
 - `iic-<ontology>.csv` — one row per trial, with the information content of the
-  repair relative to each baseline;
+  Shapley repair relative to each baseline;
 - `runtime-<ontology>.csv` — the outcome and the timing of each repair.
 
-Both are also written for the three baselines, so a single run yields every
-number the paper reports.
+Both cover the three baselines as well, so a single run yields every number the
+paper reports.
 
 ## Aggregate The Results
 
@@ -102,10 +95,9 @@ The report is organised by baseline, not by arm: `vs random`, `vs
 non_in_largest_mcs` and `vs weakening` are the three comparisons of the paper's
 Table 2. The `reject_h0` column is the outcome of the test described above.
 
-Note that a trial's seed is derived from the trial index and from the position of
-an arm within the experiment, so results from different experiment compositions
-are not comparable trial by trial. Compare aggregates, which is what the report
-does.
+Note that a trial's seed is derived from the trial index, so results are only
+comparable within the same corpus and the same `--ontologies` selection. Compare
+aggregates, which is what the report does.
 
 ## Reproduction Notes
 

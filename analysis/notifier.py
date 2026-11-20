@@ -21,7 +21,7 @@ missing, and the first time a send fails; after that the notifier stays
 silent.
 
 Only the experiment runners (``cli/run_trials.py`` and
-``cli/run_trials_parallel.py``) use this module; the batch CLIs (preprocess /
+``cli/run_trials.py``) use this module; the batch CLIs (preprocess /
 classify) intentionally do not notify.
 
 Use ``cli/telegram_notify.py`` to discover the chat ID and to send a test

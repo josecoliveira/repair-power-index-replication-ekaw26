@@ -10,9 +10,8 @@ Reads the per-run CSVs of a trial run (``iic-<ontology>.csv`` and
 - the combined Markdown and LaTeX report.
 
 This module belongs to the paper experiment only, and its callers import it directly:
-:mod:`analysis.orchestrator`, :mod:`analysis.parallel_orchestrator` (through the analysis the
-runner passes in) and :mod:`cli.analyze_results`. The nine-arm grid has its own, independent
-:mod:`analysis.ablation_analysis`; the two never import each other.
+:mod:`analysis.runner` and :mod:`cli.analyze_results`. The nine-arm grid has its own,
+independent :mod:`analysis.ablation_analysis`; the two never import each other.
 """
 
 from __future__ import annotations
@@ -57,11 +56,9 @@ CSV_NAME_RE = re.compile(
     r"^(?P<kind>iic|runtime)-(?P<ontology>.+?)(?:-(?P<runid>\d{10,}))?(?:-reconstructed)?\.csv$"
 )
 
-# The experiment writes a single arm, ``SHAPLEY``, and the paper reports it against the three
-# baselines. Earlier ids of the same arm are still accepted, so that runs produced before the
-# renames can be re-analysed: ``POWER`` (2026-11-20) and ``B5`` (before that, the grid id).
+# The experiment writes a single arm, ``SHAPLEY``, and the paper reports it against the
+# three baselines.
 DEFAULT_ARM = "SHAPLEY"
-LEGACY_ARMS = ("POWER", "B5")
 ARM = DEFAULT_ARM
 IIC_COLUMNS = {
     "A1": "iic_power_vs_random",
@@ -77,14 +74,13 @@ RUNTIME_COLUMNS = {
 
 def canonicalise_columns(df: pd.DataFrame) -> pd.DataFrame:
     """Rename the arm columns of one trial file to the canonical names."""
-    for arm in (ARM, *LEGACY_ARMS):
-        for baseline, canonical in IIC_COLUMNS.items():
-            source = f"{arm}_vs_{baseline}"
-            if source in df.columns and canonical not in df.columns:
-                df[canonical] = df[source]
-        power = f"{arm}_ms"
-        if power in df.columns and "power_index_ms" not in df.columns:
-            df["power_index_ms"] = df[power]
+    for baseline, canonical in IIC_COLUMNS.items():
+        source = f"{ARM}_vs_{baseline}"
+        if source in df.columns and canonical not in df.columns:
+            df[canonical] = df[source]
+    power = f"{ARM}_ms"
+    if power in df.columns and "power_index_ms" not in df.columns:
+        df["power_index_ms"] = df[power]
     for source, canonical in RUNTIME_COLUMNS.items():
         if source in df.columns and canonical not in df.columns:
             df[canonical] = df[source]
@@ -617,7 +613,7 @@ def run_analysis(
         main()
     except SystemExit as exc:
         # A run that has not produced any trial yet is not an error for the
-        # orchestrator, which calls this after every completed ontology.
+        # runner, which calls this after every completed ontology.
         print(f"Analysis skipped: {exc}", file=sys.stderr)
         return {}
 
