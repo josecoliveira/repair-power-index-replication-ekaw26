@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""CLI entry point for the analysis module.
+"""CLI entry point for the paper's analysis.
 
-Aggregate trial outputs into CSV, Markdown, and LaTeX reports,
-including runtime complexity estimation.
+Aggregate the trial outputs of a paper run into the CSV, Markdown and LaTeX
+reports. An ablation run is reported by ``cli/analyze_results_ablation.py``, which
+uses its own, independent analysis.
 
 Usage:
     python -m cli.analyze_results [data_dir] [out_dir]
@@ -18,42 +19,48 @@ from pathlib import Path
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from analysis.analyzer import run_analysis
+from analysis.analysis import run_analysis
 
-# ── Path constants ──────────────────────────────────────────────────────
+# ── Path constants ─────────────────────────────────────────────────────────
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent
 INCONSISTENT_DIR = PACKAGE_ROOT / "ontologies" / "inconsistent"
 
 
-def main() -> None:
-    if len(sys.argv) >= 2:
-        data_dir = Path(sys.argv[1]).resolve()
-    else:
-        data_candidates = sorted(PACKAGE_ROOT.glob("data/data-*"))
-        if not data_candidates:
-            # Also check for legacy data-* in the repo root
-            data_candidates = sorted(PACKAGE_ROOT.glob("data-*"))
-        if not data_candidates:
-            raise SystemExit("No data-* directory found. Pass a data directory explicitly.")
-        data_dir = data_candidates[-1]
+def default_data_dir() -> Path:
+    """The newest ``data/data-*`` directory, or the newest legacy ``data-*``."""
+    data_candidates = sorted(PACKAGE_ROOT.glob("data/data-*"))
+    if not data_candidates:
+        data_candidates = sorted(PACKAGE_ROOT.glob("data-*"))
+    if not data_candidates:
+        raise SystemExit("No data-* directory found. Pass a data directory explicitly.")
+    return data_candidates[-1]
 
-    if len(sys.argv) >= 3:
-        out_dir = Path(sys.argv[2]).resolve()
+
+def resolve_dirs(argv: list[str]) -> tuple[Path, Path]:
+    """Resolve the ``[data_dir] [out_dir]`` arguments, defaulting to the newest run."""
+    data_dir = Path(argv[0]).resolve() if len(argv) >= 1 else default_data_dir()
+    if len(argv) >= 2:
+        out_dir = Path(argv[1]).resolve()
     else:
         stamp = data_dir.name.replace("data-", "")
         out_dir = (PACKAGE_ROOT / "data" / f"results-{stamp}").resolve()
+    return data_dir, out_dir
 
-    # Resolve inconsistent directory (used for axiom counts in estimation)
-    inconsistent_dir: Path | None = INCONSISTENT_DIR
-    if not inconsistent_dir.is_dir():
-        print(
-            f"Warning: inconsistent directory {inconsistent_dir} does not exist; "
-            f"complexity estimation may be unavailable.",
-            file=sys.stderr,
-        )
-        inconsistent_dir = None
 
-    outputs = run_analysis(data_dir, out_dir, inconsistent_dir=inconsistent_dir)
+def resolve_inconsistent_dir() -> Path | None:
+    """The corpus directory, used for axiom counts in the complexity estimation."""
+    if INCONSISTENT_DIR.is_dir():
+        return INCONSISTENT_DIR
+    print(
+        f"Warning: inconsistent directory {INCONSISTENT_DIR} does not exist; "
+        f"complexity estimation may be unavailable.",
+        file=sys.stderr,
+    )
+    return None
+
+
+def print_outputs(outputs: dict) -> None:
+    """Print the files an analysis wrote, plus a summary of its estimation."""
     print("Wrote:")
     for key, value in outputs.items():
         if key == "estimation":
@@ -72,6 +79,12 @@ def main() -> None:
             print(f"    conclusion= {value.get('conclusion', 'N/A')}")
         else:
             print(f"  {key}={value}")
+
+
+def main() -> None:
+    data_dir, out_dir = resolve_dirs(sys.argv[1:])
+    outputs = run_analysis(data_dir, out_dir, inconsistent_dir=resolve_inconsistent_dir())
+    print_outputs(outputs)
 
 
 if __name__ == "__main__":

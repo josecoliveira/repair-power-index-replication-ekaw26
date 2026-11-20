@@ -12,15 +12,16 @@ or as a script:
 .venv/bin/python cli/run_trials_parallel.py --help
 ```
 
-`cli/analyze_results.py` and `cli/estimator.py` take positional arguments;
-everything else uses `argparse` and supports `--help`.
+`cli/analyze_results.py`, `cli/analyze_results_ablation.py` and `cli/estimator.py` take
+positional arguments; everything else uses `argparse` and supports `--help`.
 
 | CLI | Purpose |
 |---|---|
 | `run_trials.py` | run one ontology at a time, sequentially |
 | `run_trials_parallel.py` | run the corpus with several trials in flight |
 | `run_trials_parallel_ablation.py` | same, over the whole `B1`-`B9` arm grid |
-| `analyze_results.py` | aggregate the trials into the report files |
+| `analyze_results.py` | aggregate a paper run into the report files |
+| `analyze_results_ablation.py` | aggregate an ablation run into the per-arm report files |
 | `estimator.py` | fit the runtime-complexity model of an older run |
 | `preprocess_ontologies.py` | cleanup and classification of a raw corpus |
 | `classify_ontologies.py` | classify a folder of ontologies into ALC / non-ALC |
@@ -132,14 +133,18 @@ The analysis reads the CSVs only, so it can always be re-run by hand later.
 
 ### Two reports, one per experiment
 
-| Runner | Java experiment | Report | Output directory |
-|---|---|---|---|
-| `run_trials.py`, `run_trials_parallel.py` | `SingleTrialExperiment` — the paper's Shapley + Shapley arm, with A1/A2/A3 | one power-index column against each baseline, as published | `data/results-<run-id>/` |
-| `run_trials_parallel_ablation.py` | `SingleTrialAblationExperiment` — A1/A2/A3 plus the nine arms B1-B9 | a matrix of arm against baseline for every arm | `data/results-<run-id>-ablation/` |
+| Runner | Java experiment | Analysis | Report | Output directory |
+|---|---|---|---|---|
+| `run_trials.py` | `SingleTrialExperiment` — the paper's Shapley + Shapley arm, with A1/A2/A3 | `analysis.analysis` | one power-index column against each baseline, as published | `data/results-<run-id>/` |
+| `run_trials_parallel.py` | `SingleTrialExperiment` | `analysis.analysis` | as above | `data/results-<run-id>/` |
+| `run_trials_parallel_ablation.py` | `SingleTrialAblationExperiment` — A1/A2/A3 plus the nine arms B1-B9 | `analysis.ablation_analysis` | a matrix of arm against baseline for every arm | `data/results-<run-id>-ablation/` |
 
-The report is chosen automatically from `ONTOLOGYUTILS_EXPERIMENT_CLASS`, and the
-ablation appends `-ablation` to the results directory so that the two outputs can
-never overwrite each other.
+The two analyses are independent modules that never import each other, and nothing
+dispatches between them: each runner passes the analysis it drives to the trial engine
+(`analysis/parallel_orchestrator.py`), and each analysis CLI picks its own. The ablation
+runner also appends `-ablation` to the results directory, so the two outputs can never
+overwrite each other. The dry run prints the analysis in use
+(`ANALYSIS = analysis.analysis`, or `analysis.ablation_analysis`).
 
 ### `cli/analyze_results.py`
 
@@ -165,14 +170,22 @@ methods are `random_removal_ms`, `not_in_largest_mcs_removal_ms`, `weakening_ms`
 and `power_index_ms`. `reject_h0` applies the paper's decision rule: reject when
 the lower bound of the 95 % confidence interval is greater than 0.5.
 
-The reported arm is `B5`, the paper's Shapley + Shapley arm. Setting
-`ONTOLOGYUTILS_B_REPAIRS` to a single arm name reports that arm instead.
+The reported arm is `SHAPLEY`, the paper's Shapley + Shapley repair. Runs produced before the
+rename wrote it under the grid id `B5` (or, briefly, `POWER`); those files are still read
+correctly.
 
-When the command is run while `ONTOLOGYUTILS_EXPERIMENT_CLASS` names the ablation
-experiment, the same command produces the ablation report instead: one
-`iic_summary.csv` row per arm and baseline (`b_repair`, `a_repair`), a runtime row
-per repair id, and an extra `per_repair_outcome_summary.csv`. Those files are
-written to `<out_dir>-ablation`.
+### `cli/analyze_results_ablation.py`
+
+```bash
+.venv/bin/python -m cli.analyze_results_ablation [data_dir] [out_dir]
+```
+
+Same arguments, but it reports the whole `B1`-`B9` grid with
+`analysis.ablation_analysis`: one `iic_summary.csv` row per arm and baseline
+(`b_repair`, `a_repair`), a runtime row per repair id, and an extra
+`per_repair_outcome_summary.csv`. The files are written to `<out_dir>-ablation`, the
+same directory the ablation runner reports to. `ONTOLOGYUTILS_B_REPAIRS` narrows the
+report to a subset of arms.
 
 ### `cli/estimator.py`
 
@@ -227,8 +240,8 @@ Note that `.env` overrides real environment variables.
 
 | Name | Effect |
 |---|---|
-| `ONTOLOGYUTILS_EXPERIMENT_CLASS` | Java class driving a trial, and the switch that picks the report. Default `www.ontologyutils.apps.SingleTrialExperiment` (the paper's arm); the ablation runner sets the nine-arm experiment |
-| `ONTOLOGYUTILS_B_REPAIRS` | arms the ablation report covers (default `B1`-`B9`); a single arm name picks the arm reported as the power index in the paper report |
+| `ONTOLOGYUTILS_EXPERIMENT_CLASS` | Java class driving a trial. Default `www.ontologyutils.apps.SingleTrialExperiment` (the paper's arm); the ablation runner sets the nine-arm experiment. It does not select the report: each runner passes its analysis explicitly |
+| `ONTOLOGYUTILS_B_REPAIRS` | arms the ablation report covers (default `B1`-`B9`); the paper's report always covers `SHAPLEY` |
 | `-Dontologyutils.samplingThreads` | sampling threads per strategy call inside the JVM (default 16) |
 | `-Dontologyutils.ignoreImports` | load ontologies without resolving `owl:imports`; needed for raw corpora |
 
@@ -258,4 +271,10 @@ Explore the arm grid on a subset of the corpus:
 .venv/bin/python -m cli.run_trials_parallel_ablation \
     --ontologies bctt,elig --inconsistent-dir ontologies/inconsistent \
     -n 10 -K 1 -t 8
+```
+
+Rebuild the grid report of a finished ablation run:
+
+```bash
+.venv/bin/python -m cli.analyze_results_ablation data/data-<run-id> /tmp/report
 ```

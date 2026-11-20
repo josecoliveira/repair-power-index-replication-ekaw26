@@ -5,7 +5,7 @@ and reports the better-fitting model with R².
 
 Two modes of operation:
   1. **Programmatic** — call ``estimate_complexity(runtime_df, axiom_counts)``
-     with data already loaded by the caller (e.g. from the analyzer).
+     with data already loaded by the caller (e.g. from the analysis modules).
   2. **Standalone** — call ``run_estimation()`` or use the CLI entry point
      in ``cli/estimator.py`` which resolves data from a results folder.
 """
@@ -23,7 +23,7 @@ from scipy.stats import linregress
 
 from analysis.ontologyutils_service import classify_ontology
 
-# ── Repair IDs for per-repair estimation (B1 excluded, matching analyzer) ─
+# ── Repair IDs for per-repair estimation (B1 excluded, matching the reports) ─
 _A_REPAIRS = ["A1", "A2", "A3"]
 _B_REPAIRS = [f"B{i}" for i in range(2, 10)]
 _REPAIR_IDS = _A_REPAIRS + _B_REPAIRS

@@ -30,7 +30,7 @@ from datetime import datetime
 from pathlib import Path
 
 from analysis import notifier
-from analysis.analyzer import run_analysis
+from analysis.analysis import run_analysis
 from analysis.ontologyutils_service import (
     classify_ontology,
     run_single_trial_experiment,
@@ -39,8 +39,12 @@ from analysis.ontologyutils_service import (
 # ── Experiment design constants (not user-configurable) ────────────────
 A_REPAIRS = ["A1", "A2", "A3"]
 B_REPAIRS = [f"B{i}" for i in range(1, 10)]
-IIC_KEYS = [f"{b}_vs_{a}" for b in B_REPAIRS for a in A_REPAIRS]
-RUNTIME_KEYS = A_REPAIRS + B_REPAIRS
+# The paper's experiment emits a single arm of its own, ``SHAPLEY``, while the grid emits
+# ``B1``-``B9``. One engine writes the CSVs of both experiments, so its schema is the union:
+# each run fills the columns of its own experiment and leaves the others empty.
+SHAPLEY_ARM = "SHAPLEY"
+IIC_KEYS = [f"{b}_vs_{a}" for b in B_REPAIRS + [SHAPLEY_ARM] for a in A_REPAIRS]
+RUNTIME_KEYS = A_REPAIRS + B_REPAIRS + [SHAPLEY_ARM]
 
 # ── Path constants (based on package layout, not user-configurable) ────
 PACKAGE_ROOT = Path(__file__).resolve().parent.parent

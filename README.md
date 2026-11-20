@@ -24,7 +24,12 @@ lowest Shapley value in the game that its own replacement produces.
   inputs, and `inconsistent/` the eight ontologies the trials run on.
 - `cli/run_trials.py`, `cli/run_trials_parallel.py` — trial runners.
 - `cli/analyze_results.py` — aggregates the trials into the published tables.
-- `analysis/` — the trial orchestration and the analysis pipeline.
+- `cli/run_trials_parallel_ablation.py`, `cli/analyze_results_ablation.py` — the
+  nine-arm ablation, which has its own runner and its own report.
+- `analysis/` — the trial orchestration and the analysis pipeline. The paper's
+  analysis (`analysis/analysis.py`) and the ablation's
+  (`analysis/ablation_analysis.py`) are independent modules, and each runner calls
+  the one it needs.
 
 ## Requirements
 

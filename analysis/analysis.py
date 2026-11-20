@@ -1,24 +1,23 @@
 #!/usr/bin/env python3
-"""Unified analysis for IIC quality and runtime/outcome results.
+"""Analysis of the paper's experiment: one power-index arm against the three baselines.
 
-This script reads the per-run CSVs produced by `run_trials.py`:
+Reads the per-run CSVs of a trial run (``iic-<ontology>.csv`` and
+``runtime-<ontology>.csv``) and writes:
 
-- iic-<ontology>-<RUN_ID>.csv
-- runtime-<ontology>-<RUN_ID>.csv
+- the IIC quality table, one row per comparison against ``A1``, ``A2`` and ``A3``;
+- a runtime summary of the successful trials;
+- an outcome-rate table for the power-index trials;
+- the combined Markdown and LaTeX report.
 
-It generates:
-
-- the existing IIC quality report/table layout
-- a runtime summary table for successful trials
-- an outcome-rate table for the power-index trials
-
-Outputs are written under `analysis/output/shapley-shapley`.
+This module belongs to the paper experiment only, and its callers import it directly:
+:mod:`analysis.orchestrator`, :mod:`analysis.parallel_orchestrator` (through the analysis the
+runner passes in) and :mod:`cli.analyze_results`. The nine-arm grid has its own, independent
+:mod:`analysis.ablation_analysis`; the two never import each other.
 """
 
 from __future__ import annotations
 
 import math
-import os
 import re
 import sys
 from pathlib import Path
@@ -58,17 +57,12 @@ CSV_NAME_RE = re.compile(
     r"^(?P<kind>iic|runtime)-(?P<ontology>.+?)(?:-(?P<runid>\d{10,}))?(?:-reconstructed)?\.csv$"
 )
 
-# The experiment writes one column per arm of its grid. The paper compares a
-# single arm against the three baselines, so those columns are renamed to the
-# canonical names used by the reports. ``ONTOLOGYUTILS_B_REPAIRS`` selects a
-# different arm when it names exactly one; a grid of several arms is reported
-# through the paper's arm, because the reports have a single power-index column.
-_REQUESTED_ARMS = [
-    arm.strip()
-    for arm in os.environ.get("ONTOLOGYUTILS_B_REPAIRS", "").split(",")
-    if arm.strip()
-]
-ARM = _REQUESTED_ARMS[0] if len(_REQUESTED_ARMS) == 1 else "B5"
+# The experiment writes a single arm, ``SHAPLEY``, and the paper reports it against the three
+# baselines. Earlier ids of the same arm are still accepted, so that runs produced before the
+# renames can be re-analysed: ``POWER`` (2026-11-20) and ``B5`` (before that, the grid id).
+DEFAULT_ARM = "SHAPLEY"
+LEGACY_ARMS = ("POWER", "B5")
+ARM = DEFAULT_ARM
 IIC_COLUMNS = {
     "A1": "iic_power_vs_random",
     "A2": "iic_power_vs_not_in_largest_mcs",
@@ -83,13 +77,14 @@ RUNTIME_COLUMNS = {
 
 def canonicalise_columns(df: pd.DataFrame) -> pd.DataFrame:
     """Rename the arm columns of one trial file to the canonical names."""
-    for baseline, canonical in IIC_COLUMNS.items():
-        source = f"{ARM}_vs_{baseline}"
-        if source in df.columns and canonical not in df.columns:
-            df[canonical] = df[source]
-    power = f"{ARM}_ms"
-    if power in df.columns and "power_index_ms" not in df.columns:
-        df["power_index_ms"] = df[power]
+    for arm in (ARM, *LEGACY_ARMS):
+        for baseline, canonical in IIC_COLUMNS.items():
+            source = f"{arm}_vs_{baseline}"
+            if source in df.columns and canonical not in df.columns:
+                df[canonical] = df[source]
+        power = f"{arm}_ms"
+        if power in df.columns and "power_index_ms" not in df.columns:
+            df["power_index_ms"] = df[power]
     for source, canonical in RUNTIME_COLUMNS.items():
         if source in df.columns and canonical not in df.columns:
             df[canonical] = df[source]
@@ -593,13 +588,17 @@ def run_analysis(
     data_dir: Path,
     out_dir: Path,
     inconsistent_dir: Path | None = None,
-    arm: str = "B5",
+    arm: str = DEFAULT_ARM,
 ) -> dict[str, Path]:
     """Analyse one run directory and write the report files into ``out_dir``.
 
-    The signature matches the previous analyzer so that the orchestrators and the
-    CLI keep calling it the same way. ``inconsistent_dir`` is accepted and
-    ignored: the report no longer estimates runtime from the axiom counts.
+    :param data_dir: Directory holding the ``iic-*.csv`` and ``runtime-*.csv`` files of one run.
+    :param out_dir: Directory the summaries and the combined report are written to.
+    :param inconsistent_dir: Accepted for signature parity with
+        :func:`analysis.ablation_analysis.run_analysis` and ignored: this report does not
+        estimate runtime from the axiom counts.
+    :param arm: The arm of the output reported as the Shapley repair, ``SHAPLEY`` by default.
+    :returns: The paths of the files written, or an empty mapping when the run has no trials yet.
     """
     global DATA_DIR, OUT_DIR, ARM
     global IIC_SUMMARY_CSV, RUNTIME_SUMMARY_CSV, OUTCOME_SUMMARY_CSV

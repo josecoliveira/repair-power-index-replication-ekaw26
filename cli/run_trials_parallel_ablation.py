@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """CLI entry point for the parallel orchestrator over the full arm grid.
 
-Same orchestrator as ``cli/run_trials_parallel.py``, but it drives
-``SingleTrialAblationExperiment`` (A1, A2, A3 and the nine indexed arms B1-B9)
-instead of the four-arm ``SingleTrialExperiment`` used by the paper's comparison.
+Same trial engine as ``cli/run_trials_parallel.py``, but it drives
+``SingleTrialAblationExperiment`` (A1, A2, A3 and the nine indexed arms B1-B9) and
+reports with :mod:`analysis.ablation_analysis` instead of the paper's analysis.
+
+The two reports are independent: this module is the only place that knows an
+ablation run exists, so neither analysis has to inspect the environment to find out
+which experiment produced the data.
 
 Usage:
     python -m cli.run_trials_parallel_ablation [options]
@@ -20,15 +24,24 @@ from pathlib import Path
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-# Must be set before ``analysis`` is imported: the service reads the experiment
-# class, and the analysis uses it to pick the report of the ablation grid.
-os.environ.setdefault(
-    "ONTOLOGYUTILS_EXPERIMENT_CLASS", "www.ontologyutils.apps.SingleTrialAblationExperiment"
-)
-# The reports of an ablation run are written to ``<results-dir>-ablation`` and
-# cover the whole B1-B9 grid, so they never touch the paper's output.
+from analysis import ablation_analysis
+from analysis.parallel_orchestrator import run_experiment_parallel
+from cli.run_trials_parallel import build_parser
 
-from cli import run_trials_parallel  # noqa: E402
+#: Suffix appended to the results directory, so the grid never overwrites the paper's report.
+RESULTS_SUFFIX = "-ablation"
+
+#: The experiment the trial runner must launch.
+EXPERIMENT_CLASS = "www.ontologyutils.apps.SingleTrialAblationExperiment"
+
+
+def main() -> None:
+    # The service reads this to pick the Java app; the analysis is passed in
+    # explicitly below and never looks at the environment.
+    os.environ.setdefault("ONTOLOGYUTILS_EXPERIMENT_CLASS", EXPERIMENT_CLASS)
+    args = build_parser().parse_args()
+    run_experiment_parallel(args, ablation_analysis.run_analysis, RESULTS_SUFFIX)
+
 
 if __name__ == "__main__":
-    raise SystemExit(run_trials_parallel.main())
+    raise SystemExit(main())

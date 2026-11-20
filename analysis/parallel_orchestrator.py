@@ -49,9 +49,9 @@ from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
+from typing import Callable
 
 from analysis import notifier
-from analysis.analyzer import run_analysis
 from analysis.ontologyutils_service import (
     build_single_trial_command,
     classify_ontology,
@@ -170,15 +170,31 @@ def _run_trial_process(cmd: list[str], attempt_number: int, seed: int) -> TrialO
 
 # ── Entry point ─────────────────────────────────────────────────────────
 
+#: Signature of the analysis the runner drives: ``(data_dir, out_dir) -> outputs``.
+AnalysisRunner = Callable[..., dict]
 
-def run_experiment_parallel(args: argparse.Namespace) -> None:
-    """Execute the parallel experiment, reporting fatal errors to the notifier."""
+
+def run_experiment_parallel(
+    args: argparse.Namespace,
+    analyze: AnalysisRunner,
+    results_suffix: str = "",
+) -> None:
+    """Execute the parallel experiment, reporting fatal errors to the notifier.
+
+    :param args: The parsed command line.
+    :param analyze: The analysis of the experiment being run, called after every
+        ``--analysis-interval`` completed ontologies and once at the end. The paper's runner
+        passes :func:`analysis.analysis.run_analysis`, the ablation runner
+        :func:`analysis.ablation_analysis.run_analysis`; this module imports neither.
+    :param results_suffix: Appended to the results directory name, so that two experiments
+        on the same data never write their reports over each other.
+    """
     notify_enabled = notifier.configure(getattr(args, "notify", None))
     if notify_enabled and not getattr(args, "dry_run", False):
         print("[notifier] Telegram progress notifications enabled.")
 
     try:
-        _run_experiment_parallel(args)
+        _run_experiment_parallel(args, analyze, results_suffix)
     except BaseException as exc:
         _terminate_active_processes()
         notifier.notify_exception(exc)
@@ -202,7 +218,11 @@ def _resolve_ontology_subset(
     return selected
 
 
-def _run_experiment_parallel(args: argparse.Namespace) -> None:
+def _run_experiment_parallel(
+    args: argparse.Namespace,
+    analyze: AnalysisRunner,
+    results_suffix: str = "",
+) -> None:
     parallel_trials = max(1, int(getattr(args, "parallel_trials", 1)))
     threads_per_trial = int(getattr(args, "threads_per_trial", 0) or 16)
     cap_jvm_cpus = bool(getattr(args, "cap_jvm_cpus", True))
@@ -227,6 +247,7 @@ def _run_experiment_parallel(args: argparse.Namespace) -> None:
         print(f"  INCONSISTENT_DIR         = {args.inconsistent_dir}")
         print(f"  ONTOLOGIES               = {args.ontologies or '<all>'}")
         print(f"  LIB_DIR                  = {args.lib_dir}")
+        print(f"  ANALYSIS                 = {getattr(analyze, '__module__', analyze)}")
         print(f"  RUN_ID                   = {args.run_id or '<auto>'}")
         print()
         print("No experiments run. Omit --dry-run to execute.")
@@ -239,6 +260,8 @@ def _run_experiment_parallel(args: argparse.Namespace) -> None:
     run_id = args.run_id or datetime.now().strftime("%Y%m%d%H%M%S%f")
     data_dir = args.data_dir or (ANALYSIS_DIR / f"data-{run_id}")
     results_dir = args.results_dir or (ANALYSIS_DIR / f"results-{run_id}")
+    if results_suffix:
+        results_dir = results_dir.parent / f"{results_dir.name}{results_suffix}"
 
     effective_base_seed = args.seed if args.seed is not None else args.base_seed
     effective_step = args.step
@@ -402,7 +425,7 @@ def _run_experiment_parallel(args: argparse.Namespace) -> None:
             ontologies_finished += 1
             if effective_analysis_interval > 0 and ontologies_finished % effective_analysis_interval == 0:
                 try:
-                    analysis_outputs = run_analysis(data_dir, results_dir)
+                    analysis_outputs = analyze(data_dir, results_dir)
                     print(f"Analysis updated after {name}:")
                     for key, value in analysis_outputs.items():
                         print(f"  {key}={value}")
@@ -438,7 +461,7 @@ def _run_experiment_parallel(args: argparse.Namespace) -> None:
             log.write(f"  success_rate={success_rate:.4f}\n")
             log.write(f"  wall_clock_seconds_total_run={wall_clock_seconds:.6f}\n")
 
-    analysis_outputs = run_analysis(data_dir, results_dir)
+    analysis_outputs = analyze(data_dir, results_dir)
 
     notifier.notify_run_end(
         run_id=run_id,

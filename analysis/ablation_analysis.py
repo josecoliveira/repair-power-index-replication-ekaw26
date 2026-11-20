@@ -4,7 +4,8 @@
 The ablation experiment runs the three baselines together with the nine indexed
 arms ``B1``-``B9``, so its reports are matrices of arm against baseline rather
 than the single comparison of the paper. This module is used only for ablation
-runs; the paper's reports come from :mod:`analysis.paper_analysis`.
+runs; the paper's reports come from :mod:`analysis.analysis`, and the two
+modules never import each other.
 """
 
 from __future__ import annotations

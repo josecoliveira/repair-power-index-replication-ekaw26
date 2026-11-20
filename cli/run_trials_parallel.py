@@ -14,21 +14,14 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import os
 import sys
 from pathlib import Path
-
-# This runner drives the four-arm experiment (A1, A2, A3 and Shapley-Shapley), so
-# the analysis must only report that arm. Set before ``analysis`` is imported.
-# An ablation run imports this module too, and it reports the whole grid, so the
-# default must not leak into it.
-if "Ablation" not in os.environ.get("ONTOLOGYUTILS_EXPERIMENT_CLASS", ""):
-    os.environ.setdefault("ONTOLOGYUTILS_B_REPAIRS", "B5")
 
 # Allow running as ``python cli/run_trials_parallel.py`` (without ``-m``)
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from analysis.analysis import run_analysis
 from analysis.orchestrator import INCONSISTENT_DIR
 from analysis.ontologyutils_service import LIB_DIR
 from analysis.parallel_orchestrator import run_experiment_parallel
@@ -234,7 +227,9 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> None:
     parser = build_parser()
     args = parser.parse_args()
-    run_experiment_parallel(args)
+    # The paper's runner drives the paper's report; the ablation runner passes the
+    # ablation report instead.
+    run_experiment_parallel(args, run_analysis)
 
 
 if __name__ == "__main__":

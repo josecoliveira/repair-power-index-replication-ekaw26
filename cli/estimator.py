@@ -22,7 +22,7 @@ from pathlib import Path
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from analysis.analyzer import discover_csvs, load_runtime_rows
+from analysis.analysis import discover_csvs, load_runtime_frames
 from analysis.estimator import (
     estimate_complexity,
     load_axiom_counts,
@@ -111,7 +111,7 @@ def main() -> None:
         print(f"Using latest data directory: {data_dir}")
 
     # ── Load runtime CSVs ───────────────────────────────────────────
-    runtime_paths = discover_csvs(data_dir, "runtime")
+    runtime_paths = discover_csvs("runtime", data_dir)
     if not runtime_paths:
         print(
             f"Error: no runtime CSVs found in {data_dir}",
@@ -119,7 +119,7 @@ def main() -> None:
         )
         sys.exit(1)
 
-    runtime_df = load_runtime_rows(runtime_paths)
+    runtime_df = load_runtime_frames(runtime_paths)
     print(f"Loaded {len(runtime_paths)} runtime CSV(s) from {data_dir}")
     print(f"  Ontologies: {sorted(runtime_df['ontology'].unique())}")
     print(f"  Total rows: {len(runtime_df)}")
